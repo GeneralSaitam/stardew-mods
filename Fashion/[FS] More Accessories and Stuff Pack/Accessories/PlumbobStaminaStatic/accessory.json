@@ -1,0 +1,359 @@
+{
+  "Name": "Plumbob (Stamina, Static)",
+
+	// FRONT
+  "FrontAccessory": {
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 5
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 199
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 149
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 200
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 99
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 150
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 49
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 100
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 50
+          }
+        ]
+      }
+    ]
+  },
+
+	// RIGHT
+  "RightAccessory": {
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": -1,
+      "Y": 5
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 199
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 149
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 200
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 99
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 150
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 49
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 100
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 50
+          }
+        ]
+      }
+    ]
+  },
+
+	// LEFT
+  "LeftAccessory": {
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": -1,
+      "Y": 5
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 199
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 149
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 200
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 99
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 150
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 49
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 100
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 50
+          }
+        ]
+      }
+    ]
+  },
+
+	// BACK
+  "BackAccessory": {
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 5
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 199
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 149
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 200
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 99
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 150
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "GreaterThan",
+            "Value": 49
+          },
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 100
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "StaminaLevel",
+            "Operator": "LessThan",
+            "Value": 50
+          }
+        ]
+      }
+    ]
+  }
+}

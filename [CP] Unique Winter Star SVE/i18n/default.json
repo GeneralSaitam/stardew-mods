@@ -1,0 +1,324 @@
+{
+	//Hello, i18n readers! If you're here, you're where the dialogues happen. Either you're a translator (hi, translators! You can delete this!) or you're a user wanting to change a dialogue yourself (or just read the dialogues). The i18n is organized into sections.
+	
+	//CONFIG TRANSLATIONS
+	
+	"config.section.Main Mod Changes.name": "Main Mod Changes",
+	"config.section.Main Mod Changes.description": "This is the section to alter the main functions of the mod - specifically, the overall spicy toggle and the custom gifts option.",
+	
+	"config.section.Bachelor and Bachelorette Changes.name": "Bachelor and Bachelorette Changes",
+	"config.section.Bachelor and Bachelorette Changes.description": "This section determines whether bachelors and bachelorettes use their regular dialogues, their spicy dialogues (if applicable), do not use their dialogues, or even disable them from being your Winter Star gifter entirely. Please note that at least two villagers from the Valley should be active at any given time - disabling all but one (including vanilla villagers) may have unintended results, and disabling all characters will cause the game to crash at the Winter Star.",
+	
+	"config.section.Townspeople Changes.name": "Townspeople Changes",
+	"config.section.Townspeople Changes.description": "This is the section for setting whether normally sociable SVE villagers can attend the Winter Star and if their dialogue changes are enabled. Please note that deactivating all but one villager may have unintended consequences, and disabling all characters will cause the game to crash at the Winter Star.",
+	
+	"config.section.Additional Winter Star Villagers.name": "Additional Winter Star Villagers",
+	"config.section.Additional Winter Star Villagers.description": "This section determines whether relevant (social) villagers can participate at the Winter Star. Martin will immediately join, while the other characters will only join once they have become social.",
+	
+	"config.CustomGifts.name": "Custom Gifts",
+    "config.CustomGifts.description": "Allows a custom gift list to be used for each NPC, including an 'ultimate gift' that can be obtained upon reaching high hearts with an NPC. This will increase the variety of gifts given at the Winter Star, but may also prevent the Tea Set from being gifted by certain characters.",
+	"config.CustomGifts.values.enabled": "use custom gifts",
+	"config.CustomGifts.values.disabled": "do not use custom gifts",
+	
+	"config.MoreWizard.name": "Additional Wizard Dialogues",
+    "config.MoreWizard.description": "If enabled and Wizard is selected at the Winter Star with Unique Winter Star installed, gives Magnus unique dating and married variants for when he is married to the farmer (Magnus does not have a spicy variant). Disable to remove these dialogue changes and only get Unique Winter Star's (platonic) variant. (Without Unique Winter Star, this setting will do nothing.)",
+	"config.MoreWizard.values.enabled": "enabled",
+	"config.MoreWizard.values.disabled": "disabled",
+	
+	"config.Enable Spicy Dialogue.name": "Enable Spicy Dialogue",
+    "config.Enable Spicy Dialogue.description": "Enables somewhat spicier dialogue from relevant spouses. Will not do anything without corresponding enabled options below.",
+	
+	"config.Sophia.name": "Sophia",
+    "config.Sophia.description": "Determines if Sophia's dialogue changes are enabled and/or if she's in the gift pool at the Winter Star. If the Spicy Dialogue toggle is enabled and Sophia is set to 'spicy dialogue enabled', allow Sophia to say a slightly spicier end dialogue when married to the player.",
+	"config.Sophia.values.off": "remove from gift pool",
+	"config.Sophia.values.disabled": "no dialogue changes",
+	"config.Sophia.values.normal": "gift dialogues enabled",
+	"config.Sophia.values.spicy": "use spicy dialogues",
+	
+	"config.Claire.name": "Claire",
+    "config.Claire.description": "Determines if Claire's dialogue changes are enabled and/or if she's in the gift pool at the Winter Star. If the Spicy Dialogue toggle is enabled and Claire is set to 'spicy dialogue enabled', allow Claire to say a slightly spicier end dialogue when married to the player.",
+	"config.Claire.values.off": "remove from gift pool",
+	"config.Claire.values.disabled": "no dialogue changes",
+	"config.Claire.values.normal": "gift dialogues enabled",
+	"config.Claire.values.spicy": "use spicy dialogues",
+	
+	"config.Victor.name": "Victor",
+    "config.Victor.description": "Determines if Victor's dialogue changes are enabled and/or if she's in the gift pool at the Winter Star. If the Spicy Dialogue toggle is enabled and Victor is set to 'spicy dialogue enabled', allow Victor to say a slightly spicier end dialogue when married to the player.",
+	"config.Victor.values.off": "remove from gift pool",
+	"config.Victor.values.disabled": "no dialogue changes",
+	"config.Victor.values.normal": "gift dialogues enabled",
+	"config.Victor.values.spicy": "use spicy dialogues",
+	
+	"config.Olivia.name": "Olivia",
+    "config.Olivia.description": "Determines if Olivia's dialogue changes are enabled and/or if she's in the gift pool at the Winter Star. If the Spicy Dialogue toggle is enabled and Olivia is set to 'spicy dialogue enabled', allow Olivia to say a slightly spicier end dialogue when married to the player.",
+	"config.Olivia.values.off": "remove from gift pool",
+	"config.Olivia.values.disabled": "no dialogue changes",
+	"config.Olivia.values.normal": "gift dialogues enabled",
+	"config.Olivia.values.spicy": "use spicy dialogues",
+	
+	"config.Lance.name": "Lance",
+    "config.Lance.description": "Determines if Lance shows up at the Winter Star and whether his lines are edited. In regular SVE, Lance will attend the Winter Star only when married, so the options reflect this behavior and potential alterations.",
+	"config.Lance.values.off": "remove from gift pool",
+	"config.Lance.values.disabled": "no dialogue changes",
+	"config.Lance.values.marriageonly": "marriage dialogue changed only",
+	"config.Lance.values.marriagespice": "spicy marriage dialogue only",
+	"config.Lance.values.earlyadd": "add to Star early, no dialogue edits",
+	"config.Lance.values.dialogueearly": "add to Star early with dialogue edits",
+	"config.Lance.values.dialoguespice": "add to Star w/ dialogue edits & spice",
+	
+	"config.Andy.name": "Andy",
+    "config.Andy.description": "Determines if Andy is a gifter at the Winter Star and if he uses the unique lines provided by this mod.",
+	"config.Andy.values.off": "remove from gift pool",
+	"config.Andy.values.disabled": "no dialogue changes",
+	"config.Andy.values.normal": "gift dialogues enabled",
+	
+	"config.Susan.name": "Susan",
+    "config.Susan.description": "Determines if Susan is a gifter at the Winter Star and if she uses the unique lines provided by this mod.",
+	"config.Susan.values.off": "remove from gift pool",
+	"config.Susan.values.disabled": "no dialogue changes",
+	"config.Susan.values.normal": "gift dialogues enabled",
+	
+	"config.Marlon.name": "Marlon",
+    "config.Marlon.description": "Determines if Marlon is a gifter at the Winter Star and if he uses the unique lines provided by this mod.",
+	"config.Marlon.values.off": "remove from gift pool",
+	"config.Marlon.values.disabled": "no dialogue changes",
+	"config.Marlon.values.normal": "gift dialogues enabled",
+	
+	"config.Scarlett.name": "Scarlett",
+    "config.Scarlett.description": "Determines if Scarlett is a gifter at the Winter Star and if she uses the unique lines provided by this mod. For immersion, with 1.15 she defaults to only joining the gift pool if married to the player.",
+	"config.Scarlett.values.off": "not added to Winter Star",
+	"config.Scarlett.values.marriageonly": "added to Winter Star if married",
+	"config.Scarlett.values.marriagespice": "added to Star if married w/ spice",
+	"config.Scarlett.values.enabled": "always added to Winter Star",
+	"config.Scarlett.values.spicy": "always added to Star w/ marriage spice",
+	
+	"config.Martin.name": "Martin",
+    "config.Martin.description": "Allows Martin to attend the Winter Star, with festival dialogue to match.",
+	"config.Martin.values.disabled": "not added to Winter Star",
+	"config.Martin.values.enabled": "added to Winter Star",
+	
+	"config.Morgan.name": "Morgan",
+    "config.Morgan.description": "Allows Morgan become a Winter Star gifter once they become social.",
+	"config.Morgan.values.disabled": "not added to Winter Star",
+	"config.Morgan.values.enabled": "added to Winter Star",
+	
+	"config.Gunther.name": "Gunther",
+    "config.Gunther.description": "Allows Gunther to become a Winter Star gifter once he becomes social.",
+	"config.Gunther.values.disabled": "not added to Winter Star",
+	"config.Gunther.values.enabled": "added to Winter Star",
+	
+	
+	//GIFTING DIALOGUES (Catch-all dialogues for gifts - these are ignored if a Custom Gift Dialogue key is present with _SecretSanta. These will not be organized by person, as it's one line each character. Refer to necessary section.
+	
+	
+	//Non-datables
+	"UWS.Susan.Gifting": "Oh, @! You're my secret gift-giver for the year, then?$h#$b#Well then, {1} {0}? Thank you, honey.",
+	"UWS.Marlon.Gifting": "Yes, @? Is there Guild business to attend to?#$b#Oh, you're my secret friend for the year! A welcome surprise.$1#$b#Ah, {1} {0} then? Very well. Thank you, @.$2",
+	"UWS.Andy.Gifting": "Ah, farmer @! What'dya get for me this year?$1#$b#{0}, huh? Thanks for the gift, farmer.$3",
+	"UWS.Andy.High.Gifting": "Hey there, farmer @. Guessin' your my gift giver this year?$3#$b#Guess Yoba really did bless me this year, getting a gift from a fellow farmer an' friend. Thanks for the {0}, @.$h",
+	
+	//Datables
+	"UWS.Sophia.Gifting": "Oh, um, you're my gift-giver this year, @?#$b#Oh, {1} {0}! Thank you.",
+	"UWS.Sophia.High.Gifting": "You're my secret gift-giver this year, @? Yay!$9#$b#Oh, {1} {0}! Thank you.$h", //7 Heart Required
+	"UWS.Claire.Gifting": "Oh, you're my secret gift-giver this year, @? How fortuitous!$5#$b# Thank you for the {0}, @.$h",
+	"UWS.Victor.Gifting": "Oh, hey @! You're my gift-giver this year, then?#$b#Oh, {1} {0}? It's nice to have variety that isn't books or electronics. Thanks, @.$h", 
+	"UWS.Olivia.Gifting": "Hello, sweetie! I suppose you're here to gift me my Winter Star gift for the year?$h#$b#Well, {1} {0}? Quite the gift! Thank you.",
+	
+	//Dating
+	"UWS.Sophia.Dating.Gifting": "@?? You're my secret gift giver??$5#$b#Yay! What'd you get me what'd you get me?$8#$b#Oh, {1} {0}? Thank you, silly.$h",
+	"UWS.Claire.Dating.Gifting": "Now this is a welcome surprise. You're my secret gift-giver this year, @?$l#$b#Ah, {1} {0}... thank you.$h",
+	"UWS.Victor.Dating.Gifting": "Wait, you're my gifter this year, @? I-I mean, I'm sure I'll like whatever you give me, but I - wow!$7#$b#A {0}? Thank you, @. Merry Winter Star.$l",
+	"UWS.Olivia.Dating.Gifting": "Oh my, @? You're my gift-giver for the year?$7#$b#Oh, {1} {0}! Thank you, sweetie, any gift from you is special to me.$9",
+	
+	//Married
+	"UWS.Sophia.Married.Gifting": "Oh, you! We can exchange presents at home -$l#$b#Wait, you're my secret gift giver??$5#$b#I got my silly as my secret friend, yay! Thank you for the {0}, @!$8",
+	"UWS.Claire.Married.Gifting": "Now, dear, we can wait until we get home to exchange our gifts, please be patient - #$b#Oh, you're my secret gift giver, then? I suppose the Winter Star has blessed me more than usual this year.$h#$b#Thank you for the {0}, dear.$l",
+	"UWS.Victor.Married.Gifting": "Thank you for the {0}, love, but isn't that something for when we get back home?#$b#Wait, hold on, you're my secret friend this year? But I had no idea!$7#$b#Thank you though, honey. Merry Winter Star to you too.$l",
+	"UWS.Olivia.Married.Gifting": "@! This is quite unbecoming of you! Our personal gift exchange can wait until -$5#$b#I beg your pardon? You're my secret gift giver for the year?$7#$b#I apologize for my rash words, dear. Thank you for the {0}.$8",
+	
+	
+	//RECEIVING A GIFT
+	
+	//Non-Datable Villagers
+	
+	//Susan
+	"UWS.Susan.Before": "Hey there, sweetie! Looks like I'm your gift-giver for the year!$4#$b#I'm glad it's you, actually. Most of the time I have to get gifts for the others and I can never figure out what they want the most for the year...#$b#But as a fellow farmer, I had a few ideas for you. Here, take your gift!$h",
+	"UWS.Susan.After": "Hopefully that'll be useful to you somehow, whether just as something to put in your shipping bin or to use around the farm.#$b#Merry Winter Star, @! Hopefully Emerald and %farm Farm will do well in the new year.$h",
+	
+	//Marlon
+	"UWS.Marlon.Before": "Greetings, @. It appears I'm your secret gift-giver for the year.$1#$b#As a guild member, you know the importance of using resources you create or find in dangerous areas. This gift should embody that guiding principle of adventuring.#$b#Please, accept this gift, compliments of myself and the Adventurer's Guild.$1",
+	"UWS.Marlon.After": "I hope this proves useful to you on your adventures or, failing that, with your work on %farm Farm.$1#$b#Merry Winter Star. May you stay safe and be victorious in your battles in the coming year.$1",
+	
+	//Andy
+	"UWS.Andy.Before": "Good seeing ya, farmer. I got your name in the gift exchange this year, so I got your present here for ya.#$b#Well, c'mon then, open it already! No sense in either of us freezin' our backsides off here waiting.$5",
+	"UWS.Andy.CC.Before": "Good seeing ya, farmer. I got your name in the gift exchange this year, so I got your present here for ya.#$b#Figured I'd use some of that higher earnin' from using Pierre's seeds on the gift for the farmer who made it all possible.$h#$b#Go on and open it already!$3", //Andy Heart event, CC complete
+	"UWS.Andy.Joja.Before": "Good seeing ya, farmer. I got your name in the gift exchange this year, so I got your present here for ya.$3#$b#Joja's demand spike gave me a bit more G this year, so I figured I'd get you something better than the usual.$h#$b#Go on and open it already!$3", //Andy Heart Event, Joja Route complete
+	"UWS.Andy.After": "Merry Winter Star, farmer, hope you enjoyed your gift. Don't take it personal or nothin', but I'm headin' back to the food tables.#$b#I don't care much for the whole gift givin' thing, but the free food and drink? Always worth coming to this festival for.$h",
+	
+	
+	//Datable Villagers, Default
+	
+	//Sophia
+	"UWS.Sophia.Before": "U-um, @? I'm your secret gift-giver for the year.$h#$b#Here you go. I hope you like it.",
+	"UWS.Sophia.After": "I didn't really know what to get you, so I did what I could. I'm sorry if it's not really a good gift...$s#$b#Um. Merry Winter Star, @. I hope your farm does well next year.",
+	"UWS.Sophia.High.Before": "Hey, you! I have a present for you!$9#$b#I got you as my secret friend this year, and you've been there for me through a lot, so I wanted to make this gift special.$h#$b#Well, come on! Open it!$8", //7 Heart required for high
+	"UWS.Sophia.High.After": "I used my favorite Pink Princess wrapping paper for this present! I hope the gift I gave you was as special for you as the wrapping paper was for me.$8#$b#Merry Winter Star, @. I'm glad I have you as my friend.$h",
+	
+	//Claire
+	"UWS.Claire.Before": "Hello, @. It looks like I'm your secret gift-giver this year.$5#$b#I initially wasn't going to take part, but you and the aerobics class changed my mind. Being part of a community is a nice feeling.$h#$b#I hope the gift I chose reflects how grateful I am to have you as a friend, @.$h", //Note for both of these Claire can only be the gifter at 6+ hearts, which is why this reads as high hearts.
+	"UWS.Claire.After": "I apologize if the gift is not to your liking - money is tight around the Winter Star season, so my choices were rather limited.$s#$b#In any event, Merry Winter Star, @. May we both have good fortune in the upcoming year.$h",
+	
+	//Victor
+	"UWS.Victor.Before": "Hey, @. Is now a good time?$3#$b#I'm actually your secret gift-giver this year. I wanted to get you something better, but Mayor Lewis puts strict gift limits on the festival.#$b#Mainly just to make sure no one gets a better gift just because they have money. Anyway, open it!$h",
+	"UWS.Victor.After": "I hope you liked the gift and that it helps you follow your farming passion, @. Perhaps you've already been blessed by the Winter Star!$h#$b#Merry Winter Star, @. I hope we both have a good year ahead.$3",
+	
+	//Olivia
+	"UWS.Olivia.Before": "Hello, @! As per Winter Star tradition, I am here with your present for the year.#$b#Now, don't be expecting anything ostentatious for your gift, dear. Mayor Lewis has strict gift limits, and it wouldn't do to show up every other gift given here today!$6#$b#I hope what I acquired suits your tastes.$h",
+	"UWS.Olivia.After": "Procuring such a gift was a trivial matter, but it is always quite difficult to discern one's tastes from observation alone.$3#$b#Still, I hope your gift suits you and your aspirations. Have a merry Winter Star, @.$h",
+	
+	//Victor, married to Olivia
+	"UWS.Victor.Olivia.Before": "Hey, @. Is now a good time?$3#$b#I'm actually your secret gift-giver this year. I wanted to get my step-parent something better, but Mayor Lewis puts strict gift limits on the festival.#$b#Mainly just to make sure no one gets a better gift just because they have money. Anyway, open it!$h",
+	"UWS.Victor.Olivia.After": "I hope you liked the gift, @. I won't keep you from getting back to mother.$3#$b#Merry Winter Star, @. I'm glad I have you as my new parent.$h",
+	
+	//Olivia, married to Victor
+	"UWS.Olivia.Victor.Before": "It's wonderful to see you, @. It was quite the surprise to be chosen as your secret friend for the year!$h#$b#You make my son so happy, dear. Had it not been a severe faux pas for the festival, I would have purchased the both of you quite the present!$6#$b#Regrettably, Mayor Lewis has strict gift limits for the festival, so my hands were tied. I do hope the gift I chose will suffice, regardless.$s",
+	"UWS.Olivia.Victor.After": "If the gift is not to your tastes, let me know and I will correspond with Victor to figure out the best gift for the two of you in the future.#$b#Merry Winter Star, my dear. You have no idea how happy I am that you are my son's spouse.$h",
+	
+	//For those of you in the i18n file, I debated on including a dialogue for Victor and Olivia if you married them both somehow. I ultimately decided against it - aside from being incredibly weird, thinking of it in-universe would make it horrible to put in character. Both Victor and Olivia would have to acknowledge that the person they're romantically involved with, and potentially having relations with, is also having relations with their mother/son. I'd essentially have to write dialogues where most of the year they'd be happy with you, until the Winter Star where they gain a moment of lucidity and realize the implications, then lose that knowledge. As such, if you want that dialogue - code it yourself!
+	
+	
+	//Datable Villagers, Dating
+	
+	//Sophia
+	"UWS.Sophia.Dating.Before": "Hey, you! Merry Winter Star. I got you as my secret friend this year!$9#$b#I wanted to get you something really good, but I don't know what you really, really like, so we'll just have to spend more time together so I can find out, okay?$l#$b#Um, anyway, here. Your secret gift for the year!$h",
+	"UWS.Sophia.Dating.After": "Oh, it looks like I have one more gift for you, just in case that one isn't too good.$l#$b#*smooch* Love you, @! Merry Winter Star!$8",
+	
+	//Claire
+	"UWS.Claire.Dating.Before": "Hello, @. Looking for you secret gift-giver?$h#$b#The look on your face makes coming to this festival in the cold worthwhile, @. Please, open your present.$7",
+	"UWS.Claire.Dating.After": "I hoped to get you a better gift to show how much I care for you, but Morris doesn't give out Christmas bonuses, so I didn't have the money...$s#$b#But never mind that. Merry Winter Star, @. I look forward to spending more time with you in the new year.$l",
+	"UWS.Claire.Dating.NoJob.After": "I hoped to get you a better gift to show how much I care for you, but I don't have a job right now without Joja, so I needed to save my money...$s#$b#But never mind that. Merry Winter Star, @. I look forward to spending more time with you in the new year.$l", //CC complete
+	"UWS.Claire.Dating.Theater.After": "I hoped to get you a better gift to show how much I care for you, but even with the theater paying more I'm still paying off bills from when I worked at Joja...$s#$b#But never mind that. Merry Winter Star, @. I look forward to spending more time with you in the new year.$l", //CC complete and movie theater built
+	
+	//Victor
+	"UWS.Victor.Dating.Before": "So I didn't know when would be a good time to give you this, but ummm...$7#$b#I mean, hey, @. So you'll never guess who got you as a secret friend this year!$h#$b#Sorry, just wanted to make this gift a little more special for you, but I think I'm messing it up by talking too much. Here, @, your gift.$s",
+	"UWS.Victor.Dating.After": "You've been someone I've looked up to for following their dreams, and I'm trying to follow in your footsteps and find something I'm truly passionate about.$3#$b#Merry Winter Star, @. I really do love you.$l", //This will trigger if you do not manage to trip Victor's 8 heart event before getting him as your gifter at the Winter Star, which is difficult as a practical matter, but not impossible. If you're reading the code, it's advised to get him to eight hearts for the originally written line before I realized it was a minute spoiler.
+	"UWS.Victor.Dating.EightHeart.After": "You've been someone I've looked up to for following their dreams, and I'm trying to do that now with my apprenticeship in Grampleton.$3#$b#I couldn't have followed my dream this far without you in my life. Merry Winter Star, @. I really do love you.$l",
+	"UWS.Victor.Dating.TenHeart.After": "You've been someone I've looked up to for following their dreams, and becoming a bridge engineer...I couldn't have done that without you in my life.$3#$b#Merry Winter Star, @. I know it's a little cheesy, but I'm glad you built a bridge to my heart.$l",
+	
+	//Olivia
+	"UWS.Olivia.Dating.Before": "Hello, dear. I am your secret gift-giver for the year.$9#$b#I was as surprised as you to learn of it! I assure you, I did not do anything uncouth to have you as my receipient.$h#$b#After all, if I wanted to give you a gift, I would not restrict myself to the Winter Star's gift limits. Please, open your present.$8",
+	"UWS.Olivia.Dating.After": "Do not worry if you could not get me a gift this year, @. Your presence in my life is more than enough.$3#$b#Merry Winter Star, my love. May we have many more joyful years ahead of us.$l", //Similar to Victor's 8-heart dialogue above, it is difficult to obtain this dialogue due to - as a practical matter - needing to ignore Olivia's letter or get it on the day of the Winter Star.
+	"UWS.Olivia.Dating.Edward.After": "After Edward died, I never believed I would love again. I am very thankful that you proved me wrong.$l#$b#Merry Winter Star, my love. May we have many more joyful years ahead of us.$9",
+	
+	
+	
+	//Datable Villagers, Married
+	
+	//Sophia
+	"UWS.Sophia.Married.Before": "Hey, you! Guess who got your name in the secret gift exchange this year?$h#$b#I used some of the money from the Vineyard to buy this. I couldn't use our money, silly - then it wouldn't be a secret!$8#$b#Come on, come on! Open your gift!$h",
+	"UWS.Sophia.Married.Con.Before": "Hey, you! Guess who got your name in the secret gift exchange this year?$9#$b#No, it's not tickets to the Zuzu City Comic Con, silly - those were sold out months ago!$h#$b#Come on, come on! Open your gift!$8", //Requires 14 heart event.
+	"UWS.Sophia.Married.After": "Merry Winter Star, silly. I love you! *smooch*$8#$b##$b#Don't forget to take plenty of snacks home from the festival!$9",
+	"UWS.Sophia.Married.Spice.After": "U-um. Hey, silly. We should go back home so we can exchange our other gifts!$h#$b#I have a special cosplay I've been wanting to show you. It's for your eyes only, okay?$l", //Spice config
+	
+	//Claire
+	"UWS.Claire.Married.Before": "In a stroke of good fortune, it seems I'm your secret gift giver this year, dear.$l#$b#My gift options were quite limited without access to our finances...I could have used them, but the gift wouldn't have been a secret.$s#$b#I hope the gift I chose is to your liking, @. Please, open it.$h",
+	"UWS.Claire.Married.Thief.Before": "In a stroke of good fortune, it seems I'm your secret gift giver this year, dear.$l#$b#I used some of the proceeds from 'The Thief Of Justice' to get this without you knowing. Your surprise is worth the secrecy.$7#$b#I hope the gift I chose is to your liking, @. Please, open it.$h", //14 heart viewing of movie needed, as well as (current) marriage.
+	"UWS.Claire.Married.After": "I had to figure out a good hiding spot for your gift at home, and I guess I succeeded by the look on your face.$7#$b#Merry Winter Star, @. May we have many more like it.$l",
+	"UWS.Claire.Married.Spice.After": "It's quite cold out here, @. Perhaps we should head home and exchange the rest of our gifts?$h#$b#It'll still be cold at home, you say? Well, I know of quite a few ways we could fix that...$l", //Spice config
+	
+	//Victor
+	"UWS.Victor.Married.Before": "Hi, honey! Looks like I rolled some good RNG this year and got you as my secret friend!$h#$b#Er, sorry. Might have played some Journey of the Prairie King last night instead of working on some of my bridge projects.$7#$b#Anyway, here. One of your first presents for the day!$l",
+	"UWS.Victor.Married.Twelve.Before": "Hi, honey! Looks like I rolled some good RNG this year and got you as my secret friend!$h#$b#Er, sorry. Might have played some Journey of the Prairie King last night to distract myself from thinking about Dewey.$7#$b#Anyway, here. One of your first presents for the day!$l",
+	"UWS.Victor.Married.Fourteen.Before": "Hi, honey! Looks like I rolled some good RNG this year and got you as my secret friend!$h#$b#Er, sorry. Might have played some Journey of the Prairie King last night instead of working on the blueprints for the Shearwater Bridge renovation.$7#$b#Anyway, here. One of your first presents for the day!$l",
+	"UWS.Victor.Married.Renovation.Before": "Hi, honey! Looks like I rolled some good RNG this year and got you as my secret friend!$h#$b#Er, sorry. Might have played some Journey of the Prairie King last night instead of working on the latest report on the structural integrity of Shearwater Bridge.$7#$b#Anyway, here. One of your first presents for the day!$l",
+	"UWS.Victor.Married.After": "Where are your other presents? Well, a lot are at home, and I still have to cook my best spaghetti dish for you!$h#$b#But I don't think I could ever match the gift of your love, so I think you have me beat.$l#$b#Merry Winter Star, @. I love you.$l",
+	"UWS.Victor.Married.Spice.After": "What about your other presents? Well, most of the rest are at home.$h#$b#But I have a very special gift to give you when we get home. I think you'll find it very, um, pleasurable...$l", //Spice config
+	
+	//Olivia
+	"UWS.Olivia.Married.Before": "Oh, @. I have one present for you before we exchange our gifts at home.$l#$b#Why? Well, as it turns out, I managed to get your name as my secret friend!$9#$b#Truly, the fortune of the Winter Star blessed us this year. Please, take your gift.$8",
+	"UWS.Olivia.Married.After": "I know it's not perhaps the level of quality you might expect, but for appearance's sake I needed to give you a gift on the level of everyone else's.#$b#Merry Winter Star, my love. It is a blessing that you came into my life, and I cannot imagine growing old with anyone else.$l",
+	"UWS.Olivia.Married.Spice.After": "Merry Winter Star, my love. It is a blessing that you came into my life, and I cannot imagine growing old with anyone else.$l#$b#Now, perhaps we should head home? We can enjoy a glass of my finest ring fruit wine, then see where the rest of the night takes us...$8", //Spice config
+	
+	//NEW IN 1.6: NEW GIFTERS!
+	
+	//Festival Dialogues
+	
+	"UWS.FestivalDialogue.Martin": "Hey, @! I wanted to try doing something interesting this year and joined the secret gift exchange.$h#$e#Mom was thrilled I wanted to socialize, so we went out shopping together for my gift.#$b#Getting something was pretty difficult, though. Plus I didn't have that much money, so...$s",
+	
+	//GIFTING DIALOGUES for the New People
+	
+	"UWS.Martin.Gifting": "Oh cool, you're my secret friend this year, @?$h#$b#Thanks for the {0}, @. Merry Winter Star!",
+	"UWS.Morgan.Gifting": "Oh, you're my secret friend, @?$5#$b#Thanks for the {0}. I'll try use it in my studies somehow.$h",
+	"UWS.Gunther.Gifting": "I'd been wondering if you were my secret gifter this year, @.$h#$b#I'll take this {0}. Thank you.",
+	
+	//Extra Wizard Dialogue (only used with Unique Winter Star active and Wizard set to active)
+	"UWS.Wizard.Dating.Gifting": "I admit, I wasn't expecting you to be my secret friend - perhaps there are things not even I can foresee.$5#$b#Thank you for your gift of {0}, @.",
+	"UWS.Wizard.Married.Gifting": "Ah, my dearest, if you are intending on giving me a gift, perhaps it should wait until we have returned -#$b#Ah, I was chosen as your secret friend this year? How fortituous. I shall treasure your {0}, @. Thank you.",
+	
+	//RECEIVING A GIFT
+	
+	//Martin
+	"UWS.Martin.Before": "Hey, @! I got your name in the Winter Star gift exchange.#$b#Sorry if my gift isn't the best - I kinda just had to figure out what a farmer might like that I had the money for.$s",
+	"UWS.Martin.After": "Ta-da! Merry Winter Star, @!$h#$b#Hopefully the present's good - I kind of lost the receipt, so I don't think I can do an exchange on them...",
+	
+	//Morgan
+	"UWS.Morgan.Before": "Hey, @? I got you as a 'secret friend' this year.$h#$b#Magnus said I wasn't allowed to give magical gifts to the others, but you're a special case! So I got you this.$7",
+	"UWS.Morgan.After": "Um, don't go holding it above your head like that, okay?#$b#I don't think Magnus meant I could give you this and have you show it off to everyone, anyway.$9#$b#Well, um, Merry Winter Star, @!$h", //The itemAboveHead thing is hilarious to think about, and I think Morgan would probably react to it.
+	
+	//Gunther
+	"UWS.Gunther.Before": "Merry Winter Star, @. It appears I am your secret friend this year.#$b#Apologies for the haphazard wrapping of the gift - I was busy helping Gus with the food preparations for the day and had little time to wrap it properly.$s#$b#I suppose it does make it easier to open, however. Enjoy your present.$h",
+	"UWS.Gunther.After": "I hope this is an adequate gift for your assistance in helping restore the Museum.#$b#May you have a wonderful year ahead, @. Merry Winter Star.",
+	
+	
+	//Dating the Wizard
+	"UWS.Wizard.Dating.Before": "It appears I have been selected as your secret friend this year, @.#$b#I initially declined to take part in the gift-giving this year, but I reconsidered in light of our current relationship. I was pleasantly surprised to receive your name.$l#$b#I believe that rare or magical items would be a suitable gift for you, so I chose accordingly.$l",
+	"UWS.Wizard.Dating.After": "May your gift be useful to you in furthering your magical studies or simply be useful for something on your farm, @.#$b#Now, I must depart - I intend on keeping Linus company while he stays in the Plaza for the Festival. Perhaps you could join us, if you have time?$l",
+	
+	//Married to the Wizard
+	"UWS.Wizard.Married.Before": "Hello, my dearest. In an unexpected turn of events, it appears I have been chosen as your secret gift giver this year.$h#$b#Keeping this particular gift a secret was quite difficult - you would detect traces of magic at our home, and my tower would be... ill-advised to keep a gift at long-term.#$b#It should still be intact, as far as I am aware. Please, enjoy your gift.$l",
+	"UWS.Wizard.Married.After": "%Magnus appears to be surreptitiously stamping out a few stray magical flames from when your gift was opened.#$b#...Forgive me, @, it appears an interaction from the illusion spell to keep it secret at my tower may have made the gift slightly... flammable.$5#$b#Merry Winter Star, my dearest. Your presence in my life is something I treasure every day.$l",
+	
+	//LANCE DIALOGUES (separate from others due to complications of adding him earlier
+	
+	"UWS.FestivalDialogue.Lance": "Your Winter Star tree is quite the sight to behold...", //Slight edit - the original uses the love portrait due to being a marriage-exclusive thing. This removes that but keeps the dialogue almost 1:1.
+	
+	"UWS.Lance.Gifting": "Ah, you are my secret friend, then?#$b#This will be useful. Thank you for the {0}, @.$5",
+	"UWS.Lance.Dating.Gifting": "Ah, you are my secret friend, then?#$b#*chuckle* I suppose it's accurate in a sense - though I don't quite think our relationship is just of friendship. Thank you for the {0}, @.$5",
+	"UWS.Lance.Married.Gifting": "*chuckle* Well, this is a surprise. I take it my love is my secret friend for the year?$5#$b#No gift you could give me could match the joy of being yours, @, but I will treasure this {0} nonetheless. Thank you.$l",
+	
+	"UWS.Lance.Before": "Hello there, @. I was invited to your Winter Star celebrations as a courtesy by Magnus Rasmodius. He was quite surprised when I decided to accept.$5#$b#I cannot stay long as Castle Village has its own celebrations, but I can stay long enough to give you your gift.",
+	"UWS.Lance.After": "Perhaps one year you will be able to visit our festival as well. I am sure you would be a welcome guest.$h#$b#Merry Winter Star, @.",
+	
+	"UWS.Lance.Dating.Before": "Hello there, darling. I was invited to participate in your Winter Star celebrations by Magnus, and drew your name as my 'secret friend'.$5#$b#Finding a gift worthy of you was a challenge, but I believe I have obtained something that expresses the depths of my affection for you.$l",
+	"UWS.Lance.Dating.After": "I will need to leave somewhat soon to attend the festivities in Castle Village, but until then I will cherish my time with you today.$l#$b#Merry Winter Star, @.$l",
+	
+	"UWS.Lance.Married.Before": "Hello, my love. It seems your Valley has a sense of humor and assigned me as your secret friend for the year.$5#$b#I had some of my fellow First Slash members safeguard this gift to prevent you from accidentally spoiling your surprise for the year. Judging from your expression, it was a success.#$b#Care to open your gift?$l",
+	"UWS.Lance.Married.After": "It is still quite unusual to be at this festival instead of my own in Castle Village. The festivities here are similar, but different enough to be noticeable.$s#$b#*chuckle* Or perhaps it is only the company. But I am glad to be with you today, nonetheless.#$b#Merry Winter Star, @.$l", //These will be used normally, since Lance normally attends when married.
+	"UWS.Lance.Married.After.Spice": "I hope you enjoy your present, @. Of course, that is but the first of the gifts I can give you today.$5#$b#I have many trinkets from my adventuring that may interest you, but perhaps you'd prefer to unwrap something else instead...$l",
+	
+	//New in 2.1: Scarlett Dating/Married Dialogues. Her dialogues are all moved down here for simplicity.
+	
+	//Gifting a Gift
+
+	"UWS.Scarlett.Gifting": "Whoa, you're my secret gifter this year, @?$6#$b#Well, guess I lucked out! Thanks for the {0}, @.$h",
+	"UWS.Scarlett.Dating.Gifting": "Hey there, that's not a gift for little ol' me, is it?$h#$b#Oh, you're my secret gift giver, huh? Well, I won't say no to a gift from you. Thanks for the {0}, @.",
+	"UWS.Scarlett.Married.Gifting": "Trying to give me my present a little early, huh, @?#$b#Wait, what? You're my secret gift-giver??$6#$b#Well, an extra gift from you just makes this Winter Star extra special. Thanks for the {0}, @.$l",
+	
+	//Receiving a Gift
+	"UWS.Scarlett.Before": "Hey, @! I'm headed out soon, but wanted to make sure I gave you your gift before I left.#$b#Yeah, I'm your secret friend this year! You can thank Sophia for having me join the exchange. Go on, open it!$h",
+	"UWS.Scarlett.After": "Hmm? Oh, I was just thinking about how this is different than what we have back in Pondwood. It's a lot more crowded here!#$b#Well, I better get going so I can make it to my family Star celebration. Merry Winter Star, @!$h",
+	
+	"UWS.Scarlett.Dating.Before": "Hey there! Guess who's your gift giver this year!#$b#No, really! I'm not just saying this as your girlfriend, @ - I think my eyes just about popped out of my head seein' your name in my mailbox as my secret friend!$h#$b#Well, go on - open it already!$h",
+	"UWS.Scarlett.Dating.After": "Normally I'd be pumped to go home for our Pondwood Winter Star celebration, but I'm actually not wanting to go back yet.#$b#Hey, @... want to walk me home after you're done here? I wouldn't mind if you kept me company for a little while longer...$l",
+	
+	"UWS.Scarlett.Married.Before": "So you'll never believe who got your name in the Winter Star exchange this year, @. I think my eyes just about popped out of my head seein' your name in our mailbox!$h#$b#Had to keep your gift hidden with my dads to make sure you wouldn't find out. They dropped it off this morning after you left.$h#$b#Well, anyway - I hope you like your gift.$l",
+	"UWS.Scarlett.Married.After": "Hope you like it, @. And if not, we can just go lookin' for something else soon, alright?$5#$b#Hey, after this, mind coming with with me to visit my dads? I gotta thank them for keeping the gift hidden - we could have a family Winter Star celebration!#$b#Oh, and merry Winter Star, @. I'm really happy to be with someone like you.$l",
+	
+	"UWS.Scarlett.Married.Spice.After": "Hope you like it, @. And if not, we can just go lookin' for something else soon, alright?#$b#Ugh, this cold's making my muscles all stiff. Let's get home soon, alright?$5#$b#I think there's backrubs with our names on them... and maybe more, if you play your cards right...$l", //Spice config
+	
+	//Cut Dialogues (SVE now has their own of these, so I've cut these for simplicity. If needed, add them back.
+	
+	"UWS.FestivalDialogue.Scarlett": "Hey there, @! I'm spending some time with Sophia before heading back to my own Winter Star celebrations.$h#$e#She convinced me to join your secret gift exchange, too. I told her I'd join if she spent some time with me in Pondwood today, so we've got a pretty busy schedule today!",
+	"UWS.FestivalDialogue.Scarlett.SophiaMarried": "Hey there, @! I'm spending some time with Sophia before heading back to my own Winter Star celebrations.$h#$e#We're headed to Pondwood afterwards for my family Star get-together, if you want to join us. You two are welcome anytime!",
+	
+}

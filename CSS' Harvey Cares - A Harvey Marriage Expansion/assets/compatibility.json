@@ -1,0 +1,44 @@
+{
+  "Changes": [
+      {
+        "Log Name": "Plus Alive Harvey Dialogue Compatibility",
+        "Action": "EditData",
+        "Priority": "Late",
+        "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+        "Entries": {
+            "Good_1": "{{i18n:CSS.HC.Good_1{{GenderNeutral}} |TermOfEndearment= {{TermOfEndearmentToken}}}}",
+            "winter_28": "{{i18n:CSS.HC.winter_28}}"
+        },
+      "When": {
+        "Query: '{{PlusAliveHarvey}}' = 'false' OR ('{{PlusAliveHarvey}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= Azurysu.PlusAliveHarvey": true
+      }
+    },
+      {
+       "Log Name": "Shy Harvey Dialogue Compatibility",
+        "Action": "EditData",
+        "Priority": "Late",
+        "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+        "Entries": {
+            "spring_3": "{{i18n:CSS.HC.spring_3}}",
+            "summer_28": "{{i18n:CSS.HC.summer_28}}",
+            "fall_16": "{{i18n:CSS.HC.fall_16{{GenderNeutral}} |TermOfEndearment= {{TermOfEndearmentToken}}}}",
+            "fall_27": "{{i18n:CSS.HC.fall_27{{GenderNeutral}} |TermOfEndearment= {{TermOfEndearmentToken}}}}",
+            "winter_14": "{{i18n:CSS.HC.winter_14}}",
+            "winter_28": "{{i18n:CSS.HC.winter_28}}",
+
+            "Rainy_Night_0": "{{i18n:CSS.HC.Rainy_Night_0}}",
+            "Indoor_Night_1": "{{i18n:CSS.HC.Indoor_Night_1}}",
+            
+            "OneKid_3": "{{i18n:CSS.HC.OneKid_3}}",
+            "TwoKids_1": "{{i18n:CSS.HC.TwoKids_1}}",
+            "Good_0": "{{i18n:CSS.HC.Good_0{{GenderNeutral}} |TermOfEndearment= {{TermOfEndearmentToken}}}}",
+            "Good_4": "{{i18n:CSS.HC.Good_4}}"
+             },
+     "When": {
+        "Query: '{{ShyHarvey}}' = 'false' OR ('{{ShyHarvey}}' = 'random' AND '{{Random: true, false}}' = 'true')": true,
+        "HasMod |contains= Wink_Wonk_Wank_Wenk.ShyHarvey": true
+      }
+      }
+  ]
+}

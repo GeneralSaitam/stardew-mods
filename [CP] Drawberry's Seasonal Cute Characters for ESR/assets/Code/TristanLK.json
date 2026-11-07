@@ -1,0 +1,170 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load TristanLK's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/TristanLK_{{PortraitStyle}}_Bathrobe, Portraits/TristanLK_{{PortraitStyle}}_Beach, Portraits/TristanLK_{{PortraitStyle}}_Date, Portraits/TristanLK_{{PortraitStyle}}_EggF, Portraits/TristanLK_{{PortraitStyle}}_Fair, Portraits/TristanLK_{{PortraitStyle}}_Fall, Portraits/TristanLK_{{PortraitStyle}}_FlowerDance, Portraits/TristanLK_{{PortraitStyle}}_Ice, Portraits/TristanLK_{{PortraitStyle}}_Jellies, Portraits/TristanLK_{{PortraitStyle}}_Luau, Portraits/TristanLK_{{PortraitStyle}}_SpiritsEve, Portraits/TristanLK_{{PortraitStyle}}_Spring, Portraits/TristanLK_{{PortraitStyle}}_Summer, Portraits/TristanLK_{{PortraitStyle}}_Winter, Portraits/TristanLK_{{PortraitStyle}}_WinterStar, Characters/TristanLK_Beach, Characters/TristanLK_Date, Characters/TristanLK_EggF, Characters/TristanLK_Fair, Characters/TristanLK_Fall, Characters/TristanLK_FlowerDance, Characters/TristanLK_Ice, Characters/TristanLK_Jellies, Characters/TristanLK_Luau, Characters/TristanLK_SpiritsEve, Characters/TristanLK_Spring, Characters/TristanLK_Summer, Characters/TristanLK_Winter, Characters/TristanLK_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/TristanLK/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "TristanLK - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/TristanLK_Beach, Characters/TristanLK_Date, Characters/TristanLK_EggF, Characters/TristanLK_Fair, Characters/TristanLK_Fall, Characters/TristanLK_FlowerDance, Characters/TristanLK_Ice, Characters/TristanLK_Jellies, Characters/TristanLK_Luau, Characters/TristanLK_SpiritsEve, Characters/TristanLK_Spring, Characters/TristanLK_Summer, Characters/TristanLK_Winter, Characters/TristanLK_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/TristanLK/TristanLK_nose.png",
+			"PatchMode": "Overlay",
+            "Priority": "Late",
+			"When": 
+            {
+				"NoNose": "false",
+			},
+		},
+		//APPEARANCE DATA 
+		{
+			"LogName": "TristanLK Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"TristanLK",
+				"Appearance"
+			],
+			"Entries": {
+				//Regular Outfits
+				"{{ModId}}.TristanLKSpring": {
+					"Id": "{{ModId}}.TristanLKSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/TristanLK_Spring",
+					"Portrait": "Portraits/TristanLK_{{PortraitStyle}}_Spring",
+					"Precedence": -200,
+				},
+				"{{ModId}}.TristanLKSummer": {
+					"Id": "{{ModId}}.TristanLKSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/TristanLK_Summer",
+					"Portrait": "Portraits/TristanLK_{{PortraitStyle}}_Summer",
+					"Precedence": -200,
+				},
+				"{{ModId}}.TristanLKFall": {
+					"Id": "{{ModId}}.TristanLKFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/TristanLK_Fall",
+					"Portrait": "Portraits/TristanLK_{{PortraitStyle}}_Fall",
+					"Precedence": -200,
+				},
+				"{{ModId}}.TristanLKWinter": {
+					"Id": "{{ModId}}.TristanLKWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/TristanLK_Winter",
+					"Portrait": "Portraits/TristanLK_{{PortraitStyle}}_Winter",
+					"Precedence": -200,
+                },
+					// Festivals
+                    
+                "{{ModId}}.DBTristanLKEggFest": {
+                "Id": "{{ModId}}.DBTristanLKEggFest",
+                "Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+                "Sprite": "Characters/TristanLK_EggF",
+                "Portrait": "Portraits/TristanLK_{{PortraitStyle}}_EggF",
+                "Precedence": -2000,
+            },
+            
+            "{{ModId}}.DBTristanLKFlowerDance": {
+                "Id": "{{ModId}}.DBTristanLKFlowerDance",
+                "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                "Sprite": "Characters/TristanLK_FlowerDance",
+                "Portrait": "Portraits/TristanLK_{{PortraitStyle}}_FlowerDance",
+                "Precedence": -2000,
+            },
+                
+            "{{ModId}}.DBTristanLKLuau": {
+                "Id": "{{ModId}}.DBTristanLKLuau",
+                "Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+                "Sprite": "Characters/TristanLK_Luau",
+                "Portrait": "Portraits/TristanLK_{{PortraitStyle}}_Luau",
+                "Precedence": -2000,
+            },
+            
+            "{{ModId}}.DBTristanLKJellies": {
+                "Id": "{{ModId}}.DBTristanLKJellies",
+                "Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+                "Sprite": "Characters/TristanLK_Jellies",
+                "Portrait": "Portraits/TristanLK_{{PortraitStyle}}_Jellies",
+                "Precedence": -2000,
+            },
+                
+            "{{ModId}}.DBTristanLKFair": {
+                "Id": "{{ModId}}.DBTristanLKFair",
+                "Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+                "Sprite": "Characters/TristanLK_Fair",
+                "Portrait": "Portraits/TristanLK_{{PortraitStyle}}_Fair",
+                "Precedence": -2000,
+            },
+            
+            "{{ModId}}.DBTristanLKSpirit": {
+                "Id": "{{ModId}}.DBTristanLKSpirit",
+                "Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn EastScarp_VillageInn_SpiritEve EastScarp_Crossing {{FestivalOutfits}}\"",
+                "Sprite": "Characters/TristanLK_SpiritsEve",
+                "Portrait": "Portraits/TristanLK_{{PortraitStyle}}_SpiritsEve",
+                "Precedence": -2000,
+            },
+                
+            "{{ModId}}.DBTristanLKIceFestival": {
+                "Id": "{{ModId}}.DBTristanLKIceFestival",
+                "Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+                "Sprite": "Characters/TristanLK_Ice",
+                "Portrait": "Portraits/TristanLK_{{PortraitStyle}}_Ice",
+                "Precedence": -2000,
+            },
+            
+            "{{ModId}}.DBTristanLKWinterStar": {
+                "Id": "{{ModId}}.DBTristanLKWinterStar",
+                "Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+                "Sprite": "Characters/TristanLK_WinterStar",
+                "Portrait": "Portraits/TristanLK_{{PortraitStyle}}_WinterStar",
+                "Precedence": -2000,
+            },
+            
+                //Beach
+            
+            "{{ModId}}.DBTristanLKBeach": {
+                "Id": "{{ModId}}.DBTristanLKBeach",
+                "Sprite": "Characters/TristanLK_Beach",
+                "Portrait": "Portraits/TristanLK_{{PortraitStyle}}_Beach",
+                "IsIslandAttire": true, 
+                "Precedence": -10000,
+            },
+                // Special
+            
+            "{{ModId}}.DBTristanLKDate": {
+                "Id": "{{ModId}}.DBTristanLKDate",
+                "Condition": "PLAYER_NPC_RELATIONSHIP Current TristanLK Dating Engaged Married, PLAYER_FRIENDSHIP_POINTS Current TristanLK 2500, !LOCATION_SEASON Here winter, PLAYER_HAS_SEEN_EVENT Current 5295000",
+                "Sprite": "Characters/TristanLK_Date",
+                "Portrait": "Portraits/TristanLK_{{PortraitStyle}}_Date",
+                "Precedence": -2000,
+            },
+        },
+    },
+    //MISCELLANEOUS
+    {
+        "LogName": "DBTristanLK - Spouse Picture",
+        "Action": "EditImage",
+        "Target": "Mods/Lemurkat.EastScarp/esfurniture", 
+        "FromFile": "assets/Characters/esfurniture.png",
+        "FromArea": {"X": 39, "Y": 103, "Width": 18, "Height": 18},
+        "ToArea": {"X": 39, "Y": 103, "Width": 18, "Height": 18},
+        "When": 
+        {
+            "HasFile:{{FromFile}}": true,
+        },
+    },
+    {
+        "LogName": "DBTristanLK Calendar Sprite Edits",
+        "Action": "EditImage",
+        "Target": "Characters/TristanLK",
+        "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+    },			
+]
+}

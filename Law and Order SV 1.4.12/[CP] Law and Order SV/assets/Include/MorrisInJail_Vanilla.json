@@ -1,0 +1,327 @@
+{
+    "Changes": [
+
+        {
+            //update the character schedule
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{LOMorris}}",
+            "Entries": {
+                "spring": "610 sdvhead.LawAndOrderSV_Jail 18 5 1 {{LOMorris}}_snooze \"Strings\\schedules\\{{LOMorris}}:{{LOMorris}}_snooze\"/630 sdvhead.LawAndOrderSV_Jail 13 6 2 square_5_3/2200 sdvhead.LawAndOrderSV_Jail 18 5 1 sdvhead.lawandordersv_morris_sleep",
+                "summer": "GOTO spring",
+                "fall": "GOTO spring",
+                "winter": "GOTO spring",
+                "rain": "GOTO spring",
+                "GreenRain": "GOTO spring",
+                "SquidFest": "GOTO spring",
+                "DesertFestival": "GOTO spring",
+                "spring_25": "GOTO spring",
+                "bus": "GOTO spring",
+            },
+        },
+        {
+            //remove Morris from jojamart
+            "Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "FromFile": "assets/Locations/JojaPatch.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 23,
+                "Width": 1,
+                "Height": 3
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "{{LOMorris}}_snooze": "8/8/8//laying_down/offset -16 20",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/{{LOMorris}}",
+            "Entries": {
+                "{{LOMorris}}_snooze": "{{i18n: morris_snooze}}",
+            }
+        },
+        {
+            //Dialogue, conversation topic changes
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{LOMorris}}",
+            "Entries": {
+                "GreenRain": "{{i18n:MorrisJail_GreenRain}}",
+                "GreenRainFinished": "{{i18n:MorrisJail_GreenRainFinished}}",
+                "Mon": "{{i18n:MorrisJail_Mon}}",
+                "Tue": "{{i18n:MorrisJail_Tue}}",
+                "Wed": "{{i18n:MorrisJail_Wed}}",
+                "Thu": "{{i18n:MorrisJail_Thu}}",
+                "Fri": "{{i18n:MorrisJail_Fri}}",
+                "Sat": "{{i18n:MorrisJail_Sat}}",
+                "Sun": "{{i18n:MorrisJail_Sun}}",
+                "summer_Mon": "{{i18n:MorrisJail_summer_Tue}}",
+                "summer_Tue": "{{i18n:MorrisJail_summer_Tue}}",
+                "summer_Wed": "{{i18n:MorrisJail_summer_Wed}}",
+                "summer_Thu": "{{i18n:MorrisJail_summer_Thu}}",
+                "summer_Fri": "{{i18n:MorrisJail_summer_Fri}}",
+                "summer_Sat": "{{i18n:MorrisJail_summer_Sat}}",
+                "summer_Sun": "{{i18n:MorrisJail_summer_Sat}}",
+                "fall_Mon": "{{i18n:MorrisJail_summer_Tue}}",
+                "fall_Tue": "{{i18n:MorrisJail_fall_Tue}}",
+                "fall_Wed": "{{i18n:MorrisJail_fall_Wed}}",
+                "fall_Thu": "{{i18n:MorrisJail_fall_Thu}}",
+                "fall_Fri": "{{i18n:MorrisJail_fall_Fri}}",
+                "fall_Sat": "{{i18n:MorrisJail_fall_Sat}}",
+                "fall_Sun": "{{i18n:MorrisJail_fall_Sun}}",
+                "winter_Mon": "{{i18n:MorrisJail_winter_Mon}}",
+                "winter_Tue": "{{i18n:MorrisJail_winter_Tue}}",
+                "winter_Wed": "{{i18n:MorrisJail_winter_Wed}}",
+                "winter_Thu": "{{i18n:MorrisJail_winter_Thu}}",
+                "winter_Fri": "{{i18n:MorrisJail_winter_Fri}}",
+                "winter_Sat": "{{i18n:MorrisJail_winter_Sat}}",
+                "winter_Sun": "{{i18n:MorrisJail_winter_Sun}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "{{LOMorris}}": "{{i18n:MorrisJail_rain}}",
+            },
+        },
+
+        {
+            //edit the warp room to send to jail
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_WarpRoom_Morris",
+            "MapProperties": {
+                "Warp": "4 5 sdvhead.LawAndOrderSV_Jail 18 5",
+            },
+        },
+
+        /*
+
+        {
+            //ensure character can't visit the island
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Morris": {
+                    "CanVisitIsland": "False"
+                }
+            }
+        },
+
+        //edit Joja Mart (not SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "FromFile": "assets/Locations/JojaPatch.tmx",
+            "ToArea": {
+                "X": 21,
+                "Y": 23,
+                "Width": 1,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            },
+            "Update": "OnLocationChange"
+        },
+        //load the character schedule in case it isn't present
+        {
+            "Action": "Load",
+            "Target": "Characters/schedules/Morris",
+            "FromFile": "assets/NPCs/Data/blank.json",
+            "Priority":"Low",
+        },
+        {
+            //set home to the warp room
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Morris": {
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_WarpRoom_Morris",
+                            "Tile": {
+                                "X": 4,
+                                "Y": 7
+                            },
+                            "Direction": "left"
+                        }
+                    ],
+                }
+            },
+        },
+        {
+            //update the character schedule
+            "Action": "EditData",
+            "Target": "Characters/schedules/Morris",
+            "Entries": {
+                "spring": "610 sdvhead.LawAndOrderSV_Jail 18 5 1 {{ModId}}_morris_snooze \"Strings\\schedules\\Morris:{{ModId}}_morris_snooze\"/820 sdvhead.LawAndOrderSV_Jail 13 6 2 square_5_3/2200 sdvhead.LawAndOrderSV_Jail 18 5 1 morris_sleep",
+                "summer": "GOTO spring",
+                "fall": "GOTO spring",
+                "winter": "GOTO spring",
+                "rain": "GOTO spring",
+                "GreenRain": "GOTO spring",
+                "SquidFest": "GOTO spring",
+                "DesertFestival": "GOTO spring",
+                "spring_25": "GOTO spring",
+                "bus": "GOTO spring",
+                "JojaMart_Replacement": "GOTO spring",
+            },
+        },
+        {
+            //entries for SVE
+            "Action": "EditData",
+            "Target": "Characters/schedules/Morris",
+            "Entries": {
+                "22": "GOTO spring",
+                "FlashShifter.StardewValleyExpandedCP_CommunityDay": "GOTO spring",
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+
+
+        */
+        /*
+        {
+            //Dialogue, conversation topic changes
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Morris",
+            "Entries": {
+                "married_Penny": "{{i18n:MorrisJail_married_Penny}}",
+                "GreenRain": "{{i18n:MorrisJail_GreenRain}}",
+                "GreenRainFinished": "{{i18n:MorrisJail_GreenRainFinished}}",
+                "divorced_Penny": "{{i18n:MorrisJail_divorced_Penny}}",
+                "wonIceFishing": "{{i18n:MorrisJail_wonIceFishing}}",
+                "pamHouseUpgrade": "{{i18n:MorrisJail_pamHouseUpgrade}}",
+                "pamHouseUpgrade_memory_oneweek": "{{i18n:MorrisJail_pamHouseUpgrade_memory_oneweek}}",
+                "pamHouseUpgradeAnonymous": "{{i18n:MorrisJail_pamHouseUpgradeAnonymous}}",
+                "MovieInvitation": "{{i18n:MorrisJail_MovieInvitation}}",
+                "cc_Bus": "{{i18n:MorrisJail_cc_Bus}}",
+                "Mon": "{{i18n:MorrisJail_Mon}}",
+                "Tue": "{{i18n:MorrisJail_Tue}}",
+                "Tue2": "{{i18n:MorrisJail_Tue2}}",
+                "Wed": "{{i18n:MorrisJail_Wed}}",
+                "Thu": "{{i18n:MorrisJail_Thu}}",
+                "Thu4": "{{i18n:MorrisJail_Thu4}}",
+                "Thu4_inlaw_Penny": "{{i18n:MorrisJail_Thu4_inlaw_Penny}}",
+                "Fri2": "{{i18n:MorrisJail_Fri2}}",
+                "Fri": "{{i18n:MorrisJail_Fri}}",
+                "Sat": "{{i18n:MorrisJail_Sat}}",
+                "Sat4": "{{i18n:MorrisJail_Sat4}}",
+                "Sun": "{{i18n:MorrisJail_Sun}}",
+                "summer_Tue": "{{i18n:MorrisJail_summer_Tue}}",
+                "summer_Tue2": "{{i18n:MorrisJail_summer_Tue2}}",
+                "summer_Wed": "{{i18n:MorrisJail_summer_Wed}}",
+                "summer_Wed4": "{{i18n:MorrisJail_summer_Wed4}}",
+                "summer_Thu": "{{i18n:MorrisJail_summer_Thu}}",
+                "summer_Thu4": "{{i18n:MorrisJail_summer_Thu4}}",
+                "summer_Fri": "{{i18n:MorrisJail_summer_Fri}}",
+                "summer_Sat2": "{{i18n:MorrisJail_summer_Sat2}}",
+                "summer_Sat": "{{i18n:MorrisJail_summer_Sat}}",
+                "fall_Tue": "{{i18n:MorrisJail_fall_Tue}}",
+                "fall_Tue4": "{{i18n:MorrisJail_fall_Tue4}}",
+                "fall_Wed": "{{i18n:MorrisJail_fall_Wed}}",
+                "fall_Thu": "{{i18n:MorrisJail_fall_Thu}}",
+                "fall_Fri": "{{i18n:MorrisJail_fall_Fri}}",
+                "fall_Sat": "{{i18n:MorrisJail_fall_Sat}}",
+                "fall_Sun": "{{i18n:MorrisJail_fall_Sun}}",
+                "fall_Sun4": "{{i18n:MorrisJail_fall_Sun4}}",
+                "winter_Mon": "{{i18n:MorrisJail_winter_Mon}}",
+                "winter_Tue4": "{{i18n:MorrisJail_winter_Tue4}}",
+                "winter_Tue4_inlaw_Penny": "{{i18n:MorrisJail_winter_Tue4_inlaw_Penny}}",
+                "winter_Wed": "{{i18n:MorrisJail_winter_Wed}}",
+                "winter_Thu": "{{i18n:MorrisJail_winter_Thu}}",
+                "winter_Fri": "{{i18n:MorrisJail_winter_Fri}}",
+                "winter_Sat": "{{i18n:MorrisJail_winter_Sat}}",
+                "winter_Sun": "{{i18n:MorrisJail_winter_Sun}}",
+                "museumCompleted": "{{i18n:MorrisJail_museumCompleted}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "Morris": "{{i18n:MorrisJail_rain}}",
+            },
+        },
+*/
+
+        /*
+        //festivals
+        { //egg hunt
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_spring13}}",
+                "Leah": "{{i18n:festivals_pam_leah_spring13}}",
+            },
+        },
+        { //flower dance
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_spring24}}",
+                "Pam_y2": "{{i18n:festivals_pam_spring24_y2}}",
+                "{{Russell}}_y2": "{{i18n:festivals_pam_russell_spring24_y2}}",
+            },
+        },
+        { //luau
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_summer11}}",
+                "Pam_y2": "{{i18n:festivals_pam_summer11_y2}}",
+            },
+        },
+        { //jellies
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_summer28}}",
+                "Pam_y2": "{{i18n:festivals_pam_summer28_y2}}",
+            },
+        },
+        { //fair
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_fall16}}",
+                "Pam_y2": "{{i18n:festivals_pam_fall16_y2}}",
+            },
+        },
+        { //spirits eve
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_fall27}}",
+                "Pam_y2": "{{i18n:festivals_pam_fall27_y2}}",
+            },
+        },
+        { //festival of ice
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_winter8}}",
+                "Pam_y2": "{{i18n:festivals_pam_winter8_y2}}",
+            },
+        },
+        { //winter star
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_winter25}}",
+                "Pam_y2": "{{i18n:festivals_pam_winter25_y2}}",
+            },
+        },
+
+        */
+        
+    ]
+}

@@ -1,0 +1,114 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Eloise's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Eloise_Spring, Portraits/Eloise_Summer, Portraits/Eloise_Fall, Portraits/Eloise_Winter_Outdoor, Portraits/Eloise_Winter_Indoor, Portraits/Eloise_FlowerDance, Portraits/Eloise_SpiritsEve, Portraits/Eloise_Beach, Characters/Eloise_Spring, Characters/Eloise_Summer, Characters/Eloise_Fall, Characters/Eloise_Winter_Outdoor, Characters/Eloise_Winter_Indoor, Characters/Eloise_FlowerDance, Characters/Eloise_SpiritsEve, Characters/Eloise_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Eloise/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Eloise - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Eloise_Spring, Characters/Eloise_Summer, Characters/Eloise_Fall, Characters/Eloise_Winter_Outdoor, Characters/Eloise_Winter_Indoor, Characters/Eloise_FlowerDance, Characters/Eloise_SpiritsEve, Characters/Eloise_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Eloise/Eloise_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Eloise Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": ["Eloise", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.EloiseSpring": {
+					"Id": "{{ModId}}.EloiseSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Eloise_Spring",
+					"Portrait": "Portraits/Eloise_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.EloiseSummer": {
+					"Id": "{{ModId}}.EloiseSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Eloise_Summer",
+					"Portrait": "Portraits/Eloise_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.EloiseFall": {
+					"Id": "{{ModId}}.EloiseFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Eloise_Fall",
+					"Portrait": "Portraits/Eloise_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.EloiseWinterIndoor": {
+					"Id": "{{ModId}}.EloiseWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Eloise_Winter_Indoor",
+					"Portrait": "Portraits/Eloise_Winter_Indoor",
+					"Outdoors": false,
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.EloiseWinterOutdoor": {
+					"Id": "{{ModId}}.EloiseWinterOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Eloise_Winter_Outdoor",
+					"Portrait": "Portraits/Eloise_Winter_Outdoor",
+					"Indoors": false,
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.EloiseFlowerDance": {
+					"Id": "{{ModId}}.EloiseFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Eloise_FlowerDance",
+					"Portrait": "Portraits/Eloise_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.EloiseSpirit": {
+					"Id": "{{ModId}}.EloiseSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Eloise_SpiritsEve",
+					"Portrait": "Portraits/Eloise_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.EloiseBeach": {
+					"Id": "{{ModId}}.EloiseBeach",
+					"Sprite": "Characters/Eloise_Beach",
+					"Portrait": "Portraits/Eloise_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},	{
+            "LogName": "Eloise Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Eloise",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+        },	
+	]
+}

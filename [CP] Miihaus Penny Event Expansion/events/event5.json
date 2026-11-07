@@ -1,0 +1,167 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                    "16279005/F/n PennysPicnic/t 1400 1920/k 162790051/G !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !SEASON_DAY summer 17 summer 18 summer 19/w sunny/A pennyGone/e 16279004":"50s/
+                    -1000 -1000/
+                    farmer 75 40 2 Penny 70 45 2/
+                    skippable/
+                    specificTemporarySprite pennyFieldTrip/
+                    viewport 71 45 true/
+                    move farmer 0 5 3/
+                    faceDirection Penny 1/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.001}}\"/
+                    move farmer -4 0 3/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.002}}\"/
+                    emote farmer 8/
+                    quickQuestion {{i18n:Miihau.PennyEE.event5.002X}}(break)pause 100\\speak Penny \"{{i18n:Miihau.PennyEE.event5.003}}\"(break)friendship Penny 10\\pause 100\\speak Penny \"{{i18n:Miihau.PennyEE.event5.004}}\" /
+                    pause 250/
+                    showFrame Penny 28/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.005}}\"/
+                    pause 500/
+                    faceDirection farmer 2/
+                    farmerEat 606/
+                    showFrame Penny 4/
+                    pause 2500/
+                    stopAnimation farmer/
+                    pause 50/
+                    faceDirection farmer 3/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.006}}\"/
+                    quickQuestion {{i18n:Miihau.PennyEE.event5.006X}}(break)friendship Penny 20\\emote Penny 32\\speak Penny \"{{i18n:Miihau.PennyEE.event5.007}}\"(break)friendship Penny -10\\speak Penny \"{{i18n:Miihau.PennyEE.event5.008}}\"(break)friendship Penny -20\\pause 150\\speak Penny \"{{i18n:Miihau.PennyEE.event5.009}}\" /
+                    emote farmer 32/
+                    textAboveHead Penny \"{{i18n:Miihau.PennyEE.event5.010}}\"/
+                    pause 400/
+                    globalFade/
+                    viewport -1000 -1000/
+                    warp Penny 71 50/
+                    warp farmer 72 50/
+                    positionOffset Penny 0 56/
+                    showFrame Penny 34/
+                    positionOffset farmer 0 90/
+                    faceDirection farmer 2/
+                    showFrame farmer 107/
+                    pause 200/
+                    message \"{{i18n:Miihau.PennyEE.event5.011}}\"/
+                    globalFadeToClear .005 true/
+                    viewport 71 52/
+                    pause 150/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.012}}\"/
+                    emote farmer 32/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.013}}\"/
+                    stopMusic/
+                    message \"{{i18n:Miihau.PennyEE.event5.014}}\"/
+                    question fork1 \"{{i18n:Miihau.PennyEE.event5.015}}\" /
+                    playMusic desolate/
+                    fork pleaseDontCry/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.016}}\"/
+                    pause 800/
+                    fork goodPicnicEnding/
+                    end",
+                    "pleaseDontCry":"pause 100/
+                    friendship Penny -100/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.017}}\"/
+                    emote farmer 28/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.018}}\"/
+                    pause 100/
+                    viewport move 1 0 6000/
+                    globalFade 0.005/
+                    viewport -1000 -1000/
+                    message \"{{i18n:Miihau.PennyEE.event5.019}}\"/
+                    end dialogue Penny \"{{i18n:Miihau.PennyEE.event5.020}}\"",
+                    "162790051/F/n PennysPicnic/t 1930 2400/k 16279005/G !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !SEASON_DAY summer 17 summer 18 summer 19/w sunny/A pennyGone":"shaneTheme/
+                    -1000 -1000/
+                    farmer 74 40 2 Penny 71 50 2/
+                    skippable/
+                    addLantern 735 70 49 1/
+                    specificTemporarySprite pennyFieldTrip 71 45/
+                    viewport 71 51 true/
+                    move farmer 0 7 2/
+                    showFrame farmer 94/
+                    jump farmer 5/
+                    faceDirection farmer 2/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.021}}\"/
+                    showFrame Penny 23/
+                    emote Penny 28/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.022}}\"/
+                    pause 600/
+                    positionOffset Penny 0 56/
+                    jump Penny 5/
+                    showFrame Penny 34/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.023}}\"/
+                    pause 1000/
+                    question fork0 \"{{i18n:Miihau.PennyEE.event5.024}}\"/
+                    fork leavePennyAtPicnic/
+                    move farmer 0 3 3/
+                    move farmer -2 0 2/
+                    emote farmer 60/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.025}}\"/
+                    question fork1 \"{{i18n:Miihau.PennyEE.event5.026}}\"/
+                    fork rudeAwnserAtPicnic/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.027}}\"/
+                    pause 300/
+                    emote farmer 28/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.028}}\"/
+                    pause 600/
+                    faceDirection farmer 2/
+                    showFrame farmer 107/
+                    jump farmer 5/
+                    positionOffset farmer 0 84/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.029}}\"/
+                    pause 800/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.030}}\"/
+                    pause 800/
+                    fork goodPicnicEnding/
+                    end",
+                    "leavePennyAtPicnic":"friendship Penny -350/
+                    emote farmer 60/
+                    advancedMove farmer false 0 -6/
+                    globalFade 0.005/
+                    viewport -1000 -1000/
+                    pause 1000/
+                    end dialogue Penny \"{{i18n:Miihau.PennyEE.event5.031}}\"",
+                    "rudeAwnserAtPicnic":"friendship Penny -1000/
+                    showFrame Penny 4/
+                    positionOffset Penny 0 -56/
+                    jump Penny 5/
+                    shake Penny 190000/
+                    faceDirection farmer 3/
+                    faceDirection Penny 1/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.032}}\"/
+                    move Penny -1 0 3/
+                    pause 700/
+                    move Penny 1 0 1/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.033}}\"/
+                    emote farmer 28 true/
+                    move Penny -1 0 3/
+                    pause 150/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.034}}\"/
+                    pause 300/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.035}}\"/
+                    emote farmer 60/
+                    advancedMove farmer false 0 -2 1 0 0 -7/
+                    pause 200/
+                    move Penny 1 0 2/
+                    showFrame Penny 23/
+                    emote Penny 28 true/
+                    globalFade 0.003/
+                    viewport -1000 -1000/
+                    pause 1000/
+                    end dialogue Penny \"{{i18n:Miihau.PennyEE.event5.036}}\"/",
+                    "goodPicnicEnding":"speak Penny \"{{i18n:Miihau.PennyEE.event5.037}}\"/
+                    pause 800/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.038}}\"/
+                    pause 800/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event5.039}}\"/
+                    pause 300/
+                    quickQuestion {{i18n:Miihau.PennyEE.event5.039X}}(break)friendship Penny 20\\emote Penny 32\\speak Penny \"{{i18n:Miihau.PennyEE.event5.040}}\"\\pause 1500\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250(break)friendship Penny -30\\emote Penny 40\\speak Penny \"{{i18n:Miihau.PennyEE.event5.041}}\"(break)emote Penny 32\\speak Penny \"{{i18n:Miihau.PennyEE.event5.042}}\"\\pause 1500\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250 /
+                    viewport move 1 0 6000/
+                    globalFade 0.005/
+                    viewport -1000 -1000/
+                    message \"{{i18n:Miihau.PennyEE.event5.043}}\"/
+                    end dialogue Penny \"{{i18n:Miihau.PennyEE.event5.044}}\"",
+                }
+        },
+    ]
+}

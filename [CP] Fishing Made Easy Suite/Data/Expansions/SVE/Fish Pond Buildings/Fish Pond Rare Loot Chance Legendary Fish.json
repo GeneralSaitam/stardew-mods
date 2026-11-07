@@ -1,0 +1,238 @@
+{
+  "Changes": [
+    {
+      "LogName": "SVE - Fish Pond Rare Loot Chance Legendary Fish",
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.1,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.04,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.2,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Fungus_Seed",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.3,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.36,
+              "ItemId": "(O)749",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 1.0,
+              "ItemId": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "FlashShifter.StardewValleyExpandedCP_Turretfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.1,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.04,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Gold_Carrot_Seed",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.2,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Void_Soul",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.5,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Void_Pebble",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        }
+      },
+      "When": {
+        "Fish Pond Legendary Fish (REQ)": true,
+        "Legendary Fish Pond Loot": "Rare Loot Chance 1.5X, Rare Loot Chance 2X, Rare Loot Chance 2.5X, Rare Loot Chance 3X, Rare Loot Chance 3.5X, Rare Loot Chance 4X, Rare Loot Chance 4.5X, Rare Loot Chance 5X"
+      }
+    },
+    {
+      "LogName": "SVE - Fish Pond Rare Loot Chance Legendary Fish All 1 to 50%",
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.1,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.04,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.2,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Fungus_Seed",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.3,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.36,
+              "ItemId": "(O)749",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 1.0,
+              "ItemId": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "FlashShifter.StardewValleyExpandedCP_Turretfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.1,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.04,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{RareLootChance}}",
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Gold_Carrot_Seed",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.2,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Void_Soul",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.5,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Void_Pebble",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        }
+      },
+      "When": {
+        "Fish Pond Legendary Fish (REQ)": true,
+        "Legendary Fish Pond Loot": "All Rare Loot 1% Chance, All Rare Loot 2% Chance, All Rare Loot 3% Chance, All Rare Loot 4% Chance, All Rare Loot 5% Chance, All Rare Loot 6% Chance, All Rare Loot 7% Chance, All Rare Loot 8% Chance, All Rare Loot 9% Chance, All Rare Loot 10% Chance, All Rare Loot 15% Chance, All Rare Loot 20% Chance, All Rare Loot 25% Chance, All Rare Loot 30% Chance, All Rare Loot 35% Chance, All Rare Loot 40% Chance, All Rare Loot 45% Chance, All Rare Loot 50% Chance"
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+    "Name": "Gotaro Goat Wine",
+    "Description": "Drink in moderation.",
+    "Category": "Cooking",
+    "Edibility": 5,
+    "EdibleIsDrink": true,
+    "EdibleBuffs":
+    {
+        "Farming": 0,
+        "Fishing": 4,
+        "Mining": 0,
+        "Luck": 2,
+        "Foraging": 0,
+        "MaxStamina": 0,
+        "MagnetRadius": 0,
+        "Speed": 0,
+        "Defense": 0,
+        "Attack": 0,
+        "Duration": 1800,
+    },
+    "Price": 25,
+    "IsColored": false,
+    "CanPurchase": false,
+    "PurchaseFrom": "Gus",
+    "PurchasePrice": 1990,
+    "PurchaseRequirements": ["y 2", ],
+    "Recipe":
+    {
+        "ResultCount": 1,
+        "Ingredients": [
+		{
+            "Object": "Spirits Wine",
+            "Count": 1,
+        },
+		{
+            "Object": "Ginger Ale",
+            "Count": 1,
+        }],
+        "CanPurchase": true,
+        "PurchaseFrom": "Gus",
+        "PurchasePrice": 100000,
+        "PurchaseRequirements": ["z spring", "z summer", "z winter", "y 2"],
+    },
+    "NameLocalization":
+    {
+        "en": "Gotaro Goat",
+    }
+}

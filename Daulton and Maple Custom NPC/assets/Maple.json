@@ -1,0 +1,226 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "Maple": {
+          "DisplayName": "{{i18n:Maple.Display}}",
+          "BirthSeason": "Spring",
+          "BirthDay": 17,
+          "HomeRegion": "Town",
+          "Language": "Default",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Shy",
+          "Optimism": "neutral",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          "CanVisitIsland": "FALSE",
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "CanSocialize": true,
+          "CanReceiveGifts": true,
+          "SpawnIfMissing": true,
+          "CanGreetNearbyCharacters": false,
+          "IntroductionsQuest": false,
+          "WinterStarParticipant": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "FlowerDanceCanDance": false,
+          "MugShotSourceRect": {
+            "X": 0,
+            "Y": 8,
+            "Width": 16,
+            "Height": 24
+          },
+          "Breather": false,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Custom_DaultonsRoom",
+              "Tile": { "X": 12, "Y": 5 },
+              "Direction": "down"
+            },
+            {
+              "Id": "MarriedToDaulton_Basic",
+              "Location": "FarmHouse",
+              "Tile": { "X": 33, "Y": 6 },
+              "Direction": "down",
+              "When": {
+                "Spouse": "Daulton",
+                "HasSeenEvent": "MapleMoveIn",
+                "FarmhouseUpgrade": 1,
+                "HasMod |contains=crystalinerose.RusticFarmhouse": false
+              }
+            },
+            {
+              "Id": "MarriedToDaulton_Upgraded",
+              "Location": "FarmHouse", 
+              "Tile": { "X": 54, "Y": 25 },
+              "Direction": "down",
+              "When": {
+                "Spouse": "Daulton",
+                "HasSeenEvent": "MapleMoveIn",
+                "FarmhouseUpgrade |contains=2,3": true,
+                "HasMod |contains=crystalinerose.RusticFarmhouse": false
+              }
+            },
+            {
+              "Id": "MarriedToDaulton_KisaaCozy",
+              "Location": "FarmHouse",
+              "Tile": { "X": 52, "Y": 32 },
+              "Direction": "down",
+              "When": {
+                "Spouse": "Daulton",
+                "HasSeenEvent": "MapleMoveIn",
+                "HasMod": "crystalinerose.RusticFarmhouse"
+              }
+            }
+          ],
+          "Appearance": [
+            {
+              "Id": "Default",
+              "Sprite": "Characters/Maple",
+              "Precedence": 0,
+              "Weight": 0
+            }
+          ],
+          "TextureName": null,
+          "Size": { "X": 16, "Y": 32 },
+          "CustomFields": {}
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Maple": "{{i18n:MapleAcceptGiftLoved}}/16 18 20 22 24 78 188 190 192 250 262 264 266 270 272 274 276 278 280 284 {{ModId}}_MapleSpecialTreat/{{i18n:MapleAcceptGiftLiked}}/88 252 254 376 396 398 400 402 591 593 613 634 635 636 638 257 404 412 414 416/{{i18n:MapleAcceptGiftDisliked}}/128 129 130 131 132 136 137 138 139 140 141 142 143 144 145 176 174 180 182 194/{{i18n:MapleAcceptGiftHated}}/168 220 221 253 303 334 335 336 337 340 346 348 378 380 382 384 386 395 413 433/{{i18n:MapleAcceptGiftNeutral}}/"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "maple_sleep": "18/18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18/18",
+        "maple_sit": "0/0 0 0 0/0",
+        "maple_eat": "18/19 19 19 19 19 19 19 19 18 18 18 18 18 18 18 18 18 18 19 19 19 19 19 19 19 19 19 19 19 19 18 18 18 18 18 18 18 18 18 18/19",
+        "maple_sleep_right": "16/16 16 16 16 16/16",
+        "maple_sleep_left": "17/17 17 17 17 17/17"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maple",
+      "Entries": {
+        // ——— GENERAL (all hearts; day-of-week base keys) ———
+        "Mon": "{{i18n:Maple.General.{{Random:1,2,3,4,6,7,8,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,27,28,30,32,35,36,37,38,41}}}}",
+        "Tue": "{{i18n:Maple.General.{{Random:2,3,4,6,7,8,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,27,28,30,32,35,36,37,38,41}}}}",
+        "Wed": "{{i18n:Maple.General.{{Random:3,4,6,7,8,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,27,28,30,32,35,36,37,38,41}}}}",
+        "Thu": "{{i18n:Maple.General.{{Random:4,6,7,8,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,27,28,30,32,35,36,37,38,41}}}}",
+        "Fri": "{{i18n:Maple.General.{{Random:1,2,3,4,6,7,8,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,27,28,30,32,35,36,37,38,41}}}}",
+        "Sat": "{{i18n:Maple.General.{{Random:2,3,4,6,7,8,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,27,28,30,32,35,36,37,38,41}}}}",
+        "Sun": "{{i18n:Maple.General.{{Random:3,4,6,7,8,10,11,12,13,14,15,16,17,18,19,20,22,23,24,25,27,28,30,32,35,36,37,38,41}}}}",
+    
+        //neutrals
+        "springMon": "{{i18n:Maple.General.{{Random:39,40}}}}",
+    
+        // 2 hearts
+        "Mon2": "{{i18n:{{Random:Maple.General.21,Maple.General.26,Maple.General.29,Maple.General.31,Maple.General.33,Maple.General.34,Maple.Happy.1,Maple.Happy.2}}}}",
+        "Tue2": "{{i18n:Maple.Happy.{{Random:3,4}}}}",
+        "Wed2": "{{i18n:Maple.Happy.{{Random:5,6}}}}",
+        "Thu2": "{{i18n:Maple.Happy.{{Random:7,8}}}}",
+        "Fri2": "{{i18n:Maple.General.{{Random:29,31}}}}",
+        "Sat2": "{{i18n:Maple.General.{{Random:21,33}}}}",
+        "Sun2": "{{i18n:Maple.General.{{Random:34,26}}}}",
+    
+        // 4 hearts
+        "Mon4": "{{i18n:Maple.Happy.{{Random:1,2,3,4,5}}}}",
+        "Tue4": "{{i18n:Maple.Happy.{{Random:6,7,8}}}}",
+        "Wed4": "{{i18n:Maple.General.{{Random:21,26,29}}}}",
+        "Thu4": "{{i18n:Maple.General.{{Random:31,33,34}}}}",
+        "Fri4": "{{i18n:Maple.Happy.{{Random:3,6}}}}",
+        "Sat4": "{{i18n:Maple.Happy.{{Random:2,7}}}}",
+        "Sun4": "{{i18n:Maple.Happy.{{Random:1,5}}}}",
+    
+        // 6–10 hearts
+        "Mon6": "{{i18n:Maple.Happy.{{Random:1,2,3,4,5,6,7,8}}}}",
+        "Tue6": "{{i18n:Maple.Happy.{{Random:2,4,6,8}}}}",
+        "Wed6": "{{i18n:Maple.Happy.{{Random:1,3,5,7}}}}",
+        "Thu6": "{{i18n:Maple.Happy.{{Random:8,7,6,5}}}}",
+        "Fri6": "{{i18n:Maple.Happy.{{Random:4,2,1}}}}",
+        "Sat6": "{{i18n:Maple.Happy.{{Random:5,3,1}}}}",
+        "Sun6": "{{i18n:Maple.Happy.{{Random:6,4,2}}}}",
+    
+        "Mon8": "{{i18n:Maple.Happy.{{Random:1,3,5,7}}}}",
+        "Tue8": "{{i18n:Maple.Happy.{{Random:2,4,6,8}}}}",
+        "Wed8": "{{i18n:Maple.General.{{Random:21,26,29,31}}}}",
+        "Thu8": "{{i18n:Maple.General.{{Random:33,34}}}}",
+        "Fri8": "{{i18n:Maple.Happy.{{Random:7,8}}}}",
+        "Sat8": "{{i18n:Maple.Happy.{{Random:5,6}}}}",
+        "Sun8": "{{i18n:Maple.Happy.{{Random:3,4}}}}",
+    
+        "Mon10": "{{i18n:Maple.Happy.{{Random:1,2,7,8}}}}",
+        "Tue10": "{{i18n:Maple.Happy.{{Random:3,4,5,6}}}}",
+        "Wed10": "{{i18n:Maple.Happy.{{Random:8,6,4}}}}",
+        "Thu10": "{{i18n:Maple.Happy.{{Random:7,5,3}}}}",
+        "Fri10": "{{i18n:Maple.Happy.{{Random:2,1}}}}",
+        "Sat10": "{{i18n:Maple.Happy.{{Random:6,5}}}}",
+        "Sun10": "{{i18n:Maple.Happy.{{Random:4,3}}}}",
+    
+        // ——— TOWN-ONLY (location dialogue; repeatable while in Town) ———
+    
+        // Neutral Town base (any hearts)
+        "Town": "{{i18n:Maple.Town.{{Random:1,2,3,4,5,6}}}}",
+    
+        // Heart-gated happy Town
+        "Town2": "{{i18n:Maple.Town.Angy.1}}",
+        "Town4": "{{i18n:Maple.Town.Annoyed.{{Random:1,2,3,4}}}}",
+        "Town6": "{{i18n:Maple.Town.Happy.{{Random:1,3}}}}",
+        "Town8": "{{i18n:Maple.Town.Happy.{{Random:2,4}}}}",
+        "Town10": "{{i18n:Maple.Town.Happy.{{Random:1,2,3,4}}}}",
+    
+        // ——— GIFTING
+        "AcceptGift": "{{i18n:MapleAcceptGift}}",
+        "AcceptGift_Loved": "{{i18n:MapleAcceptGift_Love.{{Random:1,2,3,4,5,6,7,8,9}}}}",
+        "AcceptGift_Liked": "{{i18n:MapleAcceptGift_Liked.{{Random:1,2,3,4,5}}}}",
+        "AcceptGift_Neutral": "{{i18n:MapleAcceptGift_Neutral.{{Random:1,2,3,4,5,6}}}}",
+        "AcceptGift_Disliked": "{{i18n:MapleAcceptGift_Dislike.{{Random:1,2,3,4,5,6,7,8,9,10,11,12,13}}}}",
+        "AcceptGift_Hated": "{{i18n:MapleAcceptGift_Hated.{{Random:1,2,3,4,5,6,7,8}}}}",
+    
+        // ——— BIRTHDAY ———
+        "AcceptBirthdayGift": "{{i18n:MapleAcceptBirthdayGift}}",
+        "AcceptBirthdayGift_Loved": "{{i18n:MapleAcceptBirthdayGift_Loved}}",
+        "AcceptBirthdayGift_Liked": "{{i18n:MapleAcceptBirthdayGift_Liked}}",
+        "AcceptBirthdayGift_Neutral": "{{i18n:MapleAcceptBirthdayGift_Neutral}}",
+        "AcceptBirthdayGift_Disliked": "{{i18n:MapleAcceptBirthdayGift_Disliked}}",
+        "AcceptBirthdayGift_Hated": "{{i18n:MapleAcceptBirthdayGift_Hated}}",
+    
+        // ——— MISC (hard-coded keys 
+        "MovieInvitation": "{{i18n:MapleMovieInvitation}}",
+        "HitBySlingshot": "{{i18n:MapleHitBySlingshot}}",
+        "DumpsterDiveComment": "{{i18n:MapleDumpsterDiveComment}}",
+        "FlowerDance_Accept": "{{i18n:MapleFlowerDance_Accept}}",
+        "FlowerDance_Decline": "{{i18n:MapleFlowerDance_Decline}}",
+        "danceRejection": "{{i18n:MapledanceRejection}}",
+    
+        "GreenRain": "{{i18n:MapleGreenRain}}",
+        "GreenRain_2": "{{i18n:MapleGreenRain2}}",
+        "GreenRain_Finished": "{{i18n:Maple.GreenRainFinished}}",
+    
+        "AcceptRoommateProposal": "{{i18n:Maple.AcceptRoommate}}",
+        "RejectItem_propose_roommate_maple": "{{i18n:Maple.RejectRoommate}}"
+      }    
+    },
+    {
+      "LogName": "Maple Move-In Event - Farm",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "MapleMoveIn/Spouse Daulton/e 191393/d Mon Tue Wed Thu Fri Sat Sun": "kindadumbautumn/-1000 -1000/farmer 64 16 2 Daulton 63 15 0 Maple 63 15 0/skippable/viewport 64 15 true/globalFadeToClear 3/move Maple 0 1 2 true/pause 3000/pause 500/playSound rabbit/move Maple -1 0 3/pause 300/move Maple 0 -1 0/pause 500/speak Daulton \"{{i18n:event.maple-move-in.daulton1}}\"/pause 500/emote Maple 32/jump Maple/pause 800/playSound rabbit/move Maple 0 -1 0/pause 100/move Maple 1 0 1/pause 100/playSound rabbit/move Maple 1 0 1/pause 100/move Maple 0 1 2/pause 100/move Maple 0 1 2/pause 100/move Maple -1 0 3/pause 100/move Maple -1 0 3/pause 100/move Maple 0 -1 0/pause 100/move Maple -1 0 3/pause 100/move Maple 1 0 1/pause 100/move Maple 0 -1 0/faceDirection Maple 2/pause 200/emote Maple 20/pause 500/speak Daulton \"{{i18n:event.maple-move-in.daulton2}}\"/pause 500/speak Daulton \"{{i18n:event.maple-move-in.daulton3}}\"/pause 500/faceDirection Daulton 3/pause 500/addObject 63 16 {{ModId}}_MapleSpecialTreat/playSound throwDownITem/pause 800/emote Maple 16/pause 600/jump Maple/pause 600/playSound dwop/jump Maple/pause 800/faceDirection Maple 2/pause 500/playSound eat/animate Maple false false 200 18 18 19 19 18 18 19 19 18 18 19 19 18 18 19 19 18 18 19 19/pause 2800/stopAnimation Maple/pause 300/removeObject 63 16/playSound reward/emote Maple 20/pause 500/emote farmer 32/pause 800/faceDirection Daulton 0/pause 200/speak Daulton \"{{i18n:event.maple-move-in.daulton5}}\"/pause 500/speak Daulton \"{{i18n:event.maple-move-in.daulton6}}\"/pause 1000/addConversationTopic maple_moved_in 999/mailReceived MapleMoveInComplete/playSound achievement/pause 1500/globalFade/viewport -1000 -1000/pause 1000/message \"{{i18n:event.maple-move-in.message}}\"/end"
+      }
+    }
+  ]
+}

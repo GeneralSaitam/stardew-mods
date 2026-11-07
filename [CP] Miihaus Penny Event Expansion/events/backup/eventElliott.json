@@ -1,0 +1,224 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/ElliottHouse",
+            "Entries":{
+                "1627901107/F/f Elliott 750/O Penny/e 1627901106/k 1627901108 1627901109 1627901110/e 1627901112 1627901113 1627901114/e 1627901116 1627901117 1627901118":"50s/
+                2 5/
+				farmer 200 200 0 Elliott 1 5 0/
+				pause 1000/
+				playSound doorClose/
+				warp farmer 3 9/
+				pause 200/
+				move farmer 0 -1 0/
+				pause 400/
+				faceDirection Elliott 2/
+				emote Elliott 16/
+				speak Elliott \"Ah, hello good sir! What brings you to my humble abode today?^Ah, hello good madam! What brings you to my humble abode today?\"/
+				pause 100/
+				emote farmer 40/
+				speak Elliott \"You need to talk with me? Of course, my friend.\"/
+				globalFade .011/
+				viewport -1000 -1000/
+				message \"You tell Elliott about Penny's experiences at the course and the items she needs to put her new ideas into action.#You ask Elliott if he can help you with one of the things Penny needs.\"/
+				warp Elliott 6 6/
+				faceDirection Elliott 1/
+				warp farmer 7 6/
+				positionOffset farmer 0 14/
+				faceDirection farmer 3/
+				globalFadeToClear .011 true/
+				viewport 6 6/
+				pause 1000/
+				speak Elliott \"Fascinating! Pedagogy is somewhat outside of my area of expertise.$0#$b#My dear friend, it warms my heart to see you seeking out ways to help your beloved Penny in her teaching endeavors.$h#$b#As a fellow writer, I understand the importance of having the proper tools to bring one's ideas to life.$0#$b#I happen to have a typewriter that has served me well over the years. But I believe it is time for it to find a new home.\"/
+				move Elliott 0 1 2/
+				faceDirection farmer 2/
+				pause 1100/
+				playSound pickUpItem/
+				pause 800/
+				move Elliott 0 -1 1/
+				faceDirection farmer 3/
+				pause 200/
+				faceDirection farmer 2/
+				showFrame farmer 57/
+				addTemporaryActor RedTypewriter 16 32 7 5 2 false/
+				playSound achievement/
+				pause 300/
+				message \"Elliott hands you an old typewriter that he had been storing under a table.\"/
+				playSound pickUpItem/
+				warp RedTypewriter 1000 1000/
+				showFrame farmer 0/
+				faceDirection farmer 3/
+				pause 100/
+				speak Elliott \"And what better home than that of someone as dedicated to educating our youth as Penny?$0#$b#It would be my pleasure to donate it to her cause, my friend.$h#$b#Community members should support one another in times of need, after all.\"/
+				emote farmer 32/
+				globalFade/
+				viewport -1000 -1000/
+				playSound healSound/
+				removeQuest 162791/
+				addQuest 162792/
+				message \"You have collected all of the necessary items to help Penny achieve her dream of becoming a better teacher.\"/
+				end dialogue Elliott \"I'm always happy to help out the community in any way that I can.$0#$e#Just be sure to take good care of it, all right? That typewriter is an old friend!$h\"",
+                "1627901108/F/f Elliott 750/O Penny/e 1627901106/k 1627901107 1627901109 1627901110/e 1627901112 1627901113 1627901114":"50s/
+                2 5/
+				farmer 200 200 0 Elliott 1 5 0/
+				pause 1000/
+				playSound doorClose/
+				warp farmer 3 9/
+				pause 200/
+				move farmer 0 -1 0/
+				pause 400/
+				faceDirection Elliott 2/
+				emote Elliott 16/
+				speak Elliott \"Ah, hello good sir! What brings you to my humble abode today?^Ah, hello good madam! What brings you to my humble abode today?\"/
+				pause 100/
+				emote farmer 40/
+				speak Elliott \"You need to talk with me? Of course, my friend.\"/
+				globalFade .011/
+				viewport -1000 -1000/
+				message \"You tell Elliott about Penny's experiences at the course and the items she needs to put her new ideas into action.#You ask Elliott if he can help you with one of the things Penny needs.\"/
+				warp Elliott 6 6/
+				faceDirection Elliott 1/
+				warp farmer 7 6/
+				positionOffset farmer 0 14/
+				faceDirection farmer 3/
+				globalFadeToClear .011 true/
+				viewport 6 6/
+				pause 1000/
+				speak Elliott \"Fascinating! Pedagogy is somewhat outside of my area of expertise.$0#$b#My dear friend, it warms my heart to see you seeking out ways to help your beloved Penny in her teaching endeavors.$h#$b#As a fellow writer, I understand the importance of having the proper tools to bring one's ideas to life.$0#$b#I happen to have a typewriter that has served me well over the years. But I believe it is time for it to find a new home.\"/
+				move Elliott 0 1 2/
+				faceDirection farmer 2/
+				pause 1100/
+				playSound pickUpItem/
+				pause 800/
+				move Elliott 0 -1 1/
+				faceDirection farmer 3/
+				pause 200/
+				faceDirection farmer 2/
+				showFrame farmer 57/
+				addTemporaryActor RedTypewriter 16 32 7 5 2 false/
+				playSound achievement/
+				pause 300/
+				message \"Elliott hands you an old typewriter that he had been storing under a table.\"/
+				playSound pickUpItem/
+				warp RedTypewriter 1000 1000/
+				showFrame farmer 0/
+				faceDirection farmer 3/
+				pause 100/
+				speak Elliott \"And what better home than that of someone as dedicated to educating our youth as Penny?$0#$b#It would be my pleasure to donate it to her cause, my friend.$h#$b#Community members should support each other in times of need, after all.\"/
+				emote farmer 32/
+				globalFade/
+				viewport -1000 -1000/
+				playSound healSound/
+				message \"You have collected two out of three necessary items to help Penny achieve her dream of becoming a better teacher.\"/
+				end dialogue Elliott \"I'm always happy to help out the community in any way that I can.$0#$e#Just be sure to take good care of it, all right? That typewriter is an old friend!$h\"",
+                "1627901109/F/f Elliott 750/O Penny/e 1627901106/k 1627901108 1627901107 1627901110/e 1627901116 1627901117 1627901118":"50s/
+                2 5/
+				farmer 200 200 0 Elliott 1 5 0/
+				pause 1000/
+				playSound doorClose/
+				warp farmer 3 9/
+				pause 200/
+				move farmer 0 -1 0/
+				pause 400/
+				faceDirection Elliott 2/
+				emote Elliott 16/
+				speak Elliott \"Ah, hello good sir! What brings you to my humble abode today?^Ah, hello good madam! What brings you to my humble abode today?\"/
+				pause 100/
+				emote farmer 40/
+				speak Elliott \"You need to talk with me? Of course, my friend.\"/
+				globalFade .011/
+				viewport -1000 -1000/
+				message \"You tell Elliott about Penny's experiences at the course and the items she needs to put her new ideas into action.#You ask Elliott if he can help you with one of the things Penny needs.\"/
+				warp Elliott 6 6/
+				faceDirection Elliott 1/
+				warp farmer 7 6/
+				positionOffset farmer 0 14/
+				faceDirection farmer 3/
+				globalFadeToClear .011 true/
+				viewport 6 6/
+				pause 1000/
+				speak Elliott \"Fascinating! Pedagogy is somewhat outside of my area of expertise.$0#$b#My dear friend, it warms my heart to see you seeking out ways to help your beloved Penny in her teaching endeavors.$h#$b#As a fellow writer, I understand the importance of having the proper tools to bring one's ideas to life.$0#$b#I happen to have a typewriter that has served me well over the years. But I believe it is time for it to find a new home.\"/
+				move Elliott 0 1 2/
+				faceDirection farmer 2/
+				pause 1100/
+				playSound pickUpItem/
+				pause 800/
+				move Elliott 0 -1 1/
+				faceDirection farmer 3/
+				pause 200/
+				faceDirection farmer 2/
+				showFrame farmer 57/
+				addTemporaryActor RedTypewriter 16 32 7 5 2 false/
+				playSound achievement/
+				pause 300/
+				message \"Elliott hands you an old typewriter that he had been storing under a table.\"/
+				playSound pickUpItem/
+				warp RedTypewriter 1000 1000/
+				showFrame farmer 0/
+				faceDirection farmer 3/
+				pause 100/
+				speak Elliott \"And what better home than that of someone as dedicated to educating our youth as Penny?$0#$b#It would be my pleasure to donate it to her cause, my friend.$h#$b#Community members should support each other in times of need, after all.\"/
+				emote farmer 32/
+				globalFade/
+				viewport -1000 -1000/
+				playSound healSound/
+				message \"You have collected two out of three necessary items to help Penny achieve her dream of becoming a better teacher.\"/
+				end dialogue Elliott \"I'm always happy to help out the community in any way that I can.$0#$e#Just be sure to take good care of it, all right? That typewriter is an old friend!$h\"",
+                "1627901110/F/f Elliott 750/O Penny/e 1627901106/k 1627901108 1627901109 1627901107":"50s/
+                2 5/
+				farmer 200 200 0 Elliott 1 5 0/
+				pause 1000/
+				playSound doorClose/
+				warp farmer 3 9/
+				pause 200/
+				move farmer 0 -1 0/
+				pause 400/
+				faceDirection Elliott 2/
+				emote Elliott 16/
+				speak Elliott \"Ah, hello good sir! What brings you to my humble abode today?^Ah, hello good madam! What brings you to my humble abode today?\"/
+				pause 100/
+				emote farmer 40/
+				speak Elliott \"You need to talk with me? Of course, my friend.\"/
+				globalFade .011/
+				viewport -1000 -1000/
+				message \"You tell Elliott about Penny's experiences at the course and the items she needs to put her new ideas into action.#You ask Elliott if he can help you with one of the things Penny needs.\"/
+				warp Elliott 6 6/
+				faceDirection Elliott 1/
+				warp farmer 7 6/
+				positionOffset farmer 0 14/
+				faceDirection farmer 3/
+				globalFadeToClear .011 true/
+				viewport 6 6/
+				pause 1000/
+				speak Elliott \"Fascinating! Pedagogy is somewhat outside of my area of expertise.$0#$b#My dear friend, it warms my heart to see you seeking out ways to help your beloved Penny in her teaching endeavors.$h#$b#As a fellow writer, I understand the importance of having the proper tools to bring one's ideas to life.$0#$b#I happen to have a typewriter that has served me well over the years. But I believe it is time for it to find a new home.\"/
+				move Elliott 0 1 2/
+				faceDirection farmer 2/
+				pause 1100/
+				playSound pickUpItem/
+				pause 800/
+				move Elliott 0 -1 1/
+				faceDirection farmer 3/
+				pause 200/
+				faceDirection farmer 2/
+				showFrame farmer 57/
+				addTemporaryActor RedTypewriter 16 32 7 5 2 false/
+				playSound achievement/
+				pause 300/
+				message \"Elliott hands you an old typewriter that he had been storing under a table.\"/
+				playSound pickUpItem/
+				warp RedTypewriter 1000 1000/
+				showFrame farmer 0/
+				faceDirection farmer 3/
+				pause 100/
+				speak Elliott \"And what better home than that of someone as dedicated to educating our youth as Penny?$0#$b#It would be my pleasure to donate it to her cause, my friend.$h#$b#Community members should support each other in times of need, after all.\"/
+				emote farmer 32/
+				globalFade/
+				viewport -1000 -1000/
+				message \"You have collected one out of three necessary items to help Penny achieve her dream of becoming a better teacher.\"/
+				end dialogue Elliott \"I'm always happy to help out the community in any way that I can.$0#$e#Just be sure to take good care of it, all right? That typewriter is an old friend!$h\""
+        
+            }
+        },
+    ]
+}

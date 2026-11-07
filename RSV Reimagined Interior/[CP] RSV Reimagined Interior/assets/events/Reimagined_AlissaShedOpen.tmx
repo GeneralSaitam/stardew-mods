@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="16" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="147">
+ <properties>
+  <property name="AmbientLight" value="95 95 95"/>
+ </properties>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+  <tile id="0">
+   <properties>
+    <property name="PathType" value="NE"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="PathType" value="SE"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="PathType" value="WS"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="PathType" value="WN"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="PathType" value="Crossroad"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="PathType" value="End"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="65" name="spring_zridgesidebuildings" tilewidth="16" tileheight="16" tilecount="3968" columns="62">
+  <image source="spring_zridgesidebuildings" width="992" height="1024"/>
+ </tileset>
+ <tileset firstgid="4033" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="6209" name="springobjects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects" width="384" height="624"/>
+ </tileset>
+ <tileset firstgid="7145" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="9321" name="z_rsvinterior" tilewidth="16" tileheight="16" tilecount="1900" columns="19">
+  <image source="z_rsvinterior.png" width="304" height="1600"/>
+ </tileset>
+ <tileset firstgid="11221" name="z_luan.Extras_Interior" tilewidth="16" tileheight="16" tilecount="3172" columns="52">
+  <image source="z_luan.Extras_Interior.png" width="832" height="976"/>
+ </tileset>
+ <tileset firstgid="14393" name="z_luan.Extras_furniture_Rugs" tilewidth="16" tileheight="16" tilecount="3876" columns="76">
+  <image source="z_luan.Extras_furniture_PicturesAndRugs.png" width="1216" height="816"/>
+ </tileset>
+ <layer id="1" name="Back" width="16" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,4607,4608,4607,4608,12650,4608,12388,4232,4233,4232,4233,4608,4608,4607,0,
+0,4639,4640,4639,4640,9289,4640,12440,4264,4265,4264,4265,12601,12600,12601,0,
+0,12600,4672,4671,4608,12491,7720,12492,4296,4297,4296,4297,12389,4608,12650,4608,
+0,12651,4640,4608,4640,12490,4640,12544,4703,4703,4703,4703,12545,12594,12650,4640,
+0,9257,4672,4672,9290,9257,4672,4671,5563,5564,5565,5566,5567,12646,9289,0,
+0,12491,4607,4640,4640,12491,7719,7720,5595,5596,5597,5598,5599,5600,9257,0,
+0,4671,4639,12647,4672,9258,4672,4671,5627,5628,5629,5630,5631,5632,9289,0,
+0,4639,4671,7400,4640,9257,4640,4639,5659,5660,5661,5662,5663,5664,9257,4608,
+0,4671,4672,4671,4672,9289,4672,4671,4671,4672,12439,4672,4639,6178,9289,4640,
+0,4639,4640,4639,4640,9257,4640,4639,0,0,0,0,0,0,0,0,
+0,4671,12548,12549,4672,9289,4672,4671,0,0,0,0,0,0,0,0,
+0,4639,4607,4608,4640,9257,4640,4639,0,0,0,0,0,0,0,0,
+0,4671,4639,4640,12594,9289,4672,4671,0,0,0,0,0,0,0,0,
+0,4639,4640,4639,12646,4639,4640,4639,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="13" name="Back2" width="16" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,14654,14655,14655,14656,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <objectgroup id="12" name="Back2" visible="0"/>
+ <layer id="2" name="Buildings" width="16" height="18">
+  <properties>
+   <property name="AmbientLight" value="255 255 255"/>
+  </properties>
+  <data encoding="csv">
+4042,4035,4035,4035,4035,4035,4035,4035,4035,4035,4035,4035,4035,4035,4035,4044,
+4097,9423,4067,9423,9422,9423,4067,9423,9422,9423,4067,9423,9422,9422,9423,4101,
+4097,9480,9479,9480,9479,9480,9479,9480,9479,9480,9479,9480,9479,9479,9480,4101,
+4097,9498,9498,9498,9498,9498,9498,9498,9498,9498,9498,9498,9498,9498,9498,4101,
+4097,6180,4922,4923,4924,0,6180,0,0,0,5212,5732,9723,9724,9725,4101,
+4097,6180,4954,4955,4956,0,6180,0,8062,0,0,8038,9742,9743,12601,4101,
+4097,4929,4986,6180,0,0,0,0,8094,8095,8096,8070,0,0,6180,4101,
+4097,0,5018,0,0,0,4923,4924,0,0,0,0,0,0,0,4101,
+4097,0,5050,0,0,0,4955,4956,0,0,0,0,0,0,0,4101,
+4097,0,0,0,0,0,0,0,0,0,0,0,9723,9724,9725,4101,
+4097,4923,4924,0,0,0,4922,5212,0,0,0,0,9742,9743,9744,4101,
+4097,4955,4956,0,0,0,4954,4920,4921,5212,0,0,0,0,0,4101,
+4097,4922,4923,4924,0,0,4986,6180,4473,0,0,0,0,0,0,4163,
+4097,4954,4955,4956,0,0,5018,6180,4101,4033,4033,4033,4033,4033,4033,4033,
+4097,4986,4929,4929,0,0,5050,4929,4101,4033,4033,4033,4033,4033,4033,4033,
+4097,5018,0,0,0,0,4923,4924,4101,4033,4033,4033,4033,4033,4033,4033,
+4129,5050,0,0,0,0,4955,4956,4163,4033,4033,4033,4033,4033,4033,4033,
+4033,4033,4033,4129,0,4163,4033,4033,4033,4033,4033,4033,4033,4033,4033,4033
+</data>
+ </layer>
+ <objectgroup id="7" name="Buildings" visible="0">
+  <object id="124" name="TileData" x="80" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa9&quot;"/>
+   </properties>
+  </object>
+  <object id="125" name="TileData" x="16" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa10&quot;"/>
+   </properties>
+  </object>
+  <object id="127" name="TileData" x="32" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa8&quot;"/>
+   </properties>
+  </object>
+  <object id="128" name="TileData" x="16" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa8&quot;"/>
+   </properties>
+  </object>
+  <object id="129" name="TileData" x="96" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa8&quot;"/>
+   </properties>
+  </object>
+  <object id="130" name="TileData" x="48" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa8&quot;"/>
+   </properties>
+  </object>
+  <object id="131" name="TileData" x="96" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa8&quot;"/>
+   </properties>
+  </object>
+  <object id="132" name="TileData" x="48" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa8&quot;"/>
+   </properties>
+  </object>
+  <object id="133" name="TileData" x="96" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa8&quot;"/>
+   </properties>
+  </object>
+  <object id="139" name="TileData" x="160" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="RSVShop RSVKimpoiShop"/>
+   </properties>
+  </object>
+  <object id="140" name="TileData" x="144" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="RSVShop RSVKimpoiShop"/>
+   </properties>
+  </object>
+  <object id="141" name="TileData" x="208" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa11&quot;"/>
+   </properties>
+  </object>
+  <object id="142" name="TileData" x="192" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa11&quot;"/>
+   </properties>
+  </object>
+  <object id="144" name="TileData" x="224" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa11&quot;"/>
+   </properties>
+  </object>
+  <object id="145" name="TileData" x="208" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa11&quot;"/>
+   </properties>
+  </object>
+  <object id="146" name="TileData" x="192" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.alissa11&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Paths" width="16" height="18" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,9,0,9,0,0,0,0,0,9,0,0,0,0,
+0,0,9,0,0,0,9,0,0,0,9,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,
+0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,9,0,0,9,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="11" name="Front" width="16" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,4289,4859,0,4859,4289,0,0,0,4289,4859,0,0,0,0,
+0,0,4321,0,0,0,4321,0,0,0,4321,0,0,0,0,0,
+0,6148,4890,4891,4892,0,6148,0,0,0,0,5700,9704,9705,9706,0,
+0,6148,0,0,0,0,6148,0,8030,0,0,7974,9723,9724,9725,0,
+0,4898,0,6148,0,0,0,0,7625,8063,8064,0,0,0,9744,0,
+0,0,0,0,0,0,4891,4892,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,9704,9705,9706,0,
+0,4891,4892,0,0,0,4890,0,0,0,0,0,9745,9746,9747,0,
+0,0,0,0,0,0,0,4888,4889,0,0,0,0,0,0,0,
+0,4890,4891,4892,0,0,0,6148,4441,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,6148,4196,4229,4229,4229,4229,4229,4229,0,
+0,0,4898,4898,0,0,0,4898,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,4891,4892,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,4229,4229,4195,0,4196,4229,4229,0,0,0,0,0,0,0,0,
+0,0,0,0,4229,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="15" name="Front2" width="16" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,15725,0,0,0,15725,16210,16211,16213,15725,0,0,0,0,0,
+0,0,15801,0,0,0,15801,1073757962,1073757962,1073758033,15801,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,9726,9727,9728,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,6148,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="9" name="Front"/>
+ <objectgroup id="14" name="Front2"/>
+ <layer id="5" name="AlwaysFront" width="16" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,9707,9708,9709,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,9726,9727,9728,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,4545,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

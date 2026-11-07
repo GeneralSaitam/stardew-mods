@@ -1,0 +1,40 @@
+{
+  "Changes": [
+    {
+      "LogName": "SVE - Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Entries": {
+        "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper": {
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper",
+          "Chance": 0.3,
+          "CuriosityLureBuff": 0.07,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "Condition": "LOCATION_Season Here spring summer fall",
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false
+        },
+        "FlashShifter.StardewValleyExpandedCP_Turretfish": {
+          "ItemId": "FlashShifter.StardewValleyExpandedCP_Turretfish",
+          "Chance": 0.3,
+          "CuriosityLureBuff": 0.07,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "Condition": "LOCATION_Season Here spring summer fall winter",
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false
+        }
+      },
+      "When": {
+        "Legendary Fish On Farm": true
+      }
+    }
+  ]
+}

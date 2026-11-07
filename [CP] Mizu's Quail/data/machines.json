@@ -1,0 +1,63 @@
+{
+	"Changes": [
+		// add mayonnaise
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules" ],
+			"Entries": {
+				"Mizu.Quail_QuailMayonnaise": {
+					"Id": "Mizu.Quail_QuailMayonnaise",
+					"Triggers": 
+						[
+							{
+								"RequiredItemId": "(O)Mizu.Quail_QuailEgg"
+							}
+						],
+					"OutputItem":
+						[
+							{
+								"ItemId": "(O)Mizu.Quail_QuailMayonnaise"
+							}
+						],
+					"MinutesUntilReady": 180
+				},
+				"Mizu.Quail_QuailMayonnaiseQuailty": {
+					"Id": "Mizu.Quail_QuailMayonnaiseQuailty",
+					"Triggers": 
+						[
+							{
+								"RequiredItemId": "(O)Mizu.Quail_LargeQuailEgg"
+							}
+						],
+					"OutputItem":
+						[
+							{
+								"ItemId": "(O)Mizu.Quail_QuailMayonnaise",
+								"Quality": 2
+							}
+						],
+					"MinutesUntilReady": 180
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"MoveEntries": [
+				{
+					"Id": "Mizu.Quail_QuailMayonnaise",
+					"BeforeId": "Default_Egg"
+				},
+				{
+					"Id": "Mizu.Quail_QuailMayonnaiseQuailty",
+					"BeforeId": "Default_LargeEgg"
+				}
+			]
+		}
+	]
+}

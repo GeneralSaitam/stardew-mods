@@ -1,0 +1,85 @@
+{
+	"Format": "2.7.0",
+	"Changes":[
+        {
+            "LogName": "Add Furniture Catalogue Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": 
+
+                {
+                    "PixieMCM_Catalogue": 
+                        {
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "Items": [
+                                {
+                                    "Price": 0,
+                                    "AvailableStockLimit": "Global",
+                                    "AvoidRepeat": false,
+                                    "UseObjectDataPrice": false,
+                                    "IgnoreShopPriceModifiers": false,
+                                    "PriceModifiers": null,
+                                    "PriceModifierMode": "Stack",
+                                    "AvailableStockModifiers": null,
+                                    "AvailableStockModifierMode": "Stack",
+                                    "Condition": null,"Id": "Default",
+                                    "ItemId": "ALL_ITEMS (F)","MinStack": -1,
+                                    "MaxStack": -1,
+                                    "Quality": -1,
+                                    "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_pixiemcm"
+                                }
+                            ],
+
+                            "CustomFields":{"HappyHomeDesigner/Catalogue":"true"}
+                        }
+                    }
+                },
+
+        {
+            "LogName": "Add Furniture Catalogue Item",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": 
+                {
+                    "PixieMCM_Catalogue":"PixieMCM_Catalogue/other/1 2/1 1/1/5000/2/Pixie's MCM Catalogue/0/Tilesheets\\PixieMCM_Catalogue/true"
+                }
+        },
+
+
+        {
+            "LogName": "Add Furniture Catalogue Tile Actions",
+            "Action": "EditData",
+            "Target":"sophie.Calcifer/FurnitureActions",
+            "Entries": {"(F)PixieMCM_Catalogue": 
+                {
+                    "TileActions": [
+                        {
+                            "TileAction": "OpenShop PixieMCM_Catalogue"
+                        }
+                    ]
+                }
+            }
+        },
+
+    
+        {
+            "LogName": "Add Furniture Catalogue to Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Carpenter", "Items" ],
+            "Entries": 
+                {
+                    "PixieMCM_Catalogue":{
+                        "Id": "PixieMCM_Catalogue","ItemId":"(F)PixieMCM_Catalogue","Price": 5000
+                    }
+                }
+        },
+
+        {
+            "Action": "Load",
+            "Target": "Tilesheets/PixieMCM_Catalogue",
+            "FromFile": "assets/PixieMCM_Catalogue.png"   
+        }
+    ]
+}

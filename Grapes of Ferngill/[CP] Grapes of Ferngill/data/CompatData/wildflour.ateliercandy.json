@@ -1,0 +1,45 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)wildflour.ateliercandy_GumballMachine",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_Grape_Candy": {
+					"Id": "GOF_Grape_Candy",
+					"Triggers": [
+						{
+							"RequiredTags": ["grape_item"],
+                            "RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)wildflour.ateliercandy_grape_candy",
+							"CopyPrice": true,
+                            "CopyQuality": true,
+                            "PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2.25
+								}
+							]
+						}
+					],
+					"MinutesUntilReady": 480
+				}
+                
+			},
+			"MoveEntries": [
+				{
+					"Id": "GOF_Grape_Candy",
+					"BeforeId": "wildflour.ateliercandy_flavor_hard_candy"
+				}
+			]
+		}
+                
+	]
+}

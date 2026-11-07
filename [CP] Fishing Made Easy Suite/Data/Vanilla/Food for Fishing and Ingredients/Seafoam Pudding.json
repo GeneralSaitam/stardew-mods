@@ -1,0 +1,78 @@
+{
+  "Changes": [
+    {
+      "LogName": "Seafoam Pudding Duration",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "265",
+        "Buffs"
+      ],
+      "Fields": {
+        "Food": {
+          "Duration": -2
+        }
+      },
+      "When": {
+        "Seafoam Pudding Duration": true
+      }
+    },
+    {
+      "LogName": "Seafoam Pudding Level Boost",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "265",
+        "Buffs",
+        "Food"
+      ],
+      "Fields": {
+        "CustomAttributes": {
+          "FishingLevel": "{{Seafoam Pudding Level Boost}}"
+        }
+      },
+      "When": {
+        "Seafoam Pudding Level Boost": "5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50"
+      }
+    },
+    {
+      "LogName": "Seafoam Pudding Fishing Level 1",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Seafoam Pudding": {
+          "3": "s Fishing 1"
+        }
+      },
+      "When": {
+        "Seafoam Pudding Fishing Level 1": true
+      }
+    },
+    {
+      "LogName": "Seafoam Pudding Lessened Ingredients",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Seafoam Pudding": {
+          "0": "267 1"
+        }
+      },
+      "When": {
+        "Seafoam Pudding Ingredients": "Lessened Ingredients"
+      }
+    },
+    {
+      "LogName": "Seafoam Pudding 1 of Any Fish",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Seafoam Pudding": {
+          "0": "-4 1"
+        }
+      },
+      "When": {
+        "Seafoam Pudding Ingredients": "1 of Any Fish"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="8">
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <layer id="3" name="Buildings" width="3" height="4">
+  <data encoding="csv">
+0,0,0,
+505,506,507,
+537,538,539,
+554,554,554
+</data>
+ </layer>
+ <layer id="4" name="Front" width="3" height="4">
+  <data encoding="csv">
+473,474,475,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="Buildings">
+  <object id="7" name="TileData" x="0" y="0" width="48" height="64">
+   <properties>
+    <property name="Action" value="Message &quot;SpousesMoveHouse.Sebastian.4&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="Front"/>
+</map>

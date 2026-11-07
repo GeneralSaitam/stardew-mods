@@ -1,0 +1,266 @@
+{
+	"Format": "2.0.6",
+
+	"ConfigSchema": {
+    "Sprites": {
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Description": ""
+    },
+    "Portraits": {
+        "AllowValues": "true, false",
+        "Default": "true",
+        "Description": ""
+    },
+    "RealName": {
+        "Default": "Valentina",
+        "Description": ""
+    },
+    "OnlyDisplaySandy": {
+        "AllowValues": "true, false",
+        "Default": "false",
+        "Description": ""
+    },
+    "UseAlternativeEvent": {
+        "AllowValues": "true, false",
+        "Default": "false",
+        "Description": ""
+    }
+}, 
+
+    "DynamicTokens": [
+        {
+            "Name": "IsOddYear",
+            "Value": "{{Query: {{Year}} % 2 = 1}}"
+        },
+	    {
+            "Name": "IsOddDay",
+            "Value": "{{Query: {{Day}} % 2 = 1}}"
+        },
+        {
+            "Name": "IsThirdDay",
+            "Value": "{{Query: {{Day}} % 3 = 0}}"
+        },
+        {
+            "Name": "festival",
+            "Value": ""
+        },
+        {
+            "Name": "festival",
+            "Value": "spring24",
+            "When":
+            {
+                "DayEvent": "flower dance",
+                "LocationName": "Forest, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "fall27",
+            "When":
+            {
+                "DayEvent": "spirit's eve",
+                "LocationName": "town,Custom_EastScarpeInn, Custom_EastScarpe, temp"
+            }
+        }
+],
+
+	"Changes": [	
+        {
+            "Action": "Load",
+            "Target": "Maps/Custom_SandysRoom",
+            "FromFile": "MapStuff/SandysRoom.tbin"
+        },
+	    {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "Sandy": "Custom_SandysRoom"
+            }
+        },
+	    {
+            "Action": "EditData",
+            "Target": "Data/SpousePatios",
+            "Entries": {
+		        "Sandy": "Sandy_Spouse_Area/0/0 0 0 0 0 0 0 0 0 0 0 0 41 41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41 0 0 41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 43 43 43 43 43 43 43 43 43 43 43 43 43 43 0 0 0 0 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41 41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 4 4 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 4 4 4 0/0 0"
+            }
+        },
+	    {
+            "Action": "Load",
+            "Target": "Maps/Sandy_Spouse_Area",
+            "FromFile": "MapStuff/Sandy_Spouse_Area.tbin"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "SandySpouseRoom.1": "{{i18n:SandySpouseRoom.1}}",
+                "SandySpouseRoom.2": "{{i18n:SandySpouseRoom.2}}",
+                "SandySpouseRoom.3": "{{i18n:SandySpouseRoom.3}}",
+                "SandySpouseRoom.4": "{{i18n:SandySpouseRoom.4}}",
+                "SandySpouseRoom.5": "{{i18n:SandySpouseRoom.5}}",
+                "SandySpouseRoom.6": "{{i18n:SandySpouseRoom.6}}",
+                "SandySpouseOutside": "{{i18n:SandySpouseOutside}}"
+            }
+        },
+
+
+
+        {
+          "Action": "EditImage",
+          "Target": "Portraits/Sandy",
+          "FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{TargetWithoutPath}}_{{season}}.png",
+          "When":
+          {
+            "HasFile:{{FromFile}}": true,
+            "Portraits": "true"
+          },
+          "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Sandy",
+            "FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{TargetWithoutPath}}_{{season}}.png",
+            "When":
+            {
+              "HasFile:{{FromFile}}": true,
+              "Sprites": "true"
+            },
+            "Update": "OnLocationChange"
+        },
+	    {
+	        "Action": "EditImage",
+	        "Target": "Portraits/Sandy",
+            "FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{TargetWithoutPath}}_{{festival}}.png",
+ 	        "When":
+	        {
+		        "HasFile:{{FromFile}}": true,
+                "Portraits": "true"
+	        },
+	        "Update": "OnLocationChange"
+	    },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Sandy",
+            "FromFile": "{{TargetWithoutPath}}/{{TargetPathOnly}}/{{TargetWithoutPath}}_{{festival}}.png",
+            "When":
+            {
+              "HasFile:{{FromFile}}": true,
+               "Sprites": "true"
+            },
+            "Update": "OnLocationChange"
+        },
+
+
+
+        {
+        "Action": "EditData",
+        "Target": "Data/Characters",
+        "Fields": {
+            "Sandy": {
+                "CanSocialize": true,
+                "CanBeRomanced": true,
+                "SpouseRoom": {
+                    "MapAsset": "Custom_SandysRoom"
+                },
+                "SpousePatio": {
+                    "MapAsset": "Sandy_Spouse_Area"
+                },
+                "FlowerDanceCanDance": true,
+                "WinterStarParticipant": true,
+                "SocialTab": "HiddenUntilMet"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {"HasSeenEvent": "NAT_Sandy8",
+            "OnlyDisplaySandy": "false"},
+            "Fields": {
+                "Sandy": {
+                    "DisplayName": "{{RealName}}"
+                    }
+                }
+            },
+
+		{
+        "Action": "Include",
+        "FromFile": "assets/Dialogue/StandardDialogueSandy.json"
+        },
+
+		{ 
+        "Action": "Include",
+        "FromFile": "assets/Dialogue/StandardMarriageDialogueSandy.json"
+        },
+
+        { 
+        "Action": "Include",
+        "FromFile": "assets/Dialogue/GiftResponseDialogue.json"
+        },
+
+        {
+        "Action": "Include",
+        "FromFile": "assets/Data/Schedules.json"
+        },
+
+        {
+        "Action": "Include",
+        "FromFile": "assets/Dialogue/FestivalDialogue.json"
+        },
+
+		{
+        "Action": "Include",
+		"FromFile": "assets/Data/Mail.json"
+		},
+
+        { 
+        "Action": "Include",
+        "FromFile": "assets/Data/Events/StandardEvents.json",
+        "When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false}
+        },
+        {
+        "Action": "Include",
+        "FromFile": "assets/Data/Events/SVE_Events.json",
+        "When": {"HasMod": "FlashShifter.SVECode"}
+        },
+        {
+        "Action": "EditData",
+        "Target": "Data/animationdescriptions",
+        "Entries": {
+            "Sandy_sleep": "29/29/29",
+            "sandy_sit": "29/30 30 29 29 29 30 30 29 29 29/29",
+            "sandy_aero": "20/20 20 20 21 21 21 25 25 25 24 24 24 20 20 20 21 21 21 25 25 25 24 24 24/24"
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "RosesInTheSand": {
+                    "ID": "RosesInTheSand",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/RosesInTheSand.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                }
+            }
+        },
+
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/Boots, {{ModId}}/BootsColor",
+            "FromFile": "assets/{{TargetWithoutPath}}.png" 
+          },
+      
+          {
+            "Action": "EditData",
+            "Target": "Data/Boots",
+            "Entries": {
+              "{{ModId}}_RoseGold": "{{i18n:BootsName}}/{{i18n:BootsDesc}}/10/10/10/0/{{i18n:BootsName}}/{{ModId}}\\BootsColor/0/{{ModId}}\\Boots"
+            }
+        }
+
+	]
+}

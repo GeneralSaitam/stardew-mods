@@ -1,0 +1,129 @@
+{
+  "Name": "Glasses 2",
+
+	// FRONT
+  "FrontAccessory": {
+    "DrawOrderOverride": {
+      "Preposition": "After",
+      "AppearanceType": "Player"
+    },
+    "ColorMasks": [
+      [ 165, 165, 165 ],
+      [ 217, 217, 217 ],
+      [ 254, 254, 254 ]
+    ],
+    "DrawBeforeHair": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      },
+    ]
+  },
+
+	// RIGHT
+  "RightAccessory": {
+    "DrawOrderOverride": {
+      "Preposition": "After",
+      "AppearanceType": "Player"
+    },
+    "ColorMasks": [
+      [ 165, 165, 165 ],
+      [ 217, 217, 217 ],
+      [ 254, 254, 254 ]
+    ],
+    "DrawAfterPlayer": true,
+    "DrawBeforeHair": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": -0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      },
+    ]
+  },
+
+	// LEFT
+  "LeftAccessory": {
+    "DrawOrderOverride": {
+      "Preposition": "After",
+      "AppearanceType": "Player"
+    },
+    "ColorMasks": [
+      [ 165, 165, 165 ],
+      [ 217, 217, 217 ],
+      [ 254, 254, 254 ]
+    ],
+    "DrawAfterPlayer": true,
+    "DrawBeforeHair": true,
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 16
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 1
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      },
+    ]
+  },
+
+	// BACK
+  "BackAccessory": {
+    "ColorMasks": [
+      [ 165, 165, 165 ],
+      [ 217, 217, 217 ],
+      [ 254, 254, 254 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": -0,
+      "Y": -2
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      },
+    ]
+  }
+}

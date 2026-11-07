@@ -1,0 +1,110 @@
+{
+
+	"Changes": [
+		
+		{
+			"LogName": "Eloise's Dropbox",
+			"Action": "EditMap",
+			"Target": "Maps/EastScarp_Village", 
+			"MapTiles": [
+				{
+					"Position": { "X": 23, "Y": 35}, 
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "DropBox EloiseMailbox"
+					}
+				}
+			]
+		},
+		{
+			"LogName": "Special Order: East Scarp Eloise and Jorts",
+			"Action": "EditData",
+			"Target": "Strings/SpecialOrderStrings",
+			"Entries": {
+		"Eloise.Jortsseeds.Name": "{{i18n:Eloise.Jortsseeds.Name}}",
+"Eloise.Jortsseeds.Ordertext": "{{i18n:Eloise.Jortsseeds.Ordertext}}",
+"Eloise.Jortsseeds.Objective": "{{i18n:Eloise.Jortsseeds.Objective}}",
+
+			},
+		},
+		{
+			"LogName": "Special Order: East Scarp Eloise and Jorts",
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"Eloise.Jortsseeds": { 
+					"Name": "[Eloise.Jortsseeds.Name]", 
+					"Requester": "Eloise", 
+					"Duration": "TwoWeeks", 
+					"Repeatable": "False", 
+					"RequiredTags": "", 
+					"OrderType": "{{EJSBoardType}}", 
+					"SpecialRule": "",
+					"Text": "[Eloise.Jortsseeds.Ordertext]", 
+					"ItemToRemoveOnEnd": null, 
+					"MailToRemoveOnEnd": null, 
+					"RandomizedElements": null, 
+					"Objectives": [
+						{
+							"Type": "Donate", 
+							"Text": "[Eloise.Jortsseeds.Objective]",
+							"RequiredCount": "100",
+							"Data": {
+								"DropBox": "EloiseMailbox", 
+								"DropBoxGameLocation": "EastScarp_Village",
+								"DropBoxIndicatorLocation": "23 34",
+								"AcceptedContextTags": "item_mixed_seeds", 
+							}
+						},
+					],
+					"Rewards": [ 
+						{
+							"Type": "Money",
+							"Data": {
+								"Amount": "2000",
+							}
+						},
+						{
+							"Type": "Friendship",
+							"Data": {
+								"Amount": "100", 
+								"TargetName": "Eloise", 
+							},
+						},
+						{
+							"Type": "Friendship",
+							"Data": {
+								"Amount": "50", 
+								"TargetName": "JortsCat", 
+							},
+						},
+						{
+							"Type": "Friendship",
+							"Data": {
+								"Amount": "25", 
+								"TargetName": "Jacob", 
+							},
+						},
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "EloiseJortsBirds", 
+								"NoLetter": "true" 
+							}
+						},
+						
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",  
+			"Target": "Data/Events/EastScarp_Village",
+			"Entries": {
+				// Reward event    
+				"10950110/n EloiseJortsBirds": "jaunty/20 20/farmer -999 -999 1 JortsCat -998 -999 1 Eloise 4 4 0/skippable/changeToTemporaryMap EastScarp_BirdHide/viewport 4 4/pause 2000/playSound SpringBirds/pause 1000/speak Eloise \"{{i18n:10950110.0}}\"/pause 1000/playsound SpringBirds/pause 500/speak Eloise \"{{i18n:10950110.1}}\"/pause 1500/warp JortsCat 3 7/faceDirection JortsCat 0/playSound doorClose/faceDirection Eloise 2/jump Eloise/speak JortsCat \"{{i18n:10950110.2}}\"/speak Eloise \"{{i18n:10950110.3}}\"/speak JortsCat \"{{i18n:10950110.4}}\"/move JortsCat 0 -3 0/move JortsCat -1 0 0 true/positionOffset JortsCat 0 -14 true/faceDirection Eloise 3 false/speak Eloise \"{{i18n:10950110.5}}\"/faceDirection JortsCat 1/pause 500/speak JortsCat \"{{i18n:10950110.6}}\"/pause 1000/emote Eloise 40/speak Eloise \"{{i18n:10950110.7}}\"/speak JortsCat \"{{i18n:10950110.8}}\"/pause 1000/faceDirection Eloise 0/pause 500/faceDirection JortsCat 0/playSound SpringBirds/pause 500/speak JortsCat \"{{i18n:10950110.9}}\"/speak Eloise \"{{i18n:10950110.10}}\"/speak JortsCat \"{{i18n:10950110.11}}\"/pause 1000/speak JortsCat \"{{i18n:10950110.12}}\"/speak Eloise \"{{i18n:10950110.13}}\"/speak JortsCat \"{{i18n:10950110.14}}\"/speak Eloise \"{{i18n:10950110.15}}\"/emote JortsCat 20/speak JortsCat \"{{i18n:10950110.16}}\"/speak Eloise \"{{i18n:10950110.17}}\"/speak JortsCat \"{{i18n:10950110.18}}\"/speak Eloise \"{{i18n:10950110.19}}\"/speak JortsCat \"{{i18n:10950110.20}}\"/speak Eloise \"{{i18n:10950110.21}}\"/pause 1000/playSound SpringBirds/speak JortsCat \"{{i18n:10950110.22}}\"/speak Eloise \"{{i18n:10950110.23}}\"/pause 1000/end",
+
+			}
+		}
+	]
+}	

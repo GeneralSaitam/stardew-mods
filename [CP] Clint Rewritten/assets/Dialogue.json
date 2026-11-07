@@ -1,0 +1,103 @@
+{
+	"Changes":[
+		{
+			"LogName":"Clint Dialogue File Rewrites",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Clint",
+			"Entries":{
+				  "Resort_Entering": "{{i18n:CR.Clint.Resort.Entering}}",
+				  "Resort_Leaving": "{{i18n:CR.Clint.Resort.Leaving}}",
+				  "Resort_Shore": "{{i18n:CR.Clint.Resort.Shore}}",
+				  "Resort_Shore_2": "{{i18n:CR.Clint.Resort.Shore2}}",
+				  "Resort_Bar": "{{i18n:CR.Clint.Resort.Bar}}",
+				  "Resort": "{{i18n:CR.Clint.Resort}}",
+				  "Mon": "{{i18n:CR.Clint.Mon}}",
+				  "Mon_9": "{{i18n:CR.Clint.Mon9}}",
+				  "Mon_rude": "{{i18n:CR.Clint.Mon.Rude}}",
+				  "event_advice1": "{{i18n:CR.Clint.EventAdvice}}",
+				  "event_advice2": "{{i18n:CR.Clint.Be.Yourself}}",
+				  "GreenRain": "{{i18n:CR.Clint.GreenRain}}",
+				  "GreenRainFinished": "{{i18n:CR.Clint.GreenRainFinished}}",
+				  "GreenRain_2": "{{i18n:CR.Clint.GreenRain2}}",
+				  "eventSeen_101_memory_oneweek": "{{i18n:CR.Clint.Event101.Seen}}",
+				  "CRBurger": "{{i18n:CR.Clint.Burger}}",
+				  "CRGems": "{{i18n:CR.Clint.Gems}}",
+				  "CRBug": "{{i18n:CR.Clint.Bug}}",
+				  "CRAnything": "{{i18n:CR.Clint.Anything}}",
+				  "CRWorry": "{{i18n:CR.Clint.Worry}}",
+				  "CRNo":  "{{i18n:CR.Clint.No}}",
+				  "dating_Emily": "{{i18n:CR.Clint.Emily.Dating}}",
+				  "married_Emily": "{{i18n:CR.Clint.Emily.Married}}",
+				  "divorced_Emily": "{{i18n:CR.Clint.Emily.Divorce}}",
+			}
+		},
+		{
+			"LogName":"Clint Flower Dance Fix",
+			"Action":"EditData",
+			"Target":"Data/Festivals/spring24",
+			"Entries":{
+				  "Clint": "{{i18n:CR.Clint.FlowerDance}}",
+				  "Clint_y2": "{{i18n:CR.Clint.FlowerDance.Year2}}",
+			}
+		},
+		{
+			"LogName":"Clint Flower Dance Fix - Dating, Engaged, or Married",
+			"Action":"EditData",
+			"Target":"Data/Festivals/spring24",
+			"Entries":{
+				  "Clint": "{{i18n:CR.Clint.FlowerDance.Emily}}",
+			},
+			"When": {
+				"relationship:Emily": "dating, engaged, married",
+			},
+		},
+		{
+			"LogName":"Clint Ice Festival Fix",
+			"Action":"EditData",
+			"Target":"Data/Festivals/winter8",
+			"Entries":{
+				  "Clint": "{{i18n:CR.Clint.IceFestival}}",
+			}
+		},
+		{
+			"LogName":"Clint Winter Star Fix",
+			"Action":"EditData",
+			"Target":"Data/Festivals/winter25",
+			"Entries":{
+				  "Clint": "{{i18n:CR.Clint.WinterStar}}",
+			}
+		},
+		{
+			"LogName":"Clint Desert Festival Fix",
+			"Action":"EditData",
+			"Target":"Strings/1_6_Strings",
+			"Entries":{
+				  "DesertFestival_Clint": "{{i18n:CR.Clint.DesertFestival}}",
+			}
+		},
+		{
+			"LogName":"Marnie Dialogue Alteration",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Marnie",
+			"Entries":{
+				  "Saloon_Sat": "{{i18n:CR.Marnie.Saloon}}",
+			}
+		},
+		{
+			"LogName":"Gus Dialogue Alteration",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Gus",
+			"Entries":{
+				  "Thu6": "{{i18n:CR.Gus.SixHeart}}",
+			}
+		},
+		{
+			"LogName":"Emily Dialogue Alteration",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Emily",
+			"Entries":{
+				  "fall_Thu8": "{{i18n:CR.Emily.FallEight}}",
+			}
+		},
+	]
+}

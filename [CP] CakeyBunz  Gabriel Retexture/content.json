@@ -1,0 +1,238 @@
+{
+	"Format": "2.0.0",
+    "ConfigSchema": {
+        "DSVcompat": {
+        "AllowValues": "Mongolian, Vanilla",
+        "Default": "Vanilla",
+        "Description": "Switches to mongolian ethicity for compatibility with DSV"
+        }
+    },
+	"DynamicTokens": [
+        {
+            "Name": "EventVariant",
+            "Value": "SpiritsEve",
+            "When": 
+            {
+                "DayEvent": "spirit's eve"
+            }        
+        },
+        {
+            "Name": "EventVariant",
+            "Value": "FlowerDance",
+            "When": 
+            {
+                "DayEvent": "flower dance"
+            }        
+        },
+        {
+            "Name": "EventVariant",
+            "Value": "Wedding",
+            "When": 
+            {
+                "DayEvent": "wedding"
+            }        
+        },
+        {
+            "Name": "IndoorVariant", 
+            "Value": "Indoor",
+            "When":
+            {
+                "IsOutdoors": "false"
+            }
+
+        },
+        {
+            "Name": "IndoorVariant", 
+            "Value": "Outdoor",
+            "When":
+            {
+                "IsOutdoors": "true"
+            }
+        }
+    ],
+
+    "Changes": [
+
+        //Vanilla Ethnicity
+
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Gabriel",
+            "FromFile": "assets/Characters/Gabriel_{{Season}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }	
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Gabriel",
+            "FromFile": "assets/Characters/Gabriel_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }	
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Characters/Gabriel_Beach",
+            "FromFile": "assets/Characters/Gabriel_Beach.png",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Characters/Gabriel",
+            "FromFile": "assets/Characters/Gabriel_{{EventVariant}}.png",
+            "Update": "OnLocationChange",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }
+        },
+    
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Gabriel",
+            "FromFile": "assets/Portraits/Gabriel_{{Season}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }	
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Gabriel",
+            "FromFile": "assets/Portraits/Gabriel_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }
+        },	
+        {
+            "Action": "EditImage",
+                "Target": "Portraits/Gabriel_Beach",
+            "FromFile": "assets/Portraits/Gabriel_Beach.png",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Portraits/Gabriel",
+            "FromFile": "assets/Portraits/Gabriel_{{EventVariant}}.png",
+            "Update": "OnLocationChange",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }
+        },
+        
+        //Mongolian Ethnicity
+
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Gabriel",
+            "FromFile": "assets/Characters/mongolian/Gabriel_{{Season}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }	
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Gabriel",
+            "FromFile": "assets/Characters/mongolian/Gabriel_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }	
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Characters/Gabriel_Beach",
+            "FromFile": "assets/Characters/mongolian/Gabriel_Beach.png",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Characters/Gabriel",
+            "FromFile": "assets/Characters/mongolian/Gabriel_{{EventVariant}}.png",
+            "Update": "OnLocationChange",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }
+        },
+    
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Gabriel",
+            "FromFile": "assets/Portraits/mongolian/Gabriel_{{Season}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }	
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Gabriel",
+            "FromFile": "assets/Portraits/mongolian/Gabriel_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }
+        },	
+        {
+            "Action": "EditImage",
+                "Target": "Portraits/Gabriel_Beach",
+            "FromFile": "assets/Portraits/mongolian/Gabriel_Beach.png",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Portraits/Gabriel",
+            "FromFile": "assets/Portraits/mongolian/Gabriel_{{EventVariant}}.png",
+            "Update": "OnLocationChange",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }
+        },
+
+
+    ]
+}

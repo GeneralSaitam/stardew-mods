@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="2" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="3">
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="townInterior"/>
+ </tileset>
+ <tileset firstgid="1" name="z_flowerParadiseTiles" tilewidth="16" tileheight="16" tilecount="304" columns="8">
+  <image source="flowerParadise.png" width="128" height="608"/>
+  <tile id="198">
+   <animation>
+    <frame tileid="198" duration="150"/>
+    <frame tileid="199" duration="150"/>
+    <frame tileid="207" duration="150"/>
+    <frame tileid="199" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="305" name="paths" tilewidth="16" tileheight="16" tilecount="0" columns="0">
+  <image source="paths.png"/>
+ </tileset>
+ <layer id="1" name="Back" width="2" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAPAAAgAAE=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="2" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAODkAxAAkgAYE=
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="0" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;GabrielBat.Sleep&quot;"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="16" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;GabrielBat.Awake&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Paths" width="2" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAPAAAgAAE=
+  </data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="2" height="4">
+  <data encoding="base64" compression="zlib">
+   eJy7zsDAsB2I7wPxfiB+DsTHGRAAAGqcBNs=
+  </data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="2" height="4">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAPAAAgAAE=
+  </data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

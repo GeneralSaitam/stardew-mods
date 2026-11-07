@@ -1,0 +1,96 @@
+{
+  "Changes": [{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "Fields": {
+      // Crops
+      "Lilybrook.BellPepper": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookBellPepperCropName}}",
+      },
+      "Lilybrook.BellPepperSeeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookBellPepperSeedName}}",
+      },
+      "Lilybrook.Lettuce": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookLettuceCropName}}",
+      },
+      "Lilybrook.LettuceSeeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookLettuceSeedName}}",
+      },
+      "Lilybrook.MintLeaf": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookMintCropName}}",
+      },
+      "Lilybrook.Onion": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookOnionCropName}}",
+      },
+      "Lilybrook.OnionSeeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookOnionSeedName}}",
+      },
+      "Lilybrook.Turnip": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookTurnipCropName}}",
+      },
+      "Lilybrook.TurnipSeeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookTurnipSeedName}}",
+      },
+
+      // Misc Items
+      "Lilybrook.CandyCane": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookCandyCaneName}}",
+      },
+
+      // Fruit Trees
+      "Lilybrook.KiwiFruit": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookKiwiFruitName}}",
+      },
+      "Lilybrook.KiwiSapling": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookKiwiSaplingName}}",
+        "Description": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookKiwiSaplingDescription}}",
+      },
+      "Lilybrook.Papaya": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookPapayaFruitName}}",
+      },
+      "Lilybrook.PapayaSapling": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookPapayaSaplingName}}",
+        "Description": "{{i18n:VegasOctober.ItemCompatibilityPatch.LilybrookPapayaSaplingDescription}}",
+      },
+    },
+  },
+
+  // Context Tags
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lilybrook.MintLeaf", "ContextTags"],
+    "Entries": {
+       "mint_item": "mint_item"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lilybrook.BellPepper", "ContextTags"],
+    "Entries": {
+       "bell_pepper_item": "bell_pepper_item"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lilybrook.Iceberry", "ContextTags"],
+    "Entries": {
+      "berry_item": "berry_item",
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lilybrook.Mossberry", "ContextTags"],
+    "Entries": {
+      "berry_item": "berry_item",
+    }
+  }]
+}

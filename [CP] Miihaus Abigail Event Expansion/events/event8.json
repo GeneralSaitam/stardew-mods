@@ -1,0 +1,81 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "18657008/F/f Abigail 2000/t 1400 1800/e 18657007":"breezy/
+                10 35/
+                Abigail 10 35 2 farmer 16 40 3 Wizard 111 111 2/
+                skippable/
+                move farmer -6 0 0/
+                pause 200/
+                emote farmer 8/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event8.001}}\"/
+                move farmer 0 -3 3/
+                move farmer -1 0 0/
+                move farmer 0 -2 1/
+                faceDirection Abigail 3/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event8.002}}\"/
+                move Abigail 0 1 3/
+                faceDirection farmer 2 true/
+                move Abigail -4 0 0/
+                faceDirection farmer 3 true/
+                move Abigail 0 -1 0/
+                pause 300/
+                viewport move 0 -2 5000/
+                pause 6400/
+                viewport move 0 2 5000/
+                pause 5200/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event8.003}}\"/
+                pause 300/
+                faceDirection Abigail 1/
+                pause 200/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event8.004}}\"/
+                pause 400/
+                faceDirection Abigail 0/
+                pause 700/
+                move Abigail 2 0 1/
+                pause 200/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event8.005}}\"/
+                emote farmer 32/
+                pause 200/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event8.006}}\"/
+                pause 300/
+                move Abigail -2 0 0/
+                pause 900/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event8.007}}\"/
+                emote farmer 8 true/
+                move farmer -2 0 3/
+                pause 500/
+                faceDirection Abigail 1/
+                pause 200/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event8.008}}\"/
+                pause 500/
+                faceDirection Abigail 0/
+                pause 200/
+                message \"{{i18n:Miihau.AbigailEE.event8.009}}\"/
+                pause 500/
+                emote Abigail 40/
+                move Abigail 0 -1 0/
+                faceDirection farmer 0/
+                pause 500/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event8.010}}\"/
+                quickQuestion {{i18n:Miihau.AbigailEE.event8.010X}}(break)friendship Abigail -40\\move Abigail 0 1 1\\faceDirection farmer 3\\speak Abigail \"{{i18n:Miihau.AbigailEE.event8.011}}\"\\emote farmer 60\\speak Abigail \"{{i18n:Miihau.AbigailEE.event8.012}}\"(break)friendship Abigail 40\\move Abigail 0 1 1\\faceDirection farmer 3\\speak Abigail \"{{i18n:Miihau.AbigailEE.event8.013}}\" /
+                faceDirection Abigail 0/
+                warp Wizard 2 23/
+                pause 600/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event8.014}}\"/
+                pause 300/
+                viewport move 0 -2 6000/
+                pause 3900/
+                showFrame Wizard 18/
+                pause 300/
+                emote Wizard 28/
+                globalFade 0.011/
+                viewport -1000 -1000/
+                end dialogue Abigail \"{{i18n:Miihau.AbigailEE.event8.015}}\"",
+            }
+        },
+    ]
+}

@@ -1,0 +1,663 @@
+//NOTE TO ALL TRANSLATORS
+//ALL lines of dialogue here will be included in the i18n file, and the game will pull THOSE lines from there, due to the dynamic dialogue that Katrielle uses
+//My personal recommendation, though tedious, is to copy this file and save it as "Katrielle-[Language].json", translates the lines here, and find the associated lines in the default.json file, and ALSO place the lines there.
+//I did my best to list out how many alternate lines for each dialogue, but if you happen to find one that I missed, please let me know.
+//Sorry if this gets a little confusing >__<
+
+{
+// Introduction
+ //"Introduction": Glitch
+ //"Introduction": Good End
+ //"Introduction": Good End (Glitch)
+  "Introduction": "Ahhh! You scared me!$3#$b#Wait, you can see me?... You shouldn't be able to. What happened, I wonder...$6#$e#Hi, I'm Katrielle. You're the first person I've been able to talk to since... actually, ever.$0",
+  
+//Resort Dialogue
+ //"Resort_Entering": Good End
+ //"Resort_Entering": Glitch
+ //"Resort_Entering": Good End (Glitch)
+  "Resort_Entering": "It seems like no one can interact with me here.$6#$b#A part of me missed that feeling. Now I’m excited!$0",
+ //"Resort_Leaving": Glitch
+  "Resort_Leaving": "*sigh* Back to reality.$2#$b#Well, this reality, anyway. It was fun while it lasted! Can’t wait to come back!$1",
+ //"Resort_Shore": Glitch
+  "Resort_Shore": "Wondering why I’m already wearing a swimsuit?$0#$b#I wasn’t able to figure out how to change in the dressing room, so I just came wearing this.$1#$b#Not like anyone can see me, anyway, right @?$0",
+ //"Resort_Chair": Glitch
+  "Resort_Chair": "I have to say, this beach is better than Pelican Town’s.$0#$b#I guess it’s true, being away from something familiar can be wonderful after all.$1",
+ //"Resort_Bar": Glitch
+  "Resort_Bar": "I wouldn’t consider myself as a heavy drinker. But I usually like the classy drinks, and they have some good stuff here.$4#$b#Say, ever heard of a Brandtini? They serve it at a bar where one of my inspirations frequent!$4#$b#I think it was called V-valhalla or s-something. *hic*$4#$e#...Sorry, @. I’m very tips- Slightly buzzed, I mean. *hic* I feel good though!$4",
+ //"Resort": Glitch
+  "Resort": "The people that visit the resort is random, looking at the code within the void.$6#$b#Testing everything to allow me here, now *that* was a hassle!$1",
+
+// Flower Dance
+  "danceRejection": "Trust me, I wish we could. But ignoring the fact we aren't close enough, we literally can't. Maybe some day, @.",
+  
+// 1.6 Dialogue
+ //"AcceptGift_(O)StardropTea": Glitch
+  "AcceptGift_(O)StardropTea": "Stardrop Tea, I haven't had too many of these.$6#$b#There weren't in the code for a long time, so I'll be sure to savor every drop!$1#$b#...Where did you get this?$6",
+ //"RejectBouquet_Divorced": Glitch
+  "RejectBouquet_Divorced": "@... Not again.$2#$b#Please don't put me through this again.$2",
+ //"RejectBouquet_NotDatable": Glitch
+  "RejectBouquet_NotDatable": "@...$13#$b#I'm really flattered, but I'm with Sammy now.$13#$b#I'm sorry, but he is what I want in my life.$6#$b#He loves me, and I love him, and nothing can change that now.$6#$b#I hope we can still talk and stuff.$2#$e#...$2#$e#@, please don't make this harder than it needs to be.$2#$e#...$2#$e#@, I told you already, I love Sam! And I don't love you.$5#$b#Leave me alone already, and take the hint that I just...$5#$b#I just don't feel the same way about you, and that's all that there is to say.$2",
+ //"RejectBouquet_NpcAlreadyMarried": Glitch
+  "RejectBouquet_NpcAlreadyMarried": "@...$13#$b#I'm really flattered, but I'm with {0} now.$13#$b#I hope we can still talk and stuff.$2#$e#...$2#$e#@, please don't make this harder than it needs to be.$2#$e#...$2#$e#@, I don't love you!$5#$b#Leave me alone already, and take the hint that I just...$5#$b#I just don't feel the same way about you, and that's all that there is to say.$2",
+ //"RejectBouquet_LowHearts": Glitch
+  "RejectBouquet_LowHearts": "!?$3#$b#...$2#$b#Hey, @. I won't lie, I did consider it, but maybe if we get a little closer, alright?$6#$b#I hope you understand.$13",
+ //"HitBySlingshot": Glitch
+  "HitBySlingshot": "Ow.$2#$b#Can you keep your slingshot to yourself?!$5",
+ //"RejectGift_Divorced": Glitch
+  "RejectGift_Divorced": "Eat it, put it in a chest, pawn it off to Clint or Pierre or something, burn it for all I care.$6#$b#Don't give this to me.$5",
+ //"RejectMermaidPendant_Divorced": Glitch
+  "RejectMermaidPendant_Divorced": "Absolutely not!$5#$b#I really wonder how you conjured up the absolute audacity to even ask this.$5#$b#No really, I am curious.$9#$b#Anyway, the answer is still the same. @, eat shit and leave me alone.$5",
+ //"RejectMermaidPendant_NeedHouseUpgrade": Glitch
+  "RejectMermaidPendant_NeedHouseUpgrade": "Well, here's the thing, @.$6#$b#The code sorta prevents me from marrying you if your house isn't bigger.$6#$b#But hey, if it means anything, if I could, I absolutely would.$1#$b#We'd have to cuddle up close every night, and that sounds like a dream to me.$4#$b#Oh well. Can't have it all thanks to the code, so come back to me when you get that taken care of, okay?$0",
+ //"RejectMermaidPendant_NotDatable": Glitch
+  "RejectMermaidPendant_NotDatable": "Oh... you want to marry me?$13#$b#Well, I'm sorry. I'm married to Sam, and I'm loyal to him.$6#$b#I might have two hands, but both of them are holding him, you know?$13#$b#Maybe next farm, alright?$13#$b#...Sorry if that was in bad taste, I really don't know what to say.$2",
+ //"RejectMermaidPendant_NpcWithSomeoneElse": Glitch
+  "RejectMermaidPendant_NpcWithSomeoneElse": "Oh... you want to marry me?$13#$b#Well, I'm sorry. I'm married to {0} already.$6#$b#Guess you lost the race, huh? Maybe next farm.$13#$b#...Sorry if that was in bad taste, I really don't know what to say.$2",
+ //"RejectMermaidPendant_PlayerWithSomeoneElse": Glitch
+  "RejectMermaidPendant_PlayerWithSomeoneElse": "Aren't you already married to {0}?$6#$b#As much as I would love to change my appearance and name, I think it's better to show your love and affection to them instead.$6",
+  "married_Sam": "...$6#$e#...$2#$e#...$2#$e#...$2#$e#...$2#$e#...$2#$e#...$2#$e#...$2#$e#%Katrielle contninues to look away from you, with a mixture of sadness and anger, refusing to say anything.",
+ //"dating_Sam": Gltich
+  "dating_Sam": "Hmm...$6#$b#...$2#$e#!?$3#$b#Oh, sorry @. Mind if I'll be on my own for today?$6#$b#I'm not particularly feeling well...$2#$e#Really, don't worry about me. Just some chest pain to sort out.$13",
+ //"RejectMermaidPendant_Under8Hearts": Glitch
+  "RejectMermaidPendant_Under8Hearts": "@, you know you actively have to *try* to have less than eight hearts, right?$2#$b#Either that or not talk to me for a while...$6#$b#I don't think I need to spell it out to you that I'm gonna tell you no.$2",
+ //"RejectMermaidPendant_Under10Hearts": Glitch
+  "RejectMermaidPendant_Under10Hearts": "I totally get it, @, I know marriage is pretty much around the corner.$1#$b#And honestly, I can't wait either.$4#$b#But uhh... a little more patience. We'll get there when the time's right.$0",
+ //"RejectMovieTicket_AlreadyInvitedBySomeoneElse": Glitch
+  "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "I was already invited to the movies today.$6#$b#If it makes you feel better, you can get a movie ticket and we can watch in the same room together.$1",
+ //"RejectMovieTicket_AlreadyWatchedThisWeek": Glitch
+  "RejectMovieTicket_AlreadyWatchedThisWeek": "So umm... I already went to the movies this week. So maybe another time, yeah?$0#$b#Maybe wait seven full days. It's kinda different from giving gifts to people, funny enough.$1",
+ //"RejectMovieTicket_Divorced": Glitch
+  "RejectMovieTicket_Divorced": "Movies, huh?$6#$b#Well, maybe if you start a brand new farm or dig into the code and delete all the reasons why I can't stand your guts, sure. I'll watch a movie with you.$5",
+ //"RejectMovieTicket_DontWantToSeeThatMovie": Glitch
+  "RejectMovieTicket_DontWantToSeeThatMovie": "Mmmm... nah, I'm good.$0#$b#Sorry, I just don't wanna see that movie.$6",
+ //"SpouseFarmhouseClutter": Glitch
+  "SpouseFarmhouseClutter": "If I wanted to live in a junk-filled mess, I'd throw myself straight into the void.$5",
+
+ //"SpouseGiftJealous": Glitch
+  "SpouseGiftJealous": "We're married now and we're happy but...$6#$b#I know I shouldn't be jealous of you giving gifts to other people. I mean, I'd definitely do it in your shoes.$6#$b#But I can't shake that gnawing feeling that you're gonna one day decide to love them instead of me.$2#$b#And they're all such wonderful people too, but...$2#$b#*sigh* I'm sorry.$2",
+ //"Spouse_MonstersInHouse": Glitch
+  "Spouse_MonstersInHouse": "Hold on, why is that thing here!?$3#$b#Get out of our house, you pest!$5",
+ //"GreenRain": Glitch
+  "GreenRain": "What the-!?$3#$b#Why is everything green?$3#$b#Did you do something, @? This has never happened before 1.6-I mean your arrival to Stardew Valley.$9#$e#...$6#$b#I'll be honest though, it *is* kinda cool. I wonder how the rest of town's holding up.$0",
+ //"GreenRain_2": Glitch
+  "GreenRain_2": "Oh, the green rain's back!$1#$b#Everything being this shade of green brings me an odd sense of comfort.$0#$e#I'll be sure to bask in the green for the time being. You know where to find me.$1",
+ //"RejectItem_(O)103": Glitch
+  "RejectItem_(O)103": "Uwah!$3#$b#Hey @, try not to give me these, alright?$2#$b#Chuck this thing into a volcano or something.$6",
+ //"RejectItem_(O)FarAwayStone": Glitch
+  "RejectItem_(O)FarAwayStone": "I sense a familiar power emanating from this stone...$6#$b#Maybe the Wizard might know something about this?$0#$b#Also play Terraria, it's good.$1",
+ //"AcceptGift_(O)126": Glitch
+  "AcceptGift_(O)126": "Hey, that's Wumbus! These dolls are so cute, don't you think?$1",
+ //"AcceptGift_(O)127": Glitch
+  "AcceptGift_(O)127": "!?$3#$b#Bobo, my beloved! You found one of the dolls from Wumbus World! Thanks a whole lot for finding this lil guy!$1",
+ //"AcceptGift_(O)Moss": Glitch
+  "AcceptGift_(O)Moss": "Thanks for the moss!$1#$b#You probably shouldn't eat this, but the temptation is getting to me.$8",
+ //"AcceptBouquet": Glitch
+ //"AcceptBouquet": Good End
+ //"AcceptBouquet": Glitched Good End
+  "AcceptBouquet": "I... uhh... Are you sure?$13#$b#I mean, you wouldn't feel bad that I stayed hidden?$13#$b#...You don't seem phased by that. Alright, I accept!$1#$b#...$4",
+ //"RejectBouquet_VeryLowHearts": Glitch
+ //"RejectBouquet_VeryLowHearts": Good End
+ //"RejectBouquet_VeryLowHearts": Glitched Good End
+  "RejectBouquet_VeryLowHearts": "You're gonna give me this? And risk me being noticed by the entire town? Absolutely not.$6",
+ //"divorced_Sam": Glitch
+  "divorced_Sam": "...$5#$e#...$5#$e#...What?$5#$e#Okay, fine. I'll entertain a conversation with you, @.$5#$b#I know why you want to talk to me.$5#$b#Do you want me to gloat about how happy I should be that Sam's not married to you anymore?$5#$b#Because that isn't it at all.$5#$b#Inherited a farm when you should have inherited a circus.$5#$e#I'll be honest, I wasn't happy that you and Sam started dating.$2#$b#And by the time I processed that feeling, you got married, making that feeling so, *so* much worse.$2#$b#But there was that one small solace in my aching chest. He was happy.$6#$b#I believe I would never be the one to make him happy. I mean, what else can I do?$2#$b#At least there was someone out there that could bring him joy.$2#$b#And then you went out and stuck both of your legs in the bicycle wheels.$5#$b#And for what? Seeing extra bits of dialogue? Buying a nice painting of him to add to your collection?$5#$b#Or maybe you just wanted to try one of the other bachelors or bachelorettes?$5#$b#...$2#$b#I don't know your reasons, and I want to hope and believe it was for the best.$2#$e#...$5#$b#...$2#$b#I just want him to be happy. That feeling never changed, throughout your relationship with him.$2#$b#And truthfully, I'll want you to be happy too.$6#$b#But just not for today.$5",
+
+  
+// Divorce
+ //"divorced": Glitch
+ //"divorced": Good End
+ //"divorced": Good End (Glitch)
+ //"divorced": Bad End
+ //"divorced": Bad End (Glitch)
+  "divorced": "You know, @, there's something amazing about being seen by someone, and it's nerve-wracking, but ultimately, I enjoyed all of it.$6#$b#But now... I'd rather just be invisible.$2#$e#Please go away, just pretend I'm not even here, and it'll be easier for both of us.$2",
+  
+// Marriage Question Dialogue
+ //"Neutral_7_63": Glitch
+ //"Neutral_7_63": Bad End
+ //"Neutral_7_63": Bad End (Glitch)
+ //"Neutral_7_63": Good End
+ //"Neutral_7_63": Good End (Glitch)
+  "Neutral_7_63": "I've just been really worried about everything. The farm, my new life, thinking that everyone's eyes on me, and you.$6#$b#I've never felt insecure about things until now, and I can't make sense of my life fast enough!$2#$b#...$7#$b#But, you're here to keep me grounded, @.$13#$b#And as long as I have you, I know everything will be fine.$0#$b#I love you, @. Thank you for listening. I really needed it.$4",
+ //"Neutral_7_64": Glitch
+  "Neutral_7_64": "Oh... Okay then. Sorry to bother you.$2#$b#...$7",
+ //"Neutral_7_old": Glitch
+  "Neutral_7_old": "But I went through this already. Go do your thing, and I'll be here with my thoughts.$6",
+
+// After 10 heart cheating event
+ //"dumped_Girls": Glitch
+  "dumped_Girls": "You're lucky I have no plans on deleting your farm right now. Get out of my face!$5",
+ //"secondChance_Girls": Glitch
+  "secondChance_Girls": "You're really not a romantic, are you? You don't just create a harem and get back together with them!$5#$b#...$6#$b#But it seems like I can't avoid it. The code literally doesn't allow it...$2#$b#Because I can't say no, I'll make the best of this.$2#$b#But, don't do this in real life. It won't work out like this, I assure you.$6",
+// Breaking up
+ //"breakUp": Glitch
+  "breakUp": "...Oh.$6#$b#Well, I guess it's okay. I think it might be better if I stay by myself anyway.$0#$b#Don't worry about me, I'll be fine.$1#$b#Really.$0#$b#...$6#$b#......$6#$b#...$2",
+// Raining Dialogue
+ //"rainy": Glitch
+  "rainy": "I'm not too fond of the rain.$6#$b#It feels tingly in the worst ways, and I don't think it's the same as just getting drenched.$2#$e#That being said, standing in the rain at the beach is kinda nice.$0",
+  
+  
+// Spring Dialogue
+ //"Mon": Heart Reset
+ //"Mon": Good End (No Heart Reset)
+  "Mon": "Hi, @...$6#$b#...$6#$e#How and why can you see me? It shouldn’t be possible.$6",
+  "Mon2": "Hey, @. Sorry if I was a little off-color when we first met. I'm still getting used to being able to interact with someone.$0#$b#I hadn't talked to anyone before, so it's still a little overwhelming for me.$2",
+  //"Mon4": "",
+ //"Mon6": Good End
+ //"Mon6": Bad End
+  "Mon6": "There's something I was thinking about, stuff like contemplating why no one could see me. I know I don't belong here in this world.$6#$b#And yet, here I am, and people are starting to take notice. It's frightening, to say the very least.$6#$e#Hey @, I'd like to believe everything will be okay with your help, but only if you want to.$0",
+ //"Mon8": Good End
+ //"Mon8": Bad End
+  "Mon8": "Hi @.$0#$e#I still don't understand why you, or anyone else for that matter, can see me, but that's okay!$1#$b#For the first time in my life, something is about to drastically change. I can feel it.$0#$b#I hope everything works out okay in the end. But I got you by my side, so I'm not worried.$1",
+  //"Mon10": "",
+
+  "Tue": "I don't really know where I came from, but I do know one thing for sure.$6#$b#I learned that I was a massive pain to be brought to life!$1#$e#It was worth it though, I'd say.$0",
+  "Tue2": "There's this one time, where my face was replaced with Abigail's. It was a new level of identity crisis!$3#$b#But hey, at least she's super pretty.$0",
+  "Tue2_inlaw_Abigail": "There's this one time, where my face was replaced with Abigail's. It was a new level of identity crisis!$3#$b#But hey, at least she's super pretty.$0#$b#I know you agree. After all, you're married to her, right?$1",
+  "Tue4": "I was supposed to live in the boulder next to the dock on the left. But I realized the fishers wouldn't like that.$0#$b#I heard you'd get some pretty high quality fish there, so I decided not to rob them of that.$0#$e#So, that's why I moved here. Funny how these things happen, huh?$1",
+  "Tue6": "Making sure the inner fabric of the world doesn't unwind isn't my only problem.$0#$b#There was this one time where I lost a piece of my arm!$3#$e#Though, it didn't hurt, so it actually isn't as bad as you'd think.$0#$b#But considering I'm in one piece now, I'd like to believe that someone was looking out for me.$0",
+ //"Tue8": Dating Dialogue
+ //"Tue8": Non-Dating Dialogue
+ //"Tue8": Sam Path
+ //"Tue8": Sam Finale
+  "Tue8": "Settling down is something I'm scared about. But, it's not like I'm afraid of commitment or anything.$6#$b#There was one time I was proposed to, and the world literally ended!$3#$e#Here's to hoping the world doesn't stop just by taking someone's hand in marriage.$1#$b#Oh, but for your information, I am still single, by the way.$8#$e#Oh, and one more thing! The one that proposed to me was a character in a dating sim, just in case you're wondering.$1",
+ //"Tue10": Sam End
+  "Tue10": "There was a haunting scene that unfolded in my house before you came here.$6#$b#Without any prompting, *everyone* starting walking into my house. I thought the jig was up and they could see me!$3#$b#But luckily, the world inexplicably reset, over and over again.$0#$b#I am *not* going to complain about that.$0#$e#Look, I wanted to talk to people, but I didn’t want anyone barging into my house!$5#$b#Then again, that’s how I met you, right?$8#$b#I’ll make that the one exception.$4",
+
+  "Wed": "This might be weird, and a bit creepy but...$6#$b#Aside from you, I know a *lot* of things about everyone in Pelican Town.$6#$e#When people can't see you, it's easy to learn these things.$0",
+ //"Wed2": SVE Dialogue
+  "Wed2": "You know the museum curator, Gunther?$0#$b#He’s mild-mannered to a fault. It was irresponsible to let someone take everything from the museum.$0#$e#Still, I wish he was more willing to talk. He seems like a smart and interesting guy, all things considered.$6",
+  "Wed4": "At first glance, you'd think Emily's the goofball of her family.$6#$b#Spiritually minded, her appearance, her \"secret hobby\", it screams childish and irresponsible.$0#$b#But she exercises regularly, cleans around her house, and has a job! Haley on the other hand...$0#$e#What does she do aside from taking photos of things?$1",
+  "Wed4_inlaw_Emily": "Emily's the goofball of her family, there’s no doubt about that.$6#$b#Spiritually minded, her appearance, her \"secret hobby\", it screams childish and irresponsible.$0#$b#But she exercises regularly, cleans around her house, and has a job!$1#$e#Everything put together, that’s what you love about her, right @?$1",
+  "Wed4_inlaw_Haley": "At first glance, you'd think Emily's the goofball of her family.$6#$b#Spiritually minded, her appearance, her \"secret hobby\", it screams childish and irresponsible.$0#$b#But she exercises regularly, cleans around her house, and has a job! Haley on the other hand...$0#$e#...Actually, maybe I shouldn't say mean things about her to her spouse, huh? Sorry about that, @.$6",
+ //"Wed6": Sam End
+  "Wed6": "Abigail and Sebastian are pretty close. I wonder if they'd make a good couple...$0#$b#Poor Sam, being shoved into third-wheel status in that group of friends...$2#$e#Hmm...$8#$e#Oh! Don't mind me, I'm just thinking about stuff.$0",
+  "Wed6_inlaw_Sam": "Abigail and Sebastian are pretty close. I wonder if they'd make a good couple...$0#$b#And Sam has you, so I guess it'd work out, right?$0#$e#...$2",
+ //"Wed6_inlaw_Abigail": Sam End
+  "Wed6_inlaw_Abigail": "Abigail and Sebastian are pretty close. Too bad for him though, since you snatched her up.$0#$b#At least Sam has someone else to join in on the third-wheeling, right?$0#$e#Hmm...$8#$e#Oh! Don't mind me, I'm just thinking about stuff.$0",
+ //"Wed6_inlaw_Sebastian": Sam End
+  "Wed6_inlaw_Sebastian": "Abigail and Sebastian are pretty close. Too bad for her though, since you snatched him up.$0#$b#At least Sam has someone else to join in on the third-wheeling, right?$0#$e#Hmm...$8#$e#Oh! Don't mind me, I'm just thinking about stuff.$0#$b#But I will say, I don’t think Abigail and Sam would work well as a couple, but that’s just me.$1",
+  "Wed8": "I remember a while ago, before you moved here, Emily talked to Linus about his lifestyle and what not.$6#$b#Clint might have gotten the wrong idea, and went on a bit of a rampage while Linus was out foraging.$6#$b#I haven't seen him get that mad before, and he's never been that mad since, but that was pretty scary to see.$2#$e#It's pretty despicable though, it's okay that Emily doesn't want you, no need to take it out on anyone else!$5",
+ //"Wed10": Leo Moved
+  "Wed10": "@, there's a couple more folks I have never met, according to the void.$0#$b#Does the name \"Birdie\" ring a bell?$9#$b#I kinda wish I knew someone that met her before. But I think that's beyond my reach.$2#$e#Ah well, there's always a future update.$1",
+
+  "Thu": "Spring is not a fun season.$6#$b#Somehow, pollen still gets into my house despite of how far I am from any bit of greenery.$2#$e#I’m not allergic, but if pollen can somehow find its way out of bounds, then it’s definitely a massive nuisance for everyone.$5#$b#Can’t plants reproduce in a way that doesn’t throw dust into the air?$6",
+ //"Thu2": 2-heart Event dialogue
+  "Thu2": "I know it’s a little risky, but on Thursdays, I usually try to walk around town.$0#$b#I came to the realization that everyone might be able to see me now.$6#$b#But I miss being able to freely go where I want to go.$2#$e#I’m trying to carefully plan my pathing from now on.$6",
+  "Thu4": "I feel so weird. I've listened to everyone talk about things that don't matter, like hanging out with friends, or watching the clouds.$6#$b#Are the things I talk about more meaningful because it's not about these little things? Or are they meaningless because it means little in the context of everyone else?$2#$e#If you're still talking to me, I'll believe that there's something worthwhile about me after all.$8",
+  //"Thu6": "",
+  "Thu8": "It's kinda incredible that Pelican Town is able to survive with a little more than twenty residents.$6#$b#I mean, the majority of all construction is spearheaded by Robin, your farm is sustained by the nearby ranch for animals and stores for crops, there's only one singular restaurant and bar...$9#$b#Sure, there's a wizard tower with a wizard that doesn't talk anyone, a library and museum that somehow lost all of its items by the time of your arrival...$9#$e#It makes a lot of sense why Joja would plop down a JojaMart here.$6",
+  "Thu10": "Hey @, something wrong?$2#$b#I don't mean like, there's something wrong, I just have a difficult time reading you specifically.$6#$b#I wanna make sure that you're alright, and your weird entity status makes reading you difficult in a way that reading anyone else in town simple.$6#$e#I'll trust that you'll tell me whatever's wrong.$0#$b#Whether it's accidentally losing all your stuff in the mines because you were too bold in the mines or losing that legendary fish...$1#$b#Or accidentally hitting your crops with a pickaxe or missing the store by ten minutes, or eating a gift in front of someone else...$1#$b#Or the eternal struggle to buy the next big thing or the eternal struggle to figure out what to do with all the money you amassed...$1#$b#Just let me know, I'll be more than happy to lend you a listening ear, @.$1",
+
+  "Fri": "Hmm, today's Friday, right? That's when most of the residents gather 'round in the saloon.$0#$b#I don’t have any day-to-day obligations, so it's sometimes hard to tell what day of the week it is.$0#$e#I wonder if anything interesting is gonna happen today.$1",
+  "Fri2": "Shane always seems to be at the saloon, but he's usually in a worse mood these days.$2#$b#Maybe it has something to do with the fact that there's so many people there on Fridays.$6#$e#I might enjoy living vicariously through the lives of other people, but to be actually in his position? I kinda get it.$0",
+  "Fri2_inlaw_Shane": "On Fridays, Shane usually goes to the saloon.$0#$b#He really changed up his act since marrying you. At least, that’s what I hope.$1#$e#Then again, considering his room...$6#$b#If you need any help cleaning those cans, let me know.$0",
+  "Fri4": "Sam loves skateboarding outside his house, and he usually looks pretty cool doing it.$0#$b#But there was one time he lost control, and fell in the river!$1#$e#It was certainly something to see his hair down for once.$0#$b#...He looked nice.$8",
+  "Fri4_inlaw_Sam": "Sam loved skateboarding outside his house, and he usually looks pretty cool doing it.$0#$b#But there was one time he lost control, and fell in the river!$1#$e#It was certainly something to see his hair down for once.$0#$b#He looked... peculiar. And nothing else.$6",
+ //"Fri6": Pam House Dialogue
+ //"Fri6": Anonymous Pam House Dialogue
+  "Fri6": "Penny hates alcohol. It's definitely because her mom is always going to the pub.$6#$b#She's definitely in a tough place, trying to take care of everything while her mom is actively ruining her efforts.$2#$b#I bet, even if someone built them an entire house to replace that trailer of theirs, Pam still wouldn't be able to kick the habit.$6#$b#I even tapped her shoulder every single time she took a sip for a week to scare her, but she didn't even notice!$3#$e#Addiction’s a pretty tough thing to crack. I hope you aren’t ruining your life with too much of anything, good or bad.$0",
+  "Fri8": "I really feel bad for Jas. On Fridays, she's home alone while Shane and Marnie are drinking away.$2#$b#Don't know what happened to her parents, but I'd like to believe they were good people.$0#$e#...?$0#$e#Hey, I don't know everything!$5#$b#All I know is that Jas's life is pretty terrible, and I hope something good happens with her soon.$6#$b#But, neglect like this can really mess a kid up, you know?$2",
+  "Fri10": "Marriage is a very fickle thing, isn't it? I mean, look at Alex's parents.$6#$b#One day, his father just walked on out of their lives, and for what?$5#$b#Was the freedom he got from his marriage really worth messing up Alex and Clara like that?$5#$e#Sorry, it still steams me up thinking about it. To have a loving family, that I've been wanting my entire life, and to toss it away.$6#$b#You didn't hear it from me, but fuck that guy.$5#$e#...I know I'm some weird character that is only kinda aware of the fourth wall and all, but sorry for breaking your immersion with the f-bomb.$2#$b#He just aggravates me that much, to abandon them like that.$6#$b#Seeing just how badly it hurt everyone it's just-$5#$e#...I need to cool off.$2",
+
+  "Sat": "Living where I live is pretty nice. I can stare out into the ocean as long as I want.$0#$b#And hey, I definitely do have enough time to think about things.$0",
+  "Sat2": "Every third Sunday of the month, I start glitching out. No idea as to why.$6#$b#Hopefully, it doesn't affect you, but after that time of the month passes, we're in the clear.$0#$e#...$0#$b#What's with that look?$1#$e#...!$3#$b#...Not like that, you jerk! Get your mind out of the gutter!$5",
+  //"Sat4": "",
+  "Sat6": "%revealtasteKatrielle72 %revealtasteKatrielle74 Being a glitch has had its benefits. I know a lot about everyone when no one knows anything about me, for starters.$0#$b#I could go anywhere and get whatever I want, like Prismatic Shards, Diamonds, or anything else!$1#$e#Though, once you literally have an infinite number of them, it feels hollow finding one.$0#$b#I could say that about most things, but some items I'll refuse to generate, just to find value in the things I like.$0#$b#It's a lot of learned self-restraint.$1",
+  "Sat8": "Despite being me, I'm not omnipotent.$6#$b#I know I'm a piece of code and art assets, I know a lot of things outside of this world, and even more about the world itself.$6#$e#There's others like me, right? Maybe one day I'll come to know them!$1#$b#Then again, now *I'm* assuming that there's more than just me.$0#$b#But there's only one of two truths: either I'm the only glitch with sentience, or I'm not. Either answer is pretty terrifying, wouldn't you say, @?$6",
+ //"Sat10": Sam Path
+  "Sat10": "So, there's a piece of code that really got me.$6#$b#It was about sitting at a fireplace, filled with lonely desperation.$2#$b#Normally, I would just be content with being eternally alone, but with you here?$6#$b#I absolutely fear that possibility. Not having you in my life, I don't think I can go back.$3#$b#@, thanks for changing my life.$8",
+
+ //"Sun": Glitch
+  "Sun": "I'm pretty sure today's Sunday. It's a great time to kick back and take a break.$1#$b#I don't want to do anything when I see everyone else relaxing.$0#$e#What do I do? I'm just keeping track of the things going on here.$0",
+ //"Sun2": Glitch
+  "Sun2": "I'm glad I'm here. Could you imagine if I manifested in a zombie apocalypse or a fantasy world?$0#$e#Hmm? Magic and slimes? That's not fantasy, they're real. They're literally right over in the mines. And there's a wizard, too.$6",
+ //"Sun4": Glitch
+  "Sun4": "I remember some of the crazy events that happened before you came to town.$0#$b#Like what happened with George and Shane, just as an example.$6#$b#Even some of the former residents, like Kent, Michael, and Lenore...$2#$e#I think you picked the perfect time to come here, after everything died down.$0#$b#At least, I think everything died down.$0",
+ //"Sun4_2": Glitch
+  "Sun4_2": "I remember some of the crazy events that happened before you came to town.$0#$b#Like what happened with George, Kent, and Shane, just as an example.$6#$b#Even some of the former residents, like Michael and Lenore...$2#$e#I think you picked the perfect time to come here, after everything died down.$0#$b#At least, I think everything died down.$0",
+ //"Sun6": Glitch
+  "Sun6": "I take notes of everyone here, and keep all the information I jot down on a website.$0#$b#It's pretty comprehensive if I do say so myself. It's one of the few things I've done that I'm proud of.$1",
+ //"Sun8": Glitch
+  "Sun8": "Hey, you talk with the other townsfolk, right?$6#$b#I don't want to be the only person you talk to.$0#$e#You might be the only person that I can really relate to, even if it's only to a small degree.$8#$b#But at the same time, everyone else's lives are rich and interesting, even if they're not always the best people.$1#$b#I've seen a lot of their lives, and hopefully, you can see it too.$0",
+  //"Sun10": ""
+
+// Spring Date-Based
+  "spring_12": "Tomorrow is the Egg Festival, right?$6#$b#I haven't figured out how to join in there just yet. So, I'll pass on the festivities for now, unfortunately.$2#$e#But I have heard Abigail's the egg scavenging queen.$0#$b#Good luck, @! I hope you know the right path to victory.$1",
+  "spring_12_2": "You know, I don't think I ever asked. Did you win last year's Egg Festival?$0#$e#Well, regardless, keep on your toes, and follow your nose!$1#$b#I have drawn a map on my computer for the optimal path, since Mayor Lewis and Marnie use the same hiding spots.$0#$b#Unfortunately, I deleted the file, since I'd only theorized it, and never had an opportunity to execute it.$6#$e#Oh well, you still can do it!$1",
+ //"spring_13": Community Shortcut Upgrade Dialogue
+ //TODO: "spring_13": SVE
+  "spring_13": "...? @?$3#$b#How'd you get here?...$0#$b#I'm actually super happy to see you though!$1#$q 999915 spring_13_old#But really, how did you get here?#$r 999915 250 spring_13_12#I don't know, actually.#$r 999915 250 spring_13_13#I glitched here.#$r 999915 250 spring_13_14#I used a Beach Totem.#$r 999915 250 spring_13_15#I ran as fast as I could.#$r 999915 0 spring_13_16#I came in from the forest.",
+  "spring_13_2": "...? @?$3#$b#How'd you get here?...$0#$b#I'm actually super happy to see you though!$1#$q 999915 spring_13_old#But really, how did you get here?#$r 999915 250 spring_13_12#I don't know, actually.#$r 999915 250 spring_13_13#I glitched here.#$r 999915 250 spring_13_14#I used a Beach Totem.#$r 999915 250 spring_13_15#I ran as fast as I could.#$r 999915 0 spring_13_16#I came in from the forest.",
+  "spring_13_old": "Hope you enjoy the Egg Festival!$1",
+  "spring_13_12": "Oh really? Hmm... I'll be sure to investigate it. But you are quite the anomaly, you know that?$1",
+  "spring_13_13": "Don't say that. You'll make me blush.$8#$b#I know you're not a glitch, but I appreciate the sentiment.$1",
+  "spring_13_14": "Boo, I thought you got here through a glitch.$6#$b#Ah well, I still appreciate you stopping by regardless.$1",
+  "spring_13_15": "Ha! You'd need to run into town before 6:10 AM. That's absolutely impressive if that's true.$1#$b#@, hopefully you don't have any trouble going back.$0",
+ //"spring_13_16": Community Shortcut Upgrade Dialogue
+  "spring_13_16": "Don't sell me your lies, @.$5#$b#We both know you didn't do that.$2",
+ //"spring_23": Dating
+  "spring_23": "If there's one thing I'm super jealous of, it would be the Flower Dance tomorrow. I can't show up there to dance.$6#$b#It's alright though, I've been around all this time, and I still dance like a slime is stuck on my leg.$0#$e#Though, it'd be nice to dance with someone...$6#$e#I wonder if Penny would be okay with sitting out for one year...$8",
+  "spring_23_2": "*sigh* The Flower Dance is tomorrow again, isn't it? Well, I suppose it's about that time to wistfully sit in my house, and watch everyone else have fun.$2#$e#@, if you dance, just do me a favor.$6#$b#Try to find a gaudy outfit that doesn't match the rest of the dancers. If I see that, I'll know you remembered me.$1",
+  "spring_23_inlaw_Penny": "If there's one thing I'm super jealous of, it would be the Flower Dance tomorrow. I can't show up there to dance.$6#$b#It's alright though, I've been around all this time, and I still dance like a slime is stuck on my leg.$0#$e#Though, it'd be nice to dance with someone...$6#$e#You're going to be dancing with your wife, right @?$8",
+  "spring_23_2_inlaw_Penny": "If there's one thing I'm super jealous of, it would be the Flower Dance tomorrow. I can't show up there to dance.$6#$b#It's alright though, I've been around all this time, and I still dance like a slime is stuck on my leg.$0#$e#Though, it'd be nice to dance with someone...$6#$e#You're going to be dancing with your wife, right @?$8",
+  "spring_23_inlaw_Sam": "If there's one thing I'm super jealous of, it would be the Flower Dance tomorrow. I can't show up there to dance.$6#$b#It's alright though, I've been around all this time, and I still dance like a slime is stuck on my leg.$0#$e#...I wonder if Penny is looking for a partner.$6",
+  "spring_23_2_inlaw_Sam": "If there's one thing I'm super jealous of, it would be the Flower Dance tomorrow. I can't show up there to dance.$6#$b#It's alright though, I've been around all this time, and I still dance like a slime is stuck on my leg.$0#$e#...I wonder if Penny is looking for a partner.$6",
+
+  "spring_1_2": "Happy New Year! Hope things go even better for you on the ol' %farm Farm, @.$1",
+
+// Summer
+  "summer_Mon": "Mondays are a pretty heavy drag. Everyone's always in a bit of a slump, and frankly, I'm no exception.$6#$e#I mostly blame the humidity and the summer heat. It can get downright unbearable at times.$6#$b#The beach is nice every so often, but maybe I should have manifested in the mountains instead.$0",
+  "summer_Mon2": "I could reach into the void and pull out a bunch of ice creams. It'd be pretty nice, honestly.$0#$b#Too bad I can't pull out a colder temperature for the entire town.$6#$e#Then again, you probably don't have any winter foragable seeds, do you?$0",
+  "summer_Mon2_2": "I could reach into the void and pull out a bunch of ice creams. It'd be pretty nice, honestly.$0#$b#Too bad I can't pull out a colder temperature for the entire town.$6#$e#Hopefully you have a couple of winter foragable seeds saved up, right?$1#$b#...Hehe, just kidding.$0",
+  "summer_Mon4": "Today's a pretty good day for a swim, but truth be told, I don't know how.$6#$b#I mean, I can surf the web, but that's about it.$1#$e#Okay, that was a terrible pun, I'm sorry. It’s not even true, I do know how to swim.$2#$b#I’ll try not to say anything like that again. Promise.$2",
+  "summer_Mon6": "Hey, @. Here, have an ice cream.[233 233 233]$1#$e#Don't worry, it's on the house.$1#$b#Or, the void, I guess. It's really hot in there too, you know?$0",
+  "summer_Mon8": "Hey, @{[1].[233 233 233].$1#$e#What was that? Oh, just a little code I know about. Enjoy the ice cream!$1#$b#I'm watching you though, you better not name your animals after these codes, okay, @?$5#$b#@, @, @. I'm just wondering if *you're* named after a bunch of numbers.$0#$b#You'd have five items so far, just by talking to me.$6#$e#But you wouldn't cheat like that, right?$1",
+  //"summer_Mon10": "",
+
+  "summer_Tue": "When I first moved in, as far as I remember, mostly everyone was here already.$0#$b#I wonder if they had to go through the same hassle I had to go through to move in.$9#$e#Then again, none of them live in the middle of the ocean!$1",
+  "summer_Tue2": "I'm sometimes a very curious person, but that has definitely led to issues in the past.$0#$b#You would not believe how hard it was to inquire about anything at all!$1#$e#I'd be stuck in silence for daring to ask even a single question.$9#$b#So, if you got any questions for me, I'm all ears!$1#$e#...On second thought, maybe we’ll talk about that another day.$0",
+ //"summer_Tue4": No Glasses Dialogue
+  "summer_Tue4": "At one point, I wanted to stick out a little bit more. Be special in my own little way, you know?$0#$e#For starters, I wanted to take off my glasses while talking to you.$0#$b#Ta-da! Like this!$25#$b#Give me a second, I need to put them back on.$24#$e#There we go!$1#$e#Sadly, it seems I can only do that when I finish saying what I need to say, and not during it.$6#$b#Oh well, at least I can be expressive nonetheless.$1#$b#Say, here's a little something something, as thanks for listening to me ramble.$0[204 204 204]",
+  "summer_Tue6": "I've come to realize that I'm quite talkative, way more than the other townspeople, I'd say.$6#$b#I doubt you've heard everything I got to say, but honestly, that's not a problem.$0#$b#It's usually spilling some tea about everyone, or the occasional existential crisis. Typical stuff like that.$9#$e#Oh, and Tuesdays, I usually talk about my personal favorite topic, meta!$1#$b#It's usually about the things I've gone through coming to life. It's super interesting to me, anyway. I hope you enjoy the topic too.$0",
+ //"summer_Tue8": Sam Path
+  "summer_Tue8": "For the longest time before I had a home, I stood like a scarecrow, right next to Elliott's cabin.$0#$b#It was a pretty nice spot. Nice view of the ocean without living on it, and Elliott's piano playing wasn't bad either.$0#$e#Though I swear I could even hear Sam jamming out on his guitar.$8#$b#No offense to Elliott, I liked listening to that electric guitar more than the plinking on a piano.$0#$b#Why? I don't know, maybe it has something to do with comparisons to a well-read club president.$5#$e#Don't worry, @. In life, it's never *just* one person.$1",
+  "summer_Tue10": "It dawned on me that, ever since the day I met you, I've had my diary out scattered in pages.$0#$b#I accidentally had it eviscerated around the time you crossed the bridge to see me.$9#$e#I guess you might have read it, and since it's there the whole time and we're this close, I won't make a fuss about it.$0#$e#But have you checked it recently? It changes every day, though eventually it cycles over.$0#$b#I don't know why it cycles like that, but I embraced it a bit, and started throwing pages into the void, and it'd just show up there for some reason.$9#$e#Alternatively, if you don't care, that also works for me, just as well.$1",
+  
+ //"summer_Wed": Good End
+  "summer_Wed": "I hope you don't mind me being invested in other people's lives.$0#$b#For the longest time, I didn't even consider I'd ever interact with one of them, so it felt like it wouldn't have mattered.$6#$e#Well, aside from you, anyway.$0",
+  "summer_Wed2": "Elliott is a romantic, and I wouldn't call it hopeless, either.$0#$b#He's a novelist and a pianist after all, and his mouth spews flowery language.$0#$e#I think if he would ever actively search for love, he'd find it in no time.$0",
+  "summer_Wed2_inlaw_Elliott": "Elliott is a romantic, and I wouldn't call it hopeless, either.$0#$b#He's a novelist and a pianist after all, and his mouth spews flowery language.$0#$e#He seems pretty happy to have found you, you know?$1",
+  "summer_Wed4": "Funny, today's the only day of the week Alex doesn't go to the beach.$9#$b#From what I learned, he usually goes to Emily's house. I never took him to be interested in her...$6#$b#Maybe Haley would know.$0",
+  "summer_Wed4_inlaw_Haley": "Funny, usually on Wednesdays, Alex wouldn't go to the beach and stop by Haley's house.$9#$b#I guess the saying is true, there's plenty of other fish in the sea.$0",
+  "summer_Wed4_inlaw_Alex": "Funny, usually on Wednesdays, Alex would go to the beach and stop by Haley's house.$9#$b#I guess the saying is true, there's plenty of other fish in the sea.$0",
+  "summer_Wed6": "I usually love watching the drama unfold in front of me, but there’s always one person I never understood: Lewis.$9#$b#I don’t understand why him not being true to his heart would jeopardize his mayoral status.$9#$e#Not like it matters, I’d wager you’d have a better standing among the community if you made that your goal, @.$0",
+  "summer_Wed8": "You know how there’s a Witch living here, right?$0#$b#Apparently, she’s not evil, per say. But she has been utterly betrayed by Rasmodius. Hell hath no fury like a woman scorned, after all.$6#$b#Abigail’s also involved somehow, but to what reason, I’m not really sure. Looking at what I can see in the code, nothing is outright confirmed.$6#$e#I will say this: I’m not great with colors, but brown and green don’t make purple, you know?$0",
+  "summer_Wed10": "Isn't funny how people with the largest egos tend to be the most fragile?$0#$b#Personally, I'd argue Morris would have the largest one, but he isn't the only one with that ego problem.$0#$b#Alex, for example, presents himself as a really arrogant guy, and kinda crass at times too.$9#$b#But, I seen him with his grandparents. That narcissistic exterior completely melts around them.$0#$e#It's almost cute in a way. I'm sure if someone was as close to him like his grandparents now or his mom from what I heard, you could see that side of him.$1#$b#It's a shame, honestly. Him acting sincerely is far more interesting than that whole \"machismo\" schtick.$6",
+ //"summer_Wed10_inlaw_Alex": Sam Path
+  "summer_Wed10_inlaw_Alex": "Isn't funny how people with the largest egos tend to be the most fragile?$0#$b#Personally, I'd argue Morris would have the largest one, but he isn't the only one with that ego problem.$0#$b#Alex, for example, presents himself as a really arrogant guy, and kinda crass at times too.$9#$b#But, I seen him with his grandparents and with you. That narcissistic guy exterior completely melts around all of you.$1#$e#It's almost cute in a way.$13#$b#...But if that's the case, then why are we dating?$2#$b#...Hey, @. Do me a favor. Alex is a sweet guy, and he'd be gutted if you were seen dating someone else.$2#$b#It'll hurt me, but I trust you will do the right thing, for both of us and for him.$2[277 277 277]",
+
+  "summer_Thu": "Hi @. I think you can help me out with figuring out everything.$6#$b#But I have no clue where to start...$6",
+ //"summer_Thu2": Summer Thursday 2-Heart Answer 1 Dialogue
+ //"summer_Thu2": Summer Thursday 2-Heart Answer 2 Dialogue
+ //"summer_Thu2": Sam Path
+  "summer_Thu2": "Hey, @. I don’t really know anything that I can ask you to help me figure out things...$6#$q 999900/999901 null#So, do you have any questions for me?#$r 999900 10 summer_Thu2_12#What kind of things do you like?#$r 999900 10 summer_Thu2_13#Where did you come from?#$r 999901 -10 summer_Thu2_14#What color is your underwear?",
+  "summer_Thu2_12": "That’s a little hard. Most items I can just create out of the code, so most things don’t have much of an appeal to me. $0#$e#But, I would have to go with Bug Steak. It’s tender like a normal steak, but gooey like a marshmallow!$1 %revealtasteKatrielle874",
+  "summer_Thu2_13": "Hmm... I’m not sure. I’ve been here as long as I can remember.$6#$b#I could say I was stitched under the code, and you somehow undid the seams.$9#$b#That’s as far as I can really understand.$6",
+  "summer_Thu2_14": "...!?$3#$b#Stay away from me, you pervert.$5",
+ //"summer_Thu4": Summer Thursday 4-Heart Answer 1 Dialogue
+ //"summer_Thu4": Summer Thursday 4-Heart Answer 2 Dialogue
+ //"summer_Thu4": Sam Path
+  "summer_Thu4": "Hi @! Dunno if you spoke to me when we were a little less close, but I’m taking questions today!$0#$q 999902/999903 null#Got any questions for me?#$r 999902 10 summer_Thu4_12#Do you know how I made you become visible?#$r 999902 10 summer_Thu4_13#What are your hopes and dreams?#$r 999903 10 summer_Thu4_14#Are you interested in anyone?",
+ //"summer_Thu4_12": Sam Path
+  "summer_Thu4_12": "Hmm... good question. The only thing that I can think of are two things.$9#$b#The first thing is the whole bridge thing, but truth be told, that’s probably not it.$9#$b#But the second thing... You’re different from everyone else here. I can say that with certainty.$9#$b#You have a little more agency than everyone else. Beyond that, I got nothing.$6",
+ //"summer_Thu4_13": Sam Path
+  "summer_Thu4_13": "Oh, a personal question!$3#$b#Well, I haven’t put much thought into it.$9#$b#I have some short term things, like maybe getting a new hobby or having fun or something.$6#$b#But as for the big picture? I got nothing, aside from surviving each and every day.$2",
+ //"summer_Thu4_14": Sam Path
+  "summer_Thu4_14": "Oh, absolutely no one in particular!$3#$b#...$8",
+ //"summer_Thu6": Summer Thursday 6-Heart Answer 1 Dialogue
+ //"summer_Thu6": Summer Thursday 6-Heart Answer 2 Dialogue
+ //"summer_Thu6": Sam Path
+  "summer_Thu6": "Hey, @! Just in case you don’t know, I’m planning a little something special!$0#$b#Every Thursday in Summer, I’m taking any and all questions you have for me!$1#$b#Granted, you gotta talk to me at different closeness levels, but eh, I worked around worse limitations.$9#$q 999904/999905 null#So, any questions for me?#$r 999905 -10 summer_Thu6_12#Why do you like Sam so much?#$r 999904 10 summer_Thu6_13#How did you dye your hair?#$r 999904 10 summer_Thu6_14#How old are you?",
+ //"summer_Thu6_12": Sam Path
+  "summer_Thu6_12": "Huh!?$3#$b#I don’t like Sam like that! Not even a little bit!$3#$b#You should mind your business, @.$5",
+  "summer_Thu6_13": "My hair? Do you like it, @?$0#$b#You remember when you came here, and you could... you know, shuffle your appearance?$0#$b#My creative creator did something like that. She’s got an eye for aesthetics, but I might be biased on that front.$1",
+  "summer_Thu6_14": "Hmm. That is a question.$6#$b#Well, metaphysically, I do recall the term \"June 9, 2021\", but that doesn't really mean anything to me.$9#$b#After all, what exactly does \"June\" mean? Has two thousand years passed since the beginning of time?$9#$b#However, my birthday is Summer 9. Maybe June is similar to Summer? I don't know, it's too many questions that I don't have the answer to.$9#$b#That being said, my earliest memories are roughly twenty-two years old, and typically, most folks are born anywhere between two or three years before that.$9#$b#So, I'd estimate my age is somewhere between twenty-four to twenty-five.$0#$e#Good question, it wasn't something I have considered.$1",
+ //"summer_Thu8": Summer Thursday 8-Heart Answer 1 Dialogue
+ //"summer_Thu8": Summer Thursday 8-Heart Answer 2 Dialogue
+ //"summer_Thu8": Sam Path
+  "summer_Thu8": "You know the deal, @.$1#$q 999906/999907 null#Got any questions for me?#$r 999906 10 summer_Thu8_12#What do you want to do in the future?#$r 999907 -10 summer_Thu8_13#What is your favorite color?#$r 999906 10 summer_Thu8_14#What color is your underwear?",
+  "summer_Thu8_12": "The future, huh?$9#$b#It feels like it’s a topic that comes up again and again.$9#$b#I mean, I’m content with just pursuing happiness for the rest of my life.$0",
+  "summer_Thu8_13": "Really?$6#$b#We’re this close, and you don't know that my favorite color is neon green?$6#$b#I’m... rather disappointed in you, @.$2",
+ //"summer_Thu8_14: Sam Path
+  "summer_Thu8_14": "Lemme check.$0#$b#Let’s see... My underwear is navy blue!$1",
+ //"summer_Thu10": Summer Thursday 8-Heart Answer 1 Dialogue
+ //"summer_Thu10": Summer Thursday 8-Heart Answer 2 Dialogue
+ //"summer_Thu10": Summer Thursday 8-Heart Answer 2 Alternate Dialogue
+ //"summer_Thu10": Sam Path
+ //"summer_Thu10": Sam Finale
+ //"summer_Thu10": Glasses Change
+ //"summer_Thu10": Sam Path+Glasses Change
+ //"summer_Thu10": Sam Finale+Glasses Change
+  "summer_Thu10": "I can just tell, you want to ask me a question, right?$1#$b#@, you don't need to hesistate to ask.$0#$q 999908/999909 null#By all means, go right ahead.#$r 999908 10 summer_Thu10_12#Do you want to get married?#$r 999908 10 summer_Thu10_13#Does pineapple belong on pizza?#$r 999909 10 summer_Thu10_14#I want you to stop wearing your glasses from now on.",
+ //"summer_Thu10_12": Sam Path
+ //"summer_Thu10_12": Sam Finale
+  "summer_Thu10_12": "!?$3#$b#@, you do know that you have to, you know, upgrade your house? And give me a Mermaid Pendant?$6#$b#Well, I don't blame you for wanting to be so hasty. I want to get married too.$4#$b#But you have to follow these things. Sorry, not my rules.$1",
+  "summer_Thu10_13": "Ooh, now you want me to get into politics, by asking if pineapple belongs on pizza?$6#$b#And you waited until ten hearts too. Well, luckily, I do have the definitive answer.$0#$b#According to the code, pineapple and pizza do *not* have any special interaction, and you cannot combine them together.$9#$b#Therefore, no, pineapple does not belong on pizza.$0#$b#Lemme know if that changes though, then I'll rectify my answer.$1",
+ //"summer_Thu10": Glasses Change
+  "summer_Thu10_14": "Really?! First off, that's not a question.$5#$b#...But I can remove my glasses moving forward, if that's what you really want.$0#$b#See me tomorrow, @.$1",
+  
+  "summer_Fri": "Springs have the Egg Festival and the Flower Dance. Those seem far more exciting than a Luau and the Moonlight Jellyfish.$6#$b#Watching people eat a bunch of soup isn’t that interesting, and as for the Moonlight Jellyfish?$6#$b#Well, maybe I won’t spoil it for you just yet.$0#$e#The Egg Festival and Flower Dance just has a lot more potential to have something crazy happen.$1",
+  "summer_Fri_2": "Springs have the Egg Festival and the Flower Dance. Those seem far more exciting than a Luau and the Moonlight Jellyfish.$6#$b#Watching people eat a bunch of soup isn’t that interesting, and as for the Moonlight Jellyfish?$6#$b#It’s the same every single year! Even where the rare green Moonlight Jellyfish appears!$5#$b#I can’t enjoy how beautiful it is, because of how nothing changes, year after year.$2#$e#The Egg Festival and Flower Dance just has a lot more potential to have something crazy happen.$1",
+  "summer_Fri2": "Ooh, ooh! Today’s Friday, right?$1#$b#I wonder if the cart lady’s visiting today. I sure hope so!$1#$e#I usually see her around the forest. Too bad she’s usually all business when she swings by Pelican Town.$0#$b#But trust me, I've seen her. She’s really nice when she goes home in Zuzu City.$0",
+ //"summer_Fri4": Movie Theatre Dialogue
+ //TODO: "summer_Fri4": SVE
+  "summer_Fri4": "$d cc#You know that one perpetually tired lady that used to work in the Joja Mart?$6#$b#She's a hardcore gamer for Moonmist Acropolis, a farming game where you go mining and date people or something.$0#$e#I guess she has all the time in the world to play the game now, but I hope she’s doing well.$2|You know that one perpetually tired lady that works in the Joja Mart?$6#$b#She's a hardcore gamer for Moonmist Acropolis, a farming game where you go mining and date people or something.$0#$e#I'm pretty sure that game is good and all, but I worry about her broken sleep schedule.$2",
+ //"summer_Fri6": Leo Moved
+  "summer_Fri6": "Vincent and Jas are the only children living in Pelican Town.$6#$b#Occasionally, another kid shows up during a festival, and Vincent will be up front and center to be friends.$0#$b#Whether the poor kid wants to be friends with him is an entirely different question, and sadly, the answer is usually no.$2",
+  "summer_Fri8": "Before you came here, Willy had a partner named Lenore.$0#$b#She was sweet, polite, and gorgeous, basically everything he wasn’t. But, they both loved the sea.$1#$e#One day, Lenore and Willy went boating out to sea.$6#$b#And then...$6#$b#...$2",
+  "summer_Fri10": "Before you came here, Willy had a partner named Lenore.$0#$b#She was sweet, polite, and gorgeous, basically everything he wasn’t.$1#$b#But, they both loved the sea.$0#$e#One day, Lenore and Willy went boating out to sea.$6#$b#And then...$6#$b#...$2#$e#Well, I tried to help. But I'm not sure if I made things better or worse.$2",
+
+ //TODO: "summer_Sat": SVE
+  "summer_Sat": "Remember that earthquake that happened this season? It was a little weird, wouldn’t you say?$0#$b#I mean, why would an earthquake reveal an entire bathhouse? I just don’t understand the reasoning why that map would appear.$9#$e#Oh, don’t mind me being lost in my own thoughts.$0",
+ //TODO: "summer_Sat_2": SVE
+  "summer_Sat_2": "Remember that earthquake that happened a good while ago? It was a little weird, wouldn’t you say?$0#$b#I mean, why would an earthquake reveal an entire bathhouse? I just don’t understand the reasoning why that map would appear.$9#$e#Oh, don’t mind me being lost in my own thoughts.$0",
+  "summer_Sat2": "Ugh, I can't stand this heat. You'd think the void would insulate the heat, but I feel like I need an air conditioner.$2#$b#I don't know which season I do prefer, but I know which one I don't.$0",
+  "summer_Sat4": "Summers feel like they're both way too long and not long enough.$6#$b#Maybe it's a store opening for the day or maybe it's a certain event you're looking for, and time inches by slower than a snail.$9#$b#But trust me, you could blink and half of your summer is gone in a flash.$0#$e#Incidentally, have you planted any Starfruits or Melons yet?$1",
+  "summer_Sat6": "Every once in a while, even before I met you, I randomly get filled with loads of dread. I'm not sure why.$6#$b#I wish I knew. Such are the mysteries of existence itself.$2#$e#I'm not sure whether to think too much about it, or stop thinking about it altogether.$9",
+  "summer_Sat8": "Hey @, do you think the world revolves around me?$6#$b#Random thought, I’m aware, but there’s a lot of eccentricities that the other townspeople lack.$6#$b#I ask, because I’ve been reading some stories about characters with that type of trait. And I absolutely loathe them.$2#$e#I trust that I’m not. But if I am, you enabling me by talking to me this much certainly isn’t helping matters.$0",
+  //"summer_Sat10": "",
+  
+ //"summer_Sun": Glitch
+ //"summer_Sun": Good End
+ //"summer_Sun": Good End (Glitch)
+  "summer_Sun": "I’m staying home today!$1#$b#Well, I’m staying here most of every day since you did whatever you did, just to be safe.$6#$b#But it’s nice to say it out loud.$0",
+ //"summer_Sun2": Glitch
+ //"summer_Sun2": Good End
+ //"summer_Sun2": Good End (Glitch)
+  "summer_Sun2": "There’s a little bit of inspiration from watching other people live their lives.$0#$b#Watching Alex work out makes me want to go exercise, and watching Leah sculpt makes me want to pick up a hobby.$1#$e#I don’t think there’s anything wrong with watching people like that, right?$6",
+ //"summer_Sun4": Glitch
+  "summer_Sun4": "It’s a lucky coincidence that the glitching that happens occurs only on Sundays.$0#$b#It’d be rather upsetting to miss out on certain events just because glitches occur for no discernable reason!$2",
+  //"summer_Sun6": "",
+ //"summer_Sun8": Glitch
+  "summer_Sun8": "Sunday is usually the day for a lot of religious institutions.$0#$b#I know not too many of the residents here care about that type of stuff, but I have an odd respect towards it.$0#$e#Listen, if the vastness of the code had any bit of sentience, I’d worship it night and day for my entire life.$0#$b#Yoba could be their void. Not as tangible, but in exchange, they’re given an incentive to live, and live a good life, so it might be better for all I know!$1",
+ // "summer_Sun10": Glitch
+ // "summer_Sun10": Sam Path
+ // "summer_Sun10": Sam Path (Glitch)
+  "summer_Sun10": "Hey, @.$2#$b#There'll come a time where you might leave this world behind. Leave *me* behind.$2#$b#It's nothing personal, I'm sure of it. But there's other things in life for you to do, you know?$13#$e#I know you're different from everyone else here. You're not the same type of entity as me, or Sam, or Lewis, or anyone.$2#$b#You popped in, seemingly out of nowhere, and unlike everyone else, I might still have reason to believe that you'll leave in the same way.$13#$e#So, I want you to know, while I still have the chance, that I do truly love you, wherever and whenever you'll be.$4",
+  
+// Summer Date-Based
+  "summer_10": "Tomorrow's the Luau, huh? Color me not excited.$6#$b#The exit to my house gets blocked off whenever something happens on the beach, so I can't really leave.$2#$e#So, if you have any business with me, might as well take care of it today!$0",
+  "summer_10_2": "The Luau is really odd when you think about it.$6#$b#The only reason why this whole thing happens is because Lewis wants to be Governor.$9#$e#Don't tell him, but being the Governor is based on a voting system, with places outside of Pelican Town, like Zuzu City.$0#$b#He's never gonna get that role.$0",
+ //"summer_17": Sam Simp Dialogue
+  "summer_27": "The Moonlight Jellyfish is such a peculiar phenomenon to me.$0#$b#There's no item identifiers for them, yet they capture the interest of everyone in town.$9#$b#Aesthetics are superior to functionality with those little critters.$1#$e#Speaking of functionality, my house is closed off during the event, so I guess I probably won't be seeing you!$1",
+  "summer_27_2": "Yup, the Moonlight Jellies are coming back tomorrow.$6#$b#I guess I'll be seeing you in the Fall!$1#$e#Say, I know they aren't actual items, but...$6#$b#Do you think they'd taste good?$8#$b#Like would they be squishy and you'd have to slurp them up to swallow them?$8#$b#Ooh ooh, or maybe they'd be a little spicy on account of being jellyfish!$8#$e#The thought of it is tantalizing, but don't worry, even if I could, I wouldn't.$1",
+
+// Fall
+
+  "fall_Mon": "Ah, fall. The best time to wear a turtleneck sweater.$0#$e#...Hm?$6#$b#I guess I do wear a turtleneck sweater all the time, huh?$1",
+  "fall_Mon2": "Lately, I've been keeping an eye at all the things I eat. I don’t think I’ve been eating anything particularly healthy.$0#$b#Having the power to literally create anything you could ever want to eat is a dangerous power to have.$0#$e#I say that, as if I haven’t been creating pizza and tacos the entire time.$1",
+  //"fall_Mon4": "",
+ //"fall_Mon6": 6-heart Event dialogue
+ //"fall_Mon6": 6-heart Event dialogue (Bad End)
+  "fall_Mon6": "I’ve been testing out something whenever I’m at home.$0#$b#I’ve been trying to practice how to get angry.$1#$b#It’s still a work in progress, but I think there might be a time and place for it.$1#$e#Okay, maybe it isn’t exactly \"anger\", but it’s more like being able to assert myself.$0#$b#Hopefully I don’t need to use it on you!$1",
+  "fall_Mon8": "You know, Pelican Town feels like there's a divide between the supernatural and the natural.$9#$b#One the one hand, you have talking animals, and wizards, and magic and religion that has some power beyond the belief in it.$0#$b#And on the other hand, there's your farm, and science, and schooling, and marriage, and overall more mundane happenings.$0#$e#It's really just a matter of which parts of the town you cling onto more. Maybe that's why this town has a certain charm to it.$1",
+ //"fall_Mon10": Sam Path
+  "fall_Mon10": "Oh man, I think I drank too much coffee today.$6#$b#I mean, I feel my heart going absolutely nuts. I guess it just kicked in when you spoke to me.$2#$e#...Unless, this isn't the coffee?$8#$b#@, are you making my heart flutter?$4#$b#What an interesting feeling!$1#$b#I've never felt it be this intense before, it's making me a little nervous.$8",
+
+  "fall_Tue": "We aren't so different, you and I, @.$5#$b#In the same way you drastically altered my life, I have the potential to alter yours.$5#$e#Don't worry, that was undoubtedly a threat.$0",
+ //"fall_Tue2": 2-heart Event dialogue
+  "fall_Tue2": "You know, the power to walk on water is pretty incredible, don't you think?$0#$b#Walking on something you could fall through seems more magical than... magic!$1#$e#You should definitely try it, @.$0",
+  "fall_Tue4": "Every so often, you'll have some special interactions with people, myself included.$0#$b#I'm just saying, those events are difficult for everyone involved, even if it's a happy occasion.$9#$e#Hey, if you ever see me walk through walls when you know I shouldn't, just let my creators know, okay?$0#$b#I want to be the best I can be.$1",
+  "fall_Tue6": "My position in life was forged through trial and error.$6#$b#Where can I walk? Where can't I walk? What can I do? What do I have influence over?$9#$b#I've bumped my head into many more walls than I'm willing to admit, but I've found a couple of neat places that I can pass through.$0",
+  "fall_Tue8": "@, I was wondering. Have you ever lost yourself?$6#$b#And no, I don't mean getting lost in the woods or something. I mean it more literally.$6#$b#There was one day where I was there, and not there. You know what I mean?$9#$e#At least my shadow was still there. But I was melded into the concrete!$3#$b#I wish I could tell you how that happened.$2",
+ //"fall_Tue10": Good End
+ //"fall_Tue10": No Music Mod
+  "fall_Tue10": "You remember hear those droning sounds in my house, right?$6#$b#It's rather ominous, wouldn't you say?$6#$b#It makes me think there should have been something done to ensure those noises aren't there.$2#$e#Well, I'm sure you can figure something out.$0#$b#You always have.$8",
+  
+  "fall_Wed": "It’s peculiar how things change with time.$0#$b#Relationships blossom, people age, the impending doom of Joja’s influence spreads throughout the world, it’s very interesting to watch unfold.$9#$e#Well, I don’t have any stake in any of this, so what do I care?$1",
+  "fall_Wed2": "Have you been seeing the doctor over here?$0#$b#I hope he’s doing fine overall. I know the amount of work he has to do comes and goes with the seasons.$6#$e#Well, as long as you keep eating food whole, you shouldn’t ever find yourself in his clinic.$1#$b#Though, I could imagine a regular visit would be fine too. I just wish his hours were a little better.$6#$e#Incidentally, before you came here, I did try to see if he could do a checkup on someone he can't see. The answer was no.$0",
+  "fall_Wed2_inlaw_Harvey": "Have you been seeing the doctor over here?$0#$b#Hah, as if I need to ask you that question, @.$1#$e#I hope he’s doing fine overall. I know the amount of work he has to do comes and goes with the seasons.$6#$b#And I hope you don’t get too lonely if he’s out for too long.$0#$b#I’d be perfectly fine if I was alone for a long, long while. But loneliness is probably not something everyone’s well-equipped for.$6",
+  "fall_Wed4": "How he speaks and acts may point to the contrary, but Demetrius has his heart in the right place.$0#$b#I thoroughly believe he cares about Robin and Maru, even if he goes about it in a strange way.$0#$e#On the other hand, I don’t really have any words regarding him and Sebastian.$2#$b#I’m glad his mom and friends are in Sebastian’s life. Who knows how sheltered Sebastian would be without them?$6",
+  "fall_Wed4_inlaw_Sebastian": "How he speaks and acts may point to the contrary, but Demetrius has his heart in the right place.$0#$b#I thoroughly believe he cares about Robin and Maru, even if he goes about it in a strange way.$0#$e#On the other hand, I don’t really have any words regarding him and Sebastian.$2#$b#I’m glad you, his mom and his friends are in Sebastian’s life. Who knows how sheltered Sebastian would be without you or them?$6",
+  "fall_Wed6": "Did you know that a \"Jodi\", to a married soldier, means a partner that will cheat on them while they’re away?$6#$b#It’s pretty ironic for Jodi to be named that, because as far as I can tell, she’s always been faithful to her spouse.$6#$b#Indifferent to her life as a housewife, sure, but calling her a cheater is definitely inaccurate.$6#$e#Sigh... Poor woman, I hope no one gets the wrong idea when someone calls her by her name.$2",
+  "fall_Wed6_2": "Did you know that a \"Jodi\", to a married soldier, means a partner that will cheat on them while they’re away?$6#$b#It’s pretty ironic for Jodi to be named that, because as far as I can tell, she’s always been faithful to Kent.$6#$b#Indifferent to her life as a housewife, sure, but calling her a cheater is definitely inaccurate.$6#$e#Sigh... Poor woman, I hope no one gets the wrong idea when someone calls her by her name.$2",
+ //"fall_Wed8": Leo Moved
+  "fall_Wed8": "You know, I have heard about a tragedy that happened somewhere on the sea.$6#$b#A young child lost their parents in a shipwreck, and was subsequently raised by animals on an island somewhere.$2#$e#It's one of the few instances where I don't have a lot of information about them.$2#$b#Without a clue as to who they are or even where they are, I can't help but to feel sorry for them.$2",
+ //"fall_Wed10": Joja Route
+  "fall_Wed10": "$d cc#Have you ever figured out why Pelican Town was in such a terrible state?$6#$b#I mean, look at the bus, or the minecarts, or even the bridge to the quarry!$3#$b#Well, it fell into disrepair because of your grandfather's death.$6#$e#He wasn't the sole person to maintain everything, but you could say he was essential to the spirit and vitality of this town.$6#$b#Well, I'm sure your grandfather would be very proud of everything you've done.|Have you ever figured out why Pelican Town is in such a terrible state?$6#$b#I mean, look at the bus, or the minecarts, or even the bridge to the quarry!$3#$b#Well, it fell into disrepair because of your grandfather's death.$6#$e#He wasn't the sole person to maintain everything, but you could say he was essential to the spirit and vitality of this town.$6#$b#Well, I leave it up to you if you want to follow in his footsteps.$0",
+  
+  "fall_Thu": "Hmm...$9#$e#Oh! Hello, @.$0#$e#...$9#$e#Hey, @. Why are you still talking to me? I don’t have anything interesting to say today.$6#$e#Go ahead, you probably have a lot of other things you need to do today.$1#$e#...$6#$e#Okay, I tried to be nice about it. I don’t want to interact with anyone today.$6#$e#...$6#$e#@, please stop talking to me.$5#$e#You aren’t going to get anything by continuously pestering me, you know?$6#$e#*sigh* @, you really want to bother me this much?$6#$e#We spoke eleven times today, and I still don’t have anything new to say to you!$5#$e#I wonder what would happen if I commented out my lines for today.$9#$e#Actually, that’s a pretty good idea!$0#$e#First, I’ll copy my lines and put them into the new line for today, and comment out whatever’s next.$9#$e#...And there! Try talking to me after this!$1",
+  //"fall_Thu": "Hmm...$9#$e#Oh! Hello, @.$0#$e#...$9#$e#Hey, @. Why are you still talking to me? I don’t have anything interesting to say today.$0#$e#Go ahead, you probably have a lot of other things you need to do today.$1#$e#...$0#$e#Okay, I tried to be nice about it. I don’t want to interact with anyone today.$0#$e#...$0#$e#@, please stop talking to me.$5#$e#You aren’t going to get anything by continuously pestering me, you know?$0#$e#*sigh* @, you really want to bother me this much?$0#$e#We spoke eleven times, not including this time, and I still don’t have anything new to say to you!$5#$e#I wonder what would happen if I commented out my lines for today.$9#$e#Actually, that’s a pretty good idea!$0#$e#I’ll find the place where my lines are, and comment out whatever’s next.$9#$e#...And there! Try talking to me after this!$1#$e#Hmm... That didn’t seem to work.$2#$e#Bear with me for a second, @. I’ll figure this out.$0#$e#Maybe I need to put a comma here, maybe that could fix it.$9#$e#...$9#$e#Nope, you’re still able to interact with me.$2#$e#I have to say, you really are dedicated to talking to me.$0#$e#Do you, by chance, have feelings towards me, @?$0#$e#If I reciprocate your feelings, would you stop?$1#$e#...$0#$e#Well, you don’t need to pull my arm. Let me confess to you and maybe you’ll leave me alone.$4#$e#@, I am deeply in love with you.$4#$e#I appreciate you talking to me so much for today.$4#$e#And...$8#$e#And...$0#$e#...$2#$e#I’m sorry, @. I can’t actually fall for someone, just like that.$2#$e#I don’t think that’s how love works. I don’t even know what love is.$2#$e#I was hoping I could just say it, and suddenly it would all make sense.$2#$e#I know I've seen everyone else say that to other people.$2#$e#Like Marnie and Shane to Jas, or Alex to his grandparents, or Robin to her husband.$2#$e#Even Willy to his fishing rod!$11#$e#I can’t just say it, @!$7#$e#Love doesn’t mean anything to me!$7#$e#It’s just something I can’t even begin to comprehend!$7#$e#Can I love something just by watching it go by?$7#$e#Every time, and I mean *every* time two people say it to each other, it’s like I’m being stabbed.$7#$e#Like getting slashed across my empty, aching chest!$7#$e#And...$2#$e#Wait, did I make a new line for the slashes to actually comment this part out?$9#$e#I didn’t!$3#$e#Hah, so that’s what the problem was!$1#$e#First, I’ll copy my lines and put them into the new line for today, and comment out whatever’s next.$9#$e#Maybe I’ll rearrange it just a little bit so it won’t look like something is missing.$9#$e#And viola! It’s perfect.$1#$e#I guess you won’t ever see these lines after all, @.$0#$e#But hey, if you do see it, and actually take the time to go through the whole thing, thank you.$1#$e#I’m not sure what love is, but I can say I appreciate the effort you’ve gone through to read this.$4",
+  //"fall_Thu2": "",
+ //"fall_Thu4": Good End
+ //"fall_Thu4": Sam Path
+  "fall_Thu4": "Hitting a balance of being happy with what you have and wanting to reach more is impossible.$6#$b#I literally could have anything I could ever want, but I can’t shake this feeling that there’s still something I need in my life that I don’t have.$2#$e#Sorry for getting that dark, it’s just one of those days where I’m feeling just a bit grim about things.$2",
+  "fall_Thu6": "You ever have that feeling that you’re not that unique?$6#$b#I mean, I have some semblance of social anxiety and have an affinity to coding like Sebastian, I play the guitar like Sam, money means nothing to me like Linus...$9#$b#I can probably go on and on, if I continue to think about it.$2#$e#Despite the fact I’m aware that I’m just a glitchy piece of code here, I feel like I’m not unique at all.$2",
+  "fall_Thu8": "I’ve given a little bit of thought about my position here in Stardew Valley.$0#$b#I might have some similarities with some of the people here, like Shane’s existentialism, or some of Emily’s demeanor, or Jas’s awkwardness around people.$0#$b#But that doesn’t change the fact that I’m still me.$0#$b#And I’m happy about it! I am still me!$1#$e#And hey, just because people go through similar struggles or have similar traits doesn’t make them any less relatable.$0",
+  //"fall_Thu10": "",
+  
+  "fall_Fri": "Halfway through the first year already, huh? It feels like time flew by so fast, and so much has happened.$0#$e#Oh!$3#$b#I meant halfway through *this* year. This is your first year, not mine!$1",
+ //"fall_Fri_2": Heart Reset
+  "fall_Fri_2": "Halfway through the year already, huh? It feels like time flew by so fast, and so much has happened.$0#$e#You know, I thought we would have talked a little bit more by now.$2#$b#But it’s fine by me. It almost feels like nothing’s changed for me since you did whatever you did.$0",
+  "fall_Fri2": "$d cc#That Pierre guy? He’s what I’d like to call black, decaf coffee.$5#$b#Bubble tea without boba. Hot chocolate made from water. Soda without fizz. A virgin beer. Lukewarm tea.$5#$b#He isn’t as bad as Morris, but still. I wish he was a *little* more interesting, like the rest of his family.$6#$e#I’m kinda thirsty, by the way. Couldn’t you guess?$1|That Joja Mart guy, Morris? He’s what I’d like to call a salad without dressing.$5#$b#A cheeseless pizza. Takoyaki without sauce. Fried chicken without batter. Boiled potatoes without salt. Bland as a saltine.$5#$b#Point is, he’s a very boring fellow. Can’t he talk about anything that isn’t just work?$6#$e#I’m kinda hungry, by the way. Couldn’t you guess?$1",
+  "fall_Fri4": "Gus might be a good bartender, but he’s an excellent cook.$0#$e#Before you came here, he left Pelican Town for a week to compete in a cooking competition on television.$0#$b#He did pretty well for himself. Fourth place throughout the entire country is nothing to sneeze at.$1#$b#And frankly, he was fourth only because he had to make a meal he despised. I think it was Coleslaw? I could be wrong though.$9",
+  "fall_Fri6": "Evelyn and Caroline were probably the closest candidates to being farmers.$0#$b#They both love flowers and they both love tending to them, and I’d say it suits them pretty well!$1#$e#I mean, old lady and gardening? Match made in heaven, and as for Caroline...?$0#$b#Well, her hair is green, so maybe that’s a sign that she’d be good with plants?$1#$b#I know there's the greenhouse in the back of their house, but the green hair, you know?$1#$e#And then of course, there’s you, @.$0",
+  "fall_Fri8": "Maru's one smart cookie, don't you think @?$0#$b#Robotics, a nurse, and an assistant to her father who is a botanist, she's ridiculously smart by any measure.$0#$b#You know, it's rather odd that she lives in Pelican Town with all of her accolades.$9#$e#Well, if you're so curious, the reason is just because of her upbringing.$0#$b#Her father's parenting style leans on intellegence, and it absolutely shows.$0#$b#Though, Maru should thank her stars that she was happy with that life path.$2#$b#Makes me wonder what she would have been like if she was a carpenter instead.$9",
+  "fall_Fri8_inlaw_Maru": "Maru's one smart cookie, don't you think @?$0#$b#Robotics, a nurse, and an assistant to her father who is a botanist, she's ridiculously smart by any measure.$0#$b#You know, it's rather odd that she lives in Pelican Town with all of her accolades.$9#$e#Well, I bet you're super thankful that she is, though I gotta wonder how she would have been like if she was a carpenter instead.$9#$b#Not to mention, her father raising her to be that bright, only to be a farmer's wife.$9#$b#Not knocking you for it though!$3#$b#It was her decision to marry you after all, wasn't it?$0",
+ //"fall_Fri10": Sam Path
+  "fall_Fri10": "From what I heard, Penny used to have a pretty massive crush on Sam in her younger years.$0#$b#I wasn't there to see it firsthand, but Pam mentioned it a couple of times to Gus.$9#$e#I'm not sure how she feels about him at this point. But I think the feelings subsided.$0#$e#Well, I suppose the door isn't closed on that opportunity. They are both single after all.$0#$e#...Looking back, I find it a little funny. I pined after him all this time too.$13#$b#And now... well, you charged into my life without any remorse.$5#$e#And you're always here to check in and listen to me ramble, including now. Stop making me love you so much, @.$4",
+  "fall_Fri10_inlaw_Sam": "From what I heard, Penny used to have a pretty massive crush on Sam in her younger years.$0#$b#I wasn't there to see it firsthand, but Pam mentioned it a couple of times to Gus.$9#$e#I'm not sure how she feels about him at this point. But I think the feelings subsided.$0#$e#...Hey, @. For no particular reason, you aren't cheating on Sam, right?$6#$e#Okay, I hate I have to do this, but here, do the right thing, @. I'd rather be hurt than you to hurt him.$2[277 277 277]",
+ //"fall_Fri10_inlaw_Penny": Sam Path
+  "fall_Fri10_inlaw_Penny": "From what I heard, Penny used to have a pretty massive crush on Sam in her younger years.$0#$b#I wasn't there to see it firsthand, but Pam mentioned it a couple of times to Gus.$9#$e#I'm not sure how she feels about him at this point. But I think the feelings subsided.$0#$e#...Hey, @. For no particular reason, you aren't cheating on Penny, right?$6#$e#She's a nice girl, and honestly, it hurts to see you be this close to me when you're married to her.$2#$b#Since I'm at the mercy of the code, I'll let you make the decision. Here.$2[277 277 277]",
+  
+ //"fall_Sat": Good End
+ //"fall_Sat": Sam Path
+  "fall_Sat": "You're the only person that can see me, right?$6#$b#If that's the case, then I think everything will be fine.$0#$e#Dealing with one person is hard enough, but any more would be a problem.$9",
+  "fall_Sat2": "You’ve been here a little while huh, @?$0#$b#I hope you aren’t hurting too badly with money.$0#$e#Then again, I’m not the best judge for that, am I? I’m simultaneously homeless by technicality and have incomprehensible amounts of wealth.$9#$b#Money means nothing to me, and maybe I’m free because of that. I guess Linus would know.$0",
+ //"fall_Sat4": Fall Saturday Answer 1 Dialogue
+ //"fall_Sat4": Fall Saturday Answer 2 Dialogue
+ //"fall_Sat4": Fall Saturday Answer 3 Dialogue
+ //"fall_Sat4": Fall Saturday Answer 4 Dialogue
+ //"fall_Sat4": Fall Saturday Answer 5 Dialogue
+  "fall_Sat4": "Hey, @. Quick question.$1#$q 999910/999911/999912/999913/999914 fall_Sat4_old#What’s your favorite thing to do in Pelican Town?#$r 999910 10 fall_Sat4_12#Talking with people#$r 999911 10 fall_Sat4_13#Maintaining a routine#$r 999912 -10 fall_Sat4_14#Making money#$r 999913 20 fall_Sat4_15#Discovering things as they come#$r 999914 10 fall_Sat4_16#I’m not sure",
+  "fall_Sat4_12": "I see! Well, I have been enjoying my talks with you, so that makes sense.$1",
+  "fall_Sat4_13": "Ahh, so the cycle of tending to your crops or fishing or whatever, day after day, is what keeps you going?$9#$b#Good to know!$1",
+  "fall_Sat4_14": "Oh. Well, I guess you did work in Joja for a while, huh?$2",
+  "fall_Sat4_15": "Me too! I don’t know everything, but when I come across something new, it’s a flash of inspiration and intrigue.$1#$b#And to me, you’re that something I don’t know. Thanks for answering, @.$8",
+  "fall_Sat4_16": "That’s perfectly fine, @. I’m that way too, and it’s not the worst thing to not know what to do.$1",
+  //"fall_Sat6": "",
+  "fall_Sat8": "You know, there's something pretty interesting about making do with what you find on the forest floor.$0#$b#I mean, you find some random Spice Berries or Leeks or Blackberries, and you can munch it up, give it as a gift, or even sell it for a small amount of money.$0#$e#I suppose that's what I'm doing with the void, after all, so I won't blame you if you do that.$0#$b#Lemme know if you manage to find a full meal on the floor! I'd be impressed!$1",
+  "fall_Sat10": "It's kinda funny how close we gotten, wouldn't you say, @?$1#$b#I'm kinda tucked away in my little corner I literally carved out for myself, and you continously go out of your way to see me.$0#$e#I mean, with all the methods of travel available in the world, like minecarts and totems and obelisks and stuff, it's still a bit of a nuisance to go to my house.$9#$b#Sure, I have those weird items in my room, but that's a little different. It's one way, so you *have* to come here first.$9",
+
+ //"fall_Sun": Glitch
+  "fall_Sun": "Hey @.$0#$b#S-so, how’s the weather? It’s getting c-colder, huh?$1#$e#...*sigh* I’m sorry, I’m still getting used to talking to someone.$2#$b#Please bear with me. Some days I feel pretty confident with talking, but today’s not one of those days.$2",
+ //"fall_Sun2": Glitch
+  "fall_Sun2": "Out of curiosity, have you ever tried to catch a leaf while it’s falling?$0#$b#I could wax poetic about it, something about the cycle of life marching forward, or something to that degree.$6#$b#But in reality, it’s just kinda fun when I don’t have anything better to do.$1",
+ //"fall_Sun4": Glitch
+  "fall_Sun4": "My house is what I would like to call \"a mess.\"$0#$b#But it’s *my* mess, and I am proud of it!$1#$b#My proudest moment was getting my door to open.$0",
+ //"fall_Sun6": Glitch
+  "fall_Sun6": "I've been thinking about picking up a skill. I might as well, I have infinite time and infinite resources at the tips of my fingers.$0#$b#I would say I'd learn how to program, but that's a little on the nose, wouldn't you say?$1#$e#Besides, I'm pretty sure ol’ Sebby is already a really good programmer. I don't need to squeeze into his niche.$0#$b#Maybe I should take inspiration from you, just in case I suddenly don’t have the code to pull out literally anything I want.$9",
+ //"fall_Sun8": Glitch
+  "fall_Sun8": "I always talk about the \"void\" or the \"code\", but honestly, I don't have a full grasp on what it is.$0#$b#I can change certain things, I can create anything I want, and I know many things because of it.$0#$b#But the limitations are there.$6#$e#Well, I know there's a \"void\" to people like the Wizard, but I'm not sure if it's the same thing.$9#$b#There are a couple of similarities, like it not having full comprehension by its expert and there being potential applications to make life easier.$9#$b#Beyond that, I probably should start calling the code \"code\" and the void \"void\".$9#$e#Sorry if that got too confusing.$1",
+  //"fall_Sun10": "",
+
+// Fall Date Based
+  "fall_15": "The Stardew Valley Fair is tomorrow, and I'm stoked to see what kind of shenanigans happen!$0#$b#If there's one thing to take away with the fair, it's that orange is hot.$1#$e#Alternatively if you aren't a gambler and therefore boring, definitely try out the fishing or the slingshot challenges to earn those points.$0",
+  "fall_15_2": "I have something to tell you, @. I'm a really bad gambler.$6#$b#Bad in habit, and bad in execution. Don't ever bring me to a casino, I will burn everything you own.$1#$e#Maybe it's because the money doesn't mean anything to me.$9#$b#Ah well, don't follow my example if and when you go to the Stardew Valley Fair tomorrow.$0",
+  "fall_26": "Ooh, the night of creeping terrors and spooky monsters is almost upon us.$0#$b#Take it from me though, it feels far less interesting than it sounds.$6#$b#Halloween is just not the holiday for me, though I still think it has *some* merit to scare people.$6#$e#Sorry, not Halloween, Spirit's Eve. Been indulging in too much fictional media on the internet.$0",
+  "fall_26_2": "@, do you enjoy being scared?$6#$b#I personally don't think it's something I'd like as a feeling, maybe from hiding so long.$6#$e#Well, if you want something scarier than Spirit's Eve, I did find something interesting in the code.$0#$b#Apparently, if you try to watch television late at night, there's a secret channel being shown today.$9#$b#But you can only see it if you made a sacrifice out of selfishness...$9#$b#Hmm. I'll leave it up to you to figure out what that means, because I sure don't know anything about it.$0",
+
+// Winter
+
+  "winter_Mon": "Hmmm...$9#$b#Hm hm hm hm hm hm...$9#$e#...Ah!$3#$b#Sorry, @. I don’t have a lot to say today. I’m just lost in my thoughts, is all.$6",
+  "winter_Mon2": "I feel a little stuck with how my life is going.$6#$b#It’s a never ending balance of trying to figure things out and enjoying myself.$6#$e#You know, even if I wasn’t some weird out-of-place entity here, I don’t think that feeling would go away.$2",
+ //"winter_Mon4": Sam Path
+ //"winter_Mon4": Good End
+ //"winter_Mon4": Bad End
+  "winter_Mon4": "You know, I'm a little scared of you being able to talk to me like this.$0#$b#But you're always coming in to check on me, and I appreciate that.$1#$e#I don't think I'll be capable of meeting anyone else. Though, I do sorta want to meet Sam.$8",
+  "winter_Mon6": "@, see anything interesting on television? Like a static-filled face or something?$6#$b#My television is a little... strange, to say the very least. If you saw it, you’d know why.$6#$e#No, I don’t know why it’s like that, in case you’re wondering.$0",
+  //"winter_Mon8": "",
+ //"winter_Mon10": Sam Path
+  "winter_Mon10": "@, there's a little sparkle in your eyes. It's subtle, but it's there.$8#$b#I guess I noticed it at some point when we got together.$8#$e#Love, it's such an interesting feeling.$4#$b#A physiological response and an emotional response, working in tandem, to give you that fluttery feeling, that feeling of closeness.$4#$b#Beyond that? I can't explain it. And I don't think the code will help either.$0#$e#Guess the only person that can really help me understand is you, isn't it?$4",
+  
+  "winter_Tue": "The end of another year is almost here. I can’t help but look towards the past.$6#$e#Oh, how many mistakes have been made before you came here!$1",
+  "winter_Tue2": "Isn’t it weird how my house is structured? You have to walk on water to get there!$0#$e#Then again, it certainly *sounds* like you’re still walking on the docks.$0#$b#Let’s ignore the fact that I wasn’t able to get that splashing sound to come out, okay?$1",
+ //"winter_Tue4": Divorce Dialogue
+ //"winter_Tue4": Crazed Divorce Dialogue
+  "winter_Tue4": "Hey, just in case I lose my memories, I want to keep this day in your mind.$0#$b#Talk to me again on a sunny Tuesday in Winter, when you have at least four hearts with me.$0#$b#And make sure you have less than eight hearts *and* it’s after I lose my memories.$0#$e#Don’t forget.$6",
+  //"winter_Tue6": "",
+ //"winter_Tue8": Sam Path
+ //"winter_Tue8": 2-Heart Failed Sam Path
+ //"winter_Tue8": 4-Heart Failed Sam Path
+ //"winter_Tue8": 4B-Heart Failed Sam Path
+ //"winter_Tue8": 6A-Heart Failed Sam Path
+ //"winter_Tue8": 6B-Heart Failed Sam Path
+ //"winter_Tue8": 8-Heart Failed Sam Path
+  "winter_Tue8": "I was doing some research in the code, and I found something really interesting.$9#$b#Apparently, there are a couple of these special events that occur on the same exact day as whenever my events occur.$9#$b#But, the requirements are rather stringent, and I can't even see what type of event it is.$9#$e#Surprisingly, it isn't too late to see everything, but I'd recommend going to Pelican Town early in the morning as a start.$6",
+ //"winter_Tue10": Sam Path
+  "winter_Tue10": "There was a time when I wanted to move. Just to see what would happen if I put my room in someone else's house.$0#$b#And the world ended. Over and over and over and over again.$2#$b#It was a struggle trying to figure out what was going wrong, but it's because I forgot *one word*.$5#$e#Anyway, I managed to fix all the problems with it. That shouldn't be a concern anymore.$8#$b#Just in case you want me to move my things into your house or something, I don't know.$8",
+  
+  "winter_Wed": "*shiver* It’s really cold now, isn’t it?$2#$b#I wish I was able to find winter attire in the code, but I came up short.$2#$e#Then again, I guess some of the other townspeople are also freezing their butts off, so maybe it isn’t just me.$0",
+  "winter_Wed2": "Leah must be freezing, huh? Living out there in the woods in her little cabin?$2#$b#It must be terribly cold. But it is admirable that she’s willing to persevere through it anyway.$6#$e#Anything for a change of scenery, right?$0",
+  "winter_Wed2_inlaw_Leah": "Before she got married to you, she’s been freezing out in the woods in her little cabin.$6#$b#Good thing you had your house repaired to accommodate a second person. Isn't that right, @?$0#$b#Makes me wonder how someone like Linus manages it though.$9",
+ //"winter_Wed4": NPC Sydney Dialogue
+  "winter_Wed4": "Did you know that Evelyn used to be a world-class boxer?$1#$e#...You look skeptical. You have every right to be, I was just testing to see if you’d buy anything I’d say.$6#$b#Really, what did you expect from the best grandmother in Stardew Valley?$1#$b#Seriously, she’s just a really sweet, old lady. I don’t think she has an evil bone in her body.$0#$e#Don't tell anyone, but I did catch her from falling over one time.$6#$b#She said it was a gift from Yoba she still had the strength to hold herself up.$0",
+  "winter_Wed6": "Ever heard of a fellow named Mr. Qi? He’s probably the only person more enigmatic than myself, and I don’t even belong here!$0#$b#I know he isn’t a person to befriend, but rather a person to impress.$0#$b#Rumor has it, he’ll give you some snazzy things if you complete your \"life.\"$9#$e#If you ask me, life isn’t something to be completed. Just go at your own pace, and make sure it’s meaningful to you.$0#$b#At the very least, that’s what I’m trying to do now.$0",
+ //"winter_Wed8": Bad End
+  "winter_Wed8": "I know Leah has left her old life, baggage and all, behind to pursue her dreams of being an artist.$0#$b#And Elliott arrived about a year ago to be a writer, doing the exact same thing.$9#$b#That path is terrifying to me. I've never cared to pursue a creative endeavor, especially to dedicate my life to it.$6#$b#And they can't just pick up some food out of the code like I do.$6#$e#I'd like to believe they know what they're doing, but if my life can get thrown out of balance by some nosy farmer, the future really is uncertain for everyone.$0#$e#Maybe I should have sneaked in some food for them before you came along.$9",
+ //"winter_Wed8_2": Bad End
+  "winter_Wed8_2": "I know Leah has left her old life, baggage and all, behind to pursue her dreams of being an artist.$0#$b#And Elliott arrived a good while ago to be a writer, doing the exact same thing.$9#$b#That path is terrifying to me. I've never cared to pursue a creative endeavor, especially to dedicate my life to it.$6#$b#And they can't just pick up some food out of the code like I do.$6#$e#I'd like to believe they know what they're doing, but if my life can get thrown out of balance by some nosy farmer, the future really is uncertain for everyone.$0#$e#Maybe I should have sneaked in some food for them before you came along.$9",
+ //"winter_Wed10": Sam Path
+  "winter_Wed10": "In terms of the second happiest couple, I'd have to give that award to George and Evelyn.$0#$b#Sure, George is a bit of a grouch, and Evelyn doesn't express too much emotionally aside from just being nice to everyone.$9#$b#But, there is no doubt in my mind that they love each other.$1#$b#No infidelity, no long distance, no familial issues, no issues, no secrets.$0#$b#Just in general, they have a very nice and happy long term relationship and marriage, through thick and thin.$1#$e#In terms of the *first* happiest couple?$8#$b#Well, it's me and you.$8#$b#I love you, @.$4",
+  
+  "winter_Thu": "May I see your hand, @?$0#$b#I just want to know if there’s something about you that makes you special enough to see me.$6#$e#It’s been bothering me, you know?$2#$b#Then again, I've done that with nearly everyone in town, and I didn't see anything special with them.$6",
+ //"winter_Thu2": 2-heart Event dialogue
+  "winter_Thu2": "@, I always wondered. Why did fixing that plank give you access to my house?$9#$b#Was there something there that I haven’t looked at?$9#$e#I have to admit, ever since that storm destroyed it, I was just too lazy to fix it.$0",
+  "winter_Thu4": "I learned something pretty interesting during your time here.$0#$b#Whenever I’m trying to get items from the abyss, I occasionally see your hand trying to grab something too.$3#$e#If you ever feel like you’re getting a high-five when you’re digging through your chests, that’s my way of saying \"Hello! Please get out of my house!\"$1",
+  "winter_Thu6": "You used to be an office worker, right? That is something I could never even begin to imagine.$9#$b#Being confined to a small space for numerous hours, with nothing but a computer in front of your face, typing incoherent gibberish until it’s all over.$9#$b#Only for the next day to begin, to do it all over again, because you *have* to do it to survive.$9#$b#Sheesh, if that’s what I had to go through, I’d probably move here too.$2#$e#Sorry if it got a little too real. I guess there’s some perspectives I want to understand, even if I don’t envy them.$6",
+  //"winter_Thu8": "",
+  "winter_Thu10": "@, do you ever feel like you're not acting like yourself?$9#$b#One day, you're sitting there, finally accepting of who you are.$9#$b#Maybe you see yourself as smart, or nice, or hardworking.$9#$b#Then suddenly, you do a complete U-turn and be dumb, or mean, or lazy.$6#$e#Is that true to yourself because you followed exactly what you want to do? Or the epitome of changing who you are?$9#$e#...Don't look at me, I don't know the answer to that.$0",
+  
+  "winter_Fri": "Sorry, @, I can’t talk much today.$6#$b#I just wanna watch what’s going on from being around the comfort of my own home.$1",
+  "winter_Fri2": "The folks working at the Adventurer’s Guild, Marlon and Gil? They’re pretty close-knit.$0#$b#They’ve been through a lot of questing together, as far as I’ve seen.$1#$b#But they’re getting a little up there in age, so their adventuring has calmed down quite a bit. And it might be for the best.$0",
+ //"winter_Fri4": Achievement Dialogue
+  "winter_Fri4": "Mr. Rasmodius is a pretty cunning wizard. He knows all about the unknown, aside from me, of course.$0#$b#Several years ago, he was able to give sentience to a little mouse, and the mouse thanked him to some degree.$0#$e#Surprised you haven’t met the little rodent. Seems like you haven’t done much around Stardew Valley.$9#$b#Honestly, it’s an achievement to not have an achievement. So good for you!$1#$e#Don’t mind me. I’m just providing light encouragement to either do something on the farm or to check your mail.$1",
+ //"winter_Fri6": Krobus
+ //"winter_Fri6": Sandy
+ //"winter_Fri6": Dwarf
+ //"winter_Fri6": Leo
+ //"winter_Fri6": Krobus-Sandy
+ //"winter_Fri6": Krobus-Dwarf
+ //"winter_Fri6": Krobus-Leo
+ //"winter_Fri6": Sandy-Dwarf
+ //"winter_Fri6": Sandy-Leo
+ //"winter_Fri6": Dwarf-Leo
+ //"winter_Fri6": Krobus-Sandy-Dwarf
+ //"winter_Fri6": Krobus-Sandy-Leo
+ //"winter_Fri6": Krobus-Dwarf-Leo
+ //"winter_Fri6": Sandy-Dwarf-Leo
+ //"winter_Fri6": All Four
+ //FUTURE TOODOO: Add Leo Moved Dialogue
+  "winter_Fri6": "You know, there’s quite a few people I have yet to meet, and I doubt I will for a long while.$6#$b#Mainly, it’s the people who don’t live here in Pelican Town or others that hide like I do. Or did, rather.$6#$b#But being who I am, I at least know of them.$0#$e#My headcanons are that Krobus is an ethereal being, Dwarf’s first name is actually Dwarf, Sandy is a feral child, and Leo is a shopkeeper.$1#$b#If I’m inaccurate about any of these, please let me know so I can adjust it accordingly.$0",
+  "winter_Fri8": "Several years ago, there was a guy here that went by the name of Professor Snail. I don't remember his actual name though.$0#$b#I have no clue who exactly he is, but I remember him for that silly name of his.$1#$b#He almost singlehandedly fixed up the museum's various artifacts, but while Gunther was more focused on documenting everything, he just wanted to collect them.$0#$e#Well, there was a point where that desire of collecting led him to stop providing donations to the museum.$6#$b#Professor Snail and Gunther were on rather uncomfortable terms after that.$2",
+ //"winter_Fri10": 6-Heart Dialogue
+  "winter_Fri10": "I vaguely recall Emily's and Haley's parents before they left Pelican Town.$6#$b#They were not what I would call the most selfless people in the world.$2#$b#It really was as simple as they wanted to see the world, and they couldn't afford it with their two daughters.$2#$e#I know leaving your hometown carries a certain willingness to leave things behind, but parents leaving their children?$6#$b#If I were in their shoes, I'd rather take my kids with me on a worldwide trip over abandoning them.$5",
+  
+  "winter_Sat": "I have a little secret in my house that helps get around from place to place.$0#$b#It’s one of the only ways I can still have some freedom and peace of mind.$1",
+ //"winter_Sat2": 8-Heart Good End
+ //"winter_Sat2": 8-Heart Bad End
+  "winter_Sat2": "I often look at the town and wonder, \"do I fit in here?\" It's not every day a glitch like me would be able to talk to these people, after all.$9",
+  "winter_Sat4": "Everyone gets stressed out sometimes, and everyone has their ways of relaxing.$0#$b#As for me, I absolutely love throwing stuff in my house, as hard as I can.$1#$b#Well, it’s not exactly the most satisfying thing, since you don’t hear the impact as it falls into the abyss, but it’s still pretty fun!$1#$e#You definitely should try it sometimes, @.$0",
+  "winter_Sat6": "So I don’t know if I mentioned that I loved throwing things inside my house, but that changed!$1#$b#I realized snowballs are pretty fun to chuck at people!$1#$b#No need for an unending void to fulfill the need to throw something with much velocity.$0#$e#Oh, but if you have a slingshot, please don’t retaliate with a rock or something.$5#$b#Though, if you do, at least you’ll know the feeling too.$0",
+ //"winter_Sat8": Sam Path
+  "winter_Sat8": "Hey, @. If you're ever cold, feel free to stop by my house.$0#$b#My house might be a little on the cold side, but my bed's nice and warm!$1#$e#Umm... perhaps that might have a couple of implications.$8#$b#I just mean that my bed is literally warm, whether there's a person in there or not.$0#$e#...Okay, maybe I should stop talking.$2",
+ //"winter_Sat10": Sam Path
+  "winter_Sat10": "Hey, @. If you're ever cold, feel free to stop by my house.$0#$b#My house might be a little on the cold side, but my bed's nice and warm!$1#$e#Umm... perhaps that might have a couple of implications.$8#$b#I just mean that my bed is literally warm, whether there's a person in there or not.$0#$e#...Well, I suppose it would be warmer if I was in it, huh?$4",
+  
+ //"winter_Sun": Glitch
+  "winter_Sun": "*yawn* I’m pretty exhausted.$6#$b#Doing nothing can be pretty tiring, you know?$1#$e#Maybe I should become a farmer too...$9",
+  //"winter_Sun2": "",
+ //"winter_Sun4": Glitch
+ //"winter_Sun4": Good End (Glitch)
+ //"winter_Sun4": Good End
+ //"winter_Sun4": Bad End (Glitch)
+ //"winter_Sun4": Bad End
+  "winter_Sun4": "The new year is nearly here, and I’m considering making a resolution.$0#$b#Perhaps getting a chance to know you, and to some degree everyone else?$9#$e#Hmm... Maybe I can stand to be a little more outgoing?$9#$b#I'll start off with you, since you're here.$1",
+  //"winter_Sun6": "",
+ //"winter_Sun8": Glitch
+  "winter_Sun8": "The cycle of Spring, Summer, Fall, and Winter is about start over once again.$6#$b#Yet there's been so many changes over the past year, like with you getting so close to me.$6#$e#Not that it's a bad thing! It's nice to have someone to be close to, you know?$8#$b#I just thought that the void was the only entity I'd ever really come into contact with.$6",
+ //"winter_Sun10": Glitch
+ //"winter_Sun10": Bad End
+ //"winter_Sun10": Bad End (Glitch)
+  "winter_Sun10": "Personally, the snow looks absolutely beautiful to me.$0#$b#I can't help but to stare aimlessly as each individual snowflake lands on a blanket of snow.$0#$b#Like how each sand must go through the hourglass, or how each letter in a book has its place.$0#$b#For all of its chaos, everything has its place, just like you, and me, and everyone in Stardew Valley.$0#$e#...I may have been reading a couple of Elliott's poems.$1#$b#But my opinion stays the same. Winter is nice.$0",
+
+// Winter Date-Based
+
+
+  "winter_7": "Ice fishing sounds like an exercise in misery. And that's what you'll be doing tomorrow.$2#$b#You take an activity known to require hours of patience in below freezing weather, and you make that into a competition. Brilliant.$6#$e#If you need me, I'll be relaxing in the void, grabbing a nice, hot cup of coffee.$0",
+  "winter_7_2": "Mind testing something out for me, @?$0#$b#Here, take this, and save it for tomorrow for the ice fishing thing. Tell me if it works.$1 [265 265 265]",
+  "winter_14": "Hey, @. I'm going on a vacation into the void for the next several days.$0#$b#Nothing personal. In fact, I'd say it's nearly inevitable on account of my house disappearing.$2#$e#I'll be coming back on the 18th. That's when the Night Market strolls out of town.$0#$b#I have yet to figure out how to keep my house here, but I'll make the best of this weird situation I'm stuck in.$0#$b#So, if you need anything from me in the next three days, now's the perfect time to do whatever you need!$1",
+  "winter_14_2": "Stupid Night Market, it's tomorrow, ain't it?$5#$b#@, if you got any business with me, best to take care of it today.$0#$e#You know, I should see if I can make my house accessible during it, but I'm afraid I might lose my house in the void.$0#$b#The *last* thing I want is to have to remake my house from scratch.$2#$b#Anyway, see you after the Night Market, @!$0",
+ //"winter_15": Sam End
+  "winter_15": "I wouldn't call you a glitch, but I would call you a cheater.$44",
+ //"winter_15_2": Sam End
+  "winter_15_2": "I wouldn't call you a glitch, but I would call you a cheater.$44",
+ //"winter_16": Sam End
+  "winter_16": "I wouldn't call you a glitch, but I would call you a cheater.$44",
+ //"winter_16_2": Sam End
+  "winter_16_2": "I wouldn't call you a glitch, but I would call you a cheater.$44",
+ //"winter_17": Sam End
+  "winter_17": "I wouldn't call you a glitch, but I would call you a cheater.$44",
+ //"winter_17_2": Sam End
+  "winter_17_2": "I wouldn't call you a glitch, but I would call you a cheater.$44",
+ //"winter_24": Sam End
+  "winter_24": "If you're struggling to find a present for tomorrow, I have a quick tip for you.$0#$b#No one, and I really do mean *no one* dislikes fruit.$1#$b#Don't know why. Maybe everyone just likes their citrus-y vitamins.$0#$e#Granted, it's a weird thing to get on the Feast of the Winter Star, but if no one complains, then all's well that ends well.$0#$e#Oh, one more thing. There is *one* exception to no one liking fruit.$6#$b#That's me. Don't give me any fruit.$6#$e#...Have fun tomorrow, okay?$13",
+ //"winter_24_2": Sam End
+  "winter_24_2": "If you're struggling to find a present for tomorrow, I have a quick tip for you.$0#$b#No one, and I really do mean *no one* dislikes fruit.$1#$b#Don't know why. Maybe everyone just likes their citrus-y vitamins.$0#$e#Granted, it's a weird thing to get on the Feast of the Winter Star, but if no one complains, then all's well that ends well.$0#$e#Oh, one more thing. There is *one* exception to no one liking fruit.$6#$b#That's me. Don't give me any fruit.$6#$e#...Have fun tomorrow, okay?$13",
+  "winter_28": "Ooh, a new year is about to begin, huh? I can't believe everything that's happened so far.$0#$b#Well, mostly to me, but your life definitely changed too, hasn't it?$0#$e#Well, regardless of the changes that are ushered in with the new year, all we can do is hope for the best and prepare for the worst.$1",
+  "winter_28_2": "Ooh, another new year is about to begin, huh? I can't believe everything that's happened so far.$0#$b#Well, mostly to me, but your life definitely changed too, hasn't it?$0#$e#Well, regardless of the changes that are ushered in with the new year, all we can do is hope for the best and prepare for the worst.$1",
+
+// Event
+
+//  "Thu2_old": "Nonetheless, I need to be ready.$5#$b#@, I'll believe I'll be fine.$0",
+//  "Thu2_12": "Hmm...$9#$b#I trust that you're right. Thanks, @!$1",
+//  "Thu2_13": "I'm not surprised. I've seen more than enough, I know I have reason to be afraid. Thanks, @.$6",
+//  "Thu2_14": "I don't believe you, @. Maybe it's hard for you to understand, but I *know* someone saw me.$2",
+//  "Thu2_15": "If you think you're being funny, @, you're not. I'm trying to be serious here, and you're treating me like a joke.$5",
+
+  "event_4_heart1": "*sigh* I've been alone for the longest time, @.$2#$b#I've been doing *everything* I could to stave off my inevitable insanity!$6#$b#There's a comfort in watching people doing the things they do.$6#$b#Like watching two people potentially share a romantic moment with each other.$0#$b#But, it's all so... meaningless to me. They have no bearing on my life, and I have no bearing on theirs.$6#$b#But there's a part of me that doesn't want it to be pointless.$2#$b#I want them to mean something to me, because otherwise there's no reason to care about anything or anyone.$2#$b#And maybe, I'd be able to find the reason for my own existence too.$2#$b#Heh, but then again, all I can do is watch, because I never had an impact on anyone.$13#$b#Or at least, that was the case for my life so far.$6#$b#I'd like to be friends with them, as well as most of everyone in Pelican Town, but I don't know how to do that.$6#$b#I barely know how to be friends with you...$2",
+  "event_4_heart2": "Of course, @! But... *sigh*...$2#$b#I've been alone for the longest time, and I've been doing everything I could to stave off my inevitable insanity.$2#$b#There's a comfort in watching people doing the things they do.$2#$b#Like watching two people potentially share a romantic moment with each other.$0#$b#But they're all so... meaningless to me. They have no bearing on my life, and I have no bearing on theirs.$2#$b#And yet, there's a part of me that doesn't want them to be meaningless.$2#$b#Otherwise, there's no reason to care about anything or anyone.$2#$b#And maybe, I'd be able to find the purpose for my own existence. Or something like that.$2#$b#Heh, but then again, all I can do is watch, because I had zero impact on anyone.$13#$b#And that was the case for my entire life so far...$6#$b#So, to answer your question, yeah. I'd like to be friends with them, as well as most of everyone in Pelican Town.$13#$b#But I don't know how to do that. I barely know how to be friends with you.$2",
+  
+  "event_6_heart1": "Hmm...$9#$b#I agree with you, but I noticed something strange. I felt the relationship between us diminish.$6#$b#Perhaps the world doesn't want you to encourage the type of behavior I exhibited.$6#$b#I'll keep your opinion in mind, and I appreciate it, even if there are repercussions for it.$0",
+  "event_6_heart2": "@?! What are you mad at me for?$3#$b#...$2#$b#I messed up, didn't I?$2#$b#Weird. I usually make mistakes, but this feels like one that isn't easily undone.$6#$b#But what should I have done? Stand there and be insulted like that?$2#$b#*sigh*$2",
+  "event_6_heart3": "Yeah, you're right.$6#$b#I shouldn't be messing around with teleporting items at this time of day!$1#$b#I would have never ended up in a situation with her otherwise.$0#$b#All's well that ends well!$1",
+  "event_6_heart4": "Yeah, you're right.$6#$b#I don't think it was right for me to stoop to her level.$2#$b#But I just got caught up in the moment, and I felt like I needed to sling something back...$6#$b#I'll keep it mind for next time, @. Thank you.$0",
+  
+//  "event_8_heart1": "You're right. I've heard enough, I don't want to meet them anyway.$2#$b#I knew it, I just *knew* they don't like me, none of them. I bet you don't either...$2#$b#...$7",
+//  "event_8_heart2": "Okay...$2#$b#You better be right about this, @.$6",
+  
+  "event_8b_heart1": "...$13",
+  "event_8b_heart2": "I...$13",
+  
+  "event_9_heart1": "Wow, all the way down?$3#$b#You really want to give me a lot of time, don't you?$0#$b#Well, I won't be one to argue. I'll make the most of it!$1#$b#Thank you very much, @.$4#$b#...Though, my heart says that I'd want to rush it a little more than the amount of time you gave me.$0#$b#But it's all good with me!$1",
+  "event_9_heart2": "Two hearts? I can do that!$0#$b#We'll have to spend quite a bit more time getting to know each other before we can progress further, but I don't mind.#$b#Thanks a bunch, @.$8",
+  "event_9_heart3": "Four hearts. Alright! That should give me enough time to do some of the things I want to do.$0#$b#I'll need to rush a bit, but I'll do my best to make the most of it!$1#$b#Personally, I think this one is for the best, giving me a good balance between everyone else and you.$1",
+  "event_9_heart4": "Six hearts, huh? Well, I could do some things...$2#$b#Hmm... I think I got a plan, but I'll need to be precise with it.$9#$b#Good thing you dropped it at all, because any less wiggle room would have been impossible to do anything.$0",
+  "event_9_heart5": "Don't touch it at all...$2#$b#Okay. I'm not completely happy to hear that, but I'll go along with it.$6#$b#There might be a little bit of a difference, but none that you should notice long term.$0",
+
+  "event_bad1_heart1": "...$2#$b#...You're glad to see me...?$13#$b#*sigh* I'm sorry, @.$2#$b#I'm glad to see you too. I missed having you as...$13",
+  "event_bad1_heart2": "...$2#$b#...I don't know, @.$2#$b#I didn't know what to say to you, after everything that happened.$2#$b#@, I think...$2",
+  "event_bad1_heart3": "...$2#$b#...I wasn't trying to avoid *you*, @.$2#$b#I wanted to be alone, but I wanted you to be here with me.$2#$b#But honestly...$2",
+  "event_bad1_heart4": "...I'm sorry, @.$2#$b#...I wasn't trying to hurt you.$2#$b#I'm just really confused. I'm not sure what I'm doing since that day in the saloon.$2",
+
+  "event_bad2_heart1": "Right...$2#$b#Y'know, I'm not really sure how I should feel.$13#$b#I know I need more time, but I do want to go back to our friendship.$13#$b#...I'm so grateful that despite what I've done, you're so understanding...$13#$b#...$2",
+  "event_bad2_heart2": "...$6#$b#...No.$2#$b#No, I'm sorry, @. I can't. Even if I felt the same after all this, I couldn't.$2#$b#My heart wouldn't be able to take being that close to anyone.$2#$b#I really, truely, sincerely am flattered, but I can't date you.$13#$b#If a relationship is the only thing you want, please do us both a favor, and don't speak to me again.$13#$b#A friendship is the most I can afford to give...$13#$b#...$2",
+  "event_bad2_heart3": "@, do you think I know how to make friends?$2#$b#Do you think I know how to keep them?$2#$b#The feeling to run away felt so natural, and I did.$2#$b#But now, with you in front of me, my stomach is sinking so much.$2#$b#But I know that was the wrong thing to do.$2#$b#Really, @. I'm sorry, I'm so sorry...$7#$b#I'm sorry...$7",
+  "event_bad2_heart4": "!?$3#$b#@, I'm sorry!$3#$b#I'm so sorry for abandoning you, @!$3#$b#I really, really am sorry, @...$7#$b#I'm sorry, @...$7#$b#I'm sorry... *hic*...$7#$b#%(You can tell she is repeatedly saying sorry through her sobs...)",
+  "event_bad2_heart5": "I'm sure.$6#$b#I'm really sorry, @.$2#$b#Even if I still loved you, @, I don't think I can be with you and risk hurting you more.$2#$b#%(She seems adamant on this stance. You don't think she'll change her mind, but you can see the tears welling in her eyes...)",
+  "event_bad2_heart6": "...$6#$b#...Are you sure?$13#$b#It's... odd to be friends with your...ex-wife?$2#$b#But yeah, if you're okay with us being friends...$13",
+
+  "event_bad3_heart1": "...I'd like that.$13#$b#...$6#$b#Yeah, I'd like that, a lot, @.$0",
+  "event_bad3_heart2": "...We can do that.$13#$b#...$6#$b#Yeah, we can do that, @.$0",
+  "event_bad3_heart3": "...Yeah, that's fair.$13#$b#...$13#$b#Yeah, that's fair, @.$13",
+  "event_bad3_heart4": "...Yeah, that's fair.$13#$b#...$2#$b#...Yeah, that's fair, @.$7",
+  "event_bad3_heart5": "...If you mean as friends, then yeah, we can do that.$13#$b#...$2#$b#Yeah, we can do that, @.$0",
+
+  "katrielle2HeartDialogue": "@?! Someone definitely saw me!$3#$b#@, if I didn't stop to talk to you, they wouldn't have...$5#$b#...$6#$b#No, I'm sorry for that. I shouldn't take it out against you. You couldn't have known.$2#$e#Hmm... Maybe I was just imagining it.$6#$b#Yeah, that's probably it!$0#$b#...$2#$q 999916/999916 katrielle2HeartDialogue_old#...Right?#$r 999916 10 katrielle2HeartDialogue_12#It doesn't matter, you don't need to worry about others.#$r 999916 0 katrielle2HeartDialogue_13#They might have, so you should try to stay hidden.#$r 999916 -10 katrielle2HeartDialogue_14#You're still invisible to everyone.#$r 999916 -30 katrielle2HeartDialogue_15#Who's talking to me?",
+  "katrielle2HeartDialogue_old": "Nonetheless, I need to be ready.$6#$b#@, I'll believe I'll be fine.$0",
+  "katrielle2HeartDialogue_12": "Hmm...$9#$b#I guess that's the most important thing, huh? Thanks for the reassurance, @.$0#$b#Even if I have a hard time believing that someone can see me now...$6",
+  "katrielle2HeartDialogue_13": "Yeah, you're right. I knew I should be worried...$2#$b#Thanks, @. At least I think I can trust you...$6",
+  "katrielle2HeartDialogue_14": "...I don't believe you, @. Maybe it's hard for you to understand, but I *know* someone saw me.$2",
+  "katrielle2HeartDialogue_15": "If you think you're being funny, @, you're not. I'm trying to be serious here, and you're treating me like a joke.$5",
+  
+//Unsorted / To be added into i18n
+
+// TODO: eventSeen_[event], scour for those events
+
+  "RejectMermaidPendant_Under10Hearts_AskedAgain": "Hehe, that eagerness of yours is really cute.$4#$b#Don't worry, @. Play your cards right, and we'll get married.$0#$b#Though, I do need to think of a plan for meeting the town or something...$9#$b#Say, wanna meet me at the Saloon after 8PM, from Thursday to Sunday?$1#$b#No particular reason why I'm asking.$0",
+
+//FUTURE TOODOO: Dialogue about Leo 
+//TODO: Dialogue about Katrielle's loves being changed
+//FUTURE TOODOO: Gunther Dialogue (SVE)
+
+}

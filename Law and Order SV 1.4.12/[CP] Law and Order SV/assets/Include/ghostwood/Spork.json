@@ -1,0 +1,560 @@
+{
+    "Changes": [
+        {
+            //map load
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_WarpRoom_Spork",
+            "FromFile": "assets/Locations/WarpRoom_Spork.tmx"
+        },
+        {
+            //location load
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModId}}_WarpRoom_Spork": {
+                    "DisplayName": "{{i18n:location_WarpRoom_Spork}}",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_WarpRoom_Spork"
+                    },
+                },
+            }
+        },
+        //objects update
+        {
+            "LogName": "Object Entries",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_DogBiscuit": {
+                    "Name": "{{ModId}}_DogBiscuit",
+                    "DisplayName": "{{i18n:DogBiscuit_Name}}",
+                    "Description": "{{i18n:DogBiscuit_Description}}",
+                    "Type": "Basic",
+                    "Category": -17,
+                    "Price": 40,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 9,
+                    "Edibility": 10,
+                    "IsDrink": false,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown"
+                    ],
+                    "CustomFields": null
+                },
+            }
+        },
+        {
+            //add dog biscuit to jail shop
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "{{ModId}}_JailShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_JailShop_DogBiscuit": {
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Price": 40,
+                    "AvoidRepeat": true,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Id": "{{ModId}}_JailShop_DogBiscuit",
+                    "ItemId": "{{ModId}}_DogBiscuit",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_SporkIntro",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+            }
+        },
+        {
+            //character data
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "{{Spork}}": {
+                    "DisplayName": "{{cfgSpork}}",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_SporkIntro",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "BirthSeason": "winter",
+                    "BirthDay": "12",
+                    "Calendar": "AlwaysShown",
+                    "SocialTab": "AlwaysShown",
+                    "MugShotSourceRect": {
+                        "X": 0,
+                        "Y": 6,
+                        "Width": 16,
+                        "Height": 24
+                    },
+                    "HomeRegion": "Town",
+                    "CanBeRomanced": false,
+                    "CanVisitIsland": false,
+                    "IntroductionsQuest": false,
+                    "ItemDeliveryQuests": false,
+                    "WinterStarParticipant": false,
+                    "Breather": false,
+                    "CanGreetNearbyCharacters": false,
+                    "CanCommentOnPurchasedShopItems": false,
+                    "DumpsterDiveEmote": 8,
+                    "DumpsterDiveFriendshipEffect": 0,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 28
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_WarpRoom_Spork",
+                            "Tile": {
+                                "X": 4,
+                                "Y": 7
+                            },
+                            "Direction": "left"
+                        }
+                    ],
+                }
+            }
+        },
+        {
+            //spritesheet
+            "Action": "Load",
+            "Target": "Characters/{{Spork}}",
+            "FromFile": "assets/NPCs/Sprites/Spork/spork.png"
+        },
+        {
+            //spritesheet for use in stardew squad
+            "Action": "Load",
+	    "Target": "{{ModId}}/Sprites/Spork",
+            "FromFile": "assets/NPCs/Sprites/Spork/spork.png"
+        },
+        {
+            //running spritesheet
+            "Action": "Load",
+            "Target": "Characters/{{Spork}}_Run",
+            "FromFile": "assets/NPCs/Sprites/Spork/sporkrun.png"
+        },
+        {
+            //swimming spritesheet
+            "Action": "Load",
+            "Target": "Characters/{{Spork}}_Swim",
+            "FromFile": "assets/NPCs/Sprites/Spork/sporkswim.png"
+        },
+        {
+            //ghost spritesheet
+            "Action": "Load",
+            "Target": "Characters/{{Spork}}_Ghost",
+            "FromFile": "assets/NPCs/Sprites/Spork/sporkghost.png"
+        },
+        {
+            //running with stick spritesheet
+            "Action": "Load",
+            "Target": "Characters/{{Spork}}_Stick",
+            "FromFile": "assets/NPCs/Sprites/Spork/sporkstick.png"
+        },
+        {
+            //portrait
+            "Action": "Load",
+            "Target": "Portraits/{{Spork}}",
+            "FromFile": "assets/NPCs/Portraits_original/Spork/spork.png"
+        },
+        {
+            //blank json loads
+            "Action": "Load",
+            "Target": "Characters/Dialogue/{{Spork}}, Characters/schedules/{{Spork}}, Strings/schedules/{{Spork}}",
+            "FromFile": "assets/NPCs/Data/blank.json"
+        },
+        {
+            //gift tastes
+            //love: dogbiscuit, ice cream, prehistoric rib (583), fossilized ribs (824), chewing stick (105)
+            //like: fish, driftwood, clam, bones/prehistoric item
+            //dislike: mayo, pickles, fruit/vegetables, greens, gems, books, algae soup, pale broth, moss soup, parsnip soup
+            //hate: ancient doll, strange doll
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "{{Spork}}": "{{i18n:gifts.Spork.love|cfgSpork={{cfgSpork}}}}/{{ModId}}_DogBiscuit 233 583 824 105/{{i18n:gifts.Spork.like|cfgSpork={{cfgSpork}}}}/-4 169 372 bone_item prehistoric_item/{{i18n:gifts.Spork.dislike|cfgSpork={{cfgSpork}}}}/342 mayo_item -75 -79 -81 -12 -102 456 457 MossSoup 199/{{i18n:gifts.Spork.hate|cfgSpork={{cfgSpork}}}}/103 126/{{i18n:gifts.Spork.neutral|cfgSpork={{cfgSpork}}}}/"
+            }
+        },
+        {
+            //audio
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "{{ModId}}_bark1": {
+                    "ID": "{{ModId}}_bark1",
+                    "Category": "Sound",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Audio/bark1.ogg}}"
+                    ],
+                    "StreamedVorbis": true,
+                    "Looped": false
+                },
+                "{{ModId}}_bark2": {
+                    "ID": "{{ModId}}_bark2",
+                    "Category": "Sound",
+                    "FilePaths": [
+                        "{{AbsoluteFilePath: assets/Audio/bark2.ogg}}"
+                    ],
+                    "StreamedVorbis": true,
+                    "Looped": false
+                },
+            },
+        },
+        {
+            //dialogue
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{Spork}}",
+            "Entries": {
+                "DumpsterDiveComment": "{{i18n:Spork_DumpsterDiveComment|cfgSpork={{cfgSpork}}}}",
+                "AcceptBirthdayGift": "{{i18n:Spork_AcceptBirthdayGift_Default|cfgSpork={{cfgSpork}}}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:Spork_AcceptBirthdayGift_Negative|cfgSpork={{cfgSpork}}}}",
+                "AcceptBirthdayGift_Positive": "{{i18n:Spork_AcceptBirthdayGift_Positive|cfgSpork={{cfgSpork}}}}",
+                "AcceptGift_(O)169": "{{i18n:Spork_AcceptGift_Driftwood|cfgSpork={{cfgSpork}}}}",
+                "AcceptGift_(O)583": "{{i18n:Spork_AcceptGift_Ribs|cfgSpork={{cfgSpork}}}}",
+                "AcceptGift_(O)824": "{{i18n:Spork_AcceptGift_Ribs|cfgSpork={{cfgSpork}}}}",
+                "AcceptGift_(O)342": "{{i18n:Spork_AcceptGift_Jars|cfgSpork={{cfgSpork}}}}",
+                "AcceptGift_(O)307": "{{i18n:Spork_AcceptGift_Jars|cfgSpork={{cfgSpork}}}}",
+                "AcceptGift_(O)807": "{{i18n:Spork_AcceptGift_Jars|cfgSpork={{cfgSpork}}}}",
+                "AcceptGift_(O)308": "{{i18n:Spork_AcceptGift_Jars|cfgSpork={{cfgSpork}}}}",
+                "AcceptGift_(O){{ModId}}_DogBiscuit": "{{i18n:Spork_AcceptGift_DogBiscuit|cfgSpork={{cfgSpork}}}}",
+                "AcceptGift_(O)StardropTea": "{{i18n:Spork_AcceptGift_StardropTea|cfgSpork={{cfgSpork}}}}",
+                "RejectMovieTicket": "{{i18n:Spork_RejectItem|cfgSpork={{cfgSpork}}}}",
+                "RejectBouquet": "{{i18n:Spork_RejectItem|cfgSpork={{cfgSpork}}}}",
+                "RejectMermaidPendant": "{{i18n:Spork_RejectItem|cfgSpork={{cfgSpork}}}}",
+                "Mon": "{{i18n:Spork_Mon|cfgSpork={{cfgSpork}}}}",
+                "Tue": "{{i18n:Spork_Tue|cfgSpork={{cfgSpork}}}}",
+                "Wed": "{{i18n:Spork_Wed|cfgSpork={{cfgSpork}}}}",
+                "Thu": "{{i18n:Spork_Thu|cfgSpork={{cfgSpork}}}}",
+                "Fri": "{{i18n:Spork_Fri|cfgSpork={{cfgSpork}}}}",
+                "Sat": "{{i18n:Spork_Sat|cfgSpork={{cfgSpork}}}}",
+                "Sun": "{{i18n:Spork_Sun|cfgSpork={{cfgSpork}}}}",
+                "Mon4": "{{i18n:Spork_Mon4|cfgSpork={{cfgSpork}}}}",
+                "Tue4": "{{i18n:Spork_Tue4|cfgSpork={{cfgSpork}}}}",
+                "Wed4": "{{i18n:Spork_Wed4|cfgSpork={{cfgSpork}}}}",
+                "Thu4": "{{i18n:Spork_Thu4|cfgSpork={{cfgSpork}}}}",
+                "Fri4": "{{i18n:Spork_Fri4|cfgSpork={{cfgSpork}}}}",
+                "Sat4": "{{i18n:Spork_Sat4|cfgSpork={{cfgSpork}}}}",
+                "Sun4": "{{i18n:Spork_Sun4|cfgSpork={{cfgSpork}}}}",
+                //custom conversation topics
+                "{{ModId}}_SawSporkLaps": "{{i18n:Events.SawSporkLaps_Spork|cfgSpork={{cfgSpork}}}}",
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{Shannon}}",
+            "Entries": {
+                "{{ModId}}_SawSporkLaps": "{{i18n:Events.SawSporkLaps_Shannon}}",
+                "eventSeen_{{ModId}}_SporkMissing":"{{i18n:Events.SawSporkMissing.Shannon|cfgSpork={{cfgSpork}}}}",
+                "eventSeen_{{ModId}}_SporkReturn":"{{i18n:Events.SawSporkReturn.Shannon|cfgSpork={{cfgSpork}}}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{Russell}}",
+            "Entries": {
+                "{{ModId}}_SawSporkLaps": "{{i18n:Events.SawSporkLaps_Russell}}",
+                "eventSeen_{{ModId}}_SporkMissing":"{{i18n:Events.SawSporkMissing.Russell}}",
+                "eventSeen_{{ModId}}_SporkReturn":"{{i18n:Events.SawSporkReturn.Russell|cfgSpork={{cfgSpork}}}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Wizard",
+            "Entries": {
+                "eventSeen_{{ModId}}_SporkMissing":"{{i18n:Events.SawSporkMissing.Wizard}}",
+                "eventSeen_{{ModId}}_SporkReturn":"{{i18n:Events.SawSporkReturn.Wizard}}",
+                "eventSeen_{{ModId}}_RipleyWizard":"{{i18n:Events.SawRipleyWizard.Wizard}}",
+            }
+        },
+        {
+            //schedule animations
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "{{spork_sleep}}": "16/16/16",
+                "{{Spork}}_snooze": "16/16/16",
+                "{{Spork}}_wag_left": "12/12 19/12",
+                "{{Spork}}_wag_right": "4/4 25/4",
+                "{{Spork}}_sit_left": "18/18/18",
+                "{{Spork}}_sit_right": "24/24/24",
+                "{{Spork}}_sit_mountain": "24/24/24//laying_down/offset 0 -32",
+                "{{Spork}}_climb_left": "12 12 12 20 20 21 21 22 22 22 23 22 23 22 23 22 23 22 22 22/22 22 22 23 22 23 22 23 22 23 22 22 22 21 21 21 21 22 22 22 22 22/22 21 21 20 20 12 12 12//offset -8 16",
+            },
+        },
+        {
+            //schedule strings
+            "Action": "EditData",
+            "Target": "Strings/schedules/{{Spork}}",
+            "Entries": {
+                "snooze": "{{i18n: Spork_schedule_snooze|cfgSpork={{cfgSpork}}}}",
+                "scritches": "{{i18n: Spork_schedule_scritches|cfgSpork={{cfgSpork}}}}",
+                "goodboy": "{{i18n: Spork_schedule_goodboy|cfgSpork={{cfgSpork}}}}",
+                "badboy": "{{i18n: Spork_schedule_badboy|cfgSpork={{cfgSpork}}}}",
+                "needsbath": "{{i18n: Spork_schedule_needsbath|cfgSpork={{cfgSpork}}}}",
+                "playfetch": "{{i18n: Spork_schedule_playfetch|cfgSpork={{cfgSpork}}}}",
+                "tree": "{{i18n: Spork_schedule_tree|cfgSpork={{cfgSpork}}}}",
+            },
+        },
+        {
+            //schedule
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{Spork}}",
+            "Entries": {
+                "spring": "610 {{ModId}}_AboveJail 4 8 2 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/700 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\" /900 Town 75 9 1 {{Spork}}_sit_right \"Strings\\schedules\\{{Spork}}:playfetch\" /1100 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\"/1200 {{ModId}}_Jail  16 21 3 square_5_3/1600 {{ModId}}_AboveJail  6 16 0 square_5_3/2100 {{ModId}}_AboveJail 4 8 0 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/2540 {{ModId}}_AboveJail 4 8 0 {{spork_sleep}}",
+                "spring_Mon": "610 {{ModId}}_AboveJail 4 8 2 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/700 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\" /900 Town 75 9 1 {{Spork}}_sit_right \"Strings\\schedules\\{{Spork}}:playfetch\" /1100 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\"/1200 Mountain 56 32 1  square_3_3/1440 Mountain 58 35 1 {{Spork}}_wag_right/1520 Mountain 58 33 1 {{Spork}}_sit_mountain/1540 Mountain 57 33 3 {{Spork}}_wag_left/1550 Mountain 49 33 1 {{Spork}}_wag_right/1610 {{ModId}}_AboveJail 4 16 3 {{Spork}}_wag_left/1750 {{ModId}}_AboveJail 1 18 1 {{Spork}}_wag_right/1810 {{ModId}}_AboveJail 1 17 1 {{Spork}}_sit_right/1830 {{ModId}}_AboveJail 5 8 0 square_5_3/2130 {{ModId}}_AboveJail 4 8 0 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/2540 {{ModId}}_AboveJail 4 8 0 {{spork_sleep}}",
+                "spring_Tue": "610 {{ModId}}_AboveJail 4 8 2 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/700 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\" /900 Town 75 9 1 {{Spork}}_sit_right \"Strings\\schedules\\{{Spork}}:playfetch\" /1100 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\"/1200 Town 49 59 3 {{Spork}}_sit_left \"Strings\\schedules\\{{Spork}}:goodboy\"/1400 Town 48 70 3 {{Spork}}_climb_left  \"Strings\\schedules\\{{Spork}}:badboy\"/1520 Town 49 59 3 {{Spork}}_sit_left \"Strings\\schedules\\{{Spork}}:needsbath\"/1630 Town 46 58 3 {{Spork}}_wag_left/1640 {{ModId}}_AboveJail 1 18 0/1830 {{ModId}}_AboveJail  5 8 0 square_5_3/2130 {{ModId}}_AboveJail 4 8 0 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/2540 {{ModId}}_AboveJail 4 8 0 {{spork_sleep}}",
+                "spring_Wed": "GOTO spring_Mon",
+                "spring_Thu": "GOTO spring",
+                "spring_Fri": "610 {{ModId}}_AboveJail 4 8 2 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/700 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\" /900 Town 75 9 1 {{Spork}}_sit_right \"Strings\\schedules\\{{Spork}}:playfetch\" /1100 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\"/1200 {{ModId}}_Jail  16 21 3 square_5_3/1310 Town 39 70 3 {{Spork}}_sit_left \"Strings\\schedules\\{{Spork}}:goodboy\"/1600 Town 34 71 1 square_7_7/1910 Town 48 70 3 {{Spork}}_climb_left  \"Strings\\schedules\\{{Spork}}:badboy\"/2000 Town 43 71 1 {{Spork}}_sit_right  \"Strings\\schedules\\{{Spork}}:needsbath\"/2110 {{ModId}}_AboveJail 4 8 0 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/2540 {{ModId}}_AboveJail 4 8 0 {{spork_sleep}}",
+                "spring_Sat": "GOTO spring_Mon",
+                "spring_Sun": "610 {{ModId}}_AboveJail 4 8 2 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/700 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\" /900 Town 75 9 1 {{Spork}}_sit_right \"Strings\\schedules\\{{Spork}}:playfetch\" /1100 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\"/1200 Mountain 10 10 1  square_5_7/1610 {{ModId}}_AboveJail 5 8 0 square_5_3/2130 {{ModId}}_AboveJail 4 8 0 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/2540 {{ModId}}_AboveJail 4 8 0 {{spork_sleep}}",
+                "rain": "610 {{ModId}}_AboveJail 4 8 2 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/800 {{ModId}}_Jail  16 21 3 square_5_3/1310 {{ModId}}_Jail 3 19 3 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/2020 {{ModId}}_AboveJail 4 8 0 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/1740 {{ModId}}_AboveJail  5 8 0 square_5_3/2540 {{ModId}}_AboveJail 4 8 0 {{spork_sleep}}",
+                "winter": "GOTO rain",
+            },
+        },
+        {
+            //schedule: SVE position fix
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{Spork}}",
+            "Entries": {
+                "spring_Fri": "610 {{ModId}}_AboveJail 4 8 2 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/700 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\" /900 Town 75 9 1 {{Spork}}_sit_right \"Strings\\schedules\\{{Spork}}:playfetch\" /1100 Town 75 9 1 {{Spork}}_wag_right \"Strings\\schedules\\{{Spork}}:playfetch\"/1200 {{ModId}}_Jail  16 21 3 square_5_3/1310 Town 38 70 3 {{Spork}}_sit_left \"Strings\\schedules\\{{Spork}}:goodboy\"/1600 Town 34 71 1 square_7_7/1910 Town 48 70 3 {{Spork}}_climb_left  \"Strings\\schedules\\{{Spork}}:badboy\"/2000 Town 43 71 1 {{Spork}}_sit_right  \"Strings\\schedules\\{{Spork}}:needsbath\"/2110 {{ModId}}_AboveJail 4 8 0 {{Spork}}_snooze \"Strings\\schedules\\{{Spork}}:snooze\"/2540 {{ModId}}_AboveJail 4 8 0 {{spork_sleep}}",
+            },
+             "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            },
+        },
+
+        {
+            //overwrite all schedule keys when Spork is lost
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{Spork}}",
+            "Entries": {
+                "rain": "2540 {{ModId}}_WarpRoom_Spork 4 7 0 {{spork_sleep}}",
+                "spring": "2540 {{ModId}}_WarpRoom_Spork 4 7 0 {{spork_sleep}}",
+                "spring_Mon": "GOTO spring",
+                "spring_Tue": "GOTO spring",
+                "spring_Wed": "GOTO spring",
+                "spring_Thu": "GOTO spring",
+                "spring_Fri": "GOTO spring",
+                "spring_Sat": "GOTO spring",
+                "spring_Sun": "GOTO spring",
+            },
+            "When": {
+                "HasSeenEvent|contains={{ModId}}_SporkMissing": true,
+                "HasSeenEvent|contains={{ModId}}_SporkReturn": false,
+            }
+        },
+        {
+            //event map
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_AnimalShopSpork",
+            "FromFile": "assets/Locations/AnimalShopSpork.tmx",
+        },
+        {
+            //twig 'character'
+            "Action": "Load",
+            "Target": "Characters/LAOSV_Twig",
+            "FromFile": "assets/EventObjects/{{TargetWithoutPath}}.png"
+        },
+        {
+            //custom buff
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModId}}_SporkBuff": {
+                    "DisplayName": "{{i18n:Buff_SporkBuffName}}",
+                    "Description": "{{i18n: Buff_SporkBuffDescription}}",
+                    "IconTexture": "Mods/sdvhead.LawAndOrderSV/lao_objects",
+                    "IconSpriteIndex": 21,
+                    "IsDebuff": false,
+                    "Duration": 180000,
+                    "Effects": {
+                        "Speed": 1.0,
+                        "ForagingLevel": 1.0,
+                    }
+                },
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Triggers_SporkFetchFriendship": {
+                    //trigger to grant the player friendship points with Spork if they played fetch that day
+                    "Id": "{{ModId}}_Triggers_SporkFetchFriendship",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_CONVERSATION_TOPIC Current {{ModId}}_PlayedFetch",
+                    "Actions": [
+                        "RemoveConversationTopic {{ModId}}_PlayedFetch",
+                        "AddFriendshipPoints {{Spork}} 100",
+                        "IncrementStat {{ModId}}_DaysPlayedFetch",
+                    ],
+                    "MarkActionApplied": false,
+                },
+                "{{ModId}}_Triggers_SporkDaysKnown": {
+                    //counts the number of days since the player met spork
+                    "Id": "{{ModId}}_Triggers_SporkDaysKnown",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_SporkIntro",
+                    "Actions": [
+                        "IncrementStat {{ModId}}_sporkDays",
+                    ],
+                    "MarkActionApplied": false,
+                },
+                "{{ModId}}_Triggers_SporkDaysLost": {
+                    //counts the number of days spork is lost in the ghostwood
+                    "Id": "{{ModId}}_Triggers_SporkDaysLost",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_SporkMissing, !PLAYER_HAS_SEEN_EVENT Current {{ModId}}_SporkReturn",
+                    "Actions": [
+                        "IncrementStat {{ModId}}_sporkDaysLost",
+                        "SetNpcInvisible {{ModId}}_Spork 1"
+                    ],
+                    "MarkActionApplied": false,
+                }
+            },
+        },
+        //events
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/AnimalShop",
+            "Entries": {
+                //introduction event
+                "{{ModId}}_SporkIntro/Friendship {{Shannon}} 125/Time 900 1200": "SettlingIn/13 16/farmer 1000 1000 0 {{Shannon}} 1000 1000 0 Marnie 1000 1000 2 Lewis 1000 1000 0 {{Spork}} 1000 1000 3/broadcastEvent/skippable/changeToTemporaryMap {{ModId}}_AnimalShopSpork false/warp Marnie 13 13 true/warp {{Shannon}} 13 15 true/positionOffset {{Shannon}} 18 0 true/warp {{Spork}} 17 8 true/positionOffset {{Spork}} 0 12 true/pause 2000/warp farmer 13 19 true/pause 200/playSound doorClose/pause 100/faceDirection {{Shannon}} 2 true/pause 500/advancedMove farmer false 0 -1 4 100/pause 1500/speak {{Shannon}} \"{{i18n:Events.SporkIntro.001}}\"/emote farmer 32 true/pause 500/advancedMove farmer false 0 -1 -1 0 0 -1 4 100/pause 1800/faceDirection {{Shannon}} 3 true/pause 1000/faceDirection {{Shannon}} 0 true/speak Marnie \"{{i18n:Events.SporkIntro.002}}\"/pause 800/speak {{Shannon}} \"{{i18n:Events.SporkIntro.003}}\"/pause 1500/playSound {{ModId}}_bark2/advancedMove {{Spork}} false 0 -1 -2 0 0 5 2 200 3 100/pause 4000/faceDirection Marnie 1 true/pause 1600/showFrame {{Spork}} 18/pause 1200/speak {{Shannon}} \"{{i18n:Events.SporkIntro.004}}\"/pause 800/speak Marnie \"{{i18n:Events.SporkIntro.005|cfgSpork={{cfgSpork}}}}\"/pause 2000/showFrame {{Spork}} 12/pause 500/advancedMove {{Spork}} false 0 3 -1 0 3 100/pause 1200/faceDirection {{Shannon}} 1 true/pause 200/faceDirection farmer 1 true/pause 200/faceDirection Marnie 2 true/proceedPosition {{Spork}}/pause 200/showFrame {{Spork}} 20/pause 150/showFrame {{Spork}} 21/pause 150/animate {{Spork}} false true 120 22 23/pause 500/emote {{Spork}} 20 true/pause 3500/stopAnimation {{Spork}} 22/pause 150/showFrame {{Spork}} 21/pause 150/showFrame {{Spork}} 20/pause 150/showFrame {{Spork}} 12/pause 900/showFrame {{Spork}} 18/pause 800/speak Marnie \"{{i18n:Events.SporkIntro.006}}\"/pause 800/warp Lewis 13 19 true/pause 200/playSound doorClose/advancedMove Lewis false 0 -2 4 100/textAboveHead Lewis \"{{i18n:Events.SporkIntro.007}}\"/pause 200/faceDirection Marnie 2 true/faceDirection {{Shannon}} 2 true/pause 200/faceDirection farmer 2 true/pause 600/speak Lewis \"{{i18n:Events.SporkIntro.008}}\"/pause 300/advancedMove {{Spork}} false 0 1 -1 0 2 100/proceedPosition {{Spork}}/playSound {{ModId}}_bark1/pause 200/jump {{Spork}} 4/pause 800/emote Lewis 16 true/speed Lewis 4/speed {{Spork}} 4/changeSprite {{Spork}} Run/pause 200/advancedMove Lewis false -10 0 0 -1 1 100/pause 400/advancedMove {{Spork}} false 0 1 -7 0 0 -1 3 100/pause 200/speed Lewis 5/faceDirection Marnie 3 true/faceDirection farmer 3 true/faceDirection {{Shannon}} 3 true/pause 400/textAboveHead Lewis \"{{i18n:Events.SporkIntro.009}}\"/proceedPosition {{Spork}}/pause 400/playSound {{ModId}}_bark2/pause 600/jump {{Spork}} 4/pause 200/shake Lewis 800/pause 1000/advancedMove {{Spork}} false 0 -1 -1 0 0 -1 -2 0 2 100/pause 600/faceDirection Lewis 0 true/proceedPosition {{Spork}}/speed Lewis 6/advancedMove Lewis false 0 1 20 0 0 1 6 0 0 -4 -6 0 0 4 -10 0 0 1 2 100/pause 200/speed {{Spork}} 6/advancedMove {{Spork}} false 0 3 20 0 0 1 6 0 0 -4 -6 0 0 4 -10 0 2 100/pause 500/textAboveHead Lewis \"{{i18n:Events.SporkIntro.010}}\"/pause 500/playSound {{ModId}}_bark1/pause 500/faceDirection Marnie 2 true/faceDirection farmer 2 true/faceDirection {{Shannon}} 2 true/pause 1500/faceDirection Marnie 1 true/faceDirection farmer 1 true/faceDirection {{Shannon}} 1 true/pause 5000/faceDirection Marnie 2 true/faceDirection farmer 2 true/faceDirection {{Shannon}} 2 true/proceedPosition Lewis/warp Lewis 1000 1000 true/playSound doorClose/proceedPosition {{Spork}}/pause 1000/speed {{Spork}} 3/changeSprite {{Spork}}/advancedMove {{Spork}} false 0 -2 1 0 0 -1 3 100/proceedPosition {{Spork}}/pause 200/animate {{Spork}} false true 120 12 19/pause 500/faceDirection {{Shannon}} 1 true/faceDirection farmer 1 true/pause 2000/stopAnimation {{Spork}} 18/pause 1200/faceDirection {{Shannon}} 0 true/pause 800/speak {{Shannon}} \"{{i18n:Events.SporkIntro.011}}\"/pause 200/faceDirection farmer 2 true/pause 500/globalFade/viewport -1000 -1000/end",
+            }
+        },
+        {
+            //for spork missing event
+            "Action": "Load",
+            "Target": "Characters/LAOSV_SkeletonMummy",
+            "FromFile": "assets/EventObjects/{{TargetWithoutPath}}.png"
+        },
+        {
+            //update Shannon's 2H event if spork has been introduced
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "239790002/Time 800 1700/Weather sunny/Friendship {{Shannon}} 500": "ragtime/13 88/farmer 1 91 1 {{Shannon}} 1000 1000 2 Vincent 1000 1000 2 Jodi 1000 1000 2 {{Spork}} 12 87 3/skippable/addConversationTopic {{ModId}}_VincentPatrol 2/changeSprite {{Shannon}} Hatless/changePortrait {{Shannon}} Hatless/changeSprite Vincent Police/changePortrait Vincent Police/showFrame {{Spork}} 18/advancedMove farmer false 7 0 1 100/pause 5000/warp {{Shannon}} 10 86/playSound doorClose/animate {{Spork}} false true 120 12 19/pause 500/advancedMove {{Shannon}} false 0 1 1 0 3 100/proceedPosition {{Shannon}}/pause 500/warp Vincent 10 86/playSound doorClose/pause 500/advancedMove {{Shannon}} false 0 4 3 100/pause 200/advancedMove Vincent false 0 4 3 100/pause 200/stopAnimation {{Spork}} 12/advancedMove {{Spork}} false 0 5 3 100/proceedPosition {{Spork}}/speak {{Shannon}} \"{{i18n:Events.239790002.001}}\"/speak Vincent \"{{i18n:Events.239790002.002}}\"/speak {{Shannon}} \"{{i18n:Events.239790002.003}}\"/speak Vincent \"{{i18n:Events.239790002.004}}\"/viewport move 0 -48 200/pause 100/viewport move 0 8 40/pause 300/speak Jodi \"{{i18n:Events.239790002.005}}\"/changeSprite {{Spork}} Run/faceDirection {{Spork}} 0 true/jump Vincent 9/pause 100/jump {{Shannon}} 7/speak {{Shannon}} \"{{i18n:Events.239790002.006}}\"/speed {{Shannon}} 6/speed Vincent 8/advancedMove Vincent false 30 0 1 100/pause 200/advancedMove {{Shannon}} false 30 0 1 100/pause 200/speed {{Spork}} 6/advancedMove {{Spork}} false 0 -1 30 0 1 100/pause 100/playSound {{ModId}}_bark2/viewport move 0 1 1000/emote farmer 8/pause 1000/globalFade/viewport -1000 -1000/stopAdvancedMoves/end",
+            },
+            "When": {
+                "HasSeenEvent |contains={{ModId}}_SporkIntro": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            },
+            "Update": "OnLocationChange"
+        },
+        
+        {
+            //SVE version of 2H patrol rewrite
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "239790002/Time 800 1700/Weather sunny/Friendship {{Shannon}} 500": "ragtime/12 88/farmer 1 91 1 {{Shannon}} 1000 1000 2 Vincent 1000 1000 2 Jodi 1000 1000 2 {{Spork}} 9 87 3/skippable/addConversationTopic {{ModId}}_VincentPatrol 2/changeSprite {{Shannon}} Hatless/changePortrait {{Shannon}} Hatless/changeSprite Vincent Police/changePortrait Vincent Police/viewport 12 88 clamp true/showFrame {{Spork}} 24/pause 800/advancedMove farmer false 7 0 1 100/pause 5000/warp {{Shannon}} 10 86/playSound doorClose/animate {{Spork}} true true 120 12 19/pause 500/advancedMove {{Shannon}} false 0 1 1 0 3 100/proceedPosition {{Shannon}}/pause 500/warp Vincent 10 86/playSound doorClose/pause 500/advancedMove {{Shannon}} false 0 4 3 100/pause 200/advancedMove Vincent false 0 4 3 100/pause 400/stopAnimation {{Spork}} 4/advancedMove {{Spork}} false 0 5 3 100/proceedPosition {{Spork}}/speak {{Shannon}} \"{{i18n:Events.239790002.001}}\"/speak Vincent \"{{i18n:Events.239790002.002}}\"/speak {{Shannon}} \"{{i18n:Events.239790002.003}}\"/speak Vincent \"{{i18n:Events.239790002.004}}\"/viewport move 0 -42 200/pause 100/viewport move 0 8 40/pause 300/speak Jodi \"{{i18n:Events.239790002.005}}\"/changeSprite {{Spork}} Run/faceDirection {{Spork}} 0 true/jump Vincent 9/pause 100/jump {{Shannon}} 7/speak {{Shannon}} \"{{i18n:Events.239790002.006}}\"/speed {{Shannon}} 6/speed Vincent 8/advancedMove Vincent false 30 0 1 100/pause 200/advancedMove {{Shannon}} false 30 0 1 100/pause 200/speed {{Spork}} 6/advancedMove {{Spork}} false 0 -1 30 0 1 100/pause 100/playSound {{ModId}}_bark2/viewport move 0 1 1000/emote farmer 8/pause 1000/globalFade/viewport -1000 -1000/stopAdvancedMoves/end",
+            },
+            "When": {
+                "HasSeenEvent |contains={{ModId}}_SporkIntro": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                //fetch
+                "{{ModId}}_Fetch/Weather sunny/Time 730 1200/NpcVisibleHere {{Spork}}/Tile 75 8 76 8 77 8 75 9 76 9 77 9 75 10 76 10 77 10": "continue/76 9/{{Spork}} 75 9 1 farmer 77 9 3/skippable/positionOffset {{Spork}} -16 0/animate {{Spork}} true true 120 12 19/quickQuestion {{i18n:Events.SporkFetch.qqq|cfgSpork={{cfgSpork}}}}#{{i18n:Events.SporkFetch.qq1}}#{{i18n:Events.SporkFetch.qq2}}(break)action AddBuff sdvhead.LawAndOrderSV_SporkBuff(break)addConversationTopic {{ModId}}_DeclinedFetch 0\\end/addConversationTopic {{ModId}}_PlayedFetch 1/action IncrementStat sdvhead.LawAndOrderSV_PlayedFetch/pause 200/changeMapTile Buildings 76 9 170/startJittering/animate farmer true false 50 30 31 32 33 34 35/pause 150/stopJittering/pause 150/addTemporaryActor LAOSV_Twig 16 16 76 9 2 false/animate LAOSV_Twig false true 45 0 1 2 3 4 5 6 7 8 9 10 11/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/stopAnimation {{Spork}} 12/changeSprite {{Spork}} Run/faceDirection {{Spork}} 3 true/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/speed {{Spork}} 5/advancedMove {{Spork}} false -9 0 3 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 3/pause 100/positionOffset LAOSV_Twig -32 3/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 6/pause 100/positionOffset LAOSV_Twig -24 6/pause 100/positionOffset LAOSV_Twig -16 6/stopAnimation LAOSV_Twig 0/pause 200/stopAdvancedMoves/showFrame {{Spork}} 17/pause 100/warp LAOSV_Twig 1000 1000 true/pause 300/changeSprite {{Spork}} Stick/advancedMove {{Spork}} false 9 0 3 100/proceedPosition {{Spork}}/changeMapTile Buildings 76 9 169/changeSprite {{Spork}}/faceDirection {{Spork}} 1 true/animate {{Spork}} true true 120 12 19/emote farmer 32 true/pause 1000/stopAnimation {{Spork}} 4/end",
+                "{{ModId}}_SporkMissing/Friendship {{Spork}} 1000/SawEvent {{ModId}}_SporkLaps/NpcVisibleHere {{Spork}}/!ActiveDialogueEvent {{ModId}}_PlayedFetch/!ActiveDialogueEvent {{ModId}}_DeclinedFetch/Weather sunny/SawEvent 112/!SawEvent {{ModId}}_SporkReturn/Tile 75 8 76 8 77 8 75 9 76 9 77 9 75 10 76 10 77 10/FreeInventorySlots 1": "continue/76 9/{{Spork}} 75 9 1 farmer 77 9 3 {{Shannon}} 1000 1000 2 {{Russell}} 1000 1000 2 Wizard 1000 1000 0/positionOffset {{Spork}} -16 0/animate {{Spork}} true true 120 12 19/action AddBuff sdvhead.LawAndOrderSV_SporkBuff/addConversationTopic {{ModId}}_PlayedFetch 1/action IncrementStat sdvhead.LawAndOrderSV_PlayedFetch/broadcastEvent/setSkipActions addItem {{ModID}}_AmuletOfExtraction#SetNpcInvisible {{ModId}}_Spork 1/pause 1200/warp {{Shannon}} 75 7/playSound doorClose/pause 200/changeMapTile Buildings 76 9 170/pause 700/faceDirection farmer 0 true/pause 200/speak {{Shannon}} \"{{i18n:Events.SporkMissing.001|cfgSpork={{cfgSpork}}}}\"/pause 400/emote farmer 32/pause 400/faceDirection farmer 3 true/pause 800/skippable/startJittering/pause 400/animate farmer true false 50 30 31 32 33 34 35/pause 150/stopJittering/pause 150/addTemporaryActor LAOSV_Twig 16 16 76 9 2 false/animate LAOSV_Twig false true 45 0 1 2 3 4 5 6 7 8 9 10 11/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/faceDirection {{Shannon}} 3 true/textAboveHead {{Shannon}} \"{{i18n:Events.SporkMissing.002|cfgSpork={{cfgSpork}}}}\"/positionOffset LAOSV_Twig -32 -3/pause 100/stopAnimation {{Spork}} 12/changeSprite {{Spork}} Run/faceDirection {{Spork}} 3 true/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/speed {{Spork}} 5/advancedMove {{Spork}} false -9 0 3 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 3/pause 100/positionOffset LAOSV_Twig -32 3/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 6/pause 100/positionOffset LAOSV_Twig -24 6/pause 100/positionOffset LAOSV_Twig -16 6/stopAnimation LAOSV_Twig 0/pause 200/stopAdvancedMoves/showFrame {{Spork}} 17/pause 100/warp LAOSV_Twig 1000 1000 true/pause 300/changeSprite {{Spork}}/pause 200/showFrame {{Spork}} 12 true/speed {{Spork}} 3/pause 400/faceDirection {{Spork}} 0 true/pause 1500/emote {{Spork}} 8 true/pause 1500/speak {{Shannon}} \"{{i18n:Events.SporkMissing.003}}\"/advancedMove {{Shannon}} false -2 0 3 100/pause 200/playSound {{ModId}}_bark1/pause 500/advancedMove {{Spork}} false -2 0 0 -2 1 0 1 100/proceedPosition {{Spork}}/pause 200/emote {{Spork}} 40 true/pause 1000/changeSprite {{Spork}} Run/speed {{Spork}} 6/advancedMove {{Spork}} false 3 0 0 -7 4 100/pause 100/textAboveHead {{Shannon}} \"{{i18n:Events.SporkMissing.004|cfgSpork={{cfgSpork}}}}\"/emote farmer  16 true/pause 200/advancedMove farmer false 0 -1 -1 0 3 100/pause 400/warp {{Russell}} 75 7/playSound doorClose/pause 1000/faceDirection {{Russell}} 3 true/pause 400/emote {{Russell}} 8 true/proceedPosition {{Spork}}/warp {{Spork}} 1000 1000/speed {{Shannon}} 4/advancedMove {{Shannon}} false 0 2 -9 0 0 -2 4 0 0 -7 4 100/pause 1200/advancedMove farmer false -4 0 0 1 -2 0 3 100/pause 800/advancedMove {{Russell}} false 0 2 -4 0 3 100/pause 500/globalFade/viewport -1000 -1000/stopAdvancedMoves/faceDirection {{Shannon}} 0 true/pause 100/warp {{Spork}} 1000 1000 true/warp {{Shannon}} 1000 1000 true/warp {{Russell}} 1000 1000 true/warp farmer 1000 1000 true/changeLocation Mountain/viewport 10 35 clamp true/pause 500/warp {{Shannon}} 5 40 true/pause 200/speed {{Shannon}} 3/advancedMove {{Shannon}} false 0 -1 4 500 1 500 3 500 -5 0 3 100/pause 3500/stopAdvancedMoves/warp {{Shannon}} 1000 1000/globalFade/viewport -1000 -1000/changeLocation sdvhead.LawAndOrderSV_GhostwoodxPass_SporkMissing/warp {{Spork}} 34 29 true/warp {{Shannon}} 39 39 true/warp {{Russell}} 41 41 true/addTemporaryActor Skeleton 16 32 34 19 2 false Monster/faceDirection {{Shannon}} 0 true/faceDirection {{Russell}} 0 true/faceDirection farmer 0 true/warp farmer 39 41 true/viewport 42 40 clamp true/viewport move -1 -3 4000/speed {{Shannon}} 4/advancedMove {{Shannon}} false -2 0 0 -4 4 500 -3 0 0 -4 4 100/speed {{Spork}} 3/advancedMove {{Spork}} false 0 -3 4 100/pause 400/advancedMove farmer false -2 0 0 -4 -5 0 0 -3 4 100/pause 400/advancedMove {{Russell}} false -2 0 0 -4 4 400 -3 0 0 -3 4 100/pause 1000/advancedMove Skeleton false 0 3 2 2000 0 -15 4 100/pause 3000/changeSprite {{Spork}} Run/faceDirection {{Spork}} 0 true/speed {{Spork}} 5/playSound {{ModId}}_bark2/pause 1500/advancedMove {{Spork}} false 0 -1 4 1000/pause 200/advancedMove {{Shannon}} false 0 -4 4 100/advancedMove {{Russell}} false 0 -4 4 100/advancedMove farmer false 0 -4 4 100/pause 2000/advancedMove {{Spork}} false 1 0 0 -3 4 1000 0 -15 4 100/pause 1000/textAboveHead {{Shannon}} \"{{i18n:Events.SporkMissing.005|cfgSpork={{cfgSpork}}}}\"/pause 500/jump {{Shannon}}/pause 1500/emote {{Shannon}} 16 true/pause 2000/stopAdvancedMoves/warp {{Spork}} 1000 1000 true/warp Skeleton 1000 1000 true/advancedMove {{Shannon}} false 0 1 2 100/pause 200/advancedMove farmer false 0 -1 1 0 4 100/advancedMove {{Russell}} false 0 -1 -1 0 4 100/pause 1200/speak {{Shannon}} \"{{i18n:Events.SporkMissing.006}}\"/pause 800/playSound wand/warp Wizard 34 29 true/positionOffset Wizard 0 20/speed {{Shannon}} 5/speed {{Russell}} 5/speed farmer 5/pause 200/jump {{Russell}}/jump {{Shannon}}/jump farmer/advancedMove {{Shannon}} false 0 -1 2 100/advancedMove {{Russell}} false 1 0 3 100/advancedMove farmer false -1 0 1 100/pause 2000/speed {{Shannon}} 3/speed {{Russell}} 3/speed farmer 3/speak Wizard \"{{i18n:Events.SporkMissing.007}}\"/advancedMove {{Russell}} false 0 -1 3 100/advancedMove farmer false 0 -1 1 100/proceedPosition {{Russell}}/pause 500/faceDirection Wizard 3 true/pause 500/speak Wizard \"{{i18n:Events.SporkMissing.008}}\"/pause 500/emote farmer 40/pause 400/emote farmer 40/pause 400/speak Wizard \"{{i18n:Events.SporkMissing.009}}\"/pause 500/faceDirection Wizard 0 true/pause 500/speak Wizard \"{{i18n:Events.SporkMissing.010}}\"/pause 500/faceDirection Wizard 1 true/speak {{Russell}} \"{{i18n:Events.SporkMissing.011}}\"/pause 500/emote Wizard 40 true/pause 400/faceDirection Wizard 2 true/pause 400/speak Wizard \"{{i18n:Events.SporkMissing.012}}\"/pause 400/faceDirection Wizard 3 true/pause 1200/showFrame Wizard 16/pause 400/shake Wizard 800/pause 800/playSound wand/glow 80 0 80/startJittering/pause 1600/stopJittering/pause 800/shake Wizard 1500/pause 1500/glow 225 100 225/removeTile 34 23 Buildings/removeTile 34 24 Buildings/removeTile 32 23 AlwaysFront/removeTile 33 23 AlwaysFront/removeTile 32 24 AlwaysFront/removeTile 33 24 AlwaysFront/removeTile 35 23 AlwaysFront/removeTile 36 23 AlwaysFront/removeTile 35 24 AlwaysFront/removeTile 36 24 AlwaysFront/playSound wand/pause 200/showFrame Wizard 19/pause 1500/showFrame Wizard 18/pause 1500/showFrame Wizard 12/pause 800/advancedMove Wizard false -1 0 3 100/proceedPosition Wizard/speak Wizard \"{{i18n:Events.SporkMissing.013}}\"/pause 800/addItem {{ModID}}_AmuletOfExtraction/setSkipActions SetNpcInvisible {{ModId}}_Spork 1/itemAboveHead {{ModId}}_AmuletOfExtraction/pause 2000/faceDirection farmer 1 true/advancedMove Wizard false 1 0 4 100/proceedPosition Wizard/pause 400/speak Wizard \"{{i18n:Events.SporkMissing.014}}\"/pause 400/shake Wizard 400/pause 400/playSound wand/warp Wizard 1000 1000/pause 200/emote {{Russell}} 8 true/pause 800/faceDirection {{Russell}} 0 true/pause 800/faceDirection {{Russell}} 3 true/pause 800/advancedMove {{Shannon}} false 0 2 -1 0 3 100/proceedPosition {{Shannon}}/pause 200/shake {{Shannon}} 700/pause 900/speak {{Shannon}} \"{{i18n:Events.SporkMissing.015|cfgSpork={{cfgSpork}}}}\"/pause 500/faceDirection farmer 0 true/pause 500/viewport move 0 -1 6000/pause 500/emote farmer 28 true/pause 1000/faceDirection {{Shannon}} 0 true/pause 500/faceDirection {{Russell}} 0 true/pause 3000/globalFade/ambientLight 254 254 254/warp {{Russell}} 1000 1000 true/warp {{Shannon}} 1000 1000 true/warp farmer 1000 1000 true/pause 500/end invisible {{Spork}}",
+            },
+        },
+        {
+            //update the fetch event after seeing spork return so that it no longer requires that we haven't seen sporkmissing event
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModId}}_Fetch/Weather sunny/Time 730 1200/NpcVisibleHere {{Spork}}/Tile 75 8 76 8 77 8 75 9 76 9 77 9 75 10 76 10 77 10": "continue/76 9/{{Spork}} 75 9 1 farmer 77 9 3/skippable/positionOffset {{Spork}} -16 0/animate {{Spork}} true true 120 12 19/quickQuestion {{i18n:Events.SporkFetch.qqq|cfgSpork={{cfgSpork}}}}#{{i18n:Events.SporkFetch.qq1}}#{{i18n:Events.SporkFetch.qq2}}(break)action AddBuff sdvhead.LawAndOrderSV_SporkBuff(break)end/addConversationTopic {{ModId}}_PlayedFetch 1/action IncrementStat sdvhead.LawAndOrderSV_PlayedFetch/pause 200/changeMapTile Buildings 76 9 170/startJittering/animate farmer true false 50 30 31 32 33 34 35/pause 150/stopJittering/pause 150/addTemporaryActor LAOSV_Twig 16 16 76 9 2 false/animate LAOSV_Twig false true 45 0 1 2 3 4 5 6 7 8 9 10 11/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/stopAnimation {{Spork}} 12/changeSprite {{Spork}} Run/faceDirection {{Spork}} 3 true/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 -3/pause 100/speed {{Spork}} 5/advancedMove {{Spork}} false -9 0 3 100/positionOffset LAOSV_Twig -32 -3/pause 100/positionOffset LAOSV_Twig -32 3/pause 100/positionOffset LAOSV_Twig -32 3/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 4/pause 100/positionOffset LAOSV_Twig -32 6/pause 100/positionOffset LAOSV_Twig -24 6/pause 100/positionOffset LAOSV_Twig -16 6/stopAnimation LAOSV_Twig 0/pause 200/stopAdvancedMoves/showFrame {{Spork}} 17/pause 100/warp LAOSV_Twig 1000 1000 true/pause 300/changeSprite {{Spork}} Stick/advancedMove {{Spork}} false 9 0 3 100/proceedPosition {{Spork}}/changeMapTile Buildings 76 9 169/changeSprite {{Spork}}/faceDirection {{Spork}} 1 true/animate {{Spork}} true true 120 12 19/emote farmer 32 true/pause 1000/stopAnimation {{Spork}} 4/end",
+            },
+            "When": {
+                "HasSeenEvent |contains={{ModId}}_SporkReturn": true,
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/{{ModId}}_Jail",
+            "Entries": {
+                "{{ModId}}_SporkLaps/Friendship {{Spork}} 500/Weather rainy/Time 800 1700": "SettlingIn/10 19/farmer 1000 1000 0 {{Shannon}} 10 20 2 {{Russell}} 12 19 1 {{Spork}} 7 18 1/addConversationTopic {{ModId}}_SawSporkLaps 1/skippable/speed {{Spork}} 6/changeSprite {{Spork}} Run/advancedMove {{Spork}} true 7 0 0 4 -7 0 0 -4 1 1/pause 2000/playSound doorClose/warp farmer 10 24 true/pause 2000/emote farmer 8 true/pause 2000/speak {{Russell}} \"{{i18n:Events.SporkLaps.001}}\"/pause 800/faceDirection {{Shannon}} 1 true/speak {{Shannon}} \"{{i18n:Events.SporkLaps.002|cfgSpork={{cfgSpork}}}}\"/pause 600/faceDirection {{Russell}} 3 true/speak {{Russell}} \"{{i18n:Events.SporkLaps.003}}\"/pause 600/speak {{Shannon}} \"{{i18n:Events.Sporklaps.004|cfgSpork={{cfgSpork}}}}\"/faceDirection {{Shannon}} 2 true/changeSprite {{Spork}}/speed {{Spork}} 3/pause 1000/stopAdvancedMoves/pause 800/speak {{Shannon}} \"{{i18n:Events.SporkLaps.005|cfgSpork={{cfgSpork}}}}\"/pause 800/shake {{Spork}} 1500/pause 800/showFrame {{Spork}} 16/emote {{Spork}} 24 true/pause 1000/emote farmer 40 true/pause 500/emote {{Spork}} 24 true/pause 400/textAboveHead {{Russell}} \"{{i18n:Events.SporkLaps.006}}\"/pause 800/speak {{Shannon}} \"{{i18n:Events.SporkLaps.007}}\"/pause 500/globalFade/viewport -1000 -1000/end",
+            },
+        },
+        {
+            //spork return event
+            "Action": "EditData",
+            "Target": "Data/Events/{{ModId}}_cliffMine{{Random:1,2,3,4,5,6,7,8,9}}",
+            "Entries": {
+                "{{ModId}}_SporkReturn/HasItem {{ModId}}_AmuletOfExtraction/GameStateQuery PLAYER_STAT Current {{ModId}}_sporkDaysLost 0 6/Time 600 2600": "continue/10 30/{{Spork}} 8 16 3 farmer 10 33 0/changeSprite {{Spork}} Run/speed {{Spork}} 5/addTemporaryActor LAOSV_SkeletonMummy 16 32 4 16 1 false Character Skeleton1/addTemporaryActor LAOSV_SkeletonMummy 16 32 14 16 3 false Character Skeleton2/setSkipActions removeItem {{ModId}}_AmuletOfExtraction/broadcastEvent/eventSeen {{ModId}}_SporkSpirit/skippable/viewport move 0 -2 6000/advancedMove farmer false 0 -10 4 100/pause 5000/emote farmer 16 true/advancedMove {{Spork}} false -2 0 3 100/pause 200/advancedMove Skeleton1 false -2 0 1 100/playSound skeletonStep/pause 200/advancedMove Skeleton2 false -3 0 3 100/playSound skeletonStep/proceedPosition Skeleton2/pause 200/faceDirection {{Spork}} 1 true/jump {{Spork}} 2/pause 600/advancedMove {{Spork}} false 2 0 1 100/pause 200/advancedMove Skeleton2 false 2 0 3 100/playSound skeletonStep/pause 200/advancedMove Skeleton1 false 3 0 1 100/playSound skeletonStep/proceedPosition Skeleton1/pause 200/faceDirection {{Spork}} 3 false/pause 200/advancedMove Skeleton2 false -2 0 3 100/pause 200/advancedMove farmer false 0 -3 4 100/pause 2000/faceDirection {{Spork}} 2 true/pause 300/playSound {{ModId}}_bark1/advancedMove {{Spork}} false 1 0 1 100/proceedPosition {{Spork}}/speed Skeleton2 4/jump Skeleton2/advancedMove Skeleton2 false 1 0 3 100/pause 600/playSound skeletonDie/pause 150/showFrame Skeleton2 17/pause 150/showFrame Skeleton2 18/pause 150/showFrame Skeleton2 19/pause 500/advancedMove {{Spork}} false 0 5 4 100/pause 200/advancedMove Skeleton1 false 2 0 2 100/proceedPosition {{Spork}}/faceDirection farmer 2/changeSprite {{Spork}}/speed {{Spork}} 3/advancedMove farmer false -1 0 2 100/pause 1200/removeItem {{ModId}}_AmuletOfExtraction/setSkipActions Null/message \"{{i18n:Events.SporkReturn.001|cfgSpork={{cfgSpork}}}}\"/pause 600/playSound wand/glow 80 0 80/pause 200/warp {{Spork}} 1000 1000/pause 600/advancedMove Skeleton1 false 2 0 0 4 2 100/pause 400/faceDirection farmer 0 false/pause 200/emote farmer 16 true/pause 500/speed farmer 4/advancedMove farmer false 1 0 0 6 4 500 0 5 4 100/pause 1500/globalFade/viewport -1000 -1000/speed farmer 3/end",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Locations/TownPatch_SporkStick.tmx",
+            "ToArea": {
+                "X": 76,
+                "Y": 9,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "Time": "{{Range: 730, 1150}}",
+                "LocationName": "Town",
+                "Relationship:{{Spork}}": "Friendly",
+                "Season": "Spring, Summer, Fall",
+                "Weather": "Sun, Wind",
+                "query: ('{{HasSeenEvent|Contains=sdvhead.LawAndOrderSV_SporkReturn}}' = 'true' OR ('{{HasSeenEvent|Contains=sdvhead.LawAndOrderSV_SporkIntro}}' = 'true' AND '{{HasSeenEvent|Contains=sdvhead.LawAndOrderSV_SporkMissing}}' = 'false'))": true,
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        {
+            //8H event
+            "Action": "EditData",
+            "Target": "Data/Events/{{ModId}}_Jail",
+            "Entries": {
+                "{{ModId}}_SporkWalk/Friendship {{Spork}} 2000/SawEvent {{ModId}}_SporkReturn/!Season Winter/Weather sunny/!FestivalDay/Time 1400 1900": "continue/10 19/farmer 1000 1000 0 {{Shannon}} 7 16 2 {{Russell}} 12 19 1 {{Spork}} 7 14 2/skippable/changeSprite {{Shannon}} hatless/changePortrait {{Shannon}} hatless/pause 1000/doAction 7 17/pause 500/faceDirection {{Russell}} 2 true/advancedMove {{Shannon}} false 0 6 1 100/advancedMove {{Spork}} false 0 7 -1 0 1 100/pause 1000/playSound doorClose/warp farmer 10 24 true/pause 500/advancedMove farmer false 0 -1 1 0 4 100/proceedPosition {{Shannon}}/faceDirection farmer 3 true/pause 500/speak {{Shannon}} \"{{i18n:Events.SporkWalk.001}}\"/pause 500/emote farmer 32/advancedMove {{Spork}} false 0 2 1 100/proceedPosition {{Spork}}/changeSprite {{Spork}} Run/stopAdvancedMoves/playSound {{ModId}}_bark1/speed {{Spork}} 5/pause 200/advancedMove {{Spork}} false 4 0 1 1/proceedPosition {{Spork}}/pause 200/changeSprite {{Spork}}/positionOffset {{Spork}} 10 0 true/animate {{Spork}} true false 200 20 21 21/pause 400/stopAnimation {{Spork}}/animate {{Spork}} true true 120 22 23/pause 500/emote {{Spork}} 20 true/pause 2000/stopAnimation {{Spork}} 22/animate {{Spork}} true false 200 21 20 20/pause 400/stopAnimation {{Spork}} 4/positionOffset {{Spork}} -10 0 true/animate {{Spork}} false true 120 4 25/pause 1000/speak {{Shannon}} \"{{i18n:Events.SporkWalk.002|cfgSpork={{cfgSpork}}}}\"/pause 500/advancedMove {{Shannon}} false 0 1 1 0 1 100/proceedPosition {{Shannon}}/speak {{Shannon}} \"{{i18n:Events.SporkWalk.003|cfgSpork={{cfgSpork}}}}\"/pause 500/stopAnimation {{Spork}}/showFrame {{Spork}} 24/pause 500/faceDirection {{Shannon}} 0 true/faceDirection farmer 0 true/speak {{Russell}} \"{{i18n:Events.SporkWalk.004|cfgSpork={{cfgSpork}}}}\"/pause 500/faceDirection farmer 3 true/speak {{Shannon}} \"{{i18n:Events.SporkWalk.005|cfgSpork={{cfgSpork}}}}\"/pause 200/emote {{Russell}} 60 true/pause 600/faceDirection {{Shannon}} 1 true/pause 200/speak {{Shannon}} \"{{i18n:Events.SporkWalk.006|cfgSpork={{cfgSpork}}}}\"/pause 500/quickQuestion {{i18n:Events.SporkWalk.qqq}}#{{i18n:Events.SporkWalk.qq1|cfgSpork={{cfgSpork}}}}#{{i18n:Events.SporkWalk.qq2|cfgSpork={{cfgSpork}}}}(break)switchEvent {{ModId}}_SporkWalkShannon(break)switchEvent {{ModId}}_SporkWalkRussell/end",
+                "{{ModId}}_SporkWalkShannon": "pause 100/pause 500/emote {{Russell}} 28 true/pause 1000/speak {{Shannon}} \"{{i18n:Events.SporkWalkShannon.001}}\"/pause 500/textAboveHead {{Shannon}} \"{{i18n:Events.SporkWalkShannon.002|cfgSpork={{cfgSpork}}}}\"/pause 500/faceDirection {{Spork}} 3/jump {{Spork}} 4/pause 800/speed {{Spork}} 3/advancedMove {{Spork}} false 0 -1 -3 0 0 1 1 100/proceedPosition {{Spork}}/pause 200/advancedMove {{Shannon}} false 2 0 0 1 2 100/pause 500/advancedMove {{Spork}} false 3 0 0 1 2 100/pause 1000/playSound doorOpen/warp {{Shannon}} 1000 1000/pause 600/warp {{Spork}} 1000 1000/playSound doorClose/advancedMove farmer false -1 0 0 1 2 100/globalFade/viewport -1000 -1000/stopAdvancedMoves/pause 500/changeLocation Mountain/warp {{Russell}} 1000 1000/warp farmer 15 38/faceDirection farmer 0 true/warp {{Shannon}} 14 38/positionOffset {{Shannon}} 0 -16 true/faceDirection {{Shannon}} 0 true/warp {{Spork}}  16 38/faceDirection {{Spork}} 0 true/positionOffset {{Spork}} -4 -16 true/pause 1500/viewport 15 33 clamp true/pause 1000/speed {{Shannon}} 2/viewport move 0 -1 4500/advancedMove {{Shannon}} false 0 -9 4 500 1 100/speed {{Spork}} 2/advancedMove {{Spork}} false 0 -11 4 3000 -1 0 0 -1 1 100/pause 500/advancedMove farmer false 0 -9 4 900 3 100/proceedPosition {{Shannon}}/pause 1000/speak {{Shannon}} \"{{i18n:Events.SporkWalkShannon.003|cfgSpork={{cfgSpork}}}}\"/pause 600/emote farmer 32 true/pause 1000/advancedMove {{Shannon}} false -6 0 3 500 1 100/pause 500/advancedMove farmer false -5 0 3 100/proceedPosition {{Shannon}}/pause 500/speak {{Shannon}} \"{{i18n:Events.SporkWalkShannon.004|cfgSpork={{cfgSpork}}}}\"/pause 800/emote farmer 56 true/pause 1200/advancedMove {{Shannon}} false 0 -2 4 400 1 100/proceedPosition {{Shannon}}/pause 500/advancedMove farmer false -2 0 0 -1 1 100/pause 200/textAboveHead {{Shannon}} \"{{i18n:Events.SporkWalkShannon.005|cfgSpork={{cfgSpork}}}}\"/pause 200/faceDirection {{Spork}} 3 true/pause 400/jump {{Spork}} 4/pause 600/viewport move -1 -1 3000/advancedMove {{Spork}} false -3 0 3 100/proceedPosition {{Spork}}/pause 200/advancedMove {{Shannon}} false -4 0 0 -9 4 100/pause 600/advancedMove farmer false -4 0 0 -8 4 100/advancedMove {{Spork}} false -8 0 0 -8 4 100/pause 2500/globalFade/viewport -1000 -1000/stopAdvancedMoves/warp farmer 1000 1000 true/warp {{Shannon}} 1000 1000 true/warp {{Spork}} 1000 1000 true/pause 500/changeLocation Railroad/warp {{Shannon}} 16 58 true/faceDirection {{Shannon}} 3 true/warp farmer 18 58 true/faceDirection farmer 3 true/warp {{Spork}}  17 57 true/faceDirection {{Spork}} 3 true/advancedMove {{Shannon}} false -3 0 3 500 1 100/advancedMove farmer false -3 0 3 100/advancedMove {{Spork}} false -3 0 3 100/viewport 13 55 clamp true/proceedPosition {{Shannon}}/pause 1000/speak {{Shannon}} \"{{i18n:Events.SporkWalkShannon.006|cfgSpork={{cfgSpork}}}}\"/pause 500/emote farmer 32/pause 1000/advancedMove {{Shannon}} false -3 0 0 -1 4 100/pause 300/advancedMove {{Spork}} false -4 0 4 100/globalFade/viewport -1000 -1000/stopAdvancedMoves/warp farmer 1000 1000 true/warp {{Shannon}} 1000 1000 true/warp {{Spork}} 1000 1000 true/pause 500/changeLocation BathHouse_Pool/mailReceived {{ModId}}_SporkWalkBathHouse true/eventSeen {{ModId}}_SporkWalk_wlocker false/eventSeen {{ModId}}_SporkWalk_mlocker false/eventSeen {{ModId}}_SporkWalk_pool false/end warpOut",
+                //"{{ModId}}_SporkWalkRussell": "pause 100/pause 500/emote {{Russell}} 32 true/pause 500/speak {{Shannon}} \"{{i18n:Events.SporkWalkRussell.001}}\"/pause 500/advancedMove {{Shannon}} false -1 0 0 -7 2 100/pause 500/advancedMove {{Russell}} false 0 -1 2 0 0 4 3 100/pause 1500/faceDirection farmer 1 true/pause 500/globalFade/viewport -1000 -1000/stopAdvancedMoves/pause 500/changeLocation Mountain/warp {{Shannon}} 1000 1000/warp farmer 15 38/faceDirection farmer 0 true/warp {{Russell}} 16 38/faceDirection {{Russell}} 0 true/warp {{Spork}}  14 38/faceDirection {{Spork}} 0 true/positionOffset {{Spork}} 0 -10 true/positionOffset farmer 0 10 true/positionOffset {{Russell}} 0 10 true/pause 1500/viewport 14 33 clamp true/advancedMove farmer false 0 -9 1 1500 2 0 1 100/pause 500/speed {{Spork}} 2/advancedMove {{Russell}} false 0 -9 1 200 3 0 1 200 3 1000/advancedMove {{Spork}} false 0 -9 1 400 4 2500 0 -3 1 0 1 3000 0 1 1 0 4 3000 1 0 0 -1 3 100/pause 500/viewport move 0 -1 4500/pause 6500/speak {{Russell}} \"{{i18n:Events.SporkWalkRussell.002|cfgSpork={{cfgSpork}}}}\"/advancedMove {{Russell}} false 2 0 1 100/pause 200/advancedMove farmer false 2 0 1 100/pause 1000/speak {{Russell}} \"{{i18n:Events.SporkWalkRussell.003|cfgSpork={{cfgSpork}}}}\"/animate {{Spork}} false false 200 12 20 21 21 20 12 12 20 21 21 20 12/faceDirection farmer 0/pause 1000/emote farmer 8 true/pause 1000/speed {{Russell}} 2/advancedMove {{Russell}} false 16 0 1 100/pause 500/faceDirection farmer 1/pause 500/advancedMove farmer false 16 0 1 100/pause 200/stopAnimation {{Spork}} 12/speed {{Spork}} 3/advancedMove {{Spork}} false 0 4 16 0 1 100/pause 2000/globalFade/viewport -1000 -1000/stopAdvancedMoves/warp {{Spork}}  42 27/warp {{Russell}} 45 25/warp farmer 45 26/speed {{Russell}} 2/advancedMove {{Russell}} false 3 0 1 100/advancedMove farmer false 3 0 1 100/pause 100/viewport 47 25/proceedPosition {{Russell}}/pause 500/faceDirection {{Russell}} 2 true/speed {{Spork}} 2/advancedMove {{Spork}} false 2 0 1 100/speak {{Russell}} \"{{i18n:Events.SporkWalkRussell.004}}\"/pause 500/faceDirection {{Russell}} 1 true/pause 1000/textAboveHead {{Russell}} \"{{i18n:Events.SporkWalkRussell.005}}\"/pause 200/speed {{Spork}} 3/advancedMove {{Spork}} false -2 0 3 100/proceedPosition {{Spork}}/pause 100/changeSprite {{Spork}} Run/speed {{Spork}} 4/advancedMove {{Spork}} false 7 0 1 50/proceedPosition {{Spork}}/faceDirection {{Russell}} 1 true/jump {{Spork}}/advancedMove {{Spork}} false 2 0 1 1/pause 400/speed {{Spork}} 1/playSound pullItemFromWater/changeSprite {{Spork}} Swim/swimming {{Spork}}/emote farmer 16 true/pause 500/stopAdvancedMoves/speed {{Spork}} 1/advancedMove {{Spork}} true 0 -2 4 0 0 3 -4 0 0 -1 /pause 800/textAboveHead {{Russell}} \"{{i18n:Events.SporkWalkRussell.006}}\"/pause 30000/end",
+                "{{ModId}}_SporkWalkRussell": "pause 100/pause 500/emote {{Russell}} 32 true/pause 500/speak {{Shannon}} \"{{i18n:Events.SporkWalkRussell.001}}\"/pause 500/advancedMove {{Shannon}} false -1 0 0 -7 2 100/pause 500/advancedMove {{Russell}} false 0 -1 2 0 0 4 3 100/pause 1500/faceDirection farmer 1 true/pause 500/globalFade/viewport -1000 -1000/stopAdvancedMoves/pause 500/changeLocation Mountain/warp {{Shannon}} 1000 1000/warp farmer 15 38/faceDirection farmer 0 true/warp {{Russell}} 16 38/faceDirection {{Russell}} 0 true/warp {{Spork}}  14 38/faceDirection {{Spork}} 0 true/positionOffset {{Spork}} 0 -10 true/positionOffset farmer 0 10 true/positionOffset {{Russell}} 0 10 true/pause 1500/viewport 14 33 clamp true/advancedMove farmer false 0 -9 1 1500 2 0 1 100/pause 500/speed {{Spork}} 2/advancedMove {{Russell}} false 0 -9 1 200 3 0 1 200 3 1000/advancedMove {{Spork}} false 0 -9 1 400 4 2500 0 -3 1 0 1 3000 0 1 1 0 4 3000 1 0 0 -1 3 100/pause 500/viewport move 0 -1 4500/pause 6500/speak {{Russell}} \"{{i18n:Events.SporkWalkRussell.002|cfgSpork={{cfgSpork}}}}\"/advancedMove {{Russell}} false 2 0 1 100/pause 200/advancedMove farmer false 2 0 1 100/pause 1000/speak {{Russell}} \"{{i18n:Events.SporkWalkRussell.003|cfgSpork={{cfgSpork}}}}\"/animate {{Spork}} false false 200 12 20 21 21 20 12 12 20 21 21 20 12/faceDirection farmer 0/pause 1000/emote farmer 8 true/pause 1000/speed {{Russell}} 2/advancedMove {{Russell}} false 16 0 1 100/pause 500/faceDirection farmer 1/pause 500/advancedMove farmer false 16 0 1 100/pause 200/stopAnimation {{Spork}} 12/speed {{Spork}} 3/advancedMove {{Spork}} false 0 4 16 0 1 100/pause 2000/globalFade/viewport -1000 -1000/stopAdvancedMoves/warp {{Spork}}  42 27/warp {{Russell}} 45 25/warp farmer 45 26/speed {{Russell}} 2/advancedMove {{Russell}} false 3 0 1 100/advancedMove farmer false 3 0 1 100/pause 100/viewport 47 25/proceedPosition {{Russell}}/pause 500/faceDirection {{Russell}} 2 true/speed {{Spork}} 2/advancedMove {{Spork}} false 2 0 1 100/speak {{Russell}} \"{{i18n:Events.SporkWalkRussell.004}}\"/pause 500/faceDirection {{Russell}} 1 true/pause 1000/textAboveHead {{Russell}} \"{{i18n:Events.SporkWalkRussell.005}}\"/pause 200/speed {{Spork}} 3/advancedMove {{Spork}} false -2 0 3 100/proceedPosition {{Spork}}/pause 100/changeSprite {{Spork}} Run/speed {{Spork}} 4/advancedMove {{Spork}} false 7 0 1 50/proceedPosition {{Spork}}/faceDirection {{Russell}} 1 true/jump {{Spork}}/advancedMove {{Spork}} false 2 0 1 1/pause 400/speed {{Spork}} 1/playSound pullItemFromWater/changeSprite {{Spork}} Swim/swimming {{Spork}}/emote farmer 16 true/pause 500/stopAdvancedMoves/speed {{Spork}} 1/advancedMove {{Spork}} true 0 -2 4 0 0 3 -4 0 0 -1 /pause 800/textAboveHead {{Russell}} \"{{i18n:Events.SporkWalkRussell.006}}\"/pause 10000/textAboveHead {{Russell}} \"{{i18n:Events.SporkWalkRussell.007|cfgSpork={{cfgSpork}}}}\"/pause 8000/textAboveHead {{Russell}} \"{{i18n:Events.SporkWalkRussell.008|cfgSpork={{cfgSpork}}}}\"/pause 7000/textAboveHead {{Russell}} \"{{i18n:Events.SporkWalkRussell.009|cfgSpork={{cfgSpork}}}}\"/pause 4500/globalFade/viewport -1000 -1000/end/end",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BathHouse_MensLocker",
+            "Entries": {
+                "{{ModId}}_SporkWalk_mlocker/LocalMail {{ModId}}_SporkWalkBathHouse": "continue/11 16/farmer 1000 1000 0/eventSeen {{ModId}}_SporkWalk_wlocker true/mailReceived {{ModId}}_SporkWalkPool true/end position 15 15",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BathHouse_WomensLocker",
+            "Entries": {
+                "{{ModId}}_SporkWalk_wlocker/LocalMail {{ModId}}_SporkWalkBathHouse": "continue/6 13/farmer 1000 1000 0/eventSeen {{ModId}}_SporkWalk_mlocker true/mailReceived {{ModId}}_SporkWalkPool true/end position 2 13",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BathHouse_Pool",
+            "Entries": {
+                "{{ModId}}_SporkWalk_pool/LocalMail {{ModId}}_SporkWalkPool": "continue/6 9/farmer 7 6 3 {{Shannon}} 3 10 2 {{Spork}} 2 5 1/skippable/changeSprite {{Shannon}} beach/changePortrait {{Shannon}} beach/showFrame {{Shannon}} 32/hideShadow {{Shannon}} true/positionOffset {{Shannon}} 16 0/viewport 6 9 clamp true/changeSprite {{Spork}} Run/animate {{Spork}} false true 120 4 25/playMusic echos/pause 500/advancedMove farmer false -5 0 0 5 1 0 1 100/pause 2500/stopAnimation {{Spork}} 0/faceDirection {{Spork}} 2 true/pause 3000/speed {{Spork}} 4/advancedMove {{Spork}} false 8 0 0 2 4 0 0 -2 2 0 0 2 2 0 0 -2 -10 0 0 1 -6 0 0 6 1 100/pause 600/speak {{Shannon}} \"{{i18n:Events.SporkWalkShannon.007|cfgSpork={{cfgSpork}}}}\"/pause 1200/emote {{Shannon}} 40/pause 400/proceedPosition {{Spork}}/animate {{Spork}} false true 120 4 25/pause 200/speak {{Shannon}} \"{{i18n:Events.SporkWalkShannon.008}}\"/pause 1200/faceDirection farmer 0 true/pause 1200/faceDirection farmer 1 true/pause 1800/speed farmer 3/jump farmer/emote {{Spork}} 16 true/advancedMove farmer false 2 0/pause 10/positionOffset farmer 1 0 true/pause 10/positionOffset farmer 1 0 true/pause 10/positionOffset farmer 1 0 true/pause 10/positionOffset farmer 1 0 true/pause 10/positionOffset farmer 1 0 true/pause 10/positionOffset farmer 1 0 true/pause 10/positionOffset farmer 1 0 true/pause 10/positionOffset farmer 1 0 true/jump {{Spork}} 4/pause 300/stopAdvancedMoves/speed farmer 0/stopAnimation farmer/playSound pullItemFromWater/swimming farmer/pause 500/advancedMove farmer false 2 0 1 300 3 100/speed {{Spork}} 5/advancedMove {{Spork}} false 1 0 0 -1 1 100/proceedPosition {{Spork}}/pause 100/speed {{Spork}} 5/advancedMove {{Spork}} false 2 0 1 100/jump {{Spork}} 6/pause 400/playSound pullItemFromWater/changeSprite {{Spork}} Swim/swimming {{Spork}}/pause 100/speak {{Shannon}} \"{{i18n:Events.SporkWalkShannon.009|cfgSpork={{cfgSpork}}}}\"/pause 200/speed {{Spork}} 1/advancedMove {{Spork}} false 1 0 1 100/pause 1000/advancedMove farmer false 0 2 4 0 3 100/pause 200/speed {{Spork}} 1/advancedMove {{Spork}} false 0 3 3 0 1 500 -1 0 1 0 1 500 3 100/pause 1500/showFrame {{Shannon}} 4/pause 1500/textAboveHead {{Shannon}} \"{{i18n:Events.SporkWalkShannon.010}}\"/pause 1500/speed {{Shannon}} 5/jump {{Shannon}}/advancedMove {{Shannon}} false 2 0 1 100/pause 400/playSound pullItemFromWater/swimming {{Shannon}}/pause 500/speed {{Shannon}} 1/advancedMove {{Shannon}} false 1 0 0 2 1 0 1 100/pause 1500/viewport move 1 1 2000/proceedPosition {{Shannon}}/faceDirection {{Spork}} 0/pause 1500/emote farmer 32 true/pause 600/emote {{Spork}} 32 true/speed {{Spork}} 1/advancedMove {{Spork}} false 2 0 0 2 5 0 0 -4 3 100/speed {{Shannon}} 1/advancedMove {{Shannon}} false 0 2 3 0 0 1 3 0 4 100/pause 1500/faceDirection farmer 2 true/pause 5000/faceDirection farmer 1 true/pause 1000/globalFade/viewport -1000 -1000/pause 500/stopSwimming farmer/message \"{{i18n:Events.SporkWalkShannon.011}}\"/pause 500/end warpOut",
+            },
+        },
+    ]
+}

@@ -1,0 +1,182 @@
+{
+	"Changes": [
+		//(0 = up, 1 = right, 2 = down, 3 = left)
+		{
+			"LogName": "Egg Festival Gabe Shows",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters{{FestivalYearCheck}}"
+					],
+					"Value": "Otter.Cambria 46 80 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters{{FestivalYearCheck}}"
+					],
+					"Value": "Otter.Cambria 86 40 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Moonlight Jellies Gabe Shows",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters{{FestivalYearCheck}}"
+					],
+					"Value": "Otter.Cambria 92 12 1",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Stardew Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Otter.Cambria 17 58 1",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "Otter.Cambria 71 101 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"LogName": "SVE Stardew Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Otter.Cambria 17 58 1",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "Otter.Cambria 71 101 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{
+			"LogName": "Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters{{FestivalYearCheck}}"
+					],
+					"Value": "Otter.Cambria 44 78 2",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Violet Moon Renaissance Faire",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall1",
+			"When": {
+				"HasMod |contains=DN.SnS.VMFest": true
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "Otter.Cambria 76 18 3",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "RSV Ember of Resolutions",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters{{FestivalYearCheck}}"
+					],
+					"Value": "Otter.Cambria 52 50 0",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "RSV Gathering",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"When": {
+				"HasMod": "Rafseazz.RSVCP"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters{{FestivalYearCheck}}"
+					],
+					"Value": "Otter.Cambria 60 44 1",
+					"Delimiter": "/"
+				}
+			]
+		}
+	]
+}

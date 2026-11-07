@@ -1,0 +1,93 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "18657002/F/f Abigail 500/t 2100 2300/e 18657001/w sunny/d Fri": "echos/
+                47 90/
+                farmer 43 91 1 Abigail 47 87 0/
+                skippable/
+                addLantern 735 46 86 1/
+                move farmer 1 0 0/
+                move farmer 0 -4 1/
+                emote farmer 8/
+                move farmer 2 0 1/
+                pause 200/
+                showFrame Abigail 32/
+                jump Abigail 8/
+                showFrame Abigail 0/
+                faceDirection Abigail 3/
+                speak Abigail \"Whoa, hey!$7#$b#I didn't expect to see anyone here, especially in the graveyard at this hour.$7\"/
+                pause 400/
+                speak Abigail \"I mean, it's a bit unconventional, I guess.$1#$b#But I find places like this strangely fascinating.$0#$b#The eeriness, the stories that might be hidden within the tombstones.$0\"/
+                faceDirection Abigail 0/
+                pause 400/
+                speak Abigail \"This tombstone is in honor of a great adventure.$0\"/
+                pause 200/
+                faceDirection Abigail 3/
+                pause 300/
+                speak Abigail \"You know, I'm really into adventure stories.$0#$b#The idea of exploring mysterious places, finding hidden treasures, uncovering ancient secrets.$0#$b#It's all so thrilling.$1\"/
+                pause 500/
+                speak Abigail \"There's this book I've been reading, about this daring adventurer called Mona and the quests they undertook.$0#$b#It's got me daydreaming about having my own adventure someday, even if it's not as dangerous.$4\"/
+                emote farmer 32/
+                pause 300/
+                speak Abigail \"Maybe it's just the romanticized idea of it all, but exploring and discovering the unknown...$0#$b#it's kind of a rush, don't you think?$4\"/
+                quickQuestion #Agree with Abigail.#Disagree with Abigail.(break)speak Abigail \"Right?$1#$b#I'm glad you see it that way too.$1\"\\friendship Abigail 20(break)speak Abigail \"Hmm...$8#$b#Maybe it's just me then.$9\"\\friendship Abigail -20 /
+                speak Abigail \"You know, there's a particular tale in that book where the adventurer explores an ancient vulcanic ruin, facing traps and solving puzzles to reach a hidden chamber.$0#$b#The way the author describes the adrenaline of uncovering forgotten history, it's mesmerizing.$0#$b#Makes me want to experience that kind of excitement, even if it's on a smaller scale.$1\"/
+                move Abigail 0 2 2/
+                faceDirection Abigail 3/
+                pause 600/
+                faceDirection Abigail 1/
+                pause 600/
+                move Abigail 0 -2 3/
+                speak Abigail \"I believe we are actually alone.$0#$b#So I'm going to share a secret with you.$4#$b#I've been secretly practicing my sword skills in the hopes of being ready for any unexpected adventure.$0#$b#Don't tell anyone, though!$1\"/
+                pause 600/
+                emote Abigail 40/
+                speak Abigail \"So, have you ever daydreamed about going on an adventure, exploring uncharted territory?$0\"/
+                quickQuestion #'Yes, I do quite often.'#'I don't really think about exploring.'(break)friendship Abigail 30\\speak Abigail \"Interesting!$1#$b#It's amazing how stories and dreams can inspire us.$0#$b#Who knows, maybe we'll have our own adventure right here in Pelican Town one day.$1\"(break)friendship Abigail -20\\speak Abigail \"Well you should really try...$8#$b#Before you moved in that house, I was exploring the farmland quite frequently.$9\" /
+                pause 500/
+                speak Abigail \"It's getting quite late.$0#$b#I should have been home hours ago.$1#$b#Please don't tell my parents you saw me here.$0\"/
+                move Abigail 0 4 2/
+                faceDirection farmer 2/
+                move Abigail -3 0 3/
+                pause 700/
+                emote Abigail 40/
+                pause 200/
+                speed Abigail 4/
+                move Abigail 2 0 0/
+                speed Abigail 4/
+                move Abigail 0 -3 0/
+                speak Abigail \"Oh and thanks for joining me here, even if it's a bit unusual.$0#$b#I really enjoy talking with you about this stuff.$0\"/
+                pause 200/
+                emote farmer 32/
+                speak Abigail \"Anyways, bye!$1\"/
+                addConversationTopic abigailNotHome 1/
+                advancedMove Abigail false 0 3 -7 0 3 1000/
+                pause 800/
+                end",
+            },
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Pierre",
+            "Entries":{
+                "abigailNotHome":"I have this strange feeling that Abigail was up to something last night...$2#$b#I just can't quite put my finger on it.$2",
+                }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Caroline",
+            "Entries":{
+                "abigailNotHome":"Abigail seemed a bit restless this morning.$2#$e#I wonder if something was on her mind.$2#$b#She's been a bit elusive about her activities.$2#$b#Young hearts, always seeking excitement!$1",
+                }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Abigail",
+            "Entries":{
+                "abigailNotHome":"Hey, did you notice my parents acting a bit off today?$3#$b#I think they might've caught on that I sneaked out to the graveyard last night.$1#$b#Oops!$1",
+                }
+        },
+    ]
+}

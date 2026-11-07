@@ -1,0 +1,130 @@
+{
+	"Changes": [
+		{
+			"LogName": "Dao Seasonal Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"AirynDao",
+				"Appearance"
+			],
+			"Entries": {
+				"{{ModId}}_Indoor": {
+					"Id": "AirynDao.Indoor",
+					"Outdoors": false,
+					"Portrait": "Portraits/Dao_Indoor",
+					"Sprite": "Characters/Dao_Indoor"
+				},
+				"{{ModId}}_Outdoor": {
+					"Id": "AirynDao.Outdoor",
+					"Indoors": false,
+					"Portrait": "Portraits/Dao_Outdoor",
+					"Sprite": "Characters/Dao_Outdoor"
+				},
+				"{{ModId}}_SpiritsEve": {
+					"Id": "AirynDao.SpiritsEve",
+					"Portrait": "Portraits/Dao_SpiritsEve",
+					"Sprite": "Characters/Dao_SpiritsEve",
+					"Condition": "ANY \"IS_EVENT festival_fall27\" \"LOCATION_NAME Target Custom_SBV_TwilightFestival\"",
+					"Precedence": -200
+				},
+				"{{ModId}}_FlowerDance": {
+					"Id": "AirynDao.FlowerDance",
+					"Portrait": "Portraits/Dao_FlowerDance",
+					"Sprite": "Characters/Dao_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Precedence": -200
+				},
+				"{{ModId}}_InsideHouse": {
+					"Id": "AirynDao.InsideHouse",
+					"Portrait": "Portraits/Dao_InsideHouse",
+					"Sprite": "Characters/Dao_InsideHouse",
+					"Condition": "LOCATION_NAME Target Custom_SBV_DaoHouse",
+					"Precedence": -200
+				}
+			}
+		},
+		{
+			"LogName": "Seasonal Art Load",
+			"Action": "Load",
+			"Target": "Characters/Dao_Indoor, Portraits/Dao_Indoor, Characters/Dao_Outdoor, Portraits/Dao_Outdoor, Characters/Dao_SpiritsEve, Portraits/Dao_SpiritsEve, Characters/Dao_FlowerDance, Portraits/Dao_FlowerDance, Characters/Dao_InsideHouse, Portraits/Dao_InsideHouse",
+			"FromFile": "Assets/{{TargetPathOnly}}/Dao.png"
+		},
+		// Regular Seasonals
+		{
+			"LogName": "Seasonal Art Edits - Indoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Dao_Indoor, Portraits/Dao_InsideHouse, Characters/Dao_Indoor, Characters/Dao_InsideHouse",
+			"FromFile": "Assets/{{TargetPathOnly}}/RegularSeasonals/Dao_{{Season}}_Base.png",
+			"When": {
+				"SeasonalOutfits": "Regular"
+			}
+		},
+		{
+			"LogName": "Seasonal Art Edits - Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Dao_Outdoor, Characters/Dao_Outdoor",
+			"FromFile": "Assets/{{TargetPathOnly}}/RegularSeasonals/Dao_{{Season}}_{{RegularWeatherToken}}.png",
+			"When": {
+				"SeasonalOutfits": "Regular"
+			}
+		},
+		// Random Seasonals
+		{
+			"LogName": "Seasonal Art Edits - Indoor Portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Dao_Indoor, Portraits/Dao_InsideHouse",
+			"FromFile": "Assets/{{TargetPathOnly}}/Seasonals/Dao_{{IndoorPortraitsToken}}.png",
+			"When": {
+				"SeasonalOutfits": "Random"
+			}
+		},
+		{
+			"LogName": "Seasonal Art Edits - Indoor Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Dao_Indoor, Characters/Dao_InsideHouse",
+			"FromFile": "Assets/{{TargetPathOnly}}/Seasonals/Dao_{{IndoorSpritesToken}}.png",
+			"When": {
+				"SeasonalOutfits": "Random"
+			}
+		},
+		{
+			"LogName": "Seasonal Art Edits - Outdoor Portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Dao_Outdoor",
+			"FromFile": "Assets/{{TargetPathOnly}}/Seasonals/Dao_{{OutdoorPortraitsToken}}.png",
+			"When": {
+				"SeasonalOutfits": "Random"
+			}
+		},
+		{
+			"LogName": "Seasonal Art Edits - Outdoor Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Dao_Outdoor",
+			"FromFile": "Assets/{{TargetPathOnly}}/Seasonals/Dao_{{OutdoorSpritesToken}}.png",
+			"When": {
+				"SeasonalOutfits": "Random"
+			}
+		},
+		// Festival & Special
+		{
+			"LogName": "Seasonal Art Edits - Spirits Eve",
+			"Action": "EditImage",
+			"Target": "Portraits/Dao_SpiritsEve, Characters/Dao_SpiritsEve",
+			"FromFile": "Assets/{{TargetPathOnly}}/Seasonals/Dao_SpiritsEve_{{Random: 1,2 |key=DaoSpiritsEve}}.png"
+		},
+		{
+			"LogName": "Seasonal Art Edits - Flower Dance",
+			"Action": "EditImage",
+			"Target": "Portraits/Dao_FlowerDance, Characters/Dao_FlowerDance",
+			"FromFile": "Assets/{{TargetPathOnly}}/Seasonals/Dao_FlowerDance.png"
+		},
+		{
+			"LogName": "Seasonal Art Edits - Socks Overlay",
+			"Action": "EditImage",
+			"Target": "Characters/Dao_InsideHouse",
+			"FromFile": "Assets/{{TargetPathOnly}}/Seasonals/Dao_SocksOverlay.png",
+			"PatchMode": "Overlay"
+		}
+	]
+}

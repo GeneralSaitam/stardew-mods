@@ -1,0 +1,165 @@
+{
+
+    "Changes": [
+
+
+        //■■■ EditImage ■■■
+
+
+        //●ランダムカラーテントのテクスチャを追加
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_RandomColor",
+            "FromFile": "assets/png/TsCTwT_Building_{{DT_Building_RandomColor}}.png",
+            "FromArea": { "X": 0, "Y": 0, "Width": 480, "Height": 80 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 480, "Height": 80 }
+        },
+
+        //●テントの影を追加
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_Yellow,
+                       Buildings/TsCTwT_Building_Black,
+                       Buildings/TsCTwT_Building_Blue,
+                       Buildings/TsCTwT_Building_Green,
+                       Buildings/TsCTwT_Building_Purple,
+                       Buildings/TsCTwT_Building_Red,
+                       Buildings/TsCTwT_Building_White,
+                       Buildings/TsCTwT_Building_RandomColor",
+            "FromFile": "assets/png/TsCTwT_Shadow_{{MC_TentShadow}}.png",
+            "ToArea": { "X": 0, "Y": 80, "Width": 384, "Height": 64 }
+        },
+
+        //●鳥のテクスチャを追加 (晴れ/春夏秋) (表示時間は TsCore/BuildingProviders で制御)
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_Yellow,
+                       Buildings/TsCTwT_Building_Black,
+                       Buildings/TsCTwT_Building_Blue,
+                       Buildings/TsCTwT_Building_Green,
+                       Buildings/TsCTwT_Building_Purple,
+                       Buildings/TsCTwT_Building_Red,
+                       Buildings/TsCTwT_Building_White,
+                       Buildings/TsCTwT_Building_RandomColor",
+            "FromFile": "assets/png/TsCTwT_Animal_Bird_{{DT_Bird_RandomColor}}.png",
+            "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 384 },
+            "When": {
+                "Season": "Spring, Summer, Fall",
+                "Weather |contains=Rain, Storm, GreenRain": false
+            }
+        },
+
+        //●カエルのテクスチャを追加 (悪天候/春夏秋) (表示時間は TsCore/BuildingProviders で制御)
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_Yellow,
+                       Buildings/TsCTwT_Building_Black,
+                       Buildings/TsCTwT_Building_Blue,
+                       Buildings/TsCTwT_Building_Green,
+                       Buildings/TsCTwT_Building_Purple,
+                       Buildings/TsCTwT_Building_Red,
+                       Buildings/TsCTwT_Building_White,
+                       Buildings/TsCTwT_Building_RandomColor",
+            "FromFile": "assets/png/TsCTwT_Animal_Frog.png",
+            "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 128 },
+            "When": {
+                "Season": "Spring, Summer, Fall",
+                "Weather": "Rain, Storm, GreenRain"
+            }
+        },
+
+        //●うさぎのテクスチャを追加 (冬) (表示時間は TsCore/BuildingProviders で制御)
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_Yellow,
+                       Buildings/TsCTwT_Building_Black,
+                       Buildings/TsCTwT_Building_Blue,
+                       Buildings/TsCTwT_Building_Green,
+                       Buildings/TsCTwT_Building_Purple,
+                       Buildings/TsCTwT_Building_Red,
+                       Buildings/TsCTwT_Building_White,
+                       Buildings/TsCTwT_Building_RandomColor",
+            "FromFile": "assets/png/TsCTwT_Animal_Rabbit_{{DT_Rabbit_RandomColor}}.png",
+            "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+            "When": {
+                "Season": "Winter"
+            }
+        },
+
+        //●動物アニメーション非表示時に設定テントの動物テクスチャをBlankで上書き
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_Yellow",
+            "FromFile": "assets/png/TsCTwT_AnimalBlank.png",
+            "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+            "When": {
+                "MC_AnimalYellow": false
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_Black",
+            "FromFile": "assets/png/TsCTwT_AnimalBlank.png",
+            "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+            "When": {
+                "MC_AnimalBlack": false
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_Blue",
+            "FromFile": "assets/png/TsCTwT_AnimalBlank.png",
+            "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+            "When": {
+                "MC_AnimalBlue": false
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_Green",
+            "FromFile": "assets/png/TsCTwT_AnimalBlank.png",
+            "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+            "When": {
+                "MC_AnimalGreen": false
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_Purple",
+            "FromFile": "assets/png/TsCTwT_AnimalBlank.png",
+            "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+            "When": {
+                "MC_AnimalPurple": false
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_Red",
+            "FromFile": "assets/png/TsCTwT_AnimalBlank.png",
+            "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+            "When": {
+                "MC_AnimalRed": false
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_White",
+            "FromFile": "assets/png/TsCTwT_AnimalBlank.png",
+            "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+            "When": {
+                "MC_AnimalWhite": false
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Buildings/TsCTwT_Building_RandomColor",
+            "FromFile": "assets/png/TsCTwT_AnimalBlank.png",
+            "ToArea": { "X": 0, "Y": 144, "Width": 480, "Height": 1120 },
+            "When": {
+                "MC_AnimalRandomColor": false
+            }
+        }
+
+
+    ] //▼▼"Changes"の終了▼▼
+}

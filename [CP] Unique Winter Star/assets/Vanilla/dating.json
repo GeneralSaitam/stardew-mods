@@ -1,0 +1,265 @@
+{
+    //Guide for keys:
+	//1501 and 1504: Rude keys. Use for Abigail, Sebastian, Alex, Haley, and Shane.
+	//1499 and 1500: Keys that don't apply to the above cases.	
+	"Changes":[
+		{
+			"LogName": "Abigail - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Abigail.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Abigail.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Abigail": "dating",
+				"Abigail": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sebastian.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Sebastian": "dating",
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Alex - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Alex.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Alex.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Alex": "dating",
+				"Alex": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Haley.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Haley": "dating",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Shane - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Shane": "dating",
+				"HasMod |contains=tenthousandcats.ImmersiveCShane": false,
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Shane - Winter Star, Dating, IC Shane Override",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Shane": "dating",
+				"Immersive Shane Override": "true",
+				"IC-Shane Conditional Overrides": "dating only, dating and married",
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Emily.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Emily": "dating",
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Leah - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Leah": "dating",
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Leah - Winter Star, Dating, Art Show",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.WinterStar.Dating.EightHeart.After}}",
+			},
+			"When": {
+				"relationship:Leah": "dating",
+				"HasSeenEvent |contains=53": "true",
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Leah - Winter Star, Dating, Internet Art",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.WinterStar.Dating.EightHeart.After}}",
+			},
+			"When": {
+				"relationship:Leah": "dating",
+				"HasSeenEvent |contains=584059": "true",
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Elliott": "dating",
+				"HasSeenEvent |contains=1848481": "false", //Elliott's 8 heart, the first mention of the book's title.
+				"Elliott": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Winter Star, Dating, Book",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.WinterStar.Dating.Book.After}}",
+			},
+			"When": {
+				"relationship:Elliott": "dating",
+				"HasSeenEvent |contains=1848481": "true", //Elliott's 8 heart, the first mention of the book's title.
+				"Elliott": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Penny - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Penny.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Penny.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Penny": "dating",
+				"Penny": "normal",
+			},
+		},
+		{
+			"LogName": "Sam - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sam.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sam.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Sam": "dating",
+				"Sam": "normal",
+			},
+		},
+		{
+			"LogName": "Harvey - Winter Star, Dating (pre-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Harvey": "dating",
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Harvey - Winter Star, Dating (post-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.WinterStar.Dating.TenHeart.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Harvey": "dating",
+				"HasSeenEvent |contains=528052": "true",
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Harvey - Winter Star, Dating (post-10 heart, SVE & Grampleton Fields)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.WinterStar.Dating.TenHeart.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Harvey": "dating",
+				"HasSeenEvent |contains=528013": "true", //This should be the correct Event ID if you have Grampleton installed. If it's not, message me on Nexus and I'll recheck and re-fix.
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star (pre-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.WinterStar.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Maru": "dating",
+				"HasSeenEvent |contains=10": "false",
+				"Maru": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star (post-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.WinterStar.Dating.TenHeart.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.WinterStar.Dating.After}}",
+			},
+			"When": {
+				"relationship:Maru": "dating",
+				"HasSeenEvent |contains=10": "true",
+				"Maru": "normal, spicy",
+			},
+		},
+	],
+}

@@ -1,0 +1,144 @@
+{
+	"Format": "2.0.0",
+	"Changes": [
+        // Hearts & Gifts fixes
+        {
+            "LogName": "Hearts&Gifts",
+			"Action": "EditData",
+			"Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+			"Fields": {
+                "default": {
+					"button": {
+						"xOffset": -532,
+						"yOffset": -44,
+						"right": true,
+						"bottom": true
+					},
+					"hearts": {
+						"xOffset": -222,
+						"yOffset": 404,
+						"right": true,
+						"showEmptyHearts": true,
+						"heartsPerRow": 14,
+						"centered": true
+					},
+                }
+            },
+            "When": {
+                "HasMod|contains=aedenthorn.CPDDFHeartsandGifts": true
+            }
+        },
+        {
+            "LogName": "Hearts&Gifts_PortraitDivider",
+			"Action": "EditData",
+			"Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+            "TargetField": [ "default", "dividers" ],
+			"Entries": {
+                "MISSING_ID": {
+                    "ID": "DialogueDisplayFramework.Dividers.PortraitDivider",
+                    "xOffset": -484,
+                    "right": true
+                }
+            },
+            "When": {
+                "HasMod|contains=aedenthorn.CPDDFHeartsandGifts": true
+            }
+        },
+        {
+            "LogName": "Hearts&Gifts_HorizontalDivider",
+			"Action": "EditData",
+			"Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+            "TargetField": [ "default", "dividers" ],
+			"Entries": {
+                "MISSING_ID": {
+                    "ID": "aedenthorn.CPDDFHeartsandGifts.Dividers.Horizontal",
+                    "horizontal": true,
+                    "xOffset": -452,
+                    "yOffset": 360,
+                    "width": 460,
+                    "right": true
+                }
+            },
+            "When": {
+                "HasMod|contains=aedenthorn.CPDDFHeartsandGifts": true
+            }
+        },
+        {
+            "LogName": "Hearts&Gifts_PortraitImage",
+			"Action": "EditData",
+			"Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+            "TargetField": [ "default", "images" ],
+			"Entries": {
+                "MISSING_ID": {
+                    "ID": "DialogueDisplayFramework.Images.PortraitBackground",
+                    "texturePath": "LooseSprites/Cursors",
+                    "xOffset": -452,
+                    "right": true,
+                    "x": 583,
+                    "y": 411,
+                    "w": 115,
+                    "h": 97
+                }
+            },
+            "When": {
+                "HasMod|contains=aedenthorn.CPDDFHeartsandGifts": true
+            }
+        },
+        {
+            "LogName": "Hearts&Gifts",
+			"Action": "EditData",
+			"Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+			"Fields": {
+                "default": {
+                    "name": {
+                        "xOffset": -222,
+                        "yOffset": 320,
+                        "right": true
+                    }
+                }
+            },
+            "When": {
+                "HasMod|contains=aedenthorn.CPDDFHeartsandGifts": true,
+                "HasMod|contains=Dora.ChangingSkies": false
+            }
+        },
+        {
+            "LogName": "Hearts&Gifts_PortraitChanges",
+			"Action": "EditData",
+			"Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+			"Fields": {
+                "default": {
+					"portrait": {
+						"xOffset": -352,
+						"yOffset": 32,
+						"right": true
+					}
+                }
+            },
+            "When": {
+                "HasMod|contains=aedenthorn.CPDDFHeartsandGifts": true,
+                "HasMod|contains=Kana.PortraitedChangingSkies.DDF": false
+            }
+        },
+        // Hearts & Gifts + Changing Skies
+        {
+            "LogName": "Hearts&Gifts+ChangingSkies",
+			"Action": "EditData",
+			"Target": "aedenthorn.DialogueDisplayFramework/dictionary",
+			"Fields": {
+                "default": {
+					"gifts": {
+						"xOffset": -420,
+						"yOffset": 192,
+						"right": true,
+                        "inline": false
+					}
+                }
+            },
+            "When": {
+                "HasMod|contains=aedenthorn.CPDDFHeartsandGifts": true,
+                "HasMod|contains=Dora.ChangingSkies": true,
+            }
+        },
+    ]
+}

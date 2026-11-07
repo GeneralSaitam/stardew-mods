@@ -1,0 +1,64 @@
+{
+    "Changes": [
+        //Russell when Shannon is getting married
+      {
+        "Action": "EditData",
+        "Target": "Data/Weddings",
+        "TargetField": [
+          "Attendees",
+        ],
+        "Entries": {
+          "{{Russell}}": {
+            "Id": "{{Russell}}",
+            "Setup": "{{Russell}} 30 63 3",
+            "Celebration":"emote {{Russell}} 32 true"
+          },
+        },
+        "When": {
+            "Hearts:{{Shannon}}": "{{Range: 10, 11}}",
+            "Relationship:{{Shannon}}": "Engaged, Married"
+        },
+      },
+      //Shannon when Russell is getting married
+      {
+        "Action": "EditData",
+        "Target": "Data/Weddings",
+        "TargetField": [
+          "Attendees",
+        ],
+        "Entries": {
+          "{{Shannon}}": {
+            "Id": "{{Shannon}}",
+            "Setup": "{{Shannon}} 30 63 3",
+            "Celebration":"emote {{Shannon}} 32 true"
+          },
+        },
+        "When": {
+            "Hearts:{{Russell}}": "{{Range: 10, 11}}",
+            "Relationship:{{Russell}}": "Engaged, Married"
+        },
+      },
+      //Russell and Shannon when neither is the one getting married (and neither has been divorced)
+      {
+        "Action": "EditData",
+        "Target": "Data/Weddings",
+        "TargetField": [
+          "Attendees",
+        ],
+        "Entries": {
+          "{{Russell}}": {
+            "Id": "{{Russell}}",
+            "Setup": "{{Russell}} 33 67 0",
+          },
+          "{{Shannon}}": {
+            "Id": "{{Shannon}}",
+            "Setup": "{{Shannon}} 23 68 0",
+          },
+        },
+        "When": {
+            "Relationship:{{Shannon}}": "Friendly, Dating",
+            "Relationship:{{Russell}}": "Friendly, Dating",
+        },
+      },
+    ]
+  }

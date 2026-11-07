@@ -1,0 +1,31 @@
+{
+    "Changes": [
+        //Custom sprites which allow Russell to descend the ladder correctly and then resume his normal animation.
+        {
+            "Action": "Load",
+            "Target": "Characters/{{Russell}}_Ladder",
+            "FromFile": "assets/NPCs/Sprites/Russell_Ladder.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/{{Russell}}_Default",
+            "FromFile": "assets/NPCs/Sprites/Russell.png"
+        },
+        {
+            //station fixup event
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "239792002/GameStateQuery DAYS_PLAYED {{cfgJailOpenDelay}}": "distantBanjo/ -1000 -1000/farmer 78 16 0 Lewis -100 -100 2 {{Russell}} 73 7 1 {{Shannon}} 74 7 3/broadcastEvent/setSkipActions addItem (O)388 50 0/skippable/changeToTemporaryMap town/removeTile 71 2 Front/removeTile 72 2 Front/removeTile 73 2 Front/removeTile 71 3 Front/removeTile 72 3 Front/removeTile 73 3 Front/removeTile 71 4 Front/removeTile 72 4 Front/removeTile 73 4 Front/removeTile 73 4 AlwaysFront/globalFadeToClear 0.007 true/viewport 72 11 true unfreeze/positionOffset {{Shannon}} 0 -16/positionOffset {{Russell}} 0 -12/positionOffset farmer 0 -24/move farmer 0 -4 0/pause 1000/emote farmer 8/pause 500/move {{Shannon}} 0 0 2/move {{Russell}} 0 0 2/speak {{Shannon}} \"{{i18n:Events.Fixup.001}}\"/pause 200/emote farmer 56 true/pause 500/move farmer 0 -3 0/move farmer -1 0 3/move farmer 0 -1 0/move farmer -5 0 3/move farmer 0 -1 1/move {{Shannon}} 0 0 3/pause 300/textAboveHead {{Russell}} \"{{i18n:Events.Fixup.002}}\"/ignoreCollisions {{Russell}}/move {{Russell}} 0 -3 0/pause 1000/playSound woodWhack/pause 500/playSound barrelBreak/pause 500/removeTile 71 2 Buildings2/removeTile 72 2 Buildings2/removeTile 73 2 Buildings2/removeTile 71 3 Buildings2/removeTile 72 3 Buildings2/removeTile 73 3 Buildings2/removeTile 71 4 Buildings2/removeTile 72 4 Buildings2/removeTile 73 4 Buildings2/pause 1000/changeSprite {{Russell}} Ladder/move {{Russell}} 0 3 0/pause 300/extendSourceRect {{Russell}} reset/changeSprite {{Russell}} Default/pause 200/faceDirection {{Russell}} 3/pause 200/speak {{Russell}} \"{{i18n:Events.Fixup.003}}\"/speak Lewis \"{{i18n:Events.Fixup.004}}\"/warp Lewis 80 -1 true/faceDirection {{Russell}} 1 true/faceDirection {{Shannon}} 1 true/move Lewis 0 9 3/pause 200/speak Lewis \"{{i18n:Events.Fixup.005}}\"/pause 200/speak {{Russell}} \"{{i18n:Events.Fixup.006}}\"/pause 200/speak Lewis \"{{i18n:Events.Fixup.007}}\"/pause 200/jump Lewis/emote Lewis 16/pause 200/speak Lewis \"{{i18n:Events.Fixup.008}}\"/pause 200/move {{Russell}} 0 0 2/pause 200/emote {{Russell}} 28/pause 200/move {{Russell}} 0 1 1/speak {{Russell}} \"{{i18n:Events.Fixup.009}}\"/pause 200/speak Lewis \"{{i18n:Events.Fixup.010}}\"/pause 200/speak {{Shannon}} \"{{i18n:Events.Fixup.011}}\"/pause 200/speak {{Russell}} \"{{i18n:Events.Fixup.012}}\"/pause 400/move {{Russell}} 2 0 1/move {{Russell}} 0 -1 0/pause 200/playSound doorOpen/warp {{Russell}} -100 -100/pause 600/faceDirection {{Shannon}} 3/pause 500/move {{Shannon}} -1 0 3/pause 500/speak {{Shannon}} \"{{i18n:Events.Fixup.013}}\"/pause 200/addItem (O)388 50 0/setSkipActions Null/pause 200/move {{Shannon}} 2 0 0/pause 300/playSound doorOpen/warp {{Shannon}} -100 -100/pause 300/playSound doorClose/pause 300/speak Lewis \"{{i18n:Events.Fixup.014}}\"/pause 200/emote Lewis 12/move Lewis 0 -1 0/move Lewis 0 -5 0/warp Lewis -100 -100/emote farmer 8/pause 1200/globalFade/viewport -1000 -1000/end"
+            }
+        },
+        {
+            //shrine of justice event - designed to not trigger on its own, called through tile interaction
+            "Action": "EditData",
+            "Target": "Data/Events/WitchHut",
+            "Entries": {
+                "sdvlao_shrineofjustice/DayOfWeek Mon/DayOfWeek Tue": "continue/9 6/farmer 9 6 0/skippable/pause 400/message \"{{i18n:Events.ShrineOfJustice.001}}\"/pause 400/message \"{{i18n:Events.ShrineOfJustice.002}}\"/pause 400/quickQuestion {{i18n:Events.ShrineOfJustice.qqq}}#{{i18n:Events.ShrineOfJustice.qq1}}#{{i18n:Events.ShrineOfJustice.qq2}}(break)friendship {{Russell}} -250\\friendship {{Shannon}} -250\\addMailReceived {{ModId}}_ReleasePrisoners\\pause 400\\message \"{{i18n:Events.ShrineOfJustice.qq1r}}\"(break)pause 400\\message \"{{i18n:Events.ShrineOfJustice.qq2r}}\"/pause 400/globalFade/viewport -1000 -1000 true/end"
+            }
+        },
+    ]
+}

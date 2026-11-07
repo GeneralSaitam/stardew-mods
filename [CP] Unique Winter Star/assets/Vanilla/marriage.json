@@ -1,0 +1,361 @@
+{
+	//Unless otherwise noted, the first lines are the same between spice and no spice cases. The *second* line is the spicy line.
+	"Changes":[
+		{
+			"LogName": "Abigail - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Abigail.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Abigail.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Abigail.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Abigail.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Abigail": "married",
+				"Abigail": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Abigail - Winter Star, Married, Optional Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Abigail.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Abigail.WinterStar.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Abigail.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Abigail.WinterStar.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Abigail": "married",
+				"Enable Spicy Dialogue": "true",
+				"Abigail": "spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Sebastian.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Sebastian.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sebastian.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Sebastian": "married",
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Winter Star, Married, Optional Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Sebastian.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Sebastian.WinterStar.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sebastian.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.WinterStar.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Sebastian": "married",
+				"Enable Spicy Dialogue": "true",
+				"Sebastian": "spicy",
+			},
+		},
+		{
+			"LogName": "Alex - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Alex.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Alex.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Alex.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Alex.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Alex": "married",
+				"Alex": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Alex - Winter Star, Married, Optional Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Alex.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Alex.WinterStar.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Alex.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Alex.WinterStar.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Alex": "married",
+				"Enable Spicy Dialogue": "true",
+				"Alex": "spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Haley.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Haley.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Haley.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Haley": "married",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star, Married, Optional Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Haley.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Haley.WinterStar.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Haley.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Haley": "married",
+				"Enable Spicy Dialogue": "true",
+				"Haley": "spicy",
+			},
+		},
+		{
+			"LogName": "Shane - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Shane.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Shane.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Shane": "married",
+				"HasMod |contains=tenthousandcats.ImmersiveCShane": false,
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Shane - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Shane.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Shane.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Shane": "married",
+				"Immersive Shane Override": "true",
+				"IC-Shane Conditional Overrides": "married only, dating and married",
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Emily.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Emily.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Emily.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Emily": "married",
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Winter Star, Married, Custom Gifts Active",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Emily.WinterStar.Married.Before.GiftsActive}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.WinterStar.Married.Before.GiftsActive}}",
+			},
+			"When": {
+				"relationship:Emily": "married",
+				"Emily": "normal",
+				"CustomGifts": "enabled",
+			},
+		},
+		{
+			"LogName": "Leah - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Leah.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Leah.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Leah": "married",
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Leah - Winter Star, Married, Optional Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Leah.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Leah.WinterStar.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.WinterStar.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Leah": "married",
+				"Enable Spicy Dialogue": "true",
+				"Leah": "spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Elliott.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Elliott.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Elliott": "married",
+				"Elliott": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Winter Star, Married, Optional Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Elliott.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Elliott.WinterStar.Married.Spicy.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.WinterStar.Married.Spicy.After}}",
+			},
+			"When": {
+				"relationship:Elliott": "married",
+				"Enable Spicy Dialogue": "true",
+				"Elliott": "spicy",
+			},
+		},
+		{
+			"LogName": "Penny - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Penny.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Penny.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Penny.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Penny.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Penny": "married",
+				"Penny": "normal",
+			},
+		},
+		{
+			"LogName": "Sam - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Sam.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Sam.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sam.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sam.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Sam": "married",
+				"Sam": "normal",
+			},
+		},
+		{
+			"LogName": "Sam - Winter Star, Married, 14 Heart Variant",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Sam.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Sam.WinterStar.Married.Junimo.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sam.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sam.WinterStar.Married.Junimo.After}}",
+			},
+			"When": {
+				"relationship:Sam": "married",
+				"HasSeenEvent |contains=3918603": "true",
+				"Sam": "normal",
+			},
+		},
+		{
+			"LogName": "Harvey - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Harvey.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Harvey.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Harvey": "married",
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Harvey - Winter Star, Married, Optional Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Harvey.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Harvey.WinterStar.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.WinterStar.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Harvey": "married",
+				"Enable Spicy Dialogue": "true",
+				"Harvey": "spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Maru.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Maru.WinterStar.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.WinterStar.Married.After}}",
+			},
+			"When": {
+				"relationship:Maru": "married",
+				"Maru": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star, Married, Optional Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Maru.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Maru.WinterStar.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.WinterStar.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.WinterStar.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Maru": "married",
+				"Enable Spicy Dialogue": "true",
+				"Maru": "spicy",
+			},
+		},
+	],
+}

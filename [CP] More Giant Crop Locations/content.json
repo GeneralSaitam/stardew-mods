@@ -1,0 +1,41 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		"In Greenhouse": {
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"On Ginger Island": {
+			"AllowValues": "true, false",
+			"Default": true
+		}
+	},
+	"Changes":[
+		// Any Greenhouse
+		{
+			"LogName": "Giant Crops in Greenhouse",
+			"Action": "EditMap",
+			"Target": "Maps/Greenhouse",
+            "MapProperties": {
+            	"AllowGiantCrops": true
+            },
+			"When": {
+				"In Greenhouse": true
+			},
+			"Priority": "Late"
+		},
+		// The Island Farm
+		{
+			"LogName": "Giant Crops on Ginger Island Farm",
+			"Action": "EditMap",
+			"Target": "Maps/Island_W",
+            "MapProperties": {
+            	"AllowGiantCrops": true
+            },
+			"When": {
+				"On Ginger Island": true
+			},
+			"Priority": "Late"
+		}
+	]
+}

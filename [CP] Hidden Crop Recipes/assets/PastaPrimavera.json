@@ -1,0 +1,111 @@
+{
+    "Changes": [
+	{
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_PastaPrimavera": {
+				"Name": "{{ModId}}_PastaPrimavera",
+				"DisplayName": "Pasta Primavera",
+				"Description": "Pasta loaded with healthy, seasonal veggies. Yum!",
+				"Type": "Basic",
+				"Category": -7,
+				"Price": 200,
+				"Texture": "Mods/{{ModId}}/objects16px",
+				"SpriteIndex": 0, 
+				"Edibility": 96, 
+				//Edibility can be multiplied by 2.5 to obtain the actual energy value restored in game, or vice versa, your actual desired energy restore value can be divided by 2.5 to obtain edibility. 
+				//The edibility of all dishes in this mod will be calculated with the following formula: add the stamina restore value of the raw ingredients at regular star quality; where applicable, use small egg values for egg and large milk values for milk; for cooking staples (flour, sugar etc) add a flat 25 instead of their tooltip value; multiply result by 1.05 and round up to the nearest 5. 
+				"IsDrink": false
+			}
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/CookingRecipes", 
+		"Entries": {
+			"Pasta Primavera": "246 1 Carrot 1 Broccoli 1 SummerSquash 1/1 1/{{ModId}}_PastaPrimavera/default" 
+			//the cooking recipe. Requires 1 wheat flour (item 246) plus the vegetables named. 
+			//The '/1 1/' value in this string is apparently required yet not actually read by the game and doesn't do anything, so it can be any arbitrary pair of numbers. This tripped me up when learning how to make a recipe
+			}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes", //Tried my best to make changes to gift tastes based on villagers' existing tastes.
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Abigail", 5], //Abigail doesn't like any of the ingredients, so she dislikes Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Haley", 5], //Haley doesn't like any of the ingredients, so she dislikes Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Jas", 5], //Jas doesn't like any of the ingredients, so she dislikes Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Sam", 5], //Sam doesn't like any of the ingredients, so he dislikes Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", 5], //Vincent doesn't like any of the ingredients, so he dislikes Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Krobus", 5], //Krobus doesn't like most Cooked Dishes, so he dislikes Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leo", 5], //Leo doesn't like most Cooked Dishes, so he dislikes Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Willy", 5], //Willy doesn't like most Cooked Dishes (unless they have fish in them), so he dislikes Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leah", 1], //Leah loves similar dishes, so she loves Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Lewis", 1], //Lewis loves similar dishes, so he loves Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Jodi", 1], //Jodi loves similar dishes, so she loves Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Robin", 1], //Robin loves similar dishes, so she loves Pasta Primavera, too
+				"Value": "{{ModId}}_PastaPrimavera",
+				"Delimiter": " "
+			}
+		]
+	}
+    ]
+}

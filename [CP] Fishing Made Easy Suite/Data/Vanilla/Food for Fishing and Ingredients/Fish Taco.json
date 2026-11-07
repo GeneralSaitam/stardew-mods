@@ -1,0 +1,65 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fish Taco Duration",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "213",
+        "Buffs"
+      ],
+      "Fields": {
+        "Food": {
+          "Duration": -2
+        }
+      },
+      "When": {
+        "Fish Taco Duration": true
+      }
+    },
+    {
+      "LogName": "Fish Taco Level Boost",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "213",
+        "Buffs",
+        "Food"
+      ],
+      "Fields": {
+        "CustomAttributes": {
+          "FishingLevel": "{{Fish Taco Level Boost}}"
+        }
+      },
+      "When": {
+        "Fish Taco Level Boost": "3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50"
+      }
+    },
+    {
+      "LogName": "Fish Taco Lessened Ingredients",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Fish Taco": {
+          "0": "130 1"
+        }
+      },
+      "When": {
+        "Fish Taco Ingredients": "Lessened Ingredients"
+      }
+    },
+    {
+      "LogName": "Fish Taco 1 of Any Fish",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Fish Taco": {
+          "0": "-4 1"
+        }
+      },
+      "When": {
+        "Fish Taco Ingredients": "1 of Any Fish"
+      }
+    }
+  ]
+}

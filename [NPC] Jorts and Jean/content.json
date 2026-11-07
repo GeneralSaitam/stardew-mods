@@ -1,0 +1,1221 @@
+{
+	//I LIKE Jorts
+	//there, now it's official merch
+	
+    "Format": "2.0.0",
+	
+	"ConfigSchema":
+	{
+		"LinusEventTweak":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"AllowBlank": false,
+		},
+		"PierreEventTweak":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"AllowBlank": false,
+		},
+		"LastingCTs":
+		{
+			"AllowValues": "true, false",
+			"Default": "false",
+			"AllowBlank": false,
+		},
+		"NyapuToggle":
+		{
+			"AllowValues": "true, false",
+			"Default": "false",
+			"AllowBlank": false,
+		},
+	},
+	
+    "Changes":
+    [
+		// NPC Disposition - updated for 1.6     
+        {
+            "LogName": "Jorts and Jean exist!",
+			"Action": "Include",
+			"FromFile": "assets/data/dispos.json"
+		},
+		
+        //Animations
+        {
+            "LogName": "Jorts and Jean Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries":
+            {
+                "JortsCat_catnap": "36/36 36 37 37 37 32 32 32 33 33 33 34 34 34 35 35 35 37 37 37/36",
+				"JortsCat_trashcan": "16/17 18 19 20 21 22 23/16",
+				"JortsCat_cuphead": "40/40 40 40 40 40 40 41 41 41 42 43 43 43 42 41 41 41 42 43 43 43/40",
+				"JeanCat_catnap": "24/24 24 25 25 25 20 20 20 21 21 21 22 22 22 23 23 23 25 25 25/24",
+				"JeanCat_pawwash": "16/17 17 18 18 19 19 18 18 17 17/16",
+				"JeanCat_fishing": "28/28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34/28",
+				"JortsCat_cleaning": "44/44 44 45 45 45 46 46 46 47 47 47 47 47 47 44/44",
+				"JeanCat_cleaning": "36/36 36 37 37 37 38 38 38 39 39 39 39 39 39 36/36",
+				"JeanCat_beach_fish": "28/28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34/28",
+			}
+		},		
+		
+        //Portraits
+        {
+            "LogName": "Jorts Base Portraits",
+            "Action": "Load",
+            "Target": "Portraits/JortsCat",
+            "FromFile": "assets/images/jortscat{{NyapuPortrait}}.png",
+		},
+        {
+            "LogName": "Jean Base Portraits",
+            "Action": "Load",
+            "Target": "Portraits/JeanCat",
+            "FromFile": "assets/images/jeancat{{NyapuPortrait}}.png",
+		},
+		
+        //Sprites
+        {
+            "LogName": "Jorts Base Sprites",
+            "Action": "Load",
+            "Target": "Characters/JortsCat",
+            "FromFile": "assets/images/jortssprites.png",
+		},
+		
+        {
+            "LogName": "Jean Base Sprites",
+            "Action": "Load",
+            "Target": "Characters/JeanCat",
+            "FromFile": "assets/images/jeansprites.png",
+		},
+		
+				{
+            "LogName": "Jorts - Flower Dance shuffle",
+			"Action": "EditImage",
+			"Target": "Characters/JortsCat",
+			"FromFile": "assets/images/jortssprites2.png",
+			"Update": "OnLocationChange",
+            "When":
+            {
+                "DayEvent": "flower dance",
+                "LocationName": "temp"
+			}
+		}, 
+		
+		
+		
+		//Sprite and portrait for temporary actor
+		{	"LogName": "Gil sprite load", 
+			"Action": "Load",
+			"Target": "Characters/Gil",
+			"Priority": "Low",
+			"FromFile": "assets/images/fakeGil.png"
+		},
+		
+		//Blank JSON load for dialogue/schedules
+		{
+			"LogName": "Blank JSON load",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/JortsCat, Characters/Dialogue/JeanCat, Characters/schedules/JortsCat, Characters/schedules/JeanCat, Strings/schedules/JortsCat, Strings/schedules/JeanCat",
+            "FromFile": "assets/data/blank.json",
+		},
+		
+		//Schedule dialogue 
+		{
+            "Action": "EditData",
+		  	"Target": "Strings/Schedules/JortsCat",
+            "Entries": 
+            {
+                "Trash.000": "{{i18n:JortsCat.Trash.000.{{Random: {{Range: 1,6}} }} }}",
+				"ColaShop.000": "{{i18n:JortsCat.ColaShop.000.{{Random: {{Range: 1,5}} }} }}",
+				"Kevin.000": "{{i18n:JortsCat.Kevin.000.{{Random: {{Range: 1,7}} }} }}",
+				"CatCafe.000": "{{i18n:JortsCat.CatCafe.000.{{Random: {{Range: 1,6}} }} }}",
+				"Pride.000": "{{i18n:JortsCat.Pride.000}}",
+				
+			},
+		},
+		{
+            "Action": "EditData",
+		  	"Target": "Strings/Schedules/JeanCat",
+            "Entries": 
+            {
+                "Trash2.000": "{{i18n:JeanCat.Trash2.000.{{Random: {{Range: 1,6}} }} }}",
+				"Ginger.000": "{{i18n:JeanCat.Ginger.000.{{Random: {{Range: 1,8}} }} }}",
+				"Tatiana.000": "{{i18n:JeanCat.Tatiana.000.{{Random: {{Range: 1,8}} }} }}",
+				"HotGoss.000": "{{i18n:JeanCat.HotGoss.000.{{Random: {{Range: 1,12}} }} }}",
+				"ColaShop2.000": "{{i18n:JeanCat.ColaShop2.000.{{Random: {{Range: 1,4}} }} }}",
+				"CatCafe2.000": "{{i18n:JeanCat.CatCafe2.000.{{Random: {{Range: 1,6}} }} }}",
+				"Pride2.000": "{{i18n:JeanCat.Pride2.000}}",
+			},
+		},
+		
+        // Events include
+		{
+			"LogName": "Events Include",
+			"Action": "Include",
+			"FromFile": "assets/data/Events.json"
+		},
+		
+		// Arknir Events include
+		{
+			"LogName": "Events Include",
+			"Action": "Include",
+			"FromFile": "assets/data/UnionEvents.json"
+		},
+		
+		//  Adds Shane's Uniform Sprites
+		{
+			"LogName": "Shane Uniform",
+			"Action": "Load",
+			"Target": "Characters/Shane_JojaMart",
+			"Priority": "Medium",
+			"FromFile": "assets/images/Shane_JojaMart.png"
+		},
+		
+		// Event Actors (Spoilers)
+		{
+			"Action": "Include",
+			"FromFile": "assets/data/tempActors.json"
+		},
+		
+        // Cross-mod compatibility patches 
+		{
+			"LogName": "Compat Include",
+			"Action": "Include",
+			"FromFile": "assets/data/Compat.json"
+		},
+		
+		//Festival include 
+		{
+			"LogName": "Festival Include",
+			"Action": "Include",
+			"FromFile": "assets/data/Festivals.json"
+		},
+		
+		//Gift Taste Data
+		{
+			"LogName": "Gift Tastes Include",
+			"Action": "Include",
+			"FromFile": "assets/data/GiftTastes.json"
+		},
+		
+		
+		// Schedules and Dialogue includes
+        {
+			"LogName": "Schedule/Dialogue Includes",
+			"Action": "Include",
+			"FromFile": "assets/data/jeanschedule.json, assets/data/jortsschedule.json, assets/data/jeandialogue.json, assets/data/jortsdialogue.json"
+			},
+		//Conversation Topics from vanilla/other custom NPCs
+		{
+			"LogName": "Conversation Topics",
+			"Action": "Include",
+			"FromFile": "assets/data/ConvoTopics.json"
+		},
+		
+        // Resort include (with GIMA)
+		{
+			"LogName": "Resort Include",
+			"Action": "Include",
+			"When": { "HasMod: |contains=atravita.GingerIslandMainlandAdjustments": true},
+			"FromFile": "assets/data/Resort.json"
+		},
+		//Special Order for ES
+		{
+			"LogName": "ES Special Order Include",
+			"Action": "Include",
+			"FromFile": "assets/data/ESSpecialOrders.json",
+			"When": { "HasMod: |contains=LemurKat.EastScarpe.CP": true},
+		},
+		
+		//Special Order for RSV
+		{
+			"LogName": "RSV Special Order Include",
+			"Action": "Include",
+			"FromFile": "assets/data/RSVSpecialOrders.json",
+			"When": { "HasMod: |contains=Rafseazz.RSVCP": true},
+		},
+		
+		//Bridge fix for pathing - thank you Lemurkat!
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Mountain",
+			"FromFile": "assets/data/Mountain_BridgeFix.tmx",
+			"ToArea": {
+				"X": 46,
+				"Y": 7,
+				"Width": 4,
+				"Height": 1
+			},
+		},		
+		
+	],
+	
+	"DynamicTokens": [
+		
+		{
+			"Name": "EJSBoardType",
+			"Value": "",
+		},
+		{
+			"Name": "EJSBoardType",
+			"Value": "Esca.EMP/ESCoastalGuild",
+			"When":
+			{
+				"HasMod |contains= DestyNova.Mateo.CP": true,
+			}
+		},
+		
+		{
+			"Name": "GIMACheck",
+			"Value": "false",
+		},
+		{
+			"Name": "GIMACheck",
+			"Value": "true",
+			"When":
+			{
+				"HasMod |contains= atravita.GingerIslandMainlandAdjustments": true,
+			}
+		},
+		
+		{
+			"Name": "FestivalYear",
+			"Value": "", 
+		},
+		
+		{
+			"Name": "FestivalYear",
+			"Value": "_y2", 
+			"When":
+			{
+				"Query: {{Year}} % 2 = 0": true,
+			}
+		},
+		
+		{
+			"Name": "ARVaddition",
+			"Value": "",
+		},
+		{
+			"Name": "ARVaddition",
+			"Value": "#$b#{{i18n:jortsandjean.inter.ARV}}",
+			"When":
+			{
+				"HasMod |contains= HimeTarts.ARV": true,
+			}
+		},
+		
+		{
+			"Name": "NyapuPortrait",
+			"Value": "",
+		},
+		{
+			"Name": "NyapuPortrait",
+			"Value": "Nyapu",
+			"When":
+			{
+				"NyapuToggle": true,
+			}
+		},
+		
+		{
+			"Name": "JortsDanceWorkaround",
+			"Value": "false",
+		},
+		{
+			"Name": "JortsDanceWorkaround",
+			"Value": "true",
+			"When":
+			{
+				"DayEvent": "flower dance",
+			}
+		},
+		
+		//Jojamart Event Tokens
+		// THANK YOU ARK FOR YOUR AMAZING WORK ON THESE EVENTS!!
+		
+		{
+			"Name": "TDITTempActor",
+			"Value": "pause 1",
+		},
+		{
+			"Name": "TDITTempActor",
+			"Value": "/addTemporaryActor TDITDaena 16 32 999 460 0 true Character Daena/addTemporaryActor TDITNaufal 16 32 998 460 0 true",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "JojaMartCat_SetUp",
+			"Value": "farmer 18 41 0 JortsCat 25 30 1 Sam 999 200 0 Morris 999 200 0 JeanCat 27 30 3 Shane 199 999 2"
+		},
+		{
+			"Name": "JojaMartCat_SetUp",
+			"Value": "{{JojaMartCat_SetUp}} Juliet 999 500 1",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		{
+			"Name": "JojaMartCat_SetUp",
+			"Value": "{{JojaMartCat_SetUp}} Claire 599 599 2",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "MorrisCatShock",
+			"Value": "$2"
+		},
+		
+		{
+			"Name": "MorrisCatShock",
+			"Value": "$6",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "ClaireStack",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "ClaireStack",
+			"Value": "animate Claire false true 175 52 53 54 55 57 58 59",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "ClaireCatWarp",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "ClaireCatWarp",
+			"Value": "warp Claire 18 12 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "DaenaCatWarp",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "DaenaCatWarp",
+			"Value": "warp Daena 22 6 true/showFrame Daena 3/warp TDITNaufal 6 11/showFrame TDITNaufal 2",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "ClaireDoorMat",
+			"Value": "..."
+		},
+		
+		{
+			"Name": "ClaireDoorMat",
+			"Value": "{{i18n:ClaireDoormat}}#$b#",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "JulietCatRuns",
+			"Value": " "
+		},
+		
+		{
+			"Name": "JulietCatRuns",
+			"Value": "{{i18n:JulietCatRuns}}#$b#",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JulietCheckPose",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JulietCheckPose",
+			"Value": "showFrame Juliet 19 true",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JulietCatWarp",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JulietCatWarp",
+			"Value": "warp Juliet 5 6 true",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "TDITLeft",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "TDITLeft",
+			"Value": "showFrame TDITNaufal 0/showFrame Daena 2",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "TDITRight",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "TDITRight",
+			"Value": "showFrame TDITNaufal 2/showFrame Daena 0",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "DaenaLeft",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "DaenaLeft",
+			"Value": "showFrame Daena 2",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "DaenaEmote12",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "DaenaEmote12",
+			"Value": "showFrame Daena 2/emote Daena 12 true",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "DaenaEmote16",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "DaenaEmote16",
+			"Value": "showFrame TDITNaufal 2/emote TDITNaufal 16/emote Daena 16 true",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "JulietFaceRight",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JulietFaceRight",
+			"Value": "showFrame Juliet 20 true",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JulietFaceDown",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JulietFaceDown",
+			"Value": "showFrame Juliet 24 true",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JulietNotSam",
+			"Value": "Sam"
+		},
+		
+		{
+			"Name": "JulietNotSam",
+			"Value": "Juliet",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "emotejuliet8",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "emotejuliet8",
+			"Value": "emote Juliet 8 true",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "emotejuliet12",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "emotejuliet12",
+			"Value": "emote Juliet 12 false",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "emotejuliet16",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "emotejuliet16",
+			"Value": "emote Juliet 16 true",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "emotejuliet40",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "emotejuliet40",
+			"Value": "emote Juliet 40 true",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "ClaireCatStop",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "ClaireCatStop",
+			"Value": "stopAnimation Claire/showFrame Claire 12 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "emoteClaire28",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "emoteClaire28",
+			"Value": "emote Claire 28 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "emoteClaire40",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "emoteClaire40",
+			"Value": "emote Claire 40 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "emoteClaire8",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "emoteClaire8",
+			"Value": "emote Claire 8 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "emoteClaire16",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "emoteClaire8",
+			"Value": "emote Claire 16 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "DaenaNotSam",
+			"Value": "#$b#{{i18n:DaenaNotSam}}"
+		},
+		
+		{
+			"Name": "DaenaNotSam",
+			"Value": "\"/speak Daena \"#$b#{{i18n:DaenaNotSam}}$6",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "ClaireNotShane",
+			"Value": "Shane"
+		},
+		
+		{
+			"Name": "ClaireNotShane",
+			"Value": "Claire",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		//showFrame Claire 12 true
+		
+		{
+			"Name": "ClaireFaceLeft",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "ClaireFaceLeft",
+			"Value": "showFrame Claire 12 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "ClaireFaceRight",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "ClaireFaceRight",
+			"Value": "showFrame Claire 4 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "ClaireFaceUp",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "ClaireFaceUp",
+			"Value": "showFrame Claire 8 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		// Part 2
+		
+		{
+			"Name": "JojaMartCat_SetUp2",
+			"Value": "farmer 83 53 1 Morris 999 999 2 Sam 999 999 2 Shane 999 999 3 JeanCat 95 53 0 JortsCat 96 53 2"
+		},
+		{
+			"Name": "JojaMartCat_SetUp2",
+			"Value": "{{JojaMartCat_SetUp2}} Juliet 999 999 2 Jessie 999 999 1",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		{
+			"Name": "JojaMartCat_SetUp2",
+			"Value": "{{JojaMartCat_SetUp2}} Martin 999 999 0",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		
+		
+		//---
+		{
+			"Name": "MartinCatWarp",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "MartinCatWarp",
+			"Value": "warp Martin 18 9 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "TDITCatWarp",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "TDITCatWarp",
+			"Value": "warp Daena 8 8 true/warp TDITNaufal 19 8 true",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		
+		//--
+		
+		//---
+		{
+			"Name": "MartinCatEmoteDot",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "MartinCatEmoteDot",
+			"Value": "emote Martin 40 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		//--
+		
+		{
+			"Name": "MartinFaceLeft",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "MartinFaceLeft",
+			"Value": "faceDirection Martin 3 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "MartinFaceDown",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "MartinFaceDown",
+			"Value": "faceDirection Martin 2 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "ClaireCatSigh",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "ClaireCatSigh",
+			"Value": "pause 1",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		//---
+		
+		{
+			"Name": "MartinStrike",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JulietStrike",
+			"Value": "pause 1"
+		},
+		
+		
+		{
+			"Name": "MartinStrike",
+			"Value": "textAboveHead Martin \"{{i18n:MartinStrike}}\"",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "JulietStrike",
+			"Value": "textAboveHead Juliet \"{{i18n:JulietStrike}}\"",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JulietJessieCatWarp",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JulietJessieCatWarp",
+			"Value": "warp Juliet 9 8 true/warp Jessie 5 9 true",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JulietHatesIt",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JulietHatesIt",
+			"Value": "pause 1000/textAboveHead Juliet \"{{i18n:JulietHatesIt}}\"",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JulietJessieDown",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JulietJessieDown",
+			"Value": "showFrame Juliet 24 true/faceDirection Jessie 2 true",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JulietsLuck",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JulietsLuck",
+			"Value": "pause 1/speak Juliet \"{{i18n:JulietsLuck}}$3\"/pause 1",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "MartinClaireDown",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "MartinClaireDown",
+			"Value": "faceDirection Martin 2 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		//----
+		
+		{
+			"Name": "MartinNoWay",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "MartinNoWay",
+			"Value": "speak Martin \"{{i18n:MartinNoWay}}$2\"/pause 1",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		
+		{
+			"Name": "MartinClaireLeft",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "MartinClaireLeft",
+			"Value": "faceDirection Martin 3 true",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "MartinTalkCatA",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "MartinTalkCatA",
+			"Value": "faceDirection Shane 1/speak Shane \"{{i18n:MartinTalkCatA.1}}\"/faceDirection Martin 3 true/jump Martin/speak Martin \"{{i18n:MartinTalkCatA.2}}\"/pause 1",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "MartinTalkCatB",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "MartinTalkCatB",
+			"Value": "speak Shane \"{{i18n:MartinTalkCatB}}\"/pause 1",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		{
+			"Name": "MartinTalkCatC",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "MartinTalkCatC",
+			"Value": "speak Shane \"{{i18n:MartinTalkCatC.1}}\"/speak Martin \"{{i18n:MartinTalkCatC.2}}$4\"/pause 1",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		
+		
+		{
+			"Name": "JessieFaceRight",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JessieFaceRight",
+			"Value": "showFrame Juliet 20 true/faceDirection Jessie 1 true",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JessieJulesTalkA",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JessieJulesTalkA",
+			"Value": "faceDirection Shane 3/speak Shane \"{{i18n:JessieJulesTalkA.1}}\"/speak Juliet \"{{i18n:JessieJulesTalkA.2}}\"/pause 1",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JessieJulesTalkB",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JessieJulesTalkB",
+			"Value": "speak Shane \"{{i18n:JessieJulesTalkB}}$2\"/pause 1",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JessieJulesTalkC",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JessieJulesTalkC",
+			"Value": "speak Juliet \"{{i18n:JessieJulesTalkC}}$1\"/pause 1",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JessieJulesTalkC1",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JessieJulesTalkC1",
+			"Value": "speak Juliet \"{{i18n:JessieJulesTalkC1}}$1\"/pause 1",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JessieJulesTalkD",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JessieJulesTalkD",
+			"Value": "speak Jessie \"{{i18n:JessieJulesTalkD.1}}$1\"/animate Juliet true true 100 20 20 20/speak Juliet \"{{i18n:JessieJulesTalkD.2}}$2\"/pause 1",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "JessieJulesTalkE",
+			"Value": "pause 1"
+		},
+		
+		{
+			"Name": "JessieJulesTalkE",
+			"Value": "speak Jessie \"{{i18n:JessieJulesTalkE.1}}\"/speak Juliet \"{{i18n:JessieJulesTalkE.2}}\"/stopAnimation Juliet/showFrame Juliet 20 true/pause 1",
+			"When": {
+				"HasMod": "LemurKat.JulietHouse.NPC"
+			}
+		},
+		
+		{
+			"Name": "DaenaTalk1",
+			"Value": "pause 1"
+		},
+		
+		
+		{
+			"Name": "DaenaTalk1",
+			"Value": "textAboveHead Daena \"{{i18n:DaenaTalk1}}\"",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "DaenaTalk2",
+			"Value": "pause 1"
+		},
+		
+		
+		{
+			"Name": "DaenaTalk2",
+			"Value": "pause 500/textAboveHead Daena \"{{i18n:DaenaTalk2}}\"",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "DaenaTalk3",
+			"Value": "pause 1"
+		},
+		
+		
+		{
+			"Name": "DaenaTalk3",
+			"Value": "pause 600/textAboveHead Daena \"{{i18n:DaenaTalk3}}\"",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "DaenaTalk4",
+			"Value": "pause 1"
+		},
+		
+		
+		{
+			"Name": "DaenaTalk4",
+			"Value": "pause 800/textAboveHead Daena \"{{i18n:DaenaTalk4}}\"",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+		{
+			"Name": "NaufalTalk1",
+			"Value": "pause 1"
+		},
+		
+		
+		{
+			"Name": "NaufalTalk1",
+			"Value": "textAboveHead TDITNaufal \"{{i18n:NaufalTalk1}}\"",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+				{
+			"Name": "NaufalTalk2",
+			"Value": "pause 1"
+		},
+		
+		
+		{
+			"Name": "NaufalTalk2",
+			"Value": "pause 300/textAboveHead TDITNaufal \"{{i18n:NaufalTalk2}}\"",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+		
+				{
+			"Name": "NaufalTalk4",
+			"Value": "pause 1"
+		},
+		
+		
+		{
+			"Name": "NaufalTalk4",
+			"Value": "pause 900/textAboveHead TDITNaufal \"{{i18n:NaufalTalk4}}\"",
+			"When": {
+				"HasMod": "DolphINaF.VendorPortraits"
+			}
+		},
+	]
+}

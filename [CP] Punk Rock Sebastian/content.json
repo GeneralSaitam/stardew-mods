@@ -1,0 +1,193 @@
+{
+"Format": "2.5.3",
+"ConfigSchema": {
+    
+    "CleanShaven": {
+        "AllowValues": "true, false",
+        "Default": false,
+        "Description": "Turns Seb's 5 o'clock shadow on or off",
+        },
+    "EnablePortraits": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "Turns on portraits",
+        },
+    "EnableSprites": {
+        "AllowValues": "true, false",
+        "Default": true,
+        "Description": "Turns on sprites",
+        },
+},
+
+"DynamicTokens": [
+    { "Name": "Base", "Value": "Shadow", },
+    { "Name": "Base", "Value": "Clean", "When": { "CleanShaven": "true", } },
+    
+    //Indoor/outdoor stuff
+    {
+        "Name": "IndoorOutdoor", "Value": ""
+    },
+    {
+        "Name": "IndoorOutdoor",
+        "Value": "_Indoors",
+        "When":
+        {
+            "IsOutdoors": "false", //checks if the player is outdoors, not the character
+            "Season": "winter",
+        }
+    },
+    
+    //Festivals
+    {
+        "Name": "FestivalOutfit",
+        "Value": "FlowerDance",
+        "When":
+        {
+            "DayEvent": "Flower Dance",
+            "LocationName": "Forest, Temp"
+        }
+    },
+    {
+        "Name": "FestivalOutfit",
+        "Value": "SpiritsEve",
+        "When":
+        {
+            "DayEvent": "Spirit's Eve",
+            "LocationName": "Town, Temp"
+        }
+    },
+    
+    //Randomization
+    {
+        "Name": "MixIt",
+        "Value": "",
+    },
+    {
+        "Name": "MixIt",
+        "Value": "{{Random:_1,_2}}",
+        "When":
+        {
+            "Season": "spring, summer",
+        }
+    },
+],
+	
+"Changes": [
+
+//Configuration translations
+{
+    "Action": "Load",
+    "Target": "{{ModId}}/i18n",
+    "FromFile": "i18n/default.json"
+},
+    
+//Portraits
+{
+    "LogName": "punkSeb Portraits Seasonal",
+    "Action": "EditImage",
+    "Target": "Portraits/Sebastian, Portraits/Sebastian_Winter",
+    "FromFile": "assets/{{Base}}/Portrait/Sebastian_{{season}}{{IndoorOutdoor}}{{MixIt}}.png",
+    "Priority": "Late",
+    "When":
+    {
+        "HasFile:{{FromFile}}": true,
+        "EnablePortraits": "true"
+    },
+    "Update": "OnLocationChange"
+},
+{
+    "LogName": "punkSeb Portraits Beach",
+    "Action": "EditImage",
+    "Target": "Portraits/Sebastian_Beach",
+    "FromFile": "assets/{{Base}}/Portrait/Sebastian_Beach.png",
+    "Priority": "Late",
+    "When":
+    {
+        "HasFile:{{FromFile}}": true,
+        "EnablePortraits": "true"
+    },
+},
+{
+    "LogName": "punkSeb Portraits Festivals",
+    "Action": "EditImage",
+    "Target": "Portraits/Sebastian, Portraits/Sebastian_Winter",
+    "FromFile": "assets/{{Base}}/Portrait/Sebastian_{{FestivalOutfit}}.png",
+    "Priority": "Late",
+    "When":
+    {
+        "HasFile:{{FromFile}}": true,
+        "EnablePortraits": "true"
+    },
+    "Update": "OnLocationChange"
+},
+
+//Sprites
+{
+    "LogName": "punkSeb Sprites Seasonal",
+    "Action": "EditImage",
+    "Target": "Characters/Sebastian, Characters/Sebastian_Winter",
+    "FromFile": "assets/{{Base}}/Character/Sebastian_{{season}}{{IndoorOutdoor}}{{MixIt}}.png",
+    "Priority": "Late",
+    "When":
+    {
+        "HasFile:{{FromFile}}": true,
+        "EnableSprites": "true"
+    },
+    "Update": "OnLocationChange"
+},
+{
+    "LogName": "punkSeb Sprites Beach",
+    "Action": "EditImage",
+    "Target": "Characters/Sebastian_Beach",
+    "FromFile": "assets/{{Base}}/Character/Sebastian_Beach.png",
+    "Priority": "Late",
+    "When":
+    {
+        "HasFile:{{FromFile}}": true,
+        "EnableSprites": "true"
+    },
+},
+{
+    "LogName": "punkSeb Sprites Festivals",
+    "Action": "EditImage",
+    "Target": "Characters/Sebastian, Characters/Sebastian_Winter",
+    "FromFile": "assets/{{Base}}/Character/Sebastian_{{FestivalOutfit}}.png",
+    "Priority": "Late",
+    "When":
+    {
+        "HasFile:{{FromFile}}": true,
+        "EnableSprites": "true"
+    },
+    "Update": "OnLocationChange"
+},
+
+//Cursors changes for Seb's motorcyle event
+{
+    "LogName": "punkSeb Motorcycle",
+    "Action": "EditImage",
+    "Target": "LooseSprites/Cursors, LooseSprites/Cursors.{{language}}",
+    "FromFile": "assets/Seb_Motorcycle.png",
+    "Priority": "Late",
+    "ToArea": { "X": 405, "Y": 1854, "Width": 48, "Height": 32 },
+    "When": {
+        "HasFile:{{FromFile}}": true,
+        "EnableSprites": "true"
+    }
+},
+
+//Spouse portrait painting changes
+{
+    "LogName": "punkSeb Spouse Portait",
+    "Action": "EditImage",
+    "Target": "Tilesheets/junimo_furniture",
+    "FromFile": "assets/{{Base}}/Sebastian_Portrait.png",
+    "PatchMode": "Replace",
+    "ToArea": { "X": "96", "Y": "304", "Width": 32, "Height": 32},
+    "When": {
+        "HasFile:{{FromFile}}": true,
+        "EnablePortraits" : "true",
+    }
+},
+
+]
+}

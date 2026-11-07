@@ -1,0 +1,72 @@
+{
+"Format": "2.4.3",
+
+	"ConfigSchema": {
+
+		"Clint": {"AllowValues":"true, false", "Default" : "true"},
+		"Demetrius": {"AllowValues":"true, false", "Default" : "true"},
+		"Gus":{"AllowValues":"true, false", "Default" : "true"},
+		"Linus": {"AllowValues":"true, false", "Default" : "true"},
+		"Marnie":{"AllowValues": "true, false", "Default" : "true"},
+		"Pam": {"AllowValues":"true, false", "Default" : "true"},
+		"Willy": {"AllowValues":"true, false", "Default" : "true"},	
+		"Wizard":{"AllowValues":"true, false", "Default" : "true"},	
+		"Krobus": {"AllowValues":"true, false", "Default" : "true"},	
+		"Dwarf": {"AllowValues":"true, false", "Default" : "true"},	
+	},
+	
+
+	"Changes": 
+	 [
+	 {
+		"Action": "Include",
+		"FromFile": "Dialogue/Clint.json",
+		"When": {"Clint": "true"},
+		},
+		{
+		"Action": "Include",
+		"FromFile": "Dialogue/Demetrius.json",
+		"When": {"Demetrius": "true"},
+		},
+		{
+		"Action": "Include",
+		"FromFile": "Dialogue/Gus.json",
+		"When": {"Gus": "true"},
+		},
+		 {
+		"Action": "Include",
+		"FromFile": "Dialogue/Linus.json",
+		"When": {"Linus": "true"},
+		},
+		{
+		"Action": "Include",
+		"FromFile": "Dialogue/Marnie.json",
+		"When": {"Marnie": "true"},
+		},
+		{
+		"Action": "Include",
+		"FromFile": "Dialogue/Pam.json",
+		"When": {"Pam": "true"},
+		},
+		 {
+		"Action": "Include",
+		"FromFile": "Dialogue/Willy.json",
+		"When": {"Willy": "true"},
+		},
+		{
+		"Action": "Include",
+		"FromFile": "Dialogue/Wizard.json",
+		"When": {"Wizard": "true"},
+		},
+		{
+		"Action": "Include",
+		"FromFile": "Dialogue/Krobus.json",
+		"When": {"Krobus": "true"},
+		},
+		{
+		"Action": "Include",
+		"FromFile": "Dialogue/Dwarf.json",
+		"When": {"Dwarf": "true"},
+		},
+	 ]
+}

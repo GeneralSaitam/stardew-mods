@@ -1,0 +1,126 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "NewNPCWilford_SweetCarrot_Seeds": {
+                    "Seasons": [
+                        "spring",
+	                    "summer"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        1,
+                        2,
+                        1
+                    ],
+                    "RegrowDays": -1,
+                    "IsRaised": false,
+                    "HarvestItemId": "NewNPCWilford_SweetCarrot",
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 2,
+                    "HarvestMaxIncreasePerFarmingLevel": 0,
+                    "ExtraHarvestChance": 0.05,
+                    "HarvestMethod": "Grab",
+                    "TintColors": [],
+                    "Texture": "Mods\\Fernandtea.NewNPCWilford\\Sweet Carrot Crop WL",
+                    "SpriteIndex": 0,
+                    "CustomFields": {}
+                },
+                "NewNPCWilford_Vanilla_Seeds": {
+                    "Seasons": [
+	                    "summer"
+                    ],
+                    "DaysInPhase": [
+                        1,
+                        3,
+                        3,
+                        4,
+						2
+                    ],
+                    "RegrowDays": 2,
+                    "IsRaised": true,
+                    "HarvestItemId": "NewNPCWilford_VanillaBean",
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 3,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.2,
+                    "ExtraHarvestChance": 0.05,
+                    "HarvestMethod": "Grab",
+                    "TintColors": [],
+                    "Texture": "Mods\\Fernandtea.NewNPCWilford\\Vanilla Crop WL",
+                    "SpriteIndex": 0,
+                    "CustomFields": {}
+                },
+			 "NewNPCWilford_Lavender_Seeds": {
+                    "Seasons": [
+	                    "spring"
+                    ],
+                    "DaysInPhase": [
+                        1,
+                        2,
+                        3,
+                        2
+                    ],
+                    "RegrowDays": -1,
+                    "IsRaised": false,
+                    "HarvestItemId": "NewNPCWilford_LavenderTwigs",
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 3,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.5,
+                    "ExtraHarvestChance": 0.05,
+                    "HarvestMethod": "Scythe",
+                    "TintColors": [],
+                    "Texture": "Mods\\Fernandtea.NewNPCWilford\\Lavender Crop WL",
+                    "SpriteIndex": 0,
+                    "CustomFields": {}
+                },
+				"NewNPCWilford_SandstormLily_Seeds": {
+                    "Seasons": [
+	                    "summer"
+                    ],
+                    "DaysInPhase": [
+                        1,
+                        2,
+                        2,
+                        2,
+						1
+                    ],
+                    "RegrowDays": -1,
+                    "IsRaised": false,
+                    "HarvestItemId": "NewNPCWilford_SandstormLily",
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.5,
+                    "ExtraHarvestChance": 0.05,
+                    "HarvestMethod": "Grab",
+                    "TintColors": [],
+                    "Texture": "Mods\\Fernandtea.NewNPCWilford\\Sandstorm Lily Crop WL",
+                    "SpriteIndex": 0,
+                    "CustomFields": {}
+                }
+            }
+		},
+        {
+            "Action": "Load",
+            "Target": "Mods/Fernandtea.NewNPCWilford/Sweet Carrot Crop WL",
+            "FromFile": "assets/img/crops/Sweet Carrot Crop.png",
+        },
+		{
+            "Action": "Load",
+            "Target": "Mods/Fernandtea.NewNPCWilford/Vanilla Crop WL",
+            "FromFile": "assets/img/crops/Vanilla Crop.png",
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/Fernandtea.NewNPCWilford/Lavender Crop WL",
+            "FromFile": "assets/img/crops/Lavender Crop.png",
+        },
+		{
+            "Action": "Load",
+            "Target": "Mods/Fernandtea.NewNPCWilford/Sandstorm Lily Crop WL",
+            "FromFile": "assets/img/crops/Sandstorm Lily Crop.png",
+        }
+		
+    ]
+}

@@ -1,0 +1,588 @@
+{
+  "Format": "1.6",
+
+
+  "ConfigSchema": {
+         "Skin Tone": {"AllowValues": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24",
+         "Default": "1"},
+
+         "Add Leaf": {"AllowValues": "True, False",
+         "Default": "False"}
+         },
+
+  "Changes": [
+
+         // Leaf
+          {
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/pants",
+          "FromFile": "assets/leaf.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 192, "Height": 688 },
+          "ToArea": { "X": 768, "Y": 688, "Width": 192, "Height": 688 },
+                 "When": {
+                 "Add Leaf": "True"
+                 }
+       },
+           {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/shirts.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 8, "Y": 416, "Width": 8, "Height": 32 }
+       },
+
+// 1
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f1.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "1"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m1.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "1"
+                 }
+       },
+// 2
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f2.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "2"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m2.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "2"
+                 }
+       },
+// 3
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f3.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "3"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m3.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "3"
+                 }
+       },
+// 4
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f4.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "4"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m4.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "4"
+                 }
+       },
+// 5
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f5.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "5"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m5.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "5"
+                 }
+       },
+// 6
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f6.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "6"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m6.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "6"
+                 }
+       },
+// 7
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f7.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "7"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m7.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "7"
+                 }
+       },
+// 8
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f8.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "8"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m8.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "8"
+                 }
+       },
+// 9
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f9.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "9"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m9.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "9"
+                 }
+       },
+// 10
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f10.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "10"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m10.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "10"
+                 }
+       },
+// 11
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f11.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "11"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m11.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "11"
+                 }
+       },
+// 12
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f12.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "12"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m12.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "12"
+                 }
+       },
+// 13
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f13.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "13"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m13.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "13"
+                 }
+       },
+// 14
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f14.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "14"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m14.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "14"
+                 }
+       },
+// 15
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f15.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "15"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m15.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "15"
+                 }
+       },
+// 16
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f16.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "16"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m16.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "16"
+                 }
+       },
+// 17
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f17.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "17"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m17.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "17"
+                 }
+       },
+// 18
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f18.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "18"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m18.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "18"
+                 }
+       },
+// 19
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f19.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "19"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m19.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "19"
+                 }
+       },
+// 20
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f20.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "20"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m20.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "20"
+                 }
+       },
+// 21
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f21.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "21"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m21.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "21"
+                 }
+       },
+// 22
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f22.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "22"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m22.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "22"
+                 }
+       },
+// 23
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f23.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "23"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m23.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "23"
+                 }
+       },
+// 24
+          { 
+         "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/f24.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 72, "Y": 64, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "24"
+                 }
+       },
+            {
+          "Action": "EditImage",
+          "Target": "Characters/Farmer/shirts",
+          "FromFile": "assets/shirts/m24.png",
+          "PatchMode":  "Replace",
+          "FromArea": { "X": 0, "Y": 0, "Width": 8, "Height": 32 },
+          "ToArea": { "X": 136, "Y": 416, "Width": 8, "Height": 32 },
+                 "When": {
+                 "Skin Tone": "24"
+                 }
+       }
+    ]
+}

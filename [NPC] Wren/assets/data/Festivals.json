@@ -1,0 +1,386 @@
+{
+	"Changes": 
+    [
+		{	
+			"LogName": "Egg Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "WrenSong 61 71 right",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "WrenSong 61 71 right",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		{
+			"LogName": "Egg Festival - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.spring13}}",
+			},
+			
+		},
+		{	
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "WrenSong 58 35 left",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Luau - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.summer11}}",
+			},
+		},
+		{	
+			"LogName": "Luau - dialogue - Spanner variation",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"When": { "HasMod: |contains=Arknir.Jonghyuk": true,
+			"HasSeenEvent: anyPlayer |contains=SpannerIntroConclusion": true },
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.summer11.Spanner}}",
+			},
+		},
+		{	
+			"LogName": "Dance of the Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations":
+			[
+				//SetUp - done
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+					"Value": "WrenSong 57 29 left",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "set-up{{FestivalYear}}", 5],
+					"Value": "/animate WrenSong false true 200 40 41 42 43",
+				},
+				//MainEvent - done
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+					"Value": "WrenSong 57 29 left",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Dance of the Moonlight Jellies - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.summer28}}",
+			},
+		},
+		{	
+			"LogName": "Stardew Valley Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+			[
+				//SetUp 
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+					"Value": "WrenSong 65 26 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Stardew Valley Fair - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.fall16}}",
+			},
+		},
+		{	
+			"LogName": "Spirit's Eve",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"Target": "Data/Festivals/fall27",
+			"TextOperations":
+			[
+				//SetUp - done
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+					"Value": "WrenSong 25 53 right",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Spirit's Eve - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.fall27}}",
+			},
+		},
+		{	
+			"LogName": "Spirit's Eve - dialogue (RSV variant)",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"When": { "HasMod: |contains=FRafseazz.RSVSeasonalOutfits": true, 
+					"Query: {{Year}} % 2 = 1": false },
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.fall27.RSV}}",
+			},
+		},
+		{	
+			"LogName": "Spirit's Eve - dialogue (Stray Catfe variant)",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"When": { "HasMod: |contains=Wizadroid.StrayCatfeSeasonalOutfits": true, },
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.fall27.catfe}}",
+			},
+		},
+		{	
+			"LogName": "Festival of Ice",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"Target": "Data/Festivals/winter8",
+			"TextOperations":
+			[
+				//SetUp - done
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+					"Value": "WrenSong 65 19 right",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "set-up{{FestivalYear}}", 5],
+					"Value": "/animate WrenSong false true 100 24 24 25 26 27 25 26 27 25 26 27 27 27 27 24",
+				},
+				//MainEvent - done
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "WrenSong 65 19 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Festival of Ice - curse you SVE", //but thank you Wiz and Ivy - if this breaks a third time I ain't fuckin fixin it
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"Target": "Data/Festivals/winter8",
+			"TextOperations":
+			[
+				//SetUp - done
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+					"Value": "WrenSong 65 17 right",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "set-up{{FestivalYear}}", 5],
+					"Value": "/animate WrenSong false true 100 24 24 25 26 27 25 26 27 25 26 27 27 27 27 24",
+				},
+				//MainEvent - done
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+					"Value": "WrenSong 64 42 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Festival of Ice - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.winter8}}",
+			"Robin": "{{i18n:tiakall.wren.winter8.Robin}}",},
+		},
+		{	
+			"LogName": "Feast of the Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+			[
+				//SetUp 
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+					"Value": "WrenSong 62 70 left",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Feast of the Winter Star - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.winter25}}",
+			},
+		},
+		{	
+			"LogName": "Feast of the Winter Star Solstice Compat",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"When": { "HasMod: |contains=Airyn.CPSolsticeWinterStar": true},
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.winter25.solstice}}", },
+		},
+		
+		{	
+			//Ridgeside has two exclusive festivals and plenty of room!
+			"LogName": "Ridgeside Gathering",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/Fall20",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+					"Value": "WrenSong {{RSVGatheringPos}}",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Ridgeside Gathering - Dialogue",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/fall20",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.fall20.RSV}}",
+			},
+		},
+		{	
+			"LogName": "Ridgeside Gathering - Dialogue",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP",
+				"HasSeenEvent: anyPlayer |contains=tiakall.wren.H4": true},
+			"Target": "Data/Festivals/fall20",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.fall20.RSV.enby}}",
+			},
+		},
+		{	
+			"LogName": "Ember of Resolutions",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/winter28",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+					"Value": "WrenSong 51 43 left",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+					"Value": "WrenSong 51 43 left",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Ember of Resolutions - Dialogue",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/winter28",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.winter28.RSV}}",
+			},
+		},
+		{	
+			//Fireworks Festival
+			"LogName": "Fireworks Festival",
+			"Action": "EditData",
+			"When": { "HasMod":"violetlizabet.CP.FireworksFestival" },
+			"Target": "Data/Festivals/summer20",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "WrenSong 43 22 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Fireworks Festival - Dialogue",
+			"Action": "EditData",
+			"When": { "HasMod":"violetlizabet.CP.FireworksFestival" },
+			"Target": "Data/Festivals/summer20",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.summer20.fireworks}}",
+			},
+		},
+		
+		{	
+			"LogName": "Ferngill Fashion Festival",
+			"Action": "EditData",
+			"When": { "HasMod":"UNA.FF.CP" },
+			"Target": "Data/Festivals/spring19",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "WrenSong 51 28 right", 
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Ferngill Fashion Festival - Dialogue",
+			"Action": "EditData",
+			"When": { "HasMod":"UNA.FF.CP" },
+			"Target": "Data/Festivals/spring19",
+			"Entries": 
+			{ "WrenSong": "{{i18n:tiakall.wren.spring19.FFF}}",
+			},
+		},
+	]
+}										
+

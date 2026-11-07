@@ -1,0 +1,44 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/TriggerActions",
+            "Entries": 
+            {
+                "Miihau.HaleyEE.TriggerActoin.1":{
+                    "Id": "Miihau.HaleyEE.TriggerActoin.1",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Haley 1500, PLAYER_HAS_SEEN_EVENT Current 17674005",
+                    "HostOnly": false,
+                    "Action": "AddMail Current haleyStylishShowInvite",
+                    "Actions": null,
+                    "CustomFields": null,
+                    "MarkActionApplied": true
+                  },
+            
+            
+                "Miihau.HaleyEE.TriggerActoin.2":{
+                    "Id": "Miihau.HaleyEE.TriggerActoin.2",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Haley 2000, PLAYER_HAS_SEEN_EVENT Current 17674007",
+                    "HostOnly": false,
+                    "Action": "AddMail Current haleyBeachCleanUp",
+                    "Actions": null,
+                    "CustomFields": null,
+                    "MarkActionApplied": true
+                  },
+
+                  "Miihau.HaleyEE.TriggerActoin.3":{
+                    "Id": "Miihau.HaleyEE.TriggerActoin.3",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Haley 2500, PLAYER_HAS_SEEN_EVENT Current 17674009",
+                    "HostOnly": false,
+                    "Action": "AddMail Current haley10HeartInvite",
+                    "Actions": null,
+                    "CustomFields": null,
+                    "MarkActionApplied": true
+                  },
+            },
+        },
+    ]
+}

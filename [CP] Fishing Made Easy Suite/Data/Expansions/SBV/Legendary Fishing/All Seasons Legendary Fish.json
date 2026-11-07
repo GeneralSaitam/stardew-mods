@@ -1,0 +1,41 @@
+{
+  "Changes": [
+    {
+      "LogName": "SBV - All Seasons Legendary Fish Angler Jr",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_SBV_SecretForest2",
+        "Fish"
+      ],
+      "Fields": {
+        "skellady.SBVCP_S2AnglerJr": {
+          "Season": null,
+          "Condition": null
+        }
+      },
+      "When": {
+        "All Seasons Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "SBV - All Seasons Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "skellady.SBVCP_AnglerJr": {
+          "Season": null,
+          "Condition": null
+        }
+      },
+      "When": {
+        "All Seasons Legendary Fish": true,
+        "Legendary Fish On Farm": true
+      }
+    }
+  ]
+}

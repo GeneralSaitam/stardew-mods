@@ -1,0 +1,22 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fishable Prismatic Shards Spawn Rate",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Default",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)74": {
+          "Chance": "{{PrismaticSpawnRate}}"
+        }
+      },
+      "When": {
+        "Fishable Prismatic Shards (REQ)": true,
+        "Prismatic Shard Spawn Rate": "1% Chance, 2% Chance, 3% Chance, 4% Chance, 5% Chance, 6% Chance, 7% Chance, 8% Chance, 9% Chance, 10% Chance, 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance"
+      }
+    }
+  ]
+}

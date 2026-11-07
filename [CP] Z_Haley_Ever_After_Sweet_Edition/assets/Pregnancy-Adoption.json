@@ -1,0 +1,307 @@
+{
+    "Changes": [
+    {
+        "LogName": "Pregnancy Dialogue First Child",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueHaley",
+        "Priority": "Late + 1",
+        "When": {
+            "Pregnant": "Haley",
+            "Query: {{Count:{{ChildNames}}}} = 0": true
+        },
+        "Entries":
+        {
+            "Indoor_Day_0": "{{i18n: Haley.firstpregnancy.id.{{Random: 1, 2, 3, 4, 5, 6, 35}}}}",
+            "Indoor_Day_1": "{{i18n: Haley.firstpregnancy.id.{{Random: 7, 8, 9, 10, 11, 12, 36}}}}",
+            "Indoor_Day_2": "{{i18n: Haley.firstpregnancy.id.{{Random: 13, 14, 15, 16, 17}}}}",
+            "Indoor_Day_3": "{{i18n: Haley.firstpregnancy.id.{{Random: 19, 20, 21, 22, 23}}}}",
+            "Indoor_Day_4": "{{i18n: Haley.firstpregnancy.id.{{Random: 25, 26, 27, 28, 29}}}}",
+            "Indoor_Day_Haley": "{{i18n: Haley.firstpregnancy.id.{{Random: 18, 24, 30, 31, 32, 33, 34}}}}",
+            "Rainy_Day_0": "{{i18n: Haley.firstpregnancy.rainyday.{{Random: 1, 12}}}}",
+            "Rainy_Day_1": "{{i18n: Haley.firstpregnancy.rainyday.{{Random: 2, 11}}}}",
+            "Rainy_Day_2": "{{i18n: Haley.firstpregnancy.rainyday.{{Random: 3, 10}}}}",
+            "Rainy_Day_3": "{{i18n: Haley.firstpregnancy.rainyday.{{Random: 4, 9}}}}",
+            "Rainy_Day_4": "{{i18n: Haley.firstpregnancy.rainyday.{{Random: 5, 8, 13}}}}",
+            "Rainy_Day_Haley": "{{i18n: Haley.firstpregnancy.rainyday.{{Random: 6, 7}}}}",
+            "funLeave_Haley": "{{i18n: Haley.firstpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "spouseRoom_Haley": "{{i18n: Haley.firstpregnancy.sr.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}}}}",
+            "patio_Haley": "{{i18n: Haley.firstpregnancy.patio.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}}}}",
+            "Indoor_Night_0": "{{i18n: Haley.firstpregnancy.in.{{Random: 1, 2, 3, 4, 5, 6, 40}}}}",
+            "Indoor_Night_1": "{{i18n: Haley.firstpregnancy.in.{{Random: 7, 8, 9, 10, 11, 12}}}}",
+            "Indoor_Night_2": "{{i18n: Haley.firstpregnancy.in.{{Random: 13, 14, 15, 16, 17, 18, 36}}}}",
+            "Indoor_Night_3": "{{i18n: Haley.firstpregnancy.in.{{Random: 19, 20, 21, 22, 23, 24, 37}}}}",
+            "Indoor_Night_4": "{{i18n: Haley.firstpregnancy.in.{{Random: 25, 26, 27, 28, 29, 30, 38}}}}",
+            "Indoor_Night_Haley": "{{i18n: Haley.firstpregnancy.in.{{Random: 31, 32, 33, 34, 35, 39}}}}",
+            "spring_1": "{{i18n: Haley.firstpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "spring_8": "{{i18n: Haley.firstpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "spring_15": "{{i18n: Haley.firstpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "summer_1": "{{i18n: Haley.firstpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "summer_8": "{{i18n: Haley.firstpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "summer_15": "{{i18n: Haley.firstpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "fall_1": "{{i18n: Haley.firstpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "fall_8": "{{i18n: Haley.firstpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "fall_15": "{{i18n: Haley.firstpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "winter_1": "{{i18n: Haley.firstpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}"
+        }
+    },
+    {
+        "LogName": "Pregnancy Dialogue Second Child",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueHaley",
+        "Priority": "Late + 1",
+        "When": {
+            "Pregnant": "Haley",
+            "Query: {{Count:{{ChildNames}}}} > 0": true
+        },
+        "Entries":
+        {
+            "Indoor_Day_0": "{{i18n: Haley.secondpregnancy.id.{{Random: 1, 2, 3, 4, 5, 6}}}}",
+            "Indoor_Day_1": "{{i18n: Haley.secondpregnancy.id.{{Random: 7, 8, 9, 10, 11, 12}}}}",
+            "Indoor_Day_2": "{{i18n: Haley.secondpregnancy.id.{{Random: 13, 14, 15, 16, 17}}}}",
+            "Indoor_Day_3": "{{i18n: Haley.secondpregnancy.id.{{Random: 19, 20, 21, 22, 23}}}}",
+            "Indoor_Day_4": "{{i18n: Haley.secondpregnancy.id.{{Random: 25, 26, 27, 28, 29, 34}}}}",
+            "Indoor_Day_Haley": "{{i18n: Haley.secondpregnancy.id.{{Random: 18, 24, 30, 31, 32, 33}}}}",
+            "Rainy_Day_0": "{{i18n: Haley.secondpregnancy.rainyday.{{Random: 1, 12}}}}",
+            "Rainy_Day_1": "{{i18n: Haley.secondpregnancy.rainyday.{{Random: 2, 11}}}}",
+            "Rainy_Day_2": "{{i18n: Haley.secondpregnancy.rainyday.{{Random: 3, 10}}}}",
+            "Rainy_Day_3": "{{i18n: Haley.secondpregnancy.rainyday.{{Random: 4, 9}}}}",
+            "Rainy_Day_4": "{{i18n: Haley.secondpregnancy.rainyday.{{Random: 5, 8, 13}}}}",
+            "Rainy_Day_Haley": "{{i18n: Haley.secondpregnancy.rainyday.{{Random: 6, 7, 14}}}}",
+            "funLeave_Haley": "{{i18n: Haley.secondpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22}}}}",
+            "spouseRoom_Haley": "{{i18n: Haley.secondpregnancy.sr.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17}}}}",
+            "patio_Haley": "{{i18n: Haley.secondpregnancy.patio.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}}}}",
+            "Indoor_Night_0": "{{i18n: Haley.secondpregnancy.in.{{Random: 1, 2, 3, 4, 5, 6}}}}",
+            "Indoor_Night_1": "{{i18n: Haley.secondpregnancy.in.{{Random: 7, 8, 9, 10, 11, 12, 37}}}}",
+            "Indoor_Night_2": "{{i18n: Haley.secondpregnancy.in.{{Random: 13, 14, 15, 16, 17, 18}}}}",
+            "Indoor_Night_3": "{{i18n: Haley.secondpregnancy.in.{{Random: 19, 20, 21, 22, 23, 24}}}}",
+            "Indoor_Night_4": "{{i18n: Haley.secondpregnancy.in.{{Random: 25, 26, 27, 28, 29, 30}}}}",
+            "Indoor_Night_Haley": "{{i18n: Haley.secondpregnancy.in.{{Random: 30, 31, 32, 33, 34, 35, 36}}}}",
+            "spring_1": "{{i18n: Haley.secondpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "spring_8": "{{i18n: Haley.secondpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "spring_15": "{{i18n: Haley.secondpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "summer_1": "{{i18n: Haley.secondpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "summer_8": "{{i18n: Haley.secondpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "summer_15": "{{i18n: Haley.secondpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "fall_1": "{{i18n: Haley.secondpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "fall_8": "{{i18n: Haley.secondpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "fall_15": "{{i18n: Haley.secondpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}",
+            "winter_1": "{{i18n: Haley.secondpregnancy.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22}}}}"
+        }
+    },
+    {
+        "LogName": "Adoption Dialogue First Child",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueHaley",
+        "Priority": "Late + 1",
+        "When": {
+            "HavingChild": "Haley",
+            "Pregnant |contains=Haley": false,
+            "Query: {{Count:{{ChildNames}}}} = 0": true
+        },
+        "Entries":
+        {
+            "Indoor_Day_0": "{{i18n: Haley.firstadoption.id.{{Random: 1, 2, 3, 4, 5}}}}",
+            "Indoor_Day_1": "{{i18n: Haley.firstadoption.id.{{Random: 7, 8, 9, 10, 11}}}}",
+            "Indoor_Day_2": "{{i18n: Haley.firstadoption.id.{{Random: 13, 14, 15, 16, 17}}}}",
+            "Indoor_Day_3": "{{i18n: Haley.firstadoption.id.{{Random: 19, 20, 21, 22, 23}}}}",
+            "Indoor_Day_4": "{{i18n: Haley.firstadoption.id.{{Random: 25, 26, 27, 28, 29}}}}",
+            "Indoor_Day_Haley": "{{i18n: Haley.firstadoption.id.{{Random: 6, 12, 18, 24, 30}}}}",
+            "Rainy_Day_0": "{{i18n: Haley.firstadoption.rainyday.{{Random: 1, 12}}}}",
+            "Rainy_Day_1": "{{i18n: Haley.firstadoption.rainyday.{{Random: 2, 11}}}}",
+            "Rainy_Day_2": "{{i18n: Haley.firstadoption.rainyday.{{Random: 3, 10}}}}",
+            "Rainy_Day_3": "{{i18n: Haley.firstadoption.rainyday.{{Random: 4, 9}}}}",
+            "Rainy_Day_4": "{{i18n: Haley.firstadoption.rainyday.{{Random: 5, 8}}}}",
+            "Rainy_Day_Haley": "{{i18n: Haley.firstadoption.rainyday.{{Random: 6, 7}}}}",
+            "funLeave_Haley": "{{i18n: Haley.firstadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "spouseRoom_Haley": "{{i18n: Haley.firstadoption.sr.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "patio_Haley": "{{i18n: Haley.firstadoption.patio.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}}}}",
+            "Indoor_Night_0": "{{i18n: Haley.firstadoption.in.{{Random: 1, 2, 3, 4, 5}}}}",
+            "Indoor_Night_1": "{{i18n: Haley.firstadoption.in.{{Random: 7, 8, 9, 10, 11}}}}",
+            "Indoor_Night_2": "{{i18n: Haley.firstadoption.in.{{Random: 13, 14, 15, 16, 17}}}}",
+            "Indoor_Night_3": "{{i18n: Haley.firstadoption.in.{{Random: 19, 20, 21, 22, 23}}}}",
+            "Indoor_Night_4": "{{i18n: Haley.firstadoption.in.{{Random: 25, 26, 27, 28, 29}}}}",
+            "Indoor_Night_Haley": "{{i18n: Haley.firstadoption.in.{{Random: 6, 12, 18, 24, 30, 31}}}}",
+            "spring_1": "{{i18n: Haley.firstadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "spring_8": "{{i18n: Haley.firstadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "spring_15": "{{i18n: Haley.firstadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "summer_1": "{{i18n: Haley.firstadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "summer_8": "{{i18n: Haley.firstadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "summer_15": "{{i18n: Haley.firstadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "fall_1": "{{i18n: Haley.firstadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "fall_8": "{{i18n: Haley.firstadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "fall_15": "{{i18n: Haley.firstadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "winter_1": "{{i18n: Haley.firstadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}"
+        }
+    },
+    {
+        "LogName": "Adoption Dialogue Second Child",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueHaley",
+        "Priority": "Late + 1",
+        "When": {
+            "HavingChild": "Haley",
+            "Pregnant |contains=Haley": false,
+            "Query: {{Count:{{ChildNames}}}} > 0": true
+        },
+        "Entries":
+        {
+            "Indoor_Day_0": "{{i18n: Haley.secondadoption.id.{{Random: 1, 2, 3, 4, 5, 31}}}}",
+            "Indoor_Day_1": "{{i18n: Haley.secondadoption.id.{{Random: 7, 8, 9, 10, 11, 32}}}}",
+            "Indoor_Day_2": "{{i18n: Haley.secondadoption.id.{{Random: 13, 14, 15, 16, 17, 33}}}}",
+            "Indoor_Day_3": "{{i18n: Haley.secondadoption.id.{{Random: 19, 20, 21, 22, 23}}}}",
+            "Indoor_Day_4": "{{i18n: Haley.secondadoption.id.{{Random: 25, 26, 27, 28, 29}}}}",
+            "Indoor_Day_Haley": "{{i18n: Haley.secondadoption.id.{{Random: 6, 12, 18, 24, 30}}}}",
+            "Rainy_Day_0": "{{i18n: Haley.secondadoption.rainyday.{{Random: 1, 12}}}}",
+            "Rainy_Day_1": "{{i18n: Haley.secondadoption.rainyday.{{Random: 2, 11}}}}",
+            "Rainy_Day_2": "{{i18n: Haley.secondadoption.rainyday.{{Random: 3, 10}}}}",
+            "Rainy_Day_3": "{{i18n: Haley.secondadoption.rainyday.{{Random: 4, 9}}}}",
+            "Rainy_Day_4": "{{i18n: Haley.secondadoption.rainyday.{{Random: 5, 8, 13}}}}",
+            "Rainy_Day_Haley": "{{i18n: Haley.secondadoption.rainyday.{{Random: 6, 7, 14}}}}",
+            "funLeave_Haley": "{{i18n: Haley.secondadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "spouseRoom_Haley": "{{i18n: Haley.secondadoption.sr.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}}}}",
+            "patio_Haley": "{{i18n: Haley.secondadoption.patio.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}}}}",
+            "Indoor_Night_0": "{{i18n: Haley.secondadoption.in.{{Random: 1, 2, 3, 4, 5}}}}",
+            "Indoor_Night_1": "{{i18n: Haley.secondadoption.in.{{Random: 7, 8, 9, 10, 11, 32}}}}",
+            "Indoor_Night_2": "{{i18n: Haley.secondadoption.in.{{Random: 13, 14, 15, 16, 17}}}}",
+            "Indoor_Night_3": "{{i18n: Haley.secondadoption.in.{{Random: 19, 20, 21, 22, 23}}}}",
+            "Indoor_Night_4": "{{i18n: Haley.secondadoption.in.{{Random: 25, 26, 27, 28, 29}}}}",
+            "Indoor_Night_Haley": "{{i18n: Haley.secondadoption.in.{{Random: 6, 12, 18, 24, 30, 31}}}}",
+            "spring_1": "{{i18n: Haley.secondadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "spring_8": "{{i18n: Haley.secondadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "spring_15": "{{i18n: Haley.secondadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "summer_1": "{{i18n: Haley.secondadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "summer_8": "{{i18n: Haley.secondadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "summer_15": "{{i18n: Haley.secondadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "fall_1": "{{i18n: Haley.secondadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "fall_8": "{{i18n: Haley.secondadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "fall_15": "{{i18n: Haley.secondadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}",
+            "winter_1": "{{i18n: Haley.secondadoption.funleave.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}}}}"
+        }
+    },
+    {
+        "LogName": "StringsFromCSFiles - Haley Pregnancy",
+        "Action": "EditData",
+        "Target": "Strings/StringsFromCSFiles",
+        "Priority": "Late",
+        "When": {
+            "Relationship:Haley": "Married"
+        },
+        "Entries":
+        {
+            "NPC.cs.4444": "{{i18n: Haley.NPC4444.{{Random: 1, 2, 3, 4, 5, 6, 7, 8}}}}",
+            "NPC.cs.4445": "{{i18n: Haley.NPC4445.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}}}}"
+        }
+    },
+    {
+        "LogName": "Birth Messages - Female Farmer Haley Pregnancy",
+        "Action": "EditData",
+        "Target": "Strings/Events",
+        "When": {
+            "HaleyPregnancyFemaleFarmer": true,
+            "Relationship:Haley": "Married"
+        },
+        "Entries":
+        {
+            "BirthMessage_Adoption": "During the night, {{Spouse}} gave birth to a baby {0}.",
+            "BirthMessage_PlayerMother": "During the night, {{Spouse}} gave birth to a baby {0}.",
+            "BirthMessage_SpouseMother": "During the night, {1} gave birth to a baby {0}.",
+            "HaveBabyQuestion": "Should we have a baby, {0}?",
+            "HaveBabyQuestion_Adoption": "Should we have a baby, {0}?"
+        }
+    },
+    {
+        "LogName": "StringsFromCSFiles - Enable Female Farmer Haley Pregnancy",
+        "Action": "EditData",
+        "Target": "Strings/StringsFromCSFiles",
+        "When": {
+            "HaleyPregnancyFemaleFarmer": true,
+            "Relationship:Haley": "Married"
+        },
+        "Entries":
+        {
+            "NPC.cs.4440": "{{i18n: Haley.NPC4444.{{Random: 1, 2, 3, 4, 5, 6, 7, 8}}}}",
+            "NPC.cs.4441": "{{i18n: Haley.NPC4445.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}}}}",
+            "NPC.cs.4444": "{{i18n: Haley.NPC4444.{{Random: 1, 2, 3, 4, 5, 6, 7, 8}}}}",
+            "NPC.cs.4445": "{{i18n: Haley.NPC4445.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}}}}"
+        }
+    },
+    {
+        "LogName": "Metadata Change - Haley Pregnancy Female Farmer",
+        "Action": "EditData",
+        "Target": "Data/Characters",
+        "Priority": "Late + 2",
+        "TargetField": ["Haley"],
+        "When": {
+            "HaleyPregnancyFemaleFarmer": true
+        },
+        "Entries": {
+            "SpouseAdopts": "FALSE"
+        }
+    },
+    {
+        "LogName": "Bakery Tuesday Pregnancy Dialogue",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueHaley",
+        "Priority": "Late + 3",
+        "When": {
+            "HasMod": "kabulla.bakery",
+            "HasSeenEvent": "80801020",
+            "DayOfWeek": "Tuesday",
+            "Pregnant": "Haley"
+        },
+        "Entries":
+        {
+            "funLeave_Haley": "{{i18n: Haley.firstpregnancy.{{Random: bakery.1, bakery.2, bakery.3, bakery.4, bakery.5, bakery.6, bakery.7, bakery.8, bakery.9, bakery.10, id.2, id.5, id.6, id.14, id.21, id.23, id.27, id.29, id.34, in.9, in.11, in.17, in.27, in.35}}}}"
+        }
+    },
+    {
+        "LogName": "Bakery Friday Pregnancy Dialogue",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueHaley",
+        "Priority": "Late + 3",
+        "When": {
+            "HasMod": "kabulla.bakery",
+            "HasSeenEvent": "80801020",
+            "DayOfWeek": "Friday",
+            "Pregnant": "Haley"
+        },
+        "Entries":
+        {
+            "funLeave_Haley": "{{i18n: Haley.secondpregnancy.{{Random: bakery.1, bakery.2, bakery.3, bakery.4, bakery.5, bakery.6, bakery.7, bakery.8, bakery.9, id.1, id.3, id.4, id.18, id.19, id.22, id.26, id.27, id.32, in.1, in.5, in.7, in.21}}}}"
+        }
+    },
+    {
+        "LogName": "Bakery Tuesday Adoption Dialogue",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueHaley",
+        "Priority": "Late + 3",
+        "When": {
+            "HasMod": "kabulla.bakery",
+            "HasSeenEvent": "80801020",
+            "DayOfWeek": "Tuesday",
+            "HavingChild": "Haley",
+            "Pregnant |contains=Haley": false
+        },  
+        "Entries":
+        {
+            "funLeave_Haley": "{{i18n: Haley.firstadoption.{{Random: bakery.1, bakery.2, bakery.3, bakery.4, bakery.5, bakery.6, bakery.7, bakery.8, id.1, id.5, id.6, id.7, id.14, id.19, id.20, id.21, id.22, id.23, id.27, id.29, in.1, in.8, in.17, in.24}}}}"
+        }
+    },
+    {
+        "LogName": "Bakery Friday Adoption Dialogue",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueHaley",
+        "Priority": "Late + 3",
+        "When": {
+            "HasMod": "kabulla.bakery",
+            "HasSeenEvent": "80801020",
+            "DayOfWeek": "Friday",
+            "HavingChild": "Haley",
+            "Pregnant |contains=Haley": false
+        },
+        "Entries":
+        {
+            "funLeave_Haley": "{{i18n: Haley.secondadoption.{{Random: bakery.1, bakery.2, bakery.3, bakery.4, bakery.5, bakery.6, bakery.7, bakery.8, bakery.9, bakery.10, bakery.11, in.6, in.21, in.23, in.32, id.9, id.11, id.14, id.15, id.24, id.31}}}}"
+        }
+    }]
+}

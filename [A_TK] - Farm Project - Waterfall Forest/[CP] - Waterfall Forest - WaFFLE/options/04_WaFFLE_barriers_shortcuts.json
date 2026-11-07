@@ -1,0 +1,157 @@
+{
+    "Changes": [
+	  
+//	INVISIBLE BARRIERS
+
+//	//	PEN
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/WaFFLE_EX_Options_temp.tmx",
+			"FromArea": { "X": 26, "Y": 71, "Width": 4, "Height": 1 },
+			"ToArea": { "X": 3, "Y": 46, "Width": 4, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Animal_Pen_WaFFLE": "True",
+				"Animal_Pen_Size_WaFFLE": "1_Med, 2_Med, 1_Large",
+				"Use_Invisible_Barriers_WaFFLE": "True"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/WaFFLE_EX_Options_temp.tmx",
+			"FromArea": { "X": 36, "Y": 73, "Width": 4, "Height": 1 },
+			"ToArea": { "X": 10, "Y": 65, "Width": 4, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Animal_Pen_WaFFLE": "True",
+				"Animal_Pen_Size_WaFFLE": "2_Med, 1_Large",
+				"Use_Invisible_Barriers_WaFFLE": "True"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/WaFFLE_EX_Options_temp.tmx",
+			"FromArea": { "X": 22, "Y": 71, "Width": 1, "Height": 3 },
+			"ToArea": { "X": 18, "Y": 56, "Width": 1, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Animal_Pen_WaFFLE": "True",
+				"Animal_Pen_Size_WaFFLE": "1_Med, 2_Med",
+				"Use_Invisible_Barriers_WaFFLE": "True"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/WaFFLE_EX_Options_temp.tmx",
+			"FromArea": { "X": 26, "Y": 73, "Width": 4, "Height": 1 },
+			"ToArea": { "X": 29, "Y": 50, "Width": 4, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Animal_Pen_WaFFLE": "True",
+				"Animal_Pen_Size_WaFFLE": "2_Med, 1_Large",
+				"Use_Invisible_Barriers_WaFFLE": "True"
+			}
+		},	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/WaFFLE_EX_Options_temp.tmx",
+			"FromArea": { "X": 24, "Y": 71, "Width": 1, "Height": 3 },
+			"ToArea": { "X": 36, "Y": 54, "Width": 1, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Animal_Pen_WaFFLE": "True",
+				"Animal_Pen_Size_WaFFLE": "2_Med, 1_Large",
+				"Use_Invisible_Barriers_WaFFLE": "True"
+			}
+		},
+		
+//	SHORTCUTS OPTIONS
+
+//	//	SECRET WOODS
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/WaFFLE_EX_Options.tmx",
+			"FromArea": { "X": 19, "Y": 40, "Width": 1, "Height": 2 },
+			"ToArea": { "X": 4, "Y": 2, "Width": 1, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { "Secret_Woods_Shortcut_WaFFLE": "False" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/WaFFLE_EX_Options.tmx",
+			"FromArea": { "X": 16, "Y": 40, "Width": 2, "Height": 2 },
+			"ToArea": { "X": 3, "Y": 2, "Width": 2, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},		
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"AddWarps": [ "1 5 Woods 47 1" ],
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": "false",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"AddWarps": [ "47 -1 Farm 1 3" ],
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": "false",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"FromFile": "options/WaFFLE_EX_Options_temp.tmx",
+			"FromArea": { "X": 35, "Y": 67, "Width": 5, "Height": 3 },
+			"ToArea": { "X": 45, "Y": 0, "Width": 5, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": "false",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"FromFile": "options/WaFFLE_EX_Options_temp.tmx",
+			"FromArea": { "X": 37, "Y": 71, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 47, "Y": 3, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": "false",
+				"Secret_Woods_Shortcut_WaFFLE": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		}
+	]
+}		

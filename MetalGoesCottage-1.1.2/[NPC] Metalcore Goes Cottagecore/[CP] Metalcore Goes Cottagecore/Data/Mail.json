@@ -1,0 +1,48 @@
+{
+    "Changes": [
+        {
+            "LogName": "Custom Letters",
+            "Action": "Load",
+            "Target": "Mods/Squeaks.MGC.CP/LetterBackgrounds",
+            "FromFile": "Assets/Images/MGC_stationary.png"
+        },
+        {
+            "LogName": "Coffeehouse Letter - MEEP",
+            "Action": "Load",
+            "Target": "Mods/Squeaks.MGC.CP/CoffeehouseLetter",
+            "FromFile": "Assets/Images/CoffeehouseLetter.png"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Squeaks.MGC.CP_CCHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 15
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MEEP_Letter {{CoffeehouseMail}}",
+                        "MEEP_Letter_Type": "Mods/Squeaks.MGC.CP/CoffeehouseLetter"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "MGC Mail",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "CambriaGreenhouse": "{{i18n:Mail.Cambria.Greenhouse}}[letterbg Mods/Squeaks.MGC.CP/LetterBackgrounds 0][textcolor black][#]{{i18n:Mail.Cambria.Greenhouse.Title}}", //Cambria Greenhouse Unlock
+                "GabeLetter": "{{i18n:Mail.Gabriel.Misdelivered}}%item quest MGC.WrongLetter true %%[letterbg Mods/Squeaks.MGC.CP/LetterBackgrounds 2][textcolor black][#]{{i18n:Mail.Gabriel.Misdelivered.Title}}", //Gabe Misdelivered Mail
+                "HeirloomBouquetMail": "{{i18n:Mail.Livani.BouquetMail}}[letterbg Mods/Squeaks.MGC.CP/LetterBackgrounds 1][textcolor black][#]{{i18n:Mail.Livani.BouquetMail.Title}}", //Bouquet Unlock
+
+                "CambriaSoda": "{{i18n:Mail.Cambria.VoidMelonSoda}}%item cookingRecipe Squeaks.MGC.CP_VoidMelonSoda%%[letterbg Mods/Squeaks.MGC.CP/LetterBackgrounds 3][textcolor black][#]{{i18n:Mail.Cambria.VoidMelonSoda.Title}}}",
+                "CambriaCookies": "{{i18n:Mail.Cambria.StarMiasmaCookies}}%item cookingRecipe Squeaks.MGC.CP_StarMiasmaCookies%%[letterbg Mods/Squeaks.MGC.CP/LetterBackgrounds 3][textcolor black][#]{{i18n:Mail.Cambria.StarMiasmaCookies.Title}}",
+                "ElderLilySOQ": "{{i18n:Mail.Cambria.ElderLilySOQ}}%item specialOrder Otter.Cambria true%%[letterbg Mods/Squeaks.MGC.CP/LetterBackgrounds 0][textcolor black][#]{{i18n:Mail.Cambria.ElderLilySOQ.Title}}", //Cambria Special Order
+                "CambriaElderLily": "{{i18n:Mail.Cambria.ElderLily}}%item id (O)Squeaks.MGC.CP_ElderLilySeeds 8 %%[letterbg Mods/Squeaks.MGC.CP/LetterBackgrounds 0][textcolor black][#]{{i18n:Mail.Cambria.ElderLily.Title}}" //Cambria Special Order
+            }
+        }
+    ]
+}

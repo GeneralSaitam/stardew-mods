@@ -1,0 +1,34 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/TriggerActions",
+            "Entries": 
+            {
+                "Miihau.AbigailEE.TriggerActoin.1":{
+                    "Id": "Miihau.AbigailEE.TriggerActoin.1",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Abigail 2250, PLAYER_HAS_SEEN_EVENT Current 18657008",
+                    "HostOnly": false,
+                    "Action": "AddMail Current AbigailCampingInvite",
+                    "Actions": null,
+                    "CustomFields": null,
+                    "MarkActionApplied": true
+                  },
+            
+            
+                "Miihau.AbigailEE.TriggerActoin.2":{
+                    "Id": "Miihau.AbigailEE.TriggerActoin.2",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Abigail 2500, PLAYER_HAS_SEEN_EVENT Current 18657009",
+                    "HostOnly": false,
+                    "Action": "AddMail Current Abigail10HInvite",
+                    "Actions": null,
+                    "CustomFields": null,
+                    "MarkActionApplied": true
+                  },
+
+            },
+        },
+    ]
+}

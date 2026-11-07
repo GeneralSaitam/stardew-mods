@@ -1,0 +1,126 @@
+{
+	"Format": "2.7.2",
+	"ConfigSchema": {
+
+		"Mini-ShippingBin Style": {
+			"AllowValues": "Wood01, Wood02, Metal01, Metal02, Stone01, Stone02",
+			"Default": "Wood01"
+		},
+		"Wood Color": {
+			"AllowValues": "Bamboo, Birch, Black, Classic, Cursed, Mahogany, Oak, Pine, SeaWood, Swamp, Walnut, White",
+			"Default": "Oak"
+		},
+		"Metal and Stone Color": {
+			"AllowValues": "Classic, NonClassic, Light, Medium, Dark",
+			"Default": "Classic"
+		},
+		"Use the Desaturated version?": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Other"
+		}
+	},
+
+	//DynamicTokens
+	"DynamicTokens": [
+		{
+			"Name": "Style",
+			"Value": "{{Mini-ShippingBin Style}}"
+		},
+		{
+			"Name": "DesaturatedOn",
+			"Value": "{{Use the Desaturated version?}}"
+		}
+	],
+	//End DynamicTokens
+
+	"Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "Assets/Mini-ShippingBin/Mini-ShippingBin_{{Style}}_{{Wood Color}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 96,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 992,
+				"Width": 96,
+				"Height": 32
+			},
+			"When": {
+				"Mini-ShippingBin Style": "Wood01, Wood02"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "Assets/Mini-ShippingBin/Mini-ShippingBin_{{Style}}_{{Metal and Stone Color}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 96,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 992,
+				"Width": 96,
+				"Height": 32
+			},
+			"When": {
+				"Mini-ShippingBin Style": "Metal01, Metal02, Stone01, Stone02"
+			},
+			"Update": "OnLocationChange"
+		},
+		//Desaturated
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "Assets/Mini-ShippingBin - Desaturated/Mini-ShippingBin_{{Style}}_{{Wood Color}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 96,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 992,
+				"Width": 96,
+				"Height": 32
+			},
+			"When": {
+				"DesaturatedOn": "true",
+				"Mini-ShippingBin Style": "Wood01, Wood02"
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "Assets/Mini-ShippingBin - Desaturated/Mini-ShippingBin_{{Style}}_{{Metal and Stone Color}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 96,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 992,
+				"Width": 96,
+				"Height": 32
+			},
+			"When": {
+				"DesaturatedOn": "true",
+				"Mini-ShippingBin Style": "Metal01, Metal02, Stone01, Stone02"
+			},
+			"Update": "OnLocationChange"
+		}
+	]
+}

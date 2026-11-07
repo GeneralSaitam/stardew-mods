@@ -1,0 +1,17 @@
+{
+    "Changes": [
+        {
+            "LogName": "Fleurine's TriggerActions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "tottlesfarm.fleurine.EngagementCT": {
+                    "Id": "tottlesfarm.fleurine.EngagementCT",
+                    "Trigger": "DayStarted",
+                    "Action": "AddConversationTopic FleurineGetsEngaged 7",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current totsFleurine Engaged"
+                }
+            }
+        }
+    ]
+}

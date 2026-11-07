@@ -1,0 +1,65 @@
+{
+  "Changes": [
+    {
+      "LogName": "SVE - Crab Pots No Trash Blue Moon Vineyard",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_BlueMoonVineyard",
+        "FishAreas"
+      ],
+      "Fields": {
+        "Ocean": {
+          "CrabPotJunkChance": 0
+        },
+        "River": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "SVE - Crab Pots No Trash Highlands",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_Highlands",
+        "FishAreas"
+      ],
+      "Fields": {
+        "Pond": {
+          "CrabPotJunkChance": 0
+        },
+        "River": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "SVE - Crab Pots No Trash Ferngill Republic Frontier",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_FerngillRepublicFrontier",
+        "FishAreas"
+      ],
+      "Fields": {
+        "Ocean": {
+          "CrabPotJunkChance": 0
+        },
+        "River": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true,
+        "HasMod |contains=flashshifter.FrontierFarm": true
+      }
+    }
+  ]
+}

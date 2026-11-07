@@ -1,0 +1,61 @@
+{
+	"Changes":[
+		//This is for "getting gifted" dialogues with Solstice. 
+		{
+			"LogName": "Wizard - Solstice, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Wizard",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Wizard.Solstice.Gifting}}",
+			},
+			"When": {
+				"Wizard": "enabled",
+			},
+		},
+		{
+			"LogName": "Sandy - Solstice, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sandy",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Sandy.Solstice.Gifting}}",
+			},
+			"When": {
+				"Sandy": "enabled, all",
+			},
+		},
+		{
+			"LogName": "Krobus - Solstice, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Krobus",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Krobus.Solstice.Gifting}}",
+			},
+			"When": {
+				"Krobus": "enabled, all",
+			},
+		},
+		{
+			"LogName": "Krobus - Solstice, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Krobus",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Krobus.Solstice.Gifting.Roommate}}",
+			},
+			"When": {
+				"Krobus": "enabled, all",
+				"relationship:Krobus": "married",
+			},
+		},
+		{
+			"LogName": "Dwarf - Solstice, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Dwarf",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Dwarf.Solstice.Gifting}}",
+			},
+			"When": {
+				"Dwarf": "enabled, all",
+			},
+		},
+	],
+}

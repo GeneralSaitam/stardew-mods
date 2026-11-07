@@ -1,0 +1,125 @@
+{
+    //Guide for keys:
+	//1501 and 1504: Rude keys. Use for Abigail, Sebastian, Alex, Haley, and Shane.
+	//1499 and 1500: Keys that don't apply to the above cases.	
+	"Changes":[
+		{
+			"LogName": "Sebastian - Winter Star, Maru is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.WinterStar.Maru.Housemate.After |termOfEndearment={{PPAF.Core/ConfigValue:TermOfEndearment}} }}",
+			},
+			"When": {
+				"relationship:Maru": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:MaruRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Winter Star, Maru is Housemate, friends with farmer",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.WinterStar.Maru.Housemate.High.After |termOfEndearment={{PPAF.Core/ConfigValue:TermOfEndearment}} }}",
+			},
+			"When": {
+				"Hearts:Sebastian": "5,6,7,8",
+				"relationship:Maru": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:MaruRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star (Default), Emily is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.Emily.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Emily": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:EmilyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star, High Hearts, Emily is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.High.Emily.Housemate.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "6,7,8",
+				"relationship:Emily": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:EmilyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star v2 (alt condition), Emily is Housemate", // Condition which allows leeway on hearts if 6-heart is seen. If heart level drops to 3, assume she's angry.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.High.Emily.Housemate.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "4, 5",
+				"HasSeenEvent |contains=13": "true",
+				"relationship:Emily": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:EmilyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Emily - Winter Star, Haley is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.WinterStar.Haley.Housemate.Before}}",
+			},
+			"When": {
+				"relationship:Haley": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:HaleyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Winter Star, Haley is Housemate, Custom Gifts Active",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.WinterStar.Haley.Housemate.Before.GiftsActive}}",
+			},
+			"When": {
+				"relationship:Haley": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:HaleyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Emily": "normal",
+				"CustomGifts": "enabled",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star, Sebastian is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.WinterStar.Sebastian.Housemate.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.WinterStar.Sebastian.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Sebastian": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:SebastianRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Maru": "normal, spicy",
+			},
+		},
+	],
+}

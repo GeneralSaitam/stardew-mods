@@ -1,0 +1,2300 @@
+{
+  "Changes": [
+    {
+      "LogName": "MNF - Fish Pond Rare Loot Chance Prismatic Shards",
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Fields": {
+        "fish_alien": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)349",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)351",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_mudskipper": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)275",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)774",
+              "MinQuantity": 1,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)330",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)574",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_koi": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)628",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)70",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)566",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)273",
+              "MinQuantity": 5,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_swordfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)337",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)684",
+              "MinQuantity": 20,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)109",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_cave": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.066 * {{RareLootChance}}) }}",
+              "ItemID": "(O)693",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)749",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)535",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_electric_catfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)787",
+              "MinQuantity": 3,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)787",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_vampire_fish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)373",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)879",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)767",
+              "MinQuantity": 30,
+              "MaxQuantity": 30
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            }
+          ]
+        },
+        "fish_magic": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)279",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)872",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)773",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)577",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_vampire_squid": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.25,
+              "ItemID": "(O)814",
+              "MinQuantity": 6,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.5,
+              "ItemID": "(O)814",
+              "MinQuantity": 3,
+              "MaxQuantity": 6
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)814",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_goldfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)124",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)104",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)125",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 4,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_great_firefly_squid": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)64",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.03 * {{RareLootChance}}) }}",
+              "ItemID": "(O)563",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)766",
+              "MinQuantity": 40,
+              "MaxQuantity": 40
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)814",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            }
+          ]
+        },
+        "fish_octopi": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.066 * {{RareLootChance}}) }}",
+              "ItemID": "(O)749",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)749",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)749",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_starfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)486",
+              "MinQuantity": 3,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "item_snake": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.15 * {{RareLootChance}}) }}",
+              "ItemID": "(O)828",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.15 * {{RareLootChance}}) }}",
+              "ItemID": "(O)827",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.15 * {{RareLootChance}}) }}",
+              "ItemID": "(O)826",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.15 * {{RareLootChance}}) }}",
+              "ItemID": "(O)825",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_manta_ray": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)439",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_manta_ray_pup",
+              "MinQuantity": 4,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_manta_ray_pup",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_manta_ray_pup",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_coelacanth": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.03 * {{RareLootChance}}) }}",
+              "ItemID": "(O)275",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)107",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)587",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)586",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 2,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)78",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_arowana": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.51,
+              "ItemID": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 2,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_triggerfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)886",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)835",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.15 * {{RareLootChance}}) }}",
+              "ItemID": "(O)834",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_blackghostfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)917",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)681",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.2,
+              "ItemID": "(O)829",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_bonnethead": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)857",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)848",
+              "MinQuantity": 5,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_bonnethead_pup",
+              "MinQuantity": 4,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_bonnethead_pup",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_bonnethead_pup",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_goblinshark": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)413",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)856",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_goblin_shark_pup",
+              "MinQuantity": 4,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_goblin_shark_pup",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_goblin_shark_pup",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_dogfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)881",
+              "MinQuantity": 10,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_spiny_dogfish_pup",
+              "MinQuantity": 4,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_spiny_dogfish_pup",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_spiny_dogfish_pup",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_cyclopshark": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)275",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": 0.25,
+              "ItemID": "(O)749",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.25,
+              "ItemID": "(O)535",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            }
+          ]
+        },
+        "fish_dumbooctopus": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.066 * {{RareLootChance}}) }}",
+              "ItemID": "(O)749",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)749",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)749",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)336",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)555",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_brainslug": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)347",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_i_voted_sticker",
+              "MinQuantity": 3,
+              "MaxQuantity": 18
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)369",
+              "MinQuantity": 1,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)466",
+              "MinQuantity": 1,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_blinky": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)909",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_duff",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)766",
+              "MinQuantity": 3,
+              "MaxQuantity": 8
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)766",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 20
+            }
+          ]
+        },
+        "fish_dwarfstingray": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)122",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)121",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)112",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_dwarf_stingray_pup",
+              "MinQuantity": 4,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_dwarf_stingray_pup",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)MNF.MoreNewFish_dwarf_stingray_pup",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        }
+      },
+      "When": {
+        "Fish Pond Prismatic Shards": "true",
+        "Fish Pond Rare Loot": "Default, Rare Loot Chance 1.5X, Rare Loot Chance 2X, Rare Loot Chance 2.5X, Rare Loot Chance 3X, Rare Loot Chance 3.5X, Rare Loot Chance 4X, Rare Loot Chance 4.5X, Rare Loot Chance 5X"
+      }
+    },
+    {
+      "LogName": "MNF - Fish Pond Rare Loot Chance Prismatic Shards All 1 to 50%",
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Fields": {
+        "fish_alien": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)349",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)351",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_mudskipper": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)275",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)774",
+              "MinQuantity": 1,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)330",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)574",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_koi": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)628",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)70",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)566",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)273",
+              "MinQuantity": 5,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_swordfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)337",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)684",
+              "MinQuantity": 20,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)109",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_cave": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)693",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)749",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)535",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_electric_catfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)787",
+              "MinQuantity": 3,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)787",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_vampire_fish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)373",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)879",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)767",
+              "MinQuantity": 30,
+              "MaxQuantity": 30
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            }
+          ]
+        },
+        "fish_magic": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)279",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)872",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)773",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)577",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_vampire_squid": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.25,
+              "ItemID": "(O)814",
+              "MinQuantity": 6,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.5,
+              "ItemID": "(O)814",
+              "MinQuantity": 3,
+              "MaxQuantity": 6
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)814",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_goldfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)124",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)104",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)125",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 4,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_great_firefly_squid": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.02,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)64",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)563",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)766",
+              "MinQuantity": 40,
+              "MaxQuantity": 40
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)814",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            }
+          ]
+        },
+        "fish_octopi": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)749",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)749",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)749",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_starfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)486",
+              "MinQuantity": 3,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "item_snake": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)828",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)827",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)826",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)825",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_manta_ray": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)439",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_manta_ray_pup",
+              "MinQuantity": 4,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_manta_ray_pup",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_manta_ray_pup",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_coelacanth": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)275",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)107",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)587",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)586",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 2,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)78",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ]
+        },
+        "fish_arowana": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.51,
+              "ItemID": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 2,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_triggerfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)886",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)835",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)834",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_blackghostfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)917",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)681",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.2,
+              "ItemID": "(O)829",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_bonnethead": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)857",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)848",
+              "MinQuantity": 5,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_bonnethead_pup",
+              "MinQuantity": 4,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_bonnethead_pup",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_bonnethead_pup",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_goblinshark": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)413",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)856",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_goblin_shark_pup",
+              "MinQuantity": 4,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_goblin_shark_pup",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_goblin_shark_pup",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_dogfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)881",
+              "MinQuantity": 10,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_spiny_dogfish_pup",
+              "MinQuantity": 4,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_spiny_dogfish_pup",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_spiny_dogfish_pup",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_cyclopshark": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)275",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": 0.25,
+              "ItemID": "(O)749",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.25,
+              "ItemID": "(O)535",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            }
+          ]
+        },
+        "fish_dumbooctopus": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)749",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)749",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)749",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)336",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)555",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_brainslug": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)347",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_i_voted_sticker",
+              "MinQuantity": 3,
+              "MaxQuantity": 18
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)369",
+              "MinQuantity": 1,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)466",
+              "MinQuantity": 1,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "fish_blinky": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)909",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_duff",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)766",
+              "MinQuantity": 3,
+              "MaxQuantity": 8
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)766",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 20
+            }
+          ]
+        },
+        "fish_dwarfstingray": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)122",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)121",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)112",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_dwarf_stingray_pup",
+              "MinQuantity": 4,
+              "MaxQuantity": 4
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_dwarf_stingray_pup",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)MNF.MoreNewFish_dwarf_stingray_pup",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        }
+      },
+      "When": {
+        "Fish Pond Prismatic Shards": "true",
+        "Fish Pond Rare Loot": "All Rare Loot 1% Chance, All Rare Loot 2% Chance, All Rare Loot 3% Chance, All Rare Loot 4% Chance, All Rare Loot 5% Chance, All Rare Loot 6% Chance, All Rare Loot 7% Chance, All Rare Loot 8% Chance, All Rare Loot 9% Chance, All Rare Loot 10% Chance, All Rare Loot 15% Chance, All Rare Loot 20% Chance, All Rare Loot 25% Chance, All Rare Loot 30% Chance, All Rare Loot 35% Chance, All Rare Loot 40% Chance, All Rare Loot 45% Chance, All Rare Loot 50% Chance"
+      }
+    }
+  ]
+}

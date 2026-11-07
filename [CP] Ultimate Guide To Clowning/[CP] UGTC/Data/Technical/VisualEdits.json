@@ -1,0 +1,38 @@
+{
+"Changes": [
+/************************************************
+TILESHEETS
+************************************************/
+{
+"LogName": "BogWyytch Indoors",
+"Action": "EditImage",
+"Target": "Maps/Fellowclown.Indoors",
+"FromFile": "Assets/Tilesheets/BogWyytch/Bog.Indoors.png",
+ "When": {
+ "BogWyytchRecolor": true,   
+}
+},
+{
+"LogName": "BogWyytch Boat",
+"Action": "EditImage",
+ "PatchMode":"overlay",
+"Target": "Maps/Spring_Fellowclown.Outdoors,Maps/Summer_Fellowclown.Outdoors,Maps/Fall_Fellowclown.Outdoors,Maps/Winter_Fellowclown.Outdoors",
+"FromFile": "Assets/Tilesheets/BogWyytch/Bog.Boat.png",
+"ToArea": {
+"X": 0,
+"Y": 0,
+"Width": 384,
+"Height": 720
+},
+"FromArea": {
+"X": 0,
+"Y": 0,
+"Width": 384,
+"Height": 720
+},
+"When": {
+"BogWyytchRecolor": true, 
+},
+},
+]
+}

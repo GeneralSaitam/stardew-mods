@@ -1,0 +1,79 @@
+{
+  "Changes": [
+    {
+      "LogName": "RSV - Legendary Fish No Level Deep Ridge Angler",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_Ridgeside_RidgeForest",
+        "Fish"
+      ],
+      "Fields": {
+        "Rafseazz.RSVCP_Deep_Ridge_Angler": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "RSV - Legendary Fish No Level Waterfall Snakehead",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_Ridgeside_RidgeFalls",
+        "Fish"
+      ],
+      "Fields": {
+        "Rafseazz.RSVCP_Waterfall_Snakehead": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "RSV - Legendary Fish No Level Sockeye Salmon",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_Ridgeside_RidgesideVillage",
+        "Fish"
+      ],
+      "Fields": {
+        "Rafseazz.RSVCP_Sockeye_Salmon": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "RSV - Legendary Fish No Level On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "Rafseazz.RSVCP_Deep_Ridge_Angler": {
+          "MinFishingLevel": 0
+        },
+        "Rafseazz.RSVCP_Waterfall_Snakehead": {
+          "MinFishingLevel": 0
+        },
+        "Rafseazz.RSVCP_Sockeye_Salmon": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true,
+        "Legendary Fish On Farm": true
+      }
+    }
+  ]
+}

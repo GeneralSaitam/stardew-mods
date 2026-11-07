@@ -1,0 +1,28 @@
+/*Vanilla Pam has no extra lines outside of Stardrop Tea.
+She has no lines for birthday presents.
+Last verified: 1.6.14*/
+
+{"Changes": [
+  {
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Pam",
+
+    "Entries": {
+
+      "AcceptGift_(O)167": "{{i18n:UGDE.Pam_(O)167}}", //Joja Cola
+      "AcceptGift_(O)346": "$query LOCATION_NAME Here Saloon#{{i18n:UGDE.Pam_(O)346_InSaloon}}|{{i18n:UGDE.Pam_(O)346_Elsewhere}}", //Beer
+      "AcceptGift_(O)459": "{{i18n:UGDE.Pam_(O)459}}", //Mead
+      "AcceptGift_(O)303": "{{i18n:UGDE.Pam_(O)303}}", //Pale Ale
+      "AcceptGift_(O)873": "{{i18n:UGDE.Pam_(O)873}}", //Piña Colada
+      "AcceptGift_(O)348": "{{i18n:UGDE.Pam_(O)348}}", //Wine
+      "AcceptGift_(O)24": "$query PLAYER_NPC_RELATIONSHIP Any Penny Married#{{i18n:UGDE.Pam_(O)24_PennyMarried}}|{{i18n:UGDE.Pam_(O)24_PennySingle}}", //Parsnip
+      "AcceptGift_(O)199": "{{i18n:UGDE.Pam_(O)199}}", //Parsnip Soup
+      "AcceptGift_(O)90": "$query ANY \"PLAYER_HAS_CONVERSATION_TOPIC Any pamHouseUpgrade\" \"PLAYER_HAS_CONVERSATION_TOPIC Any pamHouseUpgradeAnonymous\" \"PLAYER_SEEN_CONVERSATION_TOPIC Any pamHouseUpgrade\" \"PLAYER_SEEN_CONVERSATION_TOPIC Any pamHouseUpgradeAnonymous\"#{{i18n:UGDE.Pam_(O)90_House}}|{{i18n:UGDE.Pam_(O)90_Trailer}}", //Cactus Fruit, needs Spacecore 1.22 to work correctly
+      //TODO Battery Pack. Change it to a neutral gift after the quest is completed?
+      //TODO "AcceptBirthdayGift_Positive"
+      //TODO "AcceptBirthdayGift_Negative". Potentially split it five-ways if inspiration strikes.
+      //TODO alcohol_item tag, for modded alcohols.
+
+   }
+  }
+]}

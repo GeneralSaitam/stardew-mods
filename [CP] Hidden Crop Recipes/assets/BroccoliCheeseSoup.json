@@ -1,0 +1,71 @@
+{
+    "Changes": [
+	{
+		"Action": "EditData", 
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_BroccoliCheeseSoup": {
+				"Name": "{{ModId}}_BroccoliCheeseSoup",
+				"DisplayName": "Broccoli Cheese Soup",
+				"Description": "A creamy classic.",
+				"Type": "Basic",
+				"Category": -7,
+				"Price": 300,
+				"Texture": "Mods/{{ModId}}/objects16px",
+				"SpriteIndex": 6, 
+				"Edibility": 80, 
+				"IsDrink": false,
+			}
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/CookingRecipes", 
+		"Entries": {
+			"BroccoliCheeseSoup": "Broccoli 1 424 1/1 1/{{ModId}}_BroccoliCheeseSoup/default"
+			}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Maru", 1], //Maru loves similar dishes (Cheese Cauliflower), so she loves this, too.
+				"Value": "{{ModId}}_BroccoliCheeseSoup",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Sebastian", 5], //Sebastian doesn't like any of the ingredients, so he doesn't like this, either.
+				"Value": "{{ModId}}_BroccoliCheeseSoup",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Jas", 5], //Jas doesn't like any of the ingredients, so she doesn't like this, either.
+				"Value": "{{ModId}}_BroccoliCheeseSoup",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", 5], //Vincent doesn't like any of the ingredients, so he doesn't like this, either.
+				"Value": "{{ModId}}_BroccoliCheeseSoup",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Harvey", 5], //Harvey doesn't like Cheese very much, so he doesn't like this, either.
+				"Value": "{{ModId}}_BroccoliCheeseSoup",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Clint", 1], //Don't have a good explanation for this other than 'why not?'
+				"Value": "{{ModId}}_BroccoliCheeseSoup",
+				"Delimiter": " "
+			}
+		]
+	}
+    ]
+}

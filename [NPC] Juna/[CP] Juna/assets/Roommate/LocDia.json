@@ -1,0 +1,114 @@
+{
+  "Changes": [
+    {
+      "LogName": "Map-Based Roommate Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "springTown": "{{i18n: roommate.spring.town}}",
+        "summerTown": "{{i18n: roommate.summer.town}}",
+        "fallTown": "{{i18n: roommate.fall.town}}",
+        "winterTown": "{{i18n: roommate.winter.town}}",
+
+        "springForest": "{{i18n: roommate.spring.forest}}",
+        "summerForest": "{{i18n: roommate.summer.forest}}",
+        "fallForest": "{{i18n: roommate.fall.forest}}",
+        "winterForest": "{{i18n: roommate.winter.forest}}",
+
+        "springMountain": "{{i18n: roommate.spring.mountain}}",
+        "summerMountain": "{{i18n: roommate.summer.mountain}}",
+        "fallMountain": "{{i18n: roommate.fall.mountain}}",
+        "winterMountain": "{{i18n: roommate.winter.mountain}}",
+
+        "springBeach": "{{i18n: roommate.spring.beach}}",
+        "summerBeach": "{{i18n: roommate.summer.beach}}",
+        "fallBeach": "{{i18n: roommate.fall.beach}}",
+        "winterBeach": "{{i18n: roommate.winter.beach}}"
+      },
+      "When": {
+        "Weather": "sun"
+      }
+    },
+
+    {
+      "LogName": "Map-Based Roommate Dialogue Storm",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "springTown": "{{Random: {{i18n: roommate.storm_night.0}} ++ {{i18n: roommate.storm_night.1}} ++ {{i18n: roommate.storm_night.2}} ++ {{i18n: roommate.storm_night.3}} ++ {{i18n: roommate.storm_night.4}} ++ {{i18n: roommate.storm_night.5}} |inputSeparator=++}}",
+        "summerTown": "{{Random: {{i18n: roommate.storm_night.0}} ++ {{i18n: roommate.storm_night.1}} ++ {{i18n: roommate.storm_night.2}} ++ {{i18n: roommate.storm_night.3}} ++ {{i18n: roommate.storm_night.4}} ++ {{i18n: roommate.storm_night.5}} |inputSeparator=++}}",
+        "fallTown": "{{Random: {{i18n: roommate.storm_night.0}} ++ {{i18n: roommate.storm_night.1}} ++ {{i18n: roommate.storm_night.2}} ++ {{i18n: roommate.storm_night.3}} ++ {{i18n: roommate.storm_night.4}} ++ {{i18n: roommate.storm_night.5}} |inputSeparator=++}}",
+        "winterTown": "{{Random: {{i18n: roommate.storm_night.0}} ++ {{i18n: roommate.storm_night.1}} ++ {{i18n: roommate.storm_night.2}} ++ {{i18n: roommate.storm_night.3}} ++ {{i18n: roommate.storm_night.4}} ++ {{i18n: roommate.storm_night.5}} |inputSeparator=++}}",
+
+        "springForest": "{{Random: {{i18n: roommate.storm_night.0}} ++ {{i18n: roommate.storm_night.1}} ++ {{i18n: roommate.storm_night.2}} ++ {{i18n: roommate.storm_night.3}} ++ {{i18n: roommate.storm_night.4}} ++ {{i18n: roommate.storm_night.5}} |inputSeparator=++}}",
+        "summerForest": "{{Random: {{i18n: roommate.storm_night.0}} ++ {{i18n: roommate.storm_night.1}} ++ {{i18n: roommate.storm_night.2}} ++ {{i18n: roommate.storm_night.3}} ++ {{i18n: roommate.storm_night.4}} ++ {{i18n: roommate.storm_night.5}} |inputSeparator=++}}",
+        "fallForest": "{{Random: {{i18n: roommate.storm_night.0}} ++ {{i18n: roommate.storm_night.1}} ++ {{i18n: roommate.storm_night.2}} ++ {{i18n: roommate.storm_night.3}} ++ {{i18n: roommate.storm_night.4}} ++ {{i18n: roommate.storm_night.5}} |inputSeparator=++}}",
+        "winterForest": "{{Random: {{i18n: roommate.storm_night.0}} ++ {{i18n: roommate.storm_night.1}} ++ {{i18n: roommate.storm_night.2}} ++ {{i18n: roommate.storm_night.3}} ++ {{i18n: roommate.storm_night.4}} ++ {{i18n: roommate.storm_night.5}} |inputSeparator=++}}"
+      },
+      "When": {
+        "Weather": "storm"
+      }
+    },
+
+    { //FIX THIS HACK JOB, LAZY-BONES!
+      "LogName": "Coordinate Roommate Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "springTown_82_14": "{{Random: {{i18n: string.marriage_Mon.000}} ++ {{i18n: string.marriage_Mon.001}} ++ {{i18n: string.marriage_Mon.002}} |inputSeparator=++}}",
+        "summerTown_82_14": "{{Random: {{i18n: string.marriage_Mon.000}} ++ {{i18n: string.marriage_Mon.001}} ++ {{i18n: string.marriage_Mon.002}} |inputSeparator=++}}",
+        "fallTown_82_14": "{{Random: {{i18n: string.marriage_Mon.000}} ++ {{i18n: string.marriage_Mon.001}} ++ {{i18n: string.marriage_Mon.002}} |inputSeparator=++}}",
+        "winterTown_82_14": "{{Random: {{i18n: string.marriage_Mon.000}} ++ {{i18n: string.marriage_Mon.001}} ++ {{i18n: string.marriage_Mon.002}} |inputSeparator=++}}",
+        "springTown_44_77": "{{Random: {{i18n: string.marriage_Wed.000}} ++ {{i18n: string.marriage_Wed.001}} ++ {{i18n: string.marriage_Wed.002}} |inputSeparator=++}}",
+        "summerTown_44_77": "{{Random: {{i18n: string.marriage_Wed.000}} ++ {{i18n: string.marriage_Wed.001}} ++ {{i18n: string.marriage_Wed.002}} |inputSeparator=++}}",
+        "fallTown_44_77": "{{Random: {{i18n: string.marriage_Wed.000}} ++ {{i18n: string.marriage_Wed.001}} ++ {{i18n: string.marriage_Wed.002}} |inputSeparator=++}}",
+        "winterTown_44_77": "{{Random: {{i18n: string.marriage_Wed.000}} ++ {{i18n: string.marriage_Wed.001}} ++ {{i18n: string.marriage_Wed.002}} |inputSeparator=++}}",
+        "springTown_32_55": "{{Random: {{i18n: string.marriage_Wed.003}} ++ {{i18n: string.marriage_Wed.004}} ++ {{i18n: string.marriage_Wed.005}} |inputSeparator=++}}",
+        "summerTown_32_55": "{{Random: {{i18n: string.marriage_Wed.003}} ++ {{i18n: string.marriage_Wed.004}} ++ {{i18n: string.marriage_Wed.005}} |inputSeparator=++}}",
+        "fallTown_32_55": "{{Random: {{i18n: string.marriage_Wed.003}} ++ {{i18n: string.marriage_Wed.004}} ++ {{i18n: string.marriage_Wed.005}} |inputSeparator=++}}",
+        "winterTown_32_55": "{{Random: {{i18n: string.marriage_Wed.003}} ++ {{i18n: string.marriage_Wed.004}} ++ {{i18n: string.marriage_Wed.005}} |inputSeparator=++}}",
+        "springTown_18_8": "{{i18n: string.marriage_Wed.006}}",
+        "summerTown_18_8": "{{i18n: string.marriage_Wed.006}}",
+        "fallTown_18_8": "{{i18n: string.marriage_Wed.006}}",
+        "winterTown_18_8": "{{i18n: string.marriage_Wed.006}}",
+        "springForest_26_17": "{{Random: {{i18n: string.marriage_Fri.000}} ++ {{i18n: string.marriage_Fri.001}} ++ {{i18n: string.marriage_Fri.002}} |inputSeparator=++}}",
+        "summerForest_26_17": "{{Random: {{i18n: string.marriage_Fri.000}} ++ {{i18n: string.marriage_Fri.001}} ++ {{i18n: string.marriage_Fri.002}} |inputSeparator=++}}",
+        "fallForest_26_17": "{{Random: {{i18n: string.marriage_Fri.000}} ++ {{i18n: string.marriage_Fri.001}} ++ {{i18n: string.marriage_Fri.002}} |inputSeparator=++}}",
+        "winterForest_26_17": "{{Random: {{i18n: string.marriage_Fri.000}} ++ {{i18n: string.marriage_Fri.001}} ++ {{i18n: string.marriage_Fri.002}} |inputSeparator=++}}",
+        "springForest_33_98": "{{Random: {{i18n: string.marriage_Fri.003}} ++ {{i18n: string.marriage_Fri.004}} ++ {{i18n: string.marriage_Fri.005}} |inputSeparator=++}}",
+        "summerForest_33_98": "{{Random: {{i18n: string.marriage_Fri.003}} ++ {{i18n: string.marriage_Fri.004}} ++ {{i18n: string.marriage_Fri.005}} |inputSeparator=++}}",
+        "fallForest_33_98": "{{Random: {{i18n: string.marriage_Fri.003}} ++ {{i18n: string.marriage_Fri.004}} ++ {{i18n: string.marriage_Fri.005}} |inputSeparator=++}}",
+        "winterForest_33_98": "{{Random: {{i18n: string.marriage_Fri.003}} ++ {{i18n: string.marriage_Fri.004}} ++ {{i18n: string.marriage_Fri.005}} |inputSeparator=++}}",
+        "winterBeach_15_8": "{{i18n: string.marriage_winter_16.001}}",
+        "springTown_50_23": "{{i18n: string.marriage_Wed_3.001}}",
+        "summerTown_50_23": "{{i18n: string.marriage_Wed_3.001}}",
+        "fallTown_50_23": "{{i18n: string.marriage_Wed_3.001}}",
+        "winterTown_50_23": "{{i18n: string.marriage_Wed_3.001}}",
+        "springForest_7_36": "{{Random: {{i18n: string.marriage_storm.000}} ++ {{i18n: string.marriage_storm.001}} |inputSeparator=++}}",
+        "summerForest_7_36": "{{Random: {{i18n: string.marriage_storm.000}} ++ {{i18n: string.marriage_storm.001}} |inputSeparator=++}}",
+        "fallForest_7_36": "{{Random: {{i18n: string.marriage_storm.000}} ++ {{i18n: string.marriage_storm.001}} |inputSeparator=++}}",
+        "springForest_17_36": "{{Random: {{i18n: string.marriage_storm.002}} ++ {{i18n: string.marriage_storm.003}} |inputSeparator=++}}",
+        "summerForest_17_36": "{{Random: {{i18n: string.marriage_storm.002}} ++ {{i18n: string.marriage_storm.003}} |inputSeparator=++}}",
+        "fallForest_17_36": "{{Random: {{i18n: string.marriage_storm.002}} ++ {{i18n: string.marriage_storm.003}} |inputSeparator=++}}",
+        "springTown_65_64": "{{Random: {{i18n: string.marriage_Wed_Alex.000}} ++ {{i18n: string.marriage_Wed_Alex.001}} ++ {{i18n: string.marriage_Wed_Alex.002}} |key=Wednesday |inputSeparator=++}}",
+        "fallTown_65_64": "{{Random: {{i18n: string.marriage_Wed_Alex.000}} ++ {{i18n: string.marriage_Wed_Alex.001}} ++ {{i18n: string.marriage_Wed_Alex.002}} |key=Wednesday |inputSeparator=++}}",
+        "winterTown_65_64": "{{Random: {{i18n: string.marriage_Wed_Alex.000}} ++ {{i18n: string.marriage_Wed_Alex.001}} ++ {{i18n: string.marriage_Wed_Alex.002}} |key=Wednesday |inputSeparator=++}}",
+        "springBeach_19_11": "{{i18n: string.marriage_spring_11.000}}",
+        "springBeach_9_10": "{{i18n: string.marriage_spring_11.001}}",
+        "summerTown_51_60": "{{i18n: string.marriage_summer_Fri.000}}"
+      }
+    },
+
+    {
+      "LogName": "Coordinates George Juna's Birthday",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "summerTown_51_60": "{{i18n: string.marriage_summer_Fri_5.000}}"
+      },
+      "When": {
+        "Day": "5"
+      }
+    }
+  ]
+}

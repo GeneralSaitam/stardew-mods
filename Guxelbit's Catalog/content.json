@@ -1,0 +1,175 @@
+{
+"Format": "2.0.0",
+	"ConfigSchema": {
+		"GuxelbitFurnitureCataloguePrice": 
+		{
+			"Default": "1000",
+			"Section": "Price"
+		},
+		"Oak Furniture": 
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Color"
+		},
+		"Walnut Furniture": 
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Color"
+		},
+		"Birch Furniture": 
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Color"
+		},
+		"Mahogany Furniture": 
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Color"
+		},
+		"Additional Furniture": 
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Additional"
+		},
+		"Animal Products": 
+		{
+		    "Description": "Same as Chest Deco mod but only for decorations",
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Storage Decorations"
+		},
+		"Artisan Goods": 
+		{
+			"Description": "Same as Chest Deco mod but only for decorations",
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Storage Decorations"
+		},
+		"Fishes": 
+		{
+			"Description": "Same as Chest Deco mod but only for decorations",
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Storage Decorations"
+		},
+		"Miscellaneous": 
+		{
+			"Description": "Same as Chest Deco mod but only for decorations",
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Storage Decorations"
+		},
+		"Resources": 
+		{
+		    "Description": "Same as Chest Deco mod but only for decorations",
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Storage Decorations"
+		},
+		"Vegetables": 
+		{
+		    "Description": "Same as Chest Deco mod but only for decorations",
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Storage Decorations"
+		}
+	},
+	"DynamicTokens": [ 
+		{
+			"Name": "CatShopID",
+			"Value": "guxelbit.FurnitureCatalogueShop"
+		},
+		{
+			"Name": "CollectionName",
+			"Value": "guxelbit.FurnitureCatalogueCollection"
+		},
+		{
+			"Name": "CatItemName",
+			"Value": "guxelbit.FurnitureCatalogue"
+		},
+		{
+			"Name": "CatItemi18n",
+			"Value": "guxelbitFurnitureCatalogue"
+		},
+		{
+			"Name": "CatSeller",
+			"Value": "Carpenter"
+		},
+		{
+			"Name": "CatPrice",
+			"Value": "{{GuxelbitFurnitureCataloguePrice}}"
+		},
+	],
+	"Changes": [
+	
+        {
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/additional, Mods/{{ModId}}/Catalogue, Mods/{{ModId}}/furniture_oak, Mods/{{ModId}}/furniture_walnut, Mods/{{ModId}}/furniture_birch, Mods/{{ModId}}/furniture_mahogany, Mods/{{ModId}}/storage_deco",
+            "FromFile": "assets/{{TargetWithoutPath}}.png" 
+        },
+		{
+			"Action": "Include",
+			"FromFile": "data/catalogue.json"
+		},
+		{
+			"When": {"Additional Furniture": true},
+			"Action": "Include",
+			"FromFile": "data/additional.json"
+		},
+		{
+			"When": {"Oak Furniture": true},
+			"Action": "Include",
+			"FromFile": "data/furniture_oak.json"
+		},
+		{
+			"When": {"Walnut Furniture": true},
+			"Action": "Include",
+			"FromFile": "data/furniture_walnut.json"
+		},
+		{
+			"When": {"Birch Furniture": true},
+			"Action": "Include",
+			"FromFile": "data/furniture_birch.json"
+		},
+		{
+			"When": {"Mahogany Furniture": true},
+			"Action": "Include",
+			"FromFile": "data/furniture_mahogany.json"
+		},
+		{
+			"When": {"Animal Products": true},
+			"Action": "Include",
+			"FromFile": "data/SD_AP.json"
+		},
+		{
+			"When": {"Artisan Goods": true},
+			"Action": "Include",
+			"FromFile": "data/SD_AG.json"
+		},
+		{
+			"When": {"Fishes": true},
+			"Action": "Include",
+			"FromFile": "data/SD_F.json"
+		},
+		{
+			"When": {"Miscellaneous": true},
+			"Action": "Include",
+			"FromFile": "data/SD_M.json"
+		},
+		{
+			"When": {"Resources": true},
+			"Action": "Include",
+			"FromFile": "data/SD_R.json"
+		},
+		{
+			"When": {"Vegetables": true},
+			"Action": "Include",
+			"FromFile": "data/SD_V.json"
+		}
+	]
+}

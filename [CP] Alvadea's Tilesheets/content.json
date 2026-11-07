@@ -1,0 +1,120 @@
+{
+   "Format": "2.2.0",
+
+   "ConfigSchema": {
+        "VibrantPastoralRecolorFallColor": {
+            "AllowValues": "Green, Orange",
+            "Default": "Green"
+        }
+    },
+
+    "DynamicTokens": [
+        {
+            "Name": "recolor",
+            "Value": "Vanilla"
+        },
+        {
+            "Name": "indoor_recolor",
+            "Value": "Vanilla"
+        },
+        {
+            "Name": "recolor",
+            "Value": "DaisyNiko",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour"
+            }
+        },
+        {
+            "Name": "recolor",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley"
+            }
+        },
+        {
+            "Name": "recolor",
+            "Value": "Vibrant",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor"
+            }
+        },
+        {
+            "Name": "recolor",
+            "Value": "Elle",
+            "When": {
+                "HasMod": "Elle.DirtCliffRecolor"
+            }
+        },
+        {
+            "Name": "indoor_recolor",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley"
+            }
+        },
+        {
+            "Name": "indoor_recolor",
+            "Value": "Vibrant",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor"
+            }
+        },
+        {
+            "Name": "indoor_recolor",
+            "Value": "Elegant",
+            "When": {
+                "HasMod": "colling.towninterior"
+            }
+        },
+        {
+            "Name": "indoor_recolor",
+            "Value": "Rustic",
+            "When": {
+                "HasMod": "Hesper.RusticCountrysideTownInterior"
+            }
+        },
+        {
+            "Name": "indoor_recolor",
+            "Value": "DaisyNiko",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyInteriors"
+            }
+        }
+    ],
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Maps/spring_AlvadeasTileSheet, Maps/summer_AlvadeasTileSheet, Maps/fall_AlvadeasTileSheet, Maps/winter_AlvadeasTileSheet",
+            "FromFile": "assets/outdoor/{{recolor}}/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/AlvadeasTileSheet_TownInterior",
+            "FromFile": "assets/indoor/{{indoor_recolor}}/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/AlvadeasTileSheet_Cave",
+            "FromFile": "AlvadeasTileSheet_Cave.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_AlvadeasTileSheet",
+            "FromFile": "assets/outdoor/{{recolor}}/fall_orange_AlvadeasTileSheet.png",
+            "When": {
+                "recolor": "Vibrant",
+                "VibrantPastoralRecolorFallColor": "Orange"
+            }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/spring_AlvadeasTileSheet, Maps/summer_AlvadeasTileSheet, Maps/fall_AlvadeasTileSheet",
+            "FromFile": "assets/outdoor/DarkerDirt/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+            "When": {
+                "HasMod": "Nanomatic.DarkerDirtandCliffs"
+            }
+        }
+    ]
+		
+}

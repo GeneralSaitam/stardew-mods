@@ -1,0 +1,34 @@
+{
+    "Format": "2.0.0",
+
+    "ConfigSchema": {
+      "Original": {
+        "AllowValues": "true, false",
+        "Default": "true"
+      },
+      "Empty": {
+        "AllowValues": "true, false",
+        "Default": "false"
+      },
+    },
+
+    "Changes": [
+
+      {
+        "LogName": "Spouse Rooms",
+        "Action": "EditMap",
+        "Target": "Maps/spouseRooms",
+        "FromFile": "assets/Maps/spouseRooms.tmx",
+        "When": { "Original": "true"  },
+        },
+      {
+        "LogName": "Empty Spouse Rooms",
+        "Action": "EditMap",
+        "Target": "Maps/spouseRooms",
+        "FromFile": "assets/Maps/spouseRooms_empty.tmx",
+        "When": { "Empty": "true" },
+    },
+
+
+    ]
+}

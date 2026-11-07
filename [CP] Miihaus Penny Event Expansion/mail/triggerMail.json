@@ -1,0 +1,22 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/TriggerActions",
+            "Entries": 
+            {
+                "Miihau.PennyEE.TriggerActoin.1":{
+                    "Id": "Miihau.PennyEE.TriggerActoin.1",
+                    "Trigger": "DayStarted",
+                    "Condition": "!IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !SEASON_DAY summer 16 summer 17 summer 18 summer 19, !WEATHER Town Rain, PLAYER_FRIENDSHIP_POINTS Current Penny 1250, PLAYER_HAS_SEEN_EVENT Current 16279004",
+                    "HostOnly": false,
+                    "Action": "AddMail Current PennysPicnic now",
+                    "Actions": null,
+                    "CustomFields": null,
+                    "MarkActionApplied": true
+                  },
+            
+            },
+        },
+    ]
+}

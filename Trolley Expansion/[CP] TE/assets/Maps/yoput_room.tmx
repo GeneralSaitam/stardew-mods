@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="7">
+ <properties>
+  <property name="AmbientLight" value="186 93 195"/>
+  <property name="BrookSounds" value="3 3 0"/>
+ </properties>
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="2241" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="3553" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="5729" name="Yoputroom" tilewidth="16" tileheight="16" tilecount="108" columns="12">
+  <image source="Yoputroom.png" width="192" height="144"/>
+ </tileset>
+ <tileset firstgid="5837" name="mine_desert_dark" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine_desert_dark.png" width="256" height="288"/>
+ </tileset>
+ <tileset firstgid="6125" name="CarolineGreenhouseTiles_rainy" tilewidth="16" tileheight="16" tilecount="128" columns="8">
+  <image source="CarolineGreenhouseTiles_rainy.png" width="128" height="256"/>
+ </tileset>
+ <tileset firstgid="6253" name="Yoputroom" tilewidth="16" tileheight="16" tilecount="108" columns="12">
+  <image source="Yoputroom.png" width="192" height="144"/>
+  <tile id="30">
+   <animation>
+    <frame tileid="30" duration="150"/>
+    <frame tileid="31" duration="150"/>
+    <frame tileid="32" duration="150"/>
+    <frame tileid="33" duration="150"/>
+    <frame tileid="34" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="42">
+   <animation>
+    <frame tileid="42" duration="150"/>
+    <frame tileid="43" duration="150"/>
+    <frame tileid="44" duration="150"/>
+    <frame tileid="45" duration="150"/>
+    <frame tileid="46" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="54">
+   <animation>
+    <frame tileid="54" duration="150"/>
+    <frame tileid="55" duration="150"/>
+    <frame tileid="56" duration="150"/>
+    <frame tileid="57" duration="150"/>
+    <frame tileid="58" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="6361" name="Yoputroom" tilewidth="16" tileheight="16" tilecount="108" columns="12">
+  <image source="Yoputroom.png" width="192" height="144"/>
+  <tile id="30">
+   <animation>
+    <frame tileid="30" duration="150"/>
+    <frame tileid="31" duration="150"/>
+    <frame tileid="32" duration="150"/>
+    <frame tileid="33" duration="150"/>
+    <frame tileid="34" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="42">
+   <animation>
+    <frame tileid="42" duration="150"/>
+    <frame tileid="43" duration="150"/>
+    <frame tileid="44" duration="150"/>
+    <frame tileid="45" duration="150"/>
+    <frame tileid="46" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="54">
+   <animation>
+    <frame tileid="54" duration="150"/>
+    <frame tileid="55" duration="150"/>
+    <frame tileid="56" duration="150"/>
+    <frame tileid="57" duration="150"/>
+    <frame tileid="58" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="csv">
+5757,5758,5757,5757,6162,5758,
+5769,5770,5769,5769,6170,5770,
+5781,5782,5781,5781,6178,5782,
+6071,6071,6071,6071,6071,6071,
+5838,5839,5840,5974,5974,5974,
+5854,5855,5856,5974,5974,5974,
+5870,5871,5872,5838,5839,5840,
+5974,5974,5974,5854,5855,5856,
+5974,5974,5974,5870,5871,5872
+</data>
+ </layer>
+ <layer id="9" name="Back2" width="6" height="9">
+  <data encoding="csv">
+5754,5755,5756,0,0,0,
+5766,5767,5768,0,0,0,
+5778,5779,5780,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,5758,6162,
+0,0,0,0,5770,6170,
+5778,5779,5780,5781,5782,6178,
+5802,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,4439,4440,4441,0,
+0,0,0,0,4439,0,
+0,0,0,0,0,6433,
+6437,5834,5835,5836,0,0
+</data>
+ </layer>
+ <layer id="10" name="Buildings2" width="6" height="9">
+  <data encoding="csv">
+0,2327,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+5790,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,4408,4409,0,
+0,0,0,0,0,0,
+0,0,0,0,0,6421,
+6425,5822,5823,5824,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="11" name="AlwaysFront" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,4204,4811,0,
+0,5798,5799,5800,0,5800,
+0,5810,5811,5812,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="6" height="9" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,2184,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings" visible="0">
+  <object id="4" name="TileData" x="48" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;yoputroom.1&quot;"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="16" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;yoputroom.2&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+</map>

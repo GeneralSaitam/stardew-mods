@@ -1,0 +1,40 @@
+{
+	"Changes": [
+		{
+			"LogName": "Add Yeast Starter Rules",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+				"(BC)GOF_Yeast_Starter": { 
+				"OutputRules":[
+				{ 
+					"Id": "GOF_Yeast",
+					"Triggers": [
+						{
+							"Trigger": "MachinePutDown, OutputCollected"
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Yeast",
+                            "Minstack": 3
+						}
+					],
+					"MinutesUntilReady": 1600
+				}
+		],
+			"LoadEffects": [
+				{
+					"Sounds": [
+						{
+							"Id": "Ship"
+						}
+					]
+				}
+			]
+				
+		}
+	}
+	}           
+	]
+}

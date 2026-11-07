@@ -1,0 +1,113 @@
+{
+    "Changes": [
+
+        {
+            "LogName": "Load Food",
+            "Action": "Load",
+            "Target": "Mods/BagiNoraCP/FoodAdjacent",
+            "FromFile": "assets/nora_foods.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "Bagi.Nora_PickledCornDog": {
+                    "Name": "Bagi.Nora_PickledCornDog",
+                    "DisplayName": "{{i18n:Bagi.Nora.PickleCornDog}}",
+                    "Description": "{{i18n:Bagi.Nora.PickleCornDog.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": false,
+                    "Price": 120,
+                    "Edibility": 50,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food", 
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0.0,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomFields": null,
+                            "BuffId": null,
+                            "Duration": 200,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0, 
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 2.0,
+                                "LuckLevel": 1.0,
+                                "ForagingLevel": 2.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 0.0,
+                                "Attack": 1.0
+                            }
+                        }
+                    ],
+                    "Texture": "Mods\\BagiNoraCP\\FoodAdjacent",
+                    "SpriteIndex": 0,
+                    "ContextTags": 
+                    [
+                    "color_brown",
+                    "food_nonvegan",
+                    "allergen_dairy",
+                    "allergen_gluten"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "Bagi.Nora_SpicyPizza": {
+                    "Name": "Bagi.Nora_SpicyPizza",
+                    "DisplayName": "{{i18n:Bagi.Nora.SpicyPizza}}",
+                    "Description": "{{i18n:Bagi.Nora.SpicyPizza.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": false,
+                    "Price": 120,
+                    "Edibility": 50,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food", 
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0.0,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomFields": null,
+                            "BuffId": null,
+                            "Duration": 300,
+                            "CustomAttributes": {
+                                "FarmingLevel": 2.0, 
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 2.0,
+                                "MaxStamina": 25.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 1.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            }
+                        }
+                    ],
+                    "Texture": "Mods\\BagiNoraCP\\FoodAdjacent",
+                    "SpriteIndex": 1,
+                    "ContextTags": 
+                    [
+                    "color_yellow_red",
+                    "food_nonvegan",
+                    "allergen_dairy",
+                    "allergen_gluten"
+                    ]
+                }
+            }
+        }
+    ]
+}

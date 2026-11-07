@@ -1,0 +1,133 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/BusStop",
+            "Entries":{
+                "16279009/Hl ccVault/Hl jojaVault/F/f Penny 2000/w rainy/A pennyGone": "desolate/
+                25 12/
+farmer 24 20 0 Penny 24 11 0/
+skippable/
+move farmer 0 -7 0/
+pause 300/
+message \"Penny stands in front of the broken bus, looking sad and contemplative.\"/
+emote farmer 8/
+pause 200/
+faceDirection Penny 2/
+pause 500/
+speak Penny \"Hello @.$s\"/
+pause 650/
+speak Penny \"I'm feeling a little down today.$s#$b# I'm sorry I'm like this. It must be depressing just being around me.$s#$b#I bet you are already fed up with me and my problems.$s\"/
+pause 300/
+question fork1 \"#'That's not true at all, Penny! I like hanging out with you. What's bothering you?'#'Kinda... Your life seems like a car wreck.'\" /
+fork carWreckLife/
+pause 300/
+message \"Penny takes a deep breath before speaking.\"/
+pause 300/
+faceDirection Penny 0/
+speak Penny \"A bus like this used to be my mother's livelihood.$s\"/
+move farmer 1 0 0/
+move farmer 0 -2 0/
+speak Penny \"She drove it to Calico Desert every day, rain or shine, to provide for us.$s\"/
+pause 400/
+speak Penny \"But then... she lost her job.$s#$b#The bus broke down, and the community funds weren't able to repair it.$s\"/
+pause 300/
+faceDirection Penny 1/
+speak Penny \"I remember how devastated she was.$s\"/
+faceDirection farmer 3/
+pause 300/
+speak Penny \"She lost her job from one day to another, without warning.$s#$b#Kinda like how things were with my dad. Here one day, gone the next.$s\"/
+pause 500/
+speak Penny \"We thought she had a secure job.$s#$b#But life has a way of throwing you curveballs, doesn't it?$s\"/
+pause 300/
+move Penny -1 0 3/
+pause 500/
+faceDirection Penny 0/
+pause 700/
+move Penny 1 0 0/
+pause 300/
+speak Penny \"After she lost her job, things started to spiral out of control.$s#$b#My mother turned to alcohol to cope with her feelings of worthlessness.$s\"/
+pause 500/
+faceDirection Penny 1/
+speak Penny \"In the beginning I didn't think it would become a habit.$s#$b#But looking back now, I can see how the loss of her job shook her to her core.$s#$b#And once she started drinking, it was like she couldn't stop.$s#$b#It's been a struggle ever since.$s\"/
+pause 400/
+faceDirection Penny 2/
+pause 200/
+showFrame Penny 23/
+pause 200/
+speak Penny \"I try to stay positive, I really do.$s#$b#I try to focus on the good things in life, like my love for books and spending time with friends, like Maru or especially you, @.$s\"/
+pause 600/
+speak Penny \"But sometimes it's hard to ignore the fact that my small family is struggling.$s#$b#We don't have a lot of money, and my mother's addiction is taking a toll on us.$s#$b#It's like we're trapped in this cycle of hopelessness and despair.$s#$b#I've been working so hard to save up money to give us a better life, and a home of our own! But I feel so alone in that.$3#$b# It's like she just doesn't care.$3\"/
+pause 600/
+speak Penny \"...@, one of my dreams is to be a mom someday, so that I can give my kids everything my mom couldn't give me. $3#$b#She tried her best, but she was so preoccupied with her own problems that she neglected me emotionally.$s#$b#My dad checked out by literally leaving, but my mom mentally checked out after she lost my dad and her job.$s#$b# I want my kids to feel safe and comforted. I want to tend to them emotionally, and encourage them to pursue their dreams. Like my parents couldn't do for me.$3#$b#But I have a lot of love and forgiveness in my heart for my mom. She's gone through so much.$3#$b# And at the end of the day, we're not so different. She chose to escape through beer and I chose to escape through books.$3#$b# I think both of us struggle to be truly present in our lives. So I can understand that impulse.$3#$b#I try my best to help her. But no matter what I do, it isn't enough.$s\"/
+pause 300/
+showFrame Penny 0/
+pause 400/
+faceDirection Penny 0/
+speak Penny \"I tried everything.$s#$b#But as long as her bus is broken down...$s#$b#I don't think my mom will be willing to change.$s\"/
+pause 200/
+question fork1 \"#'(You take Penny's hand) I promise you, I'll raise the funds to repair the bus and your mom will have a job again. Things can still get better!'#'I don't think the bus is getting repaired anytime soon.'\" /
+fork noBusfixing/
+friendship Penny 60/
+faceDirection Penny 1/
+pause 200/
+speak Penny \"That's so sweet of you, @. I won't give up. Well... I can't give up.$0#$b#Giving up on this bus would be like... giving up on my mother.$3\"/
+pause 200/
+speak Penny \"I don't know what the future holds for us, but I do know that I won't give up.$s#$b#I'll keep striving for a better life, for myself and my mother.$0\"/
+pause 400/
+speak Penny \"Thanks for your support @.$0#$b#And thank you for listening to my problems.\"/
+pause 300/
+faceDirection Penny 0/
+pause 200/
+faceDirection farmer 0/
+pause 150/
+speak Penny \"And who knows...$0#$b#Maybe, someday, we'll be able to fix my moms bus.\"/
+globalFade 0.005/
+viewport -1000 -1000/
+end dialogue Penny \"Our conversation at the bus stop gave me a lot of hope for the future. Thank you, @. I really needed that today.$0\"",
+                "carWreckLife":"pause 200/
+                friendship Penny -1000/
+showFrame Penny 23/
+pause 200/
+speak Penny \"Thanks for pointing it out.$s\"/
+pause 100/
+showFrame Penny 0/
+faceDirection Penny 1/
+speed Penny 2/
+move Penny 1 0 2/
+speed Penny 2/
+move Penny 0 11 2 true/
+faceDirection farmer 1/
+emote farmer 8/
+message \"Penny is ignoring you.\"/
+faceDirection farmer 2/
+globalFade/
+viewport -1000 -1000/
+end dialogue Penny \"You better stay away from this 'car wreck'.$s\"",
+                "noBusfixing":"pause 200/
+                friendship Penny -200/
+speak Penny \"I know...$s#$b#I'm starting to lose hope too.$s\"/
+faceDirection Penny 2/
+pause 200/
+showFrame Penny 23/
+pause 200/
+speak Penny \"But giving up on the bus...$s\"/
+pause 700/
+speak Penny \"...it feels like...$s\"/
+pause 700/
+speak Penny \"...like giving up on my mother.$s\"/
+emote Penny 28/
+showFrame Penny 0/
+message \"Penny starts crying.\"/
+speak Penny \"I'm sorry...$s#$b#I have to go now.$s\"/
+speed Penny 4/
+move Penny 0 10 1 true/
+pause 100/
+faceDirection farmer 2/
+globalFade/
+viewport -1000 -1000/
+end dialogue Penny \"Sorry for running off like that.$s#$b#I was just a bit overwhelmed.$s\""
+            }
+        },
+    ]
+}

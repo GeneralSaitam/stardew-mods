@@ -1,0 +1,76 @@
+{
+  "Changes": [{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "Fields": {
+      // Crops
+      "Wildflour.AtelierGoods_Chicken_Woods": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourChickenOfTheWoodsCropName}}",
+      },
+      "Wildflour.AtelierGoods_Chicken_Woods_Seeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourChickenOfTheWoodsSeedName}}",
+      },
+      "Wildflour.AtelierGoods_Basil": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourSweetBasilCropName}}",
+      },
+      "Wildflour.AtelierGoods_Basil_Seeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourSweetBasilSeedName}}",
+      },
+      "Wildflour.AtelierGoods_Wormwood": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourWormwoodCropName}}",
+      },
+      "Wildflour.AtelierGoods_Wormwood_Seeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourWormwoodSeedName}}",
+      },
+
+      // Misc Items
+      "Wildflour.AtelierGoods_Almond_Milk": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourAlmondMilkName}}",
+      },
+      "Wildflour.AtelierGoods_Butter": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourButterName}}",
+      },
+      "Wildflour.AtelierGoods_Coconut_Milk": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourCoconutMilkName}}",
+      },
+      "Wildflour.AtelierGoods_Corn_Flour": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourCornFlourName}}",
+      },
+      "Wildflour.AtelierGoods_Cream": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourCreamName}}",
+      },
+      "Wildflour.AtelierGoods_Honey_Butter": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourHoneyButterName}}",
+      },
+      "Wildflour.AtelierGoods_Maple_Butter": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourMapleButterName}}",
+      },
+      "Wildflour.AtelierGoods_Olive_Oil": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourOliveOilName}}",
+      },
+      "Wildflour.AtelierGoods_Pickled_Fish": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourPickledFishName}}",
+      },
+      "Wildflour.AtelierGoods_Basil_Pesto": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourSweetBasilPestoName}}",
+      },
+
+      // Strings for Dynamic Replacement
+      "Wildflour.AtelierGoods_Flower_Candles": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourCandlesName}}",
+      },
+    },
+  },
+  
+  // Strings for Dynamic Replacement
+  {
+    "Action": "EditData",
+    "Target": "Data/Machines",
+    "TargetField": [ "(BC)Wildflour.AtelierGoods_CandleStation", "OutputRules", "Wildflour.AtelierGoods_Flower_Candles", "OutputItem", "Wildflour.AtelierGoods_Flower_Candles" ],
+    "Priority": "Late + 10",
+    "Entries": {
+      "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.WildflourCandlesDynamicName}}",
+    },
+  }]
+}

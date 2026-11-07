@@ -1,0 +1,141 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "18657006/F/f Abigail 1500/t 2100 2230/e 18657005":"continue/
+                43 61/
+                Abigail -100 -100 2 farmer 35 60 1 Pierre -110 -110 0 Caroline -120 -120 0/
+                skippable/
+                move farmer 8 0 0/
+                playSound thudStep/
+                pause 200/
+                playSound batFlap/
+                pause 500/
+                playSound treethud/
+                pause 400/
+                playSound clubSmash/
+                emote farmer 8/
+                pause 600/
+                speak Pierre \"Abigail! No!$3\"/
+                speak Abigail \"I can't take it anymore!$s\"/
+                speak Caroline \"Abby, please don't leave again.$2\"/
+                pause 700/
+                warp Abigail 43 57/
+                playSound doorClose/
+                move Abigail 0 1 2/
+                emote Abigail 16/
+                speak Abigail \"@!$7\"/
+                emote farmer 8/
+                speak Abigail \"*sigh* Oh you know.$s#$b#It's always the same argument.$s#$b#Dad just doesn't understand.$3\"/
+                pause 300/
+                faceDirection Abigail 0/
+                pause 1800/
+                faceDirection Abigail 2/
+                speak Abigail \"Can we go talk somewhere further away?$2\"/
+                question fork0 \"#'No, I don't have time to talk.'#'Sure, lead the way.'\" /
+                fork 6H_Abi_Leave/
+                move farmer 0 -1 0/
+                speak Abigail \"Thanks.$0\"/
+                advancedMove Abigail false 4 0 2 1000/
+                move farmer 4 0 2 true/
+                globalFade 0.011/
+                viewport -1000 -1000/
+                stopAdvancedMoves/
+                warp Abigail 73 52/
+                showFrame Abigail 26/
+                warp farmer 74 53/
+                faceDirection farmer 2/
+                showFrame farmer 107/
+                positionOffset farmer 0 -20/
+                message \"You and Abigail sit down by the nearby bridge.\"/
+                pause 400/
+                playMusic desolate/
+                globalFadeToClear .005 true/
+                viewport 73 54/
+                pause 1000/
+                emote Abigail 28/
+                pause 600/
+                speak Abigail \"About the drama at my home...$s#$b#It's... it's about me, my dreams, my aspirations.$s#$b#Dad wants me to follow the 'traditional path'.$3#$b#To become a great house wife, and marry someone to take over the family business together with.$3\"/
+                pause 300/
+                emote Abigail 28/
+                pause 400/
+                speak Abigail \"But I have my own dreams, my own goals.$s#$b#I want to be an adventurer, an explorer...$s#$b#Who knows, maybe one day I want to quit everything and start a farm like you.$s\"/
+                pause 500/
+                speak Abigail \"It's just hard when the person you look up to, your own father, doesn't support you.$s\"/
+                pause 700/
+                speak Abigail \"I've tried talking with him countless times.$s#$b#It always turns into an argument.$s#$b#He dismisses my dreams as 'childish fantasies.'$3\"/
+                pause 500/
+                speak Abigail \"I know I should follow my heart, but the pressure... it's overwhelming.$s#$b#I feel like I'm suffocating in these expectations.$s\"/
+                pause 300/
+                speak Abigail \"I just wish he'd see me for who I am, not just a daughter to carry on his legacy.$s\"/
+                question fork1 \"#'Your father needs to understand that you're your own person.'#'Your dad sounds like a real jerk...'\" /
+                fork 6H_Abi_Bad_Advice/
+                speak Abigail \"I appreciate that, @.$0#$b#It's just so frustrating.$3#$b#I feel like I'm constantly battling against these old-fashioned beliefs.$s\"/
+                pause 500/
+                question fork1 \"#'Change can be difficult for some people, especially when it challenges what they've always known.'#'He wont change... It's a lost cause'\" /
+                fork 6H_Abi_Bad_Advice/
+                speak Abigail \"Yeah, I've tried to explain it to him, but it's like talking to a wall sometimes.$s\"/
+                pause 400/
+                question fork1 \"#'Maybe find a way to show him how important this is to you. Actions can also speak volumes.'#'More like a dumb stupid wall...'\" /
+                fork 6H_Abi_Bad_Advice/
+                speak Abigail \"You're right.$0#$b#I need to find a way to make him see that this is who I am and what I want.$0\"/
+                pause 1000/
+                jump Abigail 9 true/
+                faceDirection Abigail 2/
+                warp Abigail 73 53/
+                positionOffset Abigail 0 -12/
+                pause 400/
+                jump farmer 8 true/
+                faceDirection farmer 2/
+                warp farmer 74 53/
+                pause 600/
+                faceDirection Abigail 1/
+                faceDirection farmer 3/
+                speak Abigail \"I'm gonna head back and look what I can do.$0\"/
+                emote farmer 32/
+                speak Abigail \"Thank you, @.$0#$b#I'm going to figure this out.$0#$b#I won't let anyone hold me back from my dreams.$0\"/
+                addConversationTopic abigailGoodVent 1/
+                globalFade/
+                viewport -1000 -1000/
+                end dialogue Abigail \"Thank you for helping me out.\"",
+                "6H_Abi_Leave":"stopMusic/
+                friendship Abigail -60/
+                addConversationTopic abigailNoVent 1/
+                pause 600/
+                emote Abigail 40/
+                speak Abigail \"Okay...$3\"/
+                advancedMove Abigail false 3 0 0 7 2 0 0 3 2 1000/
+                pause 800/
+                move farmer 0 -1 1/
+                emote farmer 60/
+                pause 900/
+                end dialogue Abigail \"I don't want to talk anymore.$3\"",
+                "6H_Abi_Bad_Advice":"stopMusic/
+                friendship Abigail -50/
+                addConversationTopic abigailBadVent 1/
+                pause 400/
+                emote Abigail 40/
+                pause 600/
+                jump Abigail 9 true/
+                faceDirection Abigail 2/
+                warp Abigail 73 53/
+                positionOffset Abigail 0 -12/
+                speak Abigail \"You know what...$3#$b#I think it's better if I'm just gonna leave.$2\"/
+                advancedMove Abigail false -6 0 2 1000/
+                end dialogue Abigail \"I don't want to talk anymore.$3\""
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Abigail",
+            "Entries":{
+                "abigailGoodVent":"I just wanted to say thank you for being there for me.$0#$b#It really meant a lot to me to have someone to talk to.$0#$e#I've actually been doing a lot of thinking since then, and I've decided that I won't let anyone dictate my dreams.$0#$b#I'm going to keep pursuing what I love, even if it means facing challenges.$0#$b#You've given me the courage to have that difficult conversation with my father.$0#$b#I'm going to try and make him understand where I'm coming from.$0#$b#Thank you.$l",
+                "abigailBadVent":"I've been thinking about what happened.$s#$b#Your words hurt, @.$s#$b#I thought you'd understand, but it felt like you dismissed my feelings.$s",
+                "abigailNoVent":"I've been thinking about what happened.$s#$b#It's just... when I needed someone to listen, it hurt that you walked away.$0#$b#I thought we could lean on each other.$s",
+            }
+        },    
+    
+    ]
+}

@@ -1,0 +1,24 @@
+{
+	"Format": "2.8.0",
+	"ConfigSchema": {
+		"Extra Changes": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Tweak some SVE recipes slightly for better fitting, ie Chocolate Truffle bar using Chocolate if Love of Cooking is activ."
+		}
+	},
+	"Changes": [
+		{
+			"Action": "Include",
+			"FromFile": "data/flexiblerecipes_sve.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "data/contexttags_sve.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "data/extrachanges_sve.json"
+		}
+	]
+}

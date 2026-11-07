@@ -1,0 +1,45 @@
+{
+  "Format": "2.4.0",
+  "ConfigSchema": {
+    "Nickname": {
+      "Default": "sweetie",
+      "AllowBlank": false
+    },
+    "Enable_Parent1": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Parent 1"
+    },
+    "DisplayName_Parent1": { 
+      "Default": "Mom",
+      "AllowBlank": false,
+      "Section": "Parent 1"
+    },
+    "Enable_Parent2": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Parent 2"
+    },
+    "DisplayName_Parent2": { 
+      "Default": "Dad",
+      "AllowBlank": false,
+      "Section": "Parent 2"
+    }
+  },
+  "Changes": [
+    {
+      "Action": "Include",
+      "FromFile": "data/Parent1.json",
+      "When": {
+        "Enable_Parent1": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/Parent2.json",
+      "When": {
+        "Enable_Parent2": true
+      }
+    }
+  ]
+}

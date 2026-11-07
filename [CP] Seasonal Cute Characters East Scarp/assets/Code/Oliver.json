@@ -1,0 +1,126 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Oliver's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Oliver_Spring, Portraits/Oliver_Summer, Portraits/Oliver_Fall, Portraits/Oliver_Winter, Portraits/Oliver_FlowerDance, Portraits/Oliver_SpiritsEve, Portraits/Oliver_Beach, Characters/Oliver_Spring, Characters/Oliver_Summer, Characters/Oliver_Fall, Characters/Oliver_Winter, Characters/Oliver_FlowerDance, Characters/Oliver_SpiritsEve, Characters/Oliver_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/OliverK/{{TargetWithoutPath}}.png"
+		},
+		
+		{
+			"LogName": "OliverK Gull Sprite Edit", //Lemur wants changeSprite for this event, do not alter
+			"Action": "EditImage",
+			"Target": "Characters/OliverK_gull",
+			"FromFile": "assets/{{Target}}/Oliver_{{Season}}.png",
+			"Update": "OnLocationChange",            
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"CuteOliver": "true",
+			},
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Oliver - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Oliver_Spring, Characters/Oliver_Summer, Characters/Oliver_Fall, Characters/Oliver_Winter, Characters/Oliver_FlowerDance, Characters/Oliver_SpiritsEve, Characters/Oliver_Beach, Characters/OliverK_gull",
+			"FromFile": "assets/{{TargetPathOnly}}/OliverK/Oliver_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Oliver Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": ["OliverK", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.OliverSpring": {
+					"Id": "{{ModId}}.OliverSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Oliver_Spring",
+					"Portrait": "Portraits/Oliver_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.OliverSummer": {
+					"Id": "{{ModId}}.OliverSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Oliver_Summer",
+					"Portrait": "Portraits/Oliver_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.OliverFall": {
+					"Id": "{{ModId}}.OliverFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Oliver_Fall",
+					"Portrait": "Portraits/Oliver_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.OliverWinter": {
+					"Id": "{{ModId}}.OliverWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Oliver_Winter",
+					"Portrait": "Portraits/Oliver_Winter",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.OliverFlowerDance": {
+					"Id": "{{ModId}}.OliverFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Oliver_FlowerDance",
+					"Portrait": "Portraits/Oliver_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.OliverSpirit": {
+					"Id": "{{ModId}}.OliverSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Oliver_SpiritsEve",
+					"Portrait": "Portraits/Oliver_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.OliverBeach": {
+					"Id": "{{ModId}}.OliverBeach",
+					"Sprite": "Characters/Oliver_Beach",
+					"Portrait": "Portraits/Oliver_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				//Lexi Event
+				"{{ModId}}.OliverEvent": {
+					"Id": "{{ModId}}.OliverEvent",
+					"Condition": "IS_EVENT 57872009",
+					"Sprite": "Characters/OliverK_gull",
+					"Portrait": "Portraits/Oliver_{{Season}}",
+					"Precedence": -120,
+				},
+			},
+		},
+		{
+            "LogName": "OliverK Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/OliverK",
+            "FromFile": "assets/{{Target}}/Oliver_{{Season}}.png",
+        },	
+	]
+}

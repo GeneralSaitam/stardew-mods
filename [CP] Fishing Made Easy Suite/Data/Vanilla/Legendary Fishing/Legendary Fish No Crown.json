@@ -1,0 +1,119 @@
+{
+  "Changes": [
+    {
+      "LogName": "Legendary Fish No Crown Crimsonfish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Beach",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)159": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "Legendary Fish No Crown Angler",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Town",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)160": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "Legendary Fish No Crown Legend",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Mountain",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)163": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "Legendary Fish No Crown Mutant Carp",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Sewer",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)682": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "Legendary Fish No Crown Glacierfish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Forest",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)775": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "Legendary Fish No Crown Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)159": {
+          "IsBossFish": false
+        },
+        "(O)160": {
+          "IsBossFish": false
+        },
+        "(O)163": {
+          "IsBossFish": false
+        },
+        "(O)682": {
+          "IsBossFish": false
+        },
+        "(O)775": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true,
+        "Legendary Fish On Farm": true
+      }
+    }
+  ]
+}

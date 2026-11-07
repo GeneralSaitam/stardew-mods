@@ -1,0 +1,73 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load KennedyLK's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/KennedyLK_{{PortraitStyle}}_Fall, Portraits/KennedyLK_{{PortraitStyle}}_Spring, Portraits/KennedyLK_{{PortraitStyle}}_Summer, Portraits/KennedyLK_{{PortraitStyle}}_Winter, Characters/KennedyLK_Fall, Characters/KennedyLK_Spring, Characters/KennedyLK_Summer, Characters/KennedyLK_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/KennedyLK/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "KennedyLK - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/KennedyLK_Fall, Characters/KennedyLK_Spring, Characters/KennedyLK_Summer, Characters/KennedyLK_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/KennedyLK/KennedyLK_nose.png",
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+		},
+		//APPEARANCE DATA 
+		{
+			"LogName": "KennedyLK Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"KennedyLK",
+				"Appearance"
+			],
+			"Entries": {
+				//Regular Outfits
+				"{{ModId}}.KennedyLKSpring": {
+					"Id": "{{ModId}}.KennedyLKSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/KennedyLK_Spring",
+					"Portrait": "Portraits/KennedyLK_{{PortraitStyle}}_Spring",
+					"Precedence": -200,
+				},
+				"{{ModId}}.KennedyLKSummer": {
+					"Id": "{{ModId}}.KennedyLKSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/KennedyLK_Summer",
+					"Portrait": "Portraits/KennedyLK_{{PortraitStyle}}_Summer",
+					"Precedence": -200,
+				},
+				"{{ModId}}.KennedyLKFall": {
+					"Id": "{{ModId}}.KennedyLKFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/KennedyLK_Fall",
+					"Portrait": "Portraits/KennedyLK_{{PortraitStyle}}_Fall",
+					"Precedence": -200,
+				},
+				"{{ModId}}.KennedyLKWinter": {
+					"Id": "{{ModId}}.KennedyLKWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/KennedyLK_Winter",
+					"Portrait": "Portraits/KennedyLK_{{PortraitStyle}}_Winter",
+					"Precedence": -200,
+				},
+			},
+		},
+		{
+            "LogName": "KennedyLK Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/KennedyLK",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+        },			
+	]
+}

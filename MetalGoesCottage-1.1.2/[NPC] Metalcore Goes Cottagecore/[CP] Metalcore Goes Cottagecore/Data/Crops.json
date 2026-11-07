@@ -1,0 +1,73 @@
+{
+    "Changes": [
+        {
+            "LogName": "Crops",
+            "Action": "Load",
+            "Target": "Mods/Squeaks.MGC.CP/Crops",
+            "FromFile": "Assets/Images/MGC.Crops.png"
+        },
+        {
+            "LogName": "Elder Tiger Lily",
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "Squeaks.MGC.CP_ElderLilySeeds": {
+                    "Seasons": [
+                        "spring",
+                        "summer",
+                        "fall"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        7,
+                        7,
+                        7,
+                        5
+                    ],
+                    "RegrowDays": 7,
+                    "IsRaised": false,
+                    "IsPaddyCrop": false,
+                    "NeedsWatering": true,
+                    "PlantableLocationRules": [
+                        {
+                            "Id": "NoGardenPots",
+                            "Condition": null,
+                            "PlantedIn": 2,
+                            "Result": 2,
+                            "DeniedMessage": "{{i18n:Objects.ElderTigerLily.Denied}}"
+                        }
+                    ],
+                    "HarvestItemId": "Squeaks.MGC.CP_ElderTigerLily",
+                    "HarvestMethod": "Grab",
+                    "CountForMonoculture": "{{Exclude From Perfection}}",
+                    "CountForPolyculture": "{{Exclude From Perfection}}",
+                    "Texture": "Mods/Squeaks.MGC.CP/Crops",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "LogName": "Elder Lily Leaves",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/CropExtensionData",
+            "Entries": {
+                "Squeaks.MGC.CP_ElderLilySeeds": {
+                    "YieldOverrides": {
+                        "5": {
+                            "RegrowDays": 7,
+                            "IgnoreDefaultDrops": false,
+                            "Drops": [
+                                {
+                                    "Id": "Squeaks.MGC.CP_ElderLilyLeaves",
+                                    "ItemId": "(O)Squeaks.MGC.CP_ElderLilyLeaves",
+                                    "MinStack": 4,
+                                    "MaxStack": 1
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

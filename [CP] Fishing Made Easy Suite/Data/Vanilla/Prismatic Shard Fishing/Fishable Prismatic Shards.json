@@ -1,0 +1,81 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fishable Prismatic Shards (REQ)",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "74": "Prismatic Shard/85/mixed/1/50/600 2600/spring summer fall winter/both/690 .4 685 .1/5/0/.01/5"
+      },
+      "When": {
+        "Fishable Prismatic Shards (REQ)": true
+      }
+    },
+    {
+      "LogName": "Fishable Prismatic Shards (REQ) Location",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Default",
+        "Fish"
+      ],
+      "Entries": {
+        "(O)74": {
+          "Chance": 0.05,
+          "Precedence": -200,
+          "MinFishingLevel": 5,
+          "MinDistanceFromShore": 2,
+          "IsBossFish": true,
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": true,
+          "Quality": 0,
+          "Id": "(O)74",
+          "ItemId": "(O)74"
+        }
+      },
+      "When": {
+        "Fishable Prismatic Shards (REQ)": true
+      }
+    },
+    {
+      "LogName": "Prismatic Shards Fish Tanks Data",
+      "Action": "EditData",
+      "Target": "Data/AquariumFish",
+      "Entries": {
+        "74": "104/static"
+      },
+      "When": {
+        "Fishable Prismatic Shards (REQ)": true
+      }
+    },
+    {
+      "LogName": "Prismatic Shards Fish Tanks LooseSprite",
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "Data/Vanilla/Assets/PrismaticShardAQ.png",
+      "ToArea": {
+        "X": 96,
+        "Y": 240,
+        "Width": 24,
+        "Height": 48
+      },
+      "When": {
+        "Fishable Prismatic Shards (REQ)": true
+      }
+    },
+    {
+      "LogName": "Prismatic Shards Fishing Difficulty",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "74": {
+          "1": "{{Round: {{Query: (85 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+	  },
+      "When": {
+          "Fishable Prismatic Shards (REQ)": true,
+          "Fishing Difficulty": "5% Easier, 10% Easier, 15% Easier, 20% Easier, 25% Easier, 30% Easier, 35% Easier, 40% Easier, 45% Easier, 50% Easier, 55% Easier, 60% Easier, 65% Easier, 70% Easier, 75% Easier, 80% Easier, 85% Easier, 90% Easier, 95% Easier, 100% Easier, 10% Easy Sunday, 20% Easy Sunday, 30% Easy Sunday, 40% Easy Sunday, 50% Easy Sunday, 5% Harder, 10% Harder, 15% Harder, 20% Harder, 25% Harder, 30% Harder, 35% Harder, 40% Harder, 45% Harder, 50% Harder, 55% Harder, 60% Harder, 65% Harder, 70% Harder, 75% Harder, 80% Harder, 85% Harder, 90% Harder, 95% Harder, 100% Harder, NIGHTMARE"
+        }
+    }
+  ]
+}

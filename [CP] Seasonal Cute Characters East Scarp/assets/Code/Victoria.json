@@ -1,0 +1,105 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load ToriLK's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/ToriLK_Spring, Portraits/ToriLK_Summer, Portraits/ToriLK_Fall, Portraits/ToriLK_Winter, Portraits/ToriLK_FlowerDance, Portraits/ToriLK_SpiritsEve, Portraits/ToriLK_Beach, Characters/ToriLK_Spring, Characters/ToriLK_Summer, Characters/ToriLK_Fall, Characters/ToriLK_Winter, Characters/ToriLK_FlowerDance, Characters/ToriLK_SpiritsEve, Characters/ToriLK_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/ToriLK/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "ToriLK - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/ToriLK_Spring, Characters/ToriLK_Summer, Characters/ToriLK_Fall, Characters/ToriLK_Winter, Characters/ToriLK_FlowerDance, Characters/ToriLK_SpiritsEve, Characters/ToriLK_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/ToriLK/ToriLK_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "ToriLK Appearance Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["ToriLK", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.ToriLKSpring": {
+					"Id": "{{ModId}}.ToriLKSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/ToriLK_Spring",
+					"Portrait": "Portraits/ToriLK_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.ToriLKSummer": {
+					"Id": "{{ModId}}.ToriLKSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/ToriLK_Summer",
+					"Portrait": "Portraits/ToriLK_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ToriLKFall": {
+					"Id": "{{ModId}}.ToriLKFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/ToriLK_Fall",
+					"Portrait": "Portraits/ToriLK_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.ToriLKWinter": {
+					"Id": "{{ModId}}.ToriLKWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/ToriLK_Winter",
+					"Portrait": "Portraits/ToriLK_Winter",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.ToriLKFlowerDance": {
+					"Id": "{{ModId}}.ToriLKFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/ToriLK_FlowerDance",
+					"Portrait": "Portraits/ToriLK_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.ToriLKSpirit": {
+					"Id": "{{ModId}}.ToriLKSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/ToriLK_SpiritsEve",
+					"Portrait": "Portraits/ToriLK_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.ToriLKBeach": {
+					"Id": "{{ModId}}.ToriLKBeach",
+					"Sprite": "Characters/ToriLK_Beach",
+					"Portrait": "Portraits/ToriLK_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},
+		{
+            "LogName": "ToriLK Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/ToriLK",
+        
+            "FromFile": "assets/{{Target}}/ToriLK_{{Season}}.png",
+        },
+	]
+}

@@ -1,0 +1,105 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Josephine's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Josephine_Spring, Portraits/Josephine_Summer, Portraits/Josephine_Fall, Portraits/Josephine_Winter, Portraits/Josephine_FlowerDance, Portraits/Josephine_SpiritsEve, Portraits/Josephine_Beach, Characters/Josephine_Spring, Characters/Josephine_Summer, Characters/Josephine_Fall, Characters/Josephine_Winter, Characters/Josephine_FlowerDance, Characters/Josephine_SpiritsEve, Characters/Josephine_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/JosephineK/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Josephine - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Josephine_Spring, Characters/Josephine_Summer, Characters/Josephine_Fall, Characters/Josephine_Winter, Characters/Josephine_FlowerDance, Characters/Josephine_SpiritsEve, Characters/Josephine_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/JosephineK/Josephine_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Josephine Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": ["JosephineK", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.JosephineSpring": {
+					"Id": "{{ModId}}.JosephineSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Josephine_Spring",
+					"Portrait": "Portraits/Josephine_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.JosephineSummer": {
+					"Id": "{{ModId}}.JosephineSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Josephine_Summer",
+					"Portrait": "Portraits/Josephine_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JosephineFall": {
+					"Id": "{{ModId}}.JosephineFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Josephine_Fall",
+					"Portrait": "Portraits/Josephine_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JosephineWinter": {
+					"Id": "{{ModId}}.JosephineWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Josephine_Winter",
+					"Portrait": "Portraits/Josephine_Winter",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.JosephineFlowerDance": {
+					"Id": "{{ModId}}.JosephineFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Josephine_FlowerDance",
+					"Portrait": "Portraits/Josephine_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.JosephineSpirit": {
+					"Id": "{{ModId}}.JosephineSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Josephine_SpiritsEve",
+					"Portrait": "Portraits/Josephine_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.JosephineBeach": {
+					"Id": "{{ModId}}.JosephineBeach",
+					"Sprite": "Characters/Josephine_Beach",
+					"Portrait": "Portraits/Josephine_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},
+		{
+            "LogName": "JosephineK Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/JosephineK",
+            "FromFile": "assets/{{Target}}/Josephine_{{Season}}.png",
+        },	
+	]
+}

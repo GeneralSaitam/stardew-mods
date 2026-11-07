@@ -1,0 +1,191 @@
+{
+  "Format": "2.0",
+  "ConfigSchema": {
+    "PortraitStyle": {
+		"AllowValues": "Drawberry, Nyapu",
+		"Default": "Drawberry",
+		"AllowBlank": false,
+		"Description": "Choose between Drawberry style (by me!) or Nyapu style portraits by the wonderful AhCuteArt!"
+      },
+      "NoNose": {
+          "AllowValues": "true, false",
+          "Default": "true",
+          "Description": "Choose between no noses (true) or noses (false) for the sprites."
+      },
+      "FestivalOutfits": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteBeatrice": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteCorwinLK": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteDaleWaede": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteEdithHart": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteEthanHart": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteJadeMalic": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteKeanuAvis": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteKennedyLK": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteMichaelHart": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteStellaHart": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteTristan": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+      "CuteCaptainRod": {
+          "AllowValues": "true, false",
+          "Default": "true"
+      },
+  },
+  "DynamicTokens": [
+      //Likely not necessary^
+  ],
+  "Changes": [
+      {
+          "LogName": "Captain Rod Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/CaptainRod.json",
+          "When": {
+              "HasFile:{{FromFile}}": true,
+              "CuteCaptainRod": "True",
+          }
+      },
+      {
+          "LogName": "Eyvind Spouse Portrait Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/EyvindPortrait.json",
+      },
+      {
+          "LogName": "Beatrice Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/Beatrice.json",
+          "When": {
+              "HasFile:{{FromFile}}": true,
+              "CuteBeatrice": "True",
+          }
+      },
+      {
+          "LogName": "CorwinLK Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/CorwinLK.json",
+          "When": {
+              "HasFile:{{FromFile}}": true,
+              "CuteCorwinLK": "True",
+          }
+      },
+      {
+          "LogName": "DaleWaede Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/DaleWaede.json",
+          "When": {
+              "HasFile:{{FromFile}}": true,
+              "CuteDaleWaede": "True",
+          }
+      },
+      {
+          "LogName": "EdithHart Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/EdithHart.json",
+          "When": {
+              "HasFile:{{FromFile}}": true,
+              "CuteEdithHart": "True",
+          }
+      },
+      {
+          "LogName": "EthanHart Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/EthanHart.json",
+          "When": {
+              "HasFile:{{FromFile}}": true,
+              "CuteEthanHart": "True",
+          }
+      },
+      {
+          "LogName": "JadeMalic Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/JadeMalic.json",
+          "When": {
+              "HasFile:{{FromFile}}": true,
+              "CuteJadeMalic": "True",
+          }
+      },
+      {
+          "LogName": "KeanuAvis Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/KeanuAvis.json",
+          "When": {
+              "HasFile:{{FromFile}}": true,
+              "CuteKeanuAvis": "True",
+          }
+      },
+      {
+          "LogName": "KennedyLK Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/KennedyLK.json",
+          "When": {
+              "HasFile:{{FromFile}}": true,
+              "CuteKennedyLK": "True",
+          }
+      },
+      {
+          "LogName": "MichaelHart Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/MichaelHart.json",
+          "When": {
+              "HasFile:{{FromFile}}": true,
+              "CuteMichaelHart": "True",
+          }
+      },
+      {
+          "LogName": "StellaHart Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/StellaHart.json",
+          "When": {
+              "HasFile:{{FromFile}}": true,
+              "CuteStellaHart": "True",
+          }
+      },
+      {
+          "LogName": "Tristan Seasonal Include",
+          "Action": "Include",
+          "FromFile": "assets/Code/TristanLK.json",
+          "When": {
+              "HasMod |contains=LemurKat.Mr.Ginger.NPC": true,
+              "HasMod |contains=Lemurkat.EastScarpNPCs": true,
+              "HasMod |contains=Spiderbuttons.CMCT": true,
+              "SpiderButtons.CMCT/Config: Lemurkat.EastScarpNPCs, EnableTristan": true,
+              "HasFile:{{FromFile}}": true,
+              "CuteTristan": "True",
+          }
+      },
+  ]
+}
+

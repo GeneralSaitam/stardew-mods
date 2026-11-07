@@ -1,0 +1,42 @@
+{
+	"Changes": [
+		{
+			"LogName": "OverlayParrot - always",
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Portraits/ParrotBoy",
+            "FromFile": "assets/Portraits/{{OverlayParrot - Mainland}}.png",
+			"Update": "OnLocationChange",
+        },
+		{
+			"LogName": "OverlayParrot - always",
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Portraits/ParrotBoy",
+            "FromFile": "assets/Portraits/{{OverlayParrot - Island}}.png",
+			"Update": "OnLocationChange",
+        },
+		{
+			"LogName": "OverlayParrot - random",
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Portraits/ParrotBoy",
+            "FromFile": "assets/Portraits/{{Random:{{OverlayParrot - Mainland}}, Blank}}.png",
+			"Update": "OnLocationChange",
+			"When": {
+				"Random ParrotFriend": "true"
+            },
+        },
+		{
+			"LogName": "OverlayParrot - random",
+            "Action": "EditImage",
+			"PatchMode": "Overlay",
+            "Target": "Portraits/ParrotBoy",
+            "FromFile": "assets/Portraits/{{Random:{{OverlayParrot - Island}}, Blank}}.png",
+			"Update": "OnLocationChange",
+			"When": {
+				"Random ParrotFriend": "true"
+            },
+        },
+	]
+}

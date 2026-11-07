@@ -1,0 +1,31 @@
+{
+    "Name": "(DDF) Compatibility Patches",
+    "Author": "Mangupix",
+    "Version": "1.1.2",
+    "Description": "Various compatibility fixes between DDFC mods.",
+    "UniqueID": "Mangupix.DDFCCompatibilityPatches",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": [ "Nexus:22678@CompatPatch" ],
+    "ContentPackFor":
+	{
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "mangupix.DialogueDisplayFrameworkContinued",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "aedenthorn.CPDDFHeartsandGifts",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Dora.ChangingSkies",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Kana.PortraitedChangingSkies.DDF",
+            "IsRequired": false
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="19" nextobjectid="38">
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+  <tile id="581">
+   <animation>
+    <frame tileid="581" duration="1000"/>
+    <frame tileid="550" duration="1000"/>
+    <frame tileid="581" duration="1000"/>
+    <frame tileid="582" duration="1000"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="2177" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="2241" name="z_luan.Extras_furniture" tilewidth="16" tileheight="16" tilecount="55020" columns="84">
+  <image source="z_luan.Extras_furniture.png" width="1344" height="10480"/>
+ </tileset>
+ <tileset firstgid="57261" name="z_luan.Extras_Interior" tilewidth="16" tileheight="16" tilecount="3172" columns="52">
+  <image source="z_luan.Extras_Interior.png" width="832" height="976"/>
+ </tileset>
+ <layer id="1" name="Back" width="3" height="5">
+  <data encoding="csv">
+639,2146,639,
+607,608,58634,
+639,640,58686,
+607,608,58480,
+639,640,58532
+</data>
+ </layer>
+ <layer id="14" name="Back2" width="3" height="5">
+  <data encoding="csv">
+0,0,0,
+0,0,1073800674,
+0,0,58796,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="11" name="Schedule" width="3" height="5">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="3" height="5">
+  <data encoding="csv">
+11487,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="12" name="Buildings2" width="3" height="5">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Front" width="3" height="5">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+166,166,166
+</data>
+ </layer>
+ <layer id="16" name="Front2" width="3" height="5">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="18" name="Front3" width="3" height="5">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="3" height="5">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="5" name="AlwaysFront" width="3" height="5">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <objectgroup id="13" name="Back2"/>
+ <objectgroup id="7" name="Buildings"/>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="15" name="Front2"/>
+ <objectgroup id="17" name="Front3"/>
+ <objectgroup id="9" name="Paths"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

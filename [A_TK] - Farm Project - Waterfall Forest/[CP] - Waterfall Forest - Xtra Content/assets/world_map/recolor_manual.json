@@ -1,0 +1,491 @@
+{
+	"Changes": [
+
+//	MANUAL RECOLORS
+
+//	//	DEFAULT DISPLAY		
+		
+//	//	//	STANDARD MAP
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "False",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},		
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_WaFFLE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "False",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},
+
+//	//	//	SVE MAP
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "True",	
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/_default_SV/{{season}}_WaFFLE_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},
+
+//	//	EARTHY RECOLOUR		
+		
+//	//	//	STANDARD MAP
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Earthy_Recolour/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "False",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Earthy_Recolour": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},		
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Earthy_Recolour/{{season}}_WaFFLE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "False",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Earthy_Recolour": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},
+
+//	//	//	SVE MAP
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Earthy_Recolour/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "True",	
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Earthy_Recolour": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+			}
+		},	
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Earthy_Recolour/{{season}}_WaFFLE_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Earthy_Recolour": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},		
+
+//	//	STARBLUE VALLEY
+
+//	//	//	STANDARD MAP		
+		
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Starblue_Valley/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Starblue_Valley": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},	
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Starblue_Valley/{{season}}_WaFFLE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Starblue_Valley": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},	
+		
+//	//	UNIVERSAL RECOLOR
+
+//	//	//	STANDARD MAP		
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Universal_Recolors/D40_H1/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "False",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Universal_Recolors": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},		
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Universal_Recolors/D40_H1/{{season}}_WaFFLE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "False",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Universal_Recolors": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},		
+		
+//	//	//	SVE MAP
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Universal_Recolors/D40_H1/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Universal_Recolors": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},		
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Universal_Recolors/D40_H1/{{season}}_WaFFLE_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },	
+			"PatchMode": "Replace",
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Universal_Recolors": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},		
+
+//	//	VIBRANT PASTORAL
+
+//	//	//	STANDARD MAP
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "False",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Vibrant_Pastoral/fall_red_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "False",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral_Fall": "Red",	
+				"Season": "fall",				
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_WaFFLE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "False",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Vibrant_Pastoral/fall_red_WaFFLE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "False",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral_Fall": "Red",	
+				"Season": "fall",				
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},
+
+//	//	//	SVE MAP
+		
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Vibrant_Pastoral/fall_red_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral_Fall": "Red",
+				"Season": "fall",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},		
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Vibrant_Pastoral/{{season}}_WaFFLE_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Vibrant_Pastoral/fall_red_WaFFLE_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"World_Map_SVE": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Vibrant_Pastoral_Fall": "Red",	
+				"Season": "fall",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},
+		
+//	//	WITTILY NAMED
+
+//	//	//	STANDARD MAP
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Wittily_Named/all_dark_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Wittily_Named": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Wittily_Named_Dirt": "Dark",	
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Wittily_Named/all_light_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Wittily_Named": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Wittily_Named_Dirt": "Light",	
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Wittily_Named/all_dark_WaFFLE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Wittily_Named": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Wittily_Named_Dirt": "Dark",	
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Wittily_Named/all_light_WaFFLE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Wittily_Named": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Wittily_Named_Dirt": "Light",	
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},	
+		
+//	OPTIONS
+
+//	//	MILD WINTER
+
+//	//	//	STANDARD MAP
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Mild_Winter/fall_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Mild_Winter": "True",
+				"Season": "winter",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Mild_Winter/fall_WaFFLE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_AToMS": "True",
+				"Spiderbuttons.CMCT/Config: A_TK.AToMS, Mild_Winter": "True",
+				"Season": "winter",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		}		
+	]
+}	  

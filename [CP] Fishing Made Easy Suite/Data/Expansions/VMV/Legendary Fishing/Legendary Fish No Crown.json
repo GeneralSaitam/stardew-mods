@@ -1,0 +1,79 @@
+{
+  "Changes": [
+    {
+      "LogName": "VMV - Legendary Fish No Crown AlpineCharPrince",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_TrainStation",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_AlpineCharPrince": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "VMV - Legendary Fish No Crown Sturgiant",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_Hamlet",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_Sturgiant": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "VMV - Legendary Fish No Crown PlanetFish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_ForestCaveMoonPond",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_PlanetFish": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "VMV - Legendary Fish No Crown On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_AlpineCharPrince": {
+          "IsBossFish": false
+        },
+        "Lumisteria.MtVapius_Sturgiant": {
+          "IsBossFish": false
+        },
+        "Lumisteria.MtVapius_PlanetFish": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true,
+        "Legendary Fish On Farm": true
+      }
+    }
+  ]
+}

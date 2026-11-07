@@ -1,0 +1,39 @@
+{
+  "Changes": [
+    {
+      "LogName": "SBV - Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Entries": {
+        "skellady.SBVCP_Aberrant": {
+          "ItemId": "skellady.SBVCP_Aberrant",
+          "Chance": 0.3,
+          "CuriosityLureBuff": 0.07,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false
+        },
+        "skellady.SBVCP_AnglerJr": {
+          "ItemId": "skellady.SBVCP_AnglerJr",
+          "Chance": 0.3,
+          "CuriosityLureBuff": 0.07,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "Condition": "LOCATION_Season Here fall",
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false
+        }
+      },
+      "When": {
+        "Legendary Fish On Farm": true
+      }
+    }
+  ]
+}

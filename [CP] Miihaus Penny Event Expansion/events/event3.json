@@ -1,0 +1,232 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                "16279003/F/f Penny 750/t 1100 1400/w sunny/A pennyGone/e 16279002": "musicboxsong/
+                11 10/
+                farmer -30 -30 0 Penny 8 10 1 Gunther 3 8 2/
+                skippable/
+                mail PennysFavBook/
+                animate Penny false true 150 4 4 4 21 21 21 22 22 22 21 21 21/
+                pause 2000/
+                faceDirection Gunther 1/
+                pause 1000/
+                speak Gunther \"{{i18n:Miihau.PennyEE.event3.001}}\"/
+                pause 200/
+                stopAnimation Penny 4/
+                faceDirection Penny 3/
+                pause 200/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.002}}\"/
+                pause 100/
+                speak Gunther \"{{i18n:Miihau.PennyEE.event3.003}}\"/
+                jump Penny 4/
+                emote Penny 40/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.004}}\"/
+                pause 150/
+                speak Gunther \"{{i18n:Miihau.PennyEE.event3.005}}\"/
+                jump Penny 4/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.006}}\"/
+                playSound doorClose/
+                warp farmer 3 14/
+                jump Penny 4/
+                faceDirection Gunther 2/
+                pause 400/
+                textAboveHead Gunther \"{{i18n:Miihau.PennyEE.event3.007}}\"/
+                pause 800/
+                emote farmer 32 true/
+                pause 300/
+                textAboveHead Penny \"{{i18n:Miihau.PennyEE.event3.008}}\"/
+                pause 200/
+                move farmer 0 -2 0/
+                speak Gunther \"{{i18n:Miihau.PennyEE.event3.009}}\"/
+                pause 150/
+                emote farmer 36/
+                faceDirection Gunther 1/
+                speak Gunther \"{{i18n:Miihau.PennyEE.event3.010}}\"/
+                emote Penny 32/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.011}}\"/
+                faceDirection Gunther 2/
+                move farmer 0 -1 1/
+                move farmer 4 0 1/
+                faceDirection Penny 1/
+                animate Penny false true 150 4 4 4 21 21 21 22 22 22 21 21 21/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.012}}\"/
+                stopAnimation Penny 4/
+                faceDirection Penny 2/
+                pause 150/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.013}}\"/
+                advancedMove farmer false 1 0 0 -6 2 0/
+                move Penny 0 -5 1/
+                move Penny 4 0 0/
+                faceDirection farmer 1/
+                animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+                pause 300/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.014}}\"/
+                stopAnimation Penny 8/
+                faceDirection Penny 3/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.015}}\"/
+                emote farmer 8/
+                pause 100/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.016}}\"/
+                pause 200/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.017}}\"/
+                advancedMove farmer false 5 0/
+                move Penny 5 0 0/
+                faceDirection farmer 1/
+                animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+                pause 300/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.018}}\"/
+                pause 300/
+                stopAnimation Penny 8/
+                faceDirection Penny 3/
+                pause 200/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.019}}\"/
+                move Penny 0 1 3/
+                move Penny -2 0 3/
+                advancedMove farmer false -1 0 0 4/
+                move Penny -1 0 2/
+                move Penny 0 4 1/
+                pause 50/
+                faceDirection farmer 1/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.020}}\"/
+                faceDirection Penny 0/
+                faceDirection farmer 2/
+                pause 250/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.021}}\"/
+                pause 200/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.022}}\"/
+                emote farmer 32/
+                faceDirection farmer 3/
+                move Penny -3 0 3/
+                move Penny 0 -1 0/
+                animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+                move farmer -1 0 3/
+                pause 300/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.023}}\"/
+                pause 200/
+                stopAnimation Penny 8/
+                showFrame Penny 27/
+                addTemporaryActor SmallBook 16 16 12 9 2 false/
+                positionOffset SmallBook 0 15/
+                playSound throwDownITem/
+                jump Penny 6/
+                pause 400/
+                faceDirection Penny 1/
+                showFrame Penny 4/
+                pause 100/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.024}}\"/
+                pause 100/
+                question fork0 \"{{i18n:Miihau.PennyEE.event3.025}}\"/
+                fork helpToPickUp/
+                showFrame Penny 22/
+                pause 50/
+                positionOffset Penny 4 0/
+                pause 50/
+                positionOffset Penny 4 0/
+                pause 50/
+                positionOffset Penny 0 4/
+                pause 50/
+                positionOffset Penny 0 4/
+                pause 50/
+                positionOffset Penny 4 0/
+                pause 50/
+                positionOffset Penny 4 0/
+                pause 50/
+                positionOffset Penny 0 4/
+                pause 50/
+                positionOffset Penny 0 4/
+                pause 100/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.026}}\"/
+                pause 100/
+                positionOffset Penny -16 -16/
+                warp SmallBook -1020 -1000/
+                playSound pickUpItem/
+                pause 50/
+                showFrame Penny 4/
+                pause 100/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.027}}\"/
+                pause 100/
+                fork putBookBack/
+                end",
+                "helpToPickUp": "showFrame Penny 22/
+                friendship Penny 30/
+                showFrame farmer 58 true/
+                pause 50/
+                positionOffset Penny 4 0/
+                positionOffset farmer -4 0/
+                pause 50/
+                positionOffset Penny 4 0/
+                positionOffset farmer -4 0/
+                pause 50/
+                positionOffset Penny 0 4/
+                positionOffset farmer 0 4/
+                pause 50/
+                positionOffset Penny 0 4/
+                positionOffset farmer 0 4/
+                pause 50/
+                positionOffset Penny 4 0/
+                positionOffset farmer -4 0/
+                pause 50/
+                positionOffset Penny 4 0/
+                positionOffset farmer -4 0/
+                pause 50/
+                positionOffset Penny 0 4/
+                positionOffset farmer 0 4/
+                pause 50/
+                positionOffset Penny 0 4/
+                positionOffset farmer 0 4/
+                pause 100/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.028}}\"/
+                pause 100/
+                positionOffset Penny -16 -16/
+                positionOffset farmer 16 -16/
+                showFrame Penny 4/
+                showFrame farmer 6 true/
+                pause 10/
+                warp SmallBook -1000 -1020/
+                playSound pickUpItem/
+                pause 50/
+                pause 100/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.029}}\"/
+                fork putBookBack/
+                end",
+                "putBookBack": "pause 100/
+                animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.030}}\"/
+                pause 100/
+                stopAnimation Penny 8/
+                pause 100/
+                faceDirection Penny 1/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.031}}\"/
+                speak Penny \"{{i18n:Miihau.PennyEE.event3.032}}\"/
+                emote farmer 32/
+                animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+                faceDirection farmer 3/
+                advancedMove farmer false 0 3 -2 0 0 2 -4 0/
+                pause 2500/
+                globalFade/
+                viewport -1000 -1000/
+                pause 1300/
+                end dialogue Penny \"{{i18n:Miihau.PennyEE.event3.033}}\"",
+            },
+        },  
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":{
+                "event_booklove1":"{{i18n:Miihau.PennyEE.event3.034}}",
+                "event_booklove2":"{{i18n:Miihau.PennyEE.event3.035}}",
+                "event_booklove3":"{{i18n:Miihau.PennyEE.event3.036}}",
+                "event_booklove4":"{{i18n:Miihau.PennyEE.event3.037}}",
+                "event_booklove5":"{{i18n:Miihau.PennyEE.event3.038}}",
+                "event_booklove6":"{{i18n:Miihau.PennyEE.event3.039}}",
+                "event_booklove7":"{{i18n:Miihau.PennyEE.event3.040}}",
+                "event_booklove8":"{{i18n:Miihau.PennyEE.event3.041}}"
+            }
+        
+        }, 
+        
+    ]
+}

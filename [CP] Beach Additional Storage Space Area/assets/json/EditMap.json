@@ -1,0 +1,240 @@
+{
+
+    "Changes": [
+
+
+//■■■ エディットマップ部分 ■■■
+
+  //★★★ 物置スペースの外観パッチ ★★★
+
+    //●屋根 有り
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+        "FromFile": "assets/tmx/Beach_Storage_Space_Roofed.tmx",
+        "ToArea": { "X": 14, "Y": 0, "Width": 22, "Height": 16 },
+        "MapProperties":{ 
+          "DayTiles": "AlwaysFront 32 8 369",
+          "Light": "32 8 4",
+          "NightTiles": "AlwaysFront 32 8 368",
+        },
+        "When": {
+          "Storage Space Pattern": "Roofed"
+        }
+      },
+
+    //●屋根 無し
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+        "FromFile": "assets/tmx/Beach_Storage_Space_Noroof.tmx",
+        "ToArea": { "X": 14, "Y": 0, "Width": 22, "Height": 16 },
+        "MapProperties":{ 
+          "DayTiles": "AlwaysFront 32 8 369",
+          "Light": "32 8 4",
+          "NightTiles": "AlwaysFront 32 8 368"
+        },
+        "When": {
+          "Storage Space Pattern": "No_roof"
+        }
+      },
+
+    //●足場のみ(不足分のワーププロパティも追加)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+        "FromFile": "assets/tmx/Beach_Storage_Space_Scaffolding_Only.tmx",
+        "ToArea": { "X": 14, "Y": 0, "Width": 22, "Height": 16 },
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Warp"],
+            "Value": "23 -1 Beach 62 49 26 -1 Beach 65 49",
+            "Delimiter": " "
+          }
+        ],
+        "When": {
+          "Storage Space Pattern": "Scaffolding_only"
+        }
+      },
+
+
+  //★★★ 上項(物置スペースの外観パッチ)に対応した ビーチ側 の変更 ★★★
+
+    //●カニカゴMod [有り] //上から 屋根有り・屋根無し、足場のみ
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "FromFile": "assets/tmx/Beach_Storage_Space_Add.tmx",
+        "ToArea": { "X": 61, "Y": 47, "Width": 6, "Height": 3 },
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Warp"],
+            "Value": "63 50 Custom_Beach_Storage_Space 24 1 64 50 Custom_Beach_Storage_Space 25 1",
+            "Delimiter": " "
+          }
+        ],
+        "When": {
+          "Storage Space Pattern": "Roofed, No_roof",
+          "HasMod": "Tikamin557.BeachExtensionForCrabPod"
+        }
+      },
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "FromFile": "assets/tmx/Beach_Storage_Space_Add_Scaffolding_Only.tmx",
+        "ToArea": { "X": 61, "Y": 47, "Width": 6, "Height": 3 },
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Warp"],
+            "Value": "62 50 Custom_Beach_Storage_Space 23 1 63 50 Custom_Beach_Storage_Space 24 1 64 50 Custom_Beach_Storage_Space 25 1 65 50 Custom_Beach_Storage_Space 26 1",
+            "Delimiter": " "
+          }
+        ],
+        "When": {
+          "Storage Space Pattern": "Scaffolding_only",
+          "HasMod": "Tikamin557.BeachExtensionForCrabPod"
+        }
+      },
+
+    //●カニカゴMod [無し] //上から 屋根有り・屋根無し、足場のみ、移動用のボード追加
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "FromFile": "assets/tmx/Beach_Storage_Space_Add(NoCrabPodArea).tmx",
+        "ToArea": { "X": 58, "Y": 43, "Width": 9, "Height": 7 },
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Warp"],
+            "Value": "63 50 Custom_Beach_Storage_Space 24 1 64 50 Custom_Beach_Storage_Space 25 1",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Light"],
+            "Value": "65 43 4",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "DayTiles"],
+            "Value": "AlwaysFront 65 43 369",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "NightTiles"],
+            "Value": "AlwaysFront 65 43 368",
+            "Delimiter": " "
+          }
+        ],
+        "When": {
+          "Storage Space Pattern": "Roofed, No_roof",
+          "HasMod |contains=Tikamin557.BeachExtensionForCrabPod": "false"
+        }
+      },
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "FromFile": "assets/tmx/Beach_Storage_Space_Add_Scaffolding_Only(NoCrabPodArea).tmx",
+        "ToArea": { "X": 58, "Y": 43, "Width": 9, "Height": 7 },
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Warp"],
+            "Value": "62 50 Custom_Beach_Storage_Space 23 1 63 50 Custom_Beach_Storage_Space 24 1 64 50 Custom_Beach_Storage_Space 25 1 65 50 Custom_Beach_Storage_Space 26 1",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "Light"],
+            "Value": "65 43 4",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "DayTiles"],
+            "Value": "AlwaysFront 65 43 369",
+            "Delimiter": " "
+          },
+          {
+            "Operation": "Append",
+            "Target": ["MapProperties", "NightTiles"],
+            "Value": "AlwaysFront 65 43 368",
+            "Delimiter": " "
+          }
+        ],
+        "When": {
+          "Storage Space Pattern": "Scaffolding_only",
+          "HasMod |contains=Tikamin557.BeachExtensionForCrabPod": "false"
+        }
+      },
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "FromFile": "assets/tmx/Beach_Storage_Space_Boat.tmx",
+        "PatchMode": "Overlay",
+        "ToArea": { "X": 15, "Y": 37, "Width": 4, "Height": 3 },
+        "When": {
+          "HasMod |contains=Tikamin557.BeachExtensionForCrabPod": "false"
+        }
+      },
+
+
+  //★★★ カモメ系の編集(物置スペースの外観共通DT制御) ★★★
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+        "FromFile": "assets/tmx/Beach_Storage_Space_Seagull.tmx",
+        "MapTiles": [
+          {
+            "Position": { "X": "{{DT_Seagull_Log_Left_X}}", "Y": 7 }, //左
+            "Layer": "Buildings",
+            "SetProperties": {
+              "Action": "Message \"BeachASSA04\""
+            }
+          },
+          {
+            "Position": { "X": 24, "Y": "{{DT_Seagull_Log_Under_Y}}" }, //下1
+            "Layer": "Buildings",
+            "SetProperties": {
+              "Action": "Message \"BeachASSA04\""
+            }
+          },
+          {
+            "Position": { "X": 25, "Y": "{{DT_Seagull_Log_Under_Y}}" }, //下2
+            "Layer": "Buildings",
+            "SetProperties": {
+              "Action": "Message \"BeachASSA04\""
+            }
+          }
+        ],
+        "When": {
+          "Query: {{DT_Seagull_Query}}": "true",
+          "LocationName": "Custom_Beach_Storage_Space",
+        },
+        "Update": "OnLocationChange, OnTimeChange"
+      },
+
+
+//■■■ 他Mod関係のエディット部分 ■■■
+
+  //★★★ Swim(一般的な"対応"ではなく追加変更) ★★★
+
+    //●物置スペースに海へ繋がる階段追加(ファイルDT制御)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+        "FromFile": "assets/tmx/Beach_Storage_Space_Swim{{DT_SwimFile}}.tmx",
+        "ToArea": { "X": 26, "Y": 0, "Width": 3, "Height": 4 },
+        "When": {
+          "Scaffolding for swim mod": "true"
+        }
+      }
+
+
+    ] //▼▼"Changes"の終了▼▼
+}

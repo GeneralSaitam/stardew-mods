@@ -1,0 +1,409 @@
+{
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Tilesheets/{{ModId}}ClockworkBladeTexture",
+      "FromFile": "assets/ClockworkBlade.png"
+    },
+    {
+      "LogName": "AddSword",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "{{ModId}}ClockworkBlade": {
+          "Name": "Clockwork Blade",
+          "DisplayName": "{{i18n:yuninocorn.CNPCA.Strings.ClockworkBladeName}}",
+          "Description": "{{i18n:yuninocorn.CNPCA.Strings.ClockworkBladeDescription}}",
+          "MinDamage": "120",
+          "MaxDamage": "150",
+          "Knockback": 1.0,
+          "Speed": 8,
+          "Precision": 0,
+          "Defense": 3,
+          "Type": 0,
+          "MineBaseLevel": -1,
+          "MineMinLevel": -1,
+          "AreaOfEffect": 0,
+          "CritChance": 0.02,
+          "CritMultiplier": 3.0,
+          "CanBeLostOnDeath": false,
+          "Texture": "TileSheets/{{ModId}}ClockworkBladeTexture",
+          "SpriteIndex": 0,
+          "Projectiles": [
+            {
+              "Id": "{{ModId}}ClockworkBladeProjectile",
+              "Damage": "75",
+              "MaxDistance": 6
+            }
+          ],
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Tilesheets/{{ModId}}ReapersScytheTexture",
+      "FromFile": "assets/ReapersScythe.png"
+    },
+    {
+      "LogName": "AddReapersScythe",
+      "Action": "EditData",
+      "Target": "Data/Weapons",
+      "Entries": {
+        "{{ModId}}ReapersScythe": {
+          "Name": "Reaper's Scythe",
+          "DisplayName": "{{i18n:yuninocorn.CNPCA.Strings.ReapersScytheName}}",
+          "Description": "{{i18n:yuninocorn.CNPCA.Strings.ReapersScytheDescription}}",
+          "MinDamage": "90",
+          "MaxDamage": "105",
+          "Knockback": 1.0,
+          "Speed": 8,
+          "Precision": 0,
+          "Defense": 3,
+          "Type": 0,
+          "MineBaseLevel": -1,
+          "MineMinLevel": -1,
+          "AreaOfEffect": 0,
+          "CritChance": 0.02,
+          "CritMultiplier": 3.0,
+          "CanBeLostOnDeath": false,
+          "Texture": "TileSheets/{{ModId}}ReapersScytheTexture",
+          "SpriteIndex": 0,
+          "Projectiles": [],
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "LogName": "AddPhoenixEgg",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}PhoenixEgg": {
+          "Name": "Phoenix Egg",
+          "DisplayName": "{{i18n:yuninocorn.CNPCA.Strings.PhoenixEggName}}",
+          "Description": "{{i18n:yuninocorn.CNPCA.Strings.PhoenixEggDescription}}",
+          "Type": "Basic",
+          "Category": -5,
+          "Price": 500,
+          "Texture": "Tilesheets/{{ModId}}PhoenixEgg",
+          "ColorOverlayFromNextIndex": false,
+          "Edibility": -15,
+          "IsDrink": false,
+          "Buffs": null,
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_orange",
+            "egg_item"
+          ],
+          "CustomFields": null
+        }
+      },
+      "When": {
+        "RemovePhoenixItems": "false"
+      }
+    },
+    {
+      "LogName": "AddPhoenixFeather",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}PhoenixFeather": {
+          "Name": "Phoenix Feather",
+          "DisplayName": "{{i18n:yuninocorn.CNPCA.Strings.PhoenixFeatherName}}",
+          "Description": "{{i18n:yuninocorn.CNPCA.Strings.PhoenixFeatherDescription}}",
+          "Type": "Basic",
+          "Category": -18,
+          "Price": 1000,
+          "Texture": "Tilesheets/{{ModId}}PhoenixFeather",
+          "ColorOverlayFromNextIndex": false,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_orange",
+            "egg_item"
+          ],
+          "CustomFields": null
+        }
+      },
+      "When": {
+        "RemovePhoenixItems": "false"
+      }
+    },
+    {
+      "LogName": "AddPhoenixMayo",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}PhoenixMayo": {
+          "Name": "Phoenix Mayo",
+          "DisplayName": "{{i18n:yuninocorn.CNPCA.Strings.PhoenixMayoName}}",
+          "Description": "{{i18n:yuninocorn.CNPCA.Strings.PhoenixMayoDescription}}",
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 2000,
+          "Texture": "Tilesheets/{{ModId}}PhoenixMayo",
+          "ColorOverlayFromNextIndex": false,
+          "Edibility": -15,
+          "IsDrink": true,
+          "Buffs": null,
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": true,
+          "CanBeTrashed": true,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_orange",
+            "mayo_item"
+          ],
+          "CustomFields": null
+        }
+      },
+      "When": {
+        "RemovePhoenixItems": "false"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [ "Entries", "Universal_Love" ],
+          "Value": "{{ModId}}_PhoenixEgg",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "RemovePhoenixItems": "false"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [ "Entries", "Universal_Love" ],
+          "Value": "{{ModId}}_PhoenixFeather",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "RemovePhoenixItems": "false"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [ "Entries", "Universal_Love" ],
+          "Value": "{{ModId}}_PhoenixMayo",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "RemovePhoenixItems": "false"
+      }
+    },
+    {
+      "LogName": "AddPhoenix",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "{{ModId}}PhoenixFarmAnimal": {
+          "DisplayName": "{{i18n:yuninocorn.CNPCA.Strings.PhoenixName}}",
+          "House": "Coop",
+          "Gender": "Female",
+          "PurchasePrice": -1,
+          "SellPrice": 1500,
+          "ShopTexture": null,
+          "ShopSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 0,
+            "Height": 0
+          },
+          "ShopDisplayName": null,
+          "ShopDescription": null,
+          "ShopMissingBuildingDescription": null,
+          "RequiredBuilding": null,
+          "UnlockCondition": null,
+          "AlternatePurchaseTypes": null,
+          "EggItemIds": [
+            "{{ModId}}PhoenixEgg"
+          ],
+          "IncubationTime": -1,
+          "IncubatorParentSheetOffset": 2,
+          "BirthText": "[LocalizedText Strings\\Locations:AnimalHouse_Incubator_Hatch_VoidEgg]",
+          "DaysToMature": 7,
+          "CanGetPregnant": false,
+          "DaysToProduce": 3,
+          "HarvestType": "DropOvernight",
+          "HarvestTool": null,
+          "ProduceItemIds": [
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "{{ModId}}PhoenixEgg"
+            },
+            {
+              "Id": "Default",
+              "Condition": null,
+              "MinimumFriendship": 0,
+              "ItemId": "{{ModId}}PhoenixFeather"
+            }
+          ],
+          "DeluxeProduceItemIds": [],
+          "ProduceOnMature": false,
+          "FriendshipForFasterProduce": -1,
+          "DeluxeProduceMinimumFriendship": 200,
+          "DeluxeProduceCareDivisor": 1200.0,
+          "DeluxeProduceLuckMultiplier": 0.0,
+          "CanEatGoldenCrackers": true,
+          "ProfessionForHappinessBoost": 2,
+          "ProfessionForQualityBoost": 2,
+          "ProfessionForFasterProduce": -1,
+          "Texture": "Animals\\{{ModId}}Phoenix",
+          "BabyTexture": "Animals\\{{ModId}}PhoenixBaby",
+          "UseFlippedRightForLeft": false,
+          "SpriteWidth": 16,
+          "SpriteHeight": 16,
+          "UseDoubleUniqueAnimationFrames": true,
+          "SleepFrame": 16,
+          "EmoteOffset": {
+            "X": 0,
+            "Y": -16
+          },
+          "SwimOffset": {
+            "X": 0,
+            "Y": 112
+          },
+          "ShadowWhenAdult": null,
+          "Shadow": null,
+          "CanSwim": false,
+          "BabiesFollowAdults": true,
+          "GrassEatAmount": 2,
+          "HappinessDrain": 5,
+          "UpDownPetHitboxTileSize": "2, 2",
+          "LeftRightPetHitboxTileSize": "2, 2",
+          "BabyUpDownPetHitboxTileSize": "1, 1",
+          "BabyLeftRightPetHitboxTileSize": "1, 1",
+          "StatToIncrementOnProduce": [
+            {
+              "Id": "ChickenEggsLayed",
+              "RequiredItemId": null,
+              "RequiredTags": [
+                "egg_item"
+              ],
+              "StatName": "ChickenEggsLayed"
+            }
+          ],
+          "ShowInSummitCredits": false,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "LogName": "Phoenix Egg Processing",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)24",
+        "OutputRules"
+      ],
+      "Entries": {
+        "{{ModId}}PhoenixEgg": {
+          "Id": "{{ModId}}PhoenixEgg",
+          "Triggers": [
+            {
+              "Id": "ItemPlacedInMachine",
+              "Trigger": "ItemPlacedInMachine",
+              "RequiredItemId": "(O){{ModId}}PhoenixEgg",
+              "RequiredTags": null,
+              "RequiredCount": 1,
+              "Condition": null
+            }
+          ],
+          "UseFirstValidOutput": false,
+          "OutputItem": [
+            {
+              "CustomData": null,
+              "OutputMethod": null,
+              "CopyColor": false,
+              "CopyPrice": false,
+              "CopyQuality": true,
+              "PreserveType": null,
+              "PreserveId": null,
+              "IncrementMachineParentSheetIndex": 0,
+              "PriceModifiers": null,
+              "PriceModifierMode": "Stack",
+              "Condition": null,
+              "Id": "(O){{ModId}}PhoenixMayo",
+              "ItemId": "(O){{ModId}}PhoenixMayo",
+              "RandomItemId": null,
+              "MaxItems": null,
+              "MinStack": 1,
+              "MaxStack": -1,
+              "Quality": -1,
+              "ObjectInternalName": null,
+              "ObjectDisplayName": null,
+              "ObjectColor": null,
+              "ToolUpgradeLevel": -1,
+              "IsRecipe": false,
+              "StackModifiers": null,
+              "StackModifierMode": "Stack",
+              "QualityModifiers": null,
+              "QualityModifierMode": "Stack",
+              "ModData": null,
+              "PerItemCondition": null
+            }
+          ],
+          "MinutesUntilReady": 36,
+          "DaysUntilReady": -1,
+          "InvalidCountMessage": null,
+          "RecalculateOnCollect": false
+        }
+      },
+      "MoveEntries": [
+        {
+          "Id": "{{ModId}}PhoenixEgg",
+          "BeforeID": "Default_DinosaurEgg"
+        }
+      ],
+      "When": {
+        "RemovePhoenixItems": "false"
+      }
+    },
+    {
+      "LogName": "Event Beanie",
+      "Action": "EditData",
+      "Target": "Data/hats",
+      "Entries": {
+        "{{ModId}}MonsterBeanie": "Monster Beanie/{{i18n:yuninocorn.CNPCA.Strings.MonsterBeanieDescription}}/false/true//{{i18n:yuninocorn.CNPCA.Strings.MonsterBeanieName}}/0/Characters\\Farmer\\{{ModId}}MonsterBeanie"
+      }
+    }
+  ]
+}

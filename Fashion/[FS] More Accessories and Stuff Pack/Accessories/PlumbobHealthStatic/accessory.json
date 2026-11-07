@@ -1,0 +1,359 @@
+{
+  "Name": "Plumbob (Health, Static)",
+
+	// FRONT
+  "FrontAccessory": {
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 5
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 79
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 59
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 80
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 29
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 60
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 14
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 30
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 15
+          }
+        ]
+      }
+    ]
+  },
+
+	// RIGHT
+  "RightAccessory": {
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": -1,
+      "Y": 5
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 79
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 59
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 80
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 29
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 60
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 14
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 30
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 15
+          }
+        ]
+      }
+    ]
+  },
+
+	// LEFT
+  "LeftAccessory": {
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": -1,
+      "Y": 5
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 79
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 59
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 80
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 29
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 60
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 14
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 30
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 15
+          }
+        ]
+      }
+    ]
+  },
+
+	// BACK
+  "BackAccessory": {
+    "DisableGrayscale": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 5
+    },
+    "AccessorySize": {
+      "Width": 16,
+      "Length": 16
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 79
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 59
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 80
+          }
+        ]
+      },
+      {
+        "Frame": 2,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 29
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 60
+          }
+        ]
+      },
+      {
+        "Frame": 3,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "GreaterThan",
+            "Value": 14
+          },
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 30
+          }
+        ]
+      },
+      {
+        "Frame": 4,
+        "Duration": 5000,
+        "Conditions": [
+          {
+            "Name": "HealthLevel",
+            "Operator": "LessThan",
+            "Value": 15
+          }
+        ]
+      }
+    ]
+  }
+}

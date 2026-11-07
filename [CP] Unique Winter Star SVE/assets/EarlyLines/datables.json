@@ -1,0 +1,72 @@
+{
+	"Changes":[
+		{
+			"LogName": "Sophia - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Sophia.Gifting}}",
+			},
+			"When": {
+				"Sophia": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sophia - Winter Star, 7 Heart Event Plus",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Sophia.High.Gifting}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=8185298": "true",
+				"Sophia": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Claire - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Claire",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Claire.Gifting}}",
+			},
+			"When": {
+				"Claire": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Victor.Gifting}}",
+			},
+			"When": {
+				"Victor": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Olivia - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Olivia",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Olivia.Gifting}}",
+			},
+			"When": {
+				"Olivia": "normal, spicy",
+			},
+		},
+		
+		{
+			"LogName": "Scarlett - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Scarlett",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Scarlett.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Scarlett": "enabled, spicy",
+			},
+		},
+	],
+}

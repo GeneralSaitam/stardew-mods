@@ -1,0 +1,162 @@
+{
+	"Changes": [
+
+		{ 
+		"Action": "EditData",
+		"Target": "Data/EngagementDialogue",
+		"Entries": {
+			"Sandy0": "To be your wife, and no one else's$4#$b#It is all I could've asked for~ <$l",
+            "Sandy1": "I'm so excited! AND STRESSED!$4"
+			}
+		},
+
+        { 
+        "Action": "Load",
+        "Target": "Characters/Dialogue/MarriageDialogueSandy",
+        "FromFile": "assets/Desert.json"
+        },
+
+        { 
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueSandy",
+        "Entries": {
+            "Rainy_Day_1": "{{i18n:Rainy_Day_1}}",
+            "Rainy_Day_3": "{{i18n:Rainy_Day_3}}",
+            "Rainy_Night_2": "{{i18n:Rainy_Night_2}}",
+            "Indoor_Day_1": "{{i18n:Indoor_Day_1}}",
+            "Indoor_Day_3": "{{i18n:Indoor_Day_3}}",
+            "Indoor_Night_1": "{{i18n:Indoor_Night_1}}",
+            "Outdoor_3": "{{i18n:Outdoor_3}}",
+            "OneKid_1": "{{i18n:OneKid_1}}",
+            "OneKid_2": "{{i18n:OneKid_2}}",
+            "TwoKids_0": "{{i18n:TwoKids_0}}",
+            "TwoKids_2": "{{i18n:TwoKids_2}}",
+            "Good_0": "{{i18n:Good_0}}",
+            "Good_1": "{{i18n:Good_1}}",
+            "Good_3": "{{i18n:Good_3}}",
+            "Good_8": "{{i18n:Good_8}}",
+            "Good_5": "{{i18n:Good_5}}",
+            "Neutral_1": "{{i18n:Neutral_1}}",
+            "Neutral_2": "{{i18n:Neutral_2}}",
+            "Neutral_5": "{{i18n:Neutral_5}}",
+            "Neutral_4": "{{i18n:Neutral_4}}",
+            "Bad_4": "{{i18n:Bad_4}}",
+            "Bad_1": "{{i18n:Bad_1}}",
+            "Bad_6": "{{i18n:Bad_6}}",
+            "Bad_9": "{{i18n:Bad_9}}",
+            "spring_1": "{{i18n:spring_1}}",
+            "spring_28": "{{i18n:spring_28}}",
+            "summer_1": "{{i18n:summer_1}}",
+            "summer_8": "{{i18n:summer_8}}",
+            "summer_28": "{{i18n:summer_28}}",
+            "fall_1": "{{i18n:fall_1}}",
+            "fall_27": "{{i18n:fall_27}}",
+            "winter_1": "{{i18n:winter_1}}",
+            "winter_28": "{{i18n:winter_28}}"
+            }
+        },
+
+        { 
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogue",
+        "When": {"Spouse": "Sandy"},
+        "Entries": {
+            "funLeave_Sandy": "{{i18n:funLeave_Sandy1}}",
+            "funReturn_Sandy": "{{i18n:funReturn_Sandy1}}",
+            "patio_Sandy": "{{i18n:patio_Sandy}}",
+            "Outdoor_Sandy": "{{i18n:Outdoor_Sandy}}",
+            "Indoor_Night_Sandy": "{{i18n:Indoor_Night_Sandy}}",
+            "Indoor_Day_Sandy": "{{i18n:Indoor_Day_Sandy}}",
+            "Rainy_Day_Sandy": "{{i18n:Rainy_Day_Sandy}}",
+            "Rainy_Night_Sandy": "{{i18n:Rainy_Night_Sandy}}",
+            "spouseRoom_Sandy": "{{i18n:spouseRoom_Sandy}}",
+            "spring_Sandy": "{{i18n:spring_Sandy}}",
+            "summer_Sandy": "{{i18n:summer_Sandy}}",
+            "fall_Sandy": "{{i18n:fall_Sandy}}",
+            "winter_Sandy": "{{i18n:winter_Sandy}}"
+            }
+        },
+        { 
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogue",
+        "When": {"IsThirdDay": true},
+        "Entries": {
+            "funLeave_Sandy": "{{i18n:funLeave_Sandy2}}",
+            "funReturn_Sandy": "{{i18n:funReturn_Sandy2}}",
+            "spouseRoom_Sandy": "{{i18n:spouseRoom_Sandy_2}}"
+            }
+        },
+        { 
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogue",
+        "When": {"Spouse": "Sandy", "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true},
+        "Entries": {
+            "Indoor_Day_3": "{{i18n:Indoor_Day_3_2}}"
+            }
+        },
+        { 
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogue",
+        "When": {"DayOfWeek": "Friday", "IsOddDay": false},
+        "Entries": {
+            "funLeave_Sandy": "{{i18n:funLeave_Sandy3}}",
+            "funReturn_Sandy": "{{i18n:funReturn_Sandy3}}"
+        }
+        },
+        { 
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "When": {"DayOfWeek": "Saturday", "IsOddDay": false},
+            "Entries": {
+                "funLeave_Sandy": "{{i18n:funLeave_Sandy4}}",
+                "funReturn_Sandy": "{{i18n:funReturn_Sandy4}}"
+            }
+        },
+        { 
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "When": {"DayOfWeek": "Tuesday", "IsOddDay": false},
+            "Entries": {
+                "funLeave_Sandy": "{{i18n:funLeave_Sandy5}}",
+                "funReturn_Sandy": "{{i18n:funReturn_Sandy5}}"
+            }
+        },
+        { 
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "When": {"DayOfWeek": "Tuesday", "IsOddDay": true},
+            "Entries": {
+                "funLeave_Sandy": "{{i18n:funLeave_Sandy6}}",
+                "funReturn_Sandy": "{{i18n:funReturn_Sandy6}}"
+            }
+        },
+        { 
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "When": {"DayOfWeek": "Thursday", "IsOddDay": false},
+            "Entries": {
+                "funLeave_Sandy": "{{i18n:funLeave_Sandy7}}",
+                "funReturn_Sandy": "{{i18n:funReturn_Sandy7}}"
+            }
+        },
+        { 
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue",
+            "When": {"DayOfWeek": "Wednesday", "IsOddDay": false},
+            "Entries": {
+                "funLeave_Sandy": "{{i18n:funLeave_Sandy8}}",
+                "funReturn_Sandy": "{{i18n:funReturn_Sandy8}}"
+            }
+        },
+
+        { 
+        "Action": "EditData",
+        "Target": "Data/ExtraDialogue",
+        "When": { "Relationship:Sandy": "Married"},
+        "Entries": {
+            "Mines_PlayerKilled_Spouse_PlayerMale": "{{i18n:Mines_PlayerKilled_Spouse_PlayerMale}}",
+            "Mines_PlayerKilled_Spouse_PlayerFemale": "{{i18n:Mines_PlayerKilled_Spouse_PlayerFemale}}"
+        }
+        }
+	]
+}

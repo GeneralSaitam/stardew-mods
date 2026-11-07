@@ -1,0 +1,70 @@
+{
+    "Changes": [
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Aideen",
+            "Entries": {
+                "Aideen_103": "{{i18n:genderneutral.Aideen_103 |GenderNeutralTitle = {{GenderNeutralTitle}} }}",
+                "Ai2_2": "{{i18n:genderneutral.Ai1_2|GenderNeutralTitle = {{GenderNeutralTitle}} }}"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "Entries": {
+                "rejectNPCA": "{{i18n:genderneutral.rejectNPCA.rosa}}"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Eyvinder",
+            "Entries": {
+                "Mon": "{{i18n:genderneutral.Mon.eyvind}}",
+                "fall_Tue": "{{i18n:genderneutral.fall_Tue.eyvind}}",
+                "winter_Sun2": "{{i18n:genderneutral.winter_Sun2.eyvind}}",
+                "summer_Fri8": "{{i18n:genderneutral.summer_Fri8.eyvind}}",
+                "winter_Fri8": "{{i18n:genderneutral.winter_Fri8.eyvind}}",
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/CorwinLK",
+            "Entries": {
+                "{{season}}_{{day}}": "{{i18n:genderneutral.Dialogue.Corwin.FlirtIntroduction.y1}}",
+                "{{season}}_{{day}}_2": "{{i18n:genderneutral.Dialogue.Corwin.FlirtIntroduction.y2}}",
+            },
+            "When": {
+                "HasDialogueAnswer |contains=5787151, 5787152, 5757151": false
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/CorwinLK",
+            "Entries": {
+                "{{season}}_{{day}}": "{{i18n:genderneutral.Dialogue.Corwin.FlirtMarriage.y1}}",
+                "{{season}}_{{day}}_2": "{{i18n:genderneutral.Dialogue.Corwin.FlirtMarriage.y2}}.",
+            },
+            "When": {
+                "HasDialogueAnswer |contains=5787151": true,
+                "HasValue:{{spouse}}": true,
+                "spouse |contains=CorwinLK": false,
+                "HasDialogueAnswer |contains=5787152, 5787153, 5757153": false
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/CorwinLK",
+            "Entries": {
+                "Tue": "{{i18n:genderneutral.Corwin_Tue}}",
+                "Divorced": "{{i18n:genderneutral.Corwin_divorced}}",
+                "breakUp": "{{i18n:genderneutral.Corwin_breakUp}}"
+            }
+        }
+    ]
+}

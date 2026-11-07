@@ -1,0 +1,405 @@
+{
+    "Format": "2.8.0",
+
+
+    "ConfigSchema": {
+
+        "MC_EnableThisMod": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        // 入り口で寝れる
+        "MC_EntranceSleep": {
+            "AllowValues": "true, false",
+            "Default": "false"
+        },
+        // 季節で見た目を変化させる
+        "MC_SeasonalAppearance": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        // テントの影のタイプ
+        "MC_TentShadow": {
+            "AllowValues": "Brown, BrownThinner, Black, BlackThinner",
+            "Default": "Brown"
+        },
+        // テントの中の色変更
+        "MC_InteriorColor": {
+            "AllowValues": "Yellow, Black, Blue, Green, Purple, Red, White",
+            "Default": "Yellow"
+        },
+        // 建設費無料
+        "MC_FreeBuild": {
+            "AllowValues": "true,false",
+            "Default": "false"
+        },
+        // 建設即時完了
+        "MC_InstantBuild": {
+            "AllowValues": "true,false",
+            "Default": "false"
+        },
+
+        // 動物の表示位置
+        "MC_AnimalsPosition": {
+            "AllowValues": "OnTheTarp, OnTheTent",
+            "Default": "OnTheTarp",
+            "Section": "S_AnimalsSetting"
+        },
+        // 動物アニメーション表示
+        "MC_AnimalYellow": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "S_AnimalsSetting"
+        },
+        "MC_AnimalBlack": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "S_AnimalsSetting"
+        },
+        "MC_AnimalBlue": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "S_AnimalsSetting"
+        },
+        "MC_AnimalGreen": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "S_AnimalsSetting"
+        },
+        "MC_AnimalPurple": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "S_AnimalsSetting"
+        },
+        "MC_AnimalRed": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "S_AnimalsSetting"
+        },
+        "MC_AnimalWhite": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "S_AnimalsSetting"
+        },
+        "MC_AnimalRandomColor": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "S_AnimalsSetting"
+        }
+
+    }, //▼"ConfigSchema"の終了▼
+
+
+    "DynamicTokens": [
+
+        //●以下「入り口で寝る」用トークン
+        {
+            "Name": "DT_EntranceSleep_Name",
+            "Value": "Bed",
+            "When": {
+                "MC_EntranceSleep": false
+            }
+        },
+        {
+            "Name": "DT_EntranceSleep_Value",
+            "Value": "T",
+            "When": {
+                "MC_EntranceSleep": false
+            }
+        },
+        {
+            "Name": "DT_EntranceSleep_Name",
+            "Value": "TouchAction",
+            "When": {
+                "MC_EntranceSleep": true
+            }
+        },
+        {
+            "Name": "DT_EntranceSleep_Value",
+            "Value": "Sleep",
+            "When": {
+                "MC_EntranceSleep": true
+            }
+        },
+
+        //●以下「ランダムテントカラー」用トークン
+        {
+            "Name": "DT_Building_RandomColor",
+            "Value": "{{Random: Yellow, Black, Blue, Green, Purple, Red, White}}"
+        },
+
+        //●以下「動物テクスチャランダム化」用トークン
+        {
+            "Name": "DT_Bird_RandomColor",
+            "Value": "{{Random: Blue, Brown, Purple, Red}}"
+        },
+        {
+            "Name": "DT_Rabbit_RandomColor",
+            "Value": "{{Random: Brown, White}}"
+        },
+
+        //●以下「アニメーション用 "DrawLayers" 」用トークン
+        {
+            "Name": "SourceRect_X", // ソースX位置 (シーズンオフセのズレ修正用)
+            "Value": "0",
+            "When": {
+                "MC_SeasonalAppearance": true,
+                "Season": "Spring"
+            }
+        },
+        {
+            "Name": "SourceRect_X", // ソースX位置 (シーズンオフセのズレ修正用)
+            "Value": "-96",
+            "When": {
+                "MC_SeasonalAppearance": true,
+                "Season": "Summer"
+            }
+        },
+        {
+            "Name": "SourceRect_X", // ソースX位置 (シーズンオフセのズレ修正用)
+            "Value": "-192",
+            "When": {
+                "MC_SeasonalAppearance": true,
+                "Season": "Fall"
+            }
+        },
+        {
+            "Name": "SourceRect_X", // ソースX位置 (シーズンオフセのズレ修正用)
+            "Value": "-288",
+            "When": {
+                "MC_SeasonalAppearance": true,
+                "Season": "Winter"
+            }
+        },
+        {
+            "Name": "SourceRect_X", // ソースX位置 (SA無し時)
+            "Value": "0",
+            "When": {
+                "MC_SeasonalAppearance": false
+            }
+        },
+        {
+            "Name": "SourceRect_Width", // ソース横幅 (鳥、カエル用)
+            "Value": "16",
+            "When": {
+                "Season": "Spring, Summer, Fall"
+            }
+        },
+        {
+            "Name": "SourceRect_Width", // ソース横幅 (ウサギ用)
+            "Value": "32",
+            "When": {
+                "Season": "Winter"
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_X", // 動物表示位置[X] (春夏のタープ時の鳥、カエル共有)
+            "Value": "60",
+            "When": {
+                "MC_AnimalsPosition": "OnTheTarp",
+                "Season": "Spring, Summer"
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_Y", // 動物表示位置[Y] (春のタープ時の鳥、カエル共有)
+            "Value": "15",
+            "When": {
+                "MC_AnimalsPosition": "OnTheTarp",
+                "Season": "Spring"
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_Y", // 動物表示位置[Y] (夏のタープ時の鳥、カエル共有)
+            "Value": "5",
+            "When": {
+                "MC_AnimalsPosition": "OnTheTarp",
+                "Season": "Summer"
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_X", // 動物表示位置[X] (秋のタープ時の鳥、カエル共有)
+            "Value": "70",
+            "When": {
+                "MC_AnimalsPosition": "OnTheTarp",
+                "Season": "Fall"
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_Y", // 動物表示位置[Y] (秋のタープ時の鳥)
+            "Value": "-2",
+            "When": {
+                "MC_AnimalsPosition": "OnTheTarp",
+                "Season": "Fall",
+                "Weather |contains=Rain, Storm, GreenRain": false
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_Y", // 動物表示位置[Y] (秋のタープ時のカエル)
+            "Value": "8",
+            "When": {
+                "MC_AnimalsPosition": "OnTheTarp",
+                "Season": "Fall",
+                "Weather": "Rain, Storm, GreenRain"
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_X", // 動物表示位置 (ウサギ用 (設定共有でタープのみ))
+            "Value": "55",
+            "When": {
+                "Season": "Winter"
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_Y", // 動物表示位置 (ウサギ用 (設定共有でタープのみ))
+            "Value": "16",
+            "When": {
+                "Season": "Winter"
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_X", // 動物表示位置[X] (春夏秋のテント時の鳥、カエル共有)
+            "Value": "16",
+            "When": {
+                "MC_AnimalsPosition": "OnTheTent",
+                "Season": "Spring, Summer, Fall"
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_Y", // 動物表示位置[Y] (春のテント時の鳥、カエル共有)
+            "Value": "8",
+            "When": {
+                "MC_AnimalsPosition": "OnTheTent",
+                "Season": "Spring"
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_Y", // 動物表示位置[Y] (夏のテント時の鳥、カエル共有)
+            "Value": "-3",
+            "When": {
+                "MC_AnimalsPosition": "OnTheTent",
+                "Season": "Summer"
+            }
+        },
+        {
+            "Name": "AnimalsDrawPosition_Y", // 動物表示位置[Y] (秋のテント時の鳥、カエル共有)
+            "Value": "-16",
+            "When": {
+                "MC_AnimalsPosition": "OnTheTent",
+                "Season": "Fall"
+            }
+        },
+        {
+            "Name": "FrameDuration_Number", // フレーム表示時間 (鳥、カエル用)
+            "Value": "100",
+            "When": {
+                "Season": "Spring, Summer, Fall"
+            }
+        },
+        {
+            "Name": "FrameDuration_Number", // フレーム表示時間 (ウサギ用)
+            "Value": "50",
+            "When": {
+                "Season": "Winter"
+            }
+        },
+        {
+            "Name": "FrameCount_Number", // フレーム枚数 (鳥用)
+            "Value": "342",
+            "When": {
+                "Season": "Spring, Summer, Fall",
+                "Weather |contains=Rain, Storm, GreenRain": false
+            }
+        },
+        {
+            "Name": "FrameCount_Number", // フレーム枚数 (カエル用)
+            "Value": "120",
+            "When": {
+                "Season": "Spring, Summer, Fall",
+                "Weather": "Rain, Storm, GreenRain"
+            }
+        },
+        {
+            "Name": "FrameCount_Number", // フレーム枚数 (ウサギ用)
+            "Value": "525",
+            "When": {
+                "Season": "Winter"
+            }
+        },
+        {
+            "Name": "FramesPerRow_Number", // フレーム行数 (鳥、カエル用)
+            "Value": "30",
+            "When": {
+                "Season": "Spring, Summer, Fall"
+            }
+        },
+        {
+            "Name": "FramesPerRow_Number", // フレーム行数 (ウサギ用)
+            "Value": "15",
+            "When": {
+                "Season": "Winter"
+            }
+        }
+
+    ], //▼"DynamicTokens"の終了▼
+
+
+    "Changes": [
+
+
+        //★★★ ロード関係 ★★★
+
+        //●Buildingsテクスチャ
+        {
+            "Action": "Load",
+            "Target": "Buildings/TsCTwT_Building_Yellow,
+                       Buildings/TsCTwT_Building_Black,
+                       Buildings/TsCTwT_Building_Blue,
+                       Buildings/TsCTwT_Building_Green,
+                       Buildings/TsCTwT_Building_Purple,
+                       Buildings/TsCTwT_Building_Red,
+                       Buildings/TsCTwT_Building_White,
+                       Buildings/TsCTwT_Building_RandomColor",
+            "FromFile": "assets/png/{{TargetWithoutPath}}.png"
+        },
+
+        //●ペイントマスク
+        {
+            "Action": "Load",
+            "Target": "Buildings/TsCTwT_Building_Yellow_PaintMask,
+                       Buildings/TsCTwT_Building_Black_PaintMask,
+                       Buildings/TsCTwT_Building_Blue_PaintMask,
+                       Buildings/TsCTwT_Building_Green_PaintMask,
+                       Buildings/TsCTwT_Building_Purple_PaintMask,
+                       Buildings/TsCTwT_Building_Red_PaintMask,
+                       Buildings/TsCTwT_Building_White_PaintMask",
+            "FromFile": "assets/png/TsCTwT_PaintMask.png"
+        },
+
+        //●室内用テクスチャ
+        {
+            "Action": "Load",
+            "Target": "Maps/z_CampingTentWithTarp_InDoor",
+            "FromFile": "assets/png/TsCTwT_InDoor_{{MC_InteriorColor}}.png"
+        },
+
+        //●カスタムマップ
+        {
+            "Action": "Load",
+            "Target": "Maps/Custom_CampingTentWithTarp_InDoor",
+            "FromFile": "assets/tmx/TsCTwT_InDoor.tmx"
+        },
+
+
+        //★★★ 各Editのjsonへ ★★★
+        {
+            "Action": "Include",
+            "FromFile": "assets/json/Edit_Buildings.json,
+                         assets/json/Edit_Image.json",
+            "When": {
+                "MC_EnableThisMod": true
+            }
+        }
+
+
+    ] //▼▼"Changes"の終了▼▼
+}

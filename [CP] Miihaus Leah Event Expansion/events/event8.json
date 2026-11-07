@@ -1,0 +1,135 @@
+{
+    "Changes": [
+
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Forest",
+        "Entries":
+    {//debug ebi Miihau.LeahEE.0
+        "Miihau.LeahEE.008/F/f Leah 2000/t 1000 1600/w sunny/e Miihau.LeahEE.007.a Miihau.LeahEE.007.b":"
+        breezy/
+        91 25/
+        farmer 84 24 1 Leah 94 27 0/
+        skippable/
+        move farmer 4 0 1 Leah 0 -3 3/
+        emote farmer 32 true/
+        move Leah -5 0 3/
+        pause 200/
+        speak Leah \"{{i18n:Miihau.LeahEE.event8.001}}\"/
+        pause 300/
+        emote Leah 40/
+        pause 200/
+        speak Leah \"{{i18n:Miihau.LeahEE.event8.002}}\"/
+        pause 300/
+        globalFade/
+        viewport -1000 -1000/
+        warp Leah 65 96/
+        warp farmer 66 96/
+        faceDirection Leah 2/
+        faceDirection farmer 2/
+        positionOffset farmer 0 18/
+        globalFadeToClear 0.005 true/
+        viewport 66 97/
+        pause 2000/
+        speak Leah \"{{i18n:Miihau.LeahEE.event8.003}}\"/
+        quickQuestion {{i18n:Miihau.LeahEE.event8.003X}}(break)speak Leah \"{{i18n:Miihau.LeahEE.event8.004}}\"(break)speak Leah \"{{i18n:Miihau.LeahEE.event8.005}}\"(break)speak Leah \"{{i18n:Miihau.LeahEE.event8.006}}\"/
+        pause 1000/
+        emote Leah 40/
+        pause 200/
+        faceDirection farmer 3/
+        emote farmer 8/
+        pause 300/
+        faceDirection Leah 1/
+        speak Leah \"{{i18n:Miihau.LeahEE.event8.007}}\"/
+        pause 400/
+        speak Leah \"{{i18n:Miihau.LeahEE.event8.008}}\"/
+        quickQuestion {{i18n:Miihau.LeahEE.event8.008X}}(break)speak Leah \"{{i18n:Miihau.LeahEE.event8.009}}\"(break)speak Leah \"{{i18n:Miihau.LeahEE.event8.010}}\"/
+        pause 500/
+        faceDirection Leah 2/
+        pause 600/
+        emote farmer 8/
+        pause 200/
+        emote Leah 40/
+        pause 300/
+        message \"{{i18n:Miihau.LeahEE.event8.011}}\"/
+        pause 200/
+        speak Leah \"{{i18n:Miihau.LeahEE.event8.012}}\"/
+        pause 200/
+        faceDirection Leah 1/
+        pause 200/
+        speak Leah \"{{i18n:Miihau.LeahEE.event8.013}}\"/
+        pause 800/
+        speak Leah \"{{i18n:Miihau.LeahEE.event8.014}}\"/
+        pause 700/
+        message \"{{i18n:Miihau.LeahEE.event8.015}}\"/
+        pause 500/
+        speak Leah \"{{i18n:Miihau.LeahEE.event8.016}}\"/
+        quickQuestion {{i18n:Miihau.LeahEE.event8.016X}}(break)pause 200\\switchEvent Miihau.LeahEE.008.Lovers(break)pause 200\\switchEvent Miihau.LeahEE.008.Friends/
+        end/
+        ",
+    
+    "Miihau.LeahEE.008.Lovers":"
+    pause 200/
+    eventSeen Miihau.LeahEE.008.Lovers true/
+    speak Leah \"{{i18n:Miihau.LeahEE.event8.017}}\"/
+    pause 400/
+    speak Leah \"{{i18n:Miihau.LeahEE.event8.018}}\"/
+    pause 200/
+    emote farmer 32/
+    faceDirection Leah 2/
+    faceDirection farmer 2/
+    pause 1200/
+    playSound slime/
+    positionOffset Leah 2 0/
+    pause 42/
+    positionOffset Leah 2 0/
+    pause 42/
+    positionOffset Leah 2 0/
+    pause 42/
+    positionOffset Leah 2 0/
+    pause 42/
+    positionOffset Leah 2 0/
+    pause 42/
+    positionOffset Leah 2 0/
+    pause 42/
+    positionOffset Leah 2 0/
+    pause 1000/
+    speak Leah \"{{i18n:Miihau.LeahEE.event8.019}}\"/
+    pause 600/
+    speak Leah \"{{i18n:Miihau.LeahEE.event8.020}}\"/
+    pause 300/
+    viewport move -2 1 10000/
+    pause 5000/
+    globalFade/
+    viewport -1000 -1000/
+    end dialogue Leah \"{{i18n:Miihau.LeahEE.event8.021}}\"/
+    ",
+
+    "Miihau.LeahEE.008.Friends":"
+    pause 200/
+    eventSeen Miihau.LeahEE.008.Friends true/
+    speak Leah \"{{i18n:Miihau.LeahEE.event8.022}}\"/
+    pause 500/
+    speak Leah \"{{i18n:Miihau.LeahEE.event8.023}}\"/
+    pause 500/
+    faceDirection Leah 2/
+    faceDirection farmer 2/
+    pause 700/
+    speak Leah \"{{i18n:Miihau.LeahEE.event8.024}}\"/
+    pause 200/
+    emote farmer 32/
+    pause 200/
+    speak Leah \"{{i18n:Miihau.LeahEE.event8.025}}\"/
+    pause 800/
+    speak Leah \"{{i18n:Miihau.LeahEE.event8.026}}\"/
+    pause 300/
+    viewport move -2 1 10000/
+    pause 5000/
+    globalFade/
+    viewport -1000 -1000/
+    end dialogue Leah \"{{i18n:Miihau.LeahEE.event8.027}}\"/
+    "
+    },
+    },
+    ]
+}

@@ -1,0 +1,124 @@
+{
+   "Format": "2.4.0",
+   "ConfigSchema": {
+		"Recolor": { "AllowValues": "Vanilla, Vanilla Tweaks", "Default": "Vanilla"},
+		},
+
+   "Changes": [
+	{
+			"Action": "Load",
+			"Target": "madishartte.SakeCP/Koji, madishartte.SakeCP/Sake",
+			"FromFile": "Assets/{{Recolor}}/{{TargetWithoutPath}}.png"
+	},
+
+  //Koji Object
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"madishartte.Koji": {
+					"Name": "madishartte.Koji",
+					"DisplayName": "Koji",
+					"Description": "A fermentation made of rice and a microscopic fungus.",
+					"Category": "-20",
+					"Edibility": -300,
+                                        "Type": "Crafting",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "madishartte.SakeCP/Koji",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Saké Object
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"madishartte.Sake": {
+					"Name": "madishartte.Sake",
+					"DisplayName": "Saké",
+					"Description": "Fragrant and light-bodied. Drink in moderation.",
+					"Category": "-26",
+					"Edibility": 20,
+					"IsDrink": true,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": false,
+					"ExcludeFromRandomSale": true,
+                                        "Type": "Crafting",
+					"Price": 2640,
+					"Texture": "madishartte.SakeCP/Sake",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Saké Caskable
+  
+  {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC)163", "OutputRules" ],
+            "Entries": {
+                "madishartte.Sake": {
+					"Id": "madishartte.Sake",
+        "Triggers": [
+          {
+            "Id": "ItemPlacedInMachine",
+            "Trigger": 1,
+            "RequiredItemId": "madishartte.Sake",
+            "RequiredTags": null,
+            "RequiredCount": 1,
+            "Condition": null
+          }
+        ],
+        "UseFirstValidOutput": false,
+        "OutputItem": [
+          {
+            "CustomData": {
+              "AgingMultiplier": "1"
+            },
+            "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+            "CopyColor": false,
+            "CopyPrice": false,
+            "CopyQuality": false,
+            "PreserveType": null,
+            "PreserveId": null,
+            "IncrementMachineParentSheetIndex": 0,
+            "PriceModifiers": null,
+            "PriceModifierMode": 0,
+            "Condition": null,
+            "Id": "Default",
+            "ItemId": null,
+            "RandomItemId": null,
+            "MaxItems": null,
+            "MinStack": -1,
+            "MaxStack": -1,
+            "Quality": -1,
+            "ObjectInternalName": null,
+            "ObjectDisplayName": null,
+            "ToolUpgradeLevel": -1,
+            "IsRecipe": false,
+            "StackModifiers": null,
+            "StackModifierMode": 0,
+            "QualityModifiers": null,
+            "QualityModifierMode": 0,
+            "ModData": null,
+            "PerItemCondition": null
+          }
+        ],
+        "MinutesUntilReady": -1,
+        "DaysUntilReady": -1,
+        "InvalidCountMessage": null,
+        "RecalculateOnCollect": false
+			},
+			},
+			},
+	
+	]
+}

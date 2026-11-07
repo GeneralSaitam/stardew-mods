@@ -1,0 +1,50 @@
+{
+  "Changes": [{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "Fields": {
+      // Crops
+      "skellady.SBVCP_Hyacinth": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.SBVHyacinthCropName}}",
+      },
+      "skellady.SBVCP_HyacinthSeeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.SBVHyacinthSeedName}}",
+      },
+      "skellady.SBVCP_MoonberrySeeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.SBVMoonberrySeedName}}",
+      },
+
+      // Misc Items
+      "skellady.SBVCP_Moonberry": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.SBVMoonberryName}}",
+      },
+      "skellady.SBVCP_MoonberryPowder": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.SBVPowderedMoonberryName}}",
+      },
+      "skellady.SBVCP_MoonberryPotion": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.SBVMoonberryPotionName}}",
+      },
+    },
+  },
+
+  // Context Tags
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": [ "skellady.SBVCP_Sunberries", "ContextTags" ],
+    "Entries": {
+      "berry_item": "berry_item",
+    },
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": [ "skellady.SBVCP_GoldenSunberry", "ContextTags" ],
+    "Entries": {
+      "berry_item": "berry_item",
+    },
+  }]
+}

@@ -1,0 +1,183 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load JadeMalic's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/JadeMalic_{{PortraitStyle}}_Academia, Portraits/JadeMalic_{{PortraitStyle}}_Beach, Portraits/JadeMalic_{{PortraitStyle}}_EggF, Portraits/JadeMalic_{{PortraitStyle}}_Fair, Portraits/JadeMalic_{{PortraitStyle}}_Fall, Portraits/JadeMalic_{{PortraitStyle}}_FlowerDance, Portraits/JadeMalic_{{PortraitStyle}}_Ice, Portraits/JadeMalic_{{PortraitStyle}}_Jellies, Portraits/JadeMalic_{{PortraitStyle}}_Luau, Portraits/JadeMalic_{{PortraitStyle}}_SpiritsEve, Portraits/JadeMalic_{{PortraitStyle}}_Spring, Portraits/JadeMalic_{{PortraitStyle}}_Summer, Portraits/JadeMalic_{{PortraitStyle}}_WinterStar, Portraits/JadeMalic_{{PortraitStyle}}_WinterIndoor, Portraits/JadeMalic_{{PortraitStyle}}_WinterOutdoor, Characters/JadeMalic_Academia, Characters/JadeMalic_Beach, Characters/JadeMalic_EggF, Characters/JadeMalic_Fair, Characters/JadeMalic_Fall, Characters/JadeMalic_FlowerDance, Characters/JadeMalic_Ice, Characters/JadeMalic_Jellies, Characters/JadeMalic_Joja, Characters/JadeMalic_JojaNoCap, Characters/JadeMalic_Luau, Characters/JadeMalic_SpiritsEve, Characters/JadeMalic_Spring, Characters/JadeMalic_Summer, Characters/JadeMalic_WinterIndoor, Characters/JadeMalic_WinterOutdoor, Characters/JadeMalic_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/JadeMalic/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "JadeMalic - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/JadeMalic_WinterOutdoor, Characters/JadeMalic_Academia, Characters/JadeMalic_Beach, Characters/JadeMalic_EggF, Characters/JadeMalic_Fair, Characters/JadeMalic_Fall, Characters/JadeMalic_FlowerDance, Characters/JadeMalic_Ice, Characters/JadeMalic_Jellies, Characters/JadeMalic_Joja, Characters/JadeMalic_JojaNoCap, Characters/JadeMalic_Luau, Characters/JadeMalic_SpiritsEve, Characters/JadeMalic_Spring, Characters/JadeMalic_Summer, Characters/JadeMalic_WinterIndoor, Characters/JadeMalic_WinterOutdoor, Characters/JadeMalic_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/JadeMalic/JadeMalic_nose.png",
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+		},
+		//APPEARANCE DATA 
+		{
+			"LogName": "JadeMalic Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"JadeMalic",
+				"Appearance"
+			],
+			"Entries": {
+				//Regular Outfits
+				"{{ModId}}.DBJadeMalicSpring": {
+					"Id": "{{ModId}}.DBJadeMalicSpring", 
+					"Condition": "SEASON spring", 
+					"Sprite": "Characters/JadeMalic_Spring", 
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_Spring", 
+					"Precedence": -200,
+				},
+
+				"{{ModId}}.DBJadeMalicSummer": {
+					"Id": "{{ModId}}.DBJadeMalicSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/JadeMalic_Summer",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_Summer",
+					"Precedence": -200,
+				},
+				
+				"{{ModId}}.DBJadeMalicFall": {
+					"Id": "{{ModId}}.DBJadeMalicFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/JadeMalic_Fall",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_Fall",
+					"Precedence": -200,
+				},
+				
+				"{{ModId}}.DBJadeMalicWinterIndoor": {
+					"Id": "{{ModId}}.DBJadeMalicWinterIndoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/JadeMalic_WinterIndoor",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_WinterIndoor",
+					"Outdoors": false,
+					"Precedence": -200,
+				},
+				
+				"{{ModId}}.DBJadeMalicWinterOutdoor": {
+					"Id": "{{ModId}}.DBJadeMalicOutdoor",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/JadeMalic_WinterOutdoor",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_WinterOutdoor",
+					"Indoors": false,
+					"Precedence": -200,
+				},
+			
+				// Festivals
+
+				"{{ModId}}.DBJadeMalicEggFest": {
+					"Id": "{{ModId}}.DBJadeMalicEggFest",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+					"Sprite": "Characters/JadeMalic_EggF",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_EggF",
+					"Precedence": -2000,
+				},
+				
+				"{{ModId}}.DBJadeMalicFlowerDance": {
+					"Id": "{{ModId}}.DBJadeMalicFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/JadeMalic_FlowerDance",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_FlowerDance",
+					"Precedence": -2000,
+				},
+					
+				"{{ModId}}.DBJadeMalicLuau": {
+					"Id": "{{ModId}}.DBJadeMalicLuau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+					"Sprite": "Characters/JadeMalic_Luau",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_Luau",
+					"Precedence": -2000,
+				},
+				
+				"{{ModId}}.DBJadeMalicJellies": {
+					"Id": "{{ModId}}.DBJadeMalicJellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+					"Sprite": "Characters/JadeMalic_Jellies",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_Jellies",
+					"Precedence": -2000,
+				},
+					
+				"{{ModId}}.DBJadeMalicFair": {
+					"Id": "{{ModId}}.DBJadeMalicFair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+					"Sprite": "Characters/JadeMalic_Fair",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_Fair",
+					"Precedence": -2000,
+				},
+				
+				"{{ModId}}.DBJadeMalicSpirit": {
+					"Id": "{{ModId}}.DBJadeMalicSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn EastScarp_VillageInn_SpiritEve EastScarp_Crossing {{FestivalOutfits}}\"",
+					"Sprite": "Characters/JadeMalic_SpiritsEve",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_SpiritsEve",
+					"Precedence": -2000,
+				},
+					
+				"{{ModId}}.DBJadeMalicIceFestival": {
+					"Id": "{{ModId}}.DBJadeMalicIceFestival",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+					"Sprite": "Characters/JadeMalic_Ice",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_Ice",
+					"Precedence": -2000,
+				},
+				
+				"{{ModId}}.DBJadeMalicWinterStar": {
+					"Id": "{{ModId}}.JadeMalicWinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+					"Sprite": "Characters/JadeMalic_WinterStar",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_WinterStar",
+					"Precedence": -2000,
+				},
+				
+				// Academia
+				"{{ModId}}.DBJadeMalicAcademia": { 
+					"Id": "{{ModId}}.DBJadeMalicAcademia", 
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current 57871208, !PLAYER_HAS_SEEN_EVENT Current 57871211, PLAYER_HAS_SEEN_EVENT Current 57871208, PLAYER_HAS_SEEN_EVENT Current 57871211, PLAYER_HAS_SEEN_EVENT Current 57871209, !PLAYER_HAS_SEEN_EVENT Current 57871210, PLAYER_HAS_SEEN_EVENT Current 57871210,",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_Academia", 
+					"Precedence": -2000,
+		
+				},
+				},
+				//Beach
+				
+				"{{ModId}}.DBJadeMalicBeach": {
+					"Id": "{{ModId}}.DBJadeMalicBeach",
+					"Sprite": "Characters/JadeMalic_Beach",
+					"Portrait": "Portraits/JadeMalic_{{PortraitStyle}}_Beach",
+					"IsIslandAttire": true, //Specifies that this is the beach outfit, so that it's not used outside of Ginger Island.
+					"Precedence": -10000,
+				},
+			},
+		//MISCELLANEOUS
+		{
+			"LogName": "JadeMalic - Spouse Picture",
+			"Action": "EditImage",
+            "Target": "Mods/Lemurkat.EastScarp/esfurniture", 
+            "FromFile": "assets/Characters/esfurniture.png",
+			"FromArea": {"X": 71, "Y": 103, "Width": 18, "Height": 19},
+			"ToArea": {"X": 71, "Y": 103, "Width": 18, "Height": 19},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "JadeMalic Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/JadeMalic",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+        },			
+	]
+}

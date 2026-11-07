@@ -1,0 +1,172 @@
+{
+  "Changes": [
+    {
+      "LogName": "Legendary Fish 7am to 9am",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "159": {
+          "5": "700 900"
+        },
+        "160": {
+          "5": "700 900"
+        },
+        "163": {
+          "5": "700 900"
+        },
+        "775": {
+          "5": "700 900"
+        }
+      },
+      "When": {
+        "Legendary Fish 7am To 9am": true,
+        "Legendary Fish 12pm To 2pm": false,
+        "Legendary Fish 11pm To 1am": false
+      }
+    },
+    {
+      "LogName": "Legendary Fish 12pm to 2pm",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "159": {
+          "5": "1200 1400"
+        },
+        "160": {
+          "5": "1200 1400"
+        },
+        "163": {
+          "5": "1200 1400"
+        },
+        "775": {
+          "5": "1200 1400"
+        }
+      },
+      "When": {
+        "Legendary Fish 12pm To 2pm": true,
+        "Legendary Fish 7am To 9am": false,
+        "Legendary Fish 11pm To 1am": false
+      }
+    },
+    {
+      "LogName": "Legendary Fish 11pm to 1am",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "159": {
+          "5": "2300 2500"
+        },
+        "160": {
+          "5": "2300 2500"
+        },
+        "163": {
+          "5": "2300 2500"
+        },
+        "775": {
+          "5": "2300 2500"
+        }
+      },
+      "When": {
+        "Legendary Fish 11pm To 1am": true,
+        "Legendary Fish 7am To 9am": false,
+        "Legendary Fish 12pm To 2pm": false
+      }
+    },
+    {
+      "LogName": "Legendary Fish 7am to 9am 12pm to 2pm",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "159": {
+          "5": "700 900 1200 1400"
+        },
+        "160": {
+          "5": "700 900 1200 1400"
+        },
+        "163": {
+          "5": "700 900 1200 1400"
+        },
+        "775": {
+          "5": "700 900 1200 1400"
+        }
+      },
+      "When": {
+        "Legendary Fish 7am To 9am": true,
+        "Legendary Fish 12pm To 2pm": true,
+        "Legendary Fish 11pm To 1am": false
+      }
+    },
+    {
+      "LogName": "Legendary Fish 7am to 9am 11pm to 1am",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "159": {
+          "5": "700 900 2300 2500"
+        },
+        "160": {
+          "5": "700 900 2300 2500"
+        },
+        "163": {
+          "5": "700 900 2300 2500"
+        },
+        "775": {
+          "5": "700 900 2300 2500"
+        }
+      },
+      "When": {
+        "Legendary Fish 7am To 9am": true,
+        "Legendary Fish 11pm To 1am": true,
+        "Legendary Fish 12pm To 2pm": false
+      }
+    },
+    {
+      "LogName": "Legendary Fish 12pm to 2pm 11pm to 1am",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "159": {
+          "5": "1200 1400 2300 2500"
+        },
+        "160": {
+          "5": "1200 1400 2300 2500"
+        },
+        "163": {
+          "5": "1200 1400 2300 2500"
+        },
+        "775": {
+          "5": "1200 1400 2300 2500"
+        }
+      },
+      "When": {
+        "Legendary Fish 12pm To 2pm": true,
+        "Legendary Fish 11pm To 1am": true,
+        "Legendary Fish 7am To 9am": false
+      }
+    },
+    {
+      "LogName": "Legendary Fish 7am to 1am",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "159": {
+          "5": "700 2500"
+        },
+        "160": {
+          "5": "700 2500"
+        },
+        "163": {
+          "5": "700 2500"
+        },
+        "775": {
+          "5": "700 2500"
+        }
+      },
+      "When": {
+        "Legendary Fish 7am To 9am": true,
+        "Legendary Fish 12pm To 2pm": true,
+        "Legendary Fish 11pm To 1am": true
+      }
+    }
+  ]
+}

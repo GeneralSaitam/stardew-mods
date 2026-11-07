@@ -1,0 +1,291 @@
+{
+"Format": "2.0.0",
+"ConfigSchema": 
+{
+    "MysteryMode":
+    {
+        "AllowValues": "True, False",
+        "Default": "False",
+        "Description": "Removes descriptive hints about what lies on the paths ahead to add more mystery."
+    },
+    "RepeatableEvent":
+    {
+        "AllowValues": "True, False",
+        "Default": "True",
+        "Description": "Allows you to discover the path again in later years."
+    }
+},
+"DynamicTokens":
+[
+    {
+        "Name": "FirstTimeWalk",
+        "Value": "FirstTime"
+    },
+    {
+        "Name": "FirstTimeWalk",
+        "Value": "SubsequentTimes",
+        "When": 
+        {
+            "HasFlag |contains= ForestWalkFirstTimeFlag": true
+        }
+    },
+    {
+        "Name": "RepeatableEventToken",
+        "Value": ""
+    },
+    {
+        "Name": "RepeatableEventToken",
+        "Value": "eventSeen 1892900 false/",
+        "When": 
+        {
+            "RepeatableEvent": "True"
+        }
+    },
+    {
+        "Name": "RepeatableEventSetSkipToken",
+        "Value": ""
+    },
+    {
+        "Name": "RepeatableEventSetSkipToken",
+        "Value": "#MarkEventSeen Current 1892900 false",
+        "When": 
+        {
+            "RepeatableEvent": "True"
+        }
+    },
+    {
+        "Name": "FirstTimeWalk",
+        "Value": "SubsequentTimes",
+        "When": 
+        {
+            "HasFlag |contains= ForestWalkFirstTimeFlag": true
+        }
+    },
+    {
+        "Name": "MysteryModeToken",
+        "Value": ""
+    },
+    {
+        "Name": "MysteryModeToken",
+        "Value": ".MysteryMode",
+        "When": 
+        {
+            "MysteryMode": "True"
+        }
+    },
+    {
+        "Name": "VanillaTweaksCompatToken",
+        "Value": "Vanilla"
+    },
+    {
+        "Name": "VanillaTweaksCompatToken",
+        "Value": "VT",
+        "When": 
+        {
+            "HasMod": "Taiyo.VanillaTweaks.Farming"
+        }
+    },
+    {
+        "Name": "SimpleFoliageCompatToken",
+        "Value": "Vanilla"
+    },
+    {
+        "Name": "SimpleFoliageCompatToken",
+        "Value": "SF",
+        "When": 
+        {
+            "HasMod": "Az.Foliage"
+        }
+    }
+
+],
+"Changes": 
+    [
+        {
+            "LogName": "Load Temp Maps",
+            "Action": "Load",
+            "Target": "Maps/FWAppleGrove, Maps/FWFlowerField, Maps/FWForestGrove, Maps/FWGraves, Maps/FWKorokRock, Maps/FWMeteorite, Maps/FWMushrooms, Maps/FWPond, Maps/FWPumpkinPatch, Maps/FWScaryPath, Maps/FWSecretPassage, Maps/FWSweetGems, Maps/FWWishingWell, Maps/FWWitchTower",
+            "FromFile": "Assets/Maps/{{TargetWithoutPath}}.tmx",
+        },
+		{
+            "LogName": "Load Temp Map Tilesheet",
+			"Action": "Load",
+			"Target": "Maps/ForestCrops, Maps/FieldGrave, Maps/GlowingEyes, Maps/GlowingMeteorite, Maps/WishingWell",
+			"FromFile": "Assets/{{TargetWithoutPath}}.png"
+		},
+        {
+            "LogName": "Load Temp Actor 1",
+            "Action": "Load",
+            "Target": "Portraits/FWTempJunimoKorok, Characters/FWTempJunimoKorok, Characters/FWTempBlackberryBush, Characters/FWTempBlackberryBushFruit, Characters/FWTempMysterySphere, Characters/FWTempCropFairy, Portraits/FWTempMushroomCircleFae, Characters/FWTempMushroomCircleFae, Characters/FWTempShadowBeing, Characters/FWTempPondFrog, Characters/FWTempAppleTree, Characters/FWTempAppleTreeFruit, Characters/FWTempSunflower, Characters/FWTempSunflowerMature, Characters/FWTempFairyRose, Characters/FWTempFairyRoseMature, Characters/FWTempPomegranateSapling, Characters/FWTempGiantJackOLantern",
+            "FromFile": "Assets/{{TargetWithoutPath}}.png",
+        },
+        {
+            "LogName": "Load Temp Actor 2",
+            "Action": "Load",
+            "Target": "Characters/FWTempAmaranth, Characters/FWTempAmaranth2",
+            "FromFile": "Assets/FWTempAmaranth.png",
+        },
+        {
+            "LogName": "Load Temp Actor 3",
+            "Action": "Load",
+            "Target": "Characters/FWTempSweetGemBerry, Characters/FWTempSweetGemBerry2",
+            "FromFile": "Assets/FWTempSweetGemBerry.png",
+        },
+        {
+            "LogName": "Load Temp Actor 4",
+            "Action": "Load",
+            "Target": "Characters/FWTempSweetGem, Characters/FWTempSweetGem2",
+            "FromFile": "Assets/FWTempSweetGem.png",
+        },
+        // ART COMPAT
+        {
+            "LogName": "VT Art Compatibility 1",
+            "Action": "EditImage",
+            "Target": "Characters/FWTempFairyRose, Characters/FWTempFairyRoseMature, Characters/FWTempSunflower, Characters/FWTempSunflowerMature",
+            "FromFile": "Assets/Compat/{{TargetWithoutPath}}_VT.png",
+            "When": { "HasMod": "Taiyo.VanillaTweaks.Farming" }
+        },
+        {
+            "LogName": "VT Art Compatibility 2",
+            "Action": "EditImage",
+            "Target": "Characters/FWTempSweetGemBerry, Characters/FWTempSweetGemBerry2",
+            "FromFile": "Assets/Compat/FWTempSweetGemBerry_VT.png",
+            "When": { "HasMod": "Taiyo.VanillaTweaks.Farming" }
+        },
+        {
+            "LogName": "VT Art Compatibility 3",
+            "Action": "EditImage",
+            "Target": "Characters/FWTempSweetGem, Characters/FWTempSweetGem2",
+            "FromFile": "Assets/Compat/FWTempSweetGem_VT.png",
+            "When": { "HasMod": "Taiyo.VanillaTweaks.Farming" }
+        },
+        {
+            "LogName": "VT Art Compatibility 4",
+            "Action": "EditImage",
+            "Target": "Maps/ForestCrops",
+            "FromFile": "Assets/Compat/ForestCrops_VT.png",
+            "FromArea": { "X": 51, "Y": 0, "Width": 77, "Height": 61},
+            "ToArea": { "X": 51, "Y": 0, "Width": 77, "Height": 61},
+            "When": { "HasMod": "Taiyo.VanillaTweaks.Farming" }
+        },
+        {
+            "LogName": "VT Art Compatibility 5",
+            "Action": "EditImage",
+            "Target": "Maps/ForestCrops",
+            "FromFile": "Assets/Compat/ForestCrops_VT.png",
+            "FromArea": { "X": 194, "Y": 31, "Width": 62, "Height": 33},
+            "ToArea": { "X": 194, "Y": 31, "Width": 62, "Height": 33},
+            "When": { "HasMod": "Taiyo.VanillaTweaks.Farming" }
+        },
+        {
+            "LogName": "VT Art Compatibility 6",
+            "Action": "EditImage",
+            "Target": "Maps/ForestCrops",
+            "FromFile": "Assets/Compat/ForestCrops_VT.png",
+            "FromArea": { "X": 194, "Y": 64, "Width": 13, "Height": 15},
+            "ToArea": { "X": 194, "Y": 64, "Width": 13, "Height": 15},
+            "When": { "HasMod": "Taiyo.VanillaTweaks.Farming" }
+        },
+        {
+            "LogName": "VT Art Compatibility 7",
+            "Action": "EditImage",
+            "Target": "Maps/ForestCrops",
+            "FromFile": "Assets/Compat/ForestCrops_VT.png",
+            "FromArea": { "X": 225, "Y": 99, "Width": 31, "Height": 27},
+            "ToArea": { "X": 225, "Y": 99, "Width": 31, "Height": 27},
+            "When": { "HasMod": "Taiyo.VanillaTweaks.Farming" }
+        },
+        {
+            "LogName": "SF Art Compatibility 1",
+            "Action": "EditImage",
+            "Target": "Characters/FWTempBlackberryBush, Characters/FWTempAppleTree",
+            "FromFile": "Assets/Compat/{{TargetWithoutPath}}_SF.png",
+            "When": { "HasMod": "Az.Foliage" }
+        },
+        {
+            "LogName": "SF/VT Art Compatibility 1",
+            "Action": "EditImage",
+            "Target": "Characters/FWTempBlackberryBushFruit, Characters/FWTempAppleTreeFruit",
+            "FromFile": "Assets/Compat/{{TargetWithoutPath}}_{{SimpleFoliageCompatToken}}_{{VanillaTweaksCompatToken}}.png",
+            "When": { "HasMod |contains= Az.Foliage, Taiyo.VanillaTweaks.Farming": true }
+        },
+        {
+            "LogName": "SF/VT Art Compatibility 1",
+            "Action": "EditImage",
+            "Target": "Characters/FWTempBlackberryBushFruit, Characters/FWTempAppleTreeFruit",
+            "FromFile": "Assets/Compat/{{TargetWithoutPath}}_{{SimpleFoliageCompatToken}}_{{VanillaTweaksCompatToken}}.png",
+            "When": { "HasMod |contains= Az.Foliage, Taiyo.VanillaTweaks.Farming": true }
+        },
+		{
+            "LogName": "SF/VT Art Compatibility 2",
+			"Action": "EditImage",
+			"Target": "Maps/ForestCrops",
+			"FromFile": "Assets/Compat/ForestCrops_{{SimpleFoliageCompatToken}}_{{VanillaTweaksCompatToken}}.png",
+            "FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 96},
+            "When": { "HasMod |contains= Az.Foliage, Taiyo.VanillaTweaks.Farming": true }
+		},
+		{
+            "LogName": "SF/VT Art Compatibility 3",
+			"Action": "EditImage",
+			"Target": "Maps/ForestCrops",
+			"FromFile": "Assets/Compat/ForestCrops_{{SimpleFoliageCompatToken}}_{{VanillaTweaksCompatToken}}.png",
+            "FromArea": { "X": 0, "Y": 96, "Width": 144, "Height": 80},
+            "ToArea": { "X": 0, "Y": 96, "Width": 144, "Height": 80},
+            "When": { "HasMod |contains= Az.Foliage, Taiyo.VanillaTweaks.Farming": true }
+		},
+        // EVENTS
+        {
+            "LogName": "Starting Event - Secret Passage",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries": 
+            {
+                // Starting map: secret passage
+                "1892900/z spring/z summer/z winter/t 800 1800/w sunny/A ForestWalkCompleted/A ForestWalkLeftEarly/c 2": "woodsTheme/-1000 -1000/farmer -100 -100 3/ignoreCollisions farmer/setSkipActions addConversationTopic ForestWalkCompleted 30#addMail Current ForestWalkFirstTimeFlag Received{{RepeatableEventSetSkipToken}}/addMailReceived ForestWalkFirstTimeFlag/skippable/changeToTemporaryMap FWSecretPassage/viewport -1000 -1000/warp farmer 26 13/message \"{{i18n:event-FWSecretPassageEvent.01}}\"/pause 500/message \"{{i18n:event-FWSecretPassageEvent.02.{{FirstTimeWalk}}}}\"/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer -1 0 3/move farmer 0 1 2/move farmer -4 0 3/move farmer 0 1 2/move farmer -1 0 3/pause 500/emote farmer 8/pause 500/move farmer -1 0 3/move farmer 0 2 2/move farmer -1 0 3/move farmer 0 1 2/move farmer -7 0 3/faceDirection farmer 2/pause 500/emote farmer 40/pause 500/message \"{{i18n:event-FWSecretPassageEvent.03}}\"/pause 500/message \"{{i18n:event-FWSecretPassageEvent.04{{MysteryModeToken}}}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWSecretPassageEvent.05}}#{{i18n:event-FWSecretPassageEvent.06}}#{{i18n:event-FWSecretPassageEvent.08}}(break)globalFade 0.003 true\\move farmer -8 0 3\\viewport -1000 -1000\\pause 200\\switchEvent FWKorokRockEvent\\pause 200(break)globalFade 0.003 true\\move farmer 0 1 2\\move farmer 7 0 3\\viewport -1000 -1000\\switchEvent FWGravesEvent(break)pause 500/emote farmer 40/addConversationTopic ForestWalkLeftEarly 0/{{RepeatableEventToken}}pause 500/globalFade 0.003 true/move farmer 7 0 3/end",
+            },
+            "When": 
+            {
+                "HasFlag |contains= beenToWoods": true
+            }
+        },
+        {
+            "LogName": "Secret Passage Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Temp",		
+            "Entries": 
+            {
+                // Rocks
+                "FWKorokRockEvent": "pause 200/changeToTemporaryMap FWKorokRock/viewport -1000 -1000/addObject 10 18 670 3/warp farmer 26 12/message \"{{i18n:event-FWKorokRockEvent.01}}\"/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer -3 0 3/move farmer 0 3 2/move farmer -2 0 3/move farmer 0 1 2/move farmer -2 0 3/move farmer 0 2 2/move farmer -6 0 3/pause 500/faceDirection farmer 1/pause 200/faceDirection farmer 3/pause 200/faceDirection farmer 0/pause 200/emote farmer 8/pause 500/message \"{{i18n:event-FWKorokRockEvent.02}}\"/pause 500/message \"{{i18n:event-FWKorokRockEvent.03}}\"/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWKorokRockEvent.04}}#{{i18n:event-FWKorokRockEvent.05}}(break)pause 500\\move farmer -2 0 3\\pause 200\\playSound pickUpItem\\removeObject 10 18\\pause 200\\move farmer 0 -1 0\\faceDirection farmer 1\\pause 200\\addObject 12 17 670 3\\pause 500\\screenFlash 1\\playSound wand\\addTemporaryActor FWTempJunimoKorok 16 16 13 15 2 false\\pause 200\\emote farmer 16\\pause 500\\message \"{{i18n:event-FWKorokRockEvent.06}}\"\\action AddItem (O)310\\pause 200\\message \"{{i18n:event-FWKorokRockEvent.07}}\"\\pause 500\\screenFlash 1\\playSound wand\\warp FWTempJunimoKorok 1000 1000(break)pause 500\\emote farmer 40\\pause 500\\message \"{{i18n:event-FWKorokRockEvent.08}}\"(break)pause 500/faceDirection farmer 2/pause 500/message \"{{i18n:event-FWKorokRockEvent.09{{MysteryModeToken}}}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWKorokRockEvent.10}}#{{i18n:event-FWKorokRockEvent.11}}(break)globalFade 0.003 true\\move farmer 0 2 2\\move farmer -4 0 3\\move farmer 0 2 2\\viewport -1000 -1000\\switchEvent FWPondEvent(break)globalFade 0.002 true\\move farmer -6 0 3\\move farmer 0 -5 0\\viewport -1000 -1000\\switchEvent FWAppleGroveEvent(break)",
+                // Pond
+                "FWPondEvent": "pause 200/changeToTemporaryMap FWPond/viewport -1000 -1000/playMusic woodsTheme/addTemporaryActor FWTempPondFrog 16 16 22 12 2 false/ignoreCollisions FWTempPondFrog/ignoreCollisions farmer/warp farmer 0 12/message \"{{i18n:event-FWPondEvent.01}}\"/playSound waterSlosh/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer 5 0 1/pause 500/emote farmer 32/pause 500/message \"{{i18n:event-FWPondEvent.02}}\"/pause 500/message \"{{i18n:event-FWPondEvent.03}}\"/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWPondEvent.04}}#{{i18n:event-FWPondEvent.05}}#{{i18n:event-FWPondEvent.06}}(break)pause 500\\move farmer 0 2 0\\move farmer 2 0 1\\move farmer 1 0 1\\unskippable\\jump farmer 8\\positionOffset farmer 16 0\\playSound pullItemFromWater\\swimming farmer\\pause 500\\emote farmer 20\\pause 500\\message \"{{i18n:event-FWPondEvent.07}}\"\\pause 500\\playSound waterSlosh\\move farmer 5 0 1\\playSound waterSlosh\\move farmer 0 -1 0\\playSound waterSlosh\\move farmer 1 0 1\\pause 500\\playSound gulp\\jump farmer 4\\emote farmer 16\\pause 500\\message \"{{i18n:event-FWPondEvent.08}}\"\\pause 500\\playSound waterSlosh\\move farmer 0 -2 0\\playSound pullItemFromWater\\stopSwimming farmer\\jump farmer 8\\move farmer 0 -2 0\\skippable\\pause 500\\move farmer 6 0 1\\move farmer 0 5 2\\move farmer 1 0 1\\move farmer 0 1 2(break)pause 500\\move farmer 2 0 1\\move farmer 0 -1 0\\move farmer 1 0 1\\move farmer 0 -1 0\\move farmer 3 0 1\\move farmer 0 -1 0\\move farmer 3 0 1\\faceDirection farmer 2\\pause 500\\jump farmer 2\\move farmer 0 1 2\\showFrame farmer 107\\pause 500\\emote farmer 32\\pause 500\\playSound waterSlosh\\pause 500\\message \"{{i18n:event-FWPondEvent.09}}\"\\pause 500\\playSound waterSlosh\\pause 500\\playSound croak\\pause 500\\move FWTempPondFrog -2 0 3\\animate FWTempPondFrog false false 150 16 17 18 17 16 17 18 17 16 17 18 17\\pause 3000\\playSound croak\\pause 100\\move FWTempPondFrog -2 0 3\\playSound pullItemFromWater\\warp FWTempPondFrog 1000 1000\\temporarySprite 18 12 0 8 50 false 3\\pause 1000\\message \"{{i18n:event-FWPondEvent.10}}\"\\pause 500\\jump farmer 2\\move farmer 0 -1 0\\warp farmer 14 9\\pause 500\\move farmer 6 0 1\\move farmer 0 5 2\\move farmer 1 0 1\\move farmer 0 1 2(break)pause 500\\move farmer 2 0 1\\move farmer 0 -1 0\\move farmer 1 0 1\\move farmer 0 -1 0\\move farmer 3 0 1\\move farmer 0 -1 0\\move farmer 9 0 1\\move farmer 0 5 2\\move farmer 1 0 1\\move farmer 0 1 2\\pause 100(break)pause 500/message \"{{i18n:event-FWPondEvent.11{{MysteryModeToken}}}}\"/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWPondEvent.12}}#{{i18n:event-FWPondEvent.13}}#{{i18n:event-FWPondEvent.14}}(break)globalFade 0.003 true\\move farmer 5 0 1\\viewport -1000 -1000\\warp FWTempPondFrog 1000 1000\\switchEvent FWFlowerFieldEvent(break)globalFade 0.003 true\\move farmer 0 7 2\\viewport -1000 -1000\\warp FWTempPondFrog 1000 1000\\switchEvent FWAppleGroveEvent(break)move farmer 0 3 2\\move farmer -2 0 3\\move farmer 0 2 2\\globalFade 0.003 true\\move farmer -10 0 3\\viewport -1000 -1000\\warp FWTempPondFrog 1000 1000\\switchEvent FWScaryPathEvent(break)",
+                // Graves
+                "FWGravesEvent": "pause 200/changeToTemporaryMap FWGraves/viewport -1000 -1000/playMusic nightTime/warp farmer 26 12/message \"{{i18n:event-FWGravesEvent.01}}\"/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer -3 0 3/pause 500/emote farmer 16/pause 500/message \"{{i18n:event-FWGravesEvent.02}}\"/pause 500/playSound death/pause 500/emote farmer 28/pause 500/message \"{{i18n:event-FWGravesEvent.03}}\"/pause 500/move farmer 0 3 2/move farmer -5 0 3/move farmer 0 2 2/move farmer -4 0 3/faceDirection farmer 0/pause 500/message \"{{i18n:event-FWGravesEvent.04}}\"/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWGravesEvent.05}}#{{i18n:event-FWGravesEvent.06}}#{{i18n:event-FWGravesEvent.07}}(break)pause 500\\move farmer 0 -1 0\\pause 200\\money -10\\playSound purchase\\pause 500\\message \"{{i18n:event-FWGravesEvent.08}}\"\\emote farmer 40\\pause 500\\move farmer 0 2 2(break)pause 500\\move farmer 0 -1 0\\pause 200\\money -500\\playSound purchase\\pause 500\\playSound healSound\\pause 500\\message \"{{i18n:event-FWGravesEvent.09}}\"\\emote farmer 32\\pause 500\\move farmer 0 2 2(break)pause 500\\playSound rainsound\\pause 1000\\emote farmer 28(break)pause 500/move farmer 0 1 2/message \"{{i18n:event-FWGravesEvent.10{{MysteryModeToken}}}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWGravesEvent.11}}#{{i18n:event-FWGravesEvent.12}}(break)globalFade 0.002 true\\move farmer 0 1 2\\move farmer -5 0 3\\move farmer 0 3 2\\viewport -1000 -1000\\switchEvent FWScaryPathEvent(break)globalFade 0.003 true\\move farmer 5 0 1\\move farmer 0 6 2\\viewport -1000 -1000\\switchEvent FWAppleGroveEvent(break)",
+                // Apple grove
+                "FWAppleGroveEvent": "pause 200/changeToTemporaryMap FWAppleGrove/viewport -1000 -1000/ignoreCollisions farmer/playMusic woodsTheme/addTemporaryActor FWTempAppleTreeFruit 48 48 17 15 2 false/hideShadow FWTempAppleTreeFruit true/addTemporaryActor FWTempAppleTree 48 48 1000 1000 2 false/hideShadow FWTempAppleTreeFruit true/addObject 13 12 613 3/warp farmer 12 1/message \"{{i18n:event-FWAppleGroveEvent.01}}\"/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer 0 3 1/move farmer 2 0 1/move farmer 0 2 2/pause 500/message \"{{i18n:event-FWAppleGroveEvent.02}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWAppleGroveEvent.03}}#{{i18n:event-FWAppleGroveEvent.04}}#{{i18n:event-FWAppleGroveEvent.05}}(break)pause 500\\move farmer 0 1 2\\move farmer 1 0 1\\move farmer 0 4 2\\move farmer 2 0 1\\move farmer 0 3 2\\move farmer 3 0 1\\move farmer 0 4 2\\move farmer -2 0 3\\faceDirection farmer 0\\pause 500\\animate farmer true false 400 82 83 82 83 82 83\\shake FWTempAppleTreeFruit 1600\\pause 1200\\warp FWTempAppleTreeFruit 1000 1000\\warp FWTempAppleTree 17 15\\playSound treethud\\pause 100\\addObject 17 18 613 1\\addObject 19 19 613 1\\addObject 20 18 613 1\\pause 500\\emote farmer 32\\pause 500\\message \"{{i18n:event-FWAppleGroveEvent.06}}\"\\pause 200\\faceDirection farmer 3\\animate farmer true false 150 58 59 60 61\\playSound pickUpItem\\removeObject 17 18\\message \"{{i18n:event-FWAppleGroveEvent.07}}\"\\action AddItem (O)613\\pause 300\\move farmer 1 0 1\\faceDirection farmer 2\\animate farmer false false 150 54 55 56 57\\playSound pickUpItem\\removeObject 19 19\\message \"{{i18n:event-FWAppleGroveEvent.08}}\"\\action AddItem (O)613\\pause 300\\faceDirection farmer 1\\animate farmer false false 150 58 59 60 61\\playSound pickUpItem\\removeObject 20 18\\message \"{{i18n:event-FWAppleGroveEvent.09}}\"\\action AddItem (O)613\\pause 500\\emote farmer 20\\pause 500\\move farmer -5 0 3\\move farmer 0 1 2(break)pause 500\\move farmer -4 0 3\\move farmer 0 4 2\\move farmer 1 0 1\\pause 500\\emote farmer 40\\pause 200\\emote farmer 12\\pause 500\\move farmer 0 2 2\\move farmer 1 0 1\\pause 500\\emote farmer 40\\pause 200\\emote farmer 32\\pause 500\\removeObject 13 12\\farmerEat 613\\pause 500\\message \"{{i18n:event-FWAppleGroveEvent.10}}\"\\pause 200\\emote farmer 20\\pause 500\\move farmer 0 2 2\\move farmer 2 0 1\\move farmer 0 5 2(break)pause 500\\move farmer 0 1 2\\move farmer 1 0 1\\move farmer 0 6 2\\move farmer -1 0 3\\move farmer 0 1 2\\move farmer -2 0 3\\pause 500\\faceDirection farmer 2\\pause 100\\faceDirection farmer 0\\pause 100\\move farmer -4 0 3\\move farmer 0 3 2\\pause 500\\emote farmer 32\\pause 500\\move farmer 6 0 1\\move farmer 0 2 2(break)pause 500/message \"{{i18n:event-FWAppleGroveEvent.11{{MysteryModeToken}}}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWAppleGroveEvent.12}}#{{i18n:event-FWAppleGroveEvent.13}}(break)globalFade 0.003 true\\move farmer 9 0 2\\viewport -1000 -1000\\warp FWTempAppleTree 1000 1000\\warp FWTempAppleTreeFruit 1000 1000\\switchEvent FWFlowerFieldEvent(break)globalFade 0.003 true\\move farmer 0 1 2\\move farmer -8 0 3\\viewport -1000 -1000\\warp FWTempAppleTree 1000 1000\\warp FWTempAppleTreeFruit 1000 1000\\switchEvent FWWitchTowerEvent(break)",
+                // Flower field
+                "FWFlowerFieldEvent": "pause 200/changeToTemporaryMap FWFlowerField/viewport -1000 -1000/ignoreCollisions farmer/playMusic woodsTheme/addTemporaryActor FWTempCropFairy 16 16 26 15 2 false/hideShadow FWTempCropFairy true/ignoreCollisions FWTempCropFairy/addTemporaryActor FWTempSunflower 16 32 17 14 2 false/hideShadow FWTempSunflower true/addTemporaryActor FWTempSunflowerMature 16 32 1000 1000 2 false/hideShadow FWTempSunflowerMature true/addTemporaryActor FWTempFairyRose 16 32 20 16 2 false/hideShadow FWTempFairyRose true/addTemporaryActor FWTempFairyRoseMature 16 32 1000 1000 2 false/hideShadow FWTempFairyRoseMature true/warp farmer 0 7/message \"{{i18n:event-FWFlowerFieldEvent.01}}\"/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer 2 0 1/move farmer 0 2 2/move farmer 4 0 1/pause 500/emote farmer 32/pause 500/playSound yoba/pause 500/playSound yoba/pause 500/emote farmer 8/pause 500/move FWTempCropFairy -5 0 3/emote farmer 12 true/animate FWTempCropFairy false false 400 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3/pause 1000/animate FWTempCropFairy false false 400 16 17 18 19 16 17 18 19/playSound yoba/temporarySprite 20 16 10 8 50 false 3/pause 1000/temporarySprite 20 16 4 8 50 false 3/warp FWTempFairyRose 1000 1000/warp FWTempFairyRoseMature 20 16/animate FWTempCropFairy false false 400 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3/pause 1000/move FWTempCropFairy 0 -2 0/move FWTempCropFairy -3 0 3/animate FWTempCropFairy false false 400 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3/pause 1000/animate FWTempCropFairy false false 400 16 17 18 19 16 17 18 19/playSound yoba/temporarySprite 17 14 10 8 50 false 3/pause 1000/temporarySprite 17 14 4 8 50 false 3/warp FWTempSunflower 1000 1000/warp FWTempSunflowerMature 17 14/animate FWTempCropFairy false false 400 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3/pause 1000/move farmer 3 0 1/move farmer 0 2 2/move farmer 1 0 1/move farmer 0 1 1/move farmer 3 0 1/move FWTempCropFairy -2 0 3 true/move farmer 0 2 2 false/move FWTempCropFairy 0 1 2 true/move farmer 2 0 1 false/faceDirection FWTempCropFairy 3/animate FWTempCropFairy false false 400 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3/pause 1000/message \"{{i18n:event-FWFlowerFieldEvent.02}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWFlowerFieldEvent.03}}#{{i18n:event-FWFlowerFieldEvent.04}}#{{i18n:event-FWFlowerFieldEvent.05}}(break)pause 500\\playSound yoba\\emote FWTempCropFairy 20\\animate FWTempCropFairy false false 400 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3\\pause 1000\\animate FWTempCropFairy false false 400 16 17 18 19 16 17 18 19\\playSound yoba\\temporarySprite 15 14 10 8 50 false 3\\pause 1000\\message \"{{i18n:event-FWFlowerFieldEvent.06}}\"\\action AddItem (O)577\\pause 500\\emote farmer 32\\move FWTempCropFairy 0 -3 0\\advancedMove FWTempCropFairy false 1 0 0 -3 -1 0 0 -3 1 0 0 -3 -1 0 0 -2\\move farmer 0 3 2\\move farmer -1 0 3\\move farmer 0 1 2\\move farmer -1 0 3\\move farmer 0 4 2\\pause 500\\warp FWTempCropFairy 1000 1000\\pause 800(break)pause 500\\message \"{{i18n:event-FWFlowerFieldEvent.07}}\"\\pause 500\\emote FWTempCropFairy 16\\pause 200\\emote FWTempCropFairy 12\\animate FWTempCropFairy false false 400 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3\\pause 1000\\animate FWTempCropFairy false false 400 16 17 18 19 16 17 18 19\\playSound yoba\\temporarySprite 15 14 10 8 50 false 3\\pause 1000\\removeItem 613\\message \"{{i18n:event-FWFlowerFieldEvent.08}}\"\\action AddItem (O)748\\pause 300\\emote farmer 16\\animate FWTempCropFairy false false 400 16 14 18 19 16 17 18 19\\playSound yoba\\temporarySprite 16 14 13 10 50 false 3\\pause 1000\\warp FWTempCropFairy 1000 1000\\pause 500\\emote farmer 12\\pause 500\\move farmer 0 3 2\\move farmer -1 0 3\\move farmer 0 1 2\\move farmer -1 0 3\\move farmer 0 4 2\\pause 500(break)animate FWTempCropFairy false false 400 0 1 2 3 0 1 2 3 0 1 2 3 0 1 2 3\\pause 1000\\pause 500\\emote FWTempCropFairy 8\\move FWTempCropFairy 0 -3 0\\advancedMove FWTempCropFairy false 1 0 0 -3 -1 0 0 -3 1 0 0 -3 -1 0 0 -2\\move farmer 0 3 2\\move farmer -1 0 3\\move farmer 0 1 2\\move farmer -1 0 3\\move farmer 0 4 2\\pause 500\\warp FWTempCropFairy 1000 1000\\pause 800(break)faceDirection farmer 3/message \"{{i18n:event-FWFlowerFieldEvent.09{{MysteryModeToken}}}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWFlowerFieldEvent.10}}#{{i18n:event-FWFlowerFieldEvent.11}}(break)globalFade 0.007 true\\move farmer 0 4 2\\viewport -1000 -1000\\warp FWTempSunflowerMature 1000 1000\\warp FWTempFairyRoseMature 1000 1000\\switchEvent FWPumpkinPatchEvent(break)globalFade 0.003 true\\move farmer -5 0 3\\move farmer 0 -1 0\\move farmer -4 0 3\\viewport -1000 -1000\\warp FWTempSunflowerMature 1000 1000\\warp FWTempFairyRoseMature 1000 1000\\switchEvent FWForestGroveEvent(break)",
+                // Dark path
+                "FWScaryPathEvent": "pause 200/changeToTemporaryMap FWScaryPath/viewport -1000 -1000/playMusic clubloop/ambientLight 220 180 160/addTemporaryActor FWTempShadowBeing 16 32 10 21 2 false/hideShadow FWTempShadowBeing true/warp farmer 10 1/message \"{{i18n:event-FWScaryPathEvent.01}}\"/playSound rainsound/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer 0 2 2/pause 200/move farmer 0 4 2/pause 200/move farmer 2 0 1/move farmer 0 1 2/playSound leafrustle/speed FWTempShadowBeing 8/move FWTempShadowBeing -8 0 2/pause 500/emote farmer 28/pause 500/move farmer 2 0 1/move farmer 0 4 2/warp FWTempShadowBeing 7 4/playSound leafrustle/playSound shadowpeep/speed FWTempShadowBeing 6/move FWTempShadowBeing 5 0 2/pause 500/warp farmer 16 14/move farmer 4 0 1/pause 200/faceDirection farmer 0/faceDirection farmer 2/faceDirection farmer 1/faceDirection farmer 3/warp FWTempShadowBeing 16 9/playSound leafrustle/playSound shadowDie/speed FWTempShadowBeing 8/move FWTempShadowBeing -7 0 2/pause 100/jump farmer 8/emote farmer 16/speed farmer 4/move farmer -12 0 3/move farmer 0 2 2/pause 200/startJittering/pause 500/message \"{{i18n:event-FWScaryPathEvent.02}}\"/pause 500/message \"{{i18n:event-FWScaryPathEvent.03{{MysteryModeToken}}}}\"/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWScaryPathEvent.04}}#{{i18n:event-FWScaryPathEvent.05}}(break)pause 200\\stopJittering\\move farmer -1 0 3\\globalFade 0.003 true\\move farmer 0 6 2\\playSound ghost\\move farmer 7 0 1\\warp FWTempShadowBeing 1000 1000\\speed farmer 1\\viewport -1000 -1000\\switchEvent FWWishingWellEvent(break)pause 200\\stopJittering\\move farmer -2 0 3\\globalFade 0.003 true\\move farmer 0 -9 0\\playSound ghost\\move farmer -5 0 3\\warp FWTempShadowBeing 1000 1000\\speed farmer 1\\viewport -1000 -1000\\switchEvent FWWitchTowerEvent(break)",
+                // Witch hut
+                "FWWitchTowerEvent": "pause 200/changeToTemporaryMap FWWitchTower/viewport -1000 -1000/playMusic nightTime/ambientLight 120 100 80/addTemporaryActor FWTempAmaranth 16 32 11 14 2 false/addTemporaryActor FWTempAmaranth2 16 32 12 14 2 false/hideShadow FWTempAmaranth true/hideShadow FWTempAmaranth2 true/warp farmer 14 1/message \"{{i18n:event-FWWitchTowerEvent.01}}\"/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer 0 5 2/move farmer -2 0 3/move farmer 0 6 2/faceDirection farmer 1/pause 500/message \"{{i18n:event-FWWitchTowerEvent.02}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWWitchTowerEvent.03}}#{{i18n:event-FWWitchTowerEvent.04}}#{{i18n:event-FWWitchTowerEvent.05}}(break)pause 500\\emote farmer 28\\pause 500\\move farmer 1 0 1\\pause 500\\move farmer 1 0 1\\pause 200\\move farmer 1 0 1\\pause 500\\playSound ghost\\pause 100\\playSound furnace\\pause 100\\playSound cacklingWitch\\jump farmer 8\\pause 200\\speed farmer 5\\move farmer -9 0 3\\speed farmer 1(break)pause 500\\move farmer 0 1 2\\pause 500\\animate farmer false false 150 54 55 56 57\\playSound harvest\\warp FWTempAmaranth2 1000 1000\\pause 500\\message \"{{i18n:event-FWWitchTowerEvent.06}}\"\\action AddItem (O)300\\move farmer -1 0 3\\faceDirection farmer 2\\pause 500\\animate farmer false false 150 54 55 56 57\\playSound harvest\\warp FWTempAmaranth 1000 1000\\pause 500\\pause 500\\message \"{{i18n:event-FWWitchTowerEvent.07}}\"\\action AddItem (O)300\\pause 500\\playSound cacklingWitch\\jump farmer 8\\pause 200\\speed farmer 5\\move farmer 0 -1 0\\move farmer -6 0 3\\speed farmer 1(break)pause 500\\move farmer -6 0 3\\playSound cacklingWitch\\emote farmer 16\\pause 500(break)faceDirection farmer 2/pause 500/message \"{{i18n:event-FWWitchTowerEvent.08{{MysteryModeToken}}}}\"/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWWitchTowerEvent.09}}#{{i18n:event-FWWitchTowerEvent.10}}(break)globalFade 0.003 true\\move farmer 0 7 2\\move farmer -2 0 3\\viewport -1000 -1000\\warp FWTempAmaranth 1000 1000\\warp FWTempAmaranth2 1000 1000\\switchEvent FWPumpkinPatchEvent(break)globalFade 0.003 true\\move farmer 0 7 2\\move farmer 3 0 3\\viewport -1000 -1000\\warp FWTempAmaranth 1000 1000\\warp FWTempAmaranth2 1000 1000\\switchEvent FWForestGroveEvent(break)",
+                // Pumpkin patch
+                "FWPumpkinPatchEvent": "pause 200/changeToTemporaryMap FWPumpkinPatch/viewport -1000 -1000/playMusic woodsTheme/addTemporaryActor FWTempGiantJackOLantern 64 64 15 15 2 false/hideShadow FWTempGiantJackOLantern true/warp farmer 5 1/message \"{{i18n:event-FWPumpkinPatchEvent.01}}\"/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer 0 5 2/move farmer 1 0 1/move farmer 0 5 2/move farmer 2 0 1/pause 500/emote farmer 16/pause 500/message \"{{i18n:event-FWPumpkinPatchEvent.02}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWPumpkinPatchEvent.03}}#{{i18n:event-FWPumpkinPatchEvent.04}}(break)pause 500\\move farmer 2 0 1\\move farmer 0 2 2\\move farmer 3 0 1\\move farmer 0 1 2\\move farmer 1 0 1\\pause 500\\emote farmer 40\\pause 500\\playSound cacklingWitch\\jump farmer 8\\emote farmer 16 true\\showFrame FWTempGiantJackOLantern 1\\pause 100\\showFrame FWTempGiantJackOLantern 2\\pause 100\\showFrame FWTempGiantJackOLantern 3\\pause 100\\showFrame FWTempGiantJackOLantern 4\\pause 100\\showFrame FWTempGiantJackOLantern 5\\pause 100\\showFrame FWTempGiantJackOLantern 6\\pause 100\\showFrame FWTempGiantJackOLantern 5\\pause 100\\showFrame FWTempGiantJackOLantern 6\\pause 100\\showFrame FWTempGiantJackOLantern 5\\pause 100\\showFrame FWTempGiantJackOLantern 6\\pause 100\\showFrame FWTempGiantJackOLantern 5\\pause 100\\showFrame FWTempGiantJackOLantern 4\\pause 100\\showFrame FWTempGiantJackOLantern 3\\pause 100\\showFrame FWTempGiantJackOLantern 2\\pause 100\\showFrame FWTempGiantJackOLantern 2\\pause 100\\showFrame FWTempGiantJackOLantern 1\\pause 100\\showFrame FWTempGiantJackOLantern 0\\pause 500\\speed farmer 4\\move farmer 0 -1 0\\move farmer 1 0 1\\move farmer 0 -2 0\\move farmer 5 0 1\\speed farmer 1(break)pause 500\\move farmer 2 0 1\\move farmer 0 1 2\\move farmer 1 0 1\\pause 500\\emote farmer 40\\pause 200\\emote farmer 16\\pause 500\\message \"{{i18n:event-FWPumpkinPatchEvent.05}}\"\\pause 500\\emote farmer 32\\pause 500\\move farmer 0 1 2\\move farmer 4 0 1\\move farmer 0 -2 0\\move farmer 5 0 1(break)pause 500/message \"{{i18n:event-FWPumpkinPatchEvent.06{{MysteryModeToken}}}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWPumpkinPatchEvent.07}}#{{i18n:event-FWPumpkinPatchEvent.08}}(break)globalFade 0.003 true\\move farmer 2 0 1\\move farmer 0 4 2\\move farmer 3 0 1\\viewport -1000 -1000\\warp FWTempGiantJackOLantern 1000 1000\\switchEvent FWWishingWellEvent(break)globalFade 0.003 true\\move farmer 0 -3 0\\move farmer -2 0 3\\move farmer 0 -4 0\\viewport -1000 -1000\\warp FWTempGiantJackOLantern 1000 1000\\switchEvent FWMushroomsEventPart1(break)",
+                // Wishing well
+                "FWWishingWellEvent": "pause 200/changeToTemporaryMap FWWishingWell/viewport -1000 -1000/playMusic woodsTheme/warp farmer 13 1/playSound cavedrip/message \"{{i18n:event-FWWishingWellEvent.01}}\"/pause 500/playSound cavedrip/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer 0 5 2/move farmer -1 0 3/move farmer 0 5 2/move farmer -2 0 3/playSound cavedrip/move farmer 0 5 2/move farmer 4 0 1/faceDirection farmer 0/pause 300/move farmer 0 -1 0/pause 300/playSound cavedrip/pause 300/message \"{{i18n:event-FWWishingWellEvent.02}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWWishingWellEvent.03}}#{{i18n:event-FWWishingWellEvent.04}}#{{i18n:event-FWWishingWellEvent.05}}#{{i18n:event-FWWishingWellEvent.06}}(break)pause 500\\playSound purchase\\money -1\\pause 100\\playSound dropItemInWater\\pause 2000\\emote farmer 40\\pause 2000\\message \"{{i18n:event-FWWishingWellEvent.07}}\"\\pause 500(break)pause 500\\playSound purchase\\money -100\\pause 100\\playSound dropItemInWater\\pause 500\\message \"{{i18n:event-FWWishingWellEvent.08}}\"\\pause 500\\emote farmer 16\\pause 300\\temporarySprite 14 13 13 10 50 false 3\\playSound pullItemFromWater\\pause 100\\playSound yoba\\addObject 14 13 84 3\\pause 500\\message \"{{i18n:event-FWWishingWellEvent.09}}\"\\action AddItem (O)84\\removeObject 14 13\\pause 500\\emote farmer 32\\pause 500(break)pause 500\\playSound purchase\\money -1000\\pause 100\\playSound dropItemInWater\\pause 500\\message \"{{i18n:event-FWWishingWellEvent.10}}\"\\pause 500\\emote farmer 16\\pause 300\\temporarySprite 14 13 13 10 50 false 3\\playSound pullItemFromWater\\pause 100\\playSound getNewSpecialItem\\addObject 14 13 72 3\\pause 500\\message \"{{i18n:event-FWWishingWellEvent.11}}\"\\action AddItem (O)72\\removeObject 14 13\\pause 500\\emote farmer 20\\pause 500(break)pause 500\\animate farmer false false 150 62 63 64 65\\playSound pickUpItem\\pause 300\\playSound dropItemInWater\\pause 500\\emote farmer 40\\pause 1000\\playSound ghost\\jump farmer 8\\emote farmer 16\\pause 500\\emote farmer 28\\pause 500(break)pause 100/move farmer 0 2 2/pause 500/message \"{{i18n:event-FWWishingWellEvent.12{{MysteryModeToken}}}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWWishingWellEvent.13}}#{{i18n:event-FWWishingWellEvent.14}}(break)globalFade 0.003 true\\move farmer 6 0 1\\move farmer 0 1 2\\move farmer 3 0 1\\viewport -1000 -1000\\switchEvent FWMeteoriteEventPart1(break)globalFade 0.003 true\\move farmer 0 2 2\\move farmer -3 0 3\\move farmer 0 4 2\\viewport -1000 -1000\\switchEvent FWSweetGemsEvent(break)",
+                // Forest grove
+                "FWForestGroveEvent": "pause 200/changeToTemporaryMap FWForestGrove/viewport -1000 -1000/playMusic woodsTheme/addTemporaryActor FWTempBlackberryBushFruit 48 48 15 11 2 false/addTemporaryActor FWTempBlackberryBush 48 48 1000 1000 2 false/addTemporaryActor FWTempPomegranateSapling 16 16 11 17 2 false/warp farmer 0 7/message \"{{i18n:event-FWForestGroveEvent.01}}\"/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer 5 0 1/move farmer 0 4 2/move farmer 5 0 1/move farmer 0 2 2/move farmer 4 0 1/move farmer 0 1 2/pause 500/message \"{{i18n:event-FWForestGroveEvent.02}}\"/pause 500/faceDirection farmer 0/pause 200/faceDirection farmer 2/pause 200/faceDirection farmer 0/pause 500/emote farmer 32/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWForestGroveEvent.03}}#{{i18n:event-FWForestGroveEvent.04}}(break)pause 500\\move farmer 0 -3 0\\faceDirection farmer 1\\pause 500\\animate farmer false false 400 80 81 80 81 80 81\\playSound leafrustle\\shake FWTempBlackberryBushFruit 1600\\pause 1200\\warp FWTempBlackberryBushFruit 1000 1000\\warp FWTempBlackberryBush 15 11\\playSound treethud\\addobject 13 11 410 3\\addobject 15 12 410 3\\addobject 18 13 410 3\\pause 500\\emote farmer 20\\pause 500\\faceDirection farmer 3\\pause 200\\animate farmer true false 150 58 59 60 61\\playSound harvest\\removeObject 13 11\\message \"{{i18n:event-FWForestGroveEvent.05}}\"\\action AddItem (O)410\\pause 500\\move farmer 0 1 2\\faceDirection farmer 1\\pause 200\\animate farmer false false 150 58 59 60 61\\playSound harvest\\removeObject 15 12\\action AddItem (O)410\\message \"{{i18n:event-FWForestGroveEvent.06}}\"\\pause 500\\move farmer 0 1 2\\move farmer 3 0 1\\pause 200\\animate farmer false false 150 58 59 60 61\\playSound harvest\\removeObject 18 13\\message \"{{i18n:event-FWForestGroveEvent.07}}\"\\action AddItem (O)410\\pause 500\\emote farmer 32\\pause 500\\move farmer -1 0 3\\move farmer 0 2 2\\pause 500(break)pause 500\\move farmer -1 0 3\\move farmer 0 3 2\\move farmer -1 0 3\\pause 500\\emote farmer 40\\pause 500\\message \"{{i18n:event-FWForestGroveEvent.08}}\"\\pause 500\\showFrame farmer 58\\pause 500\\showFrame farmer 59\\pause 500\\showFrame farmer 60\\pause 500\\showFrame farmer 61\\pause 200\\playSound harvest\\showFrame farmer 0\\faceDirection farmer 3\\warp FWTempPomegranateSapling 1000 1000\\pause 500\\message \"{{i18n:event-FWForestGroveEvent.09}}\"\\action AddItem (O)632\\pause 500\\emote farmer 20\\pause 500\\move farmer 0 -2 0\\move farmer 4 0 1(break)pause 500/message \"{{i18n:event-FWForestGroveEvent.10{{MysteryModeToken}}}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWForestGroveEvent.11}}#{{i18n:event-FWForestGroveEvent.12}}(break)pause 500\\move farmer 0 -1 0\\globalFade 0.003 true\\move farmer 4 0 1\\move farmer 0 -2 0\\move farmer 2 0 1\\move farmer 0 -1 0\\move farmer 1 0 1\\viewport -1000 -1000\\warp FWTempPomegranateSapling 1000 1000\\warp FWTempBlackberryBushFruit 1000 1000\\warp FWTempBlackberryBush 1000 1000\\switchEvent FWMushroomsEventPart1(break)globalFade 0.003 true\\move farmer 0 3 2\\move farmer -1 0 3\\move farmer 0 5 2\\viewport -1000 -1000\\warp FWTempPomegranateSapling 1000 1000\\warp FWTempBlackberryBushFruit 1000 1000\\warp FWTempBlackberryBush 1000 1000\\switchEvent FWMeteoriteEventPart1(break)",
+                // Mushroom field
+                "FWMushroomsEventPart1": "pause 200/changeToTemporaryMap FWMushrooms/viewport -1000 -1000/playMusic woodsTheme/addTemporaryActor FWTempMushroomCircleFae 18 18 1000 1000 2 false/addObject 8 13 891 3/addObject 10 8 404 3/addObject 10 11 851 3/addObject 9 5 420 3/addObject 7 7 422 3/addObject 5 9 257 3/addObject 5 11 281 3/warp farmer 19 1/message \"{{i18n:event-FWMushroomsEventPart1.01}}\"/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer 0 4 2/move farmer -1 0 3/move farmer 0 3 2/move farmer -4 0 3/move farmer 0 1 2/move farmer -2 0 3/move farmer 0 2 2/move farmer -1 0 3/move farmer 0 1 2/pause 200/faceDirection farmer 0/faceDirection farmer 1/faceDirection farmer 2/faceDirection farmer 3/faceDirection farmer 2/pause 500/emote farmer 20/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWMushroomsEventPart1.02}}#{{i18n:event-FWMushroomsEventPart1.03}}#{{i18n:event-FWMushroomsEventPart1.04}}#{{i18n:event-FWMushroomsEventPart1.05}}(break)pause 500\\move farmer 0 -2 0\\move farmer -3 0 3\\pause 500\\emote farmer 40\\message \"{{i18n:event-FWMushroomsEventPart1.06}}\"\\switchEvent FWMushroomsSubEventEat(break)pause 500\\move farmer 0 1 0\\move farmer -2 0 3\\pause 500\\emote farmer 16\\pause 500\\message \"{{i18n:event-FWMushroomsEventPart1.07}}\"\\pause 500\\showFrame farmer 58 true\\pause 500\\showFrame farmer 59 true\\pause 500\\showFrame farmer 60 true\\pause 500\\showFrame farmer 61 true\\pause 200\\playSound harvest\\showFrame farmer 0\\faceDirection farmer 3\\removeObject 8 13\\pause 500\\message \"{{i18n:event-FWMushroomsEventPart1.08}}\"\\action AddItem (O)891\\pause 500\\emote farmer 20\\pause 500\\move farmer 2 0 1\\move farmer 0 -2 0(break)pause 500\\move farmer 0 1 2\\move farmer 4 0 1\\pause 300\\faceDirection farmer 3\\pause 300\\faceDirection farmer 0\\pause 300\\faceDirection farmer 2\\pause 300\\move farmer 0 1 2\\pause 500\\playSound yoba\\temporarySprite 15 12 3 8 50\\warp FWTempMushroomCircleFae 15 12\\pause 200\\jump farmer 2\\faceDirection farmer 0\\emote farmer 16\\animate FWTempMushroomCircleFae false true 200 0 1 2 3\\pause 500\\message \"{{i18n:event-FWMushroomsEventPart1.09}}\"\\pause 500\\speak FWTempMushroomCircleFae \"%{{i18n:event-FWMushroomsEventPart1.10.1}}\"\\speak FWTempMushroomCircleFae \"%{{i18n:event-FWMushroomsEventPart1.10.2}}\"\\pause 500\\playSound yoba\\temporarySprite 16 13 4 8 50\\addObject 16 13 400 3\\temporarySprite 14 13 4 8 50\\addObject 14 13 459 3\\pause 500\\message \"{{i18n:event-FWMushroomsEventPart1.11}}\"\\switchEvent FWMushroomsSubEventFae(break)pause 500\\message \"{{i18n:event-FWMushroomsEventPart1.12}}\"(break)pause 100/switchEvent FWMushroomsEventPart2",
+                "FWMushroomsSubEventEat": "pause 500/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWMushroomsSubEventEat.01}}#{{i18n:event-FWMushroomsSubEventEat.02}}#{{i18n:event-FWMushroomsSubEventEat.03}}#{{i18n:event-FWMushroomsSubEventEat.04}}#{{i18n:event-FWMushroomsSubEventEat.05}}#{{i18n:event-FWMushroomsSubEventEat.06}}(break)pause 500\\move farmer -1 0 3\\move farmer 0 1 2\\move farmer -1 0 3\\pause 500\\farmerEat 281\\pause 500\\emote farmer 32\\pause 500\\playSound harvest\\removeObject 5 11\\message \"{{i18n:event-FWMushroomsSubEventEat.07}}\"\\action AddItem (O)281\\pause 500\\move farmer 0 -1 2\\move farmer 5 0 1\\move farmer 0 1 0(break)pause 500\\move farmer 0 -2 0\\move farmer 1 0 1\\pause 500\\farmerEat 404\\pause 500\\emote farmer 32\\pause 500\\playSound harvest\\removeObject 10 8\\message \"{{i18n:event-FWMushroomsSubEventEat.08}}\"\\action AddItem (O)404\\pause 500\\move farmer 0 1 2\\move farmer 2 0 1\\move farmer 0 2 2(break)pause 500\\move farmer 0 -1 0\\move farmer -2 0 3\\pause 500\\farmerEat 257\\pause 500\\emote farmer 32\\pause 500\\playSound harvest\\removeObject 5 9\\message \"{{i18n:event-FWMushroomsSubEventEat.09}}\"\\action AddItem (O)257\\pause 500\\move farmer 2 0 1\\move farmer 0 1 2\\move farmer 3 0 1\\move farmer 0 1 2(break)pause 500\\move farmer 0 -5 0\\faceDirection farmer 1\\pause 500\\farmerEat 420\\pause 500\\emote farmer 28\\pause 500\\playSound harvest\\removeObject 9 6\\message \"{{i18n:event-FWMushroomsSubEventEat.10}}\"\\pause 500\\move farmer 0 5 2\\move farmer 3 0 1\\move farmer 0 1 2(break)pause 500\\move farmer 0 1 2\\move farmer 1 0 1\\pause 500\\farmerEat 851\\pause 500\\emote farmer 20\\pause 500\\playSound harvest\\removeObject 10 11\\message \"{{i18n:event-FWMushroomsSubEventEat.11}}\"\\action AddItem (O)851\\pause 500\\move farmer 2 0 1(break)pause 500\\move farmer 0 -3 0\\faceDirection farmer 3\\pause 500\\farmerEat 422\\pause 500\\emote farmer 20\\pause 500\\playSound harvest\\removeObject 7 7\\message \"{{i18n:event-FWMushroomsSubEventEat.12}}\"\\action AddItem (O)422\\pause 500\\move farmer 0 3 2\\move farmer 3 0 1\\move farmer 0 1 2(break)faceDirection farmer 2/pause 500/switchEvent FWMushroomsEventPart2",
+                "FWMushroomsSubEventFae": "pause 500/message \"{{i18n:event-FWMushroomsSubEventFae.01}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWMushroomsSubEventFae.02}}#{{i18n:event-FWMushroomsSubEventFae.03}}#{{i18n:event-FWMushroomsSubEventFae.04}}#{{i18n:event-FWMushroomsSubEventFae.05}}(break)pause 500\\unskippable\\removeObject 16 13\\farmerEat 400\\pause 500\\emote farmer 20\\message \"{{i18n:event-FWMushroomsSubEventFae.06}}\"\\pause 500\\emote farmer 40\\pause 500\\showFrame farmer 95\\pause 500\\message \"{{i18n:event-FWMushroomsSubEventFae.07}}\"\\ambientLight 200 160 60\\globalFade 0.004 true\\pause 500\\showFrame farmer 5\\emote farmer 24\\pause 500\\viewport -1000 -1000\\message \"{{i18n:event-FWMushroomsSubEventFae.08}}\"\\end newDay(break)pause 500\\unskippable\\removeObject 14 13\\farmerEat 459\\pause 500\\emote farmer 20\\message \"{{i18n:event-FWMushroomsSubEventFae.09}}\"\\pause 500\\emote farmer 40\\pause 500\\showFrame farmer 95\\pause 500\\message \"{{i18n:event-FWMushroomsSubEventFae.10}}\"\\ambientLight 200 160 60\\globalFade 0.004 true\\pause 500\\showFrame farmer 5\\emote farmer 24\\pause 500\\viewport -1000 -1000\\message \"{{i18n:event-FWMushroomsSubEventFae.11}}\"\\end newDay(break)pause 500\\message \"{{i18n:event-FWMushroomsSubEventFae.12}}\"\\pause 500\\emote FWTempMushroomCircleFae 40\\pause 500\\playSound yoba\\removeObject 16 13\\temporarySprite 16 13 4 8 50\\removeObject 14 13\\temporarySprite 14 13 4 8 50\\pause 500\\speak FWTempMushroomCircleFae \"%{{i18n:event-FWMushroomsSubEventFae.13.1}}\"\\speak FWTempMushroomCircleFae \"%{{i18n:event-FWMushroomsSubEventFae.13.2}}\"\\pause 500\\question null \"#{{i18n:event-FWMushroomsSubEventFae.14}}#{{i18n:event-FWMushroomsSubEventFae.15}}#{{i18n:event-FWMushroomsSubEventFae.16}}\"\\pause 500\\textAboveHead FWTempMushroomCircleFae \"{{i18n:event-FWMushroomsSubEventFae.17}}\"\\pause 500\\emote farmer 40\\pause 200\\emote FWTempMushroomCircleFae 40\\pause 200\\emote farmer 40\\pause 500\\emote FWTempMushroomCircleFae 20\\pause 500\\textAboveHead FWTempMushroomCircleFae \"{{i18n:event-FWMushroomsSubEventFae.18}}\"\\pause 500\\playSound yoba\\temporarySprite 15 12 3 8 50\\warp FWTempMushroomCircleFae 1000 1000\\temporarySprite 15 12 3 8 50\\addObject 15 12 872 3\\pause 1000\\message \"{{i18n:event-FWMushroomsSubEventFae.19}}\"\\action AddItem (O)872\\removeObject 15 12\\pause 500\\emote farmer 32\\pause 500\\move farmer 0 -1 0\\move farmer -4 0 3\\move farmer 0 -2 0\\switchEvent FWMushroomsEventPart2(break)pause 500\\speed farmer 4\\move farmer -2 0 3\\move farmer 0 -1 0\\move farmer -1 0 3\\speed farmer 1\\screenFlash 1\\playSound ow\\showFrame farmer 5\\pause 500\\emote FWTempMushroomCircleFae 12\\playSound yoba\\removeObject 16 13\\temporarySprite 16 13 4 8 50\\removeObject 14 13\\temporarySprite 14 13 4 8 50\\pause 500\\speak FWTempMushroomCircleFae \"%{{i18n:event-FWMushroomsSubEventFae.20.1}}\"\\speak FWTempMushroomCircleFae \"%{{i18n:event-FWMushroomsSubEventFae.20.2}}\"\\speak FWTempMushroomCircleFae \"%{{i18n:event-FWMushroomsSubEventFae.20.3}}\"\\pause 500\\playSound yoba\\temporarySprite 15 12 3 8 50\\warp FWTempMushroomCircleFae 1000 1000\\money -5000\\pause 500\\emote farmer 28\\pause 200\\showFrame farmer 0\\faceDirection farmer 1\\message \"{{i18n:event-FWMushroomsSubEventFae.21}}\"\\pause 500\\emote farmer 12\\pause 500\\move farmer -1 0 3\\move farmer 0 -2 0\\switchEvent FWMushroomsEventPart2(break)",
+                "FWMushroomsEventPart2": "pause 500/message \"{{i18n:event-FWMushroomsEventPart2.01{{MysteryModeToken}}}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.02}}#{{i18n:event-FWMushroomsEventPart2.02}}#{{i18n:event-FWMushroomsEventPart2.03}}(break)pause 500\\move farmer 1 0 1\\move farmer 0 -2 0\\globalFade 0.003 true\\move farmer 8 0 1\\viewport -1000 -1000\\switchEvent FWSweetGemsEvent(break)pause 500\\globalFade 0.003 true\\move farmer 0 4 2\\move farmer -8 0 3\\viewport -1000 -1000\\switchEvent FWMeteoriteEventPart1(break)",
+                // Meteorite
+                "FWMeteoriteEventPart1": "pause 200/changeToTemporaryMap FWMeteorite/viewport -1000 -1000/playMusic clubloop/ambientLight 200 160 60/addLantern 847 15 14 1/addTemporaryActor FWTempMysterySphere 16 16 12 7 3 false/warp farmer 26 7/playSound UFO/pause 200/message \"{{i18n:event-FWMeteoriteEventPart1.01}}\"/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer -5 0 3/move farmer 0 1 2/move farmer -3 0 3/move farmer 0 -1 0/move farmer -3 0 3/pause 500/faceDirection farmer 2/pause 200/faceDirection farmer 3/pause 200/faceDirection farmer 2/pause 500/message \"{{i18n:event-FWMeteoriteEventPart1.02}}\"/pause 500/emote farmer 40/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWMeteoriteEventPart1.03}}#{{i18n:event-FWMeteoriteEventPart1.04}}#{{i18n:event-FWMeteoriteEventPart1.05}}(break)pause 500\\move farmer 0 3 2\\move farmer -1 0 3\\move farmer 0 3 2\\pause 500\\emote farmer 40\\pause 500\\showFrame farmer 15\\pause 200\\screenFlash 1\\jump farmer 8\\playSound ow\\showFrame farmer 96\\pause 500\\message \"{{i18n:event-FWMeteoriteEventPart1.06}}\"\\pause 500\\switchEvent FWMeteoriteSubEvent(break)pause 500\\move farmer -2 0 3\\pause 500\\emote farmer 40\\pause 500\\showFrame farmer 111\\pause 200\\playSound slime\\playSound slimedead\\screenFlash 1\\warp FWTempMysterySphere 1000 1000\\removeSprite 12 7\\animate farmer false false 500 104 105 104 105 104 105 104 105\\pause 1000\\showFrame farmer 0\\playSound getNewSpecialItem\\emote farmer 8\\message \"{{i18n:event-FWMeteoriteEventPart1.07}}\"\\action AddItem (O)857\\pause 500\\emote farmer 40\\pause 500\\faceDirection farmer 3\\move farmer -2 0 3\\move farmer 0 1 2\\move farmer -1 0 3\\move farmer 0 3 2\\move farmer -2 0 3\\pause 100\\faceDirection farmer 2\\pause 300\\speed farmer 4\\move farmer -1 0 3\\move farmer 0 4 2\\speed farmer 1\\move farmer 0 4 2\\move farmer 5 0 1\\faceDirection farmer 0\\pause 500\\switchEvent FWMeteoriteEventPart2(break)pause 500\\emote farmer 40\\pause 500\\emote farmer 28\\speed farmer 4\\move farmer 3 0 1\\move farmer 0 2 2\\move farmer 1 0 1\\move farmer 0 7 2\\move farmer -1 0 3\\move farmer 0 3 2\\move farmer -6 0 3\\faceDirection farmer 0\\speed farmer 1\\pause 500\\switchEvent FWMeteoriteEventPart2(break)",
+                "FWMeteoriteSubEvent": "pause 100/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWMeteoriteSubEvent.01}}#{{i18n:event-FWMeteoriteSubEvent.02}}(break)pause 500\\animate farmer false false 150 66 67 68 69 70\\playSound hammer\\temporarySprite 14 13 18 4 50\\pause 200\\screenFlash 1\\playSound ow\\showFrame farmer 5\\pause 1000\\showFrame farmer 0\\playSound getNewSpecialItem\\emote farmer 32\\pause 500\\message \"{{i18n:event-FWMeteoriteSubEvent.03}}\"\\action AddItem (O)337\\move farmer 0 -1 0\\pause 400\\move farmer 0 -1 0\\pause 200\\move farmer 0 -1 0\\move farmer 1 0 1\\move farmer 0 -3 0\\move farmer 3 0 1\\move farmer 0 2 2\\move farmer 1 0 1\\move farmer 0 7 2\\move farmer -1 0 3\\move farmer 0 3 2\\move farmer -6 0 3\\faceDirection farmer 0\\pause 500(break)pause 500\\emote farmer 28\\move farmer 0 -1 0\\pause 400\\move farmer 0 -1 0\\pause 200\\move farmer 0 -1 0\\move farmer 1 0 1\\move farmer 0 -3 0\\move farmer 3 0 1\\move farmer 0 2 2\\move farmer 1 0 1\\move farmer 0 7 2\\move farmer -1 0 3\\move farmer 0 3 2\\move farmer -6 0 3\\faceDirection farmer 0\\pause 500(break)pause 100/switchEvent FWMeteoriteEventPart2",
+                "FWMeteoriteEventPart2": "pause 100/message \"{{i18n:event-FWMeteoriteEventPart2.01}}\"/pause 500/faceDirection farmer 2/message \"{{i18n:event-FWMeteoriteEventPart2.02}}\"/pause 500/globalFade 0.003 true/move farmer 0 3 2/move farmer -1 0 3/move farmer 0 2 3/viewport -1000 -1000/switchEvent FWSweetGemsEvent",
+                // Sweet gem berries
+                "FWSweetGemsEvent": "pause 200/changeToTemporaryMap FWSweetGems/viewport -1000 -1000/playMusic woodsTheme/addTemporaryActor FWTempSweetGemBerry 16 32 14 12 2 false/addTemporaryActor FWTempSweetGemBerry2 16 32 16 13 2 false/addTemporaryActor FWTempSweetGem 16 32 1000 1000 2 false/addTemporaryActor FWTempSweetGem2 16 32 1000 1000 2 false/hideShadow FWTempSweetGemBerry true/hideShadow FWTempSweetGemBerry2 true/hideShadow FWTempSweetGem true/hideShadow FWTempSweetGem2 true/warp farmer 19 1/message \"{{i18n:event-FWSweetGemsEvent.01}}\"/pause 500/globalFadeToClear 0.007 true/viewport 13 13/pause 500/move farmer 0 9 2/move farmer -2 0 3/pause 500/emote farmer 32/pause 500/message \"{{i18n:event-FWSweetGemsEvent.02}}\"/pause 500/message \"{{i18n:event-FWSweetGemsEvent.03}}\"/pause 500/quickQuestion {{i18n:event-FWQuickQuestion.01}}#{{i18n:event-FWSweetGemsEvent.04}}#{{i18n:event-FWSweetGemsEvent.05}}#{{i18n:event-FWSweetGemsEvent.06}}(break)pause 500\\move farmer -1 0 3\\move farmer 0 2 2\\pause 500\\animate farmer false false 150 54 55 56 57\\playSound harvest\\warp FWTempSweetGemBerry2 1000 1000\\warp FWTempSweetGem2 16 13\\pause 500\\message \"{{i18n:event-FWSweetGemsEvent.07}}\"\\action AddItem (O)417\\pause 500\\move farmer -1 0 3\\pause 500\\animate farmer false false 150 58 59 60 61\\playSound harvest\\warp FWTempSweetGemBerry 1000 1000\\warp FWTempSweetGem 14 12\\pause 500\\message \"{{i18n:event-FWSweetGemsEvent.08}}\"\\action AddItem (O)417\\pause 500\\move farmer 3 0 1\\move farmer 0 2 2(break)pause 500\\move farmer -2 0 3\\move farmer 0 1 2\\move farmer -2 0 3\\pause 500\\animate farmer false false 150 58 59 60 61\\playSound leafrustle\\message \"{{i18n:event-FWSweetGemsEvent.09}}\"\\action AddItem (O)347\\pause 500\\move farmer 6 0 1\\move farmer 0 3 2(break)pause 500\\emote farmer 32\\pause 500\\move farmer 2 0 1\\move farmer 0 4 2(break)pause 500/faceDirection farmer 1/message \"{{i18n:event-FWSweetGemsEvent.10}}\"/globalFade 0.003 true/eventSeen 1892900 false/addConversationTopic ForestWalkCompleted/move farmer 5 0 1/end"
+            }
+        },
+    ]
+}

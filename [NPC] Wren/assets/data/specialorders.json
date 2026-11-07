@@ -1,0 +1,175 @@
+{
+	
+	"Changes": [
+		
+		
+		{
+			"LogName": "Wren backyard strings",
+			"Action": "EditData",
+			"Target": "Strings/SpecialOrderStrings",
+			"Entries": {
+				"Wren.backyard.Name": "{{i18n:Wren.backyard.Name}}",
+				"Wren.backyard.Ordertext": "{{i18n:Wren.backyard.Ordertext}}",
+				"Wren.backyard.Objective1": "{{i18n:Wren.backyard.Objective1}}",
+				"Wren.backyard.Objective2": "{{i18n:Wren.backyard.Objective2}}",
+				"Wren.backyard.Objective3": "{{i18n:Wren.backyard.Objective3}}",
+				"Wren.backyard.Objective4": "{{i18n:Wren.backyard.Objective4}}",
+				"Wren.backyard.Objective5": "{{i18n:Wren.backyard.Objective5.{{BlueJazzOrLavender}} }}",
+				"Wren.backyard.Objective6": "{{i18n:Wren.backyard.Objective6.{{TulipOrForgetMeNot}} }}",
+				
+			},
+		},
+		
+		
+		{
+			"LogName": "Wren's Dropbox",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_SunberryVillage", 
+			"MapTiles": [
+				{
+					"Position": { "X": 17, "Y": 62}, 
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "DropBox WrenMailbox"
+					}
+				}
+			]
+		},
+		
+		{
+			"LogName": "Special Order: Wren backyard",
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"Wren.backyard": { 
+					"Name": "[Wren.backyard.Name]", 
+					"Requester": "WrenSong", 
+					"Duration": "TwoWeeks", 
+					"Repeatable": "False", 
+					//"RequiredTags": "dropbox_WrenMailbox", 
+					"OrderType": "SunberryBoard", 
+					"SpecialRule": "",
+					"Text": "[Wren.backyard.Ordertext]", 
+					"ItemToRemoveOnEnd": null, 
+					"MailToRemoveOnEnd": null, 
+					"RandomizedElements": null, 
+					"Objectives": [
+						
+						//donate 50 pieces of wood, 100 stone, cherry sapling, 12 speedwell seeds, 3 lavender seeds (if ARV/WAG)/3 blue jazz (if not), 6 forget me not (if Serene Meadows)/6 tulips (if not)
+						{
+							"Type": "Donate", 
+							"Text": "[Wren.backyard.Objective1]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "WrenMailbox", 
+								"DropBoxGameLocation": "Custom_SBV_SunberryVillage",
+								"DropBoxIndicatorLocation": "17 61",
+								"MinimumCapacity": "30",
+								"AcceptedContextTags": "wood_item", 
+							}
+						},
+						
+						{
+							"Type": "Donate", 
+							"Text": "[Wren.backyard.Objective2]",
+							"RequiredCount": "100",
+							"Data": {
+								"DropBox": "WrenMailbox", 
+								"DropBoxGameLocation": "Custom_SBV_SunberryVillage",
+								"DropBoxIndicatorLocation": "17 61",
+								"MinimumCapacity": "30",
+								"AcceptedContextTags": "id_o_390", 
+							}
+						},
+						
+						{
+							"Type": "Donate", 
+							"Text": "[Wren.backyard.Objective3]",
+							"RequiredCount": "1",
+							"Data": {
+								"DropBox": "WrenMailbox", 
+								"DropBoxGameLocation": "Custom_SBV_SunberryVillage",
+								"DropBoxIndicatorLocation": "17 61",
+								"MinimumCapacity": "30",
+								"AcceptedContextTags": "id_o_628", 
+							}
+						},
+						
+						{
+							"Type": "Donate", 
+							"Text": "[Wren.backyard.Objective4]",
+							"RequiredCount": "12",
+							"Data": {
+								"DropBox": "WrenMailbox", 
+								"DropBoxGameLocation": "Custom_SBV_SunberryVillage",
+								"DropBoxIndicatorLocation": "17 61",
+								"MinimumCapacity": "30",
+								"AcceptedContextTags": "id_o_skellady.SBVCP_SpeedwellSeeds", 
+							}
+						},
+						
+						{
+							"Type": "Donate", 
+							"Text": "[Wren.backyard.Objective5]",
+							"RequiredCount": "3",
+							"Data": {
+								"DropBox": "WrenMailbox", 
+								"DropBoxGameLocation": "Custom_SBV_SunberryVillage",
+								"DropBoxIndicatorLocation": "17 61",
+								"MinimumCapacity": "30",
+								"AcceptedContextTags": "id_o_{{BlueJazzOrLavender}}", 
+							}
+						},
+						
+						{
+							"Type": "Donate", 
+							"Text": "[Wren.backyard.Objective6]",
+							"RequiredCount": "6",
+							"Data": {
+								"DropBox": "WrenMailbox", 
+								"DropBoxGameLocation": "Custom_SBV_SunberryVillage",
+								"DropBoxIndicatorLocation": "17 61",
+								"MinimumCapacity": "30",
+								"AcceptedContextTags": "id_o_{{TulipOrForgetMeNot}}", 
+							}
+						},
+					],
+					"Rewards": [ 
+						{
+							"Type": "Money",
+							"Data": {
+								"Amount": "10000",
+							}
+						},
+						{
+							"Type": "Friendship",
+							"Data": {
+								"Amount": "100", 
+								"TargetName": "WrenSong", 
+							},
+						},
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "WrenBackyard", 
+								"NoLetter": "false" 
+							}
+						},
+						
+					]
+				}
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "data/mail",	
+			"Entries": {
+				
+				"WrenBackyard": "{{i18n:Wren.backyard.rewardletter |andRipley={{andRipley}} |andMia={{andMia}} }}[#]{{i18n:Wren.backyard.rewardletter.title}}",
+			}
+		},
+		
+		
+	]
+}	

@@ -1,0 +1,40 @@
+{
+	"Format": "2.8.0",
+	"ConfigSchema": {
+		"Honey Jar": {
+		"AllowValues": "Jar, Pot",
+		"Default": "Jar"
+		},
+		"Honey": {
+		"AllowValues": "true, false",
+		"Default": "true"
+		},
+		"Wool and Yarn color":{
+		"AllowValues": "Bactrian, Mongolian, Wild, Dromedary, LamaBrown, LamaBlack",
+		"Default": "Bactrian"
+		},
+		"Wool and Yarn":{
+		"AllowValues": "true, false",
+		"Default": "true"
+		},
+		"Goose Egg":{
+		"AllowValues": "true, false",
+		"Default": "true"
+		},
+		"Goose Mayo":{
+		"AllowValues": "true, false",
+		"Default": "true"
+		}
+	},
+	"Changes": [
+	{
+		"Action": "Include",
+      		"FromFile": "data/bear.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/camel.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/goose.json"}
+	]
+}

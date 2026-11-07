@@ -1,0 +1,74 @@
+{
+    "Format": "2.0.0",
+	"ConfigSchema": {
+		"Enable Gray Turkey": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Enables the Gray/Ocellated Turkey texture and adds it to the possible turkey appearances."
+		},
+		"Disable Special Order": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Disables the Special Order to unlock animals at Marnie's. Turn on to have Marnie sell animals by default provided the appropriate housing is built."
+		},
+		"Disable Meat Recipes": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Disables meat-based recipes/books. Primarily for users who play with Animal Husbandry without having meat/butchering turned on."
+		}
+	},
+	
+	"DynamicTokens": [
+		{
+			"Name": "unlockcondition",
+			"Value": "PLAYER_HAS_MAIL Current Mizu.Turkey_TalkTurkeytoMeLetter",
+			"When": {
+				"Disable Special Order": false
+			}
+		},
+		{
+			"Name": "unlockcondition",
+			"Value": "",
+			"When": {
+				"Disable Special Order": true
+			}
+		}
+	],
+	
+	"Changes": [
+		// add item + animal images
+		{
+			"Action": "Load",
+			"Target": "Mizu.Turkey/BabyTurkey, Mizu.Turkey/BabyWhiteTurkey, Mizu.Turkey/BrownTurkey, Mizu.Turkey/WhiteTurkey, Mizu.Turkey/GrayTurkey, Mizu.Turkey/shopicon, Mizu.Turkey/objects, Mizu.Turkey/book",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		
+		// add music cues
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "Mizu.Turkey_TurkeySound": {
+                    "ID": "Mizu.Turkey_TurkeySound",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: sfx/turkey1.wav}}", "{{AbsoluteFilePath: sfx/turkey2.wav}}", "{{AbsoluteFilePath: sfx/turkey3.wav}}", "{{AbsoluteFilePath: sfx/turkey4.wav}}" ]
+                }
+            }
+        },
+		
+		// add subfiles
+		{
+			"Action": "Include",
+			"FromFile": "data/animals.json, data/books.json, data/gifttastes.json, data/machines.json, data/objects.json, data/recipes.json, data/shops.json, data/specialorders.json"
+		},
+		// add subfiles - flexible cooking to match Cornucopia settings
+		{
+			"Action": "Include",
+			"When": {
+				"HasMod|contains=Cornucopia.CookingRecipes": true,
+				"HasReadLetter: hostPlayer |contains=Cornucopia.CookingRecipes_FlexibleRecipesEnabled": true,
+			},
+			"FromFile": "data/flexiblerecipes.json"
+		}
+    ]
+}

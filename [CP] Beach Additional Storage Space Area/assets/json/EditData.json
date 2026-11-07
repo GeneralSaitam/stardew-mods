@@ -1,0 +1,166 @@
+{
+
+    "Changes": [
+
+
+//■■■ エディットデータ部分(共通) ■■■
+
+    //●ロケーションデータ
+      {
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "Entries": {
+          "Custom_Beach_Storage_Space": {
+            "DisplayName": "{{i18n:MapName_Custom_Beach_Storage_Space}}",
+            "ExcludeFromNpcPathfinding": true,
+            "CreateOnLoad": {
+              "MapPath": "Maps\\Custom_Beach_Storage_Space",
+              "AlwaysActive": "false"
+            },
+            "FishAreas": {
+              "Default": {
+                "DisplayName": "Custom_Beach_Storage_Space",
+                "Position": null,
+                "CrabPotFishTypes": [ "ocean" ],
+                "CrabPotJunkChance": 0.2
+              }
+            },
+            "Fish": [
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here spring fall",
+                "Id": "(O)129",
+                "ItemId": "(O)129"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here spring fall winter",
+                "Id": "(O)131",
+                "ItemId": "(O)131"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here spring winter",
+                "Id": "(O)147",
+                "ItemId": "(O)147"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here spring fall",
+                "Id": "(O)148",
+                "ItemId": "(O)148"
+              },
+              {
+                "Chance": 1.0,
+                "Id": "(O)152",
+                "ItemId": "(O)152"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here spring summer winter",
+                "Id": "(O)708",
+                "ItemId": "(O)708"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here spring summer",
+                "Id": "(O)267",
+                "ItemId": "(O)267"
+              },
+              {
+                "Chance": 1.0,
+                "Season": 1,
+                "Id": "(O)128",
+                "ItemId": "(O)128"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here summer winter",
+                "Id": "(O)130",
+                "ItemId": "(O)130"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here summer winter",
+                "Id": "(O)146",
+                "ItemId": "(O)146"
+              },
+              {
+                "Chance": 1.0,
+                "Season": 1,
+                "Id": "(O)149",
+                "ItemId": "(O)149"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here summer fall winter",
+                "Id": "(O)150",
+                "ItemId": "(O)150"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here summer fall",
+                "Id": "(O)155",
+                "ItemId": "(O)155"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here summer fall",
+                "Id": "(O)701",
+                "ItemId": "(O)701"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here fall winter",
+                "Id": "(O)154",
+                "ItemId": "(O)154"
+              },
+              {
+                "Chance": 1.0,
+                "Condition": "LOCATION_SEASON Here fall winter",
+                "Id": "(O)705",
+                "ItemId": "(O)705"
+              },
+              {
+                "Chance": 1.0,
+                "Season": 3,
+                "Id": "(O)151",
+                "ItemId": "(O)151"
+              },
+              {
+                "Chance": 0.35,
+                "Condition": "IS_PASSIVE_FESTIVAL_OPEN SquidFest, TIME 0600 1800",
+                "Id": "(O)151",
+                "ItemId": "(O)151"
+              },
+              {
+                "Chance": 0.5,
+                "Condition": "IS_PASSIVE_FESTIVAL_OPEN SquidFest",
+                "Id": "(O)151",
+                "ItemId": "(O)151"
+              },
+              {
+                "Chance": 0.1,
+                "Id": "(O)SeaJelly",
+                "ItemId": "(O)SeaJelly"
+              }
+            ]
+          }
+        }
+      },
+
+    //●テキストボックス導入 翻訳関係
+      {
+        "Action":"EditData",
+        "Target":"Strings/StringsFromMaps",
+        "Entries":{
+          "BeachASSA01": "{{i18n:BeachASSA01}}",
+          "BeachASSA02": "{{i18n:BeachASSA02}}",
+          "BeachASSA03": "{{i18n:BeachASSA03}}",
+          "BeachASSA04": "{{i18n:BeachASSA04}}"
+        }
+      }
+
+
+    ] //▼▼"Changes"の終了▼▼
+}

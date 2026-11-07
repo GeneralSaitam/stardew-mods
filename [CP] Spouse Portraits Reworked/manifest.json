@@ -1,0 +1,61 @@
+{
+   "Name": "Spouse Portraits Reworked",
+   "Author": "Hitme",
+   "Version": "4.0.1", 
+   "Description": "Spouse Portraits Reworked",
+   "UniqueID": "Hitme.SpousePortraitsReworked",
+   "MinimumApiVersion": "3.0",
+   "UpdateKeys": ["Nexus:22912"],
+   "Dependencies": [
+      //SVE
+      {
+         "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+         "IsRequired": false,
+      },
+      //CIS
+      {
+         "UniqueID": "Hitme.CarolineIsSingle",
+         "IsRequired": false,
+      },
+      {
+         "UniqueID": "Hitme.RobinIsSingleRevised",
+         "IsRequired": false,
+      },
+      //RRRR & RomRas
+      {
+         "UniqueID": "Jellonip.RRRR",
+         "IsRequired": "false",
+      },
+      {
+         "UniqueID": "Nom0ri.RasmodiaRRRR",
+         "IsRequired": "false",
+      },
+      {
+         "UniqueID": "Wolf.RomRas",
+         "IsRequired": false,
+      },
+      {
+         "UniqueID": "Nom0ri.RomRas",
+         "IsRequired": false,
+      },
+      //MulletSam
+      {
+         "UniqueID": "Rosenbug.SamMulletReplacement",
+         "IsRequired": false,
+      },
+
+      //Seasonal
+      {
+         "UniqueID": "Poltergeister.SeasonalCuteSpritesSVE",
+         "IsRequired": false,
+      },
+      {
+         "UniqueID": "Poltergeister.SeasonalCuteCharacters",
+         "IsRequired": false
+       }, 
+   ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher", 
+      "MinimumVersion": "2.0.0" 
+   }
+}

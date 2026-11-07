@@ -1,0 +1,540 @@
+{
+    "Format": "2.4.0",
+
+
+
+    "ConfigSchema": 
+    {
+        "Reward Amount": 
+        {
+            "HostowValues": "1000, 5000, 10000",
+            "HostowBlank": false,
+            "Default": "1000",
+            "Description": "Changes the amount you will receive for every 10 donations."
+        }
+    },
+
+
+
+    "Changes": [
+    
+
+        {
+         "Action": "EditData",
+         "Target": "Data/Mail",
+
+         "Entries": 
+         {
+            "Museum_Reward_Mail_1": "{{i18n:Mail.MuseumReward.1}} %item money {{Reward Amount}}  %%[#]{{i18n:MailName.MuseumReward.1}}",
+            "Museum_Reward_Mail_2": "{{i18n:Mail.MuseumReward.2}}  %item money {{Reward Amount}}  %%[#]{{i18n:MailName.MuseumReward.2}}",
+            "Museum_Reward_Mail_3": "{{i18n:Mail.MuseumReward.3}} %item money {{Reward Amount}}  %%[#]{{i18n:MailName.MuseumReward.3}}",
+            "Museum_Reward_Mail_4": "{{i18n:Mail.MuseumReward.4}} %item money {{Reward Amount}}  %%[#]{{i18n:MailName.MuseumReward.4}}",
+            "Museum_Reward_Mail_5": "{{i18n:Mail.MuseumReward.5}} %item money {{Reward Amount}}  %%[#]{{i18n:MailName.MuseumReward.5}}",
+            "Museum_Reward_Mail_6": "{{i18n:Mail.MuseumReward.6}} %item money {{Reward Amount}}  %%[#]{{i18n:MailName.MuseumReward.6}}",
+            "Museum_Reward_Mail_7": "{{i18n:Mail.MuseumReward.7}} %item money {{Reward Amount}}  %%[#]{{i18n:MailName.MuseumReward.7}}",
+            "Museum_Reward_Mail_8": "{{i18n:Mail.MuseumReward.8}} %item money {{Reward Amount}}  %%[#]{{i18n:MailName.MuseumReward.8}}",
+            "Museum_Reward_Mail_9": "{{i18n:Mail.MuseumReward.9}} %item money {{Reward Amount}}  %%[#]{{i18n:MailName.MuseumReward.9}}"
+         }
+
+        },
+
+
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_1": 
+                {
+                "Id": "Museum_Reward_Mail_1",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Host Museum_Reward_Mail_1, MUSEUM_DONATIONS 10 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Host Museum_Reward_Mail_1"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_1": 
+                {
+                "Id": "Museum_Reward_Mail_1",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Current Museum_Reward_Mail_1, MUSEUM_DONATIONS 10 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Current Museum_Reward_Mail_1"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_2": 
+                {
+                "Id": "Museum_Reward_Mail_2",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Host Museum_Reward_Mail_2, MUSEUM_DONATIONS 20 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Host Museum_Reward_Mail_2"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_2": 
+                {
+                "Id": "Museum_Reward_Mail_2",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Current Museum_Reward_Mail_2, MUSEUM_DONATIONS 20 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Current Museum_Reward_Mail_2"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_3": 
+                {
+                "Id": "Museum_Reward_Mail_3",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Host Museum_Reward_Mail_3, MUSEUM_DONATIONS 30 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Host Museum_Reward_Mail_3"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_3": 
+                {
+                "Id": "Museum_Reward_Mail_3",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Current Museum_Reward_Mail_3, MUSEUM_DONATIONS 30 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Current Museum_Reward_Mail_3"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_4": 
+                {
+                "Id": "Museum_Reward_Mail_4",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Host Museum_Reward_Mail_4, MUSEUM_DONATIONS 40 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Host Museum_Reward_Mail_4"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_4": 
+                {
+                "Id": "Museum_Reward_Mail_4",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Current Museum_Reward_Mail_4, MUSEUM_DONATIONS 40 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Current Museum_Reward_Mail_4"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_5": 
+                {
+                "Id": "Museum_Reward_Mail_5",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Host Museum_Reward_Mail_5, MUSEUM_DONATIONS 50 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Host Museum_Reward_Mail_5"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_5": 
+                {
+                "Id": "Museum_Reward_Mail_5",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Current Museum_Reward_Mail_5, MUSEUM_DONATIONS 50 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Current Museum_Reward_Mail_5"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_6": 
+                {
+                "Id": "Museum_Reward_Mail_6",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Host Museum_Reward_Mail_6, MUSEUM_DONATIONS 60 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Host Museum_Reward_Mail_6"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_6": 
+                {
+                "Id": "Museum_Reward_Mail_6",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Current Museum_Reward_Mail_6, MUSEUM_DONATIONS 60 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Current Museum_Reward_Mail_6"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_7": 
+                {
+                "Id": "Museum_Reward_Mail_7",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Host Museum_Reward_Mail_7, MUSEUM_DONATIONS 70 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Host Museum_Reward_Mail_7"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_7": 
+                {
+                "Id": "Museum_Reward_Mail_7",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Current Museum_Reward_Mail_7, MUSEUM_DONATIONS 70 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Current Museum_Reward_Mail_7"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_8": 
+                {
+                "Id": "Museum_Reward_Mail_8",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Host Museum_Reward_Mail_8, MUSEUM_DONATIONS 80 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Host Museum_Reward_Mail_8"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_8": 
+                {
+                "Id": "Museum_Reward_Mail_8",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Current Museum_Reward_Mail_8, MUSEUM_DONATIONS 80 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Current Museum_Reward_Mail_8"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_9": 
+                {
+                "Id": "Museum_Reward_Mail_9",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Host Museum_Reward_Mail_9, MUSEUM_DONATIONS 90 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Host Museum_Reward_Mail_9"
+                ]
+                }
+            }
+           },
+
+           {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+            {
+                "Museum_Reward_Mail_9": 
+                {
+                "Id": "Museum_Reward_Mail_9",
+                "Trigger": "DayStarted",
+                "Condition": "!PLAYER_HAS_MAIL Current Museum_Reward_Mail_9, MUSEUM_DONATIONS 90 Arch Minerals",
+                "Actions": 
+                [
+                    "AddMail Current Museum_Reward_Mail_9"
+                ]
+                }
+            }
+           },
+
+            {
+                "Action": "EditData",
+                "Target": "Data/MuseumRewards",
+    
+                "Entries": {
+                    "Museum_Reward_Mail_1_10D": {
+                        "TargetContextTags": [
+                            {
+                                "Tag": "",
+                                "Count": 10
+                            }
+                        ],
+                        "FlagOnCompletion": true,
+                        "RewardActions": ["AddMail All Museum_Reward_Mail_1 tomorrow"]
+                    }
+                    }
+                
+                },
+
+                {
+                    "Action": "EditData",
+                    "Target": "Data/MuseumRewards",
+        
+                    "Entries": {
+                        "Museum_Reward_Mail_2_20D": {
+                            "TargetContextTags": [
+                                {
+                                    "Tag": "",
+                                    "Count": 20
+                                }
+                            ],
+                            "FlagOnCompletion": true,
+                            "RewardActions": ["AddMail All Museum_Reward_Mail_2 tomorrow"]
+                        }
+                        }
+                    
+                    },
+
+                    {
+                        "Action": "EditData",
+                        "Target": "Data/MuseumRewards",
+            
+                        "Entries": {
+                            "Museum_Reward_Mail_3_30D": {
+                                "TargetContextTags": [
+                                    {
+                                        "Tag": "",
+                                        "Count": 30
+                                    }
+                                ],
+                                "FlagOnCompletion": true,
+                                "RewardActions": ["AddMail All Museum_Reward_Mail_3 tomorrow"]
+                            }
+                            }
+                        
+                        },
+                        
+                        {
+                            "Action": "EditData",
+                            "Target": "Data/MuseumRewards",
+                
+                            "Entries": {
+                                "Museum_Reward_Mail_4_40D": {
+                                    "TargetContextTags": [
+                                        {
+                                            "Tag": "",
+                                            "Count": 40
+                                        }
+                                    ],
+                                    "FlagOnCompletion": true,
+                                    "RewardActions": ["AddMail All Museum_Reward_Mail_4 tomorrow"]
+                                }
+                                }
+                            
+                            },
+
+                            {
+                                "Action": "EditData",
+                                "Target": "Data/MuseumRewards",
+                    
+                                "Entries": {
+                                    "Museum_Reward_Mail_5_50D": {
+                                        "TargetContextTags": [
+                                            {
+                                                "Tag": "",
+                                                "Count": 50
+                                            }
+                                        ],
+                                        "FlagOnCompletion": true,
+                                        "RewardActions": ["AddMail All Museum_Reward_Mail_5 tomorrow"]
+                                    }
+                                    }
+                                
+                                },
+
+                                {
+                                    "Action": "EditData",
+                                    "Target": "Data/MuseumRewards",
+                        
+                                    "Entries": {
+                                        "Museum_Reward_Mail_6_60D": {
+                                            "TargetContextTags": [
+                                                {
+                                                    "Tag": "",
+                                                    "Count": 60
+                                                }
+                                            ],
+                                            "FlagOnCompletion": true,
+                                            "RewardActions": ["AddMail All Museum_Reward_Mail_6 tomorrow"]
+                                        }
+                                        }
+                                    
+                                    },
+
+                                    {
+                                        "Action": "EditData",
+                                        "Target": "Data/MuseumRewards",
+                            
+                                        "Entries": {
+                                            "Museum_Reward_Mail_7_70D": {
+                                                "TargetContextTags": [
+                                                    {
+                                                        "Tag": "",
+                                                        "Count": 70
+                                                    }
+                                                ],
+                                                "FlagOnCompletion": true,
+                                                "RewardActions": ["AddMail All Museum_Reward_Mail_7 tomorrow"]
+                                            }
+                                            }
+                                        
+                                        },
+
+                                        {
+                                            "Action": "EditData",
+                                            "Target": "Data/MuseumRewards",
+                                
+                                            "Entries": {
+                                                "Museum_Reward_Mail_8_80D": {
+                                                    "TargetContextTags": [
+                                                        {
+                                                            "Tag": "",
+                                                            "Count": 80
+                                                        }
+                                                    ],
+                                                    "FlagOnCompletion": true,
+                                                    "RewardActions": ["AddMail All Museum_Reward_Mail_8 tomorrow"]
+                                                }
+                                                }
+                                            
+                                            },
+
+                                            {
+                                                "Action": "EditData",
+                                                "Target": "Data/MuseumRewards",
+                                    
+                                                "Entries": {
+                                                    "Museum_Reward_Mail_9_90D": {
+                                                        "TargetContextTags": [
+                                                            {
+                                                                "Tag": "",
+                                                                "Count": 90
+                                                            }
+                                                        ],
+                                                        "FlagOnCompletion": true,
+                                                        "RewardActions": ["AddMail All Museum_Reward_Mail_9 tomorrow"]
+                                                    }
+                                                    }
+                                                
+                                                }
+
+    ]
+
+    }

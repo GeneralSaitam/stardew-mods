@@ -1,0 +1,186 @@
+﻿{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+    
+    // Body
+
+    "Body": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "말을 날개로 바꿔주는 리텍을 쓰는 경우엔 false 로 설정하세요. true 체형 적용 / 체형 미적용 false "
+    },
+    "Body Type": {
+      "AllowValues": "Slim_B, Slim_P, Slim_S, Chubby_B, Chubby_P, Chubby_S",
+      "Default": "Slim_B",
+      "Description": "Slim_B 얇은 다리와 기본 눈 / Slim_P 얇은 다리와 기본 눈 + 눈 음영 / Slim_S 얇은 다리와 졸린 눈 / Chubby_B 통통 다리와 기본 눈 / Chubby_P 통통 다리와 기본 눈 + 눈 음영 / Chubby_S 통통 다리와 졸린 눈"
+    },
+
+    // Sleeves
+
+    "Sleeve": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Sleeves",
+      "Description": "만약 소매 관련 다른 모드를 쓰는 경우엔 false 로 설정하세요. true 소매 적용 / 소매 미적용 false "
+    },
+    "Non-Seasonal Sleeve Type": {
+      "AllowValues": "S, SS, LS, OS, S_ShirtOS, C_ShirtOS, OffS, OneOffS, OneOffLS, OneOffOS",
+      "Default": "SS",
+      "Section": "Sleeves",
+      "Description": "S 민소매 / SS 반팔 / LS 긴팔 / OS 오버핏 긴팔 / S_ShirtOS 얇은다리 셔츠 오버핏 긴팔 / C_ShirtOS 통통다리 셔츠 오버핏 긴팔 / OffS 오프숄더 반팔 / OneOffS 원 오프숄더 반팔 / OneOffLS 원 오프숄더 긴팔 / OneOffOS 원 오프숄더 오버핏 긴팔"
+    }, 
+    "Seasonal Sleeves": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "Sleeves",
+      "Description": "소매를 계절별로 설정하고 싶은 경우 true / 계절별로 설정하지 않고 모든 계절에 같은 소매만 쓰고 싶은 경우 false" 
+    },
+    "Spring Sleeve": {
+      "AllowValues": "S, SS, LS, OS, S_ShirtOS, C_ShirtOS, OffS, OneOffS, OneOffLS, OneOffOS",
+      "Default": "SS",
+      "Section": "Sleeves",
+      "Description": "S 민소매 / SS 반팔 / LS 긴팔 / OS 오버핏 긴팔 / S_ShirtOS 얇은다리 셔츠 오버핏 긴팔 / C_ShirtOS 통통다리 셔츠 오버핏 긴팔 / OffS 오프숄더 반팔 / OneOffS 원 오프숄더 반팔 / OneOffLS 원 오프숄더 긴팔 / OneOffOS 원 오프숄더 오버핏 긴팔"
+    },
+    "Summer Sleeve": {
+      "AllowValues": "S, SS, LS, OS, S_ShirtOS, C_ShirtOS, OffS, OneOffS, OneOffLS, OneOffOS",
+      "Default": "SS",
+      "Section": "Sleeves",
+      "Description": "S 민소매 / SS 반팔 / LS 긴팔 / OS 오버핏 긴팔 / S_ShirtOS 얇은다리 셔츠 오버핏 긴팔 / C_ShirtOS 통통다리 셔츠 오버핏 긴팔 / OffS 오프숄더 반팔 / OneOffS 원 오프숄더 반팔 / OneOffLS 원 오프숄더 긴팔 / OneOffOS 원 오프숄더 오버핏 긴팔"
+    },
+    "Fall Sleeve": {
+      "AllowValues": "S, SS, LS, OS, S_ShirtOS, C_ShirtOS, OffS, OneOffS, OneOffLS, OneOffOS",
+      "Default": "LS",
+      "Section": "Sleeves",
+      "Description": "S 민소매 / SS 반팔 / LS 긴팔 / OS 오버핏 긴팔 / S_ShirtOS 얇은다리 셔츠 오버핏 긴팔 / C_ShirtOS 통통다리 셔츠 오버핏 긴팔 / OffS 오프숄더 반팔 / OneOffS 원 오프숄더 반팔 / OneOffLS 원 오프숄더 긴팔 / OneOffOS 원 오프숄더 오버핏 긴팔"
+    },
+    "Winter Sleeve": {
+      "AllowValues": "S, SS, LS, OS, S_ShirtOS, C_ShirtOS, OffS, OneOffS, OneOffLS, OneOffOS",
+      "Default": "LS",
+      "Section": "Sleeves",
+      "Description": "S 민소매 / SS 반팔 / LS 긴팔 / OS 오버핏 긴팔 / S_ShirtOS 얇은다리 셔츠 오버핏 긴팔 / C_ShirtOS 통통다리 셔츠 오버핏 긴팔 / OffS 오프숄더 반팔 / OneOffS 원 오프숄더 반팔 / OneOffLS 원 오프숄더 긴팔 / OneOffOS 원 오프숄더 오버핏 긴팔"
+    },
+
+    // Cheeks
+
+    "Cheek": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "true 홍조 적용 / false 홍조 미적용"
+    },
+    "Cheek Type": {
+      "AllowValues": "R, P, O, B, G, SR, SP, SO, SB, SG",
+      "Default": "R",
+      "Description": "R 홍조 Red / P 홍조 Pink / O 홍조 Orange / B 홍조 Brown / G 홍조 Gray / SR 졸린 눈 홍조 Red / SP 졸린 눈 홍조 Pink / SO 졸린 눈 홍조 Orange / SB 졸린 눈 홍조 Brown / SG 졸린 눈 홍조 Gray"
+    },
+
+    // Ear
+
+    "Ear": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "true 귀 적용 / false 귀 미적용"
+    },
+    "Ear Type": {
+      "AllowValues": "Ear, Elf Ears",
+      "Default": "Ear",
+      "Description": "Ear 사람 귀 / Elf Ears 엘프 귀"
+    },
+
+    // Nose
+
+    "Nose": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Description": "true 코 적용 / false 코 미적용"
+    },
+
+    // Shoes
+
+    "Shoes": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "true 양말, 신발 적용 / false 양말, 신발 미적용, 맨발"
+    },
+    "Shoes Type": {
+      "AllowValues": "S_Socks, S_LS, S_Shoes, S_SS, S_SLS, S_Sandals, S_LB, S_MB, S_MBLS, S_FB, C_Socks, C_LS, C_Shoes, C_SS, C_SLS, C_Sandals, C_LB, C_MB, C_MBLS",
+      "Default": "S_Shoes",
+      "Description": "S_Socks 얇은 다리 양말 / S_LS 얇은 다리 긴양말 / S_Shoes 얇은 다리 신발 / S_SS 얇은 다리 양말과 신발 / S_SLS 얇은 다리 긴양말과 신발 / S_Sandals 얇은 다리 샌들 / S_LB 얇은 다리 롱부츠 / S_MB 얇은 다리 미들부츠 / S_MBLS 얇은 다리 미들부츠와 긴양말 / S_FB 얇은 다리 화려한 부츠 / C_Socks 통통 다리 양말 / C_LS 통통다리 긴양말 / C_Shoes 통통 다리 신발 / C_SS 통통 다리 양말과 신발 / C_SLS 통통 다리 긴양말과 신발 / C_Sandals 통통 다리 샌들 / C_LB 통통 다리 롱부츠 / C_MB 통통 다리 미들부츠 / C_MBLS 통통 다리 미들부츠와 긴양말"
+    },
+
+    // Bath Clothes
+
+    "Bath Clothes Type": {
+      "AllowValues": "ST, SN, SL, CT, CN, CL",
+      "Default": "ST",
+      "Description": "ST 얇은 다리 수건 / SN 얇은 다리 나이트 드레스 / SL 얇은 다리 라운지 웨어 / CT 통통 다리 수건 / CN 통통 다리 나이트 드레스 / CL 통통 다리 라운지 웨어"
+    },
+
+    // Skin Colors
+
+    "SkinColors": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "true 스킨 리텍 적용 / false 스킨 리텍 미적용"
+    },
+
+    // Eyelashes
+
+    "Eyelashes": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Description": "true 속눈썹 리텍 적용 / false 속눈썹 리텍 미적용"
+    },
+    "Eyelashes Type": {
+      "AllowValues": "BP, S",
+      "Default": "BP",
+      "Description": "BP 일반, 음영 눈 속눈썹 / S 졸린 눈 속눈썹"
+    }
+  },
+  "Changes": [
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald, Characters/Farmer/farmer_girl_mannequin, Characters/Farmer/farmer_girl_mannequin_cursed",
+      "FromFile": "assets/Color.png",
+      "FromArea": {"X": 0, "Y": 0, "Width": 32, "Height": 16},
+      "ToArea": {"X": 256, "Y": 0, "Width": 32, "Height": 16},
+      "When": {"Body": true},
+      "Update": "OnDayStart, OnLocationChange, OnTimeChange"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Type/Type.json" /*체형*/
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Sleeve/Sleeve.json" /*소매*/
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Cheek/Cheek.json" /*홍조*/
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Ear/Ear.json" /*귀*/
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Nose/Nose.json" /*코*/
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Shoes/Shoes.json" /*신발*/
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Bath Clothes/Bath Clothes.json" /*목욕 의상*/
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/SkinColors/SkinColors.json" /*피부*/
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Eyelashes/Eyelashes.json" /*속눈썹*/
+    }
+  ]
+}

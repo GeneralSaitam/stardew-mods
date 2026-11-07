@@ -1,0 +1,68 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Catalogue Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "skellady.CCFSet": {
+                    "PriceModifiers": null,
+                    "PriceModifierMode": "Stack",
+                    "Items": [
+                        {
+                            "Price": 0,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Default",
+                            "ItemId": "ALL_ITEMS (F)",
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_cozychocolatefurni"
+                        }
+                    ],
+                    "CustomFields": {
+                        "HappyHomeDesigner/Catalogue": "true"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Add Catalogue Tile Actions",
+            "Action": "EditData",
+            "Target": "sophie.Calcifer/FurnitureActions",
+            "Entries": {
+                "(F)skellady.CCF_CozyChocolateCatalogue": {
+                    "TileActions": [
+                        {
+                            "TileAction": "OpenShop skellady.CCFSet"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Catalogue to Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "skellady.CCF_CozyChocolateCatalogue": {
+                    "Id": "skellady.CCF_CozyChocolateCatalogue",
+                    "ItemId": "(F)skellady.CCF_CozyChocolateCatalogue",
+                    "Price": "{{Catalogue Price}}"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load Vivienne's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Vivienne_Spring, Portraits/Vivienne_Summer, Portraits/Vivienne_Fall, Portraits/Vivienne_Winter, Portraits/Vivienne_FlowerDance, Portraits/Vivienne_SpiritsEve, Portraits/Vivienne_Beach, Characters/Vivienne_Spring, Characters/Vivienne_Summer, Characters/Vivienne_Fall, Characters/Vivienne_Winter, Characters/Vivienne_FlowerDance, Characters/Vivienne_SpiritsEve, Characters/Vivienne_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/VivienneLK/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Vivienne - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Vivienne_Spring, Characters/Vivienne_Summer, Characters/Vivienne_Fall, Characters/Vivienne_Winter, Characters/Vivienne_FlowerDance, Characters/Vivienne_SpiritsEve, Characters/Vivienne_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/VivienneLK/Vivienne_nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"NoNose": "false",
+			},
+		},
+		//APPEARANCE DATA 
+		{
+			"LogName": "Vivienne Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"VivienneLK",
+				"Appearance"
+			],
+			"Entries": {
+				//Regular Outfits
+				"{{ModId}}.VivienneSpring": {
+					"Id": "{{ModId}}.VivienneSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Vivienne_Spring",
+					"Portrait": "Portraits/Vivienne_Spring",
+					"Precedence": -120,
+				},
+				"{{ModId}}.VivienneSummer": {
+					"Id": "{{ModId}}.VivienneSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Vivienne_Summer",
+					"Portrait": "Portraits/Vivienne_Summer",
+					"Precedence": -120,
+				},
+				"{{ModId}}.VivienneFall": {
+					"Id": "{{ModId}}.VivienneFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Vivienne_Fall",
+					"Portrait": "Portraits/Vivienne_Fall",
+					"Precedence": -120,
+				},
+				"{{ModId}}.VivienneWinter": {
+					"Id": "{{ModId}}.VivienneWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Vivienne_Winter",
+					"Portrait": "Portraits/Vivienne_Winter",
+					"Precedence": -120,
+				},
+				//Festival Outfits
+				"{{ModId}}.VivienneFlowerDance": {
+					"Id": "{{ModId}}.VivienneFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Vivienne_FlowerDance",
+					"Portrait": "Portraits/Vivienne_FlowerDance",
+					"Precedence": -1000,
+				},
+				"{{ModId}}.VivienneSpirit": {
+					"Id": "{{ModId}}.VivienneSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Vivienne_SpiritsEve",
+					"Portrait": "Portraits/Vivienne_SpiritsEve",
+					"Precedence": -1000,
+				},
+				//Beach
+				"{{ModId}}.VivienneBeach": {
+					"Id": "{{ModId}}.VivienneBeach",
+					"Sprite": "Characters/Vivienne_Beach",
+					"Portrait": "Portraits/Vivienne_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+			},
+		},
+		{
+			"LogName": "VivienneLK Calendar Sprite Edits",
+			"Action": "EditImage",
+			"Target": "Characters/VivienneLK",
+			"FromFile": "assets/{{Target}}/Vivienne_{{Season}}.png",
+		},
+	]
+}

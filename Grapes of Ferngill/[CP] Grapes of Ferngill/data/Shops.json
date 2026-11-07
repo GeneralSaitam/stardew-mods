@@ -1,0 +1,1277 @@
+{
+    "Changes": [
+///ADDING TO SHOPS
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Traveler",
+                "Items"
+            ],
+			"When": {"HasReadLetter": "StunkyMcDoo.GrapesofFerngill.cp_GoFTravellingMerchant",
+					"Disable Grape Bushes": false },
+            "Entries": {
+                "GOF_Travelling_Trader_Stock": {
+                    "RandomItemId": ["GOF_Deep_Envy_Starter", "GOF_Golden_Aura_Starter", "GOF_Passion_Rouge_Starter", "GOF_Rosy_Riot_Starter" ],
+					"MaxItems": 1,
+					"AvailableStock": 3,
+					"Price": "4500",
+					"Condition": "SYNCED_RANDOM day traveller_grape_starter 0.5"
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Traveler",
+                "Items"
+            ],
+			"When": {"HasReadLetter": "StunkyMcDoo.GrapesofFerngill.cp_GoFTravellingMerchant",
+					"Disable Grape Bushes": true },
+            "Entries": {
+                "GOF_Travelling_Trader_Stock": {
+                    "RandomItemId": ["GOF_Deep_Envy_Starter", "GOF_Golden_Aura_Starter", "GOF_Passion_Rouge_Starter", "GOF_Rosy_Riot_Starter" ],
+					"MaxItems": 1,
+					"AvailableStock": 3,
+					"Price": "2500",
+					"Condition": "SYNCED_RANDOM day traveller_grape_starter 0.5"
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+			"TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "GOF_Carpenter_Stock": {
+					"ItemId": "GOF_Hardwood_Keg",
+					"Price": "10000",
+					"IsRecipe": true
+				}
+			}
+		},
+///JOJA MART -- NOT USING RSSI
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {"HasMod |contains=boringvlln.rshops": "false"},
+            "TargetField": [
+                "Joja",
+                "Items"
+            ],
+            "Entries": {
+                "GOF_Joja_Shop_Grape": {
+                    "ItemId": "GOF_Joja_Grape",
+					"Price": "180",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction Received",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Joja_Shop_Raisins": {
+                    "ItemId": "GOF_Joja_Brand_Raisins",
+					"Price": "3000",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction Received",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Joja_Shop_Grape_Wine": {
+                    "ItemId": "GOF_Joja_Brand_Grape_Wine",
+					"Price": "1100",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Joja_Shop_Sparkling_Grape_Wine": {
+                    "ItemId": "GOF_Joja_Brand_Sparkling_Wine",
+					"Price": "1500",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Joja_Shop_Fortified_Grape_Wine": {
+                    "ItemId": "GOF_Joja_Brand_Fortified_Wine",
+					"Price": "2200",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Joja_Shop_Sweet_Grape_Wine": {
+                    "ItemId": "GOF_Joja_Brand_Sweet_Wine",
+					"Price": "4100",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Joja_Shop_Wine_Vinegar": {
+                    "ItemId": "GOF_Joja_Brand_Wine_Vinegar",
+					"Price": "2500",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Joja_Shop_Grape_Seed_Oil": {
+                    "ItemId": "GOF_Joja_Brand_Grape_Seed_Oil",
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {"HasMod |contains=boringvlln.rshops": "false",
+					"Disable Grape Bushes": false},
+            "TargetField": [
+                "Joja",
+                "Items"
+            ],
+            "Entries": {
+                "GOF_Joja_Shop_Grape_Starter": {
+                    "ItemId": "GOF_Joja_Grape_Starter",
+					"Price": "7200",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction Received"
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {"HasMod |contains=boringvlln.rshops": "false",
+					"Disable Grape Bushes": true},
+            "TargetField": [
+                "Joja",
+                "Items"
+            ],
+            "Entries": {
+                "GOF_Joja_Shop_Grape_Starter": {
+                    "ItemId": "GOF_Joja_Grape_Starter",
+					"Price": "1800",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction Received"
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Joja",
+                "Items"
+            ],
+            "When": {"HasMod |contains=NCarigon.CopperStillJA": "true", "HasMod |contains=boringvlln.rshops": "false"},
+            "Entries": {
+                "GOF_Heaps_Grappa": {
+                    "ItemId": "GOF_Joja_Brand_Grappa",
+					"Price": "400",
+					"IgnoreShopPriceModifiers": true
+				}
+			}
+		},
+///JOJA MART -- USING RSSI
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {"HasMod |contains=boringvlln.rshops": "true"},
+            "TargetField": [
+                "Joja",
+                "Items"
+            ],
+            "Entries": {
+                "RSSI_GOF_Joja_Shop_Grape": {
+                    "ItemId": "GOF_Joja_Grape",
+					"Price": "180",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction Received",
+					"AvoidRepeat": false,
+					"AvailableStock": 40,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Multiply",
+						"RandomAmount": [
+						1.5,
+						1.4,
+						1.3,
+						1.2,
+						1.1,
+						1.0,
+						0.9,
+						0.8,
+						0.7,
+						0.6,
+						0.5	
+					]
+				}
+			],
+	   "IgnoreShopPriceModifiers": true
+            },
+                "RSSI_GOF_Joja_Shop_Raisins": {
+                    "ItemId": "GOF_Joja_Brand_Raisins",
+					"Price": "3000",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction Received",
+					"AvoidRepeat": false,
+					"AvailableStock": 20,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Multiply",
+						"RandomAmount": [
+						1.5,
+						1.4,
+						1.3,
+						1.2,
+						1.1,
+						1.0,
+						0.9,
+						0.8,
+						0.7,
+						0.6,
+						0.5	
+					]
+				}
+			],
+	   "IgnoreShopPriceModifiers": true
+            },
+                "RSSI_GOF_Joja_Shop_Grape_Wine": {
+                    "ItemId": "GOF_Joja_Brand_Grape_Wine",
+					"Price": "1500",
+					"AvoidRepeat": false,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+							4,
+							8,
+							12,
+							16,
+							20
+					]
+				}
+			],
+	   "IgnoreShopPriceModifiers": true
+            },
+                "RSSI_GOF_Joja_Shop_Sparkling_Grape_Wine": {
+                    "ItemId": "GOF_Joja_Brand_Sparkling_Wine",
+					"Price": "2000",
+					"AvoidRepeat": false,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+							4,
+							8,
+							12,
+							16,
+							20
+					]
+				}
+			],
+	   "IgnoreShopPriceModifiers": true
+            },
+                "RSSI_GOF_Joja_Shop_Fortified_Grape_Wine": {
+                    "ItemId": "GOF_Joja_Brand_Fortified_Wine",
+					"Price": "3000",
+					"AvoidRepeat": false,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+							4,
+							8,
+							12,
+							16,
+							20
+					]
+				}
+			],
+	   "IgnoreShopPriceModifiers": true
+            },
+                "RSSI_GOF_Joja_Shop_Sweet_Grape_Wine": {
+                    "ItemId": "GOF_Joja_Brand_Sweet_Wine",
+					"Price": "4100",
+					"AvoidRepeat": false,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+							4,
+							8,
+							12,
+							16,
+							20
+					]
+				}
+			],
+	   "IgnoreShopPriceModifiers": true
+            },
+                "RSSI_GOF_Joja_Shop_Wine_Vinegar": {
+                    "ItemId": "GOF_Joja_Brand_Wine_Vinegar",
+					"Price": "2900",
+					"AvoidRepeat": false,
+					"AvailableStock": 20,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Multiply",
+						"RandomAmount": [
+						1.5,
+						1.4,
+						1.3,
+						1.2,
+						1.1,
+						1.0,
+						0.9,
+						0.8,
+						0.7,
+						0.6,
+						0.5	
+					]
+				}
+			],
+	   "IgnoreShopPriceModifiers": true
+            },
+                "RSSI_GOF_Joja_Shop_Grape_Seed_Oil": {
+                    "ItemId": "GOF_Joja_Brand_Grape_Seed_Oil",
+					"Price": "1000",
+					"AvoidRepeat": false,
+					"AvailableStock": 20,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Multiply",
+						"RandomAmount": [
+						1.5,
+						1.4,
+						1.3,
+						1.2,
+						1.1,
+						1.0,
+						0.9,
+						0.8,
+						0.7,
+						0.6,
+						0.5	
+					]
+				}
+			],
+	   "IgnoreShopPriceModifiers": true
+            }
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {"HasMod |contains=boringvlln.rshops": "true",
+					"Disable Grape Bushes": false},
+            "TargetField": [
+                "Joja",
+                "Items"
+            ],
+            "Entries": {
+                "RSSI_GOF_Joja_Shop_Grape_Starter": {
+                    "ItemId": "GOF_Joja_Grape_Starter",
+					"Price": "7200",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction Received",
+					"AvoidRepeat": false,
+					"AvailableStock": 30,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Multiply",
+						"RandomAmount": [
+						1.5,
+						1.4,
+						1.3,
+						1.2,
+						1.1,
+						1.0,
+						0.9,
+						0.8,
+						0.7,
+						0.6,
+						0.5	
+					]
+				}
+			],
+	   "IgnoreShopPriceModifiers": true
+            }
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "When": {"HasMod |contains=boringvlln.rshops": "true",
+					"Disable Grape Bushes": true},
+            "TargetField": [
+                "Joja",
+                "Items"
+            ],
+            "Entries": {
+                "RSSI_GOF_Joja_Shop_Grape_Starter": {
+                    "ItemId": "GOF_Joja_Grape_Starter",
+					"Price": "1800",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction Received",
+					"AvoidRepeat": false,
+					"AvailableStock": 30,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Multiply",
+						"RandomAmount": [
+						1.5,
+						1.4,
+						1.3,
+						1.2,
+						1.1,
+						1.0,
+						0.9,
+						0.8,
+						0.7,
+						0.6,
+						0.5	
+					]
+				}
+			],
+	   "IgnoreShopPriceModifiers": true
+            }
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Joja",
+                "Items"
+            ],
+            "When": {"HasMod |contains=NCarigon.CopperStillJA": "true", "HasMod |contains=boringvlln.rshops": "true"},
+            "Entries": {
+                "RSSI_GOF_Joja_Grappa": {
+                    "ItemId": "GOF_Joja_Brand_Grappa",
+					"Price": "4000",
+					"AvoidRepeat": false,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+							4,
+							8,
+							12,
+							16,
+							20
+							]
+						}
+					]
+				}
+			}
+		},
+///PIERRE -- NOT USING RSSI
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+			"When": {"HasMod |contains=boringvlln.rshops": "false"},
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "GOF_Pierre_Wine": {
+                    "ItemId": "(O)348",
+					"Price": "600",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Pierre_Yeast": {
+                    "ItemId": "GOF_Yeast",
+					"Price": "10",
+					"IgnoreShopPriceModifiers": true
+				},
+                 "GOF_Pierre_Grape_Wine": {
+                    "ItemId": "GOF_Grape_Wine",
+					"Price": "800",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Pierre_Sparkling_Wine": {
+                    "ItemId": "GOF_Sparkling_Wine",
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				},
+				"GOF_Pierre_Sweet_Wine": {
+                    "ItemId": "GOF_Sweet_Wine",
+					"Price": "1600",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Pierre_Fortified_Wine": {
+                    "ItemId": "GOF_Fortified_Wine",
+					"Price": "1600",
+					"IgnoreShopPriceModifiers": true
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+			"When": {"HasMod |contains=boringvlln.rshops": "false",
+					"Disable Grape Bushes": false},
+            "Entries": {
+                "GOF_Pierre_Gallant_Grove": {
+                    "ItemId": "GOF_Gallant_Grove_Starter",
+					"Price": "1500",
+					"Condition": "SEASON spring summer, PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received"
+				},
+                "GOF_Pierre_Sunset_Blush": {
+                    "ItemId": "GOF_Sunset_Blush_Starter",
+					"Price": "1500",
+					"Condition": "SEASON spring summer, PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received"
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+			"When": {"HasMod |contains=boringvlln.rshops": "false",
+					"Disable Grape Bushes": true},
+            "Entries": {
+                "GOF_Pierre_Gallant_Grove": {
+                    "ItemId": "GOF_Gallant_Grove_Starter",
+					"Price": "350",
+					"Condition": "SEASON summer, PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received"
+				},
+                "GOF_Pierre_Sunset_Blush": {
+                    "ItemId": "GOF_Sunset_Blush_Starter",
+					"Price": "350",
+					"Condition": "SEASON summer, PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received"
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "When": {"HasMod |contains=NCarigon.CopperStillJA": "true", "HasMod |contains=boringvlln.rshops": "false"},
+            "Entries": {
+                "GOF_Pierre_Grappa": {
+                    "ItemId": "GOF_Grappa",
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				}
+			}
+		},
+///PIERRE -- USING RSSI
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+			"When": {"HasMod |contains=boringvlln.rshops": "true"},
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "Entries": {
+                "RSSI_GOF_Pierre_Yeast": {
+                    "ItemId": "GOF_Yeast",
+					"Condition": "SYNCED_RANDOM day GOF_Yeast 0.5", 	
+					"Price": "100",
+					"AvailableStock": 8,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						4,
+						8,
+						12,
+						16,
+						20
+						]
+					}
+				]
+			},
+                 "RSSI_GOF_Pierre_Grape_Wine": {
+                    "ItemId": "GOF_Grape_Wine",
+					"Condition": "SYNCED_RANDOM day GOF_Grape_Wine 0.5",
+					"Price": "2000",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10
+						]
+					}
+				]
+			},
+                "RSSI_GOF_Pierre_Sparkling_Wine": {
+                    "ItemId": "GOF_Sparkling_Wine",
+					"Condition": "SYNCED_RANDOM day GOF_Sparkling_Wine 0.5", 	
+					"Price": "3000",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10	
+						]
+					}
+				]
+			},
+				"RSSI_GOF_Pierre_Sweet_Wine": {
+                    "ItemId": "GOF_Sweet_Wine",
+					"Condition": "SYNCED_RANDOM day GOF_Sweet_Wine 0.5", 	
+					"Price": "4000",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10
+						]
+					}
+				]
+			},
+                "RSSI_GOF_Pierre_Fortified_Wine": {
+                    "ItemId": "GOF_Fortified_Wine",
+					"Condition": "SYNCED_RANDOM day GOF_Fortified_Wine 0.5", 	
+					"Price": "4000",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+							1,
+							2,
+							4,
+							6,
+							8,
+							10
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+			"When": {"HasMod |contains=boringvlln.rshops": "true",
+					"Disable Grape Bushes": false},
+            "Entries": {
+                "RSSI_GOF_Pierre_Gallant_Grove_Sunset_Blush": {
+					"Condition": "SEASON spring summer, PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received",
+                    "ID": "RSSI_GOF_Pierre_Gallant_Grove_Sunset_Blush",
+					"RandomItemId": ["GOF_Gallant_Grove_Starter", "GOF_Sunset_Blush_Starter"],
+					"AvoidRepeat": true,
+					"Price": "3000",
+					"AvailableStock": 10,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Multiply",
+						"RandomAmount": [
+							0.2,
+							0.2,
+							0.2,
+							0.4,
+							0.4,
+							0.6,
+							0.8,
+							1.0,
+							1.0,
+							1.2
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+			"When": {"HasMod |contains=boringvlln.rshops": "true",
+					"Disable Grape Bushes": true},
+            "Entries": {
+                "RSSI_GOF_Pierre_Gallant_Grove_Sunset_Blush": {
+					"Condition": "SEASON summer, PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received",
+                    "ID": "RSSI_GOF_Pierre_Gallant_Grove_Sunset_Blush",
+					"RandomItemId": ["GOF_Gallant_Grove_Starter", "GOF_Sunset_Blush_Starter"],
+					"AvoidRepeat": true,
+					"Price": "700",
+					"AvailableStock": 10,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Multiply",
+						"RandomAmount": [
+							0.2,
+							0.2,
+							0.2,
+							0.4,
+							0.4,
+							0.6,
+							0.8,
+							1.0,
+							1.0,
+							1.2
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
+            "When": {"HasMod |contains=NCarigon.CopperStillJA": "true", "HasMod |contains=boringvlln.rshops": "true"},
+            "Entries": {
+                "RSSI_GOF_Pierre_Grappa": {
+                    "ItemId": "GOF_Grappa",
+					"Condition": "SYNCED_RANDOM day GOF_Grappa 0.5", 	
+					"Price": "4000",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+							1,
+							2,
+							4,
+							6,
+							8,
+							10
+							]
+						}
+					]
+				}
+			}
+		},
+///SVE SHOPS -- NOT USING RSSI
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "FlashShifter.StardewValleyExpandedCP_SophiaLedger",
+                "Items"
+            ],
+            "When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true", "HasMod |contains=boringvlln.rshops": "false"},
+            "Entries": {
+                "GOF_Sophia_Fortified_Wine": {
+                    "ItemId": "GOF_Blue_Moon_Fortified_Wine",
+					"Price": "7500",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Sophia_Sweet_Wine": {
+                    "ItemId": "GOF_Blue_Moon_Sweet_Wine",
+					"Price": "8000",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Sophia_Sparkling_Wine": {
+                    "ItemId": "GOF_Blue_Moon_Sparkling_Wine",
+					"Price": "5000",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Sophia_Raisins": {
+                    "ItemId": "GOF_Blue_Moon_Raisins",
+					"Price": "5250",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Sophia_Wine_Vinegar": {
+                    "ItemId": "GOF_Blue_Moon_Wine_Vinegar",
+					"Price": "4200",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Sophia_Grape_Seed_Oil": {
+                    "ItemId": "GOF_Blue_Moon_Grape_Seed_Oil",
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "FlashShifter.StardewValleyExpandedCP_SophiaLedger",
+                "Items"
+            ],
+            "When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true", "HasMod |contains=NCarigon.CopperStillJA": "true", "HasMod |contains=boringvlln.rshops": "false"},
+            "Entries": {
+                "GOF_Sophia_Grappa": {
+                    "ItemId": "GOF_Blue_Moon_Grappa",
+					"Price": "2500",
+					"IgnoreShopPriceModifiers": true
+				}
+			}
+		},
+///SVE SHOPS -- USING RSSI
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "FlashShifter.StardewValleyExpandedCP_SophiaLedger",
+                "Items"
+            ],
+            "When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true", "HasMod |contains=boringvlln.rshops": "true"},
+            "Entries": {
+                "RSSI_GOF_Sophia_Fortified_Wine": {
+                    "ItemId": "GOF_Blue_Moon_Fortified_Wine",
+					"Condition": "SYNCED_RANDOM day GOF_Blue_Moon_Fortified_Wine 0.5", 	
+					"Price": "10000",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10
+							]
+						}
+					]
+				},
+                "RSSI_GOF_Sophia_Sweet_Wine": {
+                    "ItemId": "GOF_Blue_Moon_Sweet_Wine",
+					"Condition": "SYNCED_RANDOM day GOF_Blue_Moon_Sweet_Wine 0.5", 	
+					"Price": "10000",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10	
+							]
+						}
+					]
+				},
+                "RSSI_GOF_Sophia_Sparkling_Wine": {
+                    "ItemId": "GOF_Blue_Moon_Sparkling_Wine",
+					"Condition": "SYNCED_RANDOM day GOF_Blue_Moon_Sparkling_Wine 0.5", 	
+					"Price": "8000",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10
+							]
+						}
+					]
+				},
+                "RSSI_GOF_Sophia_Raisins": {
+                    "ItemId": "GOF_Blue_Moon_Raisins",
+					"Condition": "SYNCED_RANDOM day GOF_Blue_Moon_Raisins 0.5", 	
+					"Price": "5500",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10
+							]
+						}
+					]
+				},
+                "RSSI_GOF_Sophia_Wine_Vinegar": {
+                    "ItemId": "GOF_Blue_Moon_Wine_Vinegar",
+					"Condition": "SYNCED_RANDOM day GOF_Blue_Moon_Wine_Vinegar 0.5", 	
+					"Price": "4500",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10
+							]
+						}
+					]
+				},
+                "RSSI_GOF_Sophia_Grape_Seed_Oil": {
+                    "ItemId": "GOF_Blue_Moon_Grape_Seed_Oil",
+					"Condition": "SYNCED_RANDOM day GOF_Blue_Moon_Grape_Seed_Oil 0.5",	
+					"Price": "2000",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "FlashShifter.StardewValleyExpandedCP_SophiaLedger",
+                "Items"
+            ],
+            "When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true", "HasMod |contains=NCarigon.CopperStillJA": "true", "HasMod |contains=boringvlln.rshops": "true"},
+            "Entries": {
+                "RSSI_GOF_Sophia_Grappa": {
+                    "ItemId": "GOF_Blue_Moon_Grappa",
+					"Condition": "SYNCED_RANDOM day GOF_Blue_Moon_Grappa 0.5", 	
+					"Price": "6000",
+					"AvailableStock": 2,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+							1,
+							2,
+							4,
+							6,
+							8,
+							10
+							]
+						}
+					]
+				}
+			}
+		},
+///RIDGESIDE VILLAGE SHOPS -- NOT USING RSSI
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVHeapsStore",
+                "Items"
+            ],
+            "When": {"HasMod |contains=Rafseazz.RSVCP": "true", "HasMod |contains=boringvlln.rshops": "false"},
+            "Entries": {
+                "GOF_Heaps_Yeast": {
+                    "ItemId": "GOF_Yeast",
+					"Price": "10",
+					"IgnoreShopPriceModifiers": true
+				},
+				"GOF_Heaps_Sweet_Wine": {
+                    "ItemId": "GOF_Sweet_Wine",
+					"Price": "1600",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Heaps_Sparkling_Wine": {
+                    "ItemId": "GOF_Sparkling_Wine",
+					"Price": "1000",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Heaps_Fortified_Wine": {
+                    "ItemId": "GOF_Fortified_Wine",
+					"Price": "1600",
+					"IgnoreShopPriceModifiers": true
+				},
+                "GOF_Heaps_Grape_Wine": {
+                    "ItemId": "GOF_Grape_Wine",
+					"Price": "800",
+					"IgnoreShopPriceModifiers": true
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVHeapsStore",
+                "Items"
+            ],
+            "When": {"HasMod |contains=Rafseazz.RSVCP": "true", "HasMod |contains=boringvlln.rshops": "false",
+					"Disable Grape Bushes": false},
+            "Entries": {
+                "GOF_Heaps_Starters": {
+                    "RandomItemId": ["GOF_Gallant_Grove_Starter", "GOF_Sunset_Blush_Starter" ],
+					"MaxItems": 1,
+					"AvailableStock": 1,
+					"Price": "7500",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received, SEASON spring summer, RANDOM 0.25 "
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVHeapsStore",
+                "Items"
+            ],
+            "When": {"HasMod |contains=Rafseazz.RSVCP": "true", "HasMod |contains=boringvlln.rshops": "false",
+					"Disable Grape Bushes": true},
+            "Entries": {
+                "GOF_Heaps_Starters": {
+                    "RandomItemId": ["GOF_Gallant_Grove_Starter", "GOF_Sunset_Blush_Starter" ],
+					"MaxItems": 1,
+					"AvailableStock": 1,
+					"Price": "1750",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received, SEASON spring summer, RANDOM 0.25 "
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVHeapsStore",
+                "Items"
+            ],
+            "When": {"HasMod |contains=Rafseazz.RSVCP": "true", "HasMod |contains=boringvlln.rshops": "false"},
+            "Entries": {
+                "GOF_Heaps_Specialty Wines": {
+                    "RandomItemId": ["GOF_Deep_Envy_Grape_Wine", "GOF_Gallant_Grove_Grape_Wine", "GOF_Golden_Aura_Grape_Wine", "GOF_Passion_Rouge_Grape_Wine", "GOF_Sunset_Blush_Grape_Wine", "GOF_Rosy_Riot_Grape_Wine", "GOF_Deep_Envy_Sweet_Wine", "GOF_Gallant_Grove_Sweet_Wine", "GOF_Golden_Aura_Sweet_Wine", "GOF_Passion_Rouge_Sweet_Wine", "GOF_Sunset_Blush_Sweet_Wine", "GOF_Rosy_Riot_Sweet_Wine", "GOF_Deep_Envy_Sparkling_Wine", "GOF_Gallant_Grove_Sparkling_Wine", "GOF_Golden_Aura_Sparkling_Wine", "GOF_Passion_Rouge_Sparkling_Wine", "GOF_Sunset_Blush_Sparkling_Wine", "GOF_Rosy_Riot_Sparkling_Wine", "GOF_Deep_Envy_Fortified_Wine", "GOF_Gallant_Grove_Fortified_Wine", "GOF_Golden_Aura_Fortified_Wine", "GOF_Passion_Rouge_Fortified_Wine", "GOF_Sunset_Blush_Fortified_Wine", "GOF_Rosy_Riot_Fortified_Wine" ],
+					"MaxItems": 2,
+					"AvailableStock": 1,
+					"PriceModifiers": [{"Modification": "Multiply", "Amount": 2}]
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVHeapsStore",
+                "Items"
+            ],
+            "When": {"HasMod |contains=Rafseazz.RSVCP": "true", "HasMod |contains=NCarigon.CopperStillJA": "true", "HasMod |contains=boringvlln.rshops": "false"},
+            "Entries": {
+                "GOF_Heaps_Grappa": {
+                    "ItemId": "GOF_Grappa",
+					"Price": "1000"
+				}
+			}
+		},
+///RIDGESIDE VILLAGE SHOPS -- USING RSSI
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVHeapsStore",
+                "Items"
+            ],
+            "When": {"HasMod |contains=Rafseazz.RSVCP": "true", "HasMod |contains=boringvlln.rshops": "true"},
+            "Entries": {
+                "RSSI_GOF_Heaps_Yeast": {
+                    "ItemId": "GOF_Yeast",
+					"Price": "10",
+					"AvailableStock": 8,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						2,
+						4,
+						8,
+						12,
+						16,
+						20
+						]
+					}
+				]
+			},
+				"RSSI_GOF_Heaps_Sweet_Wine": {
+                    "ItemId": "GOF_Sweet_Wine",
+					"Condition": "SYNCED_RANDOM day GOF_Sweet_Wine 0.5", 	
+					"Price": "2500",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10
+							]
+						}
+					]
+				},
+                "RSSI_GOF_Heaps_Sparkling_Wine": {
+                    "ItemId": "GOF_Sparkling_Wine",
+					"Condition": "SYNCED_RANDOM day GOF_Sparkling_Wine 0.5", 	
+					"Price": "2000",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10	
+							]
+						}
+					]
+				},
+                "RSSI_GOF_Heaps_Fortified_Wine": {
+                    "ItemId": "GOF_Fortified_Wine",
+					"Condition": "SYNCED_RANDOM day GOF_Fortified_Wine 0.5", 	
+					"Price": "2500",
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10
+							]
+						}
+					]
+				},
+                "RSSI_GOF_Heaps_Grape_Wine": {
+                    "ItemId": "GOF_Grape_Wine",
+					"Price": "1000",
+					"Condition": "SYNCED_RANDOM day GOF_Grape_Wine 0.5", 	
+					"AvailableStock": 4,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+						1,
+						2,
+						4,
+						6,
+						8,
+						10
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVHeapsStore",
+                "Items"
+            ],
+            "When": {"HasMod |contains=Rafseazz.RSVCP": "true", "HasMod |contains=boringvlln.rshops": "true",
+					"Disable Grape Bushes": false},
+            "Entries": {
+                "RSSI_GOF_Heaps_Starters": {
+                    "RandomItemId": ["GOF_Gallant_Grove_Starter", "GOF_Sunset_Blush_Starter" ],
+					"MaxItems": 1,
+					"AvailableStock": 5,
+					"Price": "7500",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received, SEASON spring summer"
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVHeapsStore",
+                "Items"
+            ],
+            "When": {"HasMod |contains=Rafseazz.RSVCP": "true", "HasMod |contains=boringvlln.rshops": "true",
+					"Disable Grape Bushes": true},
+            "Entries": {
+                "RSSI_GOF_Heaps_Starters": {
+                    "RandomItemId": ["GOF_Gallant_Grove_Starter", "GOF_Sunset_Blush_Starter" ],
+					"MaxItems": 1,
+					"AvailableStock": 5,
+					"Price": "1750",
+					"Condition": "PLAYER_HAS_MAIL Current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received, SEASON spring summer"
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVHeapsStore",
+                "Items"
+            ],
+            "When": {"HasMod |contains=Rafseazz.RSVCP": "true", "HasMod |contains=boringvlln.rshops": "true"},
+            "Entries": {
+                "RSSI_GOF_Heaps_Specialty Wines": {
+                    "RandomItemId": ["GOF_Deep_Envy_Grape_Wine", "GOF_Gallant_Grove_Grape_Wine", "GOF_Golden_Aura_Grape_Wine", "GOF_Passion_Rouge_Grape_Wine", "GOF_Sunset_Blush_Grape_Wine", "GOF_Rosy_Riot_Grape_Wine", "GOF_Deep_Envy_Sweet_Wine", "GOF_Gallant_Grove_Sweet_Wine", "GOF_Golden_Aura_Sweet_Wine", "GOF_Passion_Rouge_Sweet_Wine", "GOF_Sunset_Blush_Sweet_Wine", "GOF_Rosy_Riot_Sweet_Wine", "GOF_Deep_Envy_Sparkling_Wine", "GOF_Gallant_Grove_Sparkling_Wine", "GOF_Golden_Aura_Sparkling_Wine", "GOF_Passion_Rouge_Sparkling_Wine", "GOF_Sunset_Blush_Sparkling_Wine", "GOF_Rosy_Riot_Sparkling_Wine", "GOF_Deep_Envy_Fortified_Wine", "GOF_Gallant_Grove_Fortified_Wine", "GOF_Golden_Aura_Fortified_Wine", "GOF_Passion_Rouge_Fortified_Wine", "GOF_Sunset_Blush_Fortified_Wine", "GOF_Rosy_Riot_Fortified_Wine" ],
+					"MaxItems": 2,
+					"AvailableStock": 1,
+					"PriceModifiers": [{"Modification": "Multiply", "Amount": 2}]
+				}
+			}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "RSVHeapsStore",
+                "Items"
+            ],
+            "When": {"HasMod |contains=Rafseazz.RSVCP": "true", "HasMod |contains=NCarigon.CopperStillJA": "true", "HasMod |contains=boringvlln.rshops": "true"},
+            "Entries": {
+                "RSSI_GOF_Heaps_Grappa": {
+                    "ItemId": "GOF_Grappa",
+					"Condition": "SYNCED_RANDOM day GOF_Grappa 0.5",					
+					"Price": "2000",
+					"AvailableStock": 2,
+					"AvailableStockModifiers": [
+						{
+						"Modification": "Set",
+						"RandomAmount": [
+							1,
+							2,
+							4,
+							6,
+							8,
+							10
+							]
+						}
+					]
+				}
+			}
+		}
+	]
+}

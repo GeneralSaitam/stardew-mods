@@ -1,0 +1,24 @@
+{
+  "Changes": [
+    {
+      "LogName": "All Fishing Rods Immediately",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "FishShop",
+        "Items"
+      ],
+      "Fields": {
+        "(T)FiberglassRod": {
+          "Condition": null
+        },
+        "(T)IridiumRod": {
+          "Condition": null
+        }
+      },
+      "When": {
+        "All Fishing Rods Immediately": true
+      }
+    }
+  ]
+}

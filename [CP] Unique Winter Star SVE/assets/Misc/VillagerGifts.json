@@ -1,0 +1,610 @@
+{
+	"Changes":[
+		//Gifts! This entire thing should have a config and no solstice requirement, so there shouldn't need to be any when conditions, just GSQ
+		{
+			"LogName": "Sophia Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Sophia", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Enricher": {
+					"Id": "AgentLyoko.UWS.Enricher",
+					"ItemId": "(O)913",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PressureNozzle": {
+					"Id": "AgentLyoko.UWS.PressureNozzle",
+					"ItemId": "(O)915",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RabbitsFoot": {
+					"Id": "AgentLyoko.UWS.RabbitsFoot",
+					"ItemId": "(O)447",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FarmersLunch": {
+					"Id": "AgentLyoko.UWS.FarmersLunch",
+					"ItemId": "(O)240",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FairyDust": {
+					"Id": "AgentLyoko.UWS.FairyDust",
+					"ItemId": "(O)872",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GrampletonOrangeChicken": {
+					"Id": "AgentLyoko.UWS.GrampletonOrangeChicken", //Change this to Grampleton Orange Chicken
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Grampleton_Orange_Chicken",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BlueMoonWine": {
+					"Id": "AgentLyoko.UWS.BlueMoonWine", //Change this to Blue Moon Wine
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.AgedBlueMoonWine": {
+					"Id": "AgentLyoko.UWS.AgedBlueMoonWine", //Change this to Aged Blue Moon Wine, Ultimate Gift due to Amount and Quality
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": "PLAYER_HEARTS Current Sophia 9 14"
+				},
+			},
+		},
+		
+		{
+			"LogName": "Claire Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Claire", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet", //Ultimate Gift - remember Claire's very into tea, but a Tea Set would be expensive. Plus, to even show up, Claire needs her 6 heart event seen, so it's not like it'll be out for long.
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Claire 9 14"
+				},
+
+				"AgentLyoko.UWS.GreenTea": {
+					"Id": "AgentLyoko.UWS.GreenTea",
+					"ItemId": "(O)614",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.OceanStone": {
+					"Id": "AgentLyoko.UWS.OceanStone",
+					"ItemId": "(O)560",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PumpkinPie": {
+					"Id": "AgentLyoko.UWS.PumpkinPie",
+					"ItemId": "(O)608",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RhubarbPie": {
+					"Id": "AgentLyoko.UWS.RhubarbPie",
+					"ItemId": "(O)222",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Apricot": {
+					"Id": "AgentLyoko.UWS.Apricot",
+					"ItemId": "(O)634",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BlueberryTart": {
+					"Id": "AgentLyoko.UWS.BlueberryTart",
+					"ItemId": "(O)234",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PlumPudding": {
+					"Id": "AgentLyoko.UWS.PlumPudding",
+					"ItemId": "(O)604",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Pomegranate": {
+					"Id": "AgentLyoko.UWS.Pomegranate",
+					"ItemId": "(O)637",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Apple": {
+					"Id": "AgentLyoko.UWS.Apple",
+					"ItemId": "(O)613",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+			},
+		},
+		
+		{
+			"LogName": "Olivia Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Olivia", "WinterStarGifts" ],
+			"Entries": {	  
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Wine": {
+					"Id": "AgentLyoko.UWS.Wine",
+					"ItemId": "(O)348",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.ChocolateCake": {
+					"Id": "AgentLyoko.UWS.ChocolateCake",
+					"ItemId": "(O)220",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PinkCake": {
+					"Id": "AgentLyoko.UWS.PinkCake",
+					"ItemId": "(O)221",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Sunflower": {
+					"Id": "AgentLyoko.UWS.Sunflower",
+					"ItemId": "(O)421",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MarbleBrazier": {
+					"Id": "AgentLyoko.UWS.MarbleBrazier",
+					"ItemId": "(BC)151",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DeluxeScarecrow": {
+					"Id": "AgentLyoko.UWS.DeluxeScarecrow", //Ultimate Gift
+					"ItemId": "(BC)167",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Olivia 9 14"
+				},
+
+				"AgentLyoko.UWS.AgedBlueMoonWine": {
+					"Id": "AgentLyoko.UWS.AgedBlueMoonWine", //LESS than Sophia, same quality
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BlueMoonWine": {
+					"Id": "AgentLyoko.UWS.BlueMoonWine",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Blue_Moon_Wine",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+			},
+		},
+		
+		{
+			"LogName": "Victor Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Victor", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GoldBar": {
+					"Id": "AgentLyoko.UWS.GoldBar",
+					"ItemId": "(O)336",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BatteryPack": {
+					"Id": "AgentLyoko.UWS.BatteryPack",
+					"ItemId": "(O)787",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Caviar": {
+					"Id": "AgentLyoko.UWS.Caviar",
+					"ItemId": "(O)445",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.IridiumBand": {
+					"Id": "AgentLyoko.UWS.IridiumBand",
+					"ItemId": "(O)527",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Pearl": {
+					"Id": "AgentLyoko.UWS.Pearl",
+					"ItemId": "(O)797",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.OrnateTreasureChest": {
+					"Id": "AgentLyoko.UWS.OrnateTreasureChest", //Ultimate Gift
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Ornate_Treasure_Chest",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Victor 9 14"
+				},
+			},
+		},
+		
+		{
+			"LogName": "Marlon Winter Star Gift Data, Low Hearts",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "MarlonFay", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.LifeElixir": {
+					"Id": "AgentLyoko.UWS.LifeElixir",
+					"ItemId": "(O)773",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PurpleSlimeEgg": {
+					"Id": "AgentLyoko.UWS.PurpleSlimeEgg",
+					"ItemId": "(O)439",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MegaBomb": {
+					"Id": "AgentLyoko.UWS.MegaBomb",
+					"ItemId": "(O)288",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Bomb": {
+					"Id": "AgentLyoko.UWS.Bomb",
+					"ItemId": "(O)341",
+					"MinStack": 20,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.ArmorElixir": {
+					"Id": "AgentLyoko.UWS.ArmorElixir",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Armor_Elixir",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HasteElixir": {
+					"Id": "AgentLyoko.UWS.HasteElixir",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Haste_Elixir",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HeroElixir": {
+					"Id": "AgentLyoko.UWS.HeroElixir",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.QualityElixir": {
+					"Id": "AgentLyoko.UWS.QualityElixir", //Ultimate Gift - 3 of one of the very very good Elixirs from Camilla.
+					"RandomItemId": ["(O)FlashShifter.StardewValleyExpandedCP_Gravity_Elixir", "(O)FlashShifter.StardewValleyExpandedCP_Lightning_Elixir", "(O)FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir", "(O)FlashShifter.StardewValleyExpandedCP_Aegis_Elixir"],
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current MarlonFay 9 14"
+				},
+			},
+		},
+		
+		{
+			"LogName": "Susan Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Susan", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Keg": {
+					"Id": "AgentLyoko.UWS.Keg",
+					"ItemId": "(BC)12",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GardenPot": {
+					"Id": "AgentLyoko.UWS.GardenPot",
+					"ItemId": "(BC)62",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Cask": {
+					"Id": "AgentLyoko.UWS.Cask",
+					"ItemId": "(BC)163",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PreserveJar": {
+					"Id": "AgentLyoko.UWS.PreserveJar",
+					"ItemId": "(BC)15",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PumpkinPie": {
+					"Id": "AgentLyoko.UWS.PumpkinPie",
+					"ItemId": "(O)608",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BlackberryCobbler": {
+					"Id": "AgentLyoko.UWS.BlackberryCobbler",
+					"ItemId": "(O)611",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RhubarbPie": {
+					"Id": "AgentLyoko.UWS.RhubarbPie",
+					"ItemId": "(O)222",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Hopper": {
+					"Id": "AgentLyoko.UWS.Hopper", //Ultimate Gift
+					"ItemId": "(BC)275",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Susan 9 14"
+				},
+			},
+		},
+		
+		{
+			"LogName": "Andy Winter Star Gift Data", //Check on this when SVE is released, make sure there are no errors. Brackets seem to be glitchy on this.
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Andy", "WinterStarGifts" ],
+			"Entries": {		  
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BlackberryCobbler": {
+					"Id": "AgentLyoko.UWS.BlackberryCobbler",
+					"ItemId": "(O)611",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Blackberry": {
+					"Id": "AgentLyoko.UWS.Blackberry",
+					"ItemId": "(O)410",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Beer": {
+					"Id": "AgentLyoko.UWS.Beer",
+					"ItemId": "(O)346",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FarmerLunch": {
+					"Id": "AgentLyoko.UWS.FarmerLunch",
+					"ItemId": "(O)240",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GlazedButterfish": {
+					"Id": "AgentLyoko.UWS.GlazedButterfish",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Glazed_Butterfish",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Salmonberry": {
+					"Id": "AgentLyoko.UWS.Salmonberry",
+					"ItemId": "(O)296",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PurpleMushroom": {
+					"Id": "AgentLyoko.UWS.PurpleMushroom",
+					"ItemId": "(O)422",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.SeedMaker": {
+					"Id": "AgentLyoko.UWS.SeedMaker", //Ultimate Gift
+					"ItemId": "(BC)25",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Andy 9 14"
+				},
+			},
+		},
+		
+	],
+}

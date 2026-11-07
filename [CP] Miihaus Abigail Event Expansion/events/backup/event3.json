@@ -1,0 +1,136 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                "18657003/F/f Abigail 750/p Abigail/d Mon Tue Wed Thu Sat Sun/e 18657002": "Saloon1/
+                39 19/
+                farmer 27 19 1 Abigail 33 18 0 Sebastian 33 19 0 Sam 34 19 0 Shane 26 18 2 Gus 13 18 2 Emily 16 17 0 Clint 19 23 3/
+                skippable/
+                positionOffset Sebastian -20 0/
+                positionOffset Sam -20 0/
+                animate Shane false true 160 20 20 20 20 20 20 20 20 20 20 20 21 21 22 22 23 23 24 24 23 23 24 24 23 23 23 22 22 21 21 20 20/
+                move farmer 4 0 1/
+                shake Abigail 1000/
+                speak Abigail \"Come on, come on, come on!$5\"/
+                pause 200/
+                playSound cowboy_dead/
+                pause 800/
+                speak Abigail \"Ugh, seriously?$5#$b#I can't believe I got a lower high score then both of you.$3\"/
+                pause 200/
+                speak Sebastian \"It's all in good fun, Abby.$h#$b#You'll get better with practice.$h\"/
+                pause 200/
+                speak Sam \"Yeah, practice makes perfect.$h\"/
+                faceDirection Sebastian 3/
+                pause 200/
+                speak Sebastian \"Oh hi there, @.$0\"/
+                advancedMove Sam false 0 1 -1 0 3 1000/
+                faceDirection Abigail 3/
+                speak Abigail \"Hi @!$0#$b#I would have wished you'd see me with a better high score.$2\"/
+                faceDirection Sam 0/
+                speak Sam \"Hey, how about we invite @ to join us?\"/
+                speak Abigail \"Yeah!$1#$b#@, do you feel like challenging us at some arcade games?$0\"/
+                question fork1 \"#'Sure, let's play!'#'I don't really like video games sorry.'\" /
+                fork dontLikeVideoGames/
+                speak Sam \"Nice!$h#$b#Let's see who can get the highest score this time.\"/
+                advancedMove Sam false 1 0 0 -1 4 1000/
+                faceDirection Sebastian 0/
+                move farmer 0 -1 1/
+                move farmer 1 0 1/
+                emote Abigail 32/
+                faceDirection Abigail 0/
+                pause 400/
+                globalFade/
+                viewport -1000 -1000/
+                warp Abigail 42 18/
+                warp farmer 41 18/
+                warp Sebastian 36 20/
+                warp Sam 42 20/
+                message \"After an exciting round at the arcade with Abigail, Sam, and Sebastian, you decided to spend some time with Abigail while Sam and Sebastian immersed themselves in a game of pool.#Abigail's competitive spirit drove her to secure the highest score this time, a victory she celebrated with a triumphant grin.\"/
+                faceDirection Abigail 2/
+                faceDirection farmer 2/
+                faceDirection Sam 1/
+                faceDirection Sebastian 1/
+                positionOffset Abigail 0 -18/
+                animate Sam true true 300 34 34 4 34 34 4 4 4 4 4 4 4 4/
+                globalFadeToClear 0.007 true/
+                viewport 39 19/
+                pause 1300/
+                speak Abigail \"Phew, finally got that high score!$1#$b#It's all about timing and precision.$1#$b#I knew I could do it.$0\"/
+                pause 400/
+                faceDirection Abigail 3/
+                speak Abigail \"So, what kind of games do you like?$0#$b#Anything you're really into?$0\"/
+                faceDirection farmer 1/
+                question null \"#'I like all kinds of games.'#'I really like adventure games.'\" /
+                speak Abigail \"Oh, that's awesome!$0#$b#Exploring those virtual worlds and tackling challenges must be so exciting.$0#$b#I can see why you enjoy it.$1\"/
+                pause 200/
+                emote Abigail 32/
+                speak Abigail \"You know, it's great to find someone who appreciates gaming as much as I do.$0#$b#We should definitely team up for some co-op games sometime.$1\"/
+                pause 500/
+                speak Abigail \"There was this one time when I tried to beat that one boss in 'Journey of the Prairie King.'$0#$b#I was so close, but I got defeated right at the end.$2#$b#I must've tried a hundred times after that just to prove I could beat it.$1\"/
+                faceDirection farmer 2/
+                animate farmer false true 160 102 103 102 103/
+                playSound dustMeep/
+                pause 400/
+                playSound dustMeep/
+                pause 600/
+                stopAnimation farmer/
+                faceDirection farmer 1/
+                emote Abigail 32/
+                speak Abigail \"Yeah, perseverance pays off in gaming and in life, I guess.$1\"/
+                pause 800/
+                stopAnimation Sam/
+                faceDirection Sam 0/
+                speak Sam \"Hey, you two, having a good time?$0\"/
+                faceDirection Abigail 2/
+                faceDirection farmer 2/
+                speak Sam \"Looks like you're bonding over games.$0#$b#That's cool.$1\"/
+                pause 200/
+                emote Sebastian 40/
+                move Sebastian 0 -1 1/
+                move Sebastian 4 0 1/
+                speak Abigail \"We definitely are, Sam!$1\"/
+                speak Sebastian \"Uhm... @, how about you and Sam play pool next...$0\"/
+                addConversationTopic abigailGamingTalk 1/
+                end",
+                "dontLikeVideoGames":"friendship Abigail -30/
+                friendship Sam -10/
+                friendship Sebastian -10/
+                speak Sam \"Bummer.$s\"/
+                faceDirection Sebastian 0/
+                speak Sebastian \"Anyways...$0#$b#Come on Abby you got this, just give it another try.\"/
+                speak Abigail \"Tha.. Thanks Sebastian.$2\"/
+                faceDirection Abigail 0/
+                advancedMove Sam false 1 0 0 -1 4 1000/
+                pause 200/
+                emote farmer 28/
+                move farmer -5 0 3 true/
+                globalFade/
+                viewport -1000 -1000/
+                end dialogue Abigail \"...$s#$b#I got a new high score without you.$9#$e#Would have been nice if you could have seen it.$8\"",
+            },
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Sam",
+            "Entries":{
+                "abigailGamingTalk":"Hey, it's cool that you and Abigail hit it off at the saloon.$0#$b#She's a great friend, and it's nice to see her having fun.$0#$e#Just remember, we got her back, alright?$1",
+                }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Sebastian",
+            "Entries":{
+                "abigailGamingTalk":"It's nice that Abigail had a good time with you at the saloon.$0#$b#She really seems to enjoy your company.$2#$e#It's just...$2#$e#Never mind.$0",
+                }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Abigail",
+            "Entries":{
+                "abigailGamingTalk":"Thanks for hanging out with us at the saloon.$0#$b#It was a blast!$1#$e#I had a great time, and it means a lot that you shared in my excitement.$0",
+                }
+        },        
+    ]
+}

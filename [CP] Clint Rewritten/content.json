@@ -1,0 +1,56 @@
+{
+    "Format": "2.0.0",
+	"ConfigSchema": {
+        "Null Mod Keys": {
+            "AllowValues": "true, false",
+            "Default": "false",
+			"Description": "Remove keys from other mods which have Clint be angry or depressed with Emily in a relationship with the player. Defaults to off to preserve changes from other mods.",
+        },
+		"Six Heart": {
+			"AllowValues": "default, unmarried, always",
+            "Default": "default",
+			"Description": "Choose when Clint's 6 heart event is available. Defaults to the original event conditions plus blocking if dating, engaged, or married. 'Emily not living with player' will allow the new six heart to be seen if not living with Emily (romantically or platonically), and 'Always' will always allow the event to be available. Compatible with PPAF and Platonic Relationships - any non-default option will allow viewing it normally, and 'Always' will allow it to be seen if Emily is the player's housemate.",
+        },
+    },
+    "Changes": [
+        {
+            "LogName": "Include Dialogue Edits",
+            "Action": "Include",
+            "FromFile": "assets/Dialogue.json",
+        },
+		{
+            "LogName": "Include Data Edits",
+            "Action": "Include",
+            "FromFile": "assets/Data.json",
+        },
+		{
+            "LogName": "Include Event Edits",
+            "Action": "Include",
+            "FromFile": "assets/Events.json",
+        },
+		{
+            "LogName": "Include Mod Nulls",
+            "Action": "Include",
+            "FromFile": "assets/modNull.json",
+			"When": {
+				"Null Mod Keys": "true",
+			},
+        },
+		{
+            "LogName": "PPAF Edits",
+            "Action": "Include",
+            "FromFile": "assets/PPAF.json",
+			"When": {
+				"HasMod": "PPAF.Core",
+			},
+        },
+		{
+            "LogName": "Platonic Relationships Fallback",
+            "Action": "Include",
+            "FromFile": "assets/PlatonicRelationships.json",
+			"When": {
+				"HasMod |contains=Cherry.PlatonicRelationships": true,
+			},
+        },
+    ]
+}

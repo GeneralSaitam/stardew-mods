@@ -1,0 +1,285 @@
+{
+    //Guide for keys:
+	//1501 and 1504: Rude keys. Use for Abigail, Sebastian, Alex, Haley, and Shane.
+	//1499 and 1500: Keys that don't apply to the above cases.	
+	"Changes":[
+		{
+			"LogName": "Abigail - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Abigail.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Abigail.WinterStar.After}}",
+			},
+			"When": {
+				"Abigail": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sebastian.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.WinterStar.After}}",
+			},
+			"When": {
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Alex - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Alex.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Alex.WinterStar.After}}",
+			},
+			"When": {
+				"Alex": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star (Default)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Haley.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.After}}",
+			},
+			"When": {
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star, High Hearts", //Note the 9 and 10 heart condition assumes Platonic Relationships is installed and not PPAF. PPAF's inclusion will trigger the Dating version at 9 or 10 hearts OR bouquet given - see bestfriend json in PPAF folder.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Haley.WinterStar.High.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.High.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "6,7,8",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star v2 (alt condition)", // Condition which allows leeway on hearts if 6-heart is seen. If heart level drops to 3, assume she's angry.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Haley.WinterStar.High.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.High.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "4, 5",
+				"HasSeenEvent |contains=13": "true",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Shane - Winter Star (Default)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.WinterStar.After}}",
+			},
+			"When": {
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Shane - Winter Star, Medium Hearts",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.WinterStar.Medium.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.WinterStar.Medium.After}}",
+			},
+			"When": {
+				"Hearts:Shane": "4, 5, 6, 7, 8",
+				"HasSeenEvent |contains=3910975": "false",
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Shane - Winter Star, High Hearts", //Immersive Shane has a condition of dating/engaged/married for their keys, so on dating/married this needs an override. I'm leaving it as is due to 8 heart being achieveable normally, though the false requirement in the manifest means this will override 8-heart dating. (Keep this in mind if a bug report is submitted.)
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.WinterStar.High.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.WinterStar.High.After}}",
+			},
+			"When": {
+				"Hearts:Shane": "4, 5, 6, 7, 8",
+				"HasSeenEvent |contains=3910975": "true", //Note for those going through the code: I've given a little leeway here if the heart level drops post-6 heart, but if it drops to 3 hearts, it will revert to the default above. Assume Shane's pissed.
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Emily.WinterStar.After}}",
+			},
+			"When": {
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Winter Star, Custom Gifts Active",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.WinterStar.Before.GiftsActive}}",
+			},
+			"When": {
+				"Emily": "normal",
+				"CustomGifts": "enabled",
+			},
+		},
+		{
+			"LogName": "Leah - Winter Star (Default)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.WinterStar.After}}",
+			},
+			"When": {
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Leah - Winter Star, Art Show Complete",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.WinterStar.Show.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=53": "true",
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Leah - Winter Star, Internet Art Complete",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.WinterStar.Internet.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=584059": "true",
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.WinterStar.After}}",
+			},
+			"When": {
+				"Elliott": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Winter Star, Book Written",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.WinterStar.Book.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=1848481": "true", //Elliott's 8 heart, the first mention of the book's title.
+				"Elliott": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Penny - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Penny.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Penny.WinterStar.After}}",
+			},
+			"When": {
+				"Penny": "normal",
+			},
+		},
+		{
+			"LogName": "Penny - Winter Star, House Built (and not anonymous)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Penny.WinterStar.House.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Penny.WinterStar.House.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=611173": "true", //House upgrade from Robin cutscene. Special override dialogue - if you somehow have a bad relationship with Penny headcanoned here, assume everything she says is through gritted teeth/sarcastic.
+				"Bonus Penny": "enabled", //Backup to make the below not be looked at if disabled
+				"HasFlag": "AgentLyoko_UWS_PublicHouse",
+				"Penny": "normal",
+			},
+		},
+		{
+			"LogName": "Sam - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sam.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sam.WinterStar.After}}",
+			},
+			"When": {
+				"Sam": "normal",
+			},
+		},
+		{
+			"LogName": "Sam - Winter Star, Band",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sam.WinterStar.Band.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sam.WinterStar.Band.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=4081148": "true", //Sam 8-heart, first mention of band name
+				"Sam": "normal",
+			},
+		},
+		{
+			"LogName": "Harvey - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.WinterStar.After}}",
+			},
+			"When": {
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.WinterStar.After}}",
+			},
+			"When": {
+				"Maru": "normal, spicy",
+			},
+		},
+	],
+}

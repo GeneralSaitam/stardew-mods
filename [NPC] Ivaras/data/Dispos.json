@@ -1,0 +1,74 @@
+{
+    "Changes": 
+	[
+   	 	{
+		 "LogName": "Add Ivaras to character data",
+   		 "Action": "EditData",
+   		 "Target": "Data/Characters",
+   		 "Entries": {
+   			 "{{ModId}}_IvarasWolfgang": {
+   				 "DisplayName": "{{i18n:DisplayName}}",
+				 "BirthSeason": "summer",
+   				 "BirthDay": "21",
+				 "HomeRegion": "Town",
+				 "Language": "Default",
+   				 "Gender": "Male",
+   				 "Age": "Teen",
+   				 "Manner": "Polite",
+   				 "SocialAnxiety": "Neutral",
+   				 "Optimism": "Neutral",
+				 "IsDarkSkinned": false,
+				 "CanBeRomanced": true,
+                 "Calendar": "HiddenUntilMet",
+                 "SocialTab": "UnknownUntilMet",
+				 "CanSocialize": true,
+                 "CanReceiveGifts": true,
+    			 "CanVisitIsland": false,
+   				 "SpouseAdopts": null,
+                 "SpouseWantsChildren": true,
+   				 "IntroductionsQuest": false,
+   				 "ItemDeliveryQuests": true,
+                 "PerfectionScore": true,
+                 "EndSlideShow": "TrailingGroup",
+   				 "SpouseRoom": {
+                        "MapAsset": "{{ModId}}_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 6,
+                            "Height": 9
+                        }
+					},
+					"SpousePatio": {
+                        "MapAsset": "{{ModId}}_SpousePatio",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 4,
+                            "Height": 4 },
+					    "SpriteAnimationFrames": [
+							[ 42, 3000 ],
+							[ 41, 3000 ],
+							[ 42, 3000 ],
+							[ 43, 1500 ]
+					],
+					},
+				"FlowerDanceCanDance": true,
+				"WinterStarParticipant": false,
+				"SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "{{ModId}}_IvarasRoom",
+                            "Tile": {"X": 4, "Y": 5,},
+                            "Direction": "left"
+                        }
+                    ],
+				 "Breather": true,
+				 "KissSpriteIndex": 40,
+				 "KissSpriteFacingRight": false,
+				}
+			}
+		}
+	]
+}

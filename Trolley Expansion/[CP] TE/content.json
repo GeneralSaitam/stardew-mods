@@ -1,0 +1,3457 @@
+{
+	"Format": "2.9.1",
+	  "ConfigSchema": {
+	  "Portraits": {
+			"AllowValues": "Vanilla, Nyapu",
+			"Default": "Vanilla",
+			"Description": "Choose your portrait"
+		},
+	  "Desert Access": {
+			"AllowValues": "Sooner, Later",
+			"Default": "Later",
+			"Description": "Choose whether Canyon access is tied to the Desert Bus completion."
+		},
+	  },
+
+
+	"Changes": [
+
+
+	 {
+      "LogName": "Include Canyon Shop",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/CanyonShop.json"
+    },
+		 {
+      "LogName": "Include Meadow Shop",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/SqShop.json"
+    },
+		 {
+      "LogName": "Include Canyon Objects",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/CanyonObjects.json"
+    },
+
+				 {
+      "LogName": "Include Canyon Objects Gift Taste",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/giftedits.json"
+    },
+					 {
+      "LogName": "Include Canyon Yoput",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/NPCData.json"
+    },
+					 {
+      "LogName": "Include Ranger Taro",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/NPCData.json"
+    },
+						 {
+      "LogName": "Include FIASA",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/NPCData.json"
+    },
+							 {
+      "LogName": "Include FIASA",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/NPCData_Mama.json"
+    },
+							 {
+      "LogName": "Include Inke",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/NPCData_Inke.json"
+    },
+							 {
+      "LogName": "Include Kaho",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/NPCData_Kaho.json"
+    },
+	 
+		
+		
+			{
+			"Action": "Load",
+			"Target": "Maps/Taro_Entrance",
+			"FromFile": "assets/Maps/Taro_Entrance.tmx"
+		},	
+
+				{
+			"Action": "Load",
+			"Target": "Maps/Koda_room",
+			"FromFile": "assets/Maps/Koda_room.tmx"
+		},
+		        {
+            "Action": "Load",
+            "Target": "Maps/Koda_patio",
+            "FromFile": "assets/Maps/Koda_patio.tmx"
+        },
+						{
+			"Action": "Load",
+			"Target": "Maps/Kaho_room",
+			"FromFile": "assets/Maps/kaho_room.tmx"
+		},
+		        {
+            "Action": "Load",
+            "Target": "Maps/Kaho_patio",
+            "FromFile": "assets/Maps/kaho_patio.tmx"
+        },
+					{
+			"Action": "Load",
+			"Target": "Maps/Cave_north",
+			"FromFile": "assets/Maps/Cave_north.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Cave_north": {
+					"DisplayName": "Cave_north",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Cave_north",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+			{
+			"Action": "Load",
+			"Target": "Maps/Cave_dwarf",
+			"FromFile": "assets/Maps/Cave_dwarf.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Cave_dwarf": {
+					"DisplayName": "Cave_dwarf",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Cave_dwarf",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [
+					{ 
+					"Track": "Of Dwarves"
+				
+					}
+					],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+			
+		
+		{
+			"Action": "Load",
+			"Target": "Maps/Cove_exit",
+			"FromFile": "assets/Maps/Cove_exit.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Cove_exit": {
+					"DisplayName": "Cove_exit",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Cove_exit",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			"FromFile": "assets/Maps/Taro_Entrance.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 6, "Height": 5 },
+			"ToArea": { "X": 4, "Y": 66, "Width": 6, "Height": 5 }
+		},
+
+	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Desert",
+			"FromFile": "assets/Maps/Canyon_east.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 4, "Height": 2 },
+			"ToArea": { "X": 0, "Y": 24, "Width": 4, "Height": 2 }
+		},
+	
+
+			{
+			"Action": "EditMap",
+			"Target": "Maps/Beach",
+			"FromFile": "assets/Maps/Cove_enter.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 6 },
+			"ToArea": { "X": 10, "Y": 0, "Width": 2, "Height": 6 }
+		},
+					{
+			"Action": "EditMap",
+			"Target": "Maps/Beach-NightMarket",
+			"FromFile": "assets/Maps/Cove_enter.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 6 },
+			"ToArea": { "X": 10, "Y": 0, "Width": 2, "Height": 6 }
+		},
+		
+					{
+			"Action": "EditMap",
+			    "When": {
+        "Desert Access": "Later",
+"HasFlag |contains=ccVault": "false",
+    },
+			"Target": "Maps/Trolley_Pond",
+			"FromFile": "assets/Maps/Desert_block.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 7, "Height": 7 },
+			"ToArea": { "X": 13, "Y": 0, "Width": 7, "Height": 7 }
+		},
+
+		
+			{
+			"Action": "Load",
+			"Target": "Maps/Sub_enter",
+			"FromFile": "assets/Maps/Sub_enter.tmx"
+		},
+	
+		{
+			"Action": "Load",
+			"Target": "Maps/Koda_Cove",
+			"FromFile": "assets/Maps/Koda_Cove.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Koda_Cove": {
+					"DisplayName": "Koda_Cove",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Koda_Cove",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+"Fish": [
+  {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)717",
+        "ItemId": "(O)717",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  {
+        "Chance": 0.25,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)723",
+        "ItemId": "(O)723",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	   {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)722",
+        "ItemId": "(O)722",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  	   {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)719",
+        "ItemId": "(O)719",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  	   {
+        "Chance": 0.45,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)152",
+        "ItemId": "(O)152",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": false,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": true,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)836",
+        "ItemId": "(O)836",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      }
+],
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+			
+	
+
+						{
+			"Action": "EditMap",
+			"Target": "Maps/Koda_Cove",
+			    "When": {
+        "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday",
+		
+    },
+			"FromFile": "assets/Maps/Sub_enter.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 11 },
+			"ToArea": { "X": 13, "Y": 22, "Width": 16, "Height": 11 }
+		},
+							
+		
+		
+		{
+			"Action": "Load",
+			"Target": "Maps/Taro_Meadow",
+			"FromFile": "assets/Maps/Taro_Meadow.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Taro_Meadow": {
+					"DisplayName": "A Meadow",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Taro_Meadow",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [
+					],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+	{
+			"Action": "Load",
+			"Target": "Maps/Trolley_Pond",
+			"FromFile": "assets/Maps/Trolley_Pond.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Trolley_Pond": {
+					"DisplayName": "Trolley_Pond",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Trolley_Pond",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+"FishAreas": {},
+    "Fish": [
+      {
+        "Chance": 0.05,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)734",
+        "ItemId": "(O)734",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.45,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": false,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": 0,
+        "IgnoreFishDataRequirements": true,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+        "ItemId": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      }
+    ],
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		
+
+		
+		
+
+		{
+			"Action": "Load",
+			"Target": "Maps/Canyon_final",
+			"FromFile": "assets/Maps/Canyon_final.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Canyon_final": {
+					"DisplayName": "Canyon_final",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Canyon_final",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+			"Action": "Load",
+			"Target": "Maps/Canyon_flood",
+			"FromFile": "assets/Maps/Canyon_flood.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Canyon_flood": {
+					"DisplayName": "Canyon_flood",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Canyon_flood",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					 
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [
+					{ 
+					"Track": "rain"
+				
+					}
+					],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+			"Action": "Load",
+			"Target": "Maps/north_flood",
+			"FromFile": "assets/Maps/north_flood.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "north_flood": {
+					"DisplayName": "north_flood",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/north_flood",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [
+					{ 
+					"Track": "rain"
+				
+					}
+					],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+			"Action": "Load",
+			"Target": "Maps/Turtle_Cove",
+			"FromFile": "assets/Maps/Turtle_Cove.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Turtle_Cove": {
+					"DisplayName": "Turtle_Cove",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Turtle_Cove",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+   "FishAreas": {},
+    "Fish": [
+ {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)717",
+        "ItemId": "(O)717",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  {
+        "Chance": 0.25,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)723",
+        "ItemId": "(O)723",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	   {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)722",
+        "ItemId": "(O)722",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  	   {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)719",
+        "ItemId": "(O)719",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  	   {
+        "Chance": 0.45,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)152",
+        "ItemId": "(O)152",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": false,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": true,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)836",
+        "ItemId": "(O)836",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      }
+    ],
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [
+				
+					],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+			"Action": "Load",
+			"Target": "Maps/Turtle_Cove_party",
+			"FromFile": "assets/Maps/Turtle_Cove_party.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Turtle_Cove_party": {
+					"DisplayName": "Turtle_Cove_party",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Turtle_Cove_party",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+				"FishAreas": {},
+    "Fish": [
+    {
+        "Chance": 0.05,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)717",
+        "ItemId": "(O)717",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  {
+        "Chance": 0.25,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)723",
+        "ItemId": "(O)723",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	   {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)722",
+        "ItemId": "(O)722",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  	   {
+        "Chance": 0.25,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)719",
+        "ItemId": "(O)719",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  	   {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)152",
+        "ItemId": "(O)152",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.45,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": false,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": true,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+        "ItemId": "LOCATION_FISH Beach BOBBER_X BOBBER_Y WATER_DEPTH",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      }
+    ],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [
+				
+					],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+			{
+			"Action": "Load",
+			"Target": "Maps/Cove_Kaho",
+			"FromFile": "assets/Maps/Cove_Kaho.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Cove_Kaho": {
+					"DisplayName": "Cove_Kaho",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Cove_Kaho",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+  "FishAreas": {},
+    "Fish": [
+  {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)717",
+        "ItemId": "(O)717",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  {
+        "Chance": 0.25,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)723",
+        "ItemId": "(O)723",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	   {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)722",
+        "ItemId": "(O)722",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  	   {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)719",
+        "ItemId": "(O)719",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	  	   {
+        "Chance": 0.45,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": true,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)152",
+        "ItemId": "(O)152",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      },
+      {
+        "Chance": 0.15,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": false,
+        "CuriosityLureBuff": -1.0,
+        "SpecificBaitBuff": 0.0,
+        "SpecificBaitMultiplier": 1.66,
+        "CatchLimit": -1,
+        "CanUseTrainingRod": null,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": -10,
+        "IgnoreFishDataRequirements": true,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": "Stack",
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)836",
+        "ItemId": "(O)836",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ObjectColor": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": "Stack",
+        "QualityModifiers": null,
+        "QualityModifierMode": "Stack",
+        "ModData": null,
+        "PerItemCondition": null
+      }
+    ],
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [
+				
+					],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+			{
+			"Action": "Load",
+			"Target": "Maps/Sub_horizon",
+			"FromFile": "assets/Maps/Sub_horizon.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Sub_horizon": {
+					"DisplayName": "Sub_horizon",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Sub_horizon",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+
+					  }
+				],
+  "FishAreas": {},
+    "Fish": [
+  {
+
+      }
+    ],
+					"Forage": [
+					  {
+						
+					  }
+					 ],
+					
+					"Music": [
+				
+					],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+
+	"Action": "EditMap",
+	"Target": "Maps/Taro_Meadow",
+    "PatchMode": "Overlay",
+	"When": {
+        "HasSeenEvent": "cc_taroten2"
+    },
+    "FromFile": "assets/Maps/Meadow_bear.tmx",
+    "FromArea": { 
+        "X": 0,
+        "Y": 0,
+        "Width": 5,
+        "Height": 5
+    },
+    "ToArea": { 
+        "X": 9,
+        "Y": 16,
+        "Width": 5,
+        "Height": 5
+    }
+},
+
+		{
+			"Action": "Load",
+			"Target": "Maps/Canyon_south",
+			"FromFile": "assets/Maps/Canyon_south.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Canyon_south": {
+					"DisplayName": "Canyon_south",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Canyon_south",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+		
+		{
+			"Action": "Load",
+			"Target": "Maps/Koda_Sub_rain",
+			"FromFile": "assets/Maps/Koda_Sub_rain.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Koda_Sub_rain": {
+					"DisplayName": "Koda_Sub_rain",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Koda_Sub_rain",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		{
+			"Action": "Load",
+			"Target": "Maps/Koda_Sub",
+			"FromFile": "assets/Maps/Koda_Sub.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Koda_Sub": {
+					"DisplayName": "Koda_Sub",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Koda_Sub",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [
+					  {
+						"Chance": 0.08,
+						"ApplyGenerousEnchantment": true,
+						"OneDebrisPerDrop": true,
+						"Precedence": 0,
+						"ContinueOnDrop": false,
+						"Condition": null,
+						"Id": "(O)378",
+						"ItemId": "(O)378",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": 1,
+						"MaxStack": 3,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+				],
+
+					"Forage": [
+					  {
+						"Chance": 0.9,
+						"Season": "Spring",
+						"Condition": null,
+						"Id": "(O)259",
+						"ItemId": "(O)259",
+						"RandomItemId": null,
+						"MaxItems": null,
+						"MinStack": -1,
+						"MaxStack": -1,
+						"Quality": -1,
+						"ObjectInternalName": null,
+						"ObjectDisplayName": null,
+						"ToolUpgradeLevel": -1,
+						"IsRecipe": false,
+						"StackModifiers": null,
+						"StackModifierMode": "Stack",
+						"QualityModifiers": null,
+						"QualityModifierMode": "Stack",
+						"ModData": null,
+						"PerItemCondition": null
+					  }
+					 ],
+					"MinDailyWeeds": 5,
+					"MaxDailyWeeds": 20,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+		
+		 		          {
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+            "TargetField": [ "GarbageCans" ],
+            "Entries": {
+                "CC_CreosoteCan": {
+                    "Items": [
+             
+                        {
+                            "ID": "CC_RainpuffCan",
+                            "ItemId": "CC_Rainpuff",
+							"IsMegaSuccess": true,
+							"IgnoreBaseChance": true
+                        }
+                    ]
+                }
+            }
+        },	
+			
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Beach",
+			 "TextOperations": [
+      {
+         "Operation": "Append",
+         "Target": ["MapProperties", "Warp"],
+         "Value": "10 1 Cove_exit 24 13",
+         "Delimiter": " " 
+      }
+   ]
+		
+
+		},
+				{
+			"Action": "EditMap",
+			"Target": "Maps/Beach-NightMarket",
+			 "TextOperations": [
+      {
+         "Operation": "Append",
+         "Target": ["MapProperties", "Warp"],
+         "Value": "10 1 Cove_exit 24 13",
+         "Delimiter": " " 
+      }
+   ]
+		
+
+		},
+		
+								{
+			"Action": "EditMap",
+			"Target": "Maps/Cove_exit",
+			"AddWarps": [
+				"4 10 Koda_Cove 39 18",
+				"24 15 Beach 10 3"
+			]
+		},
+						{
+			"Action": "EditMap",
+			"Target": "Maps/Koda_Cove",
+			"AddWarps": [
+				"40 18 Cove_exit 5 10",
+				"23 0 Trolley_Pond 11 30",
+			]
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Koda_Cove",
+			"When": {
+      "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+},
+			"AddWarps": [
+				"19 26 Koda_Sub 13 22"
+			]
+		},
+								{
+			"Action": "EditMap",
+			"Target": "Maps/Koda_Cove",
+			"When": {
+   "Weather": "Rain, Storm, GreenRain",
+      "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"
+},
+			"AddWarps": [
+				"19 26 Koda_Sub_rain 13 22"
+			]
+		},
+								{
+			"Action": "EditMap",
+			"Target": "Maps/Koda_Sub",
+			"AddWarps": [
+				"13 23 Koda_Cove 21 26",
+			
+			]
+		},
+										{
+			"Action": "EditMap",
+			"Target": "Maps/Koda_Sub_rain",
+			"AddWarps": [
+				"13 23 Koda_Cove 21 26",
+			
+			]
+		},
+										
+				
+											{
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			 "TextOperations": [
+      {
+         "Operation": "Append",
+         "Target": ["MapProperties", "Warp"],
+         "Value": "5 68 Trolley_Pond 27 17",
+         "Delimiter": " " 
+      }
+   ]
+		
+
+		},
+
+						{
+			"Action": "EditMap",
+			"Target": "Maps/Taro_Meadow",
+			"AddWarps": [
+			
+				"31 21 Trolley_Pond 2 17",
+
+			]
+		},
+							{
+			"Action": "EditMap",
+			"Target": "Maps/Taro_Train",
+			"AddWarps": [
+				"15 11 Taro_Meadow 16 13"
+			
+			]
+		},
+								{
+			"Action": "EditMap",
+			"Target": "Maps/Trolley_Pond",
+			"AddWarps": [
+				"1 17 Taro_Meadow 30 21",
+				"14 -1 Canyon_south 17 21",
+				"15 -1 Canyon_south 17 21",
+				"16 -1 Canyon_south 17 21",
+			"17 -1 Canyon_south 17 21",
+			"18 -1 Canyon_south 17 21",
+			"11 32 Koda_Cove 23 1",
+				"29 17 Forest 7 68",
+		
+			
+			]
+		},
+				{
+			"Action": "EditMap",
+			"Target": "Maps/Canyon_south",
+			"AddWarps": [
+				"16 26 Trolley_Pond 15 0",
+				"17 26 Trolley_Pond 16 0",
+					"18 26 Trolley_Pond 16 0",
+			]
+		},
+
+
+	
+			
+				{
+			"Action": "EditMap",
+			"Target": "Maps/Canyon_final",
+			"AddWarps": [
+			"53 22 Desert 1 24",
+			"53 23 Desert 1 24",
+				"53 24 Desert 1 24",
+				"53 25 Desert 1 24",
+				"53 26 Desert 1 25",
+				"53 27 Desert 1 25",
+	
+				"44 46 Cave_north 6 6",
+				"41 11 Cave_dwarf 10 24"
+			]
+		},
+						
+{
+			"Action": "EditMap",
+			"Target": "Maps/Cave_north",
+			"AddWarps": [
+				"6 39 Canyon_south 17 11",
+			]
+		},
+		
+ {
+            "Action": "EditMap",
+            "Target": "Maps/Canyon_south",
+			    "When": {
+        "HasSeenEvent": "YoputHeart8",
+    },
+	 "SetProperties": {
+        "CurrentTime": "{{Time}}"
+    },
+    "Update": "OnLocationChange",
+            "MapTiles": [
+                {
+                    "Position": { "X": 17, "Y": 10 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 6 37 north_flood"
+                    }
+                }
+            ]
+        },
+		 {
+            "Action": "EditMap",
+            "Target": "Maps/Canyon_south",
+			    "When": {
+        "HasSeenEvent": "YoputHeart82",
+    },
+	 "SetProperties": {
+        "CurrentTime": "{{Time}}"
+    },
+    "Update": "OnLocationChange",
+            "MapTiles": [
+                {
+                    "Position": { "X": 17, "Y": 10 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 6 37 Cave_north"
+                    }
+                }
+            ]
+        },
+		
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Cave_dwarf",
+			"AddWarps": [
+				"10 25 Canyon_final 41 13",
+				"11 25 Canyon_final 41 13"
+			]
+		},
+		
+				
+		
+		{
+			"Action": "Load",
+			"Target": "Maps/Taro_Tent",
+			"FromFile": "assets/Maps/Taro_Tent.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Taro_Tent": {
+					"DisplayName": "Taros Tent",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Taro_Tent",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": false,
+
+		
+					"MinDailyWeeds": 0,
+					"MaxDailyWeeds": 0,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+				{
+			"Action": "EditMap",
+			"Target": "Maps/Taro_Meadow",
+			"AddWarps": [
+				"20 12 Taro_Tent 5 10",
+			]
+		},
+						{
+			"Action": "EditMap",
+			"Target": "Maps/Taro_Tent",
+			"AddWarps": [
+				"5 11 Taro_Meadow 20 13"
+			]
+		},
+
+
+
+
+		{
+			"Action": "Load",
+			"Target": "Maps/Taro_Train",
+			"FromFile": "assets/Maps/Taro_Train.tmx"
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Taro_Train": {
+					"DisplayName": "Taros hideout",
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+					  "MapPath": "Maps/Taro_Train",
+					  "Type": "StardewValley.GameLocation",
+					  "AlwaysActive": true
+					},
+					"CanPlantHere": null,
+					"CanHaveGreenRainSpawns": false,
+
+		
+					"MinDailyWeeds": 0,
+					"MaxDailyWeeds": 0,
+					"FirstDayWeedMultiplier": 30,
+					"MinDailyForageSpawn": 2,
+					"MaxDailyForageSpawn": 8,
+					"MaxSpawnedForageAtOnce": 8,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+                }
+            }
+        },
+
+	
+		
+				{
+			"LogName": "Strings from Maps",
+			"Action": "Include",
+			"FromFile": "assets/Maps/StringsFromMaps.json"
+		},
+{ 
+			"Action": "EditMap",
+			"Target": "Maps/Taro_Meadow",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 16,
+						"Y": 12
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Door.1\""
+						
+					},
+						"Position": {
+						"X": 23,
+						"Y": 14
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Meadow.2\""
+						
+					},
+						
+				}
+			]
+	
+		},
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Trolley_Pond",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 15,
+						"Y": 16
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Trolley.1\""
+						
+					}
+			
+						
+					},
+				
+					{
+							"Position": {
+						"X": 11,
+						"Y": 16
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Trolley.2\""
+						
+					}
+					}
+			
+						
+					
+				
+			]
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 9,
+						"Y": 69
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"Meadow.1\""
+						
+					}
+			
+						
+					}
+				
+			]
+		},
+				{
+			"Action": "EditMap",
+			"Target": "Maps/Cave_dwarf",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 10,
+						"Y": 9
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"dwarf.1\""
+						
+					}
+			
+						
+					},
+						{
+					"Position": {
+						"X": 9,
+						"Y": 13
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"dwarf.2\""
+						
+					}
+			
+						
+					},
+											{
+					"Position": {
+						"X": 10,
+						"Y": 11
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"dwarf.3\""
+						
+					}
+			
+						
+					},
+														{
+					"Position": {
+						"X": 13,
+						"Y": 11
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"dwarf.4\""
+						
+					}
+			
+						
+					},
+					
+					
+				
+			]
+		},
+
+				
+		
+		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Desert",
+			 "TextOperations": [
+      {
+         "Operation": "Append",
+         "Target": ["MapProperties", "Warp"],
+         "Value": "-1 24 Canyon_final 51 23 -1 25 Canyon_final 51 24 -1 25 Canyon_final 51 25",
+         "Delimiter": " " 
+      }
+   ]
+		
+
+		},
+			{
+			"Action": "EditMap",
+			"Target": "Maps/Desert-Festival",
+			 "TextOperations": [
+      {
+         "Operation": "Append",
+         "Target": ["MapProperties", "Warp"],
+         "Value": "-1 24 Canyon_final 51 23 -1 25 Canyon_final 51 24 -1 25 Canyon_final 51 25",
+         "Delimiter": " " 
+      }
+   ]
+		
+
+		},
+		
+					{
+			"Action": "EditMap",
+			"Target": "Maps/Desert",
+			"When": {
+        "HasSeenEvent": "YoputHeart8",
+    },
+	 "SetProperties": {
+        "CurrentTime": "{{Time}}"
+    },
+    "Update": "OnLocationChange",
+			 "TextOperations": [
+      {
+         "Operation": "Append",
+         "Target": ["MapProperties", "Warp"],
+         "Value": "-1 24 Desert 25 23 -1 25 Desert 25 23 -1 26 Desert 25 23",
+         "Delimiter": " " 
+      }
+   ]
+		
+
+		},
+		
+				{
+			"Action": "EditMap",
+			"Target": "Maps/Desert",
+						"When": {
+        "HasSeenEvent": "YoputHeart82",
+    },
+			 "TextOperations": [
+      {
+         "Operation": "Append",
+         "Target": ["MapProperties", "Warp"],
+         "Value": "-1 24 Canyon_final 51 23 -1 25 Canyon_final 51 24 -1 25 Canyon_final 51 25",
+         "Delimiter": " " 
+      }
+   ]
+		
+
+		},
+
+		
+
+	 {
+                "Action": "EditData",
+                "Target": "Mods/CJBok.CheatsMenu/WarpSections",
+                "Entries": {
+                    "{{ModId}}_TrolleySection": {
+                        "Id": "{{ModId}}_TrolleySection",
+                        "DisplayName": "Trolley"
+                    }
+                  
+                }
+            },	
+{
+    "Action": "EditData",
+    "Target": "Mods/CJBok.CheatsMenu/Warps",
+    "Entries": {
+        "{{ModId}}_Taro_Meadow": {
+            "Id": "{{ModId}}_Taro_Meadow",
+            "SectionId": "{{ModId}}_TrolleySection",
+            "DisplayName": "Old Growth Meadow",
+            "Location": "Taro_Meadow",
+            "Tile": "20, 21"
+        },
+		"{{ModId}}_Koda_Cove": {
+            "Id": "{{ModId}}_Koda_Cove",
+            "SectionId": "{{ModId}}_TrolleySection",
+            "DisplayName": "Tidal Flats",
+            "Location": "Koda_Cove",
+            "Tile": "26, 19"
+    },
+		"{{ModId}}_Canyon_final": {
+            "Id": "{{ModId}}_Canyon_final",
+            "SectionId": "{{ModId}}_TrolleySection",
+            "DisplayName": "Canyonlands",
+            "Location": "Canyon_final",
+            "Tile": "38, 27"
+    },
+}
+}
+
+	
+	
+
+	]
+}

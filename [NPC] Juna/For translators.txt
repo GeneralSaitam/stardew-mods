@@ -1,0 +1,36 @@
+FOR TRANSLATORS
+
+2.2.0-2.2.2
+Converted Juna's ring from JA to CP. This means: a) that you can delete the entire [CC] folder from your upload, as the JA/object.json no longer exists in the original mod, and b) move the translations to the bottom of the i18n file instead (see bottom of the default.json).
+
+2.1.6
+Additional dialogue added at the bottom of the default.json. Moved some location based dialogue from the Dialogue files to the i18n file due to a bug in the game; please remove the affected dialogue strings from Dialogue, Dialogue2 and Dialogue3 and add them to the end of your i18n translations (compare with the English files to see what's changed).
+
+2.1.5
+Added some new dialogue for 1.6 upgrade, see bottom of default.json. Made some edits to either dialogue or code, marked with EDIT! in the default.json.
+
+GENERAL TRANSLATION INSTRUCTIONS
+
+There are three things that need to be translated in Juna:
+
+- The default.json in the i18n folder
+	Contains the majority of Juna's content. When you're done, simple rename your file using the appropriate language code (example: es.json for Spanish).
+
+- The DialogueForTranslation.json in the Translation folder
+	Contains Juna's daily dialogue. When you've translated this, I recommend sending it to me so I can help you put it back in its proper place. As you can see in the Dialogue folder, Juna's daily dialogue is split between 3 different files, and it can be confusing putting it back yourself. Simply translating this document and leaving it as is won't work.
+
+When you're ready to upload your translation mod, the folder structure should look like this in order for your translation to overwrite the English text properly:
+
+[NPC] Juna
+|
+|-[CP] Juna
+|	|-assets
+|		|-Dialogue
+|			|-Dialogue.json
+|			|-Dialogue2.json
+|			|-Dialogue3.json
+|	|-i18n
+|		|-yourlanguagecode.json
+
+
+If you need any help (with anything!), feel free to DM me on Nexus or ModDrop.

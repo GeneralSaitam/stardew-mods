@@ -1,0 +1,320 @@
+{
+	"Format": "1.25.0",
+	"Changes":
+	[
+		//Editing Jio's book 
+		{
+			"LogName": "Spouse room map string edit",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				"Jio.room.0": "{{i18n:MapString.SpouseRoom.Jio.{{Random: {{Range: 1,6}} }} }}",
+			},
+		},
+		
+		//Mermaid pendant acceptance
+		{
+			"LogName": "Engagement Dialogue",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"Jio_Engaged": "{{i18n:Romance.Engagement.Jio}}",
+			},
+		},
+		
+		//Festival dialogue
+		{
+			"LogName": "Festival Dialogue - Egg Fest",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": {
+				"Jio_spouse": "{{i18n:Festivals.EggFest.Jio_spouse}}",
+			},
+		},
+		
+		{
+			"LogName": "Festival Dialogue - Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": {
+				"Jio_spouse": "{{i18n:Festivals.FlowerDance.Jio_spouse}}",
+			},
+		},
+		
+		{
+			"LogName": "Festival Dialogue - Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": {
+				"Jio_spouse": "{{i18n:Festivals.Luau.Jio_spouse}}",
+			},
+		},
+		
+		{
+			"LogName": "Festival Dialogue - Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": {
+				"Jio_spouse": "{{i18n:Festivals.Jellies.Jio_spouse}}",
+			},
+		},
+		
+		{
+			"LogName": "Festival Dialogue - Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": {
+				"Jio_spouse": "{{i18n:Festivals.StardewFair.Jio_spouse}}",
+			},
+		},
+		
+		{
+			"LogName": "Festival Dialogue - Spirit's Eve",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": {
+				"Jio_spouse": "{{i18n:Festivals.SpiritEve.Jio_spouse}}",
+			},
+		},
+		
+		{
+			"LogName": "Festival Dialogue - Ice Fest",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": {
+				"Jio_spouse": "{{i18n:Festivals.IceFest.Jio_spouse}}",
+			},
+		},
+		
+		{
+			"LogName": "Festival Dialogue - Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": {
+				"Jio_spouse": "{{i18n:Festivals.WinterStar.Jio_spouse}}",
+			},
+		},
+		
+		{
+			"LogName": "Festival Dialogue - Ridgeside Gathering",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"Entries": {
+				"Jio_spouse": "{{i18n:Festivals.Gathering.Jio_spouse}}",
+			},
+		},
+		
+		{
+			"LogName": "Festival Dialogue - Ember of Resolutions",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"Entries": {
+				"Jio_spouse": "{{i18n:Festivals.EoR.Jio_spouse}}",
+			},
+		},
+		
+		{
+			"LogName": "Summit Edit",
+			"Action": "EditData",
+			"Target": "Data/ExtraDialogue",
+			"Entries": {
+				"SummitEvent_Dialogue3_Jio": "{{i18n:Jio.summit.1}}\"/faceDirection farmer 1/pause 300/faceDirection Jio 3/pause 400/speak Jio \"{{i18n:Jio.summit.2}}",
+			},
+		},
+		
+		{
+			//Not sure if I still need this
+			"LogName": "1.5 engagement dialogue",
+			"Action": "EditData",
+			"Target": "Data/EngagementDialogue",
+			"Entries": {
+				"Jio0": "{{i18n:Romance.Engagement.Jio}}",
+				"Jio1": "{{i18n:Romance.Engagement.Jio}}",
+			},
+		},
+		
+		//Miscellaneous dialogue
+		{
+			"LogName": "Miscellaneous dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jio",
+			"Entries": {
+				"AcceptBouquet": "{{i18n:Romance.give.flowersA.Jio}}",
+				"SpouseStardrop": "{{i18n:Romance.stardrop.gift.Jio}}",
+				"RejectBouquet": "{{i18n:Romance.rejectNPCA.Jio}}",
+				"breakUp": "{{i18n:Jio.Dialogue.breakUp}}",
+				"FlowerDance_Decline": "{{i18n:Jio.Dialogue.danceRejection}}",
+				"divorced": "{{i18n:Jio.Dialogue.divorced}}",
+				"SpouseFarmhouseClutter": "{{i18n:Jio.Dialogue.SpouseFarmhouseClutter}}",
+				"Spouse_MonstersInHouse": "{{i18n:Jio.Dialogue.Spouse_MonstersInHouse}}",
+			},
+		},
+		
+		//Movie invite
+		{
+			"LogName": "String for movie invite",
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Entries": {
+				"MovieInvite_Spouse_Jio": "{{i18n:Romance.MovieInvite.Spouse.Jio}}",
+			},
+		},
+		
+		//8 heart dialogue
+		{
+			"LogName": "8-10 heart dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jio",
+			"Entries": {
+				//8 Hearts
+				"Mon8": "{{i18n:Jio.Dialogue.8heart.{{Random: {{Range: 1,10}} }} }}",
+				"Tue8": "{{i18n:Jio.Dialogue.8heart.{{Random: {{Range: 1,10}} }} }}",
+				"Wed8": "{{i18n:Jio.Dialogue.8heart.{{Random: {{Range: 1,10}} }} }}",
+				"Thu8": "{{i18n:Jio.Dialogue.8heart.{{Random: {{Range: 1,10}} }} }}",
+				"Fri8": "{{i18n:Jio.Dialogue.8heart.{{Random: {{Range: 1,10}} }} }}",
+				"Sat8": "{{i18n:Jio.Dialogue.8heart.{{Random: {{Range: 1,10}} }} }}",
+				"Sun8": "{{i18n:Jio.Dialogue.8heart.{{Random: {{Range: 1,10}} }} }}",
+				
+				//10 Hearts
+				"Mon10": "{{i18n:Jio.Dialogue.10heart.{{Random: {{Range: 1,10}} }} }}",
+				"Tue10": "{{i18n:Jio.Dialogue.10heart.{{Random: {{Range: 1,10}} }} }}",
+				"Wed10": "{{i18n:Jio.Dialogue.10heart.{{Random: {{Range: 1,10}} }} }}",
+				"Thu10": "{{i18n:Jio.Dialogue.10heart.{{Random: {{Range: 1,10}} }} }}",
+				"Fri10": "{{i18n:Jio.Dialogue.10heart.{{Random: {{Range: 1,10}} }} }}",
+				"Sat10": "{{i18n:Jio.Dialogue.10heart.{{Random: {{Range: 1,10}} }} }}",
+				"Sun10": "{{i18n:Jio.Dialogue.10heart.{{Random: {{Range: 1,10}} }} }}",
+			},
+			"When": { "Relationship:Jio": "Dating", }
+		},
+		
+		{
+			"LogName": "Marriage dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueJio",
+			"Entries": {
+				///Spring
+				"spring_1": "{{i18n:Jio.MarriageDialogue.spring_1}}",
+				"spring_12": "{{i18n:Jio.MarriageDialogue.spring_12}}",
+				"spring_23": "{{i18n:Jio.MarriageDialogue.spring_23}}",
+				
+				///Summer
+				"summer_1": "{{i18n:Jio.MarriageDialogue.summer_1}}",
+				"summer_10": "{{i18n:Jio.MarriageDialogue.summer_10}}",
+				"summer_27": "{{i18n:Jio.MarriageDialogue.summer_27}}",
+				
+				///Fall
+				"fall_1": "{{i18n:Jio.MarriageDialogue.fall_1}}",
+				"fall_15": "{{i18n:Jio.MarriageDialogue.fall_15}}",
+				"fall_26": "{{i18n:Jio.MarriageDialogue.fall_26}}",
+				
+				///Winter
+				"winter_1": "{{i18n:Jio.MarriageDialogue.winter_1}}",
+				"winter_7": "{{i18n:Jio.MarriageDialogue.winter_7}}",
+				"BeachNightMarket": "{{i18n:Jio.MarriageDialogue.winter_17}}",
+				"winter_24": "{{i18n:Jio.MarriageDialogue.winter_24}}",
+				
+				///Room
+				"spouseRoom_Jio": "{{i18n:Jio.MarriageDialogue.spouseRoom_Jio.{{Random: {{Range: 1,10}} }} }}",
+				
+				///Patio
+				"patio_Jio": "{{i18n:Jio.MarriageDialogue.patio_Jio.{{Random: {{Range: 1,10}} }} }}",
+				
+				///Rainy Day
+				"Rainy_Day_0": "{{i18n:Jio.MarriageDialogue.Rainy_Day_{{Random: {{Range: 1,10}} }} }}",
+				"Rainy_Day_1": "{{i18n:Jio.MarriageDialogue.Rainy_Day_{{Random: {{Range: 1,10}} }} }}",
+				"Rainy_Day_2": "{{i18n:Jio.MarriageDialogue.Rainy_Day_{{Random: {{Range: 1,10}} }} }}",
+				"Rainy_Day_3": "{{i18n:Jio.MarriageDialogue.Rainy_Day_{{Random: {{Range: 1,10}} }} }}",
+				"Rainy_Day_4": "{{i18n:Jio.MarriageDialogue.Rainy_Day_{{Random: {{Range: 1,10}} }} }}",
+				"Rainy_Day_Jio": "{{i18n:Jio.MarriageDialogue.Rainy_Day_{{Random: {{Range: 1,10}} }} }}",
+				
+				///Rainy Night
+				"Rainy_Night_0": "{{i18n:Jio.MarriageDialogue.Rainy_Night_{{Random: {{Range: 1,10}} }} }}",
+				"Rainy_Night_1": "{{i18n:Jio.MarriageDialogue.Rainy_Night_{{Random: {{Range: 1,10}} }} }}",
+				"Rainy_Night_2": "{{i18n:Jio.MarriageDialogue.Rainy_Night_{{Random: {{Range: 1,10}} }} }}",
+				"Rainy_Night_3": "{{i18n:Jio.MarriageDialogue.Rainy_Night_{{Random: {{Range: 1,10}} }} }}",
+				"Rainy_Night_4": "{{i18n:Jio.MarriageDialogue.Rainy_Night_{{Random: {{Range: 1,10}} }} }}",
+				"Rainy_Night_5": "{{i18n:Jio.MarriageDialogue.Rainy_Night_{{Random: {{Range: 1,10}} }} }}",
+				"Rainy_Night_Jio": "{{i18n:Jio.MarriageDialogue.Rainy_Night_{{Random: {{Range: 1,10}} }} }}",
+				
+				///Indoor Day
+				"Indoor_Day_0": "{{i18n:Jio.MarriageDialogue.Indoor_Day_{{Random: {{Range: 1,10}} }} }}",
+				"Indoor_Day_1": "{{i18n:Jio.MarriageDialogue.Indoor_Day_{{Random: {{Range: 1,10}} }} }}",
+				"Indoor_Day_2": "{{i18n:Jio.MarriageDialogue.Indoor_Day_{{Random: {{Range: 1,10}} }} }}",
+				"Indoor_Day_3": "{{i18n:Jio.MarriageDialogue.Indoor_Day_{{Random: {{Range: 1,10}} }} }}",
+				"Indoor_Day_4": "{{i18n:Jio.MarriageDialogue.Indoor_Day_{{Random: {{Range: 1,10}} }} }}",
+				"Indoor_Day_Jio": "{{i18n:Jio.MarriageDialogue.Indoor_Day_{{Random: {{Range: 1,10}} }} }}",
+				
+				//Indoor Night
+				"Indoor_Night_0": "{{i18n:Jio.MarriageDialogue.Indoor_Night_{{Random: {{Range: 1,10}} }} }}",
+				"Indoor_Night_1": "{{i18n:Jio.MarriageDialogue.Indoor_Night_{{Random: {{Range: 1,10}} }} }}",
+				"Indoor_Night_2": "{{i18n:Jio.MarriageDialogue.Indoor_Night_{{Random: {{Range: 1,10}} }} }}",
+				"Indoor_Night_3": "{{i18n:Jio.MarriageDialogue.Indoor_Night_{{Random: {{Range: 1,10}} }} }}",
+				"Indoor_Night_4": "{{i18n:Jio.MarriageDialogue.Indoor_Night_{{Random: {{Range: 1,10}} }} }}",
+				"Indoor_Night_Jio": "{{i18n:Jio.MarriageDialogue.Indoor_Night_{{Random: {{Range: 1,10}} }} }}",
+				
+				///Outdoors
+				"Outdoor_0": "{{i18n:Jio.MarriageDialogue.Outdoor_{{Random: {{Range: 1,10}} }} }}",
+				"Outdoor_1": "{{i18n:Jio.MarriageDialogue.Outdoor_{{Random: {{Range: 1,10}} }} }}",
+				"Outdoor_2": "{{i18n:Jio.MarriageDialogue.Outdoor_{{Random: {{Range: 1,10}} }} }}",
+				"Outdoor_3": "{{i18n:Jio.MarriageDialogue.Outdoor_{{Random: {{Range: 1,10}} }} }}",
+				"Outdoor_4": "{{i18n:Jio.MarriageDialogue.Outdoor_{{Random: {{Range: 1,10}} }} }}",
+				
+				//Leaving
+				"funLeave_Jio": "{{i18n:Jio.MarriageDialogue.funLeave_Jio.{{Random: {{Range: 1,10}} }} }}",
+				
+				//Returning
+				"funReturn_Jio": "{{i18n:Jio.MarriageDialogue.funReturn_Jio.{{Random: {{Range: 1,10}} }} }}",
+				
+				//One kid
+				"OneKid_0": "{{i18n:Jio.MarriageDialogue.OneKid_{{Random: {{Range: 1,10}} }} }}",
+				"OneKid_1": "{{i18n:Jio.MarriageDialogue.OneKid_{{Random: {{Range: 1,10}} }} }}",
+				"OneKid_2": "{{i18n:Jio.MarriageDialogue.OneKid_{{Random: {{Range: 1,10}} }} }}",
+				"OneKid_3": "{{i18n:Jio.MarriageDialogue.OneKid_{{Random: {{Range: 1,10}} }} }}",
+				
+				//Two kids
+				"TwoKids_0": "{{i18n:Jio.MarriageDialogue.TwoKids_{{Random: {{Range: 1,10}} }} }}",
+				"TwoKids_1": "{{i18n:Jio.MarriageDialogue.TwoKids_{{Random: {{Range: 1,10}} }} }}",
+				"TwoKids_2": "{{i18n:Jio.MarriageDialogue.TwoKids_{{Random: {{Range: 1,10}} }} }}",
+				"TwoKids_3": "{{i18n:Jio.MarriageDialogue.TwoKids_{{Random: {{Range: 1,10}} }} }}",
+				
+				//Relationship-dependent
+				///Good
+				"Good_0": "{{i18n:Jio.MarriageDialogue.Good_0}}",
+				"Good_1": "{{i18n:Jio.MarriageDialogue.Good_1}}",
+				"Good_2": "{{i18n:Jio.MarriageDialogue.Good_2}}",
+				"Good_3": "{{i18n:Jio.MarriageDialogue.Good_3}}",
+				"Good_4": "{{i18n:Jio.MarriageDialogue.Good_4}}",
+				"Good_5": "{{i18n:Jio.MarriageDialogue.Good_5}}",
+				"Good_6": "{{i18n:Jio.MarriageDialogue.Good_6}}",
+				"Good_7": "{{i18n:Jio.MarriageDialogue.Good_7}}",
+				"Good_8": "{{i18n:Jio.MarriageDialogue.Good_8}}",
+				"Good_9": "{{i18n:Jio.MarriageDialogue.Good_9}}",
+				
+				///Neutral
+				"Neutral_0": "{{i18n:Jio.MarriageDialogue.Neutral_0}}",
+				"Neutral_1": "{{i18n:Jio.MarriageDialogue.Neutral_1}}",
+				"Neutral_2": "{{i18n:Jio.MarriageDialogue.Neutral_2}}",
+				"Neutral_3": "{{i18n:Jio.MarriageDialogue.Neutral_3}}",
+				"Neutral_4": "{{i18n:Jio.MarriageDialogue.Neutral_4}}",
+				"Neutral_5": "{{i18n:Jio.MarriageDialogue.Neutral_5}}",
+				"Neutral_6": "{{i18n:Jio.MarriageDialogue.Neutral_6}}",
+				"Neutral_7": "{{i18n:Jio.MarriageDialogue.Neutral_7}}",
+				"Neutral_8": "{{i18n:Jio.MarriageDialogue.Neutral_8}}",
+				"Neutral_9": "{{i18n:Jio.MarriageDialogue.Neutral_9}}",
+				
+				///Bad
+				"Bad_0": "{{i18n:Jio.MarriageDialogue.Bad_0}}",
+				"Bad_1": "{{i18n:Jio.MarriageDialogue.Bad_1}}",
+				"Bad_2": "{{i18n:Jio.MarriageDialogue.Bad_2}}",
+				"Bad_3": "{{i18n:Jio.MarriageDialogue.Bad_3}}",
+				"Bad_4": "{{i18n:Jio.MarriageDialogue.Bad_4}}",
+				"Bad_5": "{{i18n:Jio.MarriageDialogue.Bad_5}}",
+				"Bad_6": "{{i18n:Jio.MarriageDialogue.Bad_6}}",
+				"Bad_7": "{{i18n:Jio.MarriageDialogue.Bad_7}}",
+				"Bad_8": "{{i18n:Jio.MarriageDialogue.Bad_8}}",
+				"Bad_9": "{{i18n:Jio.MarriageDialogue.Bad_9}}",
+			},
+		},
+		
+	]
+}

@@ -1,0 +1,57 @@
+{
+	"Format": "1.27.0",
+
+	"Changes": [
+// PAD
+	{
+		"LogName": "Random Pad",
+		"Action": "Load",
+		"Target": "aedenthorn.HelpWanted/pad/1, aedenthorn.HelpWanted/pad/2, aedenthorn.HelpWanted/pad/3, aedenthorn.HelpWanted/pad/4, , aedenthorn.HelpWanted/pad/5, , aedenthorn.HelpWanted/pad/6, , aedenthorn.HelpWanted/pad/7, aedenthorn.HelpWanted/pad/8, aedenthorn.HelpWanted/pad/9, aedenthorn.HelpWanted/pad/10",
+		"FromFile": "assets/pad/{{TargetWithoutPath}}.png",
+		"When": {
+			"HasFile:{{FromFile}}": true,
+		}
+	},
+	{
+		"LogName": "Specific Pad: Quest type",
+		"Action": "Load",
+		"Target": "aedenthorn.HelpWanted/pad/SlayMonster, aedenthorn.HelpWanted/pad/Fishing",
+		"FromFile": "assets/pad/{{TargetWithoutPath}}.png",
+	},
+	{
+		"LogName": "Specific Pad: NPC Charaters",
+		"Action": "Load",
+		"Target": "aedenthorn.HelpWanted/pad/Sandy, aedenthorn.HelpWanted/pad/Emily, aedenthorn.HelpWanted/pad/Haley, aedenthorn.HelpWanted/pad/Krobus",
+		"FromFile": "assets/pad/{{TargetWithoutPath}}.png",
+	},
+	{
+		"LogName": "Specific Pad: Wizard SVE",
+		"Action": "Load",
+		"Target": "aedenthorn.HelpWanted/pad/Wizard, aedenthorn.HelpWanted/pad/Magnus",
+		"FromFile": "assets/pad/Wizard.png",
+	},
+	{
+		"LogName": "Specific Pad: Morris SVE",
+		"Action": "Load",
+		"Target": "aedenthorn.HelpWanted/pad/Morris, aedenthorn.HelpWanted/pad/MorrisToad",
+		"FromFile": "assets/pad/Morris.png",
+	},
+	{
+		"LogName": "Specific Pad: Cat NPCs",
+		"Action": "Load",
+		"Target": "aedenthorn.HelpWanted/pad/MisterGinger, aedenthorn.HelpWanted/pad/Jorts, aedenthorn.HelpWanted/pad/Jean, aedenthorn.HelpWanted/pad/Boxy, aedenthorn.HelpWanted/pad/April, aedenthorn.HelpWanted/pad/May",
+		"FromFile": "assets/pad/cat.png",
+	},
+	
+// PIN	
+	{
+		"LogName": "Random Pin",
+		"Action": "Load",
+		"Target": "aedenthorn.HelpWanted/pin/1, aedenthorn.HelpWanted/pin/2, aedenthorn.HelpWanted/pin/3, aedenthorn.HelpWanted/pin/4, aedenthorn.HelpWanted/pin/5, aedenthorn.HelpWanted/pin/6, aedenthorn.HelpWanted/pin/7, aedenthorn.HelpWanted/pin/8, aedenthorn.HelpWanted/pin/9, aedenthorn.HelpWanted/pin/10, aedenthorn.HelpWanted/pin/11, aedenthorn.HelpWanted/pin/12, aedenthorn.HelpWanted/pin/13",
+		"FromFile": "assets/pin/{{TargetWithoutPath}}.png",
+		"When": {
+			"HasFile:{{FromFile}}": true,
+			}
+	},
+	]
+}

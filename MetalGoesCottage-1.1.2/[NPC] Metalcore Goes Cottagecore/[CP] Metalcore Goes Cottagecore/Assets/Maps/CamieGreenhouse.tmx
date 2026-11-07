@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="left-down" width="16" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="24">
+ <properties>
+  <property name="Warp" value="12 9 Squeaks.MGC.CP_CCHouse 3 13"/>
+ </properties>
+ <tileset firstgid="1" name="town_interior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="caroline_greenhouse" tilewidth="16" tileheight="16" tilecount="128" columns="8">
+  <image source="CarolineGreenhouseTiles.png" width="128" height="256"/>
+ </tileset>
+ <tileset firstgid="2305" name="camie_stuff" tilewidth="16" tileheight="16" tilecount="200" columns="10">
+  <image source="zz_camietilesheet.png" width="160" height="320"/>
+ </tileset>
+ <tileset firstgid="2505" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="3817" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="/paths.png" width="64" height="256"/>
+ </tileset>
+ <layer id="1" name="Back" width="16" height="17">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2861,2861,2861,2861,2861,2861,2862,0,
+0,0,0,0,0,0,0,0,2893,2893,2893,2893,2893,2893,2894,0,
+0,0,2227,2228,2229,0,0,0,1469,1468,1468,2565,1468,1468,2926,0,
+0,199,200,201,200,201,200,201,200,201,200,201,200,201,200,0,
+0,233,1309,363,363,363,1310,233,232,264,232,264,232,264,232,0,
+0,265,1279,2076,2076,2077,1280,5,264,2119,264,232,264,232,264,0,
+0,233,1247,2108,2079,2109,1248,233,232,2151,232,1113,1114,1115,232,0,
+0,265,1279,2108,2108,2109,1280,265,264,232,264,1145,1146,1147,264,0,
+0,233,1247,2108,2108,2109,1248,233,0,0,0,0,233,0,0,0,
+0,233,1279,2108,2079,2109,1280,233,0,0,0,0,0,0,0,0,
+0,265,1247,2108,2108,2109,1248,265,0,0,0,0,0,0,0,0,
+0,233,1279,2108,2108,2109,1280,233,0,0,0,0,0,0,0,0,
+0,265,1279,2108,2079,2109,1248,265,0,0,0,0,0,0,0,0,
+0,233,1247,2108,2108,2109,1280,233,0,0,0,0,0,0,0,0,
+0,265,1311,293,293,293,1312,265,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="16" height="17">
+  <data encoding="csv">
+1,2,3,3,3,3,3,3,3,3,3,3,3,3,4,1,
+33,2209,2211,2212,2213,2214,2215,2214,2535,0,0,0,0,2536,44,37,
+65,2217,2219,2220,2221,2222,2223,2222,2567,2533,2533,2533,2533,2568,2534,69,
+65,2225,473,475,0,2230,2231,2230,2599,2565,2565,489,2565,2600,2566,69,
+65,2233,537,539,2201,2202,2203,2400,2456,2434,2394,521,505,507,2598,69,
+65,2316,0,0,0,0,0,0,0,0,0,0,537,539,535,69,
+65,2316,0,2401,2401,2401,0,0,0,0,0,0,0,3058,2413,69,
+65,2317,0,2401,2411,2401,0,0,0,0,0,0,0,0,2413,69,
+65,2351,0,2401,2401,2401,0,401,2344,2344,2344,0,0,0,2414,168,
+65,2316,0,2401,2401,2401,0,2392,69,1,1,97,0,131,1,1,
+65,2316,0,2401,2411,2401,0,2905,0,1,1,1,1,1,1,1,
+65,2317,0,2401,2401,2401,0,3532,0,0,0,0,0,0,0,0,
+65,2457,0,2401,2401,2401,0,0,0,0,0,0,0,0,0,0,
+65,2316,0,2401,2411,2401,0,2378,69,0,0,0,0,0,0,0,
+65,2316,0,2401,2401,2401,0,2335,69,0,0,0,0,0,0,0,
+161,2317,0,0,0,0,0,0,168,0,0,0,0,0,0,0,
+1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Buildings">
+  <object id="1" name="TileData" x="160" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message CamieGrinder"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="144" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message GHChest"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="128" y="128" width="48" height="16">
+   <properties>
+    <property name="Action" value="Message CamieKegs"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="48" y="96" width="48" height="144">
+   <properties>
+    <property name="Action" value="Message CamieStarfruit"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="112" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message CamieSeedMaker"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="16" y="80" width="16" height="48">
+   <properties>
+    <property name="Action" value="Message RaisedBed1"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="16" y="144" width="16" height="48">
+   <properties>
+    <property name="Action" value="Message RaisedBed2"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="16" y="208" width="16" height="48">
+   <properties>
+    <property name="Action" value="Message RaisedBed3"/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="16" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message SmallRadio"/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="224" y="96" width="16" height="48">
+   <properties>
+    <property name="Action" value="Message CamieCasks"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="192" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message GHNote"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="112" y="208" width="16" height="32">
+   <properties>
+    <property name="Action" value="Message GHBeehives"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="64" y="64" width="48" height="16">
+   <properties>
+    <property name="Action" value="Message GHLilies"/>
+   </properties>
+  </object>
+  <object id="19" name="TileData" x="112" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message DairePlant"/>
+   </properties>
+  </object>
+  <object id="20" name="TileData" x="112" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message OberonPlant"/>
+   </properties>
+  </object>
+  <object id="21" name="TileData" x="128" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="DropBox CamieFridge"/>
+   </properties>
+  </object>
+  <object id="23" name="TileData" x="176" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="OpenShop Squeaks.MGC.CP_DoubleFang"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="6" name="Front" width="16" height="17">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,242,243,0,0,0,
+0,3667,0,0,0,1388,0,1207,0,309,0,274,275,0,0,0,
+0,3699,0,0,2193,2194,2195,2390,2446,2424,2384,675,473,475,0,0,
+0,2307,0,0,0,0,0,0,0,0,0,0,0,0,503,0,
+0,0,0,2391,2391,2391,0,0,0,0,0,0,0,3026,2403,0,
+0,0,0,2391,0,2391,336,337,338,0,0,0,0,0,2403,0,
+0,2341,0,2391,2391,2391,0,369,2334,2334,2334,0,0,0,2404,0,
+0,2307,0,2391,2391,2391,0,2382,164,166,166,163,0,164,167,0,
+0,0,0,2391,0,2391,0,2873,0,0,0,0,166,0,0,0,
+0,0,0,2391,2391,2391,0,0,69,0,0,0,0,0,0,0,
+0,2447,0,2391,2391,2391,0,0,69,0,0,0,0,0,0,0,
+0,2307,0,2391,0,2391,0,2368,69,0,0,0,0,0,0,0,
+0,0,0,2391,2391,2391,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+161,162,166,166,166,166,166,167,168,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="7" name="Front"/>
+ <layer id="8" name="AlwaysFront" width="16" height="17">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,650,2147484300,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2331,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2841,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,513,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,2369,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="9" name="AlwaysFront"/>
+ <layer id="10" name="Paths" width="16" height="17">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,3825,0,0,3825,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,3825,0,0,0,3825,0,0,0,3825,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,3825,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,3825,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="11" name="Paths"/>
+</map>

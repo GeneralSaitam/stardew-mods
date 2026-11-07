@@ -1,0 +1,117 @@
+{
+    "Changes": [
+   	 
+   	 {
+   		 "Action": "EditData",
+   		 "Target": "Data/Characters",
+   		 "Entries": {
+   			 "{{Russell}}": {
+   				 "DisplayName": "{{i18n:russell.name}}",
+				 "UnlockConditions": "DAYS_PLAYED {{cfgJailOpenDelay}}",
+   				 "Gender": "Male", 
+   				 "Age": "Adult", 
+   				 "Manner": "Neutral", 
+   				 "SocialAnxiety": "Neutral",
+   				 "Optimism": "Positive",
+   				 "BirthSeason": "summer",
+   				 "BirthDay": "20",
+   				 "HomeRegion": "Town",
+   				 "CanBeRomanced": true,
+    				"CanVisitIsland": true,
+   				 "SpouseAdopts": false,
+   				 "IntroductionsQuest": false,
+   				 "ItemDeliveryQuests": true,
+   				 "WinterStarParticipant": true,
+				 "CanCommentOnPurchasedShopItems":false,
+				"SpouseRoom": {
+					"MapAsset": "sdvwarhead.LawAndOrderSV_SpouseRoom",
+					"MapSourceRect": {
+						"X": 6,
+						"Y": 0,
+						"Width": 6,
+						"Height": 9
+					}
+				},
+				"SpousePatio": {
+						"MapAsset": "sdvwarhead.LawAndOrderSV_OutsideArea",
+						"MapSourceRect": {
+							"X": 8,
+							"Y": 0,
+							"Width": 4,
+							"Height": 4
+						},
+						"SpriteAnimationFrames": [
+							[43,16000],[36,3000],[37,120],[38,120],[39,240],[41,180],[39,180],[41,180],[39,480],[40,240],[39,240],[40,240],[39,240],[40,240],[39,240],[38,120],[37,120],[36,2400],[42,360],[36,600]
+						],
+						"SpriteAnimationPixelOffset": {
+							"X": 0,
+							"Y": 0
+						}
+				},
+				"Home": [
+					{
+						"Id": "Default",
+						"Condition": null,
+						"Location": "sdvhead.LawAndOrderSV_AboveJail",
+						"Tile": {
+						"X": 19,
+						"Y": 18
+						},
+						"Direction": "right"
+					}
+					],
+
+				"Appearance":[
+					{
+						"Id": "Default",
+						"Portrait":"Portraits/{{Russell}}",
+						"Sprite":"Characters/{{Russell}}",
+						"Precedence":9,
+					},
+					{
+						"Id": "Island",
+						"Portrait":"Portraits/{{Russell}}_Beach",
+						"Sprite":"Characters/{{Russell}}_Beach",
+						"IsIslandAttire":true,
+						"Precedence":8,
+					},
+					{
+						"Id": "ProstheticIsland",
+						"Portrait":"Portraits/{{Russell}}_ProstheticBeach",
+						"Sprite":"Characters/{{Russell}}_ProstheticBeach",
+						"IsIslandAttire":true,
+						"Condition":"PLAYER_HAS_SEEN_EVENT Any 239791004",
+						"Precedence":7,
+					},
+					{
+						"Id": "Prosthetic",
+						"Portrait":"Portraits/{{Russell}}_Prosthetic",
+						"Sprite":"Characters/{{Russell}}_Prosthetic",
+						"Condition":"PLAYER_HAS_SEEN_EVENT Any 239791004",
+						"Precedence":6,
+					},
+					{
+						"Id": "Scooter",
+						"Portrait":"Portraits/{{Russell}}_Prosthetic",
+						"Sprite":"Characters/{{Russell}}_Scooter",
+						"Indoors":false,
+						"Outdoors":true,
+						"Condition":"PLAYER_HAS_CONVERSATION_TOPIC Any {{ModId}}_RussellScooter, !SEASON winter, !LOCATION_NAME Target Farm, !IS_FESTIVAL_DAY, WEATHER Here Sun Wind",
+						//DAY_OF_WEEK 2 4 5",
+						"Precedence":5,
+					},
+					{
+						"Id":"SpiritsEve",
+						"Condition":"IS_EVENT festival_fall27",
+						"Portrait":"Portraits/{{Russell}}_SpiritsEve",
+						"Sprite":"Characters/{{Russell}}_SpiritsEve",
+						"Precedence":0,
+					}
+
+				]
+   			 }
+   		 }
+   	 }
+    ]
+}
+

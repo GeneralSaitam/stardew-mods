@@ -1,0 +1,102 @@
+{
+  "Changes": [
+    {
+      "LogName": "ESC - Same Spawn Rates",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "EastScarp_Golden_Trout": {
+          "10": ".45",
+          "11": ".1"
+        },
+        "EastScarp_Kokanee_Salmon": {
+          "10": ".45",
+          "11": ".1"
+        },
+        "EastScarp_King_Carp": {
+          "10": ".45",
+          "11": ".1"
+        },
+        "EastScarp_Red_Herring": {
+          "10": ".45",
+          "11": ".1"
+        },
+        "EastScarp_Fairy_Betta": {
+          "10": ".45",
+          "11": ".1"
+        },
+        "EastScarp_Obsidian_Maw": {
+          "10": ".45",
+          "11": ".1"
+        },
+        "EastScarp_Slime_Barbel": {
+          "10": ".45",
+          "11": ".1"
+        }
+      },
+      "When": {
+        "Same Spawn Rates": true
+      }
+    },
+	{
+      "LogName": "ESC - Same Spawn Rates Winter",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "EastScarp_Cerulean_Nudibranch": {
+          "10": ".45",
+          "11": ".1"
+        }
+      },
+      "When": {
+		"Season": "Winter", 
+        "Same Spawn Rates": true
+      }
+    },
+	{
+      "LogName": "ESC - Same Spawn Rates Spring",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "EastScarp_Ornate_Nudibranch": {
+          "10": ".45",
+          "11": ".1"
+        }
+      },
+      "When": {
+		"Season": "Spring", 
+        "Same Spawn Rates": true
+      }
+    },
+	{
+      "LogName": "ESC - Same Spawn Rates Summer",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "EastScarp_Sea_Bunny_Nudibranch": {
+          "10": ".45",
+          "11": ".1"
+        }
+      },
+      "When": {
+		"Season": "Summer", 
+        "Same Spawn Rates": true
+      }
+    },
+	{
+      "LogName": "ESC - Same Spawn Rates Fall",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "EastScarp_Sunset_Nudibranch": {
+          "10": ".45",
+          "11": ".1"
+        }
+      },
+      "When": {
+		"Season": "Fall", 
+        "Same Spawn Rates": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "Molamoles_Furniture_Catalogue": {
+          "PriceModifiers": null,
+          "PriceModifierMode": "Stack",
+          "Items": [
+            {
+              "Price": 0,
+              "AvailableStockLimit": "Global",
+              "AvoidRepeat": false,
+              "UseObjectDataPrice": false,
+              "IgnoreShopPriceModifiers": false,
+              "PriceModifiers": null,
+              "PriceModifierMode": "Stack",
+              "AvailableStockModifiers": null,
+              "AvailableStockModifierMode": "Stack",
+              "Condition": null,
+              "Id": "Default",
+              "ItemId": "ALL_ITEMS (F)",
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1,
+              "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_MolesCatalogue"
+            }
+          ],
+          "CustomFields": {
+            "HappyHomeDesigner/Catalogue": "true"
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+        "Molamoles_Furniture_Catalogue": "Molamoles_Furniture_Catalogue/other/2 3/2 1/1/15000/2/Molamoles_Furniture_Catalogue/0/Tilesheets\\Molamoles_Furniture_Catalogue/true"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "sophie.Calcifer/FurnitureActions",
+      "Entries": {
+        "(F)Molamoles_Furniture_Catalogue": {
+          "TileActions": [
+            {
+              "TileAction": "OpenShop Molamoles_Furniture_Catalogue"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Carpenter",
+        "Items"
+      ],
+      "Entries": {
+        "Molamoles_Furniture_Catalogue": {
+          "Id": "Molamoles_Furniture_Catalogue",
+          "ItemId": "(F)Molamoles_Furniture_Catalogue",
+          "Price": 15000
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "ShadowShop",
+        "Items"
+      ],
+      "Entries": {
+        "Molamoles_Furniture_Catalogue": {
+          "Id": "Molamoles_Furniture_Catalogue",
+          "ItemId": "(F)Molamoles_Furniture_Catalogue",
+          "Price": 1500
+        }
+      }
+    }
+  ]
+}

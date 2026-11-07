@@ -1,0 +1,16 @@
+{
+"Format": "2.0.0",
+
+	"Changes": [
+	
+        {
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/mvb",
+            "FromFile": "assets/{{TargetWithoutPath}}.png" 
+        },
+		{
+			"Action": "Include",
+			"FromFile": "data/mvb.json"
+		}
+	]
+}

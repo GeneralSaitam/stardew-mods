@@ -1,0 +1,64 @@
+{
+	"Changes": [
+		{
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}_quest_harvey": "ItemDelivery/{{i18n:quest_harvey.title}}/{{i18n:quest_harvey.description}}/{{i18n:quest_harvey.objective}}/Harvey (O)829 5/-1/0/-1/false/Thanks for the ginger, @!$1"
+		}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Data/Mail",
+		"Entries": {
+			"{{ModId}}_harveyrequestmail_text": "{{i18n:harveyrequestmail.text}}%item quest {{ModId}}_quest_harvey true %%[#]{{i18n:harveyrequestmail.title}}",
+			"{{ModId}}_harveyquestcompletemail_text": "{{i18n:harveyquestcompletemail.text}}%item id (O)903 1 %%[#]{{i18n:harveyquestcompletemail.title}}",
+		}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"{{ModId}}_harveyrequestmail": {
+				"Id": "{{ModId}}_harveyrequestmail",
+				"Trigger": "DayEnding",
+				"Location": null,
+				"Condition": "PLAYER_STAT Current BoatRidesToIsland 1",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}_harveyrequestmail_text tomorrow",
+				"Actions": null
+			},
+			"{{ModId}}_harveyquestcompletemail": {
+				"Id": "{{ModId}}_harveyquestcompletemail",
+				"Trigger": "DayEnding",
+				"Location": null,
+				"Condition": "PLAYER_HAS_CONVERSATION_TOPIC Current questComplete_{{ModId}}_quest_harvey",
+				"HostOnly": false,
+				"Action": "AddMail Current {{ModId}}_harveyquestcompletemail_text tomorrow",
+				"Actions": null
+			}
+		}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Data/Shops",
+		"TargetField": ["Hospital","SalableItemTags"],
+		"Entries": {
+			"medicine_item": "medicine_item",
+			"potion_item": "potion_item",
+			"{{ModId}}_harvey": "{{ModId}}_harvey"
+		}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Data/Shops",
+		"TargetField": ["Hospital","SalableItemTags"],
+		"When": {
+			"HasReadLetter |contains={{ModId}}_harveyquestcompletemail_text": true,
+		},
+		"Entries": {
+			"ginger_item": "ginger_item"
+		}
+		}
+	]
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="14" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="15">
+ <properties>
+  <property name="AmbientLight" value="255 255 255"/>
+  <property name="DayTiles" value="Front 10 6 256"/>
+  <property name="Doors" value="17 9 dummy 120 24 9 dummy 120 31 9 dummy 120"/>
+  <property name="Light" value="2 6 4 6 6 4 9 6 4 11 6 4 13 9 4 16 9 4 18 9 4 23 9 4 25 9 4 30 9 4 32 9 4 34 9 4 10 6 2 6 8 5 1 13 5 12 13 5"/>
+  <property name="Music" value="MarlonsTheme"/>
+  <property name="NightTiles" value="Front 10 6 1253"/>
+  <property name="Warp" value="5 16 AdventureGuild 15 14 7 4 Custom_GE_ZinniaRoom 11 28 8 4 Custom_GE_ZinniaRoom 12 28"/>
+ </properties>
+ <tileset firstgid="1" name="dummy" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="688" columns="16">
+  <image source="walls_and_floors" width="256" height="688"/>
+ </tileset>
+ <tileset firstgid="2865" name="silly_room" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="silly_room.png" width="256" height="288"/>
+ </tileset>
+ <layer id="1" name="Back" width="14" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgKOdmYKgC4mogrgHiPiAGAUYG3MCPh4GhHaiuC4i7gbgHiOdxQ8RBOBHIDkTCiUhy04HsWUA8G4jnAPE6IvUtB7K5eRB4HxZ9hQyY+kBq9YBYH4gNoHyY3CVmBobPSPgyM0JOGojtgNgeiB2gfJjcJ2ZMDJO7A7TbEUg7AbEzlE+svlNAvAuI93AT1oceP6e5cccXSD0yyGJD4F8sqHxkDNKHzO9CwlKsqHxk/JMFlQ+yAyQGoq1YUfn45IY7mMyCiokFk1hQMSn6CpHo4QYAyKlZ7Q==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="14" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgYAJiZiTMwoAAuOQUGbADVSS52VB6DpKcIw59rmhygTjkVnEzMKwG4jXcqHIFQHwbiN8CHXkHSBchyaUyMjCkMSLMO8eNkJsAFeOHemwSFrfAQAAPQg5kDzIA8WFyjkC7nBix6+NnQdUH4oPkFmKxDwRWEJDjhuLDULFDSGL45GAAFDeVDIi4YiAgFwjFe6D83Uhi+OQKofgOVO42khg+OWRgzk0aGwbcuUljkwOY0TCtAXqYEwtAYerFiqCHGwAAuR4uGA==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="160" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="NPCSpeechMessageNoRadius Silly sillyTrappedMessage"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="160" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="NPCSpeechMessageNoRadius Silly sillyTrappedMessage"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="48" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="160" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="64" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.8&quot;"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="176" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.9&quot;"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="64" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.8&quot;"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="176" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.9&quot;"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="0" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.1&quot;"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="32" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.1&quot;"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="0" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.1&quot;"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="16" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 60 15 Farm"/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="32" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.1&quot;"/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="48" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 91 49 Farm"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="14" height="22">
+  <data encoding="base64" compression="zlib">
+   eJxjZMAOGKEYlxwIaAFxPiuEDaJ1kNTgk8MHAoB4NxAbcjMw7AHSQUhyrkCL3XA4qgBKO3FD6CIkucVAPUuQ9DlwEOeWw0A9R3AFAg3AIiBeDMSWQLwEiJcTKQcDkXjMRpe7yMTAcIkJNY5g4vjk0MF2Ftx24pMjFpgA49MUGqdB3AjxYCR2CBI7FMp2AdKuQOwGxElA7AFlJyOxU5DYqVA2DIQB2eFAHMFNHJsSwMWKShMDQGGrxYqgRwEEAADalCWW
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+</map>

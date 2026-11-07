@@ -1,0 +1,200 @@
+{
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Characters/{{Shannon}}_Hatless",
+            "FromFile": "assets/NPCs/Sprites/Shannon/{{ShannonStyle}}/Shannon_Beach.png",
+            "When": {
+                "Time": "{{Range: 0710, 0750}}",
+                "LocationName": "sdvhead.LawAndOrderSV_AboveJail"
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        /*
+        {
+            "Action": "EditImage",
+            "Target": "Characters/{{Shannon}}",
+            "FromFile": "assets/NPCs/Sprites/Shannon/{{ShannonStyle}}/Shannon_PJs.png",
+            "When": {
+                "Time": "{{Range: 0600, 0700}}",
+                "LocationName": "sdvhead.LawAndOrderSV_AboveJail",
+                "cfgShannonPJs": true,
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+                {
+            "Action": "EditImage",
+            "Target": "Characters/{{Shannon}}",
+            "FromFile": "assets/NPCs/Sprites/Shannon/{{ShannonStyle}}/Shannon_PJs.png",
+            "When": {
+                "Time": "{{Range: 600, 900}}",
+                "LocationName":"farmHouse",
+                "Relationship:{{Shannon}}": "Married",
+                "cfgShannonPJs": true,
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{Shannon}}",
+            "FromFile": "assets/NPCs/Portraits_{{cfgPortraits}}/Shannon/{{ShannonStyle}}/Shannon_PJ_Portrait.png",
+            "When": {
+                "Time": "{{Range: 600, 900}}",
+                "LocationName":"farmHouse",
+                "Relationship:{{Shannon}}": "Married",
+                "cfgShannonPJs": true,
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/{{Shannon}}",
+            "FromFile": "assets/NPCs/Sprites/Shannon/{{ShannonStyle}}/Shannon_PJs.png",
+            "When": {
+                "Time": "{{Range: 2000, 2600}}",
+                "LocationName":"farmHouse",
+                "Relationship:{{Shannon}}": "Married",
+                "cfgShannonPJs": true,
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{Shannon}}",
+            "FromFile": "assets/NPCs/Portraits_{{cfgPortraits}}/Shannon/{{ShannonStyle}}/Shannon_PJ_Portrait.png",
+            "When": {
+                "Time": "{{Range: 2000, 2600}}",
+                "LocationName":"farmHouse",
+                "Relationship:{{Shannon}}": "Married"
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        */
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{Shannon}}_Hatless",
+            "FromFile": "assets/NPCs/Portraits_{{cfgPortraits}}/Shannon/{{ShannonStyle}}/Shannon_Beach_Portrait.png",
+            "When": {
+                "Time": "{{Range: 0710, 0750}}",
+                "LocationName":"sdvhead.LawAndOrderSV_AboveJail"
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        /*
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{Shannon}}",
+            "FromFile": "assets/NPCs/Portraits_{{cfgPortraits}}/Shannon/{{ShannonStyle}}/Shannon_PJ_Portrait.png",
+            "When": {
+                "Time": "{{Range: 0600, 0700}}",
+                "LocationName":"sdvhead.LawAndOrderSV_AboveJail",
+                "cfgShannonPJs": true,
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/{{Shannon}}",
+            "FromFile": "assets/NPCs/Sprites/Shannon/{{ShannonStyle}}/Shannon_PJs.png",
+            "When": {
+                "Time": "{{Range: 1940, 2600}}",
+                "LocationName":"sdvhead.LawAndOrderSV_AboveJail",
+                "cfgShannonPJs": true,
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{Shannon}}",
+            "FromFile": "assets/NPCs/Portraits_{{cfgPortraits}}/Shannon/{{ShannonStyle}}/Shannon_PJ_Portrait.png",
+            "When": {
+                "Time": "{{Range: 1940, 2600}}",
+                "LocationName":"sdvhead.LawAndOrderSV_AboveJail",
+                "cfgShannonPJs": true,
+            },
+            "Update": "OnLocationChange"
+        },
+        */
+        {
+            "Action": "EditImage",
+            "Target": "Characters/{{Russell}}",
+            "FromFile": "assets/NPCs/Sprites/Russell_Beach_Prosthetic.png",
+            "When": {
+                "Time": "1810, 1820, 1830, 1840, 1850",
+                "LocationName":"sdvhead.LawAndOrderSV_AboveJail",
+                "HasSeenEvent": "239791004",
+                "DayOfWeek":"Monday,Tuesday,Wednesday,Thursday,Saturday,Sunday",
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{Russell}}",
+            "FromFile": "assets/NPCs/Portraits_{{cfgPortraits}}/Russell_Prosthetic_Beach_Portrait.png",
+            "When": {
+                "Time": "1810, 1820, 1830, 1840, 1850",
+                "LocationName":"sdvhead.LawAndOrderSV_AboveJail",
+                "HasSeenEvent": "239791004",
+                "DayOfWeek":"Monday,Tuesday,Wednesday,Thursday,Saturday,Sunday",
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/{{Russell}}",
+            "FromFile": "assets/NPCs/Sprites/Russell_Beach.png",
+            "When": {
+                "Time": "1810, 1820, 1830, 1840, 1850",
+                "LocationName":"sdvhead.LawAndOrderSV_AboveJail",
+                "HasSeenEvent |contains=239791004": false,
+                "DayOfWeek":"Monday,Tuesday,Wednesday,Thursday,Saturday,Sunday",
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{Russell}}",
+            "FromFile": "assets/NPCs/Portraits_{{cfgPortraits}}/Russell_Beach_Portrait.png",
+            "When": {
+                "Time": "1810, 1820, 1830, 1840, 1850",
+                "LocationName":"sdvhead.LawAndOrderSV_AboveJail",
+                "HasSeenEvent |contains=239791004": false,
+                "DayOfWeek":"Monday,Tuesday,Wednesday,Thursday,Saturday,Sunday",
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/sdvhead.LawAndOrderSV_AboveJail",
+            "FromFile": "assets/Locations/Shower.tmx",
+            "ToArea": {
+                "X": 18,
+                "Y": 2,
+                "Width": 3,
+                "Height": 5
+            },
+            "When": {
+                "Time": "720, 730, 740",
+                "LocationName":"sdvhead.LawAndOrderSV_AboveJail"
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/sdvhead.LawAndOrderSV_AboveJail",
+            "FromFile": "assets/Locations/Shower.tmx",
+            "ToArea": {
+                "X": 18,
+                "Y": 2,
+                "Width": 3,
+                "Height": 5
+            },
+            "When": {
+                "Time": "1820, 1830, 1840",
+                "LocationName":"sdvhead.LawAndOrderSV_AboveJail",
+                "DayOfWeek":"Monday,Tuesday,Wednesday,Thursday,Saturday,Sunday",
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+    ]
+}

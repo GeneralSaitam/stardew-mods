@@ -1,0 +1,95 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Beach",
+        "Entries":
+    {
+    "Miihau.LeahEE.003/F/f Leah 750/t 1000 1700/w sunny/e Miihau.LeahEE.002":"
+    breezy/
+    35 15/
+    farmer 38 10 2 Leah 32 14 2 Elliott -100 -100 2/
+    skippable/
+    addObject 32 15 372/
+    addObject 29 12 372/
+    addObject 34 11 372/
+    addObject 39 12 372/
+    addObject 37 16 372/
+    move farmer 0 4 2/
+    emote Leah 40 true/
+    playSound pickUpItem/
+    removeObject 32 15/
+    move farmer -4 0 3/
+    pause 300/
+    faceDirection Leah 1/
+    speak Leah \"{{i18n:Miihau.LeahEE.event3.001}}\"/
+    pause 200/
+    emote farmer 32/
+    pause 300/
+    speak Leah \"{{i18n:Miihau.LeahEE.event3.002}}\"/
+    pause 400/
+    move Leah 0 -2 3 farmer 2 0 1/
+    move Leah -1 0 3 farmer 1 0 2/
+    move Leah -1 0 3 farmer 0 1 2/
+    pause 300/
+    playSound pickUpItem/
+    removeObject 29 12/
+    pause 600/
+    playSound pickUpItem/
+    removeObject 37 16/
+    move Leah 1 0 1/
+    move Leah 3 0 0 farmer 0 -3 1/
+    move farmer 1 0 1/
+    pause 100/
+    playSound pickUpItem/
+    removeObject 34 11/
+    pause 800/
+    playSound pickUpItem/
+    removeObject 39 12/
+    move Leah 1 0 1 true/
+    pause 200/
+    emote Leah 32 true/
+    move farmer -1 0 3 true/
+    globalFade/
+    viewport -1000 -1000/
+    pause 500/
+    message \"{{i18n:Miihau.LeahEE.event3.003}}\"/
+    warp Leah 45 24/
+    warp farmer 46 24/
+    warp Elliott 48 11/
+    faceDirection Leah 2/
+    faceDirection farmer 2/
+    pause 200/
+    globalFadeToClear 0.007 true/
+    viewport 46 24/
+    move Elliott 0 8 2 true/
+    pause 1400/
+    speak Leah \"{{i18n:Miihau.LeahEE.event3.004}}\"/
+    pause 100/
+    viewport move 0 -1 1700/
+    pause 1700/
+    emote Elliott 28/
+    move Elliott 1 0 0/
+    move Elliott 0 -8 0 true/
+    viewport move 0 1 1800/
+    pause 2700/
+    playSound doorClose/
+    warp Elliott -100 -100/
+    pause 400/
+    speak Leah \"{{i18n:Miihau.LeahEE.event3.005}}\"/
+    pause 400/
+    speak Leah \"{{i18n:Miihau.LeahEE.event3.006}}\"/
+    quickQuestion {{i18n:Miihau.LeahEE.event3.006X}}(break)pause 300\\speak Leah \"{{i18n:Miihau.LeahEE.event3.007}}\"\\pause 600\\speak Leah \"{{i18n:Miihau.LeahEE.event3.008}}\"(break)pause 300\\speak Leah \"{{i18n:Miihau.LeahEE.event3.009}}\"\\pause 200\\faceDirection Leah 1\\pause 200\\speak Leah \"{{i18n:Miihau.LeahEE.event3.010}}\"\\emote farmer 32\\faceDirection Leah 2(break)pause 300\\speak Leah \"{{i18n:Miihau.LeahEE.event3.011}}\"\\pause 200\\faceDirection Leah 1\\pause 200\\speak Leah \"{{i18n:Miihau.LeahEE.event3.012}}\"\\emote farmer 32\\faceDirection Leah 2/
+    pause 500/
+    speak Leah \"{{i18n:Miihau.LeahEE.event3.013}}\"/
+    pause 600/
+    speak Leah \"{{i18n:Miihau.LeahEE.event3.014}}\"/
+    globalFade/
+    viewport -1200 -1200/
+    end dialogue Leah \"{{i18n:Miihau.LeahEE.event3.015}}\"/
+    ",
+
+    }
+    }
+    ]
+}

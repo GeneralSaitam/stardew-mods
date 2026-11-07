@@ -1,0 +1,188 @@
+{
+  "Format": "2.9.0",
+  "ConfigSchema": {
+    "Recolor": {
+      "Section": "CompatibilitySettings",
+      "AllowValues": "Auto, Vanilla, Adventurer's Interface, Bog's Forest UI, Cat Valley, Citrus Interface, DaisyNiko's Earthy Interface, DBB's Victorian Gothic User Interface, Lavender Dreams UI, Lynneas Witchy and Purple UI, Magical Valley, Meow UI, Natural Dark Wood Interface, Overgrown Flowery Interface, Pastel Pink Lolita Interface, Starblue Valley, Starry Blue UI, Vanilla Accent Interface, Vintage Interface v1, Vintage Interface v2, Void's Weird Wonders, VPR-Inspired UI",
+      "Default": "Vanilla"
+    },
+    "CustomInterface": {
+      "Section": "CompatibilitySettings",
+      "AllowValues": "true, false",
+      "Default": "false"
+    }
+  },
+  "DynamicTokens": [
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Vanilla"
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Adventurer's Interface",
+      "When": {
+        "HasMod |contains=medicsun.AdventurersInterface": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Bog's Forest UI",
+      "When": {
+        "HasMod |contains=Bos.UIInterface": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Cat Valley",
+      "When": {
+        "HasMod |contains=RimeNovi.CatValley": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Citrus Interface",
+      "When": {
+        "HasMod |contains=ninthalley.CitrusInterface": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "DaisyNiko's Earthy Interface",
+      "When": {
+        "HasMod |contains=DaisyNiko.EarthyInterface": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "DBB's Victorian Gothic User Interface",
+      "When": {
+        "HasMod |contains=DBB.VictorianGothicUI": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Lavender Dreams UI",
+      "When": {
+        "HasMod |contains=VinillaBean.LavenderDreams": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Lynneas Witchy and Purple UI",
+      "When": {
+        "HasMod |contains=Lynnea.WitchyPurpleUIInterface": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Magical Valley",
+      "When": {
+        "HasMod |contains=HReenna.MagicalValleyInterface": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Meow UI",
+      "When": {
+        "HasMod |contains=Euphons.Meow": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Natural Dark Wood Interface",
+      "When": {
+        "HasMod |contains=enteis.woodeninterfeis": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Overgrown Flowery Interface",
+      "When": {
+        "HasMod |contains=Maraluna.OvergrownFloweryInterface": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Pastel Pink Lolita Interface",
+      "When": {
+        "HasMod |contains=otohime.pinklolitainterface": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Starblue Valley",
+      "When": {
+        "HasMod |contains=Lita.StarblueValleyUnofficial": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Starry Blue UI",
+      "When": {
+        "HasMod |contains=Sqbr.StarryBlueUI": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Vanilla Accent Interface",
+      "When": {
+        "HasMod |contains=oe.VAccent": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Vintage Interface v1",
+      "When": {
+        "HasMod |contains=ManaKirel.VMI": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Vintage Interface v2",
+      "When": {
+        "HasMod |contains=ManaKirel.VintageInterface2": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "Void's Weird Wonders",
+      "When": {
+        "HasMod |contains=VWW.CP.WeirdInterface": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "VPR-Inspired UI",
+      "When": {
+        "HasMod |contains=Dora.VPRUI": true
+      }
+    },
+    {
+      "Name": "CurrentRecolor",
+      "Value": "{{Recolor}}",
+      "When": {
+        "Recolor |contains=Auto": false
+      }
+    }
+  ],
+  "Changes": [
+    {
+      "LogName": "Skip or Socialize - Recolor",
+      "Action": "EditImage",
+      "Target": "Mods/dylanjames.skiporsocialize/Skip",
+      "FromFile": "assets/{{CurrentRecolor}}/Skip.png",
+      "When": {
+        "CustomInterface": "false"
+      }
+    },
+    {
+      "LogName": "Skip or Socialize - Custom Recolor",
+      "Action": "EditImage",
+      "Target": "Mods/dylanjames.skiporsocialize/Skip",
+      "FromFile": "assets/Custom/Skip.png",
+      "When": {
+        "CustomInterface": "true"
+      }
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{ 
+	"Changes": [
+		
+		{   "LogName": "Movie Theatre Jorts",
+			"Action": "EditData", 
+			"Target": "Data/MoviesReactions",	 
+			"Entries": {
+				
+				//Jorts
+				"JortsCat": {
+				"NPCName": "JortsCat",
+				"Reactions": [
+					{
+						"Tag": "spring_movie_0",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.0}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"{{i18n:JortsCat.Movies.26}}\"",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.1}}"
+							}
+						},
+						"ID": "reaction_0"
+					},
+					{
+						"Tag": "summer_movie_0",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.2}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"{{i18n:JortsCat.Movies.25}}\"/emote JortsCat 52",
+								"Text": "{{i18n:JortsCat.Movies.3}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.4}}"
+							}
+						},
+						"ID": "reaction_1"
+					},
+					{
+						"Tag": "fall_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.5}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JortsCat 8",
+								"Text": "{{i18n:JortsCat.Movies.6}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.7}}"
+							}
+						},
+						"ID": "reaction_2"
+					},
+					{
+						"Tag": "winter_movie_0",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.8}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"{{i18n:JortsCat.Movies.24}}\"",
+								"Text": "{{i18n:JortsCat.Movies.9}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.10}}"
+							}
+						},
+						"ID": "reaction_3"
+					},
+					{
+						"Tag": "spring_movie_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.11}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"{{i18n:JortsCat.Movies.23}}\"",
+								"Text": "{{i18n:JortsCat.Movies.12}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.13}}"
+							}
+						},
+						"ID": "reaction_4"
+					},
+					{
+						"Tag": "summer_movie_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.14}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.15}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.16}}"
+							}
+						},
+						"ID": "reaction_5"
+					},
+					{
+						"Tag": "fall_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.17}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"{{i18n:JortsCat.Movies.22}}\"",
+								"Text": "{{i18n:JortsCat.Movies.18}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.19}}"
+							}
+						},
+						"ID": "reaction_6"
+					},
+					{
+						"Tag": "winter_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.27}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "showFrame JortsCat 36/message \"{{i18n:JortsCat.Movies.20}}\"",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JortsCat.Movies.21}}"
+							}
+						},
+						"ID": "reaction_7"
+					},
+				],
+				},
+			},
+		},
+
+		{   "LogName": "Movie Theatre Jorts",
+			"Action": "EditData", 
+			"Target": "Data/MoviesReactions",	 
+			"Entries": {
+				
+				//Jean
+				"JeanCat": {
+				"NPCName": "JeanCat",
+				"Reactions": [
+					{
+						"Tag": "spring_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.0}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.1}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.2}}"
+							}
+						},
+						"ID": "reaction_0"
+					},
+					{
+						"Tag": "summer_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.3}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JeanCat 32",
+								"Text": "{{i18n:JeanCat.Movies.4}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.5}}"
+							}
+						},
+						"ID": "reaction_1"
+					},
+					{
+						"Tag": "fall_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.6}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JeanCat 40",
+								"Text": "{{i18n:JeanCat.Movies.7}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.8}}"
+							}
+						},
+						"ID": "reaction_2"
+					},
+					{
+						"Tag": "winter_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.9}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote JeanCat 28",
+								"Text": "{{i18n:JeanCat.Movies.10}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.11}}"
+							}
+						},
+						"ID": "reaction_3"
+					},
+					{
+						"Tag": "spring_movie_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.12}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "shake JeanCat 3000/pause 500/message \"{{i18n:JeanCat.Movies.13}}\"",
+								"Text": "{{i18n:JeanCat.Movies.14}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.15}}"
+							}
+						},
+						"ID": "reaction_4"
+					},
+					{
+						"Tag": "summer_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.16}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"{{i18n:JeanCat.Movies.25}}\"",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.17}}"
+							}
+						},
+						"ID": "reaction_5"
+					},
+					{
+						"Tag": "fall_movie_1",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.18}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "warp JeanCat -999 -999/emote farmer 16/message \"{{i18n:JeanCat.Movies.19}}\"/pause 500/emote farmer 40/message \"{{i18n:JeanCat.Movies.24}}\"",
+								"Text": "{{i18n:JeanCat.Movies.20}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.21}}"
+							}
+						},
+						"ID": "reaction_6"
+					},
+					{
+						"Tag": "winter_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.22}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "message \"{{i18n:JeanCat.Movies.26}}\"",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:JeanCat.Movies.23}}"
+							}
+						},
+						"ID": "reaction_7"
+					},
+				]
+			},
+			},
+		}
+
+		
+	]
+}

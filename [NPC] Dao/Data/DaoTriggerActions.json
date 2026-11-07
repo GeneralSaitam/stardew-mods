@@ -1,0 +1,97 @@
+{
+    "Changes": [
+        {
+            "LogName": "Dao 8 Heart Event Triggers",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Dao2YearCount": {
+                    "Id": "{{ModId}}_Dao2YearCount",
+                    "Trigger": "DayStarted",
+                    "Condition": "!PLAYER_HAS_SEEN_EVENT Current {{ModId}}_Dao8Heart",
+                    "Actions": [
+                        "IncrementStat Dao2YearTimer 1"
+                    ],
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_DaoPost6HeartCount": {
+                    "Id": "{{ModId}}_DaoPost6HeartCount",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModId}}_Dao6Heart, !PLAYER_HAS_SEEN_EVENT Current {{ModId}}_Dao8Heart",
+                    "Actions": [
+                        "IncrementStat DaoPost6HeartTimer 1"
+                    ],
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_Dao8HeartFlag": {
+                    "Id": "{{ModId}}_Dao8HeartFlag",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_STAT Current Dao2YearTimer 225, !PLAYER_HEARTS Current AirynDao 0 3, !PLAYER_HAS_CONVERSATION_TOPIC Current Dao_PostCatalyst_Spacer\" \"PLAYER_STAT Current DaoPost6HeartTimer 20, PLAYER_HEARTS Current AirynDao 8\"",
+                    "Actions": [
+                        "AddMail Current Dao8HeartFlag Received"
+                    ]
+                },
+                "{{ModId}}_DaoLeavesFlag": {
+                    "Id": "{{ModId}}_DaoLeavesFlag",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_STAT Current Dao2YearTimer 245\" \"PLAYER_HAS_SEEN_EVENT Current {{ModId}}_Dao8Heart, !PLAYER_HAS_CONVERSATION_TOPIC Current Dao_Wanderlust_Spacer\"",
+                    "Actions": [
+                        "AddMail Current DaoLeavesFlag Received",
+                        "AddMail Current DaoTravellingInitialFlag Received"
+                    ]
+                },
+                "{{ModId}}_DaoTravellingDate": {
+                    "Id": "{{ModId}}_DaoTravellingDate",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current DaoLeavesFlag Received, !PLAYER_HAS_MAIL Current DaoTravellingInitialFlag Received",
+                    "Actions": [
+                        "AddMail Current DaoTravellingDate{{Random:3,10,17,22}} Received"
+                    ]
+                },
+                "{{ModId}}_DaoTravelling": {
+                    "Id": "{{ModId}}_DaoTravelling",
+                    "Trigger": "DayStarted",
+                    "Condition": "ANY \"PLAYER_HAS_MAIL Current DaoTravellingInitialFlag, !PLAYER_HAS_CONVERSATION_TOPIC Current Dao_Wanderlust_Spacer\" \"PLAYER_HAS_MAIL Current DaoTravellingDate3 Received, DAY_OF_MONTH 3, !PLAYER_HAS_CONVERSATION_TOPIC Current DaoTravellingCT\" \"PLAYER_HAS_MAIL Current DaoTravellingDate10 Received, DAY_OF_MONTH 10, !PLAYER_HAS_CONVERSATION_TOPIC Current DaoTravellingCT\" \"PLAYER_HAS_MAIL Current DaoTravellingDate17 Received, DAY_OF_MONTH 17, !PLAYER_HAS_CONVERSATION_TOPIC Current DaoTravellingCT\" \"PLAYER_HAS_MAIL Current DaoTravellingDate22 Received, DAY_OF_MONTH 22, !PLAYER_HAS_CONVERSATION_TOPIC Current DaoTravellingCT\"",
+                    "Actions": [
+                        "AddMail Current DaoTravellingFlag Received",
+                        "AddConversationTopic DaoTravellingCT 5"
+                    ]
+                },
+                "{{ModId}}_DaoReturns": {
+                    "Id": "{{ModId}}_DaoReturns",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"PLAYER_HAS_MAIL Current DaoTravellingFlag Received, !PLAYER_HAS_CONVERSATION_TOPIC Current DaoTravellingCT\" \"PLAYER_HAS_MAIL Current DaoTravellingInitialFlag Received, !PLAYER_HAS_CONVERSATION_TOPIC Current DaoTravellingCT\"",
+                    "Actions": [
+                        "RemoveMail Current DaoTravellingFlag Received",
+                        "RemoveMail Current DaoTravellingInitialFlag Received"
+                    ],
+                    "MarkActionApplied": false
+                },
+                "{{ModId}}_DaoReturnsCT": {
+                    "Id": "{{ModId}}_DaoReturnsCT",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"PLAYER_HAS_MAIL Current DaoTravellingFlag Received, !PLAYER_HAS_CONVERSATION_TOPIC Current DaoTravellingCT\" \"PLAYER_HAS_MAIL Current DaoTravellingInitialFlag Received, !PLAYER_HAS_CONVERSATION_TOPIC Current DaoTravellingCT\"",
+                    "Actions": [
+                        "AddConversationTopic DaoReturns 3"
+                    ]
+                },
+                "{{ModId}}_DaoTravellingDateReset": {
+                    "Id": "{{ModId}}_DaoTravellingDateReset",
+                    "Trigger": "DayEnding",
+                    "Condition": "DAY_OF_MONTH 28",
+                    "Actions": [
+                        "RemoveMail Current DaoTravellingDate3 Received",
+                        "RemoveMail Current DaoTravellingDate10 Received",
+                        "RemoveMail Current DaoTravellingDate17 Received",
+                        "RemoveMail Current DaoTravellingDate22 Received",
+                        "RemoveMail Current DaoReturns_AirynDao Received",
+                        "MarkActionApplied Current {{ModId}}_DaoTravelling false",
+                        "MarkActionApplied Current {{ModId}}_DaoTravellingDate false",
+                        "MarkActionApplied Current {{ModId}}_DaoReturnsCT false"
+                    ],
+                    "MarkActionApplied": false
+                }
+            }
+        }
+    ]
+}

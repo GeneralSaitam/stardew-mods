@@ -1,0 +1,113 @@
+ {
+
+   "Changes": [
+ 
+    {
+        "LogName": "Load Furniture Textures",
+        "Action": "Load",
+        "Target": "Mods/HXW.DecoPlants/Furniture",
+        "FromFile": "assets/{{TargetWithoutPath}}_{{Recolor}}.png"
+    },
+
+//////////////////////////////
+// foliage recolor overlays //
+//////////////////////////////
+
+
+{
+    "LogName": "Foliage Recolor - Earthy",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.DecoPlants/Furniture,",
+    "FromFile": "assets/Foliage_Earthy.png",
+    "PatchMode":"Overlay",
+    "When": {"Foliage": "Earthy"}
+},
+
+{
+    "LogName": "Foliage Recolor - VPR",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.DecoPlants/Furniture,",
+    "FromFile": "assets/Foliage_VPR.png",
+    "PatchMode":"Overlay",
+    "When": {"Foliage": "VPR"}
+},
+
+{
+    "LogName": "Foliage Recolor - Starblue",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.DecoPlants/Furniture,",
+    "FromFile": "assets/Foliage_Starblue.png",
+    "PatchMode":"Overlay",
+    "When": {"Foliage": "Starblue"}
+},
+
+/////////////////////
+// Flower Overlays //
+/////////////////////
+
+
+{
+    "LogName": "Flowers Recolor - Blue",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.DecoPlants/Furniture,",
+    "FromFile": "assets/Flowers_Blue.png",
+    "PatchMode":"Overlay",
+    "When": {"Flowers": "Blue"}
+},
+
+{
+    "LogName": "Flowers Recolor - Chamomile",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.DecoPlants/Furniture,",
+    "FromFile": "assets/Flowers_Chamomile.png",
+    "PatchMode":"Overlay",
+    "When": {"Flowers": "Chamomile"}
+},
+
+{
+    "LogName": "Flowers Recolor - Lily",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.DecoPlants/Furniture,",
+    "FromFile": "assets/Flowers_Lily.png",
+    "PatchMode":"Overlay",
+    "When": {"Flowers": "Lily"}
+},
+
+{
+    "LogName": "Flowers Recolor - Pansy",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.DecoPlants/Furniture,",
+    "FromFile": "assets/Flowers_Pansy.png",
+    "PatchMode":"Overlay",
+    "When": {"Flowers": "Pansy"}
+},
+
+{
+    "LogName": "Flowers Recolor - Violet",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.DecoPlants/Furniture,",
+    "FromFile": "assets/Flowers_Violet.png",
+    "PatchMode":"Overlay",
+    "When": {"Flowers": "Violet"}
+},
+
+{
+    "LogName": "Flowers Recolor - Rosebud",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.DecoPlants/Furniture,",
+    "FromFile": "assets/Flowers_Rosebud.png",
+    "PatchMode":"Overlay",
+    "When": {"Flowers": "Rosebud"}
+},
+
+{
+    "LogName": "Flowers Recolor - Sunflower",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.DecoPlants/Furniture,",
+    "FromFile": "assets/Flowers_Sunflower.png",
+    "PatchMode":"Overlay",
+    "When": {"Flowers": "Sunflower"}
+}
+
+    ]
+}

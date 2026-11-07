@@ -1,0 +1,292 @@
+{
+    "Changes": [
+
+        {
+            //set home to the warp room
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Clint": {
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "{{ModId}}_WarpRoom_Clint",
+                            "Tile": {
+                                "X": 4,
+                                "Y": 7
+                            },
+                            "Direction": "left"
+                        }
+                    ],
+                }
+            },
+        },
+
+        //sleep frames for jail
+        {
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "{{ModId}}_clint_snooze": "43/43/43//laying_down/offset -16 20",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Clint",
+            "Entries": {
+                "{{ModId}}_clint_snooze": "{{i18n: clint_snooze}}",
+            }
+        },
+
+        {
+            //Clint arrest setup via custom response when giving emily a movie invitation
+            "LogName": "Emily custom movie theater response initiates a single-day CT",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries": {
+                "MovieInvitation": "{{i18n:Emily_AcceptGift_MovieInvite}}#$action AddConversationTopic {{ModId}}_EmilyMovieInvite 0",
+                "{{ModId}}_EmilyMovieInvite":"{{i18n:EmilyMovieInvite_Emily}}",
+                "{{ModId}}_ClintRestrained":"{{i18n:ClintRestrained_Emily}}",
+                "{{ModId}}_ClintInJail":"{{i18n:ClintInJail_Emily}}",
+                "{{ModId}}_ClintHouseArrest":"{{i18n:ClintHouseArrest_Emily}}",
+                "eventseen_{{ModId}}_ClintRepeatArrest": "{{i18n:ClintRepeatJail_Emily}}",
+            },
+            "When": {
+                "HasSeenEvent |contains=239790004": true,
+                "HasSeenEvent |contains={{ModId}}_ClintRestrainingOrder": false,
+            },
+        },
+        {
+            //Emily movie ticket and other extra Clint dialogue
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries": {
+                "{{ModId}}_EmilyMovieInvite":"{{i18n:EmilyMovieInvite_Clint}}",
+                "{{ModId}}_ClintRestrained":"{{i18n:ClintRestrained_Clint}}",
+                "{{ModId}}_ClintInJail": "{{i18n:ClintInJail_Clint}}",
+                "{{ModId}}_ClintHouseArrest": "{{i18n:ClintInJail_Clint}}",
+                "eventseen_{{ModId}}_ClintRepeatArrest": "{{i18n:ClintRepeatJail_Clint}}",
+            },
+        },
+        //violating restraining order
+		{
+			"Action": "EditData",
+			"Target": "Data/animationDescriptions",
+			"Entries": {
+                "sdvlao_clint_waiting": "4/4/4//offset 8 36",
+				"sdvlao_clint_stalking": "4/4/4//offset 8 36",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Clint",
+            "Entries": {
+              "sdvlao_clint_waiting": "{{i18n:clint_waiting}}",
+              "sdvlao_clint_stalking": "{{i18n:clint_stalking}}#$action AddMail Current {{ModId}}_MailFlag_CaughtClint received",                  
+            },
+        },
+        //load a few crane game assets as 'characters' for use in events
+        {
+            "Action": "Load",
+            "Target": "Characters/LAOSV_Flamingo",
+            "FromFile": "assets/EventObjects/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/LAOSV_Bunny",
+            "FromFile": "assets/EventObjects/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/LAOSV_StarCookie",
+            "FromFile": "assets/EventObjects/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/LAOSV_Stuffy",
+            "FromFile": "assets/EventObjects/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/LAOSV_Sunflower",
+            "FromFile": "assets/EventObjects/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/LAOSV_Junimo",
+            "FromFile": "assets/EventObjects/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/LAOSV_CraneMan",
+            "FromFile": "assets/EventObjects/{{TargetWithoutPath}}.png"
+        },
+
+        // Theater event
+        //testing: debug eventbyid sdvhead.LawAndOrderSV_ClintRestrainingOrder
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/MovieTheater",
+            "Entries": {
+                "{{ModId}}_ClintRestrainingOrder/ActiveDialogueEvent {{ModId}}_EmilyMovieInvite/!ActiveDialogueEvent {{ModId}}_ClintHouseArrest/!ActiveDialogueEvent {{ModId}}_ClintInJail": "continue/-1000 -1000/farmer 1000 1000 0 Emily 1000 1000 0 {{Shannon}} 9 8 2 Abigail 8 9 1 Clint 1000 1000 0/skippable/addConversationTopic {{ModId}}_ClintRestrained 0/removeTile 2 9 Buildings/removeTile 2 8 Front/removeTile 10 7 Buildings/removeTile 10 6 Front/removeTile 9 7 Buildings/removeTile 9 6 Front/warp Clint 2 9/addTemporaryActor LAOSV_CraneMan 16 32 2 10 2 false/viewport 9 9 true/pause 2000/playSound doorClose/warp Emily 14 15/pause 1000/advancedMove Emily false 0 -3 2 100/proceedPosition Emily/pause 500/playSound doorClose/warp farmer 14 15/pause 1000/emote Emily 32 true/pause 500/advancedMove farmer false 0 -5 3 500 -5 0 4 100/pause 300/advancedMove Emily false 0 -3 -4 0 3 100/proceedPosition Emily/emote {{Shannon}} 32 true/pause 200/emote Abigail 32 true/pause 500/pause 1000/shake LAOSV_CraneMan 2000/emote LAOSV_CraneMan 12/pause 1200/FaceDirection Clint 1 true/pause 400/emote Clint 16 true/pause 200/shake Clint 1500/pause 1500/advancedMove Clint false  1 0 0 1 4 0 0 -1 1 100/pause 1000/emote LAOSV_CraneMan 16 true/pause 200/shake LAOSV_CraneMan 400/pause 800/advancedMove LAOSV_CraneMan false 0 -1 4 100/pause 1600/emote LAOSV_CraneMan 32 true/pause 1200/emote Clint 40 true/pause 400/faceDirection Abigail 3 true/pause 400/emote Abigail 8 true/pause 200/faceDirection farmer 3 true/pause 200/facedirection {{Shannon}} 3 true/advancedMove Abigail false 0 1 4 100/pause 200/emote Emily 8 true/pause 200/speak Emily  \"{{i18n:Events.ClintRestrain.001}}\"/pause 200/shake Clint 400/pause 800/speak Clint \"{{i18n:Events.ClintRestrain.002}}\"/pause 200/shake Clint 400/pause 400/playSound coin/addTemporaryActor LAOSV_Bunny 16 32 8 9 2 false/positionOffset LAOSV_Bunny -12 -12/pause 800/emote Emily 40 true/pause 400/shake Clint 400/pause 200/textAboveHead Clint \"{{i18n:Events.ClintRestrain.003}}\"/pause 200/shake Clint 400/pause 400/playSound coin/addTemporaryActor LAOSV_Stuffy 16 16 8 9 2 false/positionOffset LAOSV_Stuffy 12 12/pause 600/advancedMove Abigail false 0 1 4 100/advancedMove farmer false 1 0 3 100/pause 800/shake Clint 400/pause 400/playSound coin/addTemporaryActor LAOSV_Flamingo 16 32 8 9 2 false/positionOffset LAOSV_Flamingo 24 -24/pause 400/emote Emily 8 true/pause 800/textAboveHead Clint \"{{i18n:Events.ClintRestrain.004}}\"/pause 1200/playSound coin/addTemporaryActor LAOSV_StarCookie 16 16 9 9 2 false/positionOffset LAOSV_StarCookie -16 -16/pause 400/emote Clint 40/pause 400/textAboveHead Clint \"{{i18n:Events.ClintRestrain.005}}\"/pause 400/shake Clint 400/pause 400/playSound coin/addTemporaryActor LAOSV_Junimo 16 32 8 9 2 false/positionOffset LAOSV_Junimo -12 44/pause 400/playSound coin/addTemporaryActor LAOSV_Sunflower 16 32 9 9 2 false/positionOffset LAOSV_Sunflower 8 16/pause 1200/emote Emily 28 true/pause 1200/speak Emily \"{{i18n:Events.ClintRestrain.006}}\"/pause 400/shake Emily 400/pause 400/playSound coin/warp LAOSV_Sunflower 1000 1000/pause 800/speak Emily \"{{i18n:Events.ClintRestrain.007}}\"/pause 500/speak Clint  \"{{i18n:Events.ClintRestrain.008}}\"/pause 800/faceDirection {{Shannon}} 2 true/pause 200/speak {{Shannon}} \"{{i18n:Events.ClintRestrain.009}}\"/pause 400/shake {{Shannon}} 400/pause 400/playSound coin/warp LAOSV_StarCookie 1000 1000/pause 600/speak {{Shannon}} \"{{i18n:Events.ClintRestrain.010}}\"/pause 600/advancedMove {{Shannon}} false -2 0 2 400/proceedPosition {{Shannon}}/faceDirection Clint 0 true/pause 600/shake {{Shannon}} 200/pause 200/playSound coin/pause 800/speak {{Shannon}} \"{{i18n:Events.ClintRestrain.011}}\"/pause 1000/speak Clint  \"{{i18n:Events.ClintRestrain.012}}\"/pause 1000/advancedMove Abigail false 4 0 0 -3 3 100/proceedPosition Abigail/pause 200/faceDirection Emily 1 true/pause 200/faceDirection farmer 1 true/faceDirection {{Shannon}} 1 true/pause 200/speak Abigail  \"{{i18n:Events.ClintRestrain.013}}\"/pause 1000/advancedMove Abigail false 1 0 0 -4 4 100/advancedMove Emily false 4 0 0 -5 4 100/pause 200/advancedMove farmer false 3 0 0 -6 4 100/pause 200/advancedMove {{Shannon}} false 3 0 1 300 3 500/proceedPosition {{Shannon}}/pause 700/playSound doorClose/warp Abigail 1000 1000/pause 500/textAboveHead {{Shannon}} \"{{i18n:Events.ClintRestrain.014}}\"/pause 400/advancedMove {{Shannon}} false 4 0 0 -4 4 100/pause 1200/playSound doorClose/warp Emily 1000 1000/pause 400/faceDirection farmer 2 true/faceDirection Clint 2/pause 200/faceDirection Clint 3/pause 200/faceDirection farmer 1 true/pause 200/emote Clint 40/pause 100/playSound doorClose/warp {{Shannon}} 1000 1000/pause 200/faceDirection farmer 2 true/pause 200/advancedMove LAOSV_Junimo false 6 0 0 5/pause 600/jump LAOSV_Junimo 2/pause 400/emote farmer 16 true/pause 600/jump LAOSV_Junimo 2/pause 4000/warp LAOSV_Junimo 1000 1000/pause 1200/advancedMove Clint false 0 3 5 0 0 3 2 100/pause 600/emote Clint 28 true/pause 1000/globalFade/viewport -1000 -1000/end position 13 4",
+            },
+        },
+        {
+            //update Clint's schedule during the restraining order, this is the part that triggers the turn in eligibility
+            "Action": "EditData",
+            "Target": "Characters/schedules/Clint",
+            "Entries": {
+                "rain": "GOTO spring",
+                "GreenRain": "GOTO spring",
+                "winter_16": "610 Blacksmith 3 13 2 \"Strings\\schedules\\Clint:winter_16.000\"/1030 Hospital 12 14 0 \"Strings\\schedules\\Clint:winter_16.001\"/1330 Hospital 4 6 1 \"Strings\\schedules\\Clint:winter_16.002\"/Blacksmith 8 12 1 clint_hammer/2400 Blacksmith 10 4 1 clint_sleep",
+                "Fri": "GOTO spring",
+                "winter_15": "610 Blacksmith 3 13 2/1700 Beach 37 33 1 \"Strings\\schedules\\Clint:winter_15.000\"/2400 Blacksmith 10 4 1 clint_sleep",
+                "spring": "610 Blacksmith 3 13 2/1700 Blacksmith 8 12 1 clint_hammer/2200 Blacksmith 10 4 1 clint_sleep",
+                "Tue":"610 Blacksmith 3 13 2/830 SeedShop 20 22 1 sdvlao_clint_waiting \"Strings\\schedules\\Clint:sdvlao_clint_waiting\"/1120 SeedShop 20 22 1 sdvlao_clint_stalking \"Strings\\schedules\\Clint:sdvlao_clint_stalking\"/1630 Blacksmith 8 12 1 clint_hammer/2200 Blacksmith 10 4 1 clint_sleep",
+            },
+            "When": {
+                "HasSeenEvent | contains={{ModId}}_ClintRestrainingOrder": true,
+                "HasSeenEvent | contains={{ModId}}_ClintSurrender": false,
+                //"HasConversationTopic |contains={{ModId}}_PrisonBed1": false,
+            },
+        },
+        {
+            //update Emily marriage schedule during the restraining order
+            "Action": "EditData",
+            "Target": "Characters/schedules/Emily",
+            "Entries": {
+                "marriage_Tue": "800 HaleyHouse 16 5 2/1000 SeedShop 27 16 2/1300 SeedShop 26 19 2 emily_exercise/1600 Saloon 15 17 2 square_5_1_0/2430 HaleyHouse 21 4 1 emily_sleep",
+            },
+            "When": {
+                "HasSeenEvent | contains={{ModId}}_ClintRestrainingOrder": true,
+                "HasSeenEvent | contains={{ModId}}_ClintSurrender": false,
+                //"HasConversationTopic |contains={{ModId}}_PrisonBed1": false,
+            },
+        },
+        {
+            // Remove date event
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "101":null,
+            },
+            "When": {
+                "HasSeenEvent | contains={{ModId}}_ClintRestrainingOrder": true,
+            },
+        },
+        {
+            // Remove advice event
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                "97":null,
+            },
+            "When": {
+                "HasSeenEvent | contains={{ModId}}_ClintRestrainingOrder": true,
+            },
+        },
+        {
+            //doesn't visit island during restraining order
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Clint": {
+                    "CanVisitIsland": "False"
+                }
+            },
+            "When": {
+                "HasSeenEvent | contains={{ModId}}_ClintRestrainingOrder": true,
+                "HasSeenEvent | contains={{ModId}}_ClintSurrender": false,
+            },
+        },
+        {
+            //Dialogue, conversation topic changes for after the restraining order
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries": {
+                "GreenRain": "{{i18n:clint_nosaloon}}",
+                "GreenRainFinished": "{{i18n:clint_nosaloon}}",
+                "GreenRain_2": "{{i18n:clint_nosaloon}}",
+                "eventSeen_101_memory_oneweek": null,
+            },
+            "When": {
+                "HasSeenEvent |contains={{ModId}}_ClintRestrainingOrder": true,
+                "HasSeenEvent | contains={{ModId}}_ClintSurrender": false,
+                //"HasConversationTopic |contains={{ModId}}_ClintInJail":false,
+            },
+        },
+        
+        //Initial arrest event (house arrest or jail)
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/{{ModId}}_Jail",
+            "Entries": {
+                //testing:
+                "{{ModId}}_ClintSurrender/LocalMail {{ModId}}_MailFlag_CaughtClint/!ActiveDialogueEvent {{ModId}}_ClintInJail/!ActiveDialogueEvent {{ModId}}_ClintHouseArrest/": "{{ModId}}_ModernDramedy/10 20/{{Russell}} 12 19 1 {{Shannon}} 10 20 2 farmer 1000 1000 0 Clint 1000 1000 0/broadcastEvent/pause 2000/playSound doorClose/warp farmer 10 24/pause 400/faceDirection {{Russell}} 2 true/pause 400/speak {{Russell}} \"{{i18n:Events.ClintSurrender.001}}\"/pause 300/emote {{Shannon}} 32/pause 800/advancedMove farmer false 0 -1 2 0 4 100/pause 1200/playSound doorClose/pause 400/warp Clint 10 24/pause 400/faceDirection farmer 3 true/advancedMove Clint false 0 -1 4 100/pause 800/speak {{Russell}} \"{{i18n:Events.ClintSurrender.002}}\"/pause 1200/speak Clint \"{{i18n:Events.ClintSurrender.003}}\"/pause 600/faceDirection Clint 1/pause 600/faceDirection Clint 0/pause 600/speak Clint \"{{i18n:Events.ClintSurrender.004}}\"/pause 400/speak {{Russell}} \"{{i18n:Events.ClintSurrender.005}}\"/pause 400/speak Clint \"{{i18n:Events.ClintSurrender.006}}\"/pause 400/advancedMove {{Russell}} false 0 -1 -5 0 4 100/advancedMove Clint false -3 0 0 -2 4 100/proceedPosition {{Russell}}/pause 200/doAction 7 17/pause 400/advancedMove {{Russell}} false 0 -7 -4 0 4 100/advancedMove Clint false 0 -10 -3 0/viewport move -1 0 2000/pause 2000/viewport move 0 -1 4000/advancedMove {{Shannon}} false 0 -2 -4 0 0 4 3 100/pause 200/advancedMove farmer false 0 -1 -4 0 3 100/proceedPosition {{Russell}}/pause 100/doAction 3 10/fade/viewport -1000 -1000/stopAdvancedMoves/warp {{Russell}} 1 7/faceDirection {{Russell}} 1 true/warp Clint 4 7/warp {{Shannon}} 6 22/faceDirection {{Shannon}} 1 true/warp farmer 8 22/pause 500/fade unfade/pause 100/viewport 10 22/pause 1500/speak {{Shannon}} \"{{i18n:Events.ClintSurrender.007}}\"/pause 500/speak {{Shannon}} \"{{i18n:Events.ClintSurrender.008}}\"/pause 500/speak {{Shannon}} \"{{i18n:Events.ClintSurrender.009}}\"/pause 800/quickQuestion {{i18n:Events.ClintSurrender.qqq}}#{{i18n:Events.ClintSurrender.qq1}}#{{i18n:Events.ClintSurrender.qq2}}(break)addConversationTopic {{ModId}}_ClintInJail {{Jailterm_3w}}\\addConversationTopic {{ModId}}_PrisonBed1 {{Jailterm_3w}}\\speak {{Shannon}}  \"{{i18n:Events.ClintSurrender.qq1r}}\"(break)addConversationTopic {{ModId}}_ClintHouseArrest {{Jailterm_3w}}\\speak {{Shannon}}  \"{{i18n:Events.ClintSurrender.qq2r}}\"/pause 800/globalFade/viewport -1000 -1000/pause 1500/message \"{{i18n:Events.ClintSurrender.010}}\"/pause 500/viewport -1000 -1000/end invisible Clint",
+            },
+            "When": {
+                "HasConversationTopic |contains={{ModId}}_PrisonBed1": false,
+            },
+        },
+        //Initial arrest event (house arrest only because prisonbed1 is occupied)
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/{{ModId}}_Jail",
+            "Entries": {
+                "{{ModId}}_ClintSurrenderFull/LocalMail {{ModId}}_MailFlag_CaughtClint/!ActiveDialogueEvent {{ModId}}_ClintInJail/!ActiveDialogueEvent {{ModId}}_ClintHouseArrest/": "{{ModId}}_ModernDramedy/10 20/{{Russell}} 12 19 1 {{Shannon}} 10 20 2 farmer 1000 1000 0 Clint 1000 1000 0/broadcastEvent/pause 2000/playSound doorClose/warp farmer 10 24/pause 400/faceDirection {{Russell}} 2 true/pause 400/speak {{Russell}} \"{{i18n:Events.ClintSurrenderFull.001}}\"/pause 300/emote {{Shannon}} 32/pause 800/advancedMove farmer false 0 -1 2 0 4 100/pause 1200/playSound doorClose/pause 400/warp Clint 10 24/pause 400/faceDirection farmer 3 true/advancedMove Clint false 0 -1 4 100/pause 800/speak {{Russell}} \"{{i18n:Events.ClintSurrenderFull.002}}\"/pause 1200/speak Clint \"{{i18n:Events.ClintSurrenderFull.003}}\"/pause 600/faceDirection Clint 1/pause 600/faceDirection Clint 0/pause 600/speak Clint \"{{i18n:Events.ClintSurrenderFull.004}}\"/pause 400/speak {{Russell}} \"{{i18n:Events.ClintSurrenderFull.005}}\"/pause 400/speak Clint \"{{i18n:Events.ClintSurrenderFull.006}}\"/pause 400/advancedMove {{Russell}} false 0 -1 -5 0 4 100/advancedMove Clint false -3 0 0 -2 4 100/proceedPosition {{Russell}}/pause 200/doAction 7 17/pause 400/advancedMove {{Russell}} false 0 -7 -4 0 4 100/advancedMove Clint false 0 -10 -3 0/viewport move -1 0 2000/pause 2000/viewport move 0 -1 4000/advancedMove {{Shannon}} false 0 -2 -4 0 0 4 3 100/pause 200/advancedMove farmer false 0 -1 -4 0 3 100/proceedPosition {{Russell}}/pause 100/doAction 3 10/fade/viewport -1000 -1000/stopAdvancedMoves/warp {{Russell}} 1 7/faceDirection {{Russell}} 1 true/warp Clint 4 7/warp {{Shannon}} 6 22/faceDirection {{Shannon}} 1 true/warp farmer 8 22/pause 500/fade unfade/pause 100/viewport 10 22/pause 1500/speak {{Shannon}} \"{{i18n:Events.ClintSurrenderFull.007}}\"/pause 500/speak {{Shannon}} \"{{i18n:Events.ClintSurrenderFull.008}}\"/pause 500/speak {{Shannon}} \"{{i18n:Events.ClintSurrenderFull.009}}\"/pause 800/quickQuestion {{i18n:Events.ClintSurrenderFull.qqq}}#{{i18n:Events.ClintSurrenderFull.qq1}}#{{i18n:Events.ClintSurrenderFull.qq2}}(break)speak {{Shannon}} \"{{i18n:Events.ClintSurrenderFull.qq1r}}\"(break)addConversationTopic {{ModId}}_ClintHouseArrest {{Jailterm_3w}}\\speak {{Shannon}} \"{{i18n:Events.ClintSurrenderFull.qq2r}}\"/pause 800/globalFade/viewport -1000 -1000/pause 1500/message \"{{i18n:Events.ClintSurrenderFull.010}}\"/pause 500/viewport -1000 -1000/end",
+            },
+            "When": {
+                "HasConversationTopic |contains={{ModId}}_PrisonBed1": true,
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries": {
+                "{{ModId}}_ClintInJail": "{{i18n:ClintInJail_Emily}}",
+                "{{ModId}}_ClintHouseArrest": "{{i18n:ClintHouseArrest_Emily}}"
+            }
+        },
+
+
+        //repeatable arrest trigger (farmer invites emily at spring flower dance)
+        //to remove CT response memory, remove the mail flag <npc name>_<conversation topic>
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries": {
+                "FlowerDance_Accept": "{{i18n:Emily_FlowerDance_Accept}}#$action AddMail Current {{ModId}}_Clint_ThreatMail tomorrow",
+                "FlowerDance_Accept_Spouse": "{{i18n:Emily_FlowerDance_AcceptSpouse}}#$action AddMail Current {{ModId}}_Clint_ThreatMail tomorrow",
+            },
+            "When": {
+                "HasSeenEvent | contains={{ModId}}_ClintSurrender": true,
+                "HasConversationTopic |contains={{ModId}}_ClintInJail":false,
+                "HasConversationTopic |contains={{ModId}}_ClintHouseArrest":false,
+            },
+        },
+
+        {
+            //repeat arrest event for either jail or house arrest (prison bed 1 available)
+            "Action": "EditData",
+            "Target": "Data/Events/Blacksmith",
+            "Entries": {
+                "{{ModId}}_ClintRepeatArrest/LocalMail {{ModId}}_Clint_ThreatMail/!ActiveDialogueEvent {{ModId}}_ClintInJail/!ActiveDialogueEvent {{ModId}}_ClintHouseArrest": "{{ModId}}_ModernDramedy/5 14/{{Russell}} 1000 1000 0 {{Shannon}} 1000 1000 0 farmer 1000 1000 0 Clint 3 13 2/broadcastEvent/addMailReceived {{ModId}}_FellForPancakes true/changeMapTile Front 4 13 807/pause 2000/playSound doorClose/warp farmer 5 19/pause 500/advancedMove farmer false 0 -1 4 100/pause 1500/speak Clint \"{{i18n:Events.ClintRepeatArrest.001}}\"/pause 500/advancedMove farmer false 0 -3 -2 0 4 100/pause 2500/playSound sdvhead.LawAndOrderSV_Paper/pause 300/changeMapTile Front 4 13 649/pause 1600/emote Clint 8 true/pause 400/speak Clint \"{{i18n:Events.ClintRepeatArrest.002}}\"/pause 700/quickQuestion {{i18n:Events.ClintRepeatArrest.003}}#{{i18n:Events.ClintRepeatArrest.004}}#{{i18n:Events.ClintRepeatArrest.005}}(break)pause 500\\speak Clint \"{{i18n:Events.ClintRepeatArrest.006}}\"(break)pause 500\\speak Clint \"{{i18n:Events.ClintRepeatArrest.007}}\"/pause 1000/playSound doorClose/warp {{Russell}} 5 19/pause 500/jump Clint/advancedMove {{Russell}} false 0 -1 1 0 4 100/pause 600/playSound doorClose/warp {{Shannon}} 5 19/pause 500/advancedMove {{Shannon}} false 0 -1 -1 0 4 100/pause 400/emote Clint 40 true/pause 800/speak Clint \"{{i18n:Events.ClintRepeatArrest.008}}\"/pause 400/speak Clint \"{{i18n:Events.ClintRepeatArrest.009}}\"/pause 400/advancedMove {{Shannon}} false 0 -2 4 100/pause 200/faceDirection farmer 2 true/pause 800/speak {{Shannon}} \"{{i18n:Events.ClintRepeatArrest.010}}\"/pause 200/advancedMove farmer false 1 0 3 100/pause 400/advancedMove {{Shannon}} false -1 0 0 -1 4 500 1 800 4 100/pause 2000/speak {{Shannon}} \"{{i18n:Events.ClintRepeatArrest.011}}\"/pause 400/shake Clint 600/pause 1000/speak Clint \"{{ClintEventRepeatSwitch}}\"/pause 500/advancedMove {{Russell}} false 0 -1 4 100/proceedPosition {{Russell}}/pause 400/speak {{Russell}} \"{{i18n:Events.ClintRepeatArrest.013}}\"/pause 300/emote Clint 40 true/pause 900/speak Clint \"{{i18n:Events.ClintRepeatArrest.014}}\"/pause 200/faceDirection farmer 2 true/pause 300/speak {{Russell}} \"{{i18n:Events.ClintRepeatArrest.015}}\"/pause 500/quickQuestion {{i18n:Events.ClintRepeatArrest.qqq}}#{{i18n:Events.ClintRepeatArrest.qq1}}#{{i18n:Events.ClintRepeatArrest.qq2}}#{{i18n:Events.ClintRepeatArrest.qq3}}(break)pause 500\\speak {{Russell}} \"{{i18n:Events.ClintRepeatArrest.qq1a}}\"\\pause 500\\speak {{Russell}} \"{{i18n:Events.ClintRepeatArrest.qq1b}}\"(break)pause 500\\speak {{Russell}} \"{{i18n:Events.ClintRepeatArrest.qq2a}}\"\\AddConversationTopic {{ModId}}_ClintInJail {{JailTerm_12w}}\\AddConversationTopic {{ModId}}_PrisonBed1 {{JailTerm_12w}}(break)pause 500\\speak {{Russell}} \"{{i18n:Events.ClintRepeatArrest.qq3a}}\"\\AddConversationTopic {{ModId}}_ClintHouseArrest {{JailTerm_12w}}/pause 400/emote {{Russell}} 40/pause 200/textAboveHead {{Russell}} \"{{i18n:Events.ClintRepeatArrest.016}}\"/pause 600/advancedMove {{Russell}} false -1 0 0 2 2 100/proceedPosition {{Russell}}/pause 200/warp {{Russell}} 1000 1000/playSound doorClose/pause 400/advancedMove {{Shannon}} false 0 2 4 100/proceedPosition {{Shannon}}/pause 800/textAboveHead {{Shannon}} \"{{i18n:Events.ClintRepeatArrest.017}}\"/pause 1500/advancedMove {{Shannon}} false 2 0 0 2 2 100/pause 500/advancedMove farmer false 0 3 1 0 2 100/globalFade/viewport -1000 -1000/stopAdvancedMoves/end warpOut",
+            },
+            "When": {
+                "HasConversationTopic |contains={{ModId}}_PrisonBed1": false,
+            },
+        },
+        {
+            //repeat arrest event for house arrest only (prison bed 1 occupied)
+            "Action": "EditData",
+            "Target": "Data/Events/Blacksmith",
+            "Entries": {
+                "{{ModId}}_ClintRepeatArrest/LocalMail {{ModId}}_Clint_ThreatMail/!ActiveDialogueEvent {{ModId}}_ClintInJail/!ActiveDialogueEvent {{ModId}}_ClintHouseArrest": "{{ModId}}_ModernDramedy/5 14/{{Russell}} 1000 1000 0 {{Shannon}} 1000 1000 0 farmer 1000 1000 0 Clint 3 13 2/broadcastEvent/addMailReceived {{ModId}}_FellForPancakes true/changeMapTile Front 4 13 807/pause 2000/playSound doorClose/warp farmer 5 19/pause 500/advancedMove farmer false 0 -1 4 100/pause 1500/speak Clint \"{{i18n:Events.ClintRepeatArrest.001}}\"/pause 500/advancedMove farmer false 0 -3 -2 0 4 100/pause 2500/playSound sdvhead.LawAndOrderSV_Paper/pause 300/changeMapTile Front 4 13 649/pause 1600/emote Clint 8 true/pause 400/speak Clint \"{{i18n:Events.ClintRepeatArrest.002}}\"/pause 700/quickQuestion {{i18n:Events.ClintRepeatArrest.003}}#{{i18n:Events.ClintRepeatArrest.004}}#{{i18n:Events.ClintRepeatArrest.005}}(break)pause 500\\speak Clint \"{{i18n:Events.ClintRepeatArrest.006}}\"(break)pause 500\\speak Clint \"{{i18n:Events.ClintRepeatArrest.007}}\"/pause 1000/playSound doorClose/warp {{Russell}} 5 19/pause 500/jump Clint/advancedMove {{Russell}} false 0 -1 1 0 4 100/pause 600/playSound doorClose/warp {{Shannon}} 5 19/pause 500/advancedMove {{Shannon}} false 0 -1 -1 0 4 100/pause 400/emote Clint 40 true/pause 800/speak Clint \"{{i18n:Events.ClintRepeatArrest.008}}\"/pause 400/speak Clint \"{{i18n:Events.ClintRepeatArrest.009}}\"/pause 400/advancedMove {{Shannon}} false 0 -2 4 100/pause 200/faceDirection farmer 2 true/pause 800/speak {{Shannon}} \"{{i18n:Events.ClintRepeatArrest.010}}\"/pause 200/advancedMove farmer false 1 0 3 100/pause 400/advancedMove {{Shannon}} false -1 0 0 -1 4 500 1 800 4 100/pause 2000/speak {{Shannon}} \"{{i18n:Events.ClintRepeatArrest.011}}\"/pause 400/shake Clint 600/pause 1000/speak Clint \"{{ClintEventRepeatSwitch}}\"/pause 500/advancedMove {{Russell}} false 0 -1 4 100/proceedPosition {{Russell}}/pause 400/speak {{Russell}} \"{{i18n:Events.ClintRepeatArrest.013}}\"/pause 300/emote Clint 40 true/pause 900/speak Clint \"{{i18n:Events.ClintRepeatArrest.014}}\"/pause 200/faceDirection farmer 2 true/pause 300/speak {{Russell}} \"{{i18n:Events.ClintRepeatArrestFull.015}}\"/pause 500/quickQuestion {{i18n:Events.ClintRepeatArrest.qqq}}#{{i18n:Events.ClintRepeatArrest.qq1}}#{{i18n:Events.ClintRepeatArrest.qq3}}(break)pause 500\\speak {{Russell}} \"{{i18n:Events.ClintRepeatArrest.qq1a}}\"\\pause 500\\speak {{Russell}} \"{{i18n:Events.ClintRepeatArrest.qq1b}}\"(break)pause 500\\speak {{Russell}} \"{{i18n:Events.ClintRepeatArrest.qq3a}}\"\\AddConversationTopic {{ModId}}_ClintHouseArrest {{JailTerm_12w}}/pause 400/emote {{Russell}} 40/pause 200/textAboveHead {{Russell}} \"{{i18n:Events.ClintRepeatArrest.016}}\"/pause 600/advancedMove {{Russell}} false -1 0 0 2 2 100/proceedPosition {{Russell}}/pause 200/warp {{Russell}} 1000 1000/playSound doorClose/pause 400/advancedMove {{Shannon}} false 0 2 4 100/proceedPosition {{Shannon}}/pause 800/textAboveHead {{Shannon}} \"{{i18n:Events.ClintRepeatArrest.017}}\"/pause 1500/advancedMove {{Shannon}} false 2 0 0 2 2 100/pause 500/advancedMove farmer false 0 3 1 0 2 100/globalFade/viewport -1000 -1000/stopAdvancedMoves/end warpOut",
+            },
+            "When": {
+                "HasConversationTopic |contains={{ModId}}_PrisonBed1": true,
+            },
+        },
+    ]
+}

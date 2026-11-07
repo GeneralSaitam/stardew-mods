@@ -1,0 +1,34 @@
+{
+  "Format": "2.5.0",
+
+
+  "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Skullcave",
+            "FromFile": "assets/SkullcaveSecondkqnukaEntry.tmx",
+            "FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 5 },
+            "ToArea": { "X": 6, "Y": 0, "Width": 5, "Height": 5 },
+
+            "AddWarps": [
+              "7 2 Kqnuka.SkullCaveRemade_SkullCaveSecond_kqnuka 7 14"
+           ]
+        },
+
+        {
+           "Action": "EditMap",
+           "Target": "Maps/Skullcave",
+           "FromFile": "assets/SkullCaveBottomkqnuka.tmx",
+           "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 5 },
+           "ToArea": { "X": 0, "Y": 5, "Width": 16, "Height": 5 }
+        },
+    ],
+
+  "CustomLocations": [
+    {
+       "Name": "Kqnuka.SkullCaveRemade_SkullCaveSecond_kqnuka",
+       "FromMapFile": "assets/SkullCaveSecondkqnuka.tmx"
+    },
+ ],
+
+}

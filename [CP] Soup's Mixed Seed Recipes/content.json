@@ -1,0 +1,38 @@
+{
+	"Format": "2.0.0",
+
+	"Changes": [
+
+	// include objects and recipes
+		{
+			"Action": "Include",
+			"FromFile": "code/objects.json, code/recipes.json"
+		},
+
+	// include shop edits
+		{
+			"Action": "Include",
+			"FromFile": "code/shops.json"
+		},
+
+	// include gift taste edits
+		{
+			"Action": "Include",
+			"FromFile": "code/gifts.json"
+		},
+
+	// include dialogue
+		{
+			"Action": "Include",
+			"FromFile": "code/dialogue.json",
+		},
+
+
+	// load textures
+		{
+			"Action": "Load",
+			"Target": "Soup.MixedSeeds/mixedSeedTea, Soup.MixedSeeds/mixedFlowerSeedSoup",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		}
+	]
+}

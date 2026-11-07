@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="10" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="15">
+ <properties>
+  <property name="AmbientLight" value="95 95 95"/>
+  <property name="DayTiles" value="Front 3 1 256 Front 7 1 256 Front 15 1 256 Front 20 1 256 Front 3 2 288 Front 7 2 288 Front 15 2 288 Front 20 2 288 Front 16 9 1344 Front 22 9 1344"/>
+  <property name="Doors" value="6 12 1 120 14 11 1 120"/>
+  <property name="NPCWarp" value="4 10 BusStop 10 23 4 11 BusStop 10 23"/>
+  <property name="NightTiles" value="Front 3 1 1253 Front 7 1 1253 Front 15 1 1253 Front 20 1 1253 Front 3 2 1285 Front 7 2 1285 Front 15 2 1285 Front 20 2 1285 Front 16 9 1344 Front 22 9 1344 Front 16 9 1347 Front 22 9 1347"/>
+  <property name="Warp" value="4 11 Farm 70 10 5 11 Farm 70 10"/>
+ </properties>
+ <tileset firstgid="1" name="lemurfurniture" tilewidth="16" tileheight="16" tilecount="3392" columns="32">
+  <image source="lemurfurniture.png" width="512" height="1696"/>
+ </tileset>
+ <tileset firstgid="3393" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="3429" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="5605" name="lumi_towninterior" tilewidth="16" tileheight="16" tilecount="3050" columns="25">
+  <image source="lumi_towninterior.png" width="400" height="1952"/>
+ </tileset>
+ <tileset firstgid="8655" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <layer id="1" name="Back" width="10" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,5352,5352,5352,5352,5352,5352,5352,5352,0,
+0,5384,5384,5384,5384,5384,5384,5384,5384,0,
+0,0,5416,5416,5416,5416,5416,5416,0,0,
+0,7762,7763,7763,7763,7763,7763,7788,7764,0,
+0,7787,7788,7788,7788,7788,7788,7788,7789,0,
+0,7787,7788,7788,7788,7788,7788,7788,0,0,
+0,7787,7788,7788,7788,7788,7788,7788,7789,0,
+0,7787,7788,7788,7788,7788,7788,7788,7789,0,
+0,7812,7813,7813,7813,7813,7813,7789,7814,0,
+0,0,0,0,4472,4472,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="10" name="Back2" width="10" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,5416,5416,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,6255,6256,6257,0,0,0,0,0,0,
+0,6280,6281,6282,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="10" height="12">
+  <data encoding="csv">
+0,3431,3439,3439,3439,3439,3439,3439,3431,3440,
+3493,7831,0,0,0,0,0,0,0,3497,
+3493,7830,0,0,0,0,0,0,0,3497,
+3493,5416,5416,5416,5416,5416,7262,7263,5416,3497,
+3493,0,0,0,7286,3213,7287,7288,657,3497,
+3493,0,7881,0,7286,0,59,0,0,3497,
+3493,0,57,0,7311,0,0,0,7286,3497,
+3493,0,0,0,0,0,0,0,7286,3497,
+3493,0,0,0,0,0,0,0,7311,3497,
+3525,0,0,0,0,0,3924,7290,7291,0,
+3429,3429,3429,3493,0,0,3497,3429,3429,3429,
+3429,3429,3429,3429,3429,3429,3429,3429,3429,3429
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings" visible="0"/>
+ <layer id="5" name="Front" width="10" height="12">
+  <properties>
+   <property name="Action" value=""/>
+  </properties>
+  <data encoding="csv">
+3438,0,0,0,0,0,0,0,0,0,
+0,0,7858,7832,4773,7759,7760,7760,7761,0,
+0,0,7883,7857,0,7784,7785,7785,7786,0,
+0,0,0,7882,7261,3181,4104,0,625,0,
+0,0,7856,0,7907,0,27,0,0,0,
+0,0,25,0,0,0,0,0,7261,0,
+0,0,0,0,0,0,0,0,7728,0,
+0,0,0,0,0,0,0,0,7699,0,
+0,0,0,0,0,0,3892,7265,7266,0,
+0,3625,0,0,0,0,3592,3625,9863,3559,
+0,0,0,3525,3625,3625,3559,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="10" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,3149,0,0,0,0,
+0,0,0,0,7933,0,0,7932,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,3645,0,0,0,7703,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,8461,0,0,
+0,0,3625,3591,0,0,0,8486,3625,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="7" name="Paths" width="10" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+</map>

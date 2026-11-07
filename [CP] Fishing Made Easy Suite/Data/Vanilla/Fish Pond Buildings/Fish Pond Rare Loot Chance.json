@@ -1,0 +1,1818 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fish Pond Rare Loot Chance",
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Fields": {
+        "Lionfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)857",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.2,
+              "ItemID": "(O)831",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)831",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "BlueDiscus": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)91",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)791",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)91",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)91",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Stingray": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)787",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.06 * {{RareLootChance}}) }}",
+              "ItemID": "(O)852",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)848",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)851",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.8,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "MidnightCarp": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.03 * {{RareLootChance}}) }}",
+              "ItemId": "(O)RiverJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemId": "(O)RiverJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemId": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Flounder": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.03 * {{RareLootChance}}) }}",
+              "ItemId": "(O)SeaJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemId": "(O)SeaJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemId": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Sunfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.08 * {{RareLootChance}}) }}",
+              "ItemID": "(O)768",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.9,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Blobfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)688",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.9,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "LavaEel": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.033 * {{RareLootChance}}) }}",
+              "ItemID": "(O)537",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)537",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.04 * {{RareLootChance}}) }}",
+              "ItemID": "(O)226",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.033,
+              "ItemID": "(O)812",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.15,
+              "ItemID": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+			{
+			  "RequiredPopulation": 8,
+			  "Chance": "{{Query: (0.04 * {{RareLootChance}}) }}",
+			  "ItemId": "(O)CaveJelly",
+			  "MinQuantity": 1,
+			  "MaxQuantity": 1
+			},
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)384",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.8,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Woodskip": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)309",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)310",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)311",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.08 * {{RareLootChance}}) }}",
+              "ItemID": "(O)388",
+              "MinQuantity": 5,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)709",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.66,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.66,
+              "ItemID": "(O)388",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            }
+          ]
+        },
+        "VoidSalmon": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)305",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{Query: (0.08 * {{RareLootChance}}) }}",
+              "ItemID": "(O)769",
+              "MinQuantity": 5,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.83,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "SlimeJack": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)680",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.075 * {{RareLootChance}}) }}",
+              "ItemID": "(O)766",
+              "MinQuantity": 50,
+              "MaxQuantity": 50
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.12 * {{RareLootChance}}) }}",
+              "ItemID": "(O)766",
+              "MinQuantity": 30,
+              "MaxQuantity": 30
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.2,
+              "ItemID": "(O)766",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)153",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.8,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Stonefish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)535",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.075 * {{RareLootChance}}) }}",
+              "ItemID": "(O)390",
+              "MinQuantity": 30,
+              "MaxQuantity": 30
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.12 * {{RareLootChance}}) }}",
+              "ItemID": "(O)535",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)72",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)378",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "IcePip": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)536",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.075 * {{RareLootChance}}) }}",
+              "ItemID": "(O)84",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.12 * {{RareLootChance}}) }}",
+              "ItemID": "(O)536",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)72",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)380",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Ghostfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)157",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)457",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.12 * {{RareLootChance}}) }}",
+              "ItemID": "(O)80",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)338",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{Query: (0.08 * {{RareLootChance}}) }}",
+              "ItemID": "(O)80",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "SuperCucumber": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)386",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)66",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Octopus": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.066 * {{RareLootChance}}) }}",
+              "ItemID": "(O)749",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.01 * {{RareLootChance}}) }}",
+              "ItemID": "(O)749",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.1 * {{RareLootChance}}) }}",
+              "ItemID": "(O)749",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "RainbowTrout": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)394",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.001 * {{RareLootChance}}) }}",
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Coral": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.06 * {{RareLootChance}}) }}",
+              "ItemID": "(O)543",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.06 * {{RareLootChance}}) }}",
+              "ItemID": "(O)571",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "DesertFish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)802",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.75,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "SemiRareFish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.003 * {{RareLootChance}}) }}",
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "CarnivorousFish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)684",
+              "MinQuantity": 20,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "FreshwaterCrabPotFish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.075 * {{RareLootChance}}) }}",
+              "ItemID": "(O)689",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)153",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)770",
+              "MinQuantity": 2,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)168",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)169",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)170",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)171",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)172",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)168",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.2,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "OceanCrabPotFish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.02 * {{RareLootChance}}) }}",
+              "ItemID": "(O)392",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{Query: (0.075 * {{RareLootChance}}) }}",
+              "ItemID": "(O)690",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.088 * {{RareLootChance}}) }}",
+              "ItemID": "(O)152",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)397",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{Query: (0.075 * {{RareLootChance}}) }}",
+              "ItemID": "(O)393",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)168",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)169",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)170",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)171",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)172",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{Query: (0.05 * {{RareLootChance}}) }}",
+              "ItemID": "(O)168",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.2,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        }
+      },
+      "When": {
+        "Fish Pond Rare Loot": "Rare Loot Chance 1.5X, Rare Loot Chance 2X, Rare Loot Chance 2.5X, Rare Loot Chance 3X, Rare Loot Chance 3.5X, Rare Loot Chance 4X, Rare Loot Chance 4.5X, Rare Loot Chance 5X"
+      }
+    },
+    {
+      "LogName": "Fish Pond Rare Loot Chance All 1 to 50%",
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Fields": {
+        "Lionfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)857",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.2,
+              "ItemID": "(O)831",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)831",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "BlueDiscus": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)91",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)791",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)91",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)91",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Stingray": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)787",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)852",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)848",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)851",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.8,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "MidnightCarp": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemId": "(O)RiverJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": "{{RareLootChance}}",
+              "ItemId": "(O)RiverJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemId": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Flounder": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemId": "(O)SeaJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": "{{RareLootChance}}",
+              "ItemId": "(O)SeaJelly",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemId": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Sunfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)768",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.9,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Blobfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)797",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)688",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.9,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "LavaEel": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)537",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)537",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)226",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.033,
+              "ItemID": "(O)812",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.15,
+              "ItemID": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+			{
+			  "RequiredPopulation": 8,
+			  "Chance": "{{RareLootChance}}",
+			  "ItemId": "(O)CaveJelly",
+			  "MinQuantity": 1,
+			  "MaxQuantity": 1
+			},
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)384",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.8,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Woodskip": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)309",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)310",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)311",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)388",
+              "MinQuantity": 5,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)709",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.66,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.66,
+              "ItemID": "(O)388",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            }
+          ]
+        },
+        "VoidSalmon": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)305",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)769",
+              "MinQuantity": 5,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.83,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "SlimeJack": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)680",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)766",
+              "MinQuantity": 50,
+              "MaxQuantity": 50
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)766",
+              "MinQuantity": 30,
+              "MaxQuantity": 30
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.2,
+              "ItemID": "(O)766",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)153",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.8,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Stonefish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)535",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)390",
+              "MinQuantity": 30,
+              "MaxQuantity": 30
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)535",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)72",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)378",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "IcePip": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)536",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)84",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)536",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)72",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)380",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Ghostfish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)157",
+              "MinQuantity": 5,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)457",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)80",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)338",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 3,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)80",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "SuperCucumber": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)386",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)66",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Octopus": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)749",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)749",
+              "MinQuantity": 10,
+              "MaxQuantity": 10
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)749",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "RainbowTrout": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)394",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "Coral": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)543",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)571",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "DesertFish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)802",
+              "MinQuantity": 2,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.25,
+              "ItemID": "(O)812",
+              "MinQuantity": 3,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 8,
+              "Chance": 0.5,
+              "ItemID": "(O)812",
+              "MinQuantity": 2,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.75,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "SemiRareFish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)166",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "CarnivorousFish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)684",
+              "MinQuantity": 20,
+              "MaxQuantity": 20
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 1.0,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "FreshwaterCrabPotFish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)689",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)153",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)770",
+              "MinQuantity": 2,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)168",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)169",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)170",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)171",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)172",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)168",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.2,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        },
+        "OceanCrabPotFish": {
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)392",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)690",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)152",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)397",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)393",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)168",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)169",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)170",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)171",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)172",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": "{{RareLootChance}}",
+              "ItemID": "(O)168",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 0,
+              "Chance": 0.2,
+              "ItemID": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ]
+        }
+      },
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 1% Chance, All Rare Loot 2% Chance, All Rare Loot 3% Chance, All Rare Loot 4% Chance, All Rare Loot 5% Chance, All Rare Loot 6% Chance, All Rare Loot 7% Chance, All Rare Loot 8% Chance, All Rare Loot 9% Chance, All Rare Loot 10% Chance, All Rare Loot 15% Chance, All Rare Loot 20% Chance, All Rare Loot 25% Chance, All Rare Loot 30% Chance, All Rare Loot 35% Chance, All Rare Loot 40% Chance, All Rare Loot 45% Chance, All Rare Loot 50% Chance"
+      }
+    }
+  ]
+}

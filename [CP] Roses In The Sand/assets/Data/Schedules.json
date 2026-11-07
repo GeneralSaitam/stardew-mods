@@ -1,0 +1,72 @@
+{
+	"Changes": [
+
+        {  
+		"Action": "EditData",
+        "Target": "Characters/schedules/Sandy",
+        "When": {"IsOddDay": true},
+        "Entries":{
+            "marriage_Fri": "730 SandyHouse 2 5 2 /1700 bed",
+            "marriage_Mon": "730 SandyHouse 2 5 2 /1700 bed",
+            "marriage_Tue": "1000 SeedShop 19 16 1 \/1300 SeedShop 23 18 sandy_aero /1600 bed",
+            "marriage_Thu": "730 SandyHouse 2 5 2 /1700 bed",
+            "marriage_Sat": "730 SandyHouse 2 5 2 /1700 bed",
+            "marriage_Sun": "730 SandyHouse 2 5 2 /1700 bed",
+            "marriage_Wed": "730 SandyHouse 2 5 2 /1700 bed"
+            }
+        },
+
+        { 
+		"Action": "EditData",
+        "Target": "Characters/schedules/Sandy",
+        "When": {"IsOddDay": false},
+        "Entries":{
+            "marriage_Fri": "900 SeedShop 12 20 0 /1030 HaleyHouse 13 8 0 /1200 HaleyHouse 5 19 2 /1530 bed",
+            "marriage_Tue": "1000 SeedShop 19 16 1 /1300 SeedShop 23 18 sandy_aero /1600 bed",
+            "marriage_Thu": "1000 Town 25 23 2 /1230 ArchaeologyHouse 26 13 2 /1800 bed",
+            "marriage_Sat": "900 SeedShop 12 20 0 /1050 HaleyHouse 13 8 0 /1200 HaleyHouse 5 19 2 /1430 bed",
+            "marriage_Wed": "1000 Beach 40 34 2 /1500 Saloon 20 18 3 /1900 bed",
+            "marriage_Mon": "730 SandyHouse 2 5 2 /1700 bed"
+            }
+        },
+
+        { 
+        "Action": "EditData",
+        "Target": "Characters/schedules/Sandy",
+        "When": {
+        "Hearts:Sandy": "{{Range: 5, 10}}"},
+        "Entries": {
+            "Sat": "MAIL ccVault/GOTO spring/930 HaleyHouse 13 8 0 /1200 HaleyHouse 5 19 2 /1530 Saloon 20 18 3 /1800 SandyHouse 2 5 2"
+            }
+        },
+
+		{ 
+        "Action": "EditData",
+        "Target": "Characters/schedules/Sandy",
+	    "When": {"Season": "Spring", "Day": 27},
+        "Entries": {
+            "marriage_Sat": "930 HaleyHouse 12 8 0 /1200 HaleyHouse 5 19 2 /1530 Saloon 20 18 3 /1900 bed",
+            "spring_27": "MAIL ccVault/GOTO spring/930 HaleyHouse 13 8 0 /1200 HaleyHouse 5 19 2 /1530 Saloon 20 18 3 /1800 SandyHouse 2 5 2"
+            }
+        },
+
+        { 
+        "Action": "EditData",
+        "Target": "Characters/schedules/Sandy",
+	    "When": {"Season": "Fall", "Day": 15},
+        "Entries": {
+            "marriage_Mon": "630 SandyHouse 2 5 2/a1200 SandyHouse 3 5 1 \"Strings\\schedules\\Sandy:Sandy_Birthday_Greeting\"/1300 Desert 2 51 2 \"Strings\\schedules\\Sandy:Sandy_Birthday_Hangout\"/1500 Desert 11 18 0 \"Strings\\schedules\\Sandy:Sandy_Birthday_Lake\"/1700 Desert 7 33 2 \"Strings\\schedules\\Sandy:Sandy_Birthday_Bones\"/1800 Desert 25 30 2 \"Strings\\schedules\\Sandy:Sandy_Birthday_Hangout\"/1900 37 25 1 \"Strings\\schedules\\Sandy:Sandy_Birthday_Camel\"/2000 Desert 7 55 2 \"Strings\\schedules\\Sandy:Sandy_Birthday_Hangout\"/a2330 Desert 29 24 3 \"Strings\\schedules\\Sandy:Sandy_Birthday_Bye\"/2400 Desert 29 24 3 sandy_wave/2410 bed",
+            "fall_15": "MAIL ccVault/GOTO spring/630 SandyHouse 2 5 2/a1200 SandyHouse 3 5 1 \"Strings\\schedules\\Sandy:Sandy_Birthday_Greeting\"/1300 Desert 2 51 2 \"Strings\\schedules\\Sandy:Sandy_Birthday_Hangout\"/1500 Desert 11 18 0 \"Strings\\schedules\\Sandy:Sandy_Birthday_Lake\"/1700 Desert 7 33 2 \"Strings\\schedules\\Sandy:Sandy_Birthday_Bones\"/1800 Desert 25 30 2 \"Strings\\schedules\\Sandy:Sandy_Birthday_Hangout\"/1900 37 25 1 \"Strings\\schedules\\Sandy:Sandy_Birthday_Camel\"/2000 Desert 7 55 2 \"Strings\\schedules\\Sandy:Sandy_Birthday_Hangout\"/a2330 Desert 29 24 3 \"Strings\\schedules\\Sandy:Sandy_Birthday_Bye\"/2400 Desert 29 24 3 sandy_wave/2410 SandyHouse 2 5 2"
+            }
+        },
+
+        {  
+            "Action": "EditData",
+            "Target": "Characters/schedules/Sandy",
+            "Entries": {
+	        "marriage_DesertFestival": "830 Desert 22 52 2 \"Strings\\1_6_Strings:DesertFestival_Sandy\"/2400 bed",
+            "marriage_NightMarket": "1500 Beach 26 36 2 /1900 bed"
+            }
+        }
+	]
+}

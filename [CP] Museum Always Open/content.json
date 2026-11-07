@@ -1,0 +1,26 @@
+ {
+ "Format": "2.0.0",
+ "Changes": [
+ //Museum Door
+           {
+            
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "MapTiles":
+            [
+                {
+                    "Position": 
+                    {
+                        "X": 101,
+                        "Y": 89
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": 
+                    {
+                        "Action": "LockedDoorWarp 3 14 ArchaeologyHouse 600 2500"
+                    },
+				},
+			],	
+		   },
+		   ],
+ }

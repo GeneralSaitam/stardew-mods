@@ -1,0 +1,585 @@
+{
+  "Changes": [
+    //IF YOU ADD 2.0.0 AFTER SEEING 10 HEART EVENT
+
+    {
+      "LogName": "Add RoommateReady",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "86060050/": "continue/-1000 -1000/farmer -100 -100 2 Juna -100 -100 0/addMailReceived RoommateReady/pause 50/end"
+      },
+      "When": {
+        "HasSeenEvent": "86060009",
+        "HasConversationTopic |contains=RoommateIntro": "false",
+        "HasFlag |contains=RoommateReady": "false"
+      }
+    },
+
+    //PRE-EVENT 1
+    {
+      "LogName": "Pre-Roommate Event 1",
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+        "86060100/n RoommateReady/A RoommateIntro/t 900 1200/d Friday/w sunny": "crane_game/-1000 -1000/farmer -100 -100 2 Juna -100 -100 2/addConversationTopic JunaCouchsurfing 7/addConversationTopic JunaCouchsurffing 14/addConversationTopic JunaCouchsurfffing 21/addConversationTopic JunaCouchsurffffing 28/addObject 14 41 {{forage}}/addObject 5 37 {{forage}}/addObject 17 41 {{forage}}/skippable/pause 1000/viewport 11 37 clamp true/pause 2000/warp farmer 5 27/playSound doorClose/pause 300/move farmer 0 9 2/pause 500/emote farmer 40/pause 500/playSound pickUpItem/removeObject 5 37/pause 1000/warp Juna 10 35/playSound wand/pause 1000/move Juna 0 2 2/pause 1500/move farmer 0 2 1 true/showFrame Juna 24/showFrame Juna 25/move farmer 2 0 2/move farmer 0 2 1/move farmer 4 0 2/showFrame Juna 26/move farmer 0 1 1/move farmer 2 0 1/pause 500/emote farmer 40/pause 500/playSound pickUpItem/removeObject 14 41/showFrame Juna 24/pause 700/textAboveHead Juna \"{{i18n:event-86060100.01}}\"/pause 3000/faceDirection farmer 0/pause 1000/emote farmer 8/pause 3000/emote farmer 40/pause 1000/move farmer 0 1 1 true/showFrame Juna 25/move farmer 4 0 0/pause 500/showFrame Juna 26/pause 500/playSound pickUpItem/removeObject 17 41/pause 500/showFrame Juna 24/pause 700/textAboveHead Juna \"{{i18n:event-86060100.02}}\"/pause 3500/emote farmer 28/pause 1000/move farmer -4 0 0 true/showFrame Juna 25/move farmer 0 -1 3/move farmer -2 0 0/pause 500/emote farmer 8/pause 750/showFrame Juna 26/pause 750/showFrame Juna 25/pause 1500/emote farmer 28/pause 1500/faceDirection farmer 2/pause 600/move farmer 0 1 1/move farmer 4 0 1 true/showFrame Juna 24/pause 1000/textAboveHead Juna \"{{i18n:event-86060100.03}}\"/pause 3000/stopMusic/emote farmer 40/pause 1000/textAboveHead Juna \"{{i18n:event-86060100.04}}\"/pause 3500/playMusic crane_game_fast/jump farmer/pause 500/speed farmer 4/move farmer -4 0 0/pause 500/quickQuestion #{{i18n:event-86060100.05}}#{{i18n:event-86060100.06}}#{{i18n:event-86060100.07}}(break)jump Juna\\showFrame Juna 0\\speak Juna \"{{i18n:event-86060100.08}}\"(break)jump Juna\\showFrame Juna 0\\speak Juna \"{{i18n:event-86060100.09}}\"(break)jump Juna\\showFrame Juna 0\\speak Juna \"{{i18n:event-86060100.10}}\"/pause 500/move farmer 0 -2 0/move farmer -1 0 0/move farmer 0 -1 0/speak Juna \"{{i18n:event-86060100.11}}\"/pause 500/emote farmer 40/pause 500/question null \"#{{i18n: event-86060100.q1}}#{{i18n: event-86060100.q2}}\"/pause 300/speak Juna \"{{i18n:event-86060100.12}}\"/pause 300/emote farmer 28/pause 300/quickQuestion #{{i18n:event-86060100.13}}#{{i18n:event-86060100.14}}(break)pause 500\\faceDirection Juna 3\\pause 500\\emote Juna 40\\pause 1000\\faceDirection Juna 2\\pause 500\\emote Juna 28\\pause 500\\speak Juna \"{{i18n:event-86060100.15}}\"(break)pause 500\\emote Juna 12\\pause 300\\speak Juna \"{{i18n:event-86060100.16}}\"/pause 500/emote farmer 40/pause 500/playSound bubbles/pause 1000/playSound grunt/pause 500/emote Juna 12 true/emote farmer 28/stopMusic/pause 500/playMusic crane_game/speak Juna \"{{i18n:event-86060100.17}}\"/pause 500/faceDirection Juna 3/pause 1000/faceDirection Juna 2/pause 500/speak Juna \"{{i18n:event-86060100.18}}\"/pause 300/emote farmer 60/pause 600/move Juna 0 -2 0/pause 300/warp Juna -100 -100/playSound wand/pause 1200/emote farmer 40/pause 600/faceDirection farmer 2/pause 600/playSound grunt/pause 600/emote farmer 28/pause 500/move farmer 0 3 1/move farmer 15 0 1 true/globalFade/viewport -1000 -1000/end invisible Juna"
+      }
+    },
+
+    //TEMPORARY SCHEDULE CHANGE
+    {
+      "LogName": "Couchsurfing Blank Schedule",
+      "Action": "Load",
+      "FromFile": "assets/RoommateIntro/CouchsurfingBlank.json",
+      "Target": "Characters/schedules/Juna",
+      "When": {
+        "HasSeenEvent": "86060100",
+        "HasConversationTopic |contains=JunaCouchsurfing, JunaCouchsurffing, JunaCouchsurfffing, JunaCouchsurffffing": "true",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Couchsurfing Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "Mon": "610 elhrvy.NPCJuna_JunaCaveAccident 7 5 1/900 Town 82 14 2 juna_wballet/1600 Town 46 20 2/a2030 ScienceHouse 29 11 2 \"Strings\\schedules\\Juna:mon_couchsurfing.000\"/2200 ScienceHouse 29 9 2 juna_sitting2",
+        "Tue": "0 ScienceHouse 29 9 2/610 Mountain 22 34 2 juna_sitting2/900 ArchaeologyHouse 22 4 2 juna_spyreading/1600 Saloon 21 23 0/2030 Railroad 39 40 2 juna_sittingChair",
+        "Wed": "0 Railroad 54 36 2/610 Railroad 39 40 2 juna_sittingChair/900 Town 73 54 2/1430 Town 49 23 0/1700 Town 18 8 2 juna_sitting/2030 Railroad 39 40 2 juna_sittingChair",
+        "Thu": "0 Railroad 54 36 2/610 Railroad 39 40 2 juna_sittingChair/800 ArchaeologyHouse 22 4 2 juna_spyreading/1600 Saloon 21 23 0/2130 HaleyHouse 15 25 2 juna_sitting2",
+        "Fri": "0 HaleyHouse 5 15 2/610 HaleyHouse 15 25 2 juna_sitting2/900 Forest 6 29 0/1200 Forest 26 17 0/1500 Forest 33 98 2 juna_bballet/2100 HaleyHouse 15 25 2 juna_sitting2",
+        "Sat": "0 HaleyHouse 5 15 2/610 HaleyHouse 15 25 2 juna_sitting2/900 Town 82 14 2 juna_wballet/1600 Town 46 20 2/a2030 ScienceHouse 29 11 2 \"Strings\\schedules\\Juna:sat_couchsurfing.000\"/2310 ScienceHouse 29 9 2 juna_sitting2",
+        "Sun": "0 ScienceHouse 29 9 2/610 Mountain 22 34 2 juna_sitting2/900 Forest 5 29 2 juna_scheming/1630 Forest 10 37 0/2000 elhrvy.NPCJuna_JunaCaveAccident 3 5 0/2400 elhrvy.NPCJuna_JunaCaveAccident 7 5 1 juna_sleep",
+        "rain": "610 elhrvy.NPCJuna_JunaCaveAccident 7 5 1/1000 Forest 7 36 2 juna_wballet/1500 Forest 17 36 1/1800 Forest 34 25 2/2200 elhrvy.NPCJuna_JunaCaveAccident 3 5 0"
+      },
+      "When": {
+        "HasSeenEvent": "86060100",
+        "HasConversationTopic |contains=JunaCouchsurfing, JunaCouchsurffing, JunaCouchsurfffing, JunaCouchsurffffing": "true"
+      }
+    },
+
+    {
+      "LogName": "Juna Couchsurfing Strings",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Juna",
+      "Entries": {
+        "mon_couchsurfing.000": "{{i18n: strings.couchsurfing.mon}}",
+        "sat_couchsurfing.000": "{{i18n: strings.couchsurfing.sat}}"
+      }
+    },
+
+    //ROBIN COUCHSURFING SCHEDULE
+
+    {
+      "LogName": "Robin Couchsurfing Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Robin",
+      "Entries": {
+        "Mon": "800 ScienceHouse 8 18 2/1700 CommunityCenter 9 19 3/a2030 ScienceHouse 27 11 1 \"Strings\\schedules\\Robin:mon_couchsurfing.000\"/2200 ScienceHouse 21 4 1 robin_sleep",
+        "Sat": "800 ScienceHouse 8 18 2/1700 Mountain 29 36 2/a2030 ScienceHouse 27 11 1 \"Strings\\schedules\\Robin:sat_couchsurfing.000\"/2300 ScienceHouse 21 4 1 robin_sleep"
+      },
+      "When": {
+        "HasSeenEvent": "86060100",
+        "HasConversationTopic |contains=JunaCouchsurfing, JunaCouchsurffing, JunaCouchsurfffing, JunaCouchsurffffing": "true"
+      }
+    },
+
+    {
+      "LogName": "Robin Couchsurfing Strings",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Robin",
+      "Entries": {
+        "mon_couchsurfing.000": "{{i18n: strings.couchsurfing.mon.Robin}}",
+        "sat_couchsurfing.000": "{{i18n: strings.couchsurfing.sat.Robin}}"
+      }
+    },
+
+    //COUCHSURFING CONVERSATION TOPICS
+    {
+      "LogName": "Juna Couchsurfing CT",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "JunaCouchsurfing": "{{i18n: ct.couchsurfing.Juna1}}"
+      },
+      "When": {
+        "HasMod |contains=ZoeDoll.NPCAlecto": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Couchsurfing CT Alecto",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "JunaCouchsurfing": "{{i18n: ct.couchsurfing.Juna1.alecto}}"
+      },
+      "When": {
+        "HasMod |contains=ZoeDoll.NPCAlecto": "true"
+      }
+    },
+
+    {
+      "LogName": "Juna Couchsurfing CT1",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "JunaCouchsurffing": "{{i18n: ct.couchsurfing.Juna2}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=JunaCouchsurfing": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Couchsurfing CT2",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "JunaCouchsurfffing": "{{i18n: ct.couchsurfing.Juna3}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=JunaCouchsurffing": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Couchsurfing CT3",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "JunaCouchsurffffing": "{{i18n: ct.couchsurfing.Juna4P}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=JunaCouchsurfffing": "false"
+      }
+    },
+
+    {
+      "LogName": "Robin Couchsurfing CT",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "JunaCouchsurfing": "{{i18n: ct.couchsurfing.Robin1}}"
+      }
+    },
+
+    {
+      "LogName": "Robin Couchsurfing CT3",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "JunaCouchsurffffing": "{{i18n: ct.couchsurfing.Robin2}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=JunaCouchsurfffing": "false"
+      }
+    },
+
+    {
+      "LogName": "Demetrius Couchsurfing CT1",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Demetrius",
+      "Entries": {
+        "JunaCouchsurffing": "{{i18n: ct.couchsurfing.Demetrius1}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=JunaCouchsurfing": "false"
+      }
+    },
+
+    {
+      "LogName": "Maru Couchsurfing CT2",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",
+      "Entries": {
+        "JunaCouchsurfffing": "{{i18n: ct.couchsurfing.Maru1}}"
+      },
+      "When": {
+        "Relationship:Maru |contains=Married": "false",
+        "HasConversationTopic |contains=JunaCouchsurffing": "false"
+      }
+    },
+
+    {
+      "LogName": "Sebastian Couchsurfing CT",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sebastian",
+      "Entries": {
+        "JunaCouchsurfing": "{{i18n: ct.couchsurfing.Sebastian1}}"
+      },
+      "When": {
+        "Relationship:Sebastian |contains=Married": "false"
+      }
+    },
+
+    {
+      "LogName": "Wizard Couchsurfing CT",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "JunaCouchsurfing": "{{i18n: ct.couchsurfing.Wizard1}}"
+      }
+    },
+
+    {
+      "LogName": "Wizard Couchsurfing CT1",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "JunaCouchsurffing": "{{i18n: ct.couchsurfing.Wizard2P}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=JunaCouchsurfing": "false"
+      }
+    },
+
+    {
+      "LogName": "Emily Couchsurfing CT",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",
+      "Entries": {
+        "JunaCouchsurfing": "{{i18n: ct.couchsurfing.Emily1}}"
+      },
+      "When": {
+        "Relationship:Emily |contains=Married": "false"
+      }
+    },
+
+    {
+      "LogName": "Emily Couchsurfing CT3",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",
+      "Entries": {
+        "JunaCouchsurffffing": "{{i18n: ct.couchsurfing.Emily2P}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=JunaCouchsurfffing": "false",
+        "Relationship:Emily |contains=Married": "false"
+      }
+    },
+
+    {
+      "LogName": "Haley Couchsurfing CT",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Haley",
+      "Entries": {
+        "JunaCouchsurfing": "{{i18n: ct.couchsurfing.Haley1}}"
+      },
+      "When": {
+        "Relationship:Haley |contains=Married": "false"
+      }
+    },
+
+    {
+      "LogName": "Haley Couchsurfing CT2",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Haley",
+      "Entries": {
+        "JunaCouchsurfffing": "{{i18n: ct.couchsurfing.Haley2}}"
+      },
+      "When": {
+        "Relationship:Haley |contains=Married": "false",
+        "HasConversationTopic |contains=JunaCouchsurffing": "false"
+      }
+    },
+
+    //PRE-EVENT 2
+    {
+      "LogName": "Pre-Roommate Event 2 Mountain",
+      "Action": "EditData",
+      "Target": "Data/Events/{{EventLocation}}",
+      "Entries": {
+        "86060200/e 86060100/A JunaCouchsurfing/t 600 1000/w sunny": "movieTheaterAfter/-1000 -1000/farmer -100 -100 0 Juna -100 -100 2/addConversationTopic JunaEventPrep 14/skippable/changePortrait Juna E2/changeSprite Juna E2S/{{EventMovement}}/pause 500/speak Juna \"{{i18n:event-86060200.01}}\"/pause 500/emote farmer 60/pause 600/faceDirection farmer 1/pause 600/faceDirection farmer 3/pause 500/faceDirection farmer 0/pause 750/emote farmer 8/pause 500/speak Juna \"{{i18n:event-86060200.02}}\"/pause 300/emote farmer 16/pause 850/emote farmer 8/pause 700/faceDirection Juna 1/pause 1000/emote Juna 40/pause 1000/faceDirection Juna 2/pause 400/speak Juna \"{{i18n:event-86060200.03}}\"/pause 900/emote Juna 40/pause 1000/speak Juna \"{{i18n:event-86060200.04}}\"/pause 600/speak Juna \"{{i18n:event-86060200.05}}\"/pause 1350/emote farmer 40/pause 840/question fork1 \"#{{i18n: event-86060200.q1}}#{{i18n: event-86060200.q2}}\"/fork goSleep/addMailReceived YesGoRoommate/jump Juna/pause 700/move Juna 0 1 2/move Juna -1 0 2/pause 600/speak Juna \"{{i18n:event-86060200.06}}\"/pause 700/speak Juna \"{{i18n:event-86060200.07}}\"/pause 500/emote farmer 60/pause 400/speak Juna \"{{i18n:event-86060200.08}}\"/pause 900/emote farmer 8/pause 500/faceDirection Juna 3/pause 800/textAboveHead Juna \"{{i18n:event-86060200.09}}\"/pause 700/faceDirection Juna 0/pause 3000/animate Juna false false 200 40 40 41 41 42 42 42 43 43 43 42 42 43 43 42 41 41 42 42 43 43 43 42 43 42 43 43 42 43 43 42 42 41 41 40 40 41 40 40/pause 4000/playSound reward/pause 6000/faceDirection Juna 2/pause 500/speak Juna \"{{i18n: event-86060200.09.1}}[elhrvy.NPCJuna_EssenceOfJuna]$1\"/pause 1000/emote farmer 40/pause 850/speak Juna \"{{i18n:event-86060200.10}}\"/pause 400/emote farmer 12/pause 700/emote Juna 56/pause 500/speak Juna \"{{i18n:event-86060200.11}}\"/pause 500/emote farmer 32/pause 400/speak Juna \"{{i18n:event-86060200.12}}\"/pause 500/quickQuestion #{{i18n:event-86060200.13}}#{{i18n:event-86060200.14}}#{{i18n:event-86060200.15}}(break)emote Juna 56\\pause 600(break)emote Juna 12\\pause 300\\textAboveHead Juna \"{{i18n:event-86060200.16}}\"\\pause 3000(break)emote Juna 56\\pause 600/globalFade/viewport -1000 -1000/pause 500/speak Juna \"{{i18n:event-86060200.17}}\"/pause 500/end",
+        "goSleep": "addMailReceived NoGoRoommate/pause 500/textAboveHead Juna \"{{i18n:event-86060200.goSleep.01}}\"/pause 3500/emote farmer 28/pause 800/speak Juna \"{{i18n:event-86060200.goSleep.02}}\"/pause 700/emote farmer 32/pause 500/textAboveHead Juna \"{{i18n:event-86060200.goSleep.03}}\"/pause 2000/globalFade/viewport -1000 -1000/end"
+      }
+    },
+
+    //CUSTOM COMPANION JUNA
+
+    {
+      "LogName": "Custom Companion Randomization",
+      "Action": "EditData",
+      "Target": "{{PeacefulEnd.CustomCompanions/Companions:elhrvy.JunaCustomCompanions.EssenceOfJuna}}",
+      "Entries": {
+        "Companion": {
+          "RightAnimation": {
+            "StartingFrame": 4,
+            "NumberOfFrames": 4,
+            "Duration": 300,
+
+            "IdleAnimation": {
+              "StartingFrame": "{{Random:4, 16, 16 |key={{Time}} }}",
+              "NumberOfFrames": 1,
+              "Duration": 500
+            }
+          },
+
+          "DownAnimation": {
+            "StartingFrame": 0,
+            "NumberOfFrames": 4,
+            "Duration": 300,
+
+            "IdleAnimation": {
+              "StartingFrame": "{{Random:0, 18, 18, 18, 19, 19 |key={{Time}} }}",
+              "NumberOfFrames": 1,
+              "Duration": 500
+            }
+          },
+
+          "LeftAnimation": {
+            "StartingFrame": 12,
+            "NumberOfFrames": 4,
+            "Duration": 300,
+
+            "IdleAnimation": {
+              "StartingFrame": "{{Random:12, 17, 17 |key={{Time}} }}",
+              "NumberOfFrames": 1,
+              "Duration": 500
+            }
+          }
+        }
+      },
+      "Update": "OnLocationChange, OnTimeChange"
+    },
+
+    //IF PLAYER DOESN'T ASK IN EVENT 2
+
+    {
+      "LogName": "Robin Hint Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "ScienceHouse": "{{i18n: robin.doll.hint}}"
+      },
+      "When": {
+        "HasFlag": "NoGoRoommate",
+        "HasFlag |contains=RobinHint": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Reaction to Strange Doll 1",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "AcceptGift_(O)126": "{{i18n: juna.reaction.doll.q}}",
+        "roommate_yes": "{{i18n: juna.reaction.doll.yes}}[elhrvy.NPCJuna_EssenceOfJuna]",
+        "roommate_no": "{{i18n: juna.reaction.doll.no}}",
+        "roommate_followup": "{{i18n: juna.reaction.doll.followup}}"
+      },
+      "When": {
+        "HasFlag": "RobinHint",
+        "HasSeenEvent |contains=86060202": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Reaction to Strange Doll 2",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "AcceptGift_(O)127": "{{i18n: juna.reaction.doll.q}}",
+        "roommate_yes": "{{i18n: juna.reaction.doll.yes}}[elhrvy.NPCJuna_EssenceOfJuna]",
+        "roommate_no": "{{i18n: juna.reaction.doll.no}}",
+        "roommate_followup": "{{i18n: juna.reaction.doll.followup}}"
+      },
+      "When": {
+        "HasFlag": "RobinHint",
+        "HasSeenEvent |contains=86060202": "false"
+      }
+    },
+
+    {
+      "LogName": "Invisible event to set YesGo flag",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "86060202/": "continue/-1000 -1000/farmer -100 -100 2 Juna -100 -100 0/addMailReceived YesGoRoommate/pause 50/end"
+      },
+      "When": {
+        "HasDialogueAnswer |contains=860620, 860621": "true"
+      }
+    },
+
+    //IF PLAYER MISSES EVENT 2 COMPLETELY
+
+    {
+      "LogName": "Invisible event to set NoGo flag",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "86060201/e 86060100/k 86060200": "continue/-1000 -1000/farmer -100 -100 2 Juna -100 -100 0/addMailReceived NoGoRoommate/addConversationTopic JunaCaveBack 14/pause 50/end"
+      },
+      "When": {
+        "HasConversationTopic |contains=JunaCouchsurfing, JunaCouchsurffing, JunaCouchsurfffing, JunaCouchsurffffing": "false",
+        "HasSeenEvent": "86060100",
+        "HasSeenEvent |contains=86060202": "false"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "JunaCaveBack": "{{i18n: ct.couchsurfing.JunaCaveBack}}"
+      }
+    },
+
+    //PRE-EVENT 3
+
+    {
+      "LogName": "Pre-Roommate Event 3",
+      "Action": "EditData",
+      "Target": "Data/Events/elhrvy.NPCJuna_JunaCave",
+      "Entries": {
+        "86060300/n YesGoRoommate/A JunaEventPrep/w sunny/t 800 1000": "Upper_Ambient/-1000 -1000/farmer -100 -100 0 Juna -100 -100 2 Gus -100 -100 0 Alex -100 -100 3 Haley -100 -100 0 George -100 -100 2 Lewis -100 -100 2 Marnie -100 -100 0 Shane -100 -100 0 Pierre -100 -100 1 Harvey -100 -100 3 Evelyn -100 -100 3 Robin -100 -100 0 Jodi -100 -100 0 Clint -100 -100 0 Willy -100 -100 1 Pam -100 -100 0 Bouncer -100 -100 2 Elliott -100 -100 2 Wizard -100 -100 0 Vincent -100 -100 1/pause 500/question fork1 \"{{i18n:event-86060300.01}}#{{i18n:event-86060300.02}}#{{i18n:event-86060300.03}}#\"/fork NotReady/pause 200/switchEvent ReadyToRumble",
+        "NotReady": "end warpOut",
+        "ReadyToRumble": "resetVariable/addMailReceived Event3Played/addMailReceived JunaRoommateItem/skippable/stopMusic/changeToTemporaryMap JunaEventIntro false/warp Juna 5 8/playMusic movie_nature/pause 1000/viewport 7 8/pause 1000/warp farmer 7 12/playSound wand/pause 1000/emote Juna 20/pause 200/emote farmer 16/pause 500/speak Juna \"{{i18n:event-86060300.ReadyToRumble.01}}\"/pause 300/emote farmer 32/pause 400/faceDirection Juna 1/pause 500/speak Juna \"{{i18n:event-86060300.ReadyToRumble.02}}\"/pause 300/move Juna 2 0 0/move Juna 0 -1 0/pause 700/faceDirection Juna 2/pause 400/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.03}}\"/pause 3000/faceDirection Juna 0/pause 500/changeMapTile Front 7 5 3/changeMapTile Buildings 7 6 5/playSound doorOpen/pause 600/warp Juna -100 -100/playSound wand/pause 700/move farmer 0 -2 0/pause 300/faceDirection farmer 3/pause 500/faceDirection farmer 1/pause 400/emote farmer 40/pause 500/faceDirection farmer 0/pause 300/move farmer 0 -3 0/pause 600/warp farmer -100 -100/playSound wand/pause 1000/globalFade/viewport -1000 -1000/stopMusic/pause 1000/message \"{{i18n:event-86060300.ReadyToRumble.04}}\"/changeToTemporaryMap JunaEventBreakfast false/warp Gus 9 6/playMusic crane_game/pause 1000/viewport 7 8/pause 700/warp Juna 6 11/warp farmer 5 11/playSound wand/pause 600/faceDirection Gus 2/pause 400/textAboveHead Gus \"{{i18n:event-86060300.ReadyToRumble.05}}\"/pause 1500/emote farmer 32/move Juna 1 0 0/move Juna 0 -2 0/move farmer 1 0 0/move farmer 0 -1 0/pause 400/positionOffset farmer 0 -55/showFrame 113/pause 600/move Gus 0 1 2/move Gus -2 0 2/pause 250/speak Gus \"{{i18n:event-86060300.ReadyToRumble.06}}\"/pause 400/emote Juna 56/pause 300/faceDirection Juna 3/speak Juna \"{{i18n:event-86060300.ReadyToRumble.07}}\"/pause 400/quickQuestion #{{i18n:event-86060300.ReadyToRumble.08}}#{{i18n:event-86060300.ReadyToRumble.09}}#{{i18n:event-86060300.ReadyToRumble.10}}#{{i18n:event-86060300.ReadyToRumble.11}}(break)textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.12}}\"(break)textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.13}}\"(break)textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.14}}\"(break)textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.15}}\"/pause 1000/textAboveHead Gus \"{{i18n:event-86060300.ReadyToRumble.16}}\"/pause 1000/move Gus 0 -1 1/move Gus 1 0 0/pause 1000/speak Juna \"{{i18n:event-86060300.ReadyToRumble.17}}\"/pause 500/emote farmer 28 true/faceDirection Juna 0/pause 900/speak Juna \"{{i18n:event-86060300.ReadyToRumble.18}}\"/pause 500/emote Gus 32/pause 600/quickQuestion #{{i18n:event-86060300.ReadyToRumble.19}}#{{i18n:event-86060300.ReadyToRumble.20}}#{{i18n:event-86060300.ReadyToRumble.21}}#{{i18n:event-86060300.ReadyToRumble.22}}(break)textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.23}}\"\\pause 3500(break)emote Juna 56\\pause 700(break)speak Juna \"{{i18n:event-86060300.ReadyToRumble.24}}\"\\pause 700(break)speak Juna \"{{i18n:event-86060300.ReadyToRumble.25}}\"/emote farmer 32/move Gus -1 0 2/move Gus 0 1 2/pause 600/speak Gus \"{{i18n:event-86060300.ReadyToRumble.26}}\"/pause 300/addObject 8 7 210 3/addObject 9 7 211 3/addObject 5 7 395 3/pause 900/emote farmer 32 true/emote Juna 20/pause 1000/globalFade/viewport -1000 -1000/changeMapTile Front 5 3 4/changeMapTile Front 6 3 5/warp Gus -100 -100/removeObject 8 7/removeObject 9 7/addObject 8 7 167 3/faceDirection Juna 3/pause 1000/viewport 7 8/pause 500/emote farmer 40/pause 100/emote farmer 36/pause 100/emote farmer 16/pause 500/speak Juna \"{{i18n:event-86060300.ReadyToRumble.27}}\"/emote Juna 56/pause 500/emote farmer 60/stopMusic/pause 400/playSound whistle/pause 300/jump Juna/playMusic crane_game_fast/speak Juna \"{{i18n:event-86060300.ReadyToRumble.28}}\"/pause 400/emote farmer 8/pause 250/warp farmer 6 10/showFrame farmer 0/faceDirection farmer 1/pause 500/move Juna 0 2 3/move Juna -2 0 2 true/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.29}}\"/move Juna 0 1 2/pause 500/warp Juna -100 -100/playSound doorOpen/pause 600/faceDirection farmer 0/pause 600/removeObject 5 7/playSound pickUpItem/pause 700/speed farmer 3/move farmer 0 1 3/move farmer -1 0 2/move farmer 0 1 2/pause 500/warp farmer -100 -100/pause 300/playSound doorClose/globalFade/viewport -1000 -1000/changeToTemporaryMap JunaEventTH false/warp Alex 11 9/showFrame Alex 39/positionOffset Alex -16 0/warp Haley 10 10/warp George 10 5/showFrame George 16/warp Lewis 7 5/warp Marnie 5 10/warp Shane 6 10/warp Pierre 4 8/warp Harvey 10 8/warp Evelyn 11 5/warp Robin 5 11/warp Jodi 4 11/warp Clint 6 12/warp Willy 4 6/warp Pam 8 8/faceDirection farmer 0/faceDirection Juna 0/stopMusic/pause 1000/message \"{{i18n:event-86060300.ReadyToRumble.30}}\"/playMusic event1/pause 1000/viewport 7 8/pause 1000/emote Shane 16/pause 500/emote Marnie 40/pause 300/emote Harvey 40/pause 700/emote Jodi 16/pause 250/emote Marnie 16/pause 500/emote Robin 16/emote Evelyn 40/pause 500/emote Clint 8/pause 700/emote George 24/pause 200/textAboveHead Lewis \"{{i18n:event-86060300.ReadyToRumble.31}}\"/pause 1200/showFrame George 0 true/emote George 16/pause 500/faceDirection George 3/pause 400/emote George 12/pause 500/emote Jodi 8/pause 600/speak Lewis \"{{i18n:event-86060300.ReadyToRumble.32}}\"/warp farmer 8 12/warp Juna 9 12/pause 1000/emote farmer 8/pause 700/speak Lewis \"{{i18n:event-86060300.ReadyToRumble.33}}\"/pause 500/emote Shane 8/pause 250/emote Pierre 40 true/emote Robin 40 true/pause 700/speak Lewis \"{{i18n:event-86060300.ReadyToRumble.34}}\"/pause 500/textAboveHead Shane \"{{i18n:event-86060300.ReadyToRumble.35}}\"/pause 400/emote Clint 8 true/move Shane 0 -1 3/emote Pam 8 true/move Shane -2 0 3/warp Shane -100 -100/faceDirection Haley 3/speak George \"{{i18n:event-86060300.ReadyToRumble.36}}\"/showFrame Haley 27/pause 600/emote Pierre 40/textAboveHead Lewis \"{{i18n:event-86060300.ReadyToRumble.37}}\"/pause 2000/emote George 12/textAboveHead Lewis \"{{i18n:event-86060300.ReadyToRumble.38}}\"/faceDirection Robin 1/showFrame Haley 12/faceDirection Haley 0/emote Robin 40/pause 1000/textAboveHead Jodi \"{{i18n:event-86060300.ReadyToRumble.39}}\"/pause 1000/animate Willy false true 250 28 29 30 31/move Haley -2 0 0/faceDirection Pierre 2/pause 500/textAboveHead Robin \"{{i18n:event-86060300.ReadyToRumble.40}}\"/faceDirection Pierre 1/pause 750/emote farmer 28 true/faceDirection Haley 1 true/showFrame Haley 33/textAboveHead Pierre \"{{i18n:event-86060300.ReadyToRumble.41}}\"/pause 900/showFrame Haley 25/pause 600/textAboveHead Pam \"{{i18n:event-86060300.ReadyToRumble.42}}\"/pause 1000/faceDirection Robin 0/showFrame Haley 32/showFrame Haley 33/pause 500/textAboveHead Clint \"{{i18n:event-86060300.ReadyToRumble.43}}\"/pause 1200/textAboveHead Harvey \"{{i18n:event-86060300.ReadyToRumble.44}}\"/pause 1000/warp Vincent 4 10/pause 1400/emote Vincent 8/pause 500/textAboveHead Vincent \"{{i18n:event-86060300.ReadyToRumble.45}}\"/pause 500/faceDirection Haley 2 true/showFrame Haley 30/showFrame Haley 31/showFrame Haley 24/pause 1000/emote Jodi 40/showFrame Haley 31/showFrame Haley 30/emote Lewis 28/pause 500/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.46}}\"/pause 1500/emote Alex 8/faceDirection Haley 1 true/showFrame Haley 33/pause 500/faceDirection farmer 1/pause 700/question null \"#{{i18n: event-86060300.ReadyToRumble.q1}}\"/speak Juna \"{{i18n:event-86060300.ReadyToRumble.47}}\"/pause 500/faceDirection farmer 0/pause 500/textAboveHead Lewis \"{{i18n:event-86060300.ReadyToRumble.48}}\"/pause 1200/textAboveHead Pierre \"{{i18n:event-86060300.ReadyToRumble.49}}\"/pause 750/face direction farmer 2 true/animate farmer false true 200 102 103/pause 800/emote Willy 24/textAboveHead Robin \"{{i18n:event-86060300.ReadyToRumble.50}}\"/pause 600/emote Haley 32/faceDirection Haley 0 true/showFrame Haley 8/pause 750/textAboveHead Pam \"{{i18n:event-86060300.ReadyToRumble.51}}\"/pause 1000/emote Juna 56/pause 500/textAboveHead Vincent \"{{i18n:event-86060300.ReadyToRumble.52}}\"/pause 500/globalFade/viewport -1000 -1000/warp farmer -100 -100/warp Juna -100 -100/warp Alex -100 -100/warp Haley -100 -100/warp George -100 -100/warp Lewis -100 -100/warp Marnie -100 -100/warp Shane -100 -100/warp Pierre -100 -100/warp Harvey -100 -100/warp Evelyn -100 -100/warp Robin -100 -100/warp Jodi -100 -100/warp Clint -100 -100/warp Willy -100 -100/warp Pam -100 -100/warp Vincent -100 -100/changeToTemporaryMap JunaEventLunch false/stopMusic/pause 1000/message \"{{i18n:event-86060300.ReadyToRumble.53}}\"/pause 1000/playMusic PIRATE_THEME/addTemporaryActor LunchPirate 16 32 9 8 2 true/animate LunchPirate false true 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2 3 2 1/warp farmer 9 11/faceDirection farmer 1/warp Juna 9 10/faceDirection Juna 1/message \"{{i18n:event-86060300.ReadyToRumble.54}}\"/pause 1000/viewport 7 8/pause 1000/emote farmer 40/pause 250/emote Juna 32/pause 600/faceDirection farmer 3/pause 700/emote farmer 8/pause 400/faceDirection Juna 3/pause 850/emote Juna 40/pause 100/emote Juna 16/pause 100/emote Juna 56/pause 600/faceDirection Juna 3/emote farmer 60/pause 300/faceDirection farmer 3/pause 450/farmerEat 226/pause 3000/faceDirection Juna 0/pause 800/emote Juna 16/pause 300/stopAnimation LunchPirate 0/pause 300/emote LunchPirate 40/pause 250/move Juna 0 -1 0/faceDirection farmer 0/pause 250/emote Juna 56/pause 500/emote LunchPirate 12/pause 700/jump Juna/pause 400/jump LunchPirate/pause 400/jump Juna/pause 400/jump LunchPirate/pause 400/emote Juna 56 true/jump Juna/pause 500/emote LunchPirate 12 true/jump LunchPirate/pause 600/emote farmer 28/pause 400/faceDirection Juna 2/pause 450/emote Juna 56/pause 350/emote LunchPirate 12/pause 250/jump Juna/faceDirection Juna 3/pause 150/speed Juna 4/move Juna -5 0 3/warp Juna -100 -100/emote farmer 28/speed farmer 4/move farmer -3 0 0/move farmer 0 -2 3 true/emote LunchPirate 12 true/move farmer -2 0 3/warp farmer -100 -100/globalFade/viewport -1000 -1000/warp LunchPirate -100 -100/changeToTemporaryMap JunaEventFleeing false/stopMusic/pause 1000/playMusic PIRATE_THEME(muffled)/pause 500/viewport 7 8/pause 1000/warp Juna 10 8/pause 500/speed Juna 4/move Juna -6 0 3/pause 300/emote Juna 56/pause 250/faceDirection Juna 1/warp farmer 10 8/pause 500/move farmer -3 0 3 true/emote farmer 28/pause 500/faceDirection Juna 3/pause 300/warp Juna -100 -100/move farmer -3 0 3/warp farmer -100 -100/globalFade/viewport -1000 -1000/changeToTemporaryMap JunaEventReading false/stopMusic/warp Elliott 6 12/showFrame Elliott 33/warp Bouncer 9 7/faceDirection farmer 0/speed farmer 2/faceDirection Juna 0/pause 1000/playMusic movie_classic/message \"{{i18n:event-86060300.ReadyToRumble.55}}\"/pause 1000/viewport 7 8/pause 500/warp Juna 10 12/warp farmer 9 12/pause 500/emote farmer 16/move Juna 0 -3 0 true/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.56}}\"/pause 3000/move farmer 0 -2 0/pause 900/textAboveHead Bouncer \"{{i18n:event-86060300.ReadyToRumble.57}}\"/pause 1500/move farmer 0 -1 0/pause 300/showFrame 62/pause 750/message \"{{i18n:event-86060300.ReadyToRumble.58}}\"/pause 500/emote farmer 60/pause 500/message \"{{i18n:event-86060300.ReadyToRumble.59}}\"/pause 1500/message \"{{i18n:event-86060300.ReadyToRumble.60}}\"/pause 600/emote farmer 40/pause 900/emote farmer 16/pause 500/emote Juna 56/pause 750/textAboveHead Bouncer \"{{i18n:event-86060300.ReadyToRumble.61}}\"/pause 1200/globalFade/viewport -1000 -1000/pause 500/message \"{{i18n:event-86060300.ReadyToRumble.62}}\"/warp farmer -100 -100/showFrame 12/warp Juna -100 -100/warp Elliott -100 -100/warp Bouncer -100 -100/changeToTemporaryMap JunaEventWizard false/warp Wizard 5 6/pause 2000/message \"{{i18n:event-86060300.ReadyToRumble.63}}\"/pause 1000/viewport 7 8/pause 1000/warp farmer 9 12/warp Juna 10 12/pause 700/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.64}}\"/pause 1300/emote Wizard 40/pause 700/faceDirection Wizard 2/pause 300/emote farmer 60/pause 500/move Wizard 2 0 2/move Wizard 0 1 2/pause 700/textAboveHead Wizard \"{{i18n:event-86060300.ReadyToRumble.65}}\"/pause 2500/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.66}}\"/pause 2000/textAboveHead Wizard \"{{i18n:event-86060300.ReadyToRumble.67}}\"/pause 3000/textAboveHead Wizard \"{{i18n:event-86060300.ReadyToRumble.68}}\"/pause 3500/emote farmer 32 true/emote Juna 20 true/pause 500/move Juna 0 -2 0/pause 500/faceDirection Juna 2/pause 350/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.69}}\"/pause 3000/move Juna 0 -2 3/move Juna -1 0 3/move farmer 0 -1 3/move farmer -3 0 0 true/emote Wizard 12/pause 1000/globalFade/viewport -1000 -1000/warp farmer -100 -100/warp Juna -100 -100/warp Wizard -100 -100/faceDirection farmer 1/faceDirection Juna 1/changeToTemporaryMap JunaEventRobin false/warp Robin 9 9/faceDirection Robin 1/pause 1000/message \"{{i18n:event-86060300.ReadyToRumble.70}}\"/pause 1000/viewport 7 8/pause 850/warp Juna 4 12/move Juna 2 0 0 true/pause 300/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.71}}\"/pause 500/warp farmer 4 12/faceDirection Robin 3 true/move Juna 0 -2 0/move Juna 1 0 0/move Juna 0 -1 1 true/emote Robin 32/move farmer 2 0 0/move farmer 0 -1 1/move farmer 1 0 0/move farmer 0 -1 1/move farmer 1 0 0/pause 400/faceDirection Robin 1/pause 500/playSound daggerswipe/pause 300/playSound daggerswipe/pause 300/playSound daggerswipe/pause 700/playSound dirtyHit/pause 300/playSound dirtyHit/pause 800/playSound wateringCan/pause 2000/playSound dropItemInWater/pause 1000/faceDirection Robin 3/pause 450/textAboveHead Robin \"{{i18n:event-86060300.ReadyToRumble.72}}\"/pause 1000/emote farmer 32/pause 500/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.73}}\"/pause 3000/playSound cameraNoise/screenFlash .5/faceDirection Robin 2 true/faceDirection farmer 3 true/pause 2000/playSound cameraNoise/screenFlash .5/warp Robin 9 10 true/faceDirection farmer 2 true/faceDirection Juna 0 true/showFrame Robin 17 true/showFrame farmer 91 true/pause 2000/playSound cameraNoise/screenFlash .5/faceDirection Juna 2 true/showFrame farmer 92 true/showFrame Robin 18 true/pause 2000/playSound cameraNoise/screenFlash .5/warp Robin 8 10 true/warp farmer 9 10 true/faceDirection farmer 3 true/faceDirection Robin 1 true/showFrame Juna 24 true/showFrame farmer 89 true/showFrame Robin 20 true/pause 2000/playSound cameraNoise/screenFlash .5/showFrame Juna 25 true/showFrame farmer 97 true/showFrame Robin 22 true/pause 2000/playSound cameraNoise/screenFlash .5/faceDirection Robin 0 true/faceDirection farmer 1 true/showFrame farmer 111 true/pause 2000/playSound cameraNoise/screenFlash .5/textAboveHead Robin \"{{i18n:event-86060300.ReadyToRumble.74}}\"/pause 2000/playSound cameraNoise/screenFlash .5/showFrame Juna 24 true/showFrame farmer 112 true/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.75}}\"/pause 2000/playSound cameraNoise/screenFlash .5/warp Juna 7 10 true/warp Robin 8 9 true/faceDirection farmer 3 true/showFrame Juna 1/pause 2000/playSound cameraNoise/screenFlash .5/warp Juna 8 10 true/warp farmer 9 9 true/faceDirection Robin 2 true/faceDirection farmer 2 true/faceDirection Juna 0 true/pause 2000/playSound cameraNoise/screenFlash .5/animate Juna false true 200 40 40 41 41 42 42 42 43 43 43 42 42 43 43 42 41 41 42 42 43 43 43 42 43 42 43 43 42 43 43 42 42 41 41 40 40 41 40 40/pause 2000/playSound cameraNoise/screenFlash .5/emote Robin 40 true/pause 2000/playSound cameraNoise/screenFlash .5/emote farmer 40 true/pause 2000/playSound cameraNoise/screenFlash .5/addObject 10 8 224 3/addObject 9 10 224 3/addObject 10 11 224 3/addObject 9 12 224 3/playSound reward/pause 2000/playSound cameraNoise/screenFlash .5/addObject 8 12 224 3/addObject 7 12 224 3/addObject 6 11 224 3/playSound reward/faceDirection farmer 1 true/pause 2000/playSound cameraNoise/screenFlash .5/addObject 6 10 224 3/addObject 7 10 224 3/addObject 7 9 224 3/playSound reward/faceDirection Robin 3 true/pause 2000/playSound cameraNoise/screenFlash .5/stopAnimation Juna 8/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.76}}\"/pause 2000/playSound cameraNoise/screenFlash .5/faceDirection farmer 0 true/faceDirection Robin 2 true/showFrame Robin 19 true/emote farmer 16 true/pause 2000/playSound cameraNoise/screenFlash .5/faceDirection farmer 2 true/animate farmer false true 200 102 103/animate Robin false true 300 34 35/pause 2000/playSound cameraNoise/screenFlash .5/faceDirection Juna 3 true/pause 2000/playSound cameraNoise/screenFlash .5/stopAnimation farmer 0/stopAnimation Robin 0/textAboveHead Robin \"{{i18n:event-86060300.ReadyToRumble.77}}\"/pause 2000/playSound cameraNoise/screenFlash .5/removeObject 7 9/removeObject 7 10/removeObject 6 10/removeObject 6 11/removeObject 9 10/warp Juna 7 10 true/warp farmer 9 10 true/pause 2000/playSound cameraNoise/screenFlash .5/removeObject 7 12/removeObject 9 12/removeObject 10 11/removeObject 10 8/warp Juna 6 11 true/faceDirection Juna 2 true/warp farmer 7 10 true/faceDirection farmer 1 true/showFrame Juna 1 true/pause 2000/playSound cameraNoise/screenFlash .5/warp Juna 4 12 true/faceDirection Juna 3 true/warp farmer 6 12 true/faceDirection farmer 2 true/faceDirection Robin 3 true/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.78}}\"/emote Robin 12 true/pause 2000/playSound cameraNoise/screenFlash .5/warp Juna -100 -100 true/warp farmer 4 12 true/faceDirection farmer 3 true/faceDirection Robin 2 true/showFrame Robin 37 true/textAboveHead Robin \"{{i18n:event-86060300.ReadyToRumble.79}}\"/pause 2000/playSound cameraNoise/screenFlash .5/warp farmer -100 -100/globalFade/viewport -1000 -1000/warp Robin -100 -100/changeToTemporaryMap JunaEventDinner false/faceDirection farmer 2/warp farmer 5 11/showFrame farmer 29/warp Juna 7 11/showFrame Juna 25/stopMusic/pause 1000/playMusic nightTime/message \"{{i18n:event-86060300.ReadyToRumble.80}}\"/pause 1000/viewport 7 8/pause 500/emote farmer 40/pause 500/emote Juna 8/pause 500/emote farmer 52/pause 500/emote Juna 32/pause 800/showFrame farmer 54/pause 700/emote Juna 40/pause 500/showFrame Juna 24/emote Juna 16/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.81}}\"/pause 500/showFrame farmer 29/pause 2500/speak Juna \"{{i18n:event-86060300.ReadyToRumble.82}}\"/pause 500/quickQuestion #{{i18n:event-86060300.ReadyToRumble.83}}#{{i18n:event-86060300.ReadyToRumble.84}}(break)farmerEat 903\\pause 3000\\showFrame farmer 29\\speak Juna \"{{i18n:event-86060300.ReadyToRumble.85}}\"\\pause 600\\question null \"{{i18n:event-86060300.ReadyToRumble.86}}#{{i18n:event-86060300.ReadyToRumble.87}}#{{i18n:event-86060300.ReadyToRumble.88}}#{{i18n:event-86060300.ReadyToRumble.89}}#\"\\pause 250\\emote Juna 56(break)pause 500\\emote Juna 40\\pause 250\\speak Juna \"{{i18n:event-86060300.ReadyToRumble.90}}\"\\pause 500\\emote farmer 60/pause 500/showFrame farmer 54/pause 800/speak Juna \"{{i18n:event-86060300.ReadyToRumble.91}}\"/pause 500/showFrame farmer 29/pause 600/emote farmer 40/pause 800/quickQuestion #{{i18n:event-86060300.ReadyToRumble.92}}#{{i18n:event-86060300.ReadyToRumble.93}}#{{i18n:event-86060300.ReadyToRumble.94}}(break)emote Juna 40\\pause 400\\speak Juna \"{{i18n:event-86060300.ReadyToRumble.95}}\"\\pause 300\\emote farmer 12\\pause 300\\speak Juna \"{{i18n:event-86060300.ReadyToRumble.96}}\"\\pause 500\\emote farmer 60(break)emote Juna 40\\pause 500\\textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.97}}\"\\pause 3000\\speak Juna \"{{i18n:event-86060300.ReadyToRumble.98}}\"\\pause 500\\emote farmer 28(break)emote Juna 40\\pause 500\\speak Juna \"{{i18n:event-86060300.ReadyToRumble.99}}\"\\pause 500\\emote farmer 32/pause 700/showFrame farmer 54/pause 800/jump Juna/pause 500/speak Juna \"{{i18n:event-86060300.ReadyToRumble.100}}\"/pause 500/showFrame farmer 29/speak Juna \"{{i18n:event-86060300.ReadyToRumble.101}}\"/pause 500/quickQuestion #{{i18n:event-86060300.ReadyToRumble.102}}#{{i18n:event-86060300.ReadyToRumble.103}}(break)farmerEat 903\\pause 3000\\showFrame farmer 29\\emote Juna 56\\pause 500(break)pause 500\\textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.104}}\"\\pause 2000/showFrame Juna 25/showFrame Juna 26/pause 500/speak Juna \"{{i18n:event-86060300.ReadyToRumble.105}}\"/pause 500/emote farmer 28/pause 500/quickQuestion #{{i18n:event-86060300.ReadyToRumble.106}}#{{i18n:event-86060300.ReadyToRumble.107}}(break)farmerEat 903\\pause 3000\\showFrame farmer 29\\showFrame Juna 24\\emote Juna 16\\textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.108}}\"(break)pause 700\\emote Juna 40\\pause 500\\textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.109}}\"/pause 3000/showFrame Juna 24/pause 250/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.110}}\"/pause 1000/globalFade/viewport -1000 -1000/warp farmer -100 -100/warp Juna -100 -100/showFrame Juna 4/showFrame farmer 6/faceDirection farmer 3/pause 1000/message \"{{i18n:event-86060300.ReadyToRumble.111}}\"/pause 1000/stopMusic/question fork1 \"{{i18n:event-86060300.ReadyToRumble.112}}#{{i18n:event-86060300.ReadyToRumble.113}}#{{i18n:event-86060300.ReadyToRumble.114}}#\"/fork RumbleSuggestively/changeToTemporaryMap JunaEventEnd false/pause 500/playMusic sam_acoustic1/pause 1000/viewport 7 8/pause 500/warp Juna 7 9 true/warp farmer 8 9 true/positionOffset farmer 0 20/playSound wand/pause 500/speak Juna \"{{i18n:event-86060300.ReadyToRumble.115}}\"/pause 500/emote farmer 60/pause 500/speak Juna \"{{i18n:event-86060300.ReadyToRumble.116}}\"/pause 600/emote farmer 32/pause 400/move Juna 0 -2 2/faceDirection farmer 0/pause 550/speak Juna \"{{i18n:event-86060300.ReadyToRumble.117}}\"/pause 400/emote farmer 60/pause 800/faceDirection Juna 1/pause 500/emote Juna 40/pause 700/faceDirection Juna 2/pause 300/speak Juna \"{{i18n:event-86060300.ReadyToRumble.118}}\"/pause 1000/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.119}}\"/pause 1500/emote farmer 28/pause 2000/stopMusic/faceDirection Juna 3/playMusic movieTheaterAfter/pause 500/changeMapTile Front 5 5 3/changeMapTile Buildings 5 6 5/playSound doorOpen/pause 500/faceDirection Juna 2/pause 500/speak Juna \"{{i18n:event-86060300.ReadyToRumble.120}}\"/pause 500/emote farmer 40/pause 600/warp farmer 8 9 true/move farmer -3 0 0/move farmer 0 -2 0 true/faceDirection Juna 3/pause 1000/faceDirection farmer 1/pause 600/emote farmer 32/pause 500/question null \"{{i18n:event-86060300.ReadyToRumble.121}}#{{i18n:event-86060300.ReadyToRumble.122}}#{{i18n:event-86060300.ReadyToRumble.123}}#{{i18n:event-86060300.ReadyToRumble.124}}#\"/emote Juna 56/pause 700/faceDirection farmer 0/pause 500/warp farmer -100 -100/playSound wand/pause 800/emote Juna 40/pause 1000/faceDirection Juna 2/pause 500/textAboveHead Juna \"{{i18n:event-86060300.ReadyToRumble.125}}\"/pause 2500/globalFade/viewport -1000 -1000/end newDay"
+      },
+      "When": {
+        "HasFlag |contains=Event3Played": "false"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Temp",
+      "Entries": {
+        "RumbleSuggestively": "changeToTemporaryMap JunaEventEnd false/pause 500/playMusic sam_acoustic1/pause 1000/viewport 7 8/pause 500/warp Juna 7 9 true/warp farmer 8 9 true/positionOffset farmer 0 20/playSound wand/pause 500/speak Juna \"{{i18n:event-86060300.RumbleSuggestively.01}}\"/pause 500/emote farmer 60/pause 500/speak Juna \"{{i18n:event-86060300.RumbleSuggestively.02}}\"/pause 600/emote farmer 32/pause 400/move Juna 0 -2 2/faceDirection farmer 0/pause 550/speak Juna \"{{i18n:event-86060300.RumbleSuggestively.03}}\"/pause 400/emote farmer 60/pause 800/speak Juna \"{{i18n:event-86060300.RumbleSuggestively.04}}\"/pause 1000/textAboveHead Juna \"{{i18n:event-86060300.RumbleSuggestively.05}}\"/pause 1500/emote farmer 28/pause 2000/stopMusic/faceDirection Juna 1/pause 800/emote Juna 40/playMusic movieTheaterAfter/pause 500/faceDirection Juna 2/pause 500/speak Juna \"{{i18n:event-86060300.RumbleSuggestively.06}}\"/pause 400/faceDirection Juna 1/pause 500/changeMapTile Back 9 4 16/changeMapTile Back 10 4 17/changeMapTile Back 9 5 34/changeMapTile Back 10 5 35/changeMapTile Back 9 6 52/changeMapTile Back 10 6 53/changeMapTile Back 9 7 70/changeMapTile Back 10 7 71/playSound wand/pause 500/faceDirection Juna 2/pause 300/speak Juna \"{{i18n:event-86060300.RumbleSuggestively.07}}\"/pause 250/jump farmer/pause 600/emote farmer 40/pause 500/speak Juna \"{{i18n:event-86060300.RumbleSuggestively.08}}\"/pause 500/emote Juna 40/pause 500/speak Juna \"{{i18n:event-86060300.RumbleSuggestively.09}}\"/pause 650/emote farmer 60/pause 700/quickQuestion #{{i18n:event-86060300.RumbleSuggestively.10}}#{{i18n:event-86060300.RumbleSuggestively.11}}(break)emote Juna 32\\pause 400\\speak Juna \"{{i18n:event-86060300.RumbleSuggestively.12}}\"\\pause 500\\move Juna 0 -1 1\\move Juna 1 0 2\\pause 600\\message \"{{i18n:event-86060300.RumbleSuggestively.13}}\"\\pause 450\\textAboveHead Juna \"{{i18n:event-86060300.RumbleSuggestively.14}}\"\\pause 2000\\emote farmer 32\\pause 500\\warp farmer 8 9\\move farmer 0 -2 0 true(break)emote Juna 32\\pause 400\\speak Juna \"{{i18n:event-86060300.RumbleSuggestively.15}}\"\\faceDirection Juna 3\\pause 500\\changeMapTile Front 5 5 3\\changeMapTile Buildings 5 6 5\\playSound doorOpen\\pause 500\\faceDirection Juna 2\\pause 500\\speak Juna \"{{i18n:event-86060300.RumbleSuggestively.16}}\"\\pause 500\\emote farmer 40\\pause 600\\warp farmer 8 9 true\\move farmer -3 0 0\\move farmer 0 -2 0 true\\faceDirection Juna 3\\pause 1000\\faceDirection farmer 1\\pause 600\\emote farmer 32\\pause 500\\question null \"{{i18n:event-86060300.RumbleSuggestively.17}}#{{i18n:event-86060300.RumbleSuggestively.18}}#{{i18n:event-86060300.RumbleSuggestively.19}}#{{i18n:event-86060300.RumbleSuggestively.20}}#\"\\emote Juna 56\\pause 700\\faceDirection farmer 0\\pause 500\\warp farmer -100 -100\\playSound wand\\pause 800\\emote Juna 40\\pause 1000\\faceDirection Juna 2\\pause 500\\textAboveHead Juna \"{{i18n:event-86060300.RumbleSuggestively.21}}\"\\pause 2500/globalFade/viewport -1000 -1000/end newDay"
+      }
+    },
+
+    //FINDING JUNA'S ROOMMATE ITEM
+
+    {
+      "LogName": "Leah Treasure Hunt",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",
+      "Entries": {
+        "Saloon": "{{i18n: treasure.hunt.leah}}"
+      },
+      "When": {
+        "HasFlag": "JunaRoommateItem",
+        "HasFlag |contains=LeahTreasure": "false",
+        "Relationship:Leah |contains=Married": "false"
+      }
+    },
+
+    {
+      "LogName": "Leah Treasure Hunt Married",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",
+      "Entries": {
+        "Forest": "{{i18n: treasure.hunt.leah.married}}"
+      },
+      "When": {
+        "HasFlag": "JunaRoommateItem",
+        "HasFlag |contains=LeahTreasure": "false",
+        "Relationship:Leah |contains=Married": "true"
+      }
+    },
+
+    {
+      "LogName": "Robin Treasure Hunt",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "ScienceHouse": "{{i18n: treasure.hunt.robin}}"
+      },
+      "When": {
+        "HasFlag": "LeahTreasure",
+        "HasFlag |contains=RobinTreasure": "false"
+      }
+    },
+
+    {
+      "LogName": "Demetrius Treasure Hunt",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Demetrius",
+      "Entries": {
+        "ScienceHouse": "{{i18n: treasure.hunt.demetrius}}"
+      },
+      "When": {
+        "HasFlag": "RobinTreasure",
+        "HasFlag |contains=DemetriusTreasure": "false"
+      }
+    },
+
+    {
+      "LogName": "Dwarf Treasure Hunt",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Dwarf",
+      "Entries": {
+        "Mine": "{{i18n: treasure.hunt.dwarf1}}"
+      },
+      "When": {
+        "HasFlag": "DemetriusTreasure",
+        "HasFlag |contains=DwarfJunaTreasure": "false"
+      }
+    },
+
+    {
+      "LogName": "Invisible event to set Dwarf conversation topic",
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "Entries": {
+        "86060301/": "continue/-1000 -1000/farmer -100 -100 0 Juna -100 -100 0/addConversationTopic JunaPainting 14/pause 50/end"
+      },
+      "When": {
+        "HasFlag": "DwarfJunaTreasure"
+      }
+    },
+
+    {
+      "LogName": "Dwarf CT Painting",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Dwarf",
+      "Entries": {
+        "JunaPainting": "{{i18n: treasure.hunt.dwarf2}}"
+      }
+    },
+
+    //Makes it so you can't give the painting to someone else
+
+    {
+      "LogName": "Vanilla NPCs Reject Painting",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail, Characters/Dialogue/Alex, Characters/Dialogue/Caroline, Characters/Dialogue/Clint, Characters/Dialogue/Demetrius, Characters/Dialogue/Dwarf, Characters/Dialogue/Elliott, Characters/Dialogue/Emily, Characters/Dialogue/Evelyn, Characters/Dialogue/George, Characters/Dialogue/Gus, Characters/Dialogue/Haley, Characters/Dialogue/Harvey, Characters/Dialogue/Jas, Characters/Dialogue/Jodi, Characters/Dialogue/Kent, Characters/Dialogue/Krobus, Characters/Dialogue/Leah, Characters/Dialogue/Leo, Characters/Dialogue/LeoMainland, Characters/Dialogue/Lewis, Characters/Dialogue/Linus, Characters/Dialogue/Marnie, Characters/Dialogue/Maru, Characters/Dialogue/Pam, Characters/Dialogue/Penny, Characters/Dialogue/Pierre, Characters/Dialogue/Robin, Characters/Dialogue/Sam, Characters/Dialogue/Sandy, Characters/Dialogue/Sebastian, Characters/Dialogue/Shane, Characters/Dialogue/Vincent, Characters/Dialogue/Willy, Characters/Dialogue/Wizard",
+      "Entries": {
+        "RejectItem_(O)elhrvy.NPCJuna_PaintingOfJuna": "{{i18n: reject.juna.painting}}"
+      }
+    },
+
+    //"ENGAGED" ROOMMATE DIALOGUE
+
+    {
+      "LogName": "Juna Acceptance Dialogue",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+      "Entries": {
+        "Juna_EngagedRoommate": "{{i18n: juna.engaged.roommate}}"
+      }
+    },
+
+    {
+      "LogName": "Juna Rejection Dialogue",
+      "Action": "EditData",
+      "Target": "Strings/Characters/Juna",
+      "Entries": {
+        "MovieInvite_NoTheater": "{{i18n: juna.reject.roommate}}"
+      }
+    },
+
+    {
+      "LogName": "Juna's Engagement Dialogue",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "JunaRoommate0": "{{i18n: juna.engagement.dialogue0}}",
+        "JunaRoommate1": "{{i18n: juna.engagement.dialogue1}}"
+      }
+    }
+  ]
+}

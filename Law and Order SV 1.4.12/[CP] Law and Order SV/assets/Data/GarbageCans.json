@@ -1,0 +1,94 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+            "TargetField": [
+                "GarbageCans"
+            ],
+            "Entries": {
+                "{{ModId}}_SheriffOfficeCan": {
+                    "BaseChance": 0.4,
+                    "Items": [
+                        {
+                            "ID": "{{ModId}}_IronOre",
+                            "MinStack": 2,
+                            "MaxStack": 8,
+                            "Condition": "RANDOM 0.3, DAYS_PLAYED 10",
+                            "ItemId": "(O)380"
+                        },
+                        {
+                            "ID": "{{ModId}}_Coal",
+                            "MinStack": 2,
+                            "MaxStack": 8,
+                            "Condition": "RANDOM 0.3",
+                            "ItemId": "(O)382"
+                        },
+                        {
+                            "ID": "{{ModId}}_Clay",
+                            "MinStack": 2,
+                            "MaxStack": 3,
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)330"
+                        },
+                        {
+                            "ID": "{{ModId}}_Bait",
+                            "MinStack": 5,
+                            "MaxStack": 20,
+                            "Condition": "RANDOM 0.2",
+                            "ItemId": "(O)685"
+                        },
+                        {
+                            "ID": "{{ModId}}_Coffee",
+                            "Condition": "RANDOM 0.2",
+                            "ItemId": "(O)395",
+                        },
+                        {
+                            "ID": "{{ModId}}_TripleShot",
+                            "Condition": "RANDOM 0.05",
+                            "ItemId": "(O)253",
+                        },
+                        {
+                            "ID": "{{ModId}}_MossSoup",
+                            "Condition": "RANDOM 0.1",
+                            "ItemId": "(O)MossSoup",
+                        },
+                        {
+                            "ID": "{{ModId}}_SPFries",
+                            "Condition": "RANDOM 0.1",
+                            "ItemId": "(O)LawAndOrderSV_SweetPotatoFries",
+                        },
+                        {
+                            "ID": "{{ModId}}_Papers",
+                            "Condition": "RANDOM 0.1",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "ItemId": "172",
+                            "MaxItems": 1,
+                        },
+                        {
+                            "ID": "{{ModId}}_Driftwood",
+                            "Condition": "RANDOM 0.2",
+                            "MinStack": 1,
+                            "MaxStack": 3,
+                            "ItemId": "169",
+                            "MaxItems": 1,
+                        },
+                        {
+                            "ID": "{{ModId}}_FishingItem",
+                            "Condition": "RANDOM 0.1",
+                            "RandomItemId": [
+                                "(O)SkillBook_1",
+                                "(O)SonarBobber",
+                                "(O)694",
+                                "(O)686",
+                                "(O)695",
+                                "(O)691",
+                            ],
+                        },
+                    ]
+                },
+            }
+        }
+    ]
+}

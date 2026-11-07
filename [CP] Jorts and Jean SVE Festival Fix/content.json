@@ -1,0 +1,31 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "Assets/Data/Festivals.json"
+        },
+        {
+            "LogName": "Jorts Location Change",
+            "Action": "EditData",
+            "Target": "Data/Festivals/JortsCat",
+            "Entries": {
+                "Set-Up": "JortsCat 33 62 right"
+            },
+			"When": {
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "LogName": "Jorts Location Change",
+            "Action": "EditData",
+            "Target": "Data/Festivals/JeanCat",
+            "Entries": {
+                "Set-Up": "JeanCat 34 62 left"
+            },
+            "When": {
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        }
+    ]
+}

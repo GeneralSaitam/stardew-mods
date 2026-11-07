@@ -1,0 +1,37 @@
+{
+	"Changes": [
+	
+	    {
+        "Action": "EditData",
+        "Target": "Mods/CJBok.CheatsMenu/WarpSections",
+        "Entries": {
+            "Juanpa98ar.MWP98_Fostoria": {
+                    "Id": "Juanpa98ar.MWP98_Fostoria",
+                    "DisplayName": "{{i18n: JP98.Fostoria}}",
+					"Order": 18
+			    }
+            }
+        },   
+		{
+        "Action": "EditData",
+        "Target": "Mods/CJBok.CheatsMenu/Warps",
+        "Entries": {
+            //DZ
+            "Juanpa98ar.MWP98_FostoriaPori": {
+                "Id": "Juanpa98ar.MWP98_FostoriaPori",
+                "SectionId": "Juanpa98ar.MWP98_Fostoria",
+                "DisplayName": "{{i18n: JP98.Fostoria Pori}}",
+                "Location": "Fostoria.Stoffton_Fostoria",
+                "Tile": "39, 9"
+                },
+			"Juanpa98ar.MWP98_FostoriaFish": {
+                "Id": "Juanpa98ar.MWP98_FostoriaFish",
+                "SectionId": "Juanpa98ar.MWP98_Fostoria",
+                "DisplayName": "{{i18n: JP98.Fostoria Fish}}",
+                "Location": "Fostoria.Stoffton_Fostoria",
+                "Tile": "104, 13"
+                }
+		    }
+	    }
+	]
+}

@@ -1,0 +1,102 @@
+{
+    "Changes": [
+        {
+            //Entering & Exiting Fleurine's Tower
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 96,
+                        "Y": 63
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 8 21 totsFleurineInterior 800 2000 totsFleurine 500"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": "false"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 97,
+                        "Y": 63
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 8 21 totsFleurineInterior 800 2000 totsFleurine 500"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": "false"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Interiors/totsFleurineInterior",
+            "AddWarps": [
+                "8 22 Forest 97 64"
+            ],
+            "When": {
+                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": "false"
+            }
+        },
+        //SVE Patch
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 104,
+                        "Y": 62
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 8 21 totsFleurineInterior 800 2000 totsFleurine 500"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 105,
+                        "Y": 62
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 8 21 totsFleurineInterior 800 2000 totsFleurine 500"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Interiors/totsFleurineInterior",
+            "AddWarps": [
+                "8 22 Forest 105 63"
+            ],
+            "When": {
+                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        }
+    ]
+}

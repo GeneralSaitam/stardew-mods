@@ -1,0 +1,54 @@
+{
+    "Format": "2.8.0",
+    "ConfigSchema": {
+        "Penny Dialogue": {
+            "AllowValues": "Enabled, Disabled",
+            "Default": "Enabled",
+            "Section": "NPC Dialogue",
+            "Description": "Enable or disable custom dialogue for Penny."
+        },
+        "Pam Dialogue": {
+            "AllowValues": "Enabled, Disabled",
+            "Default": "Enabled",
+            "Section": "NPC Dialogue",
+            "Description": "Enable or disable custom dialogue for Pam."
+        },
+        "Penny Events": {
+            "AllowValues": "Enabled, Disabled",
+            "Default": "Enabled",
+            "Section": "NPC Cutscenes",
+            "Description": "Enable or disable custom cutscenes and events for Penny."
+        },
+        "Pam Events": {
+            "AllowValues": "Enabled, Disabled",
+            "Default": "Enabled",
+            "Section": "NPC Cutscenes",
+            "Description": "Enable or disable custom cutscenes and events for Pam."
+        }
+    },
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "code/Events/events.json, code/Events/mail.json, code/Events/quests.json, code/Events/triggers.json, code/Compat/Migration/migrate.json",
+            "When": {
+                "HasMod |contains=LucyTheDove.PTE": false
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "code/NPCs/Penny/dialogue.json",
+            "When": {
+                "HasMod |contains=LucyTheDove.PTE": false,
+                "Penny Dialogue": "Enabled"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "code/NPCs/Pam/dialogue.json",
+            "When": {
+                "HasMod |contains=LucyTheDove.PTE": false,
+                "Pam Dialogue": "Enabled"
+            }
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+	"Changes": [
+		// Add Letter
+		{
+			"Action": "Load",
+			"Target": "StunkyMcDoo.GrapesofFerngill.cp/MailBG",
+			"FromFile": "data/MailData/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"Entries": {
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction": "{{i18n:JojaIntroduction.text}}[letterbg StunkyMcDoo.GrapesofFerngill.cp/MailBG 1][textcolor blue][#]{{i18n:JojaIntroduction.title}}",
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes": "{{i18n:PierreGrapes.text}}[letterbg StunkyMcDoo.GrapesofFerngill.cp/MailBG 0][#]{{i18n:PierreGrapes.title}}",
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFTravellingMerchant": "{{i18n:TravellingMerchant.text}}[letterbg StunkyMcDoo.GrapesofFerngill.cp/MailBG 0][#]{{i18n:TravellingMerchant.title}}",
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFlLunatoneStarter": "{{i18n:LunatoneStarter.text}}[letterbg StunkyMcDoo.GrapesofFerngill.cp/MailBG 0] %item object GOF_Lunatone_Starter 3%%[#]{{i18n:LunatoneStarter.title}}",
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFTitaniaGrapes": "{{i18n:TitaniaGrapes.text}}[letterbg StunkyMcDoo.GrapesofFerngill.cp/MailBG 0][#]{{i18n:TitaniaGrapes.title}}",
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFAncientStarter": "{{i18n:AncientStarter.text}}[letterbg StunkyMcDoo.GrapesofFerngill.cp/MailBG 0] %item object GOF_Ancient_Grape_Starter 2%%[#]{{i18n:AncientStarter.title}}",
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFHardwoodKeg": "{{i18n:HardwoodKeg.text}}[letterbg StunkyMcDoo.GrapesofFerngill.cp/MailBG 0][#]{{i18n:HardwoodKeg.title}}",
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFYeastStarter": "{{i18n:YeastStarter.text}}[letterbg StunkyMcDoo.GrapesofFerngill.cp/MailBG 0] %item craftingRecipe Yeast_Starter %%[#]{{i18n:YeastStarter.title}}",
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFGrapeDryer": "{{i18n:GrapeDryer.text}}[letterbg StunkyMcDoo.GrapesofFerngill.cp/MailBG 0][#]{{i18n:GrapeDryer.title}}",
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFOceanMistGrapes": "{{i18n:OceanMistGrapes.text}}[letterbg StunkyMcDoo.GrapesofFerngill.cp/MailBG 0][#]{{i18n:OceanMistGrapes.title}}",
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFOceanMistStarter": "{{i18n:OceanMistStarter.text}} %item craftingRecipe Ocean_Mist_Grape_Starter%%[#]{{i18n:OceanMistStarter.title}}"
+			}
+
+		},
+		{
+			"Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction": {
+					"Id": "StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current 398 10",
+					"Action": "AddMail Current StunkyMcDoo.GrapesofFerngill.cp_GoFJojaIntroduction now"
+				},
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes": {
+					"Id": "StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current 398 15",
+					"Action": "AddMail Current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes now"
+				},
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFTravellingMerchant": {
+					"Id": "StunkyMcDoo.GrapesofFerngill.cp_GoFTravellingMerchant",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON fall, YEAR 1, PLAYER_HAS_MAIL current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received",
+					"Action": "AddMail Current StunkyMcDoo.GrapesofFerngill.cp_GoFTravellingMerchant now"
+				},
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFLunatoneStarter": {
+					"Id": "StunkyMcDoo.GrapesofFerngill.cp_GoFlLunatoneStarter",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current GOF_Deep_Envy_Grape 10, PLAYER_SHIPPED_BASIC_ITEM Current GOF_Golden_Aura_Grape 10, PLAYER_SHIPPED_BASIC_ITEM Current GOF_Passion_Rouge_Grape 10, PLAYER_SHIPPED_BASIC_ITEM Current GOF_Rosy_Riot_Grape 10, PLAYER_HAS_MAIL current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received, PLAYER_HAS_MAIL current StunkyMcDoo.GrapesofFerngill.cp_GoFTravellingMerchant Received",
+					"Action": "AddMail Current StunkyMcDoo.GrapesofFerngill.cp_GoFlLunatoneStarter now"
+				},
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFTitaniaGrapes": {
+					"Id": "StunkyMcDoo.GrapesofFerngill.cp_GoFTitaniaGrapes",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON fall, YEAR 2, PLAYER_HAS_MAIL current StunkyMcDoo.GrapesofFerngill.cp_GoFLunatoneStarter Received",
+					"Action": "AddMail Current StunkyMcDoo.GrapesofFerngill.cp_GoFTitaniaGrapes now"
+				},
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFAncientStarter": {
+					"Id": "StunkyMcDoo.GrapesofFerngill.cp_GoFAncientStarter",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current GOF_Titania_Grape 5",
+					"Action": "AddMail Current StunkyMcDoo.GrapesofFerngill.cp_GoFAncientStarter now"
+				},
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFHardwoodKeg": {
+					"Id": "StunkyMcDoo.GrapesofFerngill.cp_GoFHardwoodKeg",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current GOF_Grape_Wine 5",
+					"Action": "AddMail Current StunkyMcDoo.GrapesofFerngill.cp_GoFHardwoodKeg now"
+				},
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFYeastStarter": {
+					"Id": "StunkyMcDoo.GrapesofFerngill.cp_GoFYeastStarter",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current GOF_Grape_Wine 15, PLAYER_FARMING_LEVEL current 6",
+					"Action": "AddMail Current StunkyMcDoo.GrapesofFerngill.cp_GoFYeastStarter now"
+				},
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFGrapeDryer": {
+					"Id": "StunkyMcDoo.GrapesofFerngill.cp_GoFGrapeDryer",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current GOF_Sparkling_Wine 10",
+					"Action": "AddMail Current StunkyMcDoo.GrapesofFerngill.cp_GoFGrapeDryer now"
+				},
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFOceanMistGrapes": {
+					"Id": "StunkyMcDoo.GrapesofFerngill.cp_GoFOceanMistGrapes",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON summer, YEAR 2, PLAYER_HAS_MAIL current StunkyMcDoo.GrapesofFerngill.cp_GoFPierreGrapes Received",
+					"Action": "AddMail Current StunkyMcDoo.GrapesofFerngill.cp_GoFOceanMistGrapes now"
+				},
+				"StunkyMcDoo.GrapesofFerngill.cp_GoFOceanMistStarter": {
+					"Id": "StunkyMcDoo.GrapesofFerngill.cp_GoFOceanMistStarter",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_HAS_MAIL current StunkyMcDoo.GrapesofFerngill.cp_GoFOceanMistGrapes Received, PLAYER_SHIPPED_BASIC_ITEM current GOF_Ocean_Mist_Grape 5, PLAYER_HEARTS current Willy 6",
+					"Action": "AddMail Current StunkyMcDoo.GrapesofFerngill.cp_GoFOceanMistStarter now"
+				},
+			}
+		}
+	]
+}

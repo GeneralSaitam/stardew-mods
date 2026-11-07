@@ -1,0 +1,670 @@
+{
+    "Format": "2.0.0",
+
+    "ConfigSchema": {
+      "KidSkin": {
+        "AllowValues": "Default, Dark",
+        "Default": "Default"
+      },
+      "KidTail": {
+        "AllowValues": "No, Yes",
+        "Default": "No"
+      }
+   },
+
+    "Changes":[
+        //基本信息
+        {
+            "LogName":"基本信息",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Goldenglow": {
+                "DisplayName": "{{i18n:Name}}",
+                "BirthSeason": "winter",
+                "BirthDay": 12,
+                "HomeRegion": "Town",
+                "Language": "Default",
+                "Gender": "Female",
+                "Age": "Adult",
+                "Manner": "Polite",
+                "SocialAnxiety": "Neutral",
+                "Optimism": "Positive",
+                "IsDarkSkinned": false,
+                "CanBeRomanced": true,
+                "LoveInterest": "",
+                "Calendar": "AlwaysShown",
+                "SocialTab": "UnknownUntilMet",
+                "SocializeConditions": null,
+                "CanVisitIslandCondition": null,
+                "ExcludeFromIntroductionsQuest": false,
+                "ExcludeFromPerfectionScore": false,
+                "EndSlideShow": "Hidden",
+                "FriendsAndFamily": {},
+                "UnlockConditions": null,
+                "SpawnIfMissing": true,
+                "Home": [
+                  {
+                    "Id": "Default",
+                    "Condition":null,
+                    "Location": "HaleyHouse",
+                    "Tile": {
+                      "X": 31,
+                      "Y": 7
+                    },
+                    "Direction": "right"
+                  }
+                ],
+                 "SpouseRoom": {
+                      "MapAsset": "GoldenglowSpouseRoom",
+                      "MapSourceRect": {
+                          "X": 0,
+                          "Y": 0,
+                          "Width": 6,
+                          "Height": 9
+                      }
+                  },
+                "SpousePatio": {
+                    "MapAsset": "GoldenglowSpousePatio",
+                    "MapSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 4,
+                        "Height": 4
+                      }
+                  },
+                  "Appearance": [
+                  {
+                    "Id": "Winter",
+                    "Season": "Winter",
+                    "Indoors": true,
+                    "Outdoors": true,
+                    "Portrait": "Portraits/Goldenglow_Winter",
+                    "Sprite": "Characters/Goldenglow_Winter",
+                    "IsIslandAttire": false,
+                    "Precedence": -100,
+                    "Weight": 0
+                  },
+                  {
+                    "Id": "Summer",
+                    "Season": "Summer",
+                    "Indoors": true,
+                    "Outdoors": true,
+                    "Portrait": "Portraits/Goldenglow_Summer",
+                    "Sprite": "Characters/Goldenglow_Summer",
+                    "IsIslandAttire": false,
+                    "Precedence": -100,
+                    "Weight": 0
+                  },
+                  {
+                    "Id": "Tea",
+                    "Season": "Fall",
+                    "Indoors": true,
+                    "Outdoors": true,
+                    "Portrait": "Portraits/Goldenglow_Tea",
+                    "Sprite": "Characters/Goldenglow_Tea",
+                    "IsIslandAttire": false,
+                    "Precedence": -100,
+                    "Weight": 0
+                  }
+                ],
+                "TextureName": null,//
+                "Size": {
+                  "X": 16,
+                  "Y": 32
+                },
+                "Breather": true,
+                "HiddenProfileEmoteSound": null,
+                "HiddenProfileEmoteDuration": -1,
+                "HiddenProfileEmoteStartFrame": 16,
+                "HiddenProfileEmoteFrameCount": 4,
+                "HiddenProfileEmoteFrameDuration": 200.0,
+                "FestivalVanillaActorIndex": 71,//
+                "CustomFields": {}
+              }
+            }
+          },
+          
+          {
+            "LogName":"配偶房",
+            "Action": "Load",
+            "Target": "Maps/GoldenglowSpouseRoom",
+            "FromFile": "assets/map/GoldenglowSpouseRoom.tmx"
+          },
+
+          {   
+              "LogName":"露台",
+              "Action": "Load",
+              "Target": "Maps/GoldenglowSpousePatio",
+              "FromFile": "assets/map/GoldenglowSpousePatio.tbin"
+          },   
+        //礼物喜好
+        //桃子 636/猫眼石 564 /琉璃山药 208/萝卜沙拉 609 /翡翠 70/玫瑰仙子 595/电池787 果酒348
+        {   
+            "LogName":"礼物喜好",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Goldenglow": "{{i18n:NPCGiftTastes1}}/70 208 564 595 609 636/{{i18n:NPCGiftTastes2}}/348 787/{{i18n:NPCGiftTastes3}}//{{i18n:NPCGiftTastes4}}//{{i18n:NPCGiftTastes5}}// "
+            }
+        },
+      
+        //头像
+        {
+            "LogName":"基本头像",
+            "Action": "Load",
+            "Target": "Portraits/Goldenglow",
+            "FromFile": "assets/img/Portraits.png"
+        },
+       {
+            "LogName":"海滩头像",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Goldenglow_Beach",
+            "FromFile": "assets/img/Portraits_Beach.png"
+        },
+        {
+          "LogName":"夏季头像",
+          "Action": "Load",
+          "Priority": "Low",
+          "Target": "Portraits/Goldenglow_Summer",
+          "FromFile": "assets/img/Portraits_Summer.png"
+      },
+        {
+            "LogName":"冬季头像",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Goldenglow_Winter",
+            "FromFile": "assets/img/Portraits_Winter.png"
+        },
+        {
+          "LogName":"茶话会头像",
+          "Action": "Load",
+          "Priority": "Low",
+          "Target": "Portraits/Goldenglow_Tea",
+          "FromFile": "assets/img/Portraits_Tea.png"
+      },
+        //行走表
+        {
+            "LogName":"基本表",
+            "Action": "Load",
+            "Target": "Characters/Goldenglow",
+            "FromFile": "assets/img/SpriteSheet.png"
+        },
+        {
+            "LogName":"夏季表",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Goldenglow_Beach",
+            "FromFile": "assets/img/SpriteSheet_Beach.png"
+        },
+        {
+          "LogName":"海滩表",
+          "Action": "Load",
+          "Priority": "Low",
+          "Target": "Characters/Goldenglow_Summer",
+          "FromFile": "assets/img/SpriteSheet_Summer.png"
+      },
+        {
+            "LogName":"冬天表",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Goldenglow_Winter",
+            "FromFile": "assets/img/SpriteSheet_Winter.png"
+        },
+        {
+          "LogName":"茶表",
+          "Action": "Load",
+          "Priority": "Low",
+          "Target": "Characters/Goldenglow_Tea",
+          "FromFile": "assets/img/SpriteSheet_Tea.png"
+      },
+
+        //对话
+        {
+          "LogName":"填充",
+          "Action": "Load",
+          "Target": "Characters/Dialogue/Goldenglow,Characters/Dialogue/MarriageDialogueGoldenglow",
+          "FromFile": "data/blank.json"
+         },
+         
+        {  
+            "LogName":"w对话",
+            "Action": "Include",
+            "FromFile": "assets/dialogue/DialogueGoldenglow.json"
+        },
+        //项链对话
+        {
+          "LogName": "送项链后对话",
+          "Action": "EditData",
+          "Target": "Data/EngagementDialogue",
+          "Entries": {
+              "Goldenglow0": "{{i18n:EngagementDialogue0}}",
+              "Goldenglow1": "{{i18n:EngagementDialogue1}}"
+  
+          }
+      },
+        {   
+        "LogName": "雨",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/rainy",
+        "Entries": {
+          "Goldenglow": "{{i18n:rainy}}"
+        }
+       },
+        { 
+            "LogName":"结婚对话",
+            "Action": "Include",
+            "FromFile": "assets/dialogue/MarriageDialogueGoldenglow.json"
+        },
+        {
+          "LogName": "婚后电影对话",
+          "Action": "EditData",
+          "Target": "Strings/Characters",
+          "Entries": {
+            "MovieInvite_Spouse_Goldenglow": "{{i18n:MovieInvite_Spouse_Goldenglow}}"
+              }
+          },
+          {
+            "LogName": "山顶对话",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+            "SummitEvent_Dialogue3_Goldenglow": "{{i18n:SummitEvent_Dialogue3_Goldenglow}}"
+            }
+          },
+          {
+            "LogName": "其他对话",
+            "Action": "Include",
+            "FromFile": "assets/dialogue/OtherDialogue.json"
+         },
+        //行程
+        {   "LogName":"行程",
+            "Action": "Load",
+            "Target": "Characters/schedules/Goldenglow",
+            "FromFile": "assets/schedules/schedule.json",
+            "When": {
+            "HasMod |contains=Rafseazz.RSVCP": false
+        }
+        },
+        {   "LogName":"rsv行程",
+            "Action": "Load",
+            "Target": "Characters/schedules/Goldenglow",
+            "FromFile": "assets/schedules/RsvSchedule.json",
+            "When": {
+            "HasMod |contains=Rafseazz.RSVCP": true
+        }
+        },
+          //其他npc
+          {
+
+                "LogName":"艾米丽行程",
+                "Action": "Load",
+                //"Priority": "High",
+                "Target": "Characters/schedules/Emily",
+                "FromFile": "assets/schedules/EmilySchedule.json"
+          },
+        //动画
+        { "LogName":"动画",
+          "Action": "EditData",
+          "Target": "Data/animationDescriptions",
+          "Entries": {
+              "goldenglow_sleep": "29/29/29",
+              "goldenglow_sit":"24/24/24",
+              "goldenglow_sit_read":"16 17/18/17 16",
+              "goldenglow_read":"16/21/16",
+              "goldenglow_sideways_left":"12/22/12",
+              "goldenglow_sideways_right":"4/23/4"
+          }
+        },
+        {
+          "LogName":"填充2",
+          "Action": "Load",
+          "Target": "Strings/schedules/Goldenglow",
+          "FromFile": "data/blank.json"
+         },
+        {
+          "LogName": "行程对话",
+          "Action": "Include",
+          "FromFile":"assets/schedules/scheduleDialogue.json"
+      },
+        //data内容
+        {
+          "LogName": "电影",
+          "Action": "Include",
+          "FromFile": "data/Movies.json"
+      },
+      {
+          "LogName": "节日",
+          "Action": "Include",
+          "FromFile": "data/Festivals.json",
+          "When": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+        }
+      },
+      {
+        "LogName": "节日",
+        "Action": "Include",
+        "FromFile": "data/SveFestivals.json",
+        "When": {
+          "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "LogName": "rsv节日",
+      "Action": "Include",
+      "FromFile": "data/RsvFestivals.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+    }
+  },
+      {
+        "LogName": "事件",
+        "Action": "Include",
+        "FromFile": "data/Events.json",
+        "When": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+        }
+     },
+     {
+      "LogName": "sve事件",
+      "Action": "Include",
+      "FromFile": "data/SveEvents.json",
+      "When": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+        }
+   },
+      {
+        "LogName": "商店肖像",
+        "Action": "Include",
+        "FromFile": "data/SpousePortrait.json"
+     },
+     {
+      "LogName": "饰品素材",
+      "Action": "Include",
+      "FromFile": "data/LoadEffects.json"
+  },
+       {
+      "LogName": "饰品素材",
+      "Action": "Include",
+      "FromFile": "data/LoadObjects.json"
+  },
+    {
+      "LogName": "饰品素材",
+      "Action": "Include",
+      "FromFile": "data/GoldenglowTrinket.json"
+  },
+     
+      //加载地图
+        {
+          "LogName":"海莉家",
+          "Action": "EditMap",
+          //"Priority": "Default - 10",
+          "Target": "Maps/HaleyHouse",
+          "FromFile": "assets/map/HaleyHouse.tmx",
+          "FromArea": { 
+          "X":23,
+          "Y": 0,
+          "Width": 11,
+          "Height": 30
+        },
+          "ToArea":{
+           "X":23,
+           "Y": 0,
+           "Width": 11,
+           "Height": 30
+          },
+          "When": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+        },
+           "Update": "OnLocationChange"
+         },
+         {
+          "LogName":"sve海莉家",
+          "Action": "EditMap",
+          //"Priority": "Default - 10",
+          "Target": "Maps/HaleyHouse",
+          "FromFile": "assets/map/sveHaleyHouse.tmx",
+          "FromArea": { 
+          "X":24,
+          "Y": 0,
+          "Width": 10,
+          "Height": 30
+        },
+          "ToArea":{
+           "X":24,
+           "Y": 0,
+           "Width": 10,
+           "Height": 30
+          },
+          "When": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+        },
+           "Update": "OnLocationChange"
+         },
+         {
+          "LogName":"sve草",
+          "Action": "EditMap",
+          //"Priority": "Default - 10",
+          "Target": "Maps/HaleyHouse",
+          "FromFile": "assets/map/sveHaleyHouse.tmx",
+          "FromArea": { 
+          "X":23,
+          "Y":21,
+          "Width": 1,
+          "Height": 2
+        },
+          "ToArea":{
+           "X":23,
+           "Y":21,
+           "Width": 1,
+           "Height": 2
+          },
+          "When": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+        },
+           "Update": "OnLocationChange"
+         },
+         {
+          "LogName":"椅子",
+          "Action": "EditMap",
+          //"Priority": "Default + 10",
+          "Target": "Maps/HaleyHouse",
+          "FromFile": "assets/map/HaleyHouse.tmx",
+          "FromArea": { 
+          "X":18,
+          "Y":16,
+          "Width": 5,
+          "Height": 4
+        },
+          "ToArea":{
+           "X":18,
+           "Y": 16,
+           "Width": 5,
+           "Height": 4
+          },
+           "Update": "OnLocationChange"
+         },
+         {
+          "LogName":"q",
+          "Action": "EditMap",
+          "Priority": "Default -10",
+          "Target": "Maps/HaleyHouse",
+          "FromFile": "assets/map/HaleyHouse.tmx",
+          "FromArea": { 
+          "X":30,
+          "Y":8,
+          "Width": 1,
+          "Height": 1
+        },
+          "ToArea":{
+           "X":25,
+           "Y":24,
+           "Width": 1,
+           "Height": 1
+          },
+           "Update": "OnLocationChange"
+         },
+         
+       {
+        "LogName": "门",
+         "Action": "EditMap",
+         "Target": "Maps/HaleyHouse", 
+         "MapProperties": {
+            "DayTiles":"Front 6 1 256 Front 6 2 288 Front 13 1 256 Front 13 2 288 Front 22 1 256 Front 22 2 288 Front 18 1 256 Front 18 2 288 Front 19 12 256 Front 19 13 288 Front 22 12 256 Front 22 13 288 Front 28 2 256 Front 28 3 288 Back 22 5 94 Back 18 5 94 Back 18 6 126 Back 13 5 94 Back 13 6 126 Back 22 16 226 Back 22 17 258 Back 19 16 226 Back 19 17 258",
+            "NightTiles":"Front 6 1 1253 Front 6 2 1285 Front 13 1 1253 Front 13 2 1285 Front 22 1 1253 Front 22 2 1285 Front 18 1 1253 Front 18 2 1285 Front 19 12 1253 Front 19 13 1285 Front 22 12 1253 Front 22 13 1285 Front 28 2 1253 Front 28 3 1285 Back 22 5 124 Back 18 5 124 Back 18 6 124 Back 13 5 124 Back 13 6 124 Back 22 16 294 Back 22 17 262 Back 19 16 294 Back 19 17 262",
+            "Doors": "5 13 1 120 16 12 1 120 26 18 1 120",
+            "Warp":"2 25 Town 20 89"
+         },
+          "When": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+        }
+            },
+            {
+              "LogName": "门2",
+               "Action": "EditMap",
+               "Target": "Maps/HaleyHouse", 
+               "MapProperties": {
+                  "DayTiles":"Front 6 1 256 Front 6 2 288 Front 13 1 256 Front 13 2 288 Front 22 1 256 Front 22 2 288 Front 18 1 256 Front 18 2 288 Front 19 12 256 Front 19 13 288 Front 22 12 256 Front 22 13 288 Front 28 2 256 Front 28 3 288 Back 22 5 94 Back 18 4 228 Back 18 5 260 Back 13 4 228 Back 13 5 260 Back 22 16 226 Back 22 17 258 Back 19 16 226 Back 19 17 258",
+                  "NightTiles":"Front 6 1 1253 Front 6 2 1285 Front 13 1 1253 Front 13 2 1285 Front 22 1 1253 Front 22 2 1285 Front 18 1 1253 Front 18 2 1285 Front 19 12 1253 Front 19 13 1285 Front 22 12 1253 Front 22 13 1285 Front 28 2 1253 Front 28 3 1285 Back 22 5 124 Back 18 4 200 Back 18 5 2119 Back 13 4 200 Back 13 5 2119 Back 22 16 294 Back 22 17 262 Back 19 16 294 Back 19 17 262",
+                  "Doors": "5 13 1 120 16 12 1 120 26 18 1 120",
+                  "Warp":"2 25 Town 20 89"
+               },
+                "When": {
+                  "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+              }
+                  },
+    {
+      "LogName": "物品信息",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+	      "GoldenglowRoom.1": "{{i18n:GoldenglowRoom.1}}",
+	      "GoldenglowRoom.2": "{{i18n:GoldenglowRoom.2}}",
+	      "GoldenglowRoom.3": "{{i18n:GoldenglowRoom.3}}",
+        "GoldenglowRoom.4": "{{i18n:GoldenglowRoom.4}}",
+        "GoldenglowRoom.5": "{{i18n:GoldenglowRoom.5}}",
+        "GoldenglowRoom.6": "{{i18n:GoldenglowRoom.6}}",
+        "GoldenglowRoom.7": "{{i18n:GoldenglowRoom.7}}",
+        "GoldenglowRoom.8": "{{i18n:GoldenglowRoom.8}}",
+        "GoldenglowRoom.9": "{{i18n:GoldenglowRoom.9}}",
+        "GoldenglowRoom.10": "{{i18n:GoldenglowRoom.10}}",
+        "GoldenglowRoom.11": "{{i18n:GoldenglowRoom.11}}",
+        "GoldenglowRoom.12": "{{i18n:GoldenglowRoom.12}}"
+		         }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+      "Entries": {
+          "Goldenglow": {
+              "MarkerCropOffset": 3
+          }
+      },
+      "When": {
+        "HasMod |contains=Bouhm.NPCMapLocations": true
+    }
+  },
+//两小孩
+  {
+    "Action": "EditImage",
+    "Target": "Characters/Baby",
+    "FromFile": "assets/baby/Baby.png",
+    "When": {
+      "Relationship:Goldenglow": "Married",
+      "KidSkin": "Default"
+}
+   },
+
+   {
+    "Action": "EditImage",
+    "Target": "Characters/Baby",
+    "FromFile": "assets/baby/DarkBaby.png",
+    "When": {
+      "Relationship:Goldenglow": "Married",
+      "KidSkin": "Dark"
+}
+   }, 
+//两女儿
+   {
+    "Action": "EditImage",
+    "Target": "Characters/Toddler_girl",
+    "FromFile": "assets/baby/Toddler_girl.png",
+    "When": {
+      "Relationship:Goldenglow": "Married",
+      "KidSkin": "Default"
+}
+   }, 
+
+   {
+    "Action": "EditImage",
+    "Target": "Characters/Toddler_girl",
+    "FromFile": "assets/baby/Toddler_girl_dark.png",
+    "When": {
+      "Relationship:Goldenglow": "Married",
+      "KidSkin": "Dark"
+}
+   },
+   //两儿子
+   {
+    "Action": "EditImage",
+    "Target": "Characters/Toddler",
+    "FromFile": "assets/baby/Toddler.png",
+    "When": {
+      "Relationship:Goldenglow": "Married",
+      "KidSkin": "Default"
+}
+   }, 
+   {
+    "Action": "EditImage",
+    "Target": "Characters/Toddler",
+    "FromFile": "assets/baby/Toddler_dark.png",
+    "When": {
+      "Relationship:Goldenglow": "Married",
+      "KidSkin": "Dark"
+}
+   },
+//冬装
+   {
+    "Action": "EditImage",
+    "Target": "Characters/Toddler_girl",
+    "FromFile": "assets/baby/Winter_girl.png",
+    "PatchMode": "Overlay",
+    "When": {
+      "Relationship:Goldenglow": "Married",
+      "Season": "Winter"
+}
+   }, 
+   {
+    "Action": "EditImage",
+    "Target": "Characters/Toddler",
+    "FromFile": "assets/baby/Winter_boy.png",
+    "PatchMode": "Overlay",
+    "When": {
+      "Relationship:Goldenglow": "Married",
+      "Season": "Winter"
+}
+   }, 
+//尾巴   
+   {
+    "Action": "EditImage",
+    "Target": "Characters/Toddler_girl",
+    "FromFile": "assets/baby/GirlTail.png",
+    "PatchMode": "Overlay",
+    "When": {
+      "Relationship:Goldenglow": "Married",
+      "KidTail": "Yes"
+}
+   },
+   {
+    "Action": "EditImage",
+    "Target": "Characters/Toddler",
+    "FromFile": "assets/baby/BoyTail.png",
+    "PatchMode": "Overlay",
+    "When": {
+      "Relationship:Goldenglow": "Married",
+      "KidTail": "Yes"
+}
+   }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+	"Format": "1.19.0",
+  
+  "ConfigSchema": {
+		"Drinking_Face": {"AllowValues": "CoffeeCup, Teacup, WhiteTeacup",
+			"Default": "WhiteTeacup",
+			"AllowBlank": true },
+		
+		"Just_the_Drink_Sleeves": {"AllowValues": "CoffeeCup, Teacup, WhiteTeacup",
+			"Default": "WhiteTeacup",
+			"AllowBlank": true },
+    },
+
+	"Changes": [
+		{
+			"LogName": "Drinking_Face Female",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald",
+			"FromFile": "assets/{{Drinking_Face}}.png",
+			"When" : { "HasValue:{{Drinking_Face}}": true },
+			"FromArea": {"X": 19, "Y": 4, "Width": 26, "Height": 10},
+			"ToArea": { "X": 35, "Y": 484, "Width": 26, "Height": 10}
+		},
+		{
+			"LogName": "Drinking_Face Male",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald",
+			"FromFile": "assets/{{Drinking_Face}}.png",
+			"When" : { "HasValue:{{Drinking_Face}}": true },
+			"FromArea": {"X": 19, "Y": 4, "Width": 26, "Height": 10},
+			"ToArea": { "X": 35, "Y": 483, "Width": 26, "Height": 10}
+		},
+		{
+			"LogName": "Just_the_Drink_Sleeves Female",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald",
+			"FromFile": "assets/{{Just_the_Drink_Sleeves}}.png",
+			"When" : { "HasValue:{{Just_the_Drink_Sleeves}}": true },
+			"FromArea": {"X": 80, "Y": 0, "Width": 64, "Height": 32},
+			"ToArea": { "X": 96, "Y": 480, "Width": 64, "Height": 32 }
+		},
+		{
+			"LogName": "Just_the_Drink_Sleeves Male",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald",
+			"FromFile": "assets/{{Just_the_Drink_Sleeves}}.png",
+			"When" : { "HasValue:{{Just_the_Drink_Sleeves}}": true },
+			"FromArea": {"X": 80, "Y": 0, "Width": 64, "Height": 32},
+			"ToArea": { "X": 96, "Y": 479, "Width": 64, "Height": 32 }
+		},
+		{
+			"LogName": "Drinking_Face Female",
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald",
+			"FromFile": "assets/compat/GH_Skin.png",
+			"When" : { "HasValue:{{Drinking_Face}}": true,
+				"HasMod |contains=GH.Pitch.female": true },
+			"FromArea": {"X": 19, "Y": 4, "Width": 26, "Height": 10},
+			"ToArea": { "X": 35, "Y": 484, "Width": 26, "Height": 10}
+		},
+		{
+			"LogName": "Drinking_Face Male",
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald",
+			"FromFile": "assets/compat/GH_Skin.png",
+			"When" : { "HasValue:{{Drinking_Face}}": true,
+				"HasMod |contains=GH.Pitch.female": true },
+			"FromArea": {"X": 19, "Y": 4, "Width": 26, "Height": 10},
+			"ToArea": { "X": 35, "Y": 483, "Width": 26, "Height": 10}
+		},
+		{
+			"LogName": "Just_the_Drink_Sleeves Female",
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald",
+			"FromFile": "assets/compat/GH_Skin.png",
+			"When" : { "HasValue:{{Just_the_Drink_Sleeves}}": true,
+				"HasMod |contains=GH.Pitch.female": true },
+			"FromArea": {"X": 80, "Y": 0, "Width": 64, "Height": 32},
+			"ToArea": { "X": 96, "Y": 480, "Width": 64, "Height": 32 }
+		},
+		{
+			"LogName": "Just_the_Drink_Sleeves Male",
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald",
+			"FromFile": "assets/compat/GH_Skin.png",
+			"When" : { "HasValue:{{Just_the_Drink_Sleeves}}": true,
+				"HasMod |contains=GH.Pitch.female": true },
+			"FromArea": {"X": 80, "Y": 0, "Width": 64, "Height": 32},
+			"ToArea": { "X": 96, "Y": 479, "Width": 64, "Height": 32 }
+		},
+]
+}

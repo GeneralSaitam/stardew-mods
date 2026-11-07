@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="12">
+ <properties>
+  <property name="DayTiles" value="Front 5 1 256 Front 5 2 288 Back 5 4 228 Back 5 5 260"/>
+  <property name="NightTiles" value="Front 5 1 1253 Front 5 2 1285 Back 5 4 200 Back 5 5 264"/>
+  <property name="Warp" value="7 10 Saloon 30 19"/>
+ </properties>
+ <tileset firstgid="1" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="DaultonInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2241" name="v15_TownInterior2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="DaultonInterior2.png" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="3553" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="DaultonInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="5729" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="DaultonInterior2.png" width="512" height="656"/>
+ </tileset>
+ <layer id="1" name="Back" width="16" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYICAVYyEMS7wiJeB4a0YafgJL0K/Ex8DA684adiFD6E/Ccj2JhGnQPWv4CMOFwuhYpj4CSJxkRAqJlYfPuwIdP9LPuwYXS02Nfj0E4NB+l/w4cYlQhAapO4EFnlVpDhEByA9oHB2ZEDoR4+DEwT0I2NccUAMgOlHT0Ok6Ed3OyH3o+tHdzsME6sfFBfIuBRqPwAMUoEH
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Back2" width="16" height="16">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYcFcKlc/CT7xeNhLUUgNcZsXEV1lJN0eVl4FBjRfC/oqkv5+TgWECJ6ram3wMDLeA+DYfeW7+CdT3C4h/k6mfFqBWDBWTCurJ0DOYwD2g++8D8QMy/fEPqO8/SK84A0MiJ0HlGEAOqE8eiBXEEWIApMQXng==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Back2"/>
+ <layer id="14" name="Back3" width="16" height="16">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFtAQpUphiQcL0d8dgA7ViA+0C0oG5AAODhQD5+sOBeiMo0E8LAAAcJQLV
+  </data>
+ </layer>
+ <layer id="5" name="Buildings" width="16" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAePOaFYBhwhGIQEOcj3hwJoNq7UggzfgHZT4Bi2gTwQaC6Q1IQ9m8k/V5Avis/A4MbEHsD2YsFGRiWCELYdkAxe6j4Q6CeR1IQtg8fwv1ZWNx+UIiBoV2SgSEOqDeeHyLGKM3AwCQNYecg6T8BVKsMVKPCj92/ZwQwxRaLoYYfPvAGi/46foT+yxLA8AO64akQEYYBgQ1Qry2S/s9A/SzCDAyswsTpjwHqjUXSjwszoLFrxVBxB540g00/KI0VCyGwKlR/OxZzkN2hCJU3B9LZSFiVyDQL1w+MBwsgtgRiKwHS9YcD9UQAcSQQR5GhHx0Qqx8UBk1AtUuRcDs0/QIA9RQ0vg==
+  </data>
+ </layer>
+ <objectgroup id="6" name="Buildings" visible="0"/>
+ <layer id="13" name="Buildings2" width="16" height="16">
+  <properties>
+   <property name="Draw" value="Buildings"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYcFdqgCwmE0ziR7An8uNWN9SBP9Bv+jT0X60YAo+CgQcAzQIEjg==
+  </data>
+ </layer>
+ <layer id="7" name="Front" width="16" height="16">
+  <data encoding="base64" compression="zlib">
+   eJy9kssOwUAUhn+3hQgVkka7syDxAFj3IdhL91YsLYpEVyIhsSaEjRUvwJu4PISlX9owLROXiJN86ek5801nOmMAOMSB4xtYOtDWnfxErhFIAEFSVoAGaRIjANRVYMj6iKRZG/A5oTslY+ZhEiHZhDNPjmPyipPX6Pfpr9nbkLM7Zkt3p+MWOcHv0bWVe2+SwkPs6R5c31S9/oLuUnl0ZNHx+d/Er/1p6HPfIm0y89Fx5+0K+TNfFrdzFdbYUr1cewYksDcnpm+PxSRQIlHNeZf5z9aS4b2q0K2Sgvbi+wL+M1rF7nv7xhf/3z98S+LbrF8AXXE+DQ==
+  </data>
+ </layer>
+ <objectgroup id="8" name="Front" visible="0"/>
+ <layer id="9" name="AlwaysFront" width="16" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAc3JIiXc9dMvSMgqENtPlQMalAnAw9owA/AACPAgL1
+  </data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront" visible="0"/>
+ <layer id="11" name="Paths" width="16" height="16">
+  <properties>
+   <property name="Warp" value="7 10 Saloon 34 9"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBh+gHOgHQAF5LiDkB5c8oPFz7QEw8WPg8kfAIfoAEA=
+  </data>
+ </layer>
+ <objectgroup id="12" name="Paths" visible="0"/>
+</map>

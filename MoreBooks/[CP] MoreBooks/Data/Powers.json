@@ -1,0 +1,276 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+			"Target": "Mods/{{ModId}}/Icon",
+			"FromFile": "assets/icon.png"
+        },
+
+        {
+			"Action": "EditData",
+			"Target": "Spiderbuttons.SpecialPowerUtilities/PowerSections",
+			"Entries": {
+				"{{ModId}}": {
+					"SectionName": "More Books",
+					"IconPath": "Mods/{{ModId}}/Icon",
+				}
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Immunity": {
+					"DisplayName": "{{i18n: Power.Immunity.Name}}",
+					"Description": "{{i18n: Power.Immunity.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Immunity_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Immunity 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableImmunityBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Luck": {
+					"DisplayName": "{{i18n: Power.Luck.Name}}",
+					"Description": "{{i18n: Power.Luck.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Luck_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Luck 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableLuckBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Speed": {
+					"DisplayName": "{{i18n: Power.Speed.Name}}",
+					"Description": "{{i18n: Power.Speed.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Speed_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Speed 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableSpeedBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Fishing": {
+					"DisplayName": "{{i18n: Power.Fishing.Name}}",
+					"Description": "{{i18n: Power.Fishing.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Fishing_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Fishing 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableFishingLevelBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Magnet": {
+					"DisplayName": "{{i18n: Power.Magnet.Name}}",
+					"Description": "{{i18n: Power.Magnet.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Magnet_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Magnet 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableMagneticBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Lewis_Shorts": {
+					"DisplayName": "{{i18n: Power.LewisShorts.Name}}",
+					"Description": "{{i18n: Power.LewisShorts.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Lewis_shorts_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Lewis_shorts 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableLewisBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Carpenter_Catalogue": {
+					"DisplayName": "{{i18n: Power.CarpenterCatalogue.Name}}",
+					"Description": "{{i18n: Power.CarpenterCatalogue.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Carpenter_Catalogue_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Carpenter_Catalogue 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableCarpenterCatalogue": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Ore_Catalogue": {
+					"DisplayName": "{{i18n: Power.OreCatalogue.Name}}",
+					"Description": "{{i18n: Power.OreCatalogue.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Ore_Catalogue_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Ore_Catalogue 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableOreCatalogue": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Rice": {
+					"DisplayName": "{{i18n: Power.Rice.Name}}",
+					"Description": "{{i18n: Power.Rice.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Rice_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Rice 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableRiceBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Dagger": {
+					"DisplayName": "{{i18n: Power.Dagger.Name}}",
+					"Description": "{{i18n: Power.Dagger.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Dagger_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Dagger 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableDaggerBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Attack": {
+					"DisplayName": "{{i18n: Power.Attack.Name}}",
+					"Description": "{{i18n: Power.Attack.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Attack_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Attack 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableAttackBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Green_Tea": {
+					"DisplayName": "{{i18n: Power.GreenTea.Name}}",
+					"Description": "{{i18n: Power.GreenTea.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Green_Tea_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Green_Tea 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableGreenTeaBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Garbage_Can": {
+					"DisplayName": "{{i18n: Power.GarbageCan.Name}}",
+					"Description": "{{i18n: Power.GarbageCan.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Garbage_Can_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Garbage_Can 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableGarbageCanBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Milk": {
+					"DisplayName": "{{i18n: Power.Milk.Name}}",
+					"Description": "{{i18n: Power.Milk.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Milk_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Milk 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableMilkBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_Bomb": {
+					"DisplayName": "{{i18n: Power.Bomb.Name}}",
+					"Description": "{{i18n: Power.Bomb.Description}}",
+					"TexturePath": "Mods/{{ModId}}/Bomb_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_Bomb 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableBombBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}_Power_God": {
+					"DisplayName": "{{i18n: Power.God.Name}}",
+					"Description": "{{i18n: Power.God.Description}}",
+					"TexturePath": "Mods/{{ModId}}/God_book",
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}_Book_God 1",
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableGodBook": true
+            },
+		},
+    ]
+}

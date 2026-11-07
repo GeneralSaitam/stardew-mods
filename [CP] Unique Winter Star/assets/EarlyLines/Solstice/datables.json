@@ -1,0 +1,174 @@
+{
+	"Changes":[
+		{
+			"LogName": "Abigail - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Abigail.Solstice.Gifting}}",
+			},
+			"When": {
+				"Abigail": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Sebastian.Solstice.Gifting}}",
+			},
+			"When": {
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Alex - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Alex.Solstice.Gifting}}",
+			},
+			"When": {
+				"Alex": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice (Default)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Haley.Solstice.Gifting}}",
+			},
+			"When": {
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice, High Hearts",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Haley.Solstice.High.Gifting}}",
+			},
+			"When": {
+				"Hearts:Haley": "6,7,8",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice v2 (alt condition)", // Condition which allows leeway on hearts if 6-heart is seen. If heart level drops to 3, assume she's angry.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Haley.Solstice.High.Gifting}}",
+			},
+			"When": {
+				"Hearts:Haley": "4, 5",
+				"HasSeenEvent |contains=13": "true",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Shane - Solstice (Default)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Shane.Solstice.Gifting}}",
+			},
+			"When": {
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Shane - Solstice, High Hearts",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Shane.Solstice.High.Gifting}}",
+			},
+			"When": {
+				"Hearts:Shane": "4, 5, 6, 7, 8",
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Emily.Solstice.Gifting}}",
+			},
+			"When": {
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Leah - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Leah.Solstice.Gifting}}",
+			},
+			"When": {
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Elliott.Solstice.Gifting}}",
+			},
+			"When": {
+				"Elliott": "normal, spicy",
+			},
+		},
+
+		{
+			"LogName": "Penny - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Penny.Solstice.Gifting}}",
+			},
+			"When": {
+				"Penny": "normal",
+			},
+		},
+		{
+			"LogName": "Sam - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Sam.Solstice.Gifting}}",
+			},
+			"When": {
+				"Sam": "normal",
+			},
+		},
+		{
+			"LogName": "Harvey - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Harvey.Solstice.Gifting}}",
+			},
+			"When": {
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Maru.Solstice.Gifting}}",
+			},
+			"When": {
+				"Maru": "normal, spicy",
+			},
+		},
+	],
+}

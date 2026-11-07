@@ -1,0 +1,284 @@
+{
+    "Format": "2.4.0",
+    "ConfigSchema": {
+        "Sewer Steam Overlay": {
+            "AllowValues": "Default, Less",
+            "Default": "Default",
+            "Description": "Note that with 'Less' option sewer map will be visually darker due to hardcoded game logic."
+        },
+        "New Krobus Schedule": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Note that this may be buggy!"
+        }
+    },
+    "Changes": [
+	
+	   {
+            "Action": "Include",
+            "FromFile": "assets/code/Events.json",
+            "When": {
+			
+               "Hearts:Krobus": "{{Range: 2, 14}}"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/code/mapedits_compat.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/code/newgarbage.json"
+        },
+		 {
+            "Action": "Include",
+            "FromFile": "assets/code/Objects.json"
+        },
+		
+		
+		
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "MapProperties": {
+                "AmbientLight": "190 180 150"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_Custom_Aimon_SewerSecret",
+            "FromFile": "assets/Custom_Aimon_SewerSecret.tmx"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModId}}_Custom_Aimon_SewerSecret": {
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_Custom_Aimon_SewerSecret"
+                    },
+                    "FormerLocationNames": [
+                        "Custom_Aimon_SewerSecret"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add SewerSecret For Events",
+            "Action": "Load",
+            "Priority": "High",
+            "Target": "Data/Events/Aimon111.MoreLivelySewerOverhaul_Custom_Aimon_SewerSecret",
+            "FromFile": "assets/code/blank.json"
+        },
+		
+        {
+            "LogName": "Add Blacksmith for events",
+            "Action": "Load",
+            "Priority": "High",
+            "Target": "Data/Events/Blacksmith",
+            "FromFile": "assets/code/blank.json"
+        },
+        {
+            "LogName": "z_custom_sewertiles_aimon111",
+            "Action": "Load",
+            "Target": "Maps/z_custom_sewertiles_aimon111",
+            "FromFile": "assets/tilesheets/z_custom_sewertiles_aimon111.png"
+        },
+		{
+            "LogName": "z_custom_sewertiles_aimon111",
+            "Action": "Load",
+            "Target": "Maps/z_custom_sewertiles_aimon111_2",
+            "FromFile": "assets/tilesheets/z_custom_sewertiles_aimon111.png"
+        },
+        {
+            "LogName": "z_custom_sewertileswater_aimon111",
+            "Action": "Load",
+            "Target": "Maps/z_custom_sewertileswater_aimon111",
+            "FromFile": "assets/tilesheets/z_custom_sewertileswater_aimon111.png"
+        },
+        {
+            "LogName": "z_custom_Aimon_SewerSecret_aimon111",
+            "Action": "Load",
+            "Target": "Maps/z_custom_Aimon_SewerSecret",
+            "FromFile": "assets/tilesheets/z_custom_Aimon_SewerSecret.png"
+        },
+        {
+            "LogName": "steamless",
+            "Action": "EditImage",
+            "Target": "LooseSprites/steamAnimation",
+            "FromFile": "assets/tilesheets/steamAnimation_less.png",
+            "PatchMode": "Replace",
+            "When": {
+                "Sewer Steam Overlay": "Less"
+            }
+        },
+        {
+            "LogName": "aimonSewerMap",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "FromFile": "assets/Sewer_aimon111.tmx",
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=DTZ.DowntownZuzuCP": false,
+                "HasMod |contains=MouseyPounds.ShadowFestival": false
+            }
+        },
+        {
+            "LogName": "aimonSewerMapMundane",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "FromFile": "assets/Sewer_aimon111.tmx",
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=MouseyPounds.ShadowFestival": true,
+                "DayEvent |contains=spirit's eve": false
+            }
+        },
+        {
+            "LogName": "aimonSewerMapMundane",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "FromFile": "assets/Sewer_aimon111_mundane.tmx",
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=MouseyPounds.ShadowFestival": true,
+                "DayEvent |contains=spirit's eve": true
+            }
+        },
+        {
+            "LogName": "aimonSewerMapdtzuzu",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "FromFile": "assets/Sewer_aimon111.tmx",
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=DTZ.DowntownZuzuCP": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_DTZ_ZuzuCitySewerTunnel",
+            "When": {
+                "HasMod": "DTZ.DowntownZuzuCP"
+            },
+            "AddWarps": [
+                "111 131 Sewer 10 3"
+            ]
+        },
+        {
+            "LogName": "aimonSewerMapLightning2000",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "Time": "{{Range: 600, 2000}}",
+                "Weather|contains=Rain, Storm": false
+            },
+            "Update": "OnLocationChange",
+            "MapProperties": {
+                "Light": "3 47 2 16 12 7 16 26 5 21 18 2 27 18 2 3 41 2 16 18 2 25 5 2 31 7 2 23 13 2 15 9 2 17 9 2 24 9 2 3 18 2"
+            }
+        },
+        {
+            "LogName": "aimonSewerMapLightning2000",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "Time": "{{Range: 2000, 2600}}",
+                "Weather|contains=Rain, Storm": false
+            },
+           "Update": "OnLocationChange",
+            "MapProperties": {
+                "Light": "21 18 2 27 18 2 3 41 2 25 5 2 31 7 2 23 13 2"
+            }
+        },
+        {
+            "LogName": "aimonSewerMapLightningRain",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "Weather|contains=Rain, Storm": true
+            },
+           "Update": "OnLocationChange",
+            "MapProperties": {
+                "Light": "21 18 2 27 18 2 3 41 2 25 5 2 31 7 2 23 13 2"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/code/StringsFromMap.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/code/mapedits.json"
+        },
+        {
+            "LogName": "ScheduleKrobus",
+            "Action": "Load",
+            "Target": "Characters/schedules/Krobus",
+            "FromFile": "assets/code/schedule.json",
+            "When": {
+                "Relationship:Krobus": "Friendly",
+                "New Krobus Schedule": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/code/Dialogue.json",
+            "When": {
+                "Relationship:Krobus": "Friendly"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Aimon111.SewerOverhaul_AimonSnak1",
+            "FromFile": "assets/Tilesheets/snakspritesheet.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Aimon111.SewerOverhaul_AimonSnak2",
+            "FromFile": "assets/Tilesheets/snakspritesheet.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Aimon111.SewerOverhaul_AimonSnak3",
+            "FromFile": "assets/Tilesheets/snakspritesheet1.png"
+        },
+        {
+            "LogName": "aimon_flutereplacement",
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald, Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald",
+            "FromFile": "assets/tilesheets/farmerflharp.png",
+            "FromArea": {
+                "X": 128,
+                "Y": 512,
+                "Width": 48,
+                "Height": 32
+            },
+            "ToArea": {
+                "X": 128,
+                "Y": 512,
+                "Width": 48,
+                "Height": 32
+            },
+            "PatchMode": "Replace",
+            "When": {
+                "HasSeenEvent |contains=19405005": true,
+                "HasSeenEvent |contains=194050010": false,
+                "LocationName |contains=Mountain": false
+            },
+          "Update": "OnLocationChange",
+        },
+		
+		
+		//warp fix 
+		
+		  {
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "AddWarps": [
+                "16 10 Town 35 97"
+            ]
+        },
+     
+    ]
+}

@@ -1,0 +1,193 @@
+{
+"Changes": [
+{
+"Action": "EditData",
+"Target": "Data/Buildings",
+ "When": {
+"HasMod |contains=Fellowclown.YV": false,
+},
+"Entries": {
+"{{ModID}}_CarnivoreSilo": {
+"Name": "{{i18n:FC.CarnivoreSilo}}",
+"NameForGeneralType": null,
+"Description": "{{i18n:FC.CarnivoreSilo.Desc}}",
+"Texture": "Mods\\{{ModID}}\\FC.Furniture",
+"Skins": [],
+"DrawShadow": false,
+"UpgradeSignTile": "1, 2",
+"UpgradeSignHeight": 16.0,
+"Size": {
+"X": 1,
+"Y": 1
+},
+"FadeWhenBehind": true,
+"SourceRect": {
+"X": 32,
+"Y": 0,
+"Width": 16,
+"Height": 32
+},
+"SeasonOffset": {
+"X": 0,
+"Y": 0
+},
+"DrawOffset": "0, 0",
+"SortTileOffset": 0.0,
+"CollisionMap": null,
+"AdditionalPlacementTiles": null,
+"BuildingType": null,
+"Builder": "Robin",
+"BuildCondition": null,
+"BuildDays": 2,
+"BuildCost": 100,
+"BuildMaterials": [
+{
+"ItemId": "(O)390",
+"Amount": 100
+},
+],
+"BuildingToUpgrade": null,
+"MagicalConstruction": false,
+"BuildMenuDrawOffset": {
+"X": 0,
+"Y": 0
+},
+"HumanDoor": {
+"X": -1,
+"Y": -1
+},
+"AnimalDoor": {
+"X": -1,
+"Y": -1,
+"Width": 0,
+"Height": 0
+},
+"AnimalDoorOpenDuration": 0.0,
+"AnimalDoorOpenSound": null,
+"AnimalDoorCloseDuration": 0.0,
+"AnimalDoorCloseSound": null,
+"NonInstancedIndoorLocation": null,
+"IndoorMap": null,
+"IndoorMapType": null,
+"MaxOccupants": 20,
+"ValidOccupantTypes": [],
+"AllowAnimalPregnancy": false,
+"IndoorItemMoves": null,
+"IndoorItems": null,
+"AddMailOnBuild": null,
+"Metadata": {},
+"ModData": {},
+"Chests": null,
+"AdditionalTilePropertyRadius": 0,
+"AllowsFlooringUnderneath": true,
+"ActionTiles": [],
+"TileProperties": [],
+"ItemConversions": null,
+"DrawLayers": null,
+"DefaultAction": "selph.ExtraAnimalConfig.CustomFeedSilo",
+"HayCapacity": 0,
+"CustomFields": {
+"selph.ExtraAnimalConfig.SiloCapacity.(O){{ModID}}_CarnivoreFeed": "999",
+},
+},
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/Buildings",
+ "When": {
+"HasMod |contains=Fellowclown.YV": true,
+},
+"Entries": {
+"{{ModID}}_CarnivoreSilo": {
+"Name": "{{i18n:FC.CarnivoreSilo}}",
+"NameForGeneralType": null,
+"Description": "{{i18n:FC.CarnivoreSilo.Desc}}",
+"Texture": "Mods\\{{ModID}}\\FC.Furniture",
+"Skins": [],
+"DrawShadow": false,
+"UpgradeSignTile": "1, 2",
+"UpgradeSignHeight": 16.0,
+"Size": {
+"X": 1,
+"Y": 1
+},
+"FadeWhenBehind": true,
+"SourceRect": {
+"X": 32,
+"Y": 0,
+"Width": 16,
+"Height": 32
+},
+"SeasonOffset": {
+"X": 0,
+"Y": 0
+},
+"DrawOffset": "0, 0",
+"SortTileOffset": 0.0,
+"CollisionMap": null,
+"AdditionalPlacementTiles": null,
+"BuildingType": null,
+"Builder": "FC.Mero",
+"BuildCondition": null,
+"BuildDays": 2,
+"BuildCost": 0,
+"BuildMaterials": [
+{
+"ItemId": "(O)390",
+"Amount": 100
+},
+{
+"ItemId": "(O)Fellowclown.YV_ArcanianCoin",
+"Amount": 100
+},
+],
+"BuildingToUpgrade": null,
+"MagicalConstruction": false,
+"BuildMenuDrawOffset": {
+"X": 0,
+"Y": 0
+},
+"HumanDoor": {
+"X": -1,
+"Y": -1
+},
+"AnimalDoor": {
+"X": -1,
+"Y": -1,
+"Width": 0,
+"Height": 0
+},
+"AnimalDoorOpenDuration": 0.0,
+"AnimalDoorOpenSound": null,
+"AnimalDoorCloseDuration": 0.0,
+"AnimalDoorCloseSound": null,
+"NonInstancedIndoorLocation": null,
+"IndoorMap": null,
+"IndoorMapType": null,
+"MaxOccupants": 20,
+"ValidOccupantTypes": [],
+"AllowAnimalPregnancy": false,
+"IndoorItemMoves": null,
+"IndoorItems": null,
+"AddMailOnBuild": null,
+"Metadata": {},
+"ModData": {},
+"Chests": null,
+"AdditionalTilePropertyRadius": 0,
+"AllowsFlooringUnderneath": true,
+"ActionTiles": [],
+"TileProperties": [],
+"ItemConversions": null,
+"DrawLayers": null,
+"DefaultAction": "selph.ExtraAnimalConfig.CustomFeedSilo",
+"HayCapacity": 0,
+"CustomFields": {
+"selph.ExtraAnimalConfig.SiloCapacity.(O){{ModID}}_CarnivoreFeed": "999",
+"selph.CustomBuilders_ExtraBuilder_{{ModID}}": "FC.Mero",
+},
+},
+}
+},
+]
+}

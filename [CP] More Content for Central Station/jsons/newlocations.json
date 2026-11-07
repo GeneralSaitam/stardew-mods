@@ -1,0 +1,146 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "{{ModId}}_CentralStationUndergroundShops": {
+          "DisplayName": "{{i18n:OMEGAlinc.CSE.UndergroundShopsName}}",
+          "Music": [
+            {
+              "ID": "OMEGAlinc.CSExpanded_MapMusic",
+              "Track": "OMEGAlinc.CSExpanded_UndergroundShopsTheme"
+            }
+          ],
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_UndergroundShops"
+          }
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_UndergroundShops",
+      "FromFile": "assets/undergroundshops.tmx"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/WorldMap",
+      "TargetField": [
+        "Valley",
+        "MapAreas"
+      ],
+      "Entries": {
+        "{{ModId}}_CentralStationUndergroundShops": {
+          "Id": "{{ModId}}_CentralStationUndergroundShops",
+          "PixelArea": {
+            "X": 0,
+            "Y": 146,
+            "Width": 1,
+            "Height": 1
+          },
+          "ScrollText": "{{i18n:OMEGAlinc.CSE.UndergroundShopsName}}",
+          "WorldPositions": [
+            {
+              "Id": "UndergroundShops",
+              "LocationName": "{{ModId}}_CentralStationUndergroundShops"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "{{ModId}}_UndergroundShopsCave": {
+          "DisplayName": "{{i18n:OMEGAlinc.CSE.ShopsCaveName}}",
+          "Music": [
+            {
+              "ID": "OMEGAlinc.CSExpanded_MapMusic",
+              "Track": "Upper_Ambient"
+            }
+          ],
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_UndergroundShopsCave"
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/WorldMap",
+      "TargetField": [
+        "Valley",
+        "MapAreas"
+      ],
+      "Entries": {
+        "{{ModId}}_UndergroundShopsCave": {
+          "Id": "{{ModId}}_UndergroundShopsCave",
+          "PixelArea": {
+            "X": 0,
+            "Y": 146,
+            "Width": 1,
+            "Height": 1
+          },
+          "ScrollText": "{{i18n:OMEGAlinc.CSE.ShopsCaveName}}",
+          "WorldPositions": [
+            {
+              "Id": "UndergroundShopsCave",
+              "LocationName": "{{ModId}}_UndergroundShopsCave"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}_UndergroundDungeon",
+      "FromFile": "assets/undergrounddungeon.tmx"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "{{ModId}}_UndergroundDungeon": {
+          "DisplayName": "{{i18n:OMEGAlinc.CSE.UndergroundDungeonName}}",
+          "Music": [
+            {
+              "ID": "OMEGAlinc.CSExpanded_MapMusic",
+              "Track": "OMEGAlinc.CSExpanded_UndergroundDungeonTheme"
+            }
+          ],
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_UndergroundDungeon"
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/WorldMap",
+      "TargetField": [
+        "Valley",
+        "MapAreas"
+      ],
+      "Entries": {
+        "{{ModId}}_UndergroundDungeon": {
+          "Id": "{{ModId}}_UndergroundDungeon",
+          "PixelArea": {
+            "X": 0,
+            "Y": 146,
+            "Width": 1,
+            "Height": 1
+          },
+          "ScrollText": "{{i18n:OMEGAlinc.CSE.UndergroundDungeonName}}",
+          "WorldPositions": [
+            {
+              "Id": "UndergroundDungeon",
+              "LocationName": "{{ModId}}_UndergroundDungeon"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

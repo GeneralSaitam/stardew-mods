@@ -1,0 +1,317 @@
+{
+	 "Format": "2.0.3",  
+    //Configure the catalog here!
+    "DynamicTokens": [
+        {
+            "Name": "CatShopID",
+            "Value": "FarmerBeans.PirateCatalogShop"
+        },
+        {
+            "Name": "CollectionName",
+            "Value": "FarmerBeans_PirateCatalogCollection"
+        },
+        {
+            "Name": "CatItemName",
+            "Value": "FarmerBeans.PirateFurnitureCatalog"
+        },
+        //make sure this value is in i18n/default 
+        {
+            "Name": "CatItemi18n",
+            "Value": "PirateFurnitureCatalog"
+        },
+        {
+             "Name": "CatSeller",
+            "Value": "FishShop"
+        },
+        {
+             "Name": "CatPrice",
+            "Value": 80000
+        },
+         {
+             "Name": "ImageAssetId",
+            "Value": "PirateFurniture"
+        },
+        {
+            "Name" : "ImageAssetLocation",
+            "Value" : "assets/pirate_furniture.png"
+        }
+    ],
+	"Changes": [
+		 //set up the behaviors for the catalog shop interface
+	    {	   
+	        "Action": "EditData",
+	        "Target": "Data/Shops",
+	        "Entries": {
+	            "{{CatShopId}}": {
+		            "PriceModifiers": null,
+		            "PriceModifierMode": "Stack",
+		            "Items": [
+		            	//all the furniture collection
+		                {
+			                "Price": 0,
+			                "AvailableStockLimit": "Global",
+			                "AvoidRepeat": false,
+			                "UseObjectDataPrice": false,
+			                "IgnoreShopPriceModifiers": false,
+			                "PriceModifiers": null,
+			                "PriceModifierMode": "Stack",
+			                "AvailableStockModifiers": null,
+			                "AvailableStockModifierMode": "Stack",
+			                "Condition": null,
+			                "Id": "Default",
+			                "ItemId": "ALL_ITEMS (F)",
+			                "MinStack": -1,
+			                "MaxStack": -1,
+			                "Quality": -1,
+			                "PerItemCondition": "ITEM_CONTEXT_TAG Target {{CollectionName}}"
+		                },
+		                //walls
+		                {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateWalls:0",
+					        "ItemId": "(WP)FarmerBeans.PirateWalls:0"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateWalls:1",
+					        "ItemId": "(WP)FarmerBeans.PirateWalls:1"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateWalls:2",
+					        "ItemId": "(WP)FarmerBeans.PirateWalls:2"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateWalls:3",
+					        "ItemId": "(WP)FarmerBeans.PirateWalls:3"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateWalls:4",
+					        "ItemId": "(WP)FarmerBeans.PirateWalls:4"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateWalls:5",
+					        "ItemId": "(WP)FarmerBeans.PirateWalls:5"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateWalls:6",
+					        "ItemId": "(WP)FarmerBeans.PirateWalls:6"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateWalls:7",
+					        "ItemId": "(WP)FarmerBeans.PirateWalls:7"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateWalls:8",
+					        "ItemId": "(WP)FarmerBeans.PirateWalls:8"
+					    },
+					    //floors
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateFloors:0",
+					        "ItemId": "(WP)FarmerBeans.PirateFloors:0"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateFloors:1",
+					        "ItemId": "(WP)FarmerBeans.PirateFloors:1"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateFloors:2",
+					        "ItemId": "(WP)FarmerBeans.PirateFloors:2"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateFloors:3",
+					        "ItemId": "(WP)FarmerBeans.PirateFloors:3"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateFloors:4",
+					        "ItemId": "(WP)FarmerBeans.PirateFloors:4"
+					    },
+					    {	
+					        "Price": 0,
+					        "UseObjectDataPrice": false,
+					        "Id": "(WP)FarmerBeans.PirateFloors:5",
+					        "ItemId": "(WP)FarmerBeans.PirateFloors:5"
+					    }
+		            ],
+		            "CustomFields":{
+		                "HappyHomeDesigner/Catalogue":"true"
+		            }
+	            }
+	        }
+	    },
+	    //Add the catalog furniture item
+	    {	      
+	        "Action": "EditData",
+	        "Target": "Data/Furniture",
+	        "Entries": {    
+	            "{{CatItemName}}": "{{CatItemName}}/other/1 2/1 1/1/{{CatPrice}}/2/{{i18n:{{CatItemi18n}}}}/234/Mods\\{{ModId}}\\{{ImageAssetId}}/true"
+	        }
+	    },
+	  //Add Catalogue Tile Actions (Calcifer)
+	    {
+	        "Action": "EditData",
+	        "Target": "sophie.Calcifer/FurnitureActions",
+	        "Entries": {
+	            "(F){{CatItemName}}": {
+	                "TileActions": [
+	                    {
+	                        "TileAction": "OpenShop {{CatShopId}}"
+	                    }
+	                ]
+	            }
+	        }
+	    },
+	    // Add  Catalogue to Seller's Shop
+	    {
+	        "Action": "EditData",
+	        "Target": "Data/Shops",
+	        "TargetField": [ "{{CatSeller}}", "Items" ],
+	        "Entries": {
+	            "{{CatItemName}}": {
+	                "Id": "{{CatItemName}}",
+	                "ItemId": "(F){{CatItemName}}",
+	                "Price": "{{CatPrice}}"
+	            }
+	        }
+	    },
+
+    ////////////////////////////////////////
+
+		//New Items to furniture catalog
+		{
+			"Action": "EditData",
+			"Target": "Data/Furniture",
+			 "Entries": {
+			 	//"UniqueID" :			 Name/category/w h/floorspace/number of rotations/price/location/i18n/spriteposition/asset
+        		"FarmerBeans.PirateBed": "Pirate Bed/bed double/3 4/3 3/1/5000/-1/{{i18n: PirateBed}}/64/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateEndTable": "Pirate End Table/table/1 2/1 1/2/500/-1/{{i18n: PirateEndTable}}/254/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateCannon": "Pirate Cannon/decor/2 2/2 1/1/1000/2/{{i18n: PirateCannon}}/130/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateCannonballs": "Pirate Cannonballs/decor/2 1/2 1/1/500/2/{{i18n: PirateCannonballs}}/178/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateLootTable": "Pirate Loot Table/decor/2 2/2 1/1/1000/2/{{i18n: PirateLootTable}}/132/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBigBarrel1": "Pirate BigBarrel1/decor/2 2/2 1/1/200/2/{{i18n: PirateBigBarrel1}}/194/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBigBarrel2": "Pirate BigBarrel2/decor/2 2/2 1/1/200/2/{{i18n: PirateBigBarrel2}}/226/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBigCrate": "Pirate Big Crate/decor/2 2/2 1/1/500/2/{{i18n: PirateBigCrate}}/228/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBoat": "Pirate Boat/decor/2 3/2 2/1/1000/2/{{i18n: PirateBoat}}/208/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateTableOak": "Pirate TableOak/table/2 2/2 1/1/500/2/{{i18n: PirateTableOak}}/196/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateTableWalnut": "Pirate TableWalnut/table/2 2/2 1/1/500/2/{{i18n: PirateTableWalnut}}/164/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateSpit": "Pirate Spit/decor/2 3/2 1/1/500/2/{{i18n: PirateSpit}}/0/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBush1": "Pirate Bush 1/decor/2 3/2 1/1/250/2/{{i18n: PirateBush1}}/2/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBush2": "Pirate Bush 2/decor/2 3/2 1/1/250/2/{{i18n: PirateBush2}}/4/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBush3": "Pirate Bush 3/decor/2 3/2 1/1/250/2/{{i18n: PirateBush3}}/6/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateKey": "Pirate Key/decor/1 1/1 1/1/100/2/{{i18n: PirateKey}}/48/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateSkull": "Pirate Skull/decor/1 1/1 1/1/100/2/{{i18n: PirateSkull}}/49/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateSkull2": "Pirate Skull 2/decor/1 1/1 1/1/100/2/{{i18n: PirateSkull2}}/50/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateKnife": "Pirate Knife/decor/1 1/1 1/1/100/2/{{i18n: PirateKnife}}/51/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateGold": "Pirate Gold/decor/1 1/1 1/1/100/2/{{i18n: PirateGold}}/52/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateNote": "Pirate Note/decor/1 1/1 1/1/100/2/{{i18n: PirateNote}}/53/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBottle": "Pirate Bottle/decor/1 1/1 1/1/100/2/{{i18n: PirateBottle}}/54/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateCannonballs": "Pirate Cannonballs/decor/1 1/1 1/1/100/2/{{i18n: PirateCannonballs}}/55/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateTurkeyLeg": "Pirate Turkey Leg/decor/1 1/1 1/1/100/2/{{i18n: PirateTurkeyLeg}}/56/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateAle": "Pirate Ale/decor/1 1/1 1/1/100/2/{{i18n: PirateAle}}/57/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateHat": "Pirate Hat/decor/1 1/1 1/1/100/2/{{i18n: PirateHat}}/58/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateRope": "Pirate Rope/decor/1 1/1 1/1/100/2/{{i18n: PirateRope}}/59/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateTrap": "Pirate Trap/decor/1 1/1 1/1/100/2/{{i18n: PirateTrap}}/60/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateCrate": "Pirate Crate/decor/1 1/1 1/1/100/2/{{i18n: PirateCrate}}/61/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateTreasure": "Pirate Treasure/decor/1 1/1 1/1/1000/2/{{i18n: PirateTreasure}}/62/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateMessage": "Pirate Message/decor/1 1/1 1/1/100/2/{{i18n: PirateMessage}}/63/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateJug": "Pirate Jug/decor/1 2/1 1/1/100/2/{{i18n: PirateJug}}/70/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBottles": "Pirate Bottles/decor/1 2/1 1/1/100/2/{{i18n: PirateBottles}}/71/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBarrel1": "Pirate Barrel 1/decor/1 2/1 1/1/100/2/{{i18n: PirateBarrel1}}/72/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBarrel2": "Pirate Barrel 2/decor/1 2/1 1/1/100/2/{{i18n: PirateBarrel2}}/73/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBarrel3": "Pirate Barrel 3/decor/1 2/1 1/1/100/2/{{i18n: PirateBarrel3}}/74/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBarrel4": "Pirate Barrel 4/decor/1 2/1 1/1/100/2/{{i18n: PirateBarrel4}}/75/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBarrel5": "Pirate Barrel 5/decor/1 2/1 1/1/100/2/{{i18n: PirateBarrel5}}/76/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateVase": "Pirate Vase/decor/1 2/1 1/1/100/2/{{i18n: PirateVase}}/77/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateBigTreasure": "Pirate Big Treasure/decor/1 2/1 1/1/100/2/{{i18n: PirateBigTreasure}}/78/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateParrot": "Pirate Parrot/decor/1 2/1 1/1/100/2/{{i18n: PirateParrot}}/79/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PiratePorthole1": "Pirate Porthole 1/painting/1 3/1 3/1/1000/-1/{{i18n: PiratePorthole1}}/8/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PiratePorthole2": "Pirate Porthole 2/painting/1 3/1 3/1/1000/-1/{{i18n: PiratePorthole2}}/9/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateAnchor": "Pirate Anchor/painting/1 3/1 3/1/1000/-1/{{i18n: PirateAnchor}}/10/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateDartboard": "Pirate Dartboard/painting/1 3/1 3/1/1000/-1/{{i18n: PirateDartboard}}/11/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateSword": "Pirate Sword/painting/1 3/1 3/1/1000/-1/{{i18n: PirateSword}}/12/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateLogPanel": "Pirate Log Panel/painting/1 3/1 3/1/1000/-1/{{i18n: PirateLogPanel}}/13/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateLogPanel2": "Pirate Log Panel 2/painting/1 3/1 3/1/1000/-1/{{i18n: PirateLogPanel2}}/14/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateJollyRoger": "Pirate Jolly Roger/painting/2 2/2 2/1/1000/-1/{{i18n: PirateJollyRoger}}/128/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateMountedAngler": "Pirate Mounted Angler/painting/2 2/2 2/1/1000/-1/{{i18n: PirateMountedAngler}}/160/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateMap": "Pirate Map/painting/2 2/2 2/1/1000/-1/{{i18n: PirateMap}}/182/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateMountedSkull": "Pirate Mounted Skull/painting/2 2/2 2/1/1000/-1/{{i18n: PirateMountedSkull}}/214/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateWallPlant": "Pirate Wall Plant/painting/1 2/1 2/1/250/-1/{{i18n: PirateWallPlant}}/200/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateWallAnchor": "Pirate Wall Anchor/painting/1 2/1 2/1/250/-1/{{i18n: PirateWallAnchor}}/201/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateWallPlant2": "Pirate Wall Plant 2/painting/1 2/1 2/1/250/-1/{{i18n: PirateWallPlant2}}/202/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateWallSconce": "Pirate Wall Sconce/painting/1 2/1 2/1/250/-1/{{i18n: PirateWallSconce}}/233/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateRug1": "PirateRug1/rug/-1/-1/2/750/-1/{{i18n: PirateRug1}}/102/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateRug2": "PirateRug2/rug/-1/-1/2/750/-1/{{i18n: PirateRug2}}/203/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateRug3": "PirateRug3/rug/-1/-1/2/750/-1/{{i18n: PirateRug3}}/107/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateRug4": "PirateRug4/rug/-1/-1/2/750/-1/{{i18n: PirateRug4}}/150/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}",
+        		"FarmerBeans.PirateRug5": "PirateRug5/rug/-1/-1/2/750/-1/{{i18n: PirateRug5}}/155/Mods\\{{ModId}}\\{{ImageAssetId}}/true/{{CollectionName}}"
+			}
+		},
+		{
+			"Action": "EditData",
+            "Target": "Data/AdditionalWallpaperFlooring",
+            "Entries": {
+                "FarmerBeans.PirateWalls": {
+                    "ID": "FarmerBeans.PirateWalls",
+                    "Texture": "Mods\\FarmerBeans.PirateFurnitureCP\\PirateWalls",
+                    "IsFlooring": false,
+                    "Count": 9
+                }
+            }
+        },
+        {
+			"Action": "EditData",
+            "Target": "Data/AdditionalWallpaperFlooring",
+            "Entries": {
+                "FarmerBeans.PirateFloors": {
+                    "ID": "FarmerBeans.PirateFloors",
+                    "Texture": "Mods\\FarmerBeans.PirateFurnitureCP\\PirateFloors",
+                    "IsFlooring": true,
+                    "Count": 6
+                }
+            }
+        },
+		//load the image for new furniture
+		{
+			"Action" : "Load",
+			"Target": "Mods/{{ModId}}/{{ImageAssetId}}", 
+        	"FromFile": "{{ImageAssetLocation}}"
+		},
+		//load the image for new walls 
+		{
+			"Action" : "Load",
+			"Target": "Mods/{{ModId}}/PirateWalls",
+        	"FromFile": "assets/pirate_walls.png"
+		},//load the image for new floors 
+		{
+			"Action" : "Load",
+			"Target": "Mods/{{ModId}}/PirateFloors",
+        	"FromFile": "assets/pirate_floors.png"
+		}	
+
+	]
+}

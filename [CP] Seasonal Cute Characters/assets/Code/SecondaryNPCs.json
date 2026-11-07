@@ -1,0 +1,65 @@
+{
+	"Changes": [
+		// Bear
+		{
+			"LogName": "Bear_EditImage",
+			"Action": "EditImage",
+			"Target": "Portraits/Bear",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"SlightlyCuterBear": true
+			}
+		},
+		// Birdie
+		{
+			"LogName": "Birdie_EditImage",
+			"Action": "EditImage",
+			"Target": "Portraits/Birdie, Characters/Birdie",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"SlightlyCuterBirdie": true
+			}
+		},
+		{
+			"LogName": "Add_Birdie_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Birdie",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"SlightlyCuterBirdie": true,
+				"HideNoses": false
+			}
+		},
+		// Fizz
+		{
+			"LogName": "Fizz_EditImage",
+			"Action": "EditImage",
+			"Target": "Portraits/Fizz, Characters/Fizz",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"SlightlyCuterFizz": true
+			}
+		},
+		// Mr Qi
+		{
+			"LogName": "MrQi_EditImage",
+			"Action": "EditImage",
+			"Target": "Portraits/MrQi, Characters/MrQi",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"SlightlyCuterMrQi": true
+			}
+		},
+		// Professor Snail
+		{
+			"LogName": "ProfessorSnail_EditImage",
+			"Action": "EditImage",
+			"Target": "Characters/SafariGuy",
+			"FromFile": "assets/{{Target}}.png",
+			"When": {
+				"SlightlyCuterProfessorSnail": true
+			}
+		}
+	]
+}

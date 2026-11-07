@@ -1,0 +1,105 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Mods/Pathoschild.CentralStation/Tourists",
+      "Entries": {
+        "{{ModId}}": {
+          "FromMap": "{{InternalAssetKey: assets/tourists.tmx}}",
+          "Tourists": {
+            "{{ModId}}_StripeShirtGuy": {
+              "Index": 0,
+              "Dialogue": [
+                "{{i18n:OMEGAlinc.CSE.StripeShirtGuy1}}",
+                "{{i18n:OMEGAlinc.CSE.StripeShirtGuy2}}",
+                "{{i18n:OMEGAlinc.CSE.StripeShirtGuy3}}"
+              ]
+            },
+            "{{ModId}}_Marcello": {
+              "Index": 1,
+              "Dialogue": [
+                "{{i18n:OMEGAlinc.CSE.Marcello1}}",
+                "{{i18n:OMEGAlinc.CSE.Marcello2}}"
+              ]
+            },
+            "{{ModId}}_OldMariner": {
+              "Index": 2,
+              "Dialogue": [
+                "{{i18n:OMEGAlinc.CSE.OldMariner1}}",
+                "{{i18n:OMEGAlinc.CSE.OldMariner2}}"
+              ]
+            },
+            "{{ModId}}_Raccoon": {
+              "Index": 3,
+              "Dialogue": [
+                "{{i18n:OMEGAlinc.CSE.Raccoon1}}",
+                "{{i18n:OMEGAlinc.CSE.Raccoon2}}"
+              ],
+              "When": {
+                "OMEGAlinc_EnablePossibleSpoilerTourists": true
+              }
+            },
+            "{{ModId}}_RedShirtLady": {
+              "Index": 4,
+              "Dialogue": [
+                "{{i18n:OMEGAlinc.CSE.RedShirtLady1}}"
+              ]
+            },
+            "{{ModId}}_OldLookingGuy": {
+              "Index": 5,
+              "Dialogue": [
+                "{{i18n:OMEGAlinc.CSE.OldLookingGuy1}}"
+              ],
+              "DialogueRepeats": true
+            },
+            "{{ModId}}_BlueOutiftGuy": {
+              "Index": 6,
+              "Dialogue": [
+                "{{i18n:OMEGAlinc.CSE.BlueOutiftGuy1}}"
+              ]
+            },
+            "{{ModId}}_KelDefault": {
+              "Index": 7,
+              "Dialogue": [
+                "{{i18n:OMEGAlinc.CSE.LeahEx1}}"
+              ]
+            },
+            "{{ModId}}_Mr_Qi": {
+              "Index": 12,
+              "When": {
+                "OMEGAlinc_EnablePossibleSpoilerTourists": true
+              }
+            },
+            "{{ModId}}_Henchman": {
+              "Index": 13,
+              "When": {
+                "OMEGAlinc_EnablePossibleSpoilerTourists": true
+              }
+            },
+            "{{ModId}}_Fizz": {
+              "Index": 14,
+              "Dialogue": [
+                "{{i18n:OMEGAlinc.CSE.Fizz_1}}"
+              ],
+              "When": {
+                "OMEGAlinc_EnablePossibleSpoilerTourists": true
+              }
+            },
+            "{{ModId}}_JunimoTourist": {
+              "Index": 15,
+              "Dialogue": [
+                "{{i18n:OMEGAlinc.CSE.JunimoDialogue_1}}"
+              ]
+            },
+            "{{ModId}}_TurtleTourist": {
+              "Index": 16
+            },
+            "{{ModId}}_BouncerTourist": {
+              "Index": 17
+            }
+          }
+        }
+      }
+    }
+  ]
+}

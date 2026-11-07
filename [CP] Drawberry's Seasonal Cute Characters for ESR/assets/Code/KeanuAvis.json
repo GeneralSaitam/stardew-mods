@@ -1,0 +1,102 @@
+{
+	"Changes": [
+		//Spring
+		{
+			"LogName": "Edit KeanuAvis's Spring portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/KeanuAvis",
+			"FromFile": "assets/Portraits/KeanuAvis/KeanuAvis_{{PortraitStyle}}_Spring.png"
+		},
+		{
+			"LogName": "Edit KeanuAvis's Spring sprite",
+			"Action": "EditImage",
+			"Target": "Characters/KeanuAvis",
+			"FromFile": "assets/Characters/KeanuAvis/KeanuAvis_Spring.png"
+		},
+		// Summer
+		{
+			"LogName": "Edit KeanuAvis's Summer portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/KeanuAvis_Summer",
+			"FromFile": "assets/Portraits/KeanuAvis/KeanuAvis_{{PortraitStyle}}_Summer.png"
+		},
+		{
+			"LogName": "Edit KeanuAvis's Summer sprite",
+			"Action": "EditImage",
+			"Target": "Characters/KeanuAvis_Summer",
+			"FromFile": "assets/Characters/KeanuAvis/KeanuAvis_Summer.png"
+		},
+		// Fall
+		{
+			"LogName": "Edit KeanuAvis's Fall portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/KeanuAvis_Fall",
+			"FromFile": "assets/Portraits/KeanuAvis/KeanuAvis_{{PortraitStyle}}_Fall.png"
+		},
+		{
+			"LogName": "Edit KeanuAvis's Fall sprite",
+			"Action": "EditImage",
+			"Target": "Characters/KeanuAvis_Fall",
+			"FromFile": "assets/Characters/KeanuAvis/KeanuAvis_Fall.png"
+		},
+		// Winter
+		{
+			"LogName": "Edit KeanuAvis's Winter portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/KeanuAvis_Winter",
+			"FromFile": "assets/Portraits/KeanuAvis/KeanuAvis_{{PortraitStyle}}_Winter.png"
+		},
+		{
+			"LogName": "Edit KeanuAvis's Winter sprite",
+			"Action": "EditImage",
+			"Target": "Characters/KeanuAvis_Winter",
+			"FromFile": "assets/Characters/KeanuAvis/KeanuAvis_Winter.png"
+		},
+		// Winter
+		{
+			"LogName": "Edit KeanuAvis's FlowerDance portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/KeanuAvis_FlowerDance",
+			"FromFile": "assets/Portraits/KeanuAvis/KeanuAvis_{{PortraitStyle}}_FlowerDance.png"
+		},
+		{
+			"LogName": "Edit KeanuAvis's FlowerDance sprite",
+			"Action": "EditImage",
+			"Target": "Characters/KeanuAvis_FlowerDance",
+			"FromFile": "assets/Characters/KeanuAvis/KeanuAvis_FlowerDance.png"
+		},
+
+		// NOSE OVERLAY
+		{
+			"LogName": "KeanuAvis - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/KeanuAvis, Characters/KeanuAvis_Summer, Characters/KeanuAvis_Fall, Characters/KeanuAvis_Winter, Characters/KeanuAvis_FlowerDance, Characters/KeanuAvis_SpiritsEve, Characters/KeanuAvis_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/KeanuAvis/KeanuAvis_nose.png",
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+		},
+			//MISCELLANEOUS
+			{
+			"LogName": "KeanuAvis - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "Mods/Lemurkat.EastScarp/esfurniture", /// Mods/UniqueID/Image name
+			"FromFile": "assets/Characters/esfurniture.png",
+			"FromArea": {"X": 72, "Y": 135, "Width": 18, "Height": 18},
+			"ToArea": {"X": 72, "Y": 135, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+	"LogName": "KeanuAvis Calendar Sprite Edits",
+	"Action": "EditImage",
+	"Target": "Characters/KeanuAvis",
+	"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+		},
+	]
+}

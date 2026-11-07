@@ -1,0 +1,65 @@
+{
+    "Changes": [
+	{
+		"Action": "EditData", 
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_CarrotGingerSoup": {
+				"Name": "{{ModId}}_CarrotGingerSoup",
+				"DisplayName": "Carrot Ginger Soup",
+				"Description": "A sweet, zesty soup with a bright and summery flavor.",
+				"Type": "Basic",
+				"Category": -7,
+				"Price": 285,
+				"Texture": "Mods/{{ModId}}/objects16px",
+				"SpriteIndex": 2, 
+				"Edibility": 64, 
+				"IsDrink": false,
+			}
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/CookingRecipes", 
+		"Entries": {
+			"CarrotGingerSoup": "Carrot 1 829 1 -6 1/1 1/{{ModId}}_CarrotGingerSoup/default"
+			}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes", //Raw ginger isn't well liked, but when made into Ginger Ale everyone likes it if they like Cooked Dishes in general, so I decided not to have people necessarily dislike Carrot Ginger Soup out of hand on account of disliking raw ginger. 
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Caroline", 1], //Caroline may request 100 Ginger in a special order for cooking, so I figure Carrot Ginger Soup might be a dish she could have tried her hand at. Thus, she enjoys Carrot Ginger Soup.
+				"Value": "{{ModId}}_CarrotGingerSoup",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Jas", 5], //Jas likes neither carrots nor ginger, and this is just the kind of dish I feel like kids are likely to find a little much for their tastes, so she doesn't much care for Carrot Ginger Soup, mostly just for fun
+				"Value": "{{ModId}}_CarrotGingerSoup",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Krobus", 5], //Krobus doesn't like most Cooked Dishes.
+				"Value": "{{ModId}}_CarrotGingerSoup",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leo", 5], //Leo doesn't like most Cooked Dishes.
+				"Value": "{{ModId}}_CarrotGingerSoup",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Willy", 5], //Willy doesn't like most Cooked Dishes.
+				"Value": "{{ModId}}_CarrotGingerSoup",
+				"Delimiter": " "
+			}
+		]
+	}
+    ]
+}

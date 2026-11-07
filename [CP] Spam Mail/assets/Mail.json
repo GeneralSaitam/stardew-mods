@@ -1,0 +1,128 @@
+{
+    "Changes": [
+			// load special mail bgs
+			{
+			"Action": "Load",
+			"Target": "Mods/MakoKZ.SpamMail/SpamMailBGs",
+			"FromFile": "assets/SpamMailBGs.png",
+			},
+			
+			// regular mail
+           {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "MakoKZ.SM_CatFacts": "{{i18n: Spam.CatFacts}}[#]{{i18n: Spam.CatFactsSub}}",
+				"MakoKZ.SM_CatFacts1": "{{i18n: Spam.CatFacts1}}[#]{{i18n: Spam.CatFacts1Desc}}",
+				"MakoKZ.SM_CatFacts2": "{{i18n: Spam.CatFacts2}}[#]{{i18n: Spam.CatFacts2Desc}}",
+				"MakoKZ.SM_CatFacts3": "{{i18n: Spam.CatFacts3}}[#]{{i18n: Spam.CatFacts3Desc}}",
+				"MakoKZ.SM_CatFacts4": "{{i18n: Spam.CatFacts4}}[letterbg Mods/MakoKZ.SpamMail/SpamMailBGs 0][#]{{i18n: Spam.CatFacts4Desc}}",
+				"MakoKZ.SM_CatFacts5": "{{i18n: Spam.CatFacts5}}[letterbg Mods/MakoKZ.SpamMail/SpamMailBGs 0][#]{{i18n: Spam.CatFacts5Desc}}",
+				"MakoKZ.SM_JunimoMail": "{{i18n: Spam.JunimoMail}}[letterbg 2][#]{{i18n: Spam.JunimoMailDesc}}",
+				"MakoKZ.SM_JunimoMailNextDay": "[letterbg 2]{{i18n: Spam.JunimoMailNextDay}}%item object 268 1%%[#]{{i18n: Spam.JunimoMailNextDayDesc}}",
+				"MakoKZ.SM_PrismaticGag": "{{i18n: Spam.PrismaticGag}} %item object (WP)74 1 %%[#]{{i18n: Spam.PrismaticGagDesc}}",
+				"MakoKZ.SM_LawsuitSettle": "{{i18n: Spam.LawsuitSettle}} %item money 10%%[#]{{i18n: Spam.LawsuitSettleDesc}}",
+				"MakoKZ.SM_FreeEnergy": "{{i18n: Spam.FreeEnergy}} %item object 787 1%%[#]{{i18n: Spam.FreeEnergyDesc}}",
+				"MakoKZ.SM_FreeEnergyAgain": "{{i18n: Spam.FreeEnergyAgain}} %item object 349 1%%[#]{{i18n: Spam.FreeEnergyAgainDesc}}",
+				"MakoKZ.SM_FreeEnergyFinale": "{{i18n: Spam.FreeEnergyFinale}} %item bigobject 231%%[#]{{i18n: Spam.FreeEnergyFinaleDesc}}",
+				"MakoKZ.SM_StarsAreWatching": "[letterbg 2]{{i18n: Spam.StarsAreWatching}}[#]{{i18n: Spam.StarsAreWatchingDesc}}",
+				"MakoKZ.SM_ChainLetter": "{{i18n: Spam.ChainLetter}}[#]{{i18n: Spam.ChainLetterDesc}}",
+				"MakoKZ.SM_LuckyNumbers": "{{i18n: Spam.LuckyNumbers}}[#]{{i18n: Spam.LuckyNumbersDesc}}",
+				"MakoKZ.SM_LotteryWinner": "{{i18n: Spam.LotteryWinner}} %item money 1000%%[#]{{i18n: Spam.LotteryWinnerDesc}}",
+				"MakoKZ.SM_GameTheory": "{{i18n: Spam.GameTheory}}[#]{{i18n: Spam.GameTheoryDesc}}",
+				"MakoKZ.SM_JojaAd": "[letterbg 4]{{i18n: Spam.JojaAd}}[#]{{i18n: Spam.JojaAdDesc}}",
+				"MakoKZ.SM_RaffleWinner": "{{i18n: Spam.RaffleWinner}} %item object (O)PrizeTicket 1%%[#]{{i18n: Spam.RaffleWinnerDesc}}",
+				"MakoKZ.SM_RiffraffWinner": "{{i18n: Spam.RiffraffWinner}} %item object 172 20%%[#]{{i18n: Spam.RiffraffWinnerDesc}}",
+				"MakoKZ.SM_LetterOfEncouragement": "{{i18n: Spam.LetterOfEncouragement}}[letterbg 2][#]{{i18n: Spam.LetterOfEncouragementDesc}}",
+				"MakoKZ.SM_HotPeppers": "{{i18n: Spam.HotPeppers}}[#]{{i18n: Spam.HotPeppersDesc}}",
+				"MakoKZ.SM_DatingWebsite": "{{i18n: Spam.DatingWebsite}}[#]{{i18n: Spam.DatingWebsiteDesc}}",
+				"MakoKZ.SM_SplashPark": "[letterbg 4]{{i18n: Spam.SplashPark}}[#]{{i18n: Spam.SplashParkDesc}}",
+				},
+            },
+			//ominous mail. toggled by config
+			{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"Entries": {
+				"MakoKZ.SM_IsAnyoneHere": "{{i18n: Spam.IsAnyoneHere}}[letterbg Mods/MakoKZ.SpamMail/SpamMailBGs 1][textcolor white][#]{{i18n: Spam.IsAnyoneHereDesc}}",
+				"MakoKZ.SM_WeKnow": "{{i18n: Spam.WeKnow}}[letterbg Mods/MakoKZ.SpamMail/SpamMailBGs 1][textcolor white][#]{{i18n: Spam.WeKnowDesc}}",
+				"MakoKZ.SM_TrialConcluded": "{{i18n: Spam.TrialConcluded}}[#]{{i18n: Spam.TrialConcludedDesc}}",
+				"MakoKZ.SM_GoToBed": "{{i18n: Spam.GoToBed}}[#]{{i18n: Spam.GoToBedDesc}}",
+				},
+			"When": {"OminousMail": true},
+			},
+
+            // how the mail gets sent
+			
+			//regular mail
+            {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries": {
+				//5% chance to see each day
+				"Custom_MakoKZ_SMPrismaticGag/r 0.03/t 600 700/x MakoKZ.SM_PrismaticGag": "null",
+				"Custom_MakoKZ_SMLawsuitSettle/r 0.03/t 600 700/x MakoKZ.SM_LawsuitSettle": "null",
+				"Custom_MakoKZ_SMStarsAreWatching/r 0.03/t 600 700/x MakoKZ.SM_StarsAreWatching": "null",
+				"Custom_MakoKZ_SMChainLetter/r 0.03/t 600 700/x MakoKZ.SM_ChainLetter": "null",
+				"Custom_MakoKZ_SMLuckyNumbers/r 0.03/t 600 700/x MakoKZ.SM_LuckyNumbers": "null",
+				//followup
+				"Custom_MakoKZ_LotteryWinner/r 0.5/t 600 700/n MakoKZ.SM_LuckyNumbers/x MakoKZ.SM_LotteryWinner": "null",
+				"Custom_MakoKZ_SMGameTheory/r 0.03/t 600 700/x MakoKZ.SM_GameTheory": "null",
+				"Custom_MakoKZ_SMJojaAd/r 0.03/t 600 700/x MakoKZ.SM_JojaAd": "null",
+				"Custom_MakoKZ_SMRaffleWinner/r 0.03/t 600 700/x MakoKZ.SM_RaffleWinner": "null",
+				"Custom_MakoKZ_SMRiffraffWinner/r 0.03/t 600 700/x MakoKZ.SM_RiffraffWinner": "null",
+				"Custom_MakoKZ_SMLetterOfEncouragement/r 0.03/t 600 700/x MakoKZ.SM_LetterOfEncouragement": "null",
+				"Custom_MakoKZ_SMHotPeppers/r 0.1/t 600 700/z spring fall winter/x MakoKZ.SM_HotPeppers": "null",
+				"Custom.MakoKZ_SMSplashPark/r 0.03/t 600 700/x MakoKZ.SM_SplashPark": "null",
+				//cat mail series. 10% chance to get the mail after 7 in game days. each one only appears once the previous letter has been seen
+				"Custom_MakoKZ_SMCatFacts/j 7/r 0.1/t 600 700/x MakoKZ.SM_CatFacts": "null",
+				"Custom_MakoKZ_SMCatFacts1/r 0.05/t 600 700/n MakoKZ.SM_CatFacts/x MakoKZ.SM_CatFacts1": "null",
+				"Custom_MakoKZ_SMCatFacts2/r 0.05/t 600 700/n MakoKZ.SM_CatFacts1/x MakoKZ.SM_CatFacts2": "null",
+				"Custom_MakoKZ_SMCatFacts3/r 0.05/t 600 700/n MakoKZ.SM_CatFacts2/x MakoKZ.SM_CatFacts3": "null",
+				"Custom_MakoKZ_SMCatFacts4/r 0.05/t 600 700/n MakoKZ.SM_CatFacts3/x MakoKZ.SM_CatFacts4": "null",
+				"Custom_MakoKZ_SMCatFacts5/r 0.05/t 600 700/n MakoKZ.SM_CatFacts4/x MakoKZ.SM_CatFacts5": "null",
+				//free energy series. finale can't appear until at least winter Y1
+				"Custom_MakoKZ_SMFreeEnergy/r 0.05/t 600 700/x MakoKZ.SM_FreeEnergy": "null",
+				"Custom_MakoKZ_SMFreeEnergyAgain/r 0.03/t 600 700/n MakoKZ.SM_FreeEnergy/x MakoKZ.SM_FreeEnergyAgain": "null",
+				//i have no idea why this one likes to break sometimes when i add more conditionals. none of the other ones do. yoba help me, or maybe my json parser is just being stupid
+				"Custom_MakoKZ_FreeEnergyFinale/j 85/r 0.03/t 600 700/n MakoKZ.SM_FreeEnergyAgain/x MakoKZ.SMFreeEnergyFinale": "null",
+				//3% chance after seeing the junimo note
+				"Custom_MakoKZ_SMJunimoMail/n seenJunimoNote/r 0.03/t 600 700/x MakoKZ.SM_JunimoMail": "null",
+				//junimo mail part 2
+				"Custom_MakoKZ_SMJunimoMailNextDay/n MakoKZ.SM_JunimoMail/x MakoKZ.SM_JunimoMailNextDay": "null",
+				},
+            },
+			
+			//for letters that should be sent during the day
+			{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"Custom_MakoKZ_SMDatingWebsite/r 0.05/d Mon Tue Wed Thu Sat Sun/x MakoKZ.SM_DatingWebsite true": "null",
+				},
+			},
+			
+			//ominous mail. toggled by config
+			{
+			"Action": "EditData",
+			"Target": "Data/Events/FarmHouse",
+			"Entries": {
+				"Custom_MakoKZ_SMIsAnyoneHere/r 0.03/t 600 700/x MakoKZ.SM_IsAnyoneHere": "null",
+				"Custom_MakoKZ_SMWeKnow/r 0.03/t 600 700/x MakoKZ.SM_WeKnow": "null",
+				"Custom_MakoKZ_SMTrialConcluded/r 0.03/t 600 700/x MakoKZ.SM_TrialConcluded": "null",
+				},
+			"When": {"OminousMail": true},
+			},
+				
+			//for letters that should sent during the day
+			{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"Custom_MakoKZ_GoToBed/r 0.1/t 2400 2600/x MakoKZ.SM_GoToBed true": "null",
+				},
+			"When": {"OminousMail": true},
+				},
+			
+        ]
+}

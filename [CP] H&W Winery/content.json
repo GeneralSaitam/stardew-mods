@@ -1,0 +1,37 @@
+{
+    "Format": "2.5.0",
+
+    "ConfigSchema": {
+        "Winery": {
+            "Description": "Choose from Building or Shed. Building adds the Winery as a new custom building. Shed adds it as a shed-type building for Market Town compatibility but it will NOT be compatible with other custom shed interiors. Defaults to Building.",
+            "AllowValues": "Building, Shed",
+            "Default": "Building",
+            "AllowBlank": false,
+            "AllowMultiple": false
+          },
+        "InteriorStyle": {
+            "Description": "Choose if you would like the interior of the building to be pre-furnished with movable furniture or empty. Defaults to Furnished. NOTE: you must have H&W Winery Furniture pack installed in order for the furniture to spawn in.",
+            "AllowValues": "Furnished, Empty",
+            "Default": "Furnished",
+            "AllowBlank": false,
+            "AllowMultiple": false
+        }
+    },
+
+        "Changes": [
+
+        {
+            "LogName": "Winery Data",
+            "Action": "Include",
+            "FromFile": "Data/Winery_Tokens.json, Data/Winery_Buffs.json"
+        },
+
+        {
+            "LogName": "Winery Furniture Data",
+            "Action": "Include",
+            "FromFile": "Data/Winery_Furniture.json",
+            "When":{"InteriorStyle": "Furnished", "HasMod: |contains=HXW.WineryFurni": true}
+        }
+
+        ]
+}

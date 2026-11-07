@@ -1,0 +1,55 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    //Add Furniture 
+    {
+      "LogName": "Add Lamp-post data",
+      "Action": "EditData",
+      "Target": "Data/Furniture",
+      "Entries": {
+        "Dolly.SeasonalTownLampPosts_TownLampPost": "Town Lamp Post/lamp/1 4/1 1/1/100/2/{{i18n: furniture.TownLampPost.name}}/0/Mods\\Dolly.SeasonalTownLampPosts\\LampPost_Spring"
+      }
+    },
+    //Furniture Descriptions 
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/FurnitureExtensionData",
+      "Entries": {
+        "Dolly.SeasonalTownLampPosts_TownLampPost": {
+          "DescriptionOverride": "{{i18n: furniture.TownLampPost.description}}"
+        }
+      }
+    },
+    //Sell Furniture 
+    {
+      "LogName": "Sell Lamp-post",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Carpenter",
+        "Items"
+      ],
+      "Entries": {
+        "Dolly.SeasonalTownLampPosts_RobinShop.TownLampPost": {
+          "Id": "Dolly.SeasonalTownLampPosts_RobinShop.TownLampPost",
+          "ItemId": "(F)Dolly.SeasonalTownLampPosts_TownLampPost",
+          "Price": 1000
+        }
+      }
+    },
+    //Seasonal Assets 
+    {
+      "LogName": "Change Lamp-post every season",
+      "Action": "EditImage",
+      "Target": "Mods/Dolly.SeasonalTownLampPosts/LampPost_Spring",
+      "FromFile": "assets/LampPost_{{Season}}.png"
+    },
+    //Load Assets 
+    {
+      "LogName": "Load Lamp-post assets",
+      "Action": "Load",
+      "Target": "Mods/Dolly.SeasonalTownLampPosts/LampPost_Spring",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    }
+  ]
+}

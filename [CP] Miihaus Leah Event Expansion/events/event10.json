@@ -1,0 +1,132 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":
+        {//debug ebi Miihau.LeahEE.0
+        "Miihau.LeahEE.010/F/f Leah 2500/t 900 2100/w sunny/e Miihau.LeahEE.009":"
+        SunRoom/
+        {{Miihau.LeahEE.010.Starting}}
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.001}}\"/
+        pause 500/
+        textAboveHead Leah \"{{i18n:Miihau.LeahEE.event10.002}}\" true/
+        pause 650/
+        {{Miihau.LeahEE.010.move1}}
+        pause 400/
+        message \"{{i18n:Miihau.LeahEE.event10.003}}\"/
+        pause 600/
+        emote farmer 8/
+        pause 200/
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.004}}\"/
+        pause 400/
+        {{Miihau.LeahEE.010.move3}}
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.005}}$0#$b#{{Miihau.LeahEE.MuralType.Dialogue}}\"/
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.006}}\"/
+        move Leah 0 -2 0 farmer 0 -2 0 true/
+        globalFade/
+        viewport -1200 -1200/
+        pause 500/
+        playSound seeds/
+        pause 650/
+        playSound fishSlap/
+        pause 650/
+        playSound seeds/
+        pause 650/
+        playSound cavedrip/
+        pause 650/
+        playSound fishSlap/
+        pause 333/
+        playSound fishSlap/
+        pause 650/
+        playSound fishSlap/
+        pause 1150/
+        message \"{{i18n:Miihau.LeahEE.event10.007}}\"/
+        pause 400/
+        playSound seeds/
+        pause 650/
+        playSound fishSlap/
+        pause 650/
+        playSound seeds/
+        pause 650/
+        playSound cavedrip/
+        pause 650/
+        playSound fishSlap/
+        pause 333/
+        playSound fishSlap/
+        pause 1150/
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.008}}\"/
+        pause 500/
+        playSound fishSlap/
+        pause 650/
+        playSound fishSlap/
+        pause 650/
+        playSound seeds/
+        pause 650/
+        playSound cavedrip/
+        pause 650/
+        playSound fishSlap/
+        pause 333/
+        playSound fishSlap/
+        pause 1150/
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.009}}\"/
+        pause 650/
+        playSound cavedrip/
+        pause 650/
+        playSound fishSlap/
+        pause 650/
+        playSound fishSlap/    
+        eventSeen Miihau.LeahEE.010 true/
+        pause 333/
+        playSound fishSlap/
+        pause 1100/
+        message \"{{i18n:Miihau.LeahEE.event10.010}}\"/
+        changeLocation BusStop/
+        pause 100/
+        changeLocation Town/
+        {{Miihau.LeahEE.010.move2}}
+        viewport move 0 -1 1000/
+        pause 2000/
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.011}}\"/
+        pause 900/
+        faceDirection Leah 3/
+        pause 200/
+        faceDirection farmer 1/
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.012}}\"/
+        pause 500/
+        move Leah -1 0 3/
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.013}}\"/
+        pause 200/
+        switchEvent Miihau.LeahEE.010.{{Miihau.LeahEE.Relation}}/
+        globalFade/
+        viewport -1200 -1200/
+        end/
+        ",
+
+        "Miihau.LeahEE.010.Lovers":"
+        pause 100/
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.014}}\"/
+        pause 1200/
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.015}}\"/
+        quickQuestion {{i18n:Miihau.LeahEE.event10.015X}}(break)pause 100\\emote Leah 20\\pause 400\\showFrame Leah 30\\animate farmer false true 500 101\\pause 200\\positionOffset Leah -2 0\\pause 50\\positionOffset Leah -2 0\\pause 50\\positionOffset Leah -2 0\\pause 50\\positionOffset Leah -2 0\\positionOffset farmer 2 0\\pause 50\\positionOffset Leah -2 0\\positionOffset farmer 2 0\\pause 50\\specificTemporarySprite heart 26 49\\pause 500(break)pause 100\\speak Leah \"{{i18n:Miihau.LeahEE.event10.016}}\"\\pause 100\\emote Leah 20\\pause 400\\showFrame Leah 30\\animate farmer false true 500 101\\pause 200\\positionOffset Leah -2 0\\pause 50\\positionOffset Leah -2 0\\pause 50\\positionOffset Leah -2 0\\pause 50\\positionOffset Leah -2 0\\positionOffset farmer 2 0\\pause 50\\positionOffset Leah -2 0\\positionOffset farmer 2 0\\pause 50\\specificTemporarySprite heart 26 49\\pause 500(break)pause 100\\stopMusic\\pause 2000\\emote Leah 28/
+        pause 2000/
+        globalFade/
+        viewport -1200 -1200/
+        end dialogue Leah \"{{i18n:Miihau.LeahEE.event10.017}}\"/
+        ",
+
+        "Miihau.LeahEE.010.Friends":"
+        pause 100/
+        speak Leah \"{{i18n:Miihau.LeahEE.event10.018}}\"/
+        emote farmer 32 true/
+        pause 500/
+        emote Leah 32/
+        globalFade/
+        viewport -1200 -1200/
+        end dialogue Leah \"{{i18n:Miihau.LeahEE.event10.019}}\"/
+
+        "
+    }
+    },
+    ]
+}

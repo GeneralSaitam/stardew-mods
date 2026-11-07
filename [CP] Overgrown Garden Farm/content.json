@@ -1,0 +1,40 @@
+{
+    "Format": "2.3",
+    "ConfigSchema": {
+        "version": {
+            "AllowValues": "standard, clean",
+            "Default": "standard"
+        }
+    },
+    "Changes": [
+        //farm
+        {
+            "Action": "Load",
+            "Target": "Maps/Farm_Foraging",
+            "FromFile": "assets/farm_{{version}}.tbin"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Farm_Greenhouse_Dirt",
+            "FromFile": "assets/Farm_Greenhouse_Dirt.tbin",
+            "When": {
+                "FarmType": "Forest"
+            }
+        },
+        //strings
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "OvergrownGarden.1": "> Bus Stop^@ Farm",
+                "OvergrownGarden.2": "These crystals radiate a mysterious energy...",
+                "OvergrownGarden.3": "The sound of rushing water fills you with determination.",
+                "OvergrownGarden.4": "What a lovely spot for a picnic!",
+                "OvergrownGarden.5": "In the evenings, you can sit here by the garden and watch the sun set over the trees.",
+                "OvergrownGarden.6": "Grandma's old garden is still thriving. The flowers smell beautiful.",
+                "OvergrownGarden.7": "This way to Cindersap Forest.",
+                "OvergrownGarden.8": "` Backwoods^@ Cave"
+            }
+        }
+    ]
+}

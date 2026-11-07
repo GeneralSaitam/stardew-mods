@@ -1,0 +1,232 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                "16279003/F/f Penny 750/t 1100 1400/w sunny/A pennyGone": "musicboxsong/
+                11 10/
+farmer -30 -30 0 Penny 8 10 1 Gunther 3 8 2/
+skippable/
+animate Penny false true 150 4 4 4 21 21 21 22 22 22 21 21 21/
+pause 2000/
+faceDirection Gunther 1/
+pause 1000/
+speak Gunther \"Looking for a specific book Penny?$0\"/
+pause 200/
+stopAnimation Penny 4/
+faceDirection Penny 3/
+pause 200/
+speak Penny \"Well Gunther, I've been reading about gardening, but I'd like to find something about farming.$0\"/
+pause 100/
+speak Gunther \"Farming you say?$0#$b#Does this sudden interest have anything to do with the new farmer boy?^Does this sudden interest have anything to do with the new farmer girl?$0\"/
+jump Penny 4/
+emote Penny 40/
+speak Penny \"Oh... Uhhh...$4#$b#I don't know.$4#$b#Maybe.$4\"/
+pause 150/
+speak Gunther \"You seem to have made a new friend.$0#$b#Do you like him?^Do you like her?$0\"/
+jump Penny 4/
+speak Penny \"No!$5#$b#...Sorry for snapping at you, Gunther. I do like him. Just not in the way that you think.^...Sorry for snapping at you, Gunther. I do like her. Just not in the way that you think.$3#$b#Although... there is something special about him. Don't tell him I said that!^Although... there is something special about her. Don't tell her I said that!$4#$b#...\"/
+playSound doorClose/
+warp farmer 3 14/
+jump Penny 4/
+faceDirection Gunther 2/
+pause 400/
+textAboveHead Gunther \"Hello!\"/
+pause 800/
+emote farmer 32 true/
+pause 300/
+textAboveHead Penny \"Hi!\"/
+pause 200/
+move farmer 0 -2 0/
+speak Gunther \"What a pleasant surprise.$0#$b#Tell me @, do you already know your way around the library portion of the museum?#0\"/
+pause 150/
+emote farmer 36/
+faceDirection Gunther 1/
+speak Gunther \"No?$0#$b#Penny, would you be so kind as to show our friend around?$0\"/
+emote Penny 32/
+speak Penny \"Yes, of course! I'd love to.$0#$b#Come with me @.$h\"/
+faceDirection Gunther 2/
+move farmer 0 -1 1/
+move farmer 4 0 1/
+faceDirection Penny 1/
+animate Penny false true 150 4 4 4 21 21 21 22 22 22 21 21 21/
+speak Penny \"So, this is the nonfiction section.$0#$b#You can find informational books here on all kinds of subjects. Archaeology, biology, psychology, all sorts of -ologies! $1#$b#I have copies of some of these at home.#h\"/
+stopAnimation Penny 4/
+faceDirection Penny 2/
+pause 150/
+speak Penny \"Okay, now let's take a look over here.$0\"/
+advancedMove farmer false 1 0 0 -6 2 0/
+move Penny 0 -5 1/
+move Penny 4 0 0/
+faceDirection farmer 1/
+animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+pause 300/
+speak Penny \"This is the textbook section.$0#$b#I use these books to teach the local children. We cover elementary math, language arts, and social studies.$0#$b#But there are also college-level textbooks here. I think Abigail uses those sometimes. I see her around here once in a while.$h\"/
+stopAnimation Penny 8/
+faceDirection Penny 3/
+speak Penny \"It would be nice to have a collection of textbooks that I could keep at home.$0#$b#Right at my fingertips. It would make preparing for class so much easier! Maybe someday.$h\"/
+emote farmer 8/
+pause 100/
+speak Penny \"What do you say?$h#$b#$q 1627912 null##$r 1627912 0 event_booklove1#Why don't you start expanding your book collection?#$r 1627913 0 event_booklove2#Do you have any copies of those at home already?#$r 1627914 10 event_booklove3#Do you want to have a small home library someday?\"/
+pause 200/
+speak Penny \"Anyway, I'm getting sidetracked.$h#$b#Let's head over this way.$0\"/
+advancedMove farmer false 5 0/
+move Penny 5 0 0/
+faceDirection farmer 1/
+animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+pause 300/
+speak Penny \"Here we have the religion and spirituality section.$0#$b#Yoba has never really been a part of my life.$0#$b#But it's helpful to read this type of literature to understand human culture.$0\"/
+pause 300/
+stopAnimation Penny 8/
+faceDirection Penny 3/
+pause 200/
+speak Penny \"Hang on, I want to show you something over here.$0\"/
+move Penny 0 1 3/
+move Penny -2 0 3/
+advancedMove farmer false -1 0 0 4/
+move Penny -1 0 2/
+move Penny 0 4 1/
+pause 50/
+faceDirection farmer 1/
+speak Penny \"This is the study nook where I teach Jas and Vincent.$0#$b#You should visit us sometime! The children would love to see you.$h\"/
+faceDirection Penny 0/
+faceDirection farmer 2/
+pause 250/
+speak Penny \"What do you say?$h#$b#$q 1627915 null##$r 1627915 20 event_booklove4#Sure, I'll gladly come visit sometime.#$r 1627916 -10 event_booklove5#Is it only the children who would love to see me?\"/
+pause 200/
+speak Penny \"Now, where was I?$0#$b#Oh, yes!$h#$b#The fiction section is at the center of the library.$0#$b#You can find so many genres here, from romance, to sci-fi and fantasy, to historical fiction, to mysteries and thrillers.$0#$b# It's lovely! This section is my favorite. $1#$b#Here, let me show you a book by my favorite author. I think you might enjoy it.$0\"/
+emote farmer 32/
+faceDirection farmer 3/
+move Penny -3 0 3/
+move Penny 0 -1 0/
+animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+move farmer -1 0 3/
+pause 300/
+speak Penny \"It has to be here somewhere.$0\"/
+pause 200/
+stopAnimation Penny 8/
+showFrame Penny 27/
+addTemporaryActor SmallBook 16 16 12 9 2 false/
+positionOffset SmallBook 0 15/
+playSound throwDownITem/
+jump Penny 6/
+pause 400/
+faceDirection Penny 1/
+showFrame Penny 4/
+pause 100/
+speak Penny \"Oh no! I dropped it!\"/
+pause 100/
+question fork0 \"#Help Penny pick up the book.#Let Penny pick up the book.\"/
+fork helpToPickUp/
+showFrame Penny 22/
+pause 50/
+positionOffset Penny 4 0/
+pause 50/
+positionOffset Penny 4 0/
+pause 50/
+positionOffset Penny 0 4/
+pause 50/
+positionOffset Penny 0 4/
+pause 50/
+positionOffset Penny 4 0/
+pause 50/
+positionOffset Penny 4 0/
+pause 50/
+positionOffset Penny 0 4/
+pause 50/
+positionOffset Penny 0 4/
+pause 100/
+speak Penny \"Sorry about that.$0\"/
+pause 100/
+positionOffset Penny -16 -16/
+warp SmallBook -1020 -1000/
+playSound pickUpItem/
+pause 50/
+showFrame Penny 4/
+pause 100/
+speak Penny \"This is what the book looks like.%fork$0\"/
+pause 100/
+fork putBookBack/
+end",
+                "helpToPickUp": "showFrame Penny 22/
+                friendship Penny 30/
+showFrame farmer 58 true/
+pause 50/
+positionOffset Penny 4 0/
+positionOffset farmer -4 0/
+pause 50/
+positionOffset Penny 4 0/
+positionOffset farmer -4 0/
+pause 50/
+positionOffset Penny 0 4/
+positionOffset farmer 0 4/
+pause 50/
+positionOffset Penny 0 4/
+positionOffset farmer 0 4/
+pause 50/
+positionOffset Penny 4 0/
+positionOffset farmer -4 0/
+pause 50/
+positionOffset Penny 4 0/
+positionOffset farmer -4 0/
+pause 50/
+positionOffset Penny 0 4/
+positionOffset farmer 0 4/
+pause 50/
+positionOffset Penny 0 4/
+positionOffset farmer 0 4/
+pause 100/
+speak Penny \"Oh! Gosh, I'm sorry.$0#$b#...$l#$b#Well... thank you, @.$l\"/
+pause 100/
+positionOffset Penny -16 -16/
+positionOffset farmer 16 -16/
+showFrame Penny 4/
+showFrame farmer 6 true/
+pause 10/
+warp SmallBook -1000 -1020/
+playSound pickUpItem/
+pause 50/
+pause 100/
+speak Penny \"At least you've seen the book up close now.$h#$b#If you have time, maybe you could come back and take a look at it.%fork$0\"/
+fork putBookBack/
+end",
+                "putBookBack": "pause 100/
+                animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+speak Penny \"I'll put it here, so you'll know where to find it.$0#$b#But I know you're busy with the farm. Why don't I send you short summary instead?$0\"/
+mail PennysFavBook/
+pause 100/
+stopAnimation Penny 8/
+pause 100/
+faceDirection Penny 1/
+speak Penny \"Well that concludes our grand tour. Funny, I've spent so much time here it feels like I'm showing you around my home.$1#$b# It does feel like home, in a way.$0#$b#Do you have any questions?$0#$b#What do you say?$h#$b#$q 1627920 null##$r 1627920 20 event_booklove6#Thank you for the tour! You seem to have a passion for literature. I think you would enjoy starting you own home library.#$r 1627921 10 event_booklove7#No questions, but thanks for the tour.#$r 1627922 -10 event_booklove8#No, I don't have any questions.\"/
+speak Penny \"Have a great rest of your day!$h\"/
+emote farmer 32/
+animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+faceDirection farmer 3/
+advancedMove farmer false 0 3 -2 0 0 2 -4 0/
+pause 2500/
+globalFade/
+viewport -1000 -1000/
+pause 1300/
+end dialogue Penny \"The library is such a special place for me. I hope my tour inspired you to explore everything' it has to offer.$0\"",
+            },
+        },  
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":{
+                "event_booklove1":"Oh, I would like to.$0#$b#But I don't know if it's the best idea to start now.$s#$b#My mom and I have, you know, more pressing needs. I would feel bad spending money on books.$2",
+                "event_booklove2":"Hmmm?$0#$b#Yes, I have one or two.$0#$b# But I don't have enough space for a proper collection yet.$0",
+                "event_booklove3":"!$l#$b#You know what?$0#$b#Yes! That's actually a dream of mine.$h",
+                "event_booklove4":"Oh, wonderful!$0#$b#We'll be looking forward to your visit.$h",
+                "event_booklove5":"Well of course I would like to see you too, silly!$h",
+                "event_booklove6":"Hmm...$4#$b#I think you're right about that.$0#$b#Thank you for your encouragement, @.$4#$b#I'm so glad you liked the tour.$1",
+                "event_booklove7":"You're welcome!$0",
+                "event_booklove8":"So, no more questions, okay.$0"
+            }
+        
+        }, 
+        
+    ]
+}

@@ -1,0 +1,201 @@
+    {
+        "Changes": [
+            // OUTFIT LOADS
+            {
+                "LogName": "Load Juliet's Outfits",
+                "Action": "Load",
+                "Priority": "High",
+                "Target": "Portraits/Juliet_Spring, Portraits/Juliet_Summer, Portraits/Juliet_Fall, Portraits/Juliet_Winter, Portraits/Juliet_FlowerDance, Portraits/Juliet_SpiritsEve, Portraits/Juliet_Beach, Characters/Juliet_Spring, Characters/Juliet_Summer, Characters/Juliet_Fall, Characters/Juliet_Winter, Characters/Juliet_FlowerDance, Characters/Juliet_SpiritsEve, Characters/Juliet_Beach",
+                "FromFile": "assets/{{TargetPathOnly}}/Juliet/{{TargetWithoutPath}}.png"
+            },
+            // SPECIAL SPRITES
+            {
+                "LogName": "Load Juliet specialist outfits",
+                "Action": "Load",
+                "Priority": "Low",
+                "Target": "Characters/Juliet_theater, Portraits/Juliet_theater, Portraits/Juliet_joja, Characters/Juliet_Joja, Characters/Juliet_FortuneTeller, Portraits/Juliet_FortuneTeller",
+                "FromFile": "assets/{{TargetPathOnly}}/Juliet/{{TargetWithoutPath}}.png"
+            },
+            // NOSE OVERLAY
+            {
+                "LogName": "Juliet - Seasonal Nose",
+                "Action": "EditImage",
+                "Target": "Characters/Juliet_Spring, Characters/Juliet_Summer, Characters/Juliet_Fall, Characters/Juliet_Winter, Characters/Juliet_FlowerDance, Characters/Juliet_SpiritsEve, Characters/Juliet_Beach, Characters/Juliet_theater, Characters/Juliet_Joja, Characters/Juliet_FortuneTeller",
+                "FromFile": "assets/{{TargetPathOnly}}/Juliet/Juliet_nose.png",
+                "PatchMode": "Overlay",
+                "When": {
+                    "NoNose": "false",
+                },
+            }, //APPEARANCE DATA 
+            {
+                "LogName": "Juliet Appearance Data",
+                "Action": "EditData",
+                "Priority": "Late",
+                "Target": "Data/Characters",
+                "TargetField": [
+                    "Juliet",
+                    "Appearance"
+                ],
+                "Entries": {
+                    //Regular Outfits
+                    "{{ModId}}.JulietSpring": {
+                        "Id": "{{ModId}}.JulietSpring",
+                        "Condition": "SEASON spring",
+                        "Sprite": "Characters/Juliet_Spring",
+                        "Portrait": "Portraits/Juliet_Spring",
+                        "Precedence": -120,
+                    },
+                    "{{ModId}}.JulietSummer": {
+                        "Id": "{{ModId}}.JulietSummer",
+                        "Condition": "SEASON Summer",
+                        "Sprite": "Characters/Juliet_Summer",
+                        "Portrait": "Portraits/Juliet_Summer",
+                        "Precedence": -120,
+                    },
+                    "{{ModId}}.JulietFall": {
+                        "Id": "{{ModId}}.JulietFall",
+                        "Condition": "SEASON Fall",
+                        "Sprite": "Characters/Juliet_Fall",
+                        "Portrait": "Portraits/Juliet_Fall",
+                        "Precedence": -120,
+                    },
+                    "{{ModId}}.JulietWinter": {
+                        "Id": "{{ModId}}.JulietWinter",
+                        "Condition": "SEASON Winter",
+                        "Sprite": "Characters/Juliet_Winter",
+                        "Portrait": "Portraits/Juliet_Winter",
+                        "Precedence": -120,
+                    },
+                    "{{ModId}}.JulietJoja": {
+                        "ID": "JulietJoja",
+                        "Condition": "LOCATION_NAME Target JojaMart",
+                        "Outdoors": false,
+                        "Indoors": true,
+                        "Portrait": "Portraits/Juliet_Joja",
+                        "Sprite": "Characters/Juliet_Joja",
+                        "Precedence": -150
+                    },
+                    //Festival Outfits
+                    "{{ModId}}.JulietFlowerDance": {
+                        "Id": "{{ModId}}.JulietFlowerDance",
+                        "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                        "Sprite": "Characters/Juliet_FlowerDance",
+                        "Portrait": "Portraits/Juliet_FlowerDance",
+                        "Precedence": -1000,
+                    },
+                    "{{ModId}}.JulietSpirit": {
+                        "Id": "{{ModId}}.JulietSpirit",
+                        "Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing {{FestivalOutfits}}\"",
+                        "Sprite": "Characters/Juliet_SpiritsEve",
+                        "Portrait": "Portraits/Juliet_SpiritsEve",
+                        "Precedence": -1000,
+                    },
+                    //Beach
+                    "{{ModId}}.JulietBeach": {
+                        "Id": "{{ModId}}.JulietBeach",
+                        "Sprite": "Characters/Juliet_Beach",
+                        "Portrait": "Portraits/Juliet_Beach",
+                        "IsIslandAttire": true,
+                        "Precedence": -10000,
+                    },
+                },
+            },
+            //Concessions Clerk
+            {
+                "LogName": "Places Juliet into Theater",
+                "Action": "EditImage",
+                "Target": "Maps/MovieTheater_TileSheet",
+                "FromFile": "assets/JulietTheaterPatch.png",
+                "FromArea": {
+                    "X": 0,
+                    "Y": 0,
+                    "Width": 64,
+                    "Height": 32
+                },
+                "ToArea": {
+                    "X": 192,
+                    "Y": 160,
+                    "Width": 64,
+                    "Height": 32
+                },
+                "When": {
+                    "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                    "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday",
+                    "CuteJuliet": "true",
+                }
+            },
+            {
+                "LogName": "Places Kevin into Theater",
+                "Action": "EditImage",
+                "Target": "Maps/MovieTheater_TileSheet",
+                "FromFile": "assets/JulietTheaterPatch.png",
+                "FromArea": {
+                    "X": 0,
+                    "Y": 32,
+                    "Width": 64,
+                    "Height": 32
+                },
+                "ToArea": {
+                    "X": 192,
+                    "Y": 160,
+                    "Width": 64,
+                    "Height": 32
+                },
+                "When": {
+                    "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                    "DayOfWeek": "Friday, Saturday, Sunday",
+                }
+            },
+            {
+                "LogName": "Places Kevin into Theater",
+                "Action": "EditImage",
+                "Target": "Maps/MovieTheater_TileSheet",
+                "FromFile": "assets/JulietTheaterPatch.png",
+                "FromArea": {
+                    "X": 0,
+                    "Y": 32,
+                    "Width": 64,
+                    "Height": 32
+                },
+                "ToArea": {
+                    "X": 192,
+                    "Y": 160,
+                    "Width": 64,
+                    "Height": 32
+                },
+                "When": {
+                    "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                    "DayOfWeek": "Tuesday, Thursday, Friday, Saturday, Sunday",
+                    "spouse": "Juliet",
+                }
+            },
+            {
+                "LogName": "Places Kevin into Theater",
+                "Action": "EditImage",
+                "Target": "Maps/MovieTheater_TileSheet",
+                "FromFile": "assets/JulietTheaterPatch.png",
+                "FromArea": {
+                    "X": 0,
+                    "Y": 32,
+                    "Width": 64,
+                    "Height": 32
+                },
+                "ToArea": {
+                    "X": 192,
+                    "Y": 160,
+                    "Width": 64,
+                    "Height": 32
+                },
+                "When": {
+                    "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                    "Weather": "rain"
+                }
+            },
+            {
+            "LogName": "Juliet Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Juliet",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+        },	
+        ]
+    }

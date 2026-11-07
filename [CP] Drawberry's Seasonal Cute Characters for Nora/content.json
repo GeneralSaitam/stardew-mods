@@ -1,0 +1,152 @@
+{
+	"Format": "2.9.0",
+	"ConfigSchema": {
+	  "NoNose": {
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Choose between no noses (true) or noses (false) for the sprites."
+	  },
+	  "FlowerDance": {
+		"AllowValues": "Green, White",
+		"Default": "Green",
+		"AllowBlank": false,
+		"Description": "Give Nora a white dress or green dress for the flower dance."
+	  },
+	  "PortraitStyle": {
+		"AllowValues": "Drawberry, Nyapu",
+		"Default": "Drawberry",
+		"AllowBlank": false,
+		"Description": "Choose between Drawberry style (by me!) or Nyapu style portraits by the wonderful AhCuteArt!"
+	  }
+	},
+	"Changes": [
+	  /* OUTFIT LOADS*/
+	  {
+		"LogName": "Load Nora's Outfits",
+		"Action": "Load",
+		"Priority": "High",
+		"Target": "Portraits/Nora_{{PortraitStyle}}_Eggf, Portraits/Nora_{{PortraitStyle}}_Fall, Portraits/Nora_{{PortraitStyle}}_Ice, Portraits/Nora_{{PortraitStyle}}_Jellies, Portraits/Nora_{{PortraitStyle}}_Luau, Portraits/Nora_{{PortraitStyle}}_{{FlowerDance}}_Flowerdance, Portraits/Nora_{{PortraitStyle}}_Spiritseve, Portraits/Nora_{{PortraitStyle}}_Spring, Portraits/Nora_{{PortraitStyle}}_Summer, Portraits/Nora_{{PortraitStyle}}_Winter_Vest, Portraits/Nora_{{PortraitStyle}}_Winter, Portraits/Nora_{{PortraitStyle}}_Winterstar, Portraits/Nora_{{PortraitStyle}}_Fall, Characters/Nora_Eggf, Characters/Nora_Fall, Characters/Nora_Ice, Characters/Nora_Jellies, Characters/Nora_Luau, Characters/Nora_{{FlowerDance}}_Flowerdance, Characters/Nora_Spiritseve, Characters/Nora_Spring, Characters/Nora_Summer, Characters/Nora_Winter_Vest, Characters/Nora_Winter, Characters/Nora_Winterstar",
+		"FromFile": "assets/Nora/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
+	  }
+	  /* NOSE OVERLAY*/,
+	  {
+		"LogName": "Nora - Nose",
+		"Action": "EditImage",
+		"Target": "Characters/Nora_{{FlowerDance}}_Flowerdance, Characters/Nora_Eggf, Characters/Nora_Fall, Characters/Nora_Ice, Characters/Nora_Jellies, Characters/Nora_Luau, Characters/Nora_Spiritseve, Characters/Nora_Spring, Characters/Nora_Summer, Characters/Nora_Winter_Vest, Characters/Nora_Winter, Characters/Nora_Winterstar",
+		"FromFile": "assets/Nora/Characters/Nora_Nose.png",
+		"PatchMode": "Overlay",
+		"Priority": "Late",
+		"When": {
+		  "NoNose": "false"
+		}
+	  }
+	  /*APPEARANCE DATA */,
+	  {
+		"When": {
+                "Year": "{{Range: 1, 5000}}" // WHY IS THIS HERE? Nora's mod contains a dynamic token that checks the player's relationship with her and uses that token in her Data/Characters entry. Because there is no player to check a relationship with until a save is loaded, Nora's Data/Character patch doesn't run on game start like usual. Without a condition to make this mod's Data/Characters patch wait until the save is loaded before applying, the user gets a warning that CP can't find the Nora entry in Data/Characters. The Year check is arbitrary - it just has to be any check that can reasonably apply at all times during a save. If you have a better idea for this, please contact Abagaianye on Discord or Nexus to suggest it!
+            },
+		"LogName": "Nora Appearance Data",
+		"Action": "EditData",
+		"Priority": "Late",
+		"Target": "Data/Characters",
+		"TargetField": [
+		  "Nora",
+		  "Appearance"
+		],
+		"Entries": {
+		  "{{ModId}}.DBNoraSpring": {
+			"Id": "{{ModId}}.DBNoraSpring",
+			"Condition": "SEASON spring",
+			"Sprite": "Characters/Nora_Spring",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_Spring",
+			"Precedence": -200
+		  },
+		  "{{ModId}}.DBNoraSummer": {
+			"Id": "{{ModId}}.DBNoraSummer",
+			"Condition": "SEASON Summer",
+			"Sprite": "Characters/Nora_Summer",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_Summer",
+			"Precedence": -200
+		  },
+		  "{{ModId}}.DBNoraFall": {
+			"Id": "{{ModId}}.DBNoraFall",
+			"Condition": "SEASON Fall",
+			"Sprite": "Characters/Nora_Fall",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_Fall",
+			"Precedence": -200
+		  },
+		  "{{ModId}}.DBNoraWinterIndoor": {
+			"Id": "{{ModId}}.DBNoraWinterVest",
+			"Condition": "SEASON Winter",
+			"Sprite": "Characters/Nora_Winter_Vest",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_Winter_Vest",
+			"Outdoors": false,
+			"Precedence": -200
+		  },
+		  "{{ModId}}.DBNoraWinterOutdoor": {
+			"Id": "{{ModId}}.DBNoraWinter",
+			"Condition": "SEASON Winter",
+			"Sprite": "Characters/Nora_Winter",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_Winter",
+			"Indoors": false,
+			"Precedence": -200
+		  },
+		  "{{ModId}}.DBNoraEggFest": {
+			"Id": "{{ModId}}.DBNoraEggFest",
+			"Condition": "IS_EVENT festival_spring13",
+			"Sprite": "Characters/Nora_EggF",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_EggF",
+			"Precedence": -2000
+		  },
+		  "{{ModId}}.DBNoraFlowerDance": {
+			"Id": "{{ModId}}.DBNoraFlowerDance",
+			"Condition": "IS_EVENT festival_spring24",
+			"Sprite": "Characters/Nora_{{FlowerDance}}_Flowerdance",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_{{FlowerDance}}_Flowerdance",
+			"Precedence": -2000
+		  },
+		  "{{ModId}}.DBNoraLuau": {
+			"Id": "{{ModId}}.DBNoraLuau",
+			"Condition": "IS_EVENT festival_summer11,",
+			"Sprite": "Characters/Nora_Luau",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_Luau",
+			"Precedence": -2000
+		  },
+		  "{{ModId}}.DBNoraJellies": {
+			"Id": "{{ModId}}.DBNoraJellies",
+			"Condition": "IS_EVENT festival_summer28",
+			"Sprite": "Characters/Nora_Jellies",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_Jellies",
+			"Precedence": -2000
+		  },
+		  "{{ModId}}.DBNoraSpirit": {
+			"Id": "{{ModId}}.DBNoraSpirit",
+			"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn EastScarp_VillageInn_SpiritEve EastScarp_Crossing\"",
+			"Sprite": "Characters/Nora_SpiritsEve",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_SpiritsEve",
+			"Precedence": -2000
+		  },
+		  "{{ModId}}.DBNoraIceFestival": {
+			"Id": "{{ModId}}.DBNoraIceFestival",
+			"Condition": "IS_EVENT festival_winter8",
+			"Sprite": "Characters/Nora_Ice",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_Ice",
+			"Precedence": -2000
+		  },
+		  "{{ModId}}.DBNoraWinterStar": {
+			"Id": "{{ModId}}.NoraWinterStar",
+			"Condition": "IS_EVENT festival_winter25",
+			"Sprite": "Characters/Nora_WinterStar",
+			"Portrait": "Portraits/Nora_{{PortraitStyle}}_WinterStar",
+			"Precedence": -2000
+		  }
+		}
+	  },
+	  {
+		"LogName": "Nora Calendar Sprite Edits",
+		"Action": "EditImage",
+		"Target": "Characters/Nora",
+		"FromFile": "assets/Nora/Characters/Nora_{{Season}}.png"
+	  }
+	]
+  }

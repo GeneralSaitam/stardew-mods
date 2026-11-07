@@ -1,0 +1,49 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)Cornucopia_VinegarKeg",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_Wine_Vinegar": {
+					"Id": "GOF_wine_vinegar_maker_cornucopia",
+					"Triggers": [
+						{
+							"RequiredTags": ["wine_vinegar_maker"]
+						},
+						{
+							"RequiredItemId": "(O)348"
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Wine_Vinegar",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+							"CopyPrice": true,
+                            "CopyQuality": true,
+                            "MinStack": 2,
+                            "MaxStack": 2,
+                            "PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 0.75
+								}
+							]
+						}
+					],
+					"MinutesUntilReady": 6000,
+				}
+			},
+               	"MoveEntries": [
+				{
+					"Id": "GOF_wine_vinegar_maker_cornucopia",
+					"ToPosition": "Top"
+				}
+			]
+		}
+    ]
+}

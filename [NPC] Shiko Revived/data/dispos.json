@@ -1,0 +1,43 @@
+{
+    "Changes": [
+   	 
+   	 {
+   		 "Action": "EditData",
+   		 "Target": "Data/Characters",
+   		 "Entries": {
+   			 "Shiko": {
+   				 "DisplayName": "{{i18n:Shiko.Name}}",
+   				 "Gender": "Female", 
+   				 "Age": "Adult", 
+   				 "Manner": "Neutral", 
+   				 "SocialAnxiety": "Outgoing", 
+   				 "Optimism": "Neutral",
+   				 "BirthSeason": "winter", 
+   				 "BirthDay": "6", 
+   				 "HomeRegion": "Town", 
+   				 "CanBeRomanced": true,  
+				 "CanVisitIsland": true,
+   				 "SpouseAdopts": true, 
+   				 "IntroductionsQuest": true, 
+   				 "ItemDeliveryQuests": true, 
+   				 "WinterStarParticipant": true,
+				 "SpawnIfMissing": true,
+   				 "Home": [ 
+   					 {
+   						 "Id": "Default",
+   						 "Location": "EKCustom_SaloonAttic",
+   						 "Tile": {
+   							 "X": 2,
+   							 "Y": 6
+   						 },
+   						 "Direction": "right"
+   					 }
+   				 ],
+				 "SpouseRoom":{
+					"MapAsset":"ShikoSpouseRoom"
+				 }
+   			 },    
+   		 }
+   	 }
+    ]
+}

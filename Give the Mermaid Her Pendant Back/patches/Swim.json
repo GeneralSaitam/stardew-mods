@@ -1,0 +1,103 @@
+{	
+	"Changes":
+	[
+		{
+			"Action": "Load",
+			"Priority": "Low",
+			"Target": "Characters/Mariner_Swim",
+			"FromFile": "assets/Swim/Mermaid.png",
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Old Mariner": {
+					"Appearance": [
+						{
+							"Id": "SecretCave",
+							"Condition": "LOCATION_NAME Target Custom_ScubaCrystalCave",
+							"Sprite": "Characters/Mariner_Swim"
+						},
+					],
+				}
+			},	
+		},	
+		{
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "Portraits/OldMariner_Default",
+            "Update": "OnLocationChange",
+			"FromFile": "assets/Portraits/{{PStyle}}/PortraitMermaid.png",		
+			"When": {
+				"LocationName": "Custom_ScubaCrystalCave",
+    		}
+		},		
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/OldMariner_Default",
+			"Priority": "Late",
+			"PatchMode": "Overlay",
+            "Update": "OnLocationChange",
+			"FromFile": "assets/Portraits/{{PStyle}}/Pendant_{{Pendant}}.png",
+    		"When": {
+        		"HasValue:{{spouse}}": "false",
+        		"HasFlag |contains=DolphINaF.MermaidMariner_PendantAcquired": false,
+				"LocationName": "Custom_ScubaCrystalCave",
+    		}
+		},		
+		{
+            "Action": "EditData",
+            "Target": "Mods/FlyingTNT.Swim/i18n",
+            "Entries": {
+				"SwimMod_Mariner_Questions": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Questions}}",
+				"SwimMod_Mariner_Questions_Old": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Questions_Old}}",
+				"SwimMod_Mariner_Questions_Yes": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Questions_Yes}} ",
+				"SwimMod_Mariner_Questions_No": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Questions_No}}",
+				"SwimMod_Mariner_Questions_Yes_Old": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Questions_Yes_Old}} ",
+				"SwimMod_Mariner_Questions_No_Old": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Questions_No_Old}}",
+				"SwimMod_Mariner_Answer_Y_1": "{{i18n: SwimMod_Mariner_Answer_Y_1}} ",
+				"SwimMod_Mariner_Answer_Y_2": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Answer_Y_2}} ",
+				"SwimMod_Mariner_Answer_Y_3": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Answer_Y_3}} ",
+				"SwimMod_Mariner_Answer_Y_4": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Answer_Y_4}} ",
+				"SwimMod_Mariner_Answer_Y_5": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Answer_Y_5}} ",
+				"SwimMod_Mariner_Answer_N": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Answer_N}}",
+				"SwimMod_Mariner_Answer_S": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Answer_S}}",
+				"SwimMod_Mariner_Wrong_Today": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Wrong_Today}}",
+				"SwimMod_Mariner_Completed": "{{MermaidName}}{{i18n:colon}} {{i18n: SwimMod_Mariner_Completed}}",
+				"SwimMod_Mariner_Question_1": "{{i18n: SwimMod_Mariner_Question_1}}",
+				"SwimMod_Mariner_Question_2": "{{i18n: SwimMod_Mariner_Question_2}}",
+				"SwimMod_Mariner_Question_3": "{{i18n: SwimMod_Mariner_Question_3}}",
+				"SwimMod_Mariner_Question_4": "{{i18n: SwimMod_Mariner_Question_4}}",
+				"SwimMod_Mariner_Question_5": "{{i18n: SwimMod_Mariner_Question_5}}",
+            }
+		},
+        {
+            "Action": "EditMap",
+            "Target": "Maps/CrystalCave",
+            "FromFile": "assets/Swim/MermaidCave.tmx",
+            "MapProperties": {
+                "TreatAsOutdoors": "T",
+				"BrookSounds": "8 2 5 9 2 5 10 2 5 11 2 5 14 3 4 14 3 4"
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/CrystalCaveDark",
+            "FromFile": "assets/Swim/MermaidCaveGone.tmx",
+            "MapProperties": {
+                "TreatAsOutdoors": "T",
+				"BrookSounds": "8 2 5 9 2 5 10 2 5 11 2 5 14 3 4 14 3 4"
+			}
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Fields": {
+				"Custom_ScubaCrystalCave": {
+					"DisplayName": "{{i18n: Secret_Cave}}",
+					"MusicDefault": "junimoKart_whaleMusic"
+				},
+			}
+		}
+	]
+}

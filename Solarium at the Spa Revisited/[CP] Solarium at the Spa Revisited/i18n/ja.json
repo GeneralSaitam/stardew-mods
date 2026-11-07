@@ -1,0 +1,102 @@
+{
+  // ===== CONFIG =====
+  // section headers (default strings for GMCM/CP config UI)
+  "config.section.Solarium.name": "ソラリウム",
+  "config.section.Solarium.description": "ソラリウムのマップ・レイアウト設定",
+  "config.section.Schedules.name": "スケジュール",
+  "config.section.Schedules.description": "NPCのスケジュールの設定",
+
+  // field names, descriptions, and dropdown values
+  "config.MapStyle.name": "ソラリウムの装飾",
+  "config.MapStyle.description": "通常：家具、装飾用の建物、前面タイルが含まれます。シンプル：追加タイルなしの最小構成。",
+  "config.MapStyle.values.Normal": "通常（家具あり）",
+  "config.MapStyle.values.Clean": "シンプル（最小構成）",
+  "config.HatchStyle.name": "ハッチへのアクセス",
+  "config.HatchStyle.description": "ソラリウムへ続くハッチの見た目設定",
+  "config.HatchStyle.values.Ladder": "はしご",
+  "config.HatchStyle.values.Lift": "エレベーター",
+  "config.SolariumKeyStyle.name": "ソラリウムの鍵",
+  "config.SolariumKeyStyle.description": "ソラリウムの鍵のリカラーを選択する。",
+  "config.SolariumKeyStyle.values.Auto": "自動",
+  "config.SolariumKeyStyle.values.Vanilla": "バニラ",
+  "config.SolariumKeyStyle.values.VibrantPastoralRecolor": "Vibrant Pastoral Recolor",
+  "config.SolariumKeyStyle.values.DNEarthyRecolour": "DaisyNiko's Earthy Recolour",
+  "config.SolariumKeyStyle.values.StarBlue": "Starblue Valley",
+  "config.UnlockPath.name": "ルート解放条件",
+  "config.UnlockPath.description": "ソラリウムの鍵の入手方法。エブリンのハート8特別注文：エブリンの「季節の花」の特別注文を完了し、報酬の手紙を開く。エブリンのハート８＋公民館／Jojaマート：公民館／Jojaマートを達成し、エブリンのハート８まで上げる。エブリンのハート8のみ：晴れた日（6:00〜19:00）に牧場にいると、エブリンが訪ねてきて、鍵を受け取る。",
+  "config.UnlockPath.values.SpecialOrder": "エブリンのハート8特別注文",
+  "config.UnlockPath.values.CCOrJoja": "エブリンのハート８＋公民館／Jojaマート",
+  "config.UnlockPath.values.FriendshipOnly": "エブリンのハート8のみ",
+  "config.AdjustLinussSchedule.name": "ライナスのスケジュールを変更",
+  "config.AdjustLinussSchedule.description": "オンにすると、ライナスが秋と冬にソラリウムを訪れる。",
+  "config.AdjustCarolineSchedule.name": "キャロラインのスケジュールを変更",
+  "config.AdjustCarolineSchedule.description": "オンにすると、キャロラインが水曜日に噴水へ行った後、ソラリウムを訪れる。",
+
+  // ===== SPECIAL STRINGS =====
+  "Location.Solarium": "ソラリウム",
+  "Power.SolariumKey": "ソラリウムの鍵",
+  "Power.SolariumKey_Description": "スパの屋上のソラリウムの鍵。",
+  "Strings.BookShelf": "古い園芸書でいっぱいの棚。",
+  "Strings.SolariumHatchLocked": "ハッチは施錠されています。",
+  "Strings.SolariumLiftLocked": "エレベーターのドアは施錠されています。",
+  "Shop.PierresCatalogue": "ピエールの雑誌",
+  "Shop.PierresCatalogue.Piper": "パイパーの雑誌",
+  
+  // ===== EVENTS =====
+  // Evelyn gives farmer key to solarium
+  "Events.EvelynKey.1": "こんにちは。#$b#ここに来てから今まで頑張りに感心したわ。育ててきた花、本当にキレイねえ。$1",
+  "Events.EvelynKey.2": "あのねぇ、これをあげるわ。スパの上のソラリウムの鍵だわ。台所の引き出しの中で埃を被ってたのを見つけた。$0",
+  "Events.EvelynKey.GotKey": "ソラリウムの鍵を手に入れた！",
+  "Events.EvelynKey.3": "もう以前のように山に登ってソラリウムの花の世話ができないわね...膝の調子じゃ無理ねえ。$2#$b#あの頃、小さな庭の手入れをしてて、町の花壇のために花の苗を育ててた。ソラリウムは、もう長い間、鍵がかかってて誰も使わないままなのよ。$2",
+  "Events.EvelynKey.4": "またソラリウムを頼もしい人に任せられて、本当によかったね。#$b#@、これからもよろしくね。幸せになれるように願ってるわ。$1",
+  "Events.EvelynKey.SolariumAccess": "スパの上のソラリウムに入るようになりました。",
+
+  // Robin first visit to solarium (after player enters first time)
+  "Events.RobinSolarium.1Ladder": "やあ、@！ここに誰かがいるなんて知らなかったんだ！#$b#エブリンが君に鍵を渡したと聞いて、はしごが安全かどうか確認しに来たんだ。",
+  "Events.RobinSolarium.1Lift": "やあ、@！ここに誰かがいるなんて知らなかったんだ！#$b#エブリンが君に鍵を渡したと聞いて、エレベーターが安全かどうか確認しに来たんだ。",
+  "Events.RobinSolarium.2Ladder": "ああ、そうだ。はしごはしっかりしてるけど、ハッチの蝶番が少し引っかかってるんだ。#$b#ちょっと直せば大丈夫だよ。$1",
+  "Events.RobinSolarium.2Lift": "ああ、そうだ。エレヴェーターはしっかりしてるけど、ハッチの蝶番が少し引っかかってるんだ。#$b#ちょっと直せば大丈夫だよ。$1",
+  "Events.RobinSolarium.3": "中は思ったより広いんだ！",
+  "Events.RobinSolarium.4": "床が補強されていて、天井も高いから、ここは色々できそう。#$b#エブリンが花を喜んでるけど、果樹も育てればどう？#$b#一年中、よく育つよ。",
+  "Events.RobinSolarium.5": "まあ、果樹を育てて、桃が余ったら持ってきてくれるね！$1#$b#あ、戻る前に、蝶番に油を差してあげよう。",
+
+  // Caroline and Pierre visit player (4 and 6 are Pierre lines)
+  "Events.CarolineMagazine.1": "こんにちは、@！エブリンが、あなたにソラリウムを任せてくれたと言ってたの。なんて優しいわね...家族のように思っているそうね。",
+  "Events.CarolineMagazine.2": "開いたから、ピエールと一緒にソラリウムを見に行ったのよ。#$b#ソラリウムの日差し、本当にステキね...ここ、植物がよく育つような場所わね。#$b#あら...サンルームの植物をソラリウムに持ってきて、この景色を楽しもうかしら。$1",
+  "Events.CarolineMagazine.3": "まあ、ピエールがね...私たち、二人で...その...$2",
+  "Events.CarolineMagazine.4": "店の新しい雑誌を一部置いておいたのよ。ソラリウムをいっぱいにするには、たくさんのタネや苗木が必要になりそうね！$1",
+  "Events.CarolineMagazine.5": "テーブルの上に置いておいたのよ。目立つところにあるから、すぐ見つかると思うわ。$2#$b#帰る途中で立ち寄ろうと思ってたけど、そろそろいかないとね。気を付けてね、@。",
+  "Events.CarolineMagazine.6": "また近いうちに会えるといいわね！",
+  "Events.CarolineMagazine.2.Piper": "開いたから、パイパーと一緒にソラリウムを見に行ったのよ。#$b#ソラリウムの日差し、本当にステキね...ここ、植物がよく育つような場所わね。#$b#あら...サンルームの植物をソラリウムに持ってきて、この景色を楽しもうかしら。$1",
+  "Events.CarolineMagazine.3.Piper": "まあ、パイパーがね...私たち、二人で...その...$2",
+
+  // Linus's new shelter
+  "Events.LinusNewShelter.1": "こんにちは、@。#$b#最近、君や他の人たちがここまで来るようになったことに気づいたんだ。気になって、自分の目で確かめてみようと思ったんだ。#$b#寒さをしのぐには、いいところだな。#$b#少しの温もりがあるだけで、心は安らぐものだな。$1",
+
+  // ===== DIALOGUE (TOPIC) =====
+  "Dialogue.SolariumUnlocked.Caroline": "あら、エブリンは町のみんなに、あなたがソラリウムの世話をしてるって話してるのよ。あなたのことを本当に誇りに思ってるみたいね。",
+  "Dialogue.SolariumUnlocked.Evelyn": "ソラリウムで何を育てるのか、楽しみにしているわねえ。本当に特別なところねえ。",
+  "Dialogue.SolariumUnlocked.Lewis": "エブリンが君にソラリウムの鍵を渡したという話を聞いたよ。良い判断だったと思う。",
+
+  // ===== SPECIAL ORDER =====
+  // Evelyn seasonal flowers ({Flower:TextPlural} = chosen flower name plural, filled by game, do not translate)
+  "SpecialOrder.EvelynSeasonalFlowers.Name": "季節の花",
+  "SpecialOrder.EvelynSeasonalFlowers.Text": "町をキレイな{Flower:TextPlural}で飾りたいの。{Flower:TextPlural}を１００個、出荷箱に入れてくれたら、素敵に使わせてもらうわ。 ーエブリンー",
+  "SpecialOrder.EvelynSeasonalFlowers.Objective.Collect": "{Flower:TextPlural}を100個収穫する　（クエスト開始後に収穫）",
+  "SpecialOrder.EvelynSeasonalFlowers.Objective.Ship": "{Flower:TextPlural}を100個、出荷箱に入れる。エブリンに届けられる。",
+
+  // ===== MAIL =====
+  // Evelyn flowers reward (letter with 100 Mixed Seeds)
+  "Mail.EvelynFlowersReward": "@へ、^ステキな花を届けてくれて本当にありがとうね！@のおかげで、ペリカンタウンがもうどんどんキレイになってきたわ。^お礼に、花のミックスシードを入れておいたわ。ソラリウムに新しい息吹を吹き込んでくれることを願っているわ。^^   ーエブリンー",
+  "Mail.EvelynFlowersReward.Title": "エブリンの感謝",
+
+  // ===== SCHEDULES =====
+  // Linus at solarium (fall/winter schedule) — random between two lines (also used in LinusNewShelter event)
+  "Schedules.Linus.Solarium.Cold": "寒さをしのぐには、いいところだな。",
+  "Schedules.Linus.Solarium.Warmth": "少しの温もりがあるだけで、心は安らぐものだな。$1",
+  // Caroline at solarium (Wednesday schedule) — default (random 1/2), summer, and rain variants
+  "Schedules.Caroline.Solarium": "エブリンはこの場所が本当に好きだったのよ。あなたがエブリンの始めたことを続けてくれているのを見ると、嬉しくなるわ。",
+  "Schedules.Caroline.Solarium.Putter": "こんな静かな場所があるのが嬉しいのよ。時間がある時にここへ来て、植物に手をかけるのも好きなの。",
+  "Schedules.Caroline.Solarium.Summer": "エブリンはここでいつも、サマースパングルを育ててたのよ。私のお気に入りなの。あなたのお気に入りは？",
+  "Schedules.Caroline.Solarium.Rain": "ここにいると、窓ガラスを打つ雨の音で本当に心が安らぐわ。"
+}

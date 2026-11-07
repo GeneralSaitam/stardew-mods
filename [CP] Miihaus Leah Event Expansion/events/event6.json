@@ -1,0 +1,152 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/ArchaeologyHouse",
+        "Entries":
+    {
+    "Miihau.LeahEE.006/F/f Leah 1500/t 800 1400/e Miihau.LeahEE.005":"
+    breezy/
+    13 10/
+    farmer 9 14 1 Gunther 3 8 2 Leah 12 9 0 Elliott 21 11 2 Caroline 14 4 2 Penny 18 9 2/
+    skippable/
+    addConversationTopic Miihau.LeahEE.006.Topic 0/
+    animate Caroline false true 450 19 19 19 19 19 19/
+    animate Penny false true 450 18 18 18 18 18 18/
+    animate Elliott false true 450 33 33 33 33 33 33/
+    move farmer 3 0 0/
+    move farmer 0 -2 0/
+    pause 700/
+    speak Leah \"{{i18n:Miihau.LeahEE.event6.001}}\"/
+    pause 400/
+    emote farmer 8/
+    pause 200/
+    move farmer 0 -2 0/
+    pause 200/
+    faceDirection Leah 2/
+    pause 500/
+    speak Leah \"{{i18n:Miihau.LeahEE.event6.002}}\"/
+    stopAnimation Penny 18/
+    animate Penny false false 150 18 19 17 16 0 0 0 0 0 0/
+    pause 1000/
+    stopAnimation Penny 0/
+    faceDirection Penny 3/
+    quickQuestion {{i18n:Miihau.LeahEE.event6.002X}}(break)pause 300\\speak Leah \"{{i18n:Miihau.LeahEE.event6.003}}\"(break)pause 300\\speak Leah \"{{i18n:Miihau.LeahEE.event6.004}}\"/
+    viewport move 1 0 1800/
+    pause 600/
+    animate Penny false false 150 0 0 16 17 19 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18/
+    pause 1600/
+    stopAnimation Penny 18/
+    pause 400/
+    stopAnimation Elliott 0/
+    faceDirection Elliott 3/
+    pause 500/
+    emote Elliott 12/
+    pause 300/
+    emote Leah 40 true/
+    viewport move -1 0 1800/
+    move Elliott -2 0 2/
+    move Elliott 0 1 3/
+    move Elliott -4 0 0/
+    emote farmer 40 true/
+    move Elliott 0 -3 3/
+    move Elliott -1 0 3/
+    pause 700/
+    stopAnimation Caroline 0/
+    faceDirection Caroline 2/
+    move Caroline 0 1 2/
+    emote Caroline 8 true/
+    pause 400/
+    speak Elliott \"{{i18n:Miihau.LeahEE.event6.005}}\"/
+    pause 200/
+    speed Caroline 1/
+    advancedMove Caroline false 1 0 0 2 3 1000/
+    faceDirection Leah 1/
+    faceDirection farmer 1/
+    pause 200/
+    speak Leah \"{{i18n:Miihau.LeahEE.event6.006}}\"/
+    speak Elliott \"{{i18n:Miihau.LeahEE.event6.007}}\"/
+    pause 1500/
+    speak Leah \"{{i18n:Miihau.LeahEE.event6.008}}\"/
+    pause 1000/
+    speak Leah \"{{i18n:Miihau.LeahEE.event6.009}}\"/
+    pause 500/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    changeLocation Town/
+    warp Leah 97 93/
+    warp farmer 99 93/
+    faceDirection farmer 3/
+    message \"{{i18n:Miihau.LeahEE.event6.010}}\"/
+    pause 400/
+    globalFadeToClear 0.007 true/
+    viewport 99 94/
+    pause 1400/
+    speak Leah \"{{i18n:Miihau.LeahEE.event6.011}}\"/
+    pause 400/
+    faceDirection Leah 2/
+    pause 300/
+    emote Leah 28/
+    pause 300
+    speak Leah \"{{i18n:Miihau.LeahEE.event6.012}}\"/
+    question fork1 \"{{i18n:Miihau.LeahEE.event6.013}}\" /
+    fork Miihau.LeahEE.006.Fork1/
+    pause 400/
+    faceDirection Leah 1/
+    speak Leah \"{{i18n:Miihau.LeahEE.event6.014}}\"/
+    emote Leah 32/
+    pause 200/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    end dialogueWarpOut Leah \"{{i18n:Miihau.LeahEE.event6.015}}\"/
+    ",
+    "Miihau.LeahEE.006.end":"
+    end dialogueWarpOut Leah \"{{i18n:Miihau.LeahEE.event6.016}}\"/
+    "
+    }
+    },
+
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Town",
+        "Entries":
+    {
+    "Miihau.LeahEE.006.Fork1":"
+    pause 400/
+    eventSeen Miihau.LeahEE.006.Fork1/
+    faceDirection Leah 1/
+    speak Leah \"{{i18n:Miihau.LeahEE.event6.017}}\"/
+    emote Leah 32/
+    pause 200/
+    globalFade/
+    viewport -1200 -1200/
+    changeLocation ArchaeologyHouse/
+    switchEvent Miihau.LeahEE.006.end/
+    ",
+    }
+    },
+
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Elliott",
+        "Entries":{
+            "Miihau.LeahEE.006.Topic":"{{i18n:Miihau.LeahEE.event6.018}}",
+            },
+        "When":{
+            "Hearts:Elliott":"0, 1, 2"
+        }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Elliott",
+        "Entries":{
+            "Miihau.LeahEE.006.Topic":"{{i18n:Miihau.LeahEE.event6.019}}",
+            },
+        "When":{
+            "Hearts:Elliott":"3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14"
+        }
+    },
+    ]
+}

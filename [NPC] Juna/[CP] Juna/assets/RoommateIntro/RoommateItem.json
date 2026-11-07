@@ -1,0 +1,68 @@
+{
+  "Changes": [
+    //Loads painting
+    {
+      "LogName": "Juna Roommate Item",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "elhrvy.NPCJuna_PaintingOfJuna": {
+          "Name": "elhrvy.NPCJuna_PaintingOfJuna",
+          "DisplayName": "{{i18n: juna.roommate.painting.name}}",
+          "Description": "{{i18n: juna.roommate.painting.description}}",
+          "Type": "asdf",
+          "Price": 0,
+          "Texture": "{{InternalAssetKey: assets/RoommateIntro/RoommateItem/PaintingOfJuna.png}}",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "ExcludeFromRandomSale": true,
+          "ExcludeFromShippingCollection": true,
+          "ContextTags": ["propose_roommate_juna"]
+        }
+      }
+    },
+
+    //Adds to shop
+    {
+      "LogName": "Adds painting to Dwarf's shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": ["Dwarf", "Items"],
+      "Entries": {
+        "PaintingOfJuna": {
+          "Id": "elhrvy.NPCJuna_PaintingOfJuna",
+          "ItemId": "(O)elhrvy.NPCJuna_PaintingOfJuna",
+          "Price": 5000
+        }
+      },
+      "When": {
+        "HasFlag": "DwarfJunaTreasure"
+      }
+    },
+
+    //Loads Companion Ring
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "elhrvy.NPCJuna_EssenceOfJuna": {
+          "Name": "elhrvy.NPCJuna_EssenceOfJuna",
+          "DisplayName": "{{i18n: juna.roommate.ring.name}}",
+          "Description": "{{i18n: juna.roommate.ring.description}}",
+          "Type": "Ring",
+          "Category": -96,
+          "Price": 0,
+          "Texture": "{{InternalAssetKey: assets/RoommateIntro/RoommateItem/JunaRing.png}}",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "CustomFields": {
+            "PeacefulEnd.CustomCompanions/Companions/Variety": 1,
+            "PeacefulEnd.CustomCompanions/Companions/0/Id": "elhrvy.JunaCustomCompanions.EssenceOfJuna",
+            "PeacefulEnd.CustomCompanions/Companions/0/NumberToSummon": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  
+    "Changes": [
+	
+//GIFT TASTES====================================
+        // add gift tastes vanilla
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                { //universal hate
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Hate"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Brown_Amanita Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab Aimon111.WitchSwampOverhaulCP_Vile_Ancient_Fruit",
+                    "Delimiter": " " // if there are already values, add a space between them and the new one
+                },
+		
+				{ //universal dislike
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Dislike"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Pemmican Aimon111.WitchSwampOverhaulCP_Water_Bug Aimon111.WitchSwampOverhaulCP_Swamp_Slug Aimon111.WitchSwampOverhaulCP_Spotted_Crayfish Aimon111.WitchSwampOverhaulCP_Suspicious_Pie",
+                    "Delimiter": " " // if there are already values, add a space between them and the new one
+                },
+				 { //universal neutral
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Neutral"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Cooking_Pot Aimon111.WitchSwampOverhaulCP_Fancy_Blanket Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Swamp_Herb Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+	
+				
+				
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Harvey", "1"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Harvey", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Swamp_Leech Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Haley", "5"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Crayfish_Soup Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Mushroom_Kebab Aimon111.WitchSwampOverhaulCP_Pemmican",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Jas", "7"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Crayfish_Soup Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Mushroom_Kebab Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+			
+	
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Leo", "7"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Abigail", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                }, 
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Vincent", "1"],
+                    "Value": "Aimon111.Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
+                    "Delimiter": " " 
+                },
+			{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Vincent", "7"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Crayfish_Soup Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Mushroom_Kebab Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Vincent", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Swamp_Leech {{ModId}}_Water_Bug {{ModId}}_Spotted_Crayfish Aimon111.WitchSwampOverhaulCP_Swamp_Slug",
+                    "Delimiter": " " 
+                },		
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Kent", "7"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Mushroom_Kebab Aimon111.WitchSwampOverhaulCP_Pemmican Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Swamp_Herb Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Linus", "1"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Crayfish_Soup Aimon111.WitchSwampOverhaulCP_Pemmican",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Linus", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Swamp_Herb Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Linus", "9"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab Aimon111.WitchSwampOverhaulCP_Purple_Algae",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Caroline", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Swamp_Herb",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Caroline", "5"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Caroline", "7"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Leah", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Swamp_Herb Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "George", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Gus", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Penny", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Wizard", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Wizard", "5"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Vile_Ancient_Fruit",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Willy", "1"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Crayfish_Soup Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Willy", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Pemmican",
+                    "Delimiter": " " 
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Demetrius", "9"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Brown_Amanita",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Demetrius", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Swamp_Herb",
+                    "Delimiter": " " 
+                },
+				
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Demetrius", "1"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Dwarf", "9"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Brown_Amanita Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Krobus", "9"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Brown_Amanita Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab Aimon111.WitchSwampOverhaulCP_Purple_Algae Aimon111.WitchSwampOverhaulCP_Swamp_Leech",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Krobus", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Vile_Ancient_Fruit Aimon111.WitchSwampOverhaulCP_Void_Minnow Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Sebastian", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Void_Minnow Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " " 
+                },
+            ]
+        },  
+		
+		 { //gifttastes modded npcs
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+			"When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, },
+            "TextOperations": [
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "GuntherSilvian", "1"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Giant_Horsehoe_Crab",
+                    "Delimiter": " "  },
+					
+					{
+                    "Operation": "Append",
+                    "Target": ["Fields", "MarlonFay", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Ginger_Tincture Aimon111.WitchSwampOverhaulCP_Pemmican",
+                    "Delimiter": " "  },
+					{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Claire", "3"],
+                    "Value": "Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea",
+                    "Delimiter": " "  },
+            ]
+        },  
+    ]
+}
+

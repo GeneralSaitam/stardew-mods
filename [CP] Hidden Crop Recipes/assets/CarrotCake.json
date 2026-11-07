@@ -1,0 +1,90 @@
+{
+    "Changes": [
+	{
+		"Action": "EditData", 
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_CarrotCake": {
+				"Name": "{{ModId}}_CarrotCake",
+				"DisplayName": "Carrot Cake",
+				"Description": "Two layers of moist cake with a hint of spice. The cream cheese frosting is decorated with little carrots.",
+				"Type": "Basic",
+				"Category": -7,
+				"Price": 185,
+				"Texture": "Mods/{{ModId}}/objects16px",
+				"SpriteIndex": 3, 
+				"Edibility": 62, 
+				"IsDrink": false,
+			}
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/CookingRecipes", 
+		"Entries": {
+			"CarrotCake": "Carrot 1 -5 1 245 1 246 1/1 1/{{ModId}}_CarrotCake/default"
+			}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes", //Bearing in mind that Carrot Cake is easier to make than Pink Cake, but about the same or harder to make than Chocolate Cake, is about how I approached gift tastes for this one.
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Abigail", 1], //Abigail likes Chocolate Cake and a number of other sweet desserts, so she likes Carrot Cake, too. Even though she dislikes raw Carrots, Blackberry Cobbler is one of her loved gifts despite disliking raw Blackberries, so I felt it was justified.
+				"Value": "{{ModId}}_CarrotCake",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Jodi", 1], //Jodi likes Chocolate Cake, so she likes Carrot Cake, too
+				"Value": "{{ModId}}_CarrotCake",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Evelyn", 1], //Evelyn likes Chocolate Cake, so she likes Carrot Cake, too
+				"Value": "{{ModId}}_CarrotCake",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", 1], //Vincent loves Pink Cake, and some of his other loved gifts are not as hard to get as Pink Cake (namely Grape which can simply be found on the ground in summer) so I felt it was balanced. Additionally, since Jodi also likes Carrot Cake, thought it would be sweet if that was something she makes for him for his birthday sometimes.
+				//Did not do the same for Jas because her Loved gifts are a good deal more difficult to get. As a Cooked Dish, most villagers including Jas will still appreciate a Carrot Cake even if it's not their favorite, though.
+				"Value": "{{ModId}}_CarrotCake",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Harvey", 5], //Harvey doesn't like Unhealthy Foods, so he doesn't like Carrot Cake.
+				"Value": "{{ModId}}_CarrotCake",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leah", 5], //Leah doesn't like Pink Cake and a handful of other sweet dishes, so she doesn't care for Carrot Cake.
+				"Value": "{{ModId}}_CarrotCake",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leo", 5], //Leo doesn't like most Cooked Dishes.
+				"Value": "{{ModId}}_CarrotCake",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Krobus", 5], //Krobus doesn't like most Cooked Dishes.
+				"Value": "{{ModId}}_CarrotCake",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Willy", 5], //Willy doesn't like most Cooked Dishes.
+				"Value": "{{ModId}}_CarrotCake",
+				"Delimiter": " "
+			}
+		]
+	}
+    ]
+}

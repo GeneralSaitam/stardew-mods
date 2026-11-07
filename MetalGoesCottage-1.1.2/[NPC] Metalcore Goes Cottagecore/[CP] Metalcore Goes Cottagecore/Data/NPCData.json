@@ -1,0 +1,190 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Otter.Cambria": {
+                    "DisplayName": "{{i18n:Name.Cambria}}",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Neutral",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 11,
+                    "HomeRegion": "Town",
+                    "CanBeRomanced": "{{CambriaRomance}}",
+                    "ExcludeFromPerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "DumpsterDiveFriendshipEffect": 1,
+                    "DumpsterDiveEmote": 7,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "ID": "Default",
+                            "Location": "{{ModID}}_CCHouse",
+                            "Tile": {
+                                "X": 4,
+                                "Y": 14
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "Spring",
+                            "Season": "Spring",
+                            "Indoors": true,
+                            "Portrait": "Portraits/spring_Otter.Cambria",
+                            "Sprite": "{{InternalAssetKey: Assets/Characters/Otter.Cambria/spring.png}}",
+                            "Precedence": 0,
+                            "Weight": 1
+                        },
+                        {
+                            "ID": "Summer",
+                            "Season": "Summer",
+                            "Indoors": true,
+                            "Portrait": "Portraits/summer_Otter.Cambria",
+                            "Sprite": "{{InternalAssetKey: Assets/Characters/Otter.Cambria/summer.png}}",
+                            "Precedence": 0,
+                            "Weight": 1
+                        },
+                        {
+                            "ID": "Fall",
+                            "Season": "Fall",
+                            "Indoors": true,
+                            "Portrait": "Portraits/fall_Otter.Cambria",
+                            "Sprite": "{{InternalAssetKey: Assets/Characters/Otter.Cambria/fall.png}}",
+                            "Precedence": 0,
+                            "Weight": 1
+                        },
+                        {
+                            "ID": "Winter",
+                            "Season": "Winter",
+                            "Indoors": true,
+                            "Portrait": "Portraits/winter_Otter.Cambria",
+                            "Sprite": "{{InternalAssetKey: Assets/Characters/Otter.Cambria/winter.png}}",
+                            "Precedence": 0,
+                            "Weight": 1
+                        },
+                        {
+                            "ID": "Island",
+                            "Portrait": "Portraits/Otter.Cambria_beach",
+                            "Sprite": "{{InternalAssetKey: Assets/Characters/Otter.Cambria/island.png}}",
+                            "IsIslandAttire": true,
+                            "Precedence": -10,
+                            "Weight": 1
+                        },
+                        {
+                            "ID": "Spirit's Eve",
+                            "Condition": "Any \"LOCATION_NAME Target EastScarp_VillageInn_SpiritEve, SEASON_DAY fall 27\"",
+                            "Portrait": "Portraits/spiritseve_Otter.Cambria",
+                            "Sprite": "{{InternalAssetKey: Assets/Characters/Otter.Cambria/spiritseve.png}}",
+                            "Precedence": -20
+                        }
+                    ]
+                },
+                "Otter.Orchid": {
+                    "DisplayName": "{{i18n:Name.Orchid}}",
+                    "Gender": "Female",
+                    "Age": "Child",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Neutral",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 28,
+                    "HomeRegion": "Town",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "IntroductionsQuest": false,
+                    "ExcludeFromPerfectionScore": true,
+                    "EndSlideShow": "Hidden",
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "ID": "Default",
+                            "Location": "EastScarp_LoresCove",
+                            "Tile": {
+                                "X": 34,
+                                "Y": 16
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "Spring",
+                            "Season": "Spring",
+                            "Indoors": true,
+                            "Portrait": "{{InternalAssetKey: Assets/Portraits/Otter.Orchid/spring.png}}",
+                            "Sprite": "{{InternalAssetKey: Assets/Characters/Otter.Orchid/spring.png}}",
+                            "Precedence": 0,
+                            "Weight": 1
+                        },
+                        {
+                            "ID": "Summer",
+                            "Season": "Summer",
+                            "Indoors": true,
+                            "Portrait": "{{InternalAssetKey: Assets/Portraits/Otter.Orchid/summer.png}}",
+                            "Sprite": "{{InternalAssetKey: Assets/Characters/Otter.Orchid/summer.png}}",
+                            "Precedence": 0,
+                            "Weight": 1
+                        },
+                        {
+                            "ID": "Fall",
+                            "Season": "Fall",
+                            "Indoors": true,
+                            "Portrait": "{{InternalAssetKey: Assets/Portraits/Otter.Orchid/fall.png}}",
+                            "Sprite": "{{InternalAssetKey: Assets/Characters/Otter.Orchid/fall.png}}",
+                            "Precedence": 0,
+                            "Weight": 1
+                        },
+                        {
+                            "ID": "Winter",
+                            "Season": "Winter",
+                            "Indoors": true,
+                            "Portrait": "{{InternalAssetKey: Assets/Portraits/Otter.Orchid/winter.png}}",
+                            "Sprite": "{{InternalAssetKey: Assets/Characters/Otter.Orchid/winter.png}}",
+                            "Precedence": 0,
+                            "Weight": 1
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Gift Tastes Empty Data",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Otter.Cambria": "//////////"
+            }
+        },
+        {
+            "LogName": "Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Fields": {
+                "Otter.Cambria": {
+                    //Love
+                    "0": "{{i18n:gifts.Cambria.love}}",
+                    "1": "253 268 226 921 578 795 807 MysticSyrup MysticTreeSeed CaveJelly Book_Void EastScarp_Serruria TenebrousNova.EnD.DragonEye HXW.Mixology_whiskey Cornucopia_BlackCurrants Cornucopia_Durian Rafseazz.RSVCP_Lava_Lily Rafseazz.RSVCP_Mistbloom_Syrup FlashShifter.StardewValleyExpandedCP_Aegis_Elixir FlashShifter.StardewValleyExpandedCP_Armor_Elixir FlashShifter.StardewValleyExpandedCP_Green_Mushroom FlashShifter.StardewValleyExpandedCP_Monster_Fruit FlashShifter.StardewValleyExpandedCP_Monster_Mushroom FlashShifter.StardewValleyExpandedCP_Poison_Mushroom FlashShifter.StardewValleyExpandedCP_Void_Delight FlashShifter.StardewValleyExpandedCP_Void_Eel FlashShifter.StardewValleyExpandedCP_Void_Pebble FlashShifter.StardewValleyExpandedCP_Void_Root FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi Cornucopia_Habanero Cornucopia_Jalapeno Cornucopia_WasabiRoot Cornucopia_Lily Cornucopia_BeeBalm Cornucopia_Wolfsbane Rafseazz.RSVCP_Forest_Amancay Rafseazz.RSVCP_Violet_Devil_s_Claw MadDog.HashtagBearfam.SigurdPerfectRamen EastScarp_Void_CheeseCake EastScarp_Void_SalmonCake Cornucopia_Tiramisu chocolatte12.NightMarketExpansion_NontupleShotEspresso Squeaks.MGC.CP_ElderLilyHoney Squeaks.MGC.CP_ElderLilyMead Squeaks.MGC.CP_ElderLilyDrink",
+                    //Like
+                    "2": "{{i18n:gifts.Cambria.like}}",
+                    "3": "305 265 228 227 459 225 637 203 395 Powdermelon Book_Bombs Book_Marlon GoldenAnimalCracker SeaJelly RiverJelly EastScarp_Rosas_Baklava WWWA.GenuineAutograph TenebrousNova.EnD.SanguineHeart TenebrousNova.EnD.Bluffshroom Cornucopia_Raspberry Cornucopia_Elderberries Cornucopia_Gooseberry Cornucopia_DragonFruit Rafseazz.RSVCP_Ember_Blood_Lime FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry FlashShifter.StardewValleyExpandedCP_Red_Baneberry FlashShifter.StardewValleyExpandedCP_Slime_Berry FlashShifter.StardewValleyExpandedCP_Void_Shard FlashShifter.StardewValleyExpandedCP_Void_Soul Cornucopia_Lotus Cornucopia_Orchid Cornucopia_Wisteria Rafseazz.RSVCP_Mountain_Hokkaido Rafseazz.RSVCP_Mountain_Mistbloom HXW.Mixology_brandy HXW.Mixology_gin HXW.Mixology_rum HXW.Mixology_tequila HXW.Mixology_vodka DN.SnS_salishbourbon EastScarp_Void_Goat_Milk EastScarp_L_Void_Goat_Milk EastScarp_Void_Goat_Cheese EastScarp_Void_Goat_Cheese_Aged EastScarp_Void_Cake Cornucopia_CoffeeCake Squeaks.MGC.CP_VoidMelonSoda Squeaks.MGC.CP_StarMiasmaCookies Squeaks.MGC.CP_ElderTigerLily Squeaks.MGC.CP_ElderLilyLeaves",
+                    //Dislike
+                    "4": "{{i18n:gifts.Cambria.dislike}}",
+                    "5": "733 -5 730 905 727 446 808 Book_Friendship StardropTea Raisins FlashShifter.StardewValleyExpandedCP_Sports_Drink",
+                    //Hate
+                    "6": "{{i18n:gifts.Cambria.hate}}",
+                    "7": "349 351 834 -6 FlashShifter.StardewValleyExpandedCP_Joja_Berry FlashShifter.StardewValleyExpandedCP_Joja_Veggie FlashShifter.StardewValleyExpandedCP_Super_Joja_Cola FlashShifter.StardewValleyExpandedCP_Stamina_Capsule",
+                    //Neutral
+                    "8": "{{i18n:gifts.Cambria.neutral}}",
+                    "9": "WWWA.AutographedPhoto Squeaks.MGC.CP_HeirloomBouquet"
+                }
+            }
+        }
+    ]
+}

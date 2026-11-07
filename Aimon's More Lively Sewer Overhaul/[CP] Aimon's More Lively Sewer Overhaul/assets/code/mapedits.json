@@ -1,0 +1,455 @@
+{
+    "Changes": [
+        {
+            "LogName": "aimonmachinenonfixed",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "HasSeenEvent": "19405001"
+            },
+            "Update": "OnTimeChange",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 23,
+                        "Y": 25
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "PlayEvent 19405002 true true"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "aimonmachinenonfixed",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "HasSeenEvent": "19405001"
+            },
+            "Update": "OnTimeChange",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 24,
+                        "Y": 25
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message Aimon111.sewer661"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "aimonmachinefixed",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "HasSeenEvent": "19405002"
+            },
+            "Update": "OnTimeChange",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 23,
+                        "Y": 25
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message Aimon111.sewer66"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "aimonmachinefixed",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "HasSeenEvent": "19405002"
+            },
+            "Update": "OnTimeChange",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 24,
+                        "Y": 25
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message Aimon111.sewer66"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "aimonhutclosedevent",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "HasSeenEvent": "19405002"
+            },
+            "Update": "OnTimeChange",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 44,
+                        "Y": 34
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "PlayEvent 19405003 true true"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "aimonhutcloseddescription",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "HasSeenEvent": "19405003",
+                "HasWalletItem |contains=MagicInk": true
+            },
+            "Update": "OnTimeChange",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 44,
+                        "Y": 47
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "PlayEvent 19405004 true true"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "aimonhutchopen",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "HasSeenEvent": "19405004"
+            },
+            "Update": "OnTimeChange",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 44,
+                        "Y": 47
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message Aimon111.sewerroom10"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "aimonhutchopenropeplace",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+			"Update": "OnTimeChange",
+            "When": {
+                "HasSeenEvent": "194050011",
+			 
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 44,
+                        "Y": 47
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "PlayEvent 19405005 true true"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "aimonhutchopenwarp",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "HasSeenEvent": "19405005"
+            },
+            "Update": "OnTimeChange",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 44,
+                        "Y": 47
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 7 4 Aimon111.MoreLivelySewerOverhaul_Custom_Aimon_SewerSecret"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "aimonsewergateopen",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "HasSeenEvent": "19405002"
+            },
+            "Update": "OnTimeChange",
+            "MapTiles": [
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 44,
+                        "Y": 40
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 44,
+                        "Y": 41
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "AlwaysFront1",
+                    "Position": {
+                        "X": 44,
+                        "Y": 39
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "AlwaysFront",
+                    "Position": {
+                        "X": 44,
+                        "Y": 40
+                    },
+                    "Remove": true
+                }
+            ]
+        },
+        {
+            "LogName": "aimonsewerhutchopen",
+            "Action": "EditMap",
+            "Target": "Maps/Sewer",
+            "When": {
+                "HasSeenEvent": "19405004"
+            },
+            "Update": "OnTimeChange",
+            "MapTiles": [
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 44,
+                        "Y": 47
+                    },
+                    "SetIndex": "284"
+                },
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 44,
+                        "Y": 46
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 45,
+                        "Y": 47
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 43,
+                        "Y": 47
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 45,
+                        "Y": 46
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Back2",
+                    "Position": {
+                        "X": 43,
+                        "Y": 46
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Back2",
+                    "Position": {
+                        "X": 44,
+                        "Y": 46
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Back2",
+                    "Position": {
+                        "X": 45,
+                        "Y": 46
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Back2",
+                    "Position": {
+                        "X": 43,
+                        "Y": 47
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Back2",
+                    "Position": {
+                        "X": 44,
+                        "Y": 47
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Back2",
+                    "Position": {
+                        "X": 45,
+                        "Y": 47
+                    },
+                    "Remove": true
+                }
+            ]
+        },
+        {
+            "LogName": "aimonsewergateopenrope",
+            "Action": "EditMap",
+            "Target": "Maps/Aimon111.MoreLivelySewerOverhaul_Custom_Aimon_SewerSecret",
+            "When": {
+                "HasSeenEvent": "19405005"
+            },
+            "Update": "OnLocationChange",
+            "MapTiles": [
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 7,
+                        "Y": 4
+                    },
+                    "SetIndex": "52"
+                },
+                {
+                    "Layer": "Buildings2",
+                    "Position": {
+                        "X": 7,
+                        "Y": 0
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings2",
+                    "Position": {
+                        "X": 7,
+                        "Y": 1
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings2",
+                    "Position": {
+                        "X": 7,
+                        "Y": 2
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings2",
+                    "Position": {
+                        "X": 7,
+                        "Y": 3
+                    },
+                    "Remove": true
+                }
+            ]
+        },
+        {
+            "LogName": "aimonsewernodanger",
+            "Action": "EditMap",
+            "Target": "Maps/Aimon111.MoreLivelySewerOverhaul_Custom_Aimon_SewerSecret",
+            "When": {
+                "HasSeenEvent |contains=194050010": true
+            },
+            "Update": "OnTimeChange",
+            "MapTiles": [
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 5,
+                        "Y": 5
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 5,
+                        "Y": 6
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 6,
+                        "Y": 6
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 7,
+                        "Y": 6
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 8,
+                        "Y": 6
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 9,
+                        "Y": 6
+                    },
+                    "Remove": true
+                },
+                {
+                    "Layer": "Buildings",
+                    "Position": {
+                        "X": 9,
+                        "Y": 5
+                    },
+                    "Remove": true
+                }
+            ]
+        }
+    ]
+}

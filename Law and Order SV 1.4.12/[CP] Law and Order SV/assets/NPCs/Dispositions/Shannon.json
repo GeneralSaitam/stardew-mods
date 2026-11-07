@@ -1,0 +1,132 @@
+{
+    "Changes": [
+   	 
+   	 {
+   		 "Action": "EditData",
+   		 "Target": "Data/Characters",
+   		 "Entries": {
+   			 "{{Shannon}}": {
+   				 "DisplayName": "{{i18n:shannon.name}}",
+				 "UnlockConditions": "DAYS_PLAYED {{cfgJailOpenDelay}}",
+   				 "Gender": "Female",
+   				 "Age": "Adult",
+   				 "Manner": "Neutral",
+   				 "SocialAnxiety": "Neutral",
+   				 "Optimism": "Positive", 
+   				 "BirthSeason": "spring",
+   				 "BirthDay": "19",
+   				 "HomeRegion": "Town", 
+   				 "CanBeRomanced": true,
+    				"CanVisitIsland": true,
+   				 "SpouseAdopts": false,
+   				 "IntroductionsQuest": false,
+   				 "ItemDeliveryQuests": true,
+   				 "WinterStarParticipant": true,
+				 "CanCommentOnPurchasedShopItems":false,
+					"SpouseRoom": {
+						"MapAsset": "sdvwarhead.LawAndOrderSV_SpouseRoom",
+						"MapSourceRect": {
+						  "X": 0,
+						  "Y": 0,
+						  "Width": 6,
+						  "Height": 9
+						}
+					  },
+					  "SpousePatio": {
+						"MapAsset": "sdvwarhead.LawAndOrderSV_OutsideArea",
+						"MapSourceRect": {
+						  "X": 0,
+						  "Y": 0,
+						  "Width": 4,
+						  "Height": 4
+						},
+						"SpriteAnimationFrames": [
+						 	[27,960],[30,360],[27,600],[30,360],[27,600],[30,480],[27,480],[30,480],[27,240],[20,180],
+							[21,180],[22,180],[23,480],[22,180],[21,180],[20,180],[21,120],[32,180],[31,300],[32,180],
+							[21,180],[20,180],[27,480],[29,480],[25,480],[26,480],[20,360],[21,240],[24,480],[21,240],
+							[20,240]
+						],
+						"SpriteAnimationPixelOffset": {
+						  "X": 0,
+						  "Y": 0
+						}
+					  },
+					"Home": [
+						{
+						  "Id": "Default",
+						  "Condition": null,
+						  "Location": "sdvhead.LawAndOrderSV_AboveJail",
+						  "Tile": {
+							"X": 2,
+							"Y": 7
+						  },
+						  "Direction": "left"
+						}
+					  ],
+					"Appearance": [
+						{
+							"Id": "Default",
+							"Portrait": "Portraits/{{Shannon}}",
+							"Sprite": "Characters/{{Shannon}}",
+							"Precedence": 9,
+						},
+						{
+							"Id": "Island",
+							"Portrait": "Portraits/{{Shannon}}_Beach",
+							"Sprite": "Characters/{{Shannon}}_Beach",
+							"IsIslandAttire": true,
+							"Precedence": 8,
+						},
+						{
+							"Id": "OffDuty",
+							"Portrait": "Portraits/{{Shannon}}_Hatless",
+							"Sprite": "Characters/{{Shannon}}_Hatless",
+							"Indoors":true,
+							"Outdoors":true,
+							"Condition":"LOCATION_NAME Target Saloon {{ModID}}_AboveJail Farm FarmHouse, !IS_EVENT",
+							"Precedence":7,
+						},
+						{
+							"Id": "BeachSummer",
+							"Portrait": "Portraits/{{Shannon}}_Beach",
+							"Sprite": "Characters/{{Shannon}}_Beach",
+							"Indoors":false,
+							"Outdoors":true,
+							"Condition":"SEASON summer, LOCATION_NAME Target Beach Bathhouse_Pool, !IS_FESTIVAL_DAY, WEATHER Here Sun Wind",
+							"Precedence":6,
+						},
+						{
+							"Id": "SpiritsEve",
+							"Condition": "IS_EVENT festival_fall27",
+							"Portrait": "Portraits/{{Shannon}}_SpiritsEve",
+							"Sprite": "Characters/{{Shannon}}_SpiritsEve",
+							"Precedence": 0,
+						}
+					]
+   			 }
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"{{Shannon}}",
+				"Appearance"
+			],
+			"Entries": {
+				"Shannon_Casual":{
+					"Id": "Shannon_Casual",
+					"Portrait": "Portraits/{{Shannon}}_Casual",
+					"Sprite": "Characters/{{Shannon}}_Casual",
+					"Indoors": true,
+					"Outdoors": false,
+					"Condition": "LOCATION_NAME Target FarmHouse, !IS_EVENT",
+					"Precedence": 5,
+				}
+			},
+			"When": {
+				"cfgShannonPJs": true
+			}
+		},
+	]
+}

@@ -1,0 +1,73 @@
+{
+    "Changes": [
+	{
+		"Action": "EditData", 
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_PowdermelonSorbet": {
+				"Name": "{{ModId}}_PowdermelonSorbet",
+				"DisplayName": "Powdermelon Sorbet",
+				"Description": "Light, cool and refreshing, this simple snowy-season delight is a popular treat all winter long. Don't get a brain freeze!",
+				"Type": "Basic",
+				"Category": -7,
+				"Price": 170,
+				"Texture": "Mods/{{ModId}}/objects16px",
+				"SpriteIndex": 9, 
+				"Edibility": 68, 
+				"IsDrink": false,
+			}
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/CookingRecipes", 
+		"Entries": {
+			"PowdermelonSorbet": "Powdermelon 2 245 1/1 1/{{ModId}}_PowdermelonSorbet/default"
+			}
+	},
+	// Powdermelon Sorbet was the dish I tested out making the recipe be bought from the saloon. I messed with this for hours in different variations and formats, but couldn't get it to actually sell the recipe in a usable state (always showed as costing 1 wood, 2 sap and providing a modest amount of light, and not actually teaching the recipe.)
+	//{ 
+	//	"Action": "EditData", 
+	//	"Target": "Data/Shops",
+	//	"TargetField": ["Saloon", "items"],
+	//	"Entries": {
+	//		"{{ModId}}_PowdermelonSorbet": {
+	//			"Id": "{{ModId}}_PowdermelonSorbet",
+	//			"ItemId": "{{ModId}}_PowdermelonSorbet",
+	//			"Price": 500,
+	//			"IsRecipe": true
+	//		}
+	//	}
+	//},
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Demetrius", 1], //Demetrius likes similar dishes, so he likes Powdermelon Sorbet. 
+				"Value": "{{ModId}}_PowdermelonSorbet",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Harvey", 5], //Harvey doesn't like Unhealthy Foods, so he doesn't like Powdermelon Sorbet.
+				"Value": "{{ModId}}_PowdermelonSorbet",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Emily", 5], //Emily dislikes similar dishes, so she dislikes Powdermelon Sorbet.
+				"Value": "{{ModId}}_PowdermelonSorbet",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leah", 5], //Leah dislikes similar dishes, so she dislikes Powdermelon Sorbet.
+				"Value": "{{ModId}}_PowdermelonSorbet",
+				"Delimiter": " "
+			}
+		]
+	}
+    ]
+}

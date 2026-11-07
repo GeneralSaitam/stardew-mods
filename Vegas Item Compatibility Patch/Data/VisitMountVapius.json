@@ -1,0 +1,169 @@
+{
+  "Changes": [{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "Fields": {
+      // Crops
+      "Lumisteria.MtVapius_Basil": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVBasilCropName}}",
+      },
+      "Lumisteria.MtVapius_BasilSeeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVBasilSeedName}}",
+      },
+      "Lumisteria.MtVapius_Rye": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVRyeCropName}}",
+      },
+      "Lumisteria.MtVapius_RyeSeeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVRyeSeedName}}",
+      },
+
+      // Fruit Trees
+      "Lumisteria.MtVapius_Olive": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVOliveFruitName}}",
+      },
+      "Lumisteria.MtVapius_OliveSapling": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVOliveSaplingName}}",
+        "Description": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVOliveSaplingDescription}}",
+      },
+      "Lumisteria.MtVapius_WhiteGrape": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVWhiteGrapeFruitName}}",
+      },
+      "Lumisteria.MtVapius_GrapeSapling": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVWhiteGrapeSaplingName}}",
+        "Description": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVWhiteGrapeSaplingDescription}}",
+      },
+
+      // Wild Trees
+      "Lumisteria.MtVapius_BirchtreeSeeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVBirchSeedName}}",
+        "Description": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVBirchSeedDescription}}",
+      },
+      "Lumisteria.MtVapius_BirchSap": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVBirchSapName}}",
+      },
+      "Lumisteria.MtVapius_Candy_BirchSapBerlingot": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVBirchSapBerlingotName}}",
+      },
+
+      // Misc Items
+      "Lumisteria.MtVapius_Amber": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVAmberName}}",
+      },
+      "Lumisteria.MtVapius_Butter": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVButterName}}",
+      },
+      "Lumisteria.MtVapius_Candy_CandyCane": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVCandyCaneName}}",
+      },
+      "Lumisteria.MtVapius_Cream": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVCreamName}}",
+      },
+      "Lumisteria.MtVapius_GooseDown": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVGooseDownName}}",
+      },
+      "Lumisteria.MtVapius_GooseEgg": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVGooseEggName}}",
+      },
+      "Lumisteria.MtVapius_GooseMayonnaise": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVGooseMayonnaiseName}}",
+      },
+      "Lumisteria.MtVapius_ArtisanGoods_OliveOil": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVOliveOilName}}",
+      },
+      "Lumisteria.MtVapius_Rosemary": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVRosemaryName}}",
+      },
+      "Lumisteria.MtVapius_Cooking_RyeBread": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVRyeBreadName}}",
+      },
+    },
+  },
+
+  // Context Tags
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lumisteria.MtVapius_GemPigeonFeather", "ContextTags"],
+    "Entries": {
+       "animal_feather_item": "animal_feather_item"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lumisteria.MtVapius_GooseDown", "ContextTags"],
+    "Entries": {
+       "animal_feather_item": "animal_feather_item"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lumisteria.MtVapius_SpeckledFowlFeather", "ContextTags"],
+    "Entries": {
+       "animal_feather_item": "animal_feather_item"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lumisteria.MtVapius_SpeckledFowlVoidFeather", "ContextTags"],
+    "Entries": {
+       "animal_feather_item": "animal_feather_item"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lumisteria.MtVapius_VoidFeather", "ContextTags"],
+    "Entries": {
+       "animal_feather_item": "animal_feather_item"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lumisteria.MtVapius_SeaBuckthornBerry", "ContextTags"],
+    "Entries": {
+       "berry_item": "berry_item"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lumisteria.MtVapius_Cosmos", "ContextTags"],
+    "Entries": {
+       "cosmos_item": "cosmos_item"
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": ["Lumisteria.MtVapius_Primrose", "ContextTags"],
+    "Entries": {
+       "primrose_item": "primrose_item"
+    }
+  },
+
+  // Animals
+  {
+    "Action": "EditData",
+    "Target": "Data/FarmAnimals",
+    "Priority": "Late + 10",
+    "Fields": {
+      "Lumisteria.MtVapius_Goose": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVGooseName}}",
+        "ShopDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.VMVGooseName}}",
+      },
+    },
+  }]
+}

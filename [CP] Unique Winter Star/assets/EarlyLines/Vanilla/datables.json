@@ -1,0 +1,174 @@
+{
+	"Changes":[
+		{
+			"LogName": "Abigail - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Abigail.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Abigail": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Sebastian.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Alex - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Alex.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Alex": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star (Default)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Haley.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star, High Hearts",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Haley.WinterStar.High.Gifting}}",
+			},
+			"When": {
+				"Hearts:Haley": "6,7,8,9,10",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star v2 (alt condition)", // Condition which allows leeway on hearts if 6-heart is seen. If heart level drops to 3, assume she's angry.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Haley.WinterStar.High.Gifting}}",
+			},
+			"When": {
+				"Hearts:Haley": "4, 5",
+				"HasSeenEvent |contains=13": "true",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Shane - Winter Star (Default)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Shane.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Shane - Winter Star, High Hearts",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Shane.WinterStar.High.Gifting}}",
+			},
+			"When": {
+				"Hearts:Shane": "4, 5, 6, 7, 8, 9, 10",
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Emily.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Leah - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Leah.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Elliott.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Elliott": "normal, spicy",
+			},
+		},
+
+		{
+			"LogName": "Penny - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Penny.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Penny": "normal",
+			},
+		},
+		{
+			"LogName": "Sam - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Sam.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Sam": "normal",
+			},
+		},
+		{
+			"LogName": "Harvey - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Harvey.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Maru.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Maru": "normal, spicy",
+			},
+		},
+	],
+}

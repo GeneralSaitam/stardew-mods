@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="1">
+ <tileset firstgid="1" name="Spatio" tilewidth="16" tileheight="16" tilecount="16" columns="4">
+  <image source="Spatio.png" width="64" height="64"/>
+  <tile id="4">
+   <animation>
+    <frame tileid="4" duration="250"/>
+    <frame tileid="5" duration="250"/>
+    <frame tileid="6" duration="250"/>
+    <frame tileid="7" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="17" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <layer id="7" name="Back" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Back"/>
+ <layer id="1" name="Buildings" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+3,1,0,2,
+0,0,0,9
+</data>
+ </layer>
+ <objectgroup id="2" name="Buildings"/>
+ <layer id="9" name="Paths" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,24,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="Paths"/>
+ <layer id="3" name="Front" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,5,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Front"/>
+ <layer id="11" name="AlwaysFront" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="AlwaysFront"/>
+</map>

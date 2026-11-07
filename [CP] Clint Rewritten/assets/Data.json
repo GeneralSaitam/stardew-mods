@@ -1,0 +1,110 @@
+{
+	"Changes":[
+		{
+			"LogName":"Clint Phone Dialogue Patch",
+			"Action":"EditData",
+			"Target":"Strings/Characters",
+			"Entries":{
+				  "Phone_Clint_Open_Rare": "{{i18n:CR.Clint.RarePhone}}",
+				  "MovieInvite_Invited_Clint": "{{i18n:CR.Clint.MovieInvite}}",
+			}
+		},
+		{   
+		  "LogName": "Movie Theatre Default",
+		  "Action": "EditData", 
+		  "Target": "Data/MoviesReactions",	 
+			  "Entries": {        
+				  "Clint":   {
+						"NPCName": "Clint",
+						"Reactions": [
+								{
+									"Tag": "winter_movie_1",
+									"Response": "dislike",
+									"Whitelist": [],
+									"SpecialResponses": {
+									  "BeforeMovie": {
+										"ResponsePoint": null,
+										"Script": "",
+										"Text": "{{i18n:CR.Clint.RomanceMovie.Before}}"
+									  },
+									  "DuringMovie": {
+										"ResponsePoint": "guyEnters",
+										"Script": "/emote Clint 12/message \"{{i18n:CR.Clint.RomanceMovie.Script}}\"",
+										"Text": "{{i18n:CR.Clint.RomanceMovie.During}}"
+									  },
+									  "AfterMovie": {
+										"ResponsePoint": null,
+										"Script": "",
+										"Text": "{{i18n:CR.Clint.RomanceMovie.After}}"
+									  }
+									},
+									"ID": "reaction_1"
+								},
+						        {
+									"Tag": "like",
+									"Response": "like",
+									"Whitelist": [],
+									"SpecialResponses": {
+									  "BeforeMovie": {
+										"ResponsePoint": null,
+										"Script": "",
+										"Text": "{{i18n:CR.Clint.Movie.Before}}"
+									  },
+									  "DuringMovie": {
+										"ResponsePoint": null,
+										"Script": "/message \"{{i18n:CR.Clint.Movie.Script}}\"",
+										"Text": "{{i18n:CR.Clint.Movie.During}}"
+									  },
+									  "AfterMovie": {
+										"ResponsePoint": null,
+										"Script": "",
+										"Text": "{{i18n:CR.Clint.Movie.After}}"
+									  }
+									},
+									"ID": "reaction_0"
+								},
+						  ],
+				   },
+				},
+		},
+		{
+			"LogName":"Clint Quest - Not Dating Emily",
+			"Action":"EditData",
+			"Target":"Data/Quests",
+			"Entries":{
+				  "110": "ItemDelivery/{{i18n:CR.Clint.Quest.Title}}/{{i18n:CR.Clint.Quest.Description}}/{{i18n:CR.Clint.Quest.Objective}}/Emily 66/-1/0/-1/true/{{i18n:CR.Clint.Quest.Reaction}}",
+			}
+		},
+		{
+			"LogName":"Clint Quest - Dating, Engaged, or Married to Emily",
+			"Action":"EditData",
+			"Target":"Data/Quests",
+			"Entries":{
+				  "110": "ItemDelivery/{{i18n:CR.Clint.Quest.Emily.Title}}/{{i18n:CR.Clint.Quest.Emily.Description}}/{{i18n:CR.Clint.Quest.Objective}}/Emily 66/-1/0/-1/true/{{i18n:CR.Clint.Quest.Emily.Reaction}}",
+			},
+			"When": {
+				"relationship:Emily": "dating, engaged, married",
+			},
+		},
+		{
+			"LogName":"Clint Mail Alteration - Winter 6 Year 1",
+			"Action":"EditData",
+			"Target":"Data/mail",
+			"Entries":{
+				  "winter_6_1": "{{i18n:CR.Clint.Mail}} %item quest 110 %%[#]{{i18n:CR.Clint.Mail.Title}}",
+			}
+		},
+		{
+			"LogName":"Clint Mail Alteration - Winter 6 Year 1, Dating or further with Emily",
+			"Action":"EditData",
+			"Target":"Data/mail",
+			"Entries":{
+				  "winter_6_1": "{{i18n:CR.Clint.Mail.Involved}} %item quest 110 %%[#]{{i18n:CR.Clint.Involved.Title}}",
+				  "winter_7_1": "{{i18n:CR.Clint.Amethyst.Involved}} %item object 66 1 %%[#]{{i18n:CR.Clint.Amethyst.Mail}}",
+			},
+			"When": {
+				"relationship:Emily": "dating, engaged, married",
+			},
+		},
+	]
+}

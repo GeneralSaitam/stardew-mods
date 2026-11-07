@@ -1,0 +1,51 @@
+{
+  "Changes": [
+    {
+      "LogName": "VMV - Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_Sturgiant": {
+          "ItemId": "Lumisteria.MtVapius_Sturgiant",
+          "Chance": 0.3,
+          "CuriosityLureBuff": 0.07,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapius_SturgiantCaught",
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false
+        },
+        "Lumisteria.MtVapius_AlpineCharPrince": {
+          "ItemId": "Lumisteria.MtVapius_AlpineCharPrince",
+          "Chance": 0.3,
+          "CuriosityLureBuff": 0.07,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapius_AlpineCharPrinceCaught",
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false
+        },
+        "Lumisteria.MtVapius_PlanetFish": {
+          "ItemId": "Lumisteria.MtVapius_PlanetFish",
+          "Chance": 0.3,
+          "CuriosityLureBuff": 0.07,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "Condition": "PLAYER_HAS_MAIL Current Lumisteria.MtVapius_PlanetFishCaught",
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false
+        }
+      },
+      "When": {
+        "Legendary Fish On Farm": true
+      }
+    }
+  ]
+}

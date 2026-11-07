@@ -1,0 +1,144 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Priority": "Late + 10",
+      "Fields": {
+        // Strings for Dynamic Replacement
+        "nachonline.mps_RoyalJelly": {
+          "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSRoyalJellyName}}",
+        },
+        "nachonline.mps_SmokedCheese": {
+          "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedCheeseName}}",
+        },
+        "nachonline.mps_SmokedEgg": {
+          "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedEggName}}",
+        },
+      },
+    }, 
+    
+    // Strings for Dynamic Replacement
+    {
+      "Action": "EditData",
+      "Target": "selph.ExtraMachineConfig/ExtraOutputs",
+      "TargetField": [ "GoldRoyalJellyDropChance" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSRoyalJellyDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "selph.ExtraMachineConfig/ExtraOutputs",
+      "TargetField": [ "DiamondRoyalJellyDropChance" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSRoyalJellyDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "selph.ExtraMachineConfig/ExtraOutputs",
+      "TargetField": [ "IridiumRoyalJellyDropChance" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSRoyalJellyDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "selph.ExtraMachineConfig/ExtraOutputs",
+      "TargetField": [ "RadioactiveRoyalJellyDropChance" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSRoyalJellyDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "selph.ExtraMachineConfig/ExtraOutputs",
+      "TargetField": [ "PrismaticRoyalJellyDropChance" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSRoyalJellyDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)nachonline.mps_GoldFishSmoker", "OutputRules", "nachonline.mps_SmokedCheese", "OutputItem", "(O)nachonline.mps_SmokedCheese" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)nachonline.mps_DiamondFishSmoker", "OutputRules", "nachonline.mps_SmokedCheese", "OutputItem", "(O)nachonline.mps_SmokedCheese" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)nachonline.mps_IridiumFishSmoker", "OutputRules", "nachonline.mps_SmokedCheese", "OutputItem", "(O)nachonline.mps_SmokedCheese" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)nachonline.mps_RadioactiveFishSmoker", "OutputRules", "nachonline.mps_SmokedCheese", "OutputItem", "(O)nachonline.mps_SmokedCheese" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)nachonline.mps_PrismaticFishSmoker", "OutputRules", "nachonline.mps_SmokedCheese", "OutputItem", "(O)nachonline.mps_SmokedCheese" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)nachonline.mps_GoldFishSmoker", "OutputRules", "nachonline.mps_SmokedEgg", "OutputItem", "(O)nachonline.mps_SmokedEgg" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)nachonline.mps_DiamondFishSmoker", "OutputRules", "nachonline.mps_SmokedEgg", "OutputItem", "(O)nachonline.mps_SmokedEgg" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)nachonline.mps_IridiumFishSmoker", "OutputRules", "nachonline.mps_SmokedEgg", "OutputItem", "(O)nachonline.mps_SmokedEgg" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)nachonline.mps_RadioactiveFishSmoker", "OutputRules", "nachonline.mps_SmokedEgg", "OutputItem", "(O)nachonline.mps_SmokedEgg" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedDynamicName}}",
+      },
+    }, {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [ "(BC)nachonline.mps_PrismaticFishSmoker", "OutputRules", "nachonline.mps_SmokedEgg", "OutputItem", "(O)nachonline.mps_SmokedEgg" ],
+      "Priority": "Late + 10",
+      "Entries": {
+        "ObjectDisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.MPSSmokedDynamicName}}",
+      },
+    }
+  ]
+}

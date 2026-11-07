@@ -1,0 +1,267 @@
+{
+  "Changes": [
+    {
+      "LogName": "Main Roommate Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuna, Characters/Dialogue/MarriageDialogueJunaRoommate",
+      "Entries": {
+        
+        //SPECIFIC DAYS
+
+        "spring_1": "{{i18n: roommate.spring_1}}",
+        "spring_3": "{{i18n: roommate.spring_3}}",
+        "spring_8": "{{i18n: roommate.spring_8}}",
+        "spring_11": "{{i18n: roommate.spring_11}}",
+        "spring_13": "{{i18n: roommate.spring_13}}",
+        "spring_23": "{{i18n: roommate.spring_23}}",
+        "spring_24": "{{i18n: roommate.spring_24}}",
+
+        "summer_1": "{{i18n: roommate.summer_1}}",
+        "summer_3": "{{i18n: roommate.summer_3}}",
+        "summer_4": "{{i18n: roommate.summer_4}}",
+        "summer_5": "{{i18n: roommate.summer_5}}",
+        "summer_8": "{{i18n: roommate.summer_8}}",
+        "summer_11": "{{i18n: roommate.summer_11}}",
+        "summer_15": "{{i18n: roommate.summer_15}}",
+        "summer_28": "{{i18n: roommate.summer_28}}",
+
+        "fall_1": "{{i18n: roommate.fall_1}}",
+        "fall_3": "{{i18n: roommate.fall_3}}",
+        "fall_8": "{{i18n: roommate.fall_8}}",
+        "fall_15": "{{i18n: roommate.fall_15}}",
+        "fall_16": "{{i18n: roommate.fall_16}}",
+        "fall_21": "{{i18n: roommate.fall_21}}",
+        "fall_26": "{{i18n: roommate.fall_26}}",
+        "fall_27": "{{i18n: roommate.fall_27}}",
+
+        "winter_1": "{{i18n: roommate.winter_1}}",
+        "winter_3": "{{i18n: roommate.winter_3}}",
+        "winter_7": "{{i18n: roommate.winter_7}}",
+        "winter_8": "{{i18n: roommate.winter_8}}",
+        "winter_16": "{{i18n: roommate.winter_16}}",
+        "winter_17": "{{i18n: roommate.winter_17P}}",
+        "winter_25": "{{i18n: roommate.winter_25}}",
+        "winter_28": "{{i18n: roommate.winter_28}}",
+
+        //SEASONAL DIALOGUE
+
+        "spring_Juna": "{{i18n: roommate.spring_juna}}",
+        "summer_Juna": "{{i18n: roommate.summer_juna}}",
+        "fall_Juna": "{{i18n: roommate.fall_juna}}",
+        "winter_Juna": "{{i18n: roommate.winter_juna}}",
+
+        //PATIO DIALOGUE
+
+        "patio_Juna": "{{Random: {{i18n: roommate.patio1}} ++ {{i18n: roommate.patio2}} ++ {{i18n: roommate.patio3}} ++ {{i18n: roommate.patio4}} ++ {{i18n: roommate.patio5}} ++ {{i18n: roommate.patio6}} |inputSeparator=++}}",
+
+        //ROOM DIALOGUE
+
+        "spouseRoom_Juna": "{{Random: {{i18n: roommate.room1}} ++ {{i18n: roommate.room2}} ++ {{i18n: roommate.room3}} ++ {{i18n: roommate.room4}} ++ {{i18n: roommate.room5}} ++ {{i18n: roommate.room6}} |inputSeparator=++}}",
+
+        //DAILY DIALOGUE (EXCEPT RAIN DIALOGUE)
+
+        "Indoor_Day_0": "{{i18n: roommate.indoor_day.0}}",
+        "Indoor_Day_1": "{{i18n: roommate.indoor_day.1}}",
+        "Indoor_Day_2": "{{i18n: roommate.indoor_day.2}}",
+        "Indoor_Day_3": "{{i18n: roommate.indoor_day.3}}",
+        "Indoor_Day_4": "{{i18n: roommate.indoor_day.4}}",
+        "Indoor_Day_5": "{{i18n: roommate.indoor_day.5}}",
+
+        "Indoor_Night_0": "{{i18n: roommate.indoor_night.0}}",
+        "Indoor_Night_1": "{{i18n: roommate.indoor_night.1}}",
+        "Indoor_Night_2": "{{i18n: roommate.indoor_night.2}}",
+        "Indoor_Night_3": "{{i18n: roommate.indoor_night.3}}",
+        "Indoor_Night_4": "{{i18n: roommate.indoor_night.4}}",
+        "Indoor_Night_5": "{{i18n: roommate.indoor_night.5}}",
+
+        //OUTDOOR DIALOGUE
+
+        "Outdoor_0": "{{i18n: roommate.outdoor.0}}",
+        "Outdoor_1": "{{i18n: roommate.outdoor.1}}",
+        "Outdoor_2": "{{i18n: roommate.outdoor.2}}",
+        "Outdoor_3": "{{i18n: roommate.outdoor.3}}",
+        "Outdoor_4": "{{i18n: roommate.outdoor.4}}",
+
+        //AFFECTION DIALOGUE
+
+        "Good_0": "{{i18n: roommate.good.0}}",
+        "Good_1": "{{i18n: roommate.good.1}}",
+        "Good_2": "{{i18n: roommate.good.2}}",
+        "Good_3": "{{i18n: roommate.good.3}}",
+        "Good_4": "{{i18n: roommate.good.4}}",
+        "Good_5": "{{i18n: roommate.good.5}}",
+        "Good_6": "{{i18n: roommate.good.6}}",
+        "Good_7": "{{i18n: roommate.good.7}}",
+        "Good_8": "{{i18n: roommate.good.8}}",
+        "Good_9": "{{i18n: roommate.good.9}}",
+
+        "Neutral_0": "{{i18n: roommate.neutral.0}}",
+        "Neutral_1": "{{i18n: roommate.neutral.1}}",
+        "Neutral_2": "{{i18n: roommate.neutral.2}}",
+        "Neutral_3": "{{i18n: roommate.neutral.3}}",
+        "Neutral_4": "{{i18n: roommate.neutral.4}}",
+        "Neutral_5": "{{i18n: roommate.neutral.5}}",
+        "Neutral_6": "{{i18n: roommate.neutral.6}}",
+        "Neutral_7": "{{i18n: roommate.neutral.7}}",
+        "Neutral_8": "{{i18n: roommate.neutral.8}}",
+        "Neutral_9": "{{i18n: roommate.neutral.9}}",
+
+        "Bad_0": "{{i18n: roommate.bad.0}}",
+        "Bad_1": "{{i18n: roommate.bad.1}}",
+        "Bad_2": "{{i18n: roommate.bad.2}}",
+        "Bad_3": "{{i18n: roommate.bad.3}}",
+        "Bad_4": "{{i18n: roommate.bad.4}}",
+        "Bad_5": "{{i18n: roommate.bad.5}}",
+        "Bad_6": "{{i18n: roommate.bad.6}}",
+        "Bad_7": "{{i18n: roommate.bad.7}}",
+        "Bad_8": "{{i18n: roommate.bad.8}}",
+        "Bad_9": "{{i18n: roommate.bad.9}}",
+
+        //KIDS DIALOGUE
+        "OneKid_0": "{{i18n: roommate.one.kid_0}}",
+        "OneKid_1": "{{i18n: roommate.one.kid_1}}",
+        "OneKid_2": "{{i18n: roommate.one.kid_2}}",
+        "OneKid_3": "{{i18n: roommate.one.kid_3}}",
+
+        "TwoKids_0": "{{i18n: roommate.two.kid_0}}",
+        "TwoKids_1": "{{i18n: roommate.two.kid_0}}",
+        "TwoKids_2": "{{i18n: roommate.two.kid_0}}",
+        "TwoKids_3": "{{i18n: roommate.two.kid_0}}"
+      }
+    },
+
+    {
+      "LogName": "Rainy Roommate Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuna, Characters/Dialogue/MarriageDialogueJunaRoommate",
+      "Entries": {
+        "Rainy_Day_0": "{{i18n: roommate.rainy_day.0}}",
+        "Rainy_Day_1": "{{i18n: roommate.rainy_day.1}}",
+        "Rainy_Day_2": "{{i18n: roommate.rainy_day.2}}",
+        "Rainy_Day_3": "{{i18n: roommate.rainy_day.3}}",
+        "Rainy_Day_4": "{{i18n: roommate.rainy_day.4}}",
+        "Rainy_Day_5": "{{i18n: roommate.rainy_day.5}}",
+        "Rainy_Day_Juna": "{{i18n: roommate.rainy_day.3}}",
+
+        "Rainy_Night_0": "{{i18n: roommate.rainy_night.0}}",
+        "Rainy_Night_1": "{{i18n: roommate.rainy_night.1}}",
+        "Rainy_Night_2": "{{i18n: roommate.rainy_night.2}}",
+        "Rainy_Night_3": "{{i18n: roommate.rainy_night.3}}",
+        "Rainy_Night_4": "{{i18n: roommate.rainy_night.4}}",
+        "Rainy_Night_5": "{{i18n: roommate.rainy_night.5}}",
+        "Rainy_Night_Juna": "{{i18n: roommate.rainy_night.1}}"
+      },
+      "When": {
+        "Weather |contains=storm": "false"
+      }
+    },
+
+    {
+      "LogName": "Storm Roommate Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuna, Characters/Dialogue/MarriageDialogueJunaRoommate",
+      "Entries": {
+        "Rainy_Day_0": "{{i18n: roommate.storm_day.0}}",
+        "Rainy_Day_1": "{{i18n: roommate.storm_day.1}}",
+        "Rainy_Day_2": "{{i18n: roommate.storm_day.2}}",
+        "Rainy_Day_3": "{{i18n: roommate.storm_day.3}}",
+        "Rainy_Day_4": "{{i18n: roommate.storm_day.4}}",
+        "Rainy_Day_5": "{{i18n: roommate.storm_day.5}}",
+        "Rainy_Day_Juna": "{{i18n: roommate.storm_day.0}}",
+
+        "Rainy_Night_0": "{{i18n: roommate.storm_night.0}}",
+        "Rainy_Night_1": "{{i18n: roommate.storm_night.1}}",
+        "Rainy_Night_2": "{{i18n: roommate.storm_night.2}}",
+        "Rainy_Night_3": "{{i18n: roommate.storm_night.3}}",
+        "Rainy_Night_4": "{{i18n: roommate.storm_night.4}}",
+        "Rainy_Night_5": "{{i18n: roommate.storm_night.5}}",
+        "Rainy_Night_Juna": "{{i18n: roommate.storm_night.2}}"
+      },
+      "When": {
+        "Weather |contains=storm": "true"
+      }
+    },
+
+    //FUNLEAVE AND FUNRETURN DIALOGUE
+
+    {
+      "LogName": "Fun Dialogue Mondays",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuna, Characters/Dialogue/MarriageDialogueJunaRoommate",
+      "Entries": {
+        "funLeave_Juna": "{{Random: {{i18n: roommate.funleave.mon1}} ++ {{i18n: roommate.funleave.mon2}} ++ {{i18n: roommate.funleave.mon3}} ++ {{i18n: roommate.funleave.mon4}} ++ {{i18n: roommate.funleave.mon5}} ++ {{i18n: roommate.funleave.mon6}} |inputSeparator=++ |key=FunMonday}}"
+      },
+      "When": {
+        "DayOfWeek": "Monday"
+      }
+    },
+
+    {
+      "LogName": "Fun Dialogue Wednesdays",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuna, Characters/Dialogue/MarriageDialogueJunaRoommate",
+      "Entries": {
+        "funLeave_Juna": "{{Random: {{i18n: roommate.funleave.wed1}} ++ {{i18n: roommate.funleave.wed2}} ++ {{i18n: roommate.funleave.wed3}} ++ {{i18n: roommate.funleave.wed4}} ++ {{i18n: roommate.funleave.wed5}} ++ {{i18n: roommate.funleave.wed6}} |inputSeparator=++ |key=FunWednesday}}",
+        "funReturn_Juna": "{{Random: {{i18n: roommate.funreturn.wed1}} ++ {{i18n: roommate.funreturn.wed2}} ++ {{i18n: roommate.funreturn.wed3}} ++ {{i18n: roommate.funreturn.wed4}} ++ {{i18n: roommate.funreturn.wed5}} ++ {{i18n: roommate.funreturn.wed6}} |inputSeparator=++ |key=FunWednesday}}"
+      },
+      "When": {
+        "DayOfWeek": "Wednesday"
+      }
+    },
+
+    {
+      "LogName": "Fun Dialogue Fridays",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuna, Characters/Dialogue/MarriageDialogueJunaRoommate",
+      "Entries": {
+        "funLeave_Juna": "{{Random: {{i18n: roommate.funleave.fri1}} ++ {{i18n: roommate.funleave.fri2}} ++ {{i18n: roommate.funleave.fri3}} ++ {{i18n: roommate.funleave.fri4}} ++ {{i18n: roommate.funleave.fri5}} ++ {{i18n: roommate.funleave.fri6}} |inputSeparator=++ |key=FunFriday}}"
+      },
+      "When": {
+        "DayOfWeek": "Friday"
+      }
+    },
+
+    {
+      "LogName": "Fun Dialogue Sundays",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuna, Characters/Dialogue/MarriageDialogueJunaRoommate",
+      "Entries": {
+        "funLeave_Juna": "{{Random: {{i18n: roommate.funleave.sun1.P}} ++ {{i18n: roommate.funleave.sun2.P}} ++ {{i18n: roommate.funleave.sun3.P}} ++ {{i18n: roommate.funleave.sun4.P}} ++ {{i18n: roommate.funleave.sun5.P}} ++ {{i18n: roommate.funleave.sun6.P}} |inputSeparator=++ |key=FunSunday}}",
+        "funReturn_Juna": "{{Random: {{i18n: roommate.funreturn.sun1.P}} ++ {{i18n: roommate.funreturn.sun2.P}} ++ {{i18n: roommate.funreturn.sun3.P}} ++ {{i18n: roommate.funreturn.sun4.P}} ++ {{i18n: roommate.funreturn.sun5.P}} ++ {{i18n: roommate.funreturn.sun6.P}} |inputSeparator=++ |key=FunSunday}}"
+      },
+      "When": {
+        "DayOfWeek": "Sunday"
+      }
+    },
+
+    //If Alex & George
+    {
+      "LogName": "Fun Dialogue Wednesdays Alex",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuna, Characters/Dialogue/MarriageDialogueJunaRoommate",
+      "Entries": {
+        "funLeave_Juna": "{{Random: {{i18n: roommate.funleave.wed2}} ++ {{i18n: roommate.funleave.wed3}} ++ {{i18n: roommate.funleave.wed4}} ++ {{i18n: roommate.funleave.wed5}} ++ {{i18n: roommate.funleave.wed.alex1}} ++ {{i18n: roommate.funleave.wed.alex2}} |inputSeparator=++ |key=FunAlex}}",
+        "funReturn_Juna": "{{Random: {{i18n: roommate.funreturn.wed2}} ++ {{i18n: roommate.funreturn.wed3}} ++ {{i18n: roommate.funreturn.wed4}} ++ {{i18n: roommate.funreturn.wed5}} ++ {{i18n: roommate.funreturn.wed.alex1}} ++ {{i18n: roommate.funreturn.wed.alex2}} |inputSeparator=++ |key=FunAlex}}"
+      },
+      "When": {
+        "DayOfWeek": "Wednesday",
+        "HasSeenEvent": "86060019",
+        "Season |contains=summer": "false"
+      }
+    },
+
+    {
+      "LogName": "Fun Dialogue Fridays George",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuna, Characters/Dialogue/MarriageDialogueJunaRoommate",
+      "Entries": {
+        "funLeave_Juna": "{{Random: {{i18n: roommate.funleave.fri1}} ++ {{i18n: roommate.funleave.fri2}} ++ {{i18n: roommate.funleave.fri3}} ++ {{i18n: roommate.funleave.fri4}} ++ {{i18n: roommate.funleave.fri5}} ++ {{i18n: roommate.funleave.fri.george}} |inputSeparator=++ |key=FunGeorge}}"
+      },
+      "When": {
+        "DayOfWeek": "Friday",
+        "HasSeenEvent": "86060018",
+        "Season": "summer"
+      }
+    }
+  ]
+}

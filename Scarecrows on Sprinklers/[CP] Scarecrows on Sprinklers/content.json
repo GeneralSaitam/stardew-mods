@@ -1,0 +1,116 @@
+{
+  "Format": "2.8.0",
+  "ConfigSchema": {
+    "Style": {
+    "AllowValues": "vanilla, cute",
+    "Default": "vanilla"
+    }
+  },
+  "Changes": [
+    {
+        "LogName": "Add BG",
+        "Action": "Include",
+        "FromFile": "Data/BigCraftables.json"
+    },
+    {
+        "LogName": "Add textures",
+        "Action": "Include",
+        "FromFile": "Data/Textures.json"
+    },
+    {
+        "LogName": "Add SprinklerMod data",
+        "Action": "Include",
+        "FromFile": "Data/SprinklerMod.json"
+    },
+    {
+   "Action": "EditImage",
+   "Target": "Tilesheets/craftables",
+   "FromFile": "assets/scarecrow/scarecrow1.png", 
+   "ToArea": { "X": 0, "Y": 32, "Width": 16, "Height": 32 },
+   "When": {
+				"Style": "cute"
+			}
+   },
+   {
+   "Action": "EditImage",
+   "Target": "Tilesheets/craftables",
+   "FromFile": "assets/scarecrow/scarecrow2.png", 
+   "ToArea": { "X": 96, "Y": 416, "Width": 16, "Height": 32 },
+   "When": {
+				"Style": "cute"
+			}
+   },
+   {
+   "Action": "EditImage",
+   "Target": "Tilesheets/craftables",
+   "FromFile": "assets/scarecrow/scarecrow3.png", 
+   "ToArea": { "X": 16, "Y": 448, "Width": 16, "Height": 32 },
+   "When": {
+				"Style": "cute"
+			}
+   },
+   {
+   "Action": "EditImage",
+   "Target": "Tilesheets/craftables",
+   "FromFile": "assets/scarecrow/scarecrow4.png", 
+   "ToArea": { "X": 96, "Y": 480, "Width": 16, "Height": 32 },
+   "When": {
+				"Style": "cute"
+			}
+   },
+   {
+   "Action": "EditImage",
+   "Target": "Tilesheets/craftables",
+   "FromFile": "assets/scarecrow/scarecrow5.png", 
+   "ToArea": { "X": 0, "Y": 544, "Width": 16, "Height": 32 },
+   "When": {
+				"Style": "cute"
+			}
+   },
+   {
+   "Action": "EditImage",
+   "Target": "Tilesheets/craftables",
+   "FromFile": "assets/scarecrow/scarecrow6.png", 
+   "ToArea": { "X": 16, "Y": 544, "Width": 16, "Height": 32 },
+   "When": {
+				"Style": "cute"
+			}
+   },
+   {
+   "Action": "EditImage",
+   "Target": "Tilesheets/craftables",
+   "FromFile": "assets/scarecrow/scarecrow7.png", 
+   "ToArea": { "X": 32, "Y": 544, "Width": 16, "Height": 32 },
+   "When": {
+				"Style": "cute"
+			}
+   },
+   {
+   "Action": "EditImage",
+   "Target": "Tilesheets/craftables",
+   "FromFile": "assets/scarecrow/scarecrow8.png", 
+   "ToArea": { "X": 48, "Y": 544, "Width": 16, "Height": 32 },
+   "When": {
+				"Style": "cute"
+			}
+   },
+   {
+   "Action": "EditImage",
+   "Target": "Tilesheets/craftables",
+   "FromFile": "assets/scarecrow/scarecrow9.png", 
+   "ToArea": { "X": 64, "Y": 544, "Width": 16, "Height": 32 },
+   "When": {
+				"Style": "cute"
+			}
+   },
+   {
+   "Action": "EditImage",
+   "Target": "Tilesheets/craftables",
+   "FromFile": "assets/scarecrow/scarecrow10.png", 
+   "ToArea": { "X": 112, "Y": 640, "Width": 16, "Height": 32 },
+   "When": {
+				"Style": "cute"
+			}
+   }
+  ]
+}

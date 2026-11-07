@@ -1,0 +1,101 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fish Shop Worm Bin",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "FishShop",
+        "Items"
+      ],
+      "Entries": {
+        "(BC)154": {
+          "TradeItemAmount": 1,
+          "Price": "{{Fish Shop Worm Bin Price}}",
+          "AvailableStockLimit": "Global",
+          "Condition": null,
+          "Id": "(BC)154",
+          "ItemId": "(BC)154"
+        }
+      },
+      "When": {
+        "Fish Shop Worm Bin": "Immediately, Fishing Level 4, Fishing Level 3, Fishing Level 2, Fishing Level 1",
+		"Fish Shop Worm Bin Price": "5000, 4000, 3000, 2000, 1500, 1000, 750, 500, 250, 1"
+      },
+      "MoveEntries": [
+        {
+          "Id": "(BC)154",
+          "BeforeId": "(O)686"
+        }
+      ]
+    },
+    {
+      "LogName": "Fish Shop Worm Bin Fishing Level 4",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "FishShop",
+        "Items"
+      ],
+      "Fields": {
+        "(BC)154": {
+          "Condition": "PLAYER_BASE_FISHING_LEVEL Current 4"
+        }
+      },
+      "When": {
+        "Fish Shop Worm Bin": "Fishing Level 4"
+      }
+    },
+    {
+      "LogName": "Fish Shop Worm Bin Fishing Level 3",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "FishShop",
+        "Items"
+      ],
+      "Fields": {
+        "(BC)154": {
+          "Condition": "PLAYER_BASE_FISHING_LEVEL Current 3"
+        }
+      },
+      "When": {
+        "Fish Shop Worm Bin": "Fishing Level 3"
+      }
+    },
+    {
+      "LogName": "Fish Shop Worm Bin Fishing Level 2",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "FishShop",
+        "Items"
+      ],
+      "Fields": {
+        "(BC)154": {
+          "Condition": "PLAYER_BASE_FISHING_LEVEL Current 2"
+        }
+      },
+      "When": {
+        "Fish Shop Worm Bin": "Fishing Level 2"
+      }
+    },
+    {
+      "LogName": "Fish Shop Worm Bin Fishing Level 1",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "FishShop",
+        "Items"
+      ],
+      "Fields": {
+        "(BC)154": {
+          "Condition": "PLAYER_BASE_FISHING_LEVEL Current 1"
+        }
+      },
+      "When": {
+        "Fish Shop Worm Bin": "Fishing Level 1"
+      }
+    }
+  ]
+}

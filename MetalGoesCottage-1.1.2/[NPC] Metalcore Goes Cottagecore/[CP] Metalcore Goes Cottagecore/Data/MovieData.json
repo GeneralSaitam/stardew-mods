@@ -1,0 +1,236 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/ConcessionTastes",
+            "Entries": {
+                "Otter.Cambria": {
+                    "Name": "Otter.Cambria",
+                    "LovedTags": [
+                        "Cappuccino Mousse Cake",
+                        "Stardrop Sorbet",
+                        "Nachos"
+                    ],
+                    "LikedTags": [
+                        "Jasmine Tea",
+                        "Salmon Burger",
+                        "Salted Peanuts",
+                        "Hummus Snack Pack",
+                        "Apple Slices",
+                        "Panzanella Salad",
+                        "Truffle Popcorn",
+                        "Star Cookie"
+                    ],
+                    "DislikedTags": [
+                        "Black Licorice",
+                        "Chocolate Popcorn",
+                        "Cotton Candy",
+                        "Fries",
+                        "Ice Cream Sandwich",
+                        "Jawbreaker",
+                        "Joja Cola",
+                        "JojaCorn",
+                        "Kale Smoothie",
+                        "Personal Pizza",
+                        "Rock Candy",
+                        "Sour Slimes"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/MoviesReactions",
+            "Entries": {
+                "Otter.Cambria": {
+                    "NPCName": "Otter.Cambria",
+                    "Reactions": [
+                        {
+                            "Tag": "spring_movie_0",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.BraveLittleSapling.Before}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:Movies.Cambria.Like.During}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.BraveLittleSapling.After}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        },
+                        {
+                            "Tag": "spring_movie_1",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.NaturalWonders.Before}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:Movies.Cambria.Like.During}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.NaturalWonders.After}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "summer_movie_0",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.PrairieKing.Before}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:Movies.Cambria.Love.During}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.PrairieKing.After}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "summer_movie_1",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.Wumbus.Before}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:Movies.Cambria.Dislike.During}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.Wumbus.After}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "fall_movie_0",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.Mysterium.Before}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:Movies.Cambria.Love.During}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.Mysterium.After}}"
+                                }
+                            },
+                            "ID": "reaction_4"
+                        },
+                        {
+                            "Tag": "fall_movie_1",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.ItHowlsInTheRain.Before}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:Movies.Cambria.Like.During}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.ItHowlsInTheRain.After}}"
+                                }
+                            },
+                            "ID": "reaction_5"
+                        },
+                        {
+                            "Tag": "winter_movie_0",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.MiracleAtColdstarRanch.Before}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:Movies.Cambria.Like.During}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.MiracleAtColdstarRanch.After}}"
+                                }
+                            },
+                            "ID": "reaction_6"
+                        },
+                        {
+                            "Tag": "winter_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.ZuzuCityExpress.Before}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:Movies.Cambria.Like.During}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": null,
+                                    "Text": "{{i18n:Movies.Cambria.ZuzuCityExpress.After}}"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+  "Changes": [
+    {
+      "LogName": "SVE - Recatch Legendary Fish Wolf Snapper",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_ShearwaterBridge",
+        "Fish"
+      ],
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper": {
+          "CatchLimit": -1
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "SVE - Recatch Legendary Fish Turretfish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_FableReef",
+        "Fish"
+      ],
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_Turretfish": {
+          "CatchLimit": -1
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "SVE - Recatch Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper": {
+          "CatchLimit": -1
+        },
+        "FlashShifter.StardewValleyExpandedCP_Turretfish": {
+          "CatchLimit": -1
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true,
+        "Legendary Fish On Farm": true
+      }
+    }
+  ]
+}

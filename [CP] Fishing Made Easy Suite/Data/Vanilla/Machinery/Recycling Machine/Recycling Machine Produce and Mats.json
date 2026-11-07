@@ -1,0 +1,307 @@
+{
+  "Changes": [
+    {
+      "LogName": "Recycling Machine Produce Min Trash",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_Trash",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)382": {
+          "MinStack": "{{Recycling Machine Produce Min}}"
+        },
+        "(O)380": {
+          "MinStack": "{{Recycling Machine Produce Min}}"
+        },
+        "(O)390": {
+          "MinStack": "{{Recycling Machine Produce Min}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Produce Min": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Produce Min Driftwood",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_Driftwood",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)382": {
+          "MinStack": "{{Recycling Machine Produce Min}}"
+        },
+        "(O)388": {
+          "MinStack": "{{Recycling Machine Produce Min}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Produce Min": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Produce Min Broken Glasses",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_BrokenGlasses",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)338": {
+          "MinStack": "{{Recycling Machine Produce Min}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Produce Min": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Produce Min Broken CD",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_BrokenCd",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)338": {
+          "MinStack": "{{Recycling Machine Produce Min}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Produce Min": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Produce Min Soggy Newspaper",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_SoggyNewspaper",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)428": {
+          "MinStack": "{{Recycling Machine Produce Min}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Produce Min": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Produce Max Trash",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_Trash",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)382": {
+          "MaxStack": "{{Recycling Machine Produce Max}}"
+        },
+        "(O)380": {
+          "MaxStack": "{{Recycling Machine Produce Max}}"
+        },
+        "(O)390": {
+          "MaxStack": "{{Recycling Machine Produce Max}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Produce Max": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Produce Max Driftwood",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_Driftwood",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)382": {
+          "MaxStack": "{{Recycling Machine Produce Max}}"
+        },
+        "(O)388": {
+          "MaxStack": "{{Recycling Machine Produce Max}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Produce Max": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Produce Max Broken Glasses",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_BrokenGlasses",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)338": {
+          "MaxStack": "{{Recycling Machine Produce Max}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Produce Max": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Produce Max Broken CD",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_BrokenCd",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)338": {
+          "MaxStack": "{{Recycling Machine Produce Max}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Produce Max": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Produce Max Soggy Newspaper",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_SoggyNewspaper",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)428": {
+          "MaxStack": "{{Recycling Machine Produce Max}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Produce Max": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Trash Required Mats",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_Trash",
+        "Triggers"
+      ],
+      "Fields": {
+        "ItemPlacedInMachine": {
+          "RequiredCount": "{{Recycling Machine Required Mats.}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Required Mats.": "2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Driftwood Required Mats",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_Driftwood",
+        "Triggers"
+      ],
+      "Fields": {
+        "ItemPlacedInMachine": {
+          "RequiredCount": "{{Recycling Machine Required Mats.}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Required Mats.": "2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Broken Glasses Required Mats",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_BrokenGlasses",
+        "Triggers"
+      ],
+      "Fields": {
+        "ItemPlacedInMachine": {
+          "RequiredCount": "{{Recycling Machine Required Mats.}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Required Mats.": "2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Broken CD Required Mats",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_BrokenCd",
+        "Triggers"
+      ],
+      "Fields": {
+        "ItemPlacedInMachine": {
+          "RequiredCount": "{{Recycling Machine Required Mats.}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Required Mats.": "2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Recycling Machine Soggy Newspaper Required Mats",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)20",
+        "OutputRules",
+        "Default_SoggyNewspaper",
+        "Triggers"
+      ],
+      "Fields": {
+        "ItemPlacedInMachine": {
+          "RequiredCount": "{{Recycling Machine Required Mats.}}"
+        }
+      },
+      "When": {
+        "Recycling Machine Required Mats.": "2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    }
+  ]
+}

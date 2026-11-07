@@ -1,0 +1,168 @@
+{
+  "Format": "2.0.0",
+  "DynamicTokens": [
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.005,
+      "When": {
+        "Giant Crop Chance |contains=very high, high, medium, low, off": "false"
+      }
+    },
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.0,
+      "When": {
+        "Giant Crop Chance": "off"
+      }
+    },
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.001,
+      "When": {
+        "Giant Crop Chance": "low"
+      }
+    },
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.005,
+      "When": {
+        "Giant Crop Chance": "medium"
+      }
+    },
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.01,
+      "When": {
+        "Giant Crop Chance": "high"
+      }
+    },
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.05,
+      "When": {
+        "Giant Crop Chance": "very high"
+      }
+    }
+  ],
+  "ConfigSchema": {
+    "Giant Crop Chance": {
+      "AllowValues": "very high, high, medium, low, off",
+      "Default": "medium",
+      "Description": "Chance of getting a giant crop from any single-harvest plant. Values: 'very high' - 5%, 'high' - 1% (game default), 'medium' - 0.5%, 'low' - 0.1%, 'off' - 0%.",
+      "Section": "General Setting"
+    },
+    "Broccoli": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Vanilla"
+    },
+    "Carrot": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Vanilla"
+    },
+    "Ginger": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Vanilla"
+    }
+  },
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/VanillaGiantCrops",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+    //Vanilla
+    {
+      "LogName": "Giant Crops - Ginger",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Ginger": true
+      },
+      "Entries": {
+        "Mike.Ginger": {
+          "FromItemId": "(O)829",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)829",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/VanillaGiantCrops",
+          "TexturePosition": {
+            "X": 96,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Broccoli",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Broccoli": true
+      },
+      "Entries": {
+        "Mike.Broccoli": {
+          "FromItemId": "(O)Broccoli",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Broccoli",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/VanillaGiantCrops",
+          "TexturePosition": {
+            "X": 0,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Carrot",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Carrot": true
+      },
+      "Entries": {
+        "Mike.Carrot": {
+          "FromItemId": "(O)Carrot",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Carrot",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/VanillaGiantCrops",
+          "TexturePosition": {
+            "X": 48,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    }
+  ]
+}

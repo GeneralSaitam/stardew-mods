@@ -1,0 +1,88 @@
+{
+  "Changes": [
+    {
+      "LogName": "MNF - All Weather Legendary Fish Iridiumfish and Great Firefly Squid",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "MNF.MoreNewFish_iridiumfish": {
+          "7": "both"
+        },
+        "MNF.MoreNewFish_great_firefly_squid": {
+          "7": "both"
+        }
+      },
+      "When": {
+        "All Weather Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "MNF - All Weather Legendary Fish Vampire Fish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "BugLand",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_vampire_fish": {
+          "Condition": null
+        }
+      },
+      "When": {
+        "All Weather Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "MNF - All Weather Legendary Fish Iridiumfish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Forest",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_iridiumfish": {
+          "Condition": null
+        }
+      },
+      "When": {
+        "All Weather Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "MNF - All Weather Legendary Fish Vampire Squid",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Submarine",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_vampire_squid": {
+          "Condition": null
+        }
+      },
+      "When": {
+        "All Weather Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "MNF - All Weather Legendary Fish Tui",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Woods",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_tui": {
+          "Condition": null
+        }
+      },
+      "When": {
+        "All Weather Legendary Fish": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/ScienceHouse",
+            "Entries":{
+                "1627901115/F/f Maru 750/O Penny/e 1627901106/k 1627901116 1627901117 1627901118/e 1627901108 1627901109 1627901110/e 1627901112 1627901113 1627901114":"50s/
+                19 21/
+				farmer 13 20 1 Maru 22 20 1/
+				move farmer 5 0 1/
+				pause 150/
+				emote Maru 8 true/
+				faceDirection Maru 3/
+				pause 300/
+				speak Maru \"Hey, @! Did you come over to learn something about our research?$0\"pause 100/
+				emote farmer 40/
+				pause 200/
+				speak Maru \"Sure, I can take a break and talk with you for a minute.\"/
+				globalFade .011/
+				viewport -1000 -1000/
+				message \"You tell Maru about Penny's dream of becoming a better teacher and the items she needs to make that dream a reality.#You ask Maru if she can help you with one of the things Penny needs.\"/
+				warp farmer 5 7/
+				positionOffset farmer 0 14/
+				warp Maru 6 7/
+				faceDirection farmer 1/
+				faceDirection Haley 3/
+				globalFadeToClear .011 true/
+				viewport 6 8/
+				pause 1000/
+				speak Maru \"Wow!$4#$b#I love your idea!$4#$b#Wait a second. I'll get a calculator real quick.\"/
+				move Maru 3 0 0/
+				move Maru 0 -2 1/
+				pause 950/
+				playSound pickUpItem/
+				pause 600/
+				move Maru 0 2 3/
+				move Maru -3 0 3/
+				pause 100/
+				faceDirection farmer 2/
+				showFrame farmer 57/
+				addTemporaryActor YellowCalculator 16 32 5 6 2 false/
+				playSound achievement/
+				pause 300/
+				message \"Maru hands you a fancy-looking scientific calculator that she grabbed from a stack of calculators in her shelf.\"/
+				playSound pickUpItem/
+				warp YellowCalculator 1000 1000/
+				showFrame farmer 0/
+				faceDirection farmer 1/
+				pause 100/
+				pause 200/
+				speak Maru \"I'm always tinkering with electronics and gadgets, so I've accumulated quite a collection!$h#$b#I'm happy to give one to my good friend Penny.$1\"/
+				emote farmer 32/
+				pause 100/
+				speak Maru \"In fact, I'm a bit surprised she never asked me for one before.$2#$b#Penny's always been so supportive of my work, even if she doesn't always understand it.$0#$b#But that's what makes her such a great friend, isn't it?$0#$b#She's always willing to learn and try new things. Now I have the opportunity to support her, too!\"/
+				pause 400/
+				speak Maru \"Oh and one more thing.\"/
+				emote farmer 8/
+				speak Maru \"Can you tell Penny to stop asking me when I'm going to ask Harvey out?$h\"/
+				jump farmer 3 true/
+				globalFade/
+				viewport -1000 -1000/
+				playSound healSound/
+				removeQuest 162791/
+				addQuest 162792/
+				message \"You have collected all the necessary items to help Penny achieve her dream of becoming a better teacher.\"/
+				end dialogue Maru \"I picked out a calculator that should work perfectly for Penny's needs.$0#$e#It's always great to see friends helping each other out like this. I hope Penny enjoys using it!$h\"",
+                "1627901116/F/f Maru 750/O Penny/e 1627901106/k 1627901115 1627901117 1627901118/e 1627901108 1627901109 1627901110":"50s/
+                19 21/
+				farmer 13 20 1 Maru 22 20 1/
+				move farmer 5 0 1/
+				pause 150/
+				emote Maru 8 true/
+				faceDirection Maru 3/
+				pause 300/
+				speak Maru \"Hey, @! Did you come over to learn something about our research?$0\"pause 100/
+				emote farmer 40/
+				pause 200/
+				speak Maru \"Sure, I can take a break and talk with you for a minute.\"/
+				globalFade .011/
+				viewport -1000 -1000/
+				message \"You tell Maru about Penny's dream of becoming a better teacher and the items she needs to make that dream a reality.#You ask Maru if she can help you with one of the things Penny needs.\"/
+				warp farmer 5 7/
+				positionOffset farmer 0 14/
+				warp Maru 6 7/
+				faceDirection farmer 1/
+				faceDirection Haley 3/
+				globalFadeToClear .011 true/
+				viewport 6 8/
+				pause 1000/
+				speak Maru \"Wow!$4#$b#I love your idea!$4#$b#Wait a second. I'll get a calculator real quick.\"/
+				move Maru 3 0 0/
+				move Maru 0 -2 1/
+				pause 950/
+				playSound pickUpItem/
+				pause 600/
+				move Maru 0 2 3/
+				move Maru -3 0 3/
+				pause 100/
+				faceDirection farmer 2/
+				showFrame farmer 57/
+				addTemporaryActor YellowCalculator 16 32 5 6 2 false/
+				playSound achievement/
+				pause 300/
+				message \"Maru hands you a fancy-looking scientific calculator that she grabbed from a stack of calculators in her shelf.\"/
+				playSound pickUpItem/
+				warp YellowCalculator 1000 1000/
+				showFrame farmer 0/
+				faceDirection farmer 1/
+				pause 100/
+				pause 200/
+				speak Maru \"I'm always tinkering with electronics and gadgets, so I've accumulated quite a collection!$h#$b#I'm happy to give one to my good friend Penny.$1\"/
+				emote farmer 32/
+				pause 100/
+				speak Maru \"In fact, I'm a bit surprised she never asked me for one before.$2#$b#Penny's always been so supportive of my work, even if she doesn't always understand it.$0#$b#But that's what makes her such a great friend, isn't it?$0#$b#She's always willing to learn and try new things. Now I have the opportunity to support her, too!\"/
+				pause 400/
+				speak Maru \"Oh and one more thing.\"/
+				emote farmer 8/
+				speak Maru \"Can you tell Penny to stop asking me when I'm going to ask Harvey out?$h\"/
+				jump farmer 3 true/
+				globalFade/
+				viewport -1000 -1000/
+				playSound healSound/
+				message \"You have collected two out of three necessary items to help Penny achieve her dream of becoming a better teacher.\"/
+				end dialogue Maru \"I picked out a calculator that should work perfectly for Penny's needs.$0#$e#It's always great to see friends helping each other out like this. I hope Penny enjoys using it!$h\"",
+                "1627901117/F/f Maru 750/O Penny/e 1627901106/k 1627901116 1627901115 1627901118/e 1627901112 1627901113 1627901114":"50s/
+                19 21/
+				farmer 13 20 1 Maru 22 20 1/
+				move farmer 5 0 1/
+				pause 150/
+				emote Maru 8 true/
+				faceDirection Maru 3/
+				pause 300/
+				speak Maru \"Hey, @! Did you come over to learn something about our research?$0\"pause 100/
+				emote farmer 40/
+				pause 200/
+				speak Maru \"Sure, I can take a break and talk with you for a minute.\"/
+				globalFade .011/
+				viewport -1000 -1000/
+				message \"You tell Maru about Penny's dream of becoming a better teacher and the items she needs to make that dream a reality.#You ask Maru if she can help you with one of the things Penny needs.\"/
+				warp farmer 5 7/
+				positionOffset farmer 0 14/
+				warp Maru 6 7/
+				faceDirection farmer 1/
+				faceDirection Haley 3/
+				globalFadeToClear .011 true/
+				viewport 6 8/
+				pause 1000/
+				speak Maru \"Wow!$4#$b#I love your idea!$4#$b#Wait a second. I'll get a calculator real quick.\"/
+				move Maru 3 0 0/
+				move Maru 0 -2 1/
+				pause 950/
+				playSound pickUpItem/
+				pause 600/
+				move Maru 0 2 3/
+				move Maru -3 0 3/
+				pause 100/
+				faceDirection farmer 2/
+				showFrame farmer 57/
+				addTemporaryActor YellowCalculator 16 32 5 6 2 false/
+				playSound achievement/
+				pause 300/
+				message \"Maru hands you a fancy-looking scientific calculator that she grabbed from a stack of calculators in her shelf.\"/
+				playSound pickUpItem/
+				warp YellowCalculator 1000 1000/
+				showFrame farmer 0/
+				faceDirection farmer 1/
+				pause 100/
+				pause 200/
+				speak Maru \"I'm always tinkering with electronics and gadgets, so I've accumulated quite a collection!$h#$b#I'm happy to give one to my good friend Penny.$1\"/
+				emote farmer 32/
+				pause 100/
+				speak Maru \"In fact, I'm a bit surprised she never asked me for one before.$2#$b#Penny's always been so supportive of my work, even if she doesn't always understand it.$0#$b#But that's what makes her such a great friend, isn't it?$0#$b#She's always willing to learn and try new things. Now I have the opportunity to support her, too!\"/
+				pause 400/
+				speak Maru \"Oh and one more thing.\"/
+				emote farmer 8/
+				speak Maru \"Can you tell Penny to stop asking me when I'm going to ask Harvey out?$h\"/
+				jump farmer 3 true/
+				globalFade/
+				viewport -1000 -1000/
+				playSound healSound/
+				message \"You have collected two out of three necessary items to help Penny achieve her dream of becoming a better teacher.\"/
+				end dialogue Maru \"I picked out a calculator that should work perfectly for Penny's needs.$0#$e#It's always great to see friends helping each other out like this. I hope Penny enjoys using it!$h\"",
+                "1627901118/F/f Maru 750/O Penny/e 1627901106/k 1627901116 1627901117 1627901115":"50s/
+                19 21/
+				farmer 13 20 1 Maru 22 20 1/
+				move farmer 5 0 1/
+				pause 150/
+				emote Maru 8 true/
+				faceDirection Maru 3/
+				pause 300/
+				speak Maru \"Hey, @! Did you come over to learn something about our research?$0\"pause 100/
+				emote farmer 40/
+				pause 200/
+				speak Maru \"Sure, I can take a break and talk with you for a minute.\"/
+				globalFade .011/
+				viewport -1000 -1000/
+				message \"You tell Maru about Penny's dream of becoming a better teacher and the items she needs to make that dream a reality.#You ask Maru if she can help you with one of the things Penny needs.\"/
+				warp farmer 5 7/
+				positionOffset farmer 0 14/
+				warp Maru 6 7/
+				faceDirection farmer 1/
+				faceDirection Haley 3/
+				globalFadeToClear .011 true/
+				viewport 6 8/
+				pause 1000/
+				speak Maru \"Wow!$4#$b#I love your idea!$4#$b#Wait a second. I'll get a calculator real quick.\"/
+				move Maru 3 0 0/
+				move Maru 0 -2 1/
+				pause 950/
+				playSound pickUpItem/
+				pause 600/
+				move Maru 0 2 3/
+				move Maru -3 0 3/
+				pause 100/
+				faceDirection farmer 2/
+				showFrame farmer 57/
+				addTemporaryActor YellowCalculator 16 32 5 6 2 false/
+				playSound achievement/
+				pause 300/
+				message \"Maru hands you a fancy-looking scientific calculator that she grabbed from a stack of calculators in her shelf.\"/
+				playSound pickUpItem/
+				warp YellowCalculator 1000 1000/
+				showFrame farmer 0/
+				faceDirection farmer 1/
+				pause 100/
+				pause 200/
+				speak Maru \"I'm always tinkering with electronics and gadgets, so I've accumulated quite a collection!$h#$b#I'm happy to give one to my good friend Penny.$1\"/
+				emote farmer 32/
+				pause 100/
+				speak Maru \"In fact, I'm a bit surprised she never asked me for one before.$2#$b#Penny's always been so supportive of my work, even if she doesn't always understand it.$0#$b#But that's what makes her such a great friend, isn't it?$0#$b#She's always willing to learn and try new things. Now I have the opportunity to support her, too!\"/
+				pause 400/
+				speak Maru \"Oh and one more thing.\"/
+				emote farmer 8/
+				speak Maru \"Can you tell Penny to stop asking me when I'm going to ask Harvey out?$h\"/
+				jump farmer 3 true/
+				globalFade/
+				viewport -1000 -1000/
+				playSound healSound/
+				message \"You have collected one out of three necessary items to help Penny achieve her dream of becoming a better teacher.\"/
+				end dialogue Maru \"I picked out a calculator that should work perfectly for Penny's needs.$0#$e#It's always great to see friends helping each other out like this. I hope Penny enjoys using it!$h\"",
+           
+            }
+        },
+    ]
+}

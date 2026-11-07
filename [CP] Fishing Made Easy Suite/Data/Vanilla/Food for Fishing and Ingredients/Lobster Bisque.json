@@ -1,0 +1,65 @@
+{
+  "Changes": [
+    {
+      "LogName": "Lobster Bisque Duration",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "730",
+        "Buffs"
+      ],
+      "Fields": {
+        "Food": {
+          "Duration": -2
+        }
+      },
+      "When": {
+        "Lobster Bisque Duration": true
+      }
+    },
+    {
+      "LogName": "Lobster Bisque Level Boost",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "730",
+        "Buffs",
+        "Food"
+      ],
+      "Fields": {
+        "CustomAttributes": {
+          "FishingLevel": "{{Lobster Bisque Level Boost}}"
+        }
+      },
+      "When": {
+        "Lobster Bisque Level Boost": "4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50"
+      }
+    },
+    {
+      "LogName": "Lobster Bisque Lessened Ingredients",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Lobster Bisque": {
+          "0": "715 1"
+        }
+      },
+      "When": {
+        "Lobster Bisque Ingredients": "Lessened Ingredients"
+      }
+    },
+    {
+      "LogName": "Lobster Bisque 1 of Any Fish",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Lobster Bisque": {
+          "0": "-4 1"
+        }
+      },
+      "When": {
+        "Lobster Bisque Ingredients": "1 of Any Fish"
+      }
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+	"Changes": [
+
+		{
+			"LogName": "Dao Egg Festival Position",				
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": 
+            [
+				{    
+					"Operation": "Append",
+					"Target": 
+                    [
+					    "Entries",
+					    "Set-Up_additionalCharacters{{DaoFestivalPositionsToken}}"
+					],
+					"Value": "AirynDao 69 73 0",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": 
+                    [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{DaoFestivalPositionsToken}}"
+					],
+					"Value": "AirynDao 69 73 0",
+                    "Delimiter": "/"
+                }
+			]
+		},
+		{
+			"LogName": "Dao Flower Dance Position",			
+			"Action": "EditData",
+		  	"Target": "data/festivals/spring24",
+			"TextOperations": 
+            [
+				{    
+					"Operation": "Append",
+					"Target": 
+                    [
+						"Entries",
+						"Set-Up_additionalCharacters{{DaoFestivalPositionsToken}}"
+					],
+					"Value": "AirynDao 24 48 0",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": 
+                    [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{DaoFestivalPositionsToken}}"
+					],
+                    "Value": "AirynDao 13 32 0",
+                    "Delimiter": "/"
+                }
+			]
+		},
+		{
+			"LogName": "Dao Luau Position",			
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/summer11",
+			"TextOperations": 
+            [
+				{    
+					"Operation": "Append",
+					"Target": 
+                    [
+						"Entries",
+						"Set-Up_additionalCharacters{{DaoFestivalPositionsToken}}"
+					],
+					"Value": "AirynDao 61 28 2",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": 
+                    [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{DaoFestivalPositionsToken}}"
+					],
+					"Value": "AirynDao 31 14 1",
+                    "Delimiter": "/"
+                }
+			]
+		},		
+		{
+			"LogName": "Dao Moonlight Jellies Position",				
+			"Action": "EditData",
+		  	"Target": "data/festivals/summer28",
+			"TextOperations": 
+            [
+				{    
+					"Operation": "Append",
+					"Target": 
+                    [
+						"Entries",
+						"Set-Up_additionalCharacters{{DaoFestivalPositionsToken}}"
+					],
+					"Value": "AirynDao 58 38 3",
+					"Delimiter": "/"
+				}	
+			]
+		},
+		{
+			"LogName": "Dao SV Fair Position",			
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/fall16",
+			"TextOperations": 
+            [
+				{    
+					"Operation": "Append",
+					"Target": 
+                    [
+                        "Entries", 
+                        "Set-Up_additionalCharacters{{DaoFestivalPositionsToken}}"
+                    ],
+					"Value": "AirynDao 58 31 0",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Dao Spirits Eve Position",
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/fall27",
+			"TextOperations": 
+            [
+				{    
+					"Operation": "Append",
+					"Target": 
+                    [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "AirynDao 27 19 1",
+					"Delimiter": "/"
+				},
+				{    
+					"Operation": "Append",
+					"Target": 
+                    [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+					],
+					"Value": "AirynDao 44 10 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"LogName": "Dao Ice Festival Position",				
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/winter8",
+			"TextOperations": 
+            [
+				{    
+					"Operation": "Append",
+					"Target": 
+                    [
+						"Entries",
+						"Set-Up_additionalCharacters{{DaoFestivalPositionsToken}}"
+					],
+					"Value": "AirynDao 52 27 0",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": 
+                    [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{DaoFestivalPositionsToken}}"
+					],
+					"Value": "AirynDao 52 27 0",
+                    "Delimiter": "/"
+                }
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"LogName": "Dao Winter Star Position",			
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/winter25",
+			"TextOperations": 
+            [
+				{    
+					"Operation": "Append",
+					"Target": 
+                    [
+						"Entries",
+						"Set-Up_additionalCharacters{{DaoFestivalPositionsToken}}"
+					],
+					"Value": "AirynDao 63 73 3",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": 
+                    [
+                        "Entries",
+                        "MainEvent_additionalCharacters{{DaoFestivalPositionsToken}}"
+					],
+					"Value": "AirynDao 63 73 3",
+                    "Delimiter": "/"
+                }
+			]
+		},
+		{
+			"LogName": "Dao RSV Gathering Position",			
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/fall20",
+			"TextOperations": 
+            [
+				{    
+					"Operation": "Append",
+					"Target": 
+                    [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "AirynDao 89 62 0",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": 
+                    [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+					],
+                    "Value": "AirynDao 96 45 3",
+                    "Delimiter": "/"
+                }
+			],
+			"When": 
+            { 
+				"HasMod |contains=Rafseazz.RSVCP": "true"					
+			}
+		},
+		{
+			"LogName": "Dao Ember of Resolutions Position",			
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/winter28",
+			"TextOperations": 
+            [
+				{    
+					"Operation": "Append",
+					"Target": 
+                    [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "AirynDao 51 44 3",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": 
+                    [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+					],
+					"Value": "AirynDao 52 43 3",
+                    "Delimiter": "/"
+                }
+			],
+			"When": 
+            { 
+				"HasMod |contains=Rafseazz.RSVCP": "true"					
+			}
+		}
+    ]
+}

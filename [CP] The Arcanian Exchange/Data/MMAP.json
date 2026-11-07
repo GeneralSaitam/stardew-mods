@@ -1,0 +1,64 @@
+{
+"Changes": [
+ {
+      "Action": "Load",
+      "Target": "{{ModId}}/FC.FeedingPath",
+      "FromFile": "Assets/Textures/FC.FeedingPath.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_FeedingPath": {
+          "Name": "{{ModId}}_FeedingPath",
+          "DisplayName": "{{i18n:FC.FeedingPath}}",
+          "Description": "{{i18n:FC.FeedingPath.Desc}}",
+          "Type": "Crafting",
+          "Category": -24,
+          "Price": 1,
+          "Texture": "{{ModId}}/FC.FeedingPath",
+          "SpriteIndex": 0
+        },
+      }
+    },
+     {
+      "Action": "EditData",
+      "Target": "Data/FloorsAndPaths",
+      "Entries": {
+        "{{ModId}}_FeedingPath": {
+          "Id": "{{ModId}}_FeedingPath",
+          "ItemId": "{{ModId}}_FeedingPath",
+          "Texture": "{{ModId}}/FC.FeedingPath",
+          "Corner": {
+            "X": 0,
+            "Y": 0
+          },
+          "WinterTexture": "{{ModId}}/FC.FeedingPath",
+          "WinterCorner": {
+            "X": 0,
+            "Y": 0
+          },
+          "PlacementSound": "woodyStep",
+          "RemovalSound": "woodyStep",
+          "RemovalDebrisType": 14,
+          "FootstepSound": "woodyStep",
+          "ConnectType": "Default",
+          "ShadowType": "None",
+          "CornerSize": 0,
+          "FarmSpeedBuff": -1.0
+        },
+      }
+    },
+        {
+      "Action": "EditData",
+      "Target": "mushymato.MMAP/FloorPathProperties",
+      "Entries": {
+        "{{ModId}}_FeedingPath": {
+          "Back": {
+            "selph.ExtraAnimalConfig.CustomTrough": "(O){{ModID}}_CarnivoreFeed"
+          }
+        }
+      }
+    }
+]
+}

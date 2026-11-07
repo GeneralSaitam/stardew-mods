@@ -1,0 +1,44 @@
+{
+  "Changes": [{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "Fields": {
+      // Crops
+      "Morghoula.AlchemistryCP_MoonBerry": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.AlchemistryMoonBerryCropName}}",
+      },
+
+      // Misc Items
+      "Morghoula.AlchemistryCP_DriedMoonBerry": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.AlchemistryDriedMoonBerryName}}",
+      },
+      "Morghoula.AlchemistryCP_MoonBerryPowder": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.AlchemistryMoonBerryPowderName}}",
+      },
+      "Morghoula.AlchemistryCP_MoonBerryTincture": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.AlchemistryMoonBerryTinctureName}}",
+      },
+    },
+  },
+
+  // Context Tags
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": [ "Morghoula.AlchemistryCP_MoonBerry", "ContextTags" ],
+    "Entries": {
+      "berry_item": "berry_item",
+    },
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": [ "Morghoula.AlchemistryCP_Inkberry", "ContextTags" ],
+    "Entries": {
+      "berry_item": "berry_item",
+    },
+  }]
+}

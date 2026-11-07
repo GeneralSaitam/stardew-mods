@@ -1,0 +1,22 @@
+/*Vanilla Jodi already has lines for... erm... nothing, actually. Aside from Stardrop Tea of course.
+She has no lines for birthday presents.
+Last verified: 1.6.14*/
+
+{"Changes": [
+  {
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Jodi",
+
+    "Entries": {
+
+      "AcceptGift_category_cooking": "{{i18n:UGDE.Jodi_category_cooking}}", //Cooking recipes
+      "AcceptGift_(O)265": "{{i18n:UGDE.Jodi_(O)265}}[265]$s", //Seafoam Pudding
+      "AcceptGift_(O)203": "{{i18n:UGDE.Jodi_(O)203}}", //Strange Bun
+      "AcceptGift_(O)190": "$query PLAYER_HAS_MAIL Current spring_19_1 Received #{{i18n:UGDE.Jodi_(O)190_AfterQuest}}|{{i18n:UGDE.Jodi_(O)190_Early}}", //Cauliflower
+      "AcceptBirthdayGift_Positive": "{{i18n:UGDE.Jodi_AcceptBirthdayGift_Positive}}",
+      "AcceptBirthdayGift_Negative": "{{i18n:UGDE.Jodi_AcceptBirthdayGift_Negative}}",
+      //TODO Daffodil. Atchoo! Allergies!
+
+    }
+  }
+]}

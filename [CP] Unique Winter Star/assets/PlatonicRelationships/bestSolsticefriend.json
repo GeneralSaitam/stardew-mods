@@ -1,0 +1,319 @@
+{
+	"Changes":[
+		{
+			"LogName": "Abigail - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Abigail.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Abigail.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Abigail": "9, 10",
+				"relationship:Abigail |contains=dating": false,
+				"relationship:Abigail |contains=engaged": false,
+				"relationship:Abigail |contains=married": false,
+				"Abigail": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sebastian.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Sebastian": "9, 10",
+				"relationship:Sebastian |contains=dating": false,
+				"relationship:Sebastian |contains=engaged": false,
+				"relationship:Sebastian |contains=married": false,
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Alex - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Alex.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Alex.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Alex": "9, 10",
+				"relationship:Alex |contains=dating": false,
+				"relationship:Alex |contains=engaged": false,
+				"relationship:Alex |contains=married": false,
+				"Alex": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Haley.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "9, 10",
+				"relationship:Haley |contains=dating": false,
+				"relationship:Haley |contains=engaged": false,
+				"relationship:Haley |contains=married": false,
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Shane - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Shane": "9, 10",
+				"HasMod |contains=tenthousandcats.ImmersiveCShane": false,
+				"relationship:Shane |contains=dating": false,
+				"relationship:Shane |contains=engaged": false,
+				"relationship:Shane |contains=married": false,
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Shane - Solstice, Best Friends, IC Shane Override",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Shane": "9, 10",
+				"Immersive Shane Override": "true",
+				"IC-Shane Conditional Overrides": "dating only, dating and married",
+				"relationship:Shane |contains=dating": false,
+				"relationship:Shane |contains=engaged": false,
+				"relationship:Shane |contains=married": false,
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Emily.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Emily": "9, 10",
+				"relationship:Emily |contains=dating": false,
+				"relationship:Emily |contains=engaged": false,
+				"relationship:Emily |contains=married": false,
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Leah - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Leah": "9, 10",
+				"relationship:Leah |contains=dating": false,
+				"relationship:Leah |contains=engaged": false,
+				"relationship:Leah |contains=married": false,
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Leah - Solstice, Best Friends, Art Show",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.Solstice.Friends.EightHeart.After}}",
+			},
+			"When": {
+				"Hearts:Leah": "9, 10",
+				"HasSeenEvent |contains=53": "true",
+				"relationship:Leah |contains=dating": false,
+				"relationship:Leah |contains=engaged": false,
+				"relationship:Leah |contains=married": false,
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Leah - Solstice, Best Friends, Internet Art",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.Solstice.Friends.EightHeart.After}}",
+			},
+			"When": {
+				"Hearts:Leah": "9, 10",
+				"HasSeenEvent |contains=584059": "true",
+				"relationship:Leah |contains=dating": false,
+				"relationship:Leah |contains=engaged": false,
+				"relationship:Leah |contains=married": false,
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Elliott": "9, 10",
+				"HasSeenEvent |contains=1848481": "false", //Elliott's 8 heart, the first mention of the book's title.
+				"relationship:Elliott |contains=dating": false,
+				"relationship:Elliott |contains=engaged": false,
+				"relationship:Elliott |contains=married": false,
+				"Elliott": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Solstice, Best Friends, Book",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.Solstice.Friends.Book.After}}",
+			},
+			"When": {
+				"Hearts:Elliott": "9, 10",
+				"HasSeenEvent |contains=1848481": "true", //Elliott's 8 heart, the first mention of the book's title.
+				"relationship:Elliott |contains=dating": false,
+				"relationship:Elliott |contains=engaged": false,
+				"relationship:Elliott |contains=married": false,
+				"Elliott": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Penny - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Penny.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Penny.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Penny": "9, 10",
+				"relationship:Penny |contains=dating": false,
+				"relationship:Penny |contains=engaged": false,
+				"relationship:Penny |contains=married": false,
+				"Penny": "normal",
+			},
+		},
+		{
+			"LogName": "Sam - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sam.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sam.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Sam": "9, 10",
+				"relationship:Sam |contains=dating": false,
+				"relationship:Sam |contains=engaged": false,
+				"relationship:Sam |contains=married": false,
+				"Sam": "normal",
+			},
+		},
+		{
+			"LogName": "Harvey - Solstice, Best Friends (pre-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Harvey": "9, 10",
+				"relationship:Harvey |contains=dating": false,
+				"relationship:Harvey |contains=engaged": false,
+				"relationship:Harvey |contains=married": false,
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Harvey - Solstice, Best Friends (post-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.Solstice.Friends.TenHeart.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Harvey": "9, 10",
+				"HasSeenEvent |contains=528052": "true",
+				"relationship:Harvey |contains=dating": false,
+				"relationship:Harvey |contains=engaged": false,
+				"relationship:Harvey |contains=married": false,
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Harvey - Solstice, Best Friends (post-10 heart, SVE & Grampleton Fields)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.Solstice.Friends.TenHeart.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Harvey": "9, 10",
+				"HasSeenEvent |contains=528013": "true", //This should be the correct Event ID if you have Grampleton installed. If it's not, message me on Nexus and I'll recheck and re-fix.
+				"relationship:Harvey |contains=dating": false,
+				"relationship:Harvey |contains=engaged": false,
+				"relationship:Harvey |contains=married": false,
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star (pre-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Maru": "9, 10",
+				"HasSeenEvent |contains=10": "false",
+				"relationship:Maru |contains=dating": false,
+				"relationship:Maru |contains=engaged": false,
+				"relationship:Maru |contains=married": false,
+				"Maru": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star (post-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.Solstice.Friends.TenHeart.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.Solstice.Friends.After}}",
+			},
+			"When": {
+				"Hearts:Maru": "9, 10",
+				"HasSeenEvent |contains=10": "true",
+				"relationship:Maru |contains=dating": false,
+				"relationship:Maru |contains=engaged": false,
+				"relationship:Maru |contains=married": false,
+				"Maru": "normal, spicy",
+			},
+		},
+	],
+}

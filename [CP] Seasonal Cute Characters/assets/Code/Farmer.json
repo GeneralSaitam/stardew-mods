@@ -1,0 +1,46 @@
+{
+	"Changes": [
+		{
+			"LogName": "Edit_Male_Farmer_Clothes",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald",
+			"FromFile": "assets/Other/HideNoses/{{HideFarmerNose}}/{{Target}}_{{SeasonalClothes}}.png",
+			"Update": "OnLocationChange",
+			"FromArea": { "X": 96, "Y": 0, "Width": 192, "Height": 672 },
+			"ToArea": { "X": 96, "Y": 0, "Width": 192, "Height": 672 },
+			"When": {
+				"SeasonalClothes": "Cold, Warm" // Vanilla doesn't change the sleeves length.
+			}
+		},
+		{
+			"LogName": "Edit_Male_Farmer_Shoes",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald",
+			"FromFile": "assets/Other/HideNoses/{{HideFarmerNose}}/{{Target}}_{{SeasonalShoes}}.png",
+			"Update": "OnLocationChange",
+			"FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 }
+		},
+		{
+			"LogName": "Edit_Female_Farmer_Clothes",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald",
+			"FromFile": "assets/Other/HideNoses/{{HideFarmerNose}}/{{Target}}_{{SeasonalClothes}}_Vanilla.png", // No need for {{FemaleShoeStyle}} here since sleeves aren't affected by this config option.
+			"Update": "OnLocationChange",
+			"FromArea": { "X": 96, "Y": 0, "Width": 192, "Height": 672 },
+			"ToArea": { "X": 96, "Y": 0, "Width": 192, "Height": 672 },
+			"When": {
+				"SeasonalClothes": "Cold, Warm" // Vanilla doesn't change the sleeves length.
+			}
+		},
+		{
+			"LogName": "Edit_Female_Farmer_Shoes",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald",
+			"FromFile": "assets/Other/HideNoses/{{HideFarmerNose}}/{{Target}}_{{SeasonalShoes}}_{{FemaleShoeStyle}}.png",
+			"Update": "OnLocationChange",
+			"FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 }
+		}
+	]
+}

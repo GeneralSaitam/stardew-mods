@@ -1,0 +1,154 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                //S Island special order
+                "LawAndOrderSV.SpecialOrders.FieryFungi": {
+                    "Name": "{{i18n:SpecialOrders.FieryFungi_Name}}",
+                    "Requester": "{{Shannon}}",
+                    "Duration": "Week",
+                    "Repeatable": "false",
+                    "RequiredTags": "island, !LaoJailBox, event_239790002",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:SpecialOrders.FieryFungi_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:SpecialOrders.FieryFungi_CollectText}}",
+                            "RequiredCount": "4",
+                            "Data": {
+                              "AcceptedContextTags": "color_dark_pink, edible_mushroom, quality_iridium",
+                            }
+                          },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:SpecialOrders.FieryFungi_DonateText}}",
+                            "RequiredCount": "4",
+                            "Data": {
+                                "DropBox": "LaoJailBox",
+                                "DropBoxGameLocation": "{{ModId}}_Jail",
+                                "DropBoxIndicatorLocation": "14 16",
+                                "AcceptedContextTags": "color_dark_pink, edible_mushroom, quality_iridium"
+
+                                
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount":"4000",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "LawAndOrderSV_SpecialOrders_FieryFungi_Mail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "LawAndOrderSV_SpecialOrders_FineMead_Mail": "{{i18n:LawAndOrderSV_SpecialOrders_FineMead_Mail_text}}%item craftingRecipe LawAndOrderSV_VelvetRopeFence %%[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:LawAndOrderSV_SpecialOrders_FineMead_Mail_title}}",
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                //R special order, requires seeing his 6h event
+                "LawAndOrderSV.SpecialOrders.WinterProvisions": {
+                    "Name": "{{i18n:SpecialOrders.WinterProvisions_Name}}",
+                    "Requester": "{{Russell}}",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "season_winter, !LaoJailBox, event_239791003",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:SpecialOrders.WinterProvisions_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:SpecialOrders.WinterProvisions_CollectCoal}}",
+                            "RequiredCount": "40",
+                            "Data": {
+                                "AcceptedContextTags": "item_coal",
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:SpecialOrders.WinterProvisions_CollectWool}}",
+                            "RequiredCount": "8",
+                            "Data": {
+                                "AcceptedContextTags": "item_wool",
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:SpecialOrders.WinterProvisions_DonateCoal}}",
+                            "RequiredCount": "40",
+                            "Data": {
+                                "DropBox": "LaoJailBox",
+                                "DropBoxGameLocation": "{{ModId}}_Jail",
+                                "DropBoxIndicatorLocation": "14 16",
+                                "AcceptedContextTags": "item_coal"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:SpecialOrders.WinterProvisions_DonateCloth}}",
+                            "RequiredCount": "8",
+                            "Data": {
+                                "DropBox": "LaoJailBox",
+                                "DropBoxGameLocation": "{{ModId}}_Jail",
+                                "DropBoxIndicatorLocation": "14 16",
+                                "AcceptedContextTags": "item_cloth"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "LawAndOrderSV_SpecialOrders_WinterProvisions_Mail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "LawAndOrderSV_SpecialOrders_WinterProvisions_Mail": "{{i18n:LawAndOrderSV_SpecialOrders_WinterProvisions_Mail_text}}%item cookingRecipe LawAndOrderSV_StoneSoup %%[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:LawAndOrderSV_SpecialOrders_WinterProvisions_Mail_title}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "LawAndOrderSV_SpecialOrders_FieryFungi_Mail": "{{i18n:LawAndOrderSV_SpecialOrders_FieryFungi_Mail_text}}%item cookingRecipe LawAndOrderSV_HotLavaJava %%[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:LawAndOrderSV_SpecialOrders_FieryFungi_Mail_title}}",
+            }
+        },
+
+    ]
+}

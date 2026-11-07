@@ -1,0 +1,30 @@
+{
+	"Changes": [
+		{ 
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"Sandy_Engaged": "{{i18n:Sandy_Engaged}}",
+    			"Sandy_AfterWedding": "{{i18n:Sandy_AfterWedding}}"
+			}
+		},
+		{ 
+			"Action": "EditData",
+			"Target": "Strings/SpeechBubbles",
+			"When": {"Hearts:Sandy": "{{Range: 6, 20}}"},
+			"Entries": {
+				"SandyHouse_Sandy_Greeting3": "{{i18n:SandyHouse_Sandy_Greeting3}}",
+    			"SandyHouse_Sandy_Greeting4": "{{i18n:SandyHouse_Sandy_Greeting4}}",
+    			"SandyHouse_Sandy_Greeting5": "{{i18n:SandyHouse_Sandy_Greeting5}}"
+			}
+		},
+		{ 
+			"Action": "EditData",
+			"Target": "Data/ExtraDialogue",
+			"When": {"Relationship:Sandy": "Married"},
+			"Entries": {
+				"SummitEvent_Dialogue3_Sandy": "{{i18n:SummitEvent_Dialogue3_Sandy}}"
+			}
+		}
+	]
+}

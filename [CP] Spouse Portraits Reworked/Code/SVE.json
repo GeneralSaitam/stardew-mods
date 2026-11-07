@@ -1,0 +1,265 @@
+{
+    "Changes": [
+        //Precondition: SVE installed
+        //Sophia
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/{{PortraitRecolor}}/SVE/Sophia1.png",
+            "PatchMode": "Replace",
+            "ToArea": { "X": "0", "Y": "0", "Width": 32, "Height": 32},
+        },
+
+        //Sophia Frame
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+            "ToArea": { "X": "0", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "No",
+                "Query:'{{Frame}}' = 'Unique'": false,
+            },
+            "PatchMode": "Overlay", 
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+            "ToArea": { "X": "0", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "{{Frame}}",
+                "Season": "{{Season}}",
+            },
+            "PatchMode": "Overlay",
+        },
+
+        
+        //Olivia
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/{{PortraitRecolor}}/SVE/Olivia1.png",
+            "PatchMode": "Replace",
+            "ToArea": { "X": "32", "Y": "0", "Width": 32, "Height": 32},
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+            "ToArea": { "X": "32", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "No",
+                "Query:'{{Frame}}' = 'Unique'": false,
+            },
+            "PatchMode": "Overlay", 
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+            "ToArea": { "X": "32", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "{{Frame}}",
+                "Season": "{{Season}}",
+            },
+            "PatchMode": "Overlay",
+        },
+
+
+        //Claire
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile":"Assets/{{PortraitRecolor}}/SVE/Claire1.png",
+            "PatchMode": "Replace",
+            "ToArea": { "X": "64", "Y": "0", "Width": 32, "Height": 32},
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+            "ToArea": { "X": "64", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "No",
+                "Query:'{{Frame}}' = 'Unique'": false,
+            },
+            "PatchMode": "Overlay", 
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+            "ToArea": { "X": "64", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "{{Frame}}",
+                "Season": "{{Season}}",
+            },
+            "PatchMode": "Overlay",
+        },
+
+
+        //Victor
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile":"Assets/{{PortraitRecolor}}/SVE/Victor1.png",
+            "PatchMode": "Replace",
+            "ToArea": { "X": "96", "Y": "0", "Width": 32, "Height": 32},
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+            "ToArea": { "X": "96", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "No",
+                "Query:'{{Frame}}' = 'Unique'": false,
+            },
+            "PatchMode": "Overlay", 
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+            "ToArea": { "X": "96", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "{{Frame}}",
+                "Season": "{{Season}}",
+            },
+            "PatchMode": "Overlay",
+        },
+
+        //Wizard 
+         {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile":"Assets/{{PortraitRecolor}}/SVE/Wizard{{WizardVariation}}.png",
+            "PatchMode": "Replace",
+            "ToArea": { "X": "128", "Y": "0", "Width": 32, "Height": 32},
+        },
+
+        //RRRR Wizard
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/{{PortraitRecolor}}/RRRR/Wizard{{RRRRVariation}}.png",
+            "When": {
+                "RRRRPortrait": "Yes",
+            },
+            "PatchMode": "Replace",
+            "ToArea": { "X": "128", "Y": "0", "Width": 32, "Height": 32},
+        },
+
+        //Witch
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile":"Assets/{{PortraitRecolor}}/RomRas/Witch{{WizardVariation}}.png",
+            "When": {
+                "HasMod|contains=Nom0ri.RomRas": true,
+                "RomRasPortrait": "Yes",
+            },
+            "PatchMode": "Replace",
+            "ToArea": { "X": "128", "Y": "0", "Width": 32, "Height": 32},
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+            "ToArea": { "X": "128", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "No",
+                "Query:'{{Frame}}' = 'Unique'": false,
+            },
+            "PatchMode": "Overlay", 
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+            "ToArea": { "X": "128", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "{{Frame}}",
+                "Season": "{{Season}}",
+            },
+            "PatchMode": "Overlay",
+        },
+
+         //Lance
+         {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile":"Assets/{{PortraitRecolor}}/SVE/Lance1.png",
+            "PatchMode": "Replace",
+            "ToArea": { "X": "160", "Y": "0", "Width": 32, "Height": 32},
+        }, 
+ 
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+            "ToArea": { "X": "160", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "No",
+                "Query:'{{Frame}}' = 'Unique'": false,
+            },
+            "PatchMode": "Overlay", 
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+            "ToArea": { "X": "160", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "{{Frame}}",
+                "Season": "{{Season}}",
+            },
+            "PatchMode": "Overlay",
+        },
+
+        //Apple
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile":"Assets/{{PortraitRecolor}}/SVE/Apple1.png",
+            "PatchMode": "Replace",
+            "ToArea": { "X": "192", "Y": "0", "Width": 32, "Height": 32},
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+            "ToArea": { "X": "192", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "No",
+                "Query:'{{Frame}}' = 'Unique'": false,
+            },
+            "PatchMode": "Overlay", 
+        },
+
+        {
+            "Action": "EditImage",
+            "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+            "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+            "ToArea": { "X": "192", "Y": "0", "Width": 32, "Height": 32},
+            "When": {
+                "IsFrameSeasonal": "{{Frame}}",
+                "Season": "{{Season}}",
+            },
+            "PatchMode": "Overlay",
+        },
+
+    ]
+}

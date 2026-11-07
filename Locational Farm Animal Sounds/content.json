@@ -1,0 +1,573 @@
+{
+  "Format": "2.9.0",
+  "ConfigSchema": {
+    "Enable Marnie's Ranch": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cindersap Forest"
+    },
+    "Enable Stardew Valley Fair": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Festivals"
+    },
+    "Enable Egg Festival": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Festivals"
+    },
+    "Enable Nightingale Orchard": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Ridgeside Village"
+    },
+    "Enable Blooming Hill Farm": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Ridgeside Village"
+    }
+  },
+  "Changes": [
+    {
+      "Target": "Data/AudioChanges",
+      "Action": "EditData",
+      "Entries": {
+        "{{ModId}}_Cow": {
+          "Id": "{{ModId}}_Cow",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/Cow Sound 01.ogg}}",
+            "{{AbsoluteFilePath: assets/Cow Sound 01 (+100).ogg}}",
+            "{{AbsoluteFilePath: assets/Cow Sound 01 (+200).ogg}}",
+            "{{AbsoluteFilePath: assets/Cow Sound 01 (+300).ogg}}",
+            "{{AbsoluteFilePath: assets/Cow Sound 02.ogg}}",
+            "{{AbsoluteFilePath: assets/Cow Sound 02 (-100).ogg}}",
+            "{{AbsoluteFilePath: assets/Cow Sound 02 (-200).ogg}}",
+            "{{AbsoluteFilePath: assets/Cow Sound 03.ogg}}",
+            "{{AbsoluteFilePath: assets/Cow Sound 03 (+100).ogg}}",
+            "{{AbsoluteFilePath: assets/Cow Sound 03 (+200).ogg}}",
+            "{{AbsoluteFilePath: assets/Cow Sound 03 (+300).ogg}}"
+          ],
+          "Category": "Sound"
+        },
+        "{{ModId}}_Goat": {
+          "Id": "{{ModId}}_Goat",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/Goat Sound 01.ogg}}",
+            "{{AbsoluteFilePath: assets/Goat Sound 02.ogg}}",
+            "{{AbsoluteFilePath: assets/Goat Sound 02 (+100).ogg}}",
+            "{{AbsoluteFilePath: assets/Goat Sound 02 (-100).ogg}}",
+            "{{AbsoluteFilePath: assets/Goat Sound 03.ogg}}",
+            "{{AbsoluteFilePath: assets/Goat Sound 03 (-100).ogg}}",
+            "{{AbsoluteFilePath: assets/Goat Sound 03 (-200).ogg}}",
+            "{{AbsoluteFilePath: assets/Goat Sound 03 (-300).ogg}}",
+            "{{AbsoluteFilePath: assets/Goat Sound 04.ogg}}"
+          ],
+          "Category": "Sound"
+        },
+        "{{ModId}}_Pig": {
+          "Id": "{{ModId}}_Pig",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/Pig Sound 01.ogg}}",
+            "{{AbsoluteFilePath: assets/Pig Sound 01 (-100).ogg}}",
+            "{{AbsoluteFilePath: assets/Pig Sound 01 (-200).ogg}}",
+            "{{AbsoluteFilePath: assets/Pig Sound 02.ogg}}",
+            "{{AbsoluteFilePath: assets/Pig Sound 02 (+100).ogg}}",
+            "{{AbsoluteFilePath: assets/Pig Sound 02 (+200).ogg}}"
+          ],
+          "Category": "Sound"
+        },
+        "{{ModId}}_Chicken": {
+          "Id": "{{ModId}}_Chicken",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/Chicken Sound 01.ogg}}",
+            "{{AbsoluteFilePath: assets/Chicken Sound 01 (-100).ogg}}",
+            "{{AbsoluteFilePath: assets/Chicken Sound 01 (-200).ogg}}",
+            "{{AbsoluteFilePath: assets/Chicken Sound 01 (-300).ogg}}",
+            "{{AbsoluteFilePath: assets/Chicken Sound 02.ogg}}",
+            "{{AbsoluteFilePath: assets/Chicken Sound 02 (-100).ogg}}",
+            "{{AbsoluteFilePath: assets/Chicken Sound 02 (-200).ogg}}",
+            "{{AbsoluteFilePath: assets/Chicken Sound 02 (-300).ogg}}",
+            "{{AbsoluteFilePath: assets/Chicken Sound 03.ogg}}",
+            "{{AbsoluteFilePath: assets/Chicken Sound 03 (+100).ogg}}",
+            "{{AbsoluteFilePath: assets/Chicken Sound 03 (+200).ogg}}"
+          ],
+          "Category": "Sound"
+        }
+      }
+    },
+    {
+      "Target": "Mods/ichortower.PositionalAudio/Data",
+      "Action": "EditData",
+      "When": {
+        "Enable Marnie's Ranch": "true"
+      },
+      "Entries": {
+        "{{ModId}}_Forest_Marnie_Cow_100_18": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000",
+          "CueName": "{{ModId}}_Cow",
+          "Radius": {
+            "Floor": 9.0,
+            "Maximum": 11.0,
+            "Shelf": 10.0
+          },
+          "Location": "Forest",
+          "MaximumIntensity": 0.7,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 100,
+            "Y": 18
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789,
+            6327,
+            8461
+          ]
+        },
+        "{{ModId}}_Forest_Marnie_Cow_105_18": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000",
+          "CueName": "{{ModId}}_Cow",
+          "Radius": {
+            "Floor": 9.0,
+            "Maximum": 11.0,
+            "Shelf": 10.0
+          },
+          "Location": "Forest",
+          "MaximumIntensity": 0.7,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 105,
+            "Y": 18
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789,
+            6327,
+            8461
+          ]
+        }
+      }
+    },
+    {
+      "Target": "Mods/ichortower.PositionalAudio/Data",
+      "Action": "EditData",
+      "When": {
+        "Enable Stardew Valley Fair": "true"
+      },
+      "Entries": {
+        "{{ModId}}_Festival_Fair_Chicken_60_67": {
+          "Condition": "SEASON_DAY Fall 16",
+          "CueName": "{{ModId}}_Chicken",
+          "Radius": {
+            "Floor": 2.75,
+            "Maximum": 5.5,
+            "Shelf": 3.75
+          },
+          "Location": "Temp",
+          "MaximumIntensity": 0.6,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 60,
+            "Y": 67
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789
+          ]
+        },
+        "{{ModId}}_Festival_Fair_Cow_61_72": {
+          "Condition": "SEASON_DAY Fall 16",
+          "CueName": "{{ModId}}_Cow",
+          "Radius": {
+            "Floor": 2.75,
+            "Maximum": 5.5,
+            "Shelf": 3.75
+          },
+          "Location": "Temp",
+          "MinimumBgmVolume": 1.0,
+          "MaximumIntensity": 0.5,
+          "TilePosition": {
+            "X": 61,
+            "Y": 72
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789
+          ]
+        },
+        "{{ModId}}_Festival_Fair_Pig_66_69": {
+          "Condition": "SEASON_DAY Fall 16",
+          "CueName": "{{ModId}}_Pig",
+          "Radius": {
+            "Floor": 2.75,
+            "Maximum": 5.5,
+            "Shelf": 3.75
+          },
+          "Location": "Temp",
+          "MaximumIntensity": 0.4,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 66,
+            "Y": 69
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789
+          ]
+        }
+      }
+    },
+    {
+      "Target": "Mods/ichortower.PositionalAudio/Data",
+      "Action": "EditData",
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP",
+        "Enable Marnie's Ranch": "true"
+      },
+      "Entries": {
+        "{{ModId}}_Forest_Marnie_Cow_95_18": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000",
+          "CueName": "{{ModId}}_Cow",
+          "Radius": {
+            "Floor": 9.0,
+            "Maximum": 11.0,
+            "Shelf": 10.0
+          },
+          "Location": "Forest",
+          "MaximumIntensity": 0.7,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 95,
+            "Y": 18
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789,
+            5543,
+            6327
+          ]
+        },
+        "{{ModId}}_Forest_Marnie_Cow_113_18": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000",
+          "CueName": "{{ModId}}_Cow",
+          "Radius": {
+            "Floor": 9.0,
+            "Maximum": 11.0,
+            "Shelf": 10.0
+          },
+          "Location": "Forest",
+          "MaximumIntensity": 0.7,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 113,
+            "Y": 18
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789,
+            5543,
+            6327
+          ]
+        },
+        "{{ModId}}_Forest_Marnie_Goat_110_18": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000",
+          "CueName": "{{ModId}}_Goat",
+          "Radius": {
+            "Floor": 9.0,
+            "Maximum": 11.0,
+            "Shelf": 10.0
+          },
+          "Location": "Forest",
+          "MaximumIntensity": 0.5,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 109,
+            "Y": 18
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789,
+            5543,
+            6327
+          ]
+        },
+        "{{ModId}}_Forest_Marnie_Pig_107_18": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000",
+          "CueName": "{{ModId}}_Pig",
+          "Radius": {
+            "Floor": 9.0,
+            "Maximum": 11.0,
+            "Shelf": 10.0
+          },
+          "Location": "Forest",
+          "MaximumIntensity": 0.8,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 107,
+            "Y": 18
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789,
+            5543,
+            6327
+          ]
+        }
+      }
+    },
+    {
+      "Target": "Mods/ichortower.PositionalAudio/Data",
+      "Action": "EditData",
+      "When": {
+        "HasMod": "Rafseazz.RSVCP",
+        "Enable Egg Festival": "true"
+      },
+      "Entries": {
+        "{{ModId}}_Festival_Egg_Chicken_RSV_11_29": {
+          "Condition": "SEASON_DAY Spring 13",
+          "CueName": "{{ModId}}_Chicken",
+          "Radius": {
+            "Floor": 0.5,
+            "Maximum": 3.0,
+            "Shelf": 1.5
+          },
+          "Location": "Temp",
+          "MaximumIntensity": 0.6,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 11,
+            "Y": 29
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789
+          ]
+        }
+      }
+    },
+    {
+      "Target": "Mods/ichortower.PositionalAudio/Data",
+      "Action": "EditData",
+      "When": {
+        "HasMod": "Rafseazz.RSVCP",
+        "Enable Nightingale Orchard": "true"
+      },
+      "Entries": {
+        "{{ModId}}_Ridgeside_Cow_46_106": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000, WEATHER HERE sun wind",
+          "CueName": "{{ModId}}_Cow",
+          "Radius": {
+            "Floor": 9.0,
+            "Maximum": 11.0,
+            "Shelf": 10.0
+          },
+          "Location": "Custom_Ridgeside_RidgesideVillage",
+          "MaximumIntensity": 0.7,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 46,
+            "Y": 106
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789,
+            6327,
+            8461
+          ]
+        },
+        "{{ModId}}_Ridgeside_Cow_36_106": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000, WEATHER HERE sun wind",
+          "CueName": "{{ModId}}_Cow",
+          "Radius": {
+            "Floor": 9.0,
+            "Maximum": 11.0,
+            "Shelf": 10.0
+          },
+          "Location": "Custom_Ridgeside_RidgesideVillage",
+          "MaximumIntensity": 0.7,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 36,
+            "Y": 106
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789,
+            6327,
+            8461
+          ]
+        },
+        "{{ModId}}_Ridgeside_Cow_33_100": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000, WEATHER HERE sun wind",
+          "CueName": "{{ModId}}_Cow",
+          "Radius": {
+            "Floor": 9.0,
+            "Maximum": 11.0,
+            "Shelf": 10.0
+          },
+          "Location": "Custom_Ridgeside_RidgesideVillage",
+          "MaximumIntensity": 0.7,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 33,
+            "Y": 100
+          },
+          "RepeatDelay": [
+            2143,
+            3512,
+            4789,
+            6327,
+            8461
+          ]
+        }
+      }
+    },
+    {
+      "Target": "Mods/ichortower.PositionalAudio/Data",
+      "Action": "EditData",
+      "When": {
+        "HasMod": "Rafseazz.RSVCP",
+        "Enable Blooming Hill Farm": "true"
+      },
+      "Entries": {
+        "{{ModId}}_Ridgeside_Chicken_40_39": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000, WEATHER HERE sun wind",
+          "CueName": "{{ModId}}_Chicken",
+          "Radius": {
+            "Floor": 6.0,
+            "Maximum": 8.0,
+            "Shelf": 7.0
+          },
+          "Location": "Custom_Ridgeside_RidgesideVillage",
+          "MaximumIntensity": 0.8,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 40,
+            "Y": 39
+          },
+          "RepeatDelay": [
+            673,
+            891,
+            2143,
+            2687,
+            3512,
+            3891,
+            4789
+          ]
+        },
+        "{{ModId}}_Ridgeside_Chicken_35_39": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000, WEATHER HERE sun wind",
+          "CueName": "{{ModId}}_Chicken",
+          "Radius": {
+            "Floor": 6.0,
+            "Maximum": 8.0,
+            "Shelf": 7.0
+          },
+          "Location": "Custom_Ridgeside_RidgesideVillage",
+          "MaximumIntensity": 0.8,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 35,
+            "Y": 39
+          },
+          "RepeatDelay": [
+            673,
+            891,
+            2143,
+            2687,
+            3512,
+            3891,
+            4789
+          ]
+        },
+        "{{ModId}}_Ridgeside_Chicken_30_39": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000, WEATHER HERE sun wind",
+          "CueName": "{{ModId}}_Chicken",
+          "Radius": {
+            "Floor": 6.0,
+            "Maximum": 8.0,
+            "Shelf": 7.0
+          },
+          "Location": "Custom_Ridgeside_RidgesideVillage",
+          "MaximumIntensity": 0.8,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 30,
+            "Y": 39
+          },
+          "RepeatDelay": [
+            673,
+            891,
+            2143,
+            2687,
+            3512,
+            3891,
+            4789
+          ]
+        },
+        "{{ModId}}_Ridgeside_Chicken_25_39": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000, WEATHER HERE sun wind",
+          "CueName": "{{ModId}}_Chicken",
+          "Radius": {
+            "Floor": 6.0,
+            "Maximum": 8.0,
+            "Shelf": 7.0
+          },
+          "Location": "Custom_Ridgeside_RidgesideVillage",
+          "MaximumIntensity": 0.8,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 25,
+            "Y": 39
+          },
+          "RepeatDelay": [
+            673,
+            891,
+            2143,
+            2687,
+            3512,
+            3891,
+            4789
+          ]
+        },
+        "{{ModId}}_Ridgeside_Chicken_21_36": {
+          "Condition": "SEASON spring summer fall, TIME 0600 2000, WEATHER HERE sun wind",
+          "CueName": "{{ModId}}_Chicken",
+          "Radius": {
+            "Floor": 6.0,
+            "Maximum": 8.0,
+            "Shelf": 7.0
+          },
+          "Location": "Custom_Ridgeside_RidgesideVillage",
+          "MaximumIntensity": 0.8,
+          "MinimumBgmVolume": 1.0,
+          "TilePosition": {
+            "X": 21,
+            "Y": 36
+          },
+          "RepeatDelay": [
+            673,
+            891,
+            2143,
+            2687,
+            3512,
+            3891,
+            4789
+          ]
+        }
+      }
+    }
+  ]
+}

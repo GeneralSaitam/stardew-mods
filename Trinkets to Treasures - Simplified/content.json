@@ -1,0 +1,2197 @@
+{
+   "Format": "2.0.0",
+   "Changes": [
+	{
+        	"Action": "Include",
+        	"FromFile": "mail.json"
+	},
+
+	{
+        	"Action": "Include",
+        	"FromFile": "events.json"
+	},
+
+	{
+			"Action": "Load",
+			"Target": "bennoloth.TTTS/big-craftable, bennoloth.TTTS/big-craftable-2, bennoloth.TTTS/big-craftable-3, bennoloth.TTTS/big-craftable-4, bennoloth.TTTS/big-craftable-5, bennoloth.TTTS/big-craftable-6, bennoloth.TTTS/big-craftable-7, bennoloth.TTTS/big-craftable-8, bennoloth.TTTS/big-craftable-9, bennoloth.TTTS/big-craftable-10, bennoloth.TTTS/big-craftable-11",
+			"FromFile": "Assets/Display Station/{{TargetWithoutPath}}.png"
+	},
+	{
+			"Action": "Load",
+			"Target": "bennoloth.TTTS/AmphibianFossilDisplayCase, bennoloth.TTTS/AnchorDisplayCase, bennoloth.TTTS/AncientDollDisplayCase, bennoloth.TTTS/AncientDrumDisplayCase, bennoloth.TTTS/AnchorDisplayCase, bennoloth.TTTS/AncientSeedDisplayCase, bennoloth.TTTS/AncientSwordDisplayCase, bennoloth.TTTS/ArrowheadDisplayCase, bennoloth.TTTS/BoneFluteDisplayCase, bennoloth.TTTS/ChewingStickDisplayCase, bennoloth.TTTS/ChickenStatueDisplayCase, bennoloth.TTTS/ChippedAmphoraDisplayCase, bennoloth.TTTS/DinosaurEggDisplayCase, bennoloth.TTTS/DriedStarfishDisplayCase, bennoloth.TTTS/DwarfGadgetDisplayCase, bennoloth.TTTS/DwarvishHelmDisplayCase, bennoloth.TTTS/DwarvishTranslationGuideDisplayCase, bennoloth.TTTS/ElvishJewelryDisplayCase, bennoloth.TTTS/FossilizedLegDisplayCase, bennoloth.TTTS/FossilizedRibsDisplayCase, bennoloth.TTTS/FossilizedSkullDisplayCase, bennoloth.TTTS/FossilizedSpineDisplayCase, bennoloth.TTTS/FossilizedTailDisplayCase, bennoloth.TTTS/GlassShardsDisplayCase, bennoloth.TTTS/GoldenMaskDisplayCase, bennoloth.TTTS/GoldenRelicDisplayCase, bennoloth.TTTS/MummifiedBatDisplayCase, bennoloth.TTTS/MummifiedFrogDisplayCase, bennoloth.TTTS/NautilusFossilDisplayCase, bennoloth.TTTS/OrnamentalFanDisplayCase, bennoloth.TTTS/PalmFossilDisplayCase, bennoloth.TTTS/PrehistoricHandaxeDisplayCase, bennoloth.TTTS/PrehistoricRibDisplayCase, bennoloth.TTTS/PrehistoricScapulaDisplayCase, bennoloth.TTTS/PrehistoricSkullDisplayCase, bennoloth.TTTS/PrehistoricTibiaDisplayCase, bennoloth.TTTS/PrehistoricToolDisplayCase, bennoloth.TTTS/PrehistoricVertebraDisplayCase, bennoloth.TTTS/PrismaticJellyDisplay, bennoloth.TTTS/RareDiscDisplayCase, bennoloth.TTTS/RustyCogDisplayCase, bennoloth.TTTS/RustySpoonDisplayCase, bennoloth.TTTS/RustySpurDisplayCase, bennoloth.TTTS/SkeletalHandDisplayCase, bennoloth.TTTS/SkeletalTailDisplayCase, bennoloth.TTTS/SnakeSkullDisplayCase, bennoloth.TTTS/SnakeVertebraeDisplayCase, bennoloth.TTTS/StrangeGreenDollDisplayCase, bennoloth.TTTS/StrangeRedDollDisplayCase, bennoloth.TTTS/TrilobiteDisplayCase",
+			"FromFile": "Assets/Display Cases/{{TargetWithoutPath}}.png"
+	},
+
+  //Display Station Object
+
+  {
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"bennoloth.DisplayStation": {
+					"Name": "bennoloth.DisplayStation",
+					"DisplayName": "Display Station",
+					"Description": "Crafts a display case for any artifact placed inside.",
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/big-craftable",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Display Station Crafting Recipe
+
+  {
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"bennoloth.TTTS_bennoloth.DisplayStation": "338 50 709 40 336 3 337 1/Home/bennoloth.DisplayStation/true/none/Display Station",
+			}
+  },
+
+  //Amphibian Fossil Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.AmphibianFossilDisplayCase": {
+					"Name": "bennoloth.AmphibianFossilDisplayCase",
+					"DisplayName": "Amphibian Fossil Display Case",
+					"Description": "A display piece featuring a prehistoric amphibian fossil sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/AmphibianFossilDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Anchor Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.AnchorDisplayCase": {
+					"Name": "bennoloth.AnchorDisplayCase",
+					"DisplayName": "Anchor Display Case",
+					"Description": "A display piece featuring an ancient anchor sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/AnchorDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Ancient Doll Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.AncientDollDisplayCase": {
+					"Name": "bennoloth.AncientDollDisplayCase",
+					"DisplayName": "Ancient Doll Display Case",
+					"Description": "A display piece featuring an ancient doll sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/AncientDollDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Ancient Drum Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.AncientDrumDisplayCase": {
+					"Name": "bennoloth.AncientDrumDisplayCase",
+					"DisplayName": "Ancient Drum Display Case",
+					"Description": "A display piece featuring an ancient drum sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/AncientDrumDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },  
+  
+  //Ancient Seed Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.AncientSeedDisplayCase": {
+					"Name": "bennoloth.AncientSeedDisplayCase",
+					"DisplayName": "Ancient Seed Display Case",
+					"Description": "A display piece featuring an ancient seed sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/AncientSeedDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },  
+  
+  //Ancient Sword Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.AncientSwordDisplayCase": {
+					"Name": "bennoloth.AncientSwordDisplayCase",
+					"DisplayName": "Ancient Sword Display Case",
+					"Description": "A display piece featuring an ancient sword sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/AncientSwordDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Arrowhead Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.ArrowheadDisplayCase": {
+					"Name": "bennoloth.ArrowheadDisplayCase",
+					"DisplayName": "Arrowhead Display Case",
+					"Description": "A display piece featuring a crude arrowhead sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/ArrowheadDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Bone Flute Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.BoneFluteDisplayCase": {
+					"Name": "bennoloth.BoneFluteDisplayCase",
+					"DisplayName": "Bone Flute Display Case",
+					"Description": "A display piece featuring a prehistoric bone flute sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/BoneFluteDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Chewing Stick Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.ChewingStickDisplayCase": {
+					"Name": "bennoloth.ChewingStickDisplayCase",
+					"DisplayName": "Chewing Stick Display Case",
+					"Description": "A display piece featuring an ancient chewing stick sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/ChewingStickDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Chicken Statue Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.ChickenStatueDisplayCase": {
+					"Name": "bennoloth.ChickenStatueDisplayCase",
+					"DisplayName": "Chicken Statue Display Case",
+					"Description": "A display piece featuring an ancient chicken statue sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/ChickenStatueDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Chipped Amphora Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.ChippedAmphoraDisplayCase": {
+					"Name": "bennoloth.ChippedAmphoraDisplayCase",
+					"DisplayName": "Chipped Amphora Display Case",
+					"Description": "A display piece featuring an ancient chipped amphora sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/ChippedAmphoraDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Dinosaur Egg Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.DinosaurEggDisplayCase": {
+					"Name": "bennoloth.DinosaurEggDisplayCase",
+					"DisplayName": "Dinosaur Egg Display Case",
+					"Description": "A display piece featuring a giant dinosaur egg sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/DinosaurEggDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Dried Starfish Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.DriedStarfishDisplayCase": {
+					"Name": "bennoloth.DriedStarfishDisplayCase",
+					"DisplayName": "Dried Starfish Display Case",
+					"Description": "A display piece featuring a dried starfish sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/DriedStarfishDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+   //Dwarf Gadget Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.DwarfGadgetDisplayCase": {
+					"Name": "bennoloth.DwarfGadgetDisplayCase",
+					"DisplayName": "Dried Starfish Display Case",
+					"Description": "A display piece featuring a dwarf gadget sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/DwarfGadgetDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Dwarvish Helm Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.DwarvishHelmDisplayCase": {
+					"Name": "bennoloth.DwarvishHelmDisplayCase",
+					"DisplayName": "Dwarvish Helm Display Case",
+					"Description": "A display piece featuring a dwarvish helm sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/DwarvishHelmDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Dwarvish Translation Guide Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.DwarvishTranslationGuideDisplayCase": {
+					"Name": "bennoloth.DwarvishTranslationGuideDisplayCase",
+					"DisplayName": "Dwarvish Translation Guide Display Case",
+					"Description": "A display piece featuring a dwarvish translation guide sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/DwarvishTranslationGuideDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+   //Elvish Jewelry Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.ElvishJewelryDisplayCase": {
+					"Name": "bennoloth.ElvishJewelryDisplayCase",
+					"DisplayName": "Elvish Jewelry Display Case",
+					"Description": "A display piece featuring a beautiful piece of elvish jewelry sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/ElvishJewelryDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Fossilized Leg Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.FossilizedLegDisplayCase": {
+					"Name": "bennoloth.FossilizedLegDisplayCase",
+					"DisplayName": "Fossilized Leg Display Case",
+					"Description": "A display piece featuring a fossilized leg sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/FossilizedLegDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Fossilized Ribs Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.FossilizedRibsDisplayCase": {
+					"Name": "bennoloth.FossilizedRibsDisplayCase",
+					"DisplayName": "Fossilized Ribs Display Case",
+					"Description": "A display piece featuring fossilized ribs sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/FossilizedRibsDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+    
+  //Fossilized Skull Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.FossilizedSkullDisplayCase": {
+					"Name": "bennoloth.FossilizedSkullDisplayCase",
+					"DisplayName": "Fossilized Skull Display Case",
+					"Description": "A display piece featuring a fossilized skull sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/FossilizedSkullDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Fossilized Spine Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.FossilizedSpineDisplayCase": {
+					"Name": "bennoloth.FossilizedSpineDisplayCase",
+					"DisplayName": "Fossilized Spine Display Case",
+					"Description": "A display piece featuring a fossilized spine sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/FossilizedSpineDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Fossilized Tail Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.FossilizedTailDisplayCase": {
+					"Name": "bennoloth.FossilizedTailDisplayCase",
+					"DisplayName": "Fossilized Tail Display Case",
+					"Description": "A display piece featuring a fossilized tail sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/FossilizedTailDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Glass Shards Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.GlassShardsDisplayCase": {
+					"Name": "bennoloth.GlassShardsDisplayCase",
+					"DisplayName": "Glass Shards Display Case",
+					"Description": "A display piece featuring smooth glass shards sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/GlassShardsDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Golden Mask Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.GoldenMaskDisplayCase": {
+					"Name": "bennoloth.GoldenMaskDisplayCase",
+					"DisplayName": "Golden Mask Display Case",
+					"Description": "A display piece featuring a creepy golden mask sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/GoldenMaskDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Golden Relic Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.GoldenRelicDisplayCase": {
+					"Name": "bennoloth.GoldenRelicDisplayCase",
+					"DisplayName": "Golden Relic Display Case",
+					"Description": "A display piece featuring a golden relic sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/GoldenRelicDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Mummified Bat Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.MummifiedBatDisplayCase": {
+					"Name": "bennoloth.MummifiedBatDisplayCase",
+					"DisplayName": "Mummified Bat Display Case",
+					"Description": "A display piece featuring a mummified bat sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/MummifiedBatDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Mummified Frog Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.MummifiedFrogDisplayCase": {
+					"Name": "bennoloth.MummifiedFrogDisplayCase",
+					"DisplayName": "Mummified Frog Display Case",
+					"Description": "A display piece featuring a mummified frog sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/MummifiedFrogDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Nautilus Fossil Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.NautilusFossilDisplayCase": {
+					"Name": "bennoloth.NautilusFossilDisplayCase",
+					"DisplayName": "Nautilus Fossil Display Case",
+					"Description": "A display piece featuring a nautilus fossil sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/NautilusFossilDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Ornamental Fan Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.OrnamentalFanDisplayCase": {
+					"Name": "bennoloth.OrnamentalFanDisplayCase",
+					"DisplayName": "Ornamental Fan Display Case",
+					"Description": "A display piece featuring a sixth-era ornamental fan sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/OrnamentalFanDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Palm Fossil Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.PalmFossilDisplayCase": {
+					"Name": "bennoloth.PalmFossilDisplayCase",
+					"DisplayName": "Palm Fossil Display Case",
+					"Description": "A display piece featuring a palm fossil sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/PalmFossilDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Prehistoric Handaxe Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.PrehistoricHandaxeDisplayCase": {
+					"Name": "bennoloth.PrehistoricHandaxeDisplayCase",
+					"DisplayName": "Prehistoric Handaxe Display Case",
+					"Description": "A display piece featuring a prehistoric handaxe sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/PrehistoricHandaxeDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Prehistoric Rib Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.PrehistoricRibDisplayCase": {
+					"Name": "bennoloth.PrehistoricRibDisplayCase",
+					"DisplayName": "Prehistoric Rib Display Case",
+					"Description": "A display piece featuring a prehistoric rib sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/PrehistoricRibDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Prehistoric Scapula Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.PrehistoricScapulaDisplayCase": {
+					"Name": "bennoloth.PrehistoricScapulaDisplayCase",
+					"DisplayName": "Prehistoric Scapula Display Case",
+					"Description": "A display piece featuring a prehistoric scapula sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/PrehistoricScapulaDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Prehistoric Skull Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.PrehistoricSkullDisplayCase": {
+					"Name": "bennoloth.PrehistoricSkullDisplayCase",
+					"DisplayName": "Prehistoric Skull Display Case",
+					"Description": "A display piece featuring a prehistoric skull sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/PrehistoricSkullDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Prehistoric Tibia Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.PrehistoricTibiaDisplayCase": {
+					"Name": "bennoloth.PrehistoricTibiaDisplayCase",
+					"DisplayName": "Prehistoric Tibia Display Case",
+					"Description": "A display piece featuring a prehistoric tibia sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/PrehistoricTibiaDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Prehistoric Tool Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.PrehistoricToolDisplayCase": {
+					"Name": "bennoloth.PrehistoricToolDisplayCase",
+					"DisplayName": "Prehistoric Tool Display Case",
+					"Description": "A display piece featuring a prehistoric tool sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/PrehistoricToolDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Prehistoric Vertebra Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.PrehistoricVertebraDisplayCase": {
+					"Name": "bennoloth.PrehistoricVertebraDisplayCase",
+					"DisplayName": "Prehistoric Vertebra Display Case",
+					"Description": "A display piece featuring a prehistoric vertebra sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/PrehistoricVertebraDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Prismatic Jelly Display
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.PrismaticJellyDisplay": {
+					"Name": "bennoloth.PrismaticJellyDisplay",
+					"DisplayName": "Prismatic Jelly Display",
+					"Description": "A display piece featuring a jar of prismatic jelly.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/PrismaticJellyDisplay",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Rare Disc Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.RareDiscDisplayCase": {
+					"Name": "bennoloth.RareDiscDisplayCase",
+					"DisplayName": "Rare Disc Display Case",
+					"Description": "A display piece featuring a dreadful disc sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/RareDiscDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Rusty Cog Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.RustyCogDisplayCase": {
+					"Name": "bennoloth.RustyCogDisplayCase",
+					"DisplayName": "Rusty Cog Display Case",
+					"Description": "A display piece featuring an ancient rusty cog sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/RustyCogDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Rusty Spoon Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.RustySpoonDisplayCase": {
+					"Name": "bennoloth.RustySpoonDisplayCase",
+					"DisplayName": "Rusty Spoon Display Case",
+					"Description": "A display piece featuring a plain old rusty spoon sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/RustySpoonDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Rusty Spur Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.RustySpurDisplayCase": {
+					"Name": "bennoloth.RustySpurDisplayCase",
+					"DisplayName": "Rusty Spur Display Case",
+					"Description": "A display piece featuring an old rusty spur sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/RustySpurDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+ 
+  //Skeletal Hand Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.SkeletalHandDisplayCase": {
+					"Name": "bennoloth.SkeletalHandDisplayCase",
+					"DisplayName": "Skeletal Hand Display Case",
+					"Description": "A display piece featuring a skeletal hand sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/SkeletalHandDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Skeletal Tail Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.SkeletalTailDisplayCase": {
+					"Name": "bennoloth.SkeletalTailDisplayCase",
+					"DisplayName": "Skeletal Tail Display Case",
+					"Description": "A display piece featuring a skeletal tail sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/SkeletalTailDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Snake Skull Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.SnakeSkullDisplayCase": {
+					"Name": "bennoloth.SnakeSkullDisplayCase",
+					"DisplayName": "Snake Skull Display Case",
+					"Description": "A display piece featuring a snake skull sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/SnakeSkullDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Snake Vertebrae Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.SnakeVertebraeDisplayCase": {
+					"Name": "bennoloth.SnakeVertebraeDisplayCase",
+					"DisplayName": "Snake Vertebrae Display Case",
+					"Description": "A display piece featuring snake vertebrae sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/SnakeVertebraeDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Strange Green Doll Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.StrangeGreenDollDisplayCase": {
+					"Name": "bennoloth.StrangeGreenDollDisplayCase",
+					"DisplayName": "Strange Green Doll Display Case",
+					"Description": "A display piece featuring a strange green doll sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/StrangeGreenDollDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Strange Red Doll Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.StrangeRedDollDisplayCase": {
+					"Name": "bennoloth.StrangeRedDollDisplayCase",
+					"DisplayName": "Strange Red Doll Display Case",
+					"Description": "A display piece featuring a strange red doll sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/StrangeRedDollDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+
+  //Trilobite Display Case
+
+  {
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"bennoloth.TrilobiteDisplayCase": {
+					"Name": "bennoloth.TrilobiteDisplayCase",
+					"DisplayName": "Trilobite Display Case",
+					"Description": "A display piece featuring a trilobite fossil sealed within a clear glass case.",
+					"Category": 0,
+					"Edibility": -300,
+					"Type": "Basic",
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"Price": 250,
+					"Texture": "bennoloth.TTTS/TrilobiteDisplayCase",
+					"SpriteIndex": 0,
+											}
+						}
+  },
+  
+  //Display Station Function
+
+	{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": {
+			//Global Entries
+				"(BC)bennoloth.DisplayStation": {
+					"WobbleWhileWorking": true,
+					"LoadEffects": [
+						{
+						"Id": "Default",
+						"Condition": null,
+							"Sounds": [
+							{
+							"Id": "woodchipper",
+							"Delay": 0
+							}],
+						}],
+					"AdditionalConsumedItems": [
+						{
+						"ItemId": "(O)709",
+						"RequiredCount": 1,
+						"InvalidCountMessage": "Requires 1 Hardwood"
+						}],
+			"OutputRules": [
+				//Amphibian Fossil
+				{
+					"Id": "AmphibianFossilDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)587",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.AmphibianFossilDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Anchor
+				{
+					"Id": "AnchorDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)117",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.AnchorDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Ancient Doll
+				{
+					"Id": "AncientDollDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)103",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.AncientDollDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Ancient Drum
+				{
+					"Id": "AncientDrumDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)123",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.AncientDrumDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Ancient Seed
+				{
+					"Id": "AncientSeedDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)114",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.AncientSeedDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Ancient Sword
+				{
+					"Id": "AncientSwordDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)109",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.AncientSwordDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Arrowhead
+				{
+					"Id": "ArrowheadDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)101",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.ArrowheadDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Bone Flute
+				{
+					"Id": "BoneFluteDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)119",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.BoneFluteDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Chewing Stick
+				{
+					"Id": "ChewingStickDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)105",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.ChewingStickDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Chicken Statue
+				{
+					"Id": "ChickenStatueDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)113",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.ChickenStatueDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Chipped Amphora
+				{
+					"Id": "ChippedAmphoraDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)100",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.ChippedAmphoraDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Dinosaur Egg
+				{
+					"Id": "DinosaurEggDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)107",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.DinosaurEggDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 5
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Dried Starfish
+				{
+					"Id": "DriedStarfishDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)116",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.DriedStarfishDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Dwarf Gadget
+				{
+					"Id": "DwarfGadgetDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)122",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.DwarfGadgetDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Dwarvish Helm
+				{
+					"Id": "DwarvishHelmDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)121",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.DwarvishHelmDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Elvish Jewelry
+				{
+					"Id": "ElvishJewelryDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)104",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.ElvishJewelryDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Fossilized Leg
+				{
+					"Id": "FossilizedLegDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)823",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.FossilizedLegDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Fossilized Ribs
+				{
+					"Id": "FossilizedRibsDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)824",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.FossilizedRibsDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Fossilized Skull
+				{
+					"Id": "FossilizedSkullDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)820",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.FossilizedSkullDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Fossilized Spine
+				{
+					"Id": "FossilizedSpineDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)821",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.FossilizedSpineDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Fossilized Tail
+				{
+					"Id": "FossilizedTailDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)822",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.FossilizedTailDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Glass Shards
+				{
+					"Id": "GlassShardsDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)118",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.GlassShardsDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Golden Mask
+				{
+					"Id": "GoldenMaskDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)124",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.GoldenMaskDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 50
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Golden Relic
+				{
+					"Id": "GoldenRelicDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)125",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.GoldenRelicDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 50
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Mummified Bat
+				{
+					"Id": "MummifiedBatDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)827",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.MummifiedBatDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Mummified Frog
+				{
+					"Id": "MummifiedFrogDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)828",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.MummifiedFrogDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Nautilus Fossil
+				{
+					"Id": "NautilusFossilDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)586",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.NautilusFossilDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Ornamental Fan
+				{
+					"Id": "OrnamentalFanDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)106",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.OrnamentalFanDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Palm Fossil
+				{
+					"Id": "PalmFossilDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)588",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.PalmFossilDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Prehistoric Handaxe
+				{
+					"Id": "PrehistoricHandaxeDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)120",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.PrehistoricHandaxeDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Prehistoric Rib
+				{
+					"Id": "PrehistoricRibDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)583",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.PrehistoricRibDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Prehistoric Scapula
+				{
+					"Id": "PrehistoricScapulaDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)579",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.PrehistoricScapulaDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Prehistoric Skull
+				{
+					"Id": "PrehistoricSkullDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)581",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.PrehistoricSkullDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Prehistoric Tibia
+				{
+					"Id": "PrehistoricTibiaDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)580",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.PrehistoricTibiaDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Prehistoric Tool
+				{
+					"Id": "PrehistoricToolDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)115",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.PrehistoricToolDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Prehistoric Vertebra
+				{
+					"Id": "PrehistoricVertebraDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)584",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.PrehistoricVertebraDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Rare Disc
+				{
+					"Id": "RareDiscDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)108",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.RareDiscDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Rusty Cog
+				{
+					"Id": "RustyCogDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)112",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.RustyCogDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Rusty Spoon
+				{
+					"Id": "RustySpoonDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)110",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.RustySpoonDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Rusty Spur
+				{
+					"Id": "RustySpurDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)111",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.RustySpurDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 10
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Skeletal Hand
+				{
+					"Id": "SkeletalHandDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)582",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.SkeletalHandDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Skeletal Tail
+				{
+					"Id": "SkeletalTailDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)585",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.SkeletalTailDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Snake Skull
+				{
+					"Id": "SnakeSkullDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)825",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.SnakeSkullDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Snake Vertebrae
+				{
+					"Id": "SnakeVertebraeDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)826",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.SnakeVertebraeDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Strange Green Doll
+				{
+					"Id": "StrangeGreenDollDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)126",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.StrangeGreenDollDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 5
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Strange Red Doll
+				{
+					"Id": "StrangeRedDollDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)127",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.StrangeRedDollDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Multiply",
+							"Amount": 5
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+				//Trilobite
+				{
+					"Id": "TrilobiteDisplayCase",
+					"Triggers": [
+						{
+						"RequiredItemId": "(O)589",
+						}],
+					"OutputItem": [
+						{
+						"ItemId": "bennoloth.TrilobiteDisplayCase",
+						"CopyPrice": true,
+						"PriceModifiers": [
+							{
+							"Modification": "Add",
+							"Amount": 100
+							}],
+						},
+					],
+				
+				"MinutesUntilReady": 800,
+				},
+			],
+				},
+			}
+		},
+	]
+}

@@ -1,0 +1,218 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_Maru_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Maru_Spring, Portraits/Maru_Summer, Portraits/Maru_Fall, Portraits/Maru_Winter_Outdoor, Portraits/Maru_Winter_Indoor, Portraits/Maru_FlowerDance, Portraits/Maru_SpiritsEve, Portraits/Maru_EggF, Portraits/Maru_Fair, Portraits/Maru_Jellies, Portraits/Maru_Luau, Portraits/Maru_Winter_IceF, Portraits/Maru_Winter_WinterStar, Characters/Maru_Spring, Characters/Maru_Summer, Characters/Maru_Fall, Characters/Maru_Winter_Outdoor, Characters/Maru_Winter_Indoor, Characters/Maru_FlowerDance, Characters/Maru_SpiritsEve, Characters/Maru_EggF, Characters/Maru_Fair, Characters/Maru_Jellies, Characters/Maru_Luau, Characters/Maru_Winter_IceF, Characters/Maru_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Maru/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Edit_Maru_Beach_Assets",
+			"Action": "EditImage",
+			"Target": "Portraits/Maru_Beach, Characters/Maru_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Maru/{{TargetWithoutPath}}.png",
+			"When": {
+				"BeachOutfitsEnabled": true
+			}
+		},
+		{
+			"LogName": "Edit_Maru_Hospital_Assets",
+			"Action": "EditImage",
+			"Target": "Portraits/Maru_Hospital, Characters/Maru_Hospital",
+			"FromFile": "assets/{{TargetPathOnly}}/Maru/{{TargetWithoutPath}}.png",
+			"When": {
+				"ExtraOutfitsEnabled": true
+			}
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_Maru_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Maru_Spring, Characters/Maru_Summer, Characters/Maru_Fall, Characters/Maru_Winter_Outdoor, Characters/Maru_Winter_Indoor, Characters/Maru_FlowerDance, Characters/Maru_SpiritsEve, Characters/Maru_EggF, Characters/Maru_Fair, Characters/Maru_Jellies, Characters/Maru_Luau, Characters/Maru_Winter_IceF, Characters/Maru_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Maru/Maru_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Add_Maru_Beach_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Maru_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Maru/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false,
+				"BeachOutfitsEnabled": true
+			}
+		},
+		{
+			"LogName": "Add_Maru_Hospital_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Maru_Hospital",
+			"FromFile": "assets/{{TargetPathOnly}}/Maru/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false,
+				"ExtraOutfitsEnabled": true
+			}
+		},
+		// GLASSES OVERLAY
+		{
+			"LogName": "Apply_MaruGlasses",
+			"Action": "EditImage",
+			"Target": "Characters/Maru_Spring, Characters/Maru_Summer, Characters/Maru_Fall, Characters/Maru_Winter_Outdoor, Characters/Maru_Winter_Indoor, Characters/Maru_SpiritsEve, Characters/Maru_EggF, Characters/Maru_Fair, Characters/Maru_Jellies, Characters/Maru_Luau, Characters/Maru_Winter_IceF, Characters/Maru_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Maru/Maru_Glasses.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"MaruGlasses": true
+			}
+		},
+		{
+			"LogName": "Apply_MaruGlasses_Hospital",
+			"Action": "EditImage",
+			"Target": "Characters/Maru_Hospital",
+			"FromFile": "assets/{{TargetPathOnly}}/Maru/{{TargetWithoutPath}}_Glasses.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"MaruGlasses": true,
+				"ExtraOutfitsEnabled": true
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_Maru_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Maru",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.MaruSpring": {
+					"Id": "{{ModId}}.MaruSpring",
+					"Portrait": "Portraits/Maru_Spring",
+					"Sprite": "Characters/Maru_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.MaruSummer": {
+					"Id": "{{ModId}}.MaruSummer",
+					"Portrait": "Portraits/Maru_Summer",
+					"Sprite": "Characters/Maru_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.MaruFall": {
+					"Id": "{{ModId}}.MaruFall",
+					"Portrait": "Portraits/Maru_Fall",
+					"Sprite": "Characters/Maru_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.MaruWinterIndoor": {
+					"Id": "{{ModId}}.MaruWinterIndoor",
+					"Portrait": "Portraits/Maru_Winter_Indoor",
+					"Sprite": "Characters/Maru_Winter_Indoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",
+					"Precedence": -101
+				},
+				"{{ModId}}.MaruWinterOutdoor": {
+					"Id": "{{ModId}}.MaruWinterOutdoor",
+					"Portrait": "Portraits/Maru_Winter_Outdoor",
+					"Sprite": "Characters/Maru_Winter_Outdoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101
+				},
+				// Festival Outfits
+				"{{ModId}}.MaruEggFest": {
+					"Id": "{{ModId}}.MaruEggFest",
+					"Portrait": "Portraits/Maru_EggF",
+					"Sprite": "Characters/Maru_EggF",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.MaruFlowerDance": {
+					"Id": "{{ModId}}.MaruFlowerDance",
+					"Portrait": "Portraits/Maru_FlowerDance",
+					"Sprite": "Characters/Maru_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.MaruLuau": {
+					"Id": "{{ModId}}.MaruLuau",
+					"Portrait": "Portraits/Maru_Luau",
+					"Sprite": "Characters/Maru_Luau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.MaruJellies": {
+					"Id": "{{ModId}}.MaruJellies",
+					"Portrait": "Portraits/Maru_Jellies",
+					"Sprite": "Characters/Maru_Jellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.MaruFair": {
+					"Id": "{{ModId}}.MaruFair",
+					"Portrait": "Portraits/Maru_Fair",
+					"Sprite": "Characters/Maru_Fair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.MaruSpirit": {
+					"Id": "{{ModId}}.MaruSpirit",
+					"Portrait": "Portraits/Maru_SpiritsEve",
+					"Sprite": "Characters/Maru_SpiritsEve",
+					"Condition": "{{UseSpiritsEveOutfit}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.MaruIceFestival": {
+					"Id": "{{ModId}}.MaruIceFestival",
+					"Portrait": "Portraits/Maru_Winter_IceF",
+					"Sprite": "Characters/Maru_Winter_IceF",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.MaruWinterStar": {
+					"Id": "{{ModId}}.MaruWinterStar",
+					"Portrait": "Portraits/Maru_Winter_WinterStar",
+					"Sprite": "Characters/Maru_Winter_WinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				}
+			}
+		},
+		// CALENDAR
+		{
+			"LogName": "Edit_Maru_Calendar_Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Maru",
+			"FromFile": "assets/{{Target}}/Maru_{{CurrentSeasonAttire}}.png"
+		},
+		{
+			"LogName": "Add_Maru_Calendar_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Maru",
+			"FromFile": "assets/{{Target}}/Maru_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Apply_MaruGlasses_Calendar",
+			"Action": "EditImage",
+			"Target": "Characters/Maru",
+			"FromFile": "assets/{{Target}}/Maru_Glasses.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"MaruGlasses": true
+			}
+		}
+	]
+}

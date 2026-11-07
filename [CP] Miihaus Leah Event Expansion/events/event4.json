@@ -1,0 +1,215 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/BusStop",
+        "Entries":
+    {
+    "Miihau.LeahEE.004/F/f Leah 1000/t 900 1300/e Miihau.LeahEE.003":"
+    breezy/
+    24 25/
+    farmer 17 23 1 Leah 23 16 2 Miihau_LeahEE_ArtTeacher -100 -100 0/
+    skippable/
+    move farmer 6 0 0 Leah 0 4 2/
+    emote Leah 16/
+    jump Leah 3/
+    pause 150/
+    jump Leah 2/
+    pause 150/
+    jump Leah 3/
+    pause 150/
+    jump Leah 2/
+    pause 150/
+    jump Leah 3/
+    pause 150/
+    jump Leah 2/
+    pause 150/
+    jump Leah 3/
+    pause 200/
+    emote Leah 32/
+    emote farmer 8/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.001}}\"/
+    pause 300/
+    emote Leah 28/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.002}}\"/
+    pause 400/
+    faceDirection Leah 0/
+    pause 200/
+    emote Leah 8/
+    pause 200/
+    faceDirection Leah 2/
+    pause 200/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.003}}\"/
+    emote farmer 32/
+    textAboveHead Leah \"{{i18n:Miihau.LeahEE.event4.004}}\" true/
+    speed Leah 5/
+    move Leah 0 2 2/
+    positionOffset farmer 0 -3/
+    pause 40/
+    positionOffset farmer 0 -3/
+    pause 40/
+    positionOffset farmer 0 -3/
+    pause 40/
+    positionOffset farmer 0 -3/
+    pause 40/
+    positionOffset farmer 0 -3/
+    pause 40/
+    positionOffset farmer 0 -3/
+    pause 40/
+    positionOffset farmer 0 -3/
+    pause 400/
+    message \"{{i18n:Miihau.LeahEE.event4.005}}\"/
+    pause 200/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.006}}\"/
+    pause 300/
+    globalFade/
+    viewport -1000 -1000/
+    playSound busDriveOff/
+    pause 1700/
+    changeLocation Custom_Miihau_LeahEE_Artcon/
+    addTemporaryActor Miihau_LeahEE_SeeShellStatue 48 48 19 6 2 false/
+    addTemporaryActor Miihau_LeahEE_TempActor1 16 32 9 5 2/
+    addTemporaryActor Miihau_LeahEE_TempActor2 16 32 7 14 2/
+    addTemporaryActor Miihau_LeahEE_TempActor3 16 32 12 8 2/
+    addTemporaryActor Miihau_LeahEE_TempActor4 16 32 3 6 0/
+    addTemporaryActor Marcello 16 32 7 17 1/
+    addTemporaryActor Assorted_Fishermen_Winter 16 32 2 15 0/
+    showFrame Assorted_Fishermen_Winter 10/
+    animate Miihau_LeahEE_TempActor1 false true 450 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0/
+    warp Leah 15 7/
+    warp farmer 14 7/
+    faceDirection Leah 3/
+    faceDirection farmer 1/
+    message \"{{i18n:Miihau.LeahEE.event4.007}}\"/
+    warp Miihau_LeahEE_ArtTeacher 19 17/
+    pause 200/
+    globalFadeToClear 0.005 true/
+    viewport 13 11/
+    viewport move 0 -1 4000/
+    advancedMove Marcello false 0 1 1 2200 0 -3 4 26000 -4 0 3 9000 4 0 4 9000 3 0 0 -6 -3 0 4 9000 5 0 1 14000 -2 0 0 2 -2 0 1 1000/
+    advancedMove Miihau_LeahEE_TempActor4 true 0 2 6 0 0 -2 4 15000 0 2 3 0 1 14000 -9 0 0 -2 4 7000/
+    move Miihau_LeahEE_TempActor3 0 11 2/
+    warp Miihau_LeahEE_TempActor3 -100 -100/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.008}}\"/
+    pause 600/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.009}}\"/
+    pause 200/
+    move farmer 3 0 1 Leah 3 0 1/
+    move Leah 0 -1 1/
+    move farmer 1 0 1/
+    pause 200/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.010}}\"/
+    pause 300/
+    textAboveHead Leah \"{{i18n:Miihau.LeahEE.event4.011}}\"/
+    stopMusic/
+    playMusic Hospital_Ambient/
+    viewport move 0 1 4000/
+    pause 2000/
+    emote farmer 40 true/
+    pause 1800/
+    changeName Miihau_LeahEE_ArtTeacher \"{{i18n:Miihau.LeahEE.Anderson.NotRevealed}}\"/
+    speak Miihau_LeahEE_ArtTeacher \"{{i18n:Miihau.LeahEE.event4.013}}\"/
+    emote Miihau_LeahEE_ArtTeacher 12/
+    move Miihau_LeahEE_ArtTeacher -2 0 2/
+    textAboveHead Miihau_LeahEE_ArtTeacher \"{{i18n:Miihau.LeahEE.event4.014}}\" true/
+    move Miihau_LeahEE_ArtTeacher 0 1 3/
+    move Miihau_LeahEE_ArtTeacher -4 0 0/
+    viewport move 0 -1 4000/
+    emote Leah 40 true/
+    move Miihau_LeahEE_ArtTeacher 0 -10 1/
+    emote farmer 40 true/
+    move Miihau_LeahEE_ArtTeacher 2 0 0/
+    move Miihau_LeahEE_ArtTeacher 0 -1 1/
+    speak Miihau_LeahEE_ArtTeacher \"{{i18n:Miihau.LeahEE.event4.015}}\"/
+    faceDirection Leah 3/
+    faceDirection farmer 3/
+    emote Leah 16/
+    speed Leah 4/
+    move Leah -1 0 2/
+    speed Leah 4/
+    move Leah 0 1 3/
+    move farmer 0 1 3 true/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.016}}\"/
+    changeName Miihau_LeahEE_ArtTeacher \"{{i18n:Miihau.LeahEE.Anderson}}\"/
+    speak Miihau_LeahEE_ArtTeacher \"{{i18n:Miihau.LeahEE.event4.018}}\"/
+    move Miihau_LeahEE_ArtTeacher 0 -1 0/
+    pause 700/
+    emote Miihau_LeahEE_ArtTeacher 12 true/
+    faceDirection Miihau_LeahEE_ArtTeacher 1/
+    pause 800/
+    faceDirection Miihau_LeahEE_ArtTeacher 0/
+    pause 700/
+    faceDirection Miihau_LeahEE_ArtTeacher 1/
+    pause 900/
+    move Miihau_LeahEE_ArtTeacher 0 1 1/
+    speak Miihau_LeahEE_ArtTeacher \"{{i18n:Miihau.LeahEE.event4.019}}\"/
+    pause 300/
+    emote Leah 28/
+    pause 100/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.020}}\"/
+    pause 300/
+    speak Miihau_LeahEE_ArtTeacher \"{{i18n:Miihau.LeahEE.event4.021}}\"/
+    pause 500/
+    shake Leah 2500/
+    emote Miihau_LeahEE_ArtTeacher 8 true/
+    pause 2500/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.022}}\"/
+    pause 300/
+    speak Miihau_LeahEE_ArtTeacher \"{{i18n:Miihau.LeahEE.event4.023}}\"/
+    pause 200/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.024}}\"/
+    pause 200/
+    speak Miihau_LeahEE_ArtTeacher \"{{i18n:Miihau.LeahEE.event4.025}}\"/
+    pause 200/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.026}}\"/
+    move Miihau_LeahEE_ArtTeacher -1 0 2 Leah -1 0 3/
+    speak Miihau_LeahEE_ArtTeacher \"{{i18n:Miihau.LeahEE.event4.027}}\"/
+    advancedMove Miihau_LeahEE_ArtTeacher false 0 1 -1 0 0 10 4 0 0 -1 2 0 4 1000/
+    pause 200/
+    emote Leah 28 true/
+    faceDirection Leah 2/
+    pause 1200/
+    speed Leah 1/
+    move Leah 0 1 1/
+    pause 1000/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.028}}\"/
+    globalFade/
+    viewport -1000 -1000/
+    stopMusic/
+    pause 200/
+    warp Miihau_LeahEE_ArtTeacher -101 -101/
+    warp Miihau_LeahEE_TempActor1 -102 -102/
+    warp Miihau_LeahEE_TempActor2 -103 -102/
+    warp Miihau_LeahEE_TempActor3 -104 -102/
+    warp Miihau_LeahEE_TempActor4 -105 -102/
+    warp Marcello -106 -102/
+    warp Miihau_LeahEE_SeeShellStatue -110 -110/
+    warp Leah 22 17/
+    warp farmer 24 17/
+    positionOffset farmer 0 20/
+    changeLocation BusStop/
+    message \"{{i18n:Miihau.LeahEE.event4.029}}\"/
+    pause 300/
+    globalFadeToClear 0.007 true/
+    viewport 23 18/
+    playMusic echos/
+    pause 1200/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.030}}\"/
+    pause 400/
+    quickQuestion {{i18n:Miihau.LeahEE.event4.030X}}(break)pause 300\\speak Leah \"{{i18n:Miihau.LeahEE.event4.031}}\"(break)pause 300\\speak Leah \"{{i18n:Miihau.LeahEE.event4.032}}\"/
+    pause 500/
+    speed Leah 1/
+    move Leah 0 1 2/
+    speak Leah \"{{i18n:Miihau.LeahEE.event4.033}}\"/
+    faceDirection farmer 2/
+    speed Leah 2/
+    move Leah 0 5 2 true/
+    globalFade/
+    viewport -1200 -1200/
+    end dialogue Leah \"{{i18n:Miihau.LeahEE.event4.034}}\"/
+    ",
+
+    }
+    }
+    ]
+}

@@ -1,0 +1,26 @@
+/*Vanilla Gus already has a generic line for all cooking-category items that he has a positive reaction to. At the time I first started working on this mod, this line triggered for *all* food regardless of if he liked it or not, hence why a lot of the lines focused on correcting that mismatch.
+He has no lines for birthday presents.
+Last verified: 1.6.14*/
+
+{"Changes": [
+  {
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Gus",
+
+    "Entries": {
+
+      "AcceptGift_(O)72": "{{i18n:UGDE.Gus_(O)72}}", //Diamond
+      "AcceptGift_(O)265": "{{i18n:UGDE.Gus_(O)265_1}}#$e#%revealtasteWilly265 {{i18n:UGDE.Gus_(O)265_2}}", //Seafoam Pudding
+      "AcceptGift_(O)203": "{{i18n:UGDE.Gus_(O)203_1}}#$e#%revealtasteShane203 {{i18n:UGDE.Gus_(O)203_2}}", //Strange Bun
+      "AcceptGift_(O)729": "{{i18n:UGDE.Gus_(O)729}}", //Escargot
+      "AcceptGift_(O)648": "{{i18n:UGDE.Gus_(O)648}}", //Coleslaw
+      "AcceptGift_(O)213": "{{i18n:UGDE.Gus_(O)213_1}}#$e#%revealtasteEmily213 {{i18n:UGDE.Gus_(O)213_2}}", //Fish Taco
+      //TODO Albacore. nb: disliked gift...
+      //TODO Lobster. nb: disliked gift...
+      //TODO Lobster Bisque?
+      //TODO Coconut. nb: disliked gift... Hmm, starting to be a lot of disliked gifts. Maybe trigger a special dialogue line if you keep gifting him disliked items he formerly requested?
+      "AcceptBirthdayGift_Positive": "{{i18n:UGDE.Gus_AcceptBirthdayGift_Positive}}", //Loved, liked, neutral birthday gift
+      "AcceptBirthdayGift_Negative": "{{i18n:UGDE.Gus_AcceptBirthdayGift_Negative}}", //Disliked, hated birthday gift
+    }
+  }
+]}

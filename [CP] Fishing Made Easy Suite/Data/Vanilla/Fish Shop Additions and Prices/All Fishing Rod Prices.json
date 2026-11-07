@@ -1,0 +1,33 @@
+{
+  "Changes": [
+    {
+      "LogName": "All Fishing Rod Prices",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "FishShop",
+        "Items"
+      ],
+      "Fields": {
+        "(T)BambooPole": {
+          "Price": "{{Round: {{Query: (500 * {{FishingRodPrices}}) }} }}"
+        },
+        "(T)FiberglassRod": {
+          "Price": "{{Round: {{Query: (1800 * {{FishingRodPrices}}) }} }}"
+        },
+        "(T)IridiumRod": {
+          "Price": "{{Round: {{Query: (7500 * {{FishingRodPrices}}) }} }}"
+        },
+        "(T)AdvancedIridiumRod": {
+          "Price": "{{Round: {{Query: (25000 * {{FishingRodPrices}}) }} }}"
+        },
+        "(T)TrainingRod": {
+          "Price": "{{Round: {{Query: (25 * {{FishingRodPrices}}) }} }}"
+        }
+      },
+      "When": {
+        "All Fishing Rod Prices": "25% Cheaper, 50% Cheaper, 75% Cheaper, 99% Cheaper, 25% More Expensive, 50% More Expensive, 75% More Expensive, 100% More Expensive"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+	"Changes": 
+    [
+		
+		{
+            "LogName": "Wren Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/WrenSong",
+			"Entries": {
+				"winter_16": "610 Custom_SBV_WrenHouse 22 9 0/730 SeedShop 29 14 3/1200 SeedShop 22 22 2 WrenSong_workout/1600 SeedShop 38 5 0 WrenSong_sink/1700 Beach 32 18 2/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked",
+				"rain": "730 Custom_SBV_WrenHouse 22 9 0/930 Custom_SBV_WrenHouse 17 5 3 WrenSong_read/1130 Custom_SBV_WrenHouse2 12 10 2 WrenSong_knit/1630 Custom_SBV_WrenHouse 4 7 0/1730 Custom_SBV_WrenHouse2 11 5 1/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked", 
+				"spring_24": "610 Custom_SBV_WrenHouse 22 9 0/700 Custom_SBV_SunberryVillage 61 91 2 WrenSong_knit/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked",
+				"skellady.SBVCP_TwilightFestival": "610 Custom_SBV_WrenHouse 22 9 0/730 Custom_SBV_SunberryVillage 24 60 3/a1600 Custom_SBV_SunberryVillage 39 56 2/2400 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked",
+				"DesertFestival": "610 Custom_SBV_WrenHouse 22 9 0/730 Desert 42 7 1 \"Strings\\1_6_Strings:DesertFestival_WrenSong\"/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked",
+				"Mon": "GOTO spring",
+				"Tue": "{{Random: GOTO spring && 610 Custom_SBV_WrenHouse 22 9 0/730 SeedShop 28 15 0/1200 SeedShop 26 14 1/1300 SeedShop 22 22 2 WrenSong_workout/1600 SeedShop 38 5 0 WrenSong_sink/1800 Custom_SBV_DialaCafe 30 16 3 WrenSong_read/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked |inputSeparator=&&}}",
+				"Wed": "GOTO spring",
+				"Thu": "GOTO spring",
+				"Fri": "GOTO spring",
+				"winter_Sat": "GOTO Sun",
+				"Sat": "800 Custom_SBV_SunberryVillage 13 19 0 WrenSong_tinker \"Strings\\schedules\\WrenSong:Car.000\"/1030 Custom_SBV_SunberryVillage 15 22 0 WrenSong_work \"Strings\\schedules\\WrenSong:Car.000\"/1300 Custom_SBV_SunberryVillage 13 16 0 WrenSong_tinker \"Strings\\schedules\\WrenSong:Car.000\"/a1800 Custom_SBV_SunberryVillage 62 91 2 WrenSong_knit/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked",
+				"Sun": "{{Random: 800 Custom_SBV_SunberryVillage 13 19 0 WrenSong_tinker/1030 Custom_SBV_SunberryVillage 15 22 0 WrenSong_work/1300 Custom_SBV_SunberryVillage 13 16 0 WrenSong_tinker/1800 Custom_SBV_WrenHouse2 11 5 1/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked && 800 Custom_SBV_WrenRoadtrip 2 2 2/1730 Custom_SBV_WrenHouse 17 5 3 WrenSong_read/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked |inputSeparator=&& |key=WrenDaoSync}}",
+				"spring": "{{Random: {{Pool}} |inputSeparator=&& |key=WrenSpannerSync}}",
+			},
+		},
+		
+		{
+            "LogName": "Wren Schedule PITV Pride Festival",
+            "Action": "EditData",
+            "Target": "Characters/schedules/WrenSong",
+			"When": {  "HasMod |contains= sapphicsaph_pitv": true, 
+			"IsCommunityCenterComplete": true },
+            "Entries": {
+                "sapphicsaph_pitv.PrideFestival_3": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/700 CommunityCenter 26 9 3\"Strings\\schedules\\WrenSong:Pride1.000\"/1500 CommunityCenter 64 16 1 WrenSong_tinker\"Strings\\schedules\\WrenSong:Pride2.000\"/1800 Custom_SBV_WrenHouse 6 11 1/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked"
+			},
+		},
+		
+		//when Wren gets yoinked to the resort
+		//{
+		//	"Action": "EditData",
+		//	"LogName": "Wren GIRemainder",
+		//	"Target": "Characters/schedules/WrenSong",
+		//	"Entries": {
+		//		"GIRemainder": "1800 Custom_SBV_WrenHouse 17 5 3 WrenSong_read/2400 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked"
+		//	}
+		//},
+		
+	],
+}

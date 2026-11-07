@@ -1,0 +1,507 @@
+{
+	"Changes": 
+    [
+		{	
+			"LogName": "Egg Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Shiko 25 59 right",
+   				    "Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                    "Value": "Shiko 26 62 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 37 60 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                    "Value": "Shiko 24 69 right",
+                    "Delimiter": "/"
+                },
+			],
+		},
+		{	
+			"LogName": "Egg Festival - SVE compat",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Shiko 25 59 right",
+   				    "Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                    "Value": "Shiko 38 68 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 37 60 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                    "Value": "Shiko 24 69 right",
+                    "Delimiter": "/"
+                },
+			],
+		},
+		{
+			"LogName": "Egg Festival - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": 
+			{ "Shiko": "{{i18n:eggfestival.Shiko}}", 
+			  "Shiko_y2": "{{i18n:eggfestival.Shiko_y2}}", 
+			  "Shiko_spouse": "{{i18n:eggfestival.Shiko_spouse}}", 
+			  "Shiko_spouse_y2": "{{i18n:eggfestival.Shiko_spouse_y2}}", 
+			},
+			
+		},
+		{	
+			"LogName": "Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Shiko 6 34 down",
+   				    "Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                    "Value": "Shiko 12 21 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 13 34 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                    "Value": "Shiko 23 29 left",
+                    "Delimiter": "/"
+                },
+			],
+		},
+		{	
+			"LogName": "Flower Dance - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": 
+			{ "Shiko": "{{i18n:flowerdance.Shiko}}", 
+			  "Shiko_y2": "{{i18n:flowerdance.Shiko_y2}}",
+			  "Shiko_spouse": "{{i18n:flowerdance.Shiko_spouse}}", 
+			  "Shiko_spouse_y2": "{{i18n:flowerdance.Shiko_spouse_y2}}", 
+		    },
+		},
+		{	
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "Shiko 52 11 down",
+   				    "Delimiter": "/"
+				},
+				{
+			        "Operation": "Append",
+			        "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+			        "Value": "Shiko 44 11 left",
+			        "Delimiter": "/"
+		        },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 17 7 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                    "Value": "Shiko 19 7 down",
+                    "Delimiter": "/"
+                }
+			],
+		},
+		{	
+			"LogName": "Luau - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": 
+			{ "Shiko": "{{i18n:luau.Shiko}}",
+			  "Shiko_y2": "{{i18n:luau.Shiko_y2}}",
+			  "Shiko_spouse": "{{i18n:luau.Shiko_spouse}}", 
+			  "Shiko_spouse_y2": "{{i18n:luau.Shiko_spouse_y2}}", 
+			},
+		},
+		// Pelican Town Potluck changes the Luau to a Potluck, so you may want a variant of dialogue.
+		//{	
+		
+		//"LogName": "Luau - dialogue - Potluck compat",
+		//"Action": "EditData",
+		//"Target": "Data/Festivals/summer11",
+		//"When": { "HasMod: |contains=LenneDalben.PelicanTownPotluck": true},
+		//"Entries": 
+		//{ "CustomNPCName": "",
+		//},
+		//},
+		{	
+			"LogName": "Dance of the Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Shiko 35 36 down",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                    "Value": "Shiko 34 36 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 40 34 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                    "Value": "Shiko 34 36 down",
+                    "Delimiter": "/"
+                }
+			],
+		},
+		{	
+			"LogName": "Dance of the Moonlight Jellies - SVE compat",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Shiko 35 36 down",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                    "Value": "Shiko 42 36 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 40 34 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                    "Value": "Shiko 40 36 down",
+                    "Delimiter": "/"
+                }
+			],
+		},
+		{	
+			"LogName": "Dance of the Moonlight Jellies - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": 
+			{ "Shiko": "{{i18n:jelly.Shiko}}", 
+			  "Shiko_y2": "{{i18n:jelly.Shiko_y2}}",
+			  "Shiko_spouse": "{{i18n:jelly.Shiko_spouse}}",
+			  "Shiko_spouse_y2": "{{i18n:jelly.Shiko_spouse_y2}}", 
+			},
+		},
+		{	
+			"LogName": "Stardew Valley Fair",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+			[
+				//SetUp (non-SVE) - I don't believe there is a "main event" one for this"
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Shiko 26 78 left",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 38 78 left",
+                    "Delimiter": "/"
+                }
+			],
+		},
+		//SetUp (SVE) - SVE changes the fair a lot, so you may want different positions.
+		{	
+			"LogName": "Stardew Valley Fair - SVE compat",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+			[
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Shiko 26 78 left",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 38 78 left",
+                    "Delimiter": "/"
+                }
+			],
+		},
+		{	
+			"LogName": "Stardew Valley Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": 
+			{ "Shiko": "{{i18n:fair.Shiko}}", 
+			  "Shiko_y2": "{{i18n:fair.Shiko_y2}}",
+			  "Shiko_spouse": "{{i18n:fair.Shiko_spouse}}", 
+			  "Shiko_spouse_y2": "{{i18n:fair.Shiko_spouse_y2}}", 
+			},
+		},
+		{	
+			"LogName": "Spirit's Eve",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"Target": "Data/Festivals/fall27",
+			"TextOperations":
+			[
+				//SetUp - again, no main
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Shiko 34 73 up",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 35 72 up",
+                    "Delimiter": "/"
+                }
+			],
+		},			
+		{	
+			"LogName": "Spirit's Eve - SVE compat",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"Target": "Data/Festivals/fall27",
+			"TextOperations":
+			[
+				//SetUp (SVE) - SVE changes the maps from year to year but I don't know the specifics, so you may need more than one set of positions for SVE compat.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Shiko 33 73 up",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 34 72 up",
+                    "Delimiter": "/"
+                }
+			],
+		},
+		{	
+			"LogName": "Spirit's Eve - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": 
+			{ "Shiko": "{{i18n:spiritseve.Shiko}}", 
+			  "Shiko_y2": "{{i18n:spiritseve.Shiko_y2}}",
+			  "Shiko_spouse": "{{i18n:spiritseve.Shiko_spouse}}", 
+			  "Shiko_spouse_y2": "{{i18n:spiritseve.Shiko_spouse_y2}}",
+			},
+		},
+		{	
+			"LogName": "Festival of Ice",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Shiko 64 45 right",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Main-Event_additionalCharacters" ], 
+                    "Value": "Shiko 67 42 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 62 43 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Main-Event_additionalCharacters_y2" ], 
+                    "Value": "Shiko 79 35 left",
+                    "Delimiter": "/"
+                }
+			],
+		},
+		{	
+			"LogName": "Festival of Ice - SVE compat",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"TextOperations":
+			[
+				//SetUp - SVE completely redoes this map too, so depending on where you are you may need compat for this.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Shiko 62 52 right",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Main-Event_additionalCharacters" ],  
+                    "Value": "Shiko 66 45 up",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 62 43 left",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Main-Event_additionalCharacters_y2" ],  
+                    "Value": "Shiko 60 43 left",
+                    "Delimiter": "/"
+                }
+			],
+		},
+		{	
+			"LogName": "Festival of Ice - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": 
+			{ "Shiko": "{{i18n:icefestival.Shiko}}", 
+		      "Shiko_y2": "{{i18n:icefestival.Shiko_y2}}",
+			  "Shiko_spouse": "{{i18n:icefestival.Shiko_spouse}}",
+			  "Shiko_spouse_y2": "{{i18n:icefestival.Shiko_spouse_y2}}",
+			  },
+		},
+		{	
+			"LogName": "Feast of the Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"TextOperations":
+			[
+				//SetUp - I think there is a MainEvent, but only during the actual gift-giving cutscene.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Shiko 24 74 up",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 36 73 up",
+                    "Delimiter": "/"
+                }
+			],
+		},
+		{	
+			"LogName": "Feast of the Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"TextOperations":
+			[
+				//SetUp - I think there is a MainEvent, but only during the actual gift-giving cutscene.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Shiko 23 74 up",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "Shiko 34 73 up",
+                    "Delimiter": "/"
+                }
+			],
+		},
+		{	
+			"LogName": "Feast of the Winter Star - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": 
+			{ "Shiko": "{{i18n:winterstar.Shiko}}",
+			  "Shiko_y2": "{{i18n:winterstar.Shiko_y2}}",
+			  "Shiko_spouse": "{{i18n:winterstar.Shiko_spouse}}", 
+			  "Shiko_spouse_y2": "{{i18n:winterstar.Shiko_spouse_y2}}",
+			},
+		},
+    ],
+}

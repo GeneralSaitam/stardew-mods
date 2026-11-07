@@ -1,0 +1,60 @@
+{
+    "Changes": [
+        {
+            "LogName": "Fleurine's Mail Data",
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "Fleurine.1H": "{{i18n:Fleurine.Event.1H}} %item object 595 1 336 1%%[#]{{i18n:Fleurine.Mail.1H}}",
+                "Fleurine.9H": "{{i18n:Fleurine.Event.9H}} %item object 428 5%%[#]{{i18n:Fleurine.Mail.9H}}",
+                "Fleurine.PerfectPetal": "{{i18n:Fleurine.Letter.PerfectPetal}} %item quest totsFleurine_PerfectPetal %%[#]{{i18n:Fleurine.Mail.PerfectPetal}}",
+                "Fleurine.FabulousElixir": "{{i18n:Fleurine.Letter.FabulousElixir}} %item quest totsFleurine_FabulousElixir %%[#]{{i18n:Fleurine.Mail.FabulousElixir}}",
+                "Fleurine.ACozyRequest": "{{i18n:Fleurine.Letter.ACozyRequest}} %item quest totsFleurine_ACozyRequest %%[#]{{i18n:Fleurine.Mail.ACozyRequest}}",
+                "Fleurine.BatTrouble": "{{i18n:Fleurine.Letter.BatTrouble}}%item quest totsFleurine_BatTrouble %%[#]{{i18n:Fleurine.Mail.BatTrouble}}"
+            }
+        },
+        {
+            "LogName": "Fleurine's Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "tots.Fleurine.1H": {
+                    "Id": "tots.Fleurine.1H",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Fleurine.1H tomorrow",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current totsFleurine 250"
+                },
+                "tots.Fleurine.9H": {
+                    "Id": "tots.Fleurine.9H",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Fleurine.9H tomorrow",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current totsFleurine 2250"
+                },
+                "tots.Fleurine.PerfectPetal": {
+                    "Id": "tots.Fleurine.PerfectPetal",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Fleurine.PerfectPetal tomorrow",
+                    "Condition": "SEASON summer fall, PLAYER_FRIENDSHIP_POINTS Current totsFleurine 1500"
+                },
+                "tots.Fleurine.FabulousElixir": {
+                    "Id": "tots.Fleurine.FabulousElixir",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Fleurine.FabulousElixir tomorrow",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current totsFleurine 1750"
+                },
+                "tots.Fleurine.ACozyRequest": {
+                    "Id": "tots.Fleurine.ACozyRequest",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Fleurine.ACozyRequest tomorrow",
+                    "Condition": "PLAYER_STAT Current sheepWoolProduced 1"
+                }
+                /*"tots.Fleurine.BatTrouble": {
+                    "Id": "tots.Fleurine.BatTrouble",
+                    "Trigger": "DayStarted",
+                    "Action": "AddMail Current Fleurine.BatTrouble tomorrow",
+                    "Condition": "MINE_LOWEST_LEVEL_REACHED 40"
+                }*/
+            }
+        }
+    ]
+}

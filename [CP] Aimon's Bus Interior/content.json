@@ -1,0 +1,387 @@
+{
+   "Format": "2.9.0",
+   
+	 "ConfigSchema": {
+
+				"Cleaner Bus": { 
+		"AllowValues": "true, false",
+		"Default": "false",
+		"Description": "Removes trash decor from bus interior.",
+			},
+		
+				"Lootable Trash Bin": { 
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Description": " Adds lootable trash bin in bus.",
+			},	
+
+		},
+		
+		
+"Changes": 
+   [
+	//Aimon111.BusInterior_BusInterior
+ 
+	
+	
+	//stringsfrommapass
+		{
+      "Action": "Include",
+      "FromFile": "assets/code/StringsFromMap.json",
+	   },
+	  {
+     "Action": "Include",
+      "FromFile": "assets/code/Events.json",
+	   },
+
+		{
+			"LogName": "aimon businterior tilesheets",
+			"Action": "Load",
+			"Target": "Maps/z_aimon_businterior",
+			"FromFile": "assets/tilesheets/z_aimon_businterior.png",
+		},
+		{
+			"LogName": "aimon businterior tilesheets",
+			"Action": "Load",
+			"Target": "Maps/z_aimon_businterior_ad",
+			"FromFile": "assets/tilesheets/z_aimon_businterior_ad.png",
+		},
+	//		
+	
+//chairtiles
+
+ {
+            "Action": "EditData",
+            "Target": "Data/ChairTiles",
+            "Entries": {
+                "z_aimon_businterior/0/0": "1/1/down/bench/0/0/false/false/Mods\\z_aimon_businterior",
+		 "z_aimon_businterior/1/0": "1/1/left/bench/0/0/false/false/Mods\\z_aimon_businterior",
+	},			
+},			
+
+	 {
+        "Action": "Load",
+        "Target": "Maps/{{ModId}}_BusInterior",
+        "FromFile": "assets/BusInterior.tmx"
+    },
+	 {
+        "Action": "EditMap",
+        "Target": "Maps/{{ModId}}_BusInterior",
+		        "FromFile": "assets/BusInterior_{{season}}.tmx",
+
+		        "PatchMode": "Replace",
+				    // "Update": "OnTimeChange"
+    },
+
+    // add location
+    {
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "Entries": {
+            "{{ModId}}_BusInterior": {
+				"DisplayName": "{{i18n:StringsFromMap.Aimon111businterior7}}",
+				"DefaultArrivalTile": { "X": 2, "Y": 6 },
+                "CreateOnLoad": { "MapPath": "Maps/{{ModId}}_BusInterior", },
+				"MusicDefault": "Hospital_Ambient",
+				"MusicIgnoredInRain": true,
+				"MusicIsTownTheme": true,
+					}
+				}
+	},
+	
+				
+	//cleaner version
+	
+		{
+			"LogName": "aimon businterior cleaner",
+			"Action": "EditMap",
+			"Target": "Maps/Aimon111.BusInterior_BusInterior",
+			"FromFile": "assets/BusInterior_fixed.tmx",
+			"When": { "Cleaner Bus": true,  },	
+			//"Update": "OnTimeChange",
+		"PatchMode": "Overlay",	
+		},
+		{
+			"LogName": "aimon businterior cleaner",
+			"Action": "EditMap",
+			"Target": "Maps/Aimon111.BusInterior_BusInterior",
+			"FromFile": "assets/BusInterior_fixed.tmx",
+			"When": { "HasFlag": "ccVault", "Cleaner Bus": false, },	
+			//"Update": "OnTimeChange",
+			"PatchMode": "Overlay",	
+		},
+		
+		
+	
+
+
+		//conditional decor
+		
+	
+		
+		
+		{	"LogName": "busstop seasonal decor",
+			"Action": "EditMap",
+			"Target": "Maps/Aimon111.BusInterior_BusInterior",
+		"FromFile": "assets/BusInterior_ad_{{season}}_{{Random:1, 2}}.tmx",
+		"PatchMode": "Overlay",
+		},
+		
+		{	"LogName": "busstop joja",
+			"Action": "EditMap",
+			"Target": "Maps/Aimon111.BusInterior_BusInterior",
+		"FromFile": "assets/BusInterior_ad_joja.tmx",
+		"PatchMode": "Overlay",
+		"When": { "IsJojaMartComplete": true  },
+		},
+		
+	//rain
+	{	"LogName": "aimon businteriorrain",
+			"Action": "EditMap",
+			"Target": "Maps/Aimon111.BusInterior_BusInterior",
+				"FromFile": "assets/BusInterior_rain.tmx",
+		"PatchMode": "Overlay",
+			"When": { "Weather": "Rain, Storm",  },	
+			//"Update": "OnTimeChange",
+			"MapProperties": {
+			"AmbientLight": "110 110 80", 
+			},
+		},
+			
+			
+		//
+		
+		//addwarp to busstop
+		{	"LogName": "aimon busstop warps",
+			"Action": "EditMap",
+			"Target": "Maps/BusStop",
+				 "When": {  "HasMod |contains=DaisyNiko.SVR3":  false },
+			"Priority": "Late+1",
+			  "MapTiles": [
+                {
+                    "Position": { "X": 22, "Y": 8 },
+                    "Layer": "Buildings",
+                    "SetProperties": {   "Passable": "t" }
+                },
+				 {
+                    "Position": { "X": 22, "Y": 7 },
+                    "Layer": "Buildings",
+                    "SetProperties": {   "Passable": "t" }
+                },	
+            ]
+		},
+	
+	
+	
+	
+		//
+		
+		
+		//addwarp to busstop
+		{	"LogName": "aimon busstop warps",
+			"Action": "EditMap",
+			"Target": "Maps/BusStop",
+			"Priority": "Late+1",
+			  "MapTiles": [
+              
+				 {
+                    "Position": { "X": 22, "Y": 6 },
+                    "Layer": "Back",
+                    "SetProperties": {   "Passable": "t" }
+                },
+				
+				{
+                    "Position": { "X": 22, "Y": 7 },
+                    "Layer": "Back",
+                    "SetProperties": {   "TouchAction": "Warp Aimon111.BusInterior_BusInterior 2 6" }
+		
+                }
+            ]
+		},
+	
+//addwarp to busstop
+		{	"LogName": "aimon passable busstop tiles",
+			"Action": "EditMap",
+			"Target": "Maps/BusStop",
+			"Priority": "Late+1",
+			  "MapTiles": [
+			
+				{
+                    "Position": { "X": 23, "Y": 7 },
+                    "Layer": "Back",
+                    "SetProperties": {   "Passable": "T" }
+		
+                },
+					{
+                    "Position": { "X": 23, "Y": 8 },
+                    "Layer": "Back",
+                    "SetProperties": {   "Passable": "T" }
+		
+                },
+						{
+                    "Position": { "X": 21, "Y": 7 },
+                    "Layer": "Back",
+                    "SetProperties": {   "Passable": "T" }
+		
+                },
+						{
+                    "Position": { "X": 21, "Y":8 },
+                    "Layer": "Back",
+                    "SetProperties": {   "Passable": "T" }
+		
+                },
+            ]
+		},
+
+
+
+	
+		
+		{	"LogName": "aimon busstop warps",
+			"Action": "EditMap",
+			"Target": "Maps/Aimon111.BusInterior_BusInterior",
+
+            "AddWarps": [
+                "2 8 BusStop 22 10"
+            ]
+        },
+	
+		
+		
+		
+	//garbage can off
+{	
+			"Action": "EditMap",
+			"Target": "Maps/Aimon111.BusInterior_BusInterior",
+			"When": {  "Lootable Trash Bin": true,	 },		
+			  "MapTiles": [
+				{ 
+                    "Position": { "X": 16, "Y": 4 },
+                    "Layer": "Buildings",
+                    "SetProperties":  {   "Action": "Garbage Aimon111.BusInteriorGabage" }
+                },			
+				]
+				},
+		//newgarbagebus
+		 {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors2",
+            "FromFile": "assets/tilesheets/Cursors2_nogarbage.png",
+			
+            "FromArea": {
+                "X": 22,
+                "Y": 0,
+                "Width": 67,
+                "Height": 32
+            },
+            "ToArea": {
+                "X": 22,
+                "Y": 0,
+                "Width": 67,
+                "Height": 32
+            },
+            "PatchMode": "Replace",
+            "When": {
+                "LocationName": "Aimon111.BusInterior_BusInterior",
+				   "Lootable Trash Bin": true,
+				
+            },
+            "Update": "OnLocationChange"
+        },
+		  {
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+			
+            "TargetField": [  "GarbageCans" ],
+	
+            "Entries": {
+			
+                "Aimon111.BusInteriorGabage": {
+					"BaseChance": 0.3,
+                    "Items": [
+						
+						
+						{
+                            "ID": "Aimon111.BusGarbageUncommon",
+							"Condition": "RANDOM 0.15",
+                            "RandomItemId": [ "(O)233", "(O)229", "(O)287", "(O)229", "(O)349", "(O)395", "(O)403", "(O)613", "(O)872" ],
+							"IsMegaSuccess": true,
+							//"AddToInventoryDirectly": true,
+                        },
+						
+                        {
+                            "ID": "Aimon111.BusGarbageCommon",
+                    
+                            "RandomItemId": [ "(O)168", "(O)169", "(O)172", "(O)171", "(O)170", "(O)167", "(O)118", "(O)153", "(O)766",
+							"(O)709", "(O)716",  "(O)719",  "(O)721",  "(O)722", ],
+							//"AddToInventoryDirectly": true,
+                        },  
+                    ]
+                },
+			}
+				
+		},
+		
+//stringsfrommaps		
+//junkdecor
+	{	
+			"Action": "EditMap",
+			"Target": "Maps/Aimon111.BusInterior_BusInterior",
+			"When": { "HasFlag": "ccVault" },		
+			
+			  "MapTiles": [
+			  { //beer
+                    "Position": { "X": 2, "Y": 5 },
+                    "Layer": "Buildings",
+		  "SetProperties": {   "Action": "Message Aimon111.businterior1",  }
+					},
+		{ //suitcase
+                    "Position": { "X": 5, "Y": 4 },
+                    "Layer": "Buildings",
+                    "SetProperties": {   "Action": "Message Aimon111.businterior2",  }
+                },
+				{ //vomit
+                    "Position": { "X": 7, "Y": 4 },
+                    "Layer": "Buildings",
+                    "SetProperties": {   "Action": "Message Aimon111.businterior3",  }
+                },			
+				]
+				},
+	{	
+			"Action": "EditMap",
+			"Target": "Maps/Aimon111.BusInterior_BusInterior",
+			"When": {  "Cleaner Bus": false, },	
+
+			  "MapTiles": [			
+			  { //beer
+                    "Position": { "X": 2, "Y": 5 },
+                    "Layer": "Buildings",
+		  "SetProperties": {   "Action": "Message Aimon111.businterior1",  }
+					},
+				
+		{ //suitcase
+                    "Position": { "X": 5, "Y": 4 },
+                    "Layer": "Buildings",
+                    "SetProperties": {   "Action": "Message Aimon111.businterior2",  }
+                },
+				{ //vomit
+                    "Position": { "X": 7, "Y": 4 },
+                    "Layer": "Buildings",
+                    "SetProperties": {   "Action": "Message Aimon111.businterior3",  }
+                },			
+				]
+				},
+	{	
+			"Action": "EditMap",
+			"Target": "Maps/Aimon111.BusInterior_BusInterior",
+			//"When": { "HasFlag": "ccVault", "Cleaner Bus": false, },		
+			  "MapTiles": [
+				{ //book
+                    "Position": { "X": 17, "Y": 6 },
+                    "Layer": "Buildings",
+                    "SetProperties": {   "Action": "Message Aimon111.businterior4",  }
+                },			
+				]
+				},
+   ]
+}

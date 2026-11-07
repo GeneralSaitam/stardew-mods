@@ -1,0 +1,240 @@
+{
+"Changes": [
+  
+{   
+    "Action": "EditData",
+	"Target": "Data/ConcessionTastes",
+    "Entries": { 
+	"CC_KodaK": {
+	"Name": "CC_KodaK",
+	"LovedTags": [
+		"Apple Slices",
+		"Panzanella Salad",
+		"Hummus Snack Pack",
+		"Jasmine Tea" ,
+		  "Kale Smoothie",
+		  "Salmon Burger",
+		    "Sour Slimes",
+			"Star Cookie",
+			"Stardrop Sorbet"
+	 
+	],
+	"LikedTags": [
+	  "Black Licorice",
+	  "Ice Cream Sandwich",
+	  "Jawbreaker",
+	  "Popcorn",
+	  "Truffle Popcorn"
+	],
+	"DislikedTags": [
+	  "Cappuccino Mousse Cake",
+	  "Chocolate Popcorn",
+	  "Cotton Candy",
+	  "Fries",
+	  "Joja Cola",
+	  "JojaCorn",
+	  "Nachos",
+	  "Personal Pizza",
+	  "Salted Peanuts"
+	]
+  } 
+ }
+},
+{
+			"Action": "EditData",
+			"Target": "Data/MoviesReactions",
+			"Entries": {
+				"Koda": {
+					"NPCName": "Koda",
+					"Reactions": [
+						
+						{   "Tag": "spring_movie_0",
+                          "Response": "like",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {  
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "Oh! I saw this with my brother once!"
+                                          },
+                                "DuringMovie": {
+                                      "ResponsePoint": "sprout_leave",
+                                      "Script": "/message \"(Koda seems really invested in the story.)\"",
+                                      "Text": null
+                                          },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I wonder if the other little saplings grew into good trees.#$b#It'd be cute if there was a forest reunion sequel.$1"
+                                          }
+                               },
+                       "ID": "reaction_1"
+                         },
+		  
+						             {   "Tag": "spring_movie_1",
+                          "Response": "love",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {  
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "A love a good documentary.$1"
+                                          },
+                                "DuringMovie": {
+                                      "ResponsePoint": "spring1_6",
+                                      "Script": "/emote Taro 20",
+                                      "Text": "Great camera work-!$1#$b#Fern Isles represent!$1"
+                                          },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "That was so cool! There was a Stardew Valley AND Fern Isle feature!$1"
+                                          }
+                               },
+                       "ID": "reaction_2"
+                         },
+  
+                      {   "Tag": "summer_movie_1",
+                          "Response": "like",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "My little nephew love Wumpus."
+                                      },
+                                "DuringMovie": {
+                                      "ResponsePoint": "summer1_5",
+                                      "Script": "/message \"(Koda is laughing to herself.)\"",
+                                      "Text": "Would you say Wumpus is a slice-of-life anime?$1"
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I get the appeal, but Wumpus is a little too satirical for me.$1"
+                                          }
+                                    },
+                       "ID": "reaction_3"
+                         },
+
+									
+							{   "Tag": "summer_movie_0",
+                          "Response": "like",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I used to have Journey of the Prairie King on handheld.$1"
+                                      },
+                                "DuringMovie": {
+                                      "ResponsePoint": "PK_villain",
+                                      "Script": "",
+                                      "Text": "The desert is so exotic!"
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "It was cool to see the game scenes filmed in a real location.$1"
+                                          }
+                                     },
+                       "ID": "reaction_4"
+                         },
+                     
+                      {   "Tag": "fall_movie_0",
+                          "Response": "dislike",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "Leah recommended this movie too...#$b#I'm a little nervous.$1"
+                                          },
+                                "DuringMovie": {
+                                      "ResponsePoint": "fall0_5",
+                                      "Script": "/emote Taro 8",
+                                      "Text": "Oh! Okay!$3"
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "It was indeed very mysterious.#$b#I can talk theory with the best of them, but sometimes art is just art."
+                                    }
+                                },
+                          "ID": "reaction_5"
+                                    },
+						{   "Tag": "fall_movie_1",
+                          "Response": "like",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I'm pretty excited...$1#$b#I see now how 'fall' as a season matches the 'spooky' vibe.$1"
+                                          },
+                                "DuringMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "/textAboveHead \"Oh!\"",
+                                      "Text": ""
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "That got a good chill out of me.$1#$b#Now we deserve some hot cocoa.$1"
+                                    }
+                                },
+                          "ID": "reaction_6"
+                                    },
+                      {   "Tag": "winter_movie_1",
+                          "Response": "dislike",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "It's fun to be at the movies, but I don't love romance as a genre."
+                                      },
+                                "DuringMovie": {
+                                      "ResponsePoint": "zuzucityexpress_mind_heart",
+                                      "Script": "emote Koda 28",
+                                      "Text": "Come on..."
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "It wasn't bad, just not my taste.#$b#Older movies tend to be kind of stale."
+                                      }
+                                },
+                            "ID": "reaction_7"
+                                  },
+							{   "Tag": "winter_movie_0",
+                          "Response": "like",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I've heard this movie has some historical basis.$1"
+                                      },
+                                "DuringMovie": {
+                                      "ResponsePoint": "winter0_8",
+                                      "Script": "",
+                                      "Text": "Hmm..."
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I'm not a big fan, but it was cool to see the mythos.#$b#I'll be thinking about it on the 25th.$1"
+                                      }
+                                },
+                            "ID": "reaction_8"
+                                  }
+                      
+                      ],
+               },
+		  }
+  }
+		
+
+]
+}

@@ -1,0 +1,50 @@
+﻿{
+    "Format": "1.23.0",
+    "ConfigSchema": {
+        //Swap Between Pallets
+        "Palette": {
+            "Description": "Allows you to swap between the skin tone palettes",
+            "Default": "Modded",
+            "AllowValues": "Vanilla, Modded, Neutral, Warm, Cool, Prismatic, Pastel"
+        }
+    },
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/skinColors",
+            "FromFile": "assets/default.png",
+            "When": { "Palette": "Modded" }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/skinColors",
+            "FromFile": "assets/Neutral.png",
+            "When": { "Palette": "Neutral" }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/skinColors",
+            "FromFile": "assets/Warm.png",
+            "When": { "Palette": "Warm" }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/skinColors",
+            "FromFile": "assets/Cool.png",
+            "When": { "Palette": "Cool" }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/skinColors",
+            "FromFile": "assets/Prismatic.png",
+            "When": { "Palette": "Prismatic" }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Farmer/skinColors",
+            "FromFile": "assets/Pastel.png",
+            "When": { "Palette": "Pastel" }
+        }
+    ]
+}
+

@@ -1,0 +1,105 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Jessie's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Jessie_Spring, Portraits/Jessie_Summer, Portraits/Jessie_Fall, Portraits/Jessie_Winter, Portraits/Jessie_FlowerDance, Portraits/Jessie_SpiritsEve, Portraits/Jessie_Beach, Characters/Jessie_Spring, Characters/Jessie_Summer, Characters/Jessie_Fall, Characters/Jessie_Winter, Characters/Jessie_FlowerDance, Characters/Jessie_SpiritsEve, Characters/Jessie_Beach, Characters/Jessie_Joja, Portraits/Jessie_Joja",
+			"FromFile": "assets/{{TargetPathOnly}}/Jessie/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Jessie - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Jessie_Spring, Characters/Jessie_Summer, Characters/Jessie_Fall, Characters/Jessie_Winter, Characters/Jessie_FlowerDance, Characters/Jessie_SpiritsEve, Characters/Jessie_Beach, Characters/Jessie_Joja",
+			"FromFile": "assets/{{TargetPathOnly}}/Jessie/Jessie_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Jessie Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": ["Jessie", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.JessieSpring": {
+					"Id": "{{ModId}}.JessieSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Jessie_Spring",
+					"Portrait": "Portraits/Jessie_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.JessieSummer": {
+					"Id": "{{ModId}}.JessieSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Jessie_Summer",
+					"Portrait": "Portraits/Jessie_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JessieFall": {
+					"Id": "{{ModId}}.JessieFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Jessie_Fall",
+					"Portrait": "Portraits/Jessie_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JessieWinter": {
+					"Id": "{{ModId}}.JessieWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Jessie_Winter",
+					"Portrait": "Portraits/Jessie_Winter",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.JessieFlowerDance": {
+					"Id": "{{ModId}}.JessieFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Jessie_FlowerDance",
+					"Portrait": "Portraits/Jessie_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.JessieSpirit": {
+					"Id": "{{ModId}}.JessieSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Jessie_SpiritsEve",
+					"Portrait": "Portraits/Jessie_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.JessieBeach": {
+					"Id": "{{ModId}}.JessieBeach",
+					"Sprite": "Characters/Jessie_Beach",
+					"Portrait": "Portraits/Jessie_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},
+		{
+            "LogName": "Jessie Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Jessie",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+        },	
+	]
+}

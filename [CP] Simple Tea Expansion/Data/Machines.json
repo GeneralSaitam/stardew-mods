@@ -1,0 +1,176 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Dehydrator rules for Floral Tea",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Dehydrator",
+                "OutputRules"
+            ],
+            "When": {"Floral Tea Toggle": true},
+            "Priority": "Early",
+            "Entries": {
+                "{{ModId}}_FloralTea": {
+                    "Id": "{{ModId}}_FloralTea",
+                    "Triggers": [
+                        {   
+                            "Id": "ItemPlacedInMachine",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": null,
+                            "RequiredTags": [
+                              "category_flowers"
+                            ],
+                            "RequiredCount": 5,
+                            "Condition": null
+                          }
+                    ],
+
+                    "OutputItem": [
+                        {
+                        "Id": "(O){{ModId}}_FloralTea",
+                        "ItemId": "(O){{ModId}}_FloralTea",
+                        "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME {{i18n:FloralTea_Name2}}",
+                        "ObjectInternalName": "{0}Tea",
+                        "PreserveId": "DROP_IN",
+                            "MinStack": 1,
+                            "CopyQuality": true,
+                            "CopyPrice": true,
+                            "CopyColor": true,
+                            "PriceModifierMode": "Stack",
+                            "PriceModifiers": [
+                                {
+                                    "Modification": "Multiply",
+                                    "Amount": 8
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 180,
+                    "InvalidCountMessage": "{{i18n:FloralTea_Error}}"
+                }
+            }
+        },
+        {
+                    "LogName": "Add Dehydrator rules for Black Tea",
+                    "Action": "EditData",
+                    "Target": "Data/Machines",
+                    "TargetField": [
+                        "(BC)Dehydrator",
+                        "OutputRules"
+                    ],
+                    "Entries": {               
+                "815": {
+                    "Id": "815",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)815",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "{{ModId}}_BlackTea",
+                            "ItemId": "(O){{ModId}}_BlackTea",
+                            "MinStack": 1,
+                            "CopyQuality": true,
+                            "CopyPrice": true,
+                            "PriceModifiers": [
+                                {
+                                    "Modification": "Multiply",
+                                    "Amount": 1.25
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 720
+                }
+            }
+
+        },
+        {
+            "LogName": "Add Cask rule for Tea",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)163",
+                "OutputRules"
+            ],
+            "Entries": {
+                "815": {
+                    "Id": "815",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)815",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        
+                        {
+                            "Id": "(O){{ModId}}_DarkTea",
+                            "ItemId": "(O){{ModId}}_DarkTea",
+                            "MinStack": 1
+                        }
+                    ],
+                    "DaysUntilReady": 7
+                },
+            "{{ModId}}_DarkTea": {
+                "Id": "{{ModId}}_DarkTea",
+                "ItemId": "{{ModId}}_DarkTea",
+                    "Triggers": [
+                      {
+                        "Id": "ItemPlacedInMachine",
+                        "Trigger": "ItemPlacedInMachine",
+                        "RequiredItemId": "(O){{ModId}}_DarkTea",
+                        "RequiredTags": null,
+                        "RequiredCount": 1,
+                        "Condition": null
+                      }
+                    ],
+                    "UseFirstValidOutput": false,
+                    "OutputItem": [
+                      {
+                        "CustomData": {
+                          "AgingMultiplier": "4"
+                        },
+                        "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+                        "CopyColor": false,
+                        "CopyPrice": false,
+                        "CopyQuality": false,
+                        "PreserveType": null,
+                        "PreserveId": null,
+                        "IncrementMachineParentSheetIndex": 0,
+                        "PriceModifiers": null,
+                        "PriceModifierMode": "Stack",
+                        "Condition": null,
+                        "Id": "Default",
+                        "ItemId": null,
+                        "RandomItemId": null,
+                        "MaxItems": null,
+                        "MinStack": -1,
+                        "MaxStack": -1,
+                        "Quality": -1,
+                        "ObjectInternalName": null,
+                        "ObjectDisplayName": null,
+                        "ToolUpgradeLevel": -1,
+                        "IsRecipe": false,
+                        "StackModifiers": null,
+                        "StackModifierMode": "Stack",
+                        "QualityModifiers": null,
+                        "QualityModifierMode": "Stack",
+                        "ModData": null,
+                        "PerItemCondition": null
+                      }
+                    ],
+                    "MinutesUntilReady": -1,
+                    "DaysUntilReady": -1,
+                    "InvalidCountMessage": null,
+                    "RecalculateOnCollect": false
+                  }
+            }
+        }
+    ]
+}

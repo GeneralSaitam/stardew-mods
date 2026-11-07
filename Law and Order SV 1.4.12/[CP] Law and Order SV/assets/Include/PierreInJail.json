@@ -1,0 +1,306 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Pierre": {
+                    "CanVisitIsland":"False"
+                }
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/sdvhead.LawAndOrderSV_PierreWarpRoom",
+            "MapProperties": {
+                "Warp":"2 9 sdvhead.LawAndOrderSV_Jail 18 5",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/sdvhead.LawAndOrderSV_PierreWarpRoom",
+            "MapProperties": {
+                "Warp":"2 9 SeedShop 11 18",
+            },
+            "When":{
+                "Season": "Spring",
+                "Day": "15"
+            }
+        },
+        {
+            "LogName": "Pierre Prison Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Pierre",
+            "Entries": {
+                "spring": "610 sdvhead.LawAndOrderSV_Jail 18 5 1 Pierre_sdvlao_snooze \"Strings\\schedules\\Pierre:sdvlao_snooze\"/830 sdvhead.LawAndOrderSV_Jail 13 6 2 square_5_3/2200 sdvhead.LawAndOrderSV_Jail 18 5 1 pierre_sleep",
+                "summer": "GOTO spring",
+                "fall": "GOTO spring",
+                "winter": "GOTO spring",
+                "rain": "GOTO spring",
+                "GreenRain": "GOTO spring",
+                "Fri": "GOTO spring",
+                "Mon": "GOTO spring",
+                "Tue": "GOTO spring",
+                "Wed": "GOTO spring",
+                "14": "GOTO spring",
+                "28": "GOTO spring",
+            },
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Pierre",
+            "Entries": {
+                "22":"GOTO spring",
+                "FlashShifter.StardewValleyExpandedCP_CommunityDay":"GOTO spring",
+            },
+           "Update": "OnLocationChange",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        //Dialogue, conversation topic changes
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pierre",
+            "Entries": {
+                "{{ModId}}_PierreInJail":"{{i18n:PierreInJail_Pierre}}",
+                "GreenRain_2": "{{i18n:LAOSV_PierreAlt_GreenRain_2}}",
+                "married": "{{i18n:LAOSV_PierreAlt_married}}",
+                "married_Abigail_memory_oneday": "{{i18n:LAOSV_PierreAlt_married_Abigail_memory_oneday}}",
+                "MovieInvitation": "{{i18n:LAOSV_PierreAlt_MovieInvitation}}",
+                "Mon": "{{i18n:LAOSV_PierreAlt_Mon}}",
+                "Mon_inlaw_Abigail": "{{i18n:LAOSV_PierreAlt_Mon_inlaw_Abigail}}",
+                "Mon4": "{{i18n:LAOSV_PierreAlt_Mon4}}",
+                "Mon4_inlaw_Abigail": "{{i18n:LAOSV_PierreAlt_Mon4_inlaw_Abigail}}",
+                "Tue": "{{i18n:LAOSV_PierreAlt_Tue}}",
+                "Tue6": "{{i18n:LAOSV_PierreAlt_Tue6}}",
+                "Wed": "{{i18n:LAOSV_PierreAlt_Wed}}",
+                "Wed4": "{{i18n:LAOSV_PierreAlt_Wed4}}",
+                "Thu": "{{i18n:LAOSV_PierreAlt_Thu}}",
+                "Thu2": "{{i18n:LAOSV_PierreAlt_Thu2}}",
+                "Thu8": "{{i18n:LAOSV_PierreAlt_Thu8}}",
+                "Fri": "{{i18n:LAOSV_PierreAlt_Fri}}",
+                "Sat": "{{i18n:LAOSV_PierreAlt_Sat}}",
+                "Sat8": "{{i18n:LAOSV_PierreAlt_Sat8}}",
+                "Sun": "{{i18n:LAOSV_PierreAlt_Sun}}",
+                "Wed6": "{{i18n:LAOSV_PierreAlt_Wed6}}",
+                "Thu4": "{{i18n:LAOSV_PierreAlt_Thu4}}",
+                "summer_Mon": "{{i18n:LAOSV_PierreAlt_summer_Mon}}",
+                "summer_Wed": "{{i18n:LAOSV_PierreAlt_summer_Wed}}",
+                "summer_Wed2": "{{i18n:LAOSV_PierreAlt_summer_Wed2}}",
+                "summer_Thu": "{{i18n:LAOSV_PierreAlt_summer_Thu}}",
+                "summer_Fri": "{{i18n:LAOSV_PierreAlt_summer_Fri}}",
+                "summer_Sat": "{{i18n:LAOSV_PierreAlt_summer_Sat}}",
+                "summer_Sun": "{{i18n:LAOSV_PierreAlt_summer_Sun}}",
+                "winter_Mon": "{{i18n:LAOSV_PierreAlt_winter_Mon}}",
+                "winter_Wed": "{{i18n:LAOSV_PierreAlt_winter_Wed}}",
+                "winter_Thu": "{{i18n:LAOSV_PierreAlt_winter_Thu}}",
+                "winter_Fri": "{{i18n:LAOSV_PierreAlt_winter_Fri}}",
+                "winter_Sat": "{{i18n:LAOSV_PierreAlt_winter_Sat}}",
+                "winter_Sun": "{{i18n:LAOSV_PierreAlt_winter_Sun}}",
+                "fall_Mon": "{{i18n:LAOSV_PierreAlt_fall_Mon}}",
+                "fall_Thu": "{{i18n:LAOSV_PierreAlt_fall_Thu}}",
+                "fall_Fri": "{{i18n:LAOSV_PierreAlt_fall_Fri}}",
+                "fall_Sat": "{{i18n:LAOSV_PierreAlt_fall_Sat}}",
+                "fall_Sun": "{{i18n:LAOSV_PierreAlt_fall_Sun}}",
+                "Fair_Judging": "{{i18n:LAOSV_PierreAlt_Fair_Judging}}",
+                "Fair_Judged_PlayerLost": "{{i18n:LAOSV_PierreAlt_Fair_Judged_PlayerLost}}",
+                "Fair_Judged_PlayerWon": "{{i18n:LAOSV_PierreAlt_Fair_Judged_PlayerWon}}",
+            }
+          },
+          {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+              "Pierre":"{{i18n:LAOSV_PierreAlt_rain}}",
+            },
+          },
+          {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Caroline",
+            "Entries": {
+                "{{ModId}}_PierreInJail":"{{i18n:PierreInJail_Caroline}}"
+            }
+          },
+          {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries": {
+                "{{ModId}}_PierreInJail":"{{i18n:PierreInJail_Abigail}}"
+            }
+          },
+          {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "Entries": {
+                "{{ModId}}_PierreInJail":"{{i18n:PierreInJail_Gus}}"
+            }
+          },
+
+
+        //festivals
+        { //egg hunt
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Pierre": "{{i18n:LAOSV_festivals.pierre.spring13}}",
+                "Pierre_y2": "{{i18n:LAOSV_festivals.pierre.spring13.y2}}",
+            },
+        },
+        { //luau
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Pierre": "{{i18n:LAOSV_festivals.pierre.summer11}}",
+                "Pierre_y2": "{{i18n:LAOSV_festivals.pierre.summer11.y2}}",
+            },
+        },
+        { //jellies
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Pierre": "{{i18n:LAOSV_festivals.pierre.summer28}}",
+                "Pierre_y2": "{{i18n:LAOSV_festivals.pierre.summer28.y2}}",
+            },
+        },
+        { //fair
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "Pierre": "{{i18n:LAOSV_festivals.pierre.fall16}}",
+                "Pierre_y2": "{{i18n:LAOSV_festivals.pierre.fall16.y2}}",
+                "Caroline": "{{i18n:LAOSV_festivals.caroline.fall16}}",
+                "Caroline_y2": "{{i18n:LAOSV_festivals.caroline.fall16.y2}}",
+                "Marnie": "{{i18n:LAOSV_festivals.marnie.fall16}}",
+            },
+        },
+        { //spirits eve
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "Pierre": "{{i18n:LAOSV_festivals.pierre.fall27}}",
+                "Pierre_y2": "{{i18n:LAOSV_festivals.pierre.fall27.y2}}",
+            },
+        },
+        { //winter star
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "Pierre": "{{i18n:LAOSV_festivals.pierre.winter25}}",
+                "Pierre_y2": "{{i18n:LAOSV_festivals.pierre.winter25.y2}}",
+            },
+        },
+
+
+        {
+            "LogName": "Caroline Schedule Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Caroline",
+            "Entries": {
+              "{{ModId}}_nightmarket": "{{i18n: Caroline_nightmarket}}",
+            }
+        },
+        {
+            "LogName": "Abigail Schedule Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Abigail",
+            "Entries": {
+              "{{ModId}}_sundayhide": "{{i18n: Abigail_sundayhide}}",
+            }
+        },
+        {
+            "LogName": "Caroline Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Caroline",
+            "Entries": {
+                "spring": "730 SeedShop 4 17 2/2100 SeedShop 25 4 1 caroline_sleep",
+                "rain":"GOTO spring",
+                "Wed":"GOTO spring",
+                "Fri":"GOTO spring",
+                "Sat":"GOTO spring",
+                "Sun":"GOTO spring",
+                "14":"GOTO spring",
+                "22":"GOTO spring",
+                "28":"GOTO spring",
+                "winter_10":"GOTO spring",
+                "winter_3":"GOTO spring",
+                "fall_25":"GOTO spring",
+                "winter_16": "730 SeedShop 4 17 2/1600 Beach 24 32 3 \"Strings\\schedules\\Caroline:{{ModId}}_nightmarket\"/2330 SeedShop 25 4 1 caroline_sleep",
+            }
+        },
+        {
+            "LogName": "Susan Schedule Strings (SVE only)",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Susan",
+            "Entries": {
+              "JojaDay2_Susan": "{{i18n: JojaDay2_Susan}}",
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+              }
+        },
+        {
+            "LogName": "Susan Dialogue (SVE only)",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Susan",
+            "Entries": {
+              "SeedShop_14_20": "{{i18n: Susan_SeedShop_14_20}}",
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+              }
+        },
+       
+        {
+            "LogName": "Abigail Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Abigail",
+            "Entries": {
+                "Sun": "900 SeedShop 4 5 0/1010 SeedShop 2 17 1 \"Strings\\schedules\\Abigail:{{ModId}}_sundayhide\"/1300 Forest 14 40 2/2000 SeedShop 1 9 3 abigail_sleep",
+                "Tue":"730 SeedShop 4 17 2/1930 SeedShop 1 9 3 abigail_sleep",
+            }
+        },
+
+        {
+            "LogName": "Seed Shop changes",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Fields": {
+                "SeedShop": {
+                    "Owners": [
+                        {
+                            "Name": "Caroline",
+                            "Id": "Caroline",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_CarolineShopDialogue",
+                                    "Dialogue": "{{i18n:LAOSV_Caroline_ShopDialogue}}"
+                                },
+                            ]
+                        },
+                        {
+                            "Name": "Abigail",
+                            "Id": "Abigail",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_AbigailShopDialogue",
+                                    "Dialogue": "{{i18n:LAOSV_Abigail_ShopDialogue}}"
+                                },
+                            ]
+                        }
+                    ],
+                }
+            }
+        },
+
+        {
+            // Update Pierre's 'friendship' mail item (cash back rewards program)
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "Pierre": "{{i18n:LAOSV_PierreMail_Body}} %item money 2500 6010  %%[#]{{i18n:LAOSV_PierreMail_Title}}",
+            },
+        },
+    ]
+}

@@ -1,0 +1,792 @@
+{
+"Changes": [
+{
+"Action": "EditData",
+"Target": "Data/Shops",
+"Entries": {
+"{{ModID}}_PlantShop": {
+"Owners": [
+{
+"Name": "None",
+"Dialogues": [
+{
+"Id": "{{ModID}}_Spring",
+ "Condition": "SEASON Spring",
+"Dialogue": "{{i18n:FC.Open.Spring}}"
+},
+{
+"Id": "{{ModID}}_Summer",
+ "Condition": "SEASON Summer",
+"Dialogue": "{{i18n:FC.Open.Summer}}"
+},
+ {
+"Id": "{{ModID}}_Fall",
+ "Condition": "SEASON Fall",
+"Dialogue": "{{i18n:FC.Open.Fall}}"
+},
+{
+"Id": "{{ModID}}_Winter",
+"Condition": "SEASON Winter",
+"Dialogue": "{{i18n:FC.Open.Winter}}"
+}
+],
+},
+],
+"Items": [
+	{
+"Id": "{{ModID}}_ArcanianRecipeBookLearn",
+"ItemId": "(O){{ModID}}_ArcanianRecipeBookLearn",
+"Price": 2500,
+"Condition": "PLAYER_FARMING_LEVEL Current 8 10"
+},
+{
+"Id": "{{ModID}}_FeedingPath",
+"ItemId": "{{ModID}}_FeedingPath",
+"Price": 20,
+"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_ArcanianAnimals.Mail",
+},
+{
+"Id": "{{ModID}}_CarnivoreFeed",
+"ItemId": "{{ModID}}_CarnivoreFeed",
+"Price": 100,
+"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_ArcanianAnimals.Mail",
+},
+{
+"Id": "{{ModID}}_CarnivoreHopper",
+"ItemId": "{{ModID}}_CarnivoreHopper",
+"Price": 250,
+"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_ArcanianAnimals.Mail",
+},
+{
+"Id": "{{ModID}}_TropicalIncubator",
+"ItemId": "{{ModID}}_TropicalIncubator",
+"Price": 1500,
+"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_ArcanianAnimals.Mail",
+
+},
+{
+"Id": "{{ModID}}_WarpRootSeeds",
+"ItemId": "(O){{ModID}}_WarpRootSeeds",
+"Condition": "SEASON winter",
+"Price": 130, 
+},
+{
+"Id": "{{ModID}}_GaggleShroomSeeds",
+"ItemId": "(O){{ModID}}_GaggleShroomSeeds",
+"Condition": "SEASON fall",
+"Price": 140, 
+},
+{
+"Id": "{{ModID}}_AdauulaStalkSeeds",
+"ItemId": "(O){{ModID}}_AdauulaStalkSeeds",
+"Condition": "SEASON spring",
+"Price": 150, 
+},
+{
+"Id": "{{ModID}}_DragaTonguulaSeeds",
+"ItemId": "(O){{ModID}}_DragaTonguulaSeeds",
+"Condition": "SEASON summer",
+"Price": 175,
+},
+////Unlockables
+{
+"Id": "{{ModID}}_DarkTuuphSeeds",
+"ItemId": "(O){{ModID}}_DarkTuuphSeeds",
+"Condition": "SEASON spring" ,
+"Price": 120,
+},
+{
+"Id": "{{ModID}}_DragaClawtusSeeds",
+"ItemId": "(O){{ModID}}_DragaClawtusSeeds",
+"Condition": "SEASON fall",
+"Price": 160,
+},
+{
+"Id": "{{ModID}}_GruutehRootSeeds",
+"ItemId": "(O){{ModID}}_GruutehRootSeeds",
+"Condition": "SEASON fall",
+"Price": 125,
+},
+{
+"Id": "{{ModID}}_WhoruuFlowerSeeds",
+"ItemId": "(O){{ModID}}_WhoruuFlowerSeeds",
+"Condition": "SEASON spring",
+"Price": 125,
+},
+ {
+"Id": "{{ModID}}_StoneFlowerSeeds",
+"ItemId": "(O){{ModID}}_StoneFlowerSeeds",
+"Condition": "SEASON fall",
+"Price": 185,
+},
+{
+"Id": "{{ModID}}_PuuffanSeeds",
+"ItemId": "(O){{ModID}}_PuuffanSeeds",
+"Condition": "SEASON winter",
+"Price": 150,
+},
+{
+"Id": "{{ModID}}_MandkinSeeds",
+"ItemId": "(O){{ModID}}_MandkinSeeds",
+"Condition": "SEASON fall",
+"Price": 120,
+},
+{
+"Id": "{{ModID}}_MuuaiFlowerSeeds",
+"ItemId": "(O){{ModID}}_MuuaiFlowerSeeds",
+"Condition": "SEASON summer",
+"Price": 150,
+},
+{
+"Id": "{{ModID}}_SeageSeeds",
+"ItemId": "(O){{ModID}}_SeageSeeds",
+"Condition": "SEASON spring",
+"Price": 220,
+},
+{
+"Id": "{{ModID}}_TopachuSeeds",
+"ItemId": "(O){{ModID}}_TopachuSeeds",
+"Condition": "SEASON winter",
+"Price": 210,
+},
+{
+"Id": "{{ModID}}_PyrrhusBerrySeeds",
+"ItemId": "(O){{ModID}}_PyrrhusBerrySeeds",
+"Condition": "SEASON summer",
+"Price": 175,
+},
+{
+"Id": "{{ModID}}_LunonareFlowerSeeds",
+"ItemId": "(O){{ModID}}_LunonareFlowerSeeds",
+"Condition": "SEASON summer",
+"Price": 155,
+},
+{
+"Id": "{{ModID}}_JoluuSpearouusSeeds",
+"ItemId": "(O){{ModID}}_JoluuSpearouusSeeds",
+"Condition": "SEASON spring",
+"Price": 145,
+},
+{
+"Id": "{{ModID}}_MeekSeed",
+"ItemId": "(O){{ModID}}_MeekSeed",
+"Condition": "SEASON summer",
+"Price": 120,
+},
+{
+"Id": "{{ModID}}_HeaviousSeed",
+"ItemId": "(O){{ModID}}_HeaviousSeed",
+"Condition": "SEASON winter",
+"Price": 145,
+},
+{
+"Id": "{{ModID}}_BuurkTreeSeed",
+"ItemId": "(O){{ModID}}_BuurkTreeSeed",
+"Condition": "SEASON spring",
+"Price": 165,
+},
+{
+"Id": "{{ModID}}_ReuuSeed",
+"ItemId": "(O){{ModID}}_ReuuSeed",
+"Condition": "SEASON fall",
+"Price": 185,
+},
+{
+"Id": "{{ModID}}_TropaSeed",
+"ItemId": "(O){{ModID}}_TropaSeed",
+"Condition": "SEASON winter",
+"Price": 225,
+},
+{
+"Id": "{{ModID}}_CarnivorousTreeSeed",
+"ItemId": "(O){{ModID}}_CarnivorousTreeSeed",
+"Condition": "SEASON winter",
+"Price": 125,
+},
+{
+"Id": "{{ModID}}_BoneyHeadedGraveFish",
+"ItemId": "{{ModID}}_BoneyHeadedGraveFish",
+"Price": 1000,
+"Condition": "RANDOM 0.01",
+},
+{
+"Id": "{{ModID}}_LeechFish",
+"ItemId": "{{ModID}}_LeechFish",
+"Price": 55,
+"Condition": "RANDOM 0.02",
+},
+{
+"Id": "{{ModID}}_GulpFish",
+"ItemId": "{{ModID}}_GulpFish",
+"Price": 60,
+"Condition": "RANDOM 0.10",
+},
+{
+"Id": "{{ModID}}_DancerFish",
+"ItemId": "{{ModID}}_DancerFish",
+"Price": 60,
+"Condition": "RANDOM 0.25",
+},
+{
+"Id": "{{ModID}}_IficusFish",
+"ItemId": "{{ModID}}_IficusFish",
+"Price": 50,
+"Condition": "RANDOM 0.30",
+},
+{
+"Id": "{{ModID}}_RiverBedJelly",
+"ItemId": "{{ModID}}_RiverBedJelly",
+"Price": 80,
+"Condition": "RANDOM 0.15",
+},
+{
+"Id": "{{ModID}}_GraveCrab",
+"ItemId": "{{ModID}}_GraveCrab",
+"Price": 5,
+"Condition": "RANDOM 0.40",
+},
+{
+"Id": "{{ModID}}_SharkFish",
+"ItemId": "{{ModID}}_SharkFish",
+"Price": 270,
+"Condition": "RANDOM 0.20",
+},
+{
+"Id": "{{ModID}}_SwampFish",
+"ItemId": "{{ModID}}_SwampFish",
+"Price": 120,
+"Condition": "RANDOM 0.16",
+},
+{
+"Id": "{{ModID}}_PufferCousin",
+"ItemId": "{{ModID}}_PufferCousin",
+"Price": 150,
+"Condition": "RANDOM 0.5",
+},
+{
+"Id": "{{ModID}}_ArcaAxolPink",
+"ItemId": "{{ModID}}_ArcaAxolPink",
+"Price": 170,
+"Condition": "RANDOM 0.2",
+},
+{
+"Id": "{{ModID}}_ArcaAxolBlue",
+"ItemId": "{{ModID}}_ArcaAxolBlue",
+"Price": 170,
+"Condition": "RANDOM 0.2",
+},
+{
+"Id": "{{ModID}}_SpikedSeaHorse",
+"ItemId": "{{ModID}}_SpikedSeaHorse",
+"Price": 270,
+"Condition": "RANDOM 0.6",
+},
+{
+"Id": "{{ModID}}_ShelledSquid",
+"ItemId": "{{ModID}}_ShelledSquid",
+"Price": 150,
+"Condition": "RANDOM 0.03",
+},
+{
+"Id": "{{ModID}}_GummigusFish",
+"ItemId": "{{ModID}}_GummigusFish",
+"Price": 300,
+"Condition": "RANDOM 0.04",
+},
+{
+"Id": "{{ModID}}_SeaSnake",
+"ItemId": "{{ModID}}_SeaSnake",
+"Price": 210,
+"Condition": "RANDOM 0.10",
+},
+{
+"Id": "{{ModID}}_UncleCrimson",
+"ItemId": "{{ModID}}_UncleCrimson",
+"Price": 400,
+"Condition": "RANDOM 0.02",
+},
+{
+"Id": "{{ModID}}_ArcanianFeatherStar",
+"ItemId": "{{ModID}}_ArcanianFeatherStar",
+"Price": 160,
+"Condition": "RANDOM 0.5",
+},
+{
+"Id": "{{ModID}}_WoodpeckerBarnacle",
+"ItemId": "{{ModID}}_WoodpeckerBarnacle",
+"Price": 35,
+"Condition": "RANDOM 0.6",
+},
+{
+"Id": "{{ModID}}_WoodwindFish",
+"ItemId": "{{ModID}}_WoodwindFish",
+"Price": 260,
+"Condition": "RANDOM 0.7",
+},
+{
+"Id": "{{ModID}}_WallDividerR",
+"ItemId": "{{ModID}}_WallDividerR",
+"Price": 50,
+},
+{
+"Id": "{{ModID}}_WallDividerC",
+"ItemId": "{{ModID}}_WallDividerC",
+"Price": 50,
+},
+{
+"Id": "{{ModID}}_WallDividerL",
+"ItemId": "{{ModID}}_WallDividerL",
+"Price": 50,
+},
+{
+"Id": "{{ModID}}_WallDividerCornerL",
+"ItemId": "{{ModID}}_WallDividerCornerL",
+"Price": 50,
+},
+{
+"Id": "{{ModID}}_WallDividerCornerR",
+"ItemId": "{{ModID}}_WallDividerCornerR",
+"Price": 50,
+},
+{
+"Id": "{{ModID}}_WallDividerTop",
+"ItemId": "{{ModID}}_WallDividerTop",
+"Price": 50,
+},
+{
+"Id": "{{ModID}}_WallDividerMiddle",
+"ItemId": "{{ModID}}_WallDividerMiddle",
+"Price": 50,
+},
+{
+"Id": "{{ModID}}_WallDividerBottom",
+"ItemId": "{{ModID}}_WallDividerBottom",
+"Price": 50,
+},
+{
+"Id": "{{ModID}}_WallDividerCornerBottomR",
+"ItemId": "{{ModID}}_WallDividerCornerBottomR",
+"Price": 50,
+},
+{
+"Id": "{{ModID}}_WallDividerCornerBottomL",
+"ItemId": "{{ModID}}_WallDividerCornerBottomL",
+"Price": 50,
+},
+{
+"AvaliableStock":4,
+"Price": 350,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture1",
+"RandomItemId":[
+"{{ModID}}_HeaviousChair",
+"{{ModID}}_ReuuChair",
+"{{ModID}}_MeekChair",
+"{{ModID}}_BuurkChair",
+"{{ModID}}_TropaChair",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 1000,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture2",
+"RandomItemId":[
+"{{ModID}}_HeaviousArmChair",
+"{{ModID}}_ReuuArmChair",
+"{{ModID}}_MeekArmChair",
+"{{ModID}}_BuurkArmChair",
+"{{ModID}}_TropaArmChair",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 1000,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture3",
+"RandomItemId":[
+"{{ModID}}_HeaviousHighChair",
+"{{ModID}}_ReuuHighChair",
+"{{ModID}}_MeekHighChair",
+"{{ModID}}_BuurkHighChair",
+"{{ModID}}_TropaHighChair",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 1750,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture4",
+"RandomItemId":[
+"{{ModID}}_HeaviousSofa",
+"{{ModID}}_ReuuSofa",
+"{{ModID}}_MeekSofa",
+"{{ModID}}_BuurkSofa",
+"{{ModID}}_TropaSofa",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 3500,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture5",
+"RandomItemId":[
+"{{ModID}}_HeaviousTable",
+"{{ModID}}_ReuuTable",
+"{{ModID}}_MeekTable",
+"{{ModID}}_BuurkTable",
+"{{ModID}}_TropaTable",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 750,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture6",
+"RandomItemId":[
+"{{ModID}}_HeaviousEndTable",
+"{{ModID}}_ReuuEndTable",
+"{{ModID}}_MeekEndTable",
+"{{ModID}}_BuurkEndTable",
+"{{ModID}}_TropaEndTable",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 1600,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture7",
+"RandomItemId":[
+"{{ModID}}_HeaviousLongTable",
+"{{ModID}}_ReuuLongTable",
+"{{ModID}}_MeekLongTable",
+"{{ModID}}_BuurkLongTable",
+"{{ModID}}_TropaLongTable",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 500,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture8",
+"RandomItemId":[
+"{{ModID}}_HeaviousLight",
+"{{ModID}}_ReuuLight",
+"{{ModID}}_MeekLight",
+"{{ModID}}_BuurkLight",
+"{{ModID}}_TropaLight",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 333,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture9",
+"RandomItemId":[
+"{{ModID}}_HeaviousStool",
+"{{ModID}}_ReuuStool",
+"{{ModID}}_MeekStool",
+"{{ModID}}_BuurkStool",
+"{{ModID}}_TropaStool",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 2000,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture10",
+"RandomItemId":[
+"{{ModID}}_HeaviousBed",
+"{{ModID}}_ReuuBed",
+"{{ModID}}_MeekBed",
+"{{ModID}}_BuurkBed",
+"{{ModID}}_TropaBed",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 3000,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture11",
+"RandomItemId":[
+"{{ModID}}_HeaviousDoubleBed",
+"{{ModID}}_ReuuDoubleBed",
+"{{ModID}}_MeekDoubleBed",
+"{{ModID}}_BuurkDoubleBed",
+"{{ModID}}_TropaDoubleBed",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 1000,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture12",
+"RandomItemId":[
+"{{ModID}}_HeaviousKidsBed",
+"{{ModID}}_ReuuKidsBed",
+"{{ModID}}_MeekKidsBed",
+"{{ModID}}_BuurkKidsBed",
+"{{ModID}}_TropaKidsBed",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 200,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture13",
+"RandomItemId":[
+"{{ModID}}_ArcanianRug",
+"{{ModID}}_ArcanianFlag",
+"{{ModID}}_WallDivider0",
+"{{ModID}}_WallDivider1",
+"{{ModID}}_ArcanianFireplace",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 150,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture14",
+"RandomItemId":[
+"{{ModID}}_HeaviousSmallMirror",
+"{{ModID}}_MeekSmallMirror",
+"{{ModID}}_ReuuSmallMirror",
+"{{ModID}}_BuurkSmallMirror",
+"{{ModID}}_TropaSmallMirror",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 250,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture15",
+"RandomItemId":[
+"{{ModID}}_HeaviousLongMirror",
+"{{ModID}}_MeekLongMirror",
+"{{ModID}}_ReuuLongMirror",
+"{{ModID}}_BuurkSmallMirror",
+"{{ModID}}_TropaSmallMirror",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 350,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture16",
+"RandomItemId":[
+"{{ModID}}_HeaviousWallMirror",
+"{{ModID}}_MeekWallMirror",
+"{{ModID}}_ReuuWallMirror",
+"{{ModID}}_BuurkWideMirror",
+"{{ModID}}_TropaWideMirror",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 600,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture17",
+"RandomItemId":[
+"{{ModID}}_HeaviousWideMirror",
+"{{ModID}}_MeekWideMirror",
+"{{ModID}}_ReuuWideMirror",
+"{{ModID}}_BuurkWideMirror",
+"{{ModID}}_TropaWideMirror",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 350,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture18",
+"RandomItemId":[
+"{{ModID}}_Bathtub",
+"{{ModID}}_HeaviousSink",
+"{{ModID}}_ReuuSink",
+"{{ModID}}_BuurkSink",
+"{{ModID}}_TropaSink",
+"{{ModID}}_Toliet0",
+"{{ModID}}_WasherDrierCombo",
+"{{ModID}}_Washer",
+"{{ModID}}_Drier",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 1000,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture19",
+"RandomItemId":[
+"{{ModID}}_ChildernsPlayHouse",
+"{{ModID}}_ChildernsCookStation",
+"{{ModID}}_BigCar",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 350,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture20",
+"RandomItemId":[
+"{{ModID}}_SmallTruck",
+"{{ModID}}_SmallCar",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 1450,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture21",
+"RandomItemId":[
+"{{ModID}}_PinkShroomTable",
+"{{ModID}}_RedShroomTable",
+"{{ModID}}_PurpleShroomTable",
+"{{ModID}}_BlueShroomTable",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 850,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture22",
+"RandomItemId":[
+"{{ModID}}_PinkShroomStool",
+"{{ModID}}_RedShroomStool",
+"{{ModID}}_PurpleShroomStool",
+"{{ModID}}_BlueShroomStool",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 1350,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture23",
+"RandomItemId":[
+"{{ModID}}_Fort",
+"{{ModID}}_Bike",
+"{{ModID}}_MiniPiano",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 1350,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture24",
+"RandomItemId":[
+"{{ModID}}_BlueChungus",
+"{{ModID}}_PurpleChungus",
+"{{ModID}}_PinkChungus",
+"{{ModID}}_RedChungus",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 150,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture25",
+"RandomItemId":[
+"{{ModID}}_JinxDoll",
+"{{ModID}}_PopDoll",
+"{{ModID}}_JinglesDoll",
+"{{ModID}}_SunshineDoll",
+]
+},
+{
+"AvaliableStock":4,
+"Price": 350,
+"AvailableStockLimit":"2",
+"Id": "{{ModID}}_Furniture26",
+"RandomItemId":[
+"{{ModID}}_PottedSaxifraga",
+"{{ModID}}_PottedLunanosa",
+"{{ModID}}_PottedPutrilium",
+"{{ModID}}_PottedLunonare",
+"{{ModID}}_PottedAdauula",
+"{{ModID}}_PottedDarkTuuph",
+"{{ModID}}_PottedBloodRose",
+"{{ModID}}_PottedDolily",
+"{{ModID}}_PottedObscura",
+"{{ModID}}_PottedPuuffan",
+"{{ModID}}_PottedToxalure",
+"{{ModID}}_PottedVenura",
+"{{ModID}}_PottedRhusCup",
+"{{ModID}}_PottedRexamil",
+"{{ModID}}_PottedRexamo",
+"{{ModID}}_PottedGlowPoxi",
+"{{ModID}}_PottedTwinRoses",
+"{{ModID}}_PottedLavendarBush",
+"{{ModID}}_PottedPoppyCactus",
+"{{ModID}}_PottedBabyAloe",
+"{{ModID}}_DragaTonuge",
+"{{ModID}}_PottedJoluu",
+"{{ModID}}_PottedTropaTree",
+]
+},
+]
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/Shops",
+"Entries": {
+"{{ModID}}_PetShop": {
+"Owners": [
+{
+"Name": "None",
+"Dialogues": [
+],
+},
+],
+"Items": [
+{
+"Price": 2000,
+"Id": "{{ModID}}_ArcanianDog",
+"ItemId": "mushymato.LivestockBazaar_PET_ADOPTION {{ModID}}_ArcanianDog T true true",
+},
+{
+"Price": 1000,
+"Id": "{{ModID}}_Shevit",
+"ItemId": "mushymato.LivestockBazaar_PET_ADOPTION {{ModID}}_Shevit T true true",
+},
+{
+"Price": 3000,
+"Id": "{{ModID}}_GuineaDog",
+"ItemId": "mushymato.LivestockBazaar_PET_ADOPTION {{ModID}}_GuineaDog T true true",
+},
+{
+"Price": 3000,
+"Id": "{{ModID}}_Miniphant",
+"ItemId": "mushymato.LivestockBazaar_PET_ADOPTION {{ModID}}_Miniphant T true true",
+},
+]
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "mushymato.LivestockBazaar/Shops",
+"Entries": {
+"{{ModID}}_PlantShop": {
+"ShopId": "{{ModID}}_PlantShop",
+"PetShopId": "{{ModID}}_PetShop",
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "spacechase0.SpaceCore/FurnitureExtensionData",
+"Entries": {
+"{{ModID}}_PlantShop": {
+"TileProperties": {
+"0, 0": {
+"Buildings": {
+ "Action": "mushymato.LivestockBazaar_Shop {{ModID}}_PlantShop none",
+}
+}
+}
+}
+}
+},
+]
+}

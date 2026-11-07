@@ -1,0 +1,229 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/Quests",
+            "Entries":{
+                "162791":"Basic/{{i18n:Miihau.PennyEE.quest.001}}/null/-1/0/-1/false",
+                "162792":"Basic/{{i18n:Miihau.PennyEE.quest.002}}/null/-1/0/-1/false",
+        
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/FarmHouse",
+            "Entries":{
+                "1627901101/k 1627901102/F/U 4/M 3000/O Penny/p Penny/f Penny 2750/p Penny/t 800 1900/L":"sweet/
+                -1000 -1000/
+				farmer 26 24 3 Penny 23 24 0/
+				animate Penny false true 250 24 25/
+				makeInvisible 5 5 5 1/
+				makeInvisible 8 14 5 1/
+				viewport -100 -100 true unfreeze/
+				move farmer -2 0 3/
+				pause 1000/
+				stopAnimation Penny/
+				pause 20/
+				playSound thudStep/
+				pause 250/
+				faceDirection Penny 1/
+				pause 50/
+				animate Penny true true 100 20/
+				pause 1000/
+				stopAnimation Penny/
+				faceDirection Penny 1/
+				pause 200/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.001}}\"/
+				quickQuestion {{i18n:Miihau.PennyEE.event11.001X}}(break)speak Penny \"{{i18n:Miihau.PennyEE.event11.002}}\"\\pause 500\\faceDirection farmer 2\\farmerEat 223\\pause 2500\\stopAnimation farmer\\pause 50\\faceDirection farmer 3\\speak Penny \"{{i18n:Miihau.PennyEE.event11.003}}\"\\emote farmer 20(break)speak Penny \"{{i18n:Miihau.PennyEE.event11.004}}\"/
+				pause 500/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.005}}\"/
+				emote farmer 8/
+				pause 100/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.006}}\"/
+				pause 100/
+				emote farmer 32/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.007}}\"/
+				pause 100/
+				faceDirection Penny 2/
+				pause 350/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.008}}\"/
+				faceDirection Penny 1/
+				pause 200/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.009}}\"/
+				question fork1 \"{{i18n:Miihau.PennyEE.event11.010}}\"/
+				fork dontGoPenny/
+				pause 100/
+				money -3000/
+				jump Penny 5/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.011}}\"/
+				pause 200/
+				pause 500/
+				animate Penny false true 100 35/
+				animate farmer true true 100 101/
+				positionOffset farmer -8 0/
+				positionOffset Penny 8 0/
+				pause 1500/
+				positionOffset Penny -8 0/
+				stopAnimation Penny/
+				showFrame Penny 4/
+				stopAnimation farmer/
+				pause 200/
+				emote Penny 20/
+				end dialogue Penny \"{{i18n:Miihau.PennyEE.event11.012}}\"",
+                "1627901102/k 1627901101/F/U 4/M 3000/O Penny/p Penny/f Penny 2750/p Penny/t 800 1900":"sweet/
+                -1000 -1000/
+				farmer 8 5 3 Penny 5 5 0/
+				animate Penny false true 250 24 25/
+				makeInvisible 5 5 5 1/
+				makeInvisible 8 14 5 1/
+				viewport -100 -100 true unfreeze/
+				move farmer -2 0 3/
+				pause 1000/
+				stopAnimation Penny/
+				pause 20/
+				playSound thudStep/
+				pause 250/
+				faceDirection Penny 1/
+				pause 50/
+				animate Penny true true 100 20/
+				pause 1000/
+				stopAnimation Penny/
+				faceDirection Penny 1/
+				pause 200/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.013}}\"/
+				quickQuestion {{i18n:Miihau.PennyEE.event11.001X}}(break)speak Penny \"{{i18n:Miihau.PennyEE.event11.014}}\"\\pause 500\\faceDirection farmer 2\\farmerEat 223\\pause 2500\\stopAnimation farmer\\pause 50\\faceDirection farmer 3\\speak Penny \"{{i18n:Miihau.PennyEE.event11.015}}\"\\emote farmer 20(break)speak Penny \"{{i18n:Miihau.PennyEE.event11.016}}\"/
+				pause 500/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.017}}\"/
+				emote farmer 8/
+				pause 100/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.018}}\"/
+				pause 100/
+				emote farmer 32/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.019}}\"/
+				pause 100/
+				faceDirection Penny 2/
+				pause 350/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.020}}\"/
+				faceDirection Penny 1/
+				pause 200/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.021}}\"/
+				question fork1 \"{{i18n:Miihau.PennyEE.event11.022}}\"/
+				fork dontGoPenny/
+				pause 100/
+				money -3000/
+				jump Penny 5/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.023}}\"/
+				pause 200/
+				pause 500/
+				animate Penny false true 100 35/
+				animate farmer true true 100 101/
+				positionOffset farmer -8 0/
+				positionOffset Penny 8 0/
+				pause 1500/
+				positionOffset Penny -8 0/
+				stopAnimation Penny/
+				showFrame Penny 4/
+				stopAnimation farmer/
+				pause 200/
+				emote Penny 20/
+				end dialogue Penny \"{{i18n:Miihau.PennyEE.event11.024}}\"",
+                "dontGoPenny":"friendship Penny -150/
+                speak Penny \"{{i18n:Miihau.PennyEE.event11.025}}\"/
+				emote Penny 28/
+				pause 200/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.026}}\"/
+				emote farmer 60/
+				pause 200/
+				end dialogue Penny \"{{i18n:Miihau.PennyEE.event11.027}}\"",
+                
+                "1627901103/e 1627901101 1627901102/O Penny/k dontGoPenny/t 600 610":"sweet/
+                -1000 -1000/
+				farmer 25 11 3 Penny 24 11 1/
+				changeLocation BusStop/
+				viewport 25 12/
+				addConversationTopic pennyGone 2/
+				addConversationTopic pennyIsGone1 0/
+				pause 1200/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.028}}\"/
+				pause 500/
+				animate Penny false true 100 35/
+				animate farmer true true 100 101/
+				positionOffset farmer -8 0/
+				positionOffset Penny 8 0/
+				pause 1500/
+				positionOffset Penny -8 0/
+				stopAnimation Penny/
+				showFrame Penny 4/
+				stopAnimation farmer/
+				pause 200/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.029}}\"/
+				emote farmer 20/
+				end invisible Penny",
+                "1627901104/e 1627901103/O Penny/t 600 610/A pennyIsGone1":"continue/
+                -1000 -1000/
+				Penny -2000 -2000 0/
+				mail PennysAtCourse/
+				addConversationTopic pennyIsGone2 0/
+				pause 1500/
+				message \"{{i18n:Miihau.PennyEE.event11.030}}\"/
+				end invisible Penny",
+                "1627901105/e 1627901104/O Penny/t 600 610/A pennyIsGone2":"continue/
+                -1000 -1000/
+				Penny -2000 -2000 0/
+				addConversationTopic pennyIsGone3 0/
+				pause 1500/
+				message \"{{i18n:Miihau.PennyEE.event11.031}}\"/
+				end invisible Penny",
+                "1627901106/e 1627901105/O Penny/t 600 610/A pennyIsGone3":"musicboxsong/
+                -1000 -1000/
+				farmer 25 11 3 Penny 24 11 1/
+				changeLocation BusStop/
+				viewport 25 12/
+				pause 1200/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.032}}\"/
+				emote Penny 20/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.033}}\"/
+				pause 300/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.034}}\"/
+				emote farmer 8/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.035}}\"/
+				pause 150/
+				addQuest 162791/
+				speak Penny \"{{i18n:Miihau.PennyEE.event11.036}}\"/
+				end dialogue Penny \"{{i18n:Miihau.PennyEE.event11.037}}\""
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Pam",
+            "Entries":{
+                "pennyGone":"{{i18n:Miihau.PennyEE.event11.038}}",
+                "pennysDream":"{{i18n:Miihau.PennyEE.event11.039}}"
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Vincent",
+            "Entries":{
+                "pennyGone":"{{i18n:Miihau.PennyEE.event11.040}}",
+                "pennysDream":"{{i18n:Miihau.PennyEE.event11.041}}"
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Jas",
+            "Entries":{
+                "pennyGone":"{{i18n:Miihau.PennyEE.event11.042}}",
+                "pennysDream":"{{i18n:Miihau.PennyEE.event11.043}}"
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Jodi",
+            "Entries":{
+                "pennyGone":"{{i18n:Miihau.PennyEE.event11.044}}",
+                "pennysDream":"{{i18n:Miihau.PennyEE.event11.045}}"
+            }
+        },
+    ]
+}

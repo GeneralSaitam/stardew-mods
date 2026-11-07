@@ -1,0 +1,75 @@
+{
+  "Changes": [
+    {
+      "LogName": "SBV - Seasonal Fish On Farm Standard",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Entries": {
+        "skellady.SBVCP_AzureanCarp": {
+          "ItemId": "skellady.SBVCP_AzureanCarp",
+          "Condition": "LOCATION_SEASON Here spring summer fall"
+        },
+        "skellady.SBVCP_BubblyBetta": {
+          "ItemId": "skellady.SBVCP_BubblyBetta",
+          "Condition": "LOCATION_SEASON Here spring winter"
+        },
+        "skellady.SBVCP_ChartreuseTilapia": {
+          "ItemId": "skellady.SBVCP_ChartreuseTilapia",
+          "Condition": "LOCATION_SEASON Here summer fall"
+        },
+        "skellady.SBVCP_EeltailedCatfish": {
+          "ItemId": "skellady.SBVCP_EeltailedCatfish",
+          "Condition": "LOCATION_SEASON Here spring summer"
+        },
+        "skellady.SBVCP_EmeraldSnapper": {
+          "ItemId": "skellady.SBVCP_EmeraldSnapper",
+          "Condition": "LOCATION_SEASON Here summer fall winter"
+        },
+        "skellady.SBVCP_SeaCow": {
+          "ItemId": "skellady.SBVCP_SeaCow",
+          "Condition": "LOCATION_SEASON Here spring summer fall"
+        }
+      },
+      "When": {
+        "Seasonal Fish On Farm": true
+      }
+    },
+    {
+      "LogName": "SBV - Seasonal Fish On Farm All Seasons",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "skellady.SBVCP_AzureanCarp": {
+          "Condition": null
+        },
+        "skellady.SBVCP_BubblyBetta": {
+          "Condition": null
+        },
+        "skellady.SBVCP_ChartreuseTilapia": {
+          "Condition": null
+        },
+        "skellady.SBVCP_EeltailedCatfish": {
+          "Condition": null
+        },
+        "skellady.SBVCP_EmeraldSnapper": {
+          "Condition": null
+        },
+        "skellady.SBVCP_SeaCow": {
+          "Condition": null
+        }
+      },
+      "When": {
+        "Seasonal Fish On Farm": true,
+        "All Seasons": true
+      }
+    }
+  ]
+}

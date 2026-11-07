@@ -1,0 +1,149 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Forest",
+        "Entries":
+    {
+        //Miihau.MiihausMoreShaneHeartEvents
+        "Miihau.ShaneEE.002/F/f Shane 500/t 1630 1900/e Miihau.ShaneEE.001":"
+        shaneTheme/
+        98 27/
+        {{Miihau.ShaneEE.02.positioning}}/
+        skippable/
+        pause 1000/
+        {{Miihau.ShaneEE.02.move0}}/
+        speak Shane \"{{i18n:Miihau.SEE.E2.001}}\"/
+        speak Jas \"{{i18n:Miihau.SEE.E2.002}}\"/
+        addConversationTopic Miihau.ShaneEE.002.Topic 1/
+        faceDirection Shane 2/
+        emote farmer 16/
+        speed Jas 5/
+        {{Miihau.ShaneEE.02.move1}}/
+        speed Jas 5/
+        {{Miihau.ShaneEE.02.move2}}/
+        pause 200/
+        speak Penny \"{{i18n:Miihau.SEE.E2.003}}\"/
+        endSimultaneousCommand/
+        pause 200/
+        speak Shane \"{{i18n:Miihau.SEE.E2.004}}\"/
+        pause 100/
+        emote Jas 8/
+        speak Jas \"{{i18n:Miihau.SEE.E2.005}}\"/
+        pause 200/
+        speak Shane \"{{i18n:Miihau.SEE.E2.006}}\"/
+        pause 200/
+        speak Penny \"{{i18n:Miihau.SEE.E2.007}}\"/
+        pause 200/
+        jump Jas 4/
+        pause 300/
+        speak Jas \"{{i18n:Miihau.SEE.E2.008}}\"/
+        pause 200/
+        speak Shane \"{{i18n:Miihau.SEE.E2.009}}\"/
+        pause 200/
+        emote Jas 32/
+        speak Jas \"{{i18n:Miihau.SEE.E2.010}}\"/
+        move Jas -1 0 0/
+        move Jas 0 -1 0/
+        faceDirection Shane 0/
+        emote Penny 60/
+        move Penny 0 -2 3/
+        speak Penny \"{{i18n:Miihau.SEE.E2.011}}\"/
+        pause 200/
+        emote Shane 40/
+        pause 200/
+        speak Shane \"{{i18n:Miihau.SEE.E2.012}}\"/
+        pause 600/
+        speak Penny \"{{i18n:Miihau.SEE.E2.013}}\"/
+        pause 200/
+        faceDirection Shane 1/
+        pause 200/
+        speak Shane \"{{i18n:Miihau.SEE.E2.014}}\"/
+        pause 500/
+        shake Shane 3500/
+        pause 3500/
+        playSound grunt/
+        speak Shane \"{{i18n:Miihau.SEE.E2.015}}\"/
+        jump Jas 6 true/
+        faceDirection Jas 1/
+        pause 200/
+        speak Jas \"{{i18n:Miihau.SEE.E2.016}}\"/
+        speak Shane \"{{i18n:Miihau.SEE.E2.017}}\"/
+        speak Penny \"{{i18n:Miihau.SEE.E2.018}}\"/
+        faceDirection Shane 0/
+        faceDirection Jas 0/
+        pause 500/
+        speed Penny 1/
+        move Penny 0 1 3/
+        speed Penny 1/
+        move Penny -2 0 0/
+        pause 600/
+        faceDirection Jas 2/
+        emote Jas 8/
+        speak Penny \"{{i18n:Miihau.SEE.E2.019}}\"/
+        pause 400/
+        speak Jas \"{{i18n:Miihau.SEE.E2.020}}\"/
+        faceDirection Jas 1/
+        speak Jas \"{{i18n:Miihau.SEE.E2.021}}\"/
+        faceDirection Shane 1/
+        pause 200/
+        emote Shane 28/
+        speak Shane \"{{i18n:Miihau.SEE.E2.022}}\"/
+        emote Jas 28/
+        speak Jas \"{{i18n:Miihau.SEE.E2.023}}\"/
+        pause 300/
+        globalFade/
+        viewport -1200 -1200/
+        warp Penny 1000 1000/
+        warp Jas 1001 1001/
+        message \"{{i18n:Miihau.SEE.E2.024}}\"/
+        faceDirection Shane 2/
+        globalFadeToClear 0.007 true/
+        viewport 98 27/
+        pause 2000/
+        showFrame Shane 19/
+        emote Shane 28/
+        pause 200/
+        speak Shane \"{{i18n:Miihau.SEE.E2.025}}\"/
+        pause 500/
+        speak Shane \"{{i18n:Miihau.SEE.E2.026}}\"/
+        pause 700/
+        speak Shane \"{{i18n:Miihau.SEE.E2.027}}\"/
+        pause 1000/
+        emote Shane 28/
+        speak Shane \"{{i18n:Miihau.SEE.E2.028}}\"/
+        showFrame Shane 0/
+        faceDirection Shane 2/
+        advancedMove Shane false 0 2 14 0 2 1000/
+        emote farmer 28/
+        pause 1800/
+        globalFade/
+        viewport -1200 -1200/
+        pause 200/
+        end dialogue Shane \"{{i18n:Miihau.SEE.E2.029}}\"
+        ",
+    }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Jas",
+        "Entries":{
+            "Miihau.ShaneEE.002.Topic":"{{i18n:Miihau.SEE.E2.030}}",
+            }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Penny",
+        "Entries":{
+            "Miihau.ShaneEE.002.Topic":"{{i18n:Miihau.SEE.E2.031}}",
+            }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Marnie",
+        "Entries":{
+            "Miihau.ShaneEE.002.Topic":"{{i18n:Miihau.SEE.E2.032}}",
+            }
+    },
+    ]
+    }

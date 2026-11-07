@@ -1,0 +1,56 @@
+{// 0 = up, 1 = right, 2 = down, 3 = left
+    "Changes": [
+	 {
+        "LogName": "Load Shop Portraits",
+        "Action": "Load",
+        "Target": "Portraits/TortShop",
+        "FromFile": "assets/Canyons/TortShop_{{Portraits}}.png"
+    },
+		{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "FlamShop": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+							"PurchaseSound": "Ostrich",
+							 "Id": "FlamShop",
+                        "Portrait": "Portraits/TortShop",
+                            "Dialogues": [
+               
+                                {
+                                    "Id": "TortDefault",
+                                  "Dialogue": "{{i18n:Sonora.Dialogue}}",
+                                }
+                            ]
+                        }
+                    ],
+
+                    "Items": [
+							{
+                    "Id": "CC_Tortoiseshell",
+                    "ItemId": "CC_Tortoiseshell",
+                   "TradeItemID": "CC_Rainflower",
+                        "TradeItemAmount": 5,
+                    "IsRecipe": false
+                },
+					{
+                    "Id": "CC_DwarfInvite",
+                    "ItemId": "CC_DwarfInvite",
+					"Condition": "PLAYER_HAS_SEEN_EVENT current YoputHeart10",
+                   "TradeItemID": "CC_Rainflower",
+                        "TradeItemAmount": 1,
+                    "IsRecipe": false
+                },
+
+					
+							 
+                    ]
+                }
+            }
+		},
+
+    ]
+}   
+

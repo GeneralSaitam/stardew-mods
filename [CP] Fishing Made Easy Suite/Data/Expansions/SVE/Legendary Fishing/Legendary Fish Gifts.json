@@ -1,0 +1,23 @@
+{
+  "Changes": [
+    {
+      "LogName": "SVE - Legendary Fish Gifts",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Love"
+          ],
+          "Value": "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper FlashShifter.StardewValleyExpandedCP_Turretfish",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "Legendary Fish Gifts": true
+      }
+    }
+  ]
+}

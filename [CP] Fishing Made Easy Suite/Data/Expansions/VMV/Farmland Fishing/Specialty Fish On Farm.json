@@ -1,0 +1,39 @@
+{
+  "Changes": [
+    {
+      "LogName": "VMV - Specialty Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Entries": {
+        "Lumisteria.MtVapius_WhiteVendace": {
+          "ItemId": "Lumisteria.MtVapius_WhiteVendace"
+        },
+        "Lumisteria.MtVapius_VapiusRoach": {
+          "ItemId": "Lumisteria.MtVapius_VapiusRoach"
+        },
+        "Lumisteria.MtVapius_AlpineChar": {
+          "ItemId": "Lumisteria.MtVapius_AlpineChar"
+        },
+        "Lumisteria.MtVapius_CrystalFish": {
+          "ItemId": "Lumisteria.MtVapius_CrystalFish"
+        },
+        "Lumisteria.MtVapius_GiantCrystalFish": {
+          "ItemId": "Lumisteria.MtVapius_GiantCrystalFish"
+        },
+        "Lumisteria.MtVapius_RainbowPerch": {
+          "ItemId": "Lumisteria.MtVapius_RainbowPerch"
+        },
+        "Lumisteria.MtVapius_LeafyTrout": {
+          "ItemId": "Lumisteria.MtVapius_LeafyTrout"
+        }
+      },
+      "When": {
+        "Specialty Fish On Farm": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+/*Vanilla Shane has a line for the Strange Bun. I guess they did change his level of love for the thing.
+He has a line for loved gifts and liked birthday gifts.
+Last verified: 1.6.14*/
+
+{"Changes": [
+  {
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Shane",
+
+    "Entries": {
+
+      "AcceptGift_(O)206": "{{i18n:UGDE.Shane_(O)206}}", //Pizza
+      //TODO "AcceptBirthdayGift_Neutral"
+      //TODO "AcceptBirthdayGift_Negative"
+
+    }
+  },
+  {
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Shane",
+    "When": {
+      "Shane_AlcoholLines_Toggle": "true",
+    },
+    "Entries": {
+
+      "AcceptGift_(O)346": "$query PLAYER_HAS_SEEN_EVENT Any 3910975#{{i18n:UGDE.Shane_(O)Alcohol_Item_Above6hearts}}[346]#$action AddFriendshipPoints Shane -80|{{i18n:UGDE.Shane_(O)346_Under6hearts}}", //Beer, but no special line in the saloon.
+      "AcceptGift_(O)303": "$query PLAYER_HAS_SEEN_EVENT Any 3910975#{{i18n:UGDE.Shane_(O)Alcohol_Item_Above6hearts}}[303]#$action AddFriendshipPoints Shane -45|{{i18n:UGDE.Shane_(O)303_Under6hearts_1}}#$e#%revealtastePam303 {{i18n:UGDE.Shane_(O)303_Under6hearts_2}}", //Pale Ale
+      "AcceptGift_(O)459": "$query PLAYER_HAS_SEEN_EVENT Any 3910975#{{i18n:UGDE.Shane_(O)Alcohol_Item_Above6hearts}}[459]#$action AddFriendshipPoints Shane -45|{{i18n:UGDE.Shane_(O)459_Under6hearts}}", //Mead
+      "AcceptGift_(O)873": "$query PLAYER_HAS_SEEN_EVENT Any 3910975#{{i18n:UGDE.Shane_(O)Alcohol_Item_Above6hearts}}[873]#$action AddFriendshipPoints Shane -45|{{i18n:UGDE.Shane_(O)873_Under6hearts}}", //Piña Colada
+      "AcceptGift_(O)348": "$query PLAYER_HAS_SEEN_EVENT Any 3910975#{{i18n:UGDE.Shane_(O)Alcohol_Item_Above6hearts}}[348]#$action AddFriendshipPoints Shane -45|{{i18n:UGDE.Shane_(O)348_Under6hearts}}", //Wine.
+
+    }
+  }
+]}

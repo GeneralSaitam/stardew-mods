@@ -1,0 +1,43 @@
+{
+"Format": "2.0.0",
+"Changes": 
+   [
+        {
+            "LogName": "Luau Bridge Fix",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-Luau",
+            "FromFile": "assets/luau_fixed_bridge.tmx",
+            "ToArea": 
+            {
+                "X": 57,
+                "Y": 12,
+                "Width": 6,
+                "Height": 3,
+            },
+            "When": 
+            {
+                "HasFlag |contains= beachBridgeFixed": true,
+                "HasMod |contains= Rafseazz.RSVCP": false
+            }
+        },
+        {
+            "LogName": "Luau Bridge Fix",
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "FromFile": "assets/RSV_fixed_bridge.tmx",
+            "ToArea": 
+            {
+                "X": 57,
+                "Y": 12,
+                "Width": 6,
+                "Height": 4,
+            },
+            "When": 
+            {
+                "HasFlag |contains= beachBridgeFixed": true,
+                "HasMod |contains= Rafseazz.RSVCP": true,
+                "Query: {{DaysPlayed}} >= 39": true
+            }
+        },
+    ]
+}

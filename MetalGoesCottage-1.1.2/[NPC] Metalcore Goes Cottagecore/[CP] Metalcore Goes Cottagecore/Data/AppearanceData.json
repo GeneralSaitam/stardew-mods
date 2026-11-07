@@ -1,0 +1,34 @@
+{
+    "Changes": [
+        {
+            "LogName": "Sprites",
+            "Action": "Load",
+            "Target": "Characters/Otter.Cambria, Characters/Otter.Orchid",
+            "FromFile": "Assets/{{Target}}/spring.png"
+        },
+        {
+            "LogName": "Portraits",
+            "Action": "Load",
+            "Target": "Portraits/Otter.Orchid",
+            "FromFile": "Assets/{{Target}}/spring.png"
+        },
+        {
+            "LogName": "Default Cambria Portraits",
+            "Action": "Load",
+            "Target": "Portraits/Otter.Cambria",
+            "FromFile": "Assets/{{Target}}/{{Portrait Style}}/spring_Otter.Cambria.png"
+        },
+        {
+            "LogName": "Cambria Seasonal Portraits",
+            "Action": "Load",
+            "Target": "Portraits/spring_Otter.Cambria, Portraits/summer_Otter.Cambria, Portraits/fall_Otter.Cambria, Portraits/winter_Otter.Cambria, Portraits/spiritseve_Otter.Cambria",
+            "FromFile": "Assets/Portraits/Otter.Cambria/{{Portrait Style}}/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Cambria Beach Portraits",
+            "Action": "Load",
+            "Target": "Portraits/Otter.Cambria_beach",
+            "FromFile": "Assets/Portraits/Otter.Cambria/{{Portrait Style}}/{{TargetWithoutPath}}.png"
+        }
+    ]
+}

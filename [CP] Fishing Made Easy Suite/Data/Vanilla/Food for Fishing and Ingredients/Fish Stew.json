@@ -1,0 +1,65 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fish Stew Duration",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "728",
+        "Buffs"
+      ],
+      "Fields": {
+        "Food": {
+          "Duration": -2
+        }
+      },
+      "When": {
+        "Fish Stew Duration": true
+      }
+    },
+    {
+      "LogName": "Fish Stew Level Boost",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "728",
+        "Buffs",
+        "Food"
+      ],
+      "Fields": {
+        "CustomAttributes": {
+          "FishingLevel": "{{Fish Stew Level Boost}}"
+        }
+      },
+      "When": {
+        "Fish Stew Level Boost": "4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50"
+      }
+    },
+    {
+      "LogName": "Fish Stew Lessened Ingredients",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Fish Stew": {
+          "0": "716 1"
+        }
+      },
+      "When": {
+        "Fish Stew Ingredients": "Lessened Ingredients"
+      }
+    },
+    {
+      "LogName": "Fish Stew 1 of Any Fish",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Fish Stew": {
+          "0": "-4 1"
+        }
+      },
+      "When": {
+        "Fish Stew Ingredients": "1 of Any Fish"
+      }
+    }
+  ]
+}

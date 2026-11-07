@@ -1,0 +1,393 @@
+{
+    "Changes": [
+        {
+            //roommate accept dialogue
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "{{Ripley}}_EngagedRoommate": "{{i18n:roommateaccept.ripley}}",
+            },
+        },
+        {
+            //add roommate portrait as a furniture (painting) item
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+		        "sdvhead.LawAndOrderSV_RipleyPortrait": "RipleyPortrait/painting/2 2/2 2/1/999/-1/{{i18n:RipleyPortrait}}/0/Mods\\sdvhead.LawAndOrderSV\\lao_portraits/true",
+            }
+        },
+        {
+            //add portrait to traveling cart stock
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Traveler",
+                "Items"
+            ],
+            "Entries": {
+                  "sdvhead.LawAndOrderSV_RipleyPortrait":{
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current {{Ripley}} 14",
+                    "Id": "(F)sdvhead.LawAndOrderSV_RipleyPortrait",
+                    "ItemId": "(F)sdvhead.LawAndOrderSV_RipleyPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                  },
+            }
+        },
+        {
+            //update to 'looks puzzled' when offering ripley the ghostwood pendant
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "MovieInvite_NoTheater": "{{i18n:ripleyroommate.puzzled|cfgRipley={{cfgRipley}}}}",
+            },
+            "When": {
+                "LocationName |contains={{ModId}}_GhostwoodxFalls":true,
+            },
+            "Update": "OnLocationChange",
+        },
+        {
+            // replace certain dialogue strings when Ripley is the roommate
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "NPC.cs.4462": "{{i18n:ripleyroommate.wateredcrops}}",
+                "NPC.cs.4474": "{{i18n:ripleyroommate.fedfarmanimals}}",
+                "NPC.cs.4463": "{{i18n:ripleyroommate.filledwaterbowl}}",
+                "MultiplePetBowls_watered": "{{i18n:ripleyroommate.filledmultiplewaterbowls}}",
+                "NPC.cs.4406": "{{i18n:ripleyroommate.daysleep}}",
+                "NPC.cs.4446": "{{i18n:ripleyroommate.daysleep}}",
+                "NPC.cs.4421": "{{i18n:ripleyroommate.bored}}",
+                "NPC.cs.4422": "{{i18n:ripleyroommate.depressed}}",
+                "NPC.cs.4423": "{{i18n:ripleyroommate.fine}}",
+                "NPC.cs.4424": "{{i18n:ripleyroommate.noenergy}}",
+                "NPC.cs.4425": "{{i18n:ripleyroommate.lifedifferent}}",
+                "NPC.cs.4426": "{{i18n:ripleyroommate.chores}}",
+                "NPC.cs.4427": "{{i18n:ripleyroommate.lookbad1}}",
+                "NPC.cs.4429": "{{i18n:ripleyroommate.lookbad2}}",
+                "NPC.cs.4431": "{{i18n:ripleyroommate.trapped}}",
+                "NPC.cs.4432": "{{i18n:ripleyroommate.grumble}}",
+                "NPC.cs.4433": "{{i18n:ripleyroommate.worktodo}}",
+		        "NPC.cs.4470": "{{i18n:ripleyroommate.undercontrol}}",
+                "NPC.cs.4481": "{{i18n:ripleyroommate.repairfences}}",
+                "NPC.cs.4486": "{{i18n:ripleyroommate.whatdoyouthink}}",
+                "NPC.cs.4488": "{{i18n:ripleyroommate.newfurniture}}",
+                "NPC.cs.4489": "{{i18n:ripleyroommate.decoration}}",
+                "NPC.cs.4490": "{{i18n:ripleyroommate.nodecorate}}",
+                "NPC.cs.4496": "{{i18n:ripleyroommate.wallpapernew}}",
+                "NPC.cs.4497": "{{i18n:ripleyroommate.flooringnew}}",
+                "NPC.cs.4498": "{{i18n:ripleyroommate.missoldlife}}",
+                "NPC.cs.4499": "{{i18n:ripleyroommate.weatherstayinbed}}",
+                "NPC.cs.4001": "{{i18n:ripleyroommate.stardrop}}",
+                "NPC.cs.4293": "{{i18n:Ripley_HitBySlingShot}}",
+                "NPC.cs.4294": "{{i18n:Ripley_HitBySlingShot}}",
+            },
+            "When": {
+                "Roommate": "{{Ripley}}",
+            }
+        },
+        {
+            // replace certain dialogue strings when Ripley is the roommate
+            "Action": "EditData",
+            "Target": "Strings/1_6_Strings",
+            "Entries": {
+                "Spouse_Goodnight0": "{{i18n:ripleyroommate.goodnight0}}",
+                "Spouse_Goodnight1": "{{i18n:ripleyroommate.goodnight1}}",
+
+
+            },
+            "When": {
+                "Roommate": "{{Ripley}}",
+            }
+        },
+        {
+            //impending roommate dialogue
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "{{Ripley}}Roommate0": "{{i18n:roommatecontract.ripley0}}",
+                "{{Ripley}}Roommate1": "{{i18n:roommatecontract.ripley1}}",
+            }
+        },
+        {
+            //replace smile emoji from hug action
+            "LogName": "hug emoji change",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Emojis",
+            "FromFile": "assets/Textures/tilesheet_emotereplace.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 96,
+                "Width": 9,
+                "Height": 9
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 9,
+                "Height": 9
+            },
+            "When": {
+                "Roommate": "{{Ripley}}",
+                "HasFile:{{FromFile}}": true,
+                "LocationName |contains=farm, farmhouse":true,
+            },
+            "Update": "OnLocationChange",
+        },
+        {
+            //replace smile emoji from hug action (random option 2)
+            "LogName": "hug emoji change",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Emojis",
+            "FromFile": "assets/Textures/tilesheet_emotereplace.png",
+            "FromArea": {
+                "X": 9,
+                "Y": 96,
+                "Width": 9,
+                "Height": 9
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 9,
+                "Height": 9
+            },
+            "When": {
+                "Roommate": "{{Ripley}}",
+                "HasFile:{{FromFile}}": true,
+                "LocationName |contains=farm, farmhouse":true,
+                "Random: {{Range:1, 10}}": "{{Range:1, 4}}"
+            },
+            "Update": "OnLocationChange",
+        },
+        {
+            //replace smile emoji from hug action (random option 3)
+            "LogName": "hug emoji change",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Emojis",
+            "FromFile": "assets/Textures/tilesheet_emotereplace.png",
+            "FromArea": {
+                "X": 18,
+                "Y": 96,
+                "Width": 9,
+                "Height": 9
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 9,
+                "Height": 9
+            },
+            "When": {
+                "Roommate": "{{Ripley}}",
+                "HasFile:{{FromFile}}": true,
+                "LocationName |contains=farm, farmhouse":true,
+                "Random: {{Range:1, 10}}": "{{Range:1, 4}}"
+            },
+            "Update": "OnLocationChange",
+        },
+        {
+            //replace heart emote at the farm
+            "Action": "EditImage",
+            "Target": "TileSheets/emotes",
+            "FromFile": "assets/Textures/tilesheet_emotereplace.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 64,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 80,
+                "Width": 64,
+                "Height": 16
+            },
+            "When": {
+                "Roommate": "{{Ripley}}",
+                "HasFile:{{FromFile}}": true,
+                "LocationName |contains=farm, farmhouse":true,
+            },
+            "Update": "OnLocationChange",
+        },
+        {
+            //replace heart emote at the farm (random option 2)
+            "Action": "EditImage",
+            "Target": "TileSheets/emotes",
+            "FromFile": "assets/Textures/tilesheet_emotereplace.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 16,
+                "Width": 64,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 80,
+                "Width": 64,
+                "Height": 16
+            },
+            "When": {
+                "Roommate": "{{Ripley}}",
+                "HasFile:{{FromFile}}": true,
+                "LocationName |contains=farm, farmhouse":true,
+                "Random: {{Range:1, 10}}": "{{Range:1, 4}}"
+            },
+            "Update": "OnLocationChange",
+        },
+        {
+            //replace heart emote at the farm (random option 3)
+            "Action": "EditImage",
+            "Target": "TileSheets/emotes",
+            "FromFile": "assets/Textures/tilesheet_emotereplace.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 32,
+                "Width": 64,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 80,
+                "Width": 64,
+                "Height": 16
+            },
+            "When": {
+                "Roommate": "{{Ripley}}",
+                "HasFile:{{FromFile}}": true,
+                "LocationName |contains=farm, farmhouse":true,
+                "Random: {{Range:1, 10}}": "{{Range:1, 4}}"
+            },
+            "Update": "OnLocationChange",
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/MarriageDialogue{{Ripley}}Roommate",
+            "FromFile": "assets/NPCs/Data/blank.json" 
+        },
+
+        {
+            "LogName": "Marriage Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue{{Ripley}}Roommate",
+            "Entries": {
+                //pre-defined spouse dialogue keys to be overwritten
+                "spring_1":"{{i18n:ripleyroommate.spring_1}}",
+                "spring_8":"{{i18n:ripleyroommate.spring_8}}",
+                "spring_23":"{{i18n:ripleyroommate.spring_23}}",
+                "summer_1":"{{i18n:ripleyroommate.summer_1}}",
+                "summer_8":"{{i18n:ripleyroommate.summer_8}}",
+                "summer_15":"{{i18n:ripleyroommate.summer_15}}",
+                "fall_1": "{{i18n:ripleyroommate.fall_1}}",
+                "fall_8": "{{i18n:ripleyroommate.fall_8}}",
+                "fall_15": "{{i18n:ripleyroommate.fall_15}}",
+                "fall_26": "{{i18n:ripleyroommate.fall_26}}",
+                "winter_1": "{{i18n:ripleyroommate.winter_1}}",
+                "winter_7": "{{i18n:ripleyroommate.winter_7}}",
+                "winter_28": "{{i18n:ripleyroommate.winter_28}}",
+                
+                "patio_{{Ripley}}": "{{i18n:patio_ripley}}",
+
+                "Outdoor_{{Ripley}}": "{{i18n:ripleyroommate.outdoor_npc}}",
+                "Outdoor_0": "{{i18n:ripleyroommate.outdoor_0}}",
+                "Outdoor_1": "{{i18n:ripleyroommate.outdoor_1}}",
+                "Outdoor_2": "{{i18n:ripleyroommate.outdoor_2}}",
+                "Outdoor_3": "{{i18n:ripleyroommate.outdoor_3}}",
+                "Outdoor_4": "{{i18n:ripleyroommate.outdoor_4}}",
+                
+                "Indoor_Day_{{Ripley}}": "{{i18n:ripleyroommate.indoor_day_npc|randomcloud={{i18n:ripleyrandomcloud_{{Random: 0, 1, 2, 3, 4}}}}}}",
+                "Indoor_Day_0": "{{i18n:ripleyroommate.indoor_day_0}}",
+                "Indoor_Day_1": "{{i18n:ripleyroommate.indoor_day_1}}",
+                "Indoor_Day_2": "{{i18n:ripleyroommate.indoor_day_2}}",
+                "Indoor_Day_3": "{{i18n:ripleyroommate.indoor_day_3|randomdo={{i18n:ripleyrandomdo_{{Random: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}}}}}}",
+                "Indoor_Day_4": "{{i18n:ripleyroommate.indoor_day_4|randomprof={{i18n:ripleyrandomprof_{{Random: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}}}}}}",
+
+                "Indoor_Night_{{Ripley}}": "{{i18n:ripleyroommate.indoor_night_npc|randomtvshow={{i18n:ripleyrandomtvshow_{{Random: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}}}}}}",
+                "Indoor_Night_0": "{{i18n:ripleyroommate.indoor_night_0}}",
+                "Indoor_Night_1": "{{i18n:ripleyroommate.indoor_night_1}}",
+                "Indoor_Night_2": "{{i18n:ripleyroommate.indoor_night_2}}",
+                "Indoor_Night_3": "{{i18n:ripleyroommate.indoor_night_3}}",
+                "Indoor_Night_4": "{{i18n:ripleyroommate.indoor_night_4|randomdevice={{i18n:ripleyrandomdevice_{{Random: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}}}}}}",
+
+                "Rainy_Day_{{Ripley}}": "{{i18n:ripleyroommate.rainy_day_npc}}",
+                "Rainy_Day_0": "{{i18n:ripleyroommate.rainy_day_0}}",
+                "Rainy_Day_1": "{{i18n:ripleyroommate.rainy_day_1|randomtvshow={{i18n:ripleyrandomtvshow_{{Random: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9}}}}}}",
+                "Rainy_Day_2": "{{i18n:ripleyroommate.rainy_day_2}}",
+                "Rainy_Day_3": "{{i18n:ripleyroommate.rainy_day_3}}",
+                "Rainy_Day_4": "{{i18n:ripleyroommate.rainy_day_4|randominstock={{i18n:ripleyrandominstock_{{Random: 0, 1, 2, 3, 4}}}}}}",
+
+                "Rainy_Night_{{Ripley}}": "{{i18n:ripleyroommate.rainy_night_npc}}",
+                "Rainy_Night_0": "{{i18n:ripleyroommate.rainy_night_0}}",
+                "Rainy_Night_1": "{{i18n:ripleyroommate.rainy_night_1}}",
+                "Rainy_Night_2": "{{i18n:ripleyroommate.rainy_night_2}}",
+                "Rainy_Night_3": "{{i18n:ripleyroommate.rainy_night_3|randomwear={{i18n:ripleyrandomwear_{{Random:0, 1, 2}}}}|randomcostume={{i18n:ripleyrandomcostume_{{Random: 0, 1, 2}}}}}}",
+                "Rainy_Night_4": "{{i18n:ripleyroommate.rainy_night_4}}",
+                "Rainy_Night_5": "{{i18n:ripleyroommate.rainy_night_5|randomsnore={{i18n:ripleyrandomsnore_{{Random: 0, 1, 2, 3, 4}}}}}}",
+                
+                "spring_{{Ripley}}": "{{i18n:ripleyroommate.spring_npc}}",
+                "summer_{{Ripley}}": "{{i18n:ripleyroommate.summer_npc}}",
+                "fall_{{Ripley}}": "{{i18n:ripleyroommate.fall_npc}}",
+                "winter_{{Ripley}}": "{{i18n:ripleyroommate.winter_npc}}",
+
+                "Good_0":"{{i18n:ripleyroommate.good_0}}",
+                "Good_1":"{{i18n:ripleyroommate.good_1}}",
+                "Good_2":"{{i18n:ripleyroommate.good_2}}",
+                "Good_3":"{{i18n:ripleyroommate.good_3}}",
+                "Good_4":"{{i18n:ripleyroommate.good_4}}",
+                "Good_5":"{{i18n:ripleyroommate.good_0}}",
+                "Good_6":"{{i18n:ripleyroommate.good_1}}",
+                "Good_7":"{{i18n:ripleyroommate.good_2}}",
+                "Good_8":"{{i18n:ripleyroommate.good_3}}",
+                "Good_9":"{{i18n:ripleyroommate.good_4}}",
+
+                "Bad_0":"{{i18n:ripleyroommate.bad_0}}",
+                "Bad_1":"{{i18n:ripleyroommate.bad_1}}",
+                "Bad_2":"{{i18n:ripleyroommate.bad_2}}",
+                "Bad_3":"{{i18n:ripleyroommate.bad_3}}",
+                "Bad_4":"{{i18n:ripleyroommate.bad_4}}",
+                "Bad_5":"{{i18n:ripleyroommate.bad_0}}",
+                "Bad_6":"{{i18n:ripleyroommate.bad_1}}",
+                "Bad_7":"{{i18n:ripleyroommate.bad_2}}",
+                "Bad_8":"{{i18n:ripleyroommate.bad_3}}",
+                "Bad_9":"{{i18n:ripleyroommate.bad_4}}",
+
+                "Neutral_0":"{{i18n:ripleyroommate.neutral_0}}",
+                "Neutral_1":"{{i18n:ripleyroommate.neutral_1}}",
+                "Neutral_2":"{{i18n:ripleyroommate.neutral_2}}",
+                "Neutral_3":"{{i18n:ripleyroommate.neutral_3}}",
+                "Neutral_4":"{{i18n:ripleyroommate.neutral_4}}",
+                "Neutral_5":"{{i18n:ripleyroommate.neutral_0}}",
+                "Neutral_6":"{{i18n:ripleyroommate.neutral_1}}",
+                "Neutral_7":"{{i18n:ripleyroommate.neutral_2}}",
+                "Neutral_8":"{{i18n:ripleyroommate.neutral_3}}",
+                "Neutral_9":"{{i18n:ripleyroommate.neutral_4}}",
+
+                "OneKid_0": "{{i18n:ripleyroommate.OneKid_0}}",
+                "OneKid_1": "{{i18n:ripleyroommate.OneKid_1}}",
+                "OneKid_2": "{{i18n:ripleyroommate.OneKid_2}}",
+                "OneKid_3": "{{i18n:ripleyroommate.OneKid_3}}",
+                "TwoKids_0": "{{i18n:ripleyroommate.TwoKids_0}}",
+                "TwoKids_1": "{{i18n:ripleyroommate.TwoKids_1}}",
+                "TwoKids_2": "{{i18n:ripleyroommate.TwoKids_2}}",
+                "TwoKids_3": "{{i18n:ripleyroommate.TwoKids_3}}",
+
+                "NoBed_0":"{{i18n:ripleyroommate.nobed}}",
+                "NoBed_1":"{{i18n:ripleyroommate.nobed}}",
+                "NoBed_2":"{{i18n:ripleyroommate.nobed}}",
+                "NoBed_3":"{{i18n:ripleyroommate.nobed}}",
+
+                "spouseRoom_{{Ripley}}":"{{i18n:ripleyroommate.spouseroom_{{Random: 0, 1, 2, 3, 4}}}}",
+            },
+        },
+    ]
+}

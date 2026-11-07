@@ -1,0 +1,41 @@
+{
+    "Format": "1.19.0",
+    "ConfigSchema": {
+        "EnableIridiumTransmutations": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Activate Iridium Bars transmutation."
+        },
+        "EnableRadioactiveTransmutations": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Activate Radioactive Bars transmutation."
+        },
+        "GoldBarRequiredForIridium": {
+            "AllowValues": "2, 3, 4, 5",
+            "Default": "4",
+            "Description": "Choose Gold Bars number for transmutation."
+        },
+        "IridiumBarRequiredForRadioactive": {
+            "AllowValues": "2, 3, 4, 5",
+            "Default": "3",
+            "Description": "Choose Iridium Bars number for transmutation."
+        }
+    },
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "assets/en.json",
+            "When": {
+                "HasFile: assets/{{Language}}.json": false
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/{{Language}}.json",
+            "When": {
+                "HasFile: assets/{{Language}}.json": true
+            }
+        }
+    ]
+}

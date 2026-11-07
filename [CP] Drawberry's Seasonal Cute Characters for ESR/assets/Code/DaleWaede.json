@@ -1,0 +1,151 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load DaleWaede's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/DaleWaede_{{PortraitStyle}}_Beach, Portraits/DaleWaede_{{PortraitStyle}}_EggF, Portraits/DaleWaede_{{PortraitStyle}}_Fair, Portraits/DaleWaede_{{PortraitStyle}}_Fall, Portraits/DaleWaede_{{PortraitStyle}}_FlowerDance, Portraits/DaleWaede_{{PortraitStyle}}_Ice, Portraits/DaleWaede_{{PortraitStyle}}_Jellies, Portraits/DaleWaede_{{PortraitStyle}}_Luau, Portraits/DaleWaede_{{PortraitStyle}}_SpiritsEve, Portraits/DaleWaede_{{PortraitStyle}}_Spring, Portraits/DaleWaede_{{PortraitStyle}}_Summer, Portraits/DaleWaede_{{PortraitStyle}}_WinterStar, Portraits/DaleWaede_{{PortraitStyle}}_Winter, Characters/DaleWaede_Beach, Characters/DaleWaede_EggF, Characters/DaleWaede_Fair, Characters/DaleWaede_Fall, Characters/DaleWaede_FlowerDance, Characters/DaleWaede_Ice, Characters/DaleWaede_Jellies, Characters/DaleWaede_Luau, Characters/DaleWaede_SpiritsEve, Characters/DaleWaede_Spring, Characters/DaleWaede_Summer, Characters/DaleWaede_Winter, Characters/DaleWaede_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/DaleWaede/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "DaleWaede - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/DaleWaede_Beach, Characters/DaleWaede_EggF, Characters/DaleWaede_Fair, Characters/DaleWaede_Fall, Characters/DaleWaede_FlowerDance, Characters/DaleWaede_Ice, Characters/DaleWaede_Jellies, Characters/DaleWaede_Luau, Characters/DaleWaede_SpiritsEve, Characters/DaleWaede_Spring, Characters/DaleWaede_Summer, Characters/DaleWaede_Winter, Characters/DaleWaede_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/DaleWaede/DaleWaede_nose.png",
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+		},
+		//APPEARANCE DATA 
+		{
+			"LogName": "DaleWaede Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"DaleWaede",
+				"Appearance"
+			],
+			"Entries": {
+				//Regular Outfits
+				"{{ModId}}.DaleWaedeSpring": {
+					"Id": "{{ModId}}.DaleWaedeSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/DaleWaede_Spring",
+					"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_Spring",
+					"Precedence": -200,
+				},
+				"{{ModId}}.DaleWaedeSummer": {
+					"Id": "{{ModId}}.DaleWaedeSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/DaleWaede_Summer",
+					"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_Summer",
+					"Precedence": -200,
+				},
+				"{{ModId}}.DaleWaedeFall": {
+					"Id": "{{ModId}}.DaleWaedeFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/DaleWaede_Fall",
+					"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_Fall",
+					"Precedence": -200,
+				},
+				"{{ModId}}.DaleWaedeWinter": {
+					"Id": "{{ModId}}.DaleWaedeWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/DaleWaede_Winter",
+					"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_Winter",
+					"Precedence": -200,
+				},
+		// Festivals
+
+		"{{ModId}}.DBDaleWaedeEggFest": {
+			"Id": "{{ModId}}.DBDaleWaedeEggFest",
+			"Condition": "IS_EVENT festival_spring13, {{FestivalOutfits}}",
+			"Sprite": "Characters/DaleWaede_EggF",
+			"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_EggF",
+			"Precedence": -2000,
+		},
+		
+		"{{ModId}}.DBDaleWaedeFlowerDance": {
+			"Id": "{{ModId}}.DBDaleWaedeFlowerDance",
+			"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+			"Sprite": "Characters/DaleWaede_FlowerDance",
+			"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_FlowerDance",
+			"Precedence": -2000,
+		},
+			
+		"{{ModId}}.DBDaleWaedeLuau": {
+			"Id": "{{ModId}}.DBDaleWaedeLuau",
+			"Condition": "IS_EVENT festival_summer11, {{FestivalOutfits}}",
+			"Sprite": "Characters/DaleWaede_Luau",
+			"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_Luau",
+			"Precedence": -2000,
+		},
+		
+		"{{ModId}}.DBDaleWaedeJellies": {
+			"Id": "{{ModId}}.DBDaleWaedeJellies",
+			"Condition": "IS_EVENT festival_summer28, {{FestivalOutfits}}",
+			"Sprite": "Characters/DaleWaede_Jellies",
+			"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_Jellies",
+			"Precedence": -2000,
+		},
+			
+		"{{ModId}}.DBDaleWaedeFair": {
+			"Id": "{{ModId}}.DBDaleWaedeFair",
+			"Condition": "IS_EVENT festival_fall16, {{FestivalOutfits}}",
+			"Sprite": "Characters/DaleWaede_Fair",
+			"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_Fair",
+			"Precedence": -2000,
+		},
+		
+		"{{ModId}}.DBDaleWaedeSpirit": {
+			"Id": "{{ModId}}.DBDaleWaedeSpirit",
+			"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn EastScarp_VillageInn_SpiritEve EastScarp_Crossing {{FestivalOutfits}}\"",
+			"Sprite": "Characters/DaleWaede_SpiritsEve",
+			"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_SpiritsEve",
+			"Precedence": -2000,
+		},
+			
+		"{{ModId}}.DBDaleWaedeIceFestival": {
+			"Id": "{{ModId}}.DBDaleWaedeIceFestival",
+			"Condition": "IS_EVENT festival_winter8, {{FestivalOutfits}}",
+			"Sprite": "Characters/DaleWaede_Ice",
+			"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_Ice",
+			"Precedence": -2000,
+		},
+		
+		"{{ModId}}.DBDaleWaedeWinterStar": {
+			"Id": "{{ModId}}.DaleWaedeWinterStar",
+			"Condition": "IS_EVENT festival_winter25, {{FestivalOutfits}}",
+			"Sprite": "Characters/DaleWaede_WinterStar",
+			"Portrait": "Portraits/DaleWaede_{{PortraitStyle}}_WinterStar",
+			"Precedence": -2000,
+		},
+		},
+		},
+		//MISCELLANEOUS
+		{
+			"LogName": "DaleWaede - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "Mods/Lemurkat.EastScarp/esfurniture", /// Mods/UniqueID/Image name
+			"FromFile": "assets/Characters/esfurniture.png",
+			"FromArea": {"X": 39, "Y": 71, "Width": 18, "Height": 18},
+			"ToArea": {"X": 39, "Y": 71, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "DaleWaede Calendar Sprite Edits",
+			"Action": "EditImage",
+			"Target": "Characters/DaleWaede",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+		},			
+	]
+	}

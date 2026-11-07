@@ -1,0 +1,38 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+			"When": {
+				"HasMod|contains=DIGUS.ANIMALHUSBANDRYMOD": true,
+				"Disable Meat Recipes": false
+			},
+			"Entries": {
+				"Mizu.Turkey_TurkeyLeg": {
+					"ProductQualifiedId": "(O)Mizu.Turkey_TurkeyLeg",
+					"ProductAmount": 1,
+					"Ingredients": [
+						{
+							"Type": "Item",
+							"Value": "(O)Mizu.Turkey_TurkeyMeat",
+							"Amount": 1
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "cooking_oil_item, oil_item",
+							"Amount": 1,
+							"OverrideText": "[LocalizedText Cornucopia.CookingRecipes/i18n:Ingredient_OilAny]",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 112,
+								"Y": 160,
+								"Width": 16,
+								"Height": 16
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

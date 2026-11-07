@@ -1,0 +1,155 @@
+{
+    "Changes": [
+		
+//	RECOLORS (Manual Selection)
+
+//	//	Blue Grass
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXmisc",
+            "FromFile": "options/Blue_Grass/EX_misc/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Blue_Grass": "True",
+			}
+        },
+		
+//	//	Cotton Candy
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXmisc",
+            "FromFile": "options/Cotton_Candy/EX_misc/{{TargetWithoutPath}}_purple.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Cotton_Candy": "True",
+				"CC_Snow_Color": "purple"
+			}
+        },
+		
+//	//	Earthy Recolour
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXmisc",
+            "FromFile": "options/Earthy_Recolour/EX_misc/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Earthy_Recolour": "True",
+			}
+        },
+		
+//	//	Starblue Valley
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXmisc",
+            "FromFile": "options/Starblue_Valley/EX_misc/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Starblue_Valley": "True",
+			}
+        },
+		
+//	//	Universal Recolor
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_EXbuild, Maps/spring_ATK_AToMS_EXbuild, Maps/summer_ATK_AToMS_EXbuild,",
+            "FromFile": "options/Universal_Recolors/EX_misc/D40_H1/spring_ATK_AToMS_EXmisc.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Universal_Recolors": "True"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXbuild",
+            "FromFile": "options/Universal_Recolors/EX_misc/D40_H1/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Universal_Recolors": "True"
+			}
+        },
+//
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_EXmisc, Maps/spring_ATK_AToMS_EXmisc, Maps/summer_ATK_AToMS_EXmisc,",
+            "FromFile": "options/Universal_Recolors/EX_misc/D40_H1/spring_ATK_AToMS_EXmisc.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Universal_Recolors": "True"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXmisc",
+            "FromFile": "options/Universal_Recolors/EX_misc/D40_H1/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Universal_Recolors": "True"
+			}
+        },
+		
+//	//	Vibrant Pastoral
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXmisc",
+            "FromFile": "options/Vibrant_Pastoral/EX_misc/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Vibrant_Pastoral": "True",
+			}
+        },
+		
+//	//	Wittily Named
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXmisc",
+            "FromFile": "options/Wittily_Named/EX_misc/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Wittily_Named": "True",
+			}
+        },
+		
+//	ADDITIONAL OPTIONS
+		
+//	//	Mild Winter
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXmisc",
+            "FromFile": "assets/EX_misc/fall_ATK_AToMS_EXmisc.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Mild_Winter": "True",
+			}
+        }
+	]
+}

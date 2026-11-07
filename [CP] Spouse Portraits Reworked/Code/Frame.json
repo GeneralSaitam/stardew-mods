@@ -1,0 +1,348 @@
+{
+    "Changes": [
+    
+    //Abigail
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "0", "Y": "272", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",   
+            "AbigailPortrait": "Yes",
+        },
+        "PatchMode": "Overlay",
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "0", "Y": "272", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "AbigailPortrait": "Yes",
+        },
+        "PatchMode": "Overlay",
+    },
+
+    //Haley
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "32", "Y": "272", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "HaleyPortrait": "Yes",
+        },
+        "PatchMode": "Overlay",
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "32", "Y": "272", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "HaleyPortrait": "Yes",
+        },
+        "PatchMode": "Overlay",
+    },
+
+
+    //Emily
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "64", "Y": "272", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "EmilyPortrait" : "Yes",
+        },
+        "PatchMode": "Overlay",
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "64", "Y": "272", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "EmilyPortrait" : "Yes",
+        },
+        "PatchMode": "Overlay",
+    },
+  
+    //Maru
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "96", "Y": "272", "Width": 32, "Height": 32} ,
+        "When": {
+            "IsFrameSeasonal": "No",
+            "MaruPortrait" : "Yes",
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "96", "Y": "272", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "MaruPortrait" : "Yes",
+        },
+        "PatchMode": "Overlay",
+    },
+
+    //Penny
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "128", "Y": "272", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "PennyPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "128", "Y": "272", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "PennyPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay",
+    },
+
+    //Leah
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "48", "Y": "368", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "LeahPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "48", "Y": "368", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "LeahPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay",
+    },
+
+    //Harvey
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "0", "Y": "304", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "HarveyPortrait" : "Yes",
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "0", "Y": "304", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "HarveyPortrait" : "Yes",
+        },
+        "PatchMode": "Overlay",
+    },
+
+    //Alex
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "32", "Y": "304", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "AlexPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "32", "Y": "304", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "AlexPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay",
+    },
+
+    //Shane
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "64", "Y": "304", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "ShanePortrait" : "Yes"
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "64", "Y": "304", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "ShanePortrait" : "Yes"
+        },
+        "PatchMode": "Overlay",
+    },
+
+
+    //Sebastian
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "96", "Y": "304", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "SebastianPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "96", "Y": "304", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "SebastianPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay",
+    },
+
+    //Elliott
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "128", "Y": "304", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "ElliottPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "128", "Y": "304", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "ElliottPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay",
+    },
+
+    //Sam
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "80", "Y": "368", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "SamPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "80", "Y": "368", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "SamPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay",
+    },
+
+    //Krobus
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea":  { "X": "80", "Y": "400", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "KrobusPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/junimo_furniture",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea":  { "X": "80", "Y": "400", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "KrobusPortrait" : "Yes"
+        },
+        "PatchMode": "Overlay",
+    },
+
+    //SVE: Included in SVE.json
+    //RomRas: Included in other patch
+    ],
+}

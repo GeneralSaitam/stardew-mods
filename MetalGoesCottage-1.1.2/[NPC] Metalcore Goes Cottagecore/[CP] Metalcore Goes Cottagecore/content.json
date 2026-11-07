@@ -1,0 +1,116 @@
+{
+	"Format": "2.4.0",
+	"ConfigSchema": {
+		"Portrait Style": {
+			"AllowValues": "NinTheCactus, Original",
+			"Default": "Original",
+			"AllowBlank": false,
+			"Description": "Choose which portrait style to use"
+		},
+		"Exclude From Perfection": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"AllowBlank": false,
+			"Description": "Excludes MGC items from Perfection"
+		},
+		"Cambria Romantic Nickname": {
+			"Default": "Starlight",
+			"AllowBlank": false,
+			"AllowMultiple": true,
+			"Description": "Custom term of endearment for the player. Default is 'Starlight' but can be edited per preference."
+		}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "CambriaRomance",
+			"Value": false
+		},
+		{
+			"Name": "CambriaRomance",
+			"Value": true,
+			"When": {
+				"HasFlag": "Dating_Cambria"
+			}
+		},
+		{
+			"Name": "WeekDayList",
+			"Value": "Sun, Mon, Tue, Wed, Thu, Fri, Sat"
+		},
+		{
+			"Name": "WeekDay",
+			"Value": "{{WeekDayList |valueAt={{Query: {{Day}}%7}}}}"
+		},
+		{
+			"Name": "FestivalYearCheck",
+			"Value": ""
+		},
+		{
+			"Name": "FestivalYearCheck",
+			"Value": "_y2",
+			"When": {
+				"Query: {{Year}} % 2 = 1": false
+			}
+		},
+		{
+			"Name": "OrchidRain",
+			"Value": "0 TenebrousNova.EliDylan.CP_ESEDHouse 25 7 2 OrchidRoost/2300 25 8 2 OrchidRoost",
+			"When": {
+				"HasMod |contains=TenebrousNova.EliDylan.CP": true,
+				"Weather": "Storm, GreenRain"
+			}
+		},
+		{
+			"Name": "OrchidRain",
+			"Value": "610 Squeaks.MGC.CP_CCHouse 15 21 2 OrchidRoost/2300 16 21 2 OrchidRoost"
+		},
+		{
+			"Name": "CoffeehouseMail",
+			"Value": "{{i18n:CambriaHouse.String.CoffeehouseMail.1}}",
+			"When": {
+				"Hearts:Otter.Cambria": "0, 1, 2, 3"
+			}
+		},
+		{
+			"Name": "CoffeehouseMail",
+			"Value": "{{i18n:CambriaHouse.String.CoffeehouseMail.2}}",
+			"When": {
+				"Hearts:Otter.Cambria": "4, 5, 6, 7"
+			}
+		},
+		{
+			"Name": "CoffeehouseMail",
+			"Value": "{{i18n:CambriaHouse.String.CoffeehouseMail.3}}",
+			"When": {
+				"Hearts:Otter.Cambria": "8, 9, 10"
+			}
+		}
+	],
+	"Changes": [
+		{
+			"LogName": "Custom Music",
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"MGC.Theme": {
+					"ID": "MGC.Theme",
+					"Category": "Music",
+					"FilePaths": [
+						"{{AbsoluteFilePath: Assets/Music/MGCTheme.ogg}}"
+					],
+					"StreamedVorbis": true,
+					"Looped": true
+				}
+			}
+		},
+		{
+			"LogName": "Blank File Load",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Otter.Cambria, Characters/Dialogue/Otter.Orchid, Characters/Schedules/Otter.Cambria, Characters/Schedules/Otter.Orchid, Strings/OS.MGC",
+			"FromFile": "Assets/blank.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/AppearanceData.json, Data/Dialogue/Cambria_Dialogue.json, Data/Schedules/Cambria_Schedule.json, Data/Animations.json, Data/Cambria_Strings.json, Data/Cambria_Events.json, Data/Mail.json, Data/Dialogue/ConversationTopics.json, Data/Dialogue/FestivalDialogue.json, Data/FestivalLocations.json, Data/Dialogue/Orchid_Dialogue.json, Data/Schedules/Orchid_Schedule.json, Data/DogPathing.json, Data/NPCData.json, Data/Quests.json, Data/Shops.json, Data/TriggerActions.json, Data/LocationData.json, Data/MovieData.json, Data/Objects.json, Data/Dialogue/CustomGiftDialogue.json, Data/Crops.json, Data/Machines.json, Data/Recipes.json, Data/DynamicStrings.json"
+		}
+	]
+}

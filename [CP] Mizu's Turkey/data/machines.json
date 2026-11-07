@@ -1,0 +1,42 @@
+{
+	"Changes": [
+		// add mayonnaise
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules" ],
+			"Entries": {
+				"Mizu.Turkey_TurkeyMayonnaise": {
+					"Id": "Mizu.Turkey_TurkeyMayonnaise",
+					"Triggers": 
+						[
+							{
+								"RequiredItemId": "(O)Mizu.Turkey_TurkeyEgg",
+							}
+						],
+					"OutputItem":
+						[
+							{
+								"ItemId": "(O)Mizu.Turkey_TurkeyMayonnaise",
+							}
+						],
+					"MinutesUntilReady": 180,
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"MoveEntries": [
+				{
+					"Id": "Mizu.Turkey_TurkeyMayonnaise",
+					"BeforeId": "Default_Egg"
+				}
+			]
+		}
+	]
+}

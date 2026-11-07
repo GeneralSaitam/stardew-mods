@@ -1,0 +1,63 @@
+{
+  "Changes": [
+    {
+      "LogName": "SBV - Fishing Difficulty",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "skellady.SBVCP_AzureanCarp": {
+          "1": "{{Round: {{Query: (15 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "skellady.SBVCP_Barkfish": {
+          "1": "{{Round: {{Query: (20 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "skellady.SBVCP_BonbonFish": {
+          "1": "{{Round: {{Query: (55 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "skellady.SBVCP_BubblyBetta": {
+          "1": "{{Round: {{Query: (25 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "skellady.SBVCP_ChartreuseTilapia": {
+          "1": "{{Round: {{Query: (55 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "skellady.SBVCP_EeltailedCatfish": {
+          "1": "{{Round: {{Query: (70 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "skellady.SBVCP_EmeraldSnapper": {
+          "1": "{{Round: {{Query: (40 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "skellady.SBVCP_FiretailGuppy": {
+          "1": "{{Round: {{Query: (40 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "skellady.SBVCP_Najelfish": {
+          "1": "{{Round: {{Query: (45 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "skellady.SBVCP_SeaCow": {
+          "1": "{{Round: {{Query: (20 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "skellady.SBVCP_Aberrant": {
+          "1": "{{Round: {{Query: (95 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "skellady.SBVCP_AnglerJr": {
+          "1": "{{Round: {{Query: (85 * (1 {{DifficultyMultiplier}})) }} }}"
+        }
+      },
+      "When": {
+        "Fishing Difficulty": "5% Easier, 10% Easier, 15% Easier, 20% Easier, 25% Easier, 30% Easier, 35% Easier, 40% Easier, 45% Easier, 50% Easier, 55% Easier, 60% Easier, 65% Easier, 70% Easier, 75% Easier, 80% Easier, 85% Easier, 90% Easier, 95% Easier, 100% Easier, 10% Easy Sunday, 20% Easy Sunday, 30% Easy Sunday, 40% Easy Sunday, 50% Easy Sunday, 5% Harder, 10% Harder, 15% Harder, 20% Harder, 25% Harder, 30% Harder, 35% Harder, 40% Harder, 45% Harder, 50% Harder, 55% Harder, 60% Harder, 65% Harder, 70% Harder, 75% Harder, 80% Harder, 85% Harder, 90% Harder, 95% Harder, 100% Harder, NIGHTMARE"
+      }
+    },
+    {
+      "LogName": "SBV - Fishing Difficulty 100% Easier Float to Smooth",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "skellady.SBVCP_FiretailGuppy": {
+          "2": "smooth"
+        }
+      },
+      "When": {
+        "Fishing Difficulty": "100% Easier"
+      }
+    }
+  ]
+}

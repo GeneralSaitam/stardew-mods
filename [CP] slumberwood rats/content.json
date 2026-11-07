@@ -1,0 +1,727 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "LogName": "Load assets",
+      "Action": "Load",
+      "Target": "assets/slumberwood.voidcheese, assets/slumberwood.honeyrat, assets/slumberwood.grayrat2, assets/slumberwood.darkbrownrat, assets/slumberwood.lightbrownrat, assets/slumberwood.blackrat2, assets/slumberwood.grayrat3, assets/slumberwood.voidrat, assets/slumberwood.grayratlight, assets/slumberwood.whiterat2, assets/slumberwood.tuxedo, assets/slumberwood.grayrat, assets/slumberwood.brownwhite, assets/slumberwood.babyrat, assets/slumberwood.fawnrat, assets/slumberwood.brownrat, assets/slumberwood.whiterat, assets/slumberwood.agoutirat, assets/slumberwood.raticon, assets/slumberwood.blackrat, assets/slumberwood.hoodedapricotrat, assets/slumberwood.siameserat, assets/slumberwood.spotrussianblue",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Load data for Rats!",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Brown Rat": {
+          "DisplayName": "Brown Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": 1500,
+          "ShopTexture": "assets/slumberwood.raticon",
+          "Sound": "dustMeep",
+          "ShopSourceRect": {
+            "X": 0,
+            "Y": 0,
+            "Width": 32,
+            "Height": 16
+          },
+          "RequiredBuilding": "Coop",
+          "ShopDisplayName": "Rat",
+          "ShopDescription": "Cute little critters ready for a new home!",
+          "ShopMissingBuildingDescription": "???",
+          "BirthText": "A baby rat has been born!",
+          "moodMessage": "?",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "AlternatePurchaseTypes": [
+            {
+              "Condition": null,
+              "AnimalIds": [
+                "Brown Rat",
+                "White Rat",
+                "Agouti Rat",
+                "Black Rat",
+                "Hooded Apricot Rat",
+                "Siamese Rat",
+                "VRussian Blue Rat",
+                "Fawn Rat",
+                "Brown Spotted Rat",
+                "Albino Rat",
+                "Tuxedo Rat",
+                "Gray Rat",
+                "Void Rat",
+                "Honey Rat",
+                "Dark Gray Rat",
+                "Dark Brown Rat",
+                "Light Brown Rat",
+                "Gray Spot Rat",
+                "Black Spot Rat"
+
+              ]
+            }
+          ],
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ],
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.brownrat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16"
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Agouti Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Agouti Rat": {
+          "DisplayName": "Agouti Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.agoutirat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for White Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "White Rat": {
+          "DisplayName": "White Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.whiterat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+             }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Black Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Black Rat": {
+          "DisplayName": "Black Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.blackrat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 0,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Hooded Apricot Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Hooded Apricot Rat": {
+          "DisplayName": "Hooded Apricot Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.hoodedapricotrat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Siamese Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Siamese Rat": {
+          "DisplayName": "Siamese Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.siameserat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for VRussian Blue Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "VRussian Blue Rat": {
+          "DisplayName": "VRussian Blue Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.spotrussianblue",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Fawn Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Fawn Rat": {
+          "DisplayName": "Fawn Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.fawnrat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Brown Spotted Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Brown Spotted Rat": {
+          "DisplayName": "Brown Spotted Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.brownwhite",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Albino Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Albino Rat": {
+          "DisplayName": "Albino Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.whiterat2",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Tuxedo Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Tuxedo Rat": {
+          "DisplayName": "Tuxedo Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.tuxedo",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Gray Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Gray Rat": {
+          "DisplayName": "Gray Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.grayrat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Void Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Void Rat": {
+          "DisplayName": "Void Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "3",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": false,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.voidrat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 100,
+              "ItemID": "VoidCheese"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Gray mask Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Gray mask Rat": {
+          "DisplayName": "Gray mask Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.grayratlight",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Honey Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Honey Rat": {
+          "DisplayName": "Honey Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.honeyrat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Dark Gray Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Dark Gray Rat": {
+          "DisplayName": "Dark Gray Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.grayrat2",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Dark Brown Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Dark Brown Rat": {
+          "DisplayName": "Dark Brown Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.darkbrownrat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Light Brown Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Light Brown Rat": {
+          "DisplayName": "Light Brown Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.lightbrownrat",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Gray Spot Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Gray Spot Rat": {
+          "DisplayName": "Gray Spot Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.grayrat3",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Load Data for Black Spot Rat",
+      "Action": "EditData",
+      "Target": "Data/FarmAnimals",
+      "Entries": {
+        "Black Spot Rat": {
+          "DisplayName": "Black Spot Rat",
+          "House": "Coop",
+          "Gender": "MaleOrFemale",
+          "PurchasePrice": -1,
+          "RequiredBuilding": "Coop",
+          "Sound": "dustMeep",
+          "DaysToMature": "4",
+          "DaysToProduce": "2",
+          "HarvestType": "DropOvernight",
+          "HappinessDrain": 3,
+          "GrassEatAmount": 1,
+          "ShowSummitCredits": true,
+          "CanGetPregnant": true,
+          "BabiesFollowAdults": false,
+          "Texture": "assets/slumberwood.blackrat2",
+          "BabyTexture": "assets/slumberwood.babyrat",
+          "SpriteWidth": "16",
+          "SpriteHeight": "16",
+          "ProduceItemIDs": [
+            {
+              "MinimumFriendship": 50,
+              "ItemID": "424"
+            }
+          ]
+       }
+    }
+},
+{ 
+    "LogName": "Item Data for Void Cheese",      
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries": {
+        "VoidCheese": {
+            "Category": -26,
+            "Description": "This cheese looks rather spicy.",
+            "Displayname": "Void Cheese",
+            "Name": "VoidCheese",
+            "Price": 275,
+            "Texture": "assets/slumberwood.voidcheese",
+            "Type": "Artisan Goods",
+            "Edibility": -75
+        }
+    }
+}
+]
+}

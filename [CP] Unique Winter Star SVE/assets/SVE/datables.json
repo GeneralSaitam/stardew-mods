@@ -1,0 +1,116 @@
+{
+	"Changes":[
+		{
+			"LogName": "Sophia - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sophia.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sophia.After}}",
+			},
+			"When": {
+				"Sophia": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sophia - Winter Star, High Hearts",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sophia.High.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sophia.High.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=8185298": "true",
+				"Sophia": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Claire - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Claire",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Claire.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Claire.After}}",
+			},
+			"When": {
+				"Claire": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.After}}",
+			},
+			"When": {
+				"Victor": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Olivia - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Olivia",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Olivia.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Olivia.After}}",
+			},
+			"When": {
+				"Olivia": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star, Player Married to Olivia",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Olivia.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Olivia.After}}",
+			},
+			"When": {
+				"relationship:Olivia": "married",
+				"Victor": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Olivia - Winter Star, Player Married to Victor",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Olivia",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Olivia.Victor.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Olivia.Victor.After}}",
+			},
+			"When": {
+				"relationship:Victor": "married",
+				"Olivia": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Lance - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lance",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Lance.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Lance.Dating.After}}",
+			},
+			"When": {
+				"Lance": "dialogueearly, dialoguespice",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Scarlett",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Scarlett",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Scarlett.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Scarlett.WinterStar.After}}",
+			},
+			"When": {
+				"Scarlett": "enabled, spicy",
+			},
+		},
+	],
+}

@@ -1,0 +1,93 @@
+{
+    "Changes": [
+        {
+            "LogName": "Quest Data",
+            "Action": "EditData",
+            "Target": "Data/Quests",
+            "Entries": {
+                "MGC.WrongLetter": "Location/{{i18n:MGC.WrongLetter.Title}}/{{i18n:MGC.WrongLetter.Body}}/{{i18n:MGC.WrongLetter.Hint}}/EastScarp_Village/-1/0/-1/false"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "LooseSprites/MGC.Emojis",
+            "FromFile": "Assets/Images/MGC.Emojis.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/EastScarp/DurationOverride",
+            "Entries": {
+                "Otter.Cambria": "-1"
+            }
+        },
+        {
+            "LogName": "Elder Lily Special Order",
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Otter.Cambria": {
+                    "Name": "[Cambria_Name]",
+                    "Requestor": "{{i18n:Name.Cambria}}",
+                    "Repeatable": "False",
+                    "RequiredTags": null,
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[Cambria_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "[Cambria_Objective_1_Text]",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "DropBox": "CamieFridge",
+                                "DropBoxGameLocation": "Squeaks.MGC.CP_CCGreenhouse",
+                                "DropBoxIndicatorLocation": "8 2",
+                                "AcceptedContextTags": "item_void_egg"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[Cambria_Objective_2_Text]",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "CamieFridge",
+                                "DropBoxGameLocation": "Squeaks.MGC.CP_CCGreenhouse",
+                                "DropBoxIndicatorLocation": "8 2",
+                                "AcceptedContextTags": "item_void_salmon"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "5000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "CambriaElderLily",
+                                "NoLetter": false
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Logname": "Cambria Special Order Strings",
+            "Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+            "Entries": {
+                "Cambria_Name": "{{i18n:SpecialOrders.Cambria.Name}}",
+                "Cambria_Text": "{{i18n:SpecialOrders.Cambria.Text}}",
+                "Cambria_Objective_1_Text": "{{i18n:SpecialOrders.Cambria.Obj1}}",
+                "Cambria_Objective_2_Text": "{{i18n:SpecialOrders.Cambria.Obj2}}"
+            }
+        }
+    ]
+}

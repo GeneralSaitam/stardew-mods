@@ -1,0 +1,89 @@
+{
+    "Changes": [
+	{
+		"Action": "EditData", 
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_BorealPlate": {
+				"Name": "{{ModId}}_BorealPlate",
+				"DisplayName": "Boreal Plate",
+				"Description": "A crip and delicate taste of the cold season.",
+				"Type": "Basic",
+				"Category": -7,
+				"Price": 310,
+				"Texture": "Mods/{{ModId}}/objects16px",
+				"SpriteIndex": 8, 
+				"Edibility": 66, 
+				"IsDrink": false,
+			}
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/CookingRecipes", 
+		"Entries": {
+			"BorealPlate": "Powdermelon 1 414 1 416 1/1 1/{{ModId}}_BorealPlate/default"
+			}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Demetrius", 1], //Demetrius generally likes the ingredients of Boreal Plate, so he likes the dish as well. Also, Demetrius was arbitrarily the placeholder I used in all of the dishes in this mod for NPC Gift Taste, so I thought it would be fun to actually have him like one of them.
+				"Value": "{{ModId}}_BorealPlate",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leah", 1], //Leah likes all of the ingredients, so she enjoys Boreal Plate.
+				"Value": "{{ModId}}_BorealPlate",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Linus", 1], //Linus likes all of the ingredients, so he enjoys Boreal Plate. I like to think this is something he makes in the wintertime to keep fed, from the ingredients available in winter.
+				"Value": "{{ModId}}_BorealPlate",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Maru", 7], //Maru dislikes most of the ingredients and HATES Snow Yam, so she hates Boreal Plate.
+				"Value": "{{ModId}}_BorealPlate",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Haley", 5], //Haley dislikes all of the ingredients, so she dislikes Boreal Plate, too.
+				"Value": "{{ModId}}_BorealPlate",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Abigail", 5], //Abigail dislikes all of the ingredients, so she dislikes Boreal plate, too.
+				"Value": "{{ModId}}_BorealPlate",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Sandy", 1], //Sandy likes most of the ingredients, plus I think that the novelty of a seasonal winter dish from the valley would be enjoyable for her.
+				"Value": "{{ModId}}_BorealPlate",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", 5], //Vincent dislikes all of the ingredients, so he dislikes Boreal Plate, too.
+				"Value": "{{ModId}}_BorealPlate",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Jas", 5], //Jas dislikes all of the ingredients, so she dislikes Boreal Plate, too. 
+				"Value": "{{ModId}}_BorealPlate",
+				"Delimiter": " "
+			}
+		]
+	}
+    ]
+}

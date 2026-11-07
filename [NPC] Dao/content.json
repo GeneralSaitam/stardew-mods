@@ -1,0 +1,358 @@
+{
+	"Format": "2.5.0",
+	"ConfigSchema": {
+		"SeasonalOutfits":{
+			"AllowValues": "Regular, Random, false",
+			"Default": "Random",
+			"Description": "Enables Dao's seasonal and festival outfits. 'Regular' gives her one unique outfit set per season, 'Random' gives her mix-and-match outfits across all seasons, and if set to 'false', she will only have base, winter, and beach outfits like vanilla characters."
+		}
+	},
+	"DynamicTokens": [
+		// MISC DYNAMIC TOKENS
+		{
+			"Name": "DaoFestivalPositionsToken",
+			"Value": ""
+		},
+		{
+			"Name": "DaoFestivalPositionsToken",
+			"Value": "_y2",
+			"When": {
+				"Query: {{Year}} % 2 = 0": true
+			}
+		},
+		{
+			"Name": "Dao2HeartRecipeToken",
+			"Value": ""
+		},
+		{
+			"Name": "Dao2HeartRecipeToken",
+			"Value": "pause 500/playSound achievement/message \"{{i18n:Dao.Events.2Heart.Recipe}}\"/addCookingRecipe Stir Fry/",
+			"When": {
+				"HasCookingRecipe |contains= Stir Fry": false
+			}
+		},
+		{
+			"Name": "ReadingRandomToken",
+			"Value": "{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}}"
+		},
+		{
+			"Name": "ReadingRandomToken",
+			"Value": "{{Random: {{ReadingRandomToken}}, 11}}",
+			"When": {
+				"HasFlag |contains= DaoWotWBook1": true,
+				"HasFlag |contains= DaoWotWBook2": true
+			}
+		},
+		{
+			"Name": "ReadingRandomToken",
+			"Value": "{{Random: {{ReadingRandomToken}}, 12}}",
+			"When": {
+				"HasFlag |contains= DaoCaveBook": true
+			}
+		},
+		{
+			"Name": "ReadingRandomToken",
+			"Value": "{{Random: {{ReadingRandomToken}}, 13}}",
+			"When": {
+				"HasFlag |contains= DaoMysteryBook": true
+			}
+		},
+		{
+			"Name": "ReadingRandomToken",
+			"Value": "{{Random: {{ReadingRandomToken}}, 14}}",
+			"When": {
+				"HasFlag |contains= DaoCookbook": true
+			}
+		},
+		// MAP DYNAMIC TOKENS
+		{
+			"Name": "FirefightingToken",
+			"Value": "Parked"
+		},
+		{
+			"Name": "FirefightingToken",
+			"Value": "{{Random: Parked, Parked, Parked, Parked, Parked, Empty}}",
+			"When": {
+				"Weather |contains= sun, wind": true,
+				"Query: ({{Day}} = 1 AND '{{Season}} = 'spring') OR ({{Day}} = 16 AND '{{Season}}' = 'summer')": false,
+				"HasConversationTopic |contains= DaoReturns": false
+			}
+		},
+		{
+			"Name": "FirefightingToken",
+			"Value": "{{Random: Parked, Parked, Empty}}",
+			"When": {
+				"Season |contains= summer": true,
+				"Weather |contains= sun, wind": true,
+				"Query: ({{Day}} = 1 AND '{{Season}} = 'spring') OR ({{Day}} = 16 AND '{{Season}}' = 'summer')": false,
+				"HasConversationTopic |contains= DaoReturns": false
+			}
+		},
+		{
+			"Name": "KayakingToken",
+			"Value": "true"
+		},
+		{
+			"Name": "KayakingToken",
+			"Value": "{{Random: false, true, true}}",
+			"When": {
+				"Season |contains= winter": false,
+				"FirefightingToken": "Empty"
+			}
+		},
+		{
+			"Name": "KayakingToken",
+			"Value": "false",
+			"When": {
+				"HasFlag |contains= DaoTravellingFlag, DaoTravellingInitialFlag": true
+			}
+		},
+		// SCHEDULE DYNAMIC TOKENS
+		{
+			"Name": "Schedule_RegularReading",
+			"Value": "{{Random: 1630 Custom_SBV_DaoHouse 2 13 2 dao_homecooking/2000 Custom_SBV_DaoHouse 8 12 2 dao_reading \"Strings\\schedules\\AirynDao:Schedule.Reading\", 1630 Custom_SBV_SunberryVillage 34 65 2 dao_reading \"Strings\\schedules\\AirynDao:Schedule.Reading\"/2000 Custom_SBV_DaoHouse 2 13 2 dao_homecooking |key= DaoScheduleReading}}"
+		},
+		{
+			"Name": "Schedule_RainyDay",
+			"Value": "{{Random: 1200 Custom_SBV_DaoHouse 8 12 2 dao_reading \"Strings\\schedules\\AirynDao:Schedule.Reading\", 1200 Custom_SBV_SunberryLibrary 3 11 2 dao_reading \"Strings\\schedules\\AirynDao:Schedule.Reading\", 1200 Custom_SBV_SunberryForest 40 47 1 square_9_9, 1200 Custom_SBV_SunberryMountain 41 23 0 square_9_9 |key= DaoScheduleRain}}"
+		},
+		{
+			"Name": "Schedule_SaturdayHangout",
+			"Value": "{{Random: 1600 Custom_SBV_SunberryVillage 61 79 2 dao_stirfry \"Strings\\schedules\\AirynDao:Schedule.SaturdayCooking\", 1600 Custom_SBV_SunberryVillage 60 81 3 \"Strings\\schedules\\AirynDao:Schedule.SaturdayHangout\"|key= DaoJonghyukSaturdayHangout}}"
+		},
+		{
+			"Name": "Schedule_SaturdayHangoutDialogue",
+			"Value": "{{Random: 1,2,3,4,5,6}}"
+		},
+		{
+			"Name": "Schedule_SaturdayHangoutDialogue",
+			"Value": "{{Random: 1,2,3,7,8,9 |key= DaoJonghyukSaturdayHangout}}",
+			"When": {
+				"Query: {{Random: 1,2,3 |key= DaoJonghyukSaturdayHangout}} = 2": true,
+				"HasMod |contains= Arknir.Jonghyuk": true
+			}
+		},
+		{
+			"Name": "Schedule_SaturdayHangout",
+			"Value": "{{Random: 1600 Custom_SBV_SunberryVillage 61 79 2 dao_stirfry \"Strings\\schedules\\AirynDao:Schedule.SaturdayCooking\", 1600 Custom_SBV_SunberryVillage 60 81 0 \"Strings\\schedules\\AirynDao:Schedule.SaturdayHangout\", 1600 Custom_SBV_SunberryVillage 60 81 0 \"Strings\\schedules\\AirynDao:Schedule.SaturdayHangout\"|key= DaoJonghyukSaturdayHangout}}",
+			"When": {
+				"HasMod |contains= Arknir.Jonghyuk": true
+			}
+		},
+		{
+			"Name": "Schedule_SundayWrenDaoMechanics",
+			"Value": "0 Custom_SBV_DaoHouse 12 5 1/830 Custom_SBV_DaoHouse 3 13 0 square_3_1_0/1000 Custom_SBV_SunberryVillage 8 12 2 square_3_1_2 \"Strings\\schedules\\AirynDao:Schedule.Mechanics\"/1300 Custom_SBV_SunberryLibrary 3 11 2 dao_reading"
+		},
+		{
+			"Name": "Schedule_SundayWrenDaoMechanics",
+			"Value": "{{Random: 0 Custom_SBV_DaoHouse 12 5 1/630 Custom_SBV_DaoHouse 3 13 0 square_3_1_0/800 Custom_SBV_SunberryVillage 8 13 2 square_3_1_2 \"Strings\\schedules\\AirynDao:Schedule.MechanicsWren\"/1000 Custom_SBV_SunberryVillage 11 16 3 square_1_5_3 \"Strings\\schedules\\AirynDao:Schedule.MechanicsWren\"/1330 Custom_SBV_SunberryVillage 9 20 0 square_3_1_0 \"Strings\\schedules\\AirynDao:Schedule.MechanicsWren\", 0 Custom_SBV_DaoHouse 12 5 1/830 Custom_SBV_DaoHouse 3 13 0 square_3_1_0/1000 Custom_SBV_SunberryVillage 8 12 2 square_3_1_2 \"Strings\\schedules\\AirynDao:Schedule.Mechanics\"/1300 Custom_SBV_SunberryLibrary 3 11 2 dao_reading|key= WrenDaoSync}}",
+			"When": {
+				"HasMod |contains= tiakall.wren": true
+			}
+		},
+		{
+			"Name": "Schedule_TwilightFestival",
+			"Value": "a1630 Custom_SBV_SunberryVillage 38 53 1"
+		},
+		{
+			"Name": "Schedule_TwilightFestival",
+			"Value": "{{Random: a1630 Custom_SBV_SunberryVillage 38 53 1, a1630 Custom_SBV_SunberryVillage 19 76 2}}",
+			"When": {
+				"HasMod |contains= Clara.Ripley": true
+			}
+		},
+		// SEASONAL OUTFITS DYNAMIC TOKENS
+		// PORTRAITS
+		{
+			"Name": "SpringFallPortraitsToken",
+			"Value": "{{Random: TurqTshirt, WhiteTshirt, TealOpen_TurqTshirt, TealOpen_WhiteTshirt}}"
+		},
+		{
+			"Name": "SpringFallPortraitsToken",
+			"Value": "{{Random: TurqTshirt, WhiteTshirt, TealOpen_TurqTshirt, TealOpen_WhiteTshirt, TealClosed, TealFleece}}",
+			"When": {
+				"Weather": "Wind"
+			}
+		},
+		{
+			"Name": "RegularWeatherToken",
+			"Value": "Sun"
+		},
+		{
+			"Name": "RegularWeatherToken",
+			"Value": "Rain",
+			"When": {
+				"Season |contains= winter": false,
+				"Weather": "Rain, Storm"
+			}
+		},
+		{
+			"Name": "RegularWeatherToken",
+			"Value": "Snow",
+			"When": {
+				"Season |contains= winter": true,
+				"Weather": "Rain, Storm"
+			}
+		},
+		{
+			"Name": "SummerPortraitsToken",
+			"Value": "{{Random: TurqTshirt, WhiteTshirt, TurqTank}}"
+		},
+		{
+			"Name": "WinterPortraitsToken",
+			"Value": "{{Random: TealClosed, TealFleece}}"
+		},
+		{
+			"Name": "IndoorPortraitsToken",
+			"Value": "{{SpringFallPortraitsToken}}",
+		},
+		{
+			"Name": "IndoorPortraitsToken",
+			"Value": "{{SummerPortraitsToken}}",
+			"When": {
+				"Season": "Summer"
+			}
+		},
+		{
+			"Name": "IndoorPortraitsToken",
+			"Value": "{{WinterPortraitsToken}}",
+			"When": {
+				"Season": "Winter"
+			}
+		},
+		{
+			"Name": "OutdoorPortraitsToken",
+			"Value": "{{IndoorPortraitsToken}}",
+		},
+		{
+			"Name": "OutdoorPortraitsToken",
+			"Value": "{{IndoorPortraitsToken}}_{{Random: Choc, Rust, Sand}}Buff",
+			"When": {
+				"Weather": "Wind",
+				"Season |contains= winter": false,
+				"SummerPortraitsToken |contains= TurqTank": false
+			}
+		},
+		{
+			"Name": "OutdoorPortraitsToken",
+			"Value": "Raincoat",
+			"When": {
+				"Weather": "Rain, Storm",
+				"Season |contains= winter": false
+			}
+		},
+		{
+			"Name": "OutdoorPortraitsToken",
+			"Value": "TealFleece_{{Random: Choc, Rust, Sand}}Buff",
+			"When": {
+				"Season": "winter",
+				"Weather": "sun, wind"
+			}
+		},
+		{
+			"Name": "OutdoorPortraitsToken",
+			"Value": "{{Random: WinterCoat, WinterCoat_Beanie}}",
+			"When": {
+				"Season": "winter",
+				"Weather |contains= sun, wind": false
+			}
+		},
+		// SPRITES
+		{
+			"Name": "PantsSpritesToken",
+			"Value": "{{Random: Char, Choc, Sand}}{{Random: Pants, Pants, Shorts}}",
+			"When": {
+				"Season": "Spring, Fall"
+			}
+		},
+		{
+			"Name": "PantsSpritesToken",
+			"Value": "{{Random: Char, Choc, Sand}}Shorts",
+			"When": {
+				"Season": "Summer"
+			}
+		},
+		{
+			"Name": "PantsSpritesToken",
+			"Value": "{{Random: Char, Choc, Sand}}Pants",
+			"When": {
+				"Season": "Winter"
+			}
+		},
+		{
+			"Name": "IndoorSpritesToken",
+			"Value": "{{IndoorPortraitsToken}}_{{PantsSpritesToken}}"
+		},
+		{
+			"Name": "OutdoorSpritesToken",
+			"Value": "{{OutdoorPortraitsToken}}_{{PantsSpritesToken}}"
+		},
+		// COMPATIBILITY TOKENS		
+		{
+			"Name": "JonghyukCompatToken",
+			"Value": ""
+		},
+		{
+			"Name": "JonghyukCompatToken",
+			"Value": ".JH",
+			"When": {
+				"HasMod |contains= Arknir.Jonghyuk": true
+			}
+		},
+		{
+			"Name": "WAGTeaCompatToken",
+			"Value": "addObject 74 24 614/addObject 75 24 614/addObject 74 23 614/addObject 75 23 614/"
+		},
+		{
+			"Name": "WAGTeaCompatToken",
+			"Value": "addTemporaryActor Airyn_Dao_DrinksTemp 32 32 74 24 2 false",
+			"When": {
+				"HasMod |contains= Wildflour.AtelierGoods, Wildflour.SASS": true
+			}
+		},
+	],
+	"Changes": [
+		// LOADS & INCLUDES
+		{
+			"LogName": "Dialogue & Schedule Blank",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/AirynDao, Characters/schedules/AirynDao, Strings/schedules/AirynDao",
+			"FromFile": "Data/blank.json"
+		},
+		{
+			"LogName": "Data Includes",
+			"Action": "Include",
+			"FromFile": "Data/DaoDialogue.json, Data/DaoDisposition.json, Data/DaoMaps.json, Data/DaoTriggerActions.json, Data/DaoSchedule.json, Data/DaoEvents.json, Data/DaoMovies.json, Data/DaoMapStrings.json, Data/DaoFestivals.json"
+		},
+		{
+			"LogName": "Temp Map Loads",
+			"Action": "Load",
+			"Target": "Maps/DaoMountainTemp",
+			"FromFile": "Assets/{{Target}}.tmx"
+		},
+		{
+			"LogName": "Temp Actor Loads",
+			"Action": "Load",
+			"Target": "Characters/Airyn_Dao_DrinksTemp",
+			"FromFile": "Assets/Maps/Tilesheets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Art Load - Base",
+			"Action": "Load",
+			"Target": "Characters/AirynDao, Portraits/AirynDao",
+			"FromFile": "Assets/{{TargetPathOnly}}/Dao.png"
+		},
+		{
+			"LogName": "Art Load - Winter",
+			"Action": "Load",
+			"Target": "Characters/AirynDao_Winter, Portraits/AirynDao_Winter",
+			"FromFile": "Assets/{{TargetPathOnly}}/Dao_Winter.png"
+		},
+		{
+			"LogName": "Art Load - Beach",
+			"Action": "Load",
+			"Target": "Characters/AirynDao_Beach, Portraits/AirynDao_Beach",
+			"FromFile": "Assets/{{TargetPathOnly}}/Dao_Beach.png"
+		},
+	]
+}

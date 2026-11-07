@@ -1,0 +1,201 @@
+{
+  "Changes": [
+    {
+      "LogName": "Main Roommate Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        
+        "marriage_Mon": "900 Town 82 14 2 juna_wballet \"Strings\\schedules\\Juna:marriage_Mon.{{Random:000,001,002}}\"/a1710 ScienceHouse 30 11 3 \"Strings\\schedules\\Juna:marriage_Mon.{{Random:003,004,005,006 |key=Monday}}\"/1930 Forest 17 36 1 juna_recharge/2400 elhrvy.NPCJuna_JunaCave 7 5 1 \"Strings\\schedules\\Juna:marriage_cave\"/2600 BusStop -1 23 3",
+
+        "marriage_Wed": "900 Town 44 77 2 juna_sittingChair \"Strings\\schedules\\Juna:marriage_Wed.{{Random:000,001,002}}\"/1300 Town 32 55 2 juna_spyreadingRM \"Strings\\schedules\\Juna:marriage_Wed.{{Random:003,004,005}}\"/1700 Town 18 8 2 juna_sitting \"Strings\\schedules\\Juna:marriage_Wed.006\"/2000 BusStop -1 23 3",
+
+        "marriage_Fri": "900 Forest 26 17 0 \"Strings\\schedules\\Juna:marriage_Fri.{{Random:000,001,002}}\"/1500 Forest 33 98 2 juna_bballet \"Strings\\schedules\\Juna:marriage_Fri.{{Random:003,004,005}}\"/2200 elhrvy.NPCJuna_JunaCave 3 5 0 \"Strings\\schedules\\Juna:marriage_Fri.{{Random:006,007,008}}\"/2400 elhrvy.NPCJuna_JunaCave 7 5 1 \"Strings\\schedules\\Juna:marriage_cave\"/2600 BusStop -1 23 3",
+
+        "marriage_Sun": "900 Forest 2 34 1 juna_recharge/a1300 WizardHouse 1 20 1 \"Strings\\schedules\\Juna:marriage_Sun.{{Random:000,001,002 |key=Sunday}}\"/1600 WizardHouse 11 13 2 juna_sitting2 \"Strings\\schedules\\Juna:marriage_Sun.{{Random:003,004,005 |key=Sunday1}}\"/1800 BusStop -1 23 3",
+
+        //Birthday
+        "marriage_summer_5": "900 Forest 26 17 0 \"Strings\\schedules\\Juna:marriage_Fri.{{Random:000,001,002}}\"/a1700 Saloon 23 21 2 \"Strings\\schedules\\Juna:marriage_summer_5.000\"/2100 BusStop -1 23 3",
+
+        //Robin's Birthday
+        "marriage_fall_21": "a1720 ScienceHouse 26 13 1 \"Strings\\schedules\\Juna:marriage_fall_21.000\"/2030 BusStop -1 23 3",
+
+        //Wizard's Birthday
+        "marriage_winter_17": "a1100 WizardHouse 2 6 0 \"Strings\\schedules\\Juna:marriage_winter_17.000\"/a1600 WizardHouse 9 15 2 juna_sitting2 \"Strings\\schedules\\Juna:marriage_winter_17.001\"/a1900 WizardHouse 4 18 2 \"Strings\\schedules\\Juna:marriage_winter_17.002\"/2300 BusStop -1 23 3",
+
+        //Night Market
+        "marriage_winter_16": "a1800 Beach 15 8 2 \"Strings\\schedules\\Juna:marriage_winter_16.001\"/2100 BusStop -1 23 3",
+
+        //Desert Festival
+        "marriage_DesertFestival_2": "900 Desert 5 24 2 \"Strings\\schedules\\Juna:marriage_DesertFestival\"/2530 bed",
+
+        //Olive
+        "marriage_spring_3": "0730 BathHouse_WomensLocker 11 7 2 \"Strings\\schedules\\Juna:marriage_Wed_3.000\"/1700 Town 50 23 0 \"Strings\\schedules\\Juna:marriage_Wed_3.001\"/2100 BusStop -1 23 3",
+        "marriage_summer_3": "0730 BathHouse_WomensLocker 11 7 2 \"Strings\\schedules\\Juna:marriage_Wed_3.002\"/1700 Town 50 23 0 \"Strings\\schedules\\Juna:marriage_Wed_3.001\"/2100 BusStop -1 23 3",
+        "marriage_fall_3": "0730 BathHouse_WomensLocker 11 7 2 \"Strings\\schedules\\Juna:marriage_Wed_3.003\"/1700 Town 50 23 0 \"Strings\\schedules\\Juna:marriage_Wed_3.001\"/2100 BusStop -1 23 3",
+        "marriage_winter_3": "0730 BathHouse_WomensLocker 11 7 2 \"Strings\\schedules\\Juna:marriage_Wed_3.004\"/1700 Town 50 23 0 \"Strings\\schedules\\Juna:marriage_Wed_3.001\"/2100 BusStop -1 23 3"
+      }
+    },
+
+    //HACKY HACKY HACK TO GET JUNA TO GO OUT EVEN WHEN IT'S STORMY WITHOUT C#
+    {
+      "LogName": "Stormy Day Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "marriage_spring_1": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_2": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_4": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_5": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_6": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_7": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_8": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_9": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_10": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_11": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_12": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_14": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_15": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_16": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_17": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_18": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_19": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_20": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_21": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_22": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_23": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_25": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_26": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_27": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_spring_28": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+
+        "marriage_summer_1": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_2": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_4": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_6": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_7": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_8": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_9": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_10": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_12": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_13": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_14": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_15": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_16": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_17": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_18": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 33",
+        "marriage_summer_19": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_20": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_21": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_22": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_23": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_24": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_25": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_26": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_summer_27": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+
+        "marriage_fall_1": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_2": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_4": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_5": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_6": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_7": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_8": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_9": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_10": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_11": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_12": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_13": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_14": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_15": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_17": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_18": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_19": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_20": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_22": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_23": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_24": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_25": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_26": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3",
+        "marriage_fall_28": "700 Forest 7 36 2 juna_wballet \"Strings\\schedules\\Juna:marriage_storm.{{Random:000,001}}\"/1500 Forest 17 36 1 \"Strings\\schedules\\Juna:marriage_storm.{{Random:002,003}}\"/1800 BusStop -1 23 3"
+      },
+      "When": {
+        "Weather": "storm"
+      }
+    },
+
+    //ROOMMATE SCHEDULE EDITS
+
+    //Wizard's Birthday SVE
+
+    {
+      "LogName": "Wizard's Birthday SVE",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "marriage_winter_17": "a1100 Custom_WizardBasement 14 5 0 \"Strings\\schedules\\Juna:marriage_winter_17.000\"/a1600 WizardHouse 9 15 2 juna_sitting2 \"Strings\\schedules\\Juna:marriage_winter_17.001\"/a1900 WizardHouse 4 18 2 \"Strings\\schedules\\Juna:marriage_winter_17.002\"/2300 BusStop -1 23 3"
+      },
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+      }
+    },
+    
+    //ES Spirit's Eve
+
+    {
+      "LogName": "East Scarp's Spirit's Eve Roommate",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "marriage_fall_27": "a1400 Custom_EastScarpeInn 47 18 2 \"Strings\\schedules\\Juna:marriage_fall_27.000\"/1930 Town 10 12 1/2400 BusStop -1 23 3"
+      },
+      "When": {
+        "HasMod": "Lemurkat.JacobEloise.CP"
+      }
+    },
+
+    //Please remember my birthday compat
+
+    {
+      "LogName": "Juna Fall 21 PRmB Schedule Roommate",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "marriage_fall_21": "a1930 ScienceHouse 29 9 2 \"Strings\\schedules\\Juna:marriage_fall_21.001\"/2030 BusStop -1 23 3"
+      },
+      "When": {
+        "HasMod |contains=nraittanna.RememberMyBirthday": "true"
+      }
+    },
+
+    //If Alex & George
+
+    {
+      "LogName": "Juna Roommate Summer Fridays w George",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "marriage_Fri": "a1220 Town 51 60 2 \"Strings\\schedules\\Juna:marriage_summer_Fri.000\"/1500 Forest 33 98 2 juna_bballet \"Strings\\schedules\\Juna:marriage_Fri.{{Random:003,004,005}}\"/2200 elhrvy.NPCJuna_JunaCave 3 5 0 \"Strings\\schedules\\Juna:marriage_Fri.{{Random:006,007,008}}\"/2400 elhrvy.NPCJuna_JunaCave 7 5 1 \"Strings\\schedules\\Juna:marriage_cave\"/2600 BusStop -1 23 3",
+        "marriage_summer_5": "a1220 Town 51 60 2 \"Strings\\schedules\\Juna:marriage_summer_Fri_5.000\"/1500 Town 50 67 1/a1700 Saloon 23 21 2 \"Strings\\schedules\\Juna:marriage_summer_5.000\"/2100 BusStop -1 23 3"
+      },
+      "When": {
+        "HasSeenEvent": "86060018",
+        "Season": "summer",
+        "Weather |contains=rain, storm": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Roommate Wednesdays After Alex",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "marriage_Wed": "900 Town 44 77 2 juna_sittingChair \"Strings\\schedules\\Juna:marriage_Wed.{{Random:000,001,002}}\"/a1200 Town 65 64 2 juna_sitting2 \"Strings\\schedules\\Juna:marriage_Wed_Alex.{{Random:000,001,002 |key=Wednesday}}\"/1600 Saloon 21 23 0 \"Strings\\schedules\\Juna:marriage_Wed_Alex.003\"/2000 BusStop -1 23 3"
+      },
+      "When": {
+        "HasSeenEvent": "86060019",
+        "Season |contains=summer": "false"
+      }
+    }
+  ]
+}

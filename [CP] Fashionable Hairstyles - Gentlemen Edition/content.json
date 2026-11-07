@@ -1,0 +1,73 @@
+{
+	"Format": "2.0",
+	"Changes": [
+
+		{
+			"LogName": "Fashinable HairstylesG Load",
+			"Action": "Load",
+			"Target": "Characters/Farmer/PC.FF.HairstylesG",
+			"FromFile": "assets/hairstylesG.png"
+		},
+		{
+			"LogName": "PC's Male Farmer Hairstyles Texture Load",
+			"Action": "Load",
+			"Target": "Characters/Farmer/PC.FF.HairstylesG2",
+			"FromFile": "assets/hairstylesG2.png"
+		},		
+/*
+Then we have the following entries, separated by slashes:
+0 - The filename for the file we added to Characters/Farmer/, without filetype.
+1 - The tile position for our hairstyle sprite, x coordinate.
+2 - The tile position for our hairstyle sprite, y coordinate.
+3 - If we have a unique left sprite or not. If false, it uses the right hair flipped. If false, we need a fourth sprite.
+4 - Either a unique ID of a separate hairstyle for when player is wearing a hat, or -1 to hide hair.
+Either the unique ID (the unique key) of the hair to use to change the hairstyle to when wearing a hat, or -1 to keep the same hair but just behind the hat.
+5 - "is bald style". Currently, just set false.
+6 - unused
+7 - unused
+8 - unused
+*/
+		{
+			"LogName": "PC's Male Farmer Hairstyles HairData",
+			"Action": "EditData",
+			"Target": "Data/HairData",
+			"Entries": {
+				"77700": "PC.FF.HairstylesG/0/0/false/-1/false",
+				"77701": "PC.FF.HairstylesG/1/0/false/-1/false",
+				"77702": "PC.FF.HairstylesG/2/0/false/-1/false",
+				"77703": "PC.FF.HairstylesG/3/0/false/-1/false",
+				"77704": "PC.FF.HairstylesG/4/0/false/-1/false",
+				"77705": "PC.FF.HairstylesG/5/0/false/-1/false",
+				"77706": "PC.FF.HairstylesG/6/0/false/-1/false",
+				"77707": "PC.FF.HairstylesG/7/0/false/-1/false",
+				"77708": "PC.FF.HairstylesG/0/6/false/-1/false",
+
+				
+				//2
+				"77725": "PC.FF.HairstylesG2/0/0/true/-1/false",
+				"77726": "PC.FF.HairstylesG2/1/0/true/-77726/false",
+				"77727": "PC.FF.HairstylesG2/2/0/true/-77727/false", 
+				"77728": "PC.FF.HairstylesG2/3/0/true/-1/false",
+				"77729": "PC.FF.HairstylesG2/4/0/true/-1/false",
+				"77730": "PC.FF.HairstylesG2/5/0/true/-1/false",
+				"77731": "PC.FF.HairstylesG2/6/0/true/-1/false",
+				"77732": "PC.FF.HairstylesG2/7/0/true/-1/false", 
+				"77733": "PC.FF.HairstylesG2/0/8/true/-1/false",
+				"77734": "PC.FF.HairstylesG2/1/8/true/-1/false",								
+				"77735": "PC.FF.HairstylesG2/2/8/true/-1/false",								
+				"77736": "PC.FF.HairstylesG2/3/8/true/-1/false",
+				"77737": "PC.FF.HairstylesG2/4/8/true/-1/false",
+				"77738": "PC.FF.HairstylesG2/5/8/true/-1/false",
+				"77739": "PC.FF.HairstylesG2/6/8/true/-1/false",
+				"77740": "PC.FF.HairstylesG2/7/8/true/-1/false",
+				"77741": "PC.FF.HairstylesG2/0/16/true/-1/false",				
+				
+				
+
+				
+				
+													
+			}
+		}
+	]
+}

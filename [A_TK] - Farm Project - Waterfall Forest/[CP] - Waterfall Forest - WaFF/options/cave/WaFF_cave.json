@@ -1,0 +1,491 @@
+{
+	"Changes": [
+	
+//	DATA
+
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"FromFile": "options/cave/WaFF_Cave.tmx"
+		},
+//
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"{{ModId}}_Custom_waterfall_cave_WaFF": {
+					"DisplayName": "Waterfall Cave",
+					"DefaultArrivalTile": {
+						"X": 57,
+						"Y": 14
+					},
+					"ExcludeFromNpcPathfinding": true,
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+						"Type": null,
+						"AlwaysActive": true
+					},
+					"FormerLocationNames": [ "Custom_waterfall_cave_WaFF" ],
+					"CanPlantHere":true,
+					"CanHaveGreenRainSpawns": false,
+					"ArtifactSpots": [],
+					"FishAreas": {},
+					"Fish": [
+						{
+							"Chance": 0.4,
+							"Season": null,
+							"FishAreaId": null,
+							"BobberPosition": null,
+							"PlayerPosition": null,
+							"MinFishingLevel": 0,
+							"MinDistanceFromShore": 0,
+							"MaxDistanceFromShore": -1,
+							"ApplyDailyLuck": false,
+							"CuriosityLureBuff": -1.0,
+							"CatchLimit": -1,
+							"IsBossFish": false,
+							"SetFlagOnCatch": null,
+							"RequireMagicBait": false,
+							"Precedence": 0,
+							"IgnoreFishDataRequirements": false,
+							"CanBeInherited": true,
+							"ChanceModifiers": null,
+							"ChanceModifierMode": "Stack",
+							"ChanceBoostPerLuckLevel": 0.0,
+							"UseFishCaughtSeededRandom": false,
+							"Condition": null,
+							"Id": "(O)153|(O)156|(O)157",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)153",
+								"(O)156",
+								"(O)157"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.1,
+							"Season": null,
+							"FishAreaId": null,
+							"BobberPosition": null,
+							"PlayerPosition": null,
+							"MinFishingLevel": 0,
+							"MinDistanceFromShore": 0,
+							"MaxDistanceFromShore": -1,
+							"ApplyDailyLuck": false,
+							"CuriosityLureBuff": -1.0,
+							"CatchLimit": -1,
+							"IsBossFish": false,
+							"SetFlagOnCatch": null,
+							"RequireMagicBait": false,
+							"Precedence": 0,
+							"IgnoreFishDataRequirements": false,
+							"CanBeInherited": true,
+							"ChanceModifiers": null,
+							"ChanceModifierMode": "Stack",
+							"ChanceBoostPerLuckLevel": 0.0,
+							"UseFishCaughtSeededRandom": false,
+							"Condition": null,
+							"Id": "(O)158",
+							"ItemId": "(O)158",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						}
+					],
+					"Forage": [
+						{
+							"Chance": 0.3,
+							"Season": "Spring",
+							"Condition": null,
+							"Id": "(O)296|(O)396|(O)406|(O)410|(O)613|(O)634|(O)635|(O)636|(O)637|(O)638",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)296",
+								"(O)396",
+								"(O)406",
+								"(O)410",
+								"(O)613",
+								"(O)634",
+								"(O)635",
+								"(O)636",
+								"(O)637",
+								"(O)638"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.3,
+							"Season": "Summer",
+							"Condition": null,
+							"Id": "(O)296|(O)396|(O)406|(O)410|(O)613|(O)634|(O)635|(O)636|(O)637|(O)638",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)296",
+								"(O)396",
+								"(O)406",
+								"(O)410",
+								"(O)613",
+								"(O)634",
+								"(O)635",
+								"(O)636",
+								"(O)637",
+								"(O)638"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.3,
+							"Season": "Fall",
+							"Condition": null,
+							"Id": "(O)296|(O)396|(O)406|(O)410|(O)613|(O)634|(O)635|(O)636|(O)637|(O)638",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)296",
+								"(O)396",
+								"(O)406",
+								"(O)410",
+								"(O)613",
+								"(O)634",
+								"(O)635",
+								"(O)636",
+								"(O)637",
+								"(O)638"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.15,
+							"Season": "Winter",
+							"Condition": null,
+							"Id": "(O)414",
+							"ItemId": "(O)414",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						}
+					],
+					"MinDailyWeeds": 2,
+					"MaxDailyWeeds": 5,
+					"FirstDayWeedMultiplier": 15,
+					"MinDailyForageSpawn": 1,
+					"MaxDailyForageSpawn": 2,
+					"MaxSpawnedForageAtOnce": 4,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+				}
+			}
+		},
+//
+		{
+            "Action": "EditData",
+            "Target": "Strings/Locations",
+            "Entries": { "MineCart_Destination_WaFF_Cave": "{{i18n:WF_MN.Cave_Minecart}}" },
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Waterfall_Cave_WaFF": "True"
+			}			
+        },
+//
+		{
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [ "Default", "Destinations" ],
+            "Entries": {
+                "WAFF_Cave_Minecart": {
+                    "Id": "WAFF_Cave_Minecart",
+                    "DisplayName": "[LocalizedText Strings\\Locations:MineCart_Destination_WaFF_Cave]",
+                    "Condition": "LOCATION_ACCESSIBLE Railroad",
+                    "TargetLocation": "{{ModId}}_Custom_waterfall_cave_WaFF",
+                    "TargetTile": { "X": 49, "Y": 4 },
+                    "TargetDirection": "left",
+                }
+			},
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Waterfall_Cave_WaFF": "True"
+			}
+        },
+
+//	PROPERTIES
+	
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"MapProperties": { "AmbientLight": "90 90 35" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"MapProperties": { "EnableGrassSpread": "T" }
+        },
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"MapProperties": { "ForceSpawnForageables": "T" }
+		},
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"MapProperties": { "indoorWater": "T" }
+        },
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"MapProperties": { "IsGreenhouse": "T" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"MapProperties": { "WindowLight": "56 14 6 1 44 6 49 48 6 52 48 6 55 48 6 58 48 6" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"MapProperties": { "CanBuildHere": "T" },
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Waterfall_Cave_WaFF": "True"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"MapProperties": { "CanCaskHere": "T" },
+			"When": {
+				"Cellar_Allows_Casks_in_Cave_WaFF": "True",
+				"FarmhouseUpgrade": 3
+			}
+		},
+
+//	INTERIOR
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"AddWarps": [
+				"56 15 Farm 86 4",
+				"57 15 Farm 86 4",		
+				"0 44 Farm 4 15",				
+				"0 45 Farm 4 15",
+				"49 10 {{ModId}}_Custom_waterfall_cave_WaFF 11 43",
+				"11 44 {{ModId}}_Custom_waterfall_cave_WaFF 49 9",
+				"4 13 {{ModId}}_Custom_waterfall_cave_WaFF 4 19",
+				"4 18 {{ModId}}_Custom_waterfall_cave_WaFF 4 12"				
+			],
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"FromFile": "options/cave/WaFF_Cave_Options.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 60, "Height": 50 },
+			"ToArea": { "X": 0, "Y": 4, "Width": 60, "Height": 50 },
+			"PatchMode": "Overlay",
+			"When": { "Stone_Cave_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"FromFile": "options/cave/WaFF_Cave_Options.tmx",
+			"FromArea": { "X": 9, "Y": 27, "Width": 10, "Height": 9 },
+			"ToArea": { "X": 9, "Y": 31, "Width": 10, "Height": 9 },
+			"PatchMode": "Replace",
+			"When": { "Remove_Cave_Obstacles_WaFF": "True" }
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"FromFile": "options/cave/WaFF_Cave_Options.tmx",
+			"FromArea": { "X": 9, "Y": 27, "Width": 10, "Height": 11 },
+			"ToArea": { "X": 41, "Y": 28, "Width": 10, "Height": 11 },
+			"PatchMode": "Replace",
+			"When": { "Remove_Cave_Obstacles_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"FromFile": "options/cave/WaFF_Cave_Options.tmx",
+			"FromArea": { "X": 0, "Y": 45, "Width": 60, "Height": 21 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 60, "Height": 21 },
+			"PatchMode": "Overlay",
+			"When": { "Cave_Foliage_WaFF": "Yellow" }
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_cave_WaFF",
+			"FromFile": "options/cave/WaFF_Cave_Options.tmx",
+			"FromArea": { "X": 0, "Y": 66, "Width": 52, "Height": 14 },
+			"ToArea": { "X": 0, "Y": 36, "Width": 52, "Height": 14 },
+			"PatchMode": "Overlay",
+			"When": { "Cave_Foliage_WaFF": "Yellow" }
+		},
+
+//	EXTERIOR
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options_temp.tmx",
+			"FromArea": { "X": 124, "Y": 22, "Width": 4, "Height": 4 },
+			"ToArea": { "X": 85, "Y": 1, "Width": 4, "Height": 4 },
+			"PatchMode": "Replace",
+			"When": { "Use_Waterfall_Cave_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options_temp.tmx",
+			"FromArea": { "X": 116, "Y": 22, "Width": 3, "Height": 3 },
+			"ToArea": { "X": 3, "Y": 12, "Width": 3, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { "Use_Waterfall_Cave_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"AddWarps": [
+				"86 3 {{ModId}}_Custom_waterfall_cave_WaFF 56 14",
+				"87 3 {{ModId}}_Custom_waterfall_cave_WaFF 56 14",
+				"3 13 {{ModId}}_Custom_waterfall_cave_WaFF 5 41",
+				"4 13 {{ModId}}_Custom_waterfall_cave_WaFF 5 41",
+				"153 81 {{ModId}}_Custom_waterfall_cave_WaFF 71 45"
+			],
+			"When": { "Use_Waterfall_Cave_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 114, "Y": 0, "Width": 4, "Height": 2 },
+			"ToArea": { "X": 58, "Y": 92, "Width": 4, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Waterfall_Cave_WaFF": "True",
+				"Beach_Type_WaFF": "Sea"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 114, "Y": 3, "Width": 4, "Height": 2 },
+			"ToArea": { "X": 58, "Y": 92, "Width": 4, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Waterfall_Cave_WaFF": "True",
+				"Beach_Type_WaFF": "Lake, Dry_Pond"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 114, "Y": 6, "Width": 4, "Height": 2 },
+			"ToArea": { "X": 58, "Y": 92, "Width": 4, "Height": 2 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Waterfall_Cave_WaFF": "True",
+				"Beach_Type_WaFF": "Dry"
+			}
+		}
+	]
+}

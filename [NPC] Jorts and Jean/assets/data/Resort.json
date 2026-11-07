@@ -1,0 +1,125 @@
+{
+	"Changes": [
+	
+		//Removes Resort from NPC Exclusions
+		{
+			"LogName": "Jorts and Jean NPC exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+                "JortsCat": "ShopDialog WinterStar ItemDelivery MovieInvite",
+                "JeanCat": "ShopDialog WinterStar ItemDelivery MovieInvite",
+			},
+		},
+		
+	
+		//Adds Jorts/Jean group to GIMA
+		{
+			"Action": "EditData",
+			"LogName": "Cats GI group",
+			"Target": "Mods/atravita_Ginger_Island_Adjustments_groups",
+			"Entries": {
+				"HelperCats": "JortsCat, JeanCat"
+			}
+		},
+		
+		//Cats will still escort Pam home
+		{
+			"Action": "EditData",
+			"LogName": "Jorts GIRemainder",
+			"Target": "Characters/schedules/JortsCat",
+			"Entries": {
+				"GIRemainder": "1800 Town 51 71 1 JortsCat_cleaning/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap"
+			}
+		},
+		{
+			"Action": "EditData",
+			"LogName": "Jean GIRemainder",
+			"Target": "Characters/schedules/JeanCat",
+			"Entries": {
+				"GIRemainder": "1800 Town 52 71 3 JeanCat_cleaning/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap"
+			}
+		},
+		
+		//Jorts cannot be left unattended
+		{
+			"Action": "EditData",
+			"LogName": "Cats GI Exclusions",
+			"Target": "Mods/atravita_Ginger_Island_Adjustments_exclusions",
+			"Entries": {
+				"JortsCat": "neveralone",
+				"JeanCat": "neveralone",
+			}
+		},
+
+		//Cats can explore
+		{
+        "LogName": "Kitty GI Explorers",
+        "Action": "EditData",
+        "Target": "Mods/atravita_Ginger_Island_Adjustments_explorers", 
+        "Entries": {
+            "HelperCats": "JortsCat, JeanCat",
+			}
+		},
+		
+		//Cats resort dialogue
+		{
+        "LogName": "Jorts GI dialogue",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/JortsCat", 
+        "Entries": {
+				//vanilla
+            	"Resort_Entering": "{{i18n:JortsCat.Resort_Entering.{{Random: {{Range: 1,3}} }} }}",
+				"Resort_Leaving": "{{i18n:JortsCat.Resort_Leaving.{{Random: {{Range: 1,3}} }} }}",
+				"Resort_Shore": "{{i18n:JortsCat.Resort_Shore.{{Random: {{Range: 1,3}} }} }}}",
+				"Resort_Chair": "{{i18n:JortsCat.Resort_Chair.{{Random: {{Range: 1,3}} }} }}",
+				"Resort_Bar": "{{i18n:JortsCat.Resort_Bar.{{Random: {{Range: 1,3}} }} }}",
+				"Resort": "{{i18n:JortsCat.Resort.{{Random: {{Range: 1,5}} }} }}",
+				//GIMA
+				"Resort_IslandNorth": "{{i18n:JortsCat.Resort_IslandNorth.{{Random: {{Range: 1,3}} }} }}", 
+				"Resort_Adventure": "{{i18n:JortsCat.Resort_Adventure.{{Random: {{Range: 1,3}} }} }}", 
+				"Resort_Volcano": "{{i18n:JortsCat.Resort_Volcano.{{Random: {{Range: 1,4}} }} }}", 
+				"Resort_Tent": "{{i18n:JortsCat.Resort_Tent.{{Random: {{Range: 1,3}} }} }}",
+				"Resort_Left": "{{i18n:JortsCat.Resort_Left.{{Random: {{Range: 1,3}} }} }}",
+				"Resort_Approach": "{{i18n:JortsCat.Resort_Approach.{{Random: {{Range: 1,3}} }} }}", 
+				
+			}
+		},		
+		
+		{
+        "LogName": "Jean GI dialogue",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/JeanCat", 
+        "Entries": {
+				//vanilla
+            	"Resort_Entering": "{{i18n:JeanCat.Resort_Entering.{{Random: {{Range: 1,3}} }} }}",
+				"Resort_Leaving": "{{i18n:JeanCat.Resort_Leaving.{{Random: {{Range: 1,2}} }} }}",
+				"Resort_Shore": "{{i18n:JeanCat.Resort_Shore.{{Random: {{Range: 1,3}} }} }}",
+				"Resort_Chair": "{{i18n:JeanCat.Resort_Chair.{{Random: {{Range: 1,3}} }} }}",
+				"Resort_Bar": "{{i18n:JeanCat.Resort_Bar.{{Random: {{Range: 1,3}} }} }}",
+				"Resort": "{{i18n:JeanCat.Resort.{{Random: {{Range: 1,3}} }} }}",
+				//GIMA
+				"Resort_IslandNorth": "{{i18n:JeanCat.Resort_IslandNorth.{{Random: {{Range: 1,3}} }} }}", 
+				"Resort_Adventure": "{{i18n:JeanCat.Resort_Adventure.{{Random: {{Range: 1,3}} }} }}", 
+				"Resort_Volcano": "{{{i18n:JeanCat.Resort_Volcano.{{Random: {{Range: 1,4}} }} }}", 
+				"Resort_Tent": "{{i18n:JeanCat.Resort_Tent.{{Random: {{Range: 1,3}} }} }}",
+				"Resort_Fishing": "{{i18n:JeanCat.Resort_Fishing.{{Random: {{Range: 1,4}} }} }}",
+				"Resort_Left": "{{i18n:JeanCat.Resort_Left.{{Random: {{Range: 1,3}} }} }}",
+				"Resort_Approach": "{{i18n:JeanCat.Resort_Approach.{{Random: {{Range: 1,4}} }} }}",
+				
+			}
+		},
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	]
+}

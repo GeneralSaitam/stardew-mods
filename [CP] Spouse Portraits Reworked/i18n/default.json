@@ -1,0 +1,162 @@
+{
+//Configuration
+    //Section
+        "config.section.Alternative.name": "Alternative",
+        "config.section.Frame.name": "Frame",
+        "config.section.Recolor.name": "Recolor",
+        "config.section.Portrait.name": "Portrait",
+    //Config
+    //Recolors
+        "config.PortraitRecolor.name": "Portrait Recolor",
+        "config.PortraitRecolor.description":  "Choose recolor version of portrait, only Vanilla and Tonedown version available.",
+        "config.PortraitRecolor.values.Vanilla": "Vanilla",
+        "config.PortraitRecolor.values.Tonedown": "Tonedown",
+
+    //More Portrait
+        "config.MorePortrait.name": "More Portrait",
+        "config.MorePortrait.description":  "Add completely new portraits feature bigger frame, two or more characters, new concepts etc... to the Merchant with own requirement. These don't replace the vanilla ones",
+        "config.MorePortrait.values.Yes": "Yes",
+        "config.MorePortrait.values.No": "No",
+
+
+    //Genderbent Support
+        "config.GenderbentBachelors.name": "Genderbent Bachelors",
+        "config.GenderbentBachelors.description":  "Replace all of bachelors in the portraits with genderbent versions of them, this will applied universally to all bachelors. Currently, only Adarin supported.",
+        "config.GenderbentBachelors.values.No": "No",
+        "config.GenderbentBachelors.values.Adarin": "Adarin",
+
+    
+    //Frame
+        "config.Frame.name": "Frame",
+        "config.Frame.description": "Choose frame version for portraits, this config will universally change all the portrait frames. Seasonal Wood 1 will automatically change the frame according to season. Unique will reset them to default version of each portrait.",
+        "config.Frame.values.Unique": "Unique",
+        "config.Frame.values.DarkBrown": "Dark Brown",
+        "config.Frame.values.Brown": "Brown",
+        "config.Frame.values.Birch": "Birch",
+        "config.Frame.values.Amber": "Amber",
+        "config.Frame.values.MetalBlack": "Metal Black",
+        "config.Frame.values.Redwood": "Redwood",
+        "config.Frame.values.SeasonalWood": "Seasonal Wood 1",
+        "config.Frame.values.PastelPink": "Pastel Pink",
+        "config.Frame.values.PastelBlue": "Pastel Blue",
+        "config.Frame.values.OvergrownFlowery": "Overgrown Flowery",
+        "config.Frame.values.ModernBlack": "Modern Black",
+        "config.Frame.values.WildWest": "Wild West",
+        "config.Frame.values.WitchyThorn": "Witchy Thorn",
+        "config.Frame.values.Antique1": "Antique 1",
+        "config.Frame.values.Antique2": "Antique 2",
+        "config.Frame.values.Antique3": "Antique 3",
+
+        
+    //Sam Mullet Replacement Support
+        "config.SamMullet.name": "Sam Mullet",
+        "config.SamMullet.description": "Replace Sam with his Mullet version from Rosenbug's Sam Mullet Replacement. Note: it will override Sam Genderbent version if both are enabled.",
+        "config.SamMullet.values.Yes": "Yes",
+        "config.SamMullet.values.No": "No",
+
+    //SVE Support
+        "config.SVEPortrait.name": "SVE Portrait",
+        "config.SVEPortrait.description": "Replace all FlashShifter's SVE marriage candidates's portraits. Need SVE installed, otherwise, this option won't work.",
+        "config.SVEPortrait.values.Yes": "Yes",
+        "config.SVEPortrait.values.No": "No",
+
+    //RomRas Support
+        "config.RomRasPortrait.name": "Romanceable Rasmodia/Rasmodius Portrait",
+        "config.RomRasPortrait.description": "Replace Nom0ri's Rasmodia or Rasmodius portraits. Turn this on if you want to use with Rasmodia/Rasmodius/Non-SVE Rasmodius/Non-SVE Rasmodia, and turn this off it you want to use other Magnus version, like RRRR. Automatically detect whenever you're using SVE or not.",
+        "config.RomRasPortrait.values.Yes": "Yes",
+        "config.RomRasPortrait.values.No": "No",
+    
+    //Portraits Variation
+        "config.WizardVariation.name": "Wizard Variation",
+        "config.WizardVariation.description": "Choose the variation for Witch or Wizard portrait, must be used with the Rasmodia/Rasmodius or SVE option enabled",
+
+    ///RRRR Support
+        "config.RRRRPortrait.name": "RRRR Portrait",
+        "Config.RRRRPortrait.description": "Replace Rasmodius with RRRR version. NEED SVE BUT DOESN'T NEED RRRR installed.",
+        "config.RRRRPortrait.values.Yes": "Yes",
+        "config.RRRRPortrait.values.No": "No",
+
+    //RRRR Variation
+        "config.RRRRVariation.name": "RRRR Variation",
+        "config.RRRRVariation.description": "Choose the variation for RRRR Wizard, must be used with the RRRR Wizard option enabled.",
+
+    //Caroline Is Single Support
+        "config.CarolinePortrait.name": "Caroline Portrait",
+        "config.CarolinePortrait.description": "Replace Hitme's Caroline Is Single Caroline portrait. Need Hitme's Caroline Is Single installed, otherwise, this option won't work.",
+        "config.CarolinePortrait.values.Yes": "Yes",
+        "config.CarolinePortrait.values.No": "No",
+
+    //Krobus
+        "config.KrobusPortrait.name": "Krobus Portrait",
+        "config.KrobusPortrait.description": "Replace Krobus Portrait",
+        "config.KrobusPortrait.values.Yes": "Yes",
+        "config.KrobusPortrait.values.No": "No",
+
+    //Bachelorettes
+        "config.AbigailPortrait.name": "Abigail Portrait",
+        "config.AbigailPortrait.description": "Replace Abigail Portrait",
+        "config.AbigailPortrait.values.Yes": "Yes",
+        "config.AbigailPortrait.values.No": "No",
+
+        "config.HaleyPortrait.name": "Haley Portrait",
+        "config.HaleyPortrait.description": "Replace Haley Portrait",
+        "config.HaleyPortrait.values.Yes": "Yes",
+        "config.HaleyPortrait.values.No": "No",
+
+        "config.PennyPortrait.name": "Penny Portrait",
+        "config.PennyPortrait.description": "Replace Penny Portrait",
+        "config.PennyPortrait.values.Yes": "Yes",
+        "config.PennyPortrait.values.No": "No",
+
+        "config.MaruPortrait.name": "Maru Portrait",
+        "config.MaruPortrait.description": "Replace Maru Portrait",
+        "config.MaruPortrait.values.Yes": "Yes",
+        "config.MaruPortrait.values.No": "No",
+
+        "config.LeahPortrait.name": "Leah Portrait",
+        "config.LeahPortrait.description": "Replace Leah Portrait",
+        "config.LeahPortrait.values.Yes": "Yes",
+        "config.LeahPortrait.values.No": "No",
+        
+        "config.EmilyPortrait.name": "Emily Portrait",
+        "config.EmilyPortrait.description": "Replace Emily Portrait",
+        "config.EmilyPortrait.values.Yes": "Yes",
+        "config.EmilyPortrait.values.No": "No",
+
+        "config.EmilyVariation.name": "Emily Variation",
+        "config.EmilyVariation.description": "Choose the variation for Emily Portrait, only work if you enabled Emily Portrait",
+
+    //Bachelors
+        "config.HarveyPortrait.name": "Harvey Portrait",
+        "config.HarveyPortrait.description": "Replace Harvey Portrait",
+        "config.HarveyPortrait.values.Yes": "Yes",
+        "config.HarveyPortrait.values.No": "No",
+                    
+        "config.ShanePortrait.name": "Shane Portrait",
+        "config.ShanePortrait.description": "Replace Shane Portrait",
+        "config.ShanePortrait.values.Yes": "Yes",
+        "config.ShanePortrait.values.No": "No",   
+                    
+        "config.SamPortrait.name": "Sam Portrait",
+        "config.SamPortrait.description": "Replace Sam Portrait",
+        "config.SamPortrait.values.Yes": "Yes",
+        "config.SamPortrait.values.No": "No",   
+                    
+        "config.SebastianPortrait.name": "Sebastian Portrait",
+        "config.SebastianPortrait.description": "Replace Sebastian Portrait",
+        "config.SebastianPortrait.values.Yes": "Yes",
+        "config.SebastianPortrait.values.No": "No",   
+                    
+        "config.ElliottPortrait.name": "Elliott Portrait",
+        "config.ElliottPortrait.description": "Replace Elliott Portrait",
+        "config.ElliottPortrait.values.Yes": "Yes",
+        "config.ElliottPortrait.values.No": "No",   
+                    
+        "config.AlexPortrait.name": "Alex Portrait",
+        "config.AlexPortrait.description": "Replace Alex Portrait",
+        "config.AlexPortrait.values.Yes": "Yes",
+        "config.AlexPortrait.values.No": "No",  
+
+    //New Portrait
+        "Emily_Haley1.name": "'Queens of Hearts'"
+}       

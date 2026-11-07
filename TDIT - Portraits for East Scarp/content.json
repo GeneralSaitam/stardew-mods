@@ -1,0 +1,152 @@
+ {
+    "Format": "2.8.0",
+	"DynamicTokens":[		
+		{
+			"Name": "RockX",
+			"Value": "53",
+		},		
+		{
+			"Name": "RockX",
+			"Value": "49",
+			"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true}	
+		},		
+		{
+			"Name": "ToolX",
+			"Value": "54",
+		},		
+		{
+			"Name": "ToolX",
+			"Value": "50",
+			"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true}	
+		},	
+	],
+				
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Portraits/ZuzuCelebrant, Portraits/HarryAshworth, Portraits/RickiMartinez, Portraits/RockBreaker_Default, Portraits/AngieLK, Portraits/JojaLady_Default",
+            "FromFile": "assets/{{Target}}.png",
+			"Priority": "Low"
+        },	
+
+		{
+			"LogName": "Strings Load",
+			"Action": "Load",
+			"Target": "Strings/DolphINaF.ESPortraits",
+			"FromFile": "patches/blank.json",
+		},
+		{
+			"LogName": "Strings",
+			"Action": "EditData",
+			"Target": "Strings/DolphINaF.ESPortraits",
+			"Entries": {
+				"Name.Harry": "{{i18n:Name.Harry}}",
+				"Name.Ricki": "{{i18n:Name.Ricki}}",
+				"Name.Barbara": "{{i18n:Name.Barbara}}",
+				"Name.Terence": "{{i18n:Name.Terence}}",
+				"Name.Celebrant": "{{i18n:Name.Celebrant}}",
+				"Name.Angie": "{{i18n:Name.Angie}}",
+				"Name.Rockbreaker": "{{i18n:Name.Rockbreaker}}",
+				"Name.JojaLady": "{{i18n:Name.JojaLady}}"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				"{{ModId}}_Dialogue.Rockbreaker": "{{i18n:Dialogue.Rockbreaker}}",
+				"{{ModId}}_Message.Rockbreaker": "{{i18n:Message.Rockbreaker}}"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/DolphINaF.ESPortraits",
+			"Entries": {
+				"Name.Celebrant": "{{i18n:Name.DeloresBlack}}"
+			},
+			"When": {"HasFlag": "{{ModId}}_CelebrantName"}
+		},	
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/MorrisJoja",
+			"FromFile": "assets/Portraits/MorrisJoja.png"
+		},
+		{
+			"LogName": "Thrift Shop",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Lemurkat.EastScarp_ZuzuThriftStore", "Owners", "AnyOrNone" ],
+			"Entries": {"Portrait": "Portraits/AngieLK"},
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Fields": {
+                "57878008/D ToriLK/f ToriLK 2500/t 1650 1800/w sunny": {
+					93: "changeName ZuzuCelebrant \"[LocalizedText Strings/DolphINaF.ESPortraits:Name.Celebrant]\"",
+					94: "speak ZuzuCelebrant \"{{Spiderbuttons.CMCT/Translation: Lemurkat.EastScarpNPCs, 57878008.13}}\"",
+				}
+            },
+			"When": {"HasMod": "Spiderbuttons.CMCT"}
+        },
+		{
+			"LogName": "Morris Sprite",
+			"Action": "EditImage",
+			"Target": "Maps/ESCameos",
+			"ToArea": {"X": 0, "Y": 624, "Width": 16, "Height": 32},
+			"FromFile": "assets/TileSheet/Morris.png"
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Mountain",
+			"MapTiles": [
+				{
+					"Position": { "X": "{{RockX}}", "Y": 7 },
+					"Layer": "Buildings",
+					"SetTilesheet": "outdoors",
+					"SetIndex": 21,
+					"SetProperties": {
+						"Action": "MessageSpeech \"{{ModId}}_Dialogue.Rockbreaker\"",
+					}
+				},	
+				{
+					"Position": { "X": "{{ToolX}}", "Y": 6 },
+					"Layer": "Buildings",
+					"SetTilesheet": "outdoors",
+					"SetIndex": 21,
+					"SetProperties": {
+						"Action": "Message \"{{ModId}}_Message.Rockbreaker\"",
+					}
+				},
+			],
+			"When": {
+				"Day": "1, 2, 3, 4",
+				"Season": "Spring",
+				"Year": 1
+			}
+		},			
+ 		{
+			"Action": "EditData",
+			"Target": "Mods/Pathoschild.CentralStation/Tourists",
+			"TargetField": ["Lemurkat.EastScarp", "Tourists"],
+			"Entries": {
+                "Kevin": {
+					"Index": 5,
+					"Dialogue": [
+						"{{i18n:CentralStation.Kevin.1}}",
+						"{{i18n:CentralStation.Kevin.2a}}#{{i18n:CentralStation.Kevin.2b}}",
+						"{{i18n:CentralStation.Kevin.3}}"
+					]
+				}
+			}
+		},				
+		{	
+			"Action": "Include",
+			"FromFile": "patches/p4a.json",
+			"When": {
+				"HasMod |contains=mushymato.PortraitsForAll": true,
+				"HasMod |contains=DolphINaF.ExtraPortraits": true,
+			}
+		},
+	]
+}

@@ -1,0 +1,79 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "LogName": "Traveling Cart",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ // Targeting a shop requires you to use TargetField and "descend" through fields until you get the one you want. You'd start with the name of the shop, Traveler in this case, then stop at Items, since we're adding items to it.
+        "Traveler",
+        "Items"
+      ],
+      "Entries": {
+        "Br1ghtEy3s.80sShirt": { // This is the key to your "entry". It has to be unique to avoid conflict with other mods, so adding your username is recommended. 
+          "Id": "Br1ghtEy3s.80sShirt", // The Id field usually just has to match the key above.
+          "Condition": "ANY \"SEASON_DAY spring 19, YEAR 1\" \"SEASON_DAY spring 21, YEAR 1\"", // This condition says: apply this change on ANY of the following: either spring 19 Y1, or spring 21 Y1.
+          "ItemId": "(S)1136",
+          "AvailableStock": 1,
+          "Price": "100"
+        },
+        "Br1ghtEy3s.BridalShirt": {
+          "Id": "Br1ghtEy3s.BridalShirt",
+          "Condition": "ANY \"SEASON_DAY spring 19, YEAR 1\" \"SEASON_DAY spring 21, YEAR 1\"",
+          "ItemId": "(S)1265",
+          "AvailableStock": 1,
+          "Price": "100"
+        },
+        "Br1ghtEy3s.SilkyShirt": {
+          "Id": "Br1ghtEy3s.SilkyShirt",
+          "Condition": "ANY \"SEASON_DAY spring 19, YEAR 1\" \"SEASON_DAY spring 21, YEAR 1\"",
+          "ItemId": "(S)1277",
+          "AvailableStock": 1,
+          "Price": "100"
+        },
+        "Br1ghtEy3s.Shirt1": {
+          "Id": "Br1ghtEy3s.Shirt1",
+          "Condition": "ANY \"SEASON_DAY spring 19, YEAR 1\" \"SEASON_DAY spring 21, YEAR 1\"",
+          "ItemId": "(S)1025",
+          "AvailableStock": 1,
+          "Price": "100"
+        },
+        "Br1ghtEy3s.Shirt2": {
+          "Id": "Br1ghtEy3s.Shirt2",
+          "Condition": "ANY \"SEASON_DAY spring 19, YEAR 1\" \"SEASON_DAY spring 21, YEAR 1\"",
+          "ItemId": "(S)1124",
+          "AvailableStock": 1,
+          "Price": "100"
+        },
+        "Br1ghtEy3s.Dress": {
+          "Id": "Br1ghtEy3s.Dress",
+          "Condition": "ANY \"SEASON_DAY spring 19, YEAR 1\" \"SEASON_DAY spring 21, YEAR 1\"",
+          "ItemId": "(P)2",
+          "AvailableStock": 1,
+          "Price": "100"
+        },
+        "Br1ghtEy3s.CrystalShoes": {
+          "Id": "Br1ghtEy3s.CrystalShoes",
+          "Condition": "ANY \"SEASON_DAY spring 19, YEAR 1\" \"SEASON_DAY spring 21, YEAR 1\"",
+          "ItemId": "(B)878",
+          "AvailableStock": 1,
+          "Price": "100"
+        },
+        "Br1ghtEy3s.LeatherShoes": {
+          "Id": "Br1ghtEy3s.LeatherShoes",
+          "Condition": "ANY \"SEASON_DAY spring 19, YEAR 1\" \"SEASON_DAY spring 21, YEAR 1\"",
+          "ItemId": "(B)506",
+          "AvailableStock": 1,
+          "Price": "100"
+        },
+        "Br1ghtEy3s.LaurelWreathCrown": {
+          "Id": "Br1ghtEy3s.LaurelWreathCrown",
+          "Condition": "ANY \"SEASON_DAY spring 19, YEAR 1\" \"SEASON_DAY spring 21, YEAR 1\"",
+          "ItemId": "(H)LaurelWreathCrown",
+          "AvailableStock": 1,
+          "Price": "100"
+        }
+      }
+    }
+  ]
+}

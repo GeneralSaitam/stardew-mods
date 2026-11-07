@@ -1,0 +1,277 @@
+{
+  "Changes": [
+	{
+      "Action": "Load",
+      "Target": "Characters/CC_RangerTaro",
+      "FromFile": "assets/RangerTaro/Taro.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/CC_RangerTaro_Winter",
+      "FromFile": "assets/RangerTaro/Taro_winter.png"
+    },
+		{
+      "Action": "Load",
+      "Target": "Characters/CC_RangerTaro_Vendor",
+      "FromFile": "assets/RangerTaro/Taro_vendor.png"
+    },
+	
+	       { 
+            "LogName": "BlankLoads",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Dialogue/CC_RangerTaro",
+            "FromFile": "Data/RangerTaro/Blank.json"
+        },
+
+	{
+      "LogName": "Vendor Change",
+      "Action": "EditImage",
+      "Target": "Characters/CC_RangerTaro",
+      "FromFile": "assets/RangerTaro/Taro_vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Taro_Train"
+      }
+    },
+				{
+      "LogName": "Vendor Change2",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_RangerTaro",
+      "FromFile": "assets/RangerTaro/Taro_{{Portraits}}_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Taro_Train"
+      }
+    },
+	
+  {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "CC_RangerTaro": {
+        "DisplayName": "{{i18n:Taro.DisplayName}}",
+
+          "BirthSeason": "Summer",
+          "BirthDay": 25,
+          "HomeRegion": "Other",
+          "Language": "Default",
+          "Gender": "Female",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "CanSocialize": true,
+          "CanReceiveGifts": true,
+          "CanGreetNearbyCharacters": true,
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": false,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "MainGroup",
+      
+       	   "UnlockConditions": null,
+          "SpawnIfMissing": true,
+          "DumpsterDiveFriendshipEffect": -25,
+          "DumpsterDiveEmote": 8,
+
+          "FlowerDanceCanDance": null,
+          "WinterStarGifts": [
+            {
+              "Condition": null,
+              "Id": "Default",
+              "ItemId": null,
+              "RandomItemId": [
+                "(O)169",
+                "(O)226",
+                "(O)251",
+                "(O)266",
+                "(O)466",
+                "Raisins"
+              ],
+              "MaxItems": null,
+              "MinStack": -1,
+              "MaxStack": -1,
+              "Quality": -1,
+              "ObjectInternalName": null,
+              "ObjectDisplayName": null,
+              "ToolUpgradeLevel": -1,
+              "IsRecipe": false,
+              "StackModifiers": null,
+              "StackModifierMode": "Stack",
+              "QualityModifiers": null,
+              "QualityModifierMode": "Stack",
+              "ModData": null,
+              "PerItemCondition": null
+            }
+          ],
+          "WinterStarParticipant": null,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Taro_Tent",
+              "Tile": {
+                "X": 4,
+                "Y": 5
+              },
+              "Direction": "down"
+            }
+          ],
+          "TextureName": null,
+          "Appearance": [
+            {
+              "Id": "Taro",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_RangerTaro",
+              "Sprite": "Characters/CC_RangerTaro",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            },
+			 {
+              "Id": "Vendor",
+              "Condition": null,
+              "Season": null,
+              "Indoors": false,
+              "Outdoors": false,
+              "Portrait": "Portraits/CC_RangerTaro_Vendor",
+              "Sprite": "Characters/CC_RangerTaro_Vendor",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            },
+            {
+              "Id": "Winter",
+              "Condition": null,
+              "Season": "Winter",
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_RangerTaro_Winter",
+              "Sprite": "Characters/CC_RangerTaro_Winter",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            }
+
+          ],
+        
+        }
+      }
+    },
+	
+	  {
+      "Action": "Include",
+	   "FromFile": "Data/RangerTaro/Jasperdialogue.json",
+	   "When": {
+    "HasMod": "Lemurkat.NPCJasper"
+                        },
+	},
+	  {
+      "Action": "Include",
+	   "FromFile": "Data/RangerTaro/Lunnadialogue.json",
+	   "When": {
+    "HasMod": "Rafseazz.LunnaCP"
+                        },
+	},
+
+
+
+ {
+      "Action": "Include",
+	   "FromFile": "Data/RangerTaro/Micedialogue.json",
+	   "When": {
+    "HasMod": "DolphINaF.ForestMice"
+                        },
+ },
+	
+
+{
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+        "Taro_study": "16/17 18 19 19 19 19 18 18 18 18 19 19 19 19 18 18 18 18 19 19 19 19 19 18 18 18 18 18 18 19 19 19 19 19 19 18 18 18 18 19 19 18 18 19 19 19 18 17/16",
+        "Taro_drink": "0 0 24 24 25 25 25/26 26 26 26 26 26 26 26 26 26 26 26 27 27 27 27 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26 26/25 25 25 25 24 24 0",
+        "Taro_spysurprise": "20/20/20",
+        "Taro_spy": "23/21 22 21 22 21 23/23",
+        "Taro_sleep": "16/16/16",
+		"Taro_hat": "0/24/0"
+      }
+    },
+	{
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "CC_RangerTaro": "A perfect fibbababachi, thank you!$4/392 586 721 CC_Tortoiseshell 830 Book_WildSeeds/I've been liking this lately, thank you.$1/CC_Rainflower 259 649 205/This looks like it would make my stomach hurt.$2/MossSoup 241 167/Oh... I'm allergic to shrimp.$2/720 733 218/I can take this off your hands.$2//"
+      }
+    },
+{
+			"LogName": "Taro Portraits",
+			"Action": "Load",
+			"Target": "Portraits/CC_RangerTaro",
+			"FromFile": "assets/RangerTaro/Taro_{{Portraits}}.png"
+		},
+{
+			"LogName": "Taro Portraits2",
+			"Action": "Load",
+			"Target": "Portraits/CC_RangerTaro_Winter",
+			"FromFile": "assets/RangerTaro/Taro_{{Portraits}}_Winter.png"
+		},
+		{
+			"LogName": "Taro Portraits3",
+			"Action": "Load",
+			"Target": "Portraits/CC_RangerTaro_Vendor",
+			"FromFile": "assets/RangerTaro/Taro_{{Portraits}}_Vendor.png"
+		},
+
+    {
+      "LogName": "Dialogue includes",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/Dialogue.json"
+    },
+  {
+      "LogName": "Load Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/CC_RangerTaro",
+      "FromFile": "Data/RangerTaro/Blank.json"
+    },
+    {
+      "LogName": "Schedule includes",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/Schedule.json"
+    },
+    {
+      "LogName": "Event includes",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/TaroEvents.json"
+    },
+	
+	    {
+      "LogName": "Movie includes",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/MovieTastes.json"
+    },
+		    {
+      "LogName": "Convotopics includes",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/ConvoTopics.json"
+    },
+		    {
+      "LogName": "Festivals includes",
+      "Action": "Include",
+      "FromFile": "Data/RangerTaro/Festivals.json"
+    },
+
+  
+	
+    
+
+	]
+}

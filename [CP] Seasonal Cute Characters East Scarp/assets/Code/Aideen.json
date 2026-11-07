@@ -1,0 +1,94 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load Aideen's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Aideen_Spring, Portraits/Aideen_Summer, Portraits/Aideen_Fall, Portraits/Aideen_Winter, Portraits/Aideen_FlowerDance, Portraits/Aideen_SpiritsEve, Portraits/Aideen_Beach, Characters/Aideen_Spring, Characters/Aideen_Summer, Characters/Aideen_Fall, Characters/Aideen_Winter, Characters/Aideen_FlowerDance, Characters/Aideen_SpiritsEve, Characters/Aideen_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Aideen/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Aideen - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Aideen_Spring, Characters/Aideen_Summer, Characters/Aideen_Fall, Characters/Aideen_Winter, Characters/Aideen_FlowerDance, Characters/Aideen_SpiritsEve, Characters/Aideen_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Aideen/Aideen_nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"NoNose": "false",
+			},
+		},
+		//APPEARANCE DATA 
+		{
+			"LogName": "Aideen Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Aideen",
+				"Appearance"
+			],
+			"Entries": {
+				//Regular Outfits
+				"{{ModId}}.AideenSpring": {
+					"Id": "{{ModId}}.AideenSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Aideen_Spring",
+					"Portrait": "Portraits/Aideen_Spring",
+					"Precedence": -120,
+				},
+				"{{ModId}}.AideenSummer": {
+					"Id": "{{ModId}}.AideenSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Aideen_Summer",
+					"Portrait": "Portraits/Aideen_Summer",
+					"Precedence": -120,
+				},
+				"{{ModId}}.AideenFall": {
+					"Id": "{{ModId}}.AideenFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Aideen_Fall",
+					"Portrait": "Portraits/Aideen_Fall",
+					"Precedence": -120,
+				},
+				"{{ModId}}.AideenWinter": {
+					"Id": "{{ModId}}.AideenWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Aideen_Winter",
+					"Portrait": "Portraits/Aideen_Winter",
+					"Precedence": -120,
+				},
+				//Festival Outfits
+				"{{ModId}}.AideenFlowerDance": {
+					"Id": "{{ModId}}.AideenFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Aideen_FlowerDance",
+					"Portrait": "Portraits/Aideen_FlowerDance",
+					"Precedence": -1000,
+				},
+				"{{ModId}}.AideenSpirit": {
+					"Id": "{{ModId}}.AideenSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Aideen_SpiritsEve",
+					"Portrait": "Portraits/Aideen_SpiritsEve",
+					"Precedence": -1000,
+				},
+				//Beach
+				"{{ModId}}.AideenBeach": {
+					"Id": "{{ModId}}.AideenBeach",
+					"Sprite": "Characters/Aideen_Beach",
+					"Portrait": "Portraits/Aideen_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+			},
+		},
+		{
+			"LogName": "Aideen Calendar Sprite Edits",
+			"Action": "EditImage",
+			"Target": "Characters/Aideen",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+		},
+	]
+}

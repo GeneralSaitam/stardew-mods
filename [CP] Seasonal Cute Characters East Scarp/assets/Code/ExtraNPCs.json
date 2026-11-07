@@ -1,0 +1,138 @@
+{
+	"Changes": [
+		// Lexi
+		{
+			"LogName": "Lexi Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/Leximonster",
+			"FromFile": "assets/Characters/Lexi/seamonster.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+			}
+		},
+		{
+			"LogName": "Child Lexi Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/LexiChild",
+			"FromFile": "assets/Characters/Lexi/Lexi_Child.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Fashion Show",
+			"Action": "EditImage",
+			"Target": "Characters/Leximonster",
+			"FromFile": "assets/Characters/Lexi/Lexi_FashionShow.png",
+			"Update": "OnLocationChange",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"DayEvent": "Ferngill Fashion Show",
+				"LocationName": "Temp",
+				"HasSeenEvent": "57872012",
+				"HasMod": "UNA.FF.CP"
+			}
+		},
+		// Vendor
+		{
+			"LogName": "Vendor",
+			"Action": "EditImage",
+			"Target": "JessieVendor, RosaVendor",
+			"FromFile": "assets/{{Target}}.png",
+			"Update": "OnLocationChange",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+			}
+		},
+		// Cameos
+		{
+			"LogName": "Cameos",
+			"Action": "EditImage",
+			"Target": "Maps/ESCameos",
+			"FromFile": "assets/{{Target}}_{{NoNose}}.png",
+			"Update": "OnLocationChange",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+			}
+		},
+		//Mona
+		{
+			"LogName": "Mona Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/MonaSwimsuit",
+			"FromFile": "assets/Mona_swimsuit.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+			}
+		},
+		{
+			"LogName": "Mona Sprites",
+			"Action": "EditImage",
+			"Target": "Characters/MonaSwimsuit",
+			"FromFile": "assets/Mona_swimsuit_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			}
+		},
+		{
+			"LogName": "Governor",
+			"Action": "EditImage",
+			"Target": "Characters/Governor_walking",
+			"FromFile": "assets/GovernorK.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+			}
+		},
+		{
+			"LogName": "Governor",
+			"Action": "EditImage",
+			"Target": "Characters/Governor_walking",
+			"FromFile": "assets/GovernorK_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Gunther_walking",
+			"FromFile": "assets/Gunther_walking_{{Target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Gunther_walking",
+			"FromFile": "assets/Gunther_walking_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			}
+		},
+		{
+			"LogName": "parent and extra Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Ms.Donaghue, Characters/Mr.Donaghue, Portraits/Ms.Donaghue, Portraits/Mr.Donaghue, ClintMagician",
+			"FromFile": "assets/{{target}}.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+			}
+		},
+		{
+			"LogName": "Parent Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Ms.Donaghue, Characters/Mr.Donaghue",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/{{target}}_Nose.png",
+			"When": {
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			}
+		},
+	]
+}

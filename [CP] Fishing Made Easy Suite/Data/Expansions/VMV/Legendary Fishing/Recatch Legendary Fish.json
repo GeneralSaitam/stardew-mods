@@ -1,0 +1,61 @@
+{
+  "Changes": [
+    {
+      "LogName": "VMV - Recatch Legendary Fish Sturgiant",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_Hamlet",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_Sturgiant": {
+          "Chance": 0.1,
+          "Condition": "LOCATION_SEASON Here winter summer fall",
+		  "IgnoreFishDataRequirements": true,
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "VMV - Recatch Legendary Fish Alpine Char Prince",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_TrainStation",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_AlpineCharPrince": {
+          "Chance": 0.1,
+          "Condition": "LOCATION_SEASON Here winter spring fall",
+		  "IgnoreFishDataRequirements": true,
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "VMV - Recatch Legendary Fish Planet Fish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_ForestCaveMoonPond",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_PlanetFish": {
+          "Chance": 0.1,
+          "Condition": "LOCATION_SEASON Here spring summer fall",
+		  "IgnoreFishDataRequirements": true,
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true
+      }
+    }
+  ]
+}

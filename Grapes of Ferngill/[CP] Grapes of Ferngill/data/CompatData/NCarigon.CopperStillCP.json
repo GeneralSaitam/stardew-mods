@@ -1,0 +1,113 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)NCarigon.CopperStillCP_Still",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_Grape_Grappa": {
+					"Id": "GOF_Grape_Grappa",
+					"Triggers": [
+						{
+							"RequiredItemID": "(O)398",
+                            "RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Grappa",
+                            "CopyQuality": true,
+                            "PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 7
+								}
+							]
+						}
+					],
+					"MinutesUntilReady": 1600
+				},
+                "GOF_Grappa": {
+					"Id": "GOF_Grappa",
+					"Triggers": [
+						{
+							"RequiredTags": ["grape_item"],
+                            "RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Grappa",
+                            "CopyQuality": true,
+                            "PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 7
+								}
+							]
+						}
+					],
+					"MinutesUntilReady": 1600
+				},
+                "GOF_Brandy": {
+					"Id": "GOF_Brandy",
+					"Triggers": [
+						{
+							"RequiredTags": ["brandy_maker"],
+                            "RequiredCount": 4
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)NCarigon.CopperStillCP_Brandy",
+                            "CopyQuality": true,
+							"CopyPrice": true,
+							"CopyColor": true,
+							"PreserveId": "DROP_IN_PRESERVE",
+                            "PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 4.5
+								}
+							]
+						}
+					],
+					"MinutesUntilReady": 1600
+				}
+                
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)163",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_Aged_Grappa": {
+					"Id": "GOF_Aged_Grappa",
+					"Triggers": [
+						{
+							"RequiredItemID": "(O)GOF_Grappa"
+						}
+					],
+					"OutputItem":
+						[
+							{
+								"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+								"CustomData": {
+									"AgingMultiplier": "4"
+								}
+							}
+						]
+				}
+                
+			}
+		}
+                
+	]
+}

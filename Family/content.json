@@ -1,0 +1,59 @@
+{
+  "Format": "2.3.0",
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "Br1ghtEy3s.Family/f Leo 2000 Emily 1500/w sunny/z winter/t 600 1700": "EmilyTheme/-100 -100/farmer -100 -100 0 Emily 20 90 1 Leo 22 90 3/unskippable/viewport 20 90/ pause 400/speak Leo \"Hello, miss.... The other kids said you have a parrot in your house.\"/pause 2000/ speak Emily \"Why, yes, I do!  He broke his wing and I brought him inside to help him.  When I tried to release him, he didn't want to leave.  I think he likes being my friend.$h\"/pause 2000/ speak Leo \"I....I think he's my family. One of us fell behind on a flight and we never saw him again.$s\" pause 800/ speak Leo \"Does he sound like this?\" pause 800/animate Leo false true 500 17/playSound parrot/shake Leo 800/pause 1600/stopAnimation Leo/pause 2000/ speak Emily \"Oh, wow. Actually, yes. That sounds exactly like him.$6\"/pause 2000/ speak Leo \"I know him!  He's my family! Can I come by and see him after school sometime?$h\"/pause 2000/ speak Emily \"Of course! You can come see him anytime you want.$h\"/pause 2000/ speak Leo \"Thank you!$h\"/emote Leo 20 true/pause 2000/globalFade/viewport -3000 -3000/pause 1000/message \"Leo discovered that he had a part of his island family right here with him in Pelican Town. From then on, Leo visited the parrot at Emily's house as often as he wanted.\"/pause 1000/playSound parrot/pause 1000/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/HaleyHouse",
+      "Entries": {
+        "Br1ghtEy3s.FamilyEmRoom/e Br1ghtEy3s.Family/f Leo 2000 Emily 1500/p Emily": "EmilyTheme/-100 -100/farmer 16 9 0 Emily 18 4 3 Leo 16 4 2/unskippable/viewport 17 4/ pause 400/speak Emily \"Oh, hi, @. Leo is here visiting.  Please join us!\"/move farmer 0 -1 0/pause 2000/ speak Emily \"They're having such a good time. Just watch.$h\"/pause 2000/animate Leo false true 500 17/playSound parrot/shake Leo 800/pause 1600/stopAnimation Leo/pause 2000/ speak Emily \"Just wait.\"/pause 2000/playSound parrot/speak Emily \"Now it's my turn.\"/pause 2000/animate Emily false true 500 39/playSound cow/shake Emily 800/pause 1600/stopAnimation Emily/speak Emily \"How did that sound?$h\"/pause 2000/faceDirection farmer 1/pause 400/faceDirection farmer 2/animate farmer false true 100 102 103/pause 1000/globalFade/viewport -1000 -1000/pause 600/stopAnimation farmer/playSound parrot/pause 1000/end"
+      }
+    },
+    {
+      "LogName": "Emily",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",
+      "Entries": {
+        "spring_Mon": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#Leo is such a sweet kid. I get a positive energy from him.$h",
+        "spring_Tues": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#I'm glad that sweet little Leo comes to visit. I love listening to the two of them talk back and forth.  I think I'm learning their language!$h",
+        "spring_Wed": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#Leo gave me a mango yesterday when he visited. He has an aura of joy.$h",
+        "spring_Thu": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#Thank you for helping fix Willy's boat. The parrot is much happier with his friend Leo here.$h",
+        "spring_Fri": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#It must've been destiny that led Leo to talk to me that day. I really enjoy when he comes to visit.$h",
+        "spring_Sat": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#Thank you for helping Leo learn to trust humans.",
+        "spring_Sun": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#My parrot seems a lot happier now that Leo comes to visit.$h",
+        "summer_Mon": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#It's so warm here. Nothing like the island, I'm sure. Leo says it's always so hot there.$h",
+        "summer_Tues": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#Leo said there are so many parrots on the island.  Did you get to see them?",
+        "fall_Wed": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#I wonder if the leaves change colors on the island?  I'll have to ask Leo.",
+        "fall_Thu": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#It's almost time to wear our cold weather clothes!  Oh, I hope Leo can stay warm.  It's such a different climate than he's used to.",
+        "winter_Sat": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#I made Leo some winter clothes to keep him warm. Now I don't have to worry about him.$h",
+        "winter_Sun": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#The holidays are so much sweeter with that angel Leo coming around. He radiates pure white energy.$h"
+      }
+    },
+    {
+      "LogName": "LeoMainland",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/LeoMainland",
+      "Entries": {
+        "spring_Mon": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#Miss Emily smiles at me all the time.  I like her a lot.$h",
+        "spring_Tues": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#Miss Emily tries to talk like my family, but she's just making silly noises.$3",
+        "spring_Wed": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#I gave Miss Emily a mango yesterday. She liked it.$h",
+        "spring_Thu": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#I miss my island family, but my new human family is so nice to me.  Especially Miss Emily. She lets me visit my family as long as I want.$h",
+        "spring_Fri": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#Thanks, @, for being my friend on the island.  I wouldn't have felt comfortable coming here without you being here. And I never would've found my missing parrot friend!$h",
+        "spring_Sat": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#I'm glad we don't have school today.  I can go see my parrot family at Miss Emily's!$h",
+        "spring_Sun": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#I can't visit Miss Emily's house today.  I have to study.$s",
+        "summer_Mon": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#It's warm outside, a lot like the island.$h",
+        "summer_Tues": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#Mr. Linus said Miss Emily is a very nice lady and is taking good care of my parrot family.$h",
+        "fall_Wed": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#Do you have any mango trees on your farm?",
+        "fall_Thu": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#I hope I don't get too cold this winter!  Brrrrr!",
+        "winter_Sat": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#It's cold here. It never gets cold on the island.",
+        "winter_Sun": "$query PLAYER_HAS_SEEN_EVENT Current Br1ghtEy3s.Family#Miss Emily made me some warm clothes to wear. She's my family, too.$h"
+      }
+    }
+  ]
+}

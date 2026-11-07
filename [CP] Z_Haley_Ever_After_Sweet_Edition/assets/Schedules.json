@@ -1,0 +1,120 @@
+{
+    "Changes": [
+    {
+        "LogName": "Spring Day Out Schedule",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Haley",
+        "Priority": "Late",
+        "When": {
+            "Season": "Spring" 
+        }, 
+        "Entries":
+        {
+            "marriage_Mon": "820 Forest 77 44 2 haley_photoforest \"Strings\\schedules\\Haley:marriage_Mon.000\"/1330 SeedShop 2 23 3 \"Strings\\schedules\\Haley:marriage_Mon.008\"/1700 bed"
+        }
+    },
+    {
+        "LogName": "Summer Day Out Schedule",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Haley",
+        "Priority": "Late",
+        "When": {
+            "Season": "Summer"
+        }, 
+        "Entries":
+        {
+            "marriage_Mon": "820 Beach 16 11 2 haley_marriagebeach \"Strings\\schedules\\Haley:marriage_Mon.001\"/1250 Beach 51 25 2 \"Strings\\schedules\\Haley:marriage_Mon.002\"/1510 Beach 19 24 2 haley_photoforest \"Strings\\schedules\\Haley:marriage_Mon.007\"/1620 bed"
+        }
+    },
+    {
+        "LogName": "Fall Day Out Schedule",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Haley",
+        "Priority": "Late",
+        "When": {
+            "Season": "Fall" 
+        }, 
+        "Entries":
+        {
+            "marriage_Mon": "830 HaleyHouse 7 6 3 \"Strings\\schedules\\Haley:marriage_Mon.005\"/1220 4 15 2 \"Strings\\schedules\\Haley:marriage_Mon.006\"/1650 bed"
+        }
+    },
+    {
+        "LogName": "Winter Day Out Schedule",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Haley",
+        "Priority": "Late",
+        "When":{
+            "Season": "Winter" 
+        }, 
+        "Entries":
+        {
+            "marriage_Mon": "830 BathHouse_Pool 9 9 3 \"Strings\\schedules\\Haley:marriage_Mon.003\"/1500 BathHouse_WomensLocker 3 4 1 \"Strings\\schedules\\Haley:marriage_Mon.004\"/1600 bed"
+        }
+    },
+    {
+        "LogName": "Restore Night Market Post-Marriage",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Haley",
+        "Priority": "Late",
+        "Entries":
+        {
+            "marriage_winter_16": "1620 Beach 27 34 2 \"Strings\\schedules\\Haley:marriage_nightmarket\"/2300 bed"
+        }
+    },
+    {
+        "LogName": "Haley Monday Location Based Dialogue",
+        "Action": "EditData",
+        "Target": "Strings/schedules/Haley",
+        "Priority": "Late",
+        "When": {
+            "Relationship:Haley": "Married" 
+        },
+        "Entries":
+        {
+            "marriage_Mon.000": "{{i18n: Haley.inforest.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45}}}}",
+            "marriage_Mon.001": "{{i18n: Haley.atbeachtowel.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40}}}}",
+            "marriage_Mon.002": "{{i18n: Haley.atbeach.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48}}}}",
+            "marriage_Mon.003": "{{i18n: Haley.inspa.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45}}}}",
+            "marriage_Mon.004": "{{i18n: Haley.bathhouseshowers.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}}}}",
+            "marriage_Mon.005": "{{i18n: Haley.oldhouse.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43}}}}",
+            "marriage_Mon.006": "{{i18n: Haley.oldhouse2.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37}}}}",
+            "marriage_Mon.007": "{{i18n: Haley.beachpier.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25}}}}",
+            "marriage_Mon.008": "{{i18n: Haley.generalstore.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37}}}}",
+            "marriage_nightmarket": "{{i18n: Haley.nightmarket.{{Random: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31}}}}"
+        }
+    },
+    {
+        "Action": "EditData",
+        "Target": "Data/Characters",
+        "TargetField": ["Haley", "Appearance"],
+        "Entries":
+        {
+            "HEA_Haley_Spa":
+            {
+                "Id": "HEA_Haley_Spa",
+                "Season": "winter",
+                "Portrait": "Portraits/Haley_Beach",
+                "Sprite": "Characters/Haley_Beach",
+                "IsIslandAttire": false,
+                "Condition": "LOCATION_NAME Target BathHouse_WomensLocker BathHouse_Pool, PLAYER_NPC_RELATIONSHIP Current Haley Married",
+                "Precedence": -3000,
+                "Weight": 1
+            }
+        }
+    },
+    {
+        "LogName": "Animation Description",
+        "Action": "EditData",
+        "Target": "Data/animationDescriptions",
+        "Priority": "Late",
+        "When": {
+            "Relationship:Haley": "Married"  
+        }, 
+        "Entries":
+        {
+            "haley_photoforest": "30/30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 24 24 24 24 24 24 31 30 30 30 30 30 30 30 30 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 32 25 25 25 25 25 25 25 25 25 25 32 33 33 33 33 33 33 33 32 25 25 25 25 25 25 25 25 25 32 33 33 33 33 33 33/30",
+            "haley_marriagebeach": "48 48 49 49 49 49 49/50/49 49 48//laying_down/offset -16 16"
+        }
+    }]
+}

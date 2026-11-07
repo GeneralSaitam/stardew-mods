@@ -1,0 +1,109 @@
+{
+    //Guide for keys:
+	//1501 and 1504: Rude keys. Use for Abigail, Sebastian, Alex, Haley, and Shane.
+	//1499 and 1500: Keys that don't apply to the above cases.	
+	"Changes":[
+		{
+			"LogName": "Sebastian - Winter Star, Married to Maru",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.WinterStar.Maru.After}}",
+			},
+			"When": {
+				"relationship:Maru": "married",
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Winter Star, Married to Maru, friends with farmer",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.WinterStar.Maru.High.After}}",
+			},
+			"When": {
+				"Hearts:Sebastian": "5,6,7,8",
+				"relationship:Maru": "married",
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star (Default), Married to Emily",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.Emily.After}}",
+			},
+			"When": {
+				"relationship:Emily": "married",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star, High Hearts, Married to Emily", //Note the 9 and 10 heart condition assumes Platonic Relationships is installed and not PPAF. PPAF's inclusion will trigger the Dating version at 9 or 10 hearts OR bouquet given - see bestfriend json in PPAF folder.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.High.Emily.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "6,7,8",
+				"relationship:Emily": "married",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Winter Star v2 (alt condition), Married to Emily", // Condition which allows leeway on hearts if 6-heart is seen. If heart level drops to 3, assume she's angry.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.WinterStar.High.Emily.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "4, 5",
+				"HasSeenEvent |contains=13": "true",
+				"relationship:Emily": "married",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Emily - Winter Star, Married to Haley",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.WinterStar.Haley.Before}}",
+			},
+			"When": {
+				"relationship:Haley": "married",
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Winter Star, Married to Haley, Custom Gifts Active",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.WinterStar.Haley.Before.GiftsActive}}",
+			},
+			"When": {
+				"relationship:Haley": "married",
+				"Emily": "normal",
+				"CustomGifts": "enabled",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star, Married to Sebastian",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.WinterStar.Sebastian.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.WinterStar.Sebastian.After}}",
+			},
+			"When": {
+				"relationship:Sebastian": "married",
+				"Maru": "normal, spicy",
+			},
+		},
+	],
+}

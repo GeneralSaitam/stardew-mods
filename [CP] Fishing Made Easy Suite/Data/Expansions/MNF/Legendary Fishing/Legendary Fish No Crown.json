@@ -1,0 +1,165 @@
+{
+  "Changes": [
+    {
+      "LogName": "MNF - Legendary Fish No Crown Mushu",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Caldera",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_mushu": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Crown Shinidamachu",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Default",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_shinidamachu": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Crown Vampire Fish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "BugLand",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_vampire_fish": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Crown Iridiumfish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Forest",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_iridiumfish": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Crown Vampire Squid",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Submarine",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_vampire_squid": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Crown Tui",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Woods",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_tui": {
+          "IsBossFish": false
+        },
+        "MNF.MoreNewFish_la": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Crown Great Firefly Squid",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandSouthEast",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_great_firefly_squid": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish No Crown": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Crown On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_mushu": {
+          "IsBossFish": false
+        },
+        "MNF.MoreNewFish_shinidamachu": {
+          "IsBossFish": false
+        },
+        "MNF.MoreNewFish_vampire_fish": {
+          "IsBossFish": false
+        },
+        "MNF.MoreNewFish_iridiumfish": {
+          "IsBossFish": false
+        },
+        "MNF.MoreNewFish_vampire_squid": {
+          "IsBossFish": false
+        },
+        "MNF.MoreNewFish_tui": {
+          "IsBossFish": false
+        },
+        "MNF.MoreNewFish_la": {
+          "IsBossFish": false
+        },
+        "MNF.MoreNewFish_great_firefly_squid": {
+          "IsBossFish": false
+        }
+      },
+      "When": {
+        "Legendary Fish On Farm": true,
+        "Legendary Fish No Crown": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+ {
+    "Changes": [
+    {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_HCCarePack": {
+                    "Id": "{{ModId}}_HCCarePack",
+                    "Trigger": "DayEnding",
+                    "Condition": "DAY_OF_MONTH 5, PLAYER_HEARTS Current Harvey 14, PLAYER_NPC_RELATIONSHIP Current Harvey Married",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_HCCarePack tomorrow"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "{{ModId}}_HCCarePack": "{{i18n:HCCarePack}} %item object 349 10 351 10 %%[#]{{i18n:HCCarePackTitle}}"
+            }
+            }
+        ]
+    }

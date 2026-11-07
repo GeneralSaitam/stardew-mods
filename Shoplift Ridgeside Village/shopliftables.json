@@ -1,0 +1,250 @@
+{
+    "MakeShopliftable":[              
+        {
+            "UniqueShopId":"TheMightyAmondee.RSVJericShop",
+            "ShopName":"RSVJericShop",
+            "Bannable": true,
+            "CounterLocation":[
+                {
+                    "LocationName":"Custom_Ridgeside_JericHouse",
+                    "NeedsShopProperty": true,
+                    "TileX": 1,
+                    "TileY": 14
+                },
+
+                {
+                    "LocationName":"Custom_Ridgeside_JericHouse",
+                    "NeedsShopProperty": true,
+                    "TileX": 2,
+                    "TileY": 14
+                },
+
+                {
+                    "LocationName":"Custom_Ridgeside_JericHouse",
+                    "NeedsShopProperty": true,
+                    "TileX": 3,
+                    "TileY": 14
+                },
+
+                {
+                    "LocationName":"Custom_Ridgeside_JericHouse",
+                    "NeedsShopProperty": true,
+                    "TileX": 3,
+                    "TileY": 13
+                },
+
+                {
+                    "LocationName":"Custom_Ridgeside_JericHouse",
+                    "NeedsShopProperty": true,
+                    "TileX": 3,
+                    "TileY": 12
+                }
+            ],
+            "MaxStockQuantity": 2,
+            "MaxStackPerItem": 5,
+            "ShopKeepers": ["Jeric", "Bryle"],
+            "CaughtDialogue":{
+                "Jeric":"{{i18n:RSVJericShop.Jeric}}",
+                "Jeric_NoMoney":"{{i18n:RSVJericShop.Jeric_NoMoney}}"
+            },
+            "OpenConditions":{
+                "ShopKeeperRange": [
+                    {
+                        "Name": "Jeric",
+                        "TileX": 1,
+                        "TileY": 12,                   
+                        "Width": 2,
+                        "Height": 2
+                    }
+                ]
+            }
+        },
+
+        {
+            "UniqueShopId":"TheMightyAmondee.RSVPikaShop",
+            "ShopName":"RSVPikaShop",
+            "CounterLocation":[
+                {
+                    "LocationName":"Custom_Ridgeside_RidgesideVillage",
+                    "NeedsShopProperty": true,
+                    "TileX": 98,
+                    "TileY": 39
+                },
+                {
+                    "LocationName":"Custom_Ridgeside_RidgesideVillage",
+                    "NeedsShopProperty": true,
+                    "TileX": 99,
+                    "TileY": 39
+                }
+            ],
+            "MaxStockQuantity": 2,
+            "MaxStackPerItem": 2,
+            "ShopKeepers": ["Pika", "Corine", "Faye"],
+            "CaughtDialogue":{
+                "Pika":"{{i18n:RSVPikaShop.Pika}}",
+                "Pika_NoMoney":"{{i18n:RSVPikaShop.Pika_NoMoney}}",
+                "Corine":"{{i18n:RSVPikaShop.Corine}}",
+                "Corine_NoMoney":"{{i18n:RSVPikaShop.Corine_NoMoney}}",
+                "Faye":"{{i18n:RSVPikaShop.Faye}}",
+                "Faye_NoMoney":"{{i18n:RSVPikaShop.Faye_NoMoney}}"
+            },           
+            "OpenConditions":{
+                "ShopKeeperRange": [
+                    {
+                        "Name": "Pika",
+                        "TileX": 90,
+                        "TileY": 37,                   
+                        "Width": 10,
+                        "Height": 2
+                    },
+
+                    {
+                        "Name": "Corine",
+                        "TileX": 90,
+                        "TileY": 37,                   
+                        "Width": 10,
+                        "Height": 2
+                    },
+
+                    {
+                        "Name": "Faye",
+                        "TileX": 90,
+                        "TileY": 37,                   
+                        "Width": 10,
+                        "Height": 2
+                    }
+                ]
+            }
+        },
+
+        {
+            "UniqueShopId":"TheMightyAmondee.RSVMalayaShop",
+            "ShopName":"RSVMalayaShop",
+            "Bannable": true,
+            "CounterLocation":[
+                {
+                    "LocationName":"Custom_Ridgeside_LogCabinHotelLobby",
+                    "NeedsShopProperty": true,
+                    "TileX": 39,
+                    "TileY": 14
+                },
+                {
+                    "LocationName":"Custom_Ridgeside_LogCabinHotelLobby",
+                    "NeedsShopProperty": true,
+                    "TileX": 40,
+                    "TileY": 14
+                }
+            ],
+            "MaxStockQuantity": 2,
+            "MaxStackPerItem": 1,
+            "ShopKeepers": ["Malaya", "Richard", "Ysabelle"],
+            "CaughtDialogue":{
+                "Malaya":"{{i18n:RSVMalayaShop.Malaya}}",
+                "Malaya_NoMoney":"{{i18n:RSVMalayaShop.Malaya_NoMoney}}",
+                "Richard":"{{i18n:RSVMalayaShop.Richard}}",
+                "Richard_NoMoney":"{{i18n:RSVMalayaShop.Richard_NoMoney}}"
+            },
+            "Exit":{
+                "LocationName": "Custom_Ridgeside_RidgesideVillage",
+                "TileX": 114,
+                "TileY": 22                  
+            },
+            "OpenConditions":{
+                "ShopKeeperRange": [
+                    {
+                        "Name": "Malaya",
+                        "TileX": 39,
+                        "TileY": 12,                   
+                        "Width": 6,
+                        "Height": 2
+                    }
+                ]
+            }
+        },
+
+        {
+            "UniqueShopId":"TheMightyAmondee.RSVKimpoiShop",
+            "ShopName":"RSVKimpoiShop",
+            "Bannable": true,
+            "CounterLocation":[
+                {
+                    "LocationName":"Custom_Ridgeside_AlissaShed",
+                    "NeedsShopProperty": true,
+                    "TileX": 9,
+                    "TileY": 6
+                },
+                {
+                    "LocationName":"Custom_Ridgeside_AlissaShed",
+                    "NeedsShopProperty": true,
+                    "TileX": 10,
+                    "TileY": 6
+                }
+            ],
+            "MaxStockQuantity": 4,
+            "MaxStackPerItem": 3,
+            "ShopKeepers": ["Kimpoi", "Alissa", "Malaya"],
+            "CaughtDialogue":{
+                "Kimpoi":"{{i18n:RSVKimpoiShop.Kimpoi}}",
+                "Kimpoi_NoMoney":"{{i18n:RSVKimpoiShop.Kimpoi_NoMoney}}",
+                "Alissa":"{{i18n:RSVKimpoiShop.Alissa}}",
+                "Alissa_NoMoney":"{{i18n:RSVKimpoiShop.Alissa_NoMoney}}"
+            },
+            "OpenConditions":{
+                "ShopKeeperRange": [
+                    {
+                        "Name": "Kimpoi",
+                        "TileX": 8,
+                        "TileY": 4,                   
+                        "Width": 3,
+                        "Height": 2
+                    }
+                ]
+            }
+        },
+
+        {
+            "UniqueShopId":"TheMightyAmondee.RSVHeapsStore",
+            "ShopName":"RSVHeapsStore",
+            "Bannable": true,
+            "CounterLocation":[
+                {
+                    "LocationName":"Custom_Ridgeside_3Bros",
+                    "NeedsShopProperty": true,
+                    "TileX": 7,
+                    "TileY": 8
+                },
+                {
+                    "LocationName":"Custom_Ridgeside_3Bros",
+                    "NeedsShopProperty": true,
+                    "TileX": 8,
+                    "TileY": 8
+                }
+            ],
+            "MaxStockQuantity": 5,
+            "MaxStackPerItem": 5,
+            "ShopKeepers": ["Lorenzo", "Shanice", "Anton", "Kiarra"],
+            "CaughtDialogue":{
+                "Lorenzo":"{{i18n:RSVHeapsStore.Lorenzo}}",
+                "Lorenzo_NoMoney":"{{i18n:RSVHeapsStore.Lorenzo_NoMoney}}",
+                "Shanice":"{{i18n:RSVHeapsStore.Shanice}}",
+                "Shanice_NoMoney":"{{i18n:RSVHeapsStore.Shanice_NoMoney}}"
+            },
+            "Exit":{
+                "LocationName": "Custom_Ridgeside_RidgesideVillage",
+                "TileX": 76,
+                "TileY": 19                  
+            },
+            "OpenConditions":{
+                "ShopKeeperRange": [
+                    {
+                        "Name": "Lorenzo",
+                        "TileX": 6,
+                        "TileY": 6,                   
+                        "Width": 5,
+                        "Height": 3
+                    }
+                ]
+            }
+        }
+    ]
+}

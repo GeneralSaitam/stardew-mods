@@ -1,0 +1,129 @@
+{    
+	"Changes": [
+		// SCHEDULE EDITS
+		{
+			"LogName": "Rekindle Schedule Edit - Kent (Job)",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Kent",
+			"Priority": "Late",
+			"Entries": {
+				"Mon": "700 Town 13 87 0/750 Town 19 90 0/810 Town 48 70 3/900 Town 51 63 1/930 Town 109 56 1/1140 Town 97 81 0/1220 Town 108 92 0/1300 Town 55 85 1/1440 Town 67 79 2/1530 SamHouse 2 21 0/2300 SamHouse 21 5 3 kent_sleep",
+				"Thu": "700 Town 13 87 0/750 Town 19 90 0/810 Town 48 70 3/900 Town 51 63 1/930 Town 109 56 1/1140 Town 97 81 0/1220 Town 108 92 0/1300 Town 55 85 1/1440 Town 67 79 2/1530 SamHouse 2 21 0/2300 SamHouse 21 5 3 kent_sleep"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_JobOffer": true
+			}
+		},
+		{
+			"LogName": "Rekindle Schedule Edit - Kent (Job, Saloon Breakfast)",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Kent",
+			"Priority": "Late",
+			"Entries": {
+				"Mon": "630 Saloon 17 18 2 \"Strings\\schedules\\Jodi:breakfastCashier\"/1130 Town 48 70 3/1200 Town 51 63 1/1230 Town 13 87 0/1330 Town 19 90 0/1350 Town 67 79 2/1450 SamHouse 2 21 0/2300 SamHouse 21 5 3 kent_sleep"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_JobOffer": true,
+				"HasMod |contains= agentlyoko.stardropbreakfast": true,
+				"HasSeenEvent |contains= anyPlayer |contains=177756": true
+			}
+		},
+		{
+			"LogName": "Rekindle Schedule Edit - Kent (Demetrius)",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Kent",
+			"Priority": "Late",
+			"Entries": {
+				"spring_Tue": "700 {{KentDishesCompat}}/830 Mountain 43 10 1/1700 SamHouse 2 21 0/2000 SamHouse 8 5 3/2100 Town 6 89 2/2300 SamHouse 21 5 3 kent_sleep",
+				"summer_Tue": "700 {{KentDishesCompat}}/830 Mountain 43 10 1/1700 SamHouse 2 21 0/2000 SamHouse 8 5 3/2100 Town 6 89 2/2300 SamHouse 21 5 3 kent_sleep"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_CampingTrip": true
+			}
+		},
+		{
+			"LogName": "Rekindle Schedule Edit - Kent (Date)",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Kent",
+			"Priority": "Late",
+			"Entries": {
+				"spring_Fri": "800 SamHouse 5 6 3/1000 Town 42 102 2/1300 {{KentDateSchedule}}/1800 SamHouse 3 13 1/2200 SamHouse 21 5 3 kent_sleep",
+				"summer_Fri": "800 SamHouse 5 6 3/1000 Town 42 102 2/1300 {{KentDateSchedule}}/1800 SamHouse 3 13 1/2200 SamHouse 21 5 3 kent_sleep",
+				"fall_Fri": "800 SamHouse 5 6 3/1000 Town 42 102 2/1300 {{KentDateSchedule}}/1800 SamHouse 3 13 1/2200 SamHouse 21 5 3 kent_sleep",
+				"winter_Fri": "800 SamHouse 5 6 3/1000 Town 42 102 2/1300 {{KentDateSchedule}}/1800 SamHouse 3 13 1/2200 SamHouse 21 5 3 kent_sleep"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_CampingTrip": true
+			}
+		},
+		{
+			"LogName": "Rekindle Schedule Edit - Jodi (Caroline)",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Jodi",
+			"Priority": "Late",
+			"Entries": {
+				"Mon": "830 Sunroom 7 7 3/1330 Town 22 72 1/1600 SamHouse 4 12 2 jodi_sit_down/1900 SamHouse 6 5 0 jodi_dishes/1930 SamHouse 8 13 1/2100 SamHouse 10 22 3 \"Strings\\schedules\\Jodi:spring.000\"/2200 SamHouse 22 5 1 jodi_sleep",
+				"Thu": "830 Sunroom 7 7 3/1330 Town 22 72 1/1600 SamHouse 4 12 2 jodi_sit_down/1900 SamHouse 6 5 0 jodi_dishes/1930 SamHouse 8 13 1/2100 SamHouse 10 22 3 \"Strings\\schedules\\Jodi:spring.000\"/2200 SamHouse 22 5 1 jodi_sleep"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_LadiesDay": true
+			}
+		},
+		{
+			"LogName": "Rekindle Schedule Edit - Jodi (Caroline, Saloon Breakfast)",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Jodi",
+			"Priority": "Late",
+			"Entries": {
+				"Mon": "700 Saloon 9 22 1 \"Strings\\schedules\\Jodi:breakfastMon\"/1130 Sunroom 7 7 3/1330 Town 22 72 1/1600 SamHouse 4 12 2 jodi_sit_down/1900 SamHouse 6 5 0 jodi_dishes/1930 SamHouse 8 13 1/2100 SamHouse 10 22 3 \"Strings\\schedules\\Jodi:spring.000\"/2200 SamHouse 22 5 1 jodi_sleep"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_LadiesDay": true,
+				"HasMod |contains= agentlyoko.stardropbreakfast": true,
+				"HasSeenEvent |contains= anyPlayer |contains=177756": true
+			}
+		},
+		{
+			"LogName": "Rekindle Schedule Edit - Jodi (Date)",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Jodi",
+			"Priority": "Late",
+			"Entries": {
+				"spring_Fri": "800 SamHouse 1 6 1/1000 Town 41 102 2/1300 {{JodiDateSchedule}}/1800 SamHouse 3 13 1/2200 SamHouse 22 5 1 jodi_sleep",
+				"summer_Fri": "800 SamHouse 1 6 1/1000 Town 41 102 2/1300 {{JodiDateSchedule}}/1800 SamHouse 3 13 1/2200 SamHouse 22 5 1 jodi_sleep",
+				"fall_Fri": "800 SamHouse 1 6 1/1000 Town 41 102 2/1300 {{JodiDateSchedule}}/1800 SamHouse 3 13 1/2200 SamHouse 22 5 1 jodi_sleep",
+				"winter_Fri": "800 SamHouse 1 6 1/1000 Town 41 102 2/1300 {{JodiDateSchedule}}/1800 SamHouse 3 13 1/2200 SamHouse 22 5 1 jodi_sleep",
+				"Sat": "800 SamHouse 1 6 1/900 SamHouse 7 5 0/1000 SamHouse 4 12 2 jodi_sit_down/1030 CommunityCenter 24 8 2 jodi_sit_down/1330 Town 7 73 0/1700 Saloon 2 22 2/2350 SamHouse 22 5 1 jodi_sleep"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_FirstDate": true
+			}
+		},
+		{
+			"LogName": "Rekindle Schedule Edit - Demetrius (Kent)",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Demetrius",
+			"Priority": "Late",
+			"Entries": {
+				"spring_Tue": "750 ScienceHouse 29 9 0/1100 Mountain 45 8 demetrius_notes/1900 ScienceHouse 27 9 0/2040 ScienceHouse 28 9 0/2100 ScienceHouse 15 4 0/2230 ScienceHouse 19 4 11 demetrius_sleep",
+				"summer_Tue": "750 ScienceHouse 29 9 0/1100 Mountain 45 8 demetrius_notes/1900 ScienceHouse 27 9 0/2040 ScienceHouse 28 9 0/2100 ScienceHouse 15 4 0/2230 ScienceHouse 19 4 11 demetrius_sleep"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_CampingTrip": true
+			}
+		},
+		{
+			"LogName": "Rekindle Schedule Edit - Caroline (Jodi)",
+			"Action": "EditData",
+			"Target": "Characters/schedules/Caroline",
+			"Priority": "Late",
+			"Entries": {
+				"Mon": "800 SeedShop 37 6 3/1000 Sunroom 5 7 1/1330 Town 23 71 2/1600 SeedShop 25 18 2 square_9_9/2100 SeedShop 25 4 1 caroline_sleep",
+				"Thu": "800 SeedShop 37 6 3/1000 Sunroom 5 7 1/1330 Town 23 71 2/1600 SeedShop 25 18 2 square_9_9/2100 SeedShop 25 4 1 caroline_sleep"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_LadiesDay": true
+			}
+		}
+    ]
+}

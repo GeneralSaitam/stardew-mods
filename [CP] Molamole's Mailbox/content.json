@@ -1,0 +1,1435 @@
+{
+	"Format": "2.7.2",
+	"ConfigSchema": {
+		//Farm MailBox
+		"Farm MailBox Style": {
+			"AllowValues": "Wood01, Wood02, Wood03, Wood04, Wood05, Metal01, Metal02, Metal03, Metal04, Metal05, Stone01, Stone02, Stone03, Stone04, Stone05",
+			"Default": "Wood01",
+			"Section": "Farm MailBox"
+		},
+		"Color": {
+			"AllowValues": "Classic, NonClassic, Light, Medium, Dark",
+			"Default": "Medium",
+			"Section": "Farm MailBox"
+		},
+		"Tile": {
+			"AllowValues": "Non, Red, Green, Blue, Black",
+			"Default": "Non",
+			"Description": "Only for the Wood Styles and Stone05",
+			"Section": "Farm MailBox"
+		},
+		//Island MailBox
+		"Island MailBox Style": {
+			"AllowValues": "Metal01, Metal02, Metal03, Metal04, Metal05, Metal&Wood01, Metal&Wood02, Metal&Wood03, Metal&Wood04, Metal&Wood05, Wood01, Wood02, Wood03, Wood04, Wood05",
+			"Default": "Wood01",
+			"Section": "Island MailBox"
+		},
+		"Base": {
+			"AllowValues": "Classic, NonClassic, Light, Medium, Dark",
+			"Default": "NonClassic",
+			"Section": "Island MailBox"
+		},
+		"Paint": {
+			"AllowValues": "Non, Red, Green, Blue, Black",
+			"Default": "Non",
+			"Description": "Only for the Wood and Metal&Wood Styles",
+			"Section": "Island MailBox"
+		},
+		//Cabin MailBox
+		"Cabin MailBox Style": {
+			"AllowValues": "Metal01, Metal02, Metal03, Metal04, Metal05, Metal&Wood01, Metal&Wood02, Metal&Wood03, Metal&Wood04, Metal&Wood05",
+			"Default": "Metal&Wood01",
+			"Section": "Cabin MailBox"
+		},
+		"Base02": {
+			"AllowValues": "Classic, NonClassic, Light, Medium, Dark",
+			"Default": "Medium",
+			"Section": "Cabin MailBox"
+		},
+		"Paint02": {
+			"AllowValues": "Non, Red, Green, Blue, Black",
+			"Default": "Non",
+			"Description": "Only for the Metal&Wood Styles",
+			"Section": "Cabin MailBox"
+		},
+		//Other
+		"NoSeasonal": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Section": "Other"
+		},
+		"Farm Randomness": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Section": "Farm MailBox"
+		},
+		"Island Randomness": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Section": "Island MailBox"
+		},
+		"Use the Desaturated version?": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "Other"
+		},
+		"Throw salt around the mailbox?": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Snails stop to appear near the mailbox",
+			"Section": "Other"
+		}
+	},
+  "DynamicTokens": [
+		{
+			"Name": "Non",
+			"Value": "{{Tile}}",
+			"When": {
+				"Farm MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05, Stone01, Stone02, Stone03, Stone04",
+				"Tile": "Non, Red, Green, Blue, Black"
+			}
+		},
+		{
+			"Name": "TileColor",
+			"Value": "{{Tile}}",
+			"When": {
+				"Farm MailBox Style": "Wood01, Wood02, Wood03, Wood04, Wood05, Stone05"
+			}
+		},
+		{
+			"Name": "Non",
+			"Value": "{{Paint}}",
+			"When": {
+				"Island MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint": "Non, Red, Green, Blue, Black"
+			}
+		},
+		{
+			"Name": "PaintColor",
+			"Value": "{{Paint}}",
+			"When": {
+				"Island MailBox Style": "Metal&Wood01, Metal&Wood02, Metal&Wood03, Metal&Wood04, Metal&Wood05, Wood01, Wood02, Wood03, Wood04, Wood05"
+			}
+		},
+		{
+			"Name": "Non",
+			"Value": "{{Paint02}}",
+			"When": {
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black"
+			}
+		},
+		{
+			"Name": "CabinPaintColor",
+			"Value": "{{Paint02}}",
+			"When": {
+				"Cabin MailBox Style": "Metal&Wood01, Metal&Wood02, Metal&Wood03, Metal&Wood04, Metal&Wood05"
+			}
+		},
+		{
+			"Name": "Seasonal Off",
+			"Value": "{{NoSeasonal}}"
+		},
+		{
+			"Name": "FarmMailBoxStyle",
+			"Value": "{{Farm MailBox Style}}"
+		},
+		{
+			"Name": "IslandMailBoxStyle",
+			"Value": "{{Island MailBox Style}}"
+		},
+		{
+			"Name": "CabinMailBoxStyle",
+			"Value": "{{Cabin MailBox Style}}"
+		},
+		{
+			"Name": "DesaturatedOn",
+			"Value": "{{Use the Desaturated version?}}"
+		}
+  ],
+
+	"Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox/MailBox_{{FarmMailBoxStyle}}_{{Color}}_Non_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Farm Randomness": "false",
+				"Farm MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05, Stone01, Stone02, Stone03, Stone04",
+				"Tile": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox/MailBox_{{FarmMailBoxStyle}}_{{Color}}_Non_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Farm Randomness": "false",
+				"Farm MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05, Stone01, Stone02, Stone03, Stone04",
+				"Tile": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox/MailBox_{{FarmMailBoxStyle}}_{{Color}}_{{TileColor}}_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Farm Randomness": "false",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox/MailBox_{{FarmMailBoxStyle}}_{{Color}}_{{TileColor}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Farm Randomness": "false",
+				"DesaturatedOn": "false"
+			}
+		}, //Island Farm
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "Assets/2.IslandMailBox/IslandMailBox_{{IslandMailBoxStyle}}_{{Base}}_Non.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Island Randomness": "false",
+				"Island MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "Assets/2.IslandMailBox/IslandMailBox_{{IslandMailBoxStyle}}_{{Base}}_Non_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Island Randomness": "false",
+				"Island MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "Assets/2.IslandMailBox/IslandMailBox_{{IslandMailBoxStyle}}_{{Base}}_{{PaintColor}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Island Randomness": "false",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "Assets/2.IslandMailBox/IslandMailBox_{{IslandMailBoxStyle}}_{{Base}}_{{PaintColor}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Island Randomness": "false",
+				"DesaturatedOn": "false"
+			}
+		}, //Cabin
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 64,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 64,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 64,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 64,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 144,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 144,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 144,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 144,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 224,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 224,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 224,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 224,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"DesaturatedOn": "false"
+			}
+		},
+		//Farm + Island Random
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox/MailBox_{{Random:Wood01, Wood02, Wood03, Wood04, Wood05, Metal01, Metal02, Metal03, Metal04, Metal05, Stone01, Stone02, Stone03, Stone04, Stone05 |key=FarmMailBoxStyle}}_{{Random:Classic, NonClassic, Light, Medium, Dark |key=Color}}_{{Random: Non |key=Tile}}_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Farm Randomness": "true",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox/MailBox_{{Random:Wood01, Wood02, Wood03, Wood04, Wood05, Metal01, Metal02, Metal03, Metal04, Metal05, Stone01, Stone02, Stone03, Stone04, Stone05 |key=FarmMailBoxStyle}}_{{Random:Classic, NonClassic, Light, Medium, Dark |key=Color}}_{{Random: Non |key=Tile}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Farm Randomness": "true",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1, ",
+			"FromFile": "Assets/2.IslandMailBox/IslandMailBox_{{Random:Metal01, Metal02, Metal03, Metal04, Metal05, Metal&Wood01, Metal&Wood02, Metal&Wood03, Metal&Wood04, Metal&Wood05, Wood01, Wood02, Wood03, Wood04, Wood05 |key=IslandMailBoxStyle}}_{{Random: Non, Classic, NonClassic, Light, Medium, Dark |key=Base}}_{{Random: Non |key=Paint}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Island Randomness": "true",
+				"DesaturatedOn": "false"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "Assets/2.IslandMailBox/IslandMailBox_{{Random:Metal01, Metal02, Metal03, Metal04, Metal05, Metal&Wood01, Metal&Wood02, Metal&Wood03, Metal&Wood04, Metal&Wood05, Wood01, Wood02, Wood03, Wood04, Wood05 |key=IslandMailBoxStyle}}_{{Random: Classic, NonClassic, Light, Medium, Dark |key=Base}}_{{Random: Non |key=Paint}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Island Randomness": "true",
+				"DesaturatedOn": "false"
+			}
+		},
+		//Desaturated version
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox - Desaturated/MailBox_{{FarmMailBoxStyle}}_{{Color}}_Non_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Farm Randomness": "false",
+				"Farm MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05, Stone01, Stone02, Stone03, Stone04",
+				"Tile": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox - Desaturated/MailBox_{{FarmMailBoxStyle}}_{{Color}}_Non_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Farm Randomness": "false",
+				"Farm MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05, Stone01, Stone02, Stone03, Stone04",
+				"Tile": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox - Desaturated/MailBox_{{FarmMailBoxStyle}}_{{Color}}_{{TileColor}}_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Farm Randomness": "false",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox - Desaturated/MailBox_{{FarmMailBoxStyle}}_{{Color}}_{{TileColor}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Farm Randomness": "false",
+				"DesaturatedOn": "true"
+			}
+		}, //Island Farm
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "Assets/2.IslandMailBox - Desaturated/IslandMailBox_{{IslandMailBoxStyle}}_{{Base}}_Non.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Island Randomness": "false",
+				"Island MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "Assets/2.IslandMailBox - Desaturated/IslandMailBox_{{IslandMailBoxStyle}}_{{Base}}_Non_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Island Randomness": "false",
+				"Island MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "Assets/2.IslandMailBox - Desaturated/IslandMailBox_{{IslandMailBoxStyle}}_{{Base}}_{{PaintColor}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Island Randomness": "false",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "Assets/2.IslandMailBox - Desaturated/IslandMailBox_{{IslandMailBoxStyle}}_{{Base}}_{{PaintColor}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Replace",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Island Randomness": "false",
+				"DesaturatedOn": "true"
+			}
+		}, //Cabin
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 64,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 64,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 64,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 64,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 144,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 144,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 144,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 144,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 224,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_Non_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 224,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Cabin MailBox Style": "Metal01, Metal02, Metal03, Metal04, Metal05",
+				"Paint02": "Non, Red, Green, Blue, Black",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 224,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/3.CabinMailBox - Desaturated/CabinMailBox_{{CabinMailBoxStyle}}_{{Base02}}_{{CabinPaintColor}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 224,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"DesaturatedOn": "true"
+			}
+		},
+		//Farm + Island Random
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox - Desaturated/MailBox_{{Random:Wood01, Wood02, Wood03, Wood04, Wood05, Metal01, Metal02, Metal03, Metal04, Metal05, Stone01, Stone02, Stone03, Stone04, Stone05 |key=FarmMailBoxStyle}}_{{Random:Classic, NonClassic, Light, Medium, Dark |key=Color}}_{{Random: Non |key=Tile}}_{{Season}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Farm Randomness": "true",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/1.FarmMailBox - Desaturated/MailBox_{{Random:Wood01, Wood02, Wood03, Wood04, Wood05, Metal01, Metal02, Metal03, Metal04, Metal05, Stone01, Stone02, Stone03, Stone04, Stone05 |key=FarmMailBoxStyle}}_{{Random:Classic, NonClassic, Light, Medium, Dark |key=Color}}_{{Random: Non |key=Tile}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Farm Randomness": "true",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1, ",
+			"FromFile": "Assets/2.IslandMailBox - Desaturated/IslandMailBox_{{Random:Metal01, Metal02, Metal03, Metal04, Metal05, Metal&Wood01, Metal&Wood02, Metal&Wood03, Metal&Wood04, Metal&Wood05, Wood01, Wood02, Wood03, Wood04, Wood05 |key=IslandMailBoxStyle}}_{{Random: Non, Classic, NonClassic, Light, Medium, Dark |key=Base}}_{{Random: Non |key=Paint}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "false",
+				"Island Randomness": "true",
+				"DesaturatedOn": "true"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "Assets/2.IslandMailBox - Desaturated/IslandMailBox_{{Random:Metal01, Metal02, Metal03, Metal04, Metal05, Metal&Wood01, Metal&Wood02, Metal&Wood03, Metal&Wood04, Metal&Wood05, Wood01, Wood02, Wood03, Wood04, Wood05 |key=IslandMailBoxStyle}}_{{Random: Classic, NonClassic, Light, Medium, Dark |key=Base}}_{{Random: Non |key=Paint}}_NoSeasonal.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"Update": "OnLocationChange",
+			"When": {
+				"NoSeasonal": "true",
+				"Island Randomness": "true",
+				"DesaturatedOn": "true"
+			}
+		}, //Farm + Island Snail
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Mailbox",
+			"FromFile": "Assets/Snail_RainyDays.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"Patchmode": "Overlay",
+			"When": {
+				"Weather": "Rain, Storm, GreenRain",
+				"Season": "Spring, Summer",
+				"Throw salt around the mailbox?": "false"
+			},
+			"Update": "OnTimeChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/island_tilesheet_1",
+			"FromFile": "Assets/Snail_RainyDays 2.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 48,
+				"Y": 368,
+				"Width": 16,
+				"Height": 32
+			},
+			"Patchmode": "Overlay",
+			"When": {
+				"Weather": "Rain, Storm",
+				"Throw salt around the mailbox?": "false"
+			},
+			"Update": "OnTimeChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/Snail_RainyDays.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 64,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"Patchmode": "Overlay",
+			"When": {
+				"Weather": "Rain, Storm, GreenRain",
+				"Season": "Spring, Summer",
+				"Throw salt around the mailbox?": "false"
+			},
+			"Update": "OnTimeChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/Snail_RainyDays.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 144,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"Patchmode": "Overlay",
+			"When": {
+				"Weather": "Rain, Storm, GreenRain",
+				"Season": "Spring, Summer",
+				"Throw salt around the mailbox?": "false"
+			},
+			"Update": "OnTimeChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Buildings/Beach Cabin, Buildings/Log Cabin, Buildings/Neighbor Cabin, Buildings/Plank Cabin, Buildings/Rustic Cabin, Buildings/Stone Cabin, Buildings/Trailer Cabin",
+			"FromFile": "Assets/Snail_RainyDays.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 16,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 224,
+				"Y": 76,
+				"Width": 16,
+				"Height": 32
+			},
+			"Patchmode": "Overlay",
+			"When": {
+				"Weather": "Rain, Storm, GreenRain",
+				"Season": "Spring, Summer",
+				"Throw salt around the mailbox?": "false"
+			},
+			"Update": "OnTimeChange"
+		}
+	]
+}

@@ -1,0 +1,308 @@
+{
+  "Format": "2.9.0",
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "ConfigSchema": {
+    "DwarfFace": {
+      "AllowValues": "Emotions, Static",
+      "Default": "Emotions"
+    },
+    "WinterOutfit": {
+      "AllowValues": "True, False",
+      "Default": "True"
+    }
+  },
+    "DynamicTokens": [
+      {
+        "Name": "TrolleyPortrait",
+        "Value": "None"
+      },
+      {
+        "Name": "TrolleyPortrait",
+        "Value": "{{Spiderbuttons.CMCT/Config: cajcbell.TE, Portraits}}",
+        "When": {
+          "HasMod |contains=cajcbell.TE": true,
+          "HasMod |contains=Spiderbuttons.CMCT": true,
+        }
+      },
+    ],
+  "Changes": [
+    {
+      "Action": "Load",
+      "Target": "Portraits/Dwarf",
+      "FromFile": "Assets/Dwarf_{{DwarfFace}}_Default.png",
+      "Priority": "Medium"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Dwarf_Winter",
+      "FromFile": "Assets/Dwarf_{{DwarfFace}}_Winter.png",
+      "Priority": "Low"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dwarf_Winter",
+      "FromFile": "Assets/Dwarf_Winter.png",
+      "Priority": "Low"
+    },
+    {
+      "LogName": "Dwarf Appearance Data",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [
+        "Dwarf",
+        "Appearance"
+      ],
+      "Entries": {
+        //Winter Outfits
+        "{{ModId}}.DwarfWinter": {
+          "Id": "{{ModId}}.DwarfWinter",
+          "Season": "Winter",
+          "Condition": "SEASON Winter, {{WinterOutfit}}",
+          "Sprite": "Characters/Dwarf_Winter",
+          "Portrait": "Portraits/Dwarf_Winter",
+          "Precedence": -120
+        }
+      }
+    },
+    { //Volcano Dwarf Deserves it too!
+      "Action": "EditImage",
+      "Target": "Portraits/VolcanoDwarf_Default",
+      "FromFile": "Assets/CinderFace.png",
+      "When": {
+        "HasMod |contains=DolphINaF.VendorPortraits": true
+      }
+    },
+    { //Volcano Dwarf Smolanu
+      "Action": "EditImage",
+      "Target": "Portraits/CinderDwarf",
+      "FromFile": "Assets/CinderFace.png",
+      "When": {
+        "HasMod |contains=Lemurkat.Dwarf.cp": true
+      }
+    },
+    {
+      "Action": "Load",
+      "FromFile": "Assets/Smolanu_Winter.png",
+      "Target": "Characters/Dwarf_Winter",
+      "Priority": "Medium",
+      "When": {
+        "HasMod |contains=Lemurkat.Dwarf.cp": true
+      }
+    },
+    { //King dwarf
+      "Action": "Load",
+      "Target": "Portraits/DwarfKing_Spring",
+      "FromFile": "Assets/KingFace_Spring.png",
+      "Priority": "Medium",
+      "When": {
+        "HasMod |contains=YenaLoomer.CutCharacters": true
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/DwarfKing_Summer",
+      "FromFile": "Assets/KingFace_Summer.png",
+      "When": {
+        "HasMod |contains=YenaLoomer.CutCharacters": true
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/DwarfKing_Fall",
+      "FromFile": "Assets/KingFace_Fall.png",
+      "When": {
+        "HasMod |contains=YenaLoomer.CutCharacters": true
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/DwarfKing_Winter",
+      "FromFile": "Assets/KingFace_Winter.png",
+      "When": {
+        "HasMod |contains=YenaLoomer.CutCharacters": true
+      }
+    },
+    {
+      "LogName": "King Appearance Data",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "TargetField": [
+        "DwarfKing",
+        "Appearance"
+      ],
+      "Priority": "Late",
+      "Entries": {
+        "{{ModId}}.DwarfKing_Spring": {
+          "ID": "{{ModId}}.DwarfKing_Spring",
+          "Season": "Spring",
+          "Condition": "SEASON Spring",
+          "Portrait": "Portraits/DwarfKing_Spring",
+          "Precedence": -120
+        },
+        "{{ModId}}.DwarfKing_Summer": {
+          "ID": "{{ModId}}.DwarfKing_Summer",
+          "Season": "Summer",
+          "Condition": "SEASON Summer",
+          "Portrait": "Portraits/DwarfKing_Summer",
+          "Precedence": -120
+        },
+        "{{ModId}}.DwarfKing_Fall": {
+          "ID": "{{ModId}}.DwarfKing_Fall",
+          "Season": "Fall",
+          "Condition": "SEASON Fall",
+          "Portrait": "Portraits/DwarfKing_Fall",
+          "Precedence": -120
+        },
+        "{{ModId}}.DwarfKing_Winter": {
+          "ID": "{{ModId}}.DwarfKing_Winter",
+          "Season": "Winter",
+          "Condition": "SEASON Winter",
+          "Portrait": "Portraits/DwarfKing_Winte",
+          "Precedence": -120
+        }
+      },
+      "When": {
+        "HasMod |contains=YenaLoomer.CutCharacters": true
+      }
+    },
+    { //Canyons Dwarf
+      "Action": "EditImage",
+      "Target": "Portraits/CC_Yoput",
+      "FromFile": "Assets/YoputFace.png",
+      "When": {
+        "TrolleyPortrait": "Vanilla"
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/CC_Yoput_Beach",
+      "FromFile": "Assets/YoputFace_Beach.png",
+      "When": {
+        "TrolleyPortrait": "Vanilla"
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/CC_Yoput_Vendor",
+      "FromFile": "Assets/YoputFace_Vendor.png",
+      "When": {
+        "TrolleyPortrait": "Vanilla"
+      }
+    },
+    { //Basement Dwarf
+      "Action": "EditImage",
+      "Target": "Portraits/yuninocorn.clintsbasementdwarfDwarf",
+      "FromFile": "Assets/DosumunFace.png",
+      "When": {
+        "HasMod |contains=yuninocorn.clintsbasementdwarf": true
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/yuninocorn.clintsbasementdwarfDwarf_Spring",
+      "FromFile": "Assets/DosumunFace.png",
+      "When": {
+        "HasMod |contains=yuninocorn.clintsbasementdwarf": true
+      }
+    },
+    {
+      //Highlands Dwarf
+      "Action": "EditImage",
+      "FromFile": "Assets/HighlandFace.png",
+      "Target": "CharacterFiles/Portraits/HighlandsDwarf/HighlandsDwarf",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      //Archaeologist Dwarf
+      "Action": "EditImage",
+      "FromFile": "Assets/OhteFace.png",
+      "Target": "Portraits/VanillaPortrait",
+      "When": {
+        "HasMod |contains=ahri1014.DwarvenArchaeologist": true
+      }
+    },
+    //Stoffton Dwarves
+    {
+      "Action": "EditImage",
+      "Target": "Characters/DwarfAFS",
+      "FromFile": "Assets/TeddaBody.png",
+      "When": {
+        "HasMod |contains=Lizzie.Stoffton": true
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/DwarfAFS",
+      "FromFile": "Assets/TeddaFace.png",
+      "When": {
+        "HasMod |contains=Lizzie.Stoffton": true
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Characters/DwarfBFS",
+      "FromFile": "Assets/EtayBody.png",
+      "When": {
+        "HasMod |contains=Lizzie.Stoffton": true
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/DwarfBFS",
+      "FromFile": "Assets/EtayFace.png",
+      "When": {
+        "HasMod |contains=Lizzie.Stoffton": true
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Characters/DwarfCFS",
+      "FromFile": "Assets/UnemuBody.png",
+      "When": {
+        "HasMod |contains=Lizzie.Stoffton": true
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/DwarfCFS",
+      "FromFile": "Assets/UnemuFace.png",
+      "When": {
+        "HasMod |contains=Lizzie.Stoffton": true
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Characters/DwarfDFS",
+      "FromFile": "Assets/DinnBody.png",
+      "When": {
+        "HasMod |contains=Lizzie.Stoffton": true
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/DwarfDFS",
+      "FromFile": "Assets/DinnFace.png",
+      "When": {
+        "HasMod |contains=Lizzie.Stoffton": true
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Characters/DwarfEFS",
+      "FromFile": "Assets/DinnuthnolBody.png",
+      "When": {
+        "HasMod |contains=Lizzie.Stoffton": true
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Portraits/DwarfEFS",
+      "FromFile": "Assets/DinnuthnolFace.png",
+      "When": {
+        "HasMod |contains=Lizzie.Stoffton": true
+      }
+    }
+  ]
+}

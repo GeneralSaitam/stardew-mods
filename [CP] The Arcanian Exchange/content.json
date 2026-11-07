@@ -1,0 +1,74 @@
+{
+"Format":"2.9.1",
+"ConfigSchema": {
+"CountForMonoculture": {
+"Description": "Disable this to prevent the crops from counting towards perfection",
+"AllowValues": "true, false",
+"Default": "true",
+"AllowBlank": false
+},
+"CountForPolyculture": {
+"Description": "Disable this to prevent the crops from counting towards perfection",
+"AllowValues": "true, false",
+"Default": "true",
+"AllowBlank": false
+},
+"ExcludeFromShippingCollection": {
+"Description": "Enable this to prevent the items from counting towards perfection",
+"AllowValues": "true, false",
+"Default": "false",
+"AllowBlank": false
+},
+"ExcludeFromFishingCollection": {
+"Description": "Enable this to prevent the fish from counting towards perfection",
+"AllowValues": "true, false",
+"Default": "false",
+"AllowBlank": false
+}
+},
+"DynamicTokens": [
+  {
+"Name": "MarnieTrue",
+"Value": "true"
+},
+{
+"Name": "MarnieTrue",
+"When": {"HasMod |contains=Fellowclown.YV": true,
+},
+"Value": "false"
+},
+  {
+"Name": "TillyTrue",
+"Value": "false"
+},
+{
+"Name": "TillyTrue",
+"When": {"HasMod |contains=Fellowclown.YV": true,
+},
+"Value": "true"
+},
+],
+"Changes":[ 
+  {
+"LogName": "Technical Information",
+"Action": "Include",
+"FromFile": "Data/MMAP.json,Data/FishPonds.json,Data/Buildings.json,Data/Furniture.json,Data/AnimalProducts.json,Data/Artisans.json,Data/Book.json,Data/Fish.json,Data/Foliage.json,Data/Foods.json,Data/Forage.json,Data/Loads.json,Data/Machines.json,Data/Mail.json,Data/Music.json,Data/Objects.json,Data/Radio.json,Data/Recipes.json,Data/Shops.json,Data/SpaceCore.json,Data/TriggerActions.json,Data/Buffs.json,Data/AnimalConfigs.json"
+ }, 
+   {
+"LogName": "Technical Information",
+"Action": "Include",
+"FromFile": "Data/FarmAnimalsExchange.json",
+ "When": {
+"HasMod |contains=Fellowclown.YV": false,
+}
+ },
+    {
+"LogName": "Technical Information",
+"Action": "Include",
+"FromFile": "Data/FarmAnimalsYamay.json",
+ "When": {
+"HasMod |contains=Fellowclown.YV": true,
+}
+ },
+ ] 
+}

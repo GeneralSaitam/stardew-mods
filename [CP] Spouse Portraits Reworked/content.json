@@ -1,0 +1,481 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+      "MorePortrait": {
+        "Description": "Add new portraits feature bigger frame, two or more characters, new concepts etc to the Merchant with own requirement.",
+        "AllowValues": "Yes, No",
+        "Default": "No",
+        "Section": "Alternative",
+      },
+
+      //Genderbent Support
+      "GenderbentBachelors": {
+        "Description": "Replace all of bachelors in the portraits with genderbent versions of them, this will applied universally to all bachelors. Currently only Adarin supported.",
+        "AllowValues": "No, Adarin", //Vanillaish
+        "Default": "No",
+        "Section": "Alternative",
+      },
+
+      //Recolor
+      "PortraitRecolor": {
+        "Description": "Choose recolor version of portrait, only Vanilla and Tonedown version available.",
+        "AllowValues": "Vanilla, Tonedown",
+        "Default": "Vanilla",
+        "Section": "Recolor"
+      },
+
+      //Frame
+      "Frame": {
+        "Description": "Choose frame version for portraits, this config will universally change all portrait frame. Seasonal Wood will automatically change the frame according to season. Unique will reset them to default version of each portrait.",
+        "AllowValues": "Unique, DarkBrown, Brown, Birch, Amber, MetalBlack, Redwood, SeasonalWood1, PastelPink, PastelBlue, OvergrownFlowery, WildWest, WitchyThorn, ModernBlack, Antique1, Antique2, Antique3",
+        "Default": "Unique",
+        "Section": "Frame"
+      },
+
+      //Sam Mullet Replacement Support
+      "SamMullet": {
+        "Description": "Replace Sam with his Mullet version from Rosenbug's Sam Mullet Replacement. Note: it will override the Genderbent version if both are enabled.",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+      },
+
+      //SVE Support
+      "SVEPortrait": {
+        "AllowValues": "Yes , No",
+        "Description": "Replace all FlashShifter's SVE marriage candidates's portraits. Need SVE installed, otherwise this option won't work.",
+        "Default": "Yes",
+      },
+      
+      //Rasmodia/Rasmodius Support
+      "RomRasPortrait": {
+        "AllowValues": "Yes, No",
+        "Description": "Replace Nom0ri's Rasmodia or Rasmodius portraits. Turn this on if you want to use with Rasmodia/Rasmodius, and turn this off it you want to use other Magnus version, like RRRR. Automatically detect whenever you're using SVE or not.",
+        "Default": "Yes",
+      },
+      
+      //RRRR Support
+      "RRRRPortrait": {
+        "AllowValues": "Yes, No",
+        "Description": "Replace Rasmodius with RRRR version. NEED SVE BUT DOESN'T NEED RRRR installed.",
+        "Default": "No",
+      },
+
+      "RRRRVariation": {
+        "AllowValues": "1,2,3",
+        "Description": "Choose the variation for RRRR Wizard, must be used with the RRRR Wizard option enabled.",
+        "Default": "3",
+        "Section": "Portrait"
+      },
+
+      //Wizard
+      "WizardVariation": {
+        "Description": "Choose the variation for Witch or Wizard portrait, must be used with the Rasmodia/Rasmodius or SVE option enabled.",
+        "AllowValues": "1 , 2",
+        "Default": "1",
+        "Section": "Portrait"
+      },
+      
+      //Caroline Is Single Support
+      "CarolinePortrait": {
+        "Description": "Replace Hitme's Caroline Is Single Caroline portrait. Need Hitme's Caroline Is Single installed, otherwise this option won't work.",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+
+      //Robin Is Single Revised Support
+      "RobinPortrait": {
+        "Description": "Replace Hitme's Robin Is Single Revised portrait. Need Hitme's Robin Is Single Revised installed, otherwise this option won't work.",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      
+      //Special
+      "KrobusPortrait":
+      {
+        "Description": "Replace Krobus Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+
+      
+      //Bachelorettes
+      "AbigailPortrait": 
+      {
+        "Description": "Replace Abigail Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      "HaleyPortrait": 
+      {
+        "Description": "Replace Haley Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      "PennyPortrait": 
+      {
+        "Description": "Replace Penny Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      "MaruPortrait": 
+      {
+        "Description": "Replace Maru Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      "LeahPortrait": 
+      {
+        "Description": "Replace Leah Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      
+      "EmilyPortrait": 
+      {
+        "Description": "Replace Emily Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      "EmilyVariation":
+      {
+        "Description": "Choose the variation for Emily Portrait, only work if you enabled EmilyPortrait",
+        "AllowValues": "1, 2",
+        "Default": "1",
+        "Section": "Portrait"
+      },
+
+      //Bachelors
+      "HarveyPortrait": 
+      {
+        "Description": "Replace Harvey Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      "AlexPortrait": 
+      {
+        "Description": "Replace Alex Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      "ShanePortrait": 
+      {
+        "Description": "Replace Shane Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      "SamPortrait": 
+      {
+        "Description": "Replace Sam Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      "SebastianPortrait": 
+      {
+        "Description": "Replace Sebastian Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+      "ElliottPortrait": 
+      {
+        "Description": "Replace Elliott Portrait",
+        "AllowValues": "Yes, No",
+        "Default": "Yes",
+        "Section": "Portrait"
+      },
+  },
+
+
+  "DynamicTokens": [
+  //Genderbent
+  {
+    "Name": "IsGenderbent",
+    "Value": "",
+    "When": {
+        "GenderbentBachelors": "No",
+    },
+  },
+
+  {
+    "Name": "IsGenderbent",
+    "Value": "Adarin",
+    "When": {
+      "GenderbentBachelors": "Adarin",
+    },
+  },
+
+  {
+    "Name": "PortraitPath",
+    "Value": "Mods/Hitme.SpousePortraitsReworked/Assets/{{PortraitRecolor}}"
+  },
+
+  //SEASONAL FRAME TRACKING
+  {
+    "Name": "IsFrameSeasonal",
+    "Value": "{{Frame}}",
+    "When": {
+      "Query: '{{Frame}}' IN ('SeasonalWood1', 'SeasonalWood2')": true,
+    }
+  },
+
+  {
+    "Name": "IsFrameSeasonal",
+    "Value": "No",
+    "When": {
+      "Query: '{{Frame}}' IN ('SeasonalWood1', 'SeasonalWood2')": false,
+    }
+  },
+
+  ],
+  "Changes": [
+    //Abigail
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/Abigail1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "0", "Y": "272", "Width": 32, "Height": 32},
+      "When": {
+        "AbigailPortrait" : "Yes"
+      }
+    },
+
+    //Haley
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/Haley1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "32", "Y": "272", "Width": 32, "Height": 32},
+      "When": {
+        "HaleyPortrait" : "Yes"
+      }
+    },
+
+    //Emily
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/Emily{{EmilyVariation}}.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "64", "Y": "272", "Width": 32, "Height": 32},
+      "When": {
+        "EmilyPortrait" : "Yes"
+      }
+    },
+
+    //Maru
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/Maru1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "96", "Y": "272", "Width": 32, "Height": 32},
+      "When": {
+        "MaruPortrait" : "Yes"
+      }
+    },
+
+    //Penny
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/Penny1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "128", "Y": "272", "Width": 32, "Height": 32},
+      "When": {
+        "PennyPortrait" : "Yes"
+      }
+    },
+
+    //Leah
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/Leah1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "48", "Y": "368", "Width": 32, "Height": 32},
+      "When": {
+        "LeahPortrait" : "Yes"
+      }
+    },  
+
+    //Bachelors
+    //Harvey
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/{{IsGenderbent}}Harvey1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "0", "Y": "304", "Width": 32, "Height": 32},
+      "When": {
+        "HarveyPortrait" : "Yes",
+      }
+    },
+
+    //Alex
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/{{IsGenderbent}}Alex1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "32", "Y": "304", "Width": 32, "Height": 32},
+      "When": {
+        "AlexPortrait" : "Yes",
+      }
+    },
+
+    //Shane
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/{{IsGenderbent}}Shane1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "64", "Y": "304", "Width": 32, "Height": 32},
+      "When": {
+        "ShanePortrait" : "Yes",
+      }
+    },
+
+    //Sebastian
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/{{IsGenderbent}}Sebastian1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "96", "Y": "304", "Width": 32, "Height": 32},
+      "When": {
+        "SebastianPortrait" : "Yes",
+      }
+    },
+
+    //Elliott
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/{{IsGenderbent}}Elliott1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "128", "Y": "304", "Width": 32, "Height": 32},
+      "When": {
+        "ElliottPortrait" : "Yes",
+      }
+    },
+
+    //Sam
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/{{IsGenderbent}}Sam1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "80", "Y": "368", "Width": 32, "Height": 32},
+      "When": {
+        "SamPortrait" : "Yes",
+      }
+    },  
+    
+    //Krobus
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/Krobus1.png",
+      "PatchMode": "Replace",
+      "ToArea":  { "X": "80", "Y": "400", "Width": 32, "Height": 32},
+      "When": {
+        "KrobusPortrait": "Yes", 
+      }
+    },
+
+    //SVE
+    {
+      "Action": "Include",
+      "FromFile": "Code/SVE.json",
+      "When": {
+        "SVEPortrait": "Yes",
+        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true,
+      },
+    },
+
+    //Non-SVE Romanceable Rasmodius
+    {
+      "Action": "Include",
+      "FromFile": "Code/NonSVERasmodius.json",
+      "When": {
+        "RomRasPortrait": "Yes",
+        "HasMod|contains=Wolf.RomRas": true,
+      },
+    },
+
+    //RRRR
+    {
+      "Action": "Include",
+      "FromFile": "Code/RRRR.json",
+      "When": {
+        "SVEPortrait": "Yes",
+        "HasMod|contains=Jellonip.RRRR": true,
+      }
+    },
+
+    //Is Single Support
+    {
+      "Action": "Include",
+      "FromFile": "Code/CarolineIsSingle.json",
+      "When":{
+        "HasMod|contains=Hitme.CarolineIsSingle": true,
+      }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Code/RobinIsSingle.json",
+      "When":{
+        "HasMod|contains=Hitme.RobinIsSingleRevised": true,
+      }
+    },
+
+    //Sam Mullet
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/junimo_furniture",
+      "FromFile": "Assets/{{PortraitRecolor}}/MulletSam1.png",
+      "PatchMode": "Replace",
+      "ToArea": { "X": "80", "Y": "368", "Width": 32, "Height": 32},
+      "When": {
+        "SamPortrait" : "Yes",
+        "SamMullet": "Yes",
+        "HasMod|contains=Rosenbug.SamMulletReplacement": true,
+      }
+    },
+
+    //Frame Overlay
+    {
+      "Action": "Include",
+      "FromFile": "Code/Frame.json",
+      "When": {
+        "Query:'{{Frame}}' = 'Unique'": false
+      },
+    },
+
+    //More Portraits
+    {
+      "Action": "Include",
+      "FromFile": "Code/MorePortrait.json",
+      "When": {
+        "MorePortrait": "Yes",
+      }
+    },
+    
+  ]
+} 

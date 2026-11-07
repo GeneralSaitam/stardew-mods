@@ -1,0 +1,41 @@
+{
+"Changes": [
+	{
+		"LogName": "Mail RSV Reimagined Interior - PikaInvitation Triggers",
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {	
+			//CArta que libera a cozinha do Pika
+			"Vlgor.RSVReimaginedInterior_A01": {
+				"Id": "Vlgor.RSVReimaginedInterior_A01",
+				"Trigger": "DayStarted",
+				"Condition": "PLAYER_HAS_SEEN_EVENT Any 75160100, PLAYER_HAS_MAIL Current PikaSOLetter.temp, WEATHER Target rain",
+				"HostOnly": false,
+				"Action": "AddMail Current RSVRI.Mail.PikaInvitation"
+			}
+		}
+	},
+	{
+		"LogName": "Mail RSV Reimagined Interior - Sonny Open Pantry",
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {	
+			//CArta que libera a cozinha do Pika
+			"Vlgor.RSVReimaginedInterior_A02": {
+				"Id": "Vlgor.RSVReimaginedInterior_A02",
+				"Trigger": "DayStarted",
+				"Condition": "PLAYER_HAS_SEEN_EVENT Any 75160363, PLAYER_HEARTS Current Maive 6",
+				"HostOnly": false,
+				"Action": "AddMail Current RSVRI.Mail.SonnyProposal"
+			}
+		}
+	},
+	{
+		"LogName": "Mail RSV Reimagined Interior - Sonny Open Pantry",
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries": {
+			"RSVRI.Mail.SonnyProposal": "{{i18n: RSVRI.Mail.SonnyProposal}}",
+			"RSVRI.Mail.PikaInvitation": "{{i18n: RSVRI.Mail.PikaInvitation}}"}
+	}]
+}

@@ -1,0 +1,36 @@
+{
+	"Changes": [
+
+//	STARBLUE VALLEY
+
+//	//	STANDARD MAP
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Starblue_Valley/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"Spiderbuttons.CMCT/Config: Lita.StarblueValleyUnofficial, Maps": "true",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Starblue_Valley/{{season}}_WaFFLE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"Spiderbuttons.CMCT/Config: Lita.StarblueValleyUnofficial, Maps": "true",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		}
+	]
+}	  

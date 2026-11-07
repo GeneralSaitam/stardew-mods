@@ -1,0 +1,83 @@
+{
+    "Changes": [
+	{
+		"Action": "EditData", 
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_SummerSquashSkillet": {
+				"Name": "{{ModId}}_SummerSquashSkillet",
+				"DisplayName": "Summer Squash Skillet",
+				"Description": "Sautéed squash, ripe tomato and sliced mushrooms come together to make this excellent dish.",
+				"Type": "Basic",
+				"Category": -7,
+				"Price": 245,
+				"Texture": "Mods/{{ModId}}/objects16px",
+				"SpriteIndex": 5, 
+				"Edibility": 62, 
+				"IsDrink": false,
+			}
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/CookingRecipes", 
+		"Entries": {
+			"SummerSquashSkillet": "SummerSquash 1 256 1 404 1 247 1/1 1/{{ModId}}_SummerSquashSkillet/default"
+			}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Emily", 1], //This just seems to me like a "super energizing healthy meal!" that Emily would like. I thought about trying to make it so she is the recipe source for this as well.
+				"Value": "{{ModId}}_SummerSquashSkillet",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Haley", 7], //Likewise, this seemed like it would fall under "weird stuff my weird sister makes" to Haley, so she doesn't like it.
+				"Value": "{{ModId}}_SummerSquashSkillet",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leah", 1], //Leah loves similar dishes, so she loves Summer Squash Skillet, too.
+				"Value": "{{ModId}}_SummerSquashSkillet",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Harvey", 1], //Harvey enjoys all of the main ingredients (including Common Mushroom which is not frequently liked raw), so I decided to make this a Loved Dish for him.
+				"Value": "{{ModId}}_SummerSquashSkillet",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Abigail", 5], //Abigail doesn't like any of the ingredients, so she doesn't like Squash Skillet, either.
+				"Value": "{{ModId}}_SummerSquashSkillet",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Sam", 5], //Sam doesn't like any of the ingredients, so he doesn't like Squash Skillet, either.
+				"Value": "{{ModId}}_SummerSquashSkillet",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Jas", 5], //Jas doesn't like any of the ingredients, so she doesn't like Squash Skillet, either.
+				"Value": "{{ModId}}_SummerSquashSkillet",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", 7], //Vincent doesn't like any of the ingredients; in addition, Vincent sometimes talks about being chagrinned when his mother makes similar veggie-filled dishes, so I decided to make this a Hated dish for him.
+				"Value": "{{ModId}}_SummerSquashSkillet",
+				"Delimiter": " "
+			}
+		]
+	}
+    ]
+}

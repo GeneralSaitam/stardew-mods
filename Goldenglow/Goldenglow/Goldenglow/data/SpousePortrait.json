@@ -1,0 +1,104 @@
+{
+    "Changes": [
+        {
+          "LogName": "加载",
+          "Action": "Load",
+          "Target": "Mods/Goldenglow_SpousePortrait",
+          "FromFile": "assets/img/Goldenglow_SpousePortrait.png"
+        },
+        {
+          "LogName": "加载1",
+          "Action": "Load",
+          "Target": "Mods/Goldenglow_SpousePortrait_Winter",
+          "FromFile": "assets/img/Goldenglow_SpousePortrait_Winter.png"
+        },
+        {
+          "LogName": "加载2",
+          "Action": "Load",
+          "Target": "Mods/Goldenglow_SpousePortrait_Tea",
+          "FromFile": "assets/img/Goldenglow_SpousePortrait_Tea.png"
+        },
+        {
+          "LogName": "加载3",
+          "Action": "Load",
+          "Target": "Mods/Goldenglow_SpousePortrait_Beach",
+          "FromFile": "assets/img/Goldenglow_SpousePortrait_Beach.png"
+        },
+
+        {
+          "LogName": "画像家具",
+          "Action": "EditData",
+          "Target": "Data/Furniture",
+          "Entries": {
+            "Goldenglow_SpousePortrait": "GoldenglowSpousePortrait/painting/2 2/2 2/1/30000/0/{{i18n:GoldenglowSP}}/0/Mods\\Goldenglow_SpousePortrait"
+          }
+        },
+        {
+          "LogName": "画像家具1",
+          "Action": "EditData",
+          "Target": "Data/Furniture",
+          "Entries": {
+            "Goldenglow_SpousePortrait_Winter": "GoldenglowSpousePortraitWinter/painting/2 2/2 2/1/30000/0/{{i18n:GoldenglowWinterSP}}/0/Mods\\Goldenglow_SpousePortrait_Winter"
+          }
+        },
+        {
+          "LogName": "画像家具2",
+          "Action": "EditData",
+          "Target": "Data/Furniture",
+          "Entries": {
+            "Goldenglow_SpousePortrait_Tea": "GoldenglowSpousePortraitTea/painting/2 2/2 2/1/30000/0/{{i18n:GoldenglowTeaSP}}/0/Mods\\Goldenglow_SpousePortrait_Tea"
+          }
+        },
+        {
+          "LogName": "画像家具3",
+          "Action": "EditData",
+          "Target": "Data/Furniture",
+          "Entries": {
+            "Goldenglow_SpousePortrait_Beach": "GoldenglowSpousePortraitBeach/painting/2 2/2 2/1/30000/0/{{i18n:GoldenglowBeachSP}}/0/Mods\\Goldenglow_SpousePortrait_Beach"
+          }
+        },
+        
+        {
+          "LogName": "商店",
+          "Action": "EditData",
+          "Target": "Data/Shops",
+          "TargetField": ["Traveler","Items"],
+          "Entries": {
+            "Goldenglow_SpousePortrait": {
+              "Id": "GoldenglowSpousePortrait",
+              "ItemId": "Goldenglow_SpousePortrait",  
+              "Price": 30000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HEARTS Current Goldenglow 14,SEASON spring"
+            },
+            "Goldenglow_SpousePortrait_Winter": {
+              "Id": "GoldenglowSpousePortraitWinter",
+              "ItemId": "Goldenglow_SpousePortrait_Winter",  
+              "Price": 30000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HEARTS Current Goldenglow 14,SEASON winter"
+            },
+            "Goldenglow_SpousePortrait_Tea": {
+              "Id": "GoldenglowSpousePortraitTea",
+              "ItemId": "Goldenglow_SpousePortrait_Tea",  
+              "Price": 30000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HEARTS Current Goldenglow 14,SEASON fall"
+            },
+            "Goldenglow_SpousePortrait_Beach": {
+              "Id": "GoldenglowSpousePortraitBeach",
+              "ItemId": "Goldenglow_SpousePortrait_Beach",  
+              "Price": 30000,
+              "AvailableStock": 1,
+              "AvailableStockLimit": "Player",
+              "Condition": "PLAYER_HEARTS Current Goldenglow 14,SEASON summer"
+            }
+          }
+        }
+          ]
+
+
+}

@@ -1,0 +1,24 @@
+{
+    "Format": "2.3.0",
+    "ConfigSchema": {
+        "upgrade_bombs": {
+            "AllowValues": "Enabled, Disabled",
+            "Default": "Enabled",
+			"Description": "Do you want to enable bomb upgrade recipes?"
+			}
+        },
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+              "upgrade_cherry_bomb": "286 1 380 1/Home/287/false/Mining 6/{{i18n:crafting.cherry_bomb_upgrade.display}}",
+              "upgrade_bomb": "287 1 769 1/Home/288/false/Mining 8/{{i18n:crafting.bomb_upgrade.display}}"
+    
+            },
+            "When": {
+                "upgrade_bombs": "Enabled"
+            }
+        }
+    ]
+}

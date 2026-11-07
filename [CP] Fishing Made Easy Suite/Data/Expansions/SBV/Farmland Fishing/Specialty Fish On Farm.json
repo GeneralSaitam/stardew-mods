@@ -1,0 +1,30 @@
+{
+  "Changes": [
+    {
+      "LogName": "SBV - Specialty Fish On Farm Standard",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Entries": {
+        "skellady.SBVCP_Barkfish": {
+          "ItemId": "skellady.SBVCP_Barkfish"
+        },
+        "skellady.SBVCP_BonbonFish": {
+          "ItemId": "skellady.SBVCP_BonbonFish"
+        },
+        "skellady.SBVCP_FiretailGuppy": {
+          "ItemId": "skellady.SBVCP_FiretailGuppy"
+        },
+        "skellady.SBVCP_Najelfish": {
+          "ItemId": "skellady.SBVCP_Najelfish"
+        }
+      },
+      "When": {
+        "Specialty Fish On Farm": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,372 @@
+{
+	"Changes": [
+		{
+			"LogName": "Edit_Miscellaneous_Characters",
+			"Action": "EditImage",
+			"Target": "Portraits/Bouncer, Portraits/Grandpa, Characters/Assorted_Fishermen, Characters/Assorted_Fishermen_Winter, Characters/Bouncer, Characters/Governor, Characters/Henchman, Characters/LeahExFemale, Characters/LeahExMale, Characters/Marcello, Characters/Mariner",
+			"FromFile": "assets/{{Target}}.png"
+		},
+		{
+			"LogName": "Add_Miscellaneous_Characters_Noses",
+			"Action": "EditImage",
+			"Target": "Characters/Assorted_Fishermen, Characters/Assorted_Fishermen_Winter",
+			"FromFile": "assets/{{Target}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		// INTRO
+		{
+			"LogName": "Minigames_Jojacorps",
+			"Action": "EditImage",
+			"Target": "Minigames/jojacorps",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}.png",
+			"FromArea": { "X": 0, "Y": 600, "Width": 1200, "Height": 200 },
+			"ToArea": { "X": 0, "Y": 600, "Width": 1200, "Height": 200 }
+		},
+		{
+			"LogName": "Minigames_Jojacorps_Animations",
+			"Action": "EditImage",
+			"Target": "Minigames/jojacorps",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}.png",
+			"FromArea": { "X": 343, "Y": 593, "Width": 76, "Height": 5 },
+			"ToArea": { "X": 343, "Y": 593, "Width": 76, "Height": 5 }
+		},
+		// CURSORS
+		{
+			"LogName": "Cursors_Joja_Employees",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}_{{Season}}.png",
+			"FromArea": { "X": 0, "Y": 1362, "Width": 114, "Height": 60 },
+			"ToArea": { "X": 0, "Y": 1362, "Width": 114, "Height": 60 }
+		},
+		// TOWN INTERIOR
+		{
+			"LogName": "TownInterior_Joja_Cashier",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}_Spring.png",
+			"FromArea": { "X": 352, "Y": 944, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 352, "Y": 944, "Width": 32, "Height": 32 }
+		},
+		// FESTIVALS
+		{
+			"LogName": "Festival_Attendant_Strength_Minigame",
+			"Action": "EditImage",
+			"Target": "Maps/Festivals",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 496, "Y": 0, "Width": 16, "Height": 48 },
+			"ToArea": { "X": 496, "Y": 0, "Width": 16, "Height": 48 }
+		},
+		{
+			"LogName": "Festival_Tents_1_3",
+			"Action": "EditImage",
+			"Target": "Maps/Festivals",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 336, "Y": 208, "Width": 96, "Height": 48 },
+			"ToArea": { "X": 336, "Y": 208, "Width": 96, "Height": 48 }
+		},
+		{
+			"LogName": "Festival_Tents_4",
+			"Action": "EditImage",
+			"Target": "Maps/Festivals",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 480, "Y": 208, "Width": 32, "Height": 48 },
+			"ToArea": { "X": 480, "Y": 208, "Width": 32, "Height": 48 }
+		},
+		{
+			"LogName": "Festival_NPCs_1",
+			"Action": "EditImage",
+			"Target": "Maps/Festivals",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 272, "Y": 128, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 272, "Y": 128, "Width": 16, "Height": 16 }
+		},
+		{
+			"LogName": "Festival_NPCs_2",
+			"Action": "EditImage",
+			"Target": "Maps/Festivals",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}.png",
+			"FromArea": { "X": 288, "Y": 128, "Width": 80, "Height": 32 },
+			"ToArea": { "X": 288, "Y": 128, "Width": 80, "Height": 32 }
+		},
+		{
+			"LogName": "Festival_NPCs_3",
+			"Action": "EditImage",
+			"Target": "Maps/Festivals",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}.png",
+			"FromArea": { "X": 448, "Y": 112, "Width": 16, "Height": 64 },
+			"ToArea": { "X": 448, "Y": 112, "Width": 16, "Height": 64 }
+		},
+		// DESERT
+		{
+			"LogName": "Desert_Secret_Club_NPCs",
+			"Action": "EditImage",
+			"Target": "Maps/DesertTiles",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}.png",
+			"FromArea": { "X": 96, "Y": 192, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 96, "Y": 192, "Width": 32, "Height": 32 }
+		},
+		{
+			"LogName": "Desert_Secret_Club_Shady_Dealer",
+			"Action": "EditImage",
+			"Target": "Maps/DesertTiles",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 224, "Y": 288, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 224, "Y": 288, "Width": 32, "Height": 32 }
+		},
+		// DESERT FESTIVAL
+		{
+			"LogName": "Desert_Festival_NPCs",
+			"Action": "EditImage",
+			"Target": "Maps/desert_festival_tilesheet",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 240, "Y": 336, "Width": 80, "Height": 32 },
+			"ToArea": { "X": 240, "Y": 336, "Width": 80, "Height": 32 }
+		},
+		// NIGHT MARKET
+		{
+			"LogName": "Night_Market_Attendant_Flowers",
+			"Action": "EditImage",
+			"Target": "Maps/night_market_tilesheet_objects",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 311, "Y": 106, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 311, "Y": 106, "Width": 16, "Height": 16 }
+		},
+		{
+			"LogName": "Night_Market_Attendant_Flowers_Animation",
+			"Action": "EditImage",
+			"Target": "Maps/night_market_tilesheet_objects",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 0, "Y": 272, "Width": 96, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 272, "Width": 96, "Height": 32 }
+		},
+		{
+			"LogName": "Night_Market_Attendant_Coffee",
+			"Action": "EditImage",
+			"Target": "Maps/night_market_tilesheet_objects",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 224, "Y": 176, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 224, "Y": 176, "Width": 16, "Height": 32 }
+		},
+		{
+			"LogName": "Night_Market_Attendant_Coffee_Animation",
+			"Action": "EditImage",
+			"Target": "Maps/night_market_tilesheet_objects",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 176, "Y": 288, "Width": 80, "Height": 16 },
+			"ToArea": { "X": 176, "Y": 288, "Width": 80, "Height": 16 }
+		},
+		{
+			"LogName": "Night_Market_Attendant_Lupini",
+			"Action": "EditImage",
+			"Target": "Maps/night_market_tilesheet_objects",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 1056, "Y": 240, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 1056, "Y": 240, "Width": 32, "Height": 32 }
+		},
+		{
+			"LogName": "Submarine_Attendant",
+			"Action": "EditImage",
+			"Target": "Maps/submarine_tilesheet",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 14, "Y": 124, "Width": 18, "Height": 36 },
+			"ToArea": { "X": 14, "Y": 124, "Width": 18, "Height": 36 }
+		},
+		{
+			"LogName": "Submarine_Attendant_Animations",
+			"Action": "EditImage",
+			"Target": "Maps/submarine_tilesheet",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 192, "Y": 288, "Width": 64, "Height": 16 },
+			"ToArea": { "X": 192, "Y": 288, "Width": 64, "Height": 16 }
+		},
+		// TEMPORARY SPRITES
+		{
+			"LogName": "Temporary_Desert_Trader",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 0, "Y": 614, "Width": 180, "Height": 26 },
+			"ToArea": { "X": 0, "Y": 614, "Width": 180, "Height": 26 }
+		},
+		{
+			"LogName": "Temporary_Desert_Trader_Pours_Coffee",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 354, "Y": 168, "Width": 64, "Height": 32 },
+			"ToArea": { "X": 354, "Y": 168, "Width": 64, "Height": 32 }
+		},
+		{
+			"LogName": "Temporary_Mermaid",
+			"Action": "EditImage",
+			"Target": "LooseSprites/temporary_sprites_1",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}.png",
+			"FromArea": { "X": 192, "Y": 0, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 192, "Y": 0, "Width": 16, "Height": 32 }
+		},
+		// SAM'S CONCERT
+		{
+			"LogName": "SamShowTiles_Upper",
+			"Action": "EditImage",
+			"Target": "Maps/samshowtiles",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}.png",
+			"FromArea": { "X": 48, "Y": 0, "Width": 16, "Height": 96 },
+			"ToArea": { "X": 48, "Y": 0, "Width": 16, "Height": 96 }
+		},
+		{
+			"LogName": "SamShowTiles_Lower",
+			"Action": "EditImage",
+			"Target": "Maps/samshowtiles",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 0, "Y": 192, "Width": 160, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 192, "Width": 160, "Height": 32 }
+		},
+		// STADIUM TILES
+		{
+			"LogName": "Stadium_NPCs_Upper",
+			"Action": "EditImage",
+			"Target": "Maps/stadium_tiles",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 16, "Y": 176, "Width": 48, "Height": 32 },
+			"ToArea": { "X": 16, "Y": 176, "Width": 48, "Height": 32 }
+		},
+		{
+			"LogName": "Stadium_NPCs_Lower",
+			"Action": "EditImage",
+			"Target": "Maps/stadium_tiles",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 0, "Y": 208, "Width": 64, "Height": 96 },
+			"ToArea": { "X": 0, "Y": 208, "Width": 64, "Height": 96 }
+		},
+		// MOVIE THEATERS
+		{
+			"LogName": "MovieTheater_Moviegoers",
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}_Spring.png",
+			"FromArea": { "X": 112, "Y": 192, "Width": 96, "Height": 64 },
+			"ToArea": { "X": 112, "Y": 192, "Width": 96, "Height": 64 }
+		},
+		{
+			"LogName": "MovieTheater_Governor",
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}_Spring.png",
+			"FromArea": { "X": 208, "Y": 224, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 208, "Y": 224, "Width": 16, "Height": 32 }
+		},
+		{
+			"LogName": "MovieTheater_Marcello",
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}_Spring.png",
+			"FromArea": { "X": 16, "Y": 192, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 16, "Y": 192, "Width": 16, "Height": 32 }
+		},
+		{
+			"LogName": "MovieTheater_Cashier",
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}_Spring.png",
+			"FromArea": { "X": 192, "Y": 176, "Width": 48, "Height": 16 },
+			"ToArea": { "X": 192, "Y": 176, "Width": 48, "Height": 16 }
+		},
+		{
+			"LogName": "MovieTheater_Cashier_FullBody",
+			"Action": "EditImage",
+			"Target": "Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}_Spring.png",
+			"FromArea": { "X": 240, "Y": 160, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 240, "Y": 160, "Width": 16, "Height": 32 }
+		},
+		// GINGER ISLAND PIRATES
+		{
+			"LogName": "Pirates_White_Wood_Leg_Pirate_Lower",
+			"Action": "EditImage",
+			"Target": "Maps/pirates_tilesheet",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 16, "Y": 112, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 16, "Y": 112, "Width": 16, "Height": 32 }
+		},
+		{
+			"LogName": "Pirates_White_Wood_Leg_Pirate_Upper",
+			"Action": "EditImage",
+			"Target": "Maps/pirates_tilesheet",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 32, "Y": 96, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 32, "Y": 96, "Width": 16, "Height": 32 }
+		},
+		{
+			"LogName": "Pirates_Black_Wood_Leg_Pirate",
+			"Action": "EditImage",
+			"Target": "Maps/pirates_tilesheet",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 96, "Y": 48, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 96, "Y": 48, "Width": 32, "Height": 32 }
+		},
+		{
+			"LogName": "Pirates_Glasses_Pirate",
+			"Action": "EditImage",
+			"Target": "Maps/pirates_tilesheet",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 160, "Y": 48, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 160, "Y": 48, "Width": 16, "Height": 32 }
+		},
+		{
+			"LogName": "Pirates_Captain_Left",
+			"Action": "EditImage",
+			"Target": "Maps/pirates_tilesheet",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}.png",
+			"FromArea": { "X": 144, "Y": 96, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 144, "Y": 96, "Width": 16, "Height": 32 }
+		},
+		{
+			"LogName": "Pirates_Captain_Right",
+			"Action": "EditImage",
+			"Target": "Maps/pirates_tilesheet",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}.png",
+			"FromArea": { "X": 176, "Y": 96, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 176, "Y": 96, "Width": 16, "Height": 32 }
+		},
+		{
+			"LogName": "Pirates_Pirate_Bros",
+			"Action": "EditImage",
+			"Target": "Maps/pirates_tilesheet",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}.png",
+			"FromArea": { "X": 128, "Y": 128, "Width": 64, "Height": 32 },
+			"ToArea": { "X": 128, "Y": 128, "Width": 64, "Height": 32 }
+		},
+		{
+			"LogName": "Pirates_Bartender_Pirate",
+			"Action": "EditImage",
+			"Target": "Maps/pirates_tilesheet",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 208, "Y": 96, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 208, "Y": 96, "Width": 32, "Height": 32 }
+		},
+		{
+			"LogName": "Pirates_Drunk_Pirate",
+			"Action": "EditImage",
+			"Target": "Maps/pirates_tilesheet",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 240, "Y": 0, "Width": 64, "Height": 64 },
+			"ToArea": { "X": 240, "Y": 0, "Width": 64, "Height": 64 }
+		},
+		// GINGER ISLAND VOLCANO DWARF
+		{
+			"LogName": "Volcano_Dwarf",
+			"Action": "EditImage",
+			"Target": "Maps/Mines/volcano_dungeon",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"FromArea": { "X": 208, "Y": 48, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 208, "Y": 48, "Width": 16, "Height": 32 },
+			"When": {
+				"HasMod |contains=Lemurkat.Dwarf.CP": false
+			}
+		}
+	]
+}

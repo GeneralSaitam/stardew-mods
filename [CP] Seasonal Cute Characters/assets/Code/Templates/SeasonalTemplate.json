@@ -1,0 +1,96 @@
+{
+	"Changes": [
+		// This is a template for creating your own seasonals with SCA. Replace any mention of "NPC" with your character.
+		// Load your outfits here. Inside the assets folder, make sure a folder exists within both "Portraits" and "Characters" with the NPC's name on it, then make sure that the file names match what you're loading - e.g. if you load "Abigail_Spring", make sure the image is titled that.
+		{
+			"LogName": "Load_NPC_Assets",
+			"Action": "Load",
+			"Priority": "High", // Used to not exclusive load with another patch (making both fail and having users go to the author). That said, if someone is exclusive loading, the outfits will not apply.
+			"Target": "Portraits/NPC_Spring, Portraits/NPC_Summer, Portraits/NPC_Fall, Portraits/NPC_Winter_Outdoor, Portraits/NPC_Winter_Indoor, Characters/NPC_Spring, Characters/NPC_Summer, Characters/NPC_Fall, Characters/NPC_Winter_Outdoor, Characters/NPC_Winter_Indoor",
+			"FromFile": "assets/{{TargetPathOnly}}/NPC/{{TargetWithoutPath}}.png"
+		},
+		// If a vanilla character, use EditImage on beach outfits. Otherwise, swap "Action" to "Load".
+		{
+			"LogName": "Edit_NPC_Beach_Assets",
+			"Action": "EditImage",
+			"Target": "Portraits/NPC_Beach, Characters/NPC_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/NPC/{{TargetWithoutPath}}.png"
+		},
+		// Nose Overlays. Overlays should go before appearances for simplicity, and should only be applied to Characters (unless the overlay is for a portrait, like Harvey's). If you have a spritesheet shorter than the original spritesheet that you're using a nose for (like the beach nose), you'll need a separate overlay for it.
+		{
+			"LogName": "Add_NPC_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/NPC_Spring, Characters/NPC_Summer, Characters/NPC_Fall, Characters/NPC_Winter_Outdoor, Characters/NPC_Winter_Indoor, Characters/NPC_FlowerDance, Characters/NPC_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/NPC/NPC_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Add_NPC_Beach_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/NPC_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/NPC/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		// Finally, add on the appearances and their rules.
+		{
+			"LogName": "Add_NPC_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"NPC",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.NPCSpring": {
+					"Id": "{{ModId}}.NPCSpring", 		// Always prefix the ID with {{ModID}} so no one else puts down, say, Abigail.Spring as well and cause errors. Otherwise, just make sure each entry is unique and you don't use the same thing twice.
+					"Portrait": "Portraits/NPC_Spring", // The portrait to use. (Similar to sprite, specify this unless you're okay with having a vanilla portrait be used.)
+					"Sprite": "Characters/NPC_Spring",	// The sprite to use. If not specified, this will default back to vanilla, so unless you're editing the vanilla texture too, always specify this, even if you have to use a fallback.
+					"Season": "spring"	 				// Basically the Content Patcher "when" conditions in GSQ format. This can also be written as "Season": "spring", but any outfits beyond the seasons will need "Condition", so it's usually simpler just to have them all as "Condition" and use the Season GSQ.
+				},
+				"{{ModId}}.NPCSummer": {
+					"Id": "{{ModId}}.NPCSummer",
+					"Portrait": "Portraits/NPC_Summer",
+					"Sprite": "Characters/NPC_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.NPCFall": {
+					"Id": "{{ModId}}.NPCFall",
+					"Portrait": "Portraits/NPC_Fall",
+					"Sprite": "Characters/NPC_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.NPCWinterIndoor": {
+					"Id": "{{ModId}}.NPCWinterIndoor",
+					"Portrait": "Portraits/NPC_Winter_Indoor",
+					"Sprite": "Characters/NPC_Winter_Indoor",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",		// The token in this evaluates the user's config on WinterClothing. If true, it's used. If false (e.g. OutdoorOnly is selected), it will never be used.
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",		// Set whether this outfit can be used outdoors. Outdoors defaults to true, so this is specified so that if the config is not IndoorOnly, this entry isn't used outdoors.
+					"Precedence": -101									// This determines whether this is used, with the lower the number the higher it is in the hierarchy. Always specify -101 or lower if overriding vanilla assets, as all winter outfits in vanilla have -100. Special outfits in vanilla have -1000, so if you're overriding those, use -1001 or -10000.
+				},
+				"{{ModId}}.NPCWinterOutdoor": {
+					"Id": "{{ModId}}.NPCWinterOutdoor",
+					"Portrait": "Portraits/NPC_Winter_Outdoor",
+					"Sprite": "Characters/NPC_Winter_Outdoor",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",		// Set whether this outfit can be used indoors. Indoors defaults to true, so this is specified so that if the config is not OutdoorOnly, this entry isn't used indoors.
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101									// This determines whether this is used, with the lower the number the higher it is in the hierarchy. Always specify -101 or lower if overriding vanilla assets, as all winter outfits in vanilla have -100. Special outfits in vanilla have -1000, so if you're overriding those, use -1001 or -10000.
+				},
+				// Beach Outfit
+				"{{ModId}}.NPCBeach": {
+					"Id": "{{ModId}}.NPCBeach",
+					"Portrait": "Portraits/NPC_Beach",
+					"Sprite": "Characters/NPC_Beach",
+					"IsIslandAttire": true,								// Specifies that this is the beach outfit, so that it's not used outside of Ginger Island.
+					"Precedence": -200									// Must have higher precedence than other non-island available outfits
+				}
+			}
+		}
+	]
+}

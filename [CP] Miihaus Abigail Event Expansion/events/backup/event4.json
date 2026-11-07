@@ -1,0 +1,185 @@
+{
+    "Changes": [
+        {   
+            "Action": "EditData",
+            "Target": "Data/Events/SeedShop",
+            "Entries": {
+                "18657004/F/f Abigail 1000/p Abigail/e 18657003": "breezy/
+                6 22/
+                Pierre 4 17 2 farmer 300 300 0 Abigail 7 21 3 Caroline 19 15 1/
+                skippable/
+                move Abigail -2 0 3/
+                pause 600/
+                speak Pierre \"Abigail, can you please go stack the shelf over there?$0\"/
+                faceDirection Abigail 0/
+                speak Abigail \"Sure dad.$2\"/
+                move Abigail 4 0 1/
+                pause 300/
+                animate Abigail false true 160 4 4 4 4 4 4 4 30 30 30 39 39 39 30 30 30/
+                pause 500/
+                warp farmer 6 28/
+                playSound doorClose/
+                move farmer 0 -5 0/
+                textAboveHead Abigail \"Hi!\"/
+                speak Pierre \"Hello @.$0#$b#Did you come to buy some seed?$h\"/
+                emote farmer 32/
+                move farmer 0 -4 0/
+                move farmer -2 0 0/
+                pause 200/
+                stopAnimation Abigail/
+                animate Abigail false true 400 32/
+                stopMusic/
+                jump Abigail 8/
+                addTemporaryActor abigailFallItem 16 16 9 21 2 false/
+                jump abigailFallItem 16/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                pause 500/
+                playSound throwDownITem/
+                showframe abigailFallItem 1/
+                pause 1000/
+                stopAnimation Abigail/
+                faceDirection Abigail 3/
+                faceDirection farmer 1/
+                textAboveHead Pierre \"Abigail!\"/
+                speed Pierre 5/
+                move Pierre -2 0 2/
+                speed Pierre 5/
+                move Pierre 0 3 1/
+                speed Pierre 5/
+                move Pierre 4 0 2/
+                speed Pierre 5/
+                move Pierre 0 1 1/
+                speed Pierre 5/
+                move Pierre 1 0 1/
+                speak Pierre \"Abigail! Watch what you're doing!$3#$b#You almost knocked over the hole stock!$3\"/
+                speak Abigail \"I'm sorry, Dad.$s#$b#It was just an accident.$s\"/
+                speak Pierre \"Accident or not, we can't afford to lose stock like that.$3#$b#Pay attention!$3\"/
+                quickQuestion What do you do?#Comfort Abigail#Talk to Pierre#Leave(break)switchEvent 4H_Abi_Comfort(break)switchEvent 4H_Abi_Talk(break)friendship Abigail -50 /
+                move farmer 2 0 2/
+                emote Pierre 12 true/
+                move farmer 0 2 1/
+                message \"Abigail looks at you with a sad expression.\"/
+                emote Abigail 28 true/
+                move farmer 0 5 0 true/
+                pause 700/
+                end dialogueWarpOut Abigail \"...$s#$e#I don't feel like talking today.$s\"",
+                "4H_Abi_Comfort":"pause 100/
+                friendship Abigail 30/
+                emote Pierre 12 true/
+                move farmer 4 0 2/
+                move farmer 0 1 2/
+                emote farmer 40/
+                move farmer 1 0 2/
+                question null \"#'It's okay Abigail, things like this happen.'#'Hey, accidents happen to everyone, Abigail.'\"/
+                faceDirection Abigail 0/
+                speak Abigail \"Thanks, @.$0#$b#Sometimes it's just hard when it feels like I can't live up to parents expectations.$s\"/
+                faceDirection Pierre 2/
+                emote Pierre 28/
+                pause 100/
+                faceDirection Pierre 1/
+                faceDirection Abigail 3/
+                speak Pierre \"I'm sorry Abigail...$s#$b#You're doing a great job here, and your dedication really shows.$s#$b#I shouldn't have let a small mishap get me so angry.$s\"/
+                speak Abigail \"It's alright, Dad.$0#$b#I know you care about the store, and I understand the pressure you're under.$0#$b#Let's just move past this, okay?$0\"/
+                addConversationTopic abigailComfort 1/
+                end",
+                                "4H_Abi_Talk":"pause 100/
+                                friendship Abigail -10/
+                emote Pierre 12 true/
+                move farmer 2 0 2/
+                move farmer 0 2 1/
+                emote farmer 40/
+                pause 100/
+                faceDirection Pierre 3/
+                speak Pierre \"What?!$3\"/
+                quickQuestion #'I understand it's important to manage the store, but maybe a gentler approach would be better.'#'Abigail is doing her best to help. A little understanding could go a long way.'(break)speak Pierre \"Gentler approach!?$2\"(break)speak Pierre \"Understand?!$3\" /
+                emote Pierre 12/
+                speak Pierre \"You think you can just waltz in here and tell me how to run my own store?$3\"/
+                emote Abigail 28/
+                message \"Abigail looks even more uncomfortable then before.\"/
+                speed Abigail 4/
+                move Abigail 0 -1 3/
+                speed Abigail 4/
+                move Abigail -2 0 2/
+                speak Abigail \"Dad, it's okay.$s#$b#Let's just focus on calming down.$s\"/
+                faceDirection Pierre 0/
+                speak Pierre \"Focus on what?!$3#$b#If you were more focused, we wouldn't be in this mess!$3\"/
+                emote Abigail 28/
+                message \"Abigail looks hurt and embarrassed.\"/
+                question fork0 \"What do you do?#Step in to defend Abigail.#Leave the uncomfortable situation.\" /
+                fork 4H_Abi_Defend/
+                speed farmer 4/
+                move farmer 0 7 2/
+                warp farmer 400 400/
+                playSound doorClose/
+                globalFade/
+                viewport -1000 -1000/
+                pause 600/
+                speak Caroline \"Pierre! Stop!$3\"/
+                end dialogueWarpOut Abigail \"...$s#$e#I don't feel like talking today.$s\"",
+                "4H_Abi_Defend":"friendship Abigail 20/
+                question null \"#'Mr. Pierre, this isn't helping anyone.'#'Yelling at Abigail won't solve the issue.'\"/
+                faceDirection Pierre 3/
+                emote Pierre 12/
+                pause 400/
+                move Pierre 0 1 2/
+                pause 200/
+                emote Pierre 28/
+                speak Pierre \"You're right...$s\"/
+                faceDirection Pierre 0/
+                speak Pierre \"I'm sorry, Abigail. I didn't mean to make a scene.$2\"/
+                message \"Abigail nods, trying to maintain her composure.\"/
+                speak Pierre \"Take the rest of the of the week off, Abigail.$2#$b#I promises I'll make this up to you.$s\"/
+                speak Abigail \"I'm going to leave now...$s\"/
+                advancedMove Abigail false 0 -1 2 0 0 -2 0 5 4 1000/
+                faceDirection Pierre 2/
+                emote Pierre 28/
+                addConversationTopic abigailDefend 1/
+                end warpOut",
+            },
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Pierre",
+            "Entries":{
+                "abigailComfort":"Thank you for helping me see things from a different perspective.$0#$b#I need to remember to be patient and understanding, especially with Abigail.$0#$e#The store is important, but so is my relationship whit Abigail.$0#$b#I'll work on finding that balance.$h",
+                "abigailDefend":"Hey, @, I wanted to talk to you about what happened at my store.$s#$b#I realize I lost my temper, and I shouldn't have taken it out on Abigail.$s#$b#Running this store and providing for the family can be stressful, but that's no excuse for treating Abigail like that.$s#$b#I need to do better.$s#$e#Thank you for trying to make things right.$s#$b#I'll make sure to apologize to Abigail and work on managing my stress more constructively.$s#$b#She means everything to me.$s",
+                
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Abigail",
+            "Entries":{
+                "abigailComfort":"Hey @, I really appreciate you stepping in after I dropped something.$0#$b#It means a lot to me.$l#$e#Things can get a bit tense at the store sometimes, but family is family.$0#$b#I'm sure Dad didn't mean to be so harsh.$0",
+                "abigailDefend":"Hey, @, I wanted to thank you for defending me.$s#$b#It means a lot to me.$l#$e#Sometimes things get a little overwhelming, especially with Dad and the store.$s#$b#I appreciate your support.$0#$e#It's not always easy, but I knowing there are friends like you around helps me get through tough moments.$0#$b#So, thanks again. You're a true friend.$0",
+            }
+        },
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "Changes": [
+	  
+//	ADD CLIFFS
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options_temp.tmx",
+			"FromArea": { "X": 41, "Y": 80, "Width": 26, "Height": 12 },
+			"ToArea": { "X": 25, "Y": 24, "Width": 26, "Height": 12 },
+			"PatchMode": "Replace",
+			"When": { "Add_Cliffs_N_WaFF": "False" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options_temp.tmx",
+			"FromArea": { "X": 41, "Y": 67, "Width": 40, "Height": 12 },
+			"ToArea": { "X": 78, "Y": 46, "Width": 40, "Height": 12 },
+			"PatchMode": "Replace",
+			"When": { "Add_Cliffs_E_WaFF": "False" }
+		},
+
+// 	SMALL RIDGES
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options_temp.tmx",
+			"FromArea": { "X": 99, "Y": 22, "Width": 11, "Height": 4 },
+			"ToArea": { "X": 56, "Y": 29, "Width": 11, "Height": 4 },
+			"PatchMode": "Replace",
+			"When": { "Add_Small_Ridges_N_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options_temp.tmx",
+			"FromArea": { "X": 97, "Y": 27, "Width": 4, "Height": 4 },
+			"ToArea": { "X": 91, "Y": 67, "Width": 4, "Height": 4 },
+			"PatchMode": "Replace",
+			"When": { "Add_Small_Ridges_E_WaFF": "True" }
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options_temp.tmx",
+			"FromArea": { "X": 102, "Y": 27, "Width": 8, "Height": 3 },
+			"ToArea": { "X": 95, "Y": 67, "Width": 8, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { "Add_Small_Ridges_E_WaFF": "True" }
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options_temp.tmx",
+			"FromArea": { "X": 111, "Y": 28, "Width": 4, "Height": 4 },
+			"ToArea": { "X": 103, "Y": 68, "Width": 4, "Height": 4 },
+			"PatchMode": "Replace",
+			"When": { "Add_Small_Ridges_E_WaFF": "True" }
+		}
+	]
+}	  

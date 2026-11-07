@@ -1,0 +1,167 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries": {
+                "18657010/F/f Abigail 2500/n Abigail10HInvite/t 2000 2300/e 18657009":"continue/
+                71 15/
+                Abigail 67 19 0 farmer 66 13 1/
+                skippable/
+                addLantern 735 69 11 2/
+                move farmer 7 0 0/
+                pause 700/
+                emote farmer 8 true/
+                faceDirection farmer 2/
+                pause 700/
+                faceDirection farmer 0/
+                pause 700/
+                faceDirection farmer 1/
+                pause 200/
+                message \"{{i18n:Miihau.AbigailEE.event10.001}}\"/
+                emote farmer 16 true/
+                faceDirection farmer 3/
+                move Abigail 1 0 2/
+                move Abigail 0 1 0/
+                speed Abigail 7/
+                move Abigail 0 -2 0/
+                speed Abigail 7/
+                jump Abigail 9/
+                move Abigail 0 -5 1/
+                positionOffset Abigail 8 -8/
+                pause 200/
+                animate Abigail false true 400 50/
+                playSound swordswipe/
+                addObject 69 12 109/
+                jump farmer 7/
+                pause 400/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.002}}\"/
+                emote farmer 60 true/
+                playSound pickUpItem/
+                removeObject 69 12/
+                stopAnimation Abigail/
+                pause 200/
+                animate Abigail false true 190 28 29 28 29 28 29 28 29 28 29/
+                playSound dustMeep/
+                pause 400/
+                playSound dustMeep/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.003}}\"/
+                pause 400/
+                stopAnimation Abigail/
+                pause 200/
+                move Abigail 4 0 1/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.004}}\"/
+                pause 500/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.005}}\"/
+                move Abigail -1 0 2/
+                pause 400/
+                message \"{{i18n:Miihau.AbigailEE.event10.006}}\"/
+                pause 300/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.007}}\"/
+                faceDirection Abigail 1/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.008}}\"/
+                emote farmer 20/
+                faceDirection Abigail 2/
+                animate Abigail false true 612 16 17 18 19/
+                playMusic AbigailFlute/
+                pause 31000/
+                stopMusic/
+                stopAnimation Abigail/
+                pause 300/
+                faceDirection Abigail 1/
+                pause 200/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.009}}\"/
+                question fork1 \"{{i18n:Miihau.AbigailEE.event10.010}}\" /
+                fork 10H_Abi_BadEnding/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.011}}\"/
+                move Abigail 1 0 1/
+                emote Abigail 20/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.012}}\"/
+                pause 800/
+                message \"{{i18n:Miihau.AbigailEE.event10.013}}\"/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.014}}\"/
+                speed Abigail 6/
+                move Abigail -3 0 1/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.015}}\"/
+                pause 250/
+                animate Abigail false false 150 50 51/
+                specificTemporarySprite swordswipe 70 12/
+                playSound swordswipe/
+                pause 300/
+                animate Abigail false false 150 50 51/
+                specificTemporarySprite swordswipe 70 12/
+                playSound swordswipe/
+                pause 300/
+                animate Abigail false false 150 50 51/
+                specificTemporarySprite swordswipe 70 12/
+                playSound swordswipe/
+                pause 400/
+                faceDirection Abigail 1/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.016}}\"/
+                pause 100/
+                jump Abigail 3/
+                pause 150/
+                jump Abigail 2/
+                pause 150/
+                jump Abigail 3/
+                pause 150/
+                jump Abigail 2/
+                pause 150/
+                jump Abigail 3/
+                pause 150/
+                jump Abigail 2/
+                pause 150/
+                jump Abigail 3/
+                pause 200/
+                emote Abigail 32/
+                speed Abigail 5/
+                move Abigail 2 0 1/
+                move farmer -1 0 3/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.017}}\"/
+                pause 200/
+                emote farmer 32/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.018}}\"/
+                pause 600/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.019}}\"/
+                pause 700/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event10.020}}\"/
+                pause 200/
+                question fork1 \"{{i18n:Miihau.AbigailEE.event10.021}}\" /
+                fork 10H_Abi_BadEnding /
+                pause 300/
+                addConversationTopic abigailLoveKiss 2/
+                positionOffset Abigail 5 -3/
+                animate Abigail true false 450 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33/
+                animate farmer true true 450 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101 101/
+                specificTemporarySprite heart 72 12/
+                pause 2500/
+                globalFade/
+                viewport -1000 -1000/
+                pause 200/
+                end dialogue Abigail \"{{i18n:Miihau.AbigailEE.event10.022}}\"",
+                "10H_Abi_BadEnding":"friendship Abigail -500/
+                pause 1000/
+                shake Abigail 5000/
+                pause 500/
+                message \"{{i18n:Miihau.AbigailEE.event10.023}}\"/
+                addConversationTopic abigailNoLoveKiss 2/
+                pause 200/
+                speed Abigail 6/
+                AdvancedMove Abigail false -3 0 0 -2 -6 0 0 -3 -8 0 3 1000/
+                move farmer -2 0 3/
+                emote farmer 60/
+                globalFade/
+                viewport -1000 -1000/
+                end"
+            }
+        },    
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Abigail",
+            "Entries":{
+                "abigailLoveKiss":"{{i18n:Miihau.AbigailEE.event10.024}}",
+                "abigailNoLoveKiss":"{{i18n:Miihau.AbigailEE.event10.025}}",
+            }
+        },    
+    ]
+}

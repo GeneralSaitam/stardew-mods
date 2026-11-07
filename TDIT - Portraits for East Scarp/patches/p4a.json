@@ -1,0 +1,270 @@
+ {
+    "Changes": [
+
+// Rockbreaker
+ 		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"TextOperations": [		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","{{ModId}}_Dialogue.Rockbreaker"],
+					"Value": "Portraits/RockBreaker_Default Strings/DolphINaF.ESPortraits:Name.Rockbreaker",
+					"Delimiter": "🐬"
+				},	
+			],
+		},	
+
+// Joja Worker
+ 		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries","ES.JojaMetro.1"],
+					"Value": "{{i18n:closeparens}}",
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","ES.JojaMetro.1"],
+					"Value": "Portraits/JojaLady_Default Strings/DolphINaF.ESPortraits:Name.JojaLady 🐬{{i18n:openparens}}",
+				},					
+			],
+		},		
+
+// Tourist 0: Harry Ashworth
+ 		{
+			"Action": "EditData",
+			"Target": "Mods/Pathoschild.CentralStation/Tourists",
+			"TargetField": ["Lemurkat.EastScarp", "Tourists", "HarryA", "Dialogue"],
+			"TextOperations": [		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#0"],
+					"Value": "Portraits/HarryAshworth Strings/DolphINaF.ESPortraits:Name.Harry",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#1"],
+					"Value": "Portraits/HarryAshworth Strings/DolphINaF.ESPortraits:Name.Harry",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#2"],
+					"Value": "Portraits/HarryAshworth Strings/DolphINaF.ESPortraits:Name.Harry",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","#2"],
+					"Value": "$1",
+				},			
+			],
+		},
+		
+// Tourist 1: Ricki Martinez
+ 		{
+			"Action": "EditData",
+			"Target": "Mods/Pathoschild.CentralStation/Tourists",
+			"TargetField": ["Lemurkat.EastScarp", "Tourists", "RikkiM", "Dialogue"],
+			"TextOperations": [		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#0"],
+					"Value": "Portraits/RickiMartinez Strings/DolphINaF.ESPortraits:Name.Ricki",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#1"],
+					"Value": "Portraits/RickiMartinez Strings/DolphINaF.ESPortraits:Name.Ricki",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#2"],
+					"Value": "Portraits/RickiMartinez Strings/DolphINaF.ESPortraits:Name.Ricki",
+					"Delimiter": "🐬"
+				},			
+			],
+		},		
+		
+// Tourist 2: Barbara Ashworth
+ 		{
+			"Action": "EditData",
+			"Target": "Mods/Pathoschild.CentralStation/Tourists",
+			"TargetField": ["Lemurkat.EastScarp", "Tourists", "BarbaraA", "Dialogue"],
+			"TextOperations": [		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#0"],
+					"Value": "Portraits/BarbaraAshworth Strings/DolphINaF.ESPortraits:Name.Barbara",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","#0"],
+					"Value": "$2",
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#1"],
+					"Value": "Portraits/BarbaraAshworth Strings/DolphINaF.ESPortraits:Name.Barbara",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#2"],
+					"Value": "Portraits/BarbaraAshworth Strings/DolphINaF.ESPortraits:Name.Barbara",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","#2"],
+					"Value": "$3",
+				},				
+			],
+		},	
+		
+// Tourist 3: Terence Ashworth
+ 		{
+			"Action": "EditData",
+			"Target": "Mods/Pathoschild.CentralStation/Tourists",
+			"TargetField": ["Lemurkat.EastScarp", "Tourists", "TerenceA", "Dialogue"],
+			"TextOperations": [		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#0"],
+					"Value": "Portraits/TerenceAshworth Strings/DolphINaF.ESPortraits:Name.Terence",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","#0"],
+					"Value": "$1",
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#1"],
+					"Value": "Portraits/TerenceAshworth Strings/DolphINaF.ESPortraits:Name.Terence",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Append",
+					"Target": ["Entries","#1"],
+					"Value": "$2",
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#2"],
+					"Value": "Portraits/TerenceAshworth Strings/DolphINaF.ESPortraits:Name.Terence",
+					"Delimiter": "🐬"
+				},				
+			],
+		},	
+		
+// Tourist 4: Delores Black
+ 		{
+			"Action": "EditData",
+			"Target": "Mods/Pathoschild.CentralStation/Tourists",
+			"TargetField": ["Lemurkat.EastScarp", "Tourists", "CelebrantMagician", "Dialogue"],
+			"TextOperations": [		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#0"],
+					"Value": "Portraits/ZuzuCelebrant Strings/DolphINaF.ESPortraits:Name.Celebrant",
+					"Delimiter": "🐬"
+				},		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#1"],
+					"Value": "Portraits/ZuzuCelebrant Strings/DolphINaF.ESPortraits:Name.Celebrant",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries","#1"],
+					"Value": "$action AddMail Current {{ModId}}_CelebrantName received",
+					"Delimiter": "#"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#2"],
+					"Value": "Portraits/ZuzuCelebrant Strings/DolphINaF.ESPortraits:Name.Celebrant",
+					"Delimiter": "🐬"
+				},				
+			],
+		},	 		
+		{
+			"Action": "EditData",
+			"Target": "Mods/Pathoschild.CentralStation/Tourists",
+			"TargetField": ["Lemurkat.EastScarp", "Tourists", "CelebrantMagician", "Dialogue"],
+			"TextOperations": [		
+				{
+					"Operation": "RemoveDelimited",
+					"Target": ["Entries","#1"],
+					"Search": "$action AddMail Current {{ModId}}_CelebrantName received",
+					"Delimiter": "#"
+				},				
+			],
+			"When": {"HasFlag": "{{ModId}}_CelebrantName"}
+		},		
+		
+// Tourist 5: Kevin			
+ 		{
+			"Action": "EditData",
+			"Target": "Mods/Pathoschild.CentralStation/Tourists",
+			"TargetField": ["Lemurkat.EastScarp", "Tourists", "Kevin", "Dialogue"],
+			"TextOperations": [		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#0"],
+					"Value": "Portraits/MovieConcessionCC_Kevin Strings/DolphINaF.ExtraPortraits:Name.MovieConcessionCC_Kevin",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#1"],
+					"Value": "Portraits/MovieConcessionCC_Kevin Strings/DolphINaF.ExtraPortraits:Name.MovieConcessionCC_Kevin",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#2"],
+					"Value": "Portraits/MovieConcessionCC_Kevin Strings/DolphINaF.ExtraPortraits:Name.MovieConcessionCC_Kevin",
+					"Delimiter": "🐬"
+				},				
+			],
+		},		
+		
+// Tourist 6: Angie			
+ 		{
+			"Action": "EditData",
+			"Target": "Mods/Pathoschild.CentralStation/Tourists",
+			"TargetField": ["Lemurkat.EastScarp", "Tourists", "AngeLK", "Dialogue"],
+			"TextOperations": [		
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#0"],
+					"Value": "Portraits/AngieLK Strings/DolphINaF.ESPortraits:Name.Angie",
+					"Delimiter": "🐬"
+				},
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#1"],
+					"Value": "Portraits/AngieLK Strings/DolphINaF.ESPortraits:Name.Angie",
+					"Delimiter": "🐬"
+				},	
+				{
+					"Operation": "Prepend",
+					"Target": ["Entries","#2"],
+					"Value": "Portraits/AngieLK Strings/DolphINaF.ESPortraits:Name.Angie",
+					"Delimiter": "🐬"
+				},				
+			],
+		},		
+	]
+}

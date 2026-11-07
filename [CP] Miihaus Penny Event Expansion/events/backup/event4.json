@@ -1,0 +1,149 @@
+{
+    "Changes": [
+        {   
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                    "16279004/F/f Penny 1000/t 900 1200/n PennysFavBook/A pennyGone": "50s/
+                    99 94/
+farmer 79 94 1 Penny 98 91 2 Gunther 3 8 2 Jas -40 -40 1 Vincent -50 -50 1/
+skippable/
+speed farmer 3/
+move farmer 19 0 0/
+speed farmer 2/
+pause 100/
+speak Penny \"Hey, @!$h\"/
+move Penny 0 2 2/
+speak Penny \"I'm glad I ran into you. I was just about to go into the library.$0#$b#Would you like to help me teach the kids about farming today? $0#$b#I only know about it from books. It would be great to have somebody there with hands-on experience.$0#$b#What do you say?$h#$b#$q 1627930 null##$r 1627930 -20 event_teachingTogether1#Sorry, but I don't have time today.#$r 1627931 0 event_teachingTogether2#Teach the kids? I don't know if I'd be any good at that.\"/
+fork dontJoinLesson/
+speak Penny \"$p 1627915#Also, you promised me while I gave you the library tour, that you'll visit. It will be fun. So, yes or no?$h|It will be fun. So What do you say, yes or no?$0\"/
+emote farmer 40/
+speak Penny \"What do you say?$h#$b#$q 1627932 null##$r 1627932 10 event_teachingTogether3#All right, I'll do it!#$r 1627933 -10 event_teachingTogether1#I'm sorry Penny, but I have to say no.\"/
+fork dontJoinLesson/
+advancedMove farmer false 3 0 0 -4/
+move Penny 3 0 0/
+move Penny 0 -3 0/
+warp Penny -30 -30/
+playSound doorClose/
+pause 500/
+stopAdvancedMoves/
+warp farmer -31 -31/
+playSound doorClose/
+pause 500/
+globalFade .009/
+viewport -1000 -1000/
+changeLocation ArchaeologyHouse/
+faceDirection farmer 0/
+faceDirection Penny 0/
+warp farmer 19 12/
+positionOffset farmer 0 20/
+warp Penny 16 12/
+globalFadeToClear .005 true/
+viewport 15 10/
+pause 200/
+advancedMove farmer false 0 -3 -1 0/
+move Penny 0 -3 1/
+move Penny 1 0 1/
+faceDirection farmer 3/
+pause 700/
+speak Penny \"So, about the lesson today.$0#$b#I've been reading 'Lily Growing Up' with Jas and Vincent and we finished the book last week.$0#$b#The homework for today's lesson was to write four key points to summarize the story.$0#$b#Could you please check Vincent's homework, while I check Jas'? That way we'll have more time to teach them about farming.$0#$b#Luckily, I have a professional farmer as guest teacher today!$h\"/
+emote farmer 28/
+speak Penny \"Don't worry, the summary I mailed to you had all of the information you'll need.$0#$b#I have another copy of it here. Do you want to take a quick look?$0\"/
+pause 100/
+quickQuestion Look at the summary again?#Yes.#No.(break)stopMusic\\message \"Summary of 'Lily Growing Up':                       The story is about a cheerful little girl named Lily who loves spending time with her mother. One day, her mother tells her that they are going to live on their own, just the two of them, and that Lily's father is no longer with them.                              Despite feeling sad, Lily decides to stay positive and make the most of their time together. She loves going to school, playing with her friends, and painting pictures in her room, which she shows her mother. They have many happy moments exploring the city, visiting museums, and trying new foods.      Lily knows that she has a lot of love in her life, and even though she doesn't have a father, she is grateful for all the wonderful things in her life and knows that she can handle anything that comes her way.\"\\playMusic 50s(break)speak Penny \"No need?$0#$b#Okay then.$h\"\\friendship Penny 20/
+pause 100/
+speak Penny \"The children should be here any minute now.$0\"/
+globalFade 0.011/
+viewport -1000 -1000/
+warp farmer 15 11/
+positionOffset farmer 0 20/
+warp Penny 15 10/
+faceDirection Penny 3/
+message \"Jas and Vincent join you and Penny. Penny explains what today's lesson will be about.\"/
+warp Vincent 13 10/
+warp Jas 13 11/
+globalFadeToClear 0.011 true/
+viewport 15 10/
+pause 100/
+speak Penny \"So, now that you know what we're doing today, let's start by checking your homework.$0#$b#Vincent, Mr. @ will check yours.^Vincent, Ms. @ will check yours.\"/
+jump Vincent 5/
+speak Vincent \"$p 1627910#No shouting please...$2|Mr. @! Cool!^Ms. @! Cool!$h\"/
+advancedMove Penny false 0 -1 3 0 2 6000/
+advancedMove farmer false 0 -2 2 0 2 6000/
+advancedMove Vincent false 3 0 1 6000/
+move Jas 0 1 1/
+move Jas 6 0 0/
+move Jas 0 -2 3/
+stopAdvancedMoves/
+speak Vincent \"Okay Mr. @, this is the first key point I have written down.^Okay Ms. @, this is the first key point I have written down.$0#$b#'Lily is a cheerful little girl who loves spending time with her father'$0\"/
+quickQuestion What is your feedback to 'Lily is a cheerful little girl who loves spending time with her father'?#Everything seems to be fine.#Lily is a big girl and not small.#Lily loves to spend time with her mother and not her father.(break)friendship Penny -10\\speak Penny \"Sorry Jas, could you wait a second?$0#$b#Actually, there's a mistake there Vincent. Lily loves spending time with her mother and not her father.$3\"\\emote farmer 28(break)friendship Penny -10\\speak Penny \"Sorry Jas, could you wait a second?$0#$b#Actually, Vincent is right. Lily is a small girl, but there is a mistake there Vincent. Lily loves spending time with her mother and not her father.$3\"\\emote farmer 28(break)friendship Penny 10\\emote Penny 32/
+speak Vincent \"Oh... okay I'll change that then.$3\"/
+emote Vincent 40/
+speak Vincent \"Okay I'm ready.$0#$b#My second key point is,$0#$b#'Lily's father is no longer with them, and she is going to live with her mother.'\"/
+quickQuestion What is your feedback to 'Lily's father is no longer with them, and she is going to live with her mother.'?#Everything seems to be fine.#Lily is actually going to live on her own.#Lily will live with both her mother and father.(break)friendship Penny 10\\emote Penny 32(break)friendship Penny -10\\speak Penny \"Good job Jas! Could you excuse me for a moment?$0#$b#Sorry @, but your correction is wrong.$s#$b#Don't worry Vincent, your key point is correct.$0\"\\emote farmer 28(break)friendship Penny -10\\speak Penny \"Good job Jas! Could you excuse me for a moment?$0#$b#Sorry @, but your correction is wrong.$s#$b#Don't worry Vincent, your key point is correct.$0\"\\emote farmer 28/
+speak Vincent \"Cool!$h#$b#Okay, this is my next one.$0#$b#'Lily hates going to school but she loves playing with her friends and painting pictures.'$0\"/
+quickQuestion What is your feedback to 'Lily hates going to school but she loves playing with her friends and painting pictures.'?#Everything seems to be fine.#Lily does not hate going to school, she loves it.#Lily does not paint but sing.(break)friendship Penny -10\\speak Penny \"That's right Jas. Sorry I need to check in on Vincent real quick.$0#$b#Actually, there is a mistake there Vincent. Lily does not hate going to school, she loves it.$3\"\\emote farmer 28(break)friendship Penny 10\\emote Penny 32(break)friendship Penny -10\\speak Penny \"That's right Jas. Sorry, I need to check in on Vincent real quick.$0#$b#@, you're incorrect, Lily does not sing. Vincent your mistake is, that Lily hates going to school. She actually loves it.$3\"\\emote farmer 28/
+speak Vincent \"Okay, I'll be fixing that.$3\"/
+emote Vincent 40/
+speak Vincent \"All fixed!$0#$b#Here is my last key point.$0#$b#'Lily is grateful for all the wonderful things in her life'\"/
+quickQuestion What is your feedback to 'Lily is grateful for all the wonderful things in her life'?#Everything seems to be fine.#Lily is actually not grateful.#Lily is only grateful for her mother.(break)friendship Penny 10\\emote Penny 32(break)friendship Penny -10\\speak Penny \"Well done Jas. I'll be right back with you.$0#$b#Sorry @, but your correction is wrong.$s#$b#Don't worry Vincent, your key point is correct.$0\"\\emote farmer 28(break)friendship Penny -10\\speak Penny \"Well done Jas. I'll be right back with you.$0#$b#Sorry @, but your correction is wrong.$s#$b#Don't worry Vincent, your key point is correct.$0\"\\emote farmer 28/
+pause 100/
+speak Vincent \"Alright! Two out of four correct!$h#$b#That means I pass!$h\"/
+pause 100/
+speak Penny \"That's right, Vincent.$0#$b# You're passing too Jas!$0\"/
+speak Jas \"With no mistakes.$4\"/
+emote Jas 56 true/
+emote Vincent 56/
+speak Penny \"Now let's turn our attention to Mr. @. As our resident expert, he'll be teaching us about farming.$1^Now let's turn our attention to Ms. @. As our resident expert, she'll be teaching us about farming.$1\"/
+globalFade 0.011/
+viewport -1000 -1000/
+message \"You teach Jas and Vincent about the crops you grow on your farm and the process of cultivating them.#The lesson went well. You end the session by walking outside to the river.\"/
+changeLocation Town/
+warp Vincent 87 103/
+faceDirection Vincent 2/
+warp Jas 83 100/
+warp Penny 90 97/
+faceDirection Penny 3/
+warp farmer 88 97/
+faceDirection farmer 1/
+positionOffset farmer 0 20/
+globalFadeToClear .005 true/
+viewport 89 99/
+pause 500/
+speak Penny \"Hey @, thank you for helping out today. I appreciate it.$0#$b#But I hope it wasn't too stressful for you!$0#$b#Don't worry, you did a great job, especially for your first time. You're a great teaching partner.$1#$b# We, um... make a good team, don't we?$4\"/
+emote farmer 32/
+speak Penny \"I'm going to watch the children for a bit now before walking them home.$0#$b#And I'll set you free now!$h#$b#Have a great rest of your day!$0\"/
+emote farmer 56/
+advancedMove farmer false 0 -3 -6 0/
+move Penny 0 3 3/
+move Penny -2 0 2/
+globalFade/
+viewport -1000 -1000/
+pause 1000/
+end dialogue Penny \"I learned a lot at today's lesson too.$0#$b#Thanks again for helping out!$0\"", 
+                    "dontJoinLesson":"emote farmer 28 true/
+                    move Penny 3 0 0/
+move Penny 0 -3 0/
+warp Penny -30 -30/
+playSound doorClose/
+pause 100/
+globalFade/
+viewport -1000 -1000/
+end dialogue Penny \"Finished your days' work already?$3\"",
+                    
+                },
+        },  
+        
+        
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":{
+                "event_teachingTogether1":"Oh, okay.$s#$b#I understand.$3#$b#Excuse me, I need to go prepare today's lesson.%fork$3",
+                "event_teachingTogether2":"Nonsense! I'm sure you'll do great.$h#$b#Plus, the kids love it when we have guest teachers.$0",
+                "event_teachingTogether3":"Awesome! Thank you!$h#$b#Okay, please follow me inside. We need to do some prep before the kids arrive.$0",
+            }
+        
+        },
+    ]
+}

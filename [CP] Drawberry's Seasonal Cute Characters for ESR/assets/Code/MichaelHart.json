@@ -1,0 +1,96 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load MichaelHart's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/MichaelHart_{{PortraitStyle}}_Fall, Portraits/MichaelHart_{{PortraitStyle}}_FlowerDance, Portraits/MichaelHart_{{PortraitStyle}}_SpiritsEve, Portraits/MichaelHart_{{PortraitStyle}}_Spring, Portraits/MichaelHart_{{PortraitStyle}}_Summer, Portraits/MichaelHart_{{PortraitStyle}}_Winter, Characters/MichaelHart_Fall, Characters/MichaelHart_FlowerDance, Characters/MichaelHart_SpiritsEve, Characters/MichaelHart_Spring, Characters/MichaelHart_Summer, Characters/MichaelHart_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/MichaelHart/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "MichaelHart - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/MichaelHart_Fall, Characters/MichaelHart_FlowerDance, Characters/MichaelHart_SpiritsEve, Characters/MichaelHart_Spring, Characters/MichaelHart_Summer, Characters/MichaelHart_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/MichaelHart/MichaelHart_nose.png",
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+		},
+		//APPEARANCE DATA 
+		{
+			"LogName": "MichaelHart Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"MichaelHart",
+				"Appearance"
+			],
+			"Entries": {
+				//Regular Outfits
+				"{{ModId}}.MichaelHartSpring": {
+					"Id": "{{ModId}}.MichaelHartSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/MichaelHart_Spring",
+					"Portrait": "Portraits/MichaelHart_{{PortraitStyle}}_Spring",
+					"Precedence": -200,
+				},
+				"{{ModId}}.MichaelHartSummer": {
+					"Id": "{{ModId}}.MichaelHartSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/MichaelHart_Summer",
+					"Portrait": "Portraits/MichaelHart_{{PortraitStyle}}_Summer",
+					"Precedence": -200,
+				},
+				"{{ModId}}.MichaelHartFall": {
+					"Id": "{{ModId}}.MichaelHartFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/MichaelHart_Fall",
+					"Portrait": "Portraits/MichaelHart_{{PortraitStyle}}_Fall",
+					"Precedence": -200,
+				},
+				"{{ModId}}.MichaelHartWinter": {
+					"Id": "{{ModId}}.MichaelHartWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/MichaelHart_Winter",
+					"Portrait": "Portraits/MichaelHart_{{PortraitStyle}}_Winter",
+					"Precedence": -200,
+				},
+				//Festival Outfits
+				"{{ModId}}.MichaelHartFlowerDance": {
+					"Id": "{{ModId}}.MichaelHartFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/MichaelHart_FlowerDance",
+					"Portrait": "Portraits/MichaelHart_{{PortraitStyle}}_FlowerDance",
+					"Precedence": -2000,
+				},
+				"{{ModId}}.MichaelHartSpirit": {
+					"Id": "{{ModId}}.MichaelHartSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn EastScarp_VillageInn_SpiritEve EastScarp_Crossing {{FestivalOutfits}}\"",
+					"Sprite": "Characters/MichaelHart_SpiritsEve",
+					"Portrait": "Portraits/MichaelHart_{{PortraitStyle}}_SpiritsEve",
+					"Precedence": -2000,
+				},
+				//Beach
+				"{{ModId}}.MichaelHartBeach": {
+					"Id": "{{ModId}}.MichaelHartBeach",
+					"Sprite": "Characters/MichaelHart_Beach",
+					"Portrait": "Portraits/MichaelHart_{{PortraitStyle}}_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+			},
+		},
+		{
+			"LogName": "MichaelHart Calendar Sprite Edits",
+			"Action": "EditImage",
+			"Target": "Characters/MichaelHart",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+		},
+	]
+}

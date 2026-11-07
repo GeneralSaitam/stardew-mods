@@ -1,0 +1,102 @@
+{
+    "Changes": [
+
+//	SECRET WOODS EXTRA AREA
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"AddWarps": [ "1 5 Custom_Ts.SecretWoodsExtraArea 43 13" ],
+			"When": { 
+				"HasMod": "Tikamin557.CP.SecretWoodsExtraArea",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"Secret_Woods_Shortcut_WaFF": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Ts.SecretWoodsExtraArea",
+			"AddWarps": [ "45 12 Farm 1 3" ],
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod": "Tikamin557.CP.SecretWoodsExtraArea",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"Secret_Woods_Shortcut_WaFF": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Ts.SecretWoodsExtraArea",
+			"FromFile": "comp/comp_assets/WaFF_Syn_SWEA.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 5 },
+			"ToArea": { "X": 42, "Y": 11, "Width": 3, "Height": 5 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod": "Tikamin557.CP.SecretWoodsExtraArea",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"Secret_Woods_Shortcut_WaFF": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+
+//	STARDEW VALLEY EXPANDED
+
+//	//	SECRET WOODS SHORTCUT
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"AddWarps": [ "1 5 Woods 66 1" ],
+			"When": { 
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"Secret_Woods_Shortcut_WaFF": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"AddWarps": [ "66 -1 Farm 1 3" ],
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"Secret_Woods_Shortcut_WaFF": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Woods",
+			"FromFile": "comp/comp_assets/WaFF_Syn_SVE.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 7 },
+			"ToArea": { "X": 64, "Y": 0, "Width": 5, "Height": 7 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP",
+				"Secret_Woods_Shortcut_WaFF": "True",
+				"HasFlag" : "beenToWoods"
+			}
+		},
+		
+//	WAY BACK PELICAN TOWN FIX
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/WaFF_EX_Options.tmx",
+			"FromArea": { "X": 16, "Y": 34, "Width": 1, "Height": 1 },
+			"ToArea": { "X": 116, "Y": 39, "Width": 1, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"HasMod": "Gweniaczek.WayBackPT",
+				"Fountain_Decoration_WaFF": "True"
+			}
+		}
+	]
+}	  

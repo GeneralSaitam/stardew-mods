@@ -1,0 +1,173 @@
+{
+	//Hello, i18n readers! This is the translation section. This is a fairly short mod to translate, but have fun.
+	
+	//CONFIG TRANSLATIONS
+	
+	"config.Null Mod Keys.name": "Null Mod Keys",
+    "config.Null Mod Keys.description": "Remove keys from other mods which have Clint be angry or depressed with Emily in a relationship with the player. Defaults to off to preserve changes from other mods.",
+	"config.Six Heart.name": "6 Heart Availability",
+    "config.Six Heart.description": "Choose when Clint's 6 heart event is available. Defaults to the original event conditions plus blocking if dating, engaged, or married. 'Emily not living with player' will allow the new six heart to be seen if not living with Emily (romantically or platonically), and 'Always' will always allow the event to be available. Compatible with PPAF and Platonic Relationships - any non-default option will allow viewing it normally, and 'Always' will allow it to be seen if Emily is the player's housemate.",
+	"config.Six Heart.values.default": "default",
+	"config.Six Heart.values.unmarried": "Emily not spouse/housemate",
+	"config.Six Heart.values.always": "always",
+	
+	//Dialogue Keys
+	
+	"CR.Clint.Resort.Entering": "The day off's nice, but I hope no one minds my swimsuit.#$e#It's... eye-catching for the wrong reasons.$s",
+	"CR.Clint.Resort.Leaving": "Well, that was relaxing. I don't think people minded my swimsuit much, either.",
+	"CR.Clint.Resort.Shore": "It's nice to take a day off, once in a while.$h",
+	"CR.Clint.Resort.Shore2": "I thought working a furnace would have prepared me for this heat, but I'm sweating in places I didn't know I could.$s",
+	"CR.Clint.Resort.Bar": "Drinks are nice, but I'm really just hungry.#$e#Gus, mind bringing some food next time? I'll make sure to bring the cash.",
+	"CR.Clint.Resort": "*sigh*... This is nice.$h#$e#It'd be nice to enjoy it with someone, but I'm not holding my breath to find anyone anytime soon.",
+	"CR.Clint.Mon": "Yep. I'm a blacksmith.#$e#My father was also a blacksmith.#$e#My grandfather was a blacksmith as well.$u#$q 9/9 Mon_old#I bet you can't guess what my great-grandfather was...#$r 9 30 Mon_9#A blacksmith.#$r 9 50 Mon_clown#A silly clown.#$r 9 -50 Mon_rude#A sarcastic guy.",
+	"CR.Clint.Mon9": "Yep. I would have preferred to figure out something else, but...$s#$b#Well, it's a living. I guess I shouldn't complain.",
+	"CR.Clint.Mon.Rude": "Hah. Sorry, my sarcasm's my own.$u#$b#I'll assume you're not being rude, for the both of us. Here to upgrade your tools?",
+	"CR.Clint.EventAdvice": "I'll keep that in mind. Thanks for the advice.",
+	"CR.Clint.Be.Yourself": "...My natural is not talking to anyone and drinking alone at this Saloon. I don't really think that's going to help.$s",
+	
+	"CR.Clint.FlowerDance": "I'm considering asking Emily to dance, but I probably won't.#$b#It's not because I'm nervous to ask, mind you. I just don't think I could pull off the dance moves.$h",
+	"CR.Clint.FlowerDance.Emily": "Sometimes I wonder if I should join the Flower Dance, but I can't really dance.$s#$b#It's probably fine if I don't, though. I'd be the talk of the town for weeks with how bad my moves would be.$h",
+	"CR.Clint.IceFestival": "Apparently, my snowman doesn't look great, so Emily started helping me.#$b#I'm embarrassed to admit it's mine, honestly. It's hard to hear someone's brutal honesty of your work.$s",
+	"CR.Clint.WinterStar": "Sometimes I look at the other tables and think I'll always be alone, and that family isn't for me.$s#$e#But around this table are a lot of the single people in town, so even if I'm alone romantically, I'll always be in good company.$h",
+	
+	"CR.Marnie.Saloon": "I always see Clint here but he won't talk to anyone.$s#$b#I've seen Shane in similar states, sometimes. I might try and talk to him at some point.$s#$b#It would be awkward, yes - ranching and blacksmithing don't really have anything in common.$3#$b#But I'd rather talk to him and try and make a difference than say nothing and see what happened to Shane happen again.",
+	"CR.Gus.SixHeart": "Clint comes into the saloon almost every night and sits at the same table by himself.#$e#I worry about him. He reminds me of Shane, sometimes, since he doesn't seem to connect with anyone.$2#$e#Don't worry, @. If I ever think the alcohol is making things worse for him, I'll cut him off.$3#$b#He's one of the town, and I'm not about to let the Saloon's profits get in the way of taking care of one of our own.",
+	"CR.Emily.FallEight": "Clint asked me for advice today on how to mend clothes. Apparently some of his clothes became frayed while he was working at the forge.#$e#I offered to mend them for him. It'll be a nice challenge to make sure the clothes are resistant to the heat of the forge.",
+	
+	//Data Keys
+	
+	"CR.Clint.RarePhone": "Hello? Yes, yes, I'm open until 4pm. Sorry, gotta go - smithing something temperamental at the moment.",
+	"CR.Clint.MovieInvite": "A movie? Sure. I'll meet you at the theater.",
+	
+	"CR.Clint.Quest.Title": "Clint's Request",
+	"CR.Clint.Quest.Emily.Title": "Helpful Clint",
+	"CR.Clint.Quest.Description": "Clint wants you to give Emily an amethyst, since he's too nervous. He's willing to pay you to give her one.",
+	"CR.Clint.Quest.Emily.Description": "Clint wants to help you out with making Emily happy. He's promised to send you an Amethyst to give to Emily.",
+	"CR.Clint.Quest.Objective": "Bring Emily an Amethyst.",
+	"CR.Clint.Quest.Reaction": "Oh, one of my favorite stones! You're so sweet!$h#$b#Oh, from Clint? Remind me to thank him for the thoughtful gift later!",
+	"CR.Clint.Quest.Emily.Reaction": "Oh, one of my favorite stones! You're so sweet!$h#$b#Thank you for bringing this to me, @. It really means a lot, coming from you.$l",
+	
+	"CR.Clint.Mail": "I've got an unusual request, if you're willing to help.^I want you to deliver an amethyst to Emily. It's one of her favorite stones.^If you're willing, can you tell her it's from me? I'd rather her not take it the wrong way by me giving it in person. I'd probably only make it awkward. ^   -Clint",
+	"CR.Clint.Mail.Involved": "I've got an unusual suggestion for you.^^Amethyst is one of Emily's favorite stones. I know you already like her, and I think you probably would be good for her, too.^^I recently got a shipment of geodes to crack. If I find an Amethyst, I'll send it over tomorrow so you can give it to her.^^Make sure to tell her it's from you. I don't want her thinking it's from me and making things awkward.^   -Clint",
+	"CR.Clint.Mail.Title": "Clint's Unusual Request",
+	"CR.Clint.Involved.Title": "Clint Being Helpful",
+	"CR.Clint.Amethyst.Involved": "Here's the Amethyst.^^Sorry for the delay. It took me quite a few geodes that I ordered to find one. ^^   -Clint",
+	"CR.Clint.Amethyst.Mail": "Clint's Amethyst Delivery",
+	
+	"CR.Clint.RomanceMovie.Before": "This movie's supposed to be a romance, right? I don't really care for them.$s",
+	"CR.Clint.RomanceMovie.Script": "Clint is scowling.",
+	"CR.Clint.RomanceMovie.During": "Why would she like THAT guy? It's totally unrealistic!$3#$b#I mean, they just *met*!$3",
+	"CR.Clint.RomanceMovie.After": "Sorry, @. Romances aren't my thing. Half the time they just don't make sense.$s",
+	"CR.Clint.Movie.Before": "Thanks for the invite, @. This seems like a good movie to watch.",	
+	"CR.Clint.Movie.Script": "Clint looks to have smuggled in a Joja Cola, and notices you glancing at it.",
+	"CR.Clint.Movie.During": "Sorry, the concessions were a little overpriced for me, so I wanted to bring in a drink in case I got thirsty.",
+	"CR.Clint.Movie.After": "Hey... that was kind of fun! Thanks again for the invite, @.$h",
+	
+	//Event Keys
+	
+	//Clint 3 Heart
+	"CR.97.1": "Hello, @... care to join me?",
+	"CR.97.2": "Mind if I confide in you a little, @?",
+	"CR.97.3": "I'm terrible with people in general. I can't seem to strike up a conversation.$s#$b#I'm pretty sure if I try, people will just think I'm some creep rather than trying to make friends.$s",
+	"CR.97.4": "And, well, I've seen you around town making friends left and right.#$b#So I have to ask, if only for my sake...",
+	"CR.97.5": "Got any tips on how to talk to people?",
+	"CR.97.6": "How do you make friends?",
+	"CR.97.7": "Tell people what they want to hear",
+	"CR.97.8": "Give them gifts so that they love you",
+	"CR.97.9": "Just act natural... be yourself",
+	"CR.97.10": "Be a good listener and find common interests",
+	"CR.97.11": "Hi Clint! What can I get for you tonight?$h",
+	"CR.97.12": "I'll have the Big n' Cheesy. With extra sauce, please.$h",
+	"CR.97.13": "Coming right up!",
+	"CR.97.14": "Oh, hey @! It's good to see Clint's making friends.$h",
+	"CR.97.15": "Friends? I actually made a fri- $4#$b#I mean... yeah. You know how it goes, Emily - farmer walks in, brings gifts, and sooner or later... you call them a friend.$h",
+	"CR.97.16": "That does seem to be how @ makes friends around here!$h#$b#I'll get your order in, Clint. @, I'll let Gus know you're here if you want to order up, since you didn't grab a menu.",
+	"CR.97.17": "Thanks, Emily.$h",
+	"CR.97.18": "Hi, Shane! Here's your beverage.$h",
+	"CR.97.19": "Thanks, Emily!$h#$b#So... How's your shift coming along?",
+	"CR.97.20": "It's going fine, but skip the small talk, we're friends, remember?#$b#Do you have any new chicken stories for me?",
+	"CR.97.21": "I guess I've still got some work to do. Making friends in this town's going to be really difficult for a blacksmith who keeps to himself.$s#$b#Thanks for listening, though, @. It means a lot.",
+	
+	//Clint 6 Heart
+	"CR.101.1": "@! It isn't what it looks like!$4#$b#Seriously, it's not. I swear.$s",
+	"CR.101.2": "Look. I wanted to give Emily a gift of some wool for her crafts.#$b#She repaired some of my clothes recently that got damaged while I was working at the forge, and refuses to take money for it.$s",
+	"CR.101.3": "The problem is I don't know how to present a gift without being hopelessly awkward about it.$s#$b#With how I am, she'll probably take it as some sort of pitiful attempt to ask her out.$s",
+	"CR.101.4": "...Look, @. Don't get me wrong, I like Emily.#$b#She's beautiful, and caring, and made friends with me even though I'm terrible at being anyone's friend.$s",
+	"CR.101.5": "But she deserves someone better than me. Heck, you'd probably be better for her, if you were interested.#$b#All I want to do is give a gift to my friend to thank her for doing something for me. And I'll do that once Caroline's gone.$h",
+	"CR.101.6": "Wait, now? But I don't want to interrupt and annoy Emily - $4",
+	"CR.101.7": "Fine. But I'm blaming you if Emily gets angry.$3",
+	"CR.101.8": "Here's hoping I don't screw it up...$s",
+	"CR.101.9": "Um... Emily?",
+	"CR.101.10": "Oh, Clint!",
+	"CR.101.11": "Sorry, Caroline, I need to make sure my repairs for Clint's clothing are holding up. I'll talk with you more in a moment?$3",
+	"CR.101.12": "Sorry about that. Are the new clothes holding up well against the forge heat? If I need to make alterations...$s",
+	"CR.101.13": "No, no! They work great!$h#$b#Actually, I wanted to give you something.",
+	"CR.101.14": "I wanted to get you something as a thank you for fixing my blacksmithing clothes.#$b#You didn't have to mend my clothes for free, and I know you won't accept money, so I wanted to give you this.",
+	"CR.101.15": "This gift is fabulous! Thank you so much!$h#$b#This is really high quality wool, Clint... Are you sure?$6",
+	"CR.101.16": "Don't mention it, Emily. I wanted to make sure that my friend got something good for all their hard work.$h",
+	"CR.101.17": "That's very thoughtful of you, Clint!$h#$b#I'll accept it. Thank you for the gift.",
+	"CR.101.18": "Well, that went better than I thought it would.$h",
+	"CR.101.19": "Thanks for pushing me to go out there, @. I'm glad I didn't stand there for so long that they noticed me.$h#$b#That would have gone pretty bad really quickly.",
+	"CR.101.end": "Do you think Emily would be weirded out if I gave her another quality wool to work with?$s#$b#Maybe another day, and not more than two in a week, though.#$b#More than that and she might think I'm bribing her for something.$h",
+	
+		//6 Heart - Player Dating Emily
+		
+		"CR.101.4d": "What? Trust me, @, I have no romantic intentions toward her. She's my friend and so are you.#$b#I'm not about to cause problems by asking either one of you out when you're already dating, especially if I'm not interested.$3",
+		"CR.101.5d": "I have a hard enough time making friends as is - I'd rather not drive away the ones I already have.$s#$b#All I want to do is give a gift to Emily to thank her for doing something for me. And I'll try and do that once Caroline's gone.$h",
+		"CR.101.6d": "Wait, now? But I don't want to interrupt and annoy her - $4",
+		
+		//6 Heart - Player Best Friends with Emily
+		
+		"CR.101.5f": "But she deserves someone better than me, and she'll find someone one day. I'm sure as her best friend you'll look out for her when she does, too.#$b#All I want to do is give a gift to my friend to thank her for doing something for me. And I'll try and do that once Caroline's gone.$h",
+		
+		//6 Hearts - Player Married to Emily
+		
+		"CR.101.3m": "The problem is I don't know how to present a gift without being hopelessly awkward about it.$s#$b#With how I am, she'll probably take it as some sort of pitiful attempt to ask her out. While she's *married*.$s",
+		"CR.101.4m": "...What?? @, you're the one who's married to her!$4#$b#You can't tell me if you thought I was hitting on you while you were married that you wouldn't immediately be creeped out.$s",
+		"CR.101.5m": "I have a hard enough time making friends as is - I'd rather not drive away the ones I already have by being hopelessly awkward.$s#$b#All I want to do is give a gift to my friend to thank her for doing something for me. And I'll try and do that once Caroline's gone.$h",
+		"CR.101.7m": "Fine. But I'm blaming you if your wife gets angry.$3",
+		
+		//6 Hearts - Player living with Emily platonically
+		
+		"CR.101.5h": "But even outside of the fact I don't think I'd be good for her, she's already living with you.#$b#Somehow, I don't think you'd want me living with you or me convincing your {{termOfEndearment}} to live with me instead.$h#$b#All I want to do is give a gift to my friend to thank her for doing something for me. And I'll try and do that once Caroline's gone.",
+	
+	//Shane 7 Heart replacers
+	
+	"CR.831125.1": "I... um, line?$s", //Changed
+	"CR.831125.2": "I'm sorry!$s", //Technically the same
+	"CR.831125.3": "I wasn't really ready for an ad-libbed performance... the line was a little too quick there.", //Changed
+
+	//Emily 8 Heart replacers
+	
+	"CR.2123243.1": "I'm definitely going last...", //Changed - test case, actual dialogue is "I'm definitely going last..."
+	"CR.2123243.2": "I, uh...", //Changed
+	"CR.2123243.3": "I have no fashion sense, but... here I go...$2", //Changed
+	"CR.2123243.4": "Thanks. I'll... go try and be confident with these clothes?$7", //Changed
+	"CR.2123243.5": "I couldn't do it! I can't be confident! I'm sor- $6", //Changed
+	"CR.2123243.6": "...Oh. Sorry. Just wanted to grab my old clothes, didn't realize I was interrupting.$7", //Changed
+	"CR.2123243.7": "I'll... come back later. Just forget I was here, alright?$6", //Changed
+	
+	
+	//1.6 Dialogue Strings
+	
+	"CR.Clint.GreenRain": "It's situations like this where a person's true character is put to the test.#$e#I've already told Gus that if anyone needs anything at the Saloon, I'll bring it to them, no questions asked.#$e#I might not be able to make friends with many people around here, but I can at least make sure they don't have to worry about toxic rain.$h",
+	"CR.Clint.GreenRainFinished": "Gus sent over some food for my help yesterday during the rain.#$b#Even if it wasn't toxic, it was the thought that counted, or at least that's what he said in the note that came with it.#$e#Do you think I could give Gus a tip that would cover the cost of this food, or would he get angry with me for trying to still pay for it?$s",
+	"CR.Clint.GreenRain2": "Well, the rain's back. Whenever it shows up, I wonder what would happen if a real disaster happened around here.$s#$e#I should talk with Lewis to see if we should set up some kind of disaster fund. That way if toxic rain ever does come around, we'll be prepared.",
+	"CR.Clint.Event101.Seen": "Hey, @. Got a question for you, if you've got any ideas.#$e#Emily liked the wool I gave her the other day, so I was thinking of what else I could give her around the Winter Star if I ever got her as my secret friend.#$q 1583025 CRBug#Any ideas you're willing to share?#$r 1583025 25 CRGems#She likes gems.#$r 1583025 50 CRBurger#She secretly likes Survival Burgers.#$r 1583025 -10 CRAnything#I'm sure she'd like anything.#$r 1583025 0 CRWorry#Don't worry about it unless it happens.#$r 1583025 -10 CRNo#I'm not helping you with that, Clint.",
+	"CR.Clint.Bug": "You know what, never mind. You might want to make a bug report, though - this dialogue should never trigger.",
+	"CR.Clint.Gems": "Well, I might have to buy one off you, then. Those are expensive, and I'm hoping she doesn't take it as some sort of creepy jewellery gift.",
+	"CR.Clint.Burger": "I don't think anything I can cook would ever measure up to Gus, but I guess it'd be the thought that counts?$s#$b#Thanks for the idea, at least.",
+	"CR.Clint.Anything": "You say that, but I've seen Gus cook up one of his famous fish tacos for her.$s#$b#I think that's the closest they've ever come to fighting. It was definitely an awkward time in the Saloon that night.$4",
+	"CR.Clint.Worry": "I guess I am thinking too far ahead.$h#$b#Thanks for keeping my head on straight, @.",
+	"CR.Clint.No": "...Okay?$s#$b#I mean, if you don't want to help with me ideas, that's fine, I just thought I'd ask.$s#$e#...Do you need anything else, @? I'd like to just... hammer away at my anvil for a bit to think.",
+	"CR.Clint.Emily.Dating": "Congratulations on the relationship! Emily told me about it the other night at the Saloon.$h#$b#I think this is where I'd give you the shovel talk, but you and I both know I'm not threatening enough for that.$h#$e#That doesn't mean I won't be angry if you hurt her, though. Take care of her, @.",
+	"CR.Clint.Emily.Married": "Congratulations on your marriage, @. I hope you and Emily have a long and happy life together.$h#$e#Actually, here. You guys didn't have a registry, so I figured I'd just get you two something you could both use. [GoldenAnimalCracker]#$b#I was told this makes animals produce more so you could have a sheep produce more cloth, but I'm not sure how to use it, myself.#$b#If it's no good, I'll return it and get you something else.",
+	"CR.Clint.Emily.Divorce": "...$u#$e#You made her cry, @.$u#$b#Whatever you want, just pay for it and get out.$u#$e#You'd better hope I don't decide to melt down your tools for what you did.$u",
+	"CR.Clint.DesertFestival": "Hey, @. To tell you the truth, I don't really like festivals.#$b#This one's fun, but... it's always awkward at a large event if you're not good with people.#$e#It's easier if I stick to the food. Almost no one wants to talk to you while you're eating.",
+	"CR.Clint.FlowerDance.Year2": "I come to this festival mostly for the food.#$e#It's not that I don't like it, there's just nothing for me to do.#$e#Everyone's usually got a partner, so I'm usually just over here eating the sweet and tangy jelly from the tables.$h",
+	
+	"CR.Clint.Emily.Friends.PPAF": "Congratulations! Emily told me about the two of you officially becoming better friends the other night at the Saloon.$h#$e#I'm glad the two of you have the same idea on your relationship. Sometimes people get something used for wanting to get to know each other better and think it's some romantic gesture.#$b#...Not that I'd know or anything, anyway. It's just nice to not have to deal with that kind of misunderstanding.$h",
+	"CR.Clint.Emily.Housemate.PPAF": "I'm not sure how best friend ceremonies work, exactly. I went to yours and Emily's and I'm still confused.#$b#I get marriage ones, but a whole ceremony to show you're best friends? Living together after, even if one of you might have a relationship afterwards?#$e#...I guess I don't get it because I don't have a relationship like that, though.$s#$b#It'd be nice to have one one day, but not sure if anyone would ever want to live with the blacksmith.$s#$e#Er, sorry, @. You don't need to hear me talk about this. You need anything?",
+	"CR.Clint.Emily.Removed.PPAF": "Em's been crying since you kicked her out.$u#$b#I thought you two were best friends, @. I guess you just didn't care anymore, huh?$u#$e#I'd rather not talk to you today, @. Maybe another day, when I'm not constantly thinking about Em in tears.$s",
+	
+}

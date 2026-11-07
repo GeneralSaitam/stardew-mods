@@ -1,0 +1,447 @@
+﻿{
+    "Format": "1.29.0",
+	"ConfigSchema":{
+		"CottonCandy": {
+			"Description": "Do you want the Cotton Candy changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"JasmineTea": {
+			"Description": "Do you want the Jasmine Tea changed?",
+			"AllowValues": "true, false",
+			"Default": "true",			
+		},
+		"JojaCola": {
+			"Description": "Do you want the JojaCola changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"SourSlimes": {
+			"Description": "Do you want the Sour Slimes changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"PersonalPizza": {
+			"Description": "Do you want the Personal Pizza changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Nachos": {
+			"Description": "Do you want the Nachos changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"IceCreamSandwich": {
+			"Description": "Do you want the Ice Cream Sandwich changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Popcorn": {
+			"Description": "Do you want the Popcorn changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Fries": {
+			"Description": "Do you want the Fries changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"ChocolatePopcorn": {
+			"Description": "Do you want the Chocolate Popcorn changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"BlackLicorice": {
+			"Description": "Do you want the Black Licorice changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"StarCookie": {
+			"Description": "Do you want the Star Cookie changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Jawbreaker": {
+			"Description": "Do you want the Jawbreaker changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"SaltedPeanuts": {
+			"Description": "Do you want the Salted Peanuts changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"HummusSnackPack": {
+			"Description": "Do you want the Hummus Snack Pack changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"KaleSmoothie": {
+			"Description": "Do you want the Kale Smoothie changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"AppleSlices": {
+			"Description": "Do you want the Apple Slices changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"PanzanellaSalad": {
+			"Description": "Do you want the Panzanella Salad changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"TrufflePopcorn": {
+			"Description": "Do you want the Truffle Popcorn changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"ChocolateDonut": {
+			"Description": "Do you want the Chocolate Donut changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"JojaPopcorn": {
+			"Description": "Do you want the Joja Popcorn changed, and which texture to use? (see the modpage images for variations)",
+			"AllowValues": "1, 2, 3, Off",
+			"Default": "3",
+		},
+		"StardropSorbet": {
+			"Description": "Do you want the Stardrop Sorbet changed?",
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+	},
+	"Changes":[
+		{
+			"LogName": "CottonCandy",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/CottonCandy.png",
+			"ToArea":{
+				"X": "0",
+				"Y": "0",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"CottonCandy": "true"
+			}
+		},
+		{
+			"LogName": "JasmineTea",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/JasmineTea.png",
+			"ToArea":{
+				"X": "16",
+				"Y": "0",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"JasmineTea": "true"
+			}
+		},
+		{
+			"LogName": "JojaCola",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/JojaCola.png",
+			"ToArea":{
+				"X": "32",
+				"Y": "0",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"JojaCola": "true"
+			}
+		},
+		{
+			"LogName": "SourSlimes",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/SourSlimes.png",
+			"ToArea":{
+				"X": "48",
+				"Y": "0",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"SourSlimes": "true"
+			}
+		},
+		{
+			"LogName": "PersonalPizza",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/PersonalPizza.png",
+			"ToArea":{
+				"X": "64",
+				"Y": "0",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"PersonalPizza": "true"
+			}
+		},
+		{
+			"LogName": "Nachos",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/Nachos.png",
+			"ToArea":{
+				"X": "80",
+				"Y": "0",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"Nachos": "true"
+			}
+		},
+		{
+			"LogName": "IceCreamSandwich",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/IceCreamSandwich.png",
+			"ToArea":{
+				"X": "112",
+				"Y": "0",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"IceCreamSandwich": "true"
+			}
+		},
+		{
+			"LogName": "Popcorn",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/Popcorn.png",
+			"ToArea":{
+				"X": "0",
+				"Y": "16",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"Popcorn": "true"
+			}
+		},
+		{
+			"LogName": "Fried",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/Fries.png",
+			"ToArea":{
+				"X": "16",
+				"Y": "16",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"Fries": "true"
+			}
+		},
+		{
+			"LogName": "ChocolatePopcorn",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/ChocolatePopcorn.png",
+			"ToArea":{
+				"X": "32",
+				"Y": "16",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"ChocolatePopcorn": "true"
+			}
+		},
+		{
+			"LogName": "BlackLicorice",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/BlackLicorice.png",
+			"ToArea":{
+				"X": "48",
+				"Y": "16",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"BlackLicorice": "true"
+			}
+		},
+		{
+			"LogName": "StarCookie",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/StarCookie.png",
+			"ToArea":{
+				"X": "64",
+				"Y": "16",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"StarCookie": "true"
+			}
+		},
+		{
+			"LogName": "Jawbreaker",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/Jawbreaker.png",
+			"ToArea":{
+				"X": "80",
+				"Y": "16",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"Jawbreaker": "true"
+			}
+		},
+		{
+			"LogName": "SaltedPeanuts",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/SaltedPeanuts.png",
+			"ToArea":{
+				"X": "96",
+				"Y": "16",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"SaltedPeanuts": "true"
+			}
+		},
+		{
+			"LogName": "HummusSnackPack",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/HummusSnackPack.png",
+			"ToArea":{
+				"X": "112",
+				"Y": "16",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"HummusSnackPack": "true"
+			}
+		},
+		{
+			"LogName": "KaleSmoothie",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/KaleSmoothie.png",
+			"ToArea":{
+				"X": "0",
+				"Y": "32",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"KaleSmoothie": "true"
+			}
+		},
+		{
+			"LogName": "AppleSlices",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/AppleSlices.png",
+			"ToArea":{
+				"X": "16",
+				"Y": "32",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"AppleSlices": "true"
+			}
+		},
+		{
+			"LogName": "PanzanellaSalad",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/PanzanellaSalad.png",
+			"ToArea":{
+				"X": "32",
+				"Y": "32",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"PanzanellaSalad": "true"
+			}
+		},
+		{
+			"LogName": "TrufflePopcorn",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/TrufflePopcorn.png",
+			"ToArea":{
+				"X": "48",
+				"Y": "32",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"TrufflePopcorn": "true"
+			}
+		},
+		{
+			"LogName": "ChocolateDonut",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/ChocolateDonut.png",
+			"ToArea":{
+				"X": "64",
+				"Y": "32",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"ChocolateDonut": "true"
+			}
+		},
+		{
+			"LogName": "JojaPopcorn",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/JojaPopcorn_{{JojaPopcorn}}.png",
+			"ToArea":{
+				"X": "80",
+				"Y": "32",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"JojaPopcorn|contains=Off": "false"
+			}
+		},
+		{
+			"LogName": "StardropSorbet",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Concessions",
+			"FromFile": "assets/StardropSorbet.png",
+			"ToArea":{
+				"X": "96",
+				"Y": "32",
+				"Width": "16",
+				"Height": "16"
+			},
+			"When": {
+				"StardropSorbet": "true"
+			}
+		}
+	]
+}

@@ -1,0 +1,110 @@
+{
+    //Guide for keys:
+	//1501 and 1504: Rude keys. Use for Abigail, Sebastian, Alex, Haley, and Shane.
+	//1499 and 1500: Keys that don't apply to the above cases.	
+	"Changes":[
+		{
+			"LogName": "Sebastian - Solstice, Maru is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.Solstice.Maru.Housemate.After |termOfEndearment={{PPAF.Core/ConfigValue:TermOfEndearment}} }}",
+			},
+			"When": {
+				"relationship:Maru": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:MaruRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Solstice, Maru is Housemate, friends with farmer",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.Solstice.Maru.Housemate.High.After |termOfEndearment={{PPAF.Core/ConfigValue:TermOfEndearment}} }}",
+			},
+			"When": {
+				"Hearts:Sebastian": "5,6,7,8",
+				"relationship:Maru": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:MaruRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice (Default), Emily is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.Solstice.Emily.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Emily": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:EmilyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice, High Hearts, Emily is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.Solstice.High.Emily.Housemate.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "6,7,8",
+				"relationship:Emily": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:EmilyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice v2 (alt condition), Emily is Housemate", // Condition which allows leeway on hearts if 6-heart is seen. If heart level drops to 3, assume she's angry.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.Solstice.High.Emily.Housemate.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "4, 5",
+				"HasSeenEvent |contains=13": "true",
+				"relationship:Emily": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:EmilyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Emily - Solstice, Haley is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.Solstice.Haley.Housemate.Before}}",
+			},
+			"When": {
+				"relationship:Haley": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:HaleyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Maru - Solstice, Sebastian is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.Solstice.Sebastian.Housemate.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.Solstice.Sebastian.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Sebastian": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:SebastianRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Maru": "normal, spicy",
+			},
+		},
+	],
+}

@@ -1,0 +1,72 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fish Smoker Faster 40min",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)FishSmoker",
+        "OutputRules"
+      ],
+      "Fields": {
+        "SmokedFish": {
+          "MinutesUntilReady": 40
+        }
+      },
+      "When": {
+        "Fish Smoker Faster": "40min"
+      }
+    },
+    {
+      "LogName": "Fish Smoker Faster 30min",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)FishSmoker",
+        "OutputRules"
+      ],
+      "Fields": {
+        "SmokedFish": {
+          "MinutesUntilReady": 30
+        }
+      },
+      "When": {
+        "Fish Smoker Faster": "30min"
+      }
+    },
+    {
+      "LogName": "Fish Smoker Faster 20min",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)FishSmoker",
+        "OutputRules"
+      ],
+      "Fields": {
+        "SmokedFish": {
+          "MinutesUntilReady": 20
+        }
+      },
+      "When": {
+        "Fish Smoker Faster": "20min"
+      }
+    },
+    {
+      "LogName": "Fish Smoker Faster 10min",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)FishSmoker",
+        "OutputRules"
+      ],
+      "Fields": {
+        "SmokedFish": {
+          "MinutesUntilReady": 10
+        }
+      },
+      "When": {
+        "Fish Smoker Faster": "10min"
+      }
+    }
+  ]
+}

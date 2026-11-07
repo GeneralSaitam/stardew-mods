@@ -1,0 +1,96 @@
+{
+    //Guide for keys:
+	//1501 and 1504: Rude keys. Use for Abigail, Sebastian, Alex, Haley, and Shane.
+	//1499 and 1500: Keys that don't apply to the above cases.	
+	"Changes":[
+		{
+			"LogName": "Sebastian - Solstice, Married to Maru",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.Solstice.Maru.After}}",
+			},
+			"When": {
+				"relationship:Maru": "married",
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Solstice, Married to Maru, friends with farmer",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.Solstice.Maru.High.After}}",
+			},
+			"When": {
+				"Hearts:Sebastian": "5,6,7,8",
+				"relationship:Maru": "married",
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice (Default), Married to Emily",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.Solstice.Emily.After}}",
+			},
+			"When": {
+				"relationship:Emily": "married",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice, High Hearts, Married to Emily",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.Solstice.High.Emily.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "6,7,8",
+				"relationship:Emily": "married",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice v2 (alt condition), Married to Emily", // Condition which allows leeway on hearts if 6-heart is seen. If heart level drops to 3, assume she's angry.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.Solstice.High.Emily.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "4, 5",
+				"HasSeenEvent |contains=13": "true",
+				"relationship:Emily": "married",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Emily - Solstice, Married to Haley",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.Solstice.Haley.Before}}",
+			},
+			"When": {
+				"relationship:Haley": "married",
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Maru - Solstice, Married to Sebastian",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.Solstice.Sebastian.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.Solstice.Sebastian.After}}",
+			},
+			"When": {
+				"relationship:Sebastian": "married",
+				"Maru": "normal, spicy",
+			},
+		},
+	],
+}

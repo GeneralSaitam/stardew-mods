@@ -1,0 +1,187 @@
+{
+    "Format": "2.4.0",
+	
+//	CONFIG
+	
+    "ConfigSchema": {
+		"Use_Waterfall_Cave_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Make the Waterfall Cave accessible on your farm (this will be in addition to the normal cave). Disabling this option will remove all of the cave extra entrances from the map.",
+			"Section": "Cave_Shortcuts_WaFF"			
+		},
+		"Stone_Cave_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Remove the dirt patches from the Waterfall Cave, leaving only a natural stone floor.",
+			"Section": "Cave_Shortcuts_WaFF"
+        },
+		"Remove_Cave_Obstacles_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Remove the bushes and the wall east of the river from the Waterfall Cave.",
+			"Section": "Cave_Shortcuts_WaFF"
+        },
+		"Cave_Foliage_WaFF": {
+			"AllowValues": "Red, Yellow",
+			"Default": "Red",
+			"Description": "Select the cave foliage color (On top of it, all foliage can be turned green using AToMS config menu).",
+			"Section": "Cave_Shortcuts_WaFF"
+        },
+		"Cellar_Allows_Casks_in_Cave_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Once the farmhouse cellar is built, extend the usage of casks to the Waterfall Cave.",
+			"Section": "Cave_Shortcuts_WaFF"
+        },
+		"Secret_Woods_Shortcut_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Unlock a path next to the farm's shrine that will quickly lead to the Secret Woods if the player has already been there at least once.",
+			"Section": "Cave_Shortcuts_WaFF"
+        },
+//		
+		"Use_Animal_Pen_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Place one or more animal pens on the western side of the farm.",
+			"Section": "Animals_Monsters_WaFF"
+		},	
+		"Animal_Pen_Size_WaFF": {
+			"AllowValues": "2_Med, 1_Med, 1_Large",
+			"Default": "2_Med",
+			"Description": "Select the amount and size of the animal pens.",
+			"Section": "Animals_Monsters_WaFF"
+		},		
+		"Use_Invisible_Barriers_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Prevent animals from leaving the pen. Disable to let them roam the farm freely.",
+			"Section": "Animals_Monsters_WaFF"
+		},
+//
+		"Beach_Type_WaFF": {
+			"AllowValues": "Sea, Lake, Dry_Pond, Dry",
+			"Default": "Sea",
+			"Description": "Choose between a saltwater beach with sea forage, fishes & palm trees, a grassy beach with a large lake, a dry beach with more land & a pond or a dead beach full of sand with dead trees and no fishes.",
+			"Section": "Water_Features_WaFF"
+		},
+		"Beach_Fish_WaFF": {
+			"AllowValues": "Ocean, Freshwater",
+			"Default": "Ocean",
+			"Description": "Choose what kind of fishes can be caught on the beach (with the exception of the desolate one).",
+			"Section": "Water_Features_WaFF"
+		},
+		"Beach_Coral_WaFF": {
+			"AllowValues": "Normal, Full, None",
+			"Default": "Normal",
+			"Description": "SEA BEACH ONLY! Determinate the size of the coral reef, by default only around the small islands but can either be entirely removed or cover the entire sea floor.",
+			"Section": "Water_Features_WaFF"
+		},
+		"Beach_Grass_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Add small grass patches to all beaches besides the dead one. Will cause grass to naturally grow each year.",
+			"Section": "Water_Features_WaFF"
+		},	
+		"Beach_Bridge_WaFF": {
+			"AllowValues": "Sand, Planks",
+			"Default": "Sand",
+			"Description": "Turn the small bridges on the beach into either wooden planks or natural sand. Beware that the sand option will prevent you from laying path tiles over it, which may hinder mods relying on said tiles to work (like Automate).",
+			"Section": "Water_Features_WaFF"
+		},		
+		"Spa_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Place a healing pond south of the twin waterfalls.",
+			"Section": "Water_Features_WaFF"
+		},
+		"Fountain_Decoration_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Add a fountain and its decorated surroundings to the farm.",
+			"Section": "Water_Features_WaFF"
+		},
+		"Waterfall_Silent_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Activate to silence the waterfalls.",
+			"Section": "Water_Features_WaFF"
+		},
+//	
+		"Add_Cliffs_N_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Add a cliff on the farmhouse main island.",
+			"Section": "Natural_Terrain_Features_WaFF"
+		},
+		"Add_Cliffs_E_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "True",
+			"Description": "Add a cliff to the eastern part of the map.",
+			"Section": "Natural_Terrain_Features_WaFF"
+		},
+		"Add_Small_Ridges_N_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Add a small ridge south of the farmhouse.",
+			"Section": "Natural_Terrain_Features_WaFF"
+		},
+		"Add_Small_Ridges_E_WaFF": {
+			"AllowValues": "False, True",
+			"Default": "False",
+			"Description": "Add a small ridge near the south-eastern bridge.",
+			"Section": "Natural_Terrain_Features_WaFF"
+		},
+//
+		"Bridge_Deck_WaFF": {
+			"AllowValues": "Standard, Wood_Brown",
+			"Default": "Wood_Brown",
+			"Description": "Select the type of bridge deck used on the farm (Standard will reuse the town's one).",
+			"Section": "Built_Terrain_Features_WaFF"
+		},
+		"Fences_WaFF": {
+			"AllowValues": "Standard, Less, More, Even_More",
+			"Default": "Standard",
+			"Description": "Handle the amount of decorative fences that will be present on the farm.",
+			"Section": "Built_Terrain_Features_WaFF"
+		}
+    },
+
+//	FILES
+
+    "Changes": [	
+		{
+			"Action": "Include",
+			"FromFile": "assets/WaFF_Farm.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "options/01_WaFF_land.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "options/02_WaFF_aqua.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "options/03_WaFF_trees_woodwork.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "options/04_WaFF_barriers_shortcuts.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "options/cave/WaFF_cave.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "comp/WaFF_comp_misc.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "comp/WaFF_trans_maps.json"
+		}
+    ]
+}

@@ -1,0 +1,424 @@
+{
+  "Changes": [
+    {
+      "LogName": "Juna Wizard House Dialogue SVE",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "WizardHouse_2_29": "{{i18n: wizardhouse.SVE.2.29}}",
+        "winterCustom_WizardBasement_14_5": "{{i18n: winter.SVEbasement.14.5}}"
+      },
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna WizardHouse Dialogue Special",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "WizardHouse": "{{i18n: wizardhouse.8hearts.wizard}}"
+      },
+      "When": {
+        "HasSeenEvent": "86060037",
+        "Hearts:Juna": "8, 9",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna WizardHouse Dialogue2 Special",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "WizardHouse": "{{i18n: wizardhouse.8hearts.parents}}"
+      },
+      "When": {
+        "HasSeenEvent": "86060043",
+        "Hearts:Juna": "8, 9",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Wizard Roommate Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "WizardHouse_5_5": "{{i18n: roommate.5.5}}",
+        "WizardHouse_11_20": "{{i18n: roommate.11.20}}",
+        "WizardHouse_4_6": "{{i18n: roommate.4.6}}",
+        "WizardHouse_9_5": "{{i18n: roommate.9.5}}",
+        "WizardHouse": "{{i18n: roommate}}"
+      },
+      "When": {
+        "HasSeenEvent": "86060023",
+        "HasSeenEvent |contains=86060037": "false",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Wizard Roommate Dialogue SVE",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "Custom_WizardBasement_11_5": "{{i18n: roommate.5.5}}",
+        "WizardHouse_11_30": "{{i18n: roommate.11.20}}",
+        "WizardHouse_10_14": "{{i18n: roommate.4.6}}",
+        "Custom_WizardBasement_20_4": "{{i18n: roommate.9.5}}",
+        "WizardHouse": "{{i18n: roommate}}",
+        "Custom_WizardBasement": "{{i18n: roommate}}"
+      },
+      "When": {
+        "HasSeenEvent": "86060023",
+        "HasSeenEvent |contains=86060037": "false",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+      }
+    },
+
+    {
+      "LogName": "Juna Rainy Day Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Juna": "{{i18n: juna.rain_dialogue}}"
+      }
+    },
+
+    {
+      "LogName": "Juna Community Center Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "Town_49_23": "{{i18n: juna.outside_cc}}"
+      },
+      "When": {
+        "HasFlag |contains=jojaMember": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna and Olive CC Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "Town_50_23": "{{i18n: juna.olive.cc}}"
+      },
+      "When": {
+        "HasFlag |contains=jojaMember": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Lessons w Leo Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "ArchaeologyHouse_20_15": "{{Random: {{i18n: juna.leo.1}} @@ {{i18n: juna.leo.2}} @@ {{i18n: juna.leo.3}} @@ {{i18n: juna.leo.4}} |inputSeparator=@@}}"
+      }
+    },
+
+    {
+      "LogName": "Juna Field Trip Question",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "spring_Wed10": "{{i18n: fieldtrip.question.prelude}}#$q 860603 null#{{i18n: fieldtrip.question.q}}#$r 860603 10 Fieldtrip_yes#{{i18n: fieldtrip.question.yes}}#$r 860603 -20 Fieldtrip_no#{{i18n: fieldtrip.question.no}}"
+      },
+      "When": {
+        "HasSeenEvent": "6497428",
+        "HasMod |contains=gwenynnefydd.diversegingerisland": "false",
+        "HasDialogueAnswer |contains=860603": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Fieldtrip Responses",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "Fieldtrip_yes": "{{i18n: fieldtrip.question.reply.yes}}",
+        "Fieldtrip_no": "{{i18n: fieldtrip.question.reply.no}}"
+      }
+    },
+
+    {
+      "LogName": "Juna Alex Event Responses",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "Event_AlexFall1": "...$3",
+        "Event_AlexFall2": "...$6",
+        "Event_AlexFall3": "...$11"
+      }
+    },
+
+    {
+      "LogName": "Spa Winter Before Alex",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "winterBathHouse_WomensLocker_11_7": "{{i18n: spa.winter.prealex}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=86060017": "false"
+      }
+    },
+
+    {
+      "LogName": "Spa Winter After Alex",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "winterBathHouse_WomensLocker_11_7": "{{i18n: spa.winter.postalex}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=86060017": "true"
+      }
+    },
+
+    {
+      "LogName": "Juna Conversation Topics",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "JunaAlexWinter": "{{i18n: juna.conversation1}}",
+        "JunaAlexSpringGo": "{{i18n: juna.conversation2}}",
+        "JunaAlexSummer": "{{i18n: juna.conversation3}}$3"
+      }
+    },
+
+    {
+      "LogName": "Conversation Topics from other mods",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "AlectoIntroduction": "{{i18n: juna.AlectoIntroduction}}",
+        "TristanReturns": "{{i18n: juna.TristanReturns}}",
+        "DenverInjuries": "{{i18n: juna.DenverInjuries}}",
+        "JulietGremlin": "{{i18n: juna.JulietGremlin}}",
+        "LavrilUnlocked": "{{i18n: juna.LavrilUnlocked}}",
+        "LucikielArrives": "{{i18n: juna.LucikielArrives}}",
+        "ReputationIncreased": "{{i18n: juna.ReputationIncreased}}",
+        "JasperGone2": "{{i18n: juna.JasperGone2}}",
+        "event_postweddingreception": "{{i18n: juna.event_postweddingreception}}",
+        "PTJ03": "{{i18n: juna.PTJ03}}",
+        "MeetTheCats": "{{i18n: juna.MeetTheCats}}",
+        "ButteredJorts": "{{i18n: juna.ButteredJorts}}",
+        "AfterProposal": "{{i18n: juna.AfterProposal}}",
+        "YriWalk": "{{i18n: juna.YriWalk}}",
+        "SterlingTrain": "{{i18n: juna.SterlingTrain}}",
+        "SterlingBike": "{{i18n: juna.SterlingBike}}",
+        "SterlingDrugs": "{{i18n: juna.SterlingDrugs}}",
+        "DwarfStory": "{{i18n: juna.DwarfStory}}",
+        "ShadowfolkStory": "{{i18n: juna.ShadowfolkStory}}",
+        "BookLaunchParty": "{{i18n: juna.BookLaunchParty}}",
+        "divorce": "{{i18n: juna.divorce}}"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "SterlingTrash": "{{i18n: juna.SterlingTrashAlex}}"
+      },
+      "When": {
+        "HasSeenEvent": "86060016"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "SterlingTrash": "{{i18n: juna.SterlingTrashNoAlex}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=86060016": "false"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "keahi_prank": "{{i18n: juna.keahi_prank}}"
+      },
+      "When": {
+        "HasSeenEvent": "86060011"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "keahi_prank": "{{i18n: juna.keahi_prankNo}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=86060011": "false"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "AlexTryouts": "{{i18n: juna.AlexTryouts}}"
+      },
+      "When": {
+        "HasSeenEvent": "86060019"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "leoValleyArrival": "{{i18n: juna.leoValleyArrival}}"
+      },
+      "When": {
+        "HasMod |contains=gwenynnefydd.diversegingerisland": "false"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "fairyFarmVisit": "{{i18n: juna.fairyFarmVisit}}"
+      },
+      "When": {
+        "Roommate": "Juna"
+      }
+    },
+
+    {
+      "LogName": "East Scarp's Spirit's Eve Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "EastScarp_VillageInn_SpiritEve": "{{i18n: eastscarp.spiritseve.1}}",
+        "EastScarp_VillageInn_SpiritEve_47_18": "{{i18n: eastscarp.spiritseve.2}}",
+        "fall_27": "{{i18n: eastscarp.spiritseve.3}}"
+      },
+      "When": {
+        "HasMod": "LemurKat.EastScarpe.CP"
+      }
+    },
+
+    //LOCATION AND HEARTS DIALOGUE - MOVED OVER FROM BASE DIALOGUE FILES DUE TO BUG
+
+    {
+      "LogName": "Location and hearts dialogue - 2 hearts",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "Saloon": "{{i18n: location.hearts.2.saloon}}",
+        "WizardHouse": "{{i18n: location.hearts.2.wizard}}"
+      },
+      "When": {
+        "Hearts:Juna": "2, 3"
+      }
+    },
+
+    {
+      "LogName": "Location and hearts dialogue - 4 hearts",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "Saloon": "{{i18n: location.hearts.4.saloon}}",
+        "WizardHouse": "{{i18n: location.hearts.4.wizard}}"
+      },
+      "When": {
+        "Hearts:Juna": "4, 5"
+      }
+    },
+
+    {
+      "LogName": "Location and hearts dialogue - 6 hearts",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "Saloon": "{{i18n: location.hearts.6.saloon}}",
+        "WizardHouse": "{{i18n: location.hearts.6.wizard}}"
+      },
+      "When": {
+        "Hearts:Juna": "6, 7"
+      }
+    },
+
+    {
+      "LogName": "Location and hearts dialogue - Saloon 8 hearts",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "Saloon": "{{i18n: location.hearts.8.saloon}}"
+      },
+      "When": {
+        "Hearts:Juna": "8, 9"
+      }
+    },
+
+    {
+      "LogName": "Location and hearts dialogue - Saloon 10 hearts",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "Saloon": "{{i18n: location.hearts.10.saloon}}"
+      },
+      "When": {
+        "Hearts:Juna": "10"
+      }
+    },
+
+    {
+      "LogName": "Location and hearts dialogue - WizardHouse 10 Wizard",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "WizardHouse": "{{i18n: location.hearts.10.wizardW.spring}}",
+        "summerWizardHouse": "{{i18n: location.hearts.10.wizardW.summer}}",
+        "fallWizardHouse": "{{i18n: location.hearts.10.wizardW.fall}}",
+        "winterWizardHouse": "{{i18n: location.hearts.10.wizardW.winter}}"
+      },
+      "When": {
+        "Hearts:Juna": "10",
+        "HasFlag |contains=PlayerChoseWizard": true
+      }
+    },
+
+    {
+      "LogName": "Location and hearts dialogue - WizardHouse 10 Parents",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "WizardHouse": "{{i18n: location.hearts.10.wizardP.spring}}",
+        "summerWizardHouse": "{{i18n: location.hearts.10.wizardP.summer}}",
+        "fallWizardHouse": "{{i18n: location.hearts.10.wizardP.fall}}",
+        "winterWizardHouse": "{{i18n: location.hearts.10.wizardP.winter}}"
+      },
+      "When": {
+        "Hearts:Juna": "10",
+        "HasFlag |contains=PlayerChoseParents": true
+      }
+    },
+
+    //GREEN RAIN
+
+    {
+      "LogName": "Green Rain Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "GreenRain": "{{i18n: juna.GreenRain}}",
+        "GreenRainFinished": "{{i18n: juna.GreenRainFinished}}",
+        "GreenRain_2": "{{i18n: juna.GreenRain_2}}"
+      }
+    }
+  ]
+}

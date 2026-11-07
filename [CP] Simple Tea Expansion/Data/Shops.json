@@ -1,0 +1,42 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "ResortBar",
+                "Items"
+            ],
+				"Entries": {
+					"{{ModId}}_BobaTea": {
+                    "Price": 1000,
+                    "AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+                    "Id": "{{ModId}}_BobaTea",
+                    "ItemId": "{{ModId}}_BobaTea",
+					"Currency": 0,
+                    "IsRecipe": true
+                }		
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Saloon",
+                "Items"
+            ],
+				"Entries": {
+                "{{ModId}}_MatchaLatte": {
+                    "AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+                    "Id": "{{ModId}}_MatchaLatte",
+                    "ItemId": "{{ModId}}_MatchaLatte",
+                    "Price": 5000,
+                    "Currency": 0,
+                    "IsRecipe": true
+                }			
+            }
+        }
+    ]
+}

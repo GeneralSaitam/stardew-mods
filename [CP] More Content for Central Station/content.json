@@ -1,0 +1,99 @@
+{
+  "Format": "2.7.0",
+  "ConfigSchema": {
+    "OMEGAlinc_EnablePossibleSpoilerTourists": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Name": "{{config.OMEGAlinc_EnablePossibleSpoilerTourists.name}}",
+      "Description": "{{config.OMEGAlinc_EnablePossibleSpoilerTourists.description}}",
+      "Section": "OMEGAlinc_Tourists"
+    },
+    "OMEGAlinc_ShopsCaveStyle": {
+      "AllowValues": "OMEGAlinc_regularmine, OMEGAlinc_dark, OMEGAlinc_dangerous, OMEGAlinc_desert, OMEGAlinc_desertdangerous, OMEGAlinc_desertdark, OMEGAlinc_desertdarkdangerous, OMEGAlinc_dino, OMEGAlinc_frost, OMEGAlinc_frostdangerous, OMEGAlinc_frostdark, OMEGAlinc_lava, OMEGAlinc_lavadangerous, OMEGAlinc_lavadark, OMEGAlinc_lavadarkdangerous, OMEGAlinc_quarryshaft, OMEGAlinc_slime",
+      "Default": "OMEGAlinc_regularmine",
+      "Name": "{{config.OMEGAlinc_ShopsCaveStyle.name}}",
+      "Description": "{{config.OMEGAlinc_ShopsCaveStyle.description}}",
+      "Section": "OMEGAlinc_Visual"
+    }
+  },
+  "Changes": [
+    {
+      "Action": "Include",
+      "FromFile": "jsons/tourists.json",
+      "LogName": "Add Tourists"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/bookshelf.json",
+      "LogName": "Add Bookshelf Books"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/newlocations.json",
+      "LogName": "Add New Locations"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/cjbwarps.json",
+      "LogName": "Add CJB Warps",
+      "When": {
+        "HasMod": "CJBok.CheatsMenu"
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/shops.json",
+      "LogName": "Add Shops"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/destinations.json",
+      "LogName": "Add Stops"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/strings.json",
+      "LogName": "Add Strings"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/events.json",
+      "LogName": "Add Events"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/quests.json",
+      "LogName": "Add Quests"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/items.json",
+      "LogName": "Add Items (and quest items)"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/mail.json",
+      "LogName": "Add Mail"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/blankloads.json",
+      "LogName": "Add Blank Loads"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/loads.json",
+      "LogName": "Add Various Loads"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/mapedits.json",
+      "LogName": "Add Map Edits"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "jsons/songs.json",
+      "LogName": "Add New Music"
+    }
+  ]
+}

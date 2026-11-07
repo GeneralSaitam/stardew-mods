@@ -1,0 +1,51 @@
+/*Vanilla Emily already has lines for the Parrot Egg trinket, Emerald, Aquamarine, Ruby, Amethyst, Topaz, and Jade. The gems ones are even pretty elaborate, being 50/50 odds of choosing between two different lines.
+She has a line for loved-to-neutral birthday gifts and disliked-and-hated birthday gifts.
+Last verified: 1.6.14*/
+
+{"Changes": [
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Buffs",
+      "Entries": {
+        "emily_yoba_blessing": {
+          "DisplayName": "{{i18n:UGDE.EmilyBlessingName}}",
+          "Description": null,
+          "IsDebuff": false,
+          "GlowColor": null,
+          "Duration": -2,
+          "MaxDuration": -1,
+          "IconTexture": "TileSheets\\BuffsIcons",
+          "IconSpriteIndex": 4,
+          "Effects": {
+            "FarmingLevel": 0.0,
+            "FishingLevel": 0.0,
+            "MiningLevel": 0.0,
+            "LuckLevel": 0.1,
+            "ForagingLevel": 0.0,
+            "MaxStamina": 0.0,
+            "MagneticRadius": 0.0,
+            "Speed": 0.0,
+            "Defense": 0.0,
+            "Attack": 0.0
+          },
+          "ActionsOnApply": null,
+          "CustomFields": null
+        }
+      }
+    },
+
+
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",
+      "Entries": {
+
+        "AcceptGift_(O)72": "{{i18n:UGDE.Emily_(O)72}}#$action AddBuff emily_yoba_blessing", //Diamond
+        "AcceptGift_(O)74": "{{i18n:UGDE.Emily_(O)74}}", //Prismatic Shard
+        "AcceptGift_(O)634": "$query PLAYER_HAS_MAIL Current spring_6_2 Received #{{i18n:UGDE.Emily_(O)634_AfterQuest}}|{{i18n:UGDE.Emily_(O)634_Early}}", //Apricot
+
+      }
+    }
+
+]}

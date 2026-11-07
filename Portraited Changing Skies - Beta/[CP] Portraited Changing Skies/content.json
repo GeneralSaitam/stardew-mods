@@ -1,0 +1,388 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		"Recolor": {
+			"AllowValues": "Vanilla, Earthy, Flowery, VPR",
+			"Default": "Vanilla"
+		},
+		"IndoorsOverlay": {
+			"AllowValues": "true, false",
+			"Default": true
+		}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "Sunset",
+			"Value": "1800",
+			"When": {
+				"Season": "Winter"
+			}
+		},
+		{
+			"Name": "Sunset",
+			"Value": "1900",
+			"When": {
+				"Season": "Fall"
+			}
+		},
+		{
+			"Name": "Sunset",
+			"Value": "2000",
+			"When": {
+				"Season": "Spring, Summer"
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Sunny"
+		},
+		{
+			"Name": "Variation",
+			"Value": "Wind",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Wind",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Deluge",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Kana.WeatherWonders_Deluge",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Deluge Night",
+			"When": {
+				"Weather": "Kana.WeatherWonders_Deluge",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Drizzle",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Kana.WeatherWonders_Drizzle",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Drizzle Night",
+			"When": {
+				"Weather": "Kana.WeatherWonders_Drizzle",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "DryLightning",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Kana.WeatherWonders_DryLightning",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "DryLightning Night",
+			"When": {
+				"Weather": "Kana.WeatherWonders_DryLightning",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Storm",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Storm",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Storm Night",
+			"When": {
+				"Weather": "Storm",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Hailstorm",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Kana.WeatherWonders_Hailstorm",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Hailstorm Night",
+			"When": {
+				"Weather": "Kana.WeatherWonders_Hailstorm",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Mist",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Kana.WeatherWonders_Mist",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Mist Night",
+			"When": {
+				"Weather": "Kana.WeatherWonders_Mist",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "MuddyRain",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Kana.WeatherWonders_MuddyRain",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "MuddyRain Night",
+			"When": {
+				"Weather": "Kana.WeatherWonders_MuddyRain",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Blizzard",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Kana.WeatherWonders_Blizzard",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Blizzard Night",
+			"When": {
+				"Weather": "Kana.WeatherWonders_Blizzard",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Rain",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Rain",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Green Rain",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "GreenRain",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Snow",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Snow",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Night",
+			"When": {
+				"Time": "{{Range: {{Sunset}}, 2600}}"
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Rain Night",
+			"When": {
+				"Weather": "Rain",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Green Rain Night",
+			"When": {
+				"Weather": "GreenRain",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Snow Night",
+			"When": {
+				"Weather": "Snow",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "RainSnowMix",
+			"When": {
+				"Time": "{{Range: 0600, {{Sunset}}}}",
+				"Weather": "Kana.WeatherWonders_RainSnowMix",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "RainSnowMix Night",
+			"When": {
+				"Weather": "Kana.WeatherWonders_RainSnowMix",
+				"Time": "{{Range: {{Sunset}}, 2600}}",
+				"LocationName |contains= Desert, SandyHouse": false
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Sewers",
+			"When": {
+				"LocationName": "Sewer"
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Mines",
+			"When": {
+				"LocationName": "Sewer",
+				"HasMod": "LemurKat.CleanerSewer.CP"
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Mines",
+			"When": {
+				"LocationName |contains= Mine, SkullCave, FarmCave, IslandFarmCave, IslandSouthEastCave, BugLand, WitchSwamp, WitchHut, Custom_BoardingHouse_MineEntrance, Custom_BoardingHouse_AbandonedMine1A, Custom_BoardingHouse_AbandonedMine1B, Custom_BoardingHouse_AbandonedMine2A, Custom_BoardingHouse_AbandonedMine2B, Custom_BoardingHouse_AbandonedMine3, Custom_BoardingHouse_AbandonedMine4, Custom_BoardingHouse_AbandonedMine5, Custom_BoardingHouse_TheLostValley, Custom_BoardingHouse_GregoryTent, Custom_BoardingHouse_Ruins, Custom_BoardingHouse_Ruins_House1, Custom_BoardingHouse_Ruins_House2, EastScarp_DeepDark, EastScarp_SeaCave, EastScarp_SmugglerDen, SpriteSpringCave, Custom_CrimsonBadlands, Custom_IridiumQuarry, Custom_CastleVillageOutpost, Custom_TreasureCave, Custom_DesertRailway, Custom_Highlands, Custom_HighlandsCavernPrison, Custom_HighlandsCavernPrisonEvent, Custom_VoidDen, Custom_Ridgeside_AguarCave, Custom_Ridgeside_AguarCaveTemporary, Custom_WitchSwamp_event, Custom_WitchSwamp_event2, Custom_Aimon_SewerSecret": true
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Mines",
+			"When": {
+				"Query: '{{LocationName}}' LIKE 'UndergroundMine%'": true
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Mines",
+			"When": {
+				"Query: '{{LocationName}}' LIKE 'VolcanoDungeon%'": true
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Joja",
+			"When": {
+				"LocationName": "JojaMart"
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Pierre",
+			"When": {
+				"LocationName": "SeedShop"
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Blacksmith",
+			"When": {
+				"LocationName": "Blacksmith"
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Saloon",
+			"When": {
+				"LocationName": "Saloon"
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Museum",
+			"When": {
+				"LocationName": "ArchaeologyHouse"
+			}
+		},
+		{
+			"Name": "Variation",
+			"Value": "Wizard",
+			"When": {
+				"LocationName": "WizardHouse"
+			}
+		},	
+		{
+			"Name": "No Indoors Overlay",
+			"Value": "Sewer, WizardHouse, JojaMart, ArchaeologyHouse, Saloon, Blacksmith, SeedShop, Mine, SkullCave, Caldera, FarmCave, IslandFarmCave, IslandSouthEastCave, BugLand, WitchSwamp, Custom_BoardingHouse_MineEntrance, Custom_BoardingHouse_AbandonedMine1A, Custom_BoardingHouse_AbandonedMine1B, Custom_BoardingHouse_AbandonedMine2A, Custom_BoardingHouse_AbandonedMine2B, Custom_BoardingHouse_AbandonedMine3, Custom_BoardingHouse_AbandonedMine4, Custom_BoardingHouse_AbandonedMine5, Custom_BoardingHouse_TheLostValley, Custom_BoardingHouse_GregoryTent, Custom_BoardingHouse_Ruins, Custom_BoardingHouse_Ruins_House1, Custom_BoardingHouse_Ruins_House2, EastScarp_DeepDark, EastScarp_SeaCave, EastScarp_SmugglerDen, Custom_EnchantedGrove, SpriteSpringCave, Custom_CrimsonBadlands, Custom_IridiumQuarry, Custom_CastleVillageOutpost, Custom_TreasureCave, Custom_DesertRailway, Custom_Highlands, Custom_HighlandsCavernPrison, Custom_HighlandsCavernPrisonEvent, Custom_VoidDen, Custom_Ridgeside_AguarCave, Custom_Ridgeside_AguarCaveTemporary, Custom_WitchSwamp_event, Custom_WitchSwamp_event2, Custom_Aimon_SewerSecret"
+		}
+	],
+	"Changes": [
+		{
+			"LogName": "Portraited Changing Skies - Vanilla",
+			"Action": "Include",
+			"FromFile": "Data/Vanilla.json",
+			"When": {
+				"Recolor": "Vanilla"
+			}
+		},
+		{
+			"LogName": "Portraited Changing Skies - Earthy",
+			"Action": "Include",
+			"FromFile": "Data/Earthy.json",
+			"When": {
+				"Recolor": "Earthy"
+			}
+		},
+		{
+			"LogName": "Portraited Changing Skies - Flowery",
+			"Action": "Include",
+			"FromFile": "Data/Flowery.json",
+			"When": {
+				"Recolor": "Flowery"
+			}
+		},
+		{
+			"LogName": "Portraited Changing Skies - VPR",
+			"Action": "Include",
+			"FromFile": "Data/VPR.json",
+			"When": {
+				"Recolor": "VPR"
+			}
+		}
+	]
+}

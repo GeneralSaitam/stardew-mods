@@ -1,0 +1,128 @@
+{
+  "Changes": [
+    {
+      "LogName": "Legendary Fish No Level Crimsonfish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Beach",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)159": {
+          "MinFishingLevel": 0
+        },
+        "(O)898": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "Legendary Fish No Level Crimsonfish Night Market",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "BeachNightMarket",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)898": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "Legendary Fish No Level Angler",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Town",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)160": {
+          "MinFishingLevel": 0
+        },
+        "(O)899": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "Legendary Fish No Level Legend",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Mountain",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)163": {
+          "MinFishingLevel": 0
+        },
+        "(O)900": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "Legendary Fish No Level Glacierfish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Forest",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)775": {
+          "MinFishingLevel": 0
+        },
+        "(O)902": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "Legendary Fish No Level Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)159": {
+          "MinFishingLevel": 0
+        },
+        "(O)160": {
+          "MinFishingLevel": 0
+        },
+        "(O)163": {
+          "MinFishingLevel": 0
+        },
+        "(O)775": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true,
+        "Legendary Fish On Farm": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+	"Format": "2.0.0",
+	"Changes": [
+	//farm
+		{
+			"Action": "Load",
+			"Target": "Maps/Farm_Island",
+			"FromFile": "assets/Farm_Island.tmx"
+		},
+	//minecarts
+		{
+			"Action": "EditData",
+			"Target": "Data/Minecarts",
+			"TargetField": ["Default", "Destinations"],
+			"Entries": {
+				"{{ModId}}.FarmDock": {
+					"Id": "{{ModId}}.FarmDock",
+					"DisplayName": "Farm Dock",
+					"TargetLocation": "Farm",
+					"TargetTile": { "X": 53, "Y": 87 },
+					"TargetDirection": "down"
+				}
+			},
+			"When": {
+				"FarmType": "Beach"
+			}
+		}
+	]
+}

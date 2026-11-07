@@ -1,0 +1,301 @@
+{
+	"Format": "2.7.0",
+	"ConfigSchema": {
+		"IncludeInLaw": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Toggles whether family members will be described as '[relation]-in-law' or simply '[relation]'."
+		},
+		"EnabledVanillaNPCs": {
+			"AllowValues": "Abigail, Alex, Emily, Haley, Maru, Penny, Sam, Sebastian, Shane",
+			"AllowMultiple": true,
+			"Default": "Abigail, Alex, Emily, Haley, Maru, Penny, Sam, Sebastian, Shane",
+			"Description": "Choose which characters will have in-law tags enabled by the mod. Only romanceable characters with friendable family members can be enabled.",
+			"Section": "VanillaNPCs"
+		},
+		"EnabledRSVNPCs": {
+			"AllowValues": "Alissa, Anton, Blair, Corine, Kiarra, Shiro, Ysabelle, Zayne",
+			"AllowMultiple": true,
+			"Default": "Alissa, Anton, Blair, Corine, Kiarra, Shiro, Ysabelle, Zayne",
+			"Description": "Choose which characters will have in-law tags enabled by the mod. Only romanceable characters with friendable family members can be enabled.",
+			"Section": "RSVNPCs"
+		},
+		"EnabledSBVNPCs": {
+			"AllowValues": "Elias",
+			"AllowMultiple": true,
+			"Default": "Elias",
+			"Description": "Choose which characters will have in-law tags enabled by the mod. Only romanceable characters with friendable family members can be enabled.",
+			"Section": "SBVNPCs"
+		},
+		"EnabledVMVNPCs": {
+			"AllowValues": "Aster",
+			"AllowMultiple": true,
+			"Default": "Aster",
+			"Description": "Choose which characters will have in-law tags enabled by the mod. Only romanceable characters with friendable family members can be enabled.",
+			"Section": "VMVNPCs"
+		}
+	},
+	"Changes": [
+		// VANILLA CHANGES
+		{
+			"LogName": "Abigail In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Pierre": "{{i18n: Father.{{IncludeInLaw}}}}",
+				"Caroline": "{{i18n: Mother.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"EnabledVanillaNPCs |contains= Abigail": true,
+				"Query: '{{Relationship:Abigail |contains= Married}}' = 'true' OR '{{Roommate |contains= Abigail}}' = 'true'": true
+			}
+		},
+		{
+			"LogName": "Alex In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"George": "{{i18n: Grandfather.{{IncludeInLaw}}}}",
+				"Evelyn": "{{i18n: Grandmother.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"EnabledVanillaNPCs |contains= Alex": true,
+				"Query: '{{Relationship:Alex |contains= Married}}' = 'true' OR '{{Roommate |contains= Alex}}' = 'true'": true
+			}
+		},
+		{
+			"LogName": "Emily In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Haley": "{{i18n: YoungerSister.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"EnabledVanillaNPCs |contains= Emily": true,
+				"Query: '{{Relationship:Emily |contains= Married}}' = 'true' OR '{{Roommate |contains= Emily}}' = 'true'": true
+			}
+		},
+		{
+			"LogName": "Haley In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Emily": "{{i18n: OlderSister.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"EnabledVanillaNPCs |contains= Haley": true,
+				"Query: '{{Relationship:Haley |contains= Married}}' = 'true' OR '{{Roommate |contains= Haley}}' = 'true'": true
+			}
+		},
+		{
+			"LogName": "Maru In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Demetrius": "{{i18n: Father.{{IncludeInLaw}}}}",
+				"Robin": "{{i18n: Mother.{{IncludeInLaw}}}}",
+				"Sebastian": "{{i18n: OlderBrother.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"EnabledVanillaNPCs |contains= Maru": true,
+				"Query: '{{Relationship:Maru |contains= Married}}' = 'true' OR '{{Roommate |contains= Maru}}' = 'true'": true
+			}
+		},
+		{
+			"LogName": "Penny In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Pam": "{{i18n: Mother.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"EnabledVanillaNPCs |contains= Penny": true,
+				"Query: '{{Relationship:Penny |contains= Married}}' = 'true' OR '{{Roommate |contains= Penny}}' = 'true'": true
+			}
+		},
+		{
+			"LogName": "Sam In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Kent": "{{i18n: Father.{{IncludeInLaw}}}}",
+				"Jodi": "{{i18n: Mother.{{IncludeInLaw}}}}",
+				"Vincent": "{{i18n: YoungerBrother.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"EnabledVanillaNPCs |contains= Sam": true,
+				"Query: '{{Relationship:Sam |contains= Married}}' = 'true' OR '{{Roommate |contains= Sam}}' = 'true'": true
+			}
+		},
+		{
+			"LogName": "Sebastian In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Demetrius": "{{i18n: Stepfather.{{IncludeInLaw}}}}",
+				"Robin": "{{i18n: Mother.{{IncludeInLaw}}}}",
+				"Maru": "{{i18n: YoungerSister.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"EnabledVanillaNPCs |contains= Sebastian": true,
+				"Query: '{{Relationship:Sebastian |contains= Married}}' = 'true' OR '{{Roommate |contains= Sebastian}}' = 'true'": true
+			}
+		},
+		{
+			"LogName": "Shane In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Marnie": "{{i18n: Aunt.{{IncludeInLaw}}}}",
+				"Jas": "{{i18n: Niece.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"EnabledVanillaNPCs |contains= Shane": true,
+				"Query: '{{Relationship:Shane |contains= Married}}' = 'true' OR '{{Roommate |contains= Shane}}' = 'true'": true
+			}
+		},
+		// VMV CHANGES
+		{
+			"LogName": "Aster In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"MaddyPellegrinVMV": "{{i18n: OlderSister.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"HasMod |contains= Lumisteria.MtVapius": true,
+				"EnabledVMVNPCs |contains= AsterPellegrinVMV": true,
+				"Relationship:AsterPellegrinVMV |contains= Married": true
+			}
+		},
+		// SBV CHANGES
+		{
+			"LogName": "Elias In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"BlakeSBV": "{{i18n: StepSon.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"HasMod |contains= skellady.SBVCP": true,
+				"EnabledSBVNPCs |contains= EliasSBV": true,
+				"Relationship:EliasSBV |contains= Married": true
+			}
+		},
+		// RSV CHANGES
+		{
+			"LogName": "Alissa In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Kimpoi": "{{i18n: Father.{{IncludeInLaw}}}}",
+				"Malaya": "{{i18n: Mother.{{IncludeInLaw}}}}",
+				"Olga": "{{i18n: Aunt.{{IncludeInLaw}}}}",
+				"Bert": "{{i18n: Uncle.{{IncludeInLaw}}}}",
+				"Trinnie": "{{i18n: Cousin.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"HasMod |contains= Rafseazz.RSVCP": true,
+				"EnabledRSVNPCs |contains= Alissa": true,
+				"Query: '{{Relationship:Alissa |contains= Married}}' = 'true' OR '{{Roommate |contains= Alissa}}' = 'true'": true
+			}
+		},
+		{
+			"LogName": "Anton In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Kiarra": "{{i18n: YoungerSister.{{IncludeInLaw}}}}",
+				"Lorenzo": "{{i18n: OlderBrother.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"HasMod |contains= Rafseazz.RSVCP": true,
+				"EnabledRSVNPCs |contains= Anton": true,
+				"Relationship:Anton |contains= Married": true
+			}
+		},
+		{
+			"LogName": "Blair In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Carmen": "{{i18n: Mother.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"HasMod |contains= Rafseazz.RSVCP": true,
+				"EnabledRSVNPCs |contains= Blair": true,
+				"Relationship:Blair |contains= Married": true
+			}
+		},
+		{
+			"LogName": "Corine In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Ezekiel": "{{i18n: Father.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"HasMod |contains= Rafseazz.RSVCP": true,
+				"EnabledRSVNPCs |contains= Corine": true,
+				"Query: '{{Relationship:Corine |contains= Married}}' = 'true' OR '{{Roommate |contains= Corine}}' = 'true'": true
+			}
+		},
+		{
+			"LogName": "Kiarra In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Anton": "{{i18n: OlderBrother.{{IncludeInLaw}}}}",
+				"Lorenzo": "{{i18n: OlderBrother.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"HasMod |contains= Rafseazz.RSVCP": true,
+				"EnabledRSVNPCs |contains= Kiarra": true,
+				"Relationship:Kiarra |contains= Married": true
+			}
+		},
+		{
+			"LogName": "Ysabelle In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Richard": "{{i18n: Grandfather.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"HasMod |contains= Rafseazz.RSVCP": true,
+				"EnabledRSVNPCs |contains= Ysabelle": true,
+				"Relationship:Ysabelle |contains= Married": true
+			}
+		},
+		{
+			"LogName": "Shiro In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Yuuma": "{{i18n: YoungerBrother.{{IncludeInLaw}}}}",
+				"Naomi": "{{i18n: Mother.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"HasMod |contains= Rafseazz.RSVCP": true,
+				"EnabledRSVNPCs |contains= Shiro": true,
+				"Relationship:Shiro |contains= Married": true
+			}
+		},
+		{
+			"LogName": "Zayne In-Law Tags",
+			"Action": "EditData",
+			"Target": "mushymato.NPCRelationshipTags/DefaultTags",
+			"Entries": {
+				"Maive": "{{i18n: Grandmother.{{IncludeInLaw}}}}",
+				"Louie": "{{i18n: YoungerBrother.{{IncludeInLaw}}}}",
+				"Ariah": "{{i18n: Cousin.{{IncludeInLaw}}}}"
+			},
+			"When": {
+				"HasMod |contains= Rafseazz.RSVCP": true,
+				"EnabledRSVNPCs |contains= Zayne": true,
+				"Relationship:Zayne |contains= Married": true,
+				"HasSeenEvent |contains= 75160338": true
+			}
+		}
+	]
+}

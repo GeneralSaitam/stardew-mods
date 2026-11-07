@@ -1,0 +1,121 @@
+{
+	"Format": "2.8.0",
+    "Changes": [
+	//Wedding portrait
+    {
+            "Action": "EditImage",
+            "Target": "Maps/z_RSVspousePic",
+            "FromFile": "Assets/Wedding Reception/Philip.png",
+            "When": {
+				"Relationship:Philip": "Married"
+			},
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+	
+//Bearded portrait
+    {
+        "Action": "EditImage",
+        "Target": "Portraits/Philip",
+        "Priority": "Late",
+        "FromFile": "assets/Philipbeard.png",
+                "PatchMode": "Overlay",
+    },
+    
+    {
+        "Action": "EditImage",
+        "Target": "Portraits/Philip_Beach",
+        "Priority": "Late",
+        "FromFile": "assets/Philipbeard.png",
+                "PatchMode": "Overlay",
+    },
+    {
+        "Action": "EditImage",
+        "Target": "Portraits/Philip_spring",
+        "When":{
+        "HasMod": "Rafseazz.RSVSeasonalOutfits",
+        },
+        "Priority": "Late",
+        "FromFile": "assets/Philipbeard.png",
+                "PatchMode": "Overlay",
+    },
+    {
+        "Action": "EditImage",
+        "Target": "Portraits/Philip_spring24",
+        "When":{
+        "HasMod": "Rafseazz.RSVSeasonalOutfits",
+        },
+        "Priority": "Late",
+        "FromFile": "assets/Philipbeard.png",
+                "PatchMode": "Overlay",
+    },
+    {
+        "Action": "EditImage",
+        "Target": "Portraits/Philip_fall",
+        "When":{
+        "HasMod": "Rafseazz.RSVSeasonalOutfits",
+        },
+        "Priority": "Late",
+        "FromFile": "assets/Philipbeard.png",
+                "PatchMode": "Overlay",
+    },
+    {
+        "Action": "EditImage",
+        "Target": "Portraits/Philip_fall27-1",
+        "When":{
+        "HasMod": "Rafseazz.RSVSeasonalOutfits",
+        },
+        "Priority": "Late",
+        "FromFile": "assets/Philipbeard.png",
+                "PatchMode": "Overlay",
+    },
+    {
+        "Action": "EditImage",
+        "Target": "Portraits/Philip_fall27-2",
+        "When":{
+        "HasMod": "Rafseazz.RSVSeasonalOutfits",
+        },
+        "Priority": "Late",
+        "FromFile": "assets/Philipbeard.png",
+                "PatchMode": "Overlay",
+    },
+    {
+        "Action": "EditImage",
+        "Target": "Portraits/Philip_summer",
+        "When":{
+        "HasMod": "Rafseazz.RSVSeasonalOutfits",
+        },
+        "Priority": "Late",
+        "FromFile": "assets/Philipbeard.png",
+                "PatchMode": "Overlay",
+    },
+    {
+        "Action": "EditImage",
+        "Target": "Portraits/Philip_winter",
+        "When":{
+        "HasMod": "Rafseazz.RSVSeasonalOutfits",
+        },
+        "Priority": "Late",
+        "FromFile": "assets/Philipbeard.png",
+                "PatchMode": "Overlay",
+    },
+    {
+        "Action": "EditImage",
+        "Target": "Portraits/Philip_rain",
+        "When":{
+        "HasMod": "Rafseazz.RSVSeasonalOutfits",
+        },
+        "Priority": "Late",
+        "FromFile": "assets/Philipbeard.png",
+                "PatchMode": "Overlay",
+    },{
+        "Action": "EditImage",
+        "Target": "Portraits/Philip_work",
+        "When":{
+        "HasMod": "Rafseazz.RSVSeasonalOutfits",
+        },
+        "Priority": "Late",
+        "FromFile": "assets/Philipbeard.png",
+                "PatchMode": "Overlay",
+    },
+    ]
+}

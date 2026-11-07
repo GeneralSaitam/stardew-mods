@@ -1,0 +1,2717 @@
+{
+	"Changes":[
+		//Gifts! This entire thing should have a config and no solstice requirement, so there shouldn't need to be any when conditions, just GSQ
+		{
+			"LogName": "Abigail Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Abigail", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Amethyst": {
+					"Id": "AgentLyoko.UWS.Amethyst",
+					"ItemId": "(O)66",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BatWing": {
+					"Id": "AgentLyoko.UWS.BatWing",
+					"ItemId": "(O)767",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MagicRockCandy": {
+					"Id": "AgentLyoko.UWS.MagicRockCandy", //Gated by hearts, only one!!!
+					"ItemId": "(O)279",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Abigail 9 14"
+				},
+
+				"AgentLyoko.UWS.Blackberry Cobbler": {
+					"Id": "AgentLyoko.UWS.BlackberryCobbler",
+					"ItemId": "(O)611",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.SpicyEel": {
+					"Id": "AgentLyoko.UWS.SpicyEel",
+					"ItemId": "(O)226",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.LifeElixir": {
+					"Id": "AgentLyoko.UWS.LifeElixir",
+					"ItemId": "(O)773",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DragonTooth": {
+					"Id": "AgentLyoko.UWS.DragonTooth", //Gated by Island and Hearts
+					"ItemId": "(O)852",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HAS_MAIL Any Visited_Island",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Leah Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Leah", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.WildHorseradish": {
+					"Id": "AgentLyoko.UWS.WildHorseradish",
+					"ItemId": "(O)16",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Salad": {
+					"Id": "AgentLyoko.UWS.Salad",
+					"ItemId": "(O)196",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.LuckyLunch": {
+					"Id": "AgentLyoko.UWS.LuckyLunch",
+					"ItemId": "(O)204",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RedPlate": {
+					"Id": "AgentLyoko.UWS.RedPlate",
+					"ItemId": "(O)230",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Hardwood": {
+					"Id": "AgentLyoko.UWS.Hardwood",
+					"ItemId": "(O)709",
+					"MinStack": 25,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Wine": {
+					"Id": "AgentLyoko.UWS.Wine",
+					"ItemId": "(O)348",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HardwoodFence": {
+					"Id": "AgentLyoko.UWS.HardwoodFence",
+					"ItemId": "(O)298",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.ShortBookcase": {
+					"Id": "AgentLyoko.UWS.ShortBookcase",
+					"ItemId": "(O)ShortBookcase",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GoatCheese": {
+					"Id": "AgentLyoko.UWS.GoatCheese", //Make Iridium and gate it behind Leah high hearts
+					"ItemId": "(O)426",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": "PLAYER_HEARTS Current Leah 9 14"
+				},
+			},
+		},
+		
+		{
+			"LogName": "Penny Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Penny", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.Cloth": {
+					"Id": "AgentLyoko.UWS.Cloth",
+					"ItemId": "(O)428",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FairySeeds": {
+					"Id": "AgentLyoko.UWS.FairySeeds",
+					"ItemId": "(O)425",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.TurtleneckSweater": {
+					"Id": "AgentLyoko.UWS.TurtleneckSweater",
+					"ItemId": "(S)1178",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PumpkinSoup": {
+					"Id": "AgentLyoko.UWS.PumpkinSoup",
+					"ItemId": "(O)236",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Cardigan": {
+					"Id": "AgentLyoko.UWS.Cardigan",
+					"ItemId": "(S)1218",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GardenPot": {
+					"Id": "AgentLyoko.UWS.GardenPot",
+					"ItemId": "(BC)62",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.StrawberryDecal": {
+					"Id": "AgentLyoko.UWS.StrawberryDecal",
+					"ItemId": "(F)1907",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.NightSkyDecal": {
+					"Id": "AgentLyoko.UWS.NightSkyDecal",
+					"ItemId": "(F)1914",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.NightSkyDecal2": {
+					"Id": "AgentLyoko.UWS.NightSkyDecal2",
+					"ItemId": "(F)1915",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.NightSkyDecal3": {
+					"Id": "AgentLyoko.UWS.NightSkyDecal3",
+					"ItemId": "(F)1916",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.PirateFlag": {
+					"Id": "AgentLyoko.UWS.PirateFlag",
+					"ItemId": "(F)1900",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.ProtectionRing": {
+					"Id": "AgentLyoko.UWS.ProtectionRing", //Penny High Hearts
+					"ItemId": "(O)861",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Penny 9 14"
+				},
+			},
+		},
+		
+		{
+			"LogName": "Maru Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Maru", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BatteryPack": {
+					"Id": "AgentLyoko.UWS.BatteryPack",
+					"ItemId": "(O)787",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.StarShards": {
+					"Id": "AgentLyoko.UWS.StarShards",
+					"ItemId": "(O)578",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PressureNozzle": {
+					"Id": "AgentLyoko.UWS.PressureNozzle",
+					"ItemId": "(O)915",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Enricher": {
+					"Id": "AgentLyoko.UWS.Enricher",
+					"ItemId": "(O)913",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.IridiumSprinkler": {
+					"Id": "AgentLyoko.UWS.IridiumSprinkler",
+					"ItemId": "(O)645",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PrismaticShard": {
+					"Id": "AgentLyoko.UWS.PrismaticShard", //Maru High Hearts
+					"ItemId": "(O)74",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Maru 9 14"
+				},
+			},
+		},
+		
+		{
+			"LogName": "Haley Winter Star Gift Data, Low Hearts",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Haley", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.Dress": {
+					"Id": "AgentLyoko.UWS.Dress",
+					"ItemId": "(P)2",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_GENDER Current Female",
+				},
+
+				"AgentLyoko.UWS.Skirt": {
+					"Id": "AgentLyoko.UWS.Skirt",
+					"ItemId": "(P)3",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_GENDER Current Female",
+				},
+
+				"AgentLyoko.UWS.PleatedSkirt": {
+					"Id": "AgentLyoko.UWS.PleatedSkirt",
+					"ItemId": "(P)4",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_GENDER Current Female",
+				},
+
+				"AgentLyoko.UWS.SimpleDress": {
+					"Id": "AgentLyoko.UWS.SimpleDress",
+					"ItemId": "(P)11",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_GENDER Current Female",
+				},
+
+				"AgentLyoko.UWS.DarkJacket": {
+					"Id": "AgentLyoko.UWS.DarkJacket",
+					"ItemId": "(S)1211",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_GENDER Current Male",
+				},
+
+				"AgentLyoko.UWS.DarkBandanaShirt": {
+					"Id": "AgentLyoko.UWS.DarkBandanaShirt",
+					"ItemId": "(S)1262",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_GENDER Current Male",
+				},
+
+				"AgentLyoko.UWS.CrystalShoes": {
+					"Id": "AgentLyoko.UWS.CrystalShoes",
+					"ItemId": "(B)878",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "RANDOM 0.2"
+				},
+			},
+			"When": {
+				"Hearts:Haley": "0, 1, 2, 3, 4, 5",
+			},
+		},
+		
+		{
+			"LogName": "Haley Winter Star Gift Data, High Hearts",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Haley", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FarmersLunch": {
+					"Id": "AgentLyoko.UWS.FarmersLunch",
+					"ItemId": "(O)240",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.CrystalShoes": {
+					"Id": "AgentLyoko.UWS.CrystalShoes",
+					"ItemId": "(B)878",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DeluxeFertilizer": {
+					"Id": "AgentLyoko.UWS.DeluxeFertilizer",
+					"ItemId": "(O)919",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DeluxeSpeed-Gro": {
+					"Id": "AgentLyoko.UWS.DeluxeSpeed-Gro",
+					"ItemId": "(O)466",
+					"MinStack": 20,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RareSeed": {
+					"Id": "AgentLyoko.UWS.RareSeed",
+					"ItemId": "(O)347",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.StarfruitSeeds": {
+					"Id": "AgentLyoko.UWS.StarfruitSeeds",
+					"ItemId": "(O)486",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Pearl": {
+					"Id": "AgentLyoko.UWS.Pearl",
+					"ItemId": "(O)797",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DeluxeRarecrow": {
+					"Id": "AgentLyoko.UWS.DeluxeRarecrow", //Haley Highest hearts
+					"ItemId": "(BC)167",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Haley 10 14",
+				},
+			},
+			"When": {
+				"Hearts:Haley |contains=0,1,2,3,4,5": "false",
+			},
+		},
+		
+		{
+			"LogName": "Emily Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Emily", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HappyShirt": {
+					"Id": "AgentLyoko.UWS.HappyShirt",
+					"ItemId": "(S)1190",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RetroRainbowShirt": {
+					"Id": "AgentLyoko.UWS.RetroRainbowShirt",
+					"ItemId": "(S)1039",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.TieDyeShirt": {
+					"Id": "AgentLyoko.UWS.TieDyeShirt",
+					"ItemId": "(S)1143",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HeartShirt": {
+					"Id": "AgentLyoko.UWS.HeartShirt",
+					"ItemId": "(S)1210",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Loom": {
+					"Id": "AgentLyoko.UWS.Loom",
+					"ItemId": "(BC)17",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.SewingMachine": {
+					"Id": "AgentLyoko.UWS.SewingMachine",
+					"ItemId": "(BC)247",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.SunsetShirt": {
+					"Id": "AgentLyoko.UWS.SunsetShirt",
+					"ItemId": "(S)1212",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+
+				//Prismatic Clothing is High Hearts Only
+				"AgentLyoko.UWS.PrismaticShirt": {
+					"Id": "AgentLyoko.UWS.PrismaticShirt",
+					"ItemId": "(S)1223",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Emily 10 14",
+				},
+
+				"AgentLyoko.UWS.PrismaticDarkSleeveShirt": {
+					"Id": "AgentLyoko.UWS.PrismaticDarkSleeveShirt", //Dark Sleeve Variant
+					"ItemId": "(S)1998",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Emily 10 14",
+				},
+
+				"AgentLyoko.UWS.PrismaticLightSleeveShirt": {
+					"Id": "AgentLyoko.UWS.PrismaticLightSleeveShirt", //Light Sleeve Variant
+					"ItemId": "(S)1999",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Emily 10 14",
+				},
+
+				"AgentLyoko.UWS.PrismaticPants": {
+					"Id": "AgentLyoko.UWS.PrismaticPants",
+					"ItemId": "(P)998",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Emily 10 14",
+				},
+
+				"AgentLyoko.UWS.PrismaticGeniePants": {
+					"Id": "AgentLyoko.UWS.PrismaticGeniePants",
+					"ItemId": "(P)999",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Emily 10 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Sebastian Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Sebastian", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FarmComputer": {
+					"Id": "AgentLyoko.UWS.FarmComputer", //High Hearts Gift
+					"ItemId": "(BC)239",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Sebastian 10 14",
+				},
+
+				"AgentLyoko.UWS.FrozenTear": {
+					"Id": "AgentLyoko.UWS.FrozenTear",
+					"ItemId": "(O)84",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PurpleMushroom": {
+					"Id": "AgentLyoko.UWS.PurpleMushroom",
+					"ItemId": "(O)422",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DeluxeSpeed-Gro": {
+					"Id": "AgentLyoko.UWS.DeluxeSpeed-Gro",
+					"ItemId": "(O)466",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FrozenGeode": {
+					"Id": "AgentLyoko.UWS.FrozenGeode",
+					"ItemId": "(O)536",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BlackLeatherJacket": {
+					"Id": "AgentLyoko.UWS.BlackLeatherJacket",
+					"ItemId": "(S)1138",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.VoidEgg": {
+					"Id": "AgentLyoko.UWS.VoidEgg",
+					"ItemId": "(O)305",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+			},
+		},
+		
+		{
+			"LogName": "Sam Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Sam", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Pizza": {
+					"Id": "AgentLyoko.UWS.Pizza",
+					"ItemId": "(O)206",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Pancakes": {
+					"Id": "AgentLyoko.UWS.Pancakes",
+					"ItemId": "(O)211",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.QualityFertilizer": {
+					"Id": "AgentLyoko.UWS.QualityFertilizer",
+					"ItemId": "(O)369",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HyperSpeed-Gro": {
+					"Id": "AgentLyoko.UWS.HyperSpeed-Gro",
+					"ItemId": "(O)918",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BurglarRing": {
+					"Id": "AgentLyoko.UWS.BurglarRing", //High Hearts Sam
+					"ItemId": "(O)526",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Sam 10 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Alex Winter Star Gift Data", //Might want to take a look-see over this to see if I can add more gifts that would require doing odd jobs for.
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Alex", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.CompleteBreakfast": {
+					"Id": "AgentLyoko.UWS.CompleteBreakfast",
+					"ItemId": "(O)201",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.SalmonDinner": {
+					"Id": "AgentLyoko.UWS.SalmonDinner",
+					"ItemId": "(O)212",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Emerald": {
+					"Id": "AgentLyoko.UWS.Emerald",
+					"ItemId": "(O)60",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MuscleRemedy": {
+					"Id": "AgentLyoko.UWS.MuscleRemedy",
+					"ItemId": "(O)351",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.LavaKatana": {
+					"Id": "AgentLyoko.UWS.LavaKatana",
+					"ItemId": "(W)9",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MagicHairDye": {
+					"Id": "AgentLyoko.UWS.MagicHairDye", //Ultimate Gift
+					"ItemId": "(TR)MagicHairDye",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Alex 10 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Harvey Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Harvey", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MuscleRemedy": {
+					"Id": "AgentLyoko.UWS.MuscleRemedy",
+					"ItemId": "(O)351",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.EnergyTonic": {
+					"Id": "AgentLyoko.UWS.EnergyTonic",
+					"ItemId": "(O)349",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.TripleShotEspresso": {
+					"Id": "AgentLyoko.UWS.TripleShotEspresso",
+					"ItemId": "(O)253",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Coffee": {
+					"Id": "AgentLyoko.UWS.Coffee",
+					"ItemId": "(O)395",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Wine": {
+					"Id": "AgentLyoko.UWS.Wine",
+					"ItemId": "(O)348",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HotJavaRing": {
+					"Id": "AgentLyoko.UWS.HotJavaRing",
+					"ItemId": "(O)860",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.CoffeeMaker": {
+					"Id": "AgentLyoko.UWS.CoffeeMaker", //Harvey high hearts
+					"ItemId": "(BC)246",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Harvey 10 14",
+				},
+			},
+		},
+
+		{
+			"LogName": "Elliott Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Elliott", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DuckFeather": {
+					"Id": "AgentLyoko.UWS.DuckFeather",
+					"ItemId": "(O)444",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Pomegranate": {
+					"Id": "AgentLyoko.UWS.Pomegranate",
+					"ItemId": "(O)637",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Wine": {
+					"Id": "AgentLyoko.UWS.Wine",
+					"ItemId": "(O)348",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Pearl": {
+					"Id": "AgentLyoko.UWS.Pearl",
+					"ItemId": "(O)797",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.CrabshellRing": {
+					"Id": "AgentLyoko.UWS.CrabshellRing", //High Hearts Elliott
+					"ItemId": "(O)810",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Elliott 10 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Shane Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Shane", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.Wine": {
+					"Id": "AgentLyoko.UWS.Wine", //Only when below 6 hearts
+					"ItemId": "(O)348",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 0 5",
+				},
+				
+				"AgentLyoko.UWS.ChickenDecal": {
+					"Id": "AgentLyoko.UWS.ChickenDecal",
+					"ItemId": "ChickenDecal",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Beer": {
+					"Id": "AgentLyoko.UWS.Beer", //Only when below 6 hearts
+					"ItemId": "(O)346",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 0 5",
+				},
+
+				"AgentLyoko.UWS.LargeBrownEgg": {
+					"Id": "AgentLyoko.UWS.LargeBrownEgg",
+					"ItemId": "(O)182",
+					"MinStack": 12,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 6 14",
+				},
+
+				"AgentLyoko.UWS.BrownEgg": {
+					"Id": "AgentLyoko.UWS.BrownEgg",
+					"ItemId": "(O)180",
+					"MinStack": 12,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 6 14",
+				},
+
+				"AgentLyoko.UWS.LargeWhiteEgg": {
+					"Id": "AgentLyoko.UWS.LargeWhiteEgg",
+					"ItemId": "(O)174",
+					"MinStack": 12,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 6 14",
+				},
+
+				"AgentLyoko.UWS.WhiteEgg": {
+					"Id": "AgentLyoko.UWS.WhiteEgg",
+					"ItemId": "(O)176",
+					"MinStack": 12,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 6 14",
+				},
+
+				"AgentLyoko.UWS.Hay": {
+					"Id": "AgentLyoko.UWS.Hay",
+					"ItemId": "(O)178",
+					"MinStack": 50,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 6 14",
+				},
+
+				"AgentLyoko.UWS.Pizza": {
+					"Id": "AgentLyoko.UWS.Pizza",
+					"ItemId": "(O)206",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": "PLAYER_HEARTS Current Shane 6 14",
+				},
+
+				"AgentLyoko.UWS.Sneakers": {
+					"Id": "AgentLyoko.UWS.Sneakers",
+					"ItemId": "(B)504",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 6 14",
+				},
+
+				"AgentLyoko.UWS.JojaWallpaper": {
+					"Id": "AgentLyoko.UWS.JojaWallpaper",
+					"ItemId": "(WP)21",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 0 5",
+				},
+
+				"AgentLyoko.UWS.JojaLights": {
+					"Id": "AgentLyoko.UWS.JojaLights",
+					"ItemId": "(F)1609",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 0 5",
+				},
+
+				"AgentLyoko.UWS.JojaCola": {
+					"Id": "AgentLyoko.UWS.JojaCola", //Must be above 6 hearts - sorry whoever gets this, my hands are immersively tied
+					"ItemId": "(O)167",
+					"MinStack": 12,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 6 14",
+				},
+
+				"AgentLyoko.UWS.Auto-Petter": {
+					"Id": "AgentLyoko.UWS.Auto-Petter", //High Shane Hearts
+					"ItemId": "(BC)272",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Shane 10 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Caroline Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Caroline", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GreenTea": {
+					"Id": "AgentLyoko.UWS.GreenTea",
+					"ItemId": "(O)614",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.ExoticPalace": {
+					"Id": "AgentLyoko.UWS.ExoticPalace",
+					"ItemId": "ExoticPalace",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BlackberryCobbler": {
+					"Id": "AgentLyoko.UWS.BlackberryCobbler",
+					"ItemId": "(O)611",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PumpkinPie": {
+					"Id": "AgentLyoko.UWS.PumpkinPie",
+					"ItemId": "(O)608",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Emerald": {
+					"Id": "AgentLyoko.UWS.Emerald",
+					"ItemId": "(O)60",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PinkCake": {
+					"Id": "AgentLyoko.UWS.Pink Cake",
+					"ItemId": "(O)221",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.StardropTea": {
+					"Id": "AgentLyoko.UWS.StardropTea",
+					"ItemId": "(O)StardropTea",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Caroline 9 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Clint Winter Star Gift Data", //Likely dummied out, Clint has his own
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Clint", "WinterStarGifts" ],
+			"Entries": {					  
+				"AgentLyoko.UWS.CopperBar": {
+					"Id": "AgentLyoko.UWS.CopperBar",
+					"ItemId": "(O)334",
+					"MinStack": 20,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.IronBar": {
+					"Id": "AgentLyoko.UWS.IronBar",
+					"ItemId": "(O)335",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GoldBar": {
+					"Id": "AgentLyoko.UWS.GoldBar",
+					"ItemId": "(O)336",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.IridiumBar": {
+					"Id": "AgentLyoko.UWS.IridiumBar",
+					"ItemId": "(O)337",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Coal": {
+					"Id": "AgentLyoko.UWS.Coal",
+					"ItemId": "(O)382",
+					"MinStack": 100,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.MysteryBox": {
+					"Id": "AgentLyoko.UWS.MysteryBox",
+					"ItemId": "(O)MysteryBox",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.GoldenMysteryBox": {
+					"Id": "AgentLyoko.UWS.GoldenMysteryBox",
+					"ItemId": "(O)GoldenMysteryBox",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.ArtifactTrove": {
+					"Id": "AgentLyoko.UWS.ArtifactTrove",
+					"ItemId": "(O)275",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Geode": {
+					"Id": "AgentLyoko.UWS.Geode",
+					"ItemId": "(O)535",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FrozenGeode": {
+					"Id": "AgentLyoko.UWS.FrozenGeode",
+					"ItemId": "(O)536",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MagmaGeode": {
+					"Id": "AgentLyoko.UWS.MagmaGeode",
+					"ItemId": "(O)537",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.OmniGeode": {
+					"Id": "AgentLyoko.UWS.OmniGeode",
+					"ItemId": "(O)749",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GeodeCrusher": {
+					"Id": "AgentLyoko.UWS.GeodeCrusher", // High Hearts Clint
+					"ItemId": "(BC)182",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Clint 9 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Demetrius Winter Star Gift Data", //Recheck Demetrius's lines to see if any need altering with this list.
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Demetrius", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.RainbowShell": {
+					"Id": "AgentLyoko.UWS.RainbowShell",
+					"ItemId": "(O)394",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.PeriodicTable": {
+					"Id": "AgentLyoko.UWS.PeriodicTable",
+					"ItemId": "PeriodicTable",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.NautilusShell": {
+					"Id": "AgentLyoko.UWS.NautilusShell",
+					"ItemId": "(O)392",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Ruby": {
+					"Id": "AgentLyoko.UWS.Ruby",
+					"ItemId": "(O)64",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.IridiumBand": {
+					"Id": "AgentLyoko.UWS.IridiumBand",
+					"ItemId": "(O)527",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HeavyTapper": {
+					"Id": "AgentLyoko.UWS.HeavyTapper",
+					"ItemId": "(BC)264",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PressureNozzle": {
+					"Id": "AgentLyoko.UWS.PressureNozzle",
+					"ItemId": "(O)915",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Enricher": {
+					"Id": "AgentLyoko.UWS.Enricher",
+					"ItemId": "(O)913",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Deconstructor": {
+					"Id": "AgentLyoko.UWS.Deconstructor", //High hearts Demetrius
+					"ItemId": "(BC)265",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Demetrius 9 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Evelyn Winter Star Gift Data", //Probably dummied out since Evelyn has her own
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Evelyn", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Cookie": {
+					"Id": "AgentLyoko.UWS.Cookie",
+					"ItemId": "(O)223",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.CookieWallpaper": {
+					"Id": "AgentLyoko.UWS.CookieWallpaper",
+					"ItemId": "MoreWalls:3",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Cookie2": {
+					"Id": "AgentLyoko.UWS.Cookie2",
+					"ItemId": "(O)223",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MoreCookie": {
+					"Id": "AgentLyoko.UWS.MoreCookie",
+					"ItemId": "(O)223",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Cookie4": {
+					"Id": "AgentLyoko.UWS.Cookie4",
+					"ItemId": "(O)223",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GardenPot": {
+					"Id": "AgentLyoko.UWS.GardenPot",
+					"ItemId": "(BC)62",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PumpkinPie": {
+					"Id": "AgentLyoko.UWS.PumpkinPie",
+					"ItemId": "(O)608",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.AncientSeeds": {
+					"Id": "AgentLyoko.UWS.AncientSeeds", //High Hearts, Ultimate Gift
+					"ItemId": "(O)114",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Evelyn 9 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "George Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "George", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.Wine": {
+					"Id": "AgentLyoko.UWS.Wine",
+					"ItemId": "(O)348",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Stone": {
+					"Id": "AgentLyoko.UWS.Stone", //Good Quality Stone, just to say people actually have rare stone
+					"ItemId": "(O)390",
+					"MinStack": 100,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.RetroTV": {
+					"Id": "AgentLyoko.UWS.RetroTV",
+					"ItemId": "RetroTV",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PumpkinPie": {
+					"Id": "AgentLyoko.UWS.PumpkinPie",
+					"ItemId": "(O)608",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BlueberryTart": {
+					"Id": "AgentLyoko.UWS.BlueberryTart",
+					"ItemId": "(O)234",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RhubarbPie": {
+					"Id": "AgentLyoko.UWS.RhubarbPie",
+					"ItemId": "(O)222",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.OceanStone": {
+					"Id": "AgentLyoko.UWS.OceanStone",
+					"ItemId": "(O)560",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Basalt": {
+					"Id": "AgentLyoko.UWS.Basalt",
+					"ItemId": "(O)570",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FireQuartz": {
+					"Id": "AgentLyoko.UWS.FireQuartz",
+					"ItemId": "(O)82",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Marble": {
+					"Id": "AgentLyoko.UWS.Marble",
+					"ItemId": "(O)567",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.SteelPickaxe": {
+					"Id": "AgentLyoko.UWS.SteelPickaxe", //Ultimate Gift
+					"ItemId": "(T)SteelPickaxe",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current George 9 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Gus Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Gus", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.AutumnBounty": {
+					"Id": "AgentLyoko.UWS.AutumnBounty",
+					"ItemId": "(O)235",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FriedCalamari": {
+					"Id": "AgentLyoko.UWS.FriedCalamari",
+					"ItemId": "(O)202",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.CrabCakes": {
+					"Id": "AgentLyoko.UWS.CrabCakes",
+					"ItemId": "(O)732",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.SpicyEel": {
+					"Id": "AgentLyoko.UWS.SpicyEel",
+					"ItemId": "(O)226",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MiniJukebox": {
+					"Id": "AgentLyoko.UWS.MiniJukebox",
+					"ItemId": "(BC)209",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GlazedYams": {
+					"Id": "AgentLyoko.UWS.GlazedYams",
+					"ItemId": "(O)208",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.QiSeasoning": {
+					"Id": "AgentLyoko.UWS.QiSeasoning", //Ultimate Gift
+					"ItemId": "(O)917",
+					"MinStack": 50,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Gus 9 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Jas Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Jas", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.AncientDoll": {
+					"Id": "AgentLyoko.UWS.AncientDoll", //This is a great gift, code reader. Play the game to find out why!
+					"ItemId": "(O)103",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.StrangeDoll": {
+					"Id": "AgentLyoko.UWS.StrangeDoll",
+					"ItemId": "(O)126",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.JasWallpaper": {
+					"Id": "AgentLyoko.UWS.JasWallpaper",
+					"ItemId": "MoreWalls:0",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.StrangeDoll2": {
+					"Id": "AgentLyoko.UWS.StrangeDoll2",
+					"ItemId": "(O)127",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.CranberryCandy": {
+					"Id": "AgentLyoko.UWS.CranberryCandy",
+					"ItemId": "(O)612",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Wool": {
+					"Id": "AgentLyoko.UWS.Wool",
+					"ItemId": "(O)440",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Hay": {
+					"Id": "AgentLyoko.UWS.Hay",
+					"ItemId": "(O)178",
+					"MinStack": 50,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BlueGrassStarter": {
+					"Id": "AgentLyoko.UWS.BlueGrassStarter", //Ultimate Gift
+					"ItemId": "(O)BlueGrassStarter",
+					"MinStack": 50,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Jas 9 10",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Jodi Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Jodi", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.JodiWallpaper": {
+					"Id": "AgentLyoko.UWS.JodiWallpaper",
+					"ItemId": "MoreWalls:4",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DeluxeFertilizer": {
+					"Id": "AgentLyoko.UWS.DeluxeFertilizer", //Unique, have her give 25
+					"ItemId": "(O)919",
+					"MinStack": 25,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Jodi 9 14",
+				},
+
+				"AgentLyoko.UWS.PinkCake": {
+					"Id": "AgentLyoko.UWS.PinkCake",
+					"ItemId": "(O)221",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PumpkinPie": {
+					"Id": "AgentLyoko.UWS.PumpkinPie",
+					"ItemId": "(O)608",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.SquirrelFigurine": {
+					"Id": "AgentLyoko.UWS.SquirrelFigurine",
+					"ItemId": "(F)2814",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+			},
+		},
+		
+		{
+			"LogName": "Kent Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Kent", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.KentWallpaper": {
+					"Id": "AgentLyoko.UWS.KentWallpaper",
+					"ItemId": "MoreWalls:1",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.CherryBomb": {
+					"Id": "AgentLyoko.UWS.CherryBomb",
+					"ItemId": "(O)286",
+					"MinStack": 20,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Bomb": {
+					"Id": "AgentLyoko.UWS.Bomb",
+					"ItemId": "(O)287",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MegaBomb": {
+					"Id": "AgentLyoko.UWS.MegaBomb",
+					"ItemId": "(O)288",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.CookoutKit": {
+					"Id": "AgentLyoko.UWS.CookoutKit",
+					"ItemId": "(O)926",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FiddleheadRisotto": {
+					"Id": "AgentLyoko.UWS.FiddleheadRisotto",
+					"ItemId": "(O)649",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.LightningRod": {
+					"Id": "AgentLyoko.UWS.LightningRod", //Ultimate Gift
+					"ItemId": "(BC)9",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Kent 9 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Leo Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Leo", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.BluebirdMask": {
+					"Id": "AgentLyoko.UWS.BluebirdMask",
+					"ItemId": "(H)80",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RainTotem": {
+					"Id": "AgentLyoko.UWS.RainTotem",
+					"ItemId": "(O)681",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GoldenCoconut": {
+					"Id": "AgentLyoko.UWS.GoldenCoconut",
+					"ItemId": "(O)791",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MahoganySeed": {
+					"Id": "AgentLyoko.UWS.MahoganySeed",
+					"ItemId": "(O)292",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.LeoWallpaper": {
+					"Id": "AgentLyoko.UWS.LeoWallpaper",
+					"ItemId": "MoreWalls:6",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.OstrichEgg": {
+					"Id": "AgentLyoko.UWS.OstrichEgg", //Ultimate Gift
+					"ItemId": "(O)289",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": "PLAYER_HEARTS Current Leo 9 10", //This is difficult since I have moral objections to adding the extra hearts, even if someone adopts Leo. I'll leave this dummied out for adopted Leo. Can probably fix to ANY that condition or roommate, though.
+				},
+			},
+		},
+		
+		{
+			"LogName": "Lewis Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Lewis", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.PrizeTicket": {
+					"Id": "AgentLyoko.UWS.PrizeTicket",
+					"ItemId": "(O)PrizeTicket",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Mini-ShippingBin": {
+					"Id": "AgentLyoko.UWS.Mini-ShippingBin", //Ultimate Gift
+					"ItemId": "(BC)248",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Lewis 9 14",
+				},
+
+				"AgentLyoko.UWS.SeedMaker": {
+					"Id": "AgentLyoko.UWS.SeedMaker",
+					"ItemId": "(BC)25",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Furnace": {
+					"Id": "AgentLyoko.UWS.Furnace",
+					"ItemId": "(BC)13",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.CoffeeMaker": {
+					"Id": "AgentLyoko.UWS.Coffee Maker",
+					"ItemId": "(BC)246",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.TrimmedLuckyPurpleShorts": {
+					"Id": "AgentLyoko.UWS.TrimmedLuckyPurpleShorts",
+					"ItemId": "(P)15",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.OilMaker": {
+					"Id": "AgentLyoko.UWS.OilMaker",
+					"ItemId": "(BC)19",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Keg": {
+					"Id": "AgentLyoko.UWS.Keg",
+					"ItemId": "(BC)12",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PreserveJar": {
+					"Id": "AgentLyoko.UWS.PreserveJar",
+					"ItemId": "(BC)15",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.TruffleOil": {
+					"Id": "AgentLyoko.UWS.TruffleOil",
+					"ItemId": "(O)432",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+			},
+		},
+		
+		{
+			"LogName": "Linus Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Linus", "WinterStarGifts" ],
+			"Entries": { 				  
+				"AgentLyoko.UWS.LivingHat": {
+					"Id": "AgentLyoko.UWS.LivingHat", // Ultimate Gift, should also use a random GSQ to minimize chance of obtaining
+					"ItemId": "(H)40",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Linus 9 14, RANDOM 0.2",
+				},
+
+				"AgentLyoko.UWS.MagicBait": {
+					"Id": "AgentLyoko.UWS.MagicBait",
+					"ItemId": "(O)908",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Linus 9 14",
+				},
+
+				"AgentLyoko.UWS.WildBait": {
+					"Id": "AgentLyoko.UWS.WildBait",
+					"ItemId": "(O)774",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Blackberry": {
+					"Id": "AgentLyoko.UWS.Blackberry",
+					"ItemId": "(O)410",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Catfish": {
+					"Id": "AgentLyoko.UWS.Catfish",
+					"ItemId": "(O)143",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.LargemouthBass": {
+					"Id": "AgentLyoko.UWS.LargemouthBass",
+					"ItemId": "(O)136",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.FriedCalamari": {
+					"Id": "AgentLyoko.UWS.FriedCalamari",
+					"ItemId": "(O)202",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.TrashCatalogue": {
+					"Id": "AgentLyoko.UWS.TrashCatalogue",
+					"ItemId": "(F)TrashCatalogue",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Linus 9 14, RANDOM 0.1",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Marnie Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Marnie", "WinterStarGifts" ],
+			"Entries": {					  
+				"AgentLyoko.UWS.Egg": {
+					"Id": "AgentLyoko.UWS.Egg",
+					"ItemId": "(O){{Random: 176,180}}",
+					"MinStack": 12,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.MarnieWallpaper": {
+					"Id": "AgentLyoko.UWS.MarnieWallpaper",
+					"ItemId": "MoreWalls:2",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.LargeEgg": {
+					"Id": "AgentLyoko.UWS.LargeEgg",
+					"ItemId": "(O){{Random:174,182}}",
+					"MinStack": 12,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DuckEgg": {
+					"Id": "AgentLyoko.UWS.DuckEgg",
+					"ItemId": "(O)442",
+					"MinStack": 12,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Milk": {
+					"Id": "AgentLyoko.UWS.Milk",
+					"ItemId": "(O)184",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.LargeMilk": {
+					"Id": "AgentLyoko.UWS.LargeMilk",
+					"ItemId": "(O)186",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Truffle": {
+					"Id": "AgentLyoko.UWS.Truffle",
+					"ItemId": "(O)430",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GoatMilk": {
+					"Id": "AgentLyoko.UWS.GoatMilk",
+					"ItemId": "(O)436",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.LGoatMilk": {
+					"Id": "AgentLyoko.UWS.LGoatMilk",
+					"ItemId": "(O)438",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DuckFeather": {
+					"Id": "AgentLyoko.UWS.DuckFeather",
+					"ItemId": "(O)444",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GoldenAnimalCracker": {
+					"Id": "AgentLyoko.UWS.GoldenAnimalCracker", //Ultimate Gift
+					"ItemId": "(O)GoldenAnimalCracker",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Marnie 9 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Pam Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Pam", "WinterStarGifts" ],
+			"Entries": {			  
+				"AgentLyoko.UWS.BatteryPack": {
+					"Id": "AgentLyoko.UWS.BatteryPack",
+					"ItemId": "(O)787",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Wine": {
+					"Id": "AgentLyoko.UWS.Wine",
+					"ItemId": "(O)348",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Beer": {
+					"Id": "AgentLyoko.UWS.Beer",
+					"ItemId": "(O)346",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Mead": {
+					"Id": "AgentLyoko.UWS.Mead",
+					"ItemId": "(O)459",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.VesselSign": {
+					"Id": "AgentLyoko.UWS.VesselSign",
+					"ItemId": "(BC)34",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PinaColada": {
+					"Id": "AgentLyoko.UWS.PinaColada",
+					"ItemId": "(O)873",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Catalogue": {
+					"Id": "AgentLyoko.UWS.Catalogue", //Ultimate Gift
+					"ItemId": "(F)1308",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Pam 9 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Pierre Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Pierre", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GrassStarter": {
+					"Id": "AgentLyoko.UWS.GrassStarter",
+					"ItemId": "(O)297",
+					"MinStack": 25,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Oil": {
+					"Id": "AgentLyoko.UWS.Oil",
+					"ItemId": "(O)247",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Vinegar": {
+					"Id": "AgentLyoko.UWS.Vinegar",
+					"ItemId": "(O)419",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.QualityFertilizer": {
+					"Id": "AgentLyoko.UWS.QualityFertilizer",
+					"ItemId": "(O)369",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DeluxeSpeed-Gro": {
+					"Id": "AgentLyoko.UWS.DeluxeSpeed-Gro",
+					"ItemId": "(O)466",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RedCabbageSeeds": {
+					"Id": "AgentLyoko.UWS.RedCabbageSeeds",
+					"ItemId": "(O)485",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.StarfruitSeeds": {
+					"Id": "AgentLyoko.UWS.StarfruitSeeds",
+					"ItemId": "(O)486",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Mini-ShippingBin": {
+					"Id": "AgentLyoko.UWS.Mini-ShippingBin", //Ultimate Gift - Thank you atra!
+					"ItemId": "(BC)248",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Pierre 9 14",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Robin Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Robin", "WinterStarGifts" ],
+			"Entries": {			  
+				"AgentLyoko.UWS.Hardwood": {
+					"Id": "AgentLyoko.UWS.Hardwood",
+					"ItemId": "(O)709",
+					"MinStack": 25,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.RobinWallpaper": {
+					"Id": "AgentLyoko.UWS.RobinWallpaper",
+					"ItemId": "MoreWalls:5",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Wood": {
+					"Id": "AgentLyoko.UWS.Wood",
+					"ItemId": "(O)388",
+					"MinStack": 200,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Stone": {
+					"Id": "AgentLyoko.UWS.Stone",
+					"ItemId": "(O)390",
+					"MinStack": 50,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.IronBar": {
+					"Id": "AgentLyoko.UWS.IronBar",
+					"ItemId": "(O)335",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RefinedQuartz": {
+					"Id": "AgentLyoko.UWS.RefinedQuartz",
+					"ItemId": "(O)338",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BirchDoubleBed": {
+					"Id": "AgentLyoko.UWS.BirchDoubleBed",
+					"ItemId": "(F)2508",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DeluxeRedDoubleBed": {
+					"Id": "AgentLyoko.UWS.DeluxeRedDoubleBed",
+					"ItemId": "(F)2186",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HAS_MAIL Any robinDeluxeBed",
+				},
+
+				"AgentLyoko.UWS.FurnitureCatalogue": {
+					"Id": "AgentLyoko.UWS.FurnitureCatalogue", //Ultimate Gift, but will require SEVERAL checks to pass.
+					"ItemId": "(F)1226",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Robin 9 14, RANDOM 0.1",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Vincent Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Vincent", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.Clay": {
+					"Id": "AgentLyoko.UWS.Clay",
+					"ItemId": "(O)330",
+					"MinStack": 20,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Snail": {
+					"Id": "AgentLyoko.UWS.Snail", //Make this iridium quality
+					"ItemId": "(O)721",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RainbowShell": {
+					"Id": "AgentLyoko.UWS.RainbowShell",
+					"ItemId": "(O)394",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.SpringOnion": {
+					"Id": "AgentLyoko.UWS.SpringOnion",
+					"ItemId": "(O)399",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Coral": {
+					"Id": "AgentLyoko.UWS.Coral",
+					"ItemId": "(O)393",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Salmonberry": {
+					"Id": "AgentLyoko.UWS.Salmonberry",
+					"ItemId": "(O)296",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Hazelnut": {
+					"Id": "AgentLyoko.UWS.Hazelnut",
+					"ItemId": "(O)408",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.MagmaCap": {
+					"Id": "AgentLyoko.UWS.MagmaCap", // 10 of, iridium quality, Ultimate Gift
+					"ItemId": "(O)851",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": "PLAYER_HEARTS Current Vincent 9 10",
+				},
+			},
+		},
+		
+		{
+			"LogName": "Willy Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Willy", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.IridiumRod": {
+					"Id": "AgentLyoko.UWS.IridiumRod",
+					"ItemId": "(T)IridiumRod",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.ChallengeBait": {
+					"Id": "AgentLyoko.UWS.ChallengeBait",
+					"ItemId": "(O)ChallengeBait",
+					"MinStack": 20,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.DeluxeBait": {
+					"Id": "AgentLyoko.UWS.DeluxeBait",
+					"ItemId": "(O)DeluxeBait",
+					"MinStack": 20,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.WormBin": {
+					"Id": "AgentLyoko.UWS.WormBin",
+					"ItemId": "(BC)154",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.TrapBobber": {
+					"Id": "AgentLyoko.UWS.TrapBobber",
+					"ItemId": "(O)694",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.TreasureHunter": {
+					"Id": "AgentLyoko.UWS.TreasureHunter",
+					"ItemId": "(O)693",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.TreasureChest": {
+					"Id": "AgentLyoko.UWS.TreasureChest",
+					"ItemId": "(O)166",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Caviar": {
+					"Id": "AgentLyoko.UWS.Caviar",
+					"ItemId": "(O)445",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.AquaticSanctuary": {
+					"Id": "AgentLyoko.UWS.AquaticSanctuary", //Ultimate Gift
+					"ItemId": "(F)2400",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Willy 9 14",
+				},
+			},
+		},
+	],
+}

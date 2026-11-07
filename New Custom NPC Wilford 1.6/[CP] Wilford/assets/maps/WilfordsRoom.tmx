@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="31" nextobjectid="19">
+ <properties>
+  <property name="NightTiles" value="FrontSpouse 0 0 1222 FrontSpouse 0 1 1254 FrontSpouse 3 0 1222 FrontSpouse 3 1 1254"/>
+ </properties>
+ <tileset firstgid="1" name="EastWoodHouse" tilewidth="16" tileheight="16" tilecount="600" columns="30">
+  <image source="tilesheets/EastWoodHouse.png" width="480" height="320"/>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="csv">
+254,254,254,254,254,254,
+254,254,254,254,254,254,
+321,321,321,321,321,321,
+250,251,250,251,250,251,
+220,221,220,221,220,221,
+250,251,250,251,250,251,
+220,221,220,221,220,221,
+250,251,250,251,250,251,
+220,221,220,221,220,221
+</data>
+ </layer>
+ <objectgroup id="25" name="Back"/>
+ <layer id="2" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+291,291,291,291,291,291,
+0,267,268,0,0,0,
+53,297,298,42,299,300,
+0,0,0,0,60,0,
+0,0,0,0,0,0,
+0,0,0,0,0,315,
+155,156,0,0,0,0,
+185,186,0,0,48,47
+</data>
+ </layer>
+ <objectgroup id="24" name="Buildings">
+  <object id="16" name="TileData" x="16" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;WilfordHouse.6&quot;"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;WilfordHouse.7&quot;"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="16" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;WilfordHouse.9&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="29" name="Paths" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="30" name="Paths"/>
+ <layer id="3" name="Front" width="6" height="9">
+  <data encoding="csv">
+0,0,202,0,0,0,
+173,237,238,0,168,201,
+23,0,0,12,269,270,
+0,0,0,0,30,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+125,126,0,0,0,0,
+0,0,0,0,18,17,
+0,0,73,103,0,0
+</data>
+ </layer>
+ <objectgroup id="23" name="Front"/>
+</map>

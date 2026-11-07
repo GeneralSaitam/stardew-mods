@@ -1,0 +1,356 @@
+{
+  "Changes": [
+	{
+      "LogName": "Crab Pots No Trash Mussel Ocean Guarantee",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "719": {
+          "2": "1.0"
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true,
+        "Crab Pots Bug Meat": "Default, Freshwater"
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Periwinkle Freshwater Guarantee",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "722": {
+          "2": "1.0"
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true,
+        "Crab Pots Bug Meat": "Default, Ocean"
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Mussel Ocean Bug Meat",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "719": {
+          "2": ".93"
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true,
+        "Crab Pots Bug Meat": "Ocean"
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Periwinkle Freshwater Bug Meat",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "722": {
+          "2": ".93"
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true,
+        "Crab Pots Bug Meat": "Freshwater"
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Farm Beach",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_Beach",
+        "FishAreas"
+      ],
+      "Fields": {
+        "Ponds": {
+          "CrabPotJunkChance": 0
+        },
+        "Ocean": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Farm Hilltop",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_Hilltop",
+        "FishAreas"
+      ],
+      "Fields": {
+        "Pond": {
+          "CrabPotJunkChance": 0
+        },
+        "River": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Farm Wilderness",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_Wilderness",
+        "FishAreas"
+      ],
+      "Fields": {
+        "CornerPond": {
+          "CrabPotJunkChance": 0
+        },
+        "MiddlePond": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Farm Meadowlands",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_MeadowlandsFarm",
+        "FishAreas"
+      ],
+      "Fields": {
+        "RiverAndLargePond": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Town",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Town",
+        "FishAreas"
+      ],
+      "Fields": {
+        "Fountain": {
+          "CrabPotJunkChance": 0
+        },
+        "River": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Beach",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Beach",
+        "FishAreas"
+      ],
+      "Fields": {
+        "Default": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Mountain",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Mountain",
+        "FishAreas"
+      ],
+      "Entries": {
+        "Default": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Woods",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Woods",
+        "FishAreas"
+      ],
+      "Entries": {
+        "Default": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Forest",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Forest",
+        "FishAreas"
+      ],
+      "Fields": {
+        "Lake": {
+          "CrabPotJunkChance": 0
+        },
+        "River": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash BugLand",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "BugLand",
+        "FishAreas"
+      ],
+      "Fields": {
+        "Pond": {
+          "CrabPotJunkChance": 0
+        },
+        "Marsh": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Desert",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Desert",
+        "FishAreas"
+      ],
+      "Fields": {
+        "BottomPond": {
+          "CrabPotJunkChance": 0
+        },
+        "TopPond": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash Tunnel",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "BoatTunnel",
+        "FishAreas"
+      ],
+      "Fields": {
+        "Default": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash IslandWest",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandWest",
+        "FishAreas"
+      ],
+      "Fields": {
+        "Freshwater": {
+          "CrabPotJunkChance": 0
+        },
+        "Ocean": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash IslandSouth",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandSouth",
+        "FishAreas"
+      ],
+      "Entries": {
+        "Default": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash IslandNorth",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandNorth",
+        "FishAreas"
+      ],
+      "Entries": {
+        "Default": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    },
+    {
+      "LogName": "Crab Pots No Trash IslandSouthEast",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandSouthEast",
+        "FishAreas"
+      ],
+      "Entries": {
+        "Default": {
+          "CrabPotJunkChance": 0
+        }
+      },
+      "When": {
+        "Crab Pots No Trash": true
+      }
+    }
+  ]
+}

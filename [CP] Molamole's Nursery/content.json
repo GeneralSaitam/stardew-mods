@@ -1,0 +1,477 @@
+{
+  "Format": "2.9.0",
+  "ConfigSchema": {
+    "Crib": {
+      "AllowValues": "Style01, Style02, Style03, Style04, Style05, Style06, Style07, Style08, Style09, Style10",
+      "Default": "Style01",
+      "Section": "1.Crib"
+    },
+    "Crib Wood": {
+      "AllowValues": "Classic, Bamboo, Birch, Oak, Walnut, Pine, BlackWood, WhiteWood, SwampWood, CursedWood",
+      "Default": "Oak",
+      "Description": "Only for Styles 01,02,03,04,05,06,07,08, Wood",
+      "Section": "1.Crib"
+    },
+    "Crib Metal": {
+      "AllowValues": "Black, Copper, Dark, Golden, Iridium, Light, Lilac, Platinum, Rose Gold, Silver",
+      "Default": "Silver",
+      "Description": "Only for Style 09 and 10, Metal",
+      "Section": "1.Crib"
+    },
+    "Accent Color": {
+      "AllowValues": "Non, Black, Blue, Green, Lavanda, Mole, Pink, Purple, Red, White, Yellow",
+      "Default": "Pink",
+      "Section": "1.Crib"
+    },
+    "Sheet": {
+      "AllowValues": "Blue, Dark, Green, Grey, Lavanda, Lilac, Mole, Pink, White, Yellow",
+      "Default": "White",
+      "Section": "1.Crib"
+    },
+    "Shelf": {
+      "AllowValues": "Non, Bamboo, Birch, Classic, Pine, Oak, Walnut, Black, White",
+      "Default": "Non",
+      "Section": "2.Furniture"
+    },
+    "Items on Shelf": {
+      "AllowValues": "Black, Blue, Green, Lavanda, Mole, Red, Pink, Purple, White, Yellow",
+      "Default": "Pink",
+      "Section": "2.Furniture"
+    },
+    "Carpet": {
+      "AllowValues": "Non, Basic, Checkered, CheckPlaid, CheckPlaid_With_Tassels, Stripes, Horizontal_Stripes, Square, Square_With_Ruffle, Tiles",
+      "Default": "CheckPlaid_With_Tassels",
+      "Section": "2.Furniture"
+    },
+    "Carpet Color": {
+      "AllowValues": "Black, Blue, Green, Lavanda, Mole, Pink, Purple, Red, White, Yellow",
+      "Default": "Pink",
+      "Section": "2.Furniture"
+    },
+    "Blanket": {
+      "AllowValues": "Non, Checkered, Classic, Flags_String, Flowers, Flowers_String, Ribbon, Roses_String, Square, Square_Flags_String, Stripes",
+      "Default": "Checkered",
+      "Section": "3.Blanket & Toys"
+    },
+    "Blanket Color": {
+      "AllowValues": "Black, Blue, Green, Lavanda, Mole, Pink, Purple, Red, Yellow, White",
+      "Default": "Pink",
+      "Section": "3.Blanket & Toys"
+    },
+    "Toys": {
+      "AllowValues": "Non, Classic_Bear, Caramel_Bear, Black_Bear, Pink_Bear, White_Bear, Classic_Bunny, Caramel_Bunny, Black_Bunny,  Pink_Bunny, White_Bunny, Classic_Cat, Caramel_Cat, Black_Cat, Pink_Cat, White_Cat, Classic_Elephant, Grey_Elephant, Mole_Elephant, Pink_Elephant, White_Elephant, Black_Duck, Caramel_Duck, Classic_Duck, Pink_Duck, White_Duck",
+      "Default": "Non",
+      "Section": "3.Blanket & Toys"
+    }
+  },
+  "Changes": [
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Furniture/Carpet/Carpet_{{Carpet Color}}_{{Carpet}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "When": {
+        "LocationName": "FarmHouse, Cabin",
+        "Carpet": "Basic, Checkered, CheckPlaid, CheckPlaid_With_Tassels, Stripes, Horizontal_Stripes, Square, Square_With_Ruffle, Tiles"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Crib/Crib_{{Crib}}_{{Crib Wood}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "LocationName": "FarmHouse, Cabin",
+        "Crib": "Style01, Style02, Style03, Style04, Style05, Style06, Style07, Style08",
+        "Carpet": "Basic, Checkered, CheckPlaid, CheckPlaid_With_Tassels, Stripes, Horizontal_Stripes, Square, Square_With_Ruffle, Tiles"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Crib/Crib_{{Crib}}_{{Crib Wood}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "When": {
+        "LocationName": "FarmHouse, Cabin",
+        "Crib": "Style01, Style02, Style03, Style04, Style05, Style06, Style07, Style08",
+        "Carpet": "Non"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Crib/Crib_{{Crib}}_{{Crib Metal}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "LocationName": "FarmHouse, Cabin",
+        "Crib": "Style09, Style10",
+        "Carpet": "Basic, Checkered, CheckPlaid, CheckPlaid_With_Tassels, Stripes, Horizontal_Stripes, Square, Square_With_Ruffle, Tiles"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Crib/Crib_{{Crib}}_{{Crib Metal}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "When": {
+        "LocationName": "FarmHouse, Cabin",
+        "Crib": "Style09, Style10",
+        "Carpet": "Non"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Other/Crib01/Textil_{{Accent Color}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "Crib": "Style01, Style03, Style06, Style09, Style10"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Other/Crib02/Textil_{{Accent Color}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "Crib": "Style02"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Other/Crib04/Textil_{{Accent Color}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "Crib": "Style04"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Other/Crib05/Textil_{{Accent Color}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "Crib": "Style05"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Other/Crib07/Textil_{{Accent Color}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "Crib": "Style07"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Other/Crib08/Textil_{{Accent Color}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "Crib": "Style08"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Bedding/CribBedding_{{Sheet}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "LocationName": "FarmHouse, Cabin"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Toys/Toy_{{Toys}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "LocationName": "FarmHouse, Cabin"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Furniture/Shelf/Shelf_{{Shelf}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "LocationName": "FarmHouse, Cabin"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Furniture/Shelf/Shelf_Non.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "LocationName": "FarmHouse, Cabin",
+        "Shelf": "Non",
+        "Items on Shelf": "Black, Blue, Green, Lavanda, Mole, Red, Pink, Purple, White, Yellow"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Furniture/Shelf/Items_{{Items on Shelf}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "LocationName": "FarmHouse, Cabin",
+        "Shelf": "Bamboo, Birch, Classic, Pine, Oak, Walnut, Black, White"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Toys/Blanket/Blanket_{{Blanket Color}}_{{Blanket}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "LocationName": "FarmHouse, Cabin",
+        "Blanket": " Checkered, Classic, Flags_String, Flowers, Flowers_String, Ribbon, Roses_String, Square, Square_Flags_String, Stripes"
+      },
+      "Update": "OnLocationChange"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/farmhouse_tiles",
+      "FromFile": "Assets/Toys/Blanket/Blanket_Non.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 96,
+        "Height": 74
+      },
+      "ToArea": {
+        "X": 80,
+        "Y": 240,
+        "Width": 96,
+        "Height": 74
+      },
+      "Patchmode": "Overlay",
+      "When": {
+        "LocationName": "FarmHouse, Cabin",
+        "Blanket": "Non",
+        "Blanket Color": "Black, Blue, Green, Lavanda, Mole, Pink, Purple, Red, Yellow, White"
+      },
+      "Update": "OnLocationChange"
+    }
+  ]
+}

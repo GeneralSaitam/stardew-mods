@@ -1,0 +1,189 @@
+{
+  "Changes": [
+    {
+      "LogName": "MNF - Lucky Legendary Fish Mushu",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Caldera",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_mushu": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        }
+      },
+      "When": {
+        "Lucky Legendary Fish": true,
+        "Query: {{DailyLuck}} <= 0.07": true
+      }
+    },
+    {
+      "LogName": "MNF - Lucky Legendary Fish Shinidamachu",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Default",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_shinidamachu": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        }
+      },
+      "When": {
+        "Lucky Legendary Fish": true,
+        "Query: {{DailyLuck}} <= 0.07": true
+      }
+    },
+    {
+      "LogName": "MNF - Lucky Legendary Fish Vampire Fish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "BugLand",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_vampire_fish": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        }
+      },
+      "When": {
+        "Lucky Legendary Fish": true,
+        "Query: {{DailyLuck}} <= 0.07": true
+      }
+    },
+    {
+      "LogName": "MNF - Lucky Legendary Fish Iridiumfish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Forest",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_iridiumfish": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        }
+      },
+      "When": {
+        "Lucky Legendary Fish": true,
+        "Query: {{DailyLuck}} <= 0.07": true
+      }
+    },
+    {
+      "LogName": "MNF - Lucky Legendary Fish Vampire Squid",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Submarine",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_vampire_squid": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        }
+      },
+      "When": {
+        "Lucky Legendary Fish": true,
+        "Query: {{DailyLuck}} <= 0.07": true
+      }
+    },
+    {
+      "LogName": "MNF - Lucky Legendary Fish Tui and La",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Woods",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_tui": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        },
+        "MNF.MoreNewFish_la": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        }
+      },
+      "When": {
+        "Lucky Legendary Fish": true,
+        "Query: {{DailyLuck}} <= 0.07": true
+      }
+    },
+    {
+      "LogName": "MNF - Lucky Legendary Fish Great Firefly Squid",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandSouthEast",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_great_firefly_squid": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        }
+      },
+      "When": {
+        "Lucky Legendary Fish": true,
+        "Query: {{DailyLuck}} <= 0.07": true
+      }
+    },
+    {
+      "LogName": "MNF - Lucky Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_mushu": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        },
+        "MNF.MoreNewFish_shinidamachu": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        },
+        "MNF.MoreNewFish_vampire_fish": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        },
+        "MNF.MoreNewFish_iridiumfish": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        },
+        "MNF.MoreNewFish_vampire_squid": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        },
+        "MNF.MoreNewFish_tui": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        },
+        "MNF.MoreNewFish_la": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        },
+        "MNF.MoreNewFish_great_firefly_squid": {
+          "Chance": 0,
+          "IgnoreFishDataRequirements": true
+        }
+      },
+      "When": {
+        "Legendary Fish On Farm": true,
+        "Lucky Legendary Fish": true,
+        "Query: {{DailyLuck}} <= 0.07": true
+      }
+    }
+  ]
+}

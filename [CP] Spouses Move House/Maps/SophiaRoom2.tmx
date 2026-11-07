@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" width="6" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="23" nextobjectid="41">
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="2241" name="zspring_z_extras" tilewidth="16" tileheight="16" tilecount="6400" columns="25">
+  <image source="spring_z_extras.png" width="400" height="4096"/>
+  <tile id="2009">
+   <animation>
+    <frame tileid="2009" duration="100"/>
+    <frame tileid="2011" duration="100"/>
+    <frame tileid="2013" duration="100"/>
+    <frame tileid="2015" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="2010">
+   <animation>
+    <frame tileid="2010" duration="100"/>
+    <frame tileid="2012" duration="100"/>
+    <frame tileid="2014" duration="100"/>
+    <frame tileid="2016" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="2034">
+   <animation>
+    <frame tileid="2034" duration="100"/>
+    <frame tileid="2036" duration="100"/>
+    <frame tileid="2038" duration="100"/>
+    <frame tileid="2040" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="2035">
+   <animation>
+    <frame tileid="2035" duration="100"/>
+    <frame tileid="2037" duration="100"/>
+    <frame tileid="2039" duration="100"/>
+    <frame tileid="2041" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="8641" name="zVanillaFurniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="VanillaFurniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="11617" name="zVanillaWallsAndFloors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="VanillaWallsAndFloors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="12177" name="ztownInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="13489" name="zz_SVEbuildingShadow" tilewidth="16" tileheight="16" tilecount="600" columns="24">
+  <image source="z_SVEbuildingShadow.png" width="384" height="400"/>
+ </tileset>
+ <tileset firstgid="14089" name="zVanillaCraftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="VanillaCraftables.png" width="128" height="1152"/>
+ </tileset>
+ <tileset firstgid="14665" name="z_FireLight" tilewidth="16" tileheight="16" tilecount="81" columns="9">
+  <image source="z_FireLight.png" width="150" height="156"/>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="8">
+  <data encoding="csv">
+12538,12539,12539,12539,12539,12540,
+12570,12571,12571,12571,12571,12572,
+12602,11939,11939,11939,11939,12604,
+25,23,23,1216,232,231,
+22,22,22,1248,264,2086,
+22,22,22,1376,363,2084,
+22,22,22,22,22,22,
+22,22,22,22,22,22
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Back2" width="6" height="8">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,10383,10384,5859,5860,5861,
+0,10415,10416,5884,5885,5886,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Back2"/>
+ <layer id="5" name="Back3" width="6" height="8">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back3"/>
+ <layer id="7" name="Back4" width="6" height="8">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Back4"/>
+ <layer id="9" name="Buildings" width="6" height="8">
+  <data encoding="csv">
+42,0,0,0,0,44,
+74,75,75,75,75,76,
+106,107,107,107,107,108,
+138,0,0,0,9981,140,
+3170,0,0,0,0,0,
+714,0,0,0,0,0,
+746,0,0,0,0,0,
+10050,10150,0,0,0,10150
+</data>
+ </layer>
+ <objectgroup id="10" name="Buildings">
+  <object id="28" name="TileData" x="0" y="48" width="16" height="32">
+   <properties>
+    <property name="Action" value="Message &quot;SophiaHouse.19&quot;"/>
+   </properties>
+  </object>
+  <object id="29" name="TileData" x="64" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="OpenShop FlashShifter.StardewValleyExpandedCP_SophiaLedger"/>
+   </properties>
+  </object>
+  <object id="34" name="TileData" x="0" y="80" width="16" height="32">
+   <properties>
+    <property name="Action" value="Message &quot;SophiaHouse.15&quot;"/>
+   </properties>
+  </object>
+  <object id="40" name="TileData" x="16" y="32" width="48" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;SpousesMoveHouse.Sophia.2&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="11" name="Buildings2" width="6" height="8">
+  <properties>
+   <property name="Draw" value="Buildings"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Buildings2"/>
+ <layer id="13" name="Front" width="6" height="8">
+  <data encoding="csv">
+6332,0,0,257,6331,0,
+6357,0,0,289,6356,0,
+3070,0,0,0,9949,0,
+3120,0,0,0,0,0,
+682,0,0,0,0,0,
+834,0,0,0,0,0,
+10018,10118,0,0,0,10118,
+162,2121,0,0,0,167
+</data>
+ </layer>
+ <objectgroup id="14" name="Front"/>
+ <layer id="15" name="Front2" width="6" height="8">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="csv">
+13258,0,0,0,0,0,
+13290,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="16" name="Front2"/>
+ <layer id="17" name="Paths" width="6" height="8" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,2185,0,0,
+0,2185,0,0,0,2185,
+0,0,0,0,0,0,
+0,0,2185,0,2185,0,
+0,0,0,0,0,0,
+0,2185,0,0,0,2185,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="18" name="Paths"/>
+ <layer id="19" name="AlwaysFront" width="6" height="8">
+  <data encoding="csv">
+0,0,0,0,0,13278,
+0,0,0,0,0,13310,
+10003,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,10086,0,0,0,10086,
+0,0,0,0,6096,0,
+0,0,197,197,2121,0
+</data>
+ </layer>
+ <objectgroup id="20" name="AlwaysFront"/>
+ <layer id="21" name="AlwaysFront2" width="6" height="8">
+  <properties>
+   <property name="Draw" value="AlwaysFront"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="22" name="AlwaysFront2"/>
+</map>

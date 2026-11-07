@@ -1,0 +1,460 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+			"orochifrogu.VeganValley_pumpkincurry_Recipe": "{{i18n:orochifrogu.VeganValley_pumpkincurry_Recipe}}",
+			"orochifrogu.VeganValley_vegancurry_Recipe": "{{i18n:orochifrogu.VeganValley_vegancurry_Recipe}}",
+			"orochifrogu.VeganValley_dishotheday_Recipe": "{{i18n:orochifrogu.VeganValley_dishotheday_Recipe}}",
+			"orochifrogu.VeganValley_stirfry_Recipe": "{{i18n:orochifrogu.VeganValley_stirfry_Recipe}}",
+			"orochifrogu.VeganValley_roastedcauliflower_Recipe": "{{i18n:orochifrogu.VeganValley_roastedcauliflower_Recipe}}",
+            "orochifrogu.VeganValley_roastedcarrots_Recipe": "{{i18n:orochifrogu.VeganValley_roastedcarrots_Recipe}}",
+			"orochifrogu.VeganValley_greencurry_Recipe": "{{i18n:orochifrogu.VeganValley_greencurry_Recipe}}",
+			"orochifrogu.VeganValley_vegantaco_Recipe": "{{i18n:orochifrogu.VeganValley_vegantaco_Recipe}}",
+			"orochifrogu.VeganValley_harvestsalad_Recipe": "{{i18n:orochifrogu.VeganValley_harvestsalad_Recipe}}",
+			"orochifrogu.VeganValley_bananapancakes_Recipe": "{{i18n:orochifrogu.VeganValley_bananapancakes_Recipe}}",
+			"orochifrogu.VeganValley_lilvegancake_Recipe": "{{i18n:orochifrogu.VeganValley_lilvegancake_Recipe}}",
+			"orochifrogu.VeganValley_pineapplecake_Recipe": "{{i18n:orochifrogu.VeganValley_pineapplecake_Recipe}}",
+			"orochifrogu.VeganValley_healthysalad_Recipe": "{{i18n:orochifrogu.VeganValley_healthysalad_Recipe}}",
+            "orochifrogu.VeganValley_summersalad_Recipe": "{{i18n:orochifrogu.VeganValley_summersalad_Recipe}}",
+			"orochifrogu.VeganValley_applesauce_Recipe": "{{i18n:orochifrogu.VeganValley_applesauce_Recipe}}",
+			"orochifrogu.VeganValley_supersalsa_Recipe": "{{i18n:orochifrogu.VeganValley_supersalsa_Recipe}}",
+			"orochifrogu.VeganValley_nicecream_Recipe": "{{i18n:orochifrogu.VeganValley_nicecream_Recipe}}",
+			"orochifrogu.VeganValley_strawberrynicecream_Recipe": "{{i18n:orochifrogu.VeganValley_strawberrynicecream_Recipe}}",
+			"orochifrogu.VeganValley_mangomakiroll_Recipe": "{{i18n:orochifrogu.VeganValley_mangomakiroll_Recipe}}",
+			"orochifrogu.VeganValley_vegansushi_Recipe": "{{i18n:orochifrogu.VeganValley_vegansushi_Recipe}}",
+			"orochifrogu.VeganValley_ricenoodles_Recipe": "{{i18n:orochifrogu.VeganValley_ricenoodles_Recipe}}",
+            "orochifrogu.VeganValley_cinnamonroll_Recipe": "{{i18n:orochifrogu.VeganValley_cinnamonroll_Recipe}}",
+            "orochifrogu.VeganValley_acaibowl_Recipe": "{{i18n:orochifrogu.VeganValley_acaibowl_Recipe}}",
+            "orochifrogu.VeganValley_vlt_Recipe": "{{i18n:orochifrogu.VeganValley_vlt_Recipe}}",
+            "orochifrogu.VeganValley_mommycookies_Recipe": "{{i18n:orochifrogu.VeganValley_mommycookies_Recipe}}",
+            "orochifrogu.VeganValley_carrotmuffin_Recipe": "{{i18n:orochifrogu.VeganValley_carrotmuffin_Recipe}}",
+            "orochifrogu.VeganValley_daddysrecipe_Recipe": "{{i18n:orochifrogu.VeganValley_daddysrecipe_Recipe}}"
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_ricenoodles_Recipe": {
+                    "Id": "orochifrogu.VeganValley_ricenoodles_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Gus 1",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_ricenoodles_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+                {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_daddysrecipe_Recipe": {
+                    "Id": "orochifrogu.VeganValley_daddysrecipe_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Gus 10",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_daddysrecipe_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_mommycookies_Recipe": {
+                    "Id": "orochifrogu.VeganValley_mommycookies_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Robin 8",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_mommycookies_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+        		{
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_carrotmuffin_Recipe": {
+                    "Id": "orochifrogu.VeganValley_carrotmuffin_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Marnie 10",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_carrotmuffin_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+        		{
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_cinnamonroll_Recipe": {
+                    "Id": "orochifrogu.VeganValley_cinnamonroll_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Haley 10",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_cinnamonroll_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+        		{
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_acaibowl_Recipe": {
+                    "Id": "orochifrogu.VeganValley_acaibowl_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Emily 10",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_acaibowl_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+        		{
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_vlt_Recipe": {
+                    "Id": "orochifrogu.VeganValley_vlt_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Willy 10",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_vlt_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		{
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_vegansushi_Recipe": {
+                    "Id": "orochifrogu.VeganValley_vegansushi_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Marnie 3",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_vegansushi_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_mangomakiroll_Recipe": {
+                    "Id": "orochifrogu.VeganValley_mangomakiroll_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Shane 2",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_mangomakiroll_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_strawberrynicecream_Recipe": {
+                    "Id": "orochifrogu.VeganValley_strawberrynicecream_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Maru 6",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_strawberrynicecream_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_nicecream_Recipe": {
+                    "Id": "orochifrogu.VeganValley_nicecream_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Wizard 4",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_nicecream_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_supersalsa_Recipe": {
+                    "Id": "orochifrogu.VeganValley_supersalsa_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Emily 5",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_supersalsa_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_applesauce_Recipe": {
+                    "Id": "orochifrogu.VeganValley_applesauce_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Vincent 2",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_applesauce_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_summersalad_Recipe": {
+                    "Id": "orochifrogu.VeganValley_summersalad_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Abigail 4",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_summersalad_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_healthysalad_Recipe": {
+                    "Id": "orochifrogu.VeganValley_healthysalad_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Clint 7",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_healthysalad_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_pineapplecake_Recipe": {
+                    "Id": "orochifrogu.VeganValley_pineapplecake_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Caroline 8",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_pineapplecake_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_lilvegancake_Recipe": {
+                    "Id": "orochifrogu.VeganValley_lilvegancake_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Jas 3",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_lilvegancake_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_bananapancakes_Recipe": {
+                    "Id": "orochifrogu.VeganValley_bananapancakes_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Sam 4",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_bananapancakes_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_harvestsalad_Recipe": {
+                    "Id": "orochifrogu.VeganValley_harvestsalad_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Pierre 6",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_harvestsalad_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_vegantaco_Recipe": {
+                    "Id": "orochifrogu.VeganValley_vegantaco_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Sebastian 7",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_vegantaco_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_greencurry_Recipe": {
+                    "Id": "orochifrogu.VeganValley_greencurry_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Emily 5",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_greencurry_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_roastedcarrots_Recipe": {
+                    "Id": "orochifrogu.VeganValley_roastedcarrots_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Alex 7",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_roastedcarrots_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_roastedcauliflower_Recipe": {
+                    "Id": "orochifrogu.VeganValley_roastedcauliflower_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Penny 3",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_roastedcauliflower_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_stirfry_Recipe": {
+                    "Id": "orochifrogu.VeganValley_stirfry_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Jodi 3",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_stirfry_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_dishotheday_Recipe": {
+                    "Id": "orochifrogu.VeganValley_dishotheday_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Willy 3",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_dishotheday_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_vegancurry_Recipe": {
+                    "Id": "orochifrogu.VeganValley_vegancurry_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Lewis 3",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_vegancurry_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_ricenoodles_Recipe": {
+                    "Id": "orochifrogu.VeganValley_ricenoodles_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Gus 1",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_ricenoodles_Recipe tomorrow"
+                    ]
+                }
+            }
+        },
+		        {
+            "LogName": "Add Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "orochifrogu.VeganValley_pumpkincurry_Recipe": {
+                    "Id": "orochifrogu.VeganValley_pumpkincurry_Recipe",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HEARTS Current Pam 4",
+                    "Actions": [
+                        "AddMail Current orochifrogu.VeganValley_pumpkincurry_Recipe tomorrow"
+                    ]
+                }
+            }
+        }
+		
+
+
+    ]
+}

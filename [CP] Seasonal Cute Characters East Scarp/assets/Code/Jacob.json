@@ -1,0 +1,115 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Jacob's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Jacob_Spring, Portraits/Jacob_Summer, Portraits/Jacob_Fall, Portraits/Jacob_Winter, Portraits/Jacob_FlowerDance, Portraits/Jacob_SpiritsEve, Portraits/Jacob_Beach, Portraits/Jacob_Work, Characters/Jacob_Spring, Characters/Jacob_Summer, Characters/Jacob_Fall, Characters/Jacob_Winter, Characters/Jacob_FlowerDance, Characters/Jacob_SpiritsEve, Characters/Jacob_Beach, Characters/Jacob_Work",
+			"FromFile": "assets/{{TargetPathOnly}}/Jacob/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Jacob - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Jacob_Spring, Characters/Jacob_Summer, Characters/Jacob_Fall, Characters/Jacob_Winter, Characters/Jacob_FlowerDance, Characters/Jacob_SpiritsEve, Characters/Jacob_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Jacob/Jacob_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Jacob Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": ["Jacob", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.JacobSpring": {
+					"Id": "{{ModId}}.JacobSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Jacob_Spring",
+					"Portrait": "Portraits/Jacob_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.JacobSummer": {
+					"Id": "{{ModId}}.JacobSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Jacob_Summer",
+					"Portrait": "Portraits/Jacob_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JacobFall": {
+					"Id": "{{ModId}}.JacobFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Jacob_Fall",
+					"Portrait": "Portraits/Jacob_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.JacobWinter": {
+					"Id": "{{ModId}}.JacobWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Jacob_Winter",
+					"Portrait": "Portraits/Jacob_Winter",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.JacobFlowerDance": {
+					"Id": "{{ModId}}.JacobFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Jacob_FlowerDance",
+					"Portrait": "Portraits/Jacob_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.JacobSpirit": {
+					"Id": "{{ModId}}.JacobSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Jacob_SpiritsEve",
+					"Portrait": "Portraits/Jacob_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.JacobBeach": {
+					"Id": "{{ModId}}.JacobBeach",
+					"Sprite": "Characters/Jacob_Beach",
+					"Portrait": "Portraits/Jacob_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				
+				//Work (Not Currently Used)
+				/*
+				"{{ModId}}.JacobWork": {
+					"Id": "{{ModId}}.JacobWork",
+					"Condition": "FALSE",
+					"Sprite": "Characters/Jacob_Work",
+					"Portrait": "Portraits/Jacob_Work",
+					"Precedence": -120,
+				},*/
+			},
+		},
+			{
+            "LogName": "Jacob Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Jacob",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+        },	
+	]
+}

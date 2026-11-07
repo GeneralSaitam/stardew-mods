@@ -1,0 +1,61 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fish Smoker Produce Min",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)FishSmoker",
+        "OutputRules",
+        "SmokedFish",
+        "OutputItem"
+      ],
+      "Fields": {
+        "FLAVORED_ITEM SmokedFish DROP_IN_ID DROP_IN_QUALITY": {
+          "MinStack": "{{Fish Smoker Produce Min}}"
+        }
+      },
+      "When": {
+        "Fish Smoker Produce Min": "2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Fish Smoker Produce Max",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)FishSmoker",
+        "OutputRules",
+        "SmokedFish",
+        "OutputItem"
+      ],
+      "Fields": {
+        "FLAVORED_ITEM SmokedFish DROP_IN_ID DROP_IN_QUALITY": {
+          "MaxStack": "{{Fish Smoker Produce Max}}"
+        }
+      },
+      "When": {
+        "Fish Smoker Produce Max": "2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Fish Smoker Required Mats",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)FishSmoker",
+        "OutputRules",
+        "SmokedFish",
+        "Triggers"
+      ],
+      "Fields": {
+        "ItemPlacedInMachine": {
+          "RequiredCount": "{{Fish Smoker Required Mats.}}"
+        }
+      },
+      "When": {
+        "Fish Smoker Required Mats.": "2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    }
+  ]
+}

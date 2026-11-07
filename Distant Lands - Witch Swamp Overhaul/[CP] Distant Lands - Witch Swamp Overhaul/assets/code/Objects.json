@@ -1,0 +1,765 @@
+{
+  
+    "Changes": [
+	
+	
+	
+		 // add item  images
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Objects",
+            "FromFile": "assets/Objects/Objects.png"
+        },
+		{
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Crop_Vile_Ancien_Fruit",
+            "FromFile": "assets/Objects/Crop_Vile_Ancien_Fruit.png" 
+        },
+		{
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Crop_Void_Mint",
+            "FromFile": "assets/Objects/Crop_Void_Mint.png" 
+        },
+		{
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/BuffIconsAimon",
+            "FromFile": "assets/Objects/BuffIconsAimon.png" 
+        },
+		
+		
+		
+	//berry_item context tags for vanilla
+	 {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "296", "ContextTags" ],
+		"Entries": {
+                "item_berryitem": "berry_item",
+            }
+                },
+				{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "258", "ContextTags" ],
+		"Entries": {
+                "item_berryitem": "berry_item",
+            }
+                },
+				{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "282", "ContextTags" ],
+		"Entries": {
+                "item_berryitem": "berry_item",
+            }
+                },
+	
+	{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "398", "ContextTags" ],
+		"Entries": {
+                "item_berryitem": "berry_item",
+            }
+                },
+	{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "396", "ContextTags" ],
+		"Entries": {
+                "item_berryitem": "berry_item",
+            }
+                },
+	{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "410", "ContextTags" ],
+		"Entries": {
+                "item_berryitem": "berry_item",
+            }
+                },
+
+
+//crayfish_item
+{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "716", "ContextTags" ],
+		"Entries": {
+                "item_berryitem": "crayfish_item",
+            }
+                },
+
+    //ITEMS====================================
+      
+					{
+  "Action": "EditData",
+  "Target": "Data/Objects",
+  "Entries": {
+    "{{ModId}}_Spotted_Crayfish": {
+    "Name": "Spotted Crayfish",
+    "DisplayName": "{{i18n:object.Spotted_Crayfish.name}}",
+    "Description": "{{i18n:object.Spotted_Crayfish.description}}",
+    "Type": "Fish",
+    "Category": -4,
+    "Price": 80,
+    "Texture": "Mods/{{ModId}}/Objects",
+    "SpriteIndex": 18,
+    "ColorOverlayFromNextIndex": false,
+    "Edibility": -300,
+    "IsDrink": false,
+    "Buffs": null,
+    "GeodeDropsDefaultItems": false,
+    "GeodeDrops": null,
+    "ArtifactSpotChances": null,
+    "CanBeGivenAsGift": true,
+    "CanBeTrashed": true,
+    "ExcludeFromFishingCollection": false,
+    "ExcludeFromShippingCollection": false,
+    "ExcludeFromRandomSale": false,
+    "ContextTags": [
+      "color_dark_purple",
+      "fish_crab_pot",
+      "fish_swamp",
+	"lobster_item",
+	"fish_spotted_crayfish",
+	"crayfish_item",
+      "fish_has_roe"
+    ],
+    "CustomFields": null
+  },
+   "{{ModId}}_Swamp_Slug": {
+    "Name": "Swamp Slug",
+    "DisplayName": "{{i18n:object.Swamp_Slug.name}}",
+    "Description": "{{i18n:object.Swamp_Slug.description}}",
+    "Type": "Fish",
+    "Category": -4,
+    "Price": 60,
+    "Texture": "Mods/{{ModId}}/Objects",
+    "SpriteIndex": 19,
+    "ColorOverlayFromNextIndex": false,
+    "Edibility": -10,
+    "IsDrink": false,
+"Buffs": [
+								{
+						"Id": "Aimon_SlugSlime",
+						"Duration": 30,
+						"BuffId": 13, 
+						"IsDebuff": true,
+						"CustomAttributes":  {  },
+								},
+								],
+
+    "GeodeDropsDefaultItems": false,
+    "GeodeDrops": null,
+    "ArtifactSpotChances": null,
+    "CanBeGivenAsGift": true,
+    "CanBeTrashed": true,
+    "ExcludeFromFishingCollection": false,
+    "ExcludeFromShippingCollection": false,
+    "ExcludeFromRandomSale": false,
+    "ContextTags": [
+	   "fish_swampslug",
+	
+      "color_dark_pink",
+      "fish_crab_pot",
+      "fish_swamp",
+      "fish_has_roe"
+    ],
+    "CustomFields": null
+  },
+   "{{ModId}}_Water_Bug": {
+    "Name": "Water Bug",
+    "DisplayName": "{{i18n:object.Water_Bug.name}}",
+    "Description": "{{i18n:object.Water_Bug.description}}",
+    "Type": "Fish",
+    "Category": -4,
+    "Price": 30,
+    "Texture": "Mods/{{ModId}}/Objects",
+    "SpriteIndex": 20,
+    "ColorOverlayFromNextIndex": false,
+    "Edibility": -300,
+    "IsDrink": false,
+    "Buffs": null,
+    "GeodeDropsDefaultItems": false,
+    "GeodeDrops": null,
+    "ArtifactSpotChances": null,
+    "CanBeGivenAsGift": true,
+    "CanBeTrashed": true,
+    "ExcludeFromFishingCollection": false,
+    "ExcludeFromShippingCollection": false,
+    "ExcludeFromRandomSale": false,
+    "ContextTags": [
+      "color_dark_brown",
+      "fish_crab_pot",
+      "fish_swamp",
+	  "fish_water_bug",
+      "fish_has_roe"
+    ],
+    "CustomFields": null
+  },
+  
+   "{{ModId}}_Brown_Amanita": {
+                    "Name": "Brown Amanita",
+                    "DisplayName": "{{i18n:object.Brown_Amanita.name}}",
+                    "Description": "{{i18n:object.Brown_Amanita.description}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 120,
+                    "Texture": "Mods/{{ModId}}/Objects",
+	 "ContextTags": [
+      "color_brown",
+      "dye_strong",
+       "forage_item",
+	"edible_mushroom",
+    ],
+                    "SpriteIndex": 0,
+					"Edibility": -50,
+					"IsDrink": false,
+				
+					"Buffs": [
+								{
+						"Id": "Brown_amanitaDebuffDark",
+						"Duration": 50,
+						"BuffId": 26, 
+						"IsDebuff": true,
+						"CustomAttributes":  {  },
+								},
+								{
+						"Id": "Brown_amanitaDebuffNausea",
+						"Duration": 50,
+						"BuffId": 25,  
+						"IsDebuff": true,
+						"CustomAttributes":  {  },
+								},
+								{
+						"Id": "Brown_amanitaDebuffAdrenaline",
+						"Duration": 50,
+						"BuffId": 22,  
+						"IsDebuff": true,
+						"CustomAttributes":  { },
+				
+								},
+								],
+							},
+			 "{{ModId}}_Cooking_Pot": {
+                    "Name": "Cooking Pot",
+                    "DisplayName": "{{i18n:object.Cooking_Pot.name}}",
+                    "Description": "{{i18n:object.Cooking_Pot.description}}",
+                    "Type": "Quest",
+                    //"Category": -20,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 1,
+					 "ExcludeFromRandomSale": true,
+					  "ExcludeFromFishingCollection": true,
+					   "ExcludeFromShippingCollection": true,
+					   "ContextTags": [ "not_giftable", "prevent_loss_on_death" ], 
+							},	
+			"{{ModId}}_Crayfish_Soup": {
+                    "Name": "Crayfish Soup",
+                    "DisplayName": "{{i18n:object.Crayfish_Soup.name}}",
+                    "Description": "{{i18n:object.Crayfish_Soup.description}}",
+                    "Type": "Cooking",
+                    //"Category": -7,
+                    "Price": 120,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 2,
+					"Edibility": 40,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Crayfish_Soup",
+						"Duration": 240,
+						//"IsDebuff": false,
+						"CustomAttributes":  { "FishingLevel": 2, "LuckLevel": 1,  }
+								},
+							]
+							},
+				"{{ModId}}_Fancy_Blanket": {
+                    "Name": "Fancy Blanket",
+                    "DisplayName": "{{i18n:object.Fancy_Blanket.name}}",
+                    "Description": "{{i18n:object.Fancy_Blanket.description}}",
+                    "Type": "Quest",
+                    //"Category": -20,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 3,
+					 "ExcludeFromRandomSale": true,
+					  "ExcludeFromFishingCollection": true,
+					   "ExcludeFromShippingCollection": true,
+					   	"ContextTags": [ "not_giftable", "prevent_loss_on_death" ], 
+							},	
+				"{{ModId}}_Giant_Horsehoe_Crab": {
+                    "Name": "Giant Horsehoe Crab",
+                    "DisplayName": "{{i18n:object.Giant_Horsehoe_Crab.name}}",
+                    "Description": "{{i18n:object.Giant_Horsehoe_Crab.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 850,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 4,
+					"Edibility": -50,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [ "fish_giant_horsehoe_crab", "color_brown", "season_all", "fish_pond", "fish_swamp" ], 
+							},
+				"{{ModId}}_Ginger_Tincture": {
+                    "Name": "Ginger Tincture",
+                    "DisplayName": "{{i18n:object.Ginger_Tincture.name}}",
+                    "Description": "{{i18n:object.Ginger_Tincture.description}}",
+                    "Type": "Crafting",
+                    //"Category": -26,
+                    "Price": 250,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 5,
+					"Edibility": 50,
+					"IsDrink": true,
+					"Buffs": [
+								{
+						"Id": "Ginger_Tincture",
+						"Duration": 250,
+						"BuffId": 28,
+						"IconTexture": "Mods/{{ModId}}/BuffIconsAimon",
+						"SpriteIndex": 15,
+								},
+							],
+					"ContextTags": [ "ginger_item", "potion_item"  ],
+					"ExcludeFromRandomSale": true,
+							},
+				"{{ModId}}_Mushroom_Kebab": {
+                    "Name": "Mushroom Kebab",
+                    "DisplayName": "{{i18n:object.Mushroom_Kebab.name}}",
+                    "Description": "{{i18n:object.Mushroom_Kebab.description}}",
+                    "Type": "Cooking",
+                    //"Category": -7,
+                    "Price": 120,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 6,
+					"Edibility": 30,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Mushroom_Kebab", 
+						"Duration": 180,
+						"CustomAttributes":  { "ForagingLevel": 2, "MagneticRadius": 1,  }
+								},
+							],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Pemmican": {
+                    "Name": "Pemmican",
+                    "DisplayName": "{{i18n:object.Pemmican.name}}",
+                    "Description": "{{i18n:object.Pemmican.description}}",
+                    "Type": "Cooking",
+					"Category": -7,
+                    "Price": 120,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 7,
+					"Edibility": 120,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+						},
+							
+				"{{ModId}}_Purple_Algae": {
+                    "Name": "Purple Algae",
+                    "DisplayName": "{{i18n:object.Purple_Algae.name}}",
+                    "Description": "{{i18n:object.Purple_Algae.description}}",
+                    "Type": "Basic",
+                    "Category": 0,
+                    "Price": 30,
+                    "Texture": "Mods/{{ModId}}/Objects",
+					 "ContextTags": [
+      "color_purple",
+      "dye_strong",
+       "fish_nonfish",
+	 "use_reverse_name_for_sorting",
+	   "algae_item",
+	    "fish_pond",	  	
+	  "season_all",	   
+
+    ],
+                    "SpriteIndex": 8,
+					"Edibility": 15,
+					"IsDrink": false,
+					"ExcludeFromRandomSale": true,
+							},
+				"{{ModId}}_Swamp_Herb": {
+                    "Name": "Swamp Herb",
+                    "DisplayName": "{{i18n:object.Swamp_Herb.name}}",
+                    "Description": "{{i18n:object.Swamp_Herb.description}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 100,
+                    "Texture": "Mods/{{ModId}}/Objects",
+							 "ContextTags": [
+      "color_green",
+      "dye_strong",
+       "forage_item",
+	
+    ],
+                    "SpriteIndex": 9,
+					"Edibility": 2,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Swamp_Herb",  
+						"Duration": 20,
+						"BuffId": 17,
+						},
+					],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Swamp_Leech": {
+                    "Name": "Swamp Leech",
+                    "DisplayName": "{{i18n:object.Swamp_Leech.name}}",
+                    "Description": "{{i18n:object.Swamp_Leech.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 80,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 10,
+					"Edibility": -30,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Swamp_Leech",   
+						"Duration": 20,
+						"BuffId": 25,
+						},
+						],
+					"ContextTags": [ "fish_swamp_leech", "fish_swamp", "color_black", "season_all", "fish_pond" ],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Vile_Ancient_Fruit": {
+                    "Name": "Vile Ancient Fruit",
+                    "DisplayName": "{{i18n:object.Vile_Ancient_Fruit.name}}",
+                    "Description": "{{i18n:object.Vile_Ancient_Fruit.description}}",
+                    "Type": "Basic",
+                    "Category": -79,
+                    "Price": 500,
+                    "Texture": "Mods/{{ModId}}/Objects",
+							 "ContextTags": [
+      "color_purple",
+      "dye_strong",
+	
+    ],
+                    "SpriteIndex": 11,
+					"Edibility": -20,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Vile_Ancient_Fruit",  
+						"Duration": 20,
+						"BuffId": 26,
+							},
+						],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Void_Minnow": {
+                    "Name": "Void Minnow",
+                    "DisplayName": "{{i18n:object.Void_Minnow.name}}",
+                    "Description": "{{i18n:object.Void_Minnow.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 25,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 12,
+					"Edibility": -10,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Void_Minnow",    
+						"Duration": 20,
+						"BuffId": 26,
+						},
+					],
+					"ContextTags": [ "color_dark_purple", "fish_void_minnow", "fish_swamp", "season_all", "fish_pond" ],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Void_Mint_Leaves": {
+                    "Name": "Void Mint Leaves",
+                    "DisplayName": "{{i18n:object.Void_Mint_Leaves.name}}",
+                    "Description": "{{i18n:object.Void_Mint_Leaves.description}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 70,
+                    "Texture": "Mods/{{ModId}}/Objects",
+							 "ContextTags": [
+      "color_purple",
+      "dye_strong",
+	
+    ],
+                    "SpriteIndex": 13,
+					"Edibility": 5,
+					"IsDrink": false,
+					"Buffs": [
+								{
+						"Id": "Void_Mint_Leaves",    
+						"Duration": 10,
+						"BuffId": 26,
+						},
+						],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Void_Mint_Tea": {
+                    "Name": "Void Mint Tea",
+                    "DisplayName": "{{i18n:object.Void_Mint_Tea.name}}",
+                    "Description": "{{i18n:object.Void_Mint_Tea.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 120,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 14,
+					"Edibility": 5,
+					"IsDrink": true,
+					"Buffs": [
+								{
+						"Id": "Void_Mint_Tea",  
+						"Duration": 180,
+						"CustomAttributes":  { "MaxStamina": 30, "Speed": 2,  }
+						},
+					],
+					"ExcludeFromRandomSale": true,
+						},
+				"{{ModId}}_Vile_Ancient_Fruit_Seeds": {
+                    "Name": "Vile Ancient Fruit Seeds",
+                    "DisplayName": "{{i18n:object.Vile_Ancient_Fruit_Seeds.name}}",
+                    "Description": "{{i18n:object.Vile_Ancient_Fruit_Seeds.description}}",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    //"Price": 0,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 15,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+						},
+				"{{ModId}}_Void_Mint_Seeds": {
+                    "Name": "Void Mint Seeds",
+                    "DisplayName": "{{i18n:object.Void_Mint_Seeds.name}}",
+                    "Description": "{{i18n:object.Void_Mint_Seeds.description}}",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    //"Price": 0,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 16,
+					"Edibility": -300,
+					"ExcludeFromRandomSale": true,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+						},
+						
+						//1.6
+				"{{ModId}}_Suspicious_Pie": {
+                    "Name": "Suspicious Pie",
+                    "DisplayName": "{{i18n:object.Suspicious_Pie.name}}",
+                    "Description": "{{i18n:object.Suspicious_Pie.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 150,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 17,
+					"Edibility": 20,
+					"IsDrink": false,
+					
+					"Buffs": [
+						{
+						"Id": "Suspicious_Bun_dark",
+						"Duration": 150,
+						"BuffId": 26, 
+						"IsDebuff": true,
+						"CustomAttributes":  {  },
+								},
+								{
+						"Id": "Suspicious_Bun_Adrenaline",
+						"Duration": 150,
+						"BuffId": 22,  
+						"IsDebuff": false,
+						"CustomAttributes":  { "Speed": 1,  },
+								},
+								],
+					"ExcludeFromRandomSale": true,
+						}
+				}
+		},
+
+//CROPS====================================
+
+{
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "{{ModId}}_Vile_Ancient_Fruit_Seeds": {
+                    "Seasons": [ "spring", "summer", "fall" ],
+                    "DaysInPhase": [2, 7, 7, 7, 5],
+					"RegrowDays": 5,
+					
+                    "HarvestItemId": "{{ModId}}_Vile_Ancient_Fruit",
+                    "Texture": "Mods/{{ModId}}/Crop_Vile_Ancien_Fruit",
+                    "SpriteIndex": 0,
+					},
+				"{{ModId}}_Void_Mint_Seeds": {
+                    "Seasons": [ "spring", "summer", "fall" ],
+                    "DaysInPhase": [1, 2, 2, 3, 2],
+					"RegrowDays": 3,
+                    "HarvestItemId": "{{ModId}}_Void_Mint_Leaves",
+                    "Texture": "Mods/{{ModId}}/Crop_Void_Mint",
+                    "SpriteIndex": 0,
+            }
+        },
+		
+	},
+			 {
+			"LogName": "SpaceCore ContextTags",
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+			"Entries": {
+				"Pemmican": {
+					"ProductQualifiedId": "Aimon111.WitchSwampOverhaulCP_Pemmican",
+					"ProductAmount": 1,
+						"Ingredients":
+						[
+						{
+						"Type":  "Item",
+						"Value": "(O)684",
+						"Amount": 1,
+						},
+						{
+						"Type": "ContextTag",
+						"Value": "fish_ocean, fish_river, fish_lake, fish_swamp, fish_has_roe, fish_desert, fish_sewers, fish_secret_pond",
+						"Amount": 1,
+						"OverrideText": "Fish (Any)",
+						"OverrideTexturePath": "Maps/springobjects",
+						"OverrideTextureRect": {   
+							"X": 272,
+							"Y": 80,
+							"Width": 16,
+							"Height": 16
+							},
+						},
+						{
+						"Type": "ContextTag",
+						"Value": "berry_item",
+						"Amount": 3,
+						"OverrideText": "Berry (Any)",
+						"OverrideTexturePath": "Maps/springobjects",
+						"OverrideTextureRect": {   
+							"X": 128,
+							"Y": 192,
+							"Width": 16,
+							"Height": 16
+							},
+						},
+						{
+						"Type":  "Item",
+						"Value": "(O)390",
+						"Amount": 2,
+						},
+						
+						]
+				},
+			}
+		},
+		{
+			"LogName": "SpaceCore ContextTags",
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+			"Entries": {
+				"Crayfish Soup": {
+					"ProductQualifiedId": "Aimon111.WitchSwampOverhaulCP_Crayfish_Soup",
+					"ProductAmount": 1,
+						"Ingredients":
+						[
+						{
+						"Type": "ContextTag",
+						"Value": "crayfish_item",
+						"Amount": 1,
+						"OverrideText": "Crayfish (Any)",
+						"OverrideTexturePath": "Maps/springobjects",
+						"OverrideTextureRect": {   
+							"X": 320,
+							"Y": 464,
+							"Width": 16,
+							"Height": 16
+							},
+						},
+						{
+						"Type":  "Item",
+						"Value": "(O)157",
+						"Amount": 1,
+						},
+						{
+						"Type":  "Item",
+						"Value": "(O)Aimon111.WitchSwampOverhaulCP_Purple_Algae",
+						"Amount": 1,
+						},
+					
+						]
+				},
+			}
+		},	 	
+	{
+			"LogName": "SpaceCore ContextTags",
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+			"Entries": {
+				"Mushroom Kebab": {
+					"ProductQualifiedId": "Aimon111.WitchSwampOverhaulCP_Mushroom_Kebab",
+					"ProductAmount": 1,
+						"Ingredients":
+						[
+						
+						{
+						"Type": "ContextTag",
+						"Value": "edible_mushroom",
+						"Amount": 3,
+						"OverrideText": "Mushroom (Any)",
+						"OverrideTexturePath": "Maps/springobjects",
+						"OverrideTextureRect": {   
+							"X": 320,
+							"Y": 256,
+							"Width": 16,
+							"Height": 16
+							},
+						},
+						{
+						"Type":  "Item",
+						"Value": "(O)388",
+						"Amount": 1,
+						},
+						]
+				},
+			}
+		},	
+	
+			 
+
+//Cooking Recipes====================================
+		{ 
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+             "Entries": {
+
+				"Crayfish Soup": "716 1 157 1 Aimon111.WitchSwampOverhaulCP_Purple_Algae 1 78 1/10 10/Aimon111.WitchSwampOverhaulCP_Crayfish_Soup/null/{{i18n:object.Crayfish_Soup.name}}",
+				"Mushroom Kebab": "404 1 420 1 257 1 388 1/10 10/Aimon111.WitchSwampOverhaulCP_Mushroom_Kebab/null/{{i18n:object.Mushroom_Kebab.name}}",
+				"Pemmican": "684 1 -4 1 296 3 390 2/10 10/Aimon111.WitchSwampOverhaulCP_Pemmican/null/{{i18n:object.Pemmican.name}}",
+				"Void Mint Tea": "Aimon111.WitchSwampOverhaulCP_Void_Mint_Leaves 5/10 10/Aimon111.WitchSwampOverhaulCP_Void_Mint_Tea/null/{{i18n:object.Void_Mint_Tea.name}}",
+				"Suspicious Pie": "{{ModId}}_Vile_Ancient_Fruit 1 203 1 245 1/10 10/Aimon111.WitchSwampOverhaulCP_Suspicious_Pie/null/{{i18n:object.Suspicious_Pie.name}}",
+			 }, 
+		},  
+		
+		
+//Crafting Recipes====================================
+		{ 
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+             "Entries": {
+				"Ginger Tincture": "Aimon111.WitchSwampOverhaulCP_Brown_Amanita 1 Aimon111.WitchSwampOverhaulCP_Swamp_Herb 1 (O)829 5 (O)848 3/Field/Aimon111.WitchSwampOverhaulCP_Ginger_Tincture/false/none/{{i18n:object.Ginger_Tincture.name}}",
+			 }, 
+		},  
+
+		
+
+    ]
+}
+

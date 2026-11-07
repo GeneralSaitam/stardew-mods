@@ -1,0 +1,185 @@
+{
+ "Format": "2.5.3",
+ "ConfigSchema": {
+        "EnableFTM": {"AllowValues": "true, false", "Default": "true", "Description": "Toggle Farm Type Manager Forage spawns and Monsters."},
+		"BerryWoodsMap": {"AllowValues": "Decorated, Clear", "Default": "Decorated", "Description": "Do you want the Berry Woods to have decorative objects?"},
+    },
+"DynamicTokens": [
+   {
+      "Name": "EnableFTMToken",
+      "Value": "AddMail",
+    },
+	{
+      "Name": "EnableFTMToken",
+      "Value": "RemoveMail",
+      "When": {
+        "EnableFTM": "false"
+				}
+		}
+],
+"Changes": [
+	{
+		"LogName": "Load Berry Woods Location Regular",
+		"Action": "Load",
+		"Target": "Maps/Custom_AngelOfStars_BerryWoods",
+		"FromFile": "assets/BerryWoods.tmx",
+		"When": {
+			"BerryWoodsMap": "Decorated",
+		},
+	},
+	{
+		"LogName": "Load Berry Woods Location",
+		"Action": "Load",
+		"Target": "Maps/Custom_AngelOfStars_BerryWoods",
+		"FromFile": "assets/BerryWoodsNoDecor.tmx",
+		"When": {
+			"BerryWoodsMap": "Clear",
+		},
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+		"Custom_AngelOfStars_BerryWoods": {
+          "DisplayName": "{{i18n:Aos.BerryWoods.DisplayName}}",
+          "DefaultArrivalTile": {
+            "X": 59,
+            "Y": 17
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps/Custom_AngelOfStars_BerryWoods",
+					},
+			},
+		},
+	},
+	{
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+          "BerryWoods_EnableFTM": {
+              "Id": "BerryWoods_EnableFTM",
+              "Trigger": "DayStarted",
+              "HostOnly": true,
+              "Action": "{{EnableFTMToken}} Current BerryWoods_EnableFTM received",
+              "MarkActionApplied": false
+					}
+				}
+			},
+      {
+         "Action": "EditMap",
+         "Target": "Maps/Woods",
+         "AddWarps": [
+            "46 3 Custom_AngelOfStars_BerryWoods 59 17"],
+		 "When": {
+				  "HasMod |contains=FlashShifter.SVECode": false,
+				  "HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": false,			  
+		 }
+      },
+	  {
+         "Action": "EditMap",
+         "Target": "Maps/Custom_AngelOfStars_BerryWoods",
+         "AddWarps": [
+            "60 18 Woods 46 4",
+			"60 17 Woods 46 4",
+			"60 16 Woods 46 4",
+			"60 15 Woods 46 4"],
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": false,
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": false,
+		 }
+      },
+	  {
+         "Action": "EditMap",
+         "Target": "Maps/Woods",
+         "AddWarps": [
+            "7 60 Custom_AngelOfStars_BerryWoods 59 17",
+			"7 61 Custom_AngelOfStars_BerryWoods 59 17",
+			"7 62 Custom_AngelOfStars_BerryWoods 59 17",
+			"7 63 Custom_AngelOfStars_BerryWoods 59 17"],
+		 "When": {
+					"HasMod |contains=FlashShifter.SVECode": true,
+		 }
+      },
+	  {
+         "Action": "EditMap",
+         "Target": "Maps/Custom_AngelOfStars_BerryWoods",
+         "AddWarps": [
+            "60 18 Woods 8 60",
+			"60 17 Woods 8 60",
+			"60 16 Woods 8 60",
+			"60 15 Woods 8 60"],
+			"When": {
+					"HasMod |contains=FlashShifter.SVECode": true,
+		 }
+      },
+	  {
+         "Action": "EditMap",
+         "Target": "Maps/Woods",
+         "AddWarps": [
+            "41 7 Custom_AngelOfStars_BerryWoods 59 17",
+			"41 6 Custom_AngelOfStars_BerryWoods 59 17"],
+		 "When": {
+				"HasMod |contains=FlashShifter.SVECode": false,
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": true,
+		 }
+      },
+	  {
+         "Action": "EditMap",
+         "Target": "Maps/Custom_AngelOfStars_BerryWoods",
+         "AddWarps": [
+            "60 18 Woods 42 7",
+			"60 17 Woods 42 7",
+			"60 16 Woods 42 7",
+			"60 15 Woods 42 7"],
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": false,
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": true,
+		 }
+      },
+	  {
+         "Action": "EditMap",
+         "Target": "Maps/Woods",
+         "AddWarps": [
+            "41 7 Custom_AngelOfStars_BerryWoods 59 17",
+			"41 6 Custom_AngelOfStars_BerryWoods 59 17"],
+		 "When": {
+				"HasMod |contains=FlashShifter.SVECode": false,
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": false,
+				"HasMod |contains=jibb.minecarts.C":true,
+		 }
+      },
+	  {
+         "Action": "EditMap",
+         "Target": "Maps/Custom_AngelOfStars_BerryWoods",
+         "AddWarps": [
+            "60 18 Woods 42 7",
+			"60 17 Woods 42 7",
+			"60 16 Woods 42 7",
+			"60 15 Woods 42 7"],
+			"When": {
+				"HasMod |contains=FlashShifter.SVECode": false,
+				"HasMod |contains=Tikamin557.CP.SecretWoodsExtraArea": false,
+				"HasMod |contains=jibb.minecarts.C":true,
+		 }
+      },
+	  {
+		  "Action": "EditMap",
+		  "Target": "Maps/Custom_AngelOfStars_BerryWoods",
+		  "MapProperties":{
+			  "Music": "woodsTheme"
+		  }
+	  },
+	  {
+		  "LogName": "Map Translation Strings",
+		  "Action": "EditData",
+		  "Target": "strings/StringsFromMaps",
+		  "Entries": {
+			  "AosPillarDialogue": "{{i18n:Aos.PillarStringMessage}}",
+			  "AosCrystalString": "{{i18n:Aos.CrystalStringMessage}}",
+			  "AosPlantString": "{{i18n:Aos.PlantStringMessage}}",
+			  "AosTreeRootString": "{{i18n:Aos.TreeRootStringMessage}}",
+			  "AosBigTreeString": "{{i18n:Aos.BigTreeStringMessage}}",
+		  },
+	  },
+   ]
+}

@@ -1,0 +1,102 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "SaloonPriceMultiplier": {
+            "AllowValues": "0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2, 2.1, 2.2, 2.3, 2.4, 2.5, 3, 4, 5",
+			"Default": "0.5"
+		},
+        "BeerPrice": {
+			"Default": "280"
+		}
+    },
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Saloon", "Items" ],
+            "Entries": {
+                "(O)346": {
+                    "Id": "(O)346",
+                    "ItemId": "(O)346",
+                    "Price": "{{BeerPrice}}"
+                },
+                "(O)196": {
+                    "Id": "(O)196",
+                    "ItemId": "(O)196",
+                    "PriceModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "Amount": "{{SaloonPriceMultiplier}}"
+                        }
+                    ]
+                },
+                "(O)216": {
+                    "Id": "(O)216",
+                    "ItemId": "(O)216",
+                    "PriceModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "Amount": "{{SaloonPriceMultiplier}}"
+                        }
+                    ]
+                },
+                "(O)224": {
+                    "Id": "(O)224",
+                    "ItemId": "(O)224",
+                    "PriceModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "Amount": "{{SaloonPriceMultiplier}}"
+                        }
+                    ]
+                },
+                "(O)206": {
+                    "Id": "(O)206",
+                    "ItemId": "(O)206",
+                    "PriceModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "Amount": "{{SaloonPriceMultiplier}}"
+                        }
+                    ]
+                },
+                "(O)395": {
+                    "Id": "(O)395",
+                    "ItemId": "(O)395",
+                    "PriceModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "Amount": "{{SaloonPriceMultiplier}}"
+                        }
+                    ]
+                },
+                "(0)732": {
+                    "Condition": "PLAYER_HAS_CONVERSATION_TOPIC Current willyCrabs",
+                    "Id": "(0)732",
+                    "ItemId": "(O)732",
+                    "PriceModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "Amount": "{{SaloonPriceMultiplier}}"
+                        }
+                    ]
+                  },
+                  "DishOfTheDay": {
+                      "Id": "DishOfTheDay",
+                      "ItemId": "DISH_OF_THE_DAY",
+                      "Price": -1,
+                      "PriceModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "Amount": "{{SaloonPriceMultiplier}}"
+                        }
+                    ]
+                }
+            },
+            "MoveEntries": [
+                { "ID": "(0)732", "AfterId": "(O)395" },
+                { "ID": "DishOfTheDay", "AfterId": "(O)395" }
+            ]
+        }
+    ]
+}

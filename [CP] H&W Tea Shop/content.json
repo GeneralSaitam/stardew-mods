@@ -1,0 +1,37 @@
+{
+    "Format": "2.5.0",
+
+    "ConfigSchema": {
+        "TeaShop": {
+            "Description": "Choose from Building, Shed, or false. Building adds the Tea Shop as a new custom building. Shed adds it as a shed upgrade for Market Town compatibility but it will NOT be compatible with other custom shed interiors. False disables the tea shop entirely. Defaults to Building.",
+            "AllowValues": "Building, Shed, false",
+            "Default": "Building",
+            "AllowBlank": false,
+            "AllowMultiple": false
+          },
+          "InteriorStyle": {
+            "Description": "Choose if you would like the interior of the building to be pre-furnished with movable furniture or empty. Defaults to Furnished. NOTE: you must have the right furniture pack installed in order for the furniture to spawn in. See mod page for details.",
+            "AllowValues": "Furnished, Empty",
+            "Default": "Furnished",
+            "AllowBlank": false,
+            "AllowMultiple": false
+        }
+    },
+
+    "Changes": [
+      
+        {
+            "LogName": "Tea Shop Data",
+            "Action": "Include",
+            "FromFile": "Data/TeaShop_Tokens.json",
+        },
+
+        {
+            "LogName": "Tea Shop Furniture Data",
+            "Action": "Include",
+            "FromFile": "Data/TeaShop_Furniture.json",
+            "When":{"InteriorStyle": "Furnished", "HasMod: |contains=HXW.PlantLoversFurni": true}
+        }
+
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "Changes": [
+        {
+            "LogName": "Jupiter Sleeping Inside",
+            "Action": "EditMap",
+            "Target": "Maps/{{ModID}}_CCHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": "9",
+                        "Y": "19"
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 Squeaks.MGCCC.JupiterSleep"
+                    }
+                }
+            ],
+            "Update": "OnLocationChange"
+        },
+        {
+            "LogName": "Jupiter Outside",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_LoresCove",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": "21",
+                        "Y": "31"
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 Squeaks.MGCCC.JupiterIdle"
+                    }
+                }
+            ],
+            "Update": "OnLocationChange"
+        }
+    ]
+}

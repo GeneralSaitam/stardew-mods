@@ -1,0 +1,246 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/Trailer",
+            "Entries":{
+                "16279007/F/f Penny 1750/k 162790071/q 1627920/A pennyGone/e 16279006":"50s/
+                -1000 -1000/
+                farmer 10 8 3 Penny 2 5 1 Pam -100 -100 0/
+                skippable/
+                viewport 9 7 true/
+                move farmer -4 0 0/
+                pause 500/
+                doAction 6 7/
+                move farmer 0 -3 3/
+                jump Penny 5/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.001}}\"/
+                speed Penny 4/
+                move Penny 3 0 1/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.002}}\"/
+                emote farmer 32/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.003}}\"/
+                animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.004}}\"/
+                stopAnimation Penny/
+                faceDirection Penny 1/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.005}}\"/
+                emote farmer 32/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.006}}\"/
+                faceDirection Penny 2/
+                emote Penny 28 true/
+                showFrame Penny 23/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.007}}\"/
+                question null \"{{i18n:Miihau.PennyEE.event8.008}}\"/
+                stopMusic/
+                warp Pam 12 9/
+                playSound doorClose/
+                jump farmer 3/
+                jump Penny 3/
+                faceDirection farmer 2/
+                showFrame Penny 0/
+                faceDirection Penny 2/
+                message \"{{i18n:Miihau.PennyEE.event8.009}}\"/
+                move Pam 0 -1 0/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.010}}\"/
+                faceDirection Pam 1/
+                pause 150/
+                faceDirection Pam 3/
+                emote Pam 8/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.011}}\"/
+                move Pam -5 0 3/
+                shake Penny 5000/
+                faceDirection farmer 3/
+                message \"{{i18n:Miihau.PennyEE.event8.012}}\"/
+                move Pam -1 0 0/
+                emote Penny 60/
+                pause 50/
+                faceDirection farmer 2/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.013}}\"/
+                move Pam 0 -2 0/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.014}}\"/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.015}}\"/
+                showFrame Penny 23/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.016}}\"/
+                emote Pam 12/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.017}}\"/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.018}}\"/
+                pause 100/
+                question fork0 \"{{i18n:Miihau.PennyEE.event8.019}}\"/
+                fork givePamMoney/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.020}}\"/
+                quickQuestion {{i18n:Miihau.PennyEE.event8.020X}}(break)friendship Penny 30\\friendship Pam 50\\playMusic echos\\speak Pam \"{{i18n:Miihau.PennyEE.event8.021}}\"(break)friendship Penny 10\\friendship Pam 10\\speak Pam \"{{i18n:Miihau.PennyEE.event8.022}}\"\\emote Pam 12\\faceDirection Pam 2\\showFrame Pam 25\\playMusic echos\\pause 500\\speak Pam \"{{i18n:Miihau.PennyEE.event8.023}}\"\\showFrame Pam 0\\pause 200\\faceDirection Pam 0 /
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.024}}\"/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.025}}\"/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.026}}\"/
+                faceDirection Pam 2/
+                showFrame Pam 25/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.027}}\"/
+                showFrame Penny 0/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.028}}\"/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.029}}\"/
+                showFrame Pam 0/
+                faceDirection Pam 2/
+                move Pam 0 2 1/
+                move Pam 6 0 2/
+                move Pam 0 1 2/
+                warp Pam -500 -500/
+                playSound doorClose/
+                faceDirection Penny 1/
+                faceDirection farmer 3/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.030}}\"/
+                emote Penny 20/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.031}}\"/
+                emote farmer 56 true/
+                globalFade 0.005/
+                viewport -1000 -1000/
+                end dialogue Penny \"{{i18n:Miihau.PennyEE.event8.032}}\"",
+                "givePamMoney":"friendship Penny -250/
+                friendship Pam -750/
+                emote Pam 12/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.033}}\"/
+                showFrame Penny 12/
+                emote Penny 28 true/
+                faceDirection farmer 3/
+                pause 200/
+                faceDirection farmer 2/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.034}}\"/
+                faceDirection farmer 3/
+                pause 100/
+                faceDirection farmer 2/
+                globalFade .011/
+                viewport -1000 -1000/
+                playSound doorClose/
+                pause 500/
+                end warpOut"
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/Trailer_Big",
+            "Entries":{
+                "162790071/F/f Penny 1750/k 16279007/q 1627920/A pennyGone":"50s/
+                -1000 -1000/
+                farmer 4 22 0 Penny 5 9 3 Pam -300 -300 0/
+                skippable/
+                viewport 9 9 true/
+                move farmer 0 -3 0/
+                pause 500/
+                doAction 4 18/
+                move farmer 0 -7 0/
+                faceDirection Penny 2/
+                jump Penny 5/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.035}}\"/
+                move Penny 0 2 3/
+                move Penny -1 0 2/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.036}}\"/
+                emote farmer 32/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.037}}\"/
+                advancedMove farmer false -2 0 0 -7 2 0/
+                move Penny -2 0 0/
+                move Penny 0 -6 1/
+                move Penny 3 0 3/
+                stopAdvancedMoves/
+                faceDirection farmer 1/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.038}}\"/
+                animate Penny false true 150 8 8 8 30 30 30 29 29 29 30 30 30/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.039}}\"/
+                stopAnimation Penny/
+                faceDirection Penny 3/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.040}}\"/
+                emote farmer 32/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.041}}\"/
+                faceDirection Penny 2/
+                emote Penny 28 true/
+                showFrame Penny 23/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.042}}\"/
+                question null \"{{i18n:Miihau.PennyEE.event8.043}}\"/
+                stopMusic/
+                warp Pam 13 24/
+                playSound doorClose/
+                jump farmer 3/
+                jump Penny 3/
+                faceDirection farmer 2/
+                showFrame Penny 0/
+                faceDirection Penny 2/
+                message \"{{i18n:Miihau.PennyEE.event8.044}}\"/
+                move Pam 0 -2 0/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.045}}\"/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.046}}\"/
+                speed Pam 5/
+                move Pam -9 0 0/
+                shake Penny 9000/
+                faceDirection farmer 1/
+                message \"{{i18n:Miihau.PennyEE.event8.047}}\"/
+                speed Pam 5/
+                move Pam 0 -11 0/
+                emote Penny 60/
+                pause 50/
+                faceDirection farmer 2/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.048}}\"/
+                move Pam -2 0 0/
+                move Pam 0 -5 1/
+                faceDirection farmer 3/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.049}}\"/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.050}}\"/
+                showFrame Penny 23/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.051}}\"/
+                emote Pam 12/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.052}}\"/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.053}}\"/
+                pause 100/
+                question fork0 \"{{i18n:Miihau.PennyEE.event8.054}}\"/
+                fork givePamMoney/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.055}}\"/
+                quickQuestion {{i18n:Miihau.PennyEE.event8.055X}}(break)friendship Penny 30\\friendship Pam 50\\playMusic echos\\speak Pam \"{{i18n:Miihau.PennyEE.event8.056}}\"(break)friendship Penny 10\\friendship Pam 10\\speak Pam \"{{i18n:Miihau.PennyEE.event8.057}}\"\\emote Pam 12\\faceDirection Pam 2\\showFrame Pam 25\\playMusic echos\\pause 500\\speak Pam \"{{i18n:Miihau.PennyEE.event8.058}}\"\\showFrame Pam 0\\pause 200\\faceDirection Pam 1 /
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.059}}\"/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.060}}\"/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.061}}\"/
+                faceDirection Pam 2/
+                showFrame Pam 25/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.062}}\"/
+                showFrame Penny 0/
+                faceDirection Penny 3/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.063}}\"/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.064}}\"/
+                showFrame Pam 0/
+                faceDirection Pam 2/
+                move Pam 0 5 1/
+                move Pam 2 0 2/
+                speed Pam 4/
+                move Pam 0 11 2/
+                speed Pam 5/
+                move Pam 9 0 2/
+                move Pam 0 2 0/
+                warp Pam -500 -500/
+                playSound doorClose/
+                faceDirection farmer 1/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.065}}\"/
+                emote Penny 20/
+                speak Penny \"{{i18n:Miihau.PennyEE.event8.066}}\"/
+                emote farmer 56 true/
+                globalFade 0.005/
+                viewport -1000 -1000/
+                end dialogue Penny \"{{i18n:Miihau.PennyEE.event8.067}}\"",
+                "givePamMoney":"friendship Penny -250/
+                friendship Pam -750/
+                emote Pam 12/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.068}}\"/
+                showFrame Penny 4/
+                emote Penny 28 true/
+                faceDirection farmer 1/
+                pause 200/
+                faceDirection farmer 3/
+                speak Pam \"{{i18n:Miihau.PennyEE.event8.069}}\"/
+                faceDirection farmer 1/
+                pause 100/
+                faceDirection farmer 3/
+                globalFade .011/
+                viewport -1000 -1000/
+                playSound doorClose/
+                pause 500/
+                end warpOut"
+            }
+        },
+    ]
+}

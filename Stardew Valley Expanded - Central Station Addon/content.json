@@ -1,0 +1,90 @@
+{
+  "Format": "2.9.0",
+  "ConfigSchema": {
+    "PondwoodTicketPrice": {
+      "AllowValues": "500, 1000",
+      "Default": "1000",
+      "Name": "{{i18n:config.PondwoodTicketPrice.name}}",
+      "Description": "{{i18n:config.PondwoodTicketPrice.description}}",
+      "Section": "GeneralSettings"
+    }
+  },
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Mods/Pathoschild.CentralStation/Stops",
+      "When": {
+        "HasMod": "Pathoschild.CentralStation"
+      },
+      "Entries": {
+        "{{ModId}}_Pondwood": {
+          "DisplayName": "{{i18n: destinations.pondwood}}",
+          "ToLocation": "Custom_GrampletonSuburbsTrainStation",
+          "ToTile": {
+            "X": 35,
+            "Y": 15
+          },
+          "ToFacingDirection": "down",
+          "Network": "Train",
+          "Cost": "{{PondwoodTicketPrice}}",
+          "Condition": "PLAYER_HAS_SEEN_EVENT Any 3691371"
+        }
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_GrampletonSuburbsTrainStation",
+      "When": {
+        "HasMod": "Pathoschild.CentralStation",
+        "HasSeenEvent: Anyplayer |contains=3691371": true
+      },
+      "MapProperties": {
+        "Pathoschild.CentralStation_TicketMachine": "35 14 Train"
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 35,
+            "Y": 13
+          },
+          "Layer": "Front",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 35,
+            "Y": 14
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        }
+      ]
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Railroad",
+      "When": {
+        "HasMod": "Pathoschild.CentralStation",
+        "HasSeenEvent: Anyplayer |contains=3691371": true
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 38,
+            "Y": 39
+          },
+          "Layer": "Front",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 38,
+            "Y": 40
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        }
+      ]
+    }
+  ]
+}

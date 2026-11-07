@@ -1,0 +1,87 @@
+{
+  "Changes": [
+
+    {
+        "LogName": "Add Catalogue Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "Entries": {
+            "HXW.GrandmasPantryFurniSet": {
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Items": [
+                {
+                "Price": 0,
+                "AvailableStockLimit": "Global",
+                "AvoidRepeat": false,
+                "UseObjectDataPrice": false,
+                "IgnoreShopPriceModifiers": false,
+                "PriceModifiers": null,
+                "PriceModifierMode": "Stack",
+                "AvailableStockModifiers": null,
+                "AvailableStockModifierMode": "Stack",
+                "Condition": null,
+                "Id": "Default",
+                "ItemId": "ALL_ITEMS (F)",
+                "MinStack": -1,
+                "MaxStack": -1,
+                "Quality": -1,
+                "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_hwgrandmaspantry"
+                }
+            ],
+            "CustomFields":{
+                "HappyHomeDesigner/Catalogue":"true"
+            }
+            }
+        }
+    },
+
+    {
+        "LogName": "Add Catalogue Item",
+        "Action": "EditData",
+        "Target": "Data/Furniture",
+        "Entries": {    
+                    "HXW.GrandmasPantryFurni_Catalogue": "HXW.GrandmasPantryFurni_Catalogue/other/1 2/1 1/1/35000/2/{{i18n:GrandmasPantryFurni_Catalogue}}/70/Mods\\HXW.GrandmasPantryFurni\\Furniture/true"
+        }
+    },
+  
+    {
+        "LogName": "Add Catalogue Tile Actions",
+        "Action": "EditData",
+        "Target": "sophie.Calcifer/FurnitureActions",
+        "Entries": {
+            "(F)HXW.GrandmasPantryFurni_Catalogue": {
+                "TileActions": [
+                    {
+                        "TileAction": "OpenShop HXW.GrandmasPantryFurniSet"
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "LogName": "Add Plant Catalogue to Robin's Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": [ "Carpenter", "Items" ],
+        "Entries": {
+            "HXW.GrandmasPantryFurni_Catalogue": {
+                "Id": "HXW.GrandmasPantryFurni_Catalogue",
+                "ItemId": "(F)HXW.GrandmasPantryFurni_Catalogue",
+                "Price": 25000
+            }
+        }
+    }
+   
+  ]
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  

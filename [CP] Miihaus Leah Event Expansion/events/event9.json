@@ -1,0 +1,173 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ManorHouse",
+            "Entries":
+        {
+        "Miihau.LeahEE.009/F/f Leah 2250/t 800 1600/e Miihau.LeahEE.008":"
+        breezy/
+        7 7/
+        farmer -2000 -2000 0 Leah 5 6 1 Lewis 7 6 3/
+        skippable/
+        addConversationTopic Miihau.LeahEE.009.Topic 2/
+        pause 2000/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.001}}\"/
+        pause 500/
+        speak Lewis \"{{i18n:Miihau.LeahEE.event9.002}}\"/
+        pause 200/
+        faceDirection Leah 3/
+        emote Leah 40/
+        pause 300/
+        faceDirection Leah 1/
+        pause 200/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.003}}\"/
+        warp farmer 5 11/
+        playSound doorClose/
+        pause 400/
+        faceDirection Lewis 2 true/
+        faceDirection Leah 2/
+        emote Leah 16 true/
+        textAboveHead Lewis \"{{i18n:Miihau.LeahEE.event9.004}}\" true/
+        move farmer 0 -1 0/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.005}}\"/
+        pause 200/
+        move farmer 0 -1 1/
+        move farmer 1 0 0/
+        move farmer 0 -1 0/
+        pause 200/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.006}}\"/
+        pause 200/
+        faceDirection Lewis 3/
+        speak Lewis \"{{i18n:Miihau.LeahEE.event9.007}}\"/
+        pause 200/
+        faceDirection Leah 1/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.008}}\"/
+        pause 200/
+        emote farmer 8/
+        move Leah 0 2 1/
+        faceDirection farmer 3/
+        move Lewis -1 0 2/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.009}}\"/
+        quickQuestion {{i18n:Miihau.LeahEE.event9.009X}}(break)pause 200\\switchEvent Miihau.LeahEE.009.Classic(break)pause 200\\switchEvent Miihau.LeahEE.009.Cool(break)pause 200\\switchEvent Miihau.LeahEE.009.Silly/
+        end warpOut/
+        ",
+        
+        "Miihau.LeahEE.009.Classic":"
+        pause 200/
+        eventSeen Miihau.LeahEE.009.Classic true/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.010}}\"/
+        pause 200/
+        switchEvent Miihau.LeahEE.009.End/
+        end warpOut/
+        ",
+
+        "Miihau.LeahEE.009.Cool":"
+        pause 200/
+        eventSeen Miihau.LeahEE.009.Cool true/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.011}}\"/
+        pause 200/
+        switchEvent Miihau.LeahEE.009.End/
+        end warpOut/
+        ",
+
+        "Miihau.LeahEE.009.Silly":"
+        pause 200/
+        eventSeen Miihau.LeahEE.009.Silly true/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.012}}\"/
+        pause 200/
+        switchEvent Miihau.LeahEE.009.End/
+        end warpOut/
+        ",
+
+        "Miihau.LeahEE.009.End":"
+        pause 200/
+        speak Lewis \"{{i18n:Miihau.LeahEE.event9.013}}\"/
+        emote Leah 16 true/
+        faceDirection farmer 0 true/
+        faceDirection Leah 0 true/
+        jump Leah 5 true/
+        speed Leah 4/
+        positionOffset Lewis 0 -1 true/
+        move Leah 0 -1 1/
+        speed Leah 4/
+        positionOffset Lewis 0 -1 true/
+        move Leah 1 0 0/
+        positionOffset Lewis 0 -1 true/
+        speed Leah 4/
+        move Leah 0 -1 0/
+        showFrame Leah 11/
+        positionOffset Lewis 0 -1 true/
+        showFrame Lewis 26/
+        jump Lewis 4 true/
+        positionOffset Lewis 0 -2/
+        pause 50/
+        positionOffset Lewis 0 -2/
+        pause 50/
+        positionOffset Lewis 0 -2/
+        pause 1000/
+        showFrame Lewis 18/
+        pause 500/
+        message \"{{i18n:Miihau.LeahEE.event9.014}}\"/ 
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.015}}\"/
+        speak Lewis \"{{i18n:Miihau.LeahEE.event9.016}}\"/
+        showFrame Lewis 0/
+        showFrame Leah 8/
+        faceDirection Leah 2/
+        emote Lewis 12 true/
+        move Leah 0 1 3/
+        emote Leah 28 true/
+        move Leah -1 0 1/
+        pause 500/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.017}}\"/
+        pause 200/
+        speak Lewis \"{{i18n:Miihau.LeahEE.event9.018}}\"/
+        pause 200/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.019}}\"/
+        pause 200/
+        speak Lewis \"{{i18n:Miihau.LeahEE.event9.020}}\"/
+        pause 200/
+        globalFade/
+        viewport -1200 -1200/
+        changeLocation Town/
+        warp Leah 51 81/
+        warp farmer 53 81/
+        faceDirection farmer 3/
+        faceDirection Leah 3/
+        globalFadeToClear 0.007 true/
+        viewport 53 83/
+        pause 1200/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.021}}\"/
+        pause 200/
+        faceDirection Leah 1/
+        emote farmer 8/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.022}}\"/
+        pause 300/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.023}}\"/
+        pause 200/
+        emote farmer 32/
+        pause 200/
+        speak Leah \"{{i18n:Miihau.LeahEE.event9.024}}\"/
+        move Leah -9 0 3 true/
+        globalFade/
+        viewport -1200 -1200/
+        end/
+        "
+        }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Leah",
+        "Entries":{
+            "Miihau.LeahEE.009.Topic":"{{i18n:Miihau.LeahEE.event9.025}}",
+            },
+    },
+    {
+        "Action":"EditData",
+        "Target":"Characters/Dialogue/Lewis",
+        "Entries":{
+            "Miihau.LeahEE.009.Topic":"{{i18n:Miihau.LeahEE.event9.026}}",
+            },
+    },
+    ]
+}

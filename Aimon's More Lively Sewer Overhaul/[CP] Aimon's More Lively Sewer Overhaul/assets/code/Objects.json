@@ -1,0 +1,70 @@
+{
+  
+    "Changes": [
+	
+
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/Objects",
+            "FromFile": "assets/tilesheets/Objects.png",  
+        },
+	
+	
+	
+	
+    //ITEMS====================================
+      
+						{
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+			
+				"{{ModId}}_Rope": {
+                    "Name": "Climbing Rope",
+                    "Displayname": "Climbing Rope",
+                    "Description": "Hope this thing is worth the money...",
+                    "Type": "Quest",
+                    //"Category": -20,
+                    "Texture": "Mods/{{ModId}}/Objects",
+                    "SpriteIndex": 0,
+					 "ExcludeFromRandomSale": true,
+					  "ExcludeFromFishingCollection": true,
+					   "ExcludeFromShippingCollection": true,
+					   	"ContextTags": [ "not_giftable", "prevent_loss_on_death" ], 
+							},	
+			
+					},
+			},
+	
+		
+		
+
+	 {
+	        "LogName": "Klint Shop RopeEvent",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+	"Update": "OnTimeChange",
+            "When": {
+                "HasSeenEvent": "194050011", 
+				},
+            "TargetField": ["Blacksmith", "Items"],
+            "Entries": {
+                "{{ModId}}_Rope": {
+                    "Price": 5000,
+                    "ItemId": "(O){{ModId}}_Rope",
+                    "IgnoreShopPriceModifiers": true,
+		"AvailableStock": 1,
+                       "AvailableStockLimit": "Player"
+                },
+            		
+            }
+        },
+	
+		
+
+
+
+
+    ]
+}
+

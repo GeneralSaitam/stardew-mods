@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="26" height="18" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="41">
+ <properties>
+  <property name="AmbientLight" value="100 100 100"/>
+  <property name="CanCaskHere" value="T"/>
+  <property name="DayTiles_asdf" value="Buildings 2 1 24 Buildings 6 1 24 Buildings 9 1 24 Buildings 16 1 24 Buildings 19 1 24 Buildings 23 1 24"/>
+  <property name="Feed" value="3 2"/>
+  <property name="Light_asdf" value="11 14 6 3 2 6 10 2 6 14 2 6 1 5 4 6 5 4 6 10 4 11 7 4 15 11 4 1 12 4 15 2 6 16 9 4 20 13 4 20 6 4  21 2 6 23 2 4 23 11 4"/>
+  <property name="NightTiles_asdf" value="Buildings 2 1 26 Buildings 6 1 26 Buildings 9 1 26 Buildings 16 1 26 Buildings 19 1 26 Buildings 23 1 26"/>
+  <property name="ProduceArea" value="7 4 18 10"/>
+  <property name="Warp" value="12 18 Farm 21 11 13 18 Farm 21 11"/>
+ </properties>
+ <tileset firstgid="1" name="Coop" tilewidth="16" tileheight="16" tilecount="84" columns="4">
+  <image source="coopTiles" width="64" height="336"/>
+  <tile id="12">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="Passable" type="int" value="0"/>
+    <property name="Trough" value="T"/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="37">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="52">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="54">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="56">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="85" name="p" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="121" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" trans="000000" width="512" height="1088"/>
+  <tile id="1043">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="1075">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="26" height="18">
+  <data encoding="csv">
+49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,
+49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,
+49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,49,
+49,66,54,54,54,54,54,54,54,34,34,34,34,34,34,34,34,54,54,54,54,54,54,54,2147483714,49,
+49,55,13,55,13,55,13,55,54,54,54,54,54,54,54,54,54,54,13,55,13,55,13,55,13,49,
+49,15,15,15,15,15,16,13,14,15,15,15,15,15,15,15,15,16,55,14,15,15,15,15,15,49,
+49,19,19,19,19,19,20,55,18,19,19,19,19,19,19,19,19,20,13,18,19,19,19,19,19,49,
+49,19,19,19,19,19,20,13,18,19,19,19,19,19,19,19,19,20,55,18,19,19,19,19,19,49,
+49,49,49,49,49,49,49,55,18,19,19,19,19,19,19,19,19,20,13,49,49,49,49,49,49,49,
+49,49,49,49,49,49,49,13,22,23,23,23,23,23,23,23,23,24,55,49,49,49,49,49,49,49,
+49,15,15,15,15,15,15,16,13,55,13,55,13,55,13,55,13,55,14,15,15,15,15,15,15,49,
+49,19,19,19,19,19,19,20,55,14,15,15,15,15,15,15,16,13,18,19,19,19,19,19,19,49,
+49,19,19,19,19,19,19,20,13,18,19,19,19,19,19,19,20,55,18,19,19,19,19,19,19,49,
+49,19,19,19,19,19,19,20,55,18,19,19,19,19,19,19,20,13,18,19,19,19,19,19,19,49,
+49,19,19,19,19,19,19,20,13,18,19,19,19,19,19,19,20,55,18,19,19,19,19,19,19,49,
+49,19,19,19,19,19,19,20,55,22,23,23,23,23,23,23,24,13,18,19,19,19,19,19,19,49,
+49,23,23,23,23,23,23,24,13,55,13,55,13,55,13,55,13,55,22,23,23,23,23,23,23,49,
+49,49,49,49,49,49,49,49,49,49,49,13,55,13,13,49,49,49,49,49,49,49,49,49,49,49
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="26" height="18">
+  <data encoding="csv">
+1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2147483650,2147483650,2147483650,2147483650,2147483650,2147483650,3,
+5,17,25,17,17,17,25,17,17,25,17,17,17,17,17,17,25,17,17,25,17,17,17,25,2147483665,2147483653,
+5,21,21,21,21,21,21,21,29,30,30,30,30,30,30,30,30,31,21,21,21,21,21,21,2147483669,2147483653,
+5,73,0,0,2147483721,63,76,63,33,0,0,0,0,0,0,0,0,35,63,76,63,2147483721,0,0,2147483721,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+9,0,0,74,75,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,74,75,0,0,2147483657,
+1,2,2,2,2,2147483650,12,0,0,0,0,0,0,0,0,0,0,0,0,2147483660,2,2,2,2147483650,2147483650,2147483649,
+5,17,17,17,17,17,17,0,0,0,0,0,0,0,0,0,0,0,0,17,17,17,17,17,17,2147483653,
+5,21,21,21,21,21,21,0,0,0,0,0,0,0,0,0,0,0,0,21,21,21,21,21,21,2147483653,
+5,73,43,44,43,44,73,0,0,0,0,0,0,0,0,0,0,0,0,73,43,44,43,44,73,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,58,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,58,11,
+49,49,49,49,49,49,49,49,49,49,49,9,0,0,11,49,49,49,49,49,49,49,49,49,49,49
+</data>
+ </layer>
+ <layer id="3" name="Front" width="26" height="18">
+  <data encoding="csv">
+1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2147483650,2147483650,2147483650,2,2,2,3,
+5,65,0,0,2147483713,0,0,0,0,0,0,77,78,79,80,0,0,0,0,0,0,2147483713,0,0,2147483713,2147483653,
+5,69,0,0,2147483717,59,72,59,0,0,0,0,0,0,0,0,0,0,59,72,59,2147483717,0,0,2147483717,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,70,71,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,70,71,0,0,2147483653,
+9,10,10,10,10,2147483658,4,0,0,0,0,0,0,0,0,0,0,0,0,2147483652,10,10,10,2147483658,2147483658,2147483657,
+1,2,2,2,2,2147483650,12,0,0,0,0,0,0,0,0,0,0,0,0,2147483660,2,2,2,2147483650,2147483650,2147483649,
+5,65,77,78,79,80,65,0,0,0,0,0,0,0,0,0,0,0,0,65,77,78,79,80,65,2147483653,
+5,69,39,40,39,40,69,0,0,0,0,0,0,0,0,0,0,0,0,69,39,40,39,40,69,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147483653,
+9,10,10,10,10,10,10,10,10,10,10,4,0,0,2147483652,10,10,10,10,10,10,10,10,10,2147483658,11,
+0,0,0,0,0,0,0,0,0,0,0,2147483659,2147483658,2147483658,11,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="26" height="18">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,93,0,0,0,93,0,0,93,0,0,0,0,0,0,93,0,0,93,0,0,0,93,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,93,93,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,93,93,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back">
+  <object id="17" name="TileData" x="208" y="256" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="36" name="TileData" x="400" y="0" width="16" height="272">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="37" name="TileData" x="0" y="0" width="16" height="272">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="208" y="272" width="208" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="19" name="TileData" x="0" y="272" width="208" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="20" name="TileData" x="192" y="256" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="39" name="TileData" x="16" y="128" width="96" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="40" name="TileData" x="304" y="128" width="96" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="38" name="TileData" x="16" y="0" width="384" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="336" y="112" width="32" height="16">
+   <properties>
+    <property name="WaterSource" value="T"/>
+   </properties>
+  </object>
+  <object id="34" name="TileData" x="384" y="256" width="16" height="16">
+   <properties>
+    <property name="WaterSource" value="T"/>
+   </properties>
+  </object>
+  <object id="35" name="TileData" x="16" y="256" width="16" height="16">
+   <properties>
+    <property name="WaterSource" value="T"/>
+   </properties>
+  </object>
+  <object id="33" name="TileData" x="48" y="112" width="32" height="16">
+   <properties>
+    <property name="WaterSource" value="T"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Buildings"/>
+ <objectgroup id="7" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+</map>

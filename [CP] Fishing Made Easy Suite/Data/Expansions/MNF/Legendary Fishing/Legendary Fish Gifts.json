@@ -1,0 +1,23 @@
+{
+  "Changes": [
+    {
+      "LogName": "MNF - Legendary Fish Gifts",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Entries",
+            "Universal_Love"
+          ],
+          "Value": "MNF.MoreNewFish_mushu MNF.MoreNewFish_shinidamachu MNF.MoreNewFish_vampire_fish MNF.MoreNewFish_iridiumfish MNF.MoreNewFish_vampire_squid MNF.MoreNewFish_tui MNF.MoreNewFish_la MNF.MoreNewFish_great_firefly_squid",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "Legendary Fish Gifts": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)25",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_Grape_Starter": {
+					"Id": "GOF_Grape_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)398"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)301",
+                            "MinStack": 1,
+                            "MaxStack": 3
+						},
+                        {
+                            "ItemId": "(O)748",
+                            "Condition": "RANDOM 0.25"
+						},
+                        {
+                            "ItemId": "(O)GOF_Titania_Sapling",
+                            "Condition": "RANDOM 0.05"
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Deep_Envy_Starter": {
+					"Id": "GOF_Deep_Envy_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Deep_Envy_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Deep_Envy_Starter",
+                            "MinStack": 1,
+                            "MaxStack": 3
+						},
+                        {
+                            "ItemId": "(O)748",
+                            "Condition": "RANDOM 0.25"
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Gallant_Grove_Starter": {
+					"Id": "GOF_Gallant_Grove_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Gallant_Grove_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Gallant_Grove_Starter",
+                            "MinStack": 1,
+                            "MaxStack": 3
+						},
+                        {
+                            "ItemId": "(O)748",
+                            "Condition": "RANDOM 0.25"
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Golden_Aura_Starter": {
+					"Id": "GOF_Golden_Aura_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Golden_Aura_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Golden_Aura_Starter",
+                            "MinStack": 1,
+                            "MaxStack": 3
+						},
+                        {
+                            "ItemId": "(O)748",
+                            "Condition": "RANDOM 0.25"
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Passion_Rouge_Starter": {
+					"Id": "GOF_Passion_Rouge_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Passion_Rouge_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Passion_Rouge_Starter",
+                            "MinStack": 1,
+                            "MaxStack": 3
+						},
+                        {
+                            "ItemId": "(O)748",
+                            "Condition": "RANDOM 0.25"
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Sunset_Blush_Starter": {
+					"Id": "GOF_Sunset_Blush_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Sunset_Blush_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Sunset_Blush_Starter",
+                            "MinStack": 1,
+                            "MaxStack": 3
+						},
+                        {
+                            "ItemId": "(O)748",
+                            "Condition": "RANDOM 0.25"
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Rosy_Riot_Starter": {
+					"Id": "GOF_Rosy_Riot_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Rosy_Riot_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Rosy_Riot_Starter",
+                            "MinStack": 1,
+                            "MaxStack": 3
+						},
+                        {
+                            "ItemId": "(O)748",
+                            "Condition": "RANDOM 0.25"
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Lunatone_Starter": {
+					"Id": "GOF_Lunatone_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Lunatone_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Lunatone_Starter",
+                            "MinStack": 1,
+                            "MaxStack": 3
+						},
+                        {
+                            "ItemId": "(O)748",
+                            "Condition": "RANDOM 0.25"
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Joja_Grape_Starter": {
+					"Id": "GOF_Joja_Grape_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Joja_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)748",
+                            "MinStack": 1,
+                            "MaxStack": 3
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Ocean_Mist_Starter": {
+					"Id": "GOF_Ocean_Mist_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Ocean_Mist_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)748",
+                            "MinStack": 1,
+                            "MaxStack": 3
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Titania_Starter": {
+					"Id": "GOF_Titania_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Titania_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)301",
+                            "MinStack": 3,
+                            "MaxStack": 5
+						},
+                        {
+                            "ItemId": "(O)GOF_Titania_Sapling",
+                            "Condition": "RANDOM 0.1"
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Ancient_Grape_Starter": {
+					"Id": "GOF_Ancient_Grape_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Ancient_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Ancient_Grape_Starter",
+                            "MinStack": 1,
+                            "MaxStack": 3
+						},
+                        {
+                            "ItemId": "(O)748",
+                            "Condition": "RANDOM 0.25"
+						},
+                        {
+                            "RandomItemId":[ "(O)GOF_Deep_Envy_Starter", "(O)GOF_Gallant_Grove_Starter", "(O)GOF_Golden_Aura_Starter", "(O)GOF_Passion_Rouge_Starter", "(O)GOF_Sunset_Blush_Starter", "(O)GOF_Rosy_Riot_Starter", "(O)GOF_Lunatone_Starter", "(O)GOF_Ocean_Mist_Starter"],
+                            "Condition": "RANDOM 0.018"
+						},
+                        {
+                            "ItemId": "(O)GOF_Ancient_Titania_Sapling",
+                            "Condition": "RANDOM 0.1"
+						}
+					],
+					"MinutesUntilReady": 20
+				},
+                "GOF_Ancient_Titania_Starter": {
+					"Id": "GOF_Ancient_Titania_Starter",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Ancient_Titania_Grape"
+						}
+					],
+                    "UseFirstValidOutput": false,
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Ancient_Grape_Starter",
+                            "MinStack": 3,
+                            "MaxStack": 5
+						},
+                        {
+                            "ItemId": "(O)GOF_Ancient_Titania_Sapling",
+                            "Condition": "RANDOM 0.05"
+						}
+					],
+					"MinutesUntilReady": 20
+				}
+                
+			},
+            "MoveEntries": 
+				[
+					{ "Id": "GOF_Grape_Starter", "ToPosition": "Top" },
+					{ "Id": "GOF_Deep_Envy_Starter", "ToPosition": "Top" },
+					{ "Id": "GOF_Gallant_Grove_Starter", "ToPosition": "Top" },
+					{ "Id": "GOF_Golden_Aura_Starter", "ToPosition": "Top" },
+                    { "Id": "GOF_Passion_Rouge_Starter", "ToPosition": "Top" },
+                    { "Id": "GOF_Sunset_Blush_Starter", "ToPosition": "Top" },
+                    { "Id": "GOF_Rosy_Riot_Starter", "ToPosition": "Top" },
+                    { "Id": "GOF_Lunatone_Starter", "ToPosition": "Top" },
+                    { "Id": "GOF_Joja_Grape_Starter", "ToPosition": "Top" },
+                    { "Id": "GOF_Ocean_Mist_Starter", "ToPosition": "Top" },
+                    { "Id": "GOF_Titania_Starter", "ToPosition": "Top" },
+                    { "Id": "GOF_Ancient_Grape_Starter", "ToPosition": "Top" },
+                    { "Id": "GOF_Ancient_Titania_Starter", "ToPosition": "Top" }
+			]
+		}
+                
+	]
+}

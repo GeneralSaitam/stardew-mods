@@ -1,0 +1,1703 @@
+{
+    "Changes": [
+        /*
+            WILD TREE ADD: Ghostwood (plus seed / ichor)
+        */
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_AmuletOfExtraction": {
+                    "Name": "{{ModID}}_AmuletOfExtraction",
+                    "DisplayName": "{{i18n:object.AmuletOfExtraction.name}}",
+                    "Description": "{{i18n:object.AmuletOfExtraction.description|cfgSpork={{cfgSpork}}}}",
+                    "Type": "Quest",
+                    "Edibility": -300,
+                    "Category": 0,
+                    "Price": 0,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 30,
+                    "CanBeGivenAsGift": false,
+                    "CanBeTrashed": false,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": null,
+                },
+                "{{ModID}}_Ghostwood_Seed": {
+                    "Name": "{{ModID}}_Ghostwood_Seed",
+                    "DisplayName": "{{i18n:object.GhostwoodSeed.name}}",
+                    "Description": "{{i18n:object.GhostwoodSeed.description}}",
+                    "Type": "Crafting",
+                    "Category": -74,
+                    "Price": 50,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 13,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown",
+                        "tree_seed_item"
+                    ]
+                },
+                "{{ModID}}_Ghostwood_Ichor": {
+                    "Name": "{{ModID}}_Ghostwood_Ichor",
+                    "DisplayName": "{{i18n:object.GhostwoodIchor.name}}",
+                    "Description": "{{i18n:object.GhostwoodIchor.description}}",
+                    "Type": "Basic",
+                    "Category": -27,
+                    "Price": 600,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 14,
+                    "Edibility": -1,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown",
+                        "syrup_item"
+                    ]
+                },
+                "{{ModID}}_SpectralEssence": {
+                    "Name": "{{ModID}}_SpectralEssence",
+                    "DisplayName": "{{i18n:object.SpectralEssence.name}}",
+                    "Description": "{{i18n:object.SpectralEssence.description}}",
+                    "Type": "Basic",
+                    "Edibility": -300,
+                    "Category": -28,
+                    "Price": 60,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 10,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_white"
+                    ],
+                },
+                "{{ModId}}_SpectralSturgeon": {
+                    "Name": "SpectralSturgeon",
+                    "DisplayName": "{{i18n:object.SpectralSturgeon.name}}",
+                    "Description": "{{i18n:object.SpectralSturgeon.description}}",
+                    "Edibility": "60",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 825,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 24,
+                    "ContextTags": [
+                        "color_pink",
+                    ],
+                },
+                "{{ModID}}_GhostwoodPendant": {
+                    "Name": "{{ModID}}_GhostwoodPendant",
+                    "DisplayName": "{{i18n:object.GhostwoodPendant.name}}",
+                    "Description": "{{i18n:object.GhostwoodPendant.description}}",
+                    "Type": "Basic",
+                    "Edibility": -300,
+                    "Category": 0,
+                    "Price": 60,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 27,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromShippingCollection": false,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_green",
+                        "propose_roommate_sdvhead.lawandordersv_ripley"
+                    ],
+                },
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Ghostwood.GraveCount": "{{i18n:Strings.Ghostwood.GraveCount}}",
+                "Ghostwood.SwordStone0": "{{i18n:Strings.Ghostwood.SwordStone0}}",
+                "Ghostwood.SwordStone1": "{{i18n:Strings.Ghostwood.SwordStone1}}",
+                "Ghostwood.SwordStone2": "{{i18n:Strings.Ghostwood.SwordStone2}}",
+                "Ghostwood.SwordStone3": "{{i18n:Strings.Ghostwood.SwordStone3}}",
+                "Ghostwood.WizardFrog": "{{i18n:Strings.Ghostwood.WizardFrog}}",
+            }
+        },
+        //ghostwood pendant recipe (purchased at riley's shop) - iridium bar, ghostwood ichor, spectral essence
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModId}}_GhostwoodPendant": "337 1 {{ModID}}_Ghostwood_Ichor 8 {{ModId}}_SpectralEssence 8/Field/{{ModId}}_GhostwoodPendant 1/false/none/{{i18n:object.GhostwoodPendant.name}}",
+            }
+        },
+        //phantom footwear - purchased at riley's shop
+        {
+            "Action": "EditData",
+            "Target": "Data/Boots",
+            "Entries": {
+                "{{ModId}}_PhantomFootwear": "Phantom Footwear/Provide superior protection from immaterial threats/666/3/10/25/Phantom Footwear//26/Mods\\{{ModId}}\\lao_objects"
+            }
+        },
+        //Loads tree sprites
+        {
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/spring_Ghostwood_Tree, Mods/{{ModId}}/summer_Ghostwood_Tree, Mods/{{ModId}}/fall_Ghostwood_Tree, Mods/{{ModId}}/winter_Ghostwood_Tree",
+            "FromFile": "Assets/Trees/{{TargetWithoutPath}}.png",
+        },
+        //Wild Tree Data
+        {
+            "Action": "EditData",
+            "Target": "Data/WildTrees",
+            "Entries": {
+                //Ghostwood Tree
+                "{{ModId}}_Ghostwood_Tree": {
+                    "Textures": [
+                        {
+                            "Condition": null,
+                            "Season": "Summer",
+                            "Texture": "Mods\\{{ModId}}/summer_Ghostwood_Tree"
+                        },
+                        {
+                            "Condition": null,
+                            "Season": "Fall",
+                            "Texture": "Mods\\{{ModId}}/fall_Ghostwood_Tree"
+                        },
+                        {
+                            "Condition": null,
+                            "Season": "Winter",
+                            "Texture": "Mods\\{{ModId}}/winter_Ghostwood_Tree"
+                        },
+                        {
+                            "Condition": null,
+                            "Season": "Spring",
+                            "Texture": "Mods\\{{ModId}}/spring_Ghostwood_Tree"
+                        }
+                    ],
+                    "SeedItemId": "{{ModId}}_Ghostwood_Seed",
+                    "SeedPlantable": true,
+                    "GrowthChance": 0.2,
+                    "FertilizedGrowthChance": 1.0,
+                    "SeedSpreadChance": 0,
+                    "SeedOnShakeChance": 0,
+                    "SeedOnChopChance": 0,
+                    "DropWoodOnChop": true,
+                    "DropHardwoodOnLumberChop": true,
+                    "IsLeafy": true,
+                    "IsLeafyInWinter": false,
+                    "IsLeafyInFall": true,
+                    "PlantableLocationRules": null,
+                    "GrowsInWinter": true,
+                    "IsStumpDuringWinter": false,
+                    "AllowWoodpeckers": false,
+                    "UseAlternateSpriteWhenNotShaken": false,
+                    "UseAlternateSpriteWhenSeedReady": false,
+                    "DebrisColor": null,
+                    "SeedDropItems": null,
+                    "ChopItems": [
+                        {
+                            "MinSize": "Tree",
+                            "MaxSize": null,
+                            "ForStump": true,
+                            "Season": null,
+                            "Chance": 0.2,
+                            "Condition": null,
+                            "Id": "(O){{ModID}}_Ghostwood_Seed",
+                            "ItemId": "(O){{ModID}}_Ghostwood_Seed",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": 1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                    ],
+                    "TapItems": [
+                        {
+                            "PreviousItemId": null,
+                            "DaysUntilReady": 12,
+                            "DaysUntilReadyModifiers": null,
+                            "DaysUntilReadyModifierMode": "Stack",
+                            "Season": null,
+                            "Chance": 1.0,
+                            "Condition": null,
+                            "Id": "Default",
+                            "ItemId": "{{ModId}}_Ghostwood_Ichor",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": 1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        }
+                    ],
+                    "ShakeItems": null,
+                    "CustomFields": null,
+                    "GrowsMoss": true
+                },
+            }
+        },
+        //Fog under map
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/fogtile",
+            "FromFile": "assets/Textures/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_GhostwoodxPass",
+            "FromFile": "assets/Locations/GhostwoodPass.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_GhostwoodxPass_SporkMissing",
+            "FromFile": "assets/Locations/GhostwoodPass_SporkMissing.tmx"
+        },
+        {
+            //block off the pass
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_GhostwoodxPass",
+            "FromFile": "assets/Locations/GhostwoodPass_Blocked.tmx",
+            "ToArea": {
+                "X": 32,
+                "Y": 23,
+                "Width": 5,
+                "Height": 2
+            },
+            "When": {
+                "HasSeenEvent |contains={{ModId}}_SporkMissing": false
+            },
+            "Update": "OnLocationChange"
+        },
+        //Zombie hand replacement duggy texture for FTM
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/DuggyHand",
+            "FromFile": "assets/Textures/Monsters/{{TargetWithoutPath}}.png"
+        },
+        //Mummy FTM replacement textures
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/SkeletonMummy",
+            "FromFile": "assets/Textures/Monsters/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/StoneMummy",
+            "FromFile": "assets/Textures/Monsters/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/WildernessMummy",
+            "FromFile": "assets/Textures/Monsters/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/RainSpirit",
+            "FromFile": "assets/Textures/Monsters/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/WoodGhost",
+            "FromFile": "assets/Textures/Monsters/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/BunnyRex",
+            "FromFile": "assets/Textures/Monsters/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/SkeletonStrong",
+            "FromFile": "assets/Textures/Monsters/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModId}}_GhostwoodxPass": {
+                    "DisplayName": "{{i18n:location_ghostwoodpass}}",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_GhostwoodxPass"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_Panorama": "{{ModId}}_PassFog"
+                    }
+                },
+                "{{ModId}}_GhostwoodxPass_SporkMissing": {
+                    "DisplayName": "{{i18n:location_ghostwoodpass}}",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_GhostwoodxPass_SporkMissing"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_Panorama": "{{ModId}}_PassFog"
+                    }
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "mushymato.MMAP/Panorama",
+            "Entries": {
+                "{{ModId}}_PassFog": {
+                    "ParallaxLayers": [
+                        {
+                            "Texture": "{{ModId}}/fogtile",
+                            "RepeatX": true,
+                            "Repeaty": true,
+                            "ParallaxRate": "1,1",
+                            "Color": "#cceedd99",
+                            "Velocity": "0.02,-0.02",
+                        },
+                        {
+                            "Texture": "{{ModId}}/fogtile",
+                            "RepeatX": true,
+                            "Repeaty": true,
+                            "ParallaxRate": "1,1",
+                            "Velocity": "0.01,-0.01",
+                            "Color": "#cceedd99",
+                        },
+                    ],
+                },
+                "{{ModId}}_MazeFog": {
+                    "ParallaxLayers": [
+                        {
+                            "Texture": "{{ModId}}/fogtile",
+                            "RepeatX": true,
+                            "Repeaty": true,
+                            "ParallaxRate": "1,1",
+                            "Color": "#66aa8899",
+                            "Velocity": "0.02,-0.02",
+                        },
+                        {
+                            "Texture": "{{ModId}}/fogtile",
+                            "RepeatX": true,
+                            "Repeaty": true,
+                            "ParallaxRate": "1,1",
+                            "Velocity": "0.01,-0.01",
+                            "Color": "#66aa8899",
+                        },
+                    ],
+                },
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Locations/ghostwood_townpatch.tmx",
+            "ToArea": {
+                "X": 61,
+                "Y": 0,
+                "Width": 9,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Locations/ghostwood_townpatch_sve.tmx",
+            "ToArea": {
+                "X": 61,
+                "Y": 0,
+                "Width": 9,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "FromFile": "assets/Locations/ghostwood_mtnpatch.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 38,
+                "Width": 7,
+                "Height": 3
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "68 -1 Mountain 5 40",
+                    "Delimiter": " "
+                }
+            ],
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "5 41 Town 68 1 -1 39 {{ModId}}_GhostwoodxPass 58 48",
+                    "Delimiter": " "
+                }
+            ],
+        },
+        //load the maze maps from the same tmx
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_gmx1a",
+            "FromFile": "assets/Locations/CliffMaze.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_gmx1b",
+            "FromFile": "assets/Locations/CliffMaze.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_gmx2a",
+            "FromFile": "assets/Locations/CliffMaze.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_gmx2b",
+            "FromFile": "assets/Locations/CliffMaze.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_gmx3a",
+            "FromFile": "assets/Locations/CliffMaze.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_gmx3b",
+            "FromFile": "assets/Locations/CliffMaze.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_gmx4a",
+            "FromFile": "assets/Locations/CliffMaze.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_gmx4b",
+            "FromFile": "assets/Locations/CliffMaze.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_gmx5a",
+            "FromFile": "assets/Locations/CliffMaze.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_gmx5b",
+            "FromFile": "assets/Locations/CliffMaze.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_gmx6",
+            "FromFile": "assets/Locations/CliffMaze.tmx"
+        },
+        //same with the mines
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_cliffMine0",
+            "FromFile": "assets/Locations/CliffMine.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_cliffMine1",
+            "FromFile": "assets/Locations/CliffMine.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_cliffMine2",
+            "FromFile": "assets/Locations/CliffMine.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_cliffMine3",
+            "FromFile": "assets/Locations/CliffMine.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_cliffMine4",
+            "FromFile": "assets/Locations/CliffMine.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_cliffMine5",
+            "FromFile": "assets/Locations/CliffMine.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_cliffMine6",
+            "FromFile": "assets/Locations/CliffMine.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_cliffMine7",
+            "FromFile": "assets/Locations/CliffMine.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_cliffMine8",
+            "FromFile": "assets/Locations/CliffMine.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_cliffMine9",
+            "FromFile": "assets/Locations/CliffMine.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_cliffMine10",
+            "FromFile": "assets/Locations/CliffMine.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_GhostwoodxFalls",
+            "FromFile": "assets/Locations/GhostwoodFalls.tmx"
+        },
+        //patch in the graveyards
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx1a",
+            "FromFile": "assets/Locations/CliffMazeGrave1.tmx",
+            "ToArea": {
+                "X": 39,
+                "Y": 7,
+                "Width": 7,
+                "Height": 7
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx2a",
+            "FromFile": "assets/Locations/CliffMazeGrave2.tmx",
+            "ToArea": {
+                "X": 39,
+                "Y": 7,
+                "Width": 7,
+                "Height": 7
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx3a",
+            "FromFile": "assets/Locations/CliffMazeGrave3.tmx",
+            "ToArea": {
+                "X": 39,
+                "Y": 7,
+                "Width": 7,
+                "Height": 7
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx4a",
+            "FromFile": "assets/Locations/CliffMazeGrave4.tmx",
+            "ToArea": {
+                "X": 39,
+                "Y": 7,
+                "Width": 7,
+                "Height": 7
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx5a",
+            "FromFile": "assets/Locations/CliffMazeGrave5.tmx",
+            "ToArea": {
+                "X": 39,
+                "Y": 7,
+                "Width": 7,
+                "Height": 7
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx6",
+            "FromFile": "assets/Locations/CliffMazeGrave6.tmx",
+            "ToArea": {
+                "X": 39,
+                "Y": 7,
+                "Width": 7,
+                "Height": 7
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx1a",
+            "MapProperties": {
+                "Warp": "14 23 {{ModId}}_cliffMine0 12 38 {{gw_n1_depart}} {{ModId}}_gmx1b {{gw_s1_arrive}} {{gw_n2_depart}} {{ModId}}_gmx1b {{gw_s2_arrive}} {{gw_e1_depart}} {{ModId}}_gmx1b {{gw_w1_arrive}} {{gw_e2_depart}} {{ModId}}_gmx1b {{gw_w2_arrive}} {{gw_s1_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_s2_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_w1_depart}} {{ModId}}_gmx2a {{gw_e1_arrive}} {{gw_w2_depart}} {{ModId}}_gmx2a {{gw_e1_arrive}}",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx1b",
+            "MapProperties": {
+                "Warp": "14 23 {{ModId}}_cliffMine1 12 38 {{gw_n1_depart}} {{ModId}}_gmx1a {{gw_s1_arrive}} {{gw_n2_depart}} {{ModId}}_gmx1a {{gw_s2_arrive}} {{gw_e1_depart}} {{ModId}}_gmx1a {{gw_w1_arrive}} {{gw_e2_depart}} {{ModId}}_gmx1a {{gw_w2_arrive}} {{gw_s1_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_s2_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_w1_depart}} {{ModId}}_gmx1a {{gw_e1_arrive}} {{gw_w2_depart}} {{ModId}}_gmx1a {{gw_e1_arrive}}",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx2a",
+            "MapProperties": {
+                "Warp": "14 23 {{ModId}}_cliffMine2 12 38 {{gw_n1_depart}} {{ModId}}_gmx3a {{gw_s1_arrive}} {{gw_n2_depart}} {{ModId}}_gmx3a {{gw_s2_arrive}} {{gw_e1_depart}} {{ModId}}_gmx2b {{gw_w1_arrive}} {{gw_e2_depart}} {{ModId}}_gmx2b {{gw_w2_arrive}} {{gw_s1_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_s2_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_w1_depart}} {{ModId}}_gmx2b {{gw_e1_arrive}} {{gw_w2_depart}} {{ModId}}_gmx2b {{gw_e1_arrive}}",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx2b",
+            "MapProperties": {
+                "Warp": "14 23 {{ModId}}_cliffMine3 12 38 {{gw_n1_depart}} {{ModId}}_gmx1a {{gw_s1_arrive}} {{gw_n2_depart}} {{ModId}}_gmx1a {{gw_s2_arrive}} {{gw_e1_depart}} {{ModId}}_gmx1a {{gw_w1_arrive}} {{gw_e2_depart}} {{ModId}}_gmx1a {{gw_w2_arrive}} {{gw_s1_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_s2_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_w1_depart}} {{ModId}}_gmx1a {{gw_e1_arrive}} {{gw_w2_depart}} {{ModId}}_gmx1a {{gw_e1_arrive}}",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx3a",
+            "MapProperties": {
+                "Warp": "14 23 {{ModId}}_cliffMine4 12 38 {{gw_n1_depart}} {{ModId}}_gmx3b {{gw_s1_arrive}} {{gw_n2_depart}} {{ModId}}_gmx3b {{gw_s2_arrive}} {{gw_e1_depart}} {{ModId}}_gmx4a {{gw_w1_arrive}} {{gw_e2_depart}} {{ModId}}_gmx4a {{gw_w2_arrive}} {{gw_s1_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_s2_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_w1_depart}} {{ModId}}_gmx3b {{gw_e1_arrive}} {{gw_w2_depart}} {{ModId}}_gmx3b {{gw_e1_arrive}}",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx3b",
+            "MapProperties": {
+                "Warp": "14 23 {{ModId}}_cliffMine5 12 38 {{gw_n1_depart}} {{ModId}}_gmx1a {{gw_s1_arrive}} {{gw_n2_depart}} {{ModId}}_gmx1a {{gw_s2_arrive}} {{gw_e1_depart}} {{ModId}}_gmx2a {{gw_w1_arrive}} {{gw_e2_depart}} {{ModId}}_gmx2a {{gw_w2_arrive}} {{gw_s1_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_s2_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_w1_depart}} {{ModId}}_gmx1a {{gw_e1_arrive}} {{gw_w2_depart}} {{ModId}}_gmx1a {{gw_e1_arrive}}",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx4a",
+            "MapProperties": {
+                "Warp": "14 23 {{ModId}}_cliffMine6 12 38 {{gw_n1_depart}} {{ModId}}_gmx4b {{gw_s1_arrive}} {{gw_n2_depart}} {{ModId}}_gmx4b {{gw_s2_arrive}} {{gw_e1_depart}} {{ModId}}_gmx5a {{gw_w1_arrive}} {{gw_e2_depart}} {{ModId}}_gmx5a {{gw_w2_arrive}} {{gw_s1_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_s2_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_w1_depart}} {{ModId}}_gmx4b {{gw_e1_arrive}} {{gw_w2_depart}} {{ModId}}_gmx4b {{gw_e1_arrive}}",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx4b",
+            "MapProperties": {
+                "Warp": "14 23 {{ModId}}_cliffMine7 12 38 {{gw_n1_depart}} {{ModId}}_gmx2a {{gw_s1_arrive}} {{gw_n2_depart}} {{ModId}}_gmx2a {{gw_s2_arrive}} {{gw_e1_depart}} {{ModId}}_gmx3a {{gw_w1_arrive}} {{gw_e2_depart}} {{ModId}}_gmx3a {{gw_w2_arrive}} {{gw_s1_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_s2_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_w1_depart}} {{ModId}}_gmx1a {{gw_e1_arrive}} {{gw_w2_depart}} {{ModId}}_gmx1a {{gw_e1_arrive}}",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx5a",
+            "MapProperties": {
+                "Warp": "14 23 {{ModId}}_cliffMine8 12 38 {{gw_n1_depart}} {{ModId}}_GhostwoodxFalls {{gw_s1_arrive}} {{gw_n2_depart}} {{ModId}}_GhostwoodxFalls {{gw_s2_arrive}} {{gw_e1_depart}} {{ModId}}_gmx5b {{gw_w1_arrive}} {{gw_e2_depart}} {{ModId}}_gmx5b {{gw_w2_arrive}} {{gw_s1_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_s2_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_w1_depart}} {{ModId}}_gmx5b {{gw_e1_arrive}} {{gw_w2_depart}} {{ModId}}_gmx5b {{gw_e1_arrive}}",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx5b",
+            "MapProperties": {
+                "Warp": "14 23 {{ModId}}_cliffMine9 12 38 {{gw_n1_depart}} {{ModId}}_gmx2a {{gw_s1_arrive}} {{gw_n2_depart}} {{ModId}}_gmx2a {{gw_s2_arrive}} {{gw_e1_depart}} {{ModId}}_gmx4a {{gw_w1_arrive}} {{gw_e2_depart}} {{ModId}}_gmx4a {{gw_w2_arrive}} {{gw_s1_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_s2_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_w1_depart}} {{ModId}}_gmx3a {{gw_e1_arrive}} {{gw_w2_depart}} {{ModId}}_gmx3a {{gw_e1_arrive}}",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx6",
+            "MapProperties": {
+                "Warp": "14 23 {{ModId}}_cliffMine10 12 38 {{gw_n1_depart}} {{ModId}}_GhostwoodxFalls {{gw_s1_arrive}} {{gw_n2_depart}} {{ModId}}_GhostwoodxFalls {{gw_s2_arrive}} {{gw_e1_depart}} {{ModId}}_GhostwoodxFalls 12 23 {{gw_e2_depart}} {{ModId}}_GhostwoodxFalls 12 24 {{gw_s1_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_s2_depart}} {{ModId}}_GhostwoodxPass 34 1 {{gw_w1_depart}} {{ModId}}_gmx5a {{gw_e1_arrive}} {{gw_w2_depart}} {{ModId}}_gmx5a {{gw_e2_arrive}}",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_cliffMine0",
+            "MapProperties": {
+                "Warp": "12 40  {{ModId}}_gmx1a 14 25",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_cliffMine1",
+            "MapProperties": {
+                "Warp": "12 40 {{ModId}}_gmx1b 14 25",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_cliffMine2",
+            "MapProperties": {
+                "Warp": "12 40  {{ModId}}_gmx2a 14 25",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_cliffMine3",
+            "MapProperties": {
+                "Warp": "12 40 {{ModId}}_gmx2b 14 25",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_cliffMine4",
+            "MapProperties": {
+                "Warp": "12 40  {{ModId}}_gmx3a 14 25",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_cliffMine5",
+            "MapProperties": {
+                "Warp": "12 40 {{ModId}}_gmx3b 14 25",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_cliffMine6",
+            "MapProperties": {
+                "Warp": "12 40  {{ModId}}_gmx4a 14 25",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_cliffMine7",
+            "MapProperties": {
+                "Warp": "12 40 {{ModId}}_gmx4b 14 25",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_cliffMine8",
+            "MapProperties": {
+                "Warp": "12 40  {{ModId}}_gmx5a 14 25",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_cliffMine9",
+            "MapProperties": {
+                "Warp": "12 40 {{ModId}}_gmx5b 14 25",
+            },
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_cliffMine10",
+            "MapProperties": {
+                "Warp": "12 40 {{ModId}}_gmx6 14 25",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModId}}_gmx1a": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_gmx1a"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #67917c 0.6 4",
+                        "mushymato.MMAP_Panorama": "{{ModId}}_MazeFog",
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_gmx1b": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_gmx1b"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #67917c 0.6 4",
+                        "mushymato.MMAP_Panorama": "{{ModId}}_MazeFog",
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_gmx2a": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_gmx2a"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #67917c 0.6 4",
+                        "mushymato.MMAP_Panorama": "{{ModId}}_MazeFog",
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_gmx2b": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_gmx2b"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #67917c 0.6 4",
+                        "mushymato.MMAP_Panorama": "{{ModId}}_MazeFog",
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_gmx3a": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_gmx3a"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #67917c 0.6 4",
+                        "mushymato.MMAP_Panorama": "{{ModId}}_MazeFog",
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_gmx3b": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_gmx3b"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #67917c 0.6 4",
+                        "mushymato.MMAP_Panorama": "{{ModId}}_MazeFog",
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_gmx4a": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_gmx4a"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #67917c 0.6 4",
+                        "mushymato.MMAP_Panorama": "{{ModId}}_MazeFog",
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_gmx4b": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_gmx4b"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #67917c 0.6 4",
+                        "mushymato.MMAP_Panorama": "{{ModId}}_MazeFog",
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_gmx5a": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_gmx5a"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #67917c 0.6 4",
+                        "mushymato.MMAP_Panorama": "{{ModId}}_MazeFog",
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_gmx5b": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_gmx5b"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #67917c 0.6 4",
+                        "mushymato.MMAP_Panorama": "{{ModId}}_MazeFog",
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_gmx6": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_gmx6"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #67917c 0.6 4",
+                        "mushymato.MMAP_Panorama": "{{ModId}}_MazeFog",
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_cliffMine0": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_cliffMine0"
+                    },
+                    "CustomFields": {
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_cliffMine1": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_cliffMine1"
+                    },
+                    "CustomFields": {
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_cliffMine2": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_cliffMine2"
+                    },
+                    "CustomFields": {
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_cliffMine3": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_cliffMine3"
+                    },
+                    "CustomFields": {
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_cliffMine4": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_cliffMine4"
+                    },
+                    "CustomFields": {
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_cliffMine5": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_cliffMine5"
+                    },
+                    "CustomFields": {
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_cliffMine6": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_cliffMine6"
+                    },
+                    "CustomFields": {
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_cliffMine7": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_cliffMine7"
+                    },
+                    "CustomFields": {
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_cliffMine8": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_cliffMine8"
+                    },
+                    "CustomFields": {
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_cliffMine9": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_cliffMine9"
+                    },
+                    "CustomFields": {
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_cliffMine10": {
+                    "DisplayName": "{{i18n:location_CliffMaze}}",
+                    "MusicDefault": "{{ModId}}_EnchantedMystery",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_cliffMine10"
+                    },
+                    "CustomFields": {
+                        "{{ModId}}_isghostwood": true,
+                    }
+                },
+                "{{ModId}}_GhostwoodxFalls": {
+                    "DisplayName": "{{i18n:location_GhostwoodFalls}}",
+                    "MusicDefault": "woodsTheme",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_GhostwoodxFalls"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "{{ModId}}/fogtile 0.1 -0.1 #678591 0.4 4",
+                        "{{ModId}}_isghostwood": true,
+                    },
+                    "FishAreas": {
+                        "Default": {
+                            "CrabPotFishTypes": [
+                                "freshwater"
+                            ],
+                            "CrabPotJunkChance": 0.0
+                        }
+                    },
+                    "Fish": [
+                        {
+                            "Chance": 0.3,
+                            "Precedence": -20,
+                            "Id": "{{ModId}}_SpectralSturgeon",
+                            "ItemId": "{{ModId}}_SpectralSturgeon",
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "{{ModId}}_Bream",
+                            "Precedence": -10,
+                            "ItemId": "(O)132",
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "{{ModId}}_LargemouthBass",
+                            "Precedence": -10,
+                            "ItemId": "(O)136",
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Id": "{{ModId}}_GhostFish",
+                            "Precedence": -10,
+                            "ItemId": "(O)156",
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Season": "summer",
+                            "Id": "{{ModId}}_RainbowTrout",
+                            "Precedence": -10,
+                            "ItemId": "(O)138",
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "{{ModId}}_Sturgeon",
+                            "Condition": "LOCATION_SEASON Here summer winter",
+                            "Precedence": -10,
+                            "ItemId": "(O)698",
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "{{ModId}}_Salmon",
+                            "Condition": "LOCATION_SEASON Here fall",
+                            "Precedence": -10,
+                            "ItemId": "(O)139",
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "{{ModId}}_Catfish",
+                            "Condition": "LOCATION_SEASON Here spring summer fall",
+                            "Precedence": -10,
+                            "ItemId": "(O)143",
+                        },
+                        {
+                            "Chance": 0.1,
+                            "Id": "{{ModId}}_Pike",
+                            "Condition": "LOCATION_SEASON Here summer winter",
+                            "Precedence": -10,
+                            "ItemId": "(O)144",
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "{{ModId}}_Walleye",
+                            "Condition": "LOCATION_SEASON Here fall winter",
+                            "Precedence": -10,
+                            "ItemId": "(O)140",
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Id": "{{ModId}}_MidnightCarp",
+                            "Condition": "LOCATION_SEASON Here fall winter",
+                            "Precedence": -10,
+                            "ItemId": "(O)269",
+                        },
+                        {
+                            "Chance": 0.2,
+                            "Precedence": -10,
+                            "Id": "{{ModId}}_IcePip",
+                            "ItemId": "(O)161",
+                            "Condition": "LOCATION_SEASON Here winter",
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Precedence": -1,
+                            "Id": "{{ModId}}_Algae",
+                            "ItemId": "(O)153",
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Precedence": -1,
+                            "Id": "{{ModId}}_WhiteAlgae",
+                            "ItemId": "(O)157",
+                        },
+                        {
+                            "Chance": 0.7,
+                            "Precedence": -1,
+                            "Id": "{{ModId}}_Seaweed",
+                            "ItemId": "(O)152",
+                        },
+                        {
+                            "Chance": 1.0,
+                            "Precedence": 0,
+                            "Id": "{{ModId}}_RiverJelly",
+                            "ItemId": "(O)RiverJelly",
+                        },
+                    ],
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Fish",
+            "Entries": {
+                "{{ModId}}_SpectralSturgeon": "Spectral Sturgeon/90/mixed/50/90/600 2600/spring summer fall winter/both/689 .35 682 .1/1/.3/.5/7/false",
+            }
+        },
+        //Aquarium Fish Entries
+        {
+            "LogName": "Aquarium Fish",
+            "Action": "EditData",
+            "Target": "Data/AquariumFish",
+            "Entries": {
+                "{{ModId}}_SpectralSturgeon": "0/fish/0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1/1/2/1/Mods\\{{ModId}}\\AquariumFish",
+            }
+        },
+        {
+            //conceals artifact digspot locations in the ghostwoods
+            "LogName": "secret digspot effect",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/Locations/digsecret.png",
+            "ToArea": {
+                "X": 368,
+                "Y": 32,
+                "Width": 64,
+                "Height": 16
+            },
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "LocationName |contains={{ModId}}_gmx1a, {{ModId}}_gmx1b, {{ModId}}_gmx2a, {{ModId}}_gmx2b, {{ModId}}_gmx3a, {{ModId}}_gmx3b, {{ModId}}_gmx4a, {{ModId}}_gmx4b, {{ModId}}_gmx5a, {{ModId}}_gmx5b, {{ModId}}_gmx6, {{ModId}}_cliffMine0, {{ModId}}_cliffMine1, {{ModId}}_cliffMine2, {{ModId}}_cliffMine3, {{ModId}}_cliffMine4, {{ModId}}_cliffMine5, {{ModId}}_cliffMine6, {{ModId}}_cliffMine7, {{ModId}}_cliffMine8, {{ModId}}_cliffMine9, {{ModId}}_cliffMine10": "true"
+            },
+            "Update": "OnLocationChange",
+        },
+        {
+            //also conceals 1.6 carrot spots (as they seem to be replicated on every maze level in the same spot when present)
+            "LogName": "secret digspot effect 2",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors_1_6",
+            "FromFile": "assets/Locations/digsecret.png",
+            "ToArea": {
+                "X": 160,
+                "Y": 0,
+                "Width": 64,
+                "Height": 16
+            },
+            //"Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_GhostwoodPendant, LOCATION_HAS_CUSTOM_FIELD here {{ModId}}_isghostwood",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "LocationName |contains={{ModId}}_gmx1a, {{ModId}}_gmx1b, {{ModId}}_gmx2a, {{ModId}}_gmx2b, {{ModId}}_gmx3a, {{ModId}}_gmx3b, {{ModId}}_gmx4a, {{ModId}}_gmx4b, {{ModId}}_gmx5a, {{ModId}}_gmx5b, {{ModId}}_gmx6, {{ModId}}_cliffMine0, {{ModId}}_cliffMine1, {{ModId}}_cliffMine2, {{ModId}}_cliffMine3, {{ModId}}_cliffMine4, {{ModId}}_cliffMine5, {{ModId}}_cliffMine6, {{ModId}}_cliffMine7, {{ModId}}_cliffMine8, {{ModId}}_cliffMine9, {{ModId}}_cliffMine10": "true"
+            },
+            "Update": "OnLocationChange",
+        },
+        {
+            //load event locations (and possible event locations)
+            "Action": "Load",
+            "Target": "Data/Events/{{ModId}}_GhostwoodxFalls, Data/Events/{{ModId}}_cliffMine1, Data/Events/{{ModId}}_cliffMine2, Data/Events/{{ModId}}_cliffMine3, Data/Events/{{ModId}}_cliffMine4, Data/Events/{{ModId}}_cliffMine5, Data/Events/{{ModId}}_cliffMine6, Data/Events/{{ModId}}_cliffMine7, Data/Events/{{ModId}}_cliffMine8, Data/Events/{{ModId}}_cliffMine9, Data/Events/{{ModId}}_gmx6",
+            "FromFile": "assets/NPCs/Data/blank.json",
+            "Priority": "Low"
+        },
+        {
+            //ghostwood shop portrait
+            "Action": "Load",
+            "Target": "Mods/sdvhead.LawAndOrderSV/lao_GhostShopPortrait",
+            "FromFile": "assets/NPCs/Portraits_original/Ripley/GhostShop.png",
+        },
+        {
+            //ghostwood shop
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "{{ModId}}_GhostShop": {
+                    "Owners": [
+                        {
+                            "Name": "{{Ripley}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_RipleyShopDialogue",
+                                    "RandomDialogue": [
+                                        "{{i18n:Ripley_ShopDialogue1}}",
+                                        "{{i18n:Ripley_ShopDialogue2}}",
+                                        "{{i18n:Ripley_ShopDialogue3}}",
+                                        "{{i18n:Ripley_ShopDialogue4}}",
+                                    ]
+                                },
+                            ],
+                            "RandomizeDialogueOnOpen": false //false randomizes daily instead of on every shop open
+                        },
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "Mods\\sdvhead.LawAndOrderSV\\lao_GhostShopPortrait",
+                            "Dialogues": [
+                                {
+                                    "Id": "{{ModId}}_RipleyShopDialogue",
+                                    "RandomDialogue": [
+                                        "{{i18n:Ripley_ShopDialogue1}}",
+                                        "{{i18n:Ripley_ShopDialogue2}}",
+                                        "{{i18n:Ripley_ShopDialogue3}}",
+                                        "{{i18n:Ripley_ShopDialogue4}}",
+                                    ]
+                                },
+                            ],
+                            "RandomizeDialogueOnOpen": false //false randomizes daily instead of on every shop open
+                        },
+                    ],
+                    "Items": [
+                        {
+                            "Id": "{{ModId}}_GhostShop_EnergyTonic",
+                            "ItemId": "(O)349",
+                            "TradeItemId": "(O){{ModID}}_SpectralEssence",
+                            "TradeItemAmount": 1,
+                            "AvailableStock": 2,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_MossSoup",
+                            "ItemId": "(O)MossSoup",
+                            "TradeItemId": "(O)378", //copper ore
+                            "TradeItemAmount": 4,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            "Condition": "SEASON spring summer",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_TomKhaSoup",
+                            "ItemId": "(O)218",
+                            "TradeItemId": "(O)380", //iron ore
+                            "TradeItemAmount": 4,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            "Condition": "SEASON summer fall",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_PumpkinSoup1",
+                            "ItemId": "(O)236",
+                            "TradeItemId": "(O)747", //rotten plant 1
+                            "TradeItemAmount": 1,
+                            "AvailableStock": 10,
+                            "AvailableStockLimit": "Player",
+                            "Condition": "SEASON fall winter",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_PumpkinSoup2",
+                            "ItemId": "(O)236",
+                            "TradeItemId": "(O)748", //rotten plant 2
+                            "TradeItemAmount": 1,
+                            "AvailableStock": 10,
+                            "AvailableStockLimit": "Player",
+                            "Condition": "SEASON fall winter",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_LuckyLunch",
+                            "ItemId": "(O)204",
+                            "TradeItemId": "(O)384", //gold ore
+                            "TradeItemAmount": 4,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            "Condition": "SEASON winter spring",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_StoneSoup",
+                            "ItemId": "(O)LawAndOrderSV_StoneSoup",
+                            "TradeItemId": "(O)390", //stone
+                            "TradeItemAmount": 44,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_TrapBobber",
+                            "ItemId": "(O)694",
+                            "TradeItemId": "(O)156", //ghostfish
+                            "TradeItemAmount": 2,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_FairyDust",
+                            "ItemId": "(O)872",
+                            "TradeItemId": "(O){{ModID}}_Ghostwood_Ichor",
+                            "TradeItemAmount": 3,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_MushroomLog",
+                            "ItemId": "(BC)MushroomLog",
+                            "TradeItemId": "(O){{ModID}}_Ghostwood_Seed",
+                            "TradeItemAmount": 2,
+                            "AvailableStock": 2,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_WarpTotemFarm",
+                            "ItemId": "(O)688",
+                            "TradeItemId": "(O){{ModID}}_SpectralEssence",
+                            "TradeItemAmount": 1,
+                            "AvailableStock": 2,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_WarpTotemBeach",
+                            "ItemId": "(O)690",
+                            "TradeItemId": "(O){{ModID}}_SpectralSturgeon",
+                            "Condition": "PLAYER_HEARTS Current {{Ripley}} 2",
+                            "TradeItemAmount": 1,
+                            "AvailableStock": 2,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_GingerAle",
+                            "ItemId": "(O)903",
+                            "TradeItemId": "(O){{ModID}}_SpectralEssence",
+                            "TradeItemAmount": 1,
+                            "AvailableStock": 2,
+                            "AvailableStockLimit": "Player",
+                            "Condition": "IS_ISLAND_NORTH_BRIDGE_FIXED",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_PhantomFootwear",
+                            "ItemId": "(B){{ModId}}_PhantomFootwear",
+                            "TradeItemId": "(O){{ModID}}_SpectralEssence",
+                            "TradeItemAmount": 7,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_GhostwoodPendantRecipe",
+                            "ItemId": "{{ModId}}_GhostwoodPendant",
+                            "IsRecipe": true,
+                            "TradeItemId": "(O)Book_Void",
+                            "TradeItemAmount": 1,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_PurpleMushroom_Winter",
+                            "Condition": "SEASON winter",
+                            "ItemId": "(O)422", //purple mushroom
+                            "AvoidRepeat": true,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player",
+                            "TradeItemId": "(O)420", //red mushroom
+                            "TradeItemAmount": 2,
+                        },
+                        {
+                            "Id": "{{ModId}}_GhostShop_MagmaCap",
+                            "Condition": "IS_ISLAND_NORTH_BRIDGE_FIXED",
+                            "RandomItemId": [
+                                "(O)851", //magma cap
+                            ],
+                            "AvoidRepeat": true,
+                            "AvailableStock": 5,
+                            "AvailableStockLimit": "Player",
+                            "TradeItemId": "(O)107", //dinosaur egg
+                            "TradeItemAmount": 1,
+                        },
+                    ]
+                }
+            }
+        },
+        {
+            //ghostwood pendant buff
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModId}}_GhostwoodPendantBuff1": {
+                    "DisplayName": "{{i18n:Buff_GhostwoodPendantMinBuffName}}",
+                    "Description": "{{i18n: Buff_GhostwoodPendantMinBuffDescription}}",
+                    "IconTexture": "Mods/sdvhead.LawAndOrderSV/lao_objects",
+                    "IconSpriteIndex": 28,
+                    "IsDebuff": false,
+                    "Duration": -2,
+                    "Effects": {
+                        "Defense": 10,
+                        "MagneticRadius": 32
+                    }
+                },
+                "{{ModId}}_GhostwoodPendantBuff2": {
+                    "DisplayName": "{{i18n:Buff_GhostwoodPendantMidBuffName}}",
+                    "Description": "{{i18n: Buff_GhostwoodPendantMidBuffDescription}}",
+                    "IconTexture": "Mods/sdvhead.LawAndOrderSV/lao_objects",
+                    "IconSpriteIndex": 28,
+                    "IsDebuff": false,
+                    "Duration": -2,
+                    "Effects": {
+                        "Defense": 25,
+                        "MagneticRadius": 64
+                    }
+                },
+                "{{ModId}}_GhostwoodPendantBuff3": {
+                    "DisplayName": "{{i18n:Buff_GhostwoodPendantMaxBuffName}}",
+                    "Description": "{{i18n: Buff_GhostwoodPendantMaxBuffDescription}}",
+                    "IconTexture": "Mods/sdvhead.LawAndOrderSV/lao_objects",
+                    "IconSpriteIndex": 29,
+                    "IsDebuff": false,
+                    "Duration": -2,
+                    "Effects": {
+                        "Defense": 50,
+                        "MagneticRadius": 256
+                    }
+                },
+            },
+        },
+        {
+            //trigger to consume ghostwood pendant in the ghostwoods
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Triggers_ConsumeGhostwoodPendant": {
+                    "Id": "{{ModId}}_Triggers_ConsumeGhostwoodPendant",
+                    "Trigger": "LocationChanged",
+                    "Condition": "PLAYER_HAS_ITEM Current (O){{ModId}}_GhostwoodPendant, LOCATION_HAS_CUSTOM_FIELD here {{ModId}}_isghostwood, PLAYER_STAT current {{ModId}}_GhostwoodPendantsConsumed 0 2",
+                    "Actions": [
+                        "RemoveItem (O){{ModId}}_GhostwoodPendant",
+                        "IncrementStat {{ModId}}_GhostwoodPendantsConsumed",
+                        "If PLAYER_STAT current {{ModId}}_GhostwoodPendantsConsumed 1 1 ## AddMail Current {{ModId}}_GhostwoodPendantBuff1 received",
+                        "If PLAYER_STAT current {{ModId}}_GhostwoodPendantsConsumed 2 2 ## AddMail Current {{ModId}}_GhostwoodPendantBuff2 received",
+                        "If PLAYER_STAT current {{ModId}}_GhostwoodPendantsConsumed 3 ## AddMail Current {{ModId}}_GhostwoodPendantBuff3 received",
+                    ],
+                    "MarkActionApplied": false,
+                },
+                "{{ModId}}_Triggers_AddGhostwoodPendantBuff": {
+                    "Id": "{{ModId}}_Triggers_AddGhostwoodPendantBuff",
+                    "Trigger": "LocationChanged",
+                    "Condition": "LOCATION_HAS_CUSTOM_FIELD here {{ModId}}_isghostwood",
+                    "Actions": [
+                        "RemoveBuff {{ModId}}_GhostwoodPendantBuff1",
+                        "RemoveBuff {{ModId}}_GhostwoodPendantBuff2",
+                        "RemoveBuff {{ModId}}_GhostwoodPendantBuff3",
+                        "If PLAYER_STAT current {{ModId}}_GhostwoodPendantsConsumed 1 1 ## AddBuff {{ModId}}_GhostwoodPendantBuff1",
+                        "If PLAYER_STAT current {{ModId}}_GhostwoodPendantsConsumed 2 2 ## AddBuff {{ModId}}_GhostwoodPendantBuff2",
+                        "If PLAYER_STAT current {{ModId}}_GhostwoodPendantsConsumed 3 ## AddBuff {{ModId}}_GhostwoodPendantBuff3",
+                    ],
+                    "MarkActionApplied": false,
+                },
+                "{{ModId}}_Triggers_RemoveGhostwoodPendantBuff": {
+                    "Id": "{{ModId}}_Triggers_RemoveGhostwoodPendantBuff",
+                    "Trigger": "LocationChanged",
+                    "Condition": "!LOCATION_HAS_CUSTOM_FIELD here {{ModId}}_isghostwood",
+                    "Actions": [
+                        "RemoveBuff {{ModId}}_GhostwoodPendantBuff1",
+                        "RemoveBuff {{ModId}}_GhostwoodPendantBuff2",
+                        "RemoveBuff {{ModId}}_GhostwoodPendantBuff3",
+                    ],
+                    "MarkActionApplied": false,
+                },
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "{{ModId}}_SoulPiercer": {
+                    "Name": "{{i18n:Weapon_SoulPiercer_Name}}",
+                    "DisplayName": "{{i18n:Weapon_SoulPiercer_Name}}",
+                    "Description": "{{i18n:Weapon_SoulPiercer_Description}}",
+                    "MinDamage": 80,
+                    "MaxDamage": 120,
+                    "Speed": -10,
+                    "Type": 1,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0.01,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 25,
+                    "CustomFields": {},
+                    "Projectiles": [
+                        {
+                            "Id": "{{ModId}}_SoulProjectile",
+                            "Damage": 40,
+                            "CollisionSound": "dwoop",
+                            "SpriteIndex": "14",
+                            "MaxDistance": 50,
+                            "Velocity": 15,
+                            "RotationVelocity": 12,
+                            "Bounces": 5
+                        },
+                    ],
+                }
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx6",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 42,
+                        "Y": 10
+                    },
+                    "Layer": "Buildings3",
+                    "SetIndex": "127",
+                },
+                {
+                    "Position": {
+                        "X": 42,
+                        "Y": 10
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"Ghostwood.SwordStone1\""
+                    }
+                },
+            ],
+            "When": {
+                "HasFlag: currentPlayer": "{{ModId}}_GhostwoodPendantBuff1",
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx6",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 42,
+                        "Y": 10
+                    },
+                    "Layer": "Buildings3",
+                    "SetIndex": "128",
+                },
+                {
+                    "Position": {
+                        "X": 42,
+                        "Y": 10
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"Ghostwood.SwordStone2\""
+                    }
+                },
+            ],
+            "When": {
+                "HasFlag: currentPlayer": "{{ModId}}_GhostwoodPendantBuff2",
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx6",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 42,
+                        "Y": 10
+                    },
+                    "Layer": "Buildings3",
+                    "SetIndex": "129",
+                },
+                {
+                    "Position": {
+                        "X": 42,
+                        "Y": 10
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "PlayEvent {{ModId}}_ObtainSoulPiercer true true"
+                    }
+                },
+            ],
+            "When": {
+                "HasFlag: currentPlayer": "{{ModId}}_GhostwoodPendantBuff3",
+                "HasSeenEvent |contains={{ModId}}_ObtainSoulPiercer": false
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_gmx6",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 42,
+                        "Y": 10
+                    },
+                    "Layer": "Buildings3",
+                    "SetIndex": "129",
+                },
+                {
+                    "Position": {
+                        "X": 42,
+                        "Y": 9
+                    },
+                    "Layer": "Front",
+                    "SetIndex": "170",
+                },
+                {
+                    "Position": {
+                        "X": 42,
+                        "Y": 10
+                    },
+                    "Layer": "Buildings2",
+                    "SetIndex": "170",
+                },
+                {
+                    "Position": {
+                        "X": 42,
+                        "Y": 10
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"Ghostwood.SwordStone3\""
+                    },
+                },
+            ],
+            "When": {
+                "HasFlag: currentPlayer": "{{ModId}}_GhostwoodPendantBuff3",
+                "HasSeenEvent |contains={{ModId}}_ObtainSoulPiercer": true
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/{{ModId}}_gmx6",
+            "Entries": {
+                "{{ModId}}_ObtainSoulPiercer/Time 600 2600/Tile 41 9 42 9 43 9 41 10 42 10 43 10 41 11 42 11 43 11/FreeInventorySlots 1/LocalMail sdvhead.LawAndOrderSV_GhostwoodPendantBuff3": "continue/42 11/farmer 42 12 0/viewport 42 11 clamp true/positionOffset farmer 0 24 true/pause 2500/emote farmer 40 true/pause 2000/advancedMove farmer false -1 0 0 -3 1 0 2 100/pause 3000/showFrame farmer 55/pause 1000/startJittering/pause 1500/changeMapTile Back3 42 8 106/changeMapTile Back3 42 9 118/pause 160/changeMapTile Back3 42 8 105/changeMapTile Back3 42 9 117/pause 160/changeMapTile Back3 42 8 106/changeMapTile Back3 42 9 118/pause 160/changeMapTile Back3 42 8 107/changeMapTile Back3 42 9 119/pause 160/changeMapTile Back3 42 8 106/changeMapTile Back3 42 9 118/pause 160/changeMapTile Back3 42 8 105/changeMapTile Back3 42 9 117/pause 160/changeMapTile Back3 42 8 106/changeMapTile Back3 42 9 118/pause 160/changeMapTile Back3 42 8 107/changeMapTile Back3 42 9 119/pause 160/changeMapTile Back3 42 8 106/changeMapTile Back3 42 9 118/pause 160/changeMapTile Back3 42 8 105/changeMapTile Back3 42 9 117/pause 160/changeMapTile Back3 42 8 106/changeMapTile Back3 42 9 118/pause 160/changeMapTile Back3 42 8 107/changeMapTile Back3 42 9 119/pause 160/changeMapTile Back3 42 8 170/changeMapTile Back3 42 9 170/stopJittering/showFrame farmer 70/pause 200/showFrame farmer 69/pause 200/removeTile 42 9 Front/removeTile 42 10 Buildings2/addItem {{ModID}}_SoulPiercer/itemAboveHead {{ModId}}_SoulPiercer/pause 5000/end",            },
+        },
+    ]
+}

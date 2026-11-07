@@ -1,0 +1,60 @@
+{
+    "Changes": [
+        {
+            "LogName": "Objects",
+            "Action": "Include",
+            "FromFile": "Data/Objects/Harvestables.json"
+        },
+        {
+            "LogName": "Objects",
+            "Action": "Include",
+            "FromFile": "Data/Objects/Consumables.json"
+        },
+        {
+            "LogName": "Objects",
+            "Action": "Include",
+            "FromFile": "Data/Objects/Ingredients.json"
+        },
+        {
+            "LogName": "Objects",
+            "Action": "Include",
+            "FromFile": "Data/Crops/Seeds.json"
+        },
+        {
+            "LogName": "Objects",
+            "Action": "Include",
+            "FromFile": "Data/Crops/Crops.json",
+            "When": {
+                "RegrowableCrops": "false",
+                "PaddyCrops": "false"
+            }
+        },
+        {
+            "LogName": "Objects",
+            "Action": "Include",
+            "FromFile": "Data/Crops/RegrowableCrops.json",
+            "When": {
+                "RegrowableCrops": "true",
+                "PaddyCrops": "false"
+            }
+        },
+        {
+            "LogName": "Objects",
+            "Action": "Include",
+            "FromFile": "Data/Crops/PaddyCrops.json",
+            "When": {
+                "RegrowableCrops": "false",
+                "PaddyCrops": "true"
+            }
+        },
+        {
+            "LogName": "Objects",
+            "Action": "Include",
+            "FromFile": "Data/Crops/RegrowablePaddyCrops.json",
+            "When": {
+                "RegrowableCrops": "true",
+                "PaddyCrops": "true"
+            }
+        }
+    ]
+}

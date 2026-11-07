@@ -1,0 +1,99 @@
+{
+    "Changes": [
+        {
+        "Action": "EditData",
+        "Target": "Data/Events/Forest",
+        "Entries": {
+                "17674003/F/f Haley 750/w sunny/z winter/t 1100 1600/G !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !SEASON_DAY summer 17 summer 18 summer 19/e 17674002": "
+                ragtime/
+                74 46/
+                farmer 66 42 1 Haley 77 45 2/
+                skippable/
+                addTemporaryActor HaleyRose 16 16 71 43 2 false/
+                animate Haley false true 50 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 31 24 24 24 24 24 24 31 30 30 30 30 30 30 30 30 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 32 25 25 25 25 25 25 25 25 25 25 32 33 33 33 33 33 33 33 32 25 25 25 25 25 25 25 25 25 32 33 33 33 33 33 33/
+                move farmer 5 0 2/
+                pause 250/
+                emote farmer 32/
+                pause 400/
+                move farmer 3 0 2/
+                emote Haley 28 true/
+                move farmer 3 0 2/
+                emote farmer 8/
+                pause 200/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.001}}\"/
+                move farmer 0 2 2/
+                pause 500/
+                stopAnimation Haley 30/
+                faceDirection Haley 0/
+                pause 200/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.002}}\"/
+                pause 300/
+                question fork1 \"{{i18n:Miihau.HaleyEE.E3.003}}\"/
+                fork badAdviceToHaley/
+                pause 200/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.004}}\"/
+                question fork0 \"{{i18n:Miihau.HaleyEE.E3.005}}\"/
+                fork pictureOfPlayer/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.006}}\"/
+                advancedMove Haley false 0 -2 -4 0 3 1000/
+                move farmer 0 -2 3/
+                move farmer -4 0 2/
+                stopAdvancedMoves/
+                friendship Haley 20/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.007}}\"/
+                animate Haley true true 35 33 33 33 33 33 33 33 33 33 32 32 32 32 32 32 32 25 25 25 25 25 25 25 25 25 25 32 32 32 32 32 32 32 32/
+                pause 200/
+                emote farmer 32/
+                pause 500/
+                globalFade/
+                viewport -1000 -1000/
+                pause 500/
+                end dialogue Haley \"{{i18n:Miihau.HaleyEE.E3.008}}\"",
+
+                "badAdviceToHaley": "
+                pause 400/
+                friendship Haley -10/
+                emote Haley 12/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.009}}\"/
+                pause 200/
+                faceDirection Haley 2/
+                pause 200/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.010}}\"/
+                pause 200/
+                emote Haley 28/
+                pause 200/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.011}}\"/
+                emote farmer 60/
+                faceDirection Haley 0/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.012}}\"/
+                advancedMove Haley false -1 0 0 -9 4 1000/
+                pause 250/
+                faceDirection farmer 3/
+                pause 1000/
+                emote farmer 28 true/
+                faceDirection farmer 0/
+                globalFade/
+                viewport -1000 -1000/
+                end dialogue Haley \"{{i18n:Miihau.HaleyEE.E3.013}}\"",
+
+                "pictureOfPlayer": "
+                pause 300/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.014}}\"/
+                pause 200/
+                move Haley -1 0 1/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.015}}\"/
+                move farmer 0 1 0 true/
+                move Haley 0 -2 0/
+                move Haley 1 0 2/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E3.016}}\"/
+                animate Haley false true 50 30 30 30 30 30 30 30 30 30 30 30 30 31 31 31 31 31 31 31 31 31 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 31 31 31 31 31 31 31 31 31/
+                pause 200/
+                animate farmer false true 60 53 53 53 53 53 53 53 53 15 15 15 15 15 15 15 15 77 77 77 77 77 77 77 74 74 74 74 74 74 74 74/
+                emote farmer 32/
+                pause 1500/
+                end dialogue Haley \"{{i18n:Miihau.HaleyEE.E3.017}}\""
+            },
+    },  
+        
+    ]
+}

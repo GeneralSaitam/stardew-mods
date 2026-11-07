@@ -1,0 +1,42 @@
+{
+  "Changes": [
+    {
+      "LogName": "Worm Bin Bait Min",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)154",
+        "OutputRules",
+        "Default",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)685": {
+          "MinStack": "{{Worm Bin Bait Min Amount}}"
+        }
+      },
+      "When": {
+        "Worm Bin Bait Min Amount": "5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Worm Bin Bait Max",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)154",
+        "OutputRules",
+        "Default",
+        "OutputItem"
+      ],
+      "Fields": {
+        "(O)685": {
+          "MaxStack": "{{Worm Bin Bait Max Amount}}"
+        }
+      },
+      "When": {
+        "Worm Bin Bait Max Amount": "6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+    "Format": "2.4.0",
+    "ConfigSchema": {
+		"Enable Spicy Dialogue": {
+            "AllowValues": "disabled, enabled",
+            "Default": "disabled",
+			"Description": "Enables somewhat spicier dialogue from relevant spouses. Will not do anything without corresponding enabled options below.",
+			"Section": "Main Mod Changes",
+        },
+		"MoreWizard": {
+			"AllowValues": "enabled, disabled",
+            "Default": "enabled",
+			"Description": "If enabled and Wizard is selected at the Winter Star with Unique Winter Star installed, gives Magnus unique dating and married variants for when he is married to the farmer (Magnus does not have a spicy variant). Disable to remove these dialogue changes and only get Unique Winter Star's (platonic) variant. (Without Unique Winter Star, this setting will do nothing.)",
+			"Section": "Main Mod Changes",
+        },
+		"CustomGifts": {
+			"AllowValues": "enabled, disabled",
+            "Default": "disabled",
+			"Description": "Allows a custom gift list to be used for each NPC, including an 'ultimate gift' that can be obtained upon reaching high hearts with an NPC. This will increase the variety of gifts given at the Winter Star, but may also prevent the Tea Set from being gifted by certain characters.",
+			"Section": "Main Mod Changes",
+        },
+		"Sophia": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Determines if Sophia's dialogue changes are enabled and/or if she's in the gift pool at the Winter Star. If the Spicy Dialogue toggle is enabled and Sophia is set to 'spicy dialogue enabled', allow Sophia to say a slightly spicier end dialogue when married to the player.",
+			"Section": "Bachelor and Bachelorette Changes",
+        },
+		"Claire": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Determines if Claire's dialogue changes are enabled and/or if she's in the gift pool at the Winter Star. If the Spicy Dialogue toggle is enabled and Claire is set to 'spicy dialogue enabled', allow Claire to say a slightly spicier end dialogue when married to the player.",
+			"Section": "Bachelor and Bachelorette Changes",
+        },
+		"Victor": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Determines if Victor's dialogue changes are enabled and/or if she's in the gift pool at the Winter Star. If the Spicy Dialogue toggle is enabled and Victor is set to 'spicy dialogue enabled', allow Victor to say a slightly spicier end dialogue when married to the player.",
+			"Section": "Bachelor and Bachelorette Changes",
+        },
+		"Olivia": {
+			"AllowValues": "off, disabled, normal, spicy",
+            "Default": "normal",
+			"Description": "Determines if Olivia's dialogue changes are enabled and/or if she's in the gift pool at the Winter Star. If the Spicy Dialogue toggle is enabled and Olivia is set to 'spicy dialogue enabled', allow Olivia to say a slightly spicier end dialogue when married to the player.",
+			"Section": "Bachelor and Bachelorette Changes",
+        },
+		"Scarlett": {
+			"AllowValues": "off, marriageonly, marriagespice, enabled, spicy",
+            "Default": "marriageonly",
+			"Description": "Determines if Scarlett is a gifter at the Winter Star and if she uses the unique lines provided by this mod. For immersion, with 1.15 she defaults to only joining the gift pool if married to the player.",
+			"Section": "Bachelor and Bachelorette Changes",
+        },
+		"Lance": {
+			"AllowValues": "off, disabled, marriageonly, marriagespice, earlyadd, dialogueearly, dialoguespice",
+            "Default": "disabled",
+			"Description": "Determines if Lance shows up at the Winter Star and whether his lines are edited. In regular SVE, Lance will attend the Winter Star only when married, so the options reflect this behavior and potential alterations.",
+			"Section": "Bachelor and Bachelorette Changes",
+        },
+		"Andy": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines if Andy is a gifter at the Winter Star and if he uses the unique lines provided by this mod.",
+			"Section": "Townspeople Changes",
+        },
+		"Susan": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines if Susan is a gifter at the Winter Star and if she uses the unique lines provided by this mod.",
+			"Section": "Townspeople Changes",
+        },
+		"Marlon": {
+			"AllowValues": "off, disabled, normal",
+            "Default": "normal",
+			"Description": "Determines if Marlon is a gifter at the Winter Star and if he uses the unique lines provided by this mod.",
+			"Section": "Townspeople Changes",
+        },
+		"Martin": {
+			"AllowValues": "disabled, enabled",
+            "Default": "disabled",
+			"Description": "Allows Martin to attend the Winter Star, with festival dialogue to match.",
+			"Section": "Additional Winter Star Villagers",
+        },
+		"Morgan": {
+			"AllowValues": "disabled, enabled",
+            "Default": "disabled",
+			"Description": "Allows Morgan become a Winter Star gifter once they become social.",
+			"Section": "Additional Winter Star Villagers",
+        },
+		"Gunther": {
+			"AllowValues": "disabled, enabled",
+            "Default": "disabled",
+			"Description": "Allows Gunther to become a Winter Star gifter once he becomes social.",
+			"Section": "Additional Winter Star Villagers",
+        },
+    },
+	"Changes":[
+		//Gifting a Villager Lines
+		{
+			"LogName": "SVE Regular Villagers - Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/regular.json",
+		},
+		{
+			"LogName": "SVE Marriage Candidates - Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/datables.json",
+		},
+		{
+			"LogName": "SVE Marriage Candidates - Dating, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/dating.json",
+		},
+		{
+			"LogName": "SVE Marriage Candidates - Married, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/EarlyLines/marriage.json",
+		},
+		
+		//Villagers Gifting Farmer
+		{
+			"LogName": "SVE Regular Villagers - Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/SVE/regular.json",
+		},
+		{
+			"LogName": "SVE Marriage Candidates - Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/SVE/datables.json",
+		},
+		{
+			"LogName": "SVE Marriage Candidates - Dating, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/SVE/dating.json",
+		},
+		{
+			"LogName": "SVE Marriage Candidates - Married, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/SVE/marriage.json",
+		},
+		
+		//NEW IN 1.6!
+		
+		//Remove Selected Gifters from the Winter Star
+		
+		{
+			"LogName": "Turn off SVE Gifters via Config",
+			"Action": "Include",
+			"FromFile": "assets/Misc/VillagerPool.json",
+		},
+		
+		//Gifts!
+		{
+			"LogName": "Custom Gifts for Everyone!",
+			"Action": "Include",
+			"FromFile": "assets/Misc/VillagerGifts.json",
+			"When": {
+				"CustomGifts": "enabled",
+			},
+		},
+		
+		//Additional SVE Villagers at the Winter Star!
+		{
+			"LogName": "Extra Attendees at the Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/Additions/AdditionData.json",
+		},
+		
+		//Festival Dialogue Data (for Scarlett and Martin)
+		{
+			"LogName": "Extra Attendee Dialogue",
+			"Action": "Include",
+			"FromFile": "assets/Additions/AdditionsDialogue.json",
+		},
+		
+		//Winter Star Data
+		
+		{
+			"LogName": "Gifting Villagers - Extra People, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/Additions/AdditionsGiftee.json",
+		},
+		
+		{
+			"LogName": "Gifted By Villagers - Extra People, Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/Additions/AdditionsGifter.json",
+		},
+		
+		{
+			"LogName": "Lance Lines - Winter Star",
+			"Action": "Include",
+			"FromFile": "assets/Additions/LanceLines.json",
+			"When": {
+				"Lance": "marriageonly, marriagespice, dialogueearly, dialoguespice",
+				"HasSeenEvent": "6951319",
+			},
+		},
+    ]
+}

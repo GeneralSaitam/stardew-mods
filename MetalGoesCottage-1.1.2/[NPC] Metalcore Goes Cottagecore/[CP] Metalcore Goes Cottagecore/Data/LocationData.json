@@ -1,0 +1,137 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Maps/Squeaks.MGC.CP_CCHouse",
+            "FromFile": "Assets/Maps/CamieInterior.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Squeaks.MGC.CP_CCGreenhouse",
+            "FromFile": "Assets/Maps/CamieGreenhouse.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Squeaks.MGC.CP_TwilightOcean",
+            "FromFile": "Assets/Maps/DuskCoveOcean.tmx"
+        },
+        {
+            "LogName": "Location Data",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Squeaks.MGC.CP_CCHouse": {
+                    "DisplayName": "{{i18n:Cambria.Location.Home}}",
+                    "DefaultArrivalTile": {
+                        "X": 3,
+                        "Y": 21
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/Squeaks.MGC.CP_CCHouse"
+                    },
+                    "Music": [
+                        {
+                            "Track": "MGC.Theme"
+                        }
+                    ],
+                    "FormerLocationNames": [
+                        "Custom_CamieHouse"
+                    ]
+                },
+                "Squeaks.MGC.CP_CCGreenhouse": {
+                    "DisplayName": "{{i18n:Cambria.Location.Greenhouse}}",
+                    "DefaultArrivalTile": {
+                        "X": 13,
+                        "Y": 9
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/Squeaks.MGC.CP_CCGreenhouse"
+                    },
+                    "Music": [
+                        {
+                            "Track": "MGC.Theme"
+                        }
+                    ],
+                    "FormerLocationNames": [
+                        "Custom_CamieGreenhouse"
+                    ]
+                },
+                "Squeaks.MGC.CP_TwilightOcean": {
+                    "DisplayName": "{{i18n:Cambria.Location.TwilightOcean}}",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/Squeaks.MGC.CP_TwilightOcean"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Home Patch",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_LoresCove",
+            "FromFile": "Assets/Maps/MGC_HomeMapPatch.tmx",
+            "ToArea": {
+                "X": 31,
+                "Y": 0,
+                "Width": 22,
+                "Height": 30
+            }
+        },
+        {
+            "LogName": "Bouquet Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Squeaks.MGC.CP_CCHouse",
+            "FromFile": "Assets/Maps/BouquetPatch.tmx",
+            "ToArea": {
+                "X": 14,
+                "Y": 18,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "Relationship:Otter.Cambria |contains=Dating": true
+            }
+        },
+        {
+            "LogName": "Home to Greenhouse",
+            "Action": "EditMap",
+            "Target": "Maps/Squeaks.MGC.CP_CCHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 3,
+                        "Y": 12
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 12 8 Squeaks.MGC.CP_CCGreenhouse"
+                    }
+                }
+            ],
+            "When": {
+                "HasFlag |contains=CambriaGreenhouse": true
+            }
+        },
+        {
+            "LogName": "You Your GF and Her 6ft Bee Plush",
+            "Action": "EditMap",
+            "Target": "Maps/Squeaks.MGC.CP_CCHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 18,
+                        "Y": 14
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "Bed": "t",
+                        "NoFurniture": "T",
+                        "TouchAction": "Sleep"
+                    }
+                }
+            ],
+            "When": {
+                "Relationship:Otter.Cambria |contains=Dating": true
+            }
+        }
+    ]
+}

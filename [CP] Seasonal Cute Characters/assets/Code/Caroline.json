@@ -1,0 +1,132 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_Caroline_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Caroline_Spring, Portraits/Caroline_Summer, Portraits/Caroline_Fall, Portraits/Caroline_Winter_Outdoor, Portraits/Caroline_Winter_Indoor, Portraits/Caroline_FlowerDance, Portraits/Caroline_SpiritsEve, Portraits/Caroline_Aerobics, Characters/Caroline_Spring, Characters/Caroline_Summer, Characters/Caroline_Fall, Characters/Caroline_Winter_Outdoor, Characters/Caroline_Winter_Indoor, Characters/Caroline_FlowerDance, Characters/Caroline_SpiritsEve, Characters/Caroline_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Caroline/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Edit_Caroline_Beach_Assets",
+			"Action": "EditImage",
+			"Target": "Portraits/Caroline_Beach, Characters/Caroline_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Caroline/{{TargetWithoutPath}}.png",
+			"When": {
+				"BeachOutfitsEnabled": true
+			}
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_Caroline_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Caroline_Spring, Characters/Caroline_Summer, Characters/Caroline_Fall, Characters/Caroline_Winter_Outdoor, Characters/Caroline_Winter_Indoor, Characters/Caroline_FlowerDance, Characters/Caroline_SpiritsEve, Characters/Caroline_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Caroline/Caroline_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Add_Caroline_Beach_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Caroline_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Caroline/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false,
+				"BeachOutfitsEnabled": true
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_Caroline_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Caroline",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.CarolineSpring": {
+					"Id": "{{ModId}}.CarolineSpring",
+					"Portrait": "Portraits/Caroline_Spring",
+					"Sprite": "Characters/Caroline_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.CarolineSummer": {
+					"Id": "{{ModId}}.CarolineSummer",
+					"Portrait": "Portraits/Caroline_Summer",
+					"Sprite": "Characters/Caroline_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.CarolineFall": {
+					"Id": "{{ModId}}.CarolineFall",
+					"Portrait": "Portraits/Caroline_Fall",
+					"Sprite": "Characters/Caroline_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.CarolineWinterIndoor": {
+					"Id": "{{ModId}}.CarolineWinterIndoor",
+					"Portrait": "Portraits/Caroline_Winter_Indoor",
+					"Sprite": "Characters/Caroline_Winter_Indoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",
+					"Precedence": -101
+				},
+				"{{ModId}}.CarolineWinterOutdoor": {
+					"Id": "{{ModId}}.CarolineWinterOutdoor",
+					"Portrait": "Portraits/Caroline_Winter_Outdoor",
+					"Sprite": "Characters/Caroline_Winter_Outdoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101
+				},
+				// Extra Outfits
+				"{{ModId}}.CarolineAerobics": {
+					"Id": "{{ModId}}.CarolineAerobics",
+					"Portrait": "Portraits/Caroline_Aerobics",
+					"Sprite": "Characters/Caroline_Aerobics",
+					"Condition": "{{UseAerobicsOutfit}}",
+					"Precedence": -200
+				},
+				// Festival Outfits
+				"{{ModId}}.CarolineFlowerDance": {
+					"Id": "{{ModId}}.CarolineFlowerDance",
+					"Portrait": "Portraits/Caroline_FlowerDance",
+					"Sprite": "Characters/Caroline_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.CarolineSpirit": {
+					"Id": "{{ModId}}.CarolineSpirit",
+					"Portrait": "Portraits/Caroline_SpiritsEve",
+					"Sprite": "Characters/Caroline_SpiritsEve",
+					"Condition": "{{UseSpiritsEveOutfit}}",
+					"Precedence": -300
+				}
+			}
+		},
+		// CALENDAR
+		{
+			"LogName": "Edit_Caroline_Calendar_Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Caroline",
+            "FromFile": "assets/{{Target}}/Caroline_{{CurrentSeasonAttire}}.png"
+        },
+		{
+			"LogName": "Add_Caroline_Calendar_Nose",
+            "Action": "EditImage",
+            "Target": "Characters/Caroline",
+            "FromFile": "assets/{{Target}}/Caroline_Nose.png",
+            "PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+       }
+	]
+}

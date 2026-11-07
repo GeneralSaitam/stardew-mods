@@ -1,0 +1,173 @@
+{
+    "Changes": [
+        {
+            //no longer can visit the island
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Clint": {
+                    "CanVisitIsland": "False"
+                }
+            }
+        },
+        {
+            //remove festival shop while locked up (still attends on day 2)
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "DesertFestival_Clint": null
+            }
+        },
+        {
+            //edit the warp room to send to jail
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_WarpRoom_Clint",
+            "MapProperties": {
+                "Warp": "4 5 sdvhead.LawAndOrderSV_Jail 18 5",
+            },
+            /*"When":{
+                "DayEvent|contains=DesertFestival_2": "false"
+            }*/
+        },
+        {
+             //except on Spring 16 (desert festival 2)
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_WarpRoom_Clint",
+            "MapProperties": {
+                "Warp": "4 5 Blacksmith 3 13",
+            },
+            "When":{
+                "Season": "spring",
+                "Day": "16"
+            }
+        },
+        {
+            //update the character schedule
+            "Action": "EditData",
+            "Target": "Characters/schedules/Clint",
+            "Entries": {
+                "spring": "610 sdvhead.LawAndOrderSV_Jail 18 5 1 {{ModId}}_clint_snooze \"Strings\\schedules\\Clint:{{ModId}}_clint_snooze\"/820 sdvhead.LawAndOrderSV_Jail 13 6 2 square_5_3/2200 sdvhead.LawAndOrderSV_Jail 18 5 1 clint_sleep",
+                "summer": "GOTO spring",
+                "fall": "GOTO spring",
+                "winter": "GOTO spring",
+                "rain": "GOTO spring",
+                "GreenRain": "GOTO spring",
+                "SquidFest": "GOTO spring",
+                "DesertFestival": "GOTO spring",
+                "JojaMart_Replacement": "GOTO spring",
+            },
+        },
+        {
+            //entries for SVE
+            "Action": "EditData",
+            "Target": "Characters/schedules/Clint",
+            "Entries": {
+                "22": "GOTO spring",
+                "FlashShifter.StardewValleyExpandedCP_CommunityDay": "GOTO spring",
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "Clint": "{{i18n:ClintInJail_rain}}",
+            },
+        },
+
+        {
+            //Dialogue, conversation topic changes
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries": {
+                "GreenRain": "{{i18n:ClintInJail_GreenRain}}",
+                "GreenRainFinished": "{{i18n:ClintJail_GreenRainFinished}}",
+                "GreenRain_2": "{{i18n:ClintInJail_GreenRain}}",
+                "eventSeen_101_memory_oneweek": null,
+                "Mon4": "{{i18n:ClintInJail_Mon4}}",
+                "Tue": "{{i18n:ClintInJail_Tue}}",
+                "Wed": "{{i18n:ClintInJail_Wed}}",
+                "Wed6": "{{i18n:ClintInJail_Wed6}}",
+                "Thu": "{{i18n:ClintInJail_Thu}}",
+                "Fri": "{{i18n:ClintInJail_Fri}}",
+                "Fri8": "{{i18n:ClintInJail_Fri8}}",
+                "Sat": "{{i18n:ClintInJail_Sat}}",
+                "Sat6": "{{i18n:ClintInJail_Sat6}}",
+                "Sat10": "{{i18n:ClintInJail_Sat10}}",
+                "Sun": "{{i18n:ClintInJail_Sun}}",
+                "Sun4": "{{i18n:ClintInJail_Sun4}}",
+                "Sun8": "{{i18n:ClintInJail_Sun8}}",
+                "Mon8": "{{i18n:ClintInJail_Mon8}}",
+                "AcceptGift_(O)68":"{{i18n:ClintInJail_AcceptTopaz}}",
+            },
+        },
+
+        { //egg hunt
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clint_spring13}}",
+                "Clint_y2": "{{i18n:festivals_clint_spring13_y2}}",
+            },
+        },
+        { //flower dance
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clint_spring24}}",
+                "Clint_y2": "{{i18n:festivals_clint_spring24_y2}}",
+            },
+        },
+        { //luau
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clint_summer11}}",
+                "Clint_y2": "{{i18n:festivals_clint_summer11_y2}}",
+            },
+        },
+        { //jellies
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clint_summer28}}",
+                "Clint_y2": "{{i18n:festivals_clint_summer28_y2}}",
+            },
+        },
+        { //fair
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clint_fall16}}",
+                "Clint_y2": "{{i18n:festivals_clint_fall16_y2}}",
+            },
+        },
+        { //spirits eve
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clint_fall27}}",
+                "Clint_y2": "{{i18n:festivals_clint_fall27_y2}}",
+            },
+        },
+        { //festival of ice
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clint_winter8}}",
+                "Clint_y2": "{{i18n:festivals_clint_winter8_y2}}",
+            },
+        },
+        { //winter star
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clint_winter25}}",
+                "Clint_y2": "{{i18n:festivals_clint_winter25_y2}}",
+            },
+        },
+        
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "Format": "2.5.0",
+    "ConfigSchema": {
+        "Catalogue Price": {
+            "AllowValues": "",
+            "Default": "30000"
+        },
+        "AddWallsAndFloors": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "ColorScheme": {
+            "AllowValues": "Original, Saturated",
+            "Default": "Original"
+        },
+        "ExcludeFromVanillaCatalogue": {
+            "AllowValues": "true, false",
+            "Default": "false"
+        }
+    },
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "Data/Furniture.json, Data/Shops.json, Data/FurnitureOffsets.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/WallsAndFloors.json",
+            "When": {
+                "AddWallsAndFloors": true
+            }
+        }
+    ]
+}

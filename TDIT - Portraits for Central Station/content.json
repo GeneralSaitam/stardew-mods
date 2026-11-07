@@ -1,0 +1,80 @@
+ {
+    "Format": "2.8.0",
+	"DynamicTokens":[			
+		{
+			"Name": "PStyle",
+			"Value": "Default",		
+		},	
+		{
+			"Name": "PStyle",
+			"Value": "Nyapu",	
+            "When": {"HasMod": "Nyapu.Portraits, Nyapu.AllPortraits"}			
+		},		
+		{
+			"Name": "PStyle",
+			"Value": "{{PStyleConfig}}",
+			"When": {"PStyleConfig |contains=Auto": false,}		
+		},			
+	],
+	"ConfigSchema": {		
+		"PStyleConfig":
+			{
+				"AllowValues": "Auto, Default, Nyapu",
+				"Default": "Auto",
+			},				
+	},	
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Portraits/CSPurseDog_Default, Portraits/CSFlamingo_Default, Portraits/CSGiftShop_Default, Portraits/CSFoodCourt_Default",
+            "FromFile": "assets/{{Target}}.png",
+			"Priority": "Low"
+        },	
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/CSPurseDog_Default, Portraits/CSFlamingo_Default, Portraits/CSGiftShop_Default, Portraits/CSFoodCourt_Default",
+            "FromFile": "assets/Portraits/AhCuteArt/{{TargetWithoutPath}}.png",
+			"Priority": "Late",
+			"When": {"PStyle": "Nyapu"}
+        },	
+		{
+			"LogName": "Strings Load",
+			"Action": "Load",
+			"Target": "Strings/DolphINaF.CSPortraits",
+			"FromFile": "patches/blank.json",
+		},
+		{
+			"LogName": "Strings",
+			"Action": "EditData",
+			"Target": "Strings/DolphINaF.CSPortraits",
+			"Entries": {
+				"Name.PurseDog": "{{i18n:Name.PurseDog}}",
+				"Name.Flamingo": "{{i18n:Name.Flamingo}}",
+				"Name.Scholar": "{{i18n:Name.Scholar}}",
+				"Name.ShroudedFigure": "{{i18n:Name.ShroudedFigure}}",
+			}
+		},	
+		{
+			"LogName": "Gift Shop",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Pathoschild.CentralStation_GiftShop", "Owners", "Default" ],
+			"Entries": {"Portrait": "Portraits/CSGiftShop_Default"},
+		},
+		{
+			"LogName": "Gift Shop",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Pathoschild.CentralStation_FoodCourt", "Owners", "Default" ],
+			"Entries": {"Portrait": "Portraits/CSFoodCourt_Default"},
+		},
+		{	
+			"Action": "Include",
+			"FromFile": "patches/tourists.json",
+			"When": {
+				"HasMod |contains=mushymato.PortraitsForAll": true,
+				"HasMod |contains=DolphINaF.ExtraPortraits": true,
+			}
+		},
+	]
+}

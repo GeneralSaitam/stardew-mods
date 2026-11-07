@@ -1,0 +1,29 @@
+{
+  "Changes": [
+    {
+      "LogName": "ALC - Fishing Difficulty",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Fields": {
+        "Morghoula.AlchemistryCP_Newt": {
+          "1": "{{Round: {{Query: (65 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "Morghoula.AlchemistryCP_Lamprey": {
+          "1": "{{Round: {{Query: (80 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "Morghoula.AlchemistryCP_VampireAnemone": {
+          "1": "{{Round: {{Query: (70 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "Morghoula.AlchemistryCP_MoonlightJellyfish": {
+          "1": "{{Round: {{Query: (90 * (1 {{DifficultyMultiplier}})) }} }}"
+        },
+        "Morghoula.AlchemistryCP_ZombieFish": {
+          "1": "{{Round: {{Query: (75 * (1 {{DifficultyMultiplier}})) }} }}"
+        }
+      },
+      "When": {
+        "Fishing Difficulty": "5% Easier, 10% Easier, 15% Easier, 20% Easier, 25% Easier, 30% Easier, 35% Easier, 40% Easier, 45% Easier, 50% Easier, 55% Easier, 60% Easier, 65% Easier, 70% Easier, 75% Easier, 80% Easier, 85% Easier, 90% Easier, 95% Easier, 100% Easier, 10% Easy Sunday, 20% Easy Sunday, 30% Easy Sunday, 40% Easy Sunday, 50% Easy Sunday, 5% Harder, 10% Harder, 15% Harder, 20% Harder, 25% Harder, 30% Harder, 35% Harder, 40% Harder, 45% Harder, 50% Harder, 55% Harder, 60% Harder, 65% Harder, 70% Harder, 75% Harder, 80% Harder, 85% Harder, 90% Harder, 95% Harder, 100% Harder, NIGHTMARE"
+      }
+    }
+  ]
+}
