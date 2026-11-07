@@ -1,26 +1,42 @@
 {
-    "Format": "1.23",
-	"CustomLocations": [
-	    {
-            "Name": "Custom_SableRoom",
-            "FromMapFile": "assets/maps/SableRoom.tmx",
-            "MigrateLegacyNames": [
-                "SableRoom" ]
-        },
-		{
-            "Name": "Custom_Secrethall",
-            "FromMapFile": "assets/maps/secrethall.tmx",
-            "MigrateLegacyNames": [
-                "secrethall" ]
-        },
-		{
-            "Name": "Custom_SableDateIsland",
-            "FromMapFile": "assets/maps/SableDateIsland.tmx",
-            "MigrateLegacyNames": [
-                "SableDateIsland" ]
-        },
-	],
+    "Format": "2.0.0",
     "Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Custom_SableRoom": {
+					"DisplayName": "Sable's Room",
+					"CreateOnLoad": { "MapPath": "Maps/Custom_SableRoom" },
+					"MigrateLegacyNames": [ "SableRoom" ]
+				},
+				"Custom_Secrethall": {
+					"DisplayName": "Secret Hall",
+					"CreateOnLoad": { "MapPath": "Maps/Custom_Secrethall" },
+					"MigrateLegacyNames": [ "secrethall" ]
+				},
+				"Custom_SableDateIsland": {
+					"DisplayName": "Fern Islands",
+					"CreateOnLoad": { "MapPath": "Maps/Custom_SableDateIsland" },
+					"MigrateLegacyNames": [ "SableDateIsland" ]
+				}
+			}
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_SableRoom",
+			"FromFile": "assets/maps/SableRoom.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_Secrethall",
+			"FromFile": "assets/maps/secrethall.tmx"
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/Custom_SableDateIsland",
+			"FromFile": "assets/maps/SableDateIsland.tmx"
+		},
 	    {
             "Action": "EditMap",
             "Target": "Maps/Custom_EastWoods",
@@ -74,13 +90,4 @@
             "Entries": {
 		       "Sable": "Sable_Spouse_Area/0/20 20 20 20 21 21 21 21 21 22 22 22 22 22 21 21 21 21 21 22 22 22 22 22 21 21 21 21 21 22 22 22 22 22 21 21 21 21 21/20 20",}
 		},
-		{
-			"Action": "EditData",
-			"Target": "Data/Locations",
-			"Fields": {
-				"Custom_SableRoom": { "DisplayName": "Sable's Room" },
-				"Custom_Secrethall": { "DisplayName": "Secret Hall" },
-				"Custom_SableDateIsland": { "DisplayName": "Fern Islands" }
-			}
-		}
 ]}
