@@ -1,0 +1,45 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "TileSheets/Emily_Haley1",
+            "FromFile": "Assets/{{PortraitRecolor}}/Poly/Emily_Haley1.png",
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "Emily_Haley1": "EmilyHaleyPortrait1/painting/3 2/3 2/1/999/-1/{{i18n:Emily_Haley1.name}}/0/TileSheets\\Emily_Haley1/true"
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Traveler",
+                "Items"
+            ],
+            "Entries": {
+                "Hitme.SpousePortraitsReworked.Emily_Haley1":{
+                    "Price": 45000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "ANY \"PLAYER_HEARTS Current Emily 14, PLAYER_HEARTS Current Haley 10\" \"PLAYER_HEARTS Current Haley 14, PLAYER_HEARTS Current Emily 10\"",
+                    "Id": "(F)Hitme.Hitme.SpousePortraitsReworked.Emily_Haley1",
+                    "ItemId": "(F)Hitme.Hitme.SpousePortraitsReworked.Emily_Haley1",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                }
+            },    
+        },
+    ]
+}

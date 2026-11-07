@@ -1,0 +1,140 @@
+{
+  "Name": "Veil (Speckled)",
+
+	// FRONT
+  "FrontHat": {
+    "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Sleeves"
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": -1
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    },
+    "UniformAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  },
+
+	// RIGHT
+  "RightHat": {
+    "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Sleeves"
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 20
+    },
+    "HeadPosition": {
+      "X": 2,
+      "Y": -1
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 2,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      }
+    ]
+  },
+
+	// LEFT
+  "LeftHat": {
+    "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Sleeves"
+    },
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 20
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -1
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 2,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      }
+    ]
+  },
+
+	// BACK
+  "BackHat": {
+    "StartingPosition": {
+      "X": 0,
+      "Y": 40
+    },
+    "HeadPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HatSize": {
+      "Width": 20,
+      "Length": 20
+    },
+    "MovementAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 100
+      },
+      {
+        "Frame": 1,
+        "Duration": 100
+      },
+      {
+        "Frame": 2,
+        "Duration": 100
+      },
+      {
+        "Frame": 3,
+        "Duration": 100
+      }
+    ]
+  }
+}

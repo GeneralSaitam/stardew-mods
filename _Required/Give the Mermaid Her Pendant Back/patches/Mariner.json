@@ -1,0 +1,58 @@
+{
+	"Changes":
+	[
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Mariner",
+			"FromFile": "assets/Mermaid.png",
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Mariner",
+			"FromFile": "assets/Tempysta.png",		
+			"When": {"HasMod": "JennaJuffuffles.MarinerToMermaid"}	
+		},			
+//Alters breathing animation location		
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Old Mariner": {
+					"BreathChestRect": {"X": 5, "Y": 13, "Width": 6, "Height": 4},
+					"BreathChestPosition":{"X": 32, "Y": -16}
+				}
+			}
+		},
+//Alters all standard dialogue
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Entries": {
+				"Beach_Mariner_Player_Male": "{{i18n: Beach_Mariner_Player_Male}}",
+				"Beach_Mariner_Player_Female": "{{i18n: Beach_Mariner_Player_Female}}",
+				"Beach_Mariner_PlayerMarried": "{{MermaidName}}{{i18n:colon}} {{i18n: Beach_Mariner_PlayerMarried}}",
+				"Beach_Mariner_PlayerHasItem": "{{MermaidName}}{{i18n:colon}} {{i18n: Beach_Mariner_PlayerHasItem}}",
+				"Beach_Mariner_PlayerNotUpgradedHouse": "{{MermaidName}}{{i18n:colon}} {{i18n: Beach_Mariner_PlayerNotUpgradedHouse}}",
+				"Beach_Mariner_PlayerBuyItem_Question": "{{MermaidName}}{{i18n:colon}} {{i18n: Beach_Mariner_PlayerBuyItem_Question}}",
+				"Beach_Mariner_PlayerNoRelationship": "{{MermaidName}}{{i18n:colon}} {{i18n: Beach_Mariner_PlayerNoRelationship}}",
+			}
+		},
+        {
+            "Action": "Load",
+            "Target": "Mods/Goldenrevolver.MaritimeSecrets/MarinerDialogueOverride",
+            "FromFile": "i18n/{{Maritime}}.json",
+            "When": {
+				"HasFile:{{FromFile}}": true,
+				"HasMod": "Goldenrevolver.MaritimeSecrets"
+            }
+        },
+
+//Hook for Portraits for Vendors. See portrait.json for more info
+		{
+			"LogName": "Portrait",
+			"Action": "Include",
+			"FromFile": "patches/portrait.json",
+			"When": {"HasMod": "DolphINaF.ExtraPortraits"}
+		},	
+	]
+}

@@ -1,0 +1,380 @@
+{
+	"Format": "2.0.0",
+	"DynamicTokens": [
+		{
+			"Name": "JortsJeanCompat",
+			"Value": "100"
+		},
+		{
+			"Name": "JortsJeanCompat",
+			"Value": "100 10950102",
+			"When": {
+				"HasMod |contains=tiakall.jortsandjean": true
+			}
+		},
+		{
+			"Name": "KentDishesCompat",
+			"Value": "SamHouse 8 5 3"
+		},
+		{
+			"Name": "KentDishesCompat",
+			"Value": "SamHouse 6 5 0 kent_dishes",
+			"When": {
+				"HasMod |contains= Sqbr.KentDoesTheDishes": true
+			}
+		},
+		{
+			"Name": "DSVDisabledKentCompat",
+			"Value": ""
+		},
+		{
+			"Name": "DSVDisabledKentCompat",
+			"Value": ".DSVKent",
+			"When": {
+				"HasMod |contains= DSV.Core": true,
+				"DSV.Core/ConfigValue:KentVariant |contains= VanillaDisabled,OmaniDisabled": true
+			}
+		},
+		{
+			"Name": "SaloonBreakfastKentCompat",
+			"Value": ""
+		},
+		{
+			"Name": "SaloonBreakfastKentCompat",
+			"Value": ".SaloonBreakfast",
+			"When": {
+				"HasMod |contains= agentlyoko.stardropbreakfast": true,
+				"HasSeenEvent |contains= anyPlayer |contains=177756": true
+			}
+		},
+		{
+			"Name": "BirthdayToken",
+			"Value": "JodiBirthday"
+		},
+		{
+			"Name": "BirthdayToken",
+			"Value": "KentBirthday",
+			"When": {
+				"Season": "Fall"
+			}
+		},
+		{
+			"Name": "SeasonalMushroomToken",
+			"Value": "257"
+		},
+		{
+			"Name": "SeasonalMushroomToken",
+			"Value": "404",
+			"When": {
+				"Season": "Summer"
+			}
+		},
+		{
+			"Name": "SeasonalMushroomToken",
+			"Value": "281",
+			"When": {
+				"Season": "Fall"
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "1",
+			"When": {
+				"Season": "Spring, Fall",
+				"Day |contains= 1,2,3,4": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "2",
+			"When": {
+				"Season": "Spring, Fall",
+				"Day |contains= 5,6,7,8": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "3",
+			"When": {
+				"Season": "Spring, Fall",
+				"Day |contains= 9,10,11,12": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "4",
+			"When": {
+				"Season": "Spring, Fall",
+				"Day |contains= 13,14,15,16": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "5",
+			"When": {
+				"Season": "Spring, Fall",
+				"Day |contains= 17,18,19,20": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "6",
+			"When": {
+				"Season": "Spring, Fall",
+				"Day |contains= 21,22,23,24": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "7",
+			"When": {
+				"Season": "Spring, Fall",
+				"Day |contains= 25,26,27,28": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "8",
+			"When": {
+				"Season": "Summer,Winter",
+				"Day |contains= 1,2,3,4": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "9",
+			"When": {
+				"Season": "Summer,Winter",
+				"Day |contains= 5,6,7,8": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "10",
+			"When": {
+				"Season": "Summer,Winter",
+				"Day |contains= 9,10,11,12": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "11",
+			"When": {
+				"Season": "Summer,Winter",
+				"Day |contains= 13,14,15,16": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "12",
+			"When": {
+				"Season": "Summer,Winter",
+				"Day |contains= 17,18,19,20": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "13",
+			"When": {
+				"Season": "Summer,Winter",
+				"Day |contains= 21,22,23,24": true
+			}
+		},
+		{
+			"Name": "JodiJigsawToken",
+			"Value": "14",
+			"When": {
+				"Season": "Summer,Winter",
+				"Day |contains= 25,26,27,28": true
+			}
+		},
+		{
+			"Name": "KentDateSchedule",
+			"Value": "{{Random: Town 27 30 0, Beach 9 10 3, Mountain 42 12 1, Forest 52 37 3}}"
+		},
+		{
+			"Name": "JodiDateSchedule",
+			"Value": "{{Random: Town 25 30 0, Beach 9 9 3, Mountain 42 14 1, Forest 52 35 3}}"
+		}
+	],
+	"Changes": [
+		// LOADS
+		{
+			"LogName": "Rekindle Load - Temp Maps",
+			"Action": "Load",
+			"Target": "Maps/Rekindle_MovieTheaterScreen, Maps/Rekindle_BrunchPlace, Maps/Rekindle_BathhouseSpa, Maps/Rekindle_Cabaret, Maps/Rekindle_JigsawMap_StageOne, Maps/Rekindle_JigsawMap_StageTwo, Maps/Rekindle_JigsawMap_Complete, Maps/Rekindle_CampSpot",
+			"FromFile": "Assets/Maps/{{TargetWithoutPath}}.tmx"
+		},
+		{
+			"LogName": "Rekindle Load - Tilesheets",
+			"Action": "Load",
+			"Target": "Maps/Rekindle_Jigsaw_StageOne, Maps/Rekindle_Jigsaw_StageTwo, Maps/Rekindle_Jigsaw_Complete, Maps/Rekindle_BigRock, Maps/Rekindle_MapPatch_jigsaw",
+			"FromFile": "Assets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Rekindle Load - Temp Actors",
+			"Action": "Load",
+			"Target": "Characters/Rekindle_movieposter, Characters/Rekindle_projectorlight, Characters/Rekindle_zuzucityexpress, Characters/Rekindle_diner_1, Characters/Rekindle_diner_2, Characters/Rekindle_diner_3, Characters/Rekindle_diner_4, Characters/Rekindle_bather_1, Characters/Rekindle_bather_2, Characters/Rekindle_bather_3, Characters/Rekindle_bather_4, Characters/Rekindle_bather_5, Characters/Rekindle_singer, Characters/Rekindle_drummer, Characters/Rekindle_violinist, Characters/Rekindle_puzzletable, Characters/Rekindle_puzzlepiece_1, Characters/Rekindle_puzzlepiece_2, Characters/Rekindle_kenttent, Characters/Rekindle_demetriustent, Characters/Rekindle_pierretent, Characters/Rekindle_campfire",
+			"FromFile": "Assets/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Rekindle Load - New Textures",
+			"Action": "Load",
+			"Target": "Mods/Airyn.Rekindle/Rekindle_FramedJigsaw, Mods/Airyn.Rekindle/Rekindle_laugh_emote",
+			"FromFile": "Assets/{{TargetWithoutPath}}.png"
+		},
+		// FRAMED JIGSAW ITEM
+		{
+			"LogName": "Rekindle Decor - Add Framed Jigsaw Decor",
+			"Action": "EditData",
+			"Target": "Data/Furniture",
+			"Entries": {
+				"{{ModId}}_FramedJigsaw": "{{ModId}}_FramedJigsaw/painting/2 2/2 2/1/200/2/{{i18n:Rekindle.Decor.FramedJigsaw}}/0/Mods\\Airyn.Rekindle\\Rekindle_FramedJigsaw/true/none"
+			}
+		},
+		// JORTS & JEAN COMPAT
+		{
+			"LogName": "Rekindle Events - Jorts & Jean Line Tweak Compat",
+			"Action": "EditData",
+			"Target": "Data/Events/Town",
+			"Fields": {
+				"10950102/y 2/d Sun/t 1800 2400": {
+					42: "speak Kent \"{{i18n:Rekindle.Event.Jorts&Jean}}\""
+				}
+			},
+			"When": {
+				"HasMod |contains= tiakall.jortsandjean": true
+			}
+		},
+		{
+			"LogName": "Rekindle Events - Jorts & Jean Event Condition Compat",
+			"Action": "EditData",
+			"Target": "Data/Events/Town",
+			"Entries": {
+				"10950102/y 2/d Sun/t 1800 2400": null
+			},
+			"When": {
+				"HasMod |contains= tiakall.jortsandjean": true,
+				"HasSeenEvent |contains= 100": false,
+				"Hearts:Kent": "{{Range:0,3}}"
+			}
+		},
+		// TRIGGER ACTIONS
+		{
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModId}}_CampingTripCT": {
+					"Id": "{{ModId}}_CampingTripCT",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current Rekindle_CampingTrip, !PLAYER_HAS_CONVERSATION_TOPIC Current Rekindle_DadsAway",
+					"Actions": [
+						"AddConversationTopic Rekindle_CampingTrip 4"
+					]
+				},
+				"{{ModId}}_FourthDateCT": {
+					"Id": "{{ModId}}_FourthDateCT",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current Rekindle_FourthDate, !PLAYER_HAS_CONVERSATION_TOPIC Current Rekindle_JodiKentAway",
+					"Actions": [
+						"AddConversationTopic Rekindle_FourthDate 4"
+					]
+				}
+			}
+		},
+		// INCLUDES
+		{
+			"LogName": "Rekindle Includes",
+			"Action": "Include",
+			"FromFile": "Data/Events.json, Data/ScheduleEdits.json, Data/LocationalDialogue.json, Data/CTDialogue.json, Data/DailyDialogue.json"
+		},
+		// MAP PATCH
+		{
+			"LogName": "Rekindle Map Patch - Jigsaw Table",
+			"Action": "EditMap",
+			"Target": "Maps/SamHouse",
+			"FromFile": "Assets/Maps/Rekindle_JigsawPatch.tmx",
+			"ToArea": {
+				"X": 5,
+				"Y": 12,
+				"Width": 2,
+				"Height": 2
+			},
+			"PatchMode": "Overlay",
+			"When": {
+				"HasSeenEvent |contains= Rekindle_JigsawPuzzle": true
+			}
+		},
+		{
+			"LogName": "Rekindle Map Patch - Jigsaw Table Text",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				"Rekindle.Jigsaw": "{{i18n:Rekindle.MapPatch.Jigsaw.{{JodiJigsawToken}}}}"
+			}
+		},
+		// CAMPING TRIP SHOP EDIT
+		{
+			"LogName": "Rekindle Shop - Camping Trip Edit",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Owners"
+			],
+			"Entries": {
+				"{{ModId}}_PierreCamping": {
+					"Condition": "PLAYER_HAS_CONVERSATION_TOPIC Any Rekindle_DadsAway",
+					"Portrait": "None",
+					"Dialogues": [
+						{
+							"Dialogue": "{{i18n:Rekindle.CampingShopDialogue}}"
+						}
+					],
+					"Name": "AnyOrNone",
+					"Id": "PierreAway"
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [
+				"SeedShop",
+				"Owners"
+			],
+			"MoveEntries": [
+				{
+					"ID": "PierreAway",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		// KENT GARBAGE REACTION
+		{
+			"LogName": "Rekindle - Kent Garbage Reaction",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Kent": {
+					"DumpsterDiveEmote": "8",
+					"DumpsterDiveFriendshipEffect": "0"
+				}
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_JobOffer": true
+			}
+		},
+		{
+			"LogName": "Rekindle - Kent Garbage Reaction",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kent",
+			"Entries": {
+				"DumpsterDiveComment": "{{i18n:Rekindle.ExtraDialogue.Kent.Garbage}}"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_JobOffer": true
+			}
+		}
+	]
+}

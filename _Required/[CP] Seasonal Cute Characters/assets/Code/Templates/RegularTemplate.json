@@ -1,0 +1,111 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_NPC_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/NPC_Spring, Portraits/NPC_Summer, Portraits/NPC_Fall, Portraits/NPC_Winter_Outdoor, Portraits/NPC_Winter_Indoor, Portraits/NPC_FlowerDance, Portraits/NPC_SpiritsEve, Characters/NPC_Spring, Characters/NPC_Summer, Characters/NPC_Fall, Characters/NPC_Winter_Outdoor, Characters/NPC_Winter_Indoor, Characters/NPC_FlowerDance, Characters/NPC_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/NPC/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Edit_NPC_Beach_Assets",
+			"Action": "EditImage",
+			"Target": "Portraits/NPC_Beach, Characters/NPC_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/NPC/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_NPC_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/NPC_Spring, Characters/NPC_Summer, Characters/NPC_Fall, Characters/NPC_Winter_Outdoor, Characters/NPC_Winter_Indoor, Characters/NPC_FlowerDance, Characters/NPC_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/NPC/NPC_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Add_NPC_Beach_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/NPC_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/NPC/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_NPC_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"NPC",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.NPCSpring": {
+					"Id": "{{ModId}}.NPCSpring",
+					"Portrait": "Portraits/NPC_Spring",
+					"Sprite": "Characters/NPC_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.NPCSummer": {
+					"Id": "{{ModId}}.NPCSummer",
+					"Portrait": "Portraits/NPC_Summer",
+					"Sprite": "Characters/NPC_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.NPCFall": {
+					"Id": "{{ModId}}.NPCFall",
+					"Portrait": "Portraits/NPC_Fall",
+					"Sprite": "Characters/NPC_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.NPCWinterIndoor": {
+					"Id": "{{ModId}}.NPCWinterIndoor",
+					"Portrait": "Portraits/NPC_Winter_Indoor",
+					"Sprite": "Characters/NPC_Winter_Indoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",
+					"Precedence": -101
+				},
+				"{{ModId}}.NPCWinterOutdoor": {
+					"Id": "{{ModId}}.NPCWinterOutdoor",
+					"Portrait": "Portraits/NPC_Winter_Outdoor",
+					"Sprite": "Characters/NPC_Winter_Outdoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101
+				},
+				// Beach Outfit
+				"{{ModId}}.NPCBeach": {
+					"Id": "{{ModId}}.NPCBeach",
+					"Portrait": "Portraits/NPC_Beach",
+					"Sprite": "Characters/NPC_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -200
+				},
+				// Festival Outfits
+				"{{ModId}}.NPCFlowerDance": {
+					"Id": "{{ModId}}.NPCFlowerDance",
+					"Portrait": "Portraits/NPC_FlowerDance",
+					"Sprite": "Characters/NPC_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.NPCSpirit": {
+					"Id": "{{ModId}}.NPCSpirit",
+					"Portrait": "Portraits/NPC_SpiritsEve",
+					"Sprite": "Characters/NPC_SpiritsEve",
+					"Condition": "{{UseSpiritsEveOutfit}}",
+					"Precedence": -300
+				}
+			}
+		}
+	]
+}

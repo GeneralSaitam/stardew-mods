@@ -1,0 +1,344 @@
+{
+	//Unless otherwise noted, the first lines are the same between spice and no spice cases. The *second* line is the spicy line.
+	"Changes":[
+		{
+			"LogName": "Sophia - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Sophia.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Sophia.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sophia.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sophia.Married.After}}",
+			},
+			"When": {
+				"relationship:Sophia": "married",
+				"Sophia": "normal",
+			},
+		},
+		{
+			"LogName": "Sophia - Winter Star, Married, Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Sophia.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Sophia.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sophia.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sophia.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Sophia": "married",
+				"Enable Spicy Dialogue": "enabled",
+				"Sophia": "spicy",
+			},
+		},
+		{
+			"LogName": "Sophia - Winter Star, Married, ZCCC Visited",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Sophia.Married.Con.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Sophia.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sophia.Married.Con.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sophia.Married.After}}",
+			},
+			"When": {
+				"relationship:Sophia": "married",
+				"HasSeenEvent |contains=8185303": "true",
+				"Sophia": "normal",
+			},
+		},
+		{
+			"LogName": "Sophia - Winter Star, Married, ZCCC Visited, Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Sophia.Married.Con.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Sophia.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sophia.Married.Con.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sophia.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Sophia": "married",
+				"HasSeenEvent |contains=8185303": "true",
+				"Enable Spicy Dialogue": "enabled",
+				"Sophia": "spicy",
+			},
+		},
+		{
+			"LogName": "Claire - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Claire",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Claire.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Claire.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Claire.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Claire.Married.After}}",
+			},
+			"When": {
+				"relationship:Claire": "married",
+				"Claire": "normal",
+			},
+		},
+		{
+			"LogName": "Claire - Winter Star, Married, Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Claire",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Claire.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Claire.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Claire.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Claire.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Claire": "married",
+				"Enable Spicy Dialogue": "enabled",
+				"Claire": "spicy",
+			},
+		},
+		{
+			"LogName": "Claire - Winter Star, Married, Thief of Justice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Claire",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Claire.Married.Thief.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Claire.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Claire.Married.Thief.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Claire.Married.After}}",
+			},
+			"When": {
+				"relationship:Claire": "married",
+				"HasSeenEvent |contains=4269704": "true",
+				"Claire": "normal",
+			},
+		},
+		{
+			"LogName": "Claire - Winter Star, Married, Spice of Justice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Claire",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Claire.Married.Thief.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Claire.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Claire.Married.Thief.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Claire.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Claire": "married",
+				"HasSeenEvent |contains=4269704": "true",
+				"Enable Spicy Dialogue": "enabled",
+				"Claire": "spicy",
+			},
+		},
+		//Victor.... why do you have to be so complicated. (Have fun reading this, code readers.)
+		{
+			"LogName": "Victor - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Victor.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Victor.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Married.After}}",
+			},
+			"When": {
+				"relationship:Victor": "married",
+				"Victor": "normal",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star, Married, Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Victor.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Victor.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Victor": "married",
+				"Enable Spicy Dialogue": "enabled",
+				"Victor": "spicy",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star, Married, Dewey Found",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Victor.Married.Twelve.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Victor.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Married.Twelve.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Married.After}}",
+			},
+			"When": {
+				"relationship:Victor": "married",
+				"HasSeenEvent |contains=2000006": "true",
+				"Victor": "normal",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star, Married, Dewey Found, Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Victor.Married.Twelve.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Victor.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Married.Twelve.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Victor": "married",
+				"HasSeenEvent |contains=2000006": "true",
+				"Enable Spicy Dialogue": "enabled",
+				"Victor": "spicy",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star, Married, Shearwater Renovation Started",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Victor.Married.Fourteen.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Victor.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Married.Fourteen.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Married.After}}",
+			},
+			"When": {
+				"relationship:Victor": "married",
+				"HasSeenEvent |contains=2000008": "true",
+				"Victor": "normal",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star, Married, Shearwater Renovation Started, Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Victor.Married.Fourteen.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Victor.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Married.Fourteen.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Victor": "married",
+				"HasSeenEvent |contains=2000008": "true",
+				"Enable Spicy Dialogue": "enabled",
+				"Victor": "spicy",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star, Married, Shearwater Renovation Finished",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Victor.Married.Renovation.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Victor.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Married.Renovation.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Married.After}}",
+			},
+			"When": {
+				"relationship:Victor": "married",
+				"HasSeenEvent |contains=2000010": "true",
+				"Victor": "normal",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star, Married, Shearwater Renovation Finished, Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Victor.Married.Renovation.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Victor.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Married.Renovation.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Victor": "married",
+				"HasSeenEvent |contains=2000010": "true",
+				"Enable Spicy Dialogue": "enabled",
+				"Victor": "spicy",
+			},
+		},
+		
+		{
+			"LogName": "Olivia - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Olivia",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Olivia.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Olivia.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Olivia.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Olivia.Married.After}}",
+			},
+			"When": {
+				"relationship:Olivia": "married",
+				"Olivia": "normal",
+			},
+		},
+		{
+			"LogName": "Olivia - Winter Star, Married, Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Olivia",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Olivia.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Olivia.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Olivia.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Olivia.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Olivia": "married",
+				"Enable Spicy Dialogue": "enabled",
+				"Olivia": "spicy",
+			},
+		},
+		
+		{
+			"LogName": "Wizard - Winter Star, Married", //Not active unless the Wizard is active at the Winter Star, only possible with Unique Winter Star at present.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Wizard",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Wizard.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Wizard.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Wizard.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Wizard.Married.After}}",
+			},
+			"When": {
+				"relationship:Wizard": "married",
+				"MoreWizard": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Scarlett - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Scarlett",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Scarlett.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Scarlett.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Scarlett.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Scarlett.Married.After}}",
+			},
+			"When": {
+				"relationship:Scarlett": "married",
+				"Scarlett": "marriageonly, enabled",
+			},
+		},
+		{
+			"LogName": "Scarlett - Winter Star, Married, Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Scarlett",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Scarlett.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Scarlett.Married.Spice.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Scarlett.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Scarlett.Married.Spice.After}}",
+			},
+			"When": {
+				"relationship:Scarlett": "married",
+				"Enable Spicy Dialogue": "enabled",
+				"Scarlett": "marriagespice, spicy",
+			},
+		},
+	],
+}

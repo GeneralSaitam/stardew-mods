@@ -1,0 +1,38 @@
+{
+  "Changes": [
+    {
+      "LogName": "SBV - Curious Legendary Fish Aberrant",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_SBV_MinesFinal",
+        "Fish"
+      ],
+      "Fields": {
+        "skellady.SBVCP_Aberrant": {
+          "CuriosityLureBuff": "{{CuriousChance}}"
+        }
+      },
+      "When": {
+        "Curious Legendary Fish": "Increase by 10%, Increase by 15%, Increase by 20%, Increase by 25%, Increase by 30%, Increase by 35%, Increase by 40%, Increase by 45%, Increase by 50%, Increase by 55%, Increase by 60%, Increase by 65%, Increase by 70%, Increase by 75%, Increase by 80%, Increase by 85%, Increase by 90%, Increase by 95%, Increase by 100%"
+      }
+    },
+    {
+      "LogName": "SBV - Curious Legendary Fish Angler Jr",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_SBV_SecretForest2",
+        "Fish"
+      ],
+      "Fields": {
+        "skellady.SBVCP_S2AnglerJr": {
+          "CuriosityLureBuff": "{{CuriousChance}}"
+        }
+      },
+      "When": {
+        "Curious Legendary Fish": "Increase by 10%, Increase by 15%, Increase by 20%, Increase by 25%, Increase by 30%, Increase by 35%, Increase by 40%, Increase by 45%, Increase by 50%, Increase by 55%, Increase by 60%, Increase by 65%, Increase by 70%, Increase by 75%, Increase by 80%, Increase by 85%, Increase by 90%, Increase by 95%, Increase by 100%"
+      }
+    }
+  ]
+}

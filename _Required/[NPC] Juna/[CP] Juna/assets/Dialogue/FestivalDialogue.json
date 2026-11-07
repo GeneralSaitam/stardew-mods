@@ -1,0 +1,187 @@
+{
+  "Changes": [
+    //Flower Dance
+
+    {
+      "LogName": "Flower Dance Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "Juna": "{{i18n: spring.24}}"
+      },
+      "When": {
+        "Year": "1"
+      }
+    },
+
+    {
+      "LogName": "Flower Dance Dialogue 2",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "Juna": "{{i18n: spring.24.2}}"
+      },
+      "When": {
+        "Year |contains=1": false,
+        "Roommate |contains=Juna": false
+      }
+    },
+
+    {
+      "LogName": "Flower Dance Dialogue Roommate",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "Juna": "{{i18n: spring.24.roommate}}"
+      },
+      "When": {
+        "Roommate": "Juna"
+      }
+    },
+
+    //Luau
+
+    {
+      "LogName": "Luau Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Juna": "{{i18n: summer.11}}"
+      },
+      "When": {
+        "Year": "1"
+      }
+    },
+
+    {
+      "LogName": "Luau Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Juna": "{{i18n: summer.11.2}}"
+      },
+      "When": {
+        "Year |contains=1": false,
+        "Roommate |contains=Juna": false
+      }
+    },
+
+    {
+      "LogName": "Luau Dialogue Roommate",
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Juna": "{{i18n: summer.11.roommate}}"
+      },
+      "When": {
+        "Roommate": "Juna"
+      }
+    },
+
+    //SPIRIT'S EVE
+
+    {
+      "LogName": "Halloween Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Juna": "{{i18n: fall.27}}"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "Year": "1"
+      }
+    },
+
+    {
+      "LogName": "Halloween Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Juna": "{{i18n: fall.27.2}}"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "Year |contains=1": false,
+        "Roommate |contains=Juna": false
+      }
+    },
+
+    {
+      "LogName": "Halloween Dialogue Roommate",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Juna": "{{i18n: fall.27.roommate}}"
+      },
+      "When": {
+        "Roommate": "Juna"
+      }
+    },
+
+    {
+      "LogName": "Halloween Dialogue SVE1",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Juna": "{{i18n: fall.27}}"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "IsOddYear": true
+      }
+    },
+
+    {
+      "LogName": "Halloween Dialogue SVE2",
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Juna": "{{i18n: fall.27.2}}"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "IsOddYear": false
+      }
+    },
+
+    //WINTER STAR
+
+    {
+      "LogName": "Winter Star Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "Juna": "{{i18n: winter.25}}"
+      },
+      "When": {
+        "Year": "1"
+      }
+    },
+
+    {
+      "LogName": "Winter Star Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "Juna": "{{i18n: winter.25.2}}"
+      },
+      "When": {
+        "Year |contains=1": false,
+        "Roommate |contains=Juna": false
+      }
+    },
+
+    {
+      "LogName": "Winter Star Dialogue Roommate",
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "Juna": "{{i18n: winter.25.roommate}}"
+      },
+      "When": {
+        "Roommate": "Juna"
+      }
+    }
+  ]
+}

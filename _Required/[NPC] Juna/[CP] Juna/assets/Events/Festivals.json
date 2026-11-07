@@ -1,0 +1,108 @@
+{
+  "Changes": [
+    //FLOWER DANCE
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+          "Value": "Juna 19 25 3",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+          "Value": "Juna 23 27 3",
+          "Delimiter": "/"
+        }
+      ]
+    },
+
+    //LUAU
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+          "Value": "Juna 21 5 2",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+          "Value": "Juna 35 3 2",
+          "Delimiter": "/"
+        }
+      ]
+    },
+
+    //SPIRIT'S EVE
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+          "Value": "Juna 10 12 1",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+          "Value": "Juna 31 11 2",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+        "IsOddYear": "true"
+      }
+    },
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+          "Value": "Juna 14 36 1",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+        "IsOddYear": "false"
+      }
+    },
+
+    //WINTER STAR
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+          "Value": "Juna 34 62 2",
+          "Delimiter": "/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+    "Changes": [
+        {   
+            "Action": "EditData",
+            "Target": "Data/Events/SeedShop",
+            "Entries": {
+                "18657005/F/f Abigail 1250/p Abigail/e 18657004": "sampractice/
+                7 7/
+                Pierre 4 17 2 farmer 14 14 0 Abigail 7 5 2/
+                skippable/
+                addTemporaryActor abigailDrum 48 32 6 6 2 false/
+                animate Abigail false true 125 49 34 35 48/
+                move farmer 0 -2 3/
+                move farmer -1 0 0/
+                doAction 13 11/
+                pause 500/
+                move farmer 0 -6 3/
+                move farmer -2 0 3/
+                pause 1000/
+                stopMusic/
+                stopAnimation Abigail 0/
+                jump Abigail 7/
+                faceDirection Abigail 1/
+                speak Abigail \"@!$7\"/
+                move Abigail 2 0 2/
+                move Abigail 0 1 1/
+                move Abigail 1 0 1/
+                speak Abigail \"Hey there!$1#$b#I was just practicing a bit.$0#$b#Do you mind listening for a moment?$0\"/
+                pause 300/
+                speak Abigail \"I've been playing with Sam and Sebastian in our little band.$0#$b#We're trying to get better and maybe even perform at some point.$0#$b#But lately, I've been feeling a bit unsure about my drumming.$s#$b#It's just... I want to make sure I'm pulling my weight in the band.$s#$b#Could you listen and give me your honest opinion?$0#$b#Be brutally honest, it's the only way I'll improve.$0\"/
+                emote farmer 32/
+                advancedMove Abigail false -1 0 0 -1 -2 0 2 1000/
+                move farmer -2 0 2/
+                move farmer 0 1 3/
+                move farmer -2 0 2 /
+                move farmer 0 1 0/
+                stopAdvancedMoves/
+                pause 300/
+                speak Abigail \"Thanks for doing this.$0#$b#Please let me know what you think afterwards.$1\"/
+                pause 400/
+                playMusic sampractice/
+                animate Abigail false true 125 49 34 35 48/
+                pause 15000/
+                stopMusic/
+                stopAnimation Abigail 0/
+                faceDirection Abigail 2/
+                speak Abigail \"So? What do you think?$0\"/
+                question fork1 \"What is your feedback?#'You've got great rhythm and energy! Keep practicing, and you'll only get better.'#'You have potential, but your drumming needs a lot of work. It's not up to par with the band.'\" /
+                fork 5H_Abi_BadAdvice/
+                speak Abigail \"Thanks!$1#$b#Your feedback means a lot to me.$0#$b#I'll make sure to practice even harder.$0#$b#Maybe Sam will find us a gig soon!$1\"/
+                move Abigail -2 0 2/
+                advancedMove farmer false 0 -1 3 1000/
+                move Abigail 0 2 1/
+                move Abigail 1 0 1/
+                stopAdvancedMoves/
+                pause 200/
+                speak Abigail \"No matter what, playing music with Sam and Sebastian is an amazing experience.$1#$b#We support each other and have a blast together.$0\"/
+                emote farmer 32/
+                speak Abigail \"You know, I usually play the flute, but drums just feel more fitting for a band.$0#$b#I'm glad you think it sounds good!$1\"/
+                speak Abigail \"Thanks for being here and taking the time to listen.$0#$b#It means a lot to me.$l\"/
+                pause 500/
+                end dialogue Abigail \"Your kind words really boosted my confidence.$0#$b#I've been doubting myself, especially with trying something new like drumming for the band.$0\"",
+                "5H_Abi_BadAdvice":"friendship Abigail -30/
+                speak Abigail \"Wow... you took 'brutally honest' really to heart.$s#$b#...$s\"/
+                emote Abigail 28/
+                speak Abigail \"I didn't realize it was that bad.$s#$b#Maybe I'm just not good enough.$s\"/
+                faceDirection Abigail 3/
+                speak Abigail \"I thought I was getting better, but maybe I'm not cut out for this band.$s\"/
+                move farmer 0 -1 0/
+                message \"Abigail's eyes well up with tears, as you see her motivation to play fades away.\"/
+                pause 200/
+                move Abigail -2 0 3/
+                faceDirection farmer 3/
+                speak Abigail \"Can you leave please.$s\"/
+                emote farmer 60/
+                move farmer 6 0 2 true/
+                globalFade/
+                viewport -1000 -1000/
+                end dialogueWarpOut Abigail \"I've always loved playing music, and I thought I was improving.$s#$e#Now, I'm not so sure.$s#$b#Maybe I should take a break from the band and focus on something else.$s\"",
+            },
+        },
+    ]
+}

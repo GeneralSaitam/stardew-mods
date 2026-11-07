@@ -1,0 +1,89 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/BusStop",
+        "Entries":
+    {
+    //Miihau.MiihausMoreShaneHeartEvents
+    "Miihau.ShaneEE.004/F/f Shane 1000/t 900 1300/e Miihau.ShaneEE.003":"
+    shaneTheme/
+    24 25/
+    farmer 17 23 1 Shane 30 23 3/
+    skippable/
+    advancedMove Shane false -5 0 3 100/
+    move farmer 5 0 1/
+    emote farmer 8/
+    stopAdvancedMoves/
+    speak Shane \"{{i18n:Miihau.SEE.E4.001}}\"/
+    emote Shane 40/
+    speak Shane \"{{i18n:Miihau.SEE.E4.002}}\"/
+    pause 1000/
+    speak Shane \"{{i18n:Miihau.SEE.E4.003}}\"/
+    pause 500/
+    question fork0 \"{{i18n:Miihau.SEE.E4.004}}\" /
+    fork Miihau.ShaneEE.004.Fork1/
+    pause 200/
+    speak Shane \"{{i18n:Miihau.SEE.E4.005}}\"/
+    pause 500/
+    emote farmer 32/
+    globalFade/
+    viewport -1200 -1200/
+    changeLocation Forest/
+    warp Shane 33 25/
+    faceDirection Shane 2/
+    positionOffset Shane 20 32/
+    showFrame Shane 30/
+    warp farmer 34 25/
+    faceDirection farmer 2/
+    positionOffset farmer 20 36/
+    showFrame farmer 70/
+    positionOffset farmer 20 20/
+    globalFadeToClear 0.007 true/
+    viewport 34 28/
+    pause 2000/
+    speak Shane \"{{i18n:Miihau.SEE.E4.006}}\"/
+    pause 1000/
+    speak Shane \"{{i18n:Miihau.SEE.E4.007}}\"/
+    quickQuestion {{i18n:Miihau.SEE.E4.007X}}(break)pause 200\\speak Shane \"{{i18n:Miihau.SEE.E4.008}}\"(break)pause 500\\speak Shane \"{{i18n:Miihau.SEE.E4.009}}\"\\pause 1500\\speak Shane \"{{i18n:Miihau.SEE.E4.010}}\"/
+    pause 1000/
+    speak Shane \"{{i18n:Miihau.SEE.E4.011}}\"/
+    speak Shane \"{{i18n:Miihau.SEE.E4.012}}\"/
+    pause 1000/
+    speak Shane \"{{i18n:Miihau.SEE.E4.013}}\"/
+    emote farmer 8/
+    speak Shane \"{{i18n:Miihau.SEE.E4.014}}\"/
+    pause 1500/
+    speak Shane \"{{i18n:Miihau.SEE.E4.015}}\"/
+    pause 1000/
+    speak Shane \"{{i18n:Miihau.SEE.E4.016}}\"/
+    pause 1000/
+    quickQuestion {{i18n:Miihau.SEE.E4.016X}}(break)pause 500\\speak Shane \"{{i18n:Miihau.SEE.E4.017}}\"\\pause 1000\\speak Shane \"{{i18n:Miihau.SEE.E4.018}}\"(break)pause 500\\speak Shane \"{{i18n:Miihau.SEE.E4.019}}\"\\pause 700\\speak Shane \"{{i18n:Miihau.SEE.E4.020}}\" /
+    pause 500/
+    speak Shane \"{{i18n:Miihau.SEE.E4.021}}\"/
+    pause 500/
+    emote Shane 40/
+    speak Shane \"{{i18n:Miihau.SEE.E4.022}}\"/
+    pause 300/
+    emote farmer 32/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    message \"{{i18n:Miihau.SEE.E4.023}}\"/
+    friendship Shane 40/
+    end dialogue Shane \"{{i18n:Miihau.SEE.E4.024}}\"/
+    ",
+    
+    "Miihau.ShaneEE.004.Fork1":"
+    pause 200/
+    friendship Shane -50/
+    speak Shane \"{{i18n:Miihau.SEE.E4.025}}\"/
+    advancedMove Shane false 13 0 1 100/
+    pause 300/
+    emote farmer 28/
+    end dialogue Shane \"{{i18n:Miihau.SEE.E4.026}}\"/
+    ",
+    }
+    }
+    ]
+}

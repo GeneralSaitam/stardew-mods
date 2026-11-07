@@ -1,0 +1,116 @@
+{
+//This JSON is only used to turn off particular people with the relevant config option. A reminder to anyone doing this - always leave at least two active.
+	"Changes":[
+		{
+			"LogName": "Remove Sophia from Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Sophia": {
+					"WinterStarParticipant": false,
+				},
+			},
+			"When": {
+				"Sophia": "off",
+			},
+		},
+		
+		{
+			"LogName": "Remove Claire from Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Claire": {
+					"WinterStarParticipant": false,
+				},
+			},
+			"When": {
+				"Claire": "off",
+			},
+		},
+		
+		{
+			"LogName": "Remove Olivia from Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Olivia": {
+					"WinterStarParticipant": false,
+				},
+			},
+			"When": {
+				"Olivia": "off",
+			},
+		},
+		
+		{
+			"LogName": "Remove Victor from Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Victor": {
+					"WinterStarParticipant": false,
+				},
+			},
+			"When": {
+				"Victor": "off",
+			},
+		},
+		
+		{
+			"LogName": "Remove Marlon from Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"MarlonFay": {
+					"WinterStarParticipant": false,
+				},
+			},
+			"When": {
+				"Marlon": "off",
+			},
+		},
+		
+		{
+			"LogName": "Remove Susan from Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Susan": {
+					"WinterStarParticipant": false,
+				},
+			},
+			"When": {
+				"Susan": "off",
+			},
+		},
+		
+		{
+			"LogName": "Remove Andy from Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Andy": {
+					"WinterStarParticipant": false,
+				},
+			},
+			"When": {
+				"Andy": "off",
+			},
+		},
+		
+		{
+			"LogName": "Remove Lance from Winter Star (when he's married to player)",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Lance": {
+					"WinterStarParticipant": false,
+				},
+			},
+			"When": {
+				"Lance": "off",
+			},
+		},
+	],
+}

@@ -1,0 +1,410 @@
+{
+    "Changes": [
+        {
+            "LogName": "Objects",
+            "Action": "Load",
+            "Target": "Mods/Squeaks.MGC.CP/Objects",
+            "FromFile": "Assets/Images/MGC.Objects.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "Squeaks.MGC.CP_RoastedCoffeeBeans": {
+                    "Name": "Squeaks.MGC.CP_RoastedCoffeeBeans",
+                    "DisplayName": "{{i18n:Objects.RoastedCoffeeBeans.Name}}",
+                    "Description": "{{i18n:Objects.RoastedCoffeeBeans.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 45,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 0,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": [
+                        "color_brown",
+                        "coffee_item"
+                    ]
+                },
+                "Squeaks.MGC.CP_VoidTaintedMead": {
+                    "Name": "Squeaks.MGC.CP_VoidTaintedMead",
+                    "DisplayName": "{{i18n:Objects.VoidTaintedMead.Name}}",
+                    "Description": "{{i18n:Objects.VoidTaintedMead.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 450,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 1,
+                    "Edibility": -30,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Tipsy",
+                            "BuffId": "17",
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 0,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": null,
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_dark_purple",
+                        "alcohol_item"
+                    ]
+                },
+                "Squeaks.MGC.CP_CoffeeInfusedMead": {
+                    "Name": "Squeaks.MGC.CP_CoffeeInfusedMead",
+                    "DisplayName": "{{i18n:Objects.CoffeeInfusedMead.Name}}",
+                    "Description": "{{i18n:Objects.CoffeeInfusedMead.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 450,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 2,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Tipsy",
+                            "BuffId": "17",
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 0,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": null,
+                            "CustomFields": null
+                        },
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 120,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 1.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_brown",
+                        "alcohol_item",
+                        "coffee_item"
+                    ]
+                },
+                "Squeaks.MGC.CP_BloodStarfruitMead": {
+                    "Name": "Squeaks.MGC.CP_BloodStarfruitMead",
+                    "DisplayName": "{{i18n:Objects.BloodStarfruitMead.Name}}",
+                    "Description": "{{i18n:Objects.BloodStarfruitMead.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 450,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 3,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Tipsy",
+                            "BuffId": "17",
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 0,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": null,
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_red",
+                        "alcohol_item"
+                    ]
+                },
+                "Squeaks.MGC.CP_ElderTigerLily": {
+                    "Name": "Squeaks.MGC.CP_ElderTigerLily",
+                    "DisplayName": "{{i18n:Objects.ElderTigerLily.Name}}",
+                    "Description": "{{i18n:Objects.ElderTigerLily.Description}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 250,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 4,
+                    "Edibility": -15,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": [
+                        "color_dark_red",
+                        "dye_medium",
+                        "flower_item"
+                    ]
+                },
+                "Squeaks.MGC.CP_ElderLilySeeds": {
+                    "Name": "Squeaks.MGC.CP_ElderLilySeeds",
+                    "DisplayName": "{{i18n:Objects.ElderLilySeeds.Name}}",
+                    "Description": "{{i18n:Objects.ElderLilySeeds.Description}}",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    "Price": 30,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 5,
+                    "Edibility": -300,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": null
+                },
+                "Squeaks.MGC.CP_ElderLilyHoney": {
+                    "Name": "Squeaks.MGC.CP_ElderLilyHoney",
+                    "DisplayName": "{{i18n:Objects.ElderLilyHoney.Name}}",
+                    "Description": "{{i18n:Objects.ElderLilyHoney.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 600,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 6,
+                    "Edibility": 50,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": [
+                        "color_dark_red",
+                        "honey_item"
+                    ]
+                },
+                "Squeaks.MGC.CP_ElderLilyMead": {
+                    "Name": "Squeaks.MGC.CP_ElderLilyMead",
+                    "DisplayName": "{{i18n:Objects.ElderLilyMead.Name}}",
+                    "Description": "{{i18n:Objects.ElderLilyMead.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 1800,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 7,
+                    "Edibility": 75,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Tipsy",
+                            "BuffId": "17",
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 0,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": null,
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": [
+                        "color_dark_red",
+                        "alcohol_item"
+                    ]
+                },
+                "Squeaks.MGC.CP_ElderLilyDrink": {
+                    "Name": "Squeaks.MGC.CP_ElderLilyDrink",
+                    "DisplayName": "{{i18n:Objects.ElderLilyDrink.Name}}",
+                    "Description": "{{i18n:Objects.ElderLilyDrink.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 100,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 8,
+                    "Edibility": 5,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 2.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": [
+                        "color_dark_red",
+                        "dye_strong",
+                        "coffee_item",
+                        "trash_bear_ignore"
+                    ]
+                },
+                "Squeaks.MGC.CP_DriedElderLilyPetals": {
+                    "Name": "Squeaks.MGC.CP_DriedElderLilyPetals",
+                    "DisplayName": "{{i18n:Objects.DriedElderLilyPetals.Name}}",
+                    "Description": "{{i18n:Objects.DriedElderLilyPetals.Description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 1750,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 9,
+                    "Edibility": -45,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": null
+                },
+                "Squeaks.MGC.CP_ElderLilyLeaves": {
+                    "Name": "Squeaks.MGC.CP_ElderLilyLeaves",
+                    "DisplayName": "{{i18n:Objects.ElderLilyLeaves.Name}}",
+                    "Description": "{{i18n:Objects.ElderLilyLeaves.Description}}",
+                    "Type": "Basic",
+                    "Category": -75,
+                    "Price": 50,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 10,
+                    "Edibility": -300,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": [
+                        "color_dark_red"
+                    ]
+                },
+                "Squeaks.MGC.CP_HeirloomBouquet": {
+                    "Name": "Squeak.MGC.CP_HeirloomBouquet",
+                    "DisplayName": "{{i18n:Objects.HeirloomBouquet.Name}}",
+                    "Description": "{{i18n:Objects.HeirloomBouquet.Description}}",
+                    "Type": "Basic",
+                    "Category": 0,
+                    "Price": 100,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 11,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": false,
+                    "ContextTags": [
+                        "color_orange"
+                    ],
+                    "CustomFields": null
+                },
+                "Squeaks.MGC.CP_StarMiasmaCookies": {
+                    "Name": "Squeaks.MGC.CP_StarMiasmaCookies",
+                    "DisplayName": "{{i18n:Objects.StarMiasmaCookies.Name}}",
+                    "Description": "{{i18n:Objects.StarMiasmaCookies.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 700,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 12,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 3.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": [
+                        "trash_bear_ignore"
+                    ]
+                },
+                //Seasalt Coffee
+                "Squeaks.MGC.CP_VoidMelonSoda": {
+                    "Name": "Squeaks.MGC.CP_VoidMelonSoda",
+                    "DisplayName": "{{i18n:Objects.VoidMelonSoda.Name}}",
+                    "Description": "{{i18n:Objects.VoidMelonSoda.Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 125,
+                    "Texture": "Mods/Squeaks.MGC.CP/Objects",
+                    "SpriteIndex": 15,
+                    "Edibility": 30,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 960,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 1.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": "{{Exclude From Perfection}}",
+                    "ContextTags": [
+                        "color_purple",
+                        "drink_item",
+                        "trash_bear_ignore"
+                    ]
+                }
+            }
+        }
+    ]
+}

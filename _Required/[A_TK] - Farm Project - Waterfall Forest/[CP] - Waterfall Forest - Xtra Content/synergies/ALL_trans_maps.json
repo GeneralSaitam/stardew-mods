@@ -1,0 +1,520 @@
+{
+    "Changes": [
+	
+//	SHED INTERIOR
+
+//	//	DE
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
+			"FromArea": { "X": 30, "Y": 41, "Width": 1, "Height": 1 },
+			"ToArea": { "X": 6, "Y": 34, "Width": 1, "Height": 1 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Language": "de",
+				"FarmhouseUpgrade": "0, 1, 2",
+				"Unlock_Shed_WaFF": "false",
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
+			"FromArea": { "X": 30, "Y": 40, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 14, "Y": 9, "Width": 2, "Height": 1 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Language": "de",
+				"IsCommunityCenterComplete": "false",
+				"IsJojaMartComplete": "false",
+				"Unlock_Shed_WaFF": "false",
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
+			"FromArea": { "X": 30, "Y": 41, "Width": 1, "Height": 1 },
+			"ToArea": { "X": 6, "Y": 34, "Width": 1, "Height": 1 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Language": "de",
+				"FarmhouseUpgrade": "0, 1, 2",
+				"Unlock_Shed_WaFFLE": "false",
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
+			"FromArea": { "X": 30, "Y": 40, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 14, "Y": 9, "Width": 2, "Height": 1 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Language": "de",
+				"IsCommunityCenterComplete": "false",
+				"IsJojaMartComplete": "false",
+				"Unlock_Shed_WaFFLE": "false",
+			}
+		},
+		
+//	//	FR
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
+			"FromArea": { "X": 36, "Y": 41, "Width": 1, "Height": 1 },
+			"ToArea": { "X": 6, "Y": 34, "Width": 1, "Height": 1 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Language": "fr",
+				"FarmhouseUpgrade": "0, 1, 2",
+				"Unlock_Shed_WaFF": "false",
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
+			"FromArea": { "X": 36, "Y": 40, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 14, "Y": 9, "Width": 2, "Height": 1 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Language": "fr",
+				"IsCommunityCenterComplete": "false",
+				"IsJojaMartComplete": "false",
+				"Unlock_Shed_WaFF": "false",
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
+			"FromArea": { "X": 36, "Y": 41, "Width": 1, "Height": 1 },
+			"ToArea": { "X": 6, "Y": 34, "Width": 1, "Height": 1 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Language": "fr",
+				"FarmhouseUpgrade": "0, 1, 2",
+				"Unlock_Shed_WaFFLE": "false",
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_waterfall_shed_F0",
+			"FromFile": "options/shed/All_IN_Options_Shed.tmx",
+			"FromArea": { "X": 36, "Y": 40, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 14, "Y": 9, "Width": 2, "Height": 1 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Language": "fr",
+				"IsCommunityCenterComplete": "false",
+				"IsJojaMartComplete": "false",
+				"Unlock_Shed_WaFFLE": "false",
+			}
+		},
+		
+//	SHED LOCATION
+
+//	//	DE
+
+//	//	//	STEP 0
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 21, "Y": 8, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Language": "de",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 8, "Y": 37, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "de",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 69, "Y": 76, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "de",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 21, "Y": 8, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Language": "de",
+				"Use_Shed_WaFFLE": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 8, "Y": 37, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "de",
+				"Use_Shed_WaFFLE": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Farm_Pen",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 69, "Y": 76, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "de",
+				"Use_Shed_WaFFLE": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Farm_TFall",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		},
+
+//	//	//	STEP 1
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 21, "Y": 8, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Language": "de",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 8, "Y": 37, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "de",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 69, "Y": 76, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "de",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 21, "Y": 8, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Language": "de",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 8, "Y": 37, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "de",
+				"Use_Shed_WaFFLE": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Farm_Pen",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 12, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 69, "Y": 76, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "de",
+				"Use_Shed_WaFFLE": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Farm_TFall",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		},
+
+//	//	FR
+
+//	//	//	STEP 0
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 21, "Y": 8, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Language": "fr",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 8, "Y": 37, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "fr",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 69, "Y": 76, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "fr",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 21, "Y": 8, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Language": "fr",
+				"Use_Shed_WaFFLE": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 8, "Y": 37, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "fr",
+				"Use_Shed_WaFFLE": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Farm_Pen",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 24, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 69, "Y": 76, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "fr",
+				"Use_Shed_WaFFLE": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Farm_TFall",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		},
+
+//	//	//	STEP 1
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 21, "Y": 8, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Language": "fr",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 8, "Y": 37, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "fr",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 69, "Y": 76, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "fr",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 21, "Y": 8, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Language": "fr",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Northern_Path",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 8, "Y": 37, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "fr",
+				"Use_Shed_WaFFLE": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Farm_Pen",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 22, "Y": 25, "Width": 2, "Height": 1 },
+			"ToArea": { "X": 69, "Y": 76, "Width": 2, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Language": "fr",
+				"Use_Shed_WaFFLE": "True",
+				"Abandoned_Shed_Location_WaFFLE": "Farm_TFall",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFFLE": "false"
+			}
+		}
+	]
+}	  

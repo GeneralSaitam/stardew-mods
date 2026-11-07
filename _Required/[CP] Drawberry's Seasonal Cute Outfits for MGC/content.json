@@ -1,0 +1,94 @@
+{
+	"Format": "2.9.0",
+	"ConfigSchema": {
+	  "NoNose": {
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Choose between no noses (true) or noses (false) for the sprites."
+	  },
+	},
+	"Changes": [
+// OUTFIT LOADS
+{
+	"LogName": "Load Cambria's Outfits",
+	"Action": "Load",
+	"Priority": "High",
+	"Target": "Portraits/Cambria_Spring, Portraits/Cambria_Summer, Portraits/Cambria_Fall, Portraits/Cambria_Winter, Portraits/Cambria_Beach, Portraits/Cambria_SpiritsEve, Characters/Cambria_Spring, Characters/Cambria_Summer, Characters/Cambria_Fall, Characters/Cambria_Winter, Characters/Cambria_Beach, Characters/Cambria_SpiritsEve",
+	"FromFile": "assets/Cambria/{{TargetPathOnly}}/{{TargetWithoutPath}}.png"
+},
+	  /* NOSE OVERLAY*/,
+	  {
+		"LogName": "Cambria - Nose",
+		"Action": "EditImage",
+		"Target": "Characters/Cambria_Spring, Characters/Cambria_Summer, Characters/Cambria_Fall, Characters/Cambria_Winter, Characters/Cambria_Beach, Characters/Cambria_SpiritsEve",
+		"FromFile": "assets/Cambria/Characters/Cambria_Nose.png",
+		"PatchMode": "Overlay",
+		"Priority": "Late",
+		"When": {
+		  "NoNose": "false"
+		}
+	  }
+	  /*APPEARANCE DATA */,
+	  {
+		"LogName": "Cambria Appearance Data",
+		"Action": "EditData",
+		"Priority": "Late",
+		"Target": "Data/Characters",
+		"TargetField": [
+		  "Otter.Cambria",
+		  "Appearance"
+		],
+		"Entries": {
+		  "{{ModId}}.DBCambriaSpring": {
+			"Id": "{{ModId}}.DBCambriaSpring",
+			"Condition": "SEASON spring",
+			"Sprite": "Characters/Cambria_Spring",
+			"Portrait": "Portraits/Cambria_Spring",
+			"Precedence": -200
+		  },
+		  "{{ModId}}.DBCambriaSummer": {
+			"Id": "{{ModId}}.DBCambriaSummer",
+			"Condition": "SEASON Summer",
+			"Sprite": "Characters/Cambria_Summer",
+			"Portrait": "Portraits/Cambria_Summer",
+			"Precedence": -200
+		  },
+		  "{{ModId}}.DBCambriaFall": {
+			"Id": "{{ModId}}.DBCambriaFall",
+			"Condition": "SEASON Fall",
+			"Sprite": "Characters/Cambria_Fall",
+			"Portrait": "Portraits/Cambria_Fall",
+			"Precedence": -200
+		  },
+		  "{{ModId}}.DBCambriaWinter": {
+			"Id": "{{ModId}}.DBCambriaWinterVest",
+			"Condition": "SEASON Winter",
+			"Sprite": "Characters/Cambria_Winter",
+			"Portrait": "Portraits/Cambria_Winter",
+			"Precedence": -200
+		  },
+		  "{{ModId}}.DBCambriaSpirit": {
+			"Id": "{{ModId}}.DBCambriaSpirit",
+			"Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn EastScarp_VillageInn_SpiritEve EastScarp_Crossing\"",
+			"Sprite": "Characters/Cambria_SpiritsEve",
+			"Portrait": "Portraits/Cambria_SpiritsEve",
+			"Precedence": -2000
+		  },
+
+			 "{{ModId}}.DBCambriaBeach": {
+				"Id": "{{ModId}}.DBCambriaBeach",
+				"Sprite": "Characters/Cambria_Beach",
+				"Portrait": "Portraits/Cambria_Beach",
+				"IsIslandAttire": true,
+				"Precedence": -10000,
+			},
+		}
+		},
+		{
+			"LogName": "Cambria Calendar Sprite Edits",
+			"Action": "EditImage",
+			"Target": "Characters/Nora",
+			"FromFile": "assets/Cambria/Characters/Cambria_{{Season}}.png"
+		  }
+	]
+  }

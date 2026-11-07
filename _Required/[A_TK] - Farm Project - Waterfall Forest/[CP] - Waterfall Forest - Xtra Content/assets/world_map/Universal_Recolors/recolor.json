@@ -1,0 +1,96 @@
+{
+	"Changes": [
+
+//	UNIVERSAL RECOLORS
+
+//	//	STANDARD MAP
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Universal_Recolors/D40_H1/{{season}}_WaFF.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"World_Map_Recolor": "True",
+				"World_Map_SVE": "False",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Universal_Recolors/D40_H1/{{season}}_WaFFLE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"World_Map_Recolor": "True",
+				"World_Map_SVE": "False",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},
+
+//	//	SVE MAP
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Universal_Recolors/D40_H1/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=tern.DesaturatedSVE": "true",			
+				"World_Map_Recolor": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "assets/world_map/Universal_Recolors/D40_H1/{{season}}_WaFF_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_SVE": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Universal_Recolors/D40_H1/{{season}}_WaFFLE_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasMod |contains=tern.DesaturatedSVE": "true",
+				"World_Map_Recolor": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMapLE",
+			"FromFile": "assets/world_map/Universal_Recolors/D40_H1/{{season}}_WaFFLE_SVE.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },		
+			"PatchMode": "Replace",
+			"When": {
+				"World_Map_Recolor": "True",
+				"World_Map_SVE": "True",
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE"
+			}
+		}
+	]
+}	  

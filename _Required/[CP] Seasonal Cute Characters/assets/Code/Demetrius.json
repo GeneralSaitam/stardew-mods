@@ -1,0 +1,134 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_Demetrius_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Demetrius_Spring, Portraits/Demetrius_Summer, Portraits/Demetrius_Fall, Portraits/Demetrius_Winter_Outdoor, Portraits/Demetrius_Winter_Indoor, Portraits/Demetrius_FlowerDance, Portraits/Demetrius_SpiritsEve, Characters/Demetrius_Spring, Characters/Demetrius_Summer, Characters/Demetrius_Fall, Characters/Demetrius_Winter_Outdoor, Characters/Demetrius_Winter_Indoor, Characters/Demetrius_FlowerDance, Characters/Demetrius_SpiritsEve, Portraits/Demetrius_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Demetrius/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Edit_Demetrius_Beach_Assets",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Demetrius/{{TargetWithoutPath}}.png",
+			"When": {
+				"BeachOutfitsEnabled": true
+			}
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_Demetrius_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius_Spring, Characters/Demetrius_Summer, Characters/Demetrius_Fall, Characters/Demetrius_Winter_Outdoor, Characters/Demetrius_Winter_Indoor, Characters/Demetrius_FlowerDance",
+			"FromFile": "assets/{{TargetPathOnly}}/Demetrius/Demetrius_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Add_Demetrius_Beach_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Demetrius/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false,
+				"BeachOutfitsEnabled": true
+			}
+		},
+		{
+			"LogName": "Add_Demetrius_SpiritsEve_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Demetrius/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_Demetrius_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Demetrius",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.DemetriusSpring": {
+					"Id": "{{ModId}}.DemetriusSpring",
+					"Portrait": "Portraits/Demetrius_Spring",
+					"Sprite": "Characters/Demetrius_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.DemetriusSummer": {
+					"Id": "{{ModId}}.DemetriusSummer",
+					"Portrait": "Portraits/Demetrius_Summer",
+					"Sprite": "Characters/Demetrius_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.DemetriusFall": {
+					"Id": "{{ModId}}.DemetriusFall",
+					"Portrait": "Portraits/Demetrius_Fall",
+					"Sprite": "Characters/Demetrius_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.DemetriusWinterIndoor": {
+					"Id": "{{ModId}}.DemetriusWinterIndoor",
+					"Portrait": "Portraits/Demetrius_Winter_Indoor",
+					"Sprite": "Characters/Demetrius_Winter_Indoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",
+					"Precedence": -101
+				},
+				"{{ModId}}.DemetriusWinterOutdoor": {
+					"Id": "{{ModId}}.DemetriusWinterOutdoor",
+					"Portrait": "Portraits/Demetrius_Winter_Outdoor",
+					"Sprite": "Characters/Demetrius_Winter_Outdoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101
+				},
+				// Festival Outfits
+				"{{ModId}}.DemetriusFlowerDance": {
+					"Id": "{{ModId}}.DemetriusFlowerDance",
+					"Portrait": "Portraits/Demetrius_FlowerDance",
+					"Sprite": "Characters/Demetrius_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.DemetriusSpirit": {
+					"Id": "{{ModId}}.DemetriusSpirit",
+					"Portrait": "Portraits/Demetrius_SpiritsEve",
+					"Sprite": "Characters/Demetrius_SpiritsEve",
+					"Condition": "{{UseSpiritsEveOutfit}}",
+					"Precedence": -300
+				}
+			}
+		},
+		// CALENDAR
+		{
+			"LogName": "Edit_Demetrius_Calendar_Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius",
+			"FromFile": "assets/{{Target}}/Demetrius_{{CurrentSeasonAttire}}.png"
+		},
+		{
+			"LogName": "Add_Demetrius_Calendar_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius",
+			"FromFile": "assets/{{Target}}/Demetrius_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		}
+	]
+}

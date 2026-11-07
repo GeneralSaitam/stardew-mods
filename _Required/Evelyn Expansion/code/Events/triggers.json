@@ -1,0 +1,322 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_EvelynTulipQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynTulipQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Spring, RANDOM 0.15, PLAYER_HEARTS Current Evelyn 3, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynTulipQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynTulipQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynFairyRoseQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynFairyRoseQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, RANDOM 0.15, PLAYER_HEARTS Current Evelyn 4, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynFairyRoseQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynFairyRoseQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynChocolateCakeQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynChocolateCakeQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, YEAR 2, RANDOM 0.15, PLAYER_HEARTS Current Evelyn 6, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynChocolateCakeQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynChocolateCakeQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeFreshLeekQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeFreshLeekQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Spring, RANDOM 0.15, PLAYER_HEARTS Current George 3, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeFreshLeekQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeFreshLeekQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeStoneQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeStoneQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Winter, YEAR 1, DAY_OF_MONTH 14, PLAYER_HEARTS Current George 4, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeStoneQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeStoneQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeFriedMushroomQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeFriedMushroomQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, YEAR 2, RANDOM 0.15, PLAYER_HEARTS Current George 6, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeFriedMushroomQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeFriedMushroomQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynCuteLetter1Trigger": {
+                    "Id": "{{ModId}}_EvelynCuteLetter1Trigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "RANDOM 0.15, PLAYER_HEARTS Current Evelyn 5, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynCuteLetter1",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynCuteLetter1 now"
+                    ]
+                },
+                "{{ModId}}_EvelynCuteLetter2Trigger": {
+                    "Id": "{{ModId}}_EvelynCuteLetter2Trigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "WEATHER Here GreenRain Rain Storm, RANDOM 0.40, PLAYER_HEARTS Current Evelyn 7, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynCuteLetter2",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynCuteLetter2 now"
+                    ]
+                },
+                "{{ModId}}_GeorgeCuteLetter1Trigger": {
+                    "Id": "{{ModId}}_GeorgeCuteLetter1Trigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Winter, RANDOM 0.20, PLAYER_HEARTS Current George 5, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeCuteLetter1",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeCuteLetter1 now"
+                    ]
+                },
+                "{{ModId}}_EvelynFreshCrocusQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynFreshCrocusQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Winter, PLAYER_HEARTS Current Evelyn 5, RANDOM 0.15, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynFreshCrocusQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynFreshCrocusQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynSugarQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynSugarQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "DAY_OF_WEEK Saturday, PLAYER_HEARTS Current Evelyn 4, RANDOM 0.50, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynSugarQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynSugarQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynClothQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynClothQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, RANDOM 0.15, PLAYER_HEARTS Current Evelyn 6, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynClothQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynClothQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynMelonQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynMelonQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, RANDOM 0.1, PLAYER_HEARTS Current Evelyn 8, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynMelonQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynMelonQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgePaleAleQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgePaleAleQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "RANDOM 0.15, PLAYER_HEARTS Current George 6, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgePaleAleQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgePaleAleQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeWineQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeWineQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, WEATHER Here Wind, RANDOM 0.15, PLAYER_HEARTS Current George 8, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeWineQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeWineQuestLetter Tomorrow"
+                    ]
+                },
+                "{{ModId}}_EvelynDiamondQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynDiamondQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, WEATHER Here Rain GreenRain Storm, DAY_OF_WEEK Friday, RANDOM 0.75, PLAYER_HEARTS Current Evelyn 8, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynDiamondQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynDiamondQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeIridiumQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeIridiumQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Winter, WEATHER Here Snow, DAY_OF_WEEK Monday, RANDOM 0.75, PLAYER_HEARTS Current George 8, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeIridiumQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeIridiumQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynChickenStatueQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynChickenStatueQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Spring, DAY_OF_WEEK Sunday, RANDOM 0.5, PLAYER_HEARTS Current Evelyn 10, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynChickenStatueQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynChickenStatueQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeOrnamentalFanQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeOrnamentalFanQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, DAY_OF_WEEK Wednesday, RANDOM 0.25, PLAYER_HEARTS Current George 10, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeOrnamentalFanQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeOrnamentalFanQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynGiftLetterSunnySummerTrigger": {
+                    "Id": "{{ModId}}_EvelynGiftLetterSunnySummerTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, WEATHER Here Sun, DAY_OF_WEEK Sunday, RANDOM 0.25, PLAYER_HEARTS Current Evelyn 6, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynGiftLetterSunnySummer",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynGiftLetterSunnySummer now"
+                    ]
+                },
+                "{{ModId}}_EvelynGiftLetterSnowyWinterTrigger": {
+                    "Id": "{{ModId}}_EvelynGiftLetterSnowyWinterTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Winter, WEATHER Here Snow, DAY_OF_WEEK Friday, RANDOM 0.25, PLAYER_HEARTS Current Evelyn 6, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynGiftLetterSnowyWinter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynGiftLetterSnowyWinter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeGiftLetterRainyFallTrigger": {
+                    "Id": "{{ModId}}_GeorgeGiftLetterRainyFallTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, WEATHER Here GreenRain Storm Rain, DAY_OF_WEEK Thursday, RANDOM 0.25, PLAYER_HEARTS Current George 6, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeGiftLetterRainyFall",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeGiftLetterRainyFall now"
+                    ]
+                },
+                "{{ModId}}_GeorgePearlQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgePearlQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "YEAR 3, RANDOM 0.15, PLAYER_HEARTS Current George 10, PLAYER_HEARTS Current Evelyn 10, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgePearlQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgePearlQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynAncientFruitQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynAncientFruitQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "YEAR 2, SEASON Fall, RANDOM 0.15, PLAYER_HEARTS Current Evelyn 9, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynAncientFruitQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynAncientFruitQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeBatteryQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeBatteryQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, WEATHER Here GreenRain Storm Rain, RANDOM 0.25, PLAYER_HEARTS Current George 9, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeBatteryQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeBatteryQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynStarfruitQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynStarfruitQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, YEAR 3, DAY_OF_WEEK Sunday, RANDOM 0.15, PLAYER_HEARTS Current Evelyn 10, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynStarfruitQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynStarfruitQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgePrismaticShardQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgePrismaticShardQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Winter, DAY_OF_WEEK Tuesday, RANDOM 0.50, PLAYER_HEARTS Current George 10, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgePrismaticShardQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgePrismaticShardQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeCoffeeQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeCoffeeQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, RANDOM 0.1, PLAYER_HEARTS Current George 5, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeCoffeeQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeCoffeeQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynSunflowerQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynSunflowerQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, RANDOM 0.1, PLAYER_HEARTS Current Evelyn 5, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynSunflowerQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynSunflowerQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynTheGoldenPumpkinQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynTheGoldenPumpkinQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "YEAR 3, SEASON Summer, RANDOM 0.2, PLAYER_HEARTS Current Evelyn 10, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynTheGoldenPumpkinQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynTheGoldenPumpkinQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeRabbitsFootQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeRabbitsFootQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "YEAR 2, SEASON Fall, WEATHER Here Rain GreenRain Storm, RANDOM 0.25, PLAYER_HEARTS Current George 9, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeRabbitsFootQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeRabbitsFootQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_MonaGraveQuestTrigger": {
+                    "Id": "{{ModId}}_MonaGraveQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "WEATHER Here GreenRain, RANDOM 0.2, PLAYER_HEARTS Current Evelyn 8, !PLAYER_HAS_MAIL Current {{ModId}}_MonaGraveQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_MonaGraveQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeSlimeQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeSlimeQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, WEATHER Here Rain Storm GreenRain, RANDOM 0.1, PLAYER_HEARTS Current George 6, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeSlimeQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeSlimeQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynTapperQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynTapperQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, RANDOM 0.1, PLAYER_HEARTS Current Evelyn 6, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynTapperQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynTapperQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeRadioactiveQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeRadioactiveQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "YEAR 4, SEASON Winter, WEATHER Here Snow, RANDOM 0.05, PLAYER_HEARTS Current George 10, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeRadioactiveQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeRadioactiveQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynGemBerryQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynGemBerryQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "YEAR 4, SEASON Fall, RANDOM 0.05, PLAYER_HEARTS Current Evelyn 10, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynGemBerryQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynGemBerryQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynDaffodilBouquetQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynDaffodilBouquetQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "YEAR 2, SEASON Spring, RANDOM 0.05, PLAYER_HEARTS Current Evelyn 10, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynDaffodilBouquetQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynDaffodilBouquetQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_GeorgeCookieJarQuestTrigger": {
+                    "Id": "{{ModId}}_GeorgeCookieJarQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "YEAR 2, SEASON Winter, RANDOM 0.5, PLAYER_HEARTS Current George 10, !PLAYER_HAS_MAIL Current {{ModId}}_GeorgeCookieJarQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_GeorgeCookieJarQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_EvelynHoneyTeaQuestTrigger": {
+                    "Id": "{{ModId}}_EvelynHoneyTeaQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "YEAR 2, SEASON Summer, RANDOM 0.05, PLAYER_HEARTS Current Evelyn 10, !PLAYER_HAS_MAIL Current {{ModId}}_EvelynHoneyTeaQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_EvelynHoneyTeaQuestLetter now"
+                    ]
+                }
+            }
+        }
+    ]
+}

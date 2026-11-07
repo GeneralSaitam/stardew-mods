@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="62">
+ <properties>
+  <property name="CanCaskHere" value="T"/>
+  <property name="Doors" value="11 9 1 120"/>
+  <property name="Warp" value="-1 13 Custom_KatrielleHouse 25 17 -1 14 Custom_KatrielleHouse 25 18"/>
+ </properties>
+ <tileset firstgid="1" source="z_townInterior_2.tsx"/>
+ <layer id="1" name="Back" width="1" height="1">
+  <data encoding="csv">
+73
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="1" height="1">
+  <data encoding="csv">
+73
+</data>
+ </layer>
+ <layer id="3" name="Front" width="1" height="1">
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="1" height="1">
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="1" height="1">
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back">
+  <object id="61" name="TileData" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="MagicWarp Custom_KatrielleHouse 10 19"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Buildings" visible="0">
+  <object id="60" name="TileData" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

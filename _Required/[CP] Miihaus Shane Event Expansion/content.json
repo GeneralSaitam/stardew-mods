@@ -1,0 +1,216 @@
+//I have no idea what I am doing but trial and error are my best friends <3
+//hope you have a nice day! thanks for checking out my "Code" - Miihau
+//MiihausShaneEventExpansion
+
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "CustomPortraitForEvent1": {
+            "AllowValues": "true, false",
+            "Default": true
+        },
+
+    },
+    // add the in-game location
+    "CustomLocations": [
+    {
+        "Name": "Custom_MiihauSEE_Grave",
+        "FromMapFile": "assets/MiihauSEE_Grave_backup.tmx"
+    },
+],
+
+//DynamicTokes that add compatibility with SVE
+"DynamicTokens": [
+    {
+        "Name": "Miihau.CustomPortrait",
+        "Value": "changePortrait Shane Joja/"
+    },
+    {
+        "Name": "Miihau.CustomPortrait",
+        "Value": "pause 100/",
+        "When":{
+            "CustomPortraitForEvent1":false
+        }
+    },
+    {
+        "Name": "Miihau.ShaneEE.01.positioning",
+        "Value": "farmer 88 53 1 Shane 10 18 2 Morris -301 -301 2"
+    },
+    { 
+        "Name": "Miihau.ShaneEE.01.positioning",
+        "Value": "farmer 88 53 1 Shane 10 18 2 Morris 17 24 3",
+        "When": { 
+            "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+    },
+    {
+        "Name": "Miihau.ShaneEE.02.positioning",
+        "Value": "farmer 97 33 0 Shane 98 23 0 Penny 111 25 3 Jas 112 26 3"
+    },
+    { 
+        "Name": "Miihau.ShaneEE.02.positioning",
+        "Value": "farmer 98 33 0 Shane 100 23 0 Penny 111 25 3 Jas 112 26 3",
+        "When": { 
+            "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+    },
+    {
+        "Name": "Miihau.ShaneEE.02.move0",
+        "Value": "move Jas -9 0 3 farmer 0 -3 0 Penny -9 0 3"
+    },
+    { 
+        "Name": "Miihau.ShaneEE.02.move0",
+        "Value": "move Jas -9 0 3 farmer 0 -1 0 Penny -9 0 3",
+        "When": { 
+            "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+    },
+    {
+        "Name": "Miihau.ShaneEE.02.move1",
+        "Value": "move Jas -5 0 0 farmer 2 0 0"
+    },
+    { 
+        "Name": "Miihau.ShaneEE.02.move1",
+        "Value": "move Jas -3 0 0 farmer 2 0 0",
+        "When": { 
+            "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+    },
+    {
+        "Name": "Miihau.ShaneEE.02.move2",
+        "Value": "move Jas 0 -2 0 Penny -3 0 0"
+    },
+    { 
+        "Name": "Miihau.ShaneEE.02.move2",
+        "Value": "move Jas 0 -2 0 Penny -1 0 0",
+        "When": { 
+            "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+    },
+    {
+        "Name": "Miihau.ShaneEE.06.positioning",
+        "Value": "farmer 30 60 2 Shane 31 70 0 Jodi 23 69 1 Caroline 24 68 1 Lewis 38 72 3 Gus 39 69 3 Evelyn 20 62 3 Pierre 33 63 2 Harvey 32 62 2"
+    },
+    { 
+        "Name": "Miihau.ShaneEE.06.positioning",
+        "Value": "farmer 30 60 2 Shane 31 70 0 Jodi 23 69 1 Caroline 24 68 1 Lewis 38 72 3 Gus 38 69 3 Evelyn 19 62 3 Pierre 33 63 2 Harvey 32 62 2",
+        "When": { 
+            "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+    },
+],
+
+"Changes": [
+
+//ASSETS
+
+
+    //Loading in assets
+    {
+        "Action":"Load",
+        "Target":"Portraits/Shane_Joja",
+        "FromFile":"assets/Shane_Joja.png",
+        "When":{
+            "CustomPortraitForEvent1":true
+        }
+    },
+    {
+        "Action":"Load",
+        "Target":"Portraits/MiihauShaneDad",
+        "FromFile":"assets/MiihauShaneDad.png"
+    },
+    {
+        "Action":"Load",
+        "Target":"Characters/MiihauShaneDad",
+        "FromFile":"assets/MiihauShaneDadSPRITE.png"
+    },
+    {
+        "Action":"Load",
+        "Target":"Characters/MiihauShaneNote",
+        "FromFile":"assets/MiihauShaneNote.png"
+    },
+    {
+        "Action":"Load",
+        "Target":"Characters/MiihauSEEGridballActor",
+        "FromFile":"assets/MiihauShaneGridballSmallActor.png"
+    },
+    {
+        "Action": "Load",
+        "Target": "Mods/miihau.see.assets/Miihau_SEE_Gridball",
+        "FromFile": "assets/MiihauShaneGridballSmall.png"
+    },
+    {
+		"Action": "EditData",
+		"Target": "Data/Furniture",
+		"Entries": {
+			"Miihau_SEE_Gridball": "Shane's old Gridball/Decor/1 1/1 1/1/769/2/{{i18n: Miihau.SEE.Gridball}}/0/Mods\\miihau.see.assets\\Miihau_SEE_Gridball",
+		}
+    },
+
+//EVENTS
+
+    //adding JojaMart EventFile
+    {
+        "Action":"Load",
+        "Target":"Data/Events/JojaMart",
+        "FromFile":"events/blank.json",
+        "Priority": "Low"
+    },
+
+    //Loading in Event 1
+    {
+        "Action": "Include",
+        "FromFile": "events/Event1.json"
+    },
+
+    //Loading in Event 2
+    {
+        "Action": "Include",
+        "FromFile": "events/Event2.json"
+    },
+    //Loading in Event 3
+    {
+        "Action": "Include",
+        "FromFile": "events/Event3.json"
+    },
+    //Loading in Event 4
+    {
+        "Action": "Include",
+        "FromFile": "events/Event4.json"
+    },
+    //Loading in Event 5
+    {
+        "Action": "Include",
+        "FromFile": "events/Event5.json"
+    },
+    //Loading in Event 6
+    {
+        "Action": "Include",
+        "FromFile": "events/Event6.json"
+    },
+    //Loading in Event 7
+    {
+        "Action": "Include",
+        "FromFile": "events/Event7.json"
+    },
+
+    //Loading in Event 8
+    {
+        "Action": "Include",
+        "FromFile": "events/Event8.json"
+    },
+
+    //Loading in Event 9
+    {
+        "Action": "Include",
+        "FromFile": "events/Event9.json"
+    },
+
+    //Loading in Event 10
+    {
+        "Action": "Include",
+        "FromFile": "events/Event10.json"
+    },
+    ]
+}
+

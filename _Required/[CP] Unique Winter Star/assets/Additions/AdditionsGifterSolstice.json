@@ -1,0 +1,53 @@
+{
+	"Changes":[
+		//This is for regular dialogues. Festival Dialogue changes are in another file, as are early dialogues.
+		{
+			"LogName": "Solstice, Food From Wizard",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Wizard",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Wizard.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Wizard.Solstice.After}}",
+			},
+			"When": {
+				"Wizard": "enabled",
+			},
+		},
+		{
+			"LogName": "Solstice, Food From Sandy",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sandy",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sandy.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sandy.Solstice.After}}",
+			},
+			"When": {
+				"Sandy": "enabled, all",
+			},
+		},
+		{
+			"LogName": "Solstice, Food From Krobus",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Krobus",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Krobus.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Krobus.Solstice.After}}",
+			},
+			"When": {
+				"Krobus": "enabled, all",
+			},
+		},
+		{
+			"LogName": "Solstice, Food From Dwarf",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Dwarf",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Dwarf.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Dwarf.Solstice.After |Villager={{Villager}} }}",
+			},
+			"When": {
+				"Dwarf": "enabled, all",
+			},
+		},
+	],
+}

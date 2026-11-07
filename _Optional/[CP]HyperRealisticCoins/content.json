@@ -1,0 +1,459 @@
+{
+	"Format": "1.17",
+	
+			"ConfigSchema": 
+		{
+			"Coin":
+				{
+				"AllowValues": "Basic_gold,Flowers_and_rivers_gold,Polished,Junimo_gold,junimo_rare_gold,refined_silver,refined_junimo_silver,tacos,false",
+				"Default": "Junimo_gold",
+				"AllowMultiple": "false"
+				}, 
+			"Animations":
+				{
+				"AllowValues": "false,true",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"PileAnimations":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+				
+		},
+
+	
+	
+	"Changes": [
+	
+	
+	/////////
+		{
+			"LogName": "Gold coin one",   ///Just a reskin
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin1.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"When":
+				{
+				"Coin": "Basic_gold",
+				"Animations": "false"
+				},
+		},
+		
+		{
+			"LogName": "Gold Coin One Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin1Anim.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "Basic_gold",
+				"Animations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+		{
+			"LogName": "Gold Pile One Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/PileGoldAnimated.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 14 },
+			"ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "Basic_gold",
+				"Animations": "true",
+				"PileAnimations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+		////////Flowers_and_rivers_gold
+		{
+			"LogName": "Gold coin two",   ///Just a reskin
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin2.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"When":
+				{
+				"Coin": "Flowers_and_rivers_gold",
+				"Animations": "false"
+				},
+		},
+		
+		{
+			"LogName": "Gold Coin two Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin2Anim.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "Flowers_and_rivers_gold",
+				"Animations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+		{
+			"LogName": "Gold Pile Two Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/PileGoldAnimated.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 14 },
+			"ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "Flowers_and_rivers_gold",
+				"Animations": "true",
+				"PileAnimations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+//////////////	Polished	
+		{
+			"LogName": "Gold coin three",   ///Just a reskin
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin3.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"When":
+				{
+				"Coin": "Polished",
+				"Animations": "false"
+				},
+		},
+		
+		{
+			"LogName": "Gold Coin three Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin3Anim.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "Polished",
+				"Animations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+		{
+			"LogName": "Gold Pile Three Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/PileGoldAnimated.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 14 },
+			"ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "Polished",
+				"Animations": "true",
+				"PileAnimations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+//////////////	Junimo_gold
+		{
+			"LogName": "Gold coin four",   ///Just a reskin
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin4.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"When":
+				{
+				"Coin": "Junimo_gold",
+				"Animations": "false"
+				},
+		},
+		
+		{
+			"LogName": "Gold Coin four Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin4Anim.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "Junimo_gold",
+				"Animations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+		{
+			"LogName": "Gold Pile Four Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/PileGoldAnimated.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 14 },
+			"ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "Junimo_gold",
+				"Animations": "true",
+				"PileAnimations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+//////////////	junimo_rare_gold
+		{
+			"LogName": "Gold coin five",   ///Just a reskin
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin5.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"When":
+				{
+				"Coin": "junimo_rare_gold",
+				"Animations": "false"
+				},
+		},
+		
+		{
+			"LogName": "Gold Coin five Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin5Anim.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "junimo_rare_gold",
+				"Animations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+		{
+			"LogName": "Gold Pile Five Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/PileGoldAnimated.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 14 },
+			"ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "junimo_rare_gold",
+				"Animations": "true",
+				"PileAnimations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+//////////////	refined_silver
+		{
+			"LogName": "Silver coin six",   ///Just a reskin
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin6.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"When":
+				{
+				"Coin": "refined_silver",
+				"Animations": "false"
+				},
+		},
+		{
+			"LogName": "Silver Pile six Static",   ///Just a reskin
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/PileSilver.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 14 },
+			"ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+			"When":
+				{
+				"Coin": "refined_silver",
+				"Animations": "false"
+				},
+		},		
+		
+
+		{
+			"LogName": "Silver Coin six Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin6Anim.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "refined_silver",
+				"Animations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+		{
+			"LogName": "Silver Pile Six Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/PileSilverAnimated.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 14 },
+			"ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "refined_silver",
+				"Animations": "true",
+				"PileAnimations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+//////////////	refined_junimo_silver
+		{
+			"LogName": "Silver coin seven",   ///Just a reskin
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin7.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"When":
+				{
+				"Coin": "refined_junimo_silver",
+				"Animations": "false"
+				},
+		},
+		{
+			"LogName": "Silver Pile Seven Static",   ///Just a reskin
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/PileSilver.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 14 },
+			"ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+			"When":
+				{
+				"Coin": "refined_junimo_silver",
+				"Animations": "false"
+				},
+		},	
+		
+		{
+			"LogName": "Silver Coin seven Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin7Anim.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "refined_junimo_silver",
+				"Animations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+		{
+			"LogName": "Silver Pile Seven Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/PileSilverAnimated.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 14 },
+			"ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "refined_junimo_silver",
+				"Animations": "true",
+				"PileAnimations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+//////////////	tacos o taquitos
+		{
+			"LogName": "Taquitos coin eight",   ///Just a reskin
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin8.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"When":
+				{
+				"Coin": "tacos",
+				"Animations": "false"
+				},
+		},
+		{
+			"LogName": "Silver Pile Eight Static",   ///Just a reskin
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/PileTacos.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 14 },
+			"ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+			"When":
+				{
+				"Coin": "tacos",
+				"Animations": "false"
+				},
+		},	
+		
+		{
+			"LogName": "Taquitos Coin eight Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Coin8Anim.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "tacos",
+				"Animations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+		{
+			"LogName": "Tacos Pile Eight Animated",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/PileTacosAnimated.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 14 },
+			"ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"Coin": "tacos",
+				"Animations": "true",
+				"PileAnimations": "true",
+				"HasMod": "spacechase0.ContentPatcherAnimations"
+				},
+		},
+//////////////	
+		
+	]
+}

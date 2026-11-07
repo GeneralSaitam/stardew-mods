@@ -1,0 +1,86 @@
+{
+    "Changes": [
+        //visiting hours
+        {
+            "Action": "EditMap",
+            "Target": "Maps/sdvhead.LawAndOrderSV_Jail",
+            "MapTiles": [
+                {
+                    "Position": { "X": 14, "Y": 11 },
+                    "Layer": "Buildings",
+                    "SetProperties": {"Action":"Message \"Jail.VisitingHours\""}
+                },
+            ],
+        },
+
+        {
+            //remove the jail door during visiting hours
+            "Action": "EditMap",
+            "Target": "Maps/sdvhead.LawAndOrderSV_Jail",
+            "MapTiles": [
+                {
+                    "Position": { "X": 14, "Y": 11 },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 14, "Y": 10 },
+                    "Layer": "Front",
+                    "Remove": true
+                },
+                {
+                    "Position": { "X": 15, "Y": 10 },
+                    "Layer": "Front",
+                    "SetIndex": "0"
+                },
+                {
+                    "Position": { "X": 15, "Y": 11 },
+                    "Layer": "Buildings",
+                    "SetIndex": "12"
+                },
+            ],
+            "When":{
+                "LocationName":"sdvhead.LawAndOrderSV_Jail",
+                "DayOfWeek":"Monday,Tuesday,Wednesday,Thursday,Friday,Saturday",
+                "Time": "1500, 1510, 1520, 1530, 1540, 1550, 1560, 1600, 1610, 1620, 1630, 1640, 1650",
+
+            },
+            "Update": "OnLocationChange, OnTimeChange"
+        },
+        {
+            // update R schedule to stand by cell for visiting hours
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{Russell}}",
+            "Entries": {
+				"spring_Tue": "610 sdvhead.LawAndOrderSV_AboveJail 16 5 0/640 sdvhead.LawAndOrderSV_AboveJail 13 15 0/700 sdvhead.LawAndOrderSV_AboveJail 7 15 0/720 sdvhead.LawAndOrderSV_AboveJail 1 15 0/730 sdvhead.LawAndOrderSV_AboveJail 2 17 2/840 sdvhead.LawAndOrderSV_Jail 12 20 1/1440 sdvhead.LawAndOrderSV_Jail 14 12 0/1500 sdvhead.LawAndOrderSV_Jail 15 12 3 \"Strings\\schedules\\{{Russell}}:visiting_hours\"/1700 sdvhead.LawAndOrderSV_AboveJail 16 15 0/1740 sdvhead.LawAndOrderSV_AboveJail 16 5 0/1800 sdvhead.LawAndOrderSV_AboveJail 17 5 0/1810 sdvhead.LawAndOrderSV_AboveJail 19 4 0/1820 sdvhead.LawAndOrderSV_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 sdvhead.LawAndOrderSV_AboveJail 17 5 0/1900 sdvhead.LawAndOrderSV_AboveJail 19 15 0/1910 sdvhead.LawAndOrderSV_AboveJail 2 17 2/2200 sdvhead.LawAndOrderSV_AboveJail 19 18 3 {{Russell}}_sleep",
+                "spring_Thu": "GOTO spring_Tue",
+                "Fri": "610 sdvhead.LawAndOrderSV_AboveJail 16 5 0/640 sdvhead.LawAndOrderSV_AboveJail 13 15 0/700 sdvhead.LawAndOrderSV_AboveJail 7 15 0/720 sdvhead.LawAndOrderSV_AboveJail 1 15 0/730 sdvhead.LawAndOrderSV_AboveJail 2 17 2/840 sdvhead.LawAndOrderSV_Jail 12 20 1/1440 sdvhead.LawAndOrderSV_Jail 14 12 0/1500 sdvhead.LawAndOrderSV_Jail 15 12 3 \"Strings\\schedules\\{{Russell}}:visiting_hours\"/1700 Saloon 2 22 1 {{Russell}}_beer/2330 sdvhead.LawAndOrderSV_AboveJail 19 18 3 {{Russell}}_sleep",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{Shannon}}",
+            //S now stands by the cell during visiting hours. don't run this update on sunday as it will affect the rain schedule and visiting hours are M-Sat
+            "Entries": {
+				"spring_Mon": "610 sdvhead.LawAndOrderSV_AboveJail 7 5 0/630 sdvhead.LawAndOrderSV_AboveJail 2 5 0/640 sdvhead.LawAndOrderSV_AboveJail 13 5 0/700 sdvhead.LawAndOrderSV_AboveJail 17 5 0/710 sdvhead.LawAndOrderSV_AboveJail 19 4 0/720 sdvhead.LawAndOrderSV_AboveJail 19 5 2 \"Strings\\schedules\\{{Shannon}}:shower\"/750 sdvhead.LawAndOrderSV_AboveJail 17 5 0/800 sdvhead.LawAndOrderSV_AboveJail 7 15 0 \"Strings\\schedules\\{{Shannon}}:coffee\"/850 sdvhead.LawAndOrderSV_Jail 10 20 2/1440 sdvhead.LawAndOrderSV_Jail 14 12 0/1500 sdvhead.LawAndOrderSV_Jail 15 12 3 \"Strings\\schedules\\{{Shannon}}:visiting_hours\"/1700 sdvhead.LawAndOrderSV_AboveJail 1 15 0/1730 sdvhead.LawAndOrderSV_AboveJail 2 17 2/1830 sdvhead.LawAndOrderSV_AboveJail 4 4 0/1930 sdvhead.LawAndOrderSV_AboveJail 13 5 0/2000 sdvhead.LawAndOrderSV_AboveJail 2 7 3 {{Shannon}}_sleep/",
+                "spring_Wed":"GOTO spring_Mon",
+                "spring_Sat": "610 sdvhead.LawAndOrderSV_AboveJail 7 5 0/630 sdvhead.LawAndOrderSV_AboveJail 2 5 0/640 sdvhead.LawAndOrderSV_AboveJail 13 5 0/700 sdvhead.LawAndOrderSV_AboveJail 17 5 0/710 sdvhead.LawAndOrderSV_AboveJail 19 4 0/720 sdvhead.LawAndOrderSV_AboveJail 19 5 2 \"Strings\\schedules\\{{Shannon}}:shower\"/750 sdvhead.LawAndOrderSV_AboveJail 17 5 0/800 sdvhead.LawAndOrderSV_AboveJail 7 15 0 \"Strings\\schedules\\{{Shannon}}:coffee\"/850 sdvhead.LawAndOrderSV_Jail 10 20 2/1440 sdvhead.LawAndOrderSV_Jail 14 12 0/1500 sdvhead.LawAndOrderSV_Jail 15 12 3 \"Strings\\schedules\\{{Shannon}}:visiting_hours\"/1700 Saloon 19 20 3 {{Shannon}}_sitLeft_fromSW \"Strings\\schedules\\{{Shannon}}:barleft\"/2200 sdvhead.LawAndOrderSV_AboveJail 2 7 3 {{Shannon}}_sleep/",
+                "rain":"610 {{ModId}}_AboveJail 7 5 0/630 {{ModId}}_AboveJail 2 5 0/640 {{ModId}}_AboveJail 13 5 0/700 {{ModId}}_AboveJail 17 5 0/710 {{ModId}}_AboveJail 19 4 0/720 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Shannon}}:shower\"/750 {{ModId}}_AboveJail 17 5 0/800 {{ModId}}_AboveJail 7 15 0 \"Strings\\schedules\\{{Shannon}}:coffee\"/850 {{ModId}}_Jail 10 20 2/1130 {{ModId}}_AboveJail 1 15 0/1240 {{ModId}}_Jail 2 19 0/1440 sdvhead.LawAndOrderSV_Jail 14 12 0/1500 sdvhead.LawAndOrderSV_Jail 15 12 3 \"Strings\\schedules\\{{Shannon}}:visiting_hours\"/1700 {{ModId}}_AboveJail 4 4 0/1930 {{ModId}}_AboveJail 13 5 0/2000 {{ModId}}_AboveJail 2 7 3 {{Shannon}}_sleep/",
+            },
+            "When":{
+                "DayOfWeek":"Monday,Tuesday,Wednesday,Thursday,Friday,Saturday",
+            },
+        },
+        { //S Community Day Schedule
+        "Action": "EditData",
+        "Target": "characters/schedules/{{Shannon}}",
+        "When": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            "HasSeenEvent": "191393"
+        },
+        "Entries": {
+            "22": "610 {{ModId}}_AboveJail 7 5 0/630 {{ModId}}_AboveJail 2 5 0/640 {{ModId}}_AboveJail 13 5 0/700 {{ModId}}_AboveJail 17 5 0/710 {{ModId}}_AboveJail 19 4 0/720 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Shannon}}:shower\"/750 {{ModId}}_AboveJail 17 5 0/800 {{ModId}}_AboveJail 7 15 0 \"Strings\\schedules\\{{Shannon}}:coffee\"/830 sdvhead.LawAndOrderSV_Jail 10 20 2/920 CommunityCenter 47 13 0 \"Strings\\schedules\\{{Shannon}}:communitydayboard\"/1150 CommunityCenter 13 27 3 \"Strings\\schedules\\{{Shannon}}:communitydaycraft\"/1330 sdvhead.LawAndOrderSV_Jail 14 12 0/1500 sdvhead.LawAndOrderSV_Jail 15 12 3 \"Strings\\schedules\\{{Shannon}}:visiting_hours\"/1700 sdvhead.LawAndOrderSV_AboveJail 1 15 0/1730 sdvhead.LawAndOrderSV_AboveJail 2 17 2/1830 sdvhead.LawAndOrderSV_AboveJail 4 4 0/1930 sdvhead.LawAndOrderSV_AboveJail 13 5 0/2000 sdvhead.LawAndOrderSV_AboveJail 2 7 3 {{Shannon}}_sleep/",
+        },
+    }
+    ]
+}

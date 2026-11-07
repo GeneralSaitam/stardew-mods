@@ -1,0 +1,54 @@
+ {
+
+   "Changes": [
+ 
+    {
+        "LogName": "Load Furniture Textures",
+        "Action": "Load",
+        "Target": "Mods/HXW.GreenhouseFurniture/Furniture, Mods/HXW.GreenhouseFurniture/FurnitureFront",
+        "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+
+    
+/////////////////////
+// recolor options //
+/////////////////////
+
+{
+    "LogName": "Light Recolor - Furniture",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.GreenhouseFurniture/Furniture",
+    "FromFile": "assets/Furniture_Light.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Light"}
+},
+
+{
+    "LogName": "Light Recolor - Furniture",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.GreenhouseFurniture/FurnitureFront",
+    "FromFile": "assets/LightFurnitureFront.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Light"}
+},
+
+{
+    "LogName": "Dark Recolor - Furniture",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.GreenhouseFurniture/Furniture,",
+    "FromFile": "assets/Furniture_Dark.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Dark"}
+},
+
+{
+    "LogName": "Dark Recolor - Furniture",
+    "Action": "EditImage",
+    "Target": "Mods/HXW.GreenhouseFurniture/FurnitureFront",
+    "FromFile": "assets/DarkFurnitureFront.png",
+    "PatchMode":"Replace",
+    "When": {"Recolor": "Dark"}
+}
+
+    ]
+}

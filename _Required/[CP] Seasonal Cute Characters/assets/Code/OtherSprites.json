@@ -1,0 +1,108 @@
+{
+	"Changes": [
+		// Community Center Bundle patches
+		{
+			"LogName": "SlightlyCuterBundles_BundleSprites",
+			"Action": "EditImage",
+			"Target": "LooseSprites/BundleSprites",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 0, "Y": 0, "Width": 224, "Height": 32 },
+			"When": {
+				"SlightlyCuterBundles": true
+			}
+		},
+		{
+			"LogName": "SlightlyCuterBundles_JunimoNote",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"ToArea": { "X": 352, "Y": 212, "Width": 160, "Height": 32 },
+			"When": {
+				"SlightlyCuterBundles": true
+			}
+		},
+		// Emoji patches
+		{
+			"LogName": "SlightlyCuterEmojis_FirstAndSecodRow",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}_{{CurrentSeasonAttire}}.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 126, "Height": 18 },
+			"ToArea": { "X": 0, "Y": 99, "Width": 126, "Height": 18 },
+			"When": {
+				"SlightlyCuterEmojis": true
+			}
+		},
+		{
+			"LogName": "SlightlyCuterEmojis_ThirdRow",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}_{{CurrentSeasonAttire}}.png",
+			"FromArea": { "X": 0, "Y": 18, "Width": 63, "Height": 9 },
+			"ToArea": { "X": 0, "Y": 117, "Width": 63, "Height": 9 },
+			"When": {
+				"SlightlyCuterEmojis": true
+			}
+		},
+		{
+			"LogName": "SlightlyCuterEmojis_AngryEmojis",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Other/HideNoses/{{HideNoses}}/{{Target}}_{{CurrentSeasonAttire}}.png",
+			"FromArea": { "X": 90, "Y": 18, "Width": 27, "Height": 9 },
+			"ToArea": { "X": 90, "Y": 117, "Width": 27, "Height": 9 },
+			"When": {
+				"SlightlyCuterEmojis": true
+			}
+		},
+		{
+			"LogName": "SlightlyCuterEmojis_Maru_Glasses",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}_Maru_Glasses.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 18, "Y": 99, "Width": 9, "Height": 9 },
+			"When": {
+				"MaruGlasses": true,
+				"SlightlyCuterEmojis": true
+			}
+		},
+		{
+			"LogName": "SlightlyCuterEmojis_Wizard_Hair",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}_Wizard_Hair.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 90, "Y": 108, "Width": 9, "Height": 9 },
+			"When": {
+				"WizardSeasonalHair": false,
+				"SlightlyCuterEmojis": true
+			}
+		},
+		// Spouse picture patches
+		{
+			"LogName": "SlightlyCuterSpousePortraits",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 0, "Y": 272, "Width": 160, "Height": 160 },
+			"When": {
+				"SlightlyCuterSpousePortraits": true
+			}
+		},
+		{
+			"LogName": "SlightlyCuterSpousePortraits_Maru_Glasses",
+			"Action": "EditImage",
+			"Target": "TileSheets/junimo_furniture",
+			"FromFile": "assets/Other/HideNoses/false/{{Target}}_Maru_Glasses.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X": 96, "Y": 272, "Width": 32, "Height": 32 },
+			"When": {
+				"MaruGlasses": true,
+				"SlightlyCuterSpousePortraits": true
+			}
+		}
+	]
+}

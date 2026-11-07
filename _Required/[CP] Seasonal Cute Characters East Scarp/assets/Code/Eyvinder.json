@@ -1,0 +1,103 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load Eyvinder's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Eyvinder_Spring, Portraits/Eyvinder_Summer, Portraits/Eyvinder_Fall, Portraits/Eyvinder_Winter, Characters/Eyvinder_Spring, Characters/Eyvinder_Summer, Characters/Eyvinder_Fall, Characters/Eyvinder_Winter, Portraits/Eyvinder_SpiritsEve, Characters/Eyvinder_SpiritsEve", // Portraits/Eyvinder_FlowerDance, Portraits/Eyvinder_Beach, Portraits/Eyvinder_Work, , Characters/Eyvinder_FlowerDance, Characters/Eyvinder_SpiritsEve, Characters/Eyvinder_Beach, Characters/Eyvinder_Work
+			"FromFile": "assets/{{TargetPathOnly}}/Eyvinder/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Eyvinder - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Eyvinder_Spring, Characters/Eyvinder_Summer, Characters/Eyvinder_Fall, Characters/Eyvinder_Winter, Characters/Eyvinder_SpiritsEve", //Characters/Eyvinder_FlowerDance, , Characters/Eyvinder_Beach
+			"FromFile": "assets/{{TargetPathOnly}}/Eyvinder/Eyvinder_nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"NoNose": "false",
+			},
+		},
+		//APPEARANCE DATA 
+		{
+			"LogName": "Eyvinder Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Eyvinder",
+				"Appearance"
+			],
+			"Entries": {
+				//Regular Outfits
+				"{{ModId}}.EyvinderSpring": {
+					"Id": "{{ModId}}.EyvinderSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Eyvinder_Spring",
+					"Portrait": "Portraits/Eyvinder_Spring",
+					"Precedence": -120,
+				},
+				"{{ModId}}.EyvinderSummer": {
+					"Id": "{{ModId}}.EyvinderSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Eyvinder_Summer",
+					"Portrait": "Portraits/Eyvinder_Summer",
+					"Precedence": -120,
+				},
+				"{{ModId}}.EyvinderFall": {
+					"Id": "{{ModId}}.EyvinderFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Eyvinder_Fall",
+					"Portrait": "Portraits/Eyvinder_Fall",
+					"Precedence": -120,
+				},
+				"{{ModId}}.EyvinderWinter": {
+					"Id": "{{ModId}}.EyvinderWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Eyvinder_Winter",
+					"Portrait": "Portraits/Eyvinder_Winter",
+					"Precedence": -120,
+				},
+				//Festival Outfits
+				"{{ModId}}.EyvinderFlowerDance": {
+					"Id": "{{ModId}}.EyvinderFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Eyvinder_FlowerDance",
+					"Portrait": "Portraits/Eyvinder_FlowerDance",
+					"Precedence": -1000,
+				},
+				"{{ModId}}.EyvinderSpirit": {
+					"Id": "{{ModId}}.EyvinderSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Eyvinder_SpiritsEve",
+					"Portrait": "Portraits/Eyvinder_SpiritsEve",
+					"Precedence": -1000,
+				},
+				//Beach
+				"{{ModId}}.EyvinderBeach": {
+					"Id": "{{ModId}}.EyvinderBeach",
+					"Sprite": "Characters/Eyvinder_Beach",
+					"Portrait": "Portraits/Eyvinder_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},
+				//Work (Not Currently Used)
+				/*
+				"{{ModId}}.EyvinderWork": {
+					"Id": "{{ModId}}.EyvinderWork",
+					"Condition": "FALSE",
+					"Sprite": "Characters/Eyvinder_Work",
+					"Portrait": "Portraits/Eyvinder_Work",
+					"Precedence": -120,
+				},*/
+			},
+		},
+			{
+            "LogName": "Eyvinder Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Eyvinder",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+        },	
+	]
+}

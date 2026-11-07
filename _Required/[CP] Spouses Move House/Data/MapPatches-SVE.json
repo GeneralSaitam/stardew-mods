@@ -1,0 +1,89 @@
+{
+    "Changes": [
+        {
+            "LogName": "Spouses Move House Map Patch - Olivia's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_JenkinsHouse",
+            "FromFile": "Maps/OliviaRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 14,
+                "Y": 1,
+                "Width": 11,
+                "Height": 13
+            },
+            "When": {
+                "SpouseOlivia": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Scarlett's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ScarlettHouse",
+            "FromFile": "Maps/ScarlettRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 2,
+                "Y": 1,
+                "Width": 22,
+                "Height": 9
+            },
+            "When": {
+                "SpouseScarlett": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Sophia's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SophiaHouse",
+            "FromFile": "Maps/SophiaRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 16,
+                "Y": 3,
+                "Width": 11,
+                "Height": 8
+            },
+            "When": {
+                "SpouseSophia": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Sophia's Sewing Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SophiaHouse",
+            "FromFile": "Maps/SophiaRoom2.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 2,
+                "Y": 18,
+                "Width": 6,
+                "Height": 8
+            },
+            "When": {
+                "SpouseSophia": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Victor's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_JenkinsHouse",
+            "FromFile": "Maps/VictorRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 27,
+                "Y": 1,
+                "Width": 10,
+                "Height": 13
+            },
+            "When": {
+                "SpouseSophia": true
+            },
+            "Priority": "Late"
+        }
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/BusStop",
+            "Entries":{
+                "16279009/F/f Penny 2000/w rainy/A pennyGone/e 16279007": "desolate/
+                25 12/
+                farmer 24 20 0 Penny 24 11 0/
+                skippable/
+                move farmer 0 -7 0/
+                pause 300/
+                message \"{{i18n:Miihau.PennyEE.event7.001}}\"/
+                emote farmer 8/
+                pause 200/
+                faceDirection Penny 2/
+                pause 500/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.002}}\"/
+                pause 650/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.003}}\"/
+                pause 300/
+                question fork1 \"{{i18n:Miihau.PennyEE.event7.004}}\" /
+                fork carWreckLife/
+                pause 300/
+                message \"{{i18n:Miihau.PennyEE.event7.005}}\"/
+                pause 300/
+                faceDirection Penny 0/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.006}}\"/
+                move farmer 1 0 0/
+                move farmer 0 -2 0/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.007}}\"/
+                pause 400/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.008}}\"/
+                pause 300/
+                faceDirection Penny 1/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.009}}\"/
+                faceDirection farmer 3/
+                pause 300/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.010}}\"/
+                pause 500/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.011}}\"/
+                pause 300/
+                move Penny -1 0 3/
+                pause 500/
+                faceDirection Penny 0/
+                pause 700/
+                move Penny 1 0 0/
+                pause 300/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.012}}\"/
+                pause 500/
+                faceDirection Penny 1/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.013}}\"/
+                pause 400/
+                faceDirection Penny 2/
+                pause 200/
+                showFrame Penny 23/
+                pause 200/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.014}}\"/
+                pause 600/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.015}}\"/
+                pause 600/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.016}}\"/
+                pause 300/
+                showFrame Penny 0/
+                pause 400/
+                faceDirection Penny 0/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.017}}\"/
+                pause 200/
+                question fork1 \"{{i18n:Miihau.PennyEE.event7.018}}\" /
+                fork noBusfixing/
+                friendship Penny 60/
+                faceDirection Penny 1/
+                pause 200/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.019}}\"/
+                pause 200/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.020}}\"/
+                pause 400/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.021}}\"/
+                pause 300/
+                faceDirection Penny 0/
+                pause 200/
+                faceDirection farmer 0/
+                pause 150/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.022}}\"/
+                globalFade 0.005/
+                viewport -1000 -1000/
+                end dialogue Penny \"{{i18n:Miihau.PennyEE.event7.023}}\"",
+                "carWreckLife":"pause 200/
+                friendship Penny -1000/
+                showFrame Penny 23/
+                pause 200/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.024}}\"/
+                pause 100/
+                showFrame Penny 0/
+                faceDirection Penny 1/
+                speed Penny 2/
+                move Penny 1 0 2/
+                speed Penny 2/
+                move Penny 0 11 2 true/
+                faceDirection farmer 1/
+                emote farmer 8/
+                message \"{{i18n:Miihau.PennyEE.event7.025}}\"/
+                faceDirection farmer 2/
+                globalFade/
+                viewport -1000 -1000/
+                end dialogue Penny \"{{i18n:Miihau.PennyEE.event7.026}}\"",
+                "noBusfixing":"pause 200/
+                friendship Penny -200/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.027}}\"/
+                faceDirection Penny 2/
+                pause 200/
+                showFrame Penny 23/
+                pause 200/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.028}}\"/
+                pause 700/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.029}}\"/
+                pause 700/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.030}}\"/
+                emote Penny 28/
+                showFrame Penny 0/
+                message \"{{i18n:Miihau.PennyEE.event7.031}}\"/
+                speak Penny \"{{i18n:Miihau.PennyEE.event7.032}}\"/
+                speed Penny 4/
+                move Penny 0 10 1 true/
+                pause 100/
+                faceDirection farmer 2/
+                globalFade/
+                viewport -1000 -1000/
+                end dialogue Penny \"{{i18n:Miihau.PennyEE.event7.033}}\""
+            }
+        },
+    ]
+}

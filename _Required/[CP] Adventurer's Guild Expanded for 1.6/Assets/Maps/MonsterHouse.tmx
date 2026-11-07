@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="15" height="19" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="11">
+ <properties>
+  <property name="AmbientLight" value="95 95 95"/>
+  <property name="Doors" value="8 11 dummy 120"/>
+  <property name="Light" value="2 1 4 5 1 4 9 1 4 12 1 4 10 9 4 12 9 4"/>
+  <property name="NPCWarp" value="10 3 BusStop 10 23"/>
+  <property name="Warp" value="4 1 Farm 60 15"/>
+ </properties>
+ <tileset firstgid="1" name="dummy" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="silly_room" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="silly_room.png" width="256" height="288"/>
+ </tileset>
+ <layer id="1" name="Back" width="15" height="19">
+  <data encoding="base64" compression="zlib">
+   eJyl0UkOgkAQBdCCsGhC9AJyBG/gUTwCbtS9egIH8CjeAce1idMWcdqaOMXfASK22kCs5KUSf/+URqL/pqYROYK++iJmde29awsG6ouY/epW6fOt+Hm868IIhik258V+7xb8jDsaphDpSrYdTdabfsL/5jKiMQve8T2BKcxgw+TdOfIFC74j30tYwRpOCV0P+S68y/ceDnCER0L3jPwClhLsK9zgDnld3i0hL0vIpoK8AU1ogSUwJX2etaEDXSiE74vhlnUNZD2wwYFcrJPUNb/cMWP303QjRoa7aeYJFN9iug==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="15" height="19">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgYAJiZhIwCwMEKELp2QwIMIcBFWCTUwViRyAOAOLdQBwIxXuQ2IFY5IKA2BWqtwCICwlgL1YEuwhJ7wQG0sAkJL3kAEr1LiRT7wogZsSBQXF+GKruEANm/DLiMBMW57C4nI1FjSoOvbA43wPlI8cvCMPiF5deUJzfAeJKIL7NgBrXRQT0Isd5PicDQx4QtwADoZUJEb+49C4FBsYyHAHiwIFfLzLQAtr1E2jOb6hZCzjx63UGqnNBslcSqF+aiTi96ECLCcGej0cvKK25AOUTgXgSDj+vwKEXV1pDxwAceS3T
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="96" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.3&quot;"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="112" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.3&quot;"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="128" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.3&quot;"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="176" y="32" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.2&quot;"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="96" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.3&quot;"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="112" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.3&quot;"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="128" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.3&quot;"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="160" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value=""/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="176" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;MonsterHouse.2&quot;"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="128" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="15" height="19">
+  <data encoding="base64" compression="zlib">
+   eJxjZCAPMEJpLSC2ZkaIg9imQMksFgaGbBYIn4sVIadDwNwcoFoJRogZYPOB/O0sZDpymICFQLwIiI9iwYuhapagiS8H4hUU2suIBYOAFpS2hNKw+EeOX1x6YSASie3CxMDgykTYXmQQzwmhU4D6UonQ2wpktGEzCAng0rscyFiBpPcmkH2bkTi9x4GME0hqmYBufclCnF5iAC69JsDwCQTiIjyG4dKLK63B0hWlbgYActoe/Q==
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+</map>

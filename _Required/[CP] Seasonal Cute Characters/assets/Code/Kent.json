@@ -1,0 +1,113 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_Kent_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Kent_Spring, Portraits/Kent_Summer, Portraits/Kent_Fall, Portraits/Kent_Winter_Outdoor, Portraits/Kent_Winter_Indoor, Portraits/Kent_FlowerDance, Portraits/Kent_SpiritsEve, Characters/Kent_Spring, Characters/Kent_Summer, Characters/Kent_Fall, Characters/Kent_Winter_Outdoor, Characters/Kent_Winter_Indoor, Characters/Kent_FlowerDance, Characters/Kent_SpiritsEve, Portraits/Kent_Beach, Characters/Kent_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Kent/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_Kent_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Kent_Spring, Characters/Kent_Summer, Characters/Kent_Fall, Characters/Kent_Winter_Outdoor, Characters/Kent_Winter_Indoor, Characters/Kent_FlowerDance, Characters/Kent_SpiritsEve, Characters/Kent_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Kent/Kent_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_Kent_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Kent",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.KentSpring": {
+					"Id": "{{ModId}}.KentSpring",
+					"Portrait": "Portraits/Kent_Spring",
+					"Sprite": "Characters/Kent_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.KentSummer": {
+					"Id": "{{ModId}}.KentSummer",
+					"Portrait": "Portraits/Kent_Summer",
+					"Sprite": "Characters/Kent_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.KentFall": {
+					"Id": "{{ModId}}.KentFall",
+					"Portrait": "Portraits/Kent_Fall",
+					"Sprite": "Characters/Kent_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.KentWinterIndoor": {
+					"Id": "{{ModId}}.KentWinterIndoor",
+					"Portrait": "Portraits/Kent_Winter_Indoor",
+					"Sprite": "Characters/Kent_Winter_Indoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",
+					"Precedence": -101
+				},
+				"{{ModId}}.KentWinterOutdoor": {
+					"Id": "{{ModId}}.KentWinterOutdoor",
+					"Portrait": "Portraits/Kent_Winter_Outdoor",
+					"Sprite": "Characters/Kent_Winter_Outdoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101
+				},
+				// Beach Outfit
+				"{{ModId}}.KentBeach": {
+					"Id": "{{ModId}}.KentBeach",
+					"Portrait": "Portraits/Kent_Beach",
+					"Sprite": "Characters/Kent_Beach",
+					"Condition": "{{BeachOutfitsEnabled}}",
+					"IsIslandAttire": true,
+					"Precedence": -200
+				},
+				// Festival Outfits
+				"{{ModId}}.KentFlowerDance": {
+					"Id": "{{ModId}}.KentFlowerDance",
+					"Portrait": "Portraits/Kent_FlowerDance",
+					"Sprite": "Characters/Kent_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.KentSpirit": {
+					"Id": "{{ModId}}.KentSpirit",
+					"Portrait": "Portraits/Kent_SpiritsEve",
+					"Sprite": "Characters/Kent_SpiritsEve",
+					"Condition": "{{UseSpiritsEveOutfit}}",
+					"Precedence": -300
+				}
+			}
+		},
+		// CALENDAR
+		{
+			"LogName": "Edit_Kent_Calendar_Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Kent",
+			"FromFile": "assets/{{Target}}/Kent_{{CurrentSeasonAttire}}.png"
+		},
+		{
+			"LogName": "Add_Kent_Calendar_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Kent",
+			"FromFile": "assets/{{Target}}/Kent_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		}
+	]
+}

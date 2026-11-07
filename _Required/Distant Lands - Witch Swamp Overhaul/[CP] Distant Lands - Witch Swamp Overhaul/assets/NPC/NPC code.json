@@ -1,0 +1,134 @@
+{
+
+ "Changes": [
+ 
+ 
+ 	//------------------------ main info
+ 
+        {
+		 "LogName": "Goblin Zic character load",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "{{ModId}}_GoblinZic": {
+                    "DisplayName": "{{i18n:npc.Zic.name}}", 
+                    "BirthSeason": "Fall",
+                    "BirthDay": 6,
+                    "HomeRegion": "Other",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Neutral",
+					
+					
+					"CanSocialize": true,
+					"CanReceiveGifts": true,
+					"CanBeRomanced": false,
+					"CanCommentOnPurchasedShopItems": false,
+					"CanGreetNearbyCharacters": false,
+					"CanVisitIsland": false,
+					"Calendar": "HiddenUntilMet",
+					"SocialTab": "HiddenUntilMet",
+					"IntroductionsQuest": false,
+					"ItemDeliveryQuests": false,
+					"PerfectionScore": true,
+					"EndSlideShow": "TrailingGroup",
+					
+					"DumpsterDiveEmote": 8,
+					"DumpsterDiveFriendshipEffect": 5,
+					
+					//"UnlockConditions": "WORLD_STATE_FIELD IsGoblinRemoved true",
+					
+			"Home": [
+							{
+                            "Id": "{{ModId}}_GoblinZicSwamp",
+                            "Location": "WitchSwamp",
+                            "Tile": { "X": 8, "Y": 27 },
+                            "Direction": "down",
+			
+							
+							}
+						],
+				
+			 "Appearance": [
+               
+								{
+                    "Id": "Default",
+                    "Portrait": "Portraits/{{ModId}}_GoblinZic_Default",
+                    "Sprite": "Characters/{{ModId}}_GoblinZic"
+								},
+								 {
+                  "Id": "Blanket",
+                  "Portrait": "Portraits/{{ModId}}_GoblinZic_Blanket",
+                  "Sprite": "Characters/{{ModId}}_GoblinZic_Blanket",
+		 "Season": "winter",
+		"Condition": "PLAYER_HAS_SEEN_EVENT current 181091267",
+				 
+               },
+							],
+				//"ShakePortraits": 1,
+				
+				"FormerCharacterNames": [ "Goblin" ],
+				},
+			},
+		},
+			
+		
+	
+		
+	//------------------------ GIFT TASTES
+		{
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+          "Entries": {
+		  
+        "{{ModId}}_GoblinZic": "{{i18n:npc.Zic.gift1}}/447 308 445 732 242 265 {{ModId}}_Crayfish_Soup {{ModId}}_Mushroom_Kebab {{ModId}}_Pemmican/{{i18n:npc.Zic.gift2}}/716 139 78 259 281 404 257 132 156 143 144 145 138 137 136 142 141 158 140 305 812 430 119 113 106 124 122 123 108 456 198 209 214 729 205 225 213 728 228 219 227 212 403 874 420 422 {{ModId}}_Vile_Ancient_Fruit {{ModId}}_Brown_Amanita/{{i18n:npc.Zic.gift3}}/-6 -19 -5 128 203 814 433 376 346 344 342 459 348 303 350 351 349 432 340 90 167 {{ModId}}_Giant_Horsehoe_Crab/{{i18n:npc.Zic.gift4}}/851 233 215 260 253 395 226 248 419 306 307 396 283 921 {{ModId}}_Ginger_Tincture {{ModId}}_Void_Mint_Leaves {{ModId}}_Void_Mint_Tea/{{i18n:npc.Zic.gift5}}/-4 -2 -7 -12 -15 -20 -28 -75 -79 -81 -80 -26 -27 341 446 279 74 166 373 797 428 613 634 72 426 614 638 724 635 636 873 637 potion_item {{ModId}}_Purple_Algae {{ModId}}_Swamp_Herb {{ModId}}_Swamp_Leech {{ModId}}_Void_Minnow"
+      }
+    },
+	
+	//-------------------------------------- ANIMATIONS
+ 
+	 {
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+		"goblin_lookingdown": "16/16/16",
+        "goblin_cooking": "18/18 19 19 19 19 19 19 18 18 18/18",
+		"goblin_screaming": "17/17/17",
+		"goblin_sleeping": "20/20 20 20 20 20 21 21 21 21 21 21/20",
+		"goblin_harvesting": "22/23 23 23 23 23 23 22 22 22/22",
+		"goblin_harvesting1": "26/27 27 27 27 27 26 26 26 26/26",
+      }
+    },
+	
+			
+	    {
+      "LogName": "NPCZIC Load Blank",
+      "Action": "Load",
+     "Target": "Characters/Dialogue/{{ModId}}_GoblinZic, Characters/schedules/{{ModId}}_GoblinZic, Strings/schedules/{{ModId}}_GoblinZic",
+      "FromFile": "assets/NPC/blank.json",
+    },
+	   {
+      "LogName": "NPC ZIC Dialogue Include",
+      "Action": "Include",
+      "FromFile": "assets/NPC/NPC Dialogue.json",
+    },
+	   {
+      "LogName": "NPC ZIC Schedules Include",
+      "Action": "Include",
+      "FromFile": "assets/NPC/NPC Schedules.json",
+    },
+	  {
+      "LogName": "NPC ZIC ScheduleDialogue",
+      "Action": "Include",
+      "FromFile": "assets/NPC/NPC ScheduleDialogue.json",
+    },
+	
+    
+
+	
+	]
+}	

@@ -1,0 +1,368 @@
+{
+  "Changes": [
+    //ROBIN
+
+    {
+      "LogName": "Robin ScienceHouse Mondays",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "ScienceHouse_5_18": "{{i18n: robin.spring.mondays}}",
+        "summerScienceHouse_5_18": "{{i18n: robin.summer.mondays}}",
+        "fallScienceHouse_5_18": "{{i18n: robin.fall.mondays}}",
+        "winterScienceHouse_5_18": "{{i18n: robin.winter.mondays}}"
+      },
+      "When": {
+        "Weather": "sun, snow, wind",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Robin ScienceHouse Saturdays",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "ScienceHouse_29_9": "{{i18n: robin.spring.saturdays}}",
+        "summerScienceHouse_29_9": "{{i18n: robin.summer.saturdays}}",
+        "fallScienceHouse_29_9": "{{i18n: robin.fall.saturdays}}",
+        "winterScienceHouse_29_9": "{{i18n: robin.winter.saturdays}}"
+      },
+      "When": {
+        "Weather": "sun, snow, wind",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Robin Misc. Additions",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "winter_5": "{{i18n: robin.winter.5}}"
+      },
+      "When": {
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    //THE WIZARD
+
+    {
+      "LogName": "Wizard Birthday Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_4_16": "{{i18n: wizard.birthday.1}}",
+        "WizardHouse_8_17": "{{i18n: wizard.birthday.2}}",
+        "WizardHouse_2_18": "{{i18n: wizard.birthday.3}}"
+      },
+      "When": {
+        "Roommate |contains=Juna": "false"
+      }
+    },
+    
+    {
+      "LogName": "Wizard Sunday Dialogue Edit",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "Sun": "{{i18n: wizard.sunday.general}}"
+      },
+      "When": {
+        "Roommate |contains=Juna": "false"
+      }
+    },
+    
+    {
+      "LogName": "Wizard Sunday Dialogue 2 14",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_2_14": "{{i18n: wizard.sunday.2.14}}" 
+      },
+      "When": {
+        "Weather": "sun, snow, wind",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Wizard Sunday Dialogue 0-1",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_2_19": "{{i18n: wizard.sunday.0.1}}",
+        "WizardHouse_10_15": "{{i18n: wizard.sunday.0.1}}"
+      },
+      "When": {
+        "Hearts:Juna": "0, 1",
+        "Weather": "sun, snow, wind"
+      }
+    },
+
+    {
+      "LogName": "Wizard Sunday Dialogue 2-3",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_2_19": "{{i18n: wizard.sunday.2.3}}",
+        "WizardHouse_10_15": "{{i18n: wizard.sunday.2.3}}"
+      },
+      "When": {
+        "Hearts:Juna": "2, 3",
+        "Weather": "sun, snow, wind"
+      }
+    },
+
+    {
+      "LogName": "Wizard Sunday Dialogue 4-5",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_2_19": "{{i18n: wizard.sunday.4.5}}",
+        "WizardHouse_10_15": "{{i18n: wizard.sunday.4.5}}"
+      },
+      "When": {
+        "Hearts:Juna": "4, 5",
+        "Weather": "Sun, Snow, Wind"
+      }
+    },
+
+    {
+      "LogName": "Wizard Sunday Dialogue 6-7 or Before",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_2_19": "{{i18n: wizard.sunday.6.7.before}}{{WizardPortrait}}",
+        "WizardHouse_10_15": "{{i18n: wizard.sunday.6.7.before}}{{WizardPortrait}}"
+      },
+      "When": {
+        "Hearts:Juna": "6, 7, 8, 9, 10",
+        "Weather": "sun, snow, wind",
+        "HasSeenEvent |contains=86060006": "false"
+      }
+    },
+
+    {
+      "LogName": "Wizard Sunday Dialogue 8-9 If Wizard",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_2_19": "{{i18n: wizard.sunday.8.9.wizard}}",
+        "WizardHouse_10_15": "{{i18n: wizard.sunday.8.9.wizard}}"
+      },
+      "When": {
+        "Hearts:Juna": "8, 9",
+        "Weather": "sun, snow, wind",
+        "HasSeenEvent": "86060037"
+      }
+    },
+
+    {
+      "LogName": "Wizard Sunday Dialogue2 8-9 If Parents",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_2_19": "{{i18n: wizard.sunday.8.9.parents}}",
+        "WizardHouse_10_15": "{{i18n: wizard.sunday.8.9.parents}}"
+      },
+      "When": {
+        "Hearts:Juna": "8, 9",
+        "Weather": "sun, snow, wind",
+        "HasSeenEvent": "86060043"
+      }
+    },
+
+    //WIZARD SUNDAY DIALOGUE 10 IF WIZARD IS CHOSEN
+
+    {
+      "LogName": "Wizard Sunday Dialogue 10",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_2_19": "{{i18n: wizard.sunday.10.wizardspring}}",
+        "WizardHouse_10_15": "{{i18n: wizard.sunday.10.wizardspring}}",
+        "summerWizardHouse_2_19": "{{i18n: wizard.sunday.10.wizardsummer}}",
+        "summerWizardHouse_10_15": "{{i18n: wizard.sunday.10.wizardsummer}}",
+        "fallWizardHouse_2_19": "{{i18n: wizard.sunday.10.wizardfall}}",
+        "fallWizardHouse_10_15": "{{i18n: wizard.sunday.10.wizardfall}}",
+        "winterWizardHouse_2_19": "{{i18n: wizard.sunday.10.wizardwinter}}{{WizardPortrait}}",
+        "winterWizardHouse_10_15": "{{i18n: wizard.sunday.10.wizardwinter}}{{WizardPortrait}}"
+      },
+      "When": {
+        "Hearts:Juna": "10",
+        "Weather": "sun, snow, wind",
+        "HasSeenEvent": "86060037",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    //WIZARD SUNDAY DIALOGUE 10 IF PARENTS ARE CHOSEN
+
+    {
+      "LogName": "Wizard Sunday Dialogue2 10",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_2_19": "{{i18n: wizard.sunday.10.parentspring}}",
+        "WizardHouse_10_15": "{{i18n: wizard.sunday.10.parentspring}}",
+        "summerWizardHouse_2_19": "{{i18n: wizard.sunday.10.parentsummer}}",
+        "summerWizardHouse_10_15": "{{i18n: wizard.sunday.10.parentsummer}}",
+        "fallWizardHouse_2_19": "{{i18n: wizard.sunday.10.parentfall}}",
+        "fallWizardHouse_10_15": "{{i18n: wizard.sunday.10.parentfall}}",
+        "winterWizardHouse_2_19": "{{i18n: wizard.sunday.10.parentwinter}}",
+        "winterWizardHouse_10_15": "{{i18n: wizard.sunday.10.parentwinter}}"
+      },
+      "When": {
+        "Hearts:Juna": "10",
+        "Weather": "sun, snow, wind",
+        "HasSeenEvent": "86060043",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    //WIZARD ROOMMATE DIALOGUE
+
+    {
+      "LogName": "Wizard Roommate Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_2_6": "{{i18n: wizard.roommate.2.6}}",
+        "WizardHouse_12_21": "{{i18n: wizard.sunday.general}}",
+        "WizardHouse_3_19": "{{i18n: wizard.roommate.3.19}}",
+        "WizardHouse_11_5": "{{i18n: wizard.roommate.11.5}}"
+      },
+      "When": {
+        "HasSeenEvent": "86060023",
+        "HasSeenEvent |contains=86060037": "false",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+      }
+    },
+
+    {
+      "LogName": "Wizard Roommate Dialogue SVE",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "Custom_WizardBasement_14_5": "{{i18n: wizard.roommate.2.6}}",
+        "WizardHouse_7_32": "{{i18n: wizard.sunday.general}}",
+        "WizardHouse_3_19": "{{i18n: wizard.roommate.3.19}}",
+        "Custom_WizardBasement_20_6": "{{i18n: wizard.roommate.11.5}}"
+      },
+      "When": {
+        "HasSeenEvent": "86060023",
+        "HasSeenEvent |contains=86060037": "false",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+      }
+    },
+
+    //ALEX
+    
+    {
+      "LogName": "Alex Event Responses",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Alex",
+      "Entries": {
+        "Event_AlexSpring1": "{{i18n: alex.event_response1}}",
+        "Event_AlexSpring2": "{{i18n: alex.event_response2}}",
+        "Event_AlexSpring3": "{{i18n: alex.event_response3}}",
+        "Event_AlexSpring4": "{{i18n: alex.event_response4}}"
+      }
+    },
+
+    //CONVERSATION TOPICS
+
+    {
+      "LogName": "Wizard Conversations",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "JunaSign": "{{i18n: wizard.conversation.sign}}",
+        "JunaGone": "{{i18n: wizard.conversation.gone}}",
+        "JunaProtectiveWizard": "{{i18n: wizard.conversation.protective}}",
+        "BigFootWizard": "{{i18n: wizard.conversation.big_foot}}"
+      }
+    },
+
+    {
+      "LogName": "Willy Conversations",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Willy",
+      "Entries": {
+        "JunaBeachBallet": "{{i18n: willy.conversation}}"
+      }
+    },
+
+    {
+      "LogName": "Robin Conversations",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Robin",
+      "Entries": {
+        "JunaCave": "{{i18n: robin.conversation.cave}}",
+        "JunaWizard": "{{i18n: robin.conversation.wizard}}",
+        "JunaGone": "{{i18n: robin.conversation.gone}}",
+        "JunaForestPicnic": "{{i18n: robin.conversation.picnic}}",
+        "JunaRobin": "{{i18n: robin.conversation.robin}}"
+      }
+    },
+
+    {
+      "LogName": "Jas Conversations",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jas",
+      "Entries": {
+        "JunaJas": "{{i18n: jas.conversation}}"
+      }
+    },
+
+    {
+      "LogName": "Abigail Conversations",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",
+      "Entries": {
+        "JunaJunimos": "{{i18n: abigail.conversation}}"
+      }
+    },
+
+    {
+      "LogName": "Leo Conversations",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leo, Characters/Dialogue/LeoMainland",
+      "Entries": {
+        "JunaLeo": "{{i18n: leo.conversation}}"
+      }
+    },
+
+    {
+      "LogName": "Krobus Conversations",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Krobus",
+      "Entries": {
+        "BigFootWizard": "{{i18n: krobus.conversation}}"
+      }
+    },
+
+    {
+      "LogName": "Alex Conversations",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Alex",
+      "Entries": {
+        "JunaBeachPicnic": "{{i18n: alex.conversation.theo}}",
+        "JunaAlexWinter": "{{i18n: alex.conversation.winter}}",
+        "JunaAlexSpringStay": "{{i18n: alex.conversation.spring_stay}}",
+        "JunaAlexSummer": "{{i18n: alex.conversation.summer}}"
+      }
+    },
+
+    {
+      "LogName": "Sebastian Conversations",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sebastian",
+      "Entries": {
+        "JunaRobin": "{{i18n: sebastian.conversation.hodag}}"
+      }
+    }
+  ]
+}

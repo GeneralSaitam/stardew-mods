@@ -1,0 +1,128 @@
+{
+    "Changes": [
+
+//	RECOLORS
+
+//	//	EX_ground
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_EXground, Maps/spring_ATK_AToMS_EXground, Maps/summer_ATK_AToMS_EXground, Maps/winter_ATK_AToMS_EXground",
+            "FromFile": "options/Starblue_Valley/EX_ground/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Lita.StarblueValley",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/spring_ATK_AToMS_EXground",
+            "FromFile": "options/Starblue_Valley/EX_ground/{{TargetWithoutPath}}_blue.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Lita.StarblueValley",
+				"Spiderbuttons.CMCT/Config: Lita.StarblueValley, SpringGrass": "blue",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXground",
+            "FromFile": "options/Starblue_Valley/EX_ground/{{TargetWithoutPath}}_grass.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 240, "Height": 80 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 240, "Height": 80 },
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod": "Lita.StarblueValley",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+		
+//	//	//	RETROCOMP
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXground",
+            "FromFile": "options/Starblue_Valley/EX_ground/{{TargetWithoutPath}}_grass.png",
+			"FromArea": { "X": 80, "Y": 0, "Width": 80, "Height": 80 },
+			"ToArea": { "X": 240, "Y": 736, "Width": 80, "Height": 80 },
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod": "Lita.StarblueValley",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+
+//	//	EX_aqua
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_EXaqua, Maps/spring_ATK_AToMS_EXaqua, Maps/summer_ATK_AToMS_EXaqua, Maps/winter_ATK_AToMS_EXaqua",
+            "FromFile": "options/Starblue_Valley/EX_aqua/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Lita.StarblueValley",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/spring_ATK_AToMS_EXaqua",
+            "FromFile": "options/Starblue_Valley/EX_aqua/{{TargetWithoutPath}}_blue.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Lita.StarblueValley",
+				"Spiderbuttons.CMCT/Config: Lita.StarblueValley, SpringGrass": "blue",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXaqua",
+            "FromFile": "options/Starblue_Valley/EX_ground/winter_ATK_AToMS_EXground_grass.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 240, "Height": 80 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 240, "Height": 80 },
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod": "Lita.StarblueValley",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+
+//	//	ALL_Foliage
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/spring_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage, Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Starblue_Valley/ALL_foliage/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Lita.StarblueValley",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+
+//	//	EX_Misc
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXmisc",
+            "FromFile": "options/Starblue_Valley/EX_misc/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Lita.StarblueValley",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        }
+	]
+}

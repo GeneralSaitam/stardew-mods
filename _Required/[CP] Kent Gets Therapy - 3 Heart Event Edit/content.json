@@ -1,0 +1,38 @@
+{
+	"Format": "2.0.0",
+	"Changes": [
+		{
+			"LogName": "NMW Dialogue - Events SamHouse Vanilla",
+			"Action": "EditData",
+			"Target": "Data/Events/SamHouse",
+			"Fields": 
+			{
+			"100/f Kent 750/p Kent/p Jodi": 
+				{
+				32: "speak Kent \"{{i18n:KentGetsTherapy.event.100.32}}\"",
+				60: "speak Kent \"{{i18n:KentGetsTherapy.event.100.60}}\"",
+				70: "speak Kent \"{{i18n:KentGetsTherapy.event.100.70}}\"",
+				85: "speak Kent \"{{i18n:KentGetsTherapy.event.100.85}}\"",
+				89: "speak Jodi \"{{i18n:KentGetsTherapy.event.100.89}}\"",
+				94: "speak Kent \"{{i18n:KentGetsTherapy.event.100.94}}\"",
+				99: "speak Jodi \"{{i18n:KentGetsTherapy.event.100.99}}\"",
+				107: "speak Kent \"$q 215 null#{{i18n:KentGetsTherapy.100.107.question}}$s#$r 215 -25 event_popcorn1#{{i18n:KentGetsTherapy.100.107.eventpopcorn1}}#$r 215 50 event_popcorn2#{{i18n:KentGetsTherapy.100.107.eventpopcorn2}}#$r 215 -50 event_popcorn3#{{i18n:KentGetsTherapy.100.107.eventpopcorn3}}\"",
+				113: "speak Kent \"{{i18n:KentGetsTherapy.event.100.113}}\"",
+				116: "speak Jodi \"{{i18n:KentGetsTherapy.event.100.116}}\"",
+				120: "end dialogue Kent \"{{i18n:KentGetsTherapy.event.100.120}}\"",
+				},
+			},
+		},
+        {
+			"LogName": "NMW Dialogue - Kent Vanilla",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kent",
+			"Entries": 
+			{
+			"event_popcorn1":  "{{i18n:KentGetsTherapy.dialogue.event_popcorn1}}",
+			"event_popcorn2":  "{{i18n:KentGetsTherapy.dialogue.event_popcorn2}}",
+			"event_popcorn3":  "{{i18n:KentGetsTherapy.dialogue.event_popcorn3}}",
+			},
+		},
+    ]
+}

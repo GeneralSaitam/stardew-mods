@@ -1,0 +1,23 @@
+{
+	"Format": "2.3.0",
+	"ConfigSchema": {
+		"Floral Tea Toggle": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Section": "Toggle Floral Tea",
+			"Description": "This setting is for the simultaneus usage of many different mods that use flowers in the dehydrator. Select if you want to use floral tea making in the dehydrator."
+		}
+	},
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "XTeaEx",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		{
+            "LogName": "Cooking Item Data",
+            "Action": "Include",
+            "FromFile": "Data/Objects.json, Data/CookingRecipes.json, Data/NPCGiftTastes.json, Data/Buildings.json, Data/Machines.json, Data/Mail.json, Data/Shops.json"
+		}
+	]
+}	

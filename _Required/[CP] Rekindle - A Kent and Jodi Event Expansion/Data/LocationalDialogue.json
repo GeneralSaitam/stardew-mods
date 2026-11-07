@@ -1,0 +1,108 @@
+{
+	"Changes": [
+		// LOCATIONAL DIALOGUE
+		{
+			"LogName": "Rekindle Locational Dialogue - Kent (Garbage Job)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kent",
+			"Entries": {
+				"Town_13_87": "{{i18n:Rekindle.LocationDialogue.Kent.GarbageJob.{{Random:{{Range:1,5}}|key=KentGarbageJob}}}}",
+				"Town_19_90": "{{i18n:Rekindle.LocationDialogue.Kent.GarbageJob.{{Random:{{Range:1,5}}|key=KentGarbageJob}}}}",
+				"Town_48_70": "{{i18n:Rekindle.LocationDialogue.Kent.GarbageJob.{{Random:{{Range:1,5}}|key=KentGarbageJob}}}}",
+				"Town_51_63": "{{i18n:Rekindle.LocationDialogue.Kent.GarbageJob.{{Random:{{Range:1,5}}|key=KentGarbageJob}}}}",
+				"Town_109_56": "{{i18n:Rekindle.LocationDialogue.Kent.GarbageJob.{{Random:{{Range:1,5}}|key=KentGarbageJob}}}}",
+				"Town_97_81": "{{i18n:Rekindle.LocationDialogue.Kent.GarbageJob.{{Random:{{Range:1,5}}|key=KentGarbageJob}}}}",
+				"Town_108_92": "{{i18n:Rekindle.LocationDialogue.Kent.GarbageJob.{{Random:{{Range:1,5}}|key=KentGarbageJob}}}}",
+				"Town_55_85": "{{i18n:Rekindle.LocationDialogue.Kent.GarbageJob.{{Random:{{Range:1,5}}|key=KentGarbageJob}}}}",
+				"Town_67_79": "{{i18n:Rekindle.LocationDialogue.Kent.GarbageJobFinished}}",
+				"Mountain_43_10": "{{i18n:Rekindle.LocationDialogue.Kent.Hangout.{{Random:{{Range:1,5}}}}}}"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_JobOffer": true
+			}
+		},
+		{
+			"LogName": "Rekindle Locational Dialogue - Kent (Hangout)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kent",
+			"Entries": {
+				"Mountain_43_10": "{{i18n:Rekindle.LocationDialogue.Kent.Hangout.{{Random:{{Range:1,5}}|key=KentDemetriusHangout}}}}"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_CampingTrip": true
+			}
+		},
+		{
+			"LogName": "Rekindle Locational Dialogue - Kent (Date)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kent",
+			"Entries": {
+				"Town_27_30": "{{i18n:Rekindle.LocationDialogue.Kent.Date.Fountain}}%noturn",
+				"Beach_9_10": "{{i18n:Rekindle.LocationDialogue.Kent.Date.Beach}}%noturn",
+				"Mountain_42_12": "{{i18n:Rekindle.LocationDialogue.Kent.Date.Mountain}}%noturn",
+				"Forest_52_37": "{{i18n:Rekindle.LocationDialogue.Kent.Date.Forest}}%noturn"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_FirstDate": true
+			}
+		},
+		{
+			"LogName": "Rekindle Locational Dialogue - Demetrius (Hangout)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Demetrius",
+			"Entries": {
+				"Mountain_45_8": "{{i18n:Rekindle.LocationDialogue.Demetrius.Hangout.{{Random:{{Range:1,5}}|key=KentDemetriusHangout}}}}"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_CampingTrip": true
+			}
+		},
+		{
+			"LogName": "Rekindle Locational Dialogue - Jodi (Sunroom)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jodi",
+			"Entries": {
+				"Sunroom_7_7": "{{i18n:Rekindle.LocationDialogue.Jodi.Sunroom.{{Random:{{Range:1,5}}|key=JodiCarolineSunroom}}}}%noturn"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_LadiesDay": true
+			}
+		},
+		{
+			"LogName": "Rekindle Locational Dialogue - Jodi (Date)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jodi",
+			"Entries": {
+				"Town_25_30": "{{i18n:Rekindle.LocationDialogue.Jodi.Date.Fountain}}%noturn",
+				"Beach_9_9": "{{i18n:Rekindle.LocationDialogue.Jodi.Date.Beach}}%noturn",
+				"Mountain_42_14": "{{i18n:Rekindle.LocationDialogue.Jodi.Date.Lake}}%noturn",
+				"Forest_52_35": "{{i18n:Rekindle.LocationDialogue.Jodi.Date.River}}%noturn"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_FirstDate": true
+			}
+		},
+		{
+			"LogName": "Rekindle Locational Dialogue - Jodi (Jigsaw)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jodi",
+			"Entries": {
+				"SamHouse_4_12": "{{i18n:Rekindle.LocationDialogue.Jodi.Puzzle.{{Random:{{Range:1,5}}}}}}"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_JigsawPuzzle": true
+			}
+		},
+		{
+			"LogName": "Rekindle Locational Dialogue - Caroline",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Caroline",
+			"Entries": {
+				"Sunroom_5_7": "{{i18n:Rekindle.LocationDialogue.Caroline.Sunroom.{{Random:{{Range:1,5}}|key=JodiCarolineSunroom}}}}%noturn"
+			},
+			"When": {
+				"HasSeenEvent |contains= Rekindle_LadiesDay": true
+			}
+		}
+    ]
+}

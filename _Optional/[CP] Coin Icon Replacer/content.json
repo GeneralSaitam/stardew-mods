@@ -1,0 +1,88 @@
+{
+   "Format": "1.29.0",
+   "ConfigSchema": {
+      "Material": {
+         "AllowValues": "Gold,Gold(Flowers_and_rivers),Gold(Polished),Gold(Junimo),Silver(Refined),Silver(Junimo),Taco,False",
+         "Default": "Gold",
+      }
+   },
+   "Changes": [
+      {
+         "LogName": "Gold Coin",
+         "Action": "EditImage",
+         "Target": "TileSheets/debris",
+         "FromFile": "assets/GoldCoin1.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 6 },
+         "ToArea": { "X": 5, "Y": 69, "Width": 21, "Height": 6 },
+         "When": {
+            "Material": "Gold"
+         }
+      },
+      {
+         "LogName": "Gold Coin(Flowers and rivers)",
+         "Action": "EditImage",
+         "Target": "TileSheets/debris",
+         "FromFile": "assets/GoldCoin2.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 6 },
+         "ToArea": { "X": 5, "Y": 69, "Width": 21, "Height": 6 },
+         "When": {
+            "Material": "Gold(Flowers_and_rivers)"
+         }
+      },
+      {
+         "LogName": "Gold Coin(Polished)",
+         "Action": "EditImage",
+         "Target": "TileSheets/debris",
+         "FromFile": "assets/GoldCoin3.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 6 },
+         "ToArea": { "X": 5, "Y": 69, "Width": 21, "Height": 6 },
+         "When": {
+            "Material": "Gold(Polished)"
+         }
+      },
+      {
+         "LogName": "Gold Coin(Junimo)",
+         "Action": "EditImage",
+         "Target": "TileSheets/debris",
+         "FromFile": "assets/GoldCoin4.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 6 },
+         "ToArea": { "X": 5, "Y": 69, "Width": 21, "Height": 6 },
+         "When": {
+            "Material": "Gold(Junimo)"
+         }
+      },
+      {
+         "LogName": "Silver Coin(Refined)",
+         "Action": "EditImage",
+         "Target": "TileSheets/debris",
+         "FromFile": "assets/SilverCoin1.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 6 },
+         "ToArea": { "X": 5, "Y": 69, "Width": 21, "Height": 6 },
+         "When": {
+            "Material": "Silver(Refined)"
+         }
+      },
+      {
+         "LogName": "Silver Coin(Junimo)",
+         "Action": "EditImage",
+         "Target": "TileSheets/debris",
+         "FromFile": "assets/SilverCoin2.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 6 },
+         "ToArea": { "X": 5, "Y": 69, "Width": 21, "Height": 6 },
+         "When": {
+            "Material": "Silver(Junimo)"
+         }
+      },
+      {
+         "LogName": "Taco",
+         "Action": "EditImage",
+         "Target": "TileSheets/debris",
+         "FromFile": "assets/Taco.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 21, "Height": 6 },
+         "ToArea": { "X": 5, "Y": 69, "Width": 21, "Height": 6 },
+         "When": {
+            "Material": "Taco"
+         }
+      }
+   ]
+}

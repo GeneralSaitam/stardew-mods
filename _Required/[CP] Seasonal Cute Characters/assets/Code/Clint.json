@@ -1,0 +1,173 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_Clint_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Clint_Spring, Portraits/Clint_Summer, Portraits/Clint_Fall, Portraits/Clint_Winter_Outdoor, Portraits/Clint_Winter_Indoor, Portraits/Clint_FlowerDance, Portraits/Clint_SpiritsEve, Portraits/Clint_Spring_Work, Portraits/Clint_Summer_Work, Portraits/Clint_Fall_Work, Portraits/Clint_Winter_Work, Characters/Clint_Spring, Characters/Clint_Summer, Characters/Clint_Fall, Characters/Clint_Winter_Outdoor, Characters/Clint_Winter_Indoor, Characters/Clint_FlowerDance, Characters/Clint_SpiritsEve, Characters/Clint_Spring_Work, Characters/Clint_Summer_Work, Characters/Clint_Fall_Work, Characters/Clint_Winter_Work",
+			"FromFile": "assets/{{TargetPathOnly}}/Clint/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Edit_Clint_Beach_Assets",
+			"Action": "EditImage",
+			"Target": "Portraits/Clint_Beach, Characters/Clint_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Clint/{{TargetWithoutPath}}.png",
+			"When": {
+				"BeachOutfitsEnabled": true
+			}
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_Clint_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Clint_Spring, Characters/Clint_Summer, Characters/Clint_Fall, Characters/Clint_Winter_Outdoor, Characters/Clint_Winter_Indoor, Characters/Clint_FlowerDance, Characters/Clint_SpiritsEve, Characters/Clint_Spring_Work, Characters/Clint_Summer_Work, Characters/Clint_Fall_Work, Characters/Clint_Winter_Work",
+			"FromFile": "assets/{{TargetPathOnly}}/Clint/Clint_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Add_Clint_Beach_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Clint_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Clint/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_Clint_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Clint",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.ClintSpring": {
+					"Id": "{{ModId}}.ClintSpring",
+					"Portrait": "Portraits/Clint_Spring",
+					"Sprite": "Characters/Clint_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.ClintSummer": {
+					"Id": "{{ModId}}.ClintSummer",
+					"Portrait": "Portraits/Clint_Summer",
+					"Sprite": "Characters/Clint_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.ClintFall": {
+					"Id": "{{ModId}}.ClintFall",
+					"Portrait": "Portraits/Clint_Fall",
+					"Sprite": "Characters/Clint_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.ClintWinterIndoor": {
+					"Id": "{{ModId}}.ClintWinterIndoor",
+					"Portrait": "Portraits/Clint_Winter_Indoor",
+					"Sprite": "Characters/Clint_Winter_Indoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",
+					"Precedence": -101
+				},
+				"{{ModId}}.ClintWinterOutdoor": {
+					"Id": "{{ModId}}.ClintWinterOutdoor",
+					"Portrait": "Portraits/Clint_Winter_Outdoor",
+					"Sprite": "Characters/Clint_Winter_Outdoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101
+				},
+				// Extra Outfits
+				"{{ModId}}.ClintSpringWork": {
+					"Id": "{{ModId}}.ClintSpringWork",
+					"Portrait": "Portraits/Clint_Spring_Work",
+					"Sprite": "Characters/Clint_Spring_Work",
+					"Condition": "ANY \"{{ExtraOutfitsEnabled}}, LOCATION_NAME Target Blacksmith\" \"{{ExtraOutfitsEnabled}}, LOCATION_NAME Target CommunityCenter\"",
+					"Season": "spring",
+					"Precedence": -200
+				},
+				"{{ModId}}.ClintSummerWork": {
+					"Id": "{{ModId}}.ClintSummerWork",
+					"Portrait": "Portraits/Clint_Summer_Work",
+					"Sprite": "Characters/Clint_Summer_Work",
+					"Condition": "ANY \"{{ExtraOutfitsEnabled}}, LOCATION_NAME Target Blacksmith\" \"{{ExtraOutfitsEnabled}}, LOCATION_NAME Target CommunityCenter\"",
+					"Season": "summer",
+					"Precedence": -200
+				},
+				"{{ModId}}.ClintFallWork": {
+					"Id": "{{ModId}}.ClintFallWork",
+					"Portrait": "Portraits/Clint_Fall_Work",
+					"Sprite": "Characters/Clint_Fall_Work",
+					"Condition": "ANY \"{{ExtraOutfitsEnabled}}, LOCATION_NAME Target Blacksmith\" \"{{ExtraOutfitsEnabled}}, LOCATION_NAME Target CommunityCenter\"",
+					"Season": "fall",
+					"Precedence": -200
+				},
+				"{{ModId}}.ClintWinterWork": {
+					"Id": "{{ModId}}.ClintWinterWork",
+					"Portrait": "Portraits/Clint_Winter_Work",
+					"Sprite": "Characters/Clint_Winter_Work",
+					"Condition": "ANY \"{{ExtraOutfitsEnabled}}, LOCATION_NAME Target Blacksmith\" \"{{ExtraOutfitsEnabled}}, LOCATION_NAME Target CommunityCenter\"",
+					"Season": "winter",
+					"Precedence": -200
+				},
+				// Festival Outfits
+				"{{ModId}}.ClintFlowerDance": {
+					"Id": "{{ModId}}.ClintFlowerDance",
+					"Portrait": "Portraits/Clint_FlowerDance",
+					"Sprite": "Characters/Clint_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.ClintSpirit": {
+					"Id": "{{ModId}}.ClintSpirit",
+					"Portrait": "Portraits/Clint_SpiritsEve",
+					"Sprite": "Characters/Clint_SpiritsEve",
+					"Condition": "{{UseSpiritsEveOutfit}}",
+					"Precedence": -300
+				}
+			}
+		},
+		// CALENDAR
+		{
+			"LogName": "Edit_Clint_Calendar_Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Clint",
+			"FromFile": "assets/{{Target}}/Clint_{{CurrentSeasonAttire}}.png"
+		},
+		{
+			"LogName": "Add_Clint_Calendar_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Clint",
+			"FromFile": "assets/{{Target}}/Clint_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		// MISCELLANEOUS
+		{
+			"LogName": "Clint_Clothes_Therapy",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/{{Target}}.png",
+			"FromArea": { "X": 0, "Y": 96, "Width": 64, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 96, "Width": 64, "Height": 32 }
+		},
+		{
+			"LogName": "Clint_Clothes_Therapy_2",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/{{Target}}.png",
+			"FromArea": { "X": 32, "Y": 160, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 32, "Y": 160, "Width": 32, "Height": 32 }
+		}
+	]
+}

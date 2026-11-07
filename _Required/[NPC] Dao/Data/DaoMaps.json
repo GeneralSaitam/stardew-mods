@@ -1,0 +1,180 @@
+{
+    "Changes":
+    [
+        // LOADS
+		{
+			"LogName": "Interior Map Load",
+			"Action": "Load",
+			"Target": "Maps/Custom_SBV_DaoHouse",
+			"FromFile": "Assets/Maps/DaoInterior.tmx"
+		},
+		{
+			"LogName": "Tilesheet Load",
+			"Action": "Load",
+			"Target": "Maps/Airyn_DaoTilesheet, Maps/spring_DaoHouse, Maps/summer_DaoHouse, Maps/fall_DaoHouse, Maps/winter_DaoHouse",
+			"FromFile": "Assets/Maps/Tilesheets/{{TargetWithoutPath}}.png"
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Custom_SBV_DaoHouse": {
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/Custom_SBV_DaoHouse"
+                    },
+                    "DisplayName": "{{i18n:Dao.HouseName}}",
+                    "DefaultArrivalTile": {
+                        "X": 9,
+                        "Y": 17
+                    },
+                    "ExcludeFromNpcPathfinding": false,
+                    "ArtifactSpots": [],
+                    "FishAreas": {},
+                    "Fish": [],
+                    "Forage": []
+                }
+            }
+        },
+        // HOUSE DATA
+		{
+			"LogName": "House Map Edit",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_SunberryVillage",
+			"PatchMode": "Replace",
+			"FromFile": "Assets/Maps/DaoExterior.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 9,
+				"Height": 10
+			},
+			"ToArea": {
+				"X": 33,
+				"Y": 57,
+				"Width": 9,
+				"Height": 10
+			}
+		},
+		{
+			"LogName": "House Map Edit",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_TwilightFestival",
+			"PatchMode": "Replace",
+			"FromFile": "Assets/Maps/DaoExteriorTwilight.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 9,
+				"Height": 10
+			},
+			"ToArea": {
+				"X": 33,
+				"Y": 57,
+				"Width": 9,
+				"Height": 10
+			}
+		},
+		{
+			"LogName": "House Door Lock",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_SunberryVillage, Maps/Custom_SBV_TwilightFestival",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 38,
+						"Y": 64
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "LockedDoorWarp 9 16 Custom_SBV_DaoHouse 730 2200"
+					}
+				}
+			],
+			"When": {
+				"HasFlag |contains= DaoTravellingFlag, DaoTravellingInitialFlag": false
+			}
+		},
+		{
+			"LogName": "House Door Lock - Dao Travelling",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_SunberryVillage, Maps/Custom_SBV_TwilightFestival",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 38,
+						"Y": 64
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message Dao.Travelling "
+					}
+				}
+			],
+			"When": {
+				"HasFlag |contains= DaoTravellingFlag, DaoTravellingInitialFlag": true
+			}
+		},
+		{
+			"LogName": "House Door Warp",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_DaoHouse",
+			"AddWarps": [
+				"9 18 Custom_SBV_SunberryVillage 38 65"
+			]
+		},
+		{
+			"LogName": "House Door Warp - Twilight Festival",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_DaoHouse",
+			"AddWarps": [
+				"9 18 Custom_SBV_TwilightFestival 38 65"
+			],
+			"When": {
+				"Season": "Fall",
+				"Day": "26"
+			}
+		},
+        // EXTERIOR ELEMENTS
+		{
+			"LogName": "Ute Map Edit",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_SunberryVillage, Maps/Custom_SBV_TwilightFestival",
+			"PatchMode": "Replace",
+			"FromFile": "Assets/Maps/DaoUte_{{FirefightingToken}}.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 4,
+				"Height": 7
+			},
+			"ToArea": {
+				"X": 7,
+				"Y": 13,
+				"Width": 4,
+				"Height": 7
+			}
+		},
+		{
+			"LogName": "Kayak Map Edit",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_SunberryVillage, Maps/Custom_SBV_TwilightFestival",
+			"PatchMode": "Replace",
+			"FromFile": "Assets/Maps/DaoKayak.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 2,
+				"Height": 4
+			},
+			"ToArea": {
+				"X": 31,
+				"Y": 63,
+				"Width": 2,
+				"Height": 4
+			},
+			"When": {
+				"KayakingToken": "true"
+			}
+		}
+    ]
+}

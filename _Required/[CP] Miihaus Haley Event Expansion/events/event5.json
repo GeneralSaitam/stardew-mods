@@ -1,0 +1,164 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "17674005/F/f Haley 1250/t 600 1030/z winter/w sunny/e 17674004":"
+                ragtime/
+                43 20/
+                farmer 42 15 2 Haley 44 23 0/
+                skippable/
+                pause 100/
+                changeSprite Haley Beach/
+                changePortrait Haley Beach/
+                advancedMove Haley false 0 -5 3 1000/
+                move farmer 0 3 1/
+                emote farmer 8/
+                stopAdvancedMoves/
+                emote Haley 60/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.001}}\"/
+                question null \"{{i18n:Miihau.HaleyEE.E5.002}}\"/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.003}}\"/
+                emote farmer 8/
+                pause 200/
+                emote Haley 40/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.004}}\"/
+                question fork1 \"{{i18n:Miihau.HaleyEE.E5.005}}\"/
+                fork badEndingSwimming/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.006}}\"/
+                question fork1 \"{{i18n:Miihau.HaleyEE.E5.007}}\"/
+                fork maybeWithEmily/
+                friendship Haley 40/
+                faceDirection Haley 2/
+                pause 200/
+                move Haley 0 1 2/
+                emote Haley 40/
+                pause 500/
+                move Haley 0 -1 3/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.008}}\"/
+                emote farmer 32/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.009}}\"/
+                globalFade/
+                viewport -1000 -1000/
+                message \"{{i18n:Miihau.HaleyEE.E5.010}}\"/
+                pause 200/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.011}}\"/
+                pause 200/
+                message \"{{i18n:Miihau.HaleyEE.E5.012}}\"/
+                pause 300/
+                playSound slime/
+                pause 200/
+                playSound pullItemFromWater/
+                swimming farmer/
+                swimming Haley/
+                warp farmer 49 30/
+                positionOffset farmer 0 14/
+                warp Haley 51 30/
+                pause 200/
+                playSound slosh/
+                pause 1000/
+                globalFadeToClear 0.007 true/
+                viewport 50 32/
+                pause 500/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.013}}\"/
+                emote farmer 32/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.014}}\"/
+                pause 100/
+                move farmer 1 0 1/
+                positionOffset Haley -3 0/
+                pause 50/
+                positionOffset Haley -3 0/
+                pause 50/
+                positionOffset Haley -3 0/
+                pause 50/
+                positionOffset Haley -3 0/
+                pause 50/
+                positionOffset Haley -3 0/
+                pause 50/
+                positionOffset Haley -3 0/
+                pause 50/
+                positionOffset Haley -3 0/
+                pause 50/
+                positionOffset Haley -3 0/
+                pause 50/
+                positionOffset Haley -3 0/
+                pause 50/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.015}}\"/
+                pause 300/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.016}}\"/
+                emote Haley 32/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.017}}\"/
+                question null \"{{i18n:Miihau.HaleyEE.E5.018}}\"/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.019}}\"/
+                positionOffset Haley 3 0/
+                pause 50/
+                positionOffset Haley 3 0/
+                pause 50/
+                positionOffset Haley 3 0/
+                pause 50/
+                positionOffset Haley 3 0/
+                pause 50/
+                positionOffset Haley 3 0/
+                pause 50/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.020}}\"/
+                faceDirection Haley 2/
+                pause 200/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.021}}\"/
+                stopAdvancedMoves/
+                pause 200/
+                advancedMove Haley false 0 2 2 200/
+                faceDirection farmer 2/
+                pause 700/
+                stopAdvancedMoves/
+                advancedMove Haley true -3 0 3 200 3 0 1 200/
+                pause 3000/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.022}}\"/
+                globalFade/
+                viewport -1000 -1000/
+                stopSwimming farmer/
+                stopAdvancedMoves/
+                stopSwimming Haley/
+                end dialogue Haley \"{{i18n:Miihau.HaleyEE.E5.023}}\"",
+
+                "badEndingSwimming":"
+                friendship Haley -150/
+                faceDirection Haley 2/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.024}}\"/
+                pause 200/
+                faceDirection Haley 0/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.025}}\"/
+                emote farmer 60 true/
+                AdvancedMove Haley false 0 -4 -5 0 3 1000/
+                pause 700/
+                faceDirection farmer 0/
+                pause 300/
+                globalFade/
+                viewport -1000 -1000/
+                stopAdvancedMoves/
+                end dialogue Haley \"{{i18n:Miihau.HaleyEE.E5.026}}\"",
+
+                "maybeWithEmily":"
+                friendship Haley 20/
+                faceDirection Haley 2/
+                pause 200/
+                move Haley 0 1 2/
+                emote Haley 40/
+                pause 500/
+                move Haley 0 -1 3/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.027}}\"/
+                pause 200/
+                question null \"{{i18n:Miihau.HaleyEE.E5.028}}\"/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.029}}\"/
+                emote farmer 32/
+                speak Haley \"{{i18n:Miihau.HaleyEE.E5.030}}\"/
+                emote Haley 32/
+                pause 100/
+                globalFade/
+                viewport -1000 -1000/
+                stopAdvancedMoves/
+                end dialogue Haley \"{{i18n:Miihau.HaleyEE.E5.031}}\"",
+            }
+        },
+    ]
+}

@@ -1,0 +1,162 @@
+{
+  "Format": "2.2.0",
+  "DynamicTokens": [
+    {
+      "Name": "DiverseEmily",
+      "Value": ""
+    },
+    {
+      "Name": "DiverseEmily",
+      "Value": ".DSVEmily",
+      "When": {
+        "HasMod": "DSV.Core",
+        "DSV.Core/ConfigValue:NonbinaryEmily": "True"
+      }
+    },
+    {
+      "Name": "DiverseAbigail",
+      "Value": ""
+    },
+    {
+      "Name": "DiverseAbigail",
+      "Value": ".DSVAbigail",
+      "When": {
+        "HasMod": "DSV.Core",
+        "DSV.Core/ConfigValue:NonbinaryAbigail": "True"
+      }
+    },
+    {
+      "Name": "GenderNeutral",
+      "Value": ""
+    },
+    {
+      "Name": "GenderNeutral",
+      "Value": ".GN",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GenderNeutralSingular",
+      "Value": ".Plural",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GenderNeutralSingular",
+      "Value": ".Singular",
+      "When": {
+        "Hana.GNMTokens/Singular": true,
+        "HasMod": "Hana.GNMTokens"
+      }
+    },
+    {
+      "Name": "GNMTSubjectivePronoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTSubjectivePronoun",
+      "Value": "{{Hana.GNMTokens/SubjectivePronoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTObjectivePronoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTObjectivePronoun",
+      "Value": "{{Hana.GNMTokens/ObjectivePronoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTPossessivePronoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTPossessivePronoun",
+      "Value": "{{Hana.GNMTokens/PossessivePronoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTTitle",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTTitle",
+      "Value": "{{Hana.GNMTokens/Title}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    //Adjective
+    //SpouseNoun
+    {
+      "Name": "GNMTGenericNoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTGenericNoun",
+      "Value": "{{Hana.GNMTokens/GenericNoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },
+    {
+      "Name": "GNMTAdultAntiquatedNoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTAdultAntiquatedNoun",
+      "Value": "{{Hana.GNMTokens/AdultAntiquatedNoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },  
+    {
+      "Name": "GNMTAdultInformalNoun",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTAdultInformalNoun",
+      "Value": "{{Hana.GNMTokens/AdultInformalNoun}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    },  
+    //AdultFamilialNoun
+    //ElderAntiquatedNoun
+    //ElderFamilialNoun
+    //ElderInformalNoun
+    //ChildFamilialNoun
+    //ServiceFormalNoun
+    //TraderNoun
+    //ParentalNoun
+    //SiblingNoun
+    {
+      "Name": "GNMTTermOfEndearment",
+      "Value": "false"
+    },
+    {
+      "Name": "GNMTTermOfEndearment",
+      "Value": "{{Hana.GNMTokens/TermOfEndearment}}",
+      "When": { "HasMod": "Hana.GNMTokens" }
+    }
+
+  ],
+  "Changes": [
+    {
+      "LogName": "Miihau's Penny GN",
+      "Action": "Include",
+      "FromFile": "events/Penny.json",
+      "When": { "HasMod": "Miihau.MiihausMorePennyHeartEvents" }
+    },
+    {
+      "LogName": "Miihau's Haley GN",
+      "Action": "Include",
+      "FromFile": "events/Haley.json",
+      "When": { "HasMod": "Miihau.MiihausMoreHaleyHeartEvents" }
+    },
+    {
+      "LogName": "Miihau's Shane GN",
+      "Action": "Include",
+      "FromFile": "events/Shane.json",
+      "When": { "HasMod": "Miihau.MiihausShaneEventExpansion" }
+    },
+    {
+      "LogName": "Miihau's Abigail GN",
+      "Action": "Include",
+      "FromFile": "events/Abigail.json",
+      "When": { "HasMod": "Miihau.MiihausMoreAbigailHeartEvents" }
+    }
+
+  ]
+}

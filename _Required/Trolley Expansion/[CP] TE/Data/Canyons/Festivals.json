@@ -1,0 +1,197 @@
+{
+	"Changes": 
+    [
+			
+		{	
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "CC_Yoput 17 4 down",
+   				    "Delimiter": "/"
+				},
+	
+			],
+		},
+		{	
+			"LogName": "Luau - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": 
+			{ "CC_Yoput_roommate": "{{i18n:luaufestival.CC_Yoput}}",
+
+
+			},
+		},
+
+		{	
+			"LogName": "Dance of the Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "CC_Yoput 81 26 down",
+					"Delimiter": "/"
+				},
+				//MainEvent - during the boat launch. Most characters don't move, but not all of them will be visible.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "CC_Yoput 81 26 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Dance of the Moonlight Jellies - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": 
+			{ "CC_Yoput_roommate": "{{i18n:jellyfestival.CC_Yoput}}",
+
+
+			},
+		},
+		{	
+			"LogName": "Stardew Valley Fair",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+			[
+				//SetUp (non-SVE) - I don't believe there is a "main event" one for this"
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "CC_Yoput 43 85 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		//SetUp (SVE) - SVE changes the fair a lot, so you may want different positions.
+		{	
+			"LogName": "Stardew Valley Fair - SVE compat",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+			[
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "CC_Yoput 43 85 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Stardew Valley Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": 
+			{ "CC_Yoput_roommate": "{{i18n:jellyfestival.CC_Yoput}}",
+
+
+			},
+		},
+		{	
+			"LogName": "Spirit's Eve",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"Target": "Data/Festivals/fall27",
+			"TextOperations":
+			[
+				//SetUp - again, no main
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "CC_Yoput 35 61 down",
+					"Delimiter": "/"
+				},
+			],
+		},			
+		{	
+			"LogName": "Spirit's Eve - SVE compat",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"Target": "Data/Festivals/fall27",
+			"TextOperations":
+			[
+				//SetUp (SVE) - SVE changes the maps from year to year but I don't know the specifics, so you may need more than one set of positions for SVE compat.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "CC_Yoput 35 61 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Spirit's Eve - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": 
+			{ "CC_Yoput_roommate": "{{i18n:evefestival.CC_Yoput}}",
+
+
+			},
+		},
+		{	
+			"LogName": "Festival of Ice",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "CC_Yoput 53 16 down",
+					"Delimiter": "/"
+				},
+
+		
+			],
+		},
+		{	
+			"LogName": "Festival of Ice - SVE compat",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"TextOperations":
+			[
+				//SetUp - SVE completely redoes this map too, so depending on where you are you may need compat for this.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "CC_Yoput 53 16 down",
+					"Delimiter": "/"
+				},
+	
+			],
+		},
+		{	
+			"LogName": "Festival of Ice - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": 
+			{ "CC_Yoput_roommate": "{{i18n:icefestival.CC_Yoput}}",
+
+},
+		},
+		
+		
+		
+		
+	]
+}										

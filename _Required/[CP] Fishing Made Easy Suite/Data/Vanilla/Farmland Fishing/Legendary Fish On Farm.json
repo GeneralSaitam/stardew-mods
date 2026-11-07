@@ -1,0 +1,81 @@
+{
+  "Changes": [
+    {
+      "LogName": "Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Entries": {
+        "(O)159": {
+          "ItemId": "(O)159",
+          "Chance": 0.3,
+          "Season": "Summer",
+          "MinFishingLevel": 5,
+          "CuriosityLureBuff": 0.07,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false,
+          "Condition": "!PLAYER_SPECIAL_ORDER_RULE_ACTIVE Current LEGENDARY_FAMILY"
+        },
+        "(O)160": {
+          "ItemId": "(O)160",
+          "Chance": 0.3,
+          "Season": "Fall",
+          "MinFishingLevel": 3,
+          "CuriosityLureBuff": 0.05,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false,
+          "Condition": "!PLAYER_SPECIAL_ORDER_RULE_ACTIVE Current LEGENDARY_FAMILY"
+        },
+        "(O)163": {
+          "ItemId": "(O)163",
+          "Chance": 0.3,
+          "Season": "Spring",
+          "MinFishingLevel": 10,
+          "CuriosityLureBuff": 0.1,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false,
+          "Condition": "!PLAYER_SPECIAL_ORDER_RULE_ACTIVE Current LEGENDARY_FAMILY, WEATHER Here Rain Storm GreenRain"
+        },
+        "(O)682": {
+          "ItemId": "(O)682",
+          "Chance": 0.3,
+          "CuriosityLureBuff": 0.1,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false,
+          "Condition": "!PLAYER_SPECIAL_ORDER_RULE_ACTIVE Current LEGENDARY_FAMILY"
+        },
+        "(O)775": {
+          "ItemId": "(O)775",
+          "Chance": 0.3,
+          "Season": "Winter",
+          "MinFishingLevel": 6,
+          "CuriosityLureBuff": 0.0,
+          "CatchLimit": 1,
+          "IsBossFish": true,
+          "Precedence": 0,
+          "IgnoreFishDataRequirements": true,
+          "CanBeInherited": false,
+          "Condition": "!PLAYER_SPECIAL_ORDER_RULE_ACTIVE Current LEGENDARY_FAMILY"
+        }
+      },
+      "When": {
+        "Legendary Fish On Farm": true
+      }
+    }
+  ]
+}

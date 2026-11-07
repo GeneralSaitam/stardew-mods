@@ -1,0 +1,301 @@
+{
+//When adding configs, remember to also duplicate and add a 9/10 heart when condition (with HasMod of the manifest name of Platonic Relationships). Due to context conditions in content.json, I would probably simply also make a separate fallback json for Platonic Relationships only.
+	"Changes":[
+		{
+			"LogName": "Abigail - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Abigail.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Abigail.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Abigail": "dating",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:AbigailRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Abigail": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sebastian.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Sebastian": "dating",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:SebastianRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Alex - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Alex.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Alex.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Alex": "dating",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:AlexRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Alex": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Haley.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Haley": "dating",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:HaleyRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Shane - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Shane": "dating",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:ShaneRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"HasMod |contains=tenthousandcats.ImmersiveCShane": false,
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Shane - Solstice, Best Friends, IC Shane Override",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Shane": "dating",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:ShaneRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Immersive Shane Override": "true",
+				"IC-Shane Conditional Overrides": "dating only, dating and married",
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Emily.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Emily": "dating",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:EmilyRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Leah - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Leah": "dating",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:LeahRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Leah - Solstice, Best Friends, Art Show",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.Solstice.Friends.EightHeart.After}}",
+			},
+			"When": {
+				"relationship:Leah": "dating",
+				"HasMod": "PPAF.Core",
+				"HasSeenEvent |contains=53": "true",
+				"PPAF.Core/ConfigValue:LeahRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Leah - Solstice, Best Friends, Internet Art",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.Solstice.Friends.EightHeart.After}}",
+			},
+			"When": {
+				"relationship:Leah": "dating",
+				"HasMod": "PPAF.Core",
+				"HasSeenEvent |contains=584059": "true",
+				"PPAF.Core/ConfigValue:LeahRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Elliott": "dating",
+				"HasMod": "PPAF.Core",
+				"HasSeenEvent |contains=1848481": "false", //Elliott's 8 heart, the first mention of the book's title.
+				"PPAF.Core/ConfigValue:ElliottRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Elliott": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Solstice, Best Friends, Book",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.Solstice.Friends.Book.After}}",
+			},
+			"When": {
+				"relationship:Elliott": "dating",
+				"HasMod": "PPAF.Core",
+				"HasSeenEvent |contains=1848481": "true", //Elliott's 8 heart, the first mention of the book's title.
+				"PPAF.Core/ConfigValue:ElliottRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Elliott": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Penny - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Penny.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Penny.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Penny": "dating",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:PennyRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Penny": "normal",
+			},
+		},
+		{
+			"LogName": "Sam - Solstice, Best Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sam.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sam.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Sam": "dating",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:SamRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Sam": "normal",
+			},
+		},
+		{
+			"LogName": "Harvey - Solstice, Best Friends (pre-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Harvey": "dating",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:HarveyRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Harvey - Solstice, Best Friends (post-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.Solstice.Friends.TenHeart.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Harvey": "dating",
+				"HasMod": "PPAF.Core",
+				"HasSeenEvent |contains=528052": "true",
+				"PPAF.Core/ConfigValue:HarveyRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Harvey - Solstice, Best Friends (post-10 heart, SVE & Grampleton Fields)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.Solstice.Friends.TenHeart.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Harvey": "dating",
+				"HasMod": "PPAF.Core",
+				"HasSeenEvent |contains=528013": "true", //This should be the correct Event ID if you have Grampleton installed. If it's not, message me on Nexus and I'll recheck and re-fix.
+				"PPAF.Core/ConfigValue:HarveyRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star (pre-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.Solstice.Friends.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Maru": "dating",
+				"HasMod": "PPAF.Core",
+				"HasSeenEvent |contains=10": "false",
+				"PPAF.Core/ConfigValue:MaruRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Maru": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Winter Star (post-10 heart)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.Solstice.Friends.TenHeart.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.Solstice.Friends.After}}",
+			},
+			"When": {
+				"relationship:Maru": "dating",
+				"HasMod": "PPAF.Core",
+				"HasSeenEvent |contains=10": "true",
+				"PPAF.Core/ConfigValue:MaruRelationshipType": "SexWithoutRomance, FullyPlatonic",
+				"Maru": "normal, spicy",
+			},
+		},
+	],
+}

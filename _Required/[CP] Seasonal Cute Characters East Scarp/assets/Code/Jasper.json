@@ -1,0 +1,300 @@
+{
+    "Changes": [
+        //Jasper Default
+        {
+            "LogName": "Load Jasper's Outfits",
+            "Action": "Load",
+            "Priority": "High",
+            "Target": "Portraits/Jasper_Spring, Portraits/Jasper_Summer, Portraits/Jasper_Fall, Portraits/Jasper_Winter, Portraits/Jasper_FlowerDance, Portraits/Jasper_SpiritsEve, Portraits/Jasper_Beach, Characters/Jasper_Spring, Characters/Jasper_Summer, Characters/Jasper_Fall, Characters/Jasper_Winter, Characters/Jasper_FlowerDance, Characters/Jasper_SpiritsEve, Characters/Jasper_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Jasper/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Load Jasper's Wheelchair Outfits",
+            "Action": "Load",
+            "Priority": "High",
+            "Target": "Portraits/Jasper_Wheelchair_Spring, Portraits/Jasper_Wheelchair_Summer, Portraits/Jasper_Wheelchair_Fall, Portraits/Jasper_Wheelchair_Winter, Portraits/Jasper_Wheelchair_FlowerDance, Portraits/Jasper_Wheelchair_SpiritsEve, Portraits/Jasper_Wheelchair_Beach, Characters/Jasper_Wheelchair_Spring, Characters/Jasper_Wheelchair_Summer, Characters/Jasper_Wheelchair_Fall, Characters/Jasper_Wheelchair_Winter, Characters/Jasper_Wheelchair_FlowerDance, Characters/Jasper_Wheelchair_SpiritsEve, Characters/Jasper_Wheelchair_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Jasper/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Load Jasper's Outfits - sprites only for festivals",
+            "Action": "Load",
+            "Priority": "High",
+            "Target": "Characters/Jasper_Default, Characters/Jasper_Default_FlowerDance, Characters/Jasper_Default_SpiritsEve, Characters/Jasper_Default_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Jasper/{{TargetWithoutPath}}.png"
+        },
+        // NOSE OVERLAY
+        {
+            "LogName": "Jasper - Seasonal Nose",
+            "Action": "EditImage",
+            "Target": "Characters/Jasper, Characters/Jasper_Spring, Characters/Jasper_Summer, Characters/Jasper_Fall, Characters/Jasper_Winter, Characters/Jasper_FlowerDance, Characters/Jasper_SpiritsEve, Characters/Jasper_Beach, Characters/Jasper_Default",
+            "FromFile": "assets/Characters/Jasper/Jasper_nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "NoNose": "false",
+                "HasFile:{{FromFile}}": true,
+            },
+        },
+        {
+            "LogName": "Jasper Wheelchair Nose",
+            "Action": "EditImage",
+            "Target": "Characters/Jasper_Wheelchair_Spring, Characters/Jasper_Wheelchair_Summer, Characters/Jasper_Wheelchair_Fall, Characters/Jasper_Wheelchair_Winter",
+            "FromFile": "assets/Characters/Jasper/Jasper_Wheelchair_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJasper": "true",
+                "NoNose": "false"
+            }
+        },
+        //Additional Jasper images
+        {
+            "LogName": "Jasper  swimsuit",
+            "Action": "Load",
+            "Target": "Characters/Jasper_Swimsuit",
+            "FromFile": "assets/Characters/Jasper/Jasper_Swimsuit.png",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJasper": "true"
+            }
+        },
+        {
+            "LogName": "Jasper swimsuit Nose",
+            "Action": "EditImage",
+            "Target": "Characters/Jasper_Swimsuit",
+            "FromFile": "assets/Characters/Jasper/Jasper_Swimsuit_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJasper": "true",
+                "NoNose": "false",
+            }
+        },
+        {
+            "LogName": "Jasper Injured",
+            "Action": "EditImage",
+            "Target": "Characters/InjuredJasper",
+            "FromFile": "assets/Characters/Jasper/InjuredJasper_{{NoNose}}.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJasper": "true"
+            }
+        },
+        // Cameron F
+        {
+            "LogName": "Cameron Portraits",
+            "Action": "EditImage",
+            "Target": "Portraits/CameronLK",
+            "FromFile": "assets/Portraits/Cameron/Cameron.png",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteCameron": "true"
+            }
+        },
+        {
+            "LogName": "Cameron Sprites",
+            "Action": "EditImage",
+            "Target": "Characters/CameronLK",
+            "FromFile": "assets/Characters/Cameron/CameronF.png",
+            "When": {
+                "PlayerGender": "female",
+                "CuteCameron": "true",
+            },
+        },
+        {
+            "LogName": "Cameron Sprites Nose",
+            "Action": "EditImage",
+            "Target": "Characters/CameronLK",
+            "FromFile": "assets/Characters/Cameron/CameronF_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "PlayerGender": "female",
+                "CuteCameron": "true",
+                "NoNose": "false",
+            }
+        },
+        // Cameron M
+        {
+            "LogName": "Cameron Sprites",
+            "Action": "EditImage",
+            "Target": "Characters/CameronLK",
+            "FromFile": "assets/Characters/Cameron/CameronM.png",
+            "When": {
+                "PlayerGender": "male",
+                "CuteCameron": "true",
+            },
+        },
+        {
+            "LogName": "Cameron Sprites Nose",
+            "Action": "EditImage",
+            "Target": "Characters/CameronLK",
+            "FromFile": "assets/Characters/Cameron/CameronM_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "PlayerGender": "male",
+                "CuteCameron": "true",
+                "NoNose": "false",
+            }
+        },
+        //APPEARANCE DATA 
+        {
+            "LogName": "Jasper Appearance Data",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "Jasper",
+                "Appearance"
+            ],
+            "Entries": {
+                "{{ModId}}.Jasper_Default": {
+                    "Id": "{{ModId}}.Jasper_Default",
+                    "Condition": "!PLAYER_HAS_SEEN_EVENT Host 50709914",
+                    "Sprite": "Characters/Jasper_Default",
+                    "Portrait": "Portraits/Jasper",
+                    "Precedence": -120,
+                },
+                "{{ModId}}.Jasper_Beach_Default": {
+                    "Id": "{{ModId}}.Jasper_Default",
+                    "Condition": "!PLAYER_HAS_SEEN_EVENT Host 50709914",
+                    "Sprite": "Characters/Jasper_Default_Beach",
+                    "Portrait": "Portraits/Jasper_Beach",
+                    "IsIslandAttire": true,
+                    "Precedence": -120,
+                },
+                //Regular Outfits post-accident
+                "{{ModId}}.JasperSpring": {
+                    "Id": "{{ModId}}.JasperSpring",
+                    "Condition": "SEASON spring, PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_Spring",
+                    "Portrait": "Portraits/Jasper_Spring",
+                    "Precedence": -120,
+                },
+                "{{ModId}}.JasperSummer": {
+                    "Id": "{{ModId}}.JasperSummer",
+                    "Condition": "SEASON Summer, PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_Summer",
+                    "Portrait": "Portraits/Jasper_Summer",
+                    "Precedence": -120,
+                },
+                "{{ModId}}.JasperFall": {
+                    "Id": "{{ModId}}.JasperFall",
+                    "Condition": "SEASON Fall, PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_Fall",
+                    "Portrait": "Portraits/Jasper_Fall",
+                    "Precedence": -120,
+                },
+                "{{ModId}}.JasperWinter": {
+                    "Id": "{{ModId}}.JasperWinter",
+                    "Condition": "SEASON Winter, PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_Winter",
+                    "Portrait": "Portraits/Jasper_Winter",
+                    "Precedence": -120,
+                },
+                //Wheelchair
+                "{{ModId}}.JasperSpring_Wheelchair": {
+                    "Id": "{{ModId}}.JasperSpring",
+                    "Condition": "SEASON spring, PLAYER_HAS_SEEN_EVENT Host 50709914,!PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_Wheelchair_Spring",
+                    "Portrait": "Portraits/Jasper_Wheelchair_Spring",
+                    "Precedence": -130,
+                },
+                "{{ModId}}.JasperSummer_Wheelchair": {
+                    "Id": "{{ModId}}.JasperSummer",
+                    "Condition": "SEASON Summer, PLAYER_HAS_SEEN_EVENT Host 50709914,!PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_Wheelchair_Summer",
+                    "Portrait": "Portraits/Jasper_Wheelchair_Summer",
+                    "Precedence": -130,
+                },
+                "{{ModId}}.JasperFall_Wheelchair": {
+                    "Id": "{{ModId}}.JasperFall",
+                    "Condition": "SEASON Fall, PLAYER_HAS_SEEN_EVENT Host 50709914,!PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_Wheelchair_Fall",
+                    "Portrait": "Portraits/Jasper_Wheelchair_Fall",
+                    "Precedence": -130,
+                },
+                "{{ModId}}.JasperWinter_Wheelchair": {
+                    "Id": "{{ModId}}.JasperWinter",
+                    "Condition": "SEASON Winter, PLAYER_HAS_SEEN_EVENT Host 50709914,!PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_Wheelchair_Winter",
+                    "Portrait": "Portraits/Jasper_Wheelchair_Winter",
+                    "Precedence": -130,
+                },
+                //Festival Outfits
+                //Pre-Accident
+                "{{ModId}}.JasperFlowerDance": {
+                    "Id": "{{ModId}}.JasperFlowerDance",
+                    "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}, !PLAYER_HAS_SEEN_EVENT Host 50709914",
+                    "Sprite": "Characters/Jasper_Default_FlowerDance",
+                    "Portrait": "Portraits/Jasper_FlowerDance",
+                    "Precedence": -100,
+                },
+                "{{ModId}}.JasperSpirit": {
+                    "Id": "{{ModId}}.JasperSpirit",
+                    "Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}, PLAYER_HAS_SEEN_EVENT Host 50709914\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}, !PLAYER_HAS_SEEN_EVENT Host 50709914\"",
+                    "Sprite": "Characters/Jasper_Default_SpiritsEve",
+                    "Portrait": "Portraits/Jasper_SpiritsEve",
+                    "Precedence": -100,
+                },
+                //Wheelchair
+                "{{ModId}}.JasperFlowerDance_Wheelchair": {
+                    "Id": "{{ModId}}.JasperFlowerDance",
+                    "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}, PLAYER_HAS_SEEN_EVENT Host 50709914,!PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_Wheelchair_FlowerDance",
+                    "Portrait": "Portraits/Jasper_Wheelchair_FlowerDance",
+                    "Precedence": -1000,
+                },
+                "{{ModId}}.JasperSpirit_Wheelchair": {
+                    "Id": "{{ModId}}.JasperSpirit",
+                    "Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}, PLAYER_HAS_SEEN_EVENT Host 50709914,!PLAYER_HAS_SEEN_EVENT Host 50709930\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}, PLAYER_HAS_SEEN_EVENT Host 50709914,!PLAYER_HAS_SEEN_EVENT Host 50709930\"",
+                    "Sprite": "Characters/Jasper_Wheelchair_SpiritsEve",
+                    "Portrait": "Portraits/Jasper_Wheelchair_SpiritsEve",
+                    "Precedence": -100,
+                },
+                //Beach
+                "{{ModId}}.JasperBeach_Wheelchair": {
+                    "Id": "{{ModId}}.JasperBeach",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 50709914,!PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_Wheelchair_Beach",
+                    "Portrait": "Portraits/Jasper_Wheelchair_Beach",
+                    "IsIslandAttire": true,
+                    "Precedence": -100,
+                },
+                //Prosthetic
+                "{{ModId}}.JasperFlowerDance_Prosthetic": {
+                    "Id": "{{ModId}}.JasperFlowerDance",
+                    "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}, PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_FlowerDance",
+                    "Portrait": "Portraits/Jasper_FlowerDance",
+                    "Precedence": -1000,
+                },
+                "{{ModId}}.JasperSpirit_Prosthetic": {
+                    "Id": "{{ModId}}.JasperSpirit",
+                    "Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}, PLAYER_HAS_SEEN_EVENT Host 50709930\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn, {{FestivalOutfits}}, PLAYER_HAS_SEEN_EVENT Host 50709930\"",
+                    "Sprite": "Characters/Jasper_SpiritsEve",
+                    "Portrait": "Portraits/Jasper_SpiritsEve",
+                    "Precedence": -1000,
+                },
+                //Beach
+                "{{ModId}}.JasperBeach_Prosthetic": {
+                    "Id": "{{ModId}}.JasperBeach",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 50709930",
+                    "Sprite": "Characters/Jasper_Beach",
+                    "Portrait": "Portraits/Jasper_Beach",
+                    "IsIslandAttire": true,
+                    "Precedence": -1000,
+                },
+            },
+        },
+        {
+            "LogName": "Jasper Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Jasper",
+            "When": {
+                "HasSeenEvent": "50709930"
+            },
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+        },
+    ]
+}

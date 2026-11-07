@@ -1,0 +1,184 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_Emily_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Emily_Spring, Portraits/Emily_Summer, Portraits/Emily_Fall, Portraits/Emily_Winter_Outdoor, Portraits/Emily_Winter_Indoor, Portraits/Emily_FlowerDance, Portraits/Emily_SpiritsEve, Portraits/Emily_EggF, Portraits/Emily_Fair, Portraits/Emily_Jellies, Portraits/Emily_Luau, Portraits/Emily_Winter_IceF, Portraits/Emily_Winter_WinterStar, Portraits/Emily_Aerobics, Characters/Emily_Spring, Characters/Emily_Summer, Characters/Emily_Fall, Characters/Emily_Winter_Outdoor, Characters/Emily_Winter_Indoor, Characters/Emily_FlowerDance, Characters/Emily_SpiritsEve, Characters/Emily_EggF, Characters/Emily_Fair, Characters/Emily_Jellies, Characters/Emily_Luau, Characters/Emily_Winter_IceF, Characters/Emily_Winter_WinterStar, Characters/Emily_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Emily/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Edit_Emily_Beach_Assets",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily_Beach, Characters/Emily_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Emily/{{TargetWithoutPath}}.png",
+			"When": {
+				"BeachOutfitsEnabled": true
+			}
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_Emily_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Emily_Spring, Characters/Emily_Summer, Characters/Emily_Fall, Characters/Emily_Winter_Outdoor, Characters/Emily_Winter_Indoor, Characters/Emily_FlowerDance, Characters/Emily_EggF, Characters/Emily_Fair, Characters/Emily_Jellies, Characters/Emily_Luau, Characters/Emily_Winter_IceF, Characters/Emily_Winter_WinterStar, Characters/Emily_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Emily/Emily_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Add_Emily_Beach_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Emily_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Emily/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false,
+				"BeachOutfitsEnabled": true
+			}
+		},
+		{
+			"LogName": "Add_Emily_SpiritsEve_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Emily_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Emily/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_Emily_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Emily",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.EmilySpring": {
+					"Id": "{{ModId}}.EmilySpring",
+					"Portrait": "Portraits/Emily_Spring",
+					"Sprite": "Characters/Emily_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.EmilySummer": {
+					"Id": "{{ModId}}.EmilySummer",
+					"Portrait": "Portraits/Emily_Summer",
+					"Sprite": "Characters/Emily_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.EmilyFall": {
+					"Id": "{{ModId}}.EmilyFall",
+					"Portrait": "Portraits/Emily_Fall",
+					"Sprite": "Characters/Emily_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.EmilyWinterIndoor": {
+					"Id": "{{ModId}}.EmilyWinterIndoor",
+					"Portrait": "Portraits/Emily_Winter_Indoor",
+					"Sprite": "Characters/Emily_Winter_Indoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",
+					"Precedence": -101
+				},
+				"{{ModId}}.EmilyWinterOutdoor": {
+					"Id": "{{ModId}}.EmilyWinterOutdoor",
+					"Portrait": "Portraits/Emily_Winter_Outdoor",
+					"Sprite": "Characters/Emily_Winter_Outdoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101
+				},
+				// Extra outfits
+				"{{ModId}}.EmilyAerobics": {
+					"Id": "{{ModId}}.EmilyAerobics",
+					"Portrait": "Portraits/Emily_Aerobics",
+					"Sprite": "Characters/Emily_Aerobics",
+					"Condition": "{{UseAerobicsOutfit}}",
+					"Precedence": -200
+				},
+				// Festival Outfits
+				"{{ModId}}.EmilyEggFest": {
+					"Id": "{{ModId}}.EmilyEggFest",
+					"Portrait": "Portraits/Emily_EggF",
+					"Sprite": "Characters/Emily_EggF",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.EmilyFlowerDance": {
+					"Id": "{{ModId}}.EmilyFlowerDance",
+					"Portrait": "Portraits/Emily_FlowerDance",
+					"Sprite": "Characters/Emily_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.EmilyLuau": {
+					"Id": "{{ModId}}.EmilyLuau",
+					"Portrait": "Portraits/Emily_Luau",
+					"Sprite": "Characters/Emily_Luau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.EmilyJellies": {
+					"Id": "{{ModId}}.EmilyJellies",
+					"Portrait": "Portraits/Emily_Jellies",
+					"Sprite": "Characters/Emily_Jellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.EmilyFair": {
+					"Id": "{{ModId}}.EmilyFair",
+					"Portrait": "Portraits/Emily_Fair",
+					"Sprite": "Characters/Emily_Fair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.EmilySpirit": {
+					"Id": "{{ModId}}.EmilySpirit",
+					"Portrait": "Portraits/Emily_SpiritsEve",
+					"Sprite": "Characters/Emily_SpiritsEve",
+					"Condition": "{{UseSpiritsEveOutfit}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.EmilyIceFestival": {
+					"Id": "{{ModId}}.EmilyIceFestival",
+					"Portrait": "Portraits/Emily_Winter_IceF",
+					"Sprite": "Characters/Emily_Winter_IceF",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.EmilyWinterStar": {
+					"Id": "{{ModId}}.EmilyWinterStar",
+					"Portrait": "Portraits/Emily_Winter_WinterStar",
+					"Sprite": "Characters/Emily_Winter_WinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				}
+			}
+		},
+		// CALENDAR
+		{
+			"LogName": "Edit_Emily_Calendar_Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Emily",
+			"FromFile": "assets/{{Target}}/Emily_{{CurrentSeasonAttire}}.png"
+		},
+		{
+			"LogName": "Add_Emily_Calendar_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Emily",
+			"FromFile": "assets/{{Target}}/Emily_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		}
+	]
+}

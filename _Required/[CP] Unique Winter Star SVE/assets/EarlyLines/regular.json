@@ -1,0 +1,49 @@
+{
+	"Changes":[
+		{
+			"LogName": "Susan - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Susan",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Susan.Gifting}}",
+			},
+			"When": {
+				"Susan": "normal",
+			},
+		},
+		{
+			"LogName": "Marlon - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarlonFay",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Marlon.Gifting}}",
+			},
+			"When": {
+				"Marlon": "normal",
+			},
+		},
+		{
+			"LogName": "Andy - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Andy",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Andy.Gifting}}",
+			},
+			"When": {
+				"Andy": "normal",
+			},
+		},
+		{
+			"LogName": "Andy - Winter Star, 8 Heart Variant",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Andy",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Andy.High.Gifting}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=5000003": "true",
+				"Andy": "normal",
+			},
+		},
+	],
+}

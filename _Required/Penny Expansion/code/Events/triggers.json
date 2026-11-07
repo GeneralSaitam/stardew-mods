@@ -1,0 +1,194 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_PennyMelonQuestTrigger": {
+                    "Id": "{{ModId}}_PennyMelonQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, PLAYER_HEARTS Current Penny 4, !PLAYER_HAS_MAIL Current {{ModId}}_PennyFreshMelonQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyFreshMelonQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennyArtifactQuestTrigger": {
+                    "Id": "{{ModId}}_PennyArtifactQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, PLAYER_HEARTS Current Penny 6, !PLAYER_HAS_MAIL Current {{ModId}}_PennyAncientArtifactQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyAncientArtifactQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennyWinterWarmthTrigger": {
+                    "Id": "{{ModId}}_PennyWinterWarmthTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Winter, PLAYER_HEARTS Current Penny 5, !PLAYER_HAS_MAIL Current {{ModId}}_PennyWinterWarmthQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyWinterWarmthQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennySpringSoupTrigger": {
+                    "Id": "{{ModId}}_PennySpringSoupTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Spring, YEAR 2, PLAYER_HEARTS Current Penny 4, !PLAYER_HAS_MAIL Current {{ModId}}_PennyColdSpringSoupQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyColdSpringSoupQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennyGeologyQuestTrigger": {
+                    "Id": "{{ModId}}_PennyGeologyQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, YEAR 2, PLAYER_HEARTS Current Penny 7, !PLAYER_HAS_MAIL Current {{ModId}}_PennyGeologyEmeraldQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyGeologyEmeraldQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennyPoppyQuestTrigger": {
+                    "Id": "{{ModId}}_PennyPoppyQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, YEAR 2, PLAYER_HEARTS Current Penny 7, !PLAYER_HAS_MAIL Current {{ModId}}_PennyPoppyFlowerQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyPoppyFlowerQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PamBatteryQuestTrigger": {
+                    "Id": "{{ModId}}_PamBatteryQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, PLAYER_HEARTS Current Pam 3, !PLAYER_HAS_MAIL Current {{ModId}}_PamBatteryPackQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PamBatteryPackQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PamYamQuestTrigger": {
+                    "Id": "{{ModId}}_PamYamQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Winter, PLAYER_HEARTS Current Pam 5, !PLAYER_HAS_MAIL Current {{ModId}}_PamGlazedYamQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PamGlazedYamQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PamSunflowerQuestTrigger": {
+                    "Id": "{{ModId}}_PamSunflowerQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, YEAR 2, PLAYER_HEARTS Current Pam 6, !PLAYER_HAS_MAIL Current {{ModId}}_PamCuteSunflowerQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PamCuteSunflowerQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennyAppleQuestTrigger": {
+                    "Id": "{{ModId}}_PennyAppleQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, PLAYER_HEARTS Current Penny 3, !PLAYER_HAS_MAIL Current {{ModId}}_PennyFreshAppleQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyFreshAppleQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennyTiredQuestTrigger": {
+                    "Id": "{{ModId}}_PennyTiredQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Spring, PLAYER_HEARTS Current Penny 5, !PLAYER_HAS_MAIL Current {{ModId}}_PennyTiredCoffeeQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyTiredCoffeeQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennyMarineQuestTrigger": {
+                    "Id": "{{ModId}}_PennyMarineQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, PLAYER_HEARTS Current Penny 6, !PLAYER_HAS_MAIL Current {{ModId}}_PennyMarineUrchinQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyMarineUrchinQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PamBeerQuestTrigger": {
+                    "Id": "{{ModId}}_PamBeerQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, PLAYER_HEARTS Current Pam 4, !PLAYER_HAS_MAIL Current {{ModId}}_PamColdPaleAleQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PamColdPaleAleQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PamSnackQuestTrigger": {
+                    "Id": "{{ModId}}_PamSnackQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Spring, PLAYER_HEARTS Current Pam 3, !PLAYER_HAS_MAIL Current {{ModId}}_PamHashbrownSnackQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PamHashbrownSnackQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PamPizzaQuestTrigger": {
+                    "Id": "{{ModId}}_PamPizzaQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Winter, PLAYER_HEARTS Current Pam 6, !PLAYER_HAS_MAIL Current {{ModId}}_PamGreasyPizzaQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PamGreasyPizzaQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennyGreenTeaQuestTrigger": {
+                    "Id": "{{ModId}}_PennyGreenTeaQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Spring, YEAR 2, PLAYER_HEARTS Current Penny 5, !PLAYER_HAS_MAIL Current {{ModId}}_PennyGreenTeaQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyGreenTeaQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PamRoastedHazelnutQuestTrigger": {
+                    "Id": "{{ModId}}_PamRoastedHazelnutQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, PLAYER_HEARTS Current Pam 4, !PLAYER_HAS_MAIL Current {{ModId}}_PamRoastedHazelnutQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PamRoastedHazelnutQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennyPicnicQuestTrigger": {
+                    "Id": "{{ModId}}_PennyPicnicQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Spring, YEAR 2, PLAYER_HEARTS Current Penny 5, PLAYER_HEARTS Current Jas 2, PLAYER_HEARTS Current Vincent 2, !PLAYER_HAS_MAIL Current {{ModId}}_PennyPicnicQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyPicnicQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PamSurpriseCakeQuestTrigger": {
+                    "Id": "{{ModId}}_PamSurpriseCakeQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Summer, YEAR 2, PLAYER_HEARTS Current Pam 5, PLAYER_HEARTS Current Penny 4, !PLAYER_HAS_MAIL Current {{ModId}}_PamSurpriseCakeQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PamSurpriseCakeQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennyFlowerCrownQuestTrigger": {
+                    "Id": "{{ModId}}_PennyFlowerCrownQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, YEAR 2, PLAYER_HEARTS Current Penny 6, PLAYER_HEARTS Current Jas 4, !PLAYER_HAS_MAIL Current {{ModId}}_PennyFlowerCrownQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyFlowerCrownQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennyPumpkinQuestTrigger": {
+                    "Id": "{{ModId}}_PennyPumpkinQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Fall, YEAR 2, DAY_OF_WEEK Tuesday Wednesday Thursday, RANDOM 0.15, PLAYER_HEARTS Current Penny 6, !PLAYER_HAS_MAIL Current {{ModId}}_PennyPumpkinQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennyPumpkinQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PamCheeseQuestTrigger": {
+                    "Id": "{{ModId}}_PamCheeseQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Winter, YEAR 2, DAY_OF_WEEK Friday Saturday Sunday, RANDOM 0.20, PLAYER_HEARTS Current Pam 5, !PLAYER_HAS_MAIL Current {{ModId}}_PamCheeseQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PamCheeseQuestLetter now"
+                    ]
+                },
+                "{{ModId}}_PennySnowYamQuestTrigger": {
+                    "Id": "{{ModId}}_PennySnowYamQuestTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "SEASON Winter, YEAR 2, DAY_OF_WEEK Monday Wednesday Friday, RANDOM 0.15, PLAYER_HEARTS Current Penny 4, !PLAYER_HAS_MAIL Current {{ModId}}_PennySnowYamQuestLetter",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_PennySnowYamQuestLetter now"
+                    ]
+                }
+            }
+        }
+    ]
+}

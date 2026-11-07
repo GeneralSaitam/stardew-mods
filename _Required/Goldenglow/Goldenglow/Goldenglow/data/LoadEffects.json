@@ -1,0 +1,275 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "Goldenglow_BeaconFade": {
+                    "ID": "Goldenglow_BeaconFade",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/ogg/Fade.ogg}}" ],
+                    "StreamedVorbis": false,
+                    "Looped": false
+                },
+                "Goldenglow_NormalAttack": {
+                    "ID": "Goldenglow_NormalAttack",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/ogg/NormalAttack.ogg}}" ],
+                    "StreamedVorbis": false,
+                    "Looped": false
+                },
+                "Goldenglow_Boom": {
+                  "ID": "Goldenglow_Boom",
+                  "Category": "Sound",
+                  "FilePaths": [ "{{AbsoluteFilePath: assets/ogg/Boom.ogg}}" ],
+                  "StreamedVorbis": false,
+                  "Looped": false
+              },
+            }
+        },
+        {
+          "Action": "EditImage",
+          "Target": "TileSheets/Projectiles",
+          "FromFile": "assets/effects/Current.png",
+          "ToArea": { "X": 112, "Y": 80, "Width": 16, "Height": 16 }
+       },
+      {
+        "LogName": "圆环光",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_AnnularLight",
+        "FromFile": "assets/effects/AnnularLight.png"
+      },
+      /*{
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_",
+        "FromFile": "assets/effects/AnnularLight.png"
+      },
+      */
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Beacon",
+        "FromFile": "assets/effects/Beacon.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_BlueLightBall",
+        "FromFile": "assets/effects/BlueLightBall.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_BlueTriangle",
+        "FromFile": "assets/effects/BlueTriangle.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_CrossLight",
+        "FromFile": "assets/effects/CrossLight.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_PinkCrossLight",
+        "FromFile": "assets/effects/PinkCrossLight.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Current",
+        "FromFile": "assets/effects/Current.png"
+      },
+      {
+      "LogName": "参考",
+      "Action": "Load",
+      "Target": "Mods/Goldenglow_PinkLightBall",
+      "FromFile": "assets/effects/PinkLightBall.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_PinkTriangle",
+        "FromFile": "assets/effects/PinkTriangle.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_BeaconGroup",
+        "FromFile": "assets/effects/BeaconGroup.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_BeaconGroupCurrent",
+        "FromFile": "assets/effects/BeaconGroupCurrent.png"
+      },
+
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_BlueShine",
+        "FromFile": "assets/effects/BlueShine.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Shine",
+        "FromFile": "assets/effects/Shine.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_PinkStar",
+        "FromFile": "assets/effects/PinkStar.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_WhiteStar",
+        "FromFile": "assets/effects/WhiteStar.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_LineLight",
+        "FromFile": "assets/effects/LineLight.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc1",
+        "FromFile": "assets/effects/Arc1.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc2",
+        "FromFile": "assets/effects/Arc2.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc3",
+        "FromFile": "assets/effects/Arc3.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc4",
+        "FromFile": "assets/effects/Arc4.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc5",
+        "FromFile": "assets/effects/Arc5.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc6",
+        "FromFile": "assets/effects/Arc6.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc7",
+        "FromFile": "assets/effects/Arc7.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc8",
+        "FromFile": "assets/effects/Arc8.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc9",
+        "FromFile": "assets/effects/Arc9.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc10",
+        "FromFile": "assets/effects/Arc10.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc11",
+        "FromFile": "assets/effects/Arc11.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc12",
+        "FromFile": "assets/effects/Arc12.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc13",
+        "FromFile": "assets/effects/Arc13.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_Arc14",
+        "FromFile": "assets/effects/Arc14.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_ShineGroup",
+        "FromFile": "assets/effects/ShineGroup.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_PinkAnnularLightGroup1",
+        "FromFile": "assets/effects/PinkAnnularLightGroup1.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_PinkAnnularLightGroup2",
+        "FromFile": "assets/effects/PinkAnnularLightGroup2.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_WhiteAnnularLightGroup2",
+        "FromFile": "assets/effects/WhiteAnnularLightGroup2.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_WhiteAnnularLightGroup1",
+        "FromFile": "assets/effects/WhiteAnnularLightGroup1.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_PinkCurrentBeaconGroup",
+        "FromFile": "assets/effects/PinkCurrentBeaconGroup.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_SmallGreenShine",
+        "FromFile": "assets/effects/SmallGreenShine.png"
+      },
+      {
+        "LogName": "参考",
+        "Action": "Load",
+        "Target": "Mods/Goldenglow_OtherBeaconGroupCurrent",
+        "FromFile": "assets/effects/OtherBeaconGroupCurrent.png"
+      },
+      
+    ]
+  }

@@ -1,0 +1,110 @@
+{
+    "Format": "2.5.0",
+    "ConfigSchema": {
+        "FemaleWizard": {
+            "AllowValues": "true, false",
+            "Default": false,
+            "Section": "Wizard's Gender"
+        },
+        "RivalHearts": {
+            "AllowValues": "FleurineElliott, FleurineHaley, FleurineShane",
+            "AllowMultiple": false,
+            "AllowBlank": true,
+            "Section": "Rival Hearts"
+        },
+        "NyapuPortraits":
+        {
+            "AllowValues": "true, false",
+            "Default": false,
+            "Section": "Portrait Style"
+        }
+    },
+    "DynamicTokens": [
+        {
+            "Name": "Blank",
+            "Value": "Data/blank.json"
+        },
+        {
+            "Name": "wizardgender",
+            "Value": "wizard",
+            "When": {
+                "FemaleWizard": false
+            }
+        },
+        {
+            "Name": "wizardgender",
+            "Value": "witch",
+            "When": {
+                "FemaleWizard": true
+            }
+        },
+        {
+            "Name": "DialogueYear",
+            "Value": "",
+            "When": {
+                "Year": "1"
+            }
+        },
+        {
+            "Name": "DialogueYear",
+            "Value": "_2",
+            "When": {
+                "Year |contains=1": false
+            }
+        }
+    ],
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/totsFleurine, Characters/schedules/totsFleurine, Data/Events/totsFleurineInterior, Characters/Dialogue/MarriageDialoguetotsFleurine, Strings/schedules/totsFleurine",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Tottles' Fleurine Data",
+            "Action": "Include",
+            "FromFile": "Data/FleurineData/ArtData.json, Data/FleurineData/FleurineData.json, Data/Dialogue/Dialogue.json, Data/FleurineData/GiftTasteData.json, Data/FleurineData/ScheduleData.json, Data/Events/FleurineEvents.json, Data/MapData/LoadData.json, Data/MiscData/FestivalData.json, Data/Dialogue/FestivalDialogue.json, Data/MapData/MapStrings.json, Data/MiscData/MailData.json, Data/MiscData/MovieData.json, Data/Dialogue/TownieDialogue.json, Data/MiscData/QuestData.json, Data/Dialogue/MarriageDialogue.json, Data/MiscData/MiscData.json, Data/Dialogue/ScheduleStrings.json, Data/MapData/MapWarps.json, Data/Events/FleuRasEvents.json, Data/Events/FleurineMarriage.json"
+        },
+        {
+            "LogName": "Fleurine's Compat Data",
+            "Action": "Include",
+            "FromFile": "Data/Dialogue/CompatDialogue.json, Data/MiscData/CJBWarps.json"
+        },
+        {
+            "LogName": "Fleurine's Casper Data",
+            "Action": "Include",
+            "FromFile": "Data/Events/CasperEvents.json",
+            "When": {
+                "HasMod |contains=sapphicsaph_casper": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/RivalHearts/FleurineElliott.json, Data/Dialogue/RivalHeartsDialogue.json",
+            "When": {
+                "RivalHearts |contains=FleurineElliott": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/RivalHearts/FleurineHaley.json, Data/Dialogue/RivalHeartsDialogue.json",
+            "When": {
+                "RivalHearts |contains=FleurineHaley": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/RivalHearts/FleurineShane.json, Data/Dialogue/RivalHeartsDialogue.json",
+            "When": {
+                "RivalHearts |contains=FleurineShane": true
+            }
+        },
+        {
+            "LogName": "Nyapu Data",
+            "Action": "Include",
+            "FromFile": "Data/MiscData/PortraitsNyapu.json",
+            "When": {
+                "NyapuPortraits": true
+            }
+        }
+    ]
+}

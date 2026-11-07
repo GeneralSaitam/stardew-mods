@@ -1,0 +1,44 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Strings/schedules/{{Russell}}",
+      "Entries": {
+        "DesertFestival001": "{{i18n: Russell_DesertFestival001}}",
+        "DesertFestival002": "{{i18n: Russell_DesertFestival002}}",
+        "snooze": "{{i18n: Russell_snooze}}",
+        "pushups": "{{i18n: Russell_pushups}}",
+        "pushups_married": "{{i18n: Russell_pushups_married}}",
+        "lake_married": "{{i18n: Russell_lake_married}}",
+        "sit_inside_married": "{{i18n: Russell_sit_inside_married}}",
+        "shower": "{{i18n: Russell_shower}}",
+        "visiting_hours": "{{i18n: Russell_visiting_hours}}",
+        "nightmarket_prekent": "{{i18n: Russell_nightmarket_prekent}}",
+        "nightmarket": "{{i18n: Russell_nightmarket}}",
+        "troutderby": "{{i18n: Russell_troutderby}}",
+        "jojaday": "{{i18n: Russell_jojaday}}",
+        "communitydayfish": "{{i18n: Russell_communitydayfish}}",
+        "communitydaykitchen": "{{i18n: Russell_communitydaykitchen}}",
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Strings/schedules/{{Russell}}",
+      "Entries": {
+        "shower": "{{i18n: Russell_shower_rel}}",
+      },
+      "When": {
+        "Relationship:{{Russell}}": "Dating, Engaged, Married"
+      },
+    },
+
+    //sneak in an entry for pierre
+    {
+      "Action": "EditData",
+      "Target": "Strings/schedules/Pierre",
+      "Entries": {
+        "sdvlao_snooze": "{{i18n: Pierre_snooze}}",
+      }
+    },
+  ]
+}

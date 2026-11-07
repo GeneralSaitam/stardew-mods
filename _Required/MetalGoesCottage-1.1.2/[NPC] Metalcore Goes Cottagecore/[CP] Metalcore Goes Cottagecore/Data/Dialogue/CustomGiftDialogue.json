@@ -1,0 +1,122 @@
+{
+	"Changes": [
+		{
+			"LogName": "Cambria Gift Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Otter.Cambria",
+			"Entries": {
+				//Romance Items
+				"RejectItem_(O)458": "{{i18n:gifts.Cambria.dislike}}",
+				"RejectItem_(O)460": "{{i18n:gifts.Cambria.dislike}}",
+				"AcceptGift_(O)Squeaks.MGC.CP_HeirloomBouquet": "{{i18n:gifts.Cambria.HeirloomBouquet}}",
+				//One day Ancient Crops will return to me sobs
+				//Winter Star
+				"WinterStar_ReceiveGift_(O)268": "{{i18n:gifts.Cambria.WinterStar.Starfruit}}",
+				"WinterStar_ReceiveGift_(O)226": "{{i18n:gifts.Cambria.WinterStar.SpicyEel}}",
+				"WinterStar_ReceiveGift_(O)921": "{{i18n:gifts.Cambria.WinterStar.SquidInkRavioli}}",
+				//Birthday
+				"AcceptBirthdayGift_Loved": "{{i18n:gifts.Cambria.GiftReaction.Loved.Birthday}}",
+				"AcceptBirthdayGift_Liked": "{{i18n:gifts.Cambria.GiftReaction.Liked.Birthday}}",
+				"AcceptBirthdayGift_Disliked": "{{i18n:gifts.Cambria.GiftReaction.Disliked.Birthday}}",
+				"AcceptBirthdayGift_Hated": "{{i18n:gifts.Cambria.GiftReaction.Hated.Birthday}}",
+				"AcceptBirthdayGift_Neutral": "{{i18n:gifts.Cambria.GiftReaction.Neutral.Birthday}}",
+				//Loved
+				"AcceptGift_(O)253": "{{i18n:gifts.Cambria.GiftReaction.TripleEspresso}}",
+				"AcceptGift_(O)268": "{{i18n:gifts.Cambria.GiftReaction.Starfruit}}",
+				"AcceptGift_(O)226": "{{i18n:gifts.Cambria.GiftReaction.SpicyEel}}",
+				"AcceptGift_(O)921": "{{i18n:gifts.Cambria.GiftReaction.SquidInkRavioli}}",
+				"AcceptGift_(O)578": "{{i18n:gifts.Cambria.GiftReaction.StarShards}}",
+				"AcceptGift_(O)795": "{{i18n:gifts.Cambria.GiftReaction.VoidSalmon}}",
+				"AcceptGift_(O)807": "{{i18n:gifts.Cambria.GiftReaction.DinoMayo}}",
+				"AcceptGift_(O)MysticSyrup": "{{i18n:gifts.Cambria.GiftReaction.MysticSyrup}}",
+				"AcceptGift_(O)MysticTreeSeed": "{{i18n:gifts.Cambria.GiftReaction.MysticTreeSeed}}",
+				"AcceptGift_(O)CaveJelly": "{{i18n:gifts.Cambria.GiftReaction.CaveJelly}}",
+				"AcceptGift_(O)Book_Void": "{{i18n:gifts.Cambria.GiftReaction.Book_Void}}",
+				
+				"AcceptGift_(O)TenebrousNova.EnD.DragonEye": "{{i18n:gifts.Cambria.GiftReaction.EnD.DragonEye}}",
+				"AcceptGift_(O)HXW.Mixology_whiskey": "{{i18n:gifts.Cambria.GiftReaction.HxW.Whiskey}}",
+				"AcceptGift_(O)Cornucopia_Durian": "{{i18n:gifts.Cambria.GiftReaction.Cornucopia.Durian}}",
+				"AcceptGift_(O)Rafseazz.RSVCP_Lava_Lily": "{{i18n:gifts.Cambria.GiftReaction.RSV.LavaLily}}",
+				"AcceptGift_(O)Rafseazz.RSVCP_Mistbloom_Syrup": "{{i18n:gifts.Cambria.GiftReaction.RSV.MistbloomSyrup}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Aegis_Elixir": "{{i18n:gifts.Cambria.GiftReaction.SVE.Elixir}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Armor_Elixir": "{{i18n:gifts.Cambria.GiftReaction.SVE.Elixir}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Green_Mushroom": "{{i18n:gifts.Cambria.GiftReaction.SVE.GreenMushroom}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Monster_Fruit": "{{i18n:gifts.Cambria.GiftReaction.SVE.MonsterFruit.{{Random:{{Range: 1, 5}}}}}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Poison_Mushroom": "{{i18n:gifts.Cambria.GiftReaction.SVE.PoisonMushroom}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Delight": "{{i18n:gifts.Cambria.GiftReaction.SVE.VoidDelight}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Eel": "{{i18n:gifts.Cambria.GiftReaction.SVE.VoidEel}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi": "{{i18n:gifts.Cambria.GiftReaction.SVE.VoidSalmonSushi}}",
+				"AcceptGift_(O)EastScarp_Void_CheeseCake": "{{i18n:gifts.Cambria.GiftReaction.EastScarp.VoidCheeseCake}}",
+				"AcceptGift_(O)EastScarp_Void_SalmonCake": "{{i18n:gifts.Cambria.GiftReaction.EastScarp.VoidSalmonCake}}",
+				//Blanket response to peppers and other spices
+				"AcceptGift_(O)Cornucopia_Habanero": "{{i18n:gifts.Cambria.GiftReaction.Spice}}",
+				"AcceptGift_(O)Cornucopia_Jalapeno": "{{i18n:gifts.Cambria.GiftReaction.Spice}}",
+				"AcceptGift_(O)Cornucopia_WasabiRoot": "{{i18n:gifts.Cambria.GiftReaction.Spice}}",
+				//Blanket response to loved flowers
+				"AcceptGift_(O)Cornucopia_Lily": "{{i18n:gifts.Cambria.GiftReaction.LovedFlowers}}",
+				"AcceptGift_(O)Cornucopia_BeeBalm": "{{i18n:gifts.Cambria.GiftReaction.LovedFlowers}}",
+				"AcceptGift_(O)Cornucopia_Wolfsbane": "{{i18n:gifts.Cambria.GiftReaction.LovedFlowers}}",
+				"AcceptGift_(O)Rafseazz.RSVCP_Forest_Amancay": "{{i18n:gifts.Cambria.GiftReaction.LovedFlowers}}",
+				"AcceptGift_(O)Rafseazz.RSVCP_Violet_Devil_s_Claw": "{{i18n:gifts.Cambria.GiftReaction.LovedFlowers}}",
+				//Likes
+				"AcceptGift_(O)203": "{{i18n:gifts.Cambria.GiftReaction.StrangeBun}}",
+				"AcceptGift_(O)305": "{{i18n:gifts.Cambria.GiftReaction.VoidEgg}}",
+				"AcceptGift_(O)395": "{{i18n:gifts.Cambria.GiftReaction.Coffee}}",
+				"AcceptGift_(O)459": "{{i18n:gifts.Cambria.GiftReaction.Mead}}",
+				"AcceptGift_(O)Book_Bombs": "{{i18n:gifts.Cambria.GiftReaction.Book_Bombs}}",
+				"AcceptGift_(O)Book_Marlon": "{{i18n:gifts.Cambria.GiftReaction.Book_Marlon}}",
+				"AcceptGift_(O)GoldenAnimalCracker": "{{i18n:gifts.Cambria.GiftReaction.GoldenAnimalCracker}}",
+				"AcceptGift_(O)WWWA.GenuineAutograph": "{{i18n:gifts.Cambria.GiftReaction.WWWA.GenuineAutograph}}",
+				"AcceptGift_(O)TenebrousNova.EnD.SanguineHeart": "{{i18n:gifts.Cambria.GiftReaction.EnD.SanguineHeart}}",
+				"AcceptGift_(O)TenebrousNova.EnD.Bluffshroom": "{{i18n:gifts.Cambria.GiftReaction.EnD.Bluffshroom}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Red_Baneberry": "{{i18n:gifts.Cambria.GiftReaction.SVE.RedBaneberry}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Shard": "{{i18n:gifts.Cambria.GiftReaction.SVE.Void}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Void_Soul": "{{i18n:gifts.Cambria.GiftReaction.SVE.Void}}",
+				"AcceptGift_(O)EastScarp_Void_Goat_Milk": "{{i18n:gifts.Cambria.GiftReaction.EastScarp.VoidGoat}}",
+				"AcceptGift_(O)EastScarp_L_Void_Goat_Milk": "{{i18n:gifts.Cambria.GiftReaction.EastScarp.VoidGoat}}",
+				"AcceptGift_(O)EastScarp_Void_Goat_Cheese": "{{i18n:gifts.Cambria.GiftReaction.EastScarp.VoidGoat}}",
+				"AcceptGift_(O)EastScarp_Void_Goat_Cheese_Aged": "{{i18n:gifts.Cambria.GiftReaction.EastScarp.VoidGoat}}",
+				//Blanket response to liked flowers
+				"AcceptGift_(O)Cornucopia_Lotus": "{{i18n:gifts.Cambria.GiftReaction.LikedFlowers}}",
+				"AcceptGift_(O)Cornucopia_Orchid": "{{i18n:gifts.Cambria.GiftReaction.LikedFlowers}}",
+				"AcceptGift_(O)Cornucopia_Wisteria": "{{i18n:gifts.Cambria.GiftReaction.LikedFlowers}}",
+				"AcceptGift_(O)Rafseazz.RSVCP_Mountain_Hokkaido": "{{i18n:gifts.Cambria.GiftReaction.LikedFlowers}}",
+				"AcceptGift_(O)Rafseazz.RSVCP_Mountain_Mistbloom": "{{i18n:gifts.Cambria.GiftReaction.LikedFlowers}}",
+				//Blanket response to straight liquor
+				"AcceptGift_(O)HXW.Mixology_brandy": "{{i18n:gifts.Cambria.GiftReaction.Alcohol}}",
+				"AcceptGift_(O)HXW.Mixology_gin": "{{i18n:gifts.Cambria.GiftReaction.Alcohol}}",
+				"AcceptGift_(O)HXW.Mixology_rum": "{{i18n:gifts.Cambria.GiftReaction.Alcohol}}",
+				"AcceptGift_(O)HXW.Mixology_tequila": "{{i18n:gifts.Cambria.GiftReaction.Alcohol}}",
+				"AcceptGift_(O)HXW.Mixology_vodka": "{{i18n:gifts.Cambria.GiftReaction.Alcohol}}",
+				"AcceptGift_(O)DN.SnS_salishbourbon": "{{i18n:gifts.Cambria.GiftReaction.Alcohol}}",
+				//Neutral
+				"AcceptGift_(O)WWWA.AutographedPhoto": "{{i18n:gifts.Cambria.GiftReaction.WWWA.Autograph}}",
+				//Dislikes
+				"AcceptGift_(O)446": "{{i18n:gifts.Cambria.GiftReaction.Rabbit'sFoot}}",
+				"RejectItem_(O)727": "{{i18n:gifts.Cambria.GiftReaction.Chowder}}",
+				"RejectItem_(O)730": "{{i18n:gifts.Cambria.GiftReaction.LobsterBisque}}",
+				"AcceptGift_(O)733": "{{i18n:gifts.Cambria.GiftReaction.ShrimpCocktail}}",
+				"AcceptGift_(O)808": "{{i18n:gifts.Cambria.GiftReaction.VoidGhostPendant}}",
+				"RejectItem_(O)905": "{{i18n:gifts.Cambria.GiftReaction.MangoStickyRice}}",
+				"AcceptGift_category_egg": "{{i18n:gifts.Cambria.GiftReaction.Eggs}}",
+				"AcceptGift_(O)Book_Frienship": "{{i18n:gifts.Cambria.GiftReaction.Book_Friendship}}",
+				"RejectItem_(O)StardropTea": "{{i18n:gifts.Cambria.GiftReaction.StardropTea}}",
+				"AcceptGift_(O)Raisins": "{{i18n:gifts.Cambria.GiftReaction.Raisins}}",
+				"AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Sports_Drink": "{{i18n:gifts.Cambria.GiftReaction.SVE.SportsDrink}}",
+				//Hates
+				"RejectItem_category_milk": "{{i18n:gifts.Cambria.GiftReaction.Milk}}",
+				"RejectItem_allergen_dairy": "{{i18n:gifts.Cambria.GiftReaction.Dairy}}", //for mods
+				"RejectItem_(O)834": "{{i18n:gifts.Cambria.GiftReaction.Mango}}",
+				"RejectItem_(O)FlashShifter.StardewValleyExpandedCP_Joja_Berry": "{{i18n:gifts.Cambria.GiftReaction.Joja}}",
+				"RejectItem_(O)FlashShifter.StardewValleyExpandedCP_Joja_Veggie": "{{i18n:gifts.Cambria.GiftReaction.Joja}}",
+				"RejectItem_(O)FlashShifter.StardewValleyExpandedCP_Super_Joja_Cola": "{{i18n:gifts.Cambria.GiftReaction.Joja}}",
+				//Blanket response to medicine
+				"RejectItem_(O)349": "{{i18n:gifts.Cambria.GiftReaction.Medicine}}",
+				"RejectItem_(O)351": "{{i18n:gifts.Cambria.GiftReaction.Medicine}}",
+				"RejectItem_(O)FlashShifter.StardewValleyExpandedCP_Stamina_Capsule": "{{i18n:gifts.Cambria.GiftReaction.Medicine}}",
+				//Universal Hates
+				"RejectItem_(O)ButterflyPowder": "{{i18n:gifts.Cambria.GiftReaction.ButterflyPowder}}"
+			}
+		}
+	]
+}

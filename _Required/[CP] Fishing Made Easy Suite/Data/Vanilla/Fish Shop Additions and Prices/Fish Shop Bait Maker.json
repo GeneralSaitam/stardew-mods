@@ -1,0 +1,33 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fish Shop Bait Maker",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "FishShop",
+        "Items"
+      ],
+      "Entries": {
+        "(BC)BaitMaker": {
+          "TradeItemAmount": 1,
+          "Price": "{{Fish Shop Bait Maker Price}}",
+          "AvailableStockLimit": "Global",
+          "Condition": null,
+          "Id": "(BC)BaitMaker",
+          "ItemId": "(BC)BaitMaker"
+        }
+      },
+      "When": {
+        "Fish Shop Bait Maker": true,
+		"Fish Shop Bait Maker Price": "10000, 7500, 5000, 4000, 3000, 2000, 1000, 750, 500, 250, 1"
+      },
+      "MoveEntries": [
+        {
+          "Id": "(BC)BaitMaker",
+          "BeforeId": "(O)686"
+        }
+      ]
+    }
+  ]
+}

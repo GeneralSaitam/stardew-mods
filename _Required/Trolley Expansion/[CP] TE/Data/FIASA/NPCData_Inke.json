@@ -1,0 +1,152 @@
+{
+  "Changes": [
+	{
+      "Action": "Load",
+      "Target": "Characters/CC_Inke",
+      "FromFile": "assets/FIASA/Inke.png"
+    },
+
+   {
+            "LogName": "Portrait Load",
+            "Action": "Load",
+            "Target": "Portraits/CC_Inke",
+             "FromFile": "assets/FIASA/Inke_{{Portraits}}.png",
+       },
+	       
+
+  {
+    "LogName": "NPC Dispositions",
+    "Action": "EditData",
+    "Target": "Data/Characters",
+    "Entries": {
+      "CC_Inke": {
+"DisplayName": "{{i18n:Inke.DisplayName}}",
+
+        "BirthSeason": "winter",
+        "BirthDay": 20,
+        "HomeRegion": "Other",
+        "Gender": "Male",
+        "Age": "Adult",
+        "Manner": "Polite",
+        "SocialAnxiety": "Outgoing",
+        "Optimism": "Neutral",
+        "CanBeRomanced": false,
+  
+        "CanReceiveGifts": true,
+		"CanVisitIsland": false,
+        "Calendar": "HiddenUntilMet",
+        "SocialTab": "HiddenUntilMet",
+		"CanSocialize": true,
+			   "UnlockConditions": null,
+          "SpawnIfMissing": true,
+        "ExcludeFromIntroductionsQuest": true,
+        "ItemDeliveryQuests": false,
+        "ExcludeFromPerfectionScore": true,
+        "EndSlideShow": "MainGroup",
+ "Home": [
+            {
+              "Id": "Default",
+              "Location": "Koda_Sub",
+              "Tile": {
+                "X": 38,
+                "Y": 13
+              },
+              "Direction": "down"
+            }
+          ],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          
+        "Breather": true,
+		 "TextureName": null,
+          "Appearance": [
+            {
+              "Id": "Inke",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_Inke",
+              "Sprite": "Characters/CC_Inke",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            }
+			    
+
+          ]
+                }
+            }
+        },
+		
+		{
+      "LogName": "Animation Data",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+		  
+	  "inke_sleep": "16/16/16",
+		"inke_bob": "16/17 17 17 17 17 16 16 16 16 16/16",
+		"inke_wake": "16/17 17 17 17 17 16 16 16 16 17 17 17 17 17 16 16 16 17 17 17 17 18 18 18 18 18 18 18 18 18 17 17 17 17 18 18 18 18 17 17 17 18 18 18 18 17 17 17 17 18 18 18 18 18 19 19 19 19 19 19 19 19 19 18 18 18 19 19 19 19 18 18 18 18 19 19 19 19 19 20 20 20 20 20 20 20 20 20 19 19 19 19 20 20 20 20 20 20 19 19 19 19 20 20 20 20 20 20 20 21 21 21 21 21 21 21 21 21 21 21 20 20 20 20 20 20 21 21 21 21 21 21 21 22 22 22 22 22 22 22 22 22 22 22 22 22 23 23 23 23 23 23 23/0",
+		"inke_bed": "0/0 23 23 22 22 21 21 20 20 19 19 18 18 17 17 16/16",
+		"inke_work": "8/24 24 25 25 26 26 27 27 26 26 25 25 24 24 25 25 26 26 27 27 26 26 25 25 24 24/8",
+		"inke_stand": "0/23 23 23 23 22 22 23 23 23 23 22 22 23 23 23 23 23 22 23 23 23 23 23 22 22 23 23 23 23 22 22 23 23 23 22 22 23 23 23 23 23 22 22 23 23 23/0",
+		}
+		},
+		
+
+
+	{
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "CC_Inke": "Yum!$1/721 733 CC_Tortoiseshell 797 445 265/I know this guy!$1#$b#What a jokester.$1/269 798 799 151/This is makin' me sad.$2/800 SmokedFish/That ain't appropriate @./167 814 921/For me?//"
+      }
+    },
+
+
+ { 
+            "LogName": "BlankLoads",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Dialogue/CC_Inke",
+            "FromFile": "Data/FIASA/Blank.json"
+        },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/FIASA/Dialogue_Inke.json"
+    },
+		{
+      "LogName": "Rainy Day Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+"CC_Inke": "{{i18n:Inke.CC_Inke}}",
+
+      }
+    },
+  {
+      "LogName": "Load Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/CC_Inke",
+      "FromFile": "Data/FIASA/Blank.json"
+    },
+    {
+      "LogName": "Schedule includes",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/Schedule_Inke.json"
+    },
+    {
+      "LogName": "Event includes",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/InkeEvents.json"
+    },
+	
+
+    
+
+	]
+}

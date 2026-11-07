@@ -1,0 +1,476 @@
+{
+  "Changes": [
+    //FALL SUNDAYS AND MARRIAGE FRIDAYS WITH ABIGAIL
+    
+    {
+      "LogName": "Juna Fall Sunday Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "Sun": "610 elhrvy.NPCJuna_JunaCave 7 5 1/1000 Forest 3 34 2 juna_scheming/a1600 Forest 14 42 0 \"Strings\\schedules\\Juna:fall_Sun.000\"/a2010 WizardHouse 8 17 1/2300 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "Relationship:Abigail |contains=Married": "false",
+        "Season": "Fall"
+      }
+    },
+
+    {
+      "LogName": "Abigail String Dialogue Edits",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Abigail",
+      "Entries": {
+        "Sun.001": "{{i18n: abigail.string.sunday_001}}"
+      }
+    },
+
+    {
+      "LogName": "Abigail Fall Sunday Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Abigail",
+      "Entries": {
+        "Sun": "900 SeedShop 4 5 0/1030 SeedShop 20 5 1 \"Strings\\schedules\\Abigail:Sun.000\"/a1600 Forest 14 40 2 \"Strings\\schedules\\Abigail:Sun.001\"/2000 SeedShop 1 9 3 abigail_sleep"
+      },
+      "When": {
+        "Season": "Fall",
+        "Day |contains=21": "false",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Fall Friday Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "Fri": "610 elhrvy.NPCJuna_JunaCave 7 5 1/1000 Forest 3 34 2 juna_scheming/1200 Forest 51 32 3 \"Strings\\schedules\\Juna:fall_Fri.000\"/1500 Forest 33 98 2 juna_bballet/2200 elhrvy.NPCJuna_JunaCave 3 5 0/2400 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "Relationship:Abigail |contains=Married": "true",
+        "Season": "Fall"
+      }
+    },
+
+    //SPRING MONDAYS WITH EMILY
+
+    {
+      "LogName": "Juna Spring Monday Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "Mon": "610 elhrvy.NPCJuna_JunaCave 7 5 1/a1200 Town 82 14 2 juna_wballet \"Strings\\schedules\\Juna:spring_Mon.000\"/1430 Town 49 23 0/a1710 ScienceHouse 4 19 1/1930 Forest 17 36 1 juna_recharge/2400 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "Relationship:Emily |contains=Married": "false",
+        "Season": "Spring"
+      }
+    },
+
+    {
+      "LogName": "Juna Spring Monday Schedule EMarried",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "Mon": "610 elhrvy.NPCJuna_JunaCave 7 5 1/a1200 Town 82 14 2 juna_wballet \"Strings\\schedules\\Juna:spring_Mon.001\"/1430 Town 49 23 0/a1710 ScienceHouse 4 19 1/1930 Forest 17 36 1 juna_recharge/2400 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "Relationship:Emily |contains=Married": "true",
+        "Season": "Spring"
+      }
+    },
+
+    {
+      "LogName": "Emily String Dialogue Edits",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Emily",
+      "Entries": {
+        "spring_Mon.000": "{{i18n: emily.string.mon_000}}",
+        "marriage_Mon.003": "{{i18n: emily.string.marriage_003}}"
+      }
+    },
+
+    {
+      "LogName": "Emily Spring Monday Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Emily",
+      "Entries": {
+        "spring_Mon": "900 HaleyHouse 16 5 2/a1200 Town 82 16 0 \"Strings\\schedules\\Emily:spring_Mon.000\"/1430 Saloon 15 17 0 square_5_1_0/2430 HaleyHouse 21 4 1 emily_sleep",
+        "marriage_Mon": "830 HaleyHouse 12 17 1 \"Strings\\schedules\\Emily:marriage_Mon.000\"/a1200 Town 82 16 0 \"Strings\\schedules\\Emily:marriage_Mon.003\"/1430 Saloon 15 17 0 \"Strings\\schedules\\Emily:marriage_Mon.002\"/2200 BusStop -1 23 3"
+      },
+      "When": {
+        "Season": "Spring",
+        "HasConversationTopic |contains=JunaGone, JunaWizard": "false",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    //BFF ROBIN
+
+    {
+      "LogName": "Robin Schedule Edits",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Robin",
+      "Entries": {
+        "Mon": "800 ScienceHouse 8 18 2/a1710 ScienceHouse 5 18 2/1930 ScienceHouse 16 5 0/2200 ScienceHouse 21 4 1 robin_sleep",
+        "Tue": "930 SeedShop 27 18 0/1300 SeedShop 27 22 2 robin_exercise/1600 SeedShop 22 22 3 \"Strings\\schedules\\Robin:Tue.000\"/1800 ScienceHouse 16 5 0/2100 ScienceHouse 21 4 1 robin_sleep",
+        "Sat": "800 ScienceHouse 8 18 2/a1720 ScienceHouse 29 9 2/2040 ScienceHouse 16 5 0/2130 ScienceHouse 21 4 1 robin_sleep",
+        "summer_5": "800 ScienceHouse 8 18 2/a1700 Saloon 22 22 1 \"Strings\\schedules\\Robin:summer_5.000\"/2100 ScienceHouse 21 4 1 robin_sleep"
+      },
+      "When": {
+        "HasConversationTopic |contains=JunaGone, JunaWizard": "false",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Robin String Edits",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Robin",
+      "Entries": {
+        "Tue.000": "{{i18n: robin.string.tuesday_000}}",
+        "summer_5.000": "{{i18n: robin.string.summer_5}}",
+        "summer_18.000": "{{i18n: robin.string.summer_18}}",
+        "fall_21.000": "{{i18n: robin.string.fall_21}}"
+      },
+      "When": {
+        "HasConversationTopic |contains=JunaGone, JunaWizard": "false",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Demetrius Summer 5",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Demetrius",
+      "Entries": {
+        "summer_5": "750 ScienceHouse 22 20 1 demetrius_notes/a1700 Saloon 24 22 3 \"Strings\\schedules\\Demetrius:summer_5.000\"/2100 ScienceHouse 20 4 1 demetrius_sleep"
+      },
+      "When": {
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Demetrius String Edits",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Demetrius",
+      "Entries": {
+        "summer_5.000": "{{i18n: demetrius.string.summer_5}}"
+      }
+    },
+
+    {
+      "LogName": "Juna Fall 21 Vanilla Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "fall_21": "610 elhrvy.NPCJuna_JunaCave 7 5 1/1000 Forest 3 34 2 juna_scheming/a1720 ScienceHouse 26 13 1 \"Strings\\schedules\\Juna:fall_21.000\"/2030 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "HasMod |contains=nraittanna.RememberMyBirthday": "false"
+      }
+    },
+
+    {
+      "LogName": "Robin Fall 21 Vanilla Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Robin",
+      "Entries": {
+        "fall_21": "800 ScienceHouse 8 18 2/a1720 ScienceHouse 27 11 2 \"Strings\\schedules\\Robin:fall_21.000\"/2040 ScienceHouse 16 5 0/2130 ScienceHouse 21 4 1 robin_sleep"
+      },
+      "When": {
+        "HasMod |contains=nraittanna.RememberMyBirthday": "false",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+    
+    {
+      "LogName": "Robin Birthday Patch",
+      "Action": "EditMap",
+      "Target": "Maps/ScienceHouse",
+      "FromFile": "assets/MapPatches/SpaghettiPatch.tmx",
+      "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1 },
+      "ToArea": { "X": 27, "Y": 12, "Width": 1, "Height": 1 },
+      "When": {
+        "HasMod |contains=nraittanna.RememberMyBirthday": "false",
+        "Season": "Fall",
+        "Day": "21",
+        "Time": "{{Range: 1700, 2030}}"
+      },
+      "Update": "OnTimeChange"
+    },
+
+    {
+      "LogName": "Juna Fall 21 PRmB Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "fall_21": "610 elhrvy.NPCJuna_JunaCave 7 5 1/1000 Forest 3 34 2 juna_scheming/1300 Forest 17 36 1 juna_recharge/a1930 ScienceHouse 29 9 2 \"Strings\\schedules\\Juna:fall_21.001\"/2130 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "HasMod |contains=nraittanna.RememberMyBirthday": "true"
+      }
+    },
+
+    //2nd OF EVERY MONTH WITH LEO
+
+    {
+      "LogName": "Juna 2 Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "2": "610 elhrvy.NPCJuna_JunaCave 7 5 1/a1200 ArchaeologyHouse 20 15 2/1700 Mountain 15 11 1/2100 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "HasSeenEvent": "6497428",
+        "HasMod |contains=gwenynnefydd.diversegingerisland": "false"
+      }
+    },
+
+    {
+      "LogName": "Leo 2 Schedule Mainland",
+      "Action": "EditData",
+      "Target": "Characters/schedules/LeoMainland",
+      "Entries": {
+        "2": "0 LeoTreeHouse 2 2 0/700 Mountain 30 9 3/a1200 ArchaeologyHouse 20 17 0 leo_sit_up \"Strings\\schedules\\Leo:{{Random:2.000, 2.001, 2.002, 2.003}}\"/1700 Mountain 16 10 2/2100 LeoTreeHouse 5 4 1 leo_sleep"
+        },
+        "When": {
+          "HasSeenEvent": "6497428",
+          "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+          "HasMod |contains=gwenynnefydd.diversegingerisland": "false",
+          "Roommate |contains=Juna": "false"
+        }
+    },
+
+    {
+      "LogName": "Leo 2 Schedule Mainland SVE",
+      "Action": "EditData",
+      "Target": "Characters/schedules/LeoMainland",
+      "Entries": {
+        "2": "0 LeoTreeHouse 2 2 0/a1200 ArchaeologyHouse 20 17 0 leo_sit_up \"Strings\\schedules\\Leo:{{Random:2.000, 2.001, 2.002, 2.003}}\"/1700 Mountain 16 10 2/2100 LeoTreeHouse 5 4 1 leo_sleep"
+        },
+        "When": {
+          "HasSeenEvent": "6497428",
+          "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+          "HasMod |contains=gwenynnefydd.diversegingerisland": "false",
+          "Roommate |contains=Juna": "false"
+        }
+    },
+
+    {
+      "LogName": "Leo 2 Schedule Island",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Leo",
+      "Entries": {
+        "2": "0 LeoTreeHouse 2 2 0/700 Mountain 30 9 3/a1200 ArchaeologyHouse 20 17 0 leo_sit_up \"Strings\\schedules\\Leo:{{Random:2.000, 2.001, 2.002, 2.003}}\"/1700 Mountain 16 10 2/2100 LeoTreeHouse 5 4 1 leo_sleep"
+        },
+        "When": {
+          "HasSeenEvent": "6497428",
+          "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+          "HasMod |contains=gwenynnefydd.diversegingerisland": "false",
+          "Roommate |contains=Juna": "false"
+        }
+    },
+
+    {
+      "LogName": "Leo 2 Schedule Island SVE",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Leo",
+      "Entries": {
+        "2": "0 LeoTreeHouse 2 2 0/a1200 ArchaeologyHouse 20 17 0 leo_sit_up \"Strings\\schedules\\Leo:{{Random:2.000, 2.001, 2.002, 2.003}}\"/1700 Mountain 16 10 2/2100 LeoTreeHouse 5 4 1 leo_sleep"
+        },
+        "When": {
+          "HasSeenEvent": "6497428",
+          "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+          "HasMod |contains=gwenynnefydd.diversegingerisland": "false",
+          "Roommate |contains=Juna": "false"
+        }
+    },
+
+    {
+      "LogName": "Leo String Edits",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Leo",
+      "Entries": {
+        "2.000": "{{i18n: leo.lessons.1}}",
+        "2.001": "{{i18n: leo.lessons.2}}",
+        "2.002": "{{i18n: leo.lessons.3}}",
+        "2.003": "{{i18n: leo.lessons.4}}"
+      }
+    },
+
+    //SUNDAYS WITH THE WIZARD
+
+    {
+      "LogName": "Juna WizardHouse Schedule SVE",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "Sun": "610 elhrvy.NPCJuna_JunaCave 7 5 1/1000 Forest 5 29 2 juna_scheming/1320 WizardHouse 1 20 1/1600 WizardHouse 2 29 2 juna_scheming/1900 WizardHouse 8 17 1/2300 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep",
+        "winter_17": "610 elhrvy.NPCJuna_JunaCave 7 5 1/a1100 Custom_WizardBasement 14 5 0/a1600 WizardHouse 10 15 2 juna_sitting2/a1900 WizardHouse 4 19 2/2300 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP",
+        "HasSeenEvent |contains=86060023": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna WizardHouse Schedule SVE If Parents",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "Sun": "610 elhrvy.NPCJuna_JunaCave 7 5 1/1000 Forest 5 29 2 juna_scheming/1320 WizardHouse 1 20 1/1600 WizardHouse 2 29 2 juna_scheming/1900 WizardHouse 8 17 1/2300 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep",
+        "winter_17": "610 elhrvy.NPCJuna_JunaCave 7 5 1/a1100 Custom_WizardBasement 14 5 0/a1600 WizardHouse 10 15 2 juna_sitting2/a1900 WizardHouse 4 19 2/2300 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP",
+        "HasSeenEvent": "86060043"
+      }
+    },
+
+    {
+      "LogName": "Juna WizardHouse Schedule SVE If Wizard",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "Sun": "610 elhrvy.NPCJuna_JunaCave 7 5 1/1000 Forest 5 29 2 juna_scheming/1320 WizardHouse 1 20 1/1600 WizardHouse 2 29 2 juna_scheming/1900 WizardHouse 8 17 1/2300 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep",
+        "winter_17": "610 elhrvy.NPCJuna_JunaCave 7 5 1/a1100 Custom_WizardBasement 14 5 0/a1600 WizardHouse 10 15 2 juna_sitting2/a1900 WizardHouse 4 18 2/2300 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP",
+        "HasSeenEvent": "86060037"
+      }
+    },
+
+    {
+      "LogName": "Juna 7th Schedule If SVE Morgan",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "7": "610 elhrvy.NPCJuna_JunaCave 7 5 1/1000 Forest 5 29 2 juna_scheming/1400 Forest 17 36 1 juna_recharge/1800 Forest 34 25 2/2200 elhrvy.NPCJuna_JunaCave 3 5 0/2400 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP",
+        "HasSeenEvent": "5978924"
+      }
+    },
+
+    //GEORGE AND ALEX AFTER 'ONE YEAR WITH JUNA AND ALEX'
+
+    {
+      "LogName": "George Schedule Edit",
+      "Action": "EditData",
+      "Target": "Characters/schedules/George",
+      "Entries": {
+        "summer_Fri": "630 JoshHouse 16 22 0/a1220 Town 52 61 3 \"Strings\\schedules\\George:summer_Fri.000\"/1500 JoshHouse 16 22 0/2000 JoshHouse 3 5 0 george_sleep"
+      },
+      "When": {
+        "HasSeenEvent": "86060018",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "George Schedule String",
+      "Action": "EditData",
+      "Target": "Strings/schedules/George",
+      "Entries": {
+        "summer_Fri.000": "{{i18n: george.summer_Fri.000}}"
+      }
+    },
+
+    {
+      "LogName": "Juna Summer Friday w George",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "summer_Fri": "610 elhrvy.NPCJuna_JunaCave 7 5 1/800 Forest 26 17 0/a1220 Town 51 60 2 \"Strings\\schedules\\Juna:summer_Fri.000\"/1500 Forest 33 98 2 juna_bballet/2200 elhrvy.NPCJuna_JunaCave 3 5 0/2400 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep",
+        "summer_5": "610 elhrvy.NPCJuna_JunaCave 7 5 1/800 Forest 26 17 0/a1220 Town 51 60 2 \"Strings\\schedules\\Juna:summer_5.000\"/1500 Town 50 67 1/a1700 Saloon 23 21 2/2100 elhrvy.NPCJuna_JunaCave 3 5 0/2400 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "HasSeenEvent": "86060018",
+        "Weather |contains=rain, storm": "false"
+      }
+    },
+
+    {
+      "LogName": "Alex Thursday Schedule Edits",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Alex",
+      "Entries": {
+        "Thu": "800 JoshHouse 13 5 0/a1200 Town 64 64 2 alex_football/1600 Saloon 22 23 0/2100 JoshHouse 21 4 1 alex_sleep",
+        "marriage_Thu": "a1200 Town 64 64 2 alex_football/1600 Saloon 22 23 0/1900 BusStop -1 23 3"
+      },
+      "When": {
+        "HasSeenEvent": "86060019",
+        "Season |contains=summer": "false",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Juna Thursdays After Alex",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "Thu": "610 elhrvy.NPCJuna_JunaCave 7 5 1/a1200 Town 65 64 2 juna_sitting2/1600 Saloon 21 23 0/2200 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "HasSeenEvent": "86060019",
+        "Season |contains=summer": "false"
+      }
+    },
+
+    //EAST SCARP'S SPIRIT'S EVE
+
+    {
+      "LogName": "East Scarp's Spirit's Eve",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "fall_27": "610 elhrvy.NPCJuna_JunaCave 7 5 1/a1400 EastScarp_VillageInn_SpiritEve 47 18 2/1930 Town 10 12 1/2400 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "HasMod": "LemurKat.EastScarpe.CP"
+      }
+    },
+
+    //WELLWICK COMPAT
+
+    {
+      "LogName": "Wellwick Compat",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "winter_17": "610 elhrvy.NPCJuna_JunaCave 7 5 1/a1100 WizardHouse 2 6 0/a1600 WizardHouse 9 15 2 juna_sitting2/a1900 WizardHouse 4 19 2/2300 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      },
+      "When": {
+        "HasMod": "Jyangnam.Wellwick"
+      }
+    },
+
+    //GREEN RAIN
+    
+    {
+      "LogName": "Green Rain",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "GreenRain": "610 elhrvy.NPCJuna_JunaCave 7 5 1/700 Forest 17 37 1 juna_recharge2/2300 elhrvy.NPCJuna_JunaCave 7 5 1 juna_sleep"
+      }
+    },
+
+    //DESERT FESTIVAL
+
+    {
+      "LogName": "Desert Festival",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juna",
+      "Entries": {
+        "DesertFestival_2": "610 elhrvy.NPCJuna_JunaCave 7 5 1/900 Desert 46 41 3 \"Strings\\schedules\\Juna:DesertFestival\"/2410 bed"
+      }
+    }
+
+  ]
+}

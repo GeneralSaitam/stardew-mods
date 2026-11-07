@@ -1,0 +1,26 @@
+{
+  "Format": "2.6.0",
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/AudioChanges",
+      "Entries": {
+        "Silent_LoadScreen": {
+          "Id": "title_night",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/silence.ogg}}"
+          ],
+          "Looped": true,
+          "StreamedVorbis": true
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Strings/StringsFromCSFiles",
+      "Entries": {
+        "Utility.cs.5821": "{{i18n:Silence}}"
+      }
+    }
+  ]
+}

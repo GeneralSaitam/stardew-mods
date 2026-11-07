@@ -1,0 +1,693 @@
+{
+"Changes":
+[
+		 {
+"LogName": "Mail",
+"Action": "EditData",
+"Target": "data/mail",
+"Entries": {
+"{{ModID}}_UGTC": "{{i18n:FC.UGTC.Mail}} %item id (O){{ModID}}_UGTC %%[#]{{i18n:FC.UGTC.Mail.Title}}",
+}
+},
+{
+"LogName": "TalonsAxe",
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Entries": {
+"{{ModID}}_UGTC.Trigger":{
+"Id": "{{ModID}}_UGTC.Trigger",
+"MarkActionApplied": true,
+"Trigger": "DayStarted",
+"Condition": null,
+"HostOnly": false,
+"Action": "AddMail Current {{ModID}}_UGTC",
+"Actions": null,
+"CustomFields": {}
+}
+}
+},
+	{
+"Action": "Load",
+"Target": "Mods/{{ModID}}/Objects",
+"FromFile": "Assets/Book/{{TargetWithoutPath}}.png"
+},
+	{
+"Action": "EditData",
+"Target": "Data/Objects",
+"Entries":{
+	"{{ModID}}_UGTC":{
+"Name": "{{ModID}}_UGTC",
+"DisplayName": "{{i18n:FC.UGTC}}",
+"Description": "{{i18n:FC.UGTC.Desc}}",
+"Type": "Basic",
+"Category": 0,
+"Price": -1,
+"Texture": "Mods/{{ModID}}/Objects",
+"SpriteIndex": 0,
+"Edibility": -300,
+"IsDrink": false,
+"CanBeGivenAsGift": false,
+"CanBeTrashed": true,
+"GeodeDropsDefaultItems": false,
+"GeodeDrops": null,
+"ArtifactSpotChances": null,
+"ExcludeFromFishingCollection": true,
+"ExcludeFromShippingCollection": true,
+"ExcludeFromRandomSale": true,
+"ContextTags": [
+"book_item" 
+]
+},
+}
+},
+	{
+"Action": "EditData",
+"Target": "spacechase0.SpaceCore/ObjectExtensionData",
+"Entries": {
+"{{ModID}}_UGTC": { "UseForTriggerAction": true, "CategoryTextOverride": "{{i18n:FC.Category.Book}}"},
+
+}
+},
+ {
+"Action": "EditData",
+"Target": "Data/TriggerActions",
+"Entries": {
+"{{ModID}}_UGTC": {
+"Id": "{{ModID}}_UGTC",
+"MarkActionApplied": false,
+"Trigger": "spacechase0.SpaceCore_OnItemUsed",
+"Condition": "ITEM_ID Input (O){{ModID}}_UGTC",
+"Actions": [
+"spacechase0.SpaceCore_OpenGuidebook {{ModID}}_UGTC"
+]
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "spacechase0.SpaceCore/Guidebooks",
+"Entries":
+{
+"{{ModID}}_UGTC": {
+"Title": "{{i18n:FC.UGTC}}",
+"PageTexture": "Mods/{{ModID}}/Page",
+"PagePadding": "16, 16",
+"DefaultChapter": "Title",
+"Chapters": {
+"Title": {
+"Name": "",
+"TabIconTexture": "Mods/{{ModID}}/Tab",
+"TabIconRect": { "X": 0, "Y": 0, "Width": 27, "Height": 16 },
+"Condition": "TRUE",
+"Pages": [
+{ "Contents": "[center]{{i18n:FC.UGTC.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedividerblank.png:0,0,608,8:2]{{i18n:FC.UGTC.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedividerblank.png:0,0,608,8:2]{{i18n:FC.UGTC.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedividerblank.png:0,0,608,8:2]{{i18n:FC.UGTC.Page.04}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TOC}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center][link={{ModID}}_Characters]{{i18n:FC.Characters.Title}}[/link][/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedividerblank.png:0,0,608,8:2][center][link={{ModID}}_AnimalInfo]{{i18n:FC.AAR.Title}}[/link][/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedividerblank.png:0,0,608,8:2][center][link={{ModID}}_AnimalProduce]{{i18n:FC.AnimalProduce.Title}}[/link][/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedividerblank.png:0,0,608,8:2][center][link={{ModID}}_CropInfo]{{i18n:FC.ACE.Title}}[/link][/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedividerblank.png:0,0,608,8:2][center][link={{ModID}}_Foods]{{i18n:FC.Foods.Title}}[/link][/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedividerblank.png:0,0,608,8:2][center][link={{ModID}}_Artisans]{{i18n:FC.Artisans.Title}}[/link][/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedividerblank.png:0,0,608,8:2][center][link={{ModID}}_Crafting]{{i18n:FC.Crafting.Title}}[/link][/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedividerblank.png:0,0,608,8:2][center][link={{ModID}}_Buildings]{{i18n:FC.Buildings.Title}}[/link][/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedividerblank.png:0,0,608,8:2]"
+},
+]
+},
+"{{ModID}}_AnimalInfo": {
+"Name": "",
+"TabIconTexture": "Mods/{{ModID}}/Tab",
+"TabIconRect": { "X": 0, "Y": 0, "Width": 27, "Height": 16 },
+"Condition": "FALSE",
+"Pages": [
+{
+"Id": "{{ModID}}_DeaBird", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:64,96,32,32:4]{{i18n:FC.AnimalBook.DeaBird.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.DeaBird.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.DeaBird.Page.02}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.DeaBird.Page.03}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.DeaBird.Page.04}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.DeaBird.Page.05}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.DeaBird.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Galebison", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:0,128,32,48:4]{{i18n:FC.AnimalBook.Galebison.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.Galebison.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Galebison.Page.02}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Galebison.Page.03}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Galebison.Page.04}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Galebison.Page.05}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Galebison.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_GraveCrabGiganta", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:96,96,32,32:4]{{i18n:FC.AnimalBook.GraveCrab.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.GraveCrab.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.GraveCrab.Page.02}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.GraveCrab.Page.03}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.GraveCrab.Page.04}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.GraveCrab.Page.05}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.GraveCrab.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_GuineaDog", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:0,32,32,32:4]{{i18n:FC.AnimalBook.GuineaDog.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.GuineaDog.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.GuineaDog.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Miniphant", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:32,32,32,32:4]{{i18n:FC.AnimalBook.Miniphant.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.Miniphant.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Miniphant.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Movoraptor", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:32,0,32,32:4]{{i18n:FC.AnimalBook.FemaleMovoraptor.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.FemaleMovoraptor.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.FemaleMovoraptor.Page.02}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.FemaleMovoraptor.Page.03}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.FemaleMovoraptor.Page.04}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.FemaleMovoraptor.Page.05}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.FemaleMovoraptor.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:0,0,32,32:4]{{i18n:FC.AnimalBook.MaleMovoraptorMovoraptor.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.MaleMovoraptorMovoraptor.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.MaleMovoraptorMovoraptor.Page.02}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.MaleMovoraptorMovoraptor.Page.03}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.MaleMovoraptorMovoraptor.Page.04}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.MaleMovoraptorMovoraptor.Page.05}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.MaleMovoraptorMovoraptor.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:32,64,32,32:4]"
+},
+{
+"Id": "{{ModID}}_Narubit", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:64,32,32,32:4]{{i18n:FC.AnimalBook.Narubit.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.Narubit.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Narubit.Page.02}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Narubit.Page.03}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Narubit.Page.04}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Narubit.Page.05}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Narubit.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_RaccoonDog", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:0,64,32,32:4]{{i18n:FC.AnimalBook.RaccoonDog.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.RaccoonDog.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.RaccoonDog.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Raphus", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:32,64,32,32:4]{{i18n:FC.AnimalBook.Raphus.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.Raphus.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Raphus.Page.02}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Raphus.Page.03}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Raphus.Page.04}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Raphus.Page.05}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Raphus.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Tapi", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:96,64,32,32:4]{{i18n:FC.AnimalBook.Tapi.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.Tapi.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Tapi.Page.02}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Tapi.Page.03}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Tapi.Page.04}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Tapi.Page.05}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Tapi.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Trabuul", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:0,96,32,32:4]{{i18n:FC.AnimalBook.Trabuul.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.Trabuul.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Trabuul.Page.02}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Trabuul.Page.03}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Trabuul.Page.04}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Trabuul.Page.05}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Trabuul.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Tuusca", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:32,96,32,32:4]{{i18n:FC.AnimalBook.Tuusca.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.Tuusca.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Tuusca.Page.02}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Tuusca.Page.03}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Tuusca.Page.04}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Tuusca.Page.05}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Tuusca.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Shevit", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:64,64,32,32:4]{{i18n:FC.AnimalBook.Shevit.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.Shevit.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Shevit.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Quillback", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Animals.png:96,32,32,32:4]{{i18n:FC.AnimalBook.Quillback.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.Quillback.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Quillback.Page.02}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Quillback.Page.03}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Quillback.Page.04}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Quillback.Page.05}} [image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.Quillback.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_BoneyHeadedGraveFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:0,0,16,16:4]{{i18n:FC.AnimalBook.BoneyHeadedGraveFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.BoneyHeadedGraveFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.BoneyHeadedGraveFish.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_IficusFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:16,0,16,16:4]{{i18n:FC.AnimalBook.IficusFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.IficusFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.IficusFish.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_DancerFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:64,0,16,16:4]{{i18n:FC.AnimalBook.DancerFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.DancerFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.DancerFish.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_RiverBedJelly", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:48,0,16,16:4]{{i18n:FC.AnimalBook.RiverBedJelly.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.RiverBedJelly.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.RiverBedJelly.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_GraveCrab", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:32,0,16,16:4]{{i18n:FC.AnimalBook.GraveCrab2.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.GraveCrab2.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.GraveCrab2.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_GulpFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:96,0,16,16:4]{{i18n:FC.AnimalBook.GulpFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.GulpFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.GulpFish.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_LeechFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:80,0,16,16:4]{{i18n:FC.AnimalBook.LeechFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.LeechFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.LeechFish.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SharkFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:0,16,16,16:4]{{i18n:FC.AnimalBook.SharkFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.SharkFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.SharkFish.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SwampFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:16,16,16,16:4]{{i18n:FC.AnimalBook.SwampFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.SwampFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.SwampFish.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_PufferCousin", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:32,16,16,16:4]{{i18n:FC.AnimalBook.PufferCousin.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.PufferCousin.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.PufferCousin.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_ArcaAxolPink", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:48,16,16,16:4]{{i18n:FC.AnimalBook.ArcaAxolPink.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.ArcaAxolPink.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.ArcaAxolPink.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_ArcaAxolBlue", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:64,16,16,16:4]{{i18n:FC.AnimalBook.ArcaAxolBlue.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.ArcaAxolBlue.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.ArcaAxolBlue.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SpikedSeaHorse", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:80,16,16,16:4]{{i18n:FC.AnimalBook.SpikedSeaHorse.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.SpikedSeaHorse.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.SpikedSeaHorse.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_ShelledSquid", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:96,16,16,16:4]{{i18n:FC.AnimalBook.ShelledSquid.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.ShelledSquid.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.ShelledSquid.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_GummigusFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:0,32,16,16:4]{{i18n:FC.AnimalBook.GummigusFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.GummigusFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.GummigusFish.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SeaSnake", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:16,32,16,16:4]{{i18n:FC.AnimalBook.SeaSnake.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.SeaSnake.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.SeaSnake.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_UncleCrimson", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:32,32,16,16:4]{{i18n:FC.AnimalBook.UncleCrimson.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.UncleCrimson.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.UncleCrimson.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_WoodwindFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:48,32,16,16:4]{{i18n:FC.AnimalBook.WoodwindFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.WoodwindFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.WoodwindFish.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_WoodpeckerBarnacle", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:64,32,16,16:4]{{i18n:FC.AnimalBook.WoodpeckerBarnacle.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.WoodpeckerBarnacle.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.WoodpeckerBarnacle.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_ArcanianFeatherStar", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Fish.png:80,32,16,16:4]{{i18n:FC.AnimalBook.ArcanianFeatherStar.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.AnimalBook.ArcanianFeatherStar.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2] {{i18n:FC.AnimalBook.ArcanianFeatherStar.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+]
+},
+"{{ModID}}_CropInfo": {
+"Name": "",
+"TabIconTexture": "Mods/{{ModID}}/Tab",
+"TabIconRect": { "X": 0, "Y": 0, "Width": 27, "Height": 16 },
+"Condition": "FALSE",
+"Pages": [
+{
+"Id": "{{ModID}}_JoluuSpearouus", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:0,0,128,32:4]{{i18n:FC.ACE.JoluuSpearouus.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.JoluuSpearouus.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.JoluuSpearouus.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.JoluuSpearouus.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_LunonareFlower", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:0,32,128,32:4]{{i18n:FC.ACE.LunonareFlower.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.LunonareFlower.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.LunonareFlower.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.LunonareFlower.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_PyrrhusBerry", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:0,64,128,32:4]{{i18n:FC.ACE.PyrrhusBerry.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.PyrrhusBerry.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.PyrrhusBerry.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.PyrrhusBerry.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Topachu", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:0,96,128,32:4]{{i18n:FC.ACE.Topachu.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Topachu.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Topachu.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Topachu.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Seage", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:0,128,128,32:4]{{i18n:FC.ACE.Seage.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Seage.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Seage.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Seage.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_MuuaiFlower", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:128,0,128,32:4]{{i18n:FC.ACE.MuuaiFlower.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.MuuaiFlower.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.MuuaiFlower.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.MuuaiFlower.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Mandkin", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:128,32,128,32:4]{{i18n:FC.ACE.Mandkin.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Mandkin.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Mandkin.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Mandkin.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Puuffan", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:128,64,128,32:4]{{i18n:FC.ACE.Puuffan.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Puuffan.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Puuffan.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.Puuffan.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_WhoruuFlower", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:128,96,128,32:4]{{i18n:FC.ACE.WhoruuFlower.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.WhoruuFlower.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.WhoruuFlower.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.WhoruuFlower.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_GruutehRoot", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:128,128,128,32:4]{{i18n:FC.ACE.GruutehRoot.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.GruutehRoot.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.GruutehRoot.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.GruutehRoot.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_DragaClawtus", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:0,160,128,32:4]{{i18n:FC.ACE.DragaClawtus.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DragaClawtus.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DragaClawtus.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DragaClawtus.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_DarkTuuph", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:128,160,128,32:4]{{i18n:FC.ACE.DarkTuuph.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DarkTuuph.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DarkTuuph.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DarkTuuph.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_DragaTonguula", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:0,192,128,32:4]{{i18n:FC.ACE.DragaTonguula.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DragaTonguula.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DragaTonguula.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DragaTonguula.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_AdauulaStalk", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:128,192,128,32:4]{{i18n:FC.ACE.AdauulaStalk.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.AdauulaStalk.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.AdauulaStalk.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.AdauulaStalk.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_GaggleShroom", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:0,224,128,32:4]{{i18n:FC.ACE.GaggleShroom.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.GaggleShroom.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.GaggleShroom.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.GaggleShroom.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_WarpRoot", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:128,224,128,32:4]{{i18n:FC.ACE.WarpRoot.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.WarpRoot.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.WarpRoot.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.WarpRoot.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_StoneFlower", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:0,256,128,32:4]{{i18n:FC.ACE.StoneFlower.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.StoneFlower.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.StoneFlower.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.StoneFlower.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_VoidTreeFruit", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:128,256,128,32:4]{{i18n:FC.ACE.VoidTreeFruit.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.VoidTreeFruit.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.VoidTreeFruit.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.VoidTreeFruit.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_TropaTree", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:0,288,48,96:4]{{i18n:FC.ACE.TropaTree.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.TropaTree.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.TropaTree.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_ReuuTree", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:48,288,48,96:4]{{i18n:FC.ACE.ReuuTree.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.ReuuTree.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.ReuuTree.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_HeaviousTree", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:96,288,48,96:4]{{i18n:FC.ACE.HeaviousTree.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.HeaviousTree.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.HeaviousTree.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_BuurkTree", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:144,288,48,96:4]{{i18n:FC.ACE.BuurkTree.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.BuurkTree.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.BuurkTree.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_MeekTree", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:192,288,48,96:4]{{i18n:FC.ACE.MeekTree.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.MeekTree.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.MeekTree.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_CarnivorousTree", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:0,384,48,96:4]{{i18n:FC.ACE.CarnivorousTree.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.CarnivorousTree.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.CarnivorousTree.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_FireSnapper", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:96,400,16,16:4]{{i18n:FC.ACE.FireSnapper.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.FireSnapper.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.FireSnapper.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_StoneShroom", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:112,400,16,16:4]{{i18n:FC.ACE.StoneShroom.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.StoneShroom.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.StoneShroom.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_HeaviousRoot", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:128,400,16,16:4]{{i18n:FC.ACE.HeaviousRoot.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.HeaviousRoot.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.HeaviousRoot.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_DragaTail", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:144,400,16,16:4]{{i18n:FC.ACE.DragaTail.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DragaTail.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DragaTail.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_FairyFingers", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:160,400,16,16:4]{{i18n:FC.ACE.FairyFingers.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.FairyFingers.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.FairyFingers.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_DragaEye", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:48,432,16,16:4]{{i18n:FC.ACE.DragaEye.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DragaEye.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DragaEye.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SpiritBud", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Crops.png:64,432,16,16:4]{{i18n:FC.ACE.SpiritBud.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SpiritBud.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SpiritBud.Page.02}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+]
+},
+"{{ModID}}_Characters": {
+"Name": "",
+"TabIconTexture": "Mods/{{ModID}}/Tab",
+"TabIconRect": { "X": 0, "Y": 0, "Width": 27, "Height": 16 },
+"Condition": "FALSE",
+"Pages": [
+{
+"Id": "{{ModID}}_Grady", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Characters.png:0,0,74,74:4][center]{{i18n:FC.TheCollectorBook.Grady.Page.01}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]Information:[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheCollectorBook.Grady.Page.02}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.04}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.05}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.07}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheCollectorBook.Grady.Page.08}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.09}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.10}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.11}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.12}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.13}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.14}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.15}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.16}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.17}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheCollectorBook.Grady.Page.18}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.19}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.20}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.21}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.22}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.23}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.24}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheCollectorBook.Grady.Page.25}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Grady.Page.26}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Pop", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Characters.png:0,74,74,74:4][center]{{i18n:FC.TheCollectorBook.Pop.Page.01}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]Information:[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheCollectorBook.Pop.Page.02}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.04}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.05}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.07}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheCollectorBook.Pop.Page.08}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.09}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.10}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.11}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.12}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.13}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.14}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheCollectorBook.Pop.Page.15}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.16}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.17}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Pop.Page.18}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_Poppy", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Characters.png:74,74,74,74:4][center]{{i18n:FC.TheCollectorBook.Poppy.Page.01}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]Information:[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheCollectorBook.Poppy.Page.02}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.04}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.05}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.07}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheCollectorBook.Poppy.Page.08}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.09}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.10}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.11}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.12}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.13}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.14}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheCollectorBook.Poppy.Page.15}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.16}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.17}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheCollectorBook.Poppy.Page.18}}"
+},
+{
+"Id": "{{ModID}}_Cotton", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Characters.png:74,148,74,74:4][center]{{i18n:FC.TheRuffian.Cotton.Page.01}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]Information:[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheRuffian.Cotton.Page.02}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.04}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.05}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.07}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheRuffian.Cotton.Page.08}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.09}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.10}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.11}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.12}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.13}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.14}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.15}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheRuffian.Cotton.Page.16}}"
+},
+{
+"Id": "{{ModID}}_Lyell", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Characters.png:74,0,74,74:4][center]{{i18n:FC.TheWayfarer.Lyell.Page.01}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]Information:[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheWayfarer.Lyell.Page.02}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.04}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.05}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.07}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheWayfarer.Lyell.Page.08}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.09}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.10}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.11}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.12}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.13}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.14}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.15}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheWayfarer.Lyell.Page.16}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.17}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.18}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.19}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.20}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.21}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.22}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.23}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.24}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.25}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.26}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheWayfarer.Lyell.Page.27}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.28}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.29}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Lyell.Page.30}}"
+},
+{
+"Id": "{{ModID}}_Roswell", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Characters.png:0,148,74,74:4][center]{{i18n:FC.TheWayfarer.Roswell.Page.01}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]Information:[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheWayfarer.Roswell.Page.02}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.03}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.04}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.05}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.06}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.07}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2][center]{{i18n:FC.TheWayfarer.Roswell.Page.08}}[/center][image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.09}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.10}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.11}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.12}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.13}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.14}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.15}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.TheWayfarer.Roswell.Page.16}}"
+},
+]
+},
+"{{ModID}}_Foods": {
+"Name": "",
+"TabIconTexture": "Mods/{{ModID}}/Tab",
+"TabIconRect": { "X": 0, "Y": 0, "Width": 27, "Height": 16 },
+"Condition": "FALSE",
+"Pages": [
+{
+"Id": "{{ModID}}_SweetJoluuSwirl", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 0,0,16,16:4]{{i18n:FC.ACE.SweetJoluuSwirl.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SweetJoluuSwirl.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SpicyGulperPlatter", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 16,0,16,16:4]{{i18n:FC.ACE.SpicyGulperPlatter.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SpicyGulperPlatter.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_FriedIficusFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 32,0,16,16:4]{{i18n:FC.ACE.FriedIficusFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.FriedIficusFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SpicyGraveBuster", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 0,16,16,16:4]{{i18n:FC.ACE.SpicyGraveBuster.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SpicyGraveBuster.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_FriedJellyFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png:16,16,16,16:4]{{i18n:FC.ACE.FriedJellyFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.FriedJellyFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SpicyFriedDancerFish", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 32,16,16,16:4]{{i18n:FC.ACE.SpicyFriedDancerFish.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SpicyFriedDancerFish.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_WhoruuFlowerCake", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 0,32,16,16:4]{{i18n:FC.ACE.WhoruuFlowerCake.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.WhoruuFlowerCake.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_BloodSoup", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 16,32,16,16:4]{{i18n:FC.ACE.BloodSoup.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.BloodSoup.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_CheesyTopachuStew", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 32,32,16,16:4]{{i18n:FC.ACE.CheesyTopachuStew.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.CheesyTopachuStew.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_CreamPuffanPie", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 0,48,16,16:4]{{i18n:FC.ACE.CreamPuffanPie.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.CreamPuffanPie.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_ReuuNutPudding", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 16,48,16,16:4]{{i18n:FC.ACE.ReuuNutPudding.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.ReuuNutPudding.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SweetBreadTwist", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 16,32,16,16:4]{{i18n:FC.ACE.SweetBreadTwist.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SweetBreadTwist.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_StuffedTuuphRoll", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 0,64,16,16:4]{{i18n:FC.ACE.StuffedTuuphRoll.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.StuffedTuuphRoll.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_AdauulaCake", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 16,64,16,16:4]{{i18n:FC.ACE.AdauulaCake.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.AdauulaCake.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_MandkinPuff", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 32,64,16,16:4]{{i18n:FC.ACE.MandkinPuff.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.MandkinPuff.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_GaggleShroomTea", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 0,80,16,16:4]{{i18n:FC.ACE.GaggleShroomTea.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.GaggleShroomTea.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_LuunoSoup", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 16,80,16,16:4]{{i18n:FC.ACE.LuunoSoup.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.LuunoSoup.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SourClawtusBread", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 32,80,16,16:4]{{i18n:FC.ACE.SourClawtusBread.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SourClawtusBread.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_WarpRootTea", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 0,96,16,16:4]{{i18n:FC.ACE.WarpRootTea.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.WarpRootTea.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_IceyGruutehCream", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 16,96,16,16:4]{{i18n:FC.ACE.IceyGruutehCream.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.IceyGruutehCream.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_MuuaiPetalTea", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 32,96,16,16:4]{{i18n:FC.ACE.MuuaiPetalTea.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.MuuaiPetalTea.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SpicyRaphusScramble", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 0,112,16,16:4]{{i18n:FC.ACE.SpicyRaphusScramble.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SpicyRaphusScramble.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_DeaEggHash", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 16,112,16,16:4]{{i18n:FC.ACE.DeaEggHash.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DeaEggHash.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_StonePetalCoffee", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 32,112,16,16:4]{{i18n:FC.ACE.StonePetalCoffee.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.StonePetalCoffee.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SpicyRaptorEggs", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 0,128,16,16:4]{{i18n:FC.ACE.SpicyRaptorEggs.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SpicyRaptorEggs.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_BuurkFruitPudding", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 16,128,16,16:4]{{i18n:FC.ACE.BuurkFruitPudding.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.BuurkFruitPudding.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_CandiedHeaviousFruit", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 32,128,16,16:4]{{i18n:FC.ACE.CandiedHeaviousFruit.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.CandiedHeaviousFruit.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_CandiedMeekFruit", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 0,144,16,16:4]{{i18n:FC.ACE.CandiedMeekFruit.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.CandiedMeekFruit.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_LavaPop", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 16,144,16,16:4]{{i18n:FC.ACE.LavaPop.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.LavaPop.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_BreakfastPizza", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Foods.png: 32,144,16,16:4]{{i18n:FC.ACE.BreakfastPizza.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.BreakfastPizza.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+]
+},
+"{{ModID}}_AnimalProduce": {
+"Name": "",
+"TabIconTexture": "Mods/{{ModID}}/Tab",
+"TabIconRect": { "X": 0, "Y": 0, "Width": 27, "Height": 16 },
+"Condition": "FALSE",
+"Pages": [
+{
+"Id": "{{ModID}}_SmallGalebisonMilk", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 64,0,16,16:4]{{i18n:FC.ACE.SmallGalebisonMilk.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SmallGalebisonMilk.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_LargeGalebisonMilk", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 80,0,16,16:4]{{i18n:FC.ACE.LargeGalebisonMilk.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.LargeGalebisonMilk.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_DeaBirdEgg", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 144,0,16,16:4]{{i18n:FC.ACE.DeaBirdEgg.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DeaBirdEgg.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_RaphusEgg", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 112,0,16,16:4]{{i18n:FC.ACE.RaphusEgg.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.RaphusEgg.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_MovoraptorEgg", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 128,0,16,16:4]{{i18n:FC.ACE.MovoraptorEgg.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.MovoraptorEgg.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_MovoraptorFeather", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 160,0,16,16:4]{{i18n:FC.ACE.MovoraptorFeather.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.MovoraptorFeather.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_GiantGraveCrabEgg", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 32,0,16,16:4]{{i18n:FC.ACE.GiantGraveCrabEgg.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.GiantGraveCrabEgg.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_FiberClumps", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 16,0,16,16:4]{{i18n:FC.ACE.FiberClumps.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.FiberClumps.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_NarubitWool", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 96,0,16,16:4]{{i18n:FC.ACE.NarubitWool.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.NarubitWool.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_GraveCrabShell", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 48,0,16,16:4]{{i18n:FC.ACE.GraveCrabShell.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.GraveCrabShell.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_SteedPoop", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 176,0,16,16:4]{{i18n:FC.ACE.SteedPoop.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SteedPoop.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_PatholianScale", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.AnimalProducts.png: 192,0,16,16:4]{{i18n:FC.ACE.PatholianScale.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.PatholianScale.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+]
+},
+"{{ModID}}_Artisans": {
+"Name": "",
+"TabIconTexture": "Mods/{{ModID}}/Tab",
+"TabIconRect": { "X": 0, "Y": 0, "Width": 27, "Height": 16 },
+"Condition": "FALSE",
+"Pages": [
+{
+"Id": "{{ModID}}_SmallGalebisonCheese", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Artisans.png: 112,0,16,16:4]{{i18n:FC.ACE.SmallGalebisonCheese.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.SmallGalebisonCheese.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_LargeGalebisonCheese", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Artisans.png: 96,0,16,16:4]{{i18n:FC.ACE.LargeGalebisonCheese.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.LargeGalebisonCheese.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_AgedSmallGalebisonCheese", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Artisans.png: 80,0,16,16:4]{{i18n:FC.ACE.AgedSmallGalebisonCheese.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.AgedSmallGalebisonCheese.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_AgedLargeGalebisonCheese", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Artisans.png: 64,0,16,16:4]{{i18n:FC.ACE.AgedLargeGalebisonCheese.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.AgedLargeGalebisonCheese.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_RaphusMayo", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Artisans.png: 160,0,16,16:4]{{i18n:FC.ACE.RaphusMayo.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.RaphusMayo.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_MovoraptorMayo", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Artisans.png: 128,0,16,16:4]{{i18n:FC.ACE.MovoraptorMayo.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.MovoraptorMayo.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_DeaMayo", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Artisans.png: 144,0,16,16:4]{{i18n:FC.ACE.DeaMayo.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.DeaMayo.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_TropaWine", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Artisans.png: 0,0,16,16:4]{{i18n:FC.ACE.TropaWine.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.TropaWine.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_TonguulaWhiskey", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Artisans.png: 16,0,16,16:4]{{i18n:FC.ACE.TonguulaWhiskey.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.TonguulaWhiskey.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_AdauulaFlour", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Artisans.png: 32,0,16,16:4]{{i18n:FC.ACE.AdauulaFlour.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.AdauulaFlour.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_RoastedReuuNut", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Artisans.png: 48,0,16,16:4]{{i18n:FC.ACE.RoastedReuuNut.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.RoastedReuuNut.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+]
+},
+"{{ModID}}_Buildings": {
+"Name": "",
+"TabIconTexture": "Mods/{{ModID}}/Tab",
+"TabIconRect": { "X": 0, "Y": 0, "Width": 27, "Height": 16 },
+"Condition": "FALSE",
+"Pages": [
+{
+"Id": "{{ModID}}_BugMeatSilo", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Furniture.png: 64,176,16,3216:4]{{i18n:FC.ACE.BugMeatSilo.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.BugMeatSilo.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+]
+},
+"{{ModID}}_Crafting": {
+"Name": "",
+"TabIconTexture": "Mods/{{ModID}}/Tab",
+"TabIconRect": { "X": 0, "Y": 0, "Width": 27, "Height": 16 },
+"Condition": "FALSE",
+"Pages": [
+{
+"Id": "{{ModID}}_TropicalIncubator", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Furniture.png: 128,128,16,32:4]{{i18n:FC.ACE.TropicalIncubator.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.TropicalIncubator.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_FeedRug", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Furniture.png: 48,176,16,16:4]{{i18n:FC.ACE.FeedRug.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.FeedRug.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+{
+"Id": "{{ModID}}_BugHopper", 
+"Contents": "[image=SMAPI/fellowclown.ugtc/assets/book/FC.Book.Furniture.png: 80,176,16,32:4]{{i18n:FC.ACE.BugHopper.Page.00}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]{{i18n:FC.ACE.BugHopper.Page.01}}[image=SMAPI/fellowclown.ugtc/assets/book/pagedivider.png:0,0,608,8:2]"
+},
+]
+},
+}
+},
+}
+},
+{
+"Action": "Load",
+"Target": "Mods/{{ModID}}/Page,Mods/{{ModID}}/Tab,Mods/{{ModID}}/PageDivider",
+"FromFile": "Assets/Book/{{TargetWithoutPath}}.png"
+},
+]
+}

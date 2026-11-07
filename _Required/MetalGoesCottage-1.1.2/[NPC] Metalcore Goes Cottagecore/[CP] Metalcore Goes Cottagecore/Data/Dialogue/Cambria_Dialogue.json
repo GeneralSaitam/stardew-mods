@@ -1,0 +1,269 @@
+{
+    "Changes": [
+        {
+            "LogName": "Cambria Specific Date Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Entries": {
+                "Introduction": "{{i18n:Cambria.Dialogue.Introduction}}",
+                "spring_12_1": "{{i18n:Cambria.Dialogue.spring12.1}}",
+                "spring_12_2": "{{i18n:Cambria.Dialogue.spring12.2}}",
+                "spring_23": "{{i18n:Cambria.Dialogue.spring23}}",
+                "spring_28": "{{i18n:Cambria.Dialogue.spring28}}",
+                "summer_10": "{{i18n:Cambria.Dialogue.summer10}}",
+                "summer_27A": "{{i18n:Cambria.Dialogue.summer27a}}",
+                "summer_27B": "{{i18n:Cambria.Dialogue.summer27b}}",
+                "fall_15": "{{i18n:Cambria.Dialogue.fall15}}",
+                "fall_26": "{{i18n:Cambria.Dialogue.fall26}}",
+                "EastScarp_Village_41_72": "{{i18n:Cambria.Dialogue.SpiritsEveInn.1}}",
+                "EastScarp_VillageInn_SpiritEve_29_10": "{{i18n:Cambria.Dialogue.SpiritsEveInn.2}}",
+                "winter_7": "{{i18n:Cambria.Dialogue.winter7}}",
+                "winter_10": "{{i18n:Cambria.Dialogue.winter10}}",
+                "winter_15": "{{i18n:Cambria.Dialogue.winter15}}",
+                "winter_16": "{{i18n:Cambria.Dialogue.winter16}}",
+                "winter_17": "{{i18n:Cambria.Dialogue.winter17}}",
+                "winter_24": "{{i18n:Cambria.Dialogue.winter24}}",
+                "winter_28": "{{i18n:Cambria.Dialogue.winter28}}",
+                "GreenRain": "{{i18n:Cambria.Dialogue.GreenRain}}",
+                "GreenRain_2": "{{i18n:Cambria.Dialogue.GreenRain.2}}",
+                "GreenRainFinished": "{{i18n:Cambria.Dialogue.GreenRainFinished}}"
+            }
+        },
+        {
+            "LogName": "Cambria Misc Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Entries": {
+                "DumpsterDiveComment": "{{i18n:Cambria.Dialogue.trash}}",
+                "Mine0": "{{i18n:Cambria.Dialogue.mine0}}",
+                "Mine2": "{{i18n:Cambria.Dialogue.mine2}}",
+                "Mine4": "{{i18n:Cambria.Dialogue.mine4}}",
+                "Mine6": "{{i18n:Cambria.Dialogue.mine6}}",
+                "Mine8": "{{i18n:Cambria.Dialogue.mine8}}",
+                "Mine10": "{{i18n:Cambria.Dialogue.mine10}}",
+                "Saloon0": "{{i18n:Cambria.Dialogue.saloon0}}",
+                "Saloon2": "{{i18n:Cambria.Dialogue.saloon2}}",
+                "Saloon4": "{{i18n:Cambria.Dialogue.saloon4}}",
+                "Saloon8": "{{i18n:Cambria.Dialogue.saloon8}}",
+                "Resort": "{{i18n:Cambria.Dialogue.resort}}",
+                "Resort_Bar": "{{i18n:Cambria.Dialogue.resort}}",
+                "Resort_Chair": "{{i18n:Cambria.Dialogue.resort}}",
+                "Resort_Dance": "{{i18n:Cambria.Dialogue.resort}}",
+                "Resort_Entering": "{{i18n:Cambria.Dialogue.resort}}",
+                "Resort_Leaving": "{{i18n:Cambria.Dialogue.resort}}",
+                "Resort_Shore": "{{i18n:Cambria.Dialogue.resort}}",
+                "Resort_Towel": "{{i18n:Cambria.Dialogue.resort}}",
+                "Resort_Umbrella": "{{i18n:Cambria.Dialogue.resort}}",
+                "Resort_Wander": "{{i18n:Cambria.Dialogue.resort}}",
+                "HitBySlingshot": "{{i18n:Cambria.Dialogue.slingshot}}",
+                "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Cambria.Dialogue.RejectMovie.Invited}}",
+                "RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Cambria.Dialogue.RejectMovie.Went}}",
+                "divorced_once": "{{i18n:Cambria.Dialogue.divorced1}}",
+                "divorced_twice": "{{i18n:Cambria.Dialogue.divorced2}}",
+                "gotPet": "{{i18n:Cambria.Dialogue.Pet}}",
+                "houseUpgrade_1": "{{i18n:Cambria.Dialogue.Upgrade1}}",
+                "houseUpgrade_2": "{{i18n:Cambria.Dialogue.Upgrade2}}",
+            }
+        },
+        {
+            "LogName": "Cambria Dialogue - 0-5",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Update": "OnLocationChange",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.0-4.{{Random:{{Range: 1, 60}}}}}}"
+            },
+            "When": {
+                "HasFlag |contains=MGC_Cambria_OverrideSeenToday": false
+            }
+        },
+        {
+            "LogName": "Cambria Dialogue - 6-10",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.6-10.{{Random:{{Range: 1, 60}}}}}}"
+            },
+            "When": {
+                "Hearts:Otter.Cambria": "{{Range: 6, 10}}",
+                "HasFlag |contains=MGC_Cambria_OverrideSeenToday": false
+            }
+        },
+        /*{
+            "LogName": "Cambria Dialogue - City",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.City.{{Random:{{Range: 1, 8}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 20}}|key=CFO}} = 1": true,
+                "HasSeenEvent |contains=MGC.Cambria.04": true,
+                "HasFlag |contains=MGC_Cambria_OverrideSeenToday": false
+            }
+        },*/
+        {
+            "LogName": "Cambria Dialogue - Early Seasonal Override",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.0-4.{{Season}}.{{Random:{{Range: 1, 10}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 10}}|key=CSO}} = 1": true,
+                "HasFlag |contains=MGC_Cambria_OverrideSeenToday": false,
+                "Hearts:Otter.Cambria": "{{Range: 0, 4}}"
+            }
+        },
+        {
+            "LogName": "Cambria Dialogue - Late Seasonal Override",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.6-10.{{Season}}.{{Random:{{Range: 1, 5}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 10}}|key=CSO}} = 1": true,
+                "HasFlag |contains=MGC_Cambria_OverrideSeenToday": false,
+                "Hearts:Otter.Cambria": "{{Range: 6, 10}}"
+            }
+        },
+        {
+            "LogName": "Cambria Dialogue - Tattoo Stories",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.Tattoo.Story.{{Random:{{Range: 1, 10}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 10}}|key=CTS}} = 1": true,
+                "HasFlag |contains=MGC_Cambria_OverrideSeenToday": false,
+                "Hearts:Otter.Cambria": "{{Range: 8, 10}}"
+            }
+        },
+        {
+            "LogName": "Cambria Dialogue - Romantic",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.Romance.{{Random:{{Range: 1, 25}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "Query: {{Random: {{Range: 1, 10}}|key=CRD}} = 1": true,
+                "HasFlag |contains=MGC_Cambria_OverrideSeenToday": false,
+                "Relationship:Otter.Cambria |contains=Dating": true
+            }
+        },
+        {
+            "LogName": "Cambria E&D Commentary",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.Nova.{{Random:{{Range: 1, 10}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "HasMod": "TenebrousNova.EliDylan.CP",
+                "HasFlag: |contains=MGC_Cambria_OverrideSeenToday": false,
+                "Query: {{Random: {{Range: 1, 20}}|key=CED}} = 1": true
+            }
+        },
+        {
+            "LogName": "Cambria Rodney Commentary",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.Dodo.{{Random:{{Range: 1, 5}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "HasMod": "TheFrenchDodo.RodneyOBrien",
+                "HasFlag: |contains=MGC_Cambria_OverrideSeenToday": false,
+                "Query: {{Random: {{Range: 1, 20}}|key=CDR}} = 1": true
+            }
+        },
+        {
+            "LogName": "Cambria Sen Commentary",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.Axell.{{Random:{{Range: 1, 5}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "HasMod": "7thAxis.DitR.CP, 7thAxis.LitD.CP",
+                "HasFlag: |contains=MGC_Cambria_OverrideSeenToday": false,
+                "Query: {{Random: {{Range: 1, 20}}|key=CAS}} = 1": true
+            }
+        },
+        {
+            "LogName": "Cambria Mateo Commentary",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.Desty.{{Random:{{Range: 1, 5}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "HasMod": "DN.SnS",
+                "HasSeenEvent": "SnS.Ch1.Mateo.1",
+                "HasFlag: |contains=MGC_Cambria_OverrideSeenToday": false,
+                "Query: {{Random: {{Range: 1, 20}}|key=CDM}} = 1": true
+            }
+        },
+        {
+            "LogName": "Cambria Nora Commentary",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.Bagi.{{Random:{{Range: 1, 5}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "HasMod": "Bagi.Nora.CP",
+                "HasFlag: |contains=MGC_Cambria_OverrideSeenToday": false,
+                "Query: {{Random: {{Range: 1, 20}}|key=CBN}} = 1": true
+            }
+        },
+        {
+            "LogName": "Cambria BearFam Commentary",
+            "Action": "EditData",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Dialogue/Otter.Cambria",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Cambria.Dialogue.Mads.{{Random:{{Range: 1, 15}}|key={{Time}}}}}}#$action AddMail Current MGC_Cambria_OverrideSeenToday received"
+            },
+            "When": {
+                "HasMod": "MadDog.HashtagBearFam",
+                "HasFlag: |contains=MGC_Cambria_OverrideSeenToday": false,
+                "Query: {{Random: {{Range: 1, 20}}|key=CMB}} = 1": true
+            }
+        },
+        {
+            "LogName": "Cambria Override Seen Today Flag Removal",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Squeaks.MGC.CP.TriggerActions.OtterCambria.OverrideSeenToday.Removal": {
+                    "Id": "Squeaks.MGC.CP.TriggerActions.OtterCambria.OverrideSeenToday.Removal.1",
+                    "MarkActionApplied": false,
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current MGC_Cambria_OverrideSeenToday Any",
+                    "Actions": [
+                        "RemoveMail Current MGC_Cambria_OverrideSeenToday"
+                    ]
+                }
+            }
+        }
+    ]
+}

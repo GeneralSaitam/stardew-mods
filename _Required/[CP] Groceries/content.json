@@ -1,0 +1,48 @@
+{
+    "Format": "2.0.0",
+    "Changes": [{
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": ["AnimalShop", "Items"],
+        "Entries": {
+            "Egg": {
+                "Id": "Egg",
+                "ItemId": "(O)176",
+                "Price": 150,
+            },
+            "Duck Egg": {
+                "Id": "Duck Egg",
+                "ItemId": "(O)442",
+                "Price": 200,
+                "Condition": "PLAYER_STAT Any duckEggsLayed 1",
+            },
+            "Milk": {
+                "Id": "Milk",
+                "ItemId": "(O)184",
+                "Price": 375,
+            },
+            "Goat Milk": {
+                "Id": "Goat Milk",
+                "ItemId": "(O)436",
+                "Price": 450,
+                "Condition": "PLAYER_STAT Any goatMilkProduced 1"
+            },
+            "Cloth": {
+                "Id": "Cloth",
+                "ItemId": "(O)428",
+                "Price": 700,
+                "Condition": "PLAYER_HAS_SEEN_EVENT Current 992559",
+            },
+        }, 
+
+
+    "MoveEntries": [
+        { "Id": "Egg", "BeforeId": "(O)178"},
+        { "Id": "Duck Egg", "BeforeId": "(O)178"},
+        { "Id": "Milk", "BeforeId": "(O)178"},
+        { "Id": "Goat Milk", "BeforeId": "(O)178"},
+        { "Id": "Cloth", "BeforeId": "(O)178"},
+
+        ],
+    }]
+}

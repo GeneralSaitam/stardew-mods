@@ -1,0 +1,210 @@
+{
+	"Format": "2.3.0",
+    "Changes": [  
+		{
+			"Action": "Include",
+			"FromFile": "data/gifttastes.json, data/machines.json, data/mail.json, data/quests.json"
+		},
+	/*Sprites*/
+        {
+            "LogName": "Load shopIcon for Alpaca",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_shop_alpaca_icon",
+            "FromFile": "assets/animal_shop_alpaca.png"
+        },
+        {
+            "LogName": "Load adultSprite for alpaca",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_alpaca",
+            "FromFile": "assets/alpaca.png"
+        },
+        {
+            "LogName": "Load babySprite for alpaca",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_alpaca_baby",
+            "FromFile": "assets/BabyAlpaca.png"
+        },
+        {
+            "LogName": "Load adultSprite for sheared alpaca",
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_sheared_alpaca",
+            "FromFile": "assets/shearedalpaca.png"
+        },
+        {
+            "LogName": "Load Sprite for alpaca wool",
+            "Action": "Load",
+            "Target": "Objects/{{ModId}}_alpaca_wool",
+            "FromFile": "assets/AlpacaWool.png"
+        },
+        {
+            "LogName": "Load Sprite for alpaca yarn",
+            "Action": "Load",
+            "Target": "Objects/{{ModId}}_alpaca_yarn",
+            "FromFile": "assets/Yarn.png"
+        },
+		
+		{
+			"LogName": "Load hat textures",
+			"Action": "Load",
+			"Target": "AlpacaHat, ChulloHat",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+
+		/*Animals*/
+		{
+            "LogName": "Load data for Alpaca",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "Alpaca": {
+                    "DisplayName": "{{i18n:Alpaca}}", 
+                    "House": "Barn",
+                    "Gender": "Female",
+                    "PurchasePrice": 2000,
+					"SellPrice": 4000,
+                    "ShopTexture": "Animals/{{ModId}}_shop_alpaca_icon",
+                    "ShopSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 16
+                    },
+					"ShopDisplayName": "{{i18n:Alpaca}}",
+					"ShopDescription": "{{i18n:AlpacaDescription}}",
+					"ShopMissingBuildingDescription": "[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5944]",
+                    "RequiredBuilding": "Deluxe Barn",
+					"UnlockCondition": null,
+					"AlternatePurchaseTypes":null,
+					"EggItemIds": null,
+					"IncubationTime": -1,
+					"IncubatorParentSheetOffset": 1,
+					"BirthText": null,
+					"DaysToMature": 5,
+					"CanGetPregnant": true,
+					"DaysToProduce": 3,
+					"HarvestType": "HarvestWithTool",
+					"HarvestTool": "Shears",
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "MinimumFriendship": 0,
+                            "ItemId": "{{ModId}}_AlpacaWool"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [],
+					"ProduceOnMature": true,
+					"FriendshipForFasterProduce": 900,
+					"DeluxeProduceMinimumFriendship": 200,
+					"DeluxeProduceCareDivisor": 1200.0,
+					"DeluxeProduceLuckMultiplier": 0.0,
+					"ProfessionForHappinessBoost": 3,
+					"ProfessionForQualityBoost": 3,
+					"ProfessionForFasterProduce": 3,
+                    "Sound": "{{ModId}}_Sound",
+                    "BabySound": null,
+                    "Texture": "Animals/{{ModId}}_alpaca",
+                    "HarvestedTexture": "Animals/{{ModId}}_sheared_alpaca",
+                    "BabyTexture": "Animals/{{ModId}}_alpaca_baby",
+					"UseFlippedRightForLeft": true,
+					"UseDoubleUniqueAnimationFrames": false,
+                    "SpriteWidth": 32,
+                    "SpriteHeight": 32,
+					"Skins": null,
+					"ShadowWhenBaby":{
+						"Visible": false
+					},
+					"ShadowWhenAdult": {
+						"Visible": false
+					},
+					"CanSwim": false,
+					"BabiesFollowAdults": true,
+					"GrassEatAmount": 3,
+					"HappinessDrain": 3,
+					"UpDownPetHitboxTileSize": "1.5, 1.75",
+					"LeftRightPetHitboxTileSize": "1.75, 1.25",
+					"BabyUpDownPetHitboxTileSize": "1, 1.75",
+					"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+					"StatToIncrementOnProduce": null,
+                    "ShowInSummitCredits": true,
+					"CustomFields": {
+						"meatIndex":"alpaca"
+					}
+                }
+            }
+        },
+		/*Objects*/
+		{
+            "LogName": "Load data for Alpaca Wool",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_AlpacaWool": {
+				"Name": "{{ModId}}_AlpacaWool",
+				"DisplayName": "{{i18n:AlpacaWool}}",
+				"Description": "{{i18n:AlpacaWoolDescription}}",
+				"Type": "Basic",
+				"Category": -18, //category_sell_at_pierres_and_marnies 
+				"Price": 500,
+				"Texture": "Objects/{{ModId}}_alpaca_wool",
+				"SpriteIndex": 0,
+				"Edibility": -300,
+				"ExcludeFromFishingCollection": true,
+				"ContextTags": [
+					"color_white"
+				  ],
+				"CustomFields": null
+			  }
+			}
+		},
+		{
+			"LogName": "Load data for Alpaca Yarn",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":	{
+			  "{{ModId}}_AlpacaYarn": {
+				"Name": "{{ModId}}_AlpacaYarn",
+				"DisplayName": "{{i18n:AlpacaYarn}}",
+				"Description": "{{i18n:AlpacaYarnDescription}}",
+				"Type": "Basic",
+				"Category": -26, //ArtisanGoods
+				"Price": 700,
+				"Texture": "Objects/{{ModId}}_alpaca_yarn",
+				"SpriteIndex": 0,
+				"Edibility": -300,
+				"ExcludeFromFishingCollection": true,
+				"ContextTags": [
+					"color_white"
+				  ],
+				"CustomFields": null
+			  }
+			}
+		},
+		// hats
+		        {
+            "Action": "EditData",
+            "Target": "Data/Hats",
+        
+            "Entries": {
+        
+              "{{ModId}}_AlpacaHat": "Knitted Alpaca Hat/{{i18n:AlpacaHatDescription}}/false/false//{{i18n:AlpacaHat}}/0/AlpacaHat"
+			  ,
+        
+              "{{ModId}}_ChulloHat": "Chullo Hat/{{i18n:ChulloHatDescription}}/false/false//{{i18n:ChulloHat}}/0/ChulloHat"
+            }
+        },
+		// add sound
+		{
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+			"Entries": {
+				"{{ModId}}_Sound": {
+					"ID": "{{ModId}}_Sound",
+					"Category": "Sound",
+					"FilePaths": [ "{{AbsoluteFilePath: assets/alpaca.ogg}}", "{{AbsoluteFilePath: assets/alpaca2.wav}}", "{{AbsoluteFilePath: assets/alpaca3.wav}}", "{{AbsoluteFilePath: assets/alpaca4.wav}}" ],
+					"StreamedVorbis": false
+				}
+			}
+		}
+    ]
+}

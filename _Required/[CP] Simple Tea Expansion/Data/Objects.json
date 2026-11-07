@@ -1,0 +1,383 @@
+{
+  "Changes": [
+
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_BlackTea": {
+          "Name": "{{ModId}}_BlackTea",
+          "DisplayName": "{{i18n:BlackTea_Name}}",
+          "Description": "{{i18n:BlackTea_Description}}",
+          "Type": "Basic",
+          "Category": -17,
+          "Price": 120,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 2,
+          "Edibility": 0,
+          "IsDrink": false,
+          "ContextTags": [
+            "color_black",
+            "tea_item"
+          ],
+          "CustomFields": null
+        },
+
+        "{{ModId}}_DarkTea": {
+          "Name": "{{ModId}}_DarkTea",
+          "DisplayName": "{{i18n:DarkTea_Name}}",
+          "Description": "{{i18n:DarkTea_Description}}",
+          "Type": "Basic",
+          "Category": -17,
+          "Price": 250,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 3,
+          "Edibility": 0,
+          "IsDrink": false,
+          "ContextTags": [
+            "color_black",
+            "tea_item"
+          ],
+          "CustomFields": null
+        },
+
+        "{{ModId}}_FloralTea": {
+          "Name": "{{ModId}}_FloralTea",
+          "DisplayName": "{{i18n:FloralTea_Name}}",
+          "Description": "{{i18n:FloralTea_Description}}",
+          "Type": "Basic",
+          "Category": -17,
+          "Price": 100,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 12,
+          "Edibility": 0,
+          "IsDrink": false,
+          "ColorOverlayFromNextIndex": true,
+          "ContextTags": [
+            "color_brown",
+            "tea_item"
+          ],
+          "CustomFields": null
+        },
+
+        "{{ModId}}_MatchaPowder": {
+          "Name": "{{ModId}}_MatchaPowder",
+          "DisplayName": "{{i18n:MatchaPowder_Name}}",
+          "Description": "{{i18n:MatchaPowder_Description}}",
+          "Type": "Basic",
+          "Category": -17,
+          "Price": 100,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 0,
+          "Edibility": 1,
+          "IsDrink": false,
+          "ContextTags": [
+            "color_green",
+            "tea_item"
+          ]
+        },
+
+        "{{ModId}}_MatchaLatte": {
+          "Name": "{{ModId}}_MatchaLatte",
+          "DisplayName": "{{i18n:MatchaLatte_Name}}",
+          "Description": "{{i18n:MatchaLatte_Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 450,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 9,
+          "Edibility": 30,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 430,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 50.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.5,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ContextTags": [
+            "color_green"
+          ]
+        },
+
+        "{{ModId}}_MatchaDrink": {
+          "Name": "{{ModId}}_MatchaDrink",
+          "DisplayName": "{{i18n:MatchaDrink_Name}}",
+          "Description": "{{i18n:MatchaDrink_Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 10,
+          "Edibility": 2,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 430,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 30.0,
+                "MagneticRadius": 0.0,
+                "Speed": 0.5,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ContextTags": [
+            "color_green"
+          ]
+        },
+
+        "{{ModId}}_BobaTea": {
+          "Name": "{{ModId}}_BobaTea",
+          "DisplayName": "{{i18n:BobaTea_Name}}",
+          "Description": "{{i18n:BobaTea_Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 450,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 6,
+          "Edibility": 20,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 430,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 32.0,
+                "Speed": 1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ContextTags": [
+            "color_brown"
+          ]
+        },
+
+        "{{ModId}}_AfternoonTea": {
+          "Name": "{{ModId}}_AfternoonTea",
+          "DisplayName": "{{i18n:AfternoonTea_Name}}",
+          "Description": "{{i18n:AfternoonTea_Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 7,
+          "Edibility": 50,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 430,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 30.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ContextTags": [
+            "color_brown"
+          ]
+        },
+
+        "{{ModId}}_IcedTea": {
+          "Name": "{{ModId}}_IcedTea",
+          "DisplayName": "{{i18n:IcedTea_Name}}",
+          "Description": "{{i18n:IcedTea_Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 5,
+          "Edibility": 10,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 430,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.5,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 30.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ContextTags": [
+            "color_orange"
+          ],
+          "CustomFields": null
+        },
+
+        "{{ModId}}_NiceTea": {
+          "Name": "{{ModId}}_NiceTea",
+          "DisplayName": "{{i18n:NiceTea_Name}}",
+          "Description": "{{i18n:NiceTea_Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 200,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 11,
+          "Edibility": 5,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 630,
+              "IsDebuff": false,
+              "GlowColor": null,
+              "CustomAttributes": {
+                "FarmingLevel": 0.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 0.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 30.0,
+                "MagneticRadius": 0.0,
+                "Speed": 1.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ContextTags": [
+            "color_brown"
+          ]
+        },
+
+        "{{ModId}}_FairyTea": {
+          "Name": "{{ModId}}_FairyTea",
+          "DisplayName": "{{i18n:FairyTea_Name}}",
+          "Description": "{{i18n:FairyTea_Description}}",
+          "Type": "Cooking",
+          "Category": -26,
+          "Price": 350,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 8,
+          "Edibility": 30,
+          "IsDrink": true,
+          "Buffs": [
+            {
+              "Id": "Drink",
+              "BuffId": null,
+              "IconTexture": null,
+              "IconSpriteIndex": 0,
+              "Duration": 230,
+              "IsDebuff": false,
+              "GlowColor": "Orchid",
+              "CustomAttributes": {
+                "FarmingLevel": 1.0,
+                "FishingLevel": 0.0,
+                "MiningLevel": 0.0,
+                "LuckLevel": 1.0,
+                "ForagingLevel": 0.0,
+                "MaxStamina": 0.0,
+                "MagneticRadius": 0.0,
+                "Speed": 5.0,
+                "Defense": 0.0,
+                "Attack": 0.0
+              },
+              "CustomFields": null
+            }
+          ],
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": false,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_purple"
+          ],
+          "CustomFields": null
+        },
+        "{{ModId}}_MatchaCake": {
+          "Name": "{{ModId}}_MatchaCake",
+          "DisplayName": "{{i18n:MatchaCake_Name}}",
+          "Description": "{{i18n:MatchaCake_Description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 300,
+          "Texture": "XTeaEx",
+          "SpriteIndex": 4,
+          "Edibility": 90,
+          "IsDrink": false,
+          "ContextTags": [
+            "color_green"
+          ],
+          "CustomFields": null
+        }
+      }
+    }
+  ]
+}

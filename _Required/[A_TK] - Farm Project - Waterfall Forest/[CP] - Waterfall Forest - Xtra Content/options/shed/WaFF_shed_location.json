@@ -1,0 +1,593 @@
+{
+    "Changes": [
+	
+//	EXIT
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
+			"AddWarps": [
+				"14 35 {{ModId}}_Custom_waterfall_path_north 21 9",
+				"15 35 {{ModId}}_Custom_waterfall_path_north 21 9"
+			],
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
+			"AddWarps": [
+				"14 35 farm 8 38",
+				"15 35 farm 9 38"
+			],
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
+			"AddWarps": [
+				"14 35 farm 69 77",
+				"15 35 farm 70 77"
+			],
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall"
+			}
+		},
+		
+//	UPGRADE STEPS
+
+//	//	STEP 0
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 48, "Y": 0, "Width": 8, "Height": 13 },
+			"ToArea": { "X": 18, "Y": 0, "Width": 8, "Height": 13 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 12 },
+			"ToArea": { "X": 0, "Y": 28, "Width": 15, "Height": 12 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 0, "Y": 13, "Width": 14, "Height": 10 },
+			"ToArea": { "X": 65, "Y": 67, "Width": 14, "Height": 10 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmhouseUpgrade": 0,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 32, "Y": 24, "Width": 5, "Height": 1 },
+			"ToArea": { "X": 67, "Y": 77, "Width": 5, "Height": 1 },
+			"PatchMode": "Replace",
+			"When": { 
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall"
+			}
+		},
+		
+//	//	STEP 1 TO 3
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 57, "Y": 0, "Width": 8, "Height": 13 },
+			"ToArea": { "X": 18, "Y": 0, "Width": 8, "Height": 13 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmhouseUpgrade": "1, 2, 3",
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 45, "Y": 13, "Width": 2, "Height": 3 },
+			"ToArea": { "X": 21, "Y": 6, "Width": 2, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},		
+		
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 16, "Y": 0, "Width": 15, "Height": 12 },
+			"ToArea": { "X": 0, "Y": 28, "Width": 15, "Height": 12 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmhouseUpgrade": "1, 2, 3",
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 45, "Y": 13, "Width": 2, "Height": 3 },
+			"ToArea": { "X": 8, "Y": 35, "Width": 2, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 15, "Y": 13, "Width": 14, "Height": 10 },
+			"ToArea": { "X": 65, "Y": 67, "Width": 14, "Height": 10 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmhouseUpgrade": "1, 2, 3",
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 45, "Y": 13, "Width": 2, "Height": 3 },
+			"ToArea": { "X": 69, "Y": 74, "Width": 2, "Height": 3 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmhouseUpgrade": 1,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},		
+		
+//	//	STEP 4
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 66, "Y": 0, "Width": 8, "Height": 13 },
+			"ToArea": { "X": 18, "Y": 0, "Width": 8, "Height": 13 },
+			"PatchMode": "Replace",
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"IsCommunityCenterComplete": "true",
+				"FarmhouseUpgrade": 3,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 66, "Y": 0, "Width": 8, "Height": 13 },
+			"ToArea": { "X": 18, "Y": 0, "Width": 8, "Height": 13 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"IsJojaMartComplete": "true",
+				"FarmhouseUpgrade": 3,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 66, "Y": 0, "Width": 8, "Height": 13 },
+			"ToArea": { "X": 18, "Y": 0, "Width": 8, "Height": 13 },
+			"PatchMode": "Replace",
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"Unlock_Shed_WaFF": "true"
+			}
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 32, "Y": 0, "Width": 15, "Height": 12 },
+			"ToArea": { "X": 0, "Y": 28, "Width": 15, "Height": 12 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"IsCommunityCenterComplete": "true",
+				"FarmhouseUpgrade": 3,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 32, "Y": 0, "Width": 15, "Height": 12 },
+			"ToArea": { "X": 0, "Y": 28, "Width": 15, "Height": 12 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"IsJojaMartComplete": "true",
+				"FarmhouseUpgrade": 3,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 32, "Y": 0, "Width": 15, "Height": 12 },
+			"ToArea": { "X": 0, "Y": 28, "Width": 15, "Height": 12 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"Unlock_Shed_WaFF": "true"
+			}
+		},		
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 30, "Y": 13, "Width": 14, "Height": 10 },
+			"ToArea": { "X": 65, "Y": 67, "Width": 14, "Height": 10 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"IsCommunityCenterComplete": "true",
+				"FarmhouseUpgrade": 3,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 30, "Y": 13, "Width": 14, "Height": 10 },
+			"ToArea": { "X": 65, "Y": 67, "Width": 14, "Height": 10 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"IsJojaMartComplete": "true",
+				"FarmhouseUpgrade": 3,
+				"Unlock_Shed_WaFF": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 30, "Y": 13, "Width": 14, "Height": 10 },
+			"ToArea": { "X": 65, "Y": 67, "Width": 14, "Height": 10 },
+			"PatchMode": "Replace",
+			"When": {
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"Unlock_Shed_WaFF": "true"
+			}
+		},
+
+//	WORLD MAP
+
+//	//	DEFAULT COLORS
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/_default_SV/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 55, "Y": 5, "Width": 5, "Height": 4 },	
+			"PatchMode": "Overlay",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"Use_Northern_Path_WaFF": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/_default_SV/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 41, "Y": 27, "Width": 5, "Height": 4 },	
+			"PatchMode": "Overlay",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/_default_SV/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 65, "Y": 38, "Width": 5, "Height": 4 },		
+			"PatchMode": "Overlay",
+			"When": { 
+				"World_Map_Recolor": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+		
+//	//	EARTHY RECOLOUR		
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Earthy_Recolour/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 55, "Y": 5, "Width": 5, "Height": 4 },	
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "DaisyNiko.EarthyRecolour, N3cro_92.WorldMapSVE, N3cro_92.WorldMapONLYSVE",
+				"World_Map_Recolor": "True",
+				"Use_Northern_Path_WaFF": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Earthy_Recolour/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 41, "Y": 27, "Width": 5, "Height": 4 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "DaisyNiko.EarthyRecolour, N3cro_92.WorldMapSVE, N3cro_92.WorldMapONLYSVE",
+				"World_Map_Recolor": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Earthy_Recolour/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 65, "Y": 38, "Width": 5, "Height": 4 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "DaisyNiko.EarthyRecolour, N3cro_92.WorldMapSVE, N3cro_92.WorldMapONLYSVE",
+				"World_Map_Recolor": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+
+//	//	STARBLUE VALLEY
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Starblue_Valley/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 55, "Y": 5, "Width": 5, "Height": 4 },	
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "Lita.StarblueValleyUnofficial",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"World_Map_Recolor": "True",
+				"Use_Northern_Path_WaFF": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Starblue_Valley/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 41, "Y": 27, "Width": 5, "Height": 4 },	
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "Lita.StarblueValleyUnofficial",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"World_Map_Recolor": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Starblue_Valley/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 65, "Y": 38, "Width": 5, "Height": 4 },	
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "Lita.StarblueValleyUnofficial",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"World_Map_Recolor": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+
+//	//	UNIVERSAL RECOLOR
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Universal_Recolors/D40_H1/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 55, "Y": 5, "Width": 5, "Height": 4 },	
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "herbivoor.UniversalRecolors",
+				"World_Map_Recolor": "True",
+				"Use_Northern_Path_WaFF": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Universal_Recolors/D40_H1/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 41, "Y": 27, "Width": 5, "Height": 4 },	
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "herbivoor.UniversalRecolors",
+				"World_Map_Recolor": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Universal_Recolors/D40_H1/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 65, "Y": 38, "Width": 5, "Height": 4 },	
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "herbivoor.UniversalRecolors",
+				"World_Map_Recolor": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+		
+//	//	VIBRANT PASTORAL
+
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Vibrant_Pastoral/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 55, "Y": 5, "Width": 5, "Height": 4 },	
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "grapeponta.VibrantPastoralRecolor",
+				"World_Map_Recolor": "True",
+				"Use_Northern_Path_WaFF": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Northern_Path",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Vibrant_Pastoral/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 41, "Y": 27, "Width": 5, "Height": 4 },	
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "grapeponta.VibrantPastoralRecolor",
+				"World_Map_Recolor": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_Pen",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "Mods/A_TK.FarmProjectForaging/WorldMap",
+			"FromFile": "options/shed/world_map/Vibrant_Pastoral/{{season}}_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+			"ToArea": { "X": 65, "Y": 38, "Width": 5, "Height": 4 },
+			"PatchMode": "Overlay",
+			"When": { 
+				"HasMod": "grapeponta.VibrantPastoralRecolor",
+				"World_Map_Recolor": "True",
+				"Use_Shed_WaFF": "True",
+				"Abandoned_Shed_Location_WaFF": "Farm_TFall",
+				"FarmType": "A_TK.FarmProjectForaging/WaFF"
+			}
+		}
+	]
+}

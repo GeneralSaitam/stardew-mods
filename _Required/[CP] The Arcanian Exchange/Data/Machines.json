@@ -1,0 +1,775 @@
+{
+"Changes": [
+{
+"Action": "EditData",
+"Target": "Data/Buildings",
+"TargetField": [
+"Mill",
+"ItemConversions"
+],
+"Entries": {
+"{{ModID}}_AdauulaFlour": {
+"Id": "{{ModID}}_AdauulaFlour",
+"SourceChest": "Input",
+"DestinationChest": "Output",
+"RequiredTags": [
+"fc_mill_AdauulaStalk"
+],
+"ProducedItems": [
+{
+"ItemId": "{{ModID}}_AdauulaFlour",
+"MinStack": 2
+}
+],
+"MaxDailyConversions": -1
+}
+}
+},
+{
+"Action": "EditData",
+"Target": "Data/Buildings",
+"TargetField": [
+"Mill",
+"ItemConversions"
+],
+"Entries": {
+"{{ModID}}_CarnivoreFeed": {
+"Id": "{{ModID}}_CarnivoreFeed",
+"SourceChest": "Input",
+"DestinationChest": "Output",
+"RequiredTags": [
+"fc_mill_GaggleShroom"
+],
+"ProducedItems": [
+{
+"ItemId": "{{ModID}}_CarnivoreFeed",
+"MinStack": 2
+}
+],
+"MaxDailyConversions": -1
+}
+}
+},
+{
+"LogName": "(BC)Dehydrator",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)Dehydrator",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_CarnivorousTreeFruit": {
+"Id": "{{ModID}}_CarnivorousTreeFruit",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_CarnivorousTreeFruit",
+"RequiredCount": 2
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_CarnivorousFruitJerky",
+"ItemId": "{{ModID}}_CarnivorousFruitJerky"
+}
+],
+"MinutesUntilReady": 1750,
+}
+},
+},
+{
+"LogName": "Fiber",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)20",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_FiberClumps": {
+"Id": "{{ModID}}_FiberClumps",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_FiberClumps",
+"RequiredCount": 3
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_771",
+"ItemId": "771"
+}
+],
+"MinutesUntilReady": 1000,
+ "InvalidCountMessage": "{{i18n:FC.FiberClumpErrorMessage}}",
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_FiberClumps",
+"BeforeId": "Default_Trash"
+}
+]
+},
+{
+"Action": "EditData",
+"Target": "Data/Machines",
+"Entries": {
+ "(BC){{ModID}}_TropicalIncubator": {
+"HasInput": false,
+"HasOutput": false,
+"InteractMethod": null,
+"OutputRules": [
+{
+"Id": "{{ModID}}_Movoraptor",
+"Triggers": [
+{
+"Id": "ItemPlacedInMachine",
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_MovoraptorEgg",
+"RequiredTags": null,
+"RequiredCount": 1,
+"Condition": null
+},
+{
+"Id": "ItemPlacedInMachine",
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_DeathBirdEgg",
+"RequiredTags": null,
+"RequiredCount": 1,
+"Condition": null
+},
+{
+"Id": "ItemPlacedInMachine",
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_RaphusEgg",
+"RequiredTags": null,
+"RequiredCount": 1,
+"Condition": null
+},
+{
+"Id": "ItemPlacedInMachine",
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_GiantaEgg",
+"RequiredTags": null,
+"RequiredCount": 1,
+"Condition": null
+},
+],
+"UseFirstValidOutput": false,
+"OutputItem": [
+{
+"CustomData": null,
+"OutputMethod": "StardewValley.Object, Stardew Valley: OutputIncubator",
+"CopyColor": false,
+"CopyPrice": false,
+"CopyQuality": false,
+"PreserveType": null,
+"PreserveId": null,
+"IncrementMachineParentSheetIndex": 0,
+"PriceModifiers": null,
+"PriceModifierMode": "Stack",
+"Condition": null,
+"Id": "Default",
+"ItemId": null,
+"RandomItemId": null,
+"MaxItems": null,
+"MinStack": -1,
+"MaxStack": -1,
+"Quality": -1,
+"ObjectInternalName": null,
+"ObjectDisplayName": null,
+"ObjectColor": null,
+"ToolUpgradeLevel": -1,
+"IsRecipe": false,
+"StackModifiers": null,
+"StackModifierMode": "Stack",
+"QualityModifiers": null,
+"QualityModifierMode": "Stack",
+"ModData": null,
+"PerItemCondition": null
+}
+],
+"MinutesUntilReady": 15000,
+"DaysUntilReady": -1,
+"InvalidCountMessage": null,
+"RecalculateOnCollect": false
+}
+],
+"AdditionalConsumedItems": null,
+"PreventTimePass": null,
+"ReadyTimeModifiers": [
+],
+"ReadyTimeModifierMode": "Stack",
+"InvalidItemMessage": null,
+"InvalidItemMessageCondition": null,
+"InvalidCountMessage": null,
+"LoadEffects": [
+{
+"Id": "Default",
+"Condition": null,
+"Sounds": [
+{
+"Id": "coin",
+"Delay": 0
+}
+],
+"Interval": 100,
+"Frames": null,
+"ShakeDuration": -1,
+"TemporarySprites": null
+}
+],
+"WorkingEffects": null,
+"WorkingEffectChance": 0.33,
+"AllowLoadWhenFull": false,
+"WobbleWhileWorking": true,
+"LightWhileWorking": null,
+"ShowNextIndexWhileWorking": false,
+"ShowNextIndexWhenReady": false,
+"AllowFairyDust": false,
+"IsIncubator": true,
+"OnlyCompleteOvernight": true,
+"ClearContentsOvernightCondition": null,
+"StatsToIncrementWhenLoaded": null,
+"StatsToIncrementWhenHarvested": null,
+"ExperienceGainOnHarvest": null,
+"CustomFields": null
+},
+}
+},
+{
+"LogName": "DeathBird Mayo",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)24",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_DeathBirdEgg": {
+"Id": "{{ModID}}_DeathBirdEgg",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_DeathBirdEgg",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_DeaMayo",
+"ItemId": "{{ModID}}_DeaMayo"
+}
+],
+"MinutesUntilReady": 1800
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_DeathBirdEgg",
+"BeforeId": "Default_Egg"
+}
+]
+},
+{
+"LogName": "Raphus Mayo",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)24",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_RaphusEgg": {
+"Id": "{{ModID}}_RaphusEgg",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_RaphusEgg",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_RaphusMayo",
+"ItemId": "{{ModID}}_RaphusMayo"
+}
+],
+"MinutesUntilReady": 1800
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_RaphusEgg",
+"BeforeId": "{{ModID}}_Egg"
+}
+]
+},
+{
+"LogName": "Movorator Mayo",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)24",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_MovoraptorEgg": {
+"Id": "{{ModID}}_MovoraptorEgg",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_MovoraptorEgg",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_MovoraptorMayo",
+"ItemId": "{{ModID}}_MovoraptorMayo"
+}
+],
+"MinutesUntilReady": 1800
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_MovoraptorEgg",
+"BeforeId": "Default_Egg"
+}
+]
+},
+{
+"LogName": "RaphusEgg Mayo",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)24",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_RaphusEgg": {
+"Id": "{{ModID}}_RaphusEgg",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_RaphusEgg",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_RaphusMayo",
+"ItemId": "{{ModID}}_RaphusMayo"
+}
+],
+"MinutesUntilReady": 1800
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_RaphusEgg",
+"BeforeId": "Default_Egg"
+}
+]
+},
+{
+"LogName": "aged Gouud Large Cheese",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)17",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_NarubitWool": {
+"Id": "{{ModID}}_NarubitWool",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_NarubitWool",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"CustomData": null,
+"OutputMethod": null,
+"CopyColor": false,
+"CopyPrice": false,
+"CopyQuality": false,
+"PreserveType": null,
+"PreserveId": null,
+"IncrementMachineParentSheetIndex": 0,
+"PriceModifiers": null,
+"PriceModifierMode": "Stack",
+"Condition": null,
+"Id": "(O)440",
+"ItemId": "(O)428",
+"RandomItemId": null,
+"MaxItems": null,
+"MinStack": -1,
+"MaxStack": -1,
+"Quality": -1,
+"ObjectInternalName": null,
+"ObjectDisplayName": null,
+"ObjectColor": null,
+"ToolUpgradeLevel": -1,
+"IsRecipe": false,
+"StackModifiers": [
+{
+"Id": "DoubleQuality",
+"Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.15\" \"ITEM_QUALITY Input 2 2, RANDOM 0.5\" \"ITEM_QUALITY Input 4 4, RANDOM 1\"",
+"Modification": "Multiply",
+"Amount": 2.0,
+"RandomAmount": null
+}
+],
+"StackModifierMode": "Stack",
+"QualityModifiers": null,
+"QualityModifierMode": "Stack",
+"ModData": null,
+"PerItemCondition": null
+}
+],
+"MinutesUntilReady": 240,
+"DaysUntilReady": -1,
+"InvalidCountMessage": null,
+"RecalculateOnCollect": false
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_NarubitWool",
+"BeforeId": "Default"
+}
+]
+},
+{
+"LogName": "aged Galeabison Large Cheese",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)163",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_AgedLargeGaleabisonCheese": {
+"Id": "{{ModID}}_AgedLargeGaleabisonCheese",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_LargeGaleabisonCheese",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_AgedLargeGaleabisonCheese",
+"ItemId": "{{ModID}}_AgedLargeGaleabisonCheese",
+
+}
+],
+"MinutesUntilReady": -1,
+"DaysUntilReady": 5,
+"InvalidCountMessage": null,
+"RecalculateOnCollect": false
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_AgedLargeGaleabisonCheese",
+"BeforeId": "Wine"
+}
+]
+},
+{
+"LogName": "aged Galeabison Small Cheese",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)163",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_AgedSmallGaleabisonCheese": {
+"Id": "{{ModID}}_AgedSmallGaleabisonCheese",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_SmallGaleabisonCheese",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_AgedSmallGaleabisonCheese",
+"ItemId": "{{ModID}}_AgedSmallGaleabisonCheese",
+
+}
+],
+"MinutesUntilReady": -1,
+"DaysUntilReady": 5,
+"InvalidCountMessage": null,
+"RecalculateOnCollect": false
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_AgedSmallGaleabisonCheese",
+"BeforeId": "Wine"
+}
+]
+},
+{
+"LogName": "Galeabison Large Cheese",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)16",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_SmallGaleabisonCheese": {
+"Id": "{{ModID}}_SmallGaleabisonCheese",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_SmallGaleabisonMilk",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_SmallGaleabisonCheese",
+"ItemId": "{{ModID}}_SmallGaleabisonCheese"
+}
+],
+"MinutesUntilReady": 1800
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_SmallGaleabisonCheese",
+"BeforeId": "Default_LargeGoatMilk"
+}
+]
+},
+{ 
+ "LogName": "Galeabison Large Cheese",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)16",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_LargeGaleabisonCheese": {
+"Id": "{{ModID}}_LargeGaleabisonCheese",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_LargeGaleabisonMilk",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_LargeGaleabisonCheese",
+"ItemId": "{{ModID}}_LargeGaleabisonCheese"
+}
+],
+"MinutesUntilReady": 1800
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_LargeGaleabisonCheese",
+"BeforeId": "Default_LargeGoatMilk"
+}
+]
+},
+{
+"LogName": "Tropa Fruit wine",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)12",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_TropaFruit": {
+"Id": "{{ModID}}_TropaFruit",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_TropaFruit",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_TropaWine",
+"ItemId": "{{ModID}}_TropaWine"
+}
+],
+"MinutesUntilReady": 1800,
+"InvalidCountMessage": null,
+
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_TropaFruit",
+"BeforeId": "Default_Wine"
+}
+]
+},
+ {
+"LogName": "refined tropa wine",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)163",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_TropaWine": {
+"Id": "{{ModID}}_TropaWine",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_TropaWine",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_TropaWine",
+"ItemId": "{{ModID}}_TropaWine",
+
+}
+],
+"MinutesUntilReady": -1,
+"DaysUntilReady": 5,
+"InvalidCountMessage": null,
+"RecalculateOnCollect": false
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_RefinedTropaWine",
+"BeforeId": "Wine"
+}
+]
+},
+{
+"LogName": "draga whiskey",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)12",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_DragaTonguula": {
+"Id": "{{ModID}}_DragaTonguula",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_DragaTonguula",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_TonguulaWhiskey",
+"ItemId": "{{ModID}}_TonguulaWhiskey"
+}
+],
+"MinutesUntilReady": 1800,
+"InvalidCountMessage": null,
+
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_DragaTonguula",
+"BeforeId": "Default_Wine"
+}
+]
+},
+{
+"LogName": "VoidMilk",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)12",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_VoidTreeFruit": {
+"Id": "{{ModID}}_VoidTreeFruit",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_VoidTreeFruit",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_VoidMilk",
+"ItemId": "{{ModID}}_VoidMilk"
+}
+],
+"MinutesUntilReady": 1800,
+"InvalidCountMessage": null,
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_VoidTreeFruit",
+"BeforeId": "Default_Wine"
+}
+]
+},
+{
+"LogName": "Roast Reuu Nut",
+"Action": "EditData",
+"Target": "Data/Machines",
+"TargetField": [
+"(BC)13",
+"OutputRules"
+],
+"Entries": {
+"{{ModID}}_ReuuNut": {
+"Id": "{{ModID}}_ReuuNut",
+"Triggers": [
+{
+"Trigger": "ItemPlacedInMachine",
+"RequiredItemId": "{{ModID}}_ReuuNut",
+"RequiredCount": 1
+}
+],
+"OutputItem": [
+{
+"Id": "{{ModID}}_RoastedReuuNut",
+"ItemId": "{{ModID}}_RoastedReuuNut"
+}
+],
+"MinutesUntilReady": 550
+}
+},
+"MoveEntries": [
+{
+"Id": "{{ModID}}_ReuuNut",
+"BeforeId": "Default_CopperOre"
+}
+]
+},
+]
+}

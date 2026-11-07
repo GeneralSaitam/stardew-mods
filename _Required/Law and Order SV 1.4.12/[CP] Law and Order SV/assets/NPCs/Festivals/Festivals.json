@@ -1,0 +1,392 @@
+{
+    "Changes": [
+        
+        //Egg Festival
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "{{Russell}}": "{{i18n:festivals.Russell.spring13}}",
+                "{{Russell}}_y2": "{{i18n:festivals.Russell.spring13.y2}}",
+                "{{Shannon}}": "{{i18n:festivals.Shannon.spring13}}",
+                "{{Shannon}}_y2": "{{i18n:festivals.Shannon.spring13.y2}}",
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{Russell}} 25 73 0/{{Shannon}} 26 72 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{Russell}} 26 74 0/{{Shannon}} 25 74 0/",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{Russell}} 25 73 0/{{Shannon}} 26 72 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "{{Russell}} 26 74 0/{{Shannon}} 25 74 0/",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+
+        // Flower Dance
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries":{
+                "{{Russell}}": "{{i18n:festivals.Russell.spring24}}",
+                "{{Russell}}_y2": "{{i18n:festivals.Russell.spring24.y2}}",
+                "{{Shannon}}": "{{i18n:festivals.Shannon.spring24}}",
+                "{{Shannon}}_y2": "{{i18n:festivals.Shannon.spring24.y2}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{Russell}} 7 20 2/{{Shannon}} 20 21 3/",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{Russell}} 9 20 2/{{Shannon}} 11 20 2/",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{Russell}} 8 39 0/{{Shannon}} 10 20 2/",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    
+                    "Value": "{{Russell}} 9 30 0/{{Shannon}} 13 30 0/",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        //Luau
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{Russell}} 29 9 1/{{Shannon}} 30 11 3/",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{Russell}} 31 10 1/{{Shannon}} 40 10 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{Russell}} 29 9 1/{{Shannon}} 29 11 3/",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    
+                    "Value": "{{Russell}} 26 5 2/{{Shannon}} 30 10 3",
+                    "Delimiter": "/"
+                },
+            ],
+            "Entries": {
+                "{{Shannon}}": "{{i18n:festivals.Shannon.summer11}}",
+                "{{Shannon}}_y2": "{{i18n:festivals.Shannon.summer11.y2}}",
+                "{{Russell}}": "{{i18n:festivals.Russell.summer11}}",
+                "{{Russell}}_y2": "{{i18n:festivals.Russell.summer11.y2}}",
+            }
+        },
+
+        //Moonlight Jellies
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{Shannon}} 13 22 2/{{Russell}} 27 24 2",
+                    "Delimiter": "/"
+                
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "{{Russell}} 32 34 2/{{Shannon}} 26 28 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{Russell}} 10 37 3/{{Shannon}} 11 38 2/",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    
+                    "Value": "{{Russell}} 32 34 2/{{Shannon}} 26 28 2",
+                    "Delimiter": "/"
+                },
+            ],
+            "Entries": {
+                "{{Shannon}}": "{{i18n:festivals.Shannon.summer28}}",
+                "{{Russell}}": "{{i18n:festivals.Russell.summer28}}",
+                "{{Shannon}}_y2": "{{i18n:festivals.Shannon.summer28.y2}}",
+                "{{Russell}}_y2": "{{i18n:festivals.Russell.summer28.y2}}",
+            }
+        },
+        //Stardew Valley Fair
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{Shannon}} 19 65 1/{{Russell}} 39 72 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{Russell}} 38 71 3/{{Shannon}} 26 73 1/",
+                    "Delimiter": "/"
+                },
+            ],
+            "Entries": {
+                "{{Shannon}}": "{{i18n:festivals.Shannon.fall16}}",
+                "{{Shannon}}_y2": "{{i18n:festivals.Shannon.fall16.y2}}",
+                "{{Russell}}": "{{i18n:festivals.Russell.fall16}}",
+                "{{Russell}}_y2": "{{i18n:festivals.Russell.fall16.y2}}",
+            }
+        },
+        //Spirit's Eve (vanilla)
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{Shannon}} 30 63 0/{{Russell}} 22 53 2",
+                    "Delimiter": "/"
+                
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{Shannon}} 25 53 2/{{Russell}} 22 53 2",
+                    "Delimiter": "/"
+                },
+            ],
+            "Entries": {
+                "{{Shannon}}": "{{i18n:festivals.Shannon.fall27}}",
+                "{{Shannon}}_y2": "{{i18n:festivals.Shannon.fall27.y2}}",
+                "{{Russell}}": "{{i18n:festivals.Russell.fall27}}",
+                "{{Russell}}_y2": "{{i18n:festivals.Russell.fall27.y2}}",
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+            },
+        },
+        //Spirit's Eve (SVE)
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{Shannon}} 30 63 0/{{Russell}} 22 54 2",
+                    "Delimiter": "/"
+                
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{Shannon}} 25 53 2/{{Russell}} 22 53 2",
+                    "Delimiter": "/"
+                },
+            ],
+            "Entries": {
+                "{{Shannon}}": "{{i18n:festivals.Shannon.fall27}}",
+                "{{Shannon}}_y2": "{{i18n:festivals.Shannon.fall27.y2}}",
+                "{{Russell}}": "{{i18n:festivals.Russell.fall27}}",
+                "{{Russell}}_y2": "{{i18n:festivals.Russell.fall27.y2}}",
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            },
+        },
+
+
+        //Festival of Ice: vanilla
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{Shannon}} 65 46 0/{{Russell}} 82 32 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "{{Russell}} 80 29 3/{{Shannon}} 66 44 0",
+                    "Delimiter": "/"
+                },
+                //year 2
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{Russell}} 83 36 3/{{Shannon}} 62 43 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters_y2"
+                    ],      
+                    "Value": "{{Russell}} 78 29 3/{{Shannon}} 62 43 0",
+                    "Delimiter": "/"
+                },
+                
+            ],
+            "Entries": {
+                "{{Shannon}}": "{{i18n:festivals.Shannon.winter8}}",
+                "{{Russell}}": "{{i18n:festivals.Russell.winter8}}",
+                "{{Shannon}}_y2": "{{i18n:festivals.Shannon.winter8.y2}}",
+                "{{Russell}}_y2": "{{i18n:festivals.Russell.winter8.y2}}",
+            }
+        },
+        //Winter Star
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "{{Russell}} 26 74 0/{{Shannon}} 31 74 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "{{Russell}} 37 70 3/{{Shannon}} 33 68 1",
+                    "Delimiter": "/"
+                },
+            ],
+            "Entries": {
+                "{{Shannon}}": "{{i18n:festivals.Shannon.winter25}}",
+                "{{Russell}}": "{{i18n:festivals.Russell.winter25}}",
+                "{{Shannon}}_y2": "{{i18n:festivals.Shannon.winter25.y2}}",
+                "{{Russell}}_y2": "{{i18n:festivals.Russell.winter25.y2}}",
+            }
+        },
+    ]
+}

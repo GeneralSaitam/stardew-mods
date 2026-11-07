@@ -1,0 +1,162 @@
+{
+    "Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Immunity": {
+					"Price": 20000,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Immunity",
+					"ItemId": "(O){{ModId}}_Book_Immunity",
+					"Condition": "PLAYER_COMBAT_LEVEL Current 3"
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableImmunityBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Attack": {
+					"Price": 25000,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Attack",
+					"ItemId": "(O){{ModId}}_Book_Attack",
+                    "Condition": "PLAYER_COMBAT_LEVEL Current 4"
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableAttackBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Magnet": {
+					"Price": 30000,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Magnet",
+					"ItemId": "(O){{ModId}}_Book_Magnet",
+					"Condition": "PLAYER_MINING_LEVEL Current 4"
+				},
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableMagneticBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Speed": {
+                    "Id": "(O){{ModId}}_Book_Speed",
+                    "ItemId": "(O){{ModId}}_Book_Speed",
+                    "Price": 50000,
+                    "TradeItemId": "614",
+                    "TradeItemAmount": 20,
+                    "Condition": 'ANY "IS_COMMUNITY_CENTER_COMPLETE, YEAR 2" "IS_JOJA_MART_COMPLETE, YEAR 2"'
+                },
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableSpeedBook": true
+            },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Bookseller", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Luck": {
+                    "Id": "(O){{ModId}}_Book_Luck",
+                    "ItemId": "(O){{ModId}}_Book_Luck",
+                    "Price": 50000,
+                    "TradeItemId": "859",
+                    "TradeItemAmount": 1,
+                    "Condition": 'ANY "IS_COMMUNITY_CENTER_COMPLETE, YEAR 2" "IS_JOJA_MART_COMPLETE, YEAR 2"'
+                },
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableLuckBook": true
+            },
+		},
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "AdventureShop", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Dagger": {
+					"Price": 10000,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Dagger",
+					"ItemId": "(O){{ModId}}_Book_Dagger",
+                    "Condition": "PLAYER_HEARTS Any Dwarf 1"
+				}
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableDaggerBook": true
+            },
+            "MoveEntries": [
+                { "Id": "(O){{ModId}}_Book_Dagger", "BeforeId": "(W)12" }
+            ],
+		},
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "FishShop", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_Fishing": {
+					"Price": 20000,
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_Fishing",
+					"ItemId": "(O){{ModId}}_Book_Fishing",
+                    "Condition": "PLAYER_HEARTS Any Willy 6"
+				}
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableFishingLevelBook": true
+            },
+            "MoveEntries": [
+                { "Id": "(O){{ModId}}_Book_Fishing", "BeforeId": "(O)219" }
+            ],
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "QiGemShop", "Items" ],
+			"Entries": {
+				"{{ModId}}_ShopEntry_God": {
+					"TradeItemAmount": 2000,
+					"TradeItemId": "(O)858",
+					"AvailableStock": 1,
+					"AvailableStockLimit": "Player",
+					"Id": "(O){{ModId}}_Book_God",
+					"ItemId": "(O){{ModId}}_Book_God",
+                    "Condition": 'ANY "PLAYER_VISITED_LOCATION Current Summit" "PLAYER_VISITED_LOCATION Current Custom_SVESummit"'
+				}
+			},
+			"When": {
+                "jeWel.MoreBooksCode/ConfigEnableGodBook": true
+            },
+		},
+    ]
+}

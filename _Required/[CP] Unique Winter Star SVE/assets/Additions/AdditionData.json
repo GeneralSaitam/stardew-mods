@@ -1,0 +1,708 @@
+{
+	"Changes":[
+	//ATTENDEES (and their gift data)
+		
+		{
+			"LogName": "Scarlett Winter Star Activation - Default",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Scarlett": {
+					"WinterStarParticipant": "PLAYER_HAS_SEEN_EVENT Current 3691371, PLAYER_NPC_RELATIONSHIP Any Scarlett Married",
+				},
+			},
+			"When": {
+				"Scarlett": "marriageonly, marriagespice",
+			},
+		},
+		
+		{
+			"LogName": "Scarlett Winter Star Activation - All Times",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Scarlett": {
+					"WinterStarParticipant": "PLAYER_HAS_SEEN_EVENT Current 3691371",
+				},
+			},
+			"When": {
+				"Scarlett": "enabled, spicy",
+			},
+		},
+		
+		{
+			"LogName": "Scarlett Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Scarlett", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GoatCheese": {
+					"Id": "AgentLyoko.UWS.GoatCheese",
+					"ItemId": "(O)426",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GoatMilk": {
+					"Id": "AgentLyoko.UWS.GoatMilk",
+					"ItemId": "(O)436",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Cloth": {
+					"Id": "AgentLyoko.UWS.Cloth",
+					"ItemId": "(O)428",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Wool": {
+					"Id": "AgentLyoko.UWS.Wool",
+					"ItemId": "(O)440",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.LargeGoatMilk": {
+					"Id": "AgentLyoko.UWS.LargeGoatMilk",
+					"ItemId": "(O)438",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.CaptainUniform": {
+					"Id": "AgentLyoko.UWS.CaptainUniform",
+					"ItemId": "(S)1239",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BomberJacket": {
+					"Id": "AgentLyoko.UWS.BomberJacket",
+					"ItemId": "(S)1155",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.ArcaneShirt": {
+					"Id": "AgentLyoko.UWS.ArcaneShirt",
+					"ItemId": "(S)1215",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.AgedBlueMoonWine": {
+					"Id": "AgentLyoko.UWS.AgedBlueMoonWine", //Ultimate Gift. This is a bit difficult, but my logic is Scarlett can probably get it on discount from Sophia. That and I have zero ideas on better gifts for her for now. Still, not as quality.
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Aged_Blue_Moon_Wine",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": "PLAYER_HEARTS Current Scarlett 9 14"
+				},
+			},
+			"When": {
+				"CustomGifts": "enabled",
+			},
+		},
+
+		
+		{
+			"LogName": "Martin Winter Star Activation",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Martin": {
+					"WinterStarParticipant": true, //Martin will be social from Day 1, so no further edits necessary.
+				},
+			},
+			"When": {
+				"Martin": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Martin Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Martin", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.MovieTicket": {
+					"Id": "AgentLyoko.UWS.MovieTicket", //Post-Theater activation
+					"ItemId": "(O)809",
+					"MinStack": 4,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "ANY \"PLAYER_HAS_MAIL ccMovieTheater\" \"PLAYER_HAS_MAIL ccMovieTheaterJoja\""
+				},
+
+				"AgentLyoko.UWS.StrawberrySeed": {
+					"Id": "AgentLyoko.UWS.StrawberrySeed",
+					"ItemId": "(O)745",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BlueberrySeed": {
+					"Id": "AgentLyoko.UWS.BlueberrySeed",
+					"ItemId": "(O)481",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.CranberrySeed": {
+					"Id": "AgentLyoko.UWS.CranberrySeed",
+					"ItemId": "(O)493",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.SunflowerSeed": {
+					"Id": "AgentLyoko.UWS.SunflowerSeed",
+					"ItemId": "(O)431",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.ParnsipSeed": {
+					"Id": "AgentLyoko.UWS.ParsnipSeed", //Large amount, since cheap
+					"ItemId": "(O)472",
+					"MinStack": 50,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.RedCabbageSeed": {
+					"Id": "AgentLyoko.UWS.RedCabbageSeed",
+					"ItemId": "(O)485",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.AncientSeed": {
+					"Id": "AgentLyoko.UWS.AncientSeed", //Ultimate Gift, make sure not that many.
+					"ItemId": "(O)499",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Martin 9 10"
+				},
+			},
+			"When": {
+				"CustomGifts": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Morgan Winter Star Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Morgan": {
+					"WinterStarParticipant": "PLAYER_HAS_SEEN_EVENT Any 5978924",
+				},
+			},
+			"When": {
+				"Morgan": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Morgan Winter Star Gift Data", //A fair amount of these are already properly tagged with qualified ID. Fix anything that's not 341 or the void stuff (which have wrong IDs)
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Morgan", "WinterStarGifts" ],
+			"Entries": {					  
+				"AgentLyoko.UWS.Mini-Obelisk": {
+					"Id": "AgentLyoko.UWS.Mini-Obelisk", //Ultimate Gift
+					"ItemId": "(BC)238",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Morgan 9 10"
+				},
+
+				"AgentLyoko.UWS.SolarEssence": {
+					"Id": "AgentLyoko.UWS.SolarEssence",
+					"ItemId": "(O)768",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.VoidEssence": {
+					"Id": "AgentLyoko.UWS.VoidEssence",
+					"ItemId": "(O)769",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.IridiumBar": {
+					"Id": "AgentLyoko.UWS.IridiumBar",
+					"ItemId": "(O)337",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.VoidEgg": {
+					"Id": "AgentLyoko.UWS.VoidEgg",
+					"ItemId": "(O)305",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.VoidMayo": {
+					"Id": "AgentLyoko.UWS.VoidMayo",
+					"ItemId": "(O)308",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.WarpTotemFarm": {
+					"Id": "AgentLyoko.UWS.WarpTotemFarm",
+					"ItemId": "(O)688",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.WarpTotemDesert": {
+					"Id": "AgentLyoko.UWS.WarpTotemDesert",
+					"ItemId": "(O)261",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HAS_MAIL Any skullCave",
+				},
+				
+				"AgentLyoko.UWS.WarpTotemIsland": {
+					"Id": "AgentLyoko.UWS.WarpTotemIsland",
+					"ItemId": "(O)886",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HAS_MAIL Any Visited_Island",
+				},
+				
+				"AgentLyoko.UWS.ArmorElixir": {
+					"Id": "AgentLyoko.UWS.ArmorElixir",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Armor_Elixir",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HasteElixir": {
+					"Id": "AgentLyoko.UWS.HasteElixir",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Haste_Elixir",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HeroElixir": {
+					"Id": "AgentLyoko.UWS.HeroElixir",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+			},
+			"When": {
+				"CustomGifts": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Gunther Winter Star Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"GuntherSilvian": {
+					"WinterStarParticipant": "PLAYER_HAS_SEEN_EVENT Any 103042015",
+				},
+			},
+			"When": {
+				"Gunther": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Gunther Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "GuntherSilvian", "WinterStarGifts" ],
+			"Entries": {
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DwarfComputer": {
+					"Id": "AgentLyoko.UWS.DwarfComputer",
+					"ItemId": "(O)122",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.DinoEgg": {
+					"Id": "AgentLyoko.UWS.DinoEgg",
+					"ItemId": "(O)107",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.PrismaticShard": {
+					"Id": "AgentLyoko.UWS.PrismaticShard", //Ultimate Gift, 2 of
+					"ItemId": "(O)74",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current GuntherSilvian 9 14"
+				},
+
+				"AgentLyoko.UWS.SnakeVertebrae": {
+					"Id": "AgentLyoko.UWS.SnakeVertebrae",
+					"ItemId": "(O)826",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.BoneMill": {
+					"Id": "AgentLyoko.UWS.BoneMill",
+					"ItemId": "(O)90",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Diamond": {
+					"Id": "AgentLyoko.UWS.Diamond",
+					"ItemId": "(O)72",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Basalt": {
+					"Id": "AgentLyoko.UWS.Basalt",
+					"ItemId": "(O)570",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.OceanStone": {
+					"Id": "AgentLyoko.UWS.OceanStone",
+					"ItemId": "(O)560",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+			},
+			"When": {
+				"CustomGifts": "enabled",
+			},
+		},
+		
+		//LOCATIONS
+		
+		//Scarlett joins Sophia in petting Dusty while she's at the festival prior to her own celebrations back home
+		{
+			"LogName": "Scarlett Giftable at the Winter Star - Year 1 (Year 2 innate to SVE)",			
+		  	"Action": "EditData",
+		  	"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+								],
+					"Value": "Scarlett 54 69 0",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+								],
+                    "Value": "Scarlett 54 69 0",
+                    "Delimiter": "/"
+                },
+			],
+			"When": {
+				"Scarlett": "enabled",
+			},
+		},
+		
+		//Martin takes a seat near Claire, and they chat slightly.
+		{
+			"LogName": "Martin Giftable at the Winter Star - Year 1 (Year 2 innate)",			
+		  	"Action": "EditData",
+		  	"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+								],
+					"Value": "Martin 37 57 2",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+								],
+                    "Value": "Martin 37 57 2",
+                    "Delimiter": "/"
+                },
+			],
+			"When": {
+				"Martin": "enabled",
+			},
+		},
+		
+		//LANCE STUFF (done last due to potential for breaking)
+		
+		{
+			"LogName": "Lance Winter Star Activation Prior to Marriage",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Lance": {
+					"WinterStarParticipant": "PLAYER_HAS_SEEN_EVENT Any 6951319",
+				},
+			},
+			"When": {
+				"Lance": "earlyadd, dialogueearly, dialoguespice",
+			},
+		},
+		
+		//Lance at Normal Spot
+		{
+			"LogName": "Lance Giftable at the Winter Star",			
+		  	"Action": "EditData",
+		  	"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+								],
+					"Value": "Lance 23 61 2",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+								],
+                    "Value": "Lance 23 61 2",
+                    "Delimiter": "/"
+                },
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+								],
+					"Value": "Lance 32 57 2",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+								],
+                    "Value": "Lance 32 57 2",
+                    "Delimiter": "/"
+                },
+			],
+			"When": {
+				"Lance": "earlyadd, dialogueearly, dialoguespice",
+				"HasSeenEvent": "6951319",
+			},
+		},
+		
+		{
+			"LogName": "Lance Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Lance", "WinterStarGifts" ],
+			"Entries": {	  
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.ArmorElixir": {
+					"Id": "AgentLyoko.UWS.ArmorElixir",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Armor_Elixir",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HasteElixir": {
+					"Id": "AgentLyoko.UWS.HasteElixir",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Haste_Elixir",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.HeroElixir": {
+					"Id": "AgentLyoko.UWS.HeroElixir",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.LifeElixir": {
+					"Id": "AgentLyoko.UWS.LifeElixir",
+					"ItemId": "(O)773",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.TigerSlimeEgg": {
+					"Id": "AgentLyoko.UWS.TigerSlimeEgg",
+					"ItemId": "(O)857",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.GalaxySoul": {
+					"Id": "AgentLyoko.UWS.GalaxySoul", //Ultimate Gift
+					"ItemId": "(O)896",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Lance 9 14"
+				},
+
+				"AgentLyoko.UWS.GoldenOceanFlower": {
+					"Id": "AgentLyoko.UWS.GoldenOceanFlower",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Golden_Ocean_Flower",
+					"MinStack": 2,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.OrnateTreasureChest": {
+					"Id": "AgentLyoko.UWS.OrnateTreasureChest",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Ornate_Treasure_Chest",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.Gemfish": {
+					"Id": "AgentLyoko.UWS.Gemfish",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Gemfish",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+
+				"AgentLyoko.UWS.SwirlStone": {
+					"Id": "AgentLyoko.UWS.SwirlStone",
+					"ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Swirl_Stone",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+			},
+			"When": {
+				"CustomGifts": "enabled",
+			},
+		},
+	],
+}

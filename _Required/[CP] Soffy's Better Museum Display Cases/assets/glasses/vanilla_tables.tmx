@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="23" height="14" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
+ <properties>
+  <property name="DayTiles" value="Front 2 4 256 Front 2 5 288 Front 14 1 256 Front 14 2 288 Front 22 1 256 Front 22 2 288 Front 28 1 256 Front 28 2 288 Front 30 1 256 Front 30 2 288 Front 32 1 256 Front 32 2 288 Front 34 1 256 Front 34 2 288 Front 36 1 256 Front 36 2 288 Back 2 7 671 Back 2 8 703 Back 14 4 671 Back 14 5 703 Back 22 4 671 Back 22 5 703 Back 28 4 671 Back 28 5 703 Back 30 4 671 Back 32 4 671 Back 34 4 671 Back 36 4 671"/>
+  <property name="NightTiles" value="Front 2 4 1253 Front 2 5 1285 Front 14 1 1253 Front 14 2 1285 Front 22 1 1253 Front 22 2 1285 Front 28 1 1253 Front 28 2 1285 Front 30 1 1253 Front 30 2 1285 Front 32 1 1253 Front 32 2 1285 Front 34 1 1253 Front 34 2 1285 Front 36 1 1253 Front 36 2 1285 Back 2 7 575 Back 2 8 607 Back 14 4 575 Back 14 5 607 Back 22 4 575 Back 22 5 606 Back 28 4 575 Back 28 5 606 Back 30 4 575 Back 32 4 575 Back 34 4 575 Back 36 4 575"/>
+  <property name="Warp" value="3 15 Town 101 90"/>
+ </properties>
+ <tileset firstgid="1" name="z_glass" tilewidth="16" tileheight="16" tilecount="6400" columns="25">
+  <image source="z_glass.png" width="400" height="4096"/>
+  <tile id="149">
+   <properties>
+    <property name="Draw" value="Buildings"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="23" height="14">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIKRDQAFCAAB
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings2" width="23" height="14">
+  <properties>
+   <property name="Draw" value="Buildings"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt0TcOwkAQBdC9Aj4OGY5CDrckg8mZiqvwCrdukOzKX3rNaqWZ3R9CkbR0ohC69OgzYMiIMROmUfZ7lM2oUKVGnQZNWsn8byn7PbLOxlu27IjZc+DIifMff93OoZ8i+eai0ys37jx48uLNJ6XzmfM5C5asWCd3f5ZiHWo=
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings2"/>
+ <layer id="5" name="Front" width="23" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt0jcOAjEQBVBfgb0BGY5CDrckw5IzFefiFbQ0SGsJiS+9xs2M/R3Cb6eRhNCkRZsOXXr0GTBMst8jb0aBIiXKVKhSe89/5rLfI+ss3GXJipQ1G7bs2H/x1vUI/fwTNwedHjlx5sKVG3ceHzofOR8zYcqMeYT/8QJQVhke
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="AlwaysFront3" width="23" height="14">
+  <properties>
+   <property name="Draw" value="AlwaysFront"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzV0jdOA1EUBVCXZLArMlsgh42QNkEqAJucswCbnHMDy2AbbIEMLQdpRIEwwhYFXOloNKN59+mPJhoOfaQwEgoVUUwJpZRRTkUklFJieuNBd6XZKqqpoZY66mmgkaag/9bMHfc88MgTz7wEfQnXy/DXe79Lhh2ZZJFNDrnkkR/sv9J7nUb3T3MTdA/aN8QwI4wyxjgTTKb4vd/zGnSvm91gky222WGXPfbT6C5IY+Yvptk5WmiljfZfPFeHrk666KbnF7qndEwzwyxzzLPAIktJdvR63kc/UWIMfHr3wP0hRxxzwilnnHORpHvZ8xVWiZNg7Z//H2/YkTbR
+  </data>
+ </layer>
+ <objectgroup id="8" name="AlwaysFront3"/>
+</map>

@@ -1,0 +1,86 @@
+{
+	"Format": "2.5.0",
+	"ConfigSchema": {
+        "Choose Recolor Manually":{
+             "AllowValues":"Off, Vanilla, Earthy, Starblue, RusticCountry",
+             "Default":"Off"
+            }
+            },
+	"DynamicTokens": [      
+        {
+		"Name": "Recolor",
+		"Value": "Vanilla",
+		"When":{
+                      "Choose Recolor Manually":"Off, Vanilla"
+         }
+	},
+	{
+		"Name": "Recolor",
+		"Value": "Earthy",
+		"When": {
+                      "HasMod": "DaisyNiko.EarthyInteriors",
+                      "Choose Recolor Manually":"Earthy"
+         }
+	},
+	{
+		"Name": "Recolor",
+		"Value": "Rustic Country",
+		"When": {
+                      "HasMod": "Hesper.RusticCountrysideTownInterior",
+                      "Choose Recolor Manually":"RusticCountry"
+         }
+	},
+	{
+		"Name": "Recolor",
+		"Value": "Starblue",
+		"When": {
+                      "HasMod": "Lita.StarblueValleyUnofficial",
+                      "Choose Recolor Manually":"Starblue"
+
+
+
+         }
+	},
+	{
+		"Name": "Recolor",
+		"Value": "Earthy",
+		"When": {
+                      "HasMod": "DaisyNiko.EarthyInteriors",
+                      "Choose Recolor Manually":"Off"
+         }
+	},
+	{
+		"Name": "Recolor",
+		"Value": "Rustic Country",
+		"When": {
+                      "HasMod": "Hesper.RusticCountrysideTownInterior",
+                      "Choose Recolor Manually":"Off"
+         }
+	},
+	{
+		"Name": "Recolor",
+		"Value": "Starblue",
+		"When": {
+                      "HasMod": "Lita.StarblueValleyUnofficial",
+                      "Choose Recolor Manually":"Off"
+         }
+	}
+	],
+	"Changes": [
+		{
+		"Action": "Load",
+		"Target": "Maps/z_luan.Extras_furniture, Maps/z_luan.Extras_furniture_PicturesAndRugs, Maps/z_luan.Extras_Kitchen, Maps/z_luan.Extras_Fire, Maps/z_luan.Extras_Bathroom, Maps/z_luan.Extras_Kitchen2",
+		"FromFile": "assets/Vanilla/{{TargetWithoutPath}}.png"
+	},
+	{
+		"Action": "Load",
+		"Target": "Maps/z_luan.Extras_Interior, Maps/z_luan.Extras_Interior2",
+		"FromFile": "assets/{{Recolor}}/{{TargetWithoutPath}}.png"
+	},
+	{
+		"Action": "Load",
+		"Target": "Maps/z_MOD_LQ2_casino_furniture, Maps/z_MOD_LQ2_desert_furniture, Maps/z_MOD_LQ2_midnight_beach_furniture, Maps/z_MOD_LQ2_sewer_furniture, Maps/z_MOD_LQ2_witch_furniture",
+		"FromFile": "assets/Vanilla/Mods/{{TargetWithoutPath}}.png"
+			}
+		]
+	}

@@ -1,0 +1,165 @@
+{
+  "Changes": [
+    {
+      "LogName": "MNF - Legendary Fish No Level Mushu",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Caldera",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_mushu": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Level Shinidamachu",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Default",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_shinidamachu": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Level Vampire Fish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "BugLand",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_vampire_fish": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Level Iridiumfish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Forest",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_iridiumfish": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Level Vampire Squid",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Submarine",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_vampire_squid": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Level Tui and La",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Woods",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_tui": {
+          "MinFishingLevel": 0
+        },
+        "MNF.MoreNewFish_la": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Level Great Firefly Squid",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "IslandSouthEast",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_great_firefly_squid": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish No Level": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish No Level On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_mushu": {
+          "MinFishingLevel": 0
+        },
+        "MNF.MoreNewFish_shinidamachu": {
+          "MinFishingLevel": 0
+        },
+        "MNF.MoreNewFish_vampire_fish": {
+          "MinFishingLevel": 0
+        },
+        "MNF.MoreNewFish_iridiumfish": {
+          "MinFishingLevel": 0
+        },
+        "MNF.MoreNewFish_vampire_squid": {
+          "MinFishingLevel": 0
+        },
+        "MNF.MoreNewFish_tui": {
+          "MinFishingLevel": 0
+        },
+        "MNF.MoreNewFish_la": {
+          "MinFishingLevel": 0
+        },
+        "MNF.MoreNewFish_great_firefly_squid": {
+          "MinFishingLevel": 0
+        }
+      },
+      "When": {
+        "Legendary Fish On Farm": true,
+        "Legendary Fish No Level": true
+      }
+    }
+  ]
+}

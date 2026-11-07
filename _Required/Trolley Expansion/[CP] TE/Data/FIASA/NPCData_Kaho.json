@@ -1,0 +1,331 @@
+{
+  "Changes": [
+		{
+      "Action": "Load",
+      "Target": "Characters/CC_Kaho",
+      "FromFile": "assets/FIASA/Kaho.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/CC_Kaho_Winter",
+      "FromFile": "assets/FIASA/Kaho_Winter.png"
+    },
+
+	    {
+      "Action": "Load",
+      "Target": "Characters/CC_Kaho_Vendor",
+      "FromFile": "assets/FIASA/Kaho_Vendor.png"
+    },
+	        {
+            "LogName": "Portrait Load",
+            "Action": "Load",
+            "Target": "Portraits/CC_Kaho",
+             "FromFile": "assets/FIASA/Kaho_{{Portraits}}.png",
+       },
+	          {
+           "Action": "Load",
+           "Target": "Portraits/CC_Kaho_Winter",
+           "FromFile": "assets/FIASA/Kaho_Winter_{{Portraits}}.png" 
+       }, 
+
+		       {
+        "LogName": "Vendor Portrait Load",
+        "Action": "Load",
+        "Target": "Portraits/CC_Kaho_Vendor",
+        "FromFile": "assets/FIASA/Kaho_Vendor_{{Portraits}}.png"
+        },
+				       {
+        "LogName": "Vendor Portrait Load",
+        "Action": "Load",
+        "Target": "Portraits/CC_Kaho_Beach",
+        "FromFile": "assets/FIASA/Kaho_Beach_{{Portraits}}.png"
+        },
+		{
+      "LogName": "Vendor Change1",
+      "Action": "EditImage",
+      "Target": "Characters/CC_Kaho",
+      "FromFile": "assets/FIASA/Kaho_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub"
+      }
+    },
+			{
+      "LogName": "Vendor Change2",
+      "Action": "EditImage",
+      "Target": "Characters/CC_Kaho",
+      "FromFile": "assets/FIASA/Kaho_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub_rain"
+      }
+    },
+			{
+      "LogName": "Vendor Change3",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_Kaho",
+      "FromFile": "assets/FIASA/Kaho_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub"
+      }
+    },
+			{
+      "LogName": "Vendor Change4",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_Kaho",
+      "FromFile": "assets/FIASA/Kaho_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub_rain"
+      }
+    },
+{
+      "LogName": "Vendor Change5",
+      "Action": "EditImage",
+      "Target": "Characters/CC_Kaho_Winter",
+      "FromFile": "assets/FIASA/Kaho_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub"
+      }
+    },
+			{
+      "LogName": "Vendor Change6",
+      "Action": "EditImage",
+      "Target": "Characters/CC_Kaho_Winter",
+      "FromFile": "assets/FIASA/Kaho_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub_rain"
+      }
+    },
+			{
+      "LogName": "Vendor Change7",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_Kaho_Winter",
+      "FromFile": "assets/FIASA/Kaho_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub"
+      }
+    },
+			{
+      "LogName": "Vendor Change8",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_Kaho_Winter",
+      "FromFile": "assets/FIASA/Kaho_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Koda_Sub_rain"
+      }
+    },
+	       
+
+  {
+    "LogName": "NPC Dispositions",
+    "Action": "EditData",
+    "Target": "Data/Characters",
+    "Entries": {
+      "CC_Kaho": {
+    "DisplayName": "{{i18n:Kaho.DisplayName}}",
+
+        "BirthSeason": "summer",
+        "BirthDay": 20,
+        "HomeRegion": "Other",
+        "Gender": "Male",
+        "Age": "Adult",
+        "Manner": "Polite",
+        "SocialAnxiety": "Outgoing",
+        "Optimism": "Neutral",
+        "CanBeRomanced": true,
+  
+        "CanReceiveGifts": true,
+		"CanVisitIsland": false,
+        "Calendar": "HiddenUntilMet",
+        "SocialTab": "HiddenUntilMet",
+		"CanSocialize": true,
+        "ExcludeFromIntroductionsQuest": true,
+        "ItemDeliveryQuests": false,
+        "ExcludeFromPerfectionScore": true,
+        "EndSlideShow": "MainGroup",
+		"KissSpriteIndex": "31",
+		   "UnlockConditions": null,
+          "SpawnIfMissing": true,
+		"SpouseGiftJealousy": false,
+"KissSpriteFacingRight": false,
+					"SpouseRoom": {
+						"MapAsset": "kaho_room",
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 6,
+							"Height": 9
+						}
+					},
+					"SpousePatio": {
+						"MapAsset": "kaho_patio",
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 4,
+							"Height": 4
+						},
+						"SpriteAnimationFrames": [
+							[
+								17,
+								2000
+							],
+							[
+								18,
+								1000
+							],
+							],
+						"SpriteAnimationPixelOffset": {
+							"X": 0,
+							"Y": 0
+						}
+					},
+ "Home": [
+            {
+              "Id": "Default",
+              "Location": "Koda_Sub",
+              "Tile": {
+                "X": 14,
+                "Y": 14
+              },
+              "Direction": "down"
+            }
+          ],
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          
+        "Breather": true,
+		 "TextureName": null,
+          "Appearance": [
+           {
+              "Id": "CC_Kaho",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_Kaho",
+              "Sprite": "Characters/CC_Kaho",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            },
+			     
+				      {
+              "Id": "CC_Kaho_Vendor",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_Kaho_Vendor",
+              "Sprite": "Characters/CC_Kaho_Vendor",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            },
+
+            {
+              "Id": "CC_Kaho_Winter",
+              "Condition": null,
+              "Season": "Winter",
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_Kaho_Winter",
+              "Sprite": "Characters/CC_Kaho_Winter",
+              "IsIslandAttire": false,
+              "Precedence": -100,
+              "Weight": 0
+            },
+
+			    
+
+          ]
+                }
+            }
+        },
+		
+		{
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+ "kaho_sleep": "36/36/36",
+ "kaho_arms": "17/17 17 17 17 18 18 18 18 18 18 18 18 18 18 18 18 17 17 17 17 18 18 18 17/17",
+ "kaho_wink": "0/16 16 16 16/0",
+      }
+    },
+
+	{
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+		  "CC_Kaho":
+		  "I'm gonna eat this up, yo.$1/Book_Roe 834 905 397 CC_Tortoiseshell 128/Nice catch @!/722 723 718 719 873/Bleh... I hate bananas./904 91 459/Gross.#$b#What are you trying to say?/167 814 921/Thanks?//"
+      }
+    },
+
+
+	       { 
+            "LogName": "BlankLoads",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Dialogue/CC_Kaho, Characters/Dialogue/MarriageDialogueCC_Kaho",
+            "FromFile": "Data/FIASA/Blank.json"
+        },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/FIASA/Dialogue_Kaho.json"
+    },
+	    {
+      "Action": "Include",
+      "FromFile": "Data/FIASA/MarriageDialogueKaho.json"
+    },
+	{
+      "LogName": "Rainy Day Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+"CC_Kaho": "{{i18n:Kaho.CC_Kaho}}",
+
+      }
+    },
+
+		     {
+            "LogName": "Engaged Dialogue",
+            "Action": "EditData",
+            "Target": "data/EngagementDialogue",
+            "Entries": {
+"CC_Kaho0": "{{i18n:Kaho.CC_Kaho0}}",
+"CC_KahoK1": "{{i18n:Kaho.CC_KahoK1}}",
+
+            }
+        },
+  {
+      "LogName": "Load Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/CC_Kaho",
+      "FromFile": "Data/FIASA/Blank.json"
+    },
+    {
+      "LogName": "Schedule includes",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/Schedule_Kaho.json"
+    },
+    {
+      "LogName": "Event includes",
+      "Action": "Include",
+      "FromFile": "Data/FIASA/KahoEvents.json"
+    },
+		
+		
+    
+
+	]
+}

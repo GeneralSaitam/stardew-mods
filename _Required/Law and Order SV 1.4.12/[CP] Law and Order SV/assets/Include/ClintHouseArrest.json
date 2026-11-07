@@ -1,0 +1,129 @@
+{
+    "Changes": [
+        {
+            //no longer can visit the island
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Clint": {
+                    "CanVisitIsland": "False"
+                }
+            }
+        },
+        {
+            //remove festival shop while locked up (still attends on day 2)
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "DesertFestival_Clint": null
+            }
+        },
+        {
+            //Dialogue, conversation topic changes
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries": {
+                "GreenRain": "{{i18n:ClintInJail_GreenRain}}",
+                "GreenRainFinished": "{{i18n:ClintJail_GreenRainFinished}}",
+                "GreenRain_2": "{{i18n:ClintInJail_GreenRain}}",
+                "eventSeen_101_memory_oneweek": null,
+                "Mon4": "{{i18n:ClintHouseArrest_Mon4}}",
+                "Tue": "{{i18n:ClintHouseArrest_Tue}}",
+                "Wed": "{{i18n:ClintHouseArrest_Wed}}",
+                "Wed6": "{{i18n:ClintHouseArrest_Wed6}}",
+                "Fri": "{{i18n:ClintHouseArrest_Fri}}",
+                "Fri8": "{{i18n:ClintHouseArrest_Fri8}}",
+                "Sat10": "{{i18n:ClintHouseArrest_Sat10}}",
+                "Sun8": "{{i18n:ClintHouseArrest_Sun8}}",
+                "Mon8": "{{i18n:ClintHouseArrest_Mon8}}",
+                "Rain": "{{i18n:ClintHouseArrest_Rain}}",
+                "AcceptGift_(O)64":"{{i18n:ClintHouseArrest_AcceptRuby}}",
+            },
+        },
+        {
+            //update the character schedule. While on house arrest Clint stays home except to see the doctor or attend  festivals.
+            "Action": "EditData",
+            "Target": "Characters/schedules/Clint",
+            "Entries": {
+                "rain": "GOTO spring",
+                "GreenRain": "GOTO spring",
+                "DesertFestival_2": "610 Blacksmith 3 13 2/910 Desert 11 51 1 \"Strings\\1_6_Strings:DesertFestival_Clint\"/2510 bed",
+                "winter_16": "610 Blacksmith 3 13 2 \"Strings\\schedules\\Clint:winter_16.000\"/1030 Hospital 12 14 0 \"Strings\\schedules\\Clint:winter_16.001\"/1330 Hospital 4 6 1 \"Strings\\schedules\\Clint:winter_16.002\"/1600 Blacksmith 8 12 1 clint_hammer/2400 Blacksmith 10 4 1 clint_sleep",
+                "winter_15": "610 Blacksmith 3 13 2/1700 Beach 37 33 1 \"Strings\\schedules\\Clint:winter_15.000\"/2400 Blacksmith 10 4 1 clint_sleep",
+                "spring": "610 Blacksmith 3 13 2/1700 Blacksmith 8 12 1 clint_hammer/2200 Blacksmith 10 4 1 clint_sleep",
+                "Wed":"GOTO spring",
+                "Thu":"GOTO spring",
+                "Fri":"GOTO spring",
+                "Sat":"GOTO spring",
+                "Sun": "GOTO spring",
+                
+            },
+        },
+
+        { //egg hunt
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clintha_spring13}}",
+                "Clint_y2": "{{i18n:festivals_clintha_spring13_y2}}",
+            },
+        },
+        { //flower dance
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clintha_spring24}}",
+                "Clint_y2": "{{i18n:festivals_clintha_spring24_y2}}",
+            },
+        },
+        { //luau
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clintha_summer11}}",
+                "Clint_y2": "{{i18n:festivals_clintha_summer11_y2}}",
+            },
+        },
+        { //jellies
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clintha_summer28}}",
+                "Clint_y2": "{{i18n:festivals_clintha_summer28_y2}}",
+            },
+        },
+        { //fair
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clintha_fall16}}",
+                "Clint_y2": "{{i18n:festivals_clintha_fall16_y2}}",
+            },
+        },
+        { //spirits eve
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clintha_fall27}}",
+                "Clint_y2": "{{i18n:festivals_clintha_fall27_y2}}",
+            },
+        },
+        { //festival of ice
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clintha_winter8}}",
+                "Clint_y2": "{{i18n:festivals_clintha_winter8_y2}}",
+            },
+        },
+        { //winter star
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "Clint": "{{i18n:festivals_clintha_winter25}}",
+                "Clint_y2": "{{i18n:festivals_clintha_winter25_y2}}",
+            },
+        },
+   
+    ]
+}

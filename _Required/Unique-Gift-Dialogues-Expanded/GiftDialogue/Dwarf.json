@@ -1,0 +1,26 @@
+/*Vanilla Dwarf already has a line for Milk items. He doesn't seem to like where it comes from.
+He has a line for loved-to-neutral birthday gifts and disliked-and-hated birthday gifts.
+Last verified: 1.6.14*/
+
+{"Changes": [
+  {
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Dwarf",
+
+    "Entries": {
+
+      "AcceptGift_(O)554": "{{i18n:UGDE.Dwarf_(O)554}}",//Lemon Stone
+      "AcceptGift_(O)121": "{{i18n:UGDE.Dwarf_(O)121}}", //Dwarvish Helm
+      "AcceptGift_(O)122": "{{i18n:UGDE.Dwarf_(O)122}}", //Dwarf Gadget
+      "AcceptGift_(O)96": "$query !PLAYER_HAS_MAIL Current UGDE_DScrollStarted#{{i18n:UGDE.Dwarf_ScrollIntro}}#$b#{{i18n:UGDE.Dwarf_Scroll1_1st}}#$action AddMail Current UGDE_DScrollStarted|{{i18n:UGDE.Dwarf_Scroll1_nth}}", //Dwarf Scroll I
+      "AcceptGift_(O)97": "$query !PLAYER_HAS_MAIL Current UGDE_DScrollStarted#{{i18n:UGDE.Dwarf_ScrollIntro}}#$b#{{i18n:UGDE.Dwarf_Scroll2_1st}}#$action AddMail Current UGDE_DScrollStarted|{{i18n:UGDE.Dwarf_Scroll2_nth}}", //Dwarf Scroll II
+      "AcceptGift_(O)98": "$query !PLAYER_HAS_MAIL Current UGDE_DScrollStarted#{{i18n:UGDE.Dwarf_ScrollIntro}}#$b#{{i18n:UGDE.Dwarf_Scroll3_1st}}#$action AddMail Current UGDE_DScrollStarted|{{i18n:UGDE.Dwarf_Scroll3_nth}}", //Dwarf Scroll III
+      "AcceptGift_(O)99": "$query !PLAYER_HAS_MAIL Current UGDE_DScrollStarted#{{i18n:UGDE.Dwarf_ScrollIntro}}#$b#{{i18n:UGDE.Dwarf_Scroll4_1st}}#$action AddMail Current UGDE_DScrollStarted|{{i18n:UGDE.Dwarf_Scroll4_nth}}", //Dwarf Scroll IV
+      "AcceptGift_(O)78":  "$query DAY_OF_WEEK Tuesday#{{i18n:UGDE.Dwarf_(O)78_Tuesday}}#$action AddFriendshipPoints Dwarf 35|{{i18n:UGDE.Dwarf_(O)78_NotTuesday}}", //Cave Carrot. Gifting him one on Tuesdays will bump the friendship gain to a Loved gift.
+      "AcceptGift_(O)Carrot":  "{{i18n:UGDE.Dwarf_Carrot}}", //Carrot
+      "AcceptGift_(O)162": "{{i18n:UGDE.Dwarf_(O)162}}", //Lava Eel
+      "AcceptGift_(O)226": "{{i18n:UGDE.Dwarf_(O)226}}", //Spicy Eel
+
+    }
+  }
+]}

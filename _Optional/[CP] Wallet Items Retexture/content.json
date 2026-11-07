@@ -1,0 +1,157 @@
+{
+
+    "Format": "1.25.0",
+
+    "ConfigSchema": {
+        
+        	"Dwarvish Translation Guide": {
+            	"AllowValues": "off, 1, 2",
+            	"Default": "1",
+				},
+				"Rusty Key": {
+            	"AllowValues": "on, off",
+            	"Default": "on",
+				},
+				"Club Card": {
+            	"AllowValues": "on, off",
+            	"Default": "on",
+				},
+				"Special Charm": {
+            	"AllowValues": "on, off",
+            	"Default": "on",
+				},
+				"Skull Key": {
+            	"AllowValues": "on, off",
+            	"Default": "on",
+				},
+				"Magnifying Glass": {
+            	"AllowValues": "on, off",
+            	"Default": "on",
+				},
+				"Dark Talisman": {
+            	"AllowValues": "on, off",
+            	"Default": "on",
+				},
+				"Magic Ink": {
+            	"AllowValues": "on, off",
+            	"Default": "on",
+				},
+				"Bear's Knowledge": {
+            	"AllowValues": "on, off",
+            	"Default": "on",
+				},
+				"Spring Onion Mastery": {
+            	"AllowValues": "on, off",
+            	"Default": "on",
+				},
+				"Key To The Town": {
+            	"AllowValues": "on, off",
+            	"Default": "on",
+				},
+			},
+       		
+
+    "Changes": [
+
+		
+		{
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/wallet.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 128, "Y": 320, "Width": 16, "Height": 16 },
+	  "When":{ "Dwarvish Translation Guide":"1"},
+	},
+	{
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/book.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 128, "Y": 320, "Width": 16, "Height": 16 },
+	  "When":{ "Dwarvish Translation Guide":"2"},
+	},
+	
+   {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/wallet.png",
+      "FromArea": { "X": 16, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 144, "Y": 320, "Width": 16, "Height": 16 },
+	  "When":{ "Rusty Key":"on"},
+   },
+   {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/wallet.png",
+      "FromArea": { "X": 32, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 160, "Y": 320, "Width": 16, "Height": 16 },
+	  "When":{ "Club Card":"on"},
+   },
+   {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/wallet.png",
+      "FromArea": { "X": 48, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 176, "Y": 320, "Width": 16, "Height": 16 },
+	  "When":{ "Special Charm":"on"},
+   },
+   {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/wallet.png",
+      "FromArea": { "X": 64, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 192, "Y": 320, "Width": 16, "Height": 16 },
+	  "When":{ "Skull Key":"on"},
+   },
+   {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/wallet.png",
+      "FromArea": { "X": 80, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 208, "Y": 320, "Width": 16, "Height": 16 },
+	  "When":{ "Magnifying Glass":"on"},
+   },
+   {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/wallet.png",
+      "FromArea": { "X": 96, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 224, "Y": 320, "Width": 16, "Height": 16 },
+	  "When":{ "Dark Talisman":"on"},
+   },
+   {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/wallet.png",
+      "FromArea": { "X": 112, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 240, "Y": 320, "Width": 16, "Height": 16 },
+	  "When":{ "Magic Ink":"on"}
+   },
+   {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/wallet.png",
+      "FromArea": { "X": 128, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 192, "Y": 336, "Width": 16, "Height": 16 },
+	  "When":{ "Bear's Knowledge":"on"},
+   },
+   {
+      "Action": "EditImage",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/wallet.png",
+      "FromArea": { "X": 144, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 208, "Y": 336, "Width": 16, "Height": 16 },
+	  "When":{ "Spring Onion Mastery":"on"},
+   },
+   {
+      "Action": "EditImage",
+      "Target": "Maps/springobjects",
+      "FromFile": "assets/wallet.png",
+      "FromArea": { "X": 160, "Y": 0, "Width": 16, "Height": 16 },
+      "ToArea": { "X": 0, "Y": 608, "Width": 16, "Height": 16 },
+	  "When":{ "Key To The Town":"on"},
+			}
+   
+
+ 	]
+}

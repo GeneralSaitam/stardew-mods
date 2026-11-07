@@ -1,0 +1,40 @@
+{
+    "Format": "2.5.0",
+
+    
+    "Changes": [
+
+        //Include Furniture
+
+        {
+        "LogName": "HXW Outdoor Flower Furniture",
+        "Action": "Include",
+        "FromFile": "Data/Furniture_Tokens.json"
+        },
+
+         //Include Shop and Catalogue ONLY IF Florist Furniture isnt installed
+
+        {
+        "LogName": "HXW Outdoor Flower Furniture Shops and Catalogue",
+        "Action": "Include",
+        "FromFile": "Data/shops.json",
+        "When":{"HasMod: |contains= HXW.FloristFurni":false}
+        },
+   
+        //Include Textures
+
+        {
+        "LogName": "HXW Outdoor Flower Furniture Textures",
+        "Action": "Include",
+        "FromFile": "Data/textures.json"
+        },
+
+        //Include MMAP for flower shake
+
+        {
+        "LogName": "HXW Outdoor Flower Furniture MMAP Data",
+        "Action": "Include",
+        "FromFile": "Data/mmap.json"
+        }
+    ]
+}

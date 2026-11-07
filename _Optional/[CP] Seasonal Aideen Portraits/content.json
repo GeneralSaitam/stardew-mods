@@ -1,0 +1,113 @@
+{
+    "Format": "1.20.0",
+
+    "ConfigSchema": {
+        "NoNose": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+
+        "FestivalOutfits": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+
+        "ExtraOutfits": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+
+    },
+
+    "DynamicTokens": [
+        {
+            "Name": "IndoorVariant", // Indoors
+            "Value": "_Indoor"
+        },
+        {
+            "Name": "IndoorVariant", // Outdoors
+            "Value": "_Outdoor",
+            "When": {
+                "IsOutdoors": "true"
+            }
+        },
+
+        {
+            "Name": "Festival",
+            "Value": "FlowerDance",
+            "When": {
+                "DayEvent": "flower dance",
+                "LocationName": "Forest, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "SpiritsEve",
+            "When": {
+                "DayEvent": "spirit's eve",
+                "LocationName": "town, temp"
+            }
+        },
+	],
+	
+	"Changes": [
+//Characters
+ 
+        {
+            "LogName": "regular character",
+            "Action": "EditImage",
+            "Target": "Characters/Aideen",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+
+        {
+            "LogName": "regular characters season",
+            "Action": "EditImage",
+            "Target": "Characters/Aideen",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+
+		{
+            "LogName": "regular characters season and indoor",
+            "Action": "EditImage",
+            "Target": "Characters/Aideen",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+
+//Aideen       
+		{
+            "LogName": "Aideen Portrait - Seasonal",
+            "Action": "EditImage",
+            "Target": "Portraits/Aideen",
+            "FromFile": "assets/Portraits/Aideen/Aideen_{{Season}}.png",
+            "Update": "OnLocationChange",            
+		    "When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+        {
+            "LogName": "Aideen Character - Seasonal",
+            "Action": "EditImage",
+            "Target": "Characters/Aideen",
+            "FromFile": "assets/Characters/Aideen/Aideen_{{Season}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+	]
+}
+
+

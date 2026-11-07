@@ -1,0 +1,867 @@
+{
+	"Format": "2.4.0",
+	"ConfigSchema": {
+//background config
+		"SlimeHutch_Background" : {
+			"AllowValues" : "Greenhouse, SlimeHutch, Cellar, Shed",
+            "Default": "Greenhouse",
+			"Description": "What the walls will look like.",
+			"Section": "Background",
+			},
+//Floor config
+		"SlimeHutch_Left_Floor" : {
+			"AllowValues" : "GreenhouseFloor, ShedFloor, SlimeHutchFloor, CellarFloor, GreyFloor, DirtFloor, GrassFloor",
+			"Default" : "GreenhouseFloor",
+			"Description" : "What floor type you want the left side to use.",
+			"Section": "Inside_flooring",
+		},
+		"SlimeHutch_Right_Floor" : {
+			"AllowValues" : "GreenhouseFloor, ShedFloor, SlimeHutchFloor, CellarFloor, GreyFloor, DirtFloor, GrassFloor",
+			"Default" : "GreenhouseFloor",
+			"Description" : "What floor type you want the right side to use.",
+			"Section": "Inside_flooring",
+		},
+		"SlimeHutch_Middle_Floor" : {
+			"AllowValues" : "SpecialFloor, GreenhouseFloor, ShedFloor, SlimeHutchFloor, CellarFloor, GreyFloor, DirtFloor, GrassFloor",
+			"Default" : "SpecialFloor",
+			"Description" : "What floor type you want the strip in the middle to use.",
+			"Section": "Inside_flooring",
+		},
+		"InsideGrass": {
+			"AllowValues" : "Spring, Summer, Fall, Winter, Match",
+			"Default" : "Spring",
+			"Description" : "The season for the inside grass floor option.  Choosing 'Match' will make it match the actual game season.",
+			"Section": "Inside_flooring",
+		},
+//Clipping config
+		"SlimeHutch_Clip" : {
+			"AllowValues" : "Clip, NoClip",
+			"Default" : "Clip",
+			"Description" : "Whether to allow clipping over the walls (when fruit trees are growing alongside them, for example). Only applies to left and right walls, not the back.",
+			"Section": "Clipping",
+		},		
+
+//Layout Config
+		"SlimeHutch_Left_Layout" : {
+			"AllowValues" : "Crops, FruitTrees, TrellisCrops, WaterCrops, None",
+			"Default" : "Crops",
+			"Description": "What type of layout do you want on the left side of the Slime Hutch?",
+			"Section": "Layout",
+		},	
+		"SlimeHutch_Right_Layout" : {
+			"AllowValues" : "Crops, FruitTrees, TrellisCrops, WaterCrops, None",
+			"Default" : "Crops",
+			"Description": "What type of layout do you want on the right side of the Slime Hutch?",
+			"Section": "Layout",
+		},
+//Crop Layout Config
+		"SlimeHutch_Left_Crop_size" : {
+			"AllowValues" : "Quality_Divided, Quality, Iridium_Divided, Iridium, Nozzle_Divided, Nozzle",
+			"Default": "Quality_Divided",
+			"Description": "Optimizes the left crop filed for different sprinkler types. This only matters if you chose Crops for the Left_Layout, otherwise it will do nothing.",
+			"Section": "Crop_layout",
+		},
+		"SlimeHutch_Right_Crop_size" : {
+			"AllowValues" : "Quality_Divided, Quality, Iridium_Divided, Iridium, Nozzle_Divided, Nozzle",
+			"Default": "Quality_Divided",
+			"Description": "Optimizes the right crop filed for different sprinkler types. This only matters if you chose Crops for the Right_Layout, otherwise it will do nothing.",
+			"Section": "Crop_layout",
+		},
+//Fruit Tree Layout Config
+		"SlimeHutch_Left_FruitTrees" : {
+			"AllowValues" : "Staggered1, Staggered2, Straight",
+			"Default" : "Staggered1",
+			"Description" : "The Fruit Tree configuration for the left side. This only matters if you chose FruitTrees for the Left_Layout, otherwise it will do nothing.",
+			"Section": "Fruit_Tree_layout",
+		},
+		"SlimeHutch_Right_FruitTrees" : {
+			"AllowValues" : "Staggered1, Staggered2, Straight",
+			"Default" : "Staggered1",
+			"Description" : "The Fruit Tree configuration for the right side. This only matters if you chose FruitTrees for the Right_Layout, otherwise it will do nothing.",
+			"Section": "Fruit_Tree_layout",
+		},
+//Trellis Crop Layout Config
+		"SlimeHutch_Left_TrellisCrops" : {
+			"AllowValues" : "Horizontal, Vertical",
+			"Default" : "Horizontal",
+			"Description" : "The Trellis Crop configuration. This only matters if you chose TrellisCrops for the Left_Layout, otherwise it will do nothing.",
+			"Section": "Trellis_Crops",
+		},
+		"SlimeHutch_Right_TrellisCrops" : {
+			"AllowValues" : "Horizontal, Vertical",
+			"Default" : "Horizontal",
+			"Description" : "The Trellis Crop configuration. This only matters if you chose TrellisCrops for the Right_Layout, otherwise it will do nothing.",
+			"Section": "Trellis_Crops",
+		},
+//Water Crop Style Config
+		"WaterCropsStyle" : {
+			"AllowValues" : "default, light, dark, verydark",
+			"Default" : "default",
+			"Description" : "The color palette to use for the water crop layout.",
+			"Section": "Water_Crops",
+		},
+//Water Source Config
+		"SlimeHutch_Left_WaterSource" : {
+			"AllowValues" : "Fountain, Trough, Invisible",
+			"Default" : "Fountain",
+			"Description" : "Adds a water source for filling watering cans on the left side. You can choose a fountain (credit to wabii), a trough, or to make it invisible. NOTE: This will not feed slimes!",
+			"Section": "Water_Source",
+		},	
+		"SlimeHutch_Right_WaterSource" : {
+			"AllowValues" : "Fountain, Trough, Invisible",
+			"Default" : "Fountain",
+			"Description" : "Adds a water source for filling watering cans on the right side. You can choose a fountain (credit to wabii), a trough, or to make it invisible. NOTE: This will not feed slimes!",
+			"Section": "Water_Source",
+		},
+//Slime Raising
+		"Left_Slime_Water_Feeders" : {
+			"AllowValues" : "Left1, Left2, BothLeft, None",
+			"Default" : "None",
+			"Description": "You will need at least one feeder if you plan to raise slimes.",
+			"Section": "SlimeRaising",
+		},
+		"Right_Slime_Water_Feeders" : {
+			"AllowValues" : "Right1, Right2, BothRight, None",
+			"Default" : "None",
+			"Description": "You will need at least one feeder if you plan to raise slimes.",
+			"Section": "SlimeRaising",
+		},
+		"Top_Slime_Water_Feeders" : {
+			"AllowValues" : "TopLeft, TopRight, BothTop, None",
+			"Default" : "None",
+			"Description": "You will need at least one feeder if you plan to raise slimes. The Top feeders will only be visible with the Greenhouse background, otherwise they will be hidden (but possibly still useable).",
+			"Section": "SlimeRaising",
+		},
+//Greenhouse Style Config		
+		"SlimeHutch_Outside_Floor" : {
+			"AllowValues" : "LightGrass, DarkGrass, LightDirt, DarkDirt,",
+			"Default" : "LightGrass",
+			"Description" : "What floor type you want the greenhouse exterior (the part outside the windows) to use. This only matters if you chose Greenhouse for SlimeHutch_Background, otherwise it will do nothing.",
+			"Section": "Greenhouse_style",
+		},
+		"OutsideGrass" : {
+			"AllowValues" : "Match, Spring, Summer, Fall, Winter",
+			"Default" : "Match",
+			"Description" : "This affects the outside grass floor option.  Choosing 'Match' will make it match the actual game season. This setting only matters if you chose Greenhouse for SlimeHutch_Background, otherwise it will do nothing.",
+			"Section": "Greenhouse_style",
+		},
+		"SlimeHutch_GreenhouseFrame" : {
+			"AllowValues" : "vanilla, light, dark, copper, gold, iridium,",
+            "Default": "vanilla",
+			"Description": "The color of the glass frame of the Greenhouse. This only matters if you chose Greenhouse for SlimeHutch_Background, otherwise it will do nothing.",
+			"Section": "Greenhouse_style",
+		},
+		"SlimeHutch_GreenhouseGlass" : {
+			"AllowValues" : "glossy, clear",
+			"Default": "glossy",
+			"Description": "The style of the Greenhouse glass. This only matters if you chose Greenhouse for SlimeHutch_Background, otherwise it will do nothing.",
+			"Section": "Greenhouse_style",
+		},
+		"SlimeHutch_GreenhouseLeaves" : {
+			"AllowValues" : "Summer, Fall, Winter, Spring, Match, None",
+			"Default": "Summer",
+			"Description": "Which season the leaves surrounding the top of the greenhouse should display. Choosing Match will make it match the actual game season. This only matters if you chose Greenhouse for SlimeHutch_Background, otherwise it will do nothing.",
+			"Section": "Greenhouse_style",
+			},
+		"SlimeHutch_GreenhouseTree" : {
+			"AllowValues" : "None, Spring, Summer, Fall, Winter, Spring, Match",
+			"Default": "None",
+			"Description": "Adds a big tree behind the greenhouse glass (outside the window). This only matters if you chose Greenhouse for SlimeHutch_Background, otherwise it will do nothing.",
+			"Section": "Greenhouse_style",
+		},
+	},
+	
+	"DynamicTokens": [
+		{
+			"Name": "in_season",
+			"Value": "Spring",
+			"When": {
+				"InsideGrass |contains=Match" : "true",
+				"HasValue:{{season}}":"false"
+			}
+		},
+		{
+			"Name": "in_season",
+			"Value": "{{season}}",
+			"When": {
+				"InsideGrass |contains=Match" : "true",
+				"HasValue:{{season}}":"true"
+			}
+		},
+		{
+			"Name": "in_season",
+			"Value": "{{InsideGrass}}",
+			"When": {
+				"InsideGrass |contains=Match" : "false",
+			}
+		},
+		{
+			"Name": "out_season",
+			"Value": "Spring",
+			"When": {
+				"OutsideGrass |contains=Match" : "true",
+				"HasValue:{{season}}":"false"
+			}
+		},
+		{
+			"Name": "out_season",
+			"Value": "{{season}}",
+			"When": {
+				"OutsideGrass |contains=Match" : "true",
+				"HasValue:{{season}}":"true"
+			}
+		},
+		{
+			"Name": "out_season",
+			"Value": "{{OutsideGrass}}",
+			"When": {
+				"OutsideGrass |contains=Match" : "false",
+			}
+		},
+		{
+			"Name": "leaves_season",
+			"Value": "Spring",
+			"When": {
+				"SlimeHutch_GreenhouseLeaves |contains=Match" : "true",
+				"HasValue:{{season}}":"false"
+			}
+		},
+		{
+			"Name": "leaves_season",
+			"Value": "{{season}}",
+			"When": {
+				"SlimeHutch_GreenhouseLeaves |contains=Match" : "true",
+				"HasValue:{{season}}":"true"
+			}
+		},
+		{
+			"Name": "leaves_season",
+			"Value": "{{SlimeHutch_GreenhouseLeaves}}",
+			"When": {
+				"SlimeHutch_GreenhouseLeaves |contains=Match" : "false",
+			}
+		},
+		{
+			"Name": "tree_season",
+			"Value": "Spring",
+			"When": {
+				"SlimeHutch_GreenhouseTree |contains=Match" : "true",
+				"HasValue:{{season}}":"false"
+			}
+		},
+		{
+			"Name": "tree_season",
+			"Value": "{{season}}",
+			"When": {
+				"SlimeHutch_GreenhouseTree |contains=Match" : "true",
+				"HasValue:{{season}}":"true"
+			}
+		},
+		{
+			"Name": "tree_season",
+			"Value": "{{SlimeHutch_GreenhouseTree}}",
+			"When": {
+				"SlimeHutch_GreenhouseTree |contains=Match" : "false",
+			}
+		},
+	],
+
+	"Changes": [
+//Tilesheets
+		{
+			"LogName":"Load custom slime hutch extras tilesheet",
+			"Action":"Load",
+			"Target":"Maps/z_slimehutch_extras",
+			"FromFile":"assets/base/z_slimehutch_extras.png"
+		},
+		{
+			"LogName":"Add glass to greenhouse tilesheet",
+			"Action":"EditImage",
+			"Target":"Maps/z_slimehutch_extras",
+			"FromFile":"assets/glass/shglass_{{SlimeHutch_GreenhouseGlass}}.png",
+			"PatchMode":"Overlay"
+		},
+		{
+			"LogName":"Add Frame to greenhouse tilesheet",
+			"Action":"EditImage",
+			"Target":"Maps/z_slimehutch_extras",
+			"FromFile":"assets/frames/shframe_{{SlimeHutch_GreenhouseFrame}}.png",
+			"PatchMode":"Overlay"
+		},
+		{
+			"LogName":"Add the rest to the extras tilesheet",
+			"Action":"EditImage",
+			"Target":"Maps/z_slimehutch_extras",
+			"FromFile":"assets/base/default.png",
+			"ToArea":{"X":80,"Y":0,"Width":32,"Height":80}
+		},
+		{
+			"LogName":"Water Crops Style",
+			"Action":"EditImage",
+			"Target":"Maps/z_slimehutch_extras",
+			"FromFile":"assets/base/{{WaterCropsStyle}}.png",
+			"ToArea":{"X":80,"Y":0,"Width":32,"Height":80},
+		},
+
+//Background
+		{
+			"LogName":"Replace vanilla Slime Hutch with Custom Slime Hutch",
+			"Action":"Load",
+			"Target":"Maps/SlimeHutch",
+			"FromFile":"assets/background/{{SlimeHutch_Background}}Background.tmx",
+		},
+
+//Leaves
+		{
+			"LogName":"Slime Hutch Greenhouse Leaves",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"FromFile":"assets/decorations/GreenhouseLeaves{{leaves_season}}.tmx",
+			"PatchMode":"Overlay",
+			"FromArea":{"X":0, "Y":0, "Width":43,"Height":21,},
+			"ToArea":{"X":0,"Y":0,"Width":43,"Height":21},
+			"When" : {
+				"SlimeHutch_Background |contains=Greenhouse" : "true",
+			},
+		},
+//Add Tree
+		{
+			"LogName":"Slime Hutch Greenhouse Tree",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"FromFile":"assets/decorations/GreenhouseTree{{tree_season}}.tmx",
+			"PatchMode":"Overlay",
+			"FromArea":{"X":0, "Y":0, "Width":6,"Height":7,},
+			"ToArea":{"X":18,"Y":0,"Width":6,"Height":7},
+			"When" : {
+				"SlimeHutch_Background |contains=Greenhouse" : "true",
+				"SlimeHutch_GreenhouseTree |contains=None" : "false",
+			},
+		},	
+//Lighting
+		{
+			"LogName":"Modify Slime Hutch Lighting if Cellar Background is chosen",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapProperties": {
+				"AmbientLight" : "100 100 45",
+			},
+			"When": {
+				"SlimeHutch_Background |contains=Cellar" : "true",
+				},
+		},
+		{
+			"LogName":"Modify Slime Hutch Lighting if SlimeHutch Background is chosen",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapProperties": {
+				"AmbientLight" : "110 90 90",
+			},
+			"When": {
+				"SlimeHutch_Background |contains=SlimeHutch" : "true",
+				},
+		},
+				{
+			"LogName":"Slime Hutch Weather lighting",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapProperties":{
+				"AmbientLight":"140 120 90"
+			},
+			"When": {
+				"SlimeHutch_Background |contains=Greenhouse" : "true",
+				"Weather": "rain, storm",
+				}
+		},
+				{
+			"LogName":"Slime Hutch Weather lighting",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapProperties":{
+				"AmbientLight":"255 255 255"
+			},
+			"When": {
+				"SlimeHutch_Background |contains=Greenhouse" : "true",
+				"Weather |contains=rain": "false",
+				"Weather |contains=storm": "false",
+				}
+		},
+		{
+			"LogName":"Slime Hutch Night Lighting",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapProperties":{
+				"AmbientLight":"200 200 200"
+			},
+			"When": {
+				"SlimeHutch_Background |contains=Greenhouse" : "true",
+				"Query: {{Time}} >= 1800": true,
+			},
+		},
+//Inside Floor
+		{
+			"LogName":"Slime Hutch Left Side Floor",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"FromFile":"assets/floors/shfloor_{{SlimeHutch_Left_Floor}}.tmx",
+			"PatchMode":"Overlay",
+			"FromArea":{"X":0, "Y":0, "Width":21,"Height":14,},
+			"ToArea":{"X":0,"Y":7,"Width":21,"Height":14},
+			"When" : {
+				"SlimeHutch_Left_Floor  |contains=GrassFloor" : "false",
+			},
+		},	
+		{
+			"LogName":"Slime Hutch Left Side Floor",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"FromFile":"assets/floors/shfloor_{{SlimeHutch_Left_Floor}}_{{in_season}}.tmx",
+			"PatchMode":"Overlay",
+			"FromArea":{"X":0, "Y":0, "Width":21,"Height":14,},
+			"ToArea":{"X":0,"Y":7,"Width":21,"Height":14},
+			"When" : {
+				"SlimeHutch_Left_Floor  |contains=GrassFloor" : "true",
+			},
+		},			
+		{
+			"LogName":"Slime Hutch Right Side Floor",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"FromFile":"assets/floors/shfloor_{{SlimeHutch_Right_Floor}}.tmx",
+			"PatchMode":"Overlay",
+			"FromArea":{"X":22, "Y":0, "Width":21,"Height":14,},
+			"ToArea":{"X":22,"Y":7,"Width":21,"Height":14},
+			"When" : {
+				"SlimeHutch_Right_Floor  |contains=GrassFloor" : "false",
+			},	
+		},
+		{
+			"LogName":"Slime Hutch Right Side Floor",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"FromFile":"assets/floors/shfloor_{{SlimeHutch_Right_Floor}}_{{in_season}}.tmx",
+			"PatchMode":"Overlay",
+			"FromArea":{"X":22, "Y":0, "Width":21,"Height":14,},
+			"ToArea":{"X":22,"Y":7,"Width":21,"Height":14},
+			"When" : {
+				"SlimeHutch_Right_Floor  |contains=GrassFloor" : "true",
+			},	
+		},
+		{
+			"LogName":"Slime Hutch Middle Floor Strip",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"FromFile":"assets/floors/shfloor_{{SlimeHutch_Middle_Floor}}.tmx",
+			"PatchMode":"Overlay",
+			"FromArea":{"X":21, "Y":0, "Width":1,"Height":14,},
+			"ToArea":{"X":21,"Y":7,"Width":1,"Height":14},
+			"When" : {
+				"SlimeHutch_Middle_Floor  |contains=GrassFloor" : "false",
+			},	
+		},	
+		{
+			"LogName":"Slime Hutch Middle Floor Strip",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"FromFile":"assets/floors/shfloor_{{SlimeHutch_Middle_Floor}}_{{in_season}}.tmx",
+			"PatchMode":"Overlay",
+			"FromArea":{"X":21, "Y":0, "Width":1,"Height":14,},
+			"ToArea":{"X":21,"Y":7,"Width":1,"Height":14},
+			"When" : {
+				"SlimeHutch_Middle_Floor  |contains=GrassFloor" : "true",
+			},	
+		},
+//Outside Floor
+		{
+			"LogName":"Slime Hutch Outside Floor",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"FromFile":"assets/outside/shOutsideFloor_{{SlimeHutch_Outside_Floor}}_{{out_season}}.tmx",
+			"PatchMode":"Overlay",
+			"FromArea":{"X":0, "Y":0, "Width":43,"Height":7,},
+			"ToArea":{"X":0,"Y":0,"Width":43,"Height":7},
+			"When": {
+				"SlimeHutch_Background |contains=Greenhouse" : "true",
+				}
+		},	
+
+//Clipping
+		{
+			"LogName":"Allow or disallow clipping",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/clipping/{{SlimeHutch_Background}}Background_NoClip.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":43, "Height":21},
+			"ToArea":{"X":0,"Y":0,"Width":43,"Height":21},
+			"When": {
+				"SlimeHutch_Clip |contains=NoClip":"true",
+			}
+		},
+//Left Side Layout
+		{
+			"LogName":"Left side crop layout",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/crops/LSide_{{SlimeHutch_Left_Crop_size}}.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":21, "Height":14},
+			"ToArea":{"X":0,"Y":7,"Width":21,"Height":14},
+			"When": {
+				"SlimeHutch_Left_Layout |contains=Crops":"true",
+			}
+		},
+		{
+			"LogName":"Left side fruit tree layout",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/FruitTrees/LSide_{{SlimeHutch_Left_FruitTrees}}.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":21, "Height":14},
+			"ToArea":{"X":0,"Y":7,"Width":21,"Height":14},
+			"When": {
+				"SlimeHutch_Left_Layout |contains=FruitTrees":"true",
+			}
+		},
+		{
+			"LogName":"Left side trellis crop layout",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/TrellisCrops/LSide_TrellisCrops_{{SlimeHutch_Left_TrellisCrops}}.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":21, "Height":14},
+			"ToArea":{"X":0,"Y":7,"Width":21,"Height":14},
+			"When": {
+				"SlimeHutch_Left_Layout |contains=TrellisCrops":"true",
+			},
+		},
+		{
+			"LogName":"Left side water crop layout",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/WaterCrops/LSide_WaterCrops.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":21, "Height":14},
+			"ToArea":{"X":0,"Y":7,"Width":21,"Height":14},
+			"When": {
+				"SlimeHutch_Left_Layout |contains=WaterCrops":"true",
+			}
+		},
+//left slime layout
+
+		{
+			"LogName":"Left side slime layout 1",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/slimes/LSide1_Slimes.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":21, "Height":14},
+			"ToArea":{"X":0,"Y":7,"Width":21,"Height":14},
+			"When": {
+				"Left_Slime_Water_Feeders |contains=Left1, BothLeft":"true",
+			}
+		},
+		{
+			"LogName":"Left side slime layout 2",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/slimes/LSide2_Slimes.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":21, "Height":14},
+			"ToArea":{"X":0,"Y":7,"Width":21,"Height":14},
+			"When": {
+				"Left_Slime_Water_Feeders |contains=Left2, BothLeft":"true",
+			}
+		},
+//left water source layout
+		{
+			"LogName":"Left side water source (no shed)",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/decorations/WaterSource{{SlimeHutch_Left_WaterSource}}.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":2, "Height":2},
+			"ToArea":{"X":10,"Y":6,"Width":2,"Height":2},
+			"When": {
+				"SlimeHutch_Left_WaterSource |contains=Invisible":"false",
+				"SlimeHutch_Background |contains=Shed" : "false",
+			},
+		},
+		{
+			"LogName":"Left side water source 1 (no shed)",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapTiles": [
+			{
+				"Position" : {"X" : 10, "Y": 7 },
+				"Layer" : "Back",
+				"SetProperties": {
+					"WaterSource": "True", 
+					},
+				"When" : {
+					"SlimeHutch_Background |contains=Shed" : "false",
+				},
+			},
+			],
+		},
+		{
+			"LogName":"Left side water source 2 (no shed)",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapTiles": [
+			{
+				"Position" : {"X" : 11, "Y": 7 },
+				"Layer" : "Back",
+				"SetProperties": {
+					"WaterSource": "True", 
+					},
+				"When" : {
+					"SlimeHutch_Background |contains=Shed" : "false",
+				},
+			},
+			],
+		},		
+		{
+			"LogName":"Left side water source (with shed)",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/decorations/WaterSource{{SlimeHutch_Left_WaterSource}}.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":2, "Height":2},
+			"ToArea":{"X":10,"Y":7,"Width":2,"Height":2},
+			"When": {
+				"SlimeHutch_Left_WaterSource |contains=Invisible":"false",
+				"SlimeHutch_Background |contains=Shed" : "true",
+			},
+		},
+		{
+			"LogName":"Left side water source 1 (with shed)",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapTiles": [
+			{
+				"Position" : {"X" : 10, "Y": 8 },
+				"Layer" : "Back",
+				"SetProperties": {
+					"WaterSource": "True", 
+					},
+				"When" : {
+					"SlimeHutch_Background |contains=Shed" : "true",
+				},
+			},
+			],
+		},
+		{
+			"LogName":"Left side water source 2 (with shed)",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapTiles": [
+			{
+				"Position" : {"X" : 11, "Y": 8 },
+				"Layer" : "Back",
+				"SetProperties": {
+					"WaterSource": "True", 
+					},
+				"When" : {
+					"SlimeHutch_Background |contains=Shed" : "true",
+				},
+			},
+			],
+		},
+//Right Side Layout
+		{
+			"LogName":"Right side crop layout",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/crops/RSide_{{SlimeHutch_Right_Crop_size}}.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":20, "Height":14},
+			"ToArea":{"X":22,"Y":7,"Width":20,"Height":14},
+			"When": {
+				"SlimeHutch_Right_Layout |contains=Crops":"true",
+			}
+		},
+		{
+			"LogName":"Right side fruit tree layout",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/FruitTrees/RSide_{{SlimeHutch_Right_FruitTrees}}.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":20, "Height":14},
+			"ToArea":{"X":22,"Y":7,"Width":20,"Height":14},
+			"When": {
+				"SlimeHutch_Right_Layout |contains=FruitTrees":"true",
+			}
+		},
+		{
+			"LogName":"Right side trellis crop layout",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/TrellisCrops/RSide_TrellisCrops_{{SlimeHutch_Right_TrellisCrops}}.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":20, "Height":14},
+			"ToArea":{"X":22,"Y":7,"Width":20,"Height":14},
+			"When": {
+				"SlimeHutch_Right_Layout |contains=TrellisCrops":"true",
+			},
+		},
+		{
+			"LogName":"Right side water crop layout",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/WaterCrops/RSide_WaterCrops.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":20, "Height":14},
+			"ToArea":{"X":22,"Y":7,"Width":20,"Height":14},
+			"When": {
+				"SlimeHutch_Right_Layout |contains=WaterCrops":"true",
+			}
+		},
+//right slime layout
+		{
+			"LogName":"Right side slime layout 1",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/slimes/RSide1_Slimes.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":20, "Height":14},
+			"ToArea":{"X":22,"Y":7,"Width":20,"Height":14},
+			"When": {
+				"Right_Slime_Water_Feeders |contains=Right1, BothRight":"true",
+			}
+		},
+		{
+			"LogName":"Right side slime layout 2",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/layout/slimes/RSide2_Slimes.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":20, "Height":14},
+			"ToArea":{"X":22,"Y":7,"Width":20,"Height":14},
+			"When": {
+				"Right_Slime_Water_Feeders |contains=Right2, BothRight":"true",
+			}
+		},
+//right water source layout
+		{
+			"LogName":"Right side water source (no shed)",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/decorations/WaterSource{{SlimeHutch_Right_WaterSource}}.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":2, "Height":2},
+			"ToArea":{"X":31,"Y":6,"Width":2,"Height":2},
+			"When": {
+				"SlimeHutch_Right_WaterSource |contains=Invisible":"false",
+				"SlimeHutch_Background |contains=Shed" : "false",
+			}
+		},
+		{
+			"LogName":"Right side water source 1 (no shed)",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapTiles": [
+			{
+				"Position" : {"X" : 31, "Y": 7 },
+				"Layer" : "Back",
+				"SetProperties": {
+					"WaterSource": "True", 
+					},
+				"When" : {
+					"SlimeHutch_Background |contains=Shed" : "false",
+				},
+			},
+			],
+		},
+		{
+			"LogName":"Right side water source 2 (no shed)",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapTiles": [
+			{
+				"Position" : {"X" : 32, "Y": 7 },
+				"Layer" : "Back",
+				"SetProperties": {
+					"WaterSource": "True", 
+					},
+				"When" : {
+					"SlimeHutch_Background |contains=Shed" : "false",
+				},
+			},
+			],
+		},
+		{
+			"LogName":"Right side water source (with shed)",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/decorations/WaterSource{{SlimeHutch_Right_WaterSource}}.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":2, "Height":2},
+			"ToArea":{"X":31,"Y":7,"Width":2,"Height":2},
+			"When": {
+				"SlimeHutch_Right_WaterSource |contains=Invisible":"false",
+				"SlimeHutch_Background |contains=Shed" : "true",
+			}
+		},
+		{
+			"LogName":"Right side water source 1 (with shed)",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapTiles": [
+			{
+				"Position" : {"X" : 31, "Y": 8 },
+				"Layer" : "Back",
+				"SetProperties": {
+					"WaterSource": "True", 
+					},
+				"When" : {
+					"SlimeHutch_Background |contains=Shed" : "true",
+				},
+			},
+			],
+		},
+		{
+			"LogName":"Right side water source 2 with shed",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"MapTiles": [
+			{
+				"Position" : {"X" : 32, "Y": 8 },
+				"Layer" : "Back",
+				"SetProperties": {
+					"WaterSource": "True", 
+					},
+				"When" : {
+					"SlimeHutch_Background |contains=Shed" : "true",
+				},
+			},
+			],
+		},
+//top slime layout
+		{
+			"LogName":"Top slime layout left",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/outside/Outside_SlimeBowls.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":4, "Height":1},
+			"ToArea":{"X":9,"Y":2,"Width":4,"Height":1},
+			"When": {
+				"Top_Slime_Water_Feeders |contains=TopLeft, BothTop":"true",
+			}
+		},
+
+		{
+			"LogName":"Top slime layout right",
+			"Action":"EditMap",
+			"Target":"Maps/SlimeHutch",
+			"PatchMode":"Overlay",
+			"FromFile":"assets/outside/Outside_SlimeBowls.tmx",
+			"FromArea": {"X":0, "Y":0, "Width":4, "Height":1},
+			"ToArea":{"X":30,"Y":2,"Width":4,"Height":1},
+			"When": {
+				"Top_Slime_Water_Feeders |contains=TopRight, BothTop":"true",
+			}
+		},
+		],
+}

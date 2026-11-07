@@ -1,0 +1,117 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                    "16279010/F/f Penny 2500/t 1000 1400/e 38/k pennyHeartbroken/e 162790080/A pennyGone":"musicboxsong/
+                    15 10/
+farmer -30 -30 0 Penny 17 9 2 Jas 19 10 3 Vincent 16 10 1 Gunther 3 8 2/
+skippable/
+showFrame Penny 18/
+showFrame Jas 22/
+showFrame Vincent 24/
+pause 1000/
+playSound doorClose/
+warp farmer 3 14/
+pause 500/
+textAboveHead Gunther \"Hi there farmer!\"/
+pause 800/
+emote farmer 32 true/
+pause 800/
+speed farmer 3/
+move farmer 0 -1 0/
+move farmer 4 0 1/
+move farmer 0 1 2/
+move farmer 4 0 1/
+move farmer 0 -5 0/
+move farmer 5 0 1/
+speak Penny \"Hi, @! It's nice of you to visit me at work.^Hi, @! It's nice of you to visit me at work.$h\"/
+speak Vincent \"Hello Mr. @! Are you going to study with us today?^Hello Ms. @! Are you going to study with us today?$h\"/
+pause 400/
+emote farmer 40/
+showFrame Jas 12/
+speak Jas \"Ms. Penny...$0#$b#Why is Mr. @ looking at you like that?^Why is Ms. @ looking at you like that?$h\"/
+jump farmer 7/
+showFrame Vincent 4/
+showFrame Penny 0/
+speak Penny \"Well, when two people love each other very much...$h#$b# It's impossible to hide it.$0#$b# I guess that Mr. @ and I can't hide how we feel about each other.^I guess that Ms. @ and I can't hide how we feel about each other.$4#$b#You two are very smart children, so you must already know what's going on.$0#$b#But I would like to formally introduce you to my boyfriend!^But I would like to formally introduce you to my girlfriend!$h\"/
+emote farmer 32/
+pause 400/
+emote Jas 20 true/
+textAboveHead Vincent \"YAY!\"/
+pause 800/
+fade false/
+message \"Together with Penny, you teach the kids a bit about the local wildlife, including hat mouse and trash bear.\"/
+viewport -1000 -1000/
+pause 1000/
+warp farmer 15 11/
+faceDirection farmer 3/
+warp Penny 14 10/
+faceDirection Penny 3/
+warp Jas 12 10/
+faceDirection Jas 1/
+warp Vincent 12 11/
+pause 200/
+fade true/
+viewport 15 10/
+pause 1000/
+speak Penny \"This has been a very good class today! I'm proud of you two for behaving so well.$0#$b#Maybe Mr. @ should help out more often, since he has such a positive influence on you!^Maybe Ms. @ should help out more often, since she has such a positive influence on you!$h\"/
+emote farmer 32/
+speak Penny \"Well children, could you please go to the front desk and ask Gunther if our newest textbooks have come in?$0#$b#I'll be there in just a moment. I need to talk with Mr. @ for a minute.^I'll be there in just a moment. I need to talk with Ms. @ for a minute.$0\"/
+jump Jas 5/
+textAboveHead Vincent \"Okay!\"/
+jump Vincent 5/
+speed Vincent 5/
+speed Jas 4/
+advancedMove Vincent false 0 3 -6 0 0 -3 -3 0 0 -1/
+advancedMove Jas false 0 4 -4 0 0 -3 -4 0 0 -1/
+pause 1500/
+textAboveHead Gunther \"Hi there kids!\"/
+jump Gunther 2/
+move Penny 0 1 1/
+speak Penny \"Hey, you.$4#$b# @, I want you to know... $4#$b#I'm happy to have you as my partner. I'm so glad that you want me just like I want you.$4#$b#Your affection, your attention, your care for me... it means so much.$4#$b# I've been thinking a lot about our date in the bathhouse, and how sweet and intimate it felt.$4#$b#It made me feel things I've never felt before, for anyone. $4#$b# My heart feels full to overflowing, and I get all warm and fuzzy and giggly just thinking about you.$4#$b# And it's like I can't stop smiling. $4#$b#@, what I'm trying to say is... $4#$b#I love you. $4#$b#What do you do?$h#$b#$q 1627903 null##$r 1627903 0 event_loveInMuseum1#(say 'I love you too Penny!' and go in for a kiss)#$r 1627904 -70 event_loveInMuseum2#(say 'Thank you')\"/
+fork sayThankYou/
+pause 600/
+pause 1000/
+showFrame Penny 35/
+animate farmer true true 500 101/
+pause 200/
+positionOffset Penny 2 0/
+pause 50/
+positionOffset Penny 2 0/
+pause 50/
+positionOffset Penny 2 0/
+pause 50/
+positionOffset Penny 2 0/
+positionOffset farmer -2 0/
+pause 50/
+positionOffset Penny 2 0/
+positionOffset farmer -2 0/
+pause 50/
+specificTemporarySprite heart 15 10/
+pause 500/
+globalFade/
+viewport -1000 -1000/
+friendship Jas 20 friendship Vincent 20/
+pause 1200/
+end dialogue Penny \"Thanks for helping me out today. I love you, sweetie! $1#$b# I don't think I'll ever get tired of saying that, or hearing it.$0\"",
+                    "sayThankYou":"stopMusic/
+                    speak Penny \"Thank you too.$3#$b#I should show you how thankful I am by treating you to a meal sometime.$0#$b#I've been working on my cooking, I promise.$h\"/
+friendship Jas 10/
+friendship Vincent 10/
+pause 1200/
+end dialogue Penny \"Thanks for helping me out today.$0\""
+                }       
+        },
+        
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":{
+                "event_loveInMuseum1":"Hehe, you're adorable!$h",
+                "event_loveInMuseum2":"Yeah...%fork$3"
+            }
+        },
+    ]
+}

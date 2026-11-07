@@ -1,0 +1,37 @@
+{
+	"Changes": [
+		{
+			"LogName": "Default Leo",
+			"Action": "EditImage",
+			"Target": "Portraits/ParrotBoy",
+			"FromFile": "assets/Portraits/ParrotBoy.png"
+		},
+		{
+			"LogName": "Default Leo_winter",
+			"Action": "EditImage",
+			"Target": "Portraits/ParrotBoy_Winter",
+			"FromFile": "assets/Portraits/ParrotBoy_Winter_Vanilla.png"
+		},
+		
+		{
+			"LogName": "Improve Leo",
+			"Action": "EditImage",
+			"Target": "Portraits/ParrotBoy",
+			"FromFile": "assets/Portraits/NewParrotBoy.png",
+			"When": {
+				"HasSeenEvent |contains=6497428": true,
+				"Hairdo Leo" : "true"
+			}
+		},
+		{
+		  "LogName": "Improve Leo Sprite",
+          "Action": "EditImage",
+          "Target": "Characters/ParrotBoy",
+          "FromFile": "assets/Characters/NewParrotBoy.png",
+		  "When": {
+				"HasSeenEvent |contains=6497428": true,
+				"Hairdo Leo" : "true"
+		  }
+		},
+	]
+}

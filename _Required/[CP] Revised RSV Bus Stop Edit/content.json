@@ -1,0 +1,32 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/BusStop",
+      "FromFile": "assets/RSV_BusStopEdit.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 7,
+        "Height": 13
+      },
+      "ToArea": {
+        "X": 35,
+        "Y": 10,
+        "Width": 7,
+        "Height": 13
+      },
+      "PatchMode": "ReplaceByLayer",
+	  "MapTiles": [
+                {
+                    "Position": { "X": 40, "Y": 21 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"rsv.BusStop\""
+                    }
+                }
+            ]
+    }
+  ]
+}

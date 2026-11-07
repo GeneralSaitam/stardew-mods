@@ -1,0 +1,128 @@
+{
+  "Format": "2.8.0",
+
+
+    "ConfigSchema": {
+                    
+      "EnableThisMod": { 
+        "AllowValues": "true,false",
+        "Default": "true" 
+      },
+      "ScaffoldPattern": {
+        "AllowValues": "CenterScaffold, No_CenterScaffold",
+        "Default": "CenterScaffold",
+      },
+      "BoatTexture": {
+        "AllowValues": "Vanilla, Old",
+        "Default": "Vanilla"
+      },
+      "LowChroma": {
+        "AllowValues": "true, false",
+        "Default": "false"
+      },
+
+      "Mod_Katrielle_BridgePassage": {
+        "AllowValues": "true,false",
+        "Default": "false",
+        "Section": "SettingSection_Mod_Katrielle"
+      }
+
+    },//▼"ConfigSchema"の終了▼
+
+
+    "DynamicTokens": [
+
+    //●以下、「ボートテクスチャ」用トークン
+      {
+        "Name": "DT_LowChroma",
+        "Value": "Normall"
+      },
+      {
+        "Name": "DT_LowChroma",
+        "Value": "LowChroma",
+        "When": {
+          "LowChroma": "true"
+        }
+      },
+      {
+        "Name": "DT_Season",
+        "Value": "Spring"
+      },
+      {
+        "Name": "DT_Season",
+        "Value": "{{Season}}",
+        "When": {
+          "Season": "Spring, Summer, Fall, Winter",
+          "BoatTexture": "Vanilla"
+        }
+      }
+
+    ],//▼"DynamicTokens"の終了▼
+
+
+   "Changes": [
+
+
+  //★★★ タイルシート関係 ★★★
+
+    //●基礎タイルシートの読み込み
+      {
+        "Action": "Load",
+        "Target": "Maps/z_Beachbooto",
+        "FromFile": "assets/png/Beachbooto_{{BoatTexture}}_{{DT_LowChroma}}_{{DT_Season}}.png",
+      },
+
+
+//■■■別json読み込み■■■
+
+    //●バニラ、共通部
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Vanilla_Common.json",
+        "When": {
+            "EnableThisMod": "true",
+            "HasMod |contains=TipsSlight.Katrielle": "false",
+            "HasMod |contains=ShiryuCasDrg.UkrainianFood": "false"
+        }
+      },
+
+    //●「Ukrainian Food」 インストール時
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Mod_UkrainianFood.json",
+        "When": {
+            "EnableThisMod": "true",
+            "HasMod": "ShiryuCasDrg.UkrainianFood"
+        }
+      },
+
+    //●「Katrielle the Glitch NPC」 インストール時
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/Mod_Katrielle.json",
+        "When": {
+            "EnableThisMod": "true",
+            "HasMod": "TipsSlight.Katrielle"
+        }
+      },
+
+
+//■■■ 特殊 ■■■
+
+    //●「Katrielle the Glitch NPC」と「Aimon's Gem Sea Shores - More Beach Areas」
+    //    をインストール時に海の表示がおかしくなる問題への対応
+    //     ("EnableThisMod" が false でもなるから When からETM を除外)
+      {
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "FromFile": "assets/tmx/Ts_BeachExtension(Katrielle)_MBAfix.tmx",
+        "ToArea": { "X": 54, "Y": 38, "Width": 19, "Height": 9 },
+        "When": {
+            "HasMod |contains=Aimon111.BeachAreas": "true",
+            "HasMod |contains=TipsSlight.Katrielle": "true"
+        }
+      }
+
+
+   ]//▼▼"Changes"の終了▼▼
+}

@@ -1,0 +1,106 @@
+{
+    "Changes": [
+        {
+            //jail wake up event - basic version with no extra conditions
+            "Action": "EditData",
+            "Target": "Data/Events/sdvhead.LawAndOrderSV_Jail",
+            "Entries": {
+                "239792003/t 600 610/tile 18 5 18 9 17 7": "MarlonsTheme/14 8/farmer 17 9 3 {{Shannon}} -1000 -1000 2/eyes 1 -10000/pause 1400/emote farmer 24/pause 2400/emote farmer 24/pause 300/eyes 0 -10000/pause 800/eyes 1 -10000/pause 300/eyes 0 -10000/pause 800/emote farmer 8/advancedMove farmer false -3 0 3 2500 2 500 0 1 2 100/viewport move -1 0 4000/pause 6000/emote farmer 28/pause 3000/playSound stairsdown/warp {{Shannon}} 7 4/pause 300/advancedMove {{Shannon}} false 0 5 2 300 1 500/proceedPosition {{Shannon}}/faceDirection farmer 3/pause 300/emote {{Shannon}} 16/pause 200/speed {{Shannon}} 4/emote farmer 60 true/pause 300/advancedMove {{Shannon}} false 2 0 0 3 5 0 4 500/proceedPosition {{Shannon}}/pause 400/shake {{Shannon}} 500/pause 1000/playSound clank/pause 200/playSound clank/pause 400/changeMapTile Front 14 10 108/changeMapTile Buildings 14 11 108/changeMapTile Front 15 10 0/changeMapTile Buildings 15 11 12/makeInvisible 14 10/makeInvisible 14 11/pause 600/speed {{Shannon}} 3/advancedMove {{Shannon}} false 1 0 3 100/proceedPosition {{Shannon}}/pause 300/advancedMove farmer false 0 2 1 500/proceedPosition farmer/emote farmer 56/pause 100/emote {{Shannon}} 32/globalFade/viewport 1000 1000/changeMapTile Front 14 10 19/changeMapTile Buildings 14 11 31/changeMapTile Front 15 10 108/changeMapTile Buildings 15 11 108/eventSeen 239792003 false/end position 14 12",            }
+        },
+
+        //edit the wake up event based on certain conditions
+        {
+            //jail wake up - cold shoulder version, no prisoners
+            "Action": "EditData",
+            "Target": "Data/Events/sdvhead.LawAndOrderSV_Jail",
+            "Entries": {
+                "239792003/t 600 610/tile 18 5 18 9 17 7": "MarlonsTheme/14 8/farmer 17 9 3 {{Shannon}} -1000 -1000 2/eyes 1 -10000/pause 1400/emote farmer 24/pause 2400/emote farmer 24 true/pause 300/eyes 0 -10000/pause 800/eyes 1 -10000/pause 300/eyes 0 -10000/pause 800/emote farmer 8/advancedMove farmer false -3 0 3 2500 2 500 0 1 2 100/viewport move -1 0 4000/pause 6000/emote farmer 28/pause 3000/playSound stairsdown/warp {{Shannon}} 7 4/pause 300/advancedMove {{Shannon}} false 0 5 2 300 1 500/proceedPosition {{Shannon}}/faceDirection farmer 3/pause 300/emote {{Shannon}} 12/pause 200/emote farmer 60 true/pause 300/advancedMove {{Shannon}} false 2 0 0 3 5 0 4 500/proceedPosition {{Shannon}}/faceDirection farmer 2/pause 400/shake {{Shannon}} 500/pause 1000/playSound clank/pause 200/playSound clank/pause 400/changeMapTile Front 14 10 108/changeMapTile Buildings 14 11 108/changeMapTile Front 15 10 0/changeMapTile Buildings 15 11 12/makeInvisible 14 10/makeInvisible 14 11/pause 600/speed {{Shannon}} 3/advancedMove {{Shannon}} false 1 0 1 100/proceedPosition {{Shannon}}/pause 300/advancedMove farmer false 0 2 1 500/proceedPosition farmer/emote farmer 56/pause 100/emote {{Shannon}} 12/globalFade/viewport 1000 1000/changeMapTile Front 14 10 19/changeMapTile Buildings 14 11 31/changeMapTile Front 15 10 108/changeMapTile Buildings 15 11 108/eventSeen 239792003 false/end position 14 12",
+            },
+            "When": {
+                "HasConversationTopic |contains={{ModId}}_PrisonBed1": "false",
+                "HasConversationTopic |contains={{ModId}}_PrisonBed2": "false",
+                "HasConversationTopic |contains={{ModId}}_rsColdShoulder": "true",
+            }
+        },
+        {
+            //jail wake up event - prisoner 1 version
+            "Action": "EditData",
+            "Target": "Data/Events/sdvhead.LawAndOrderSV_Jail",
+            "Entries": {
+                "239792003/t 600 610/tile 18 5 18 9 17 7": "MarlonsTheme/14 8/farmer 17 9 3 {{Prisoner1}} 18 5 1 {{Shannon}} -1000 -1000 2/showFrame {{Prisoner1}} {{Prisoner1_SleepFrame}}/positionOffset {{Prisoner1}} -32 10/eyes 1 -10000/pause 1400/emote farmer 24/pause 2400/emote farmer 24 true/emote {{Prisoner1}} 24 true/pause 300/eyes 0 -10000/pause 800/eyes 1 -10000/pause 300/eyes 0 -10000/pause 800/emote farmer 8/advancedMove farmer false -3 0 3 2500 2 500 0 1 2 100/viewport move -1 0 4000/pause 6000/emote farmer 28/pause 3000/playSound stairsdown/warp {{Shannon}} 7 4/pause 300/advancedMove {{Shannon}} false 0 5 2 300 1 500/proceedPosition {{Shannon}}/faceDirection farmer 3/emote {{Prisoner1}} 24 true/pause 300/emote {{Shannon}} 16/pause 200/speed {{Shannon}} 4/emote farmer 60 true/pause 300/advancedMove {{Shannon}} false 2 0 0 3 5 0 4 500/proceedPosition {{Shannon}}/faceDirection farmer 2/pause 400/shake {{Shannon}} 500/pause 1000/playSound clank/pause 200/playSound clank/pause 400/changeMapTile Front 14 10 108/changeMapTile Buildings 14 11 108/changeMapTile Front 15 10 0/changeMapTile Buildings 15 11 12/makeInvisible 14 10/makeInvisible 14 11/pause 600/speed {{Shannon}} 3/advancedMove {{Shannon}} false 1 0 3 100/proceedPosition {{Shannon}}/pause 300/advancedMove farmer false 0 2 1 500/proceedPosition farmer/emote farmer 56/pause 100/emote {{Shannon}} 32/globalFade/viewport 1000 1000/changeMapTile Front 14 10 19/changeMapTile Buildings 14 11 31/changeMapTile Front 15 10 108/changeMapTile Buildings 15 11 108/eventSeen 239792003 false/end position 14 12",
+            },
+            "When": {
+                "HasConversationTopic |contains={{ModId}}_PrisonBed1": "true",
+                "HasConversationTopic |contains={{ModId}}_PrisonBed2": "false",
+                "HasConversationTopic |contains={{ModId}}_rsColdShoulder": "false",
+            }
+        },
+        {
+            //jail wake up - cold shoulder version, prisoner 1
+            "Action": "EditData",
+            "Target": "Data/Events/sdvhead.LawAndOrderSV_Jail",
+            "Entries": {
+                "239792003/t 600 610/tile 18 5 18 9 17 7": "MarlonsTheme/14 8/farmer 17 9 3 {{Prisoner1}} 18 5 1 {{Shannon}} -1000 -1000 2/showFrame {{Prisoner1}} {{Prisoner1_SleepFrame}}/positionOffset {{Prisoner1}} -32 10/eyes 1 -10000/pause 1400/emote farmer 24/pause 2400/emote farmer 24 true/emote {{Prisoner1}} 24 true/pause 300/eyes 0 -10000/pause 800/eyes 1 -10000/pause 300/eyes 0 -10000/pause 800/emote farmer 8/advancedMove farmer false -3 0 3 2500 2 500 0 1 2 100/viewport move -1 0 4000/pause 6000/emote farmer 28/pause 3000/playSound stairsdown/warp {{Shannon}} 7 4/pause 300/advancedMove {{Shannon}} false 0 5 2 300 1 500/proceedPosition {{Shannon}}/faceDirection farmer 3/emote {{Prisoner1}} 24 true/pause 300/emote {{Shannon}} 12/pause 200/emote farmer 60 true/pause 300/advancedMove {{Shannon}} false 2 0 0 3 5 0 4 500/proceedPosition {{Shannon}}/faceDirection farmer 2/pause 400/shake {{Shannon}} 500/pause 1000/playSound clank/pause 200/playSound clank/pause 400/changeMapTile Front 14 10 108/changeMapTile Buildings 14 11 108/changeMapTile Front 15 10 0/changeMapTile Buildings 15 11 12/makeInvisible 14 10/makeInvisible 14 11/pause 600/speed {{Shannon}} 3/advancedMove {{Shannon}} false 1 0 1 100/proceedPosition {{Shannon}}/pause 300/advancedMove farmer false 0 2 1 500/proceedPosition farmer/emote farmer 56/pause 100/emote {{Shannon}} 12/globalFade/viewport 1000 1000/changeMapTile Front 14 10 19/changeMapTile Buildings 14 11 31/changeMapTile Front 15 10 108/changeMapTile Buildings 15 11 108/eventSeen 239792003 false/end position 14 12",
+            },
+            "When": {
+                "HasConversationTopic |contains={{ModId}}_PrisonBed1": "true",
+                "HasConversationTopic |contains={{ModId}}_PrisonBed2": "false",
+                "HasConversationTopic |contains={{ModId}}_rsColdShoulder": "true",
+            }
+        },
+        {
+            //jail wake up event - prisoner 2 version
+            "Action": "EditData",
+            "Target": "Data/Events/sdvhead.LawAndOrderSV_Jail",
+            "Entries": {
+                "239792003/t 600 610/tile 18 5 18 9 17 7": "MarlonsTheme/14 8/farmer 17 5 3 {{Prisoner2}} 17 9 1 {{Shannon}} -1000 -1000 2/showFrame {{Prisoner2}} {{Prisoner2_SleepFrame}}/positionOffset {{Prisoner2}} 16 10/eyes 1 -10000/pause 1400/emote farmer 24/pause 2400/emote farmer 24 true/emote {{Prisoner2}} 24 true/pause 300/eyes 0 -10000/pause 800/eyes 1 -10000/pause 300/eyes 0 -10000/pause 800/emote farmer 8/advancedMove farmer false -3 0 3 500 0 5 2 100/proceedPosition farmer/pause 3000/emote farmer 28/pause 3000/playSound stairsdown/warp {{Shannon}} 7 4/pause 300/advancedMove {{Shannon}} false 0 5 2 300 1 500/proceedPosition {{Shannon}}/faceDirection farmer 3/emote {{Prisoner2}} 24 true/pause 300/emote {{Shannon}} 16/pause 200/speed {{Shannon}} 4/emote farmer 60 true/pause 300/advancedMove {{Shannon}} false 2 0 0 3 5 0 4 500/proceedPosition {{Shannon}}/faceDirection farmer 2/pause 400/shake {{Shannon}} 500/pause 1000/playSound clank/pause 200/playSound clank/pause 400/changeMapTile Front 14 10 108/changeMapTile Buildings 14 11 108/changeMapTile Front 15 10 0/changeMapTile Buildings 15 11 12/makeInvisible 14 10/makeInvisible 14 11/pause 600/speed {{Shannon}} 3/advancedMove {{Shannon}} false 1 0 3 100/proceedPosition {{Shannon}}/pause 300/advancedMove farmer false 0 2 1 500/proceedPosition farmer/emote farmer 56/pause 100/emote {{Shannon}} 32/globalFade/viewport 1000 1000/changeMapTile Front 14 10 19/changeMapTile Buildings 14 11 31/changeMapTile Front 15 10 108/changeMapTile Buildings 15 11 108/eventSeen 239792003 false/end position 14 12",
+            },
+            "When": {
+                "HasConversationTopic |contains={{ModId}}_PrisonBed1": "false",
+                "HasConversationTopic |contains={{ModId}}_PrisonBed2": "true",
+                "HasConversationTopic |contains={{ModId}}_rsColdShoulder": "false",
+            }
+        },
+        {
+            //edit jail wake up event - prisoner 2 version (cold shoulder)
+            "Action": "EditData",
+            "Target": "Data/Events/sdvhead.LawAndOrderSV_Jail",
+            "Entries": {
+                "239792003/t 600 610/tile 18 5 18 9 17 7": "MarlonsTheme/14 8/farmer 17 5 3 {{Prisoner2}} 17 9 1 {{Shannon}} -1000 -1000 2/showFrame {{Prisoner2}} {{Prisoner2_SleepFrame}}/positionOffset {{Prisoner2}} 16 10/eyes 1 -10000/pause 1400/emote farmer 24/pause 2400/emote farmer 24 true/emote {{Prisoner2}} 24 true/pause 300/eyes 0 -10000/pause 800/eyes 1 -10000/pause 300/eyes 0 -10000/pause 800/emote farmer 8/advancedMove farmer false -3 0 3 500 0 5 2 100/proceedPosition farmer/pause 3000/emote farmer 28/pause 3000/playSound stairsdown/warp {{Shannon}} 7 4/pause 300/advancedMove {{Shannon}} false 0 5 2 300 1 500/proceedPosition {{Shannon}}/faceDirection farmer 3/emote {{Prisoner2}} 24 true/pause 300/emote {{Shannon}} 12/pause 200/emote farmer 60 true/pause 300/advancedMove {{Shannon}} false 2 0 0 3 5 0 4 500/proceedPosition {{Shannon}}/faceDirection farmer 2/pause 400/shake {{Shannon}} 500/pause 1000/playSound clank/pause 200/playSound clank/pause 400/changeMapTile Front 14 10 108/changeMapTile Buildings 14 11 108/changeMapTile Front 15 10 0/changeMapTile Buildings 15 11 12/makeInvisible 14 10/makeInvisible 14 11/pause 600/speed {{Shannon}} 3/advancedMove {{Shannon}} false 1 0 1 100/proceedPosition {{Shannon}}/pause 300/advancedMove farmer false 0 2 1 500/proceedPosition farmer/emote farmer 56/pause 100/emote {{Shannon}} 12/globalFade/viewport 1000 1000/changeMapTile Front 14 10 19/changeMapTile Buildings 14 11 31/changeMapTile Front 15 10 108/changeMapTile Buildings 15 11 108/eventSeen 239792003 false/end position 14 12",
+            },
+            "When": {
+                "HasConversationTopic |contains={{ModId}}_PrisonBed1": "false",
+                "HasConversationTopic |contains={{ModId}}_PrisonBed2": "true",
+                "HasConversationTopic |contains={{ModId}}_rsColdShoulder": "true",
+            }
+        },
+        {
+            //edit jail wake up event - prison full version
+            "Action": "EditData",
+            "Target": "Data/Events/sdvhead.LawAndOrderSV_Jail",
+            "Entries": {
+                "239792003/t 600 610/tile 18 5 18 9 17 7": "MarlonsTheme/14 8/farmer 18 7 3 {{Prisoner1}} 18 5 1 {{Prisoner2}} 18 9 1 {{Shannon}} -1000 -1000 2/positionOffset farmer -12 0/showFrame farmer 117 true/showFrame {{Prisoner1}} {{Prisoner1_SleepFrame}}/positionOffset {{Prisoner1}} -32 10/showFrame {{Prisoner2}} {{Prisoner2_SleepFrame}}/positionOffset {{Prisoner2}} -32 10/pause 800/emote farmer 24/pause 1800/emote {{Prisoner1}} 24 true/pause 600/emote {{Prisoner2}} 24 true/pause 2200/emote farmer 8/stopAnimation farmer/pause 200/advancedMove farmer false -4 0 3 2500 2 500 0 3 2 100/viewport move -1 0 4000/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/emote farmer 28/pause 3600/playSound stairsdown/warp {{Shannon}} 7 4/pause 300/advancedMove {{Shannon}} false 0 5 2 300 1 500/proceedPosition {{Shannon}}/faceDirection farmer 3/emote {{Prisoner1}} 24 true/pause 300/emote {{Shannon}} 16/pause 200/speed {{Shannon}} 4/emote farmer 60 true/pause 300/advancedMove {{Shannon}} false 2 0 0 3 5 0 4 500/proceedPosition {{Shannon}}/faceDirection farmer 2/pause 400/shake {{Shannon}} 500/pause 1000/playSound clank/pause 200/playSound clank/pause 400/changeMapTile Front 14 10 108/changeMapTile Buildings 14 11 108/changeMapTile Front 15 10 0/changeMapTile Buildings 15 11 12/makeInvisible 14 10/makeInvisible 14 11/pause 600/speed {{Shannon}} 3/advancedMove {{Shannon}} false 1 0 3 100/proceedPosition {{Shannon}}/pause 300/advancedMove farmer false 0 2 1 500/proceedPosition farmer/emote farmer 56/pause 100/emote {{Shannon}} 32/globalFade/viewport 1000 1000/changeMapTile Front 14 10 19/changeMapTile Buildings 14 11 31/changeMapTile Front 15 10 108/changeMapTile Buildings 15 11 108/eventSeen 239792003 false/end position 14 12",
+            },
+            "When": {
+                "HasConversationTopic |contains={{ModId}}_PrisonBed1": "true",
+                "HasConversationTopic |contains={{ModId}}_PrisonBed2": "true",
+                "HasConversationTopic |contains={{ModId}}_rsColdShoulder": "false",
+            }
+        },
+        {
+            //edit jail wake up event - prison full version (cold shoulder)
+            "Action": "EditData",
+            "Target": "Data/Events/sdvhead.LawAndOrderSV_Jail",
+            "Entries": {
+                "239792003/t 600 610/tile 18 5 18 9 17 7": "MarlonsTheme/14 8/farmer 18 7 3 {{Prisoner1}} 18 5 1 {{Prisoner2}} 18 9 1 {{Shannon}} -1000 -1000 2/positionOffset farmer -12 0/showFrame farmer 117 true/showFrame {{Prisoner1}} {{Prisoner1_SleepFrame}}/positionOffset {{Prisoner1}} -32 10/showFrame {{Prisoner2}} {{Prisoner2_SleepFrame}}/positionOffset {{Prisoner2}} -32 10/pause 800/emote farmer 24/pause 1800/emote {{Prisoner1}} 24 true/pause 600/emote {{Prisoner2}} 24 true/pause 2200/emote farmer 8/stopAnimation farmer/pause 200/advancedMove farmer false -4 0 3 2500 2 500 0 3 2 100/viewport move -1 0 4000/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/pause 200/positionOffset farmer 1 0/emote farmer 28/pause 3600/playSound stairsdown/warp {{Shannon}} 7 4/pause 300/advancedMove {{Shannon}} false 0 5 2 300 1 500/proceedPosition {{Shannon}}/faceDirection farmer 3/emote {{Prisoner1}} 24 true/pause 300/emote {{Shannon}} 12/pause 200/emote farmer 60 true/pause 300/advancedMove {{Shannon}} false 2 0 0 3 5 0 4 500/proceedPosition {{Shannon}}/faceDirection farmer 2/pause 400/shake {{Shannon}} 500/pause 1000/playSound clank/pause 200/playSound clank/pause 400/changeMapTile Front 14 10 108/changeMapTile Buildings 14 11 108/changeMapTile Front 15 10 0/changeMapTile Buildings 15 11 12/makeInvisible 14 10/makeInvisible 14 11/pause 600/speed {{Shannon}} 3/advancedMove {{Shannon}} false 1 0 1 100/proceedPosition {{Shannon}}/pause 300/advancedMove farmer false 0 2 1 500/proceedPosition farmer/emote farmer 56/pause 100/emote {{Shannon}} 12/globalFade/viewport 1000 1000/changeMapTile Front 14 10 19/changeMapTile Buildings 14 11 31/changeMapTile Front 15 10 108/changeMapTile Buildings 15 11 108/eventSeen 239792003 false/end position 14 12",
+            },
+            "When": {
+                "HasConversationTopic |contains={{ModId}}_PrisonBed1": "true",
+                "HasConversationTopic |contains={{ModId}}_PrisonBed2": "true",
+                "HasConversationTopic |contains={{ModId}}_rsColdShoulder": "true",
+            }
+        },
+
+
+    ]
+}

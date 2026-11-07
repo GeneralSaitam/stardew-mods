@@ -1,0 +1,34 @@
+{
+  "Changes": [{
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "Fields": {
+      // Crops
+      "ilucie.JuniperBerry": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.IluciesWinterCropsJuniperBerryCropName}}",
+      },
+      "ilucie.JuniperBerrySeeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.IluciesWinterCropsJuniperBerrySeedName}}",
+      },
+      "ilucie.Turnip": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.IluciesWinterCropsTurnipCropName}}",
+      },
+      "ilucie.TurnipSeeds": {
+        "DisplayName": "{{i18n:VegasOctober.ItemCompatibilityPatch.IluciesWinterCropsTurnipSeedName}}",
+      },
+    },
+  },
+
+  // Context Tags
+  {
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Priority": "Late + 10",
+    "TargetField": [ "ilucie.JuniperBerry", "ContextTags" ],
+    "Entries": {
+      "berry_item": "berry_item",
+      "juniper_berry_item": "juniper_berry_item",
+    },
+  }]
+}

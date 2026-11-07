@@ -1,0 +1,271 @@
+{
+    //Guide for keys:
+	//1497 and 1498: Child keys. Use for Jas, Vincent, and Leo.
+	//1501 and 1504: Rude keys. Use for Pam, Clint and George (although George will not use 1504, as he uses 1503 instead and I should not alter that).
+	//1499 and 1500: Keys that don't apply to the above two cases.
+	"Changes":[
+		{
+			"LogName": "Caroline - Winter Star, Abigail is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Caroline",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Caroline.WinterStar.Abigail.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Abigail": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:AbigailRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Caroline": "normal",
+			},			
+		},
+		{
+			"LogName": "Demetrius - Winter Star, Sebastian is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Demetrius",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Demetrius.WinterStar.Sebastian.Housemate.Before}}",
+			},
+			"When": {
+				"relationship:Sebastian": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:SebastianRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Demetrius": "normal",
+			},	
+		},
+		{
+			"LogName": "Demetrius - Winter Star, Maru is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Demetrius",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Demetrius.WinterStar.Maru.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Maru": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:MaruRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Demetrius": "normal",
+			},	
+		},		
+		{
+			"LogName": "Evelyn - Winter Star, Alex is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Evelyn",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Evelyn.WinterStar.Alex.Housemate.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Evelyn.WinterStar.Alex.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Alex": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:AlexRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Evelyn": "normal",
+			},	
+		},
+		{
+			"LogName": "Evelyn - Winter Star, Alex is Housemate, Custom Gifts Active",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Evelyn",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Evelyn.WinterStar.Alex.Housemate.Before.GiftsActive}}",
+			},
+			"When": {
+				"relationship:Alex": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:AlexRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Evelyn": "normal",
+				"CustomGifts": "enabled",
+			},	
+		},
+		{
+			"LogName": "Jodi - Winter Star, Sam is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jodi",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Jodi.WinterStar.Sam.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Sam": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:SamRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Jodi": "normal",
+			},	
+		},
+		{
+			"LogName": "Kent - Winter Star, Sam is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kent",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Kent.WinterStar.Sam.Housemate.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Kent.WinterStar.Sam.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Sam": "married",
+				"Year |contains=1": "false",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:SamRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Kent": "normal",
+			},
+		},
+		{
+			"LogName": "Marnie - Winter Star, Shane is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Marnie",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Marnie.WinterStar.Shane.Housemate.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Marnie.WinterStar.Shane.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Shane": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:ShaneRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Marnie": "normal",
+			},
+		},
+		{
+			"LogName": "Marnie - Winter Star, Shane is Housemate, Custom Gifts Active",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Marnie",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Marnie.WinterStar.Shane.Housemate.Before.GiftsActive}}",
+			},
+			"When": {
+				"relationship:Shane": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:ShaneRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Marnie": "normal",
+				"CustomGifts": "enabled",
+			},
+		},
+		{
+			"LogName": "Pierre - Winter Star, Abigail is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pierre",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Pierre.WinterStar.Abigail.Housemate.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Pierre.WinterStar.Abigail.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Abigail": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:AbigailRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Pierre": "normal",
+			},
+		},
+		{
+			"LogName": "Robin - Winter Star, Maru is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Robin",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Robin.WinterStar.Maru.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Maru": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:MaruRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Robin": "normal",
+			},
+		},
+		{
+			"LogName": "Robin - Winter Star, Sebastian is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Robin",
+			"Entries":{
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Robin.WinterStar.Sebastian.Housemate.After}}",
+			},
+			"When": {
+				"relationship:Sebastian": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:SebastianRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Robin": "normal",
+			},
+		},
+		{
+			"LogName": "George - Winter Star, Alex is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/George",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.George.WinterStar.Alex.Housemate.Low}}",
+				//"WinterStar_GiveGift_After": "You don't like it, huh? Bah! Kids these days... no appreciation for anything. That was expensive, and I'm not made of money, you know!", (vanilla line, do not edit)
+			},
+			"When": {
+				"relationship:Alex": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:AlexRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"George": "normal",
+			},
+		},
+		{
+			"LogName": "George - Winter Star, High Hearts, Alex is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/George",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.George.WinterStar.Alex.Housemate.High}}",
+				//"WinterStar_GiveGift_After": "You don't like it, huh? Bah! Kids these days... no appreciation for anything. That was expensive, and I'm not made of money, you know!", (vanilla line, do not edit)
+			},
+			"When": {
+				"Hearts:George": "6,7,8,9,10",
+				"relationship:Alex": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:AlexRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"George": "normal",
+			},
+		},
+		{
+			"LogName": "Pam - Winter Star, Penny is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pam",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Pam.WinterStar.Penny.Housemate.Before}}",
+			},
+			"When": {
+				"relationship:Penny": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:PennyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Pam": "normal",
+			},
+		},
+		{
+			"LogName": "Jas - Winter Star, Shane is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jas",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Jas.WinterStar.Shane.Housemate.Before}}",
+			},
+			"When": {
+				"relationship:Shane": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:ShaneRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Jas": "normal",
+			},
+		},
+		{
+			"LogName": "Jas - Winter Star, Shane is Housemate, Custom Gifts Active",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jas",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Jas.WinterStar.Shane.Housemate.Before.GiftsActive}}",
+			},
+			"When": {
+				"relationship:Shane": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:ShaneRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Jas": "normal",
+				"CustomGifts": "enabled",
+			},
+		},
+		{
+			"LogName": "Vincent - Winter Star, Sam is Housemate",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Vincent.WinterStar.Sam.Housemate.Before}}",
+			},
+			"When": {
+				"relationship:Sam": "married",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:SamRelationshipType": "FullyPlatonic, SexWithoutRomance",
+				"Vincent": "normal",
+			},
+		},
+	],
+}

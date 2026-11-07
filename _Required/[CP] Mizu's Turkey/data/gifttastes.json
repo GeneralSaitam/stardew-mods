@@ -1,0 +1,35 @@
+{
+	// add gift tastes
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Caroline", 5],
+                    "Value": "Mizu.Turkey_TurkeyMayonnaise", 
+                    "Delimiter": " "
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Elliott", 1],
+                    "Value": "Mizu.Turkey_TurkeyFeather", 
+                    "Delimiter": " "
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Linus", 1],
+                    "Value": "Mizu.Turkey_TurkeyFeather", 
+                    "Delimiter": " "
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Sam", 7],
+                    "Value": "Mizu.Turkey_TurkeyMayonnaise", 
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}

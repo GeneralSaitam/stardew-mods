@@ -1,0 +1,174 @@
+{
+    "Format": "2.8.0",
+	"ConfigSchema":{
+    "Seasonal": {
+      "AllowValues": "true, false",
+      "Default": "true"
+    },
+    "BeachOutfitEnabled": {
+      "AllowValues": "true, false",
+      "Default": "true"
+    }
+	},
+  "Changes": [
+	{
+		"LogName": "Blank JSON load",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Shiko, Characters/schedules/Shiko, Strings/schedules/Shiko, Characters/Dialogue/MarriageDialogueShiko",
+		"FromFile": "data/blank.json",
+	},
+	{
+         "LogName": "Shiko Manifestation",
+   		 "Action": "Include",
+   		 "FromFile": "data/dispos.json"
+    },
+
+	// Load base portrait/sprite
+	{
+         "LogName": "Shiko Portrait + Sprite",
+         "Action": "Load",
+         "Target": "Portraits/Shiko, Characters/Shiko",
+         "FromFile": "assets/{{Target}}.png",
+		 "Priority": "Low",
+   	 },
+
+	 // Load Beach portrait/sprite
+
+	{
+		"LogName": "Beach Portrait + Sprite",
+		"Action": "Load",
+		"Target": "Portraits/Shiko_Beach, Characters/Shiko_Beach",
+		"FromFile": "assets/{{Target}}.png",
+		"When": {
+			"BeachOutfitEnabled": true
+		}
+	},
+
+	// Load Seasonal portraits/sprites
+
+	{
+         "LogName": "Seasonal Portraits + Sprites",
+         "Action": "Load",
+         "Target": "Portraits/Shiko_Spring, Characters/Shiko_Spring, Portraits/Shiko_Summer, Characters/Shiko_Summer, Portraits/Shiko_Fall, Characters/Shiko_Fall, Portraits/Shiko_Winter, Characters/Shiko_Winter",
+         "FromFile": "assets/{{Target}}.png"
+   	},
+
+	// Create seasonal appearances
+	{
+		"LogName":"Seasonal appearances",
+		"Action":"EditData",
+		"Target":"Data/Characters",
+		"TargetField":["Shiko", "Appearance"],
+		"Entries":{
+			"Spring":{
+				"Id":"Spring",
+				"Season":"spring",
+				"Portrait":"Portraits/Shiko_Spring",
+				"Sprite":"Characters/Shiko_Spring"
+			},
+			"Summer":{
+				"Id":"Summer",
+				"Season":"summer",
+				"Portrait":"Portraits/Shiko_Summer",
+				"Sprite":"Characters/Shiko_Summer"
+			},
+			"Fall":{
+				"Id":"Fall",
+				"Season":"fall",
+				"Portrait":"Portraits/Shiko_Fall",
+				"Sprite":"Characters/Shiko_Fall"
+			},
+			"Winter":{
+				"Id":"Winter",
+				"Season":"winter",
+				"Portrait":"Portraits/Shiko_Winter",
+				"Sprite":"Characters/Shiko_Winter"
+			},
+		},
+			"When": {
+				"Seasonal": true
+		}
+	},
+
+	{
+         "LogName": "Shiko Dialogue",
+   		 "Action": "Include",
+   		 "FromFile": "data/Dialogue/Dialogue.json"
+    },
+	{
+         "LogName": "Shiko Schedule",
+   		 "Action": "Include",
+   		 "FromFile": "data/Schedule.json",
+    },
+	{
+   		 "LogName": "Shiko Gift Tastes",
+   		 "Action": "Include",
+   		 "FromFile": "data/gifttastes.json"
+   	},
+	{
+         "LogName": "Shiko Animations",
+         "Action": "EditData",
+         "Target": "Data/animationdescriptions",
+         "Entries": {
+			"shiko_smoke": "16/16 16 17 17 18 18 19 19 18 18 17 17 16 16 17 17 18 18 19 19 18 18 17 17/19",
+			"shiko_glasses": "29/29/29",
+			"shiko_drink": "24/24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 25 26 26 26 27 27 26 26 27 27 26 25 24 24 24 24 24 24 24 24 24 24 24 24/24"
+      	}
+    },
+	{
+		"LogName": "Shiko Dialogue Schedules",
+		"Action": "EditData",
+		"Target": "Strings/Schedules/Shiko",
+		"Entries": {
+			"spring.000": "{{i18n:spring.000}}",
+			"drink.000": "{{i18n:drink.000}}",
+			"rain.000": "{{i18n:rain.000}}",
+			"summer.000": "{{i18n:summer.000}}",
+			"summer.001": "{{i18n:summer.001}}",
+			"fall.000": "{{i18n:fall.000}}",
+			"fall.001": "{{i18n:fall.001}}",
+			"winter.000": "{{i18n:winter.000}}",
+			"winter.001": "{{i18n:winter.001}}",
+			"marriage.000": "{{i18n:marriage.000}}"
+	}
+	},
+	{
+		"LogName": "Shiko Marriage Dialogue",
+		"Action": "Include",
+		"FromFile": "data/Dialogue/ShikoMarriageDialogue.json"
+    },
+	{
+		"LogName": "Shiko Festival",
+		"Action": "Include",
+		"FromFile": "data/festivals.json"
+   	 },
+	 {
+		"LogName": "Shiko Movies",
+		"Action": "Include",
+		"FromFile": "data/movies.json"
+   	 },
+	 {
+		"Action": "EditData",
+		"Target": "strings/StringsFromMaps",
+		"Entries": {
+			"ShikoHouse.1": "{{i18n:ShikoHouse.1}}",
+			"ShikoHouse.2": "{{i18n:ShikoHouse.2}}",
+			"ShikoHouse.3": "{{i18n:ShikoHouse.3}}",
+			"ShikoHouse.4": "{{i18n:ShikoHouse.4}}",
+			"ShikoHouse.5": "{{i18n:ShikoHouse.5}}",
+			"ShikoHouse.6": "{{i18n:ShikoHouse.6}}"
+		}
+    },
+	{
+		"LogName": "Shiko Events",
+		"Action": "Include",
+		"FromFile": "data/Events/Beach.json, data/Events/Forest.json, data/Events/Saloon.json, data/Events/Town.json, data/Events/Farm.json, data/Events/Farmhouse.json"
+	},
+
+    {
+		"Action": "Load",
+		"Target": "Maps/ShikoSpouseRoom",
+		"FromFile": "assets/Maps/ShikoSpouseRoom.tmx"
+    },
+	 ],
+}

@@ -1,0 +1,244 @@
+{
+  "Changes": [
+    {
+      "LogName": "Legendary Quests Legend",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "3623100": "ItemDelivery/Fish of Legends/Willy has a sense that a family of the legendary fish itself, Legend, has made their way to the valley./Bring Willy three Legend fish of the same quality./Willy (O)163 3/-1/60000/-1/true/You have done it, lad!$h#$b#You sure have proven yourself to be a legend with the art of fishing.$u#$b#Enjoy this grand reward for your achievement!$h"
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Legend Mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "LegendsQuest1": "Ahoy @!^Me sources tell me you have caught the fish of legends! Let me tell you, me senses are letting me know there may be a family of them lurking about the mountainside. Now is the time to investigate! Go out there and become a legend yourself! Bring me three Legend fish of the same quality and I will reward you greatly.^   -Willy%item quest 3623100 %%[#]Legends of Three"
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Legend Event",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "AddMail_Willy_LegendsQuest1": {
+          "Id": "AddMail_Willy_LegendsQuest1",
+          "Trigger": "DayEnding",
+          "Condition": "SEASON Spring, DAY_OF_MONTH 2, PLAYER_HAS_CAUGHT_FISH Current 163",
+          "HostOnly": false,
+          "Action": null,
+          "Actions": [
+            "RemoveQuest 3623100",
+            "RemoveMail Current LegendsQuest1",
+            "AddMail Current LegendsQuest1 Now"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Crimsonfish",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "3623101": "ItemDelivery/Crimsonfish of Legends/Willy has seen with his own eyes that a family of Crimsonfish has made their way to the valley./Bring Willy three Crimsonfish of the same quality./Willy (O)159 3/-1/40000/-1/true/You have not disappointed me, lad!$h#$b#The Crimsonfish is one that many great fisherman would dream to catch one day and you caught three no less!$u#$b#Enjoy this grand reward for your achievement!$h"
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Crimsonfish Mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "LegendsQuest2": "Ahoy @!^I was scouting the waters around my shop and I swear I saw not one...but a whole family of the legendary Crimsonfish! Now is the time to go out there and become a legend yourself! Bring me three Crimsonfish of the same quality and I will reward you greatly.^   -Willy%item quest 3623101 %%[#]Legends of Three II"
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Crimsonfish Event",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "AddMail_Willy_LegendsQuest2": {
+          "Id": "AddMail_Willy_LegendsQuest2",
+          "Trigger": "DayEnding",
+          "Condition": "SEASON Summer, DAY_OF_MONTH 2, PLAYER_HAS_CAUGHT_FISH Current 159",
+          "HostOnly": false,
+          "Action": null,
+          "Actions": [
+            "RemoveQuest 3623101",
+            "RemoveMail Current LegendsQuest2",
+            "AddMail Current LegendsQuest2 Now"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Angler",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "3623102": "ItemDelivery/Angler of Legends/A friend of Willy's has given notice of a rumor that a family of Anglers has made their way to the valley./Bring Willy three Anglers of the same quality./Willy (O)160 3/-1/30000/-1/true/Well done, lad!$h#$b#Me friend will be honored to know his information lead to the catch of three legendary Anglers!$u#$b#Here's a grand reward for your achievement!$h"
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Angler Mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "LegendsQuest3": "Ahoy @!^An ol' friend has given me word that the legendary Angler has made its way to the valley once again! Here's the kicker...it's rumored it brought an entire family of 'em this time around! Now is the time to go out there and become a legend yourself! Bring me three Angler fish of the same quality and I will reward you greatly.^   -Willy%item quest 3623102 %%[#]Legends of Three III"
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Angler Event",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "AddMail_Willy_LegendsQuest3": {
+          "Id": "AddMail_Willy_LegendsQuest3",
+          "Trigger": "DayEnding",
+          "Condition": "SEASON Fall, DAY_OF_MONTH 2, PLAYER_HAS_CAUGHT_FISH Current 160",
+          "HostOnly": false,
+          "Action": null,
+          "Actions": [
+            "RemoveQuest 3623102",
+            "RemoveMail Current LegendsQuest3",
+            "AddMail Current LegendsQuest3 Now"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Glacierfish",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "3623103": "ItemDelivery/Glacierfish of Legends/Reports from the children in the area have suggested they have seen a possible family of Glacierfish that made their way to the valley./Bring Willy three Glacierfish./Willy (O)775 3/-1/50000/-1/true/What a marvelous feat, lad!$h#$b#The children weren't just seeing ghosts! But they should know the legendary Glacierfish would've done no harm to them no matter how scary they look.$u#$b#Here's a grand reward for your achievement!$h"
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Glacierfish Mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "LegendsQuest4": "Ahoy @!^Winter is here and that means the legendary Glacierfish is roaming the clear waters of the forest! The children in the area have stated there's numerous eyes of a blue 'monster fish' in the river! If what the children say is true, now is the time to go out there and become a legend yourself! Bring me three Glacierfish of the same quality and I will reward you greatly.^   -Willy%item quest 3623103 %%[#]Legends of Three IV"
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Legend Event",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "AddMail_Willy_LegendsQuest4": {
+          "Id": "AddMail_Willy_LegendsQuest4",
+          "Trigger": "DayEnding",
+          "Condition": "SEASON Winter, DAY_OF_MONTH 2, PLAYER_HAS_CAUGHT_FISH Current 775",
+          "HostOnly": false,
+          "Action": null,
+          "Actions": [
+            "RemoveQuest 3623103",
+            "RemoveMail Current LegendsQuest4",
+            "AddMail Current LegendsQuest4 Now"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Mutant Carp",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        "3623104": "ItemDelivery/Mutant Carp of Legends/Krobus has an inkling he has seen a family of Mutant Carp roaming the sewers./Bring Krobus three Mutant Carp./Krobus (O)682 3/-1/20000/-1/true/Wow! How intriguing, @!$h#$b#It's best to remove these creatures incase the humans above have a scare.$u#$b#Please accept this human currency for your kindness!$h"
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Mutant Carp Mail",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "LegendsQuest5": "Hello...@^I saw you fish up a strange...creature..close to my home? I think I have seen an entire hoard of them roaming around me. I have personally codenamed them the 'Mutant Carp'. Could you please remove them for me? It would help do a favor for the humans above. You are the only one with a key to the sewers that can help me...please bring me three Mutant Carp of the same quality.^   -Krobus%item quest 3623104 %%[#]Legends of Three V"
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "Legendary Quests Mutant Carp Event",
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        "AddMail_Krobus_LegendsQuest5": {
+          "Id": "AddMail_Krobus_LegendsQuest5",
+          "Trigger": "DayEnding",
+          "Condition": "SEASON Fall, DAY_OF_MONTH 12, PLAYER_HAS_CAUGHT_FISH Current 682",
+          "HostOnly": false,
+          "Action": null,
+          "Actions": [
+            "RemoveQuest 3623104",
+            "RemoveMail Current LegendsQuest5",
+            "AddMail Current LegendsQuest5 Now"
+          ],
+          "MarkActionApplied": false
+        }
+      },
+      "When": {
+        "Legendary Quests (Recatch REQ)": true,
+        "Recatch Legendary Fish": true
+      }
+    }
+  ]
+}

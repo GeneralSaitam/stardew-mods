@@ -1,0 +1,42 @@
+{
+	"Format": "2.8.1",
+	"ConfigSchema": {
+		"Style": {
+			"AllowValues": "Style01, Style02, Style03, Style04, Style05",
+			"Default": "Style01"
+		},
+		"Color": {
+			"AllowValues": "Black, Pink, Vanilla, White",
+			"Default": "Vanilla"
+		},
+		"Wood": {
+			"AllowValues": "Classic, Oak, Walnut",
+			"Default": "Oak"
+		}
+	},
+
+	//DynamicTokens
+	"DynamicTokens": [],
+	//End DynamicTokens
+
+	"Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "TileSheets/Craftables",
+			"FromFile": "Assets/Telephone_{{Color}}_{{Wood}}_{{Style}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 32,
+				"Height": 32
+			},
+			"ToArea": {
+				"X": 96,
+				"Y": 832,
+				"Width": 32,
+				"Height": 32
+			},
+			"Update": "OnLocationChange"
+		}
+	]
+}

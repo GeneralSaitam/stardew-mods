@@ -1,0 +1,71 @@
+{
+    //Guide for keys:
+	//1501 and 1504: Rude keys. Use for Andy only.
+	//1499 and 1500: Keys that don't apply to the above two cases.
+	"Changes":[
+		{
+			"LogName": "Susan - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Susan",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Susan.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Susan.After}}",
+			},
+			"When": {
+				"Susan": "normal",
+			},
+		},
+		{
+			"LogName": "Marlon - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarlonFay",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Marlon.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Marlon.After}}",
+			},
+			"When": {
+				"Marlon": "normal",
+			},
+		},
+		{
+			"LogName": "Andy - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Andy",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Andy.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Andy.After}}",
+			},
+			"When": {
+				"Andy": "normal",
+			},
+		},
+		{
+			"LogName": "Andy - Winter Star, CC Complete, Post-CC Event Complete",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Andy",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Andy.CC.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Andy.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=5000005": "true",
+				"HasSeenEvent |contains=191393": "true",
+				"Andy": "normal",
+			},
+		},
+		{
+			"LogName": "Andy - Winter Star, Joja Route, Post-Warehouse Event Complete",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Andy",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Andy.Joja.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Andy.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=5000005": "true",
+				"HasSeenEvent |contains=502261": "true",
+				"Andy": "normal",
+			},
+		},
+	],
+}

@@ -1,0 +1,33 @@
+{
+	"Format": "2.0.0",
+	"Changes": [
+        {
+	"Action": "EditData",
+	"Target": "Data/TriggerActions",
+	"Entries": {
+	"HarrisonGrey.Mail_MarniePet": {
+		"Id": "HarrisonGrey.Mail_MarniePet",
+		"Condition": "PLAYER_HAS_PET Current",
+		"Trigger": "DayEnding",
+		"Actions": [
+			"AddMail Current MarniePetRejectedAdoption now"]
+	}}},
+	{
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "MarniePetRejectedAdoption": "{{i18n:Em.MarniePetRejectedAdoption1}}[#]{{i18n:Em.MarniePetRejectedAdoption2}}"
+	}},
+	{
+		"Action": "EditData",
+		"Target": "Data/Shops",
+		"TargetField": ["PetAdoption"],
+			"Entries": {
+                "PriceModifiers": [
+                    {
+                        "Modification": "Multiply",
+                        "Amount": "0.01"
+                    }
+				]
+			}
+		}]}

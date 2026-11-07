@@ -1,0 +1,23 @@
+{
+	// add gift tastes
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "Caroline", 5],
+                    "Value": "Mizu.Quail_QuailMayonnaise", 
+                    "Delimiter": " "
+                },
+				{
+                    "Operation": "Append",
+                    "Target": ["Fields", "Sam", 7],
+                    "Value": "Mizu.Quail_QuailMayonnaise", 
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}

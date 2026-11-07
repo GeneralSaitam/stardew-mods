@@ -1,0 +1,113 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_Evelyn_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Evelyn_Spring, Portraits/Evelyn_Summer, Portraits/Evelyn_Fall, Portraits/Evelyn_Winter_Outdoor, Portraits/Evelyn_Winter_Indoor, Portraits/Evelyn_FlowerDance, Portraits/Evelyn_SpiritsEve, Characters/Evelyn_Spring, Characters/Evelyn_Summer, Characters/Evelyn_Fall, Characters/Evelyn_Winter_Outdoor, Characters/Evelyn_Winter_Indoor, Characters/Evelyn_FlowerDance, Characters/Evelyn_SpiritsEve, Portraits/Evelyn_Beach, Characters/Evelyn_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Evelyn/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_Evelyn_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Evelyn_Spring, Characters/Evelyn_Summer, Characters/Evelyn_Fall, Characters/Evelyn_Winter_Outdoor, Characters/Evelyn_Winter_Indoor, Characters/Evelyn_FlowerDance, Characters/Evelyn_SpiritsEve, Characters/Evelyn_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Evelyn/Evelyn_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_Evelyn_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Evelyn",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.EvelynSpring": {
+					"Id": "{{ModId}}.EvelynSpring",
+					"Portrait": "Portraits/Evelyn_Spring",
+					"Sprite": "Characters/Evelyn_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.EvelynSummer": {
+					"Id": "{{ModId}}.EvelynSummer",
+					"Portrait": "Portraits/Evelyn_Summer",
+					"Sprite": "Characters/Evelyn_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.EvelynFall": {
+					"Id": "{{ModId}}.EvelynFall",
+					"Portrait": "Portraits/Evelyn_Fall",
+					"Sprite": "Characters/Evelyn_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.EvelynWinterIndoor": {
+					"Id": "{{ModId}}.EvelynWinterIndoor",
+					"Portrait": "Portraits/Evelyn_Winter_Indoor",
+					"Sprite": "Characters/Evelyn_Winter_Indoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",
+					"Precedence": -101
+				},
+				"{{ModId}}.EvelynWinterOutdoor": {
+					"Id": "{{ModId}}.EvelynWinterOutdoor",
+					"Portrait": "Portraits/Evelyn_Winter_Outdoor",
+					"Sprite": "Characters/Evelyn_Winter_Outdoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101
+				},
+				// Beach Outfit
+				"{{ModId}}.EvelynBeach": {
+					"Id": "{{ModId}}.EvelynBeach",
+					"Portrait": "Portraits/Evelyn_Beach",
+					"Sprite": "Characters/Evelyn_Beach",
+					"Condition": "{{BeachOutfitsEnabled}}",
+					"IsIslandAttire": true,
+					"Precedence": -200
+				},
+				// Festival Outfits
+				"{{ModId}}.EvelynFlowerDance": {
+					"Id": "{{ModId}}.EvelynFlowerDance",
+					"Portrait": "Portraits/Evelyn_FlowerDance",
+					"Sprite": "Characters/Evelyn_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.EvelynSpirit": {
+					"Id": "{{ModId}}.EvelynSpirit",
+					"Portrait": "Portraits/Evelyn_SpiritsEve",
+					"Sprite": "Characters/Evelyn_SpiritsEve",
+					"Condition": "{{UseSpiritsEveOutfit}}",
+					"Precedence": -300
+				}
+			}
+		},
+		// CALENDAR
+		{
+			"LogName": "Edit_Evelyn_Calendar_Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Evelyn",
+			"FromFile": "assets/{{Target}}/Evelyn_{{CurrentSeasonAttire}}.png"
+		},
+		{
+			"LogName": "Add_Evelyn_Calendar_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Evelyn",
+			"FromFile": "assets/{{Target}}/Evelyn_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		}
+	]
+}

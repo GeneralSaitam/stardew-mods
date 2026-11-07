@@ -1,0 +1,450 @@
+ {
+"Changes": 
+    [
+	
+		//Festival Data 
+		{	
+		"LogName": "Egg Festival",
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring13",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 33 62 right",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 34 62 left",
+   				    "Delimiter": "/"
+				},
+				
+   				//MainEvent
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "JortsCat 57 21 left",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "JeanCat 57 22 right",
+   				    "Delimiter": "/"
+				},
+			],
+	},
+	{
+  		"Action": "EditData",
+  		"Target": "Data/Festivals/spring13",
+		"Entries": 
+			{ "JortsCat": "Hey, @, can I have an egg? Please? Pretty please?#$b#*nom*#$b#...I don't want it anymore.$s",
+			  "JeanCat": "Happy Egg Fest, @. I hope you enjoy yourself with some nice treats.$h#$b#Though I'd prefer if there were birds inside those eggs, of course.$6"},
+
+	},
+	{	
+		"LogName": "Flower Dance",
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring24",
+		"When": { "HasMod: |contains=skellady.SBVCP": false},
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 22 41 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 23 41 down",
+   				    "Delimiter": "/"
+				},
+				//Jean animation 
+				{
+             "Operation": "Append",
+             "Target": ["Fields", "set-up", 5],
+             "Value": "/animate JeanCat false true 100 28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34",
+				},
+				
+			],
+	},
+		{	
+		"LogName": "Flower Dance - Sunberry compat",
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring24",
+		"When": { "HasMod: |contains=skellady.SBVCP": true},
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 33 42 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 34 42 down",
+   				    "Delimiter": "/"
+				},
+				//Jean animation 
+				{
+             "Operation": "Append",
+             "Target": ["Fields", "set-up", 5],
+             "Value": "/animate JeanCat false true 100 28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34",
+				},
+				
+			],
+	},
+	
+	{	
+		"LogName": "Flower Dance - dialogue",
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring24",
+		"Entries": 
+			{ "JortsCat": "Hi @! This place is full of nice smells!$h#$b#Jean says I'm not allowed to eat the flowers this time, though.",
+			  "JeanCat": "Almost... drat!$s#$b#Just about had a festival fish...$s"},
+	},
+	{	
+		"LogName": "Luau",
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer11",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 42 25 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 41 25 down",
+   				    "Delimiter": "/"
+				},
+				//Jean animation 
+				{
+             "Operation": "Append",
+             "Target": ["Fields", "set-up", 5],
+             "Value": "/animate JeanCat false true 100 28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34",
+				},
+			],
+	},
+	{	
+		"LogName": "Luau",
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer11",
+		"Entries": 
+			{ "JortsCat": "I can't wait to try the tasty soup! I tried to add a really good smelly teabag, but Jean said no.",
+			  "JeanCat": "Jorts, sweetie, that was from the trash can. Now come help me catch a pufferfish."},
+	},
+	{	
+		"LogName": "Dance of the Moonlight Jellies",
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer28",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 28 13 left",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 29 13 left",
+   				    "Delimiter": "/"
+				},
+				//MainEvent
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "JortsCat 28 13 left",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "JeanCat 29 13 left",
+   				    "Delimiter": "/"
+				},
+			],
+	},
+	{	
+		"LogName": "Dance of the Moonlight Jellies",
+		"Action": "EditData",
+		"Target": "Data/Festivals/summer28",
+		"Entries": 
+			{ "JortsCat": "Moonlight Jellyfish are soooo pretty!  I want to touch them!$h",
+			  "JeanCat": "I tried to eat a jellyfish once.#$b#...That was a terrible mistake.$s"},
+	},
+	{	
+		"LogName": "Stardew Valley Fair",
+		"Action": "EditData",
+		"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+		"Target": "Data/Festivals/fall16",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 36 24 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 36 25 up",
+   				    "Delimiter": "/"
+				},
+			],
+	},
+				//SetUp (SVE)
+	{	
+		"LogName": "Stardew Valley Fair - SVE compat",
+		"Action": "EditData",
+		"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+		"Target": "Data/Festivals/fall16",
+   		"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 30 22 down",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 29 22 down",
+   				    "Delimiter": "/"
+				},
+			],
+	},
+	{	
+		"LogName": "Stardew Valley Fair",
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall16",
+		"Entries": 
+			{ "JortsCat": "Hi @! I keep following all the interesting smells and getting lost. That's okay though!$h",
+			  "JeanCat": "Hey Gus, don't forget us. I know you have some barbecue fish set aside for us, right?$6"},
+	},
+	{	
+		"LogName": "Spirit's Eve",
+		"Action": "EditData",
+		"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+		"Target": "Data/Festivals/fall27",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 67 36 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 66 36 down",
+   				    "Delimiter": "/"
+				},
+			],
+	},			
+	{	
+		"LogName": "Spirit's Eve - SVE compat",
+		"Action": "EditData",
+		"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+		"Target": "Data/Festivals/fall27",
+   		"TextOperations":
+   			[
+				//SetUp (SVE)
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 68 55 left",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 68 56 right",
+   				    "Delimiter": "/"
+				},
+			],
+	},
+	{	
+		"LogName": "Spirit's Eve",
+		"Action": "EditData",
+		"Target": "Data/Festivals/fall27",
+		"Entries": 
+			{ "JortsCat": "It's okay, Jean! I'm here and I have brave ears!$h",
+			  "JeanCat": "Oh, I don't like those... those make scary noises....$4"},
+	},
+	{	
+		"LogName": "Festival of Ice",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter8",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 75 36 down",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 76 36 down",
+   				    "Delimiter": "/"
+				},
+				//Jean animation 
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "set-up", 5],
+					"Value": "/animate JeanCat false true 100 28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34",
+				},
+			],
+	},
+	{	
+		"LogName": "Festival of Ice",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter8",
+		"Entries": 
+			{ "JortsCat": "If you catch a fish from the pond, can I have one?$h",
+			  "JeanCat": "Sometimes I think about joining in the fishing competition, but it's not really fair to the humans who have to use tools.$h"},
+	},
+	{	
+		"LogName": "Feast of the Winter Star",
+		"Action": "EditData",
+		"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+		"Target": "Data/Festivals/winter25",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 24 56 right",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 23 56 up",
+   				    "Delimiter": "/"
+				},
+			],
+	},
+	{	
+		"LogName": "Feast of the Winter Star - SVE compat",
+		"Action": "EditData",
+		"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+		"Target": "Data/Festivals/winter25",
+   		"TextOperations":
+   			[
+				//SetUp (SVE)
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 23 57 left",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 24 58 left",
+   				    "Delimiter": "/"
+				},
+			],
+	},
+	{	
+		"LogName": "Feast of the Winter Star",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter25",
+		"Entries": 
+			{ "JortsCat": "Happy present day, @! I saved this just for you! It's my favorite so I hope you like it too![280]$h",
+			  "JeanCat": "This is my favorite festival. It really helps humans to remember that we're all a community.$h"},
+	},
+	
+	{	
+		"LogName": "Ridgeside Gathering",
+		"Action": "EditData",
+		"When": { "HasMod":"Rafseazz.RSVCP" },
+		"Target": "Data/Festivals/Fall20",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 78 51 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 79 51 up",
+   				    "Delimiter": "/"
+				},
+			],
+	},
+	{	
+		"LogName": "Ridgeside Gathering",
+		"Action": "EditData",
+		"When": { "HasMod":"Rafseazz.RSVCP" },
+		"Target": "Data/Festivals/fall20",
+		"Entries": 
+			{ "JortsCat": "This is so much fun! There are so many new smells!$h",
+			  "JeanCat": "We came up to Ridgeside for the Gathering.#$b#Jorts loves a good party, after all.$h"},
+	},
+	{	
+		"LogName": "Ember of Resolutions",
+		"Action": "EditData",
+		"When": { "HasMod":"Rafseazz.RSVCP" },
+		"Target": "Data/Festivals/winter28",
+   		"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 38 34 down",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 39 34 down",
+   				    "Delimiter": "/"
+				},
+			],
+	},
+	{	
+		"LogName": "Ember of Resolutions",
+		"Action": "EditData",
+		"When": { "HasMod":"Rafseazz.RSVCP" },
+		"Target": "Data/Festivals/winter28",
+		"Entries": 
+			{ "JortsCat": "If I'm not allowed to climb that giant cat tree, then why is it so cool?$4",
+			  "JeanCat": "What was that?!$4#$b#This mountain has some really creepy sounds....$s"},
+	},
+	
+	
+	]
+ }

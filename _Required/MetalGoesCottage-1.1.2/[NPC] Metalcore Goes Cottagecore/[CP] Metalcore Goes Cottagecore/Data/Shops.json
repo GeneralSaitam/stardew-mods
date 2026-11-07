@@ -1,0 +1,98 @@
+{
+    "Changes": [
+        {
+            "LogName": "Double Fang Supplies Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "Squeaks.MGC.CP_DoubleFang": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "{{InternalAssetKey: Assets/Images/DoubleFang_shoplogo.png}}",
+                            "Dialogues": [
+                                {
+                                    "Dialogue": "{{i18n:Shop.DoubleFang.Dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "SalableItemTags": [
+                        "category_syrup",
+                        "category_bait",
+                        "category_fish",
+                        "category_flowers",
+                        "category_building_resources"
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Squeaks.MGC.CP_Clay",
+                            "ItemId": "(O)330",
+                            "Price": 200,
+                            "AvailableStock": 10
+                        },
+                        {
+                            "Id": "Squeaks.MGC.CP_CoffeeBean",
+                            "ItemId": "(O)433",
+                            "Condition": "SEASON spring summer",
+                            "Price": 150,
+                            "AvailableStock": 5
+                        },
+                        {
+                            "Id": "Squeaks.MGC.CP_MapleSyrup",
+                            "ItemId": "(O)724",
+                            "Condition": "SEASON spring winter",
+                            "Price": 1500,
+                            "AvailableStock": 5
+                        },
+                        {
+                            "Id": "Squeaks.MGC.CP_Mead",
+                            "ItemId": "(O)459",
+                            "Price": 600,
+                            "AvailableStock": 10
+                        },
+                        {
+                            "Id": "Squeaks.MGC.CP_QualitySprinkler",
+                            "ItemId": "(O)621",
+                            "Price": 3500,
+                            "AvailableStock": 5
+                        },
+                        {
+                            "Id": "Squeaks.MGC.CP_IridiumSprinkler",
+                            "ItemId": "(O)645",
+                            "Condition": "DAY_OF_WEEK wednesday",
+                            "Price": 15000,
+                            "AvailableStock": 1
+                        },
+                        {
+                            "Id": "Squeaks.MGC.CP_MysteryBox",
+                            "ItemId": "(O)MysteryBox",
+                            "Condition": "DAY_OF_WEEK tuesday thursday, SEASON summer",
+                            "Price": 100,
+                            "AvailableStock": 5
+                        },
+                        {
+                            "Id": "Squeaks.MGC.CP_GoldenMysteryBox",
+                            "ItemId": "(O)GoldenMysteryBox",
+                            "Condition": "DAY_OF_WEEK friday, PLAYER_HAS_CRAFTING_RECIPE Current Mystic Tree Seed",
+                            "Price": 1000,
+                            "AvailableStock": 1
+                        },
+                        {
+                            "Id": "Squeaks.MGC.CP_ElderLilySeeds",
+                            "ItemId": "(O)Squeaks.MGC.CP_ElderLilySeeds",
+                            "Condition": "PLAYER_HAS_MAIL any CambriaElderLily",
+                            "Price": 500
+                        },
+                        {
+                            "Id": "Squeaks.MGC.CP_HeirloomBouquet",
+                            "ItemId": "(O)Squeaks.MGC.CP_HeirloomBouquet",
+                            "Condition": "PLAYER_HAS_MAIL any HeirloomBouquetMail",
+                            "Price": 100
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "Format": "2.0.0",
+	"ConfigSchema": { 
+	"Enable Pasta Primavera": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Enable Honey Glazed Carrots": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Enable Carrot Ginger Soup": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Enable Carrot Cake": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Enable Summer Squash and Goat Cheese Tart": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Enable Summer Squash Skillet": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Enable Broccoli Cheese Soup": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Enable Quiche": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Enable Boreal Plate": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Enable Powdermelon Sorbet": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	}
+},
+    "Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/objects16px",
+			"FromFile": "assets/objects16px.png"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/PastaPrimavera.json",
+			"When": {
+				"Enable Pasta Primavera": "true",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/HoneyGlazedCarrots.json",
+			"When": {
+				"Enable Honey Glazed Carrots": "true",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/CarrotGingerSoup.json",
+			"When": {
+				"Enable Carrot Ginger Soup": "true",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/CarrotCake.json",
+			"When": {
+				"Enable Carrot Cake": "true",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/SummerSquashGoatCheeseTart.json",
+			"When": {
+				"Enable Summer Squash and Goat Cheese Tart": "true",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/SummerSquashSkillet.json",
+			"When": {
+				"Enable Summer Squash Skillet": "true",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/BroccoliCheeseSoup.json",
+			"When": {
+				"Enable Broccoli Cheese Soup": "true",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Quiche.json",
+			"When": {
+				"Enable Quiche": "true",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/BorealPlate.json",
+			"When": {
+				"Enable Boreal Plate": "true",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/PowdermelonSorbet.json",
+			"When": {
+				"Enable Powdermelon Sorbet": "true"
+			}
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+  "Changes": [
+    {
+      "LogName": "Trout Soup Duration",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "219",
+        "Buffs"
+      ],
+      "Fields": {
+        "Food": {
+          "Duration": -2
+        }
+      },
+      "When": {
+        "Trout Soup Duration": true
+      }
+    },
+    {
+      "LogName": "Trout Soup Level Boost",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "219",
+        "Buffs",
+        "Food"
+      ],
+      "Fields": {
+        "CustomAttributes": {
+          "FishingLevel": "{{Trout Soup Level Boost}}"
+        }
+      },
+      "When": {
+        "Trout Soup Level Boost": "2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50"
+      }
+    },
+    {
+      "LogName": "Trout Soup Lessened Ingredients",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Trout Soup": {
+          "0": "138 1"
+        }
+      },
+      "When": {
+        "Trout Soup Ingredients": "Lessened Ingredients"
+      }
+    },
+    {
+      "LogName": "Trout Soup 1 of Any Fish",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Trout Soup": {
+          "0": "-4 1"
+        }
+      },
+      "When": {
+        "Trout Soup Ingredients": "1 of Any Fish"
+      }
+    }
+  ]
+}

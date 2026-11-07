@@ -1,0 +1,41 @@
+{
+	"Changes": [
+		/* add clothes*/
+		/* Hats*/
+		{
+			"LogName": "Hats",
+			"Action": "EditData",
+			"Target": "Data/Hats",
+			"Entries": {
+				"{{ModId}}_RoboHat": "{{ModId}}_RoboHat/{{i18n:RoboHat_Description}}/hide/true//{{i18n:RoboHat_Name}}/0/Mods\\{{ModId}}\\Hats",
+
+			}
+		},
+		{
+			"LogName": "Shirts",
+			"Action": "EditData",
+			"Target": "Data/Shirts",
+			"Entries": {
+				"{{ModId}}_RoboShirt": {
+					"Name": "{{ModId}}_RoboShirt",
+					"DisplayName": "{{i18n:RoboShirt_Name}}",
+					"Description": "{{i18n: RoboShirt_Description}}",
+					"Price": 50,
+					"Texture": "Mods\\{{ModId}}\\Shirts",
+					"SpriteIndex": 0,
+					"CanBeDyed": false,
+					"IsPrismatic": false,
+					"HasSleeves": true,
+					"CanChooseDuringCharacterCustomization": false,
+					"CustomFields": {}
+				}
+			}
+		},
+		{
+			"LogName": "Load images",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/Hats,Mods/{{ModId}}/Shirts",
+			"FromFile": "assets/Textures/{{TargetWithoutPath}}.png"
+		},
+    ]
+}

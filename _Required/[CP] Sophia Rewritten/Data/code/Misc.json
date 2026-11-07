@@ -1,0 +1,213 @@
+{
+"Changes": 
+	[
+	 {
+	 "Action": "EditData",
+	 "Target": "Characters/Dialogue/MarriageDialogueSophia",		 
+	 "When": {
+        "HasSeenEvent": "8185295"
+      },
+	 "Entries":
+	    {
+		  "fall_4": "{{i18n:Sophia.Resolution.DeathDate}}",
+		},
+     },
+	 
+	 {
+	 "Action": "EditData",
+	 "Target": "Characters/Dialogue/Gus",		 
+	 "Entries":
+	    {
+		  "SophiaHappy": "{{i18n:Gus.Happy}}",
+		},
+     },
+	 
+	 {
+	 "Action": "EditData",
+	 "Target": "Characters/Dialogue/Scarlett",		 
+	 "Entries":
+	    {
+		  "SophiaHappy": "{{i18n:Scarlett.Happy}}",
+		},
+     },
+	 
+	 {
+	 "Action": "EditData",
+	 "Target": "Data/Objects",		 
+	 "Entries":
+	    {
+			"degradingwindow.SophiaRewritten_Special_Blue_Moon_Wine": 
+			{
+                "Name": "Special Blue Moon Wine",
+                "DisplayName": "{{i18n:special-blue-moon-wine.name}}",
+                "Description": "{{i18n:special-blue-moon-wine.description}}",
+                "Type": "ArtisanGoods",
+                "Category": -26,
+                "Price": 15000,
+                "Texture": "Mods\\degradingwindow.SophiaRewritten\\BMW",
+                "SpriteIndex": 0,
+                "Edibility": 100,
+                "IsDrink": true,
+                "ExcludeFromFishingCollection": true,
+                "ExcludeFromShippingCollection": true,
+                "ExcludeFromRandomSale": true,
+                "ContextTags": 
+				[
+                    "color_blue",
+                    "alcohol_item",
+                ],
+                "Buffs": 
+				[
+                    {
+                        "Duration": 800,
+                        "CustomAttributes": 
+						{
+                            "FarmingLevel": 0,
+                            "FishingLevel": 0,
+                            "MiningLevel": 0,
+                            "LuckLevel": 8,
+                            "ForagingLevel": 0,
+                            "MaxStamina": 200,
+                            "MagneticRadius": 0,
+                            "Speed": 1,
+                            "Defense": 0,
+                            "Attack": 0
+                        },
+                    },
+                ],
+            },
+			
+			"degradingwindow.SophiaRewritten_Rose_Wine": 
+	        {
+            "Name": "Rose Wine",
+            "DisplayName": "{{i18n:rosé-wine.name}}",
+            "Description": "{{i18n:rosé-wine.description}}",
+            "Type": "ArtisanGoods",
+            "Category": -26,
+            "Price": 1500,
+            "Texture": "Mods\\degradingwindow.SophiaRewritten\\Rose",
+            "SpriteIndex": 0,
+            "Edibility": 20,
+            "IsDrink": true,
+            "ExcludeFromFishingCollection": true,
+            "ExcludeFromShippingCollection": true,
+            "ExcludeFromRandomSale": true,
+            "ContextTags": [
+                        "color_pink",
+                        "alcohol_item",
+                    ],
+                    "Buffs": [
+                        {
+                            "Duration": -2,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0
+                            },
+                        },
+                    ],
+		},
+		},
+     }, 
+	 
+	 {
+	 "Action": "EditData",
+     "Target": "Data/Mail",
+     "Entries": 
+		{
+			"SophiaThankYouLetter2": "{{i18n:Mail.SophiaThankYouLetter1}} degradingwindow.SophiaRewritten_Special_Blue_Moon_Wine {{i18n:Mail.SophiaThankYouLetter2}}",
+			"SophiaRoseLetter": "{{i18n:Mail.SophiaRoseLetter}}",
+		},
+	 },
+	{
+	 "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+	  "When": {
+        "HasSeenEvent": "8185295"
+      },
+      "Entries": 
+	  {
+		  
+        "RoseWine": 
+		{
+          "Name": "[Sophia_Name]",
+          "Requester": "Sophia",
+          "Duration": "Month",
+          "Repeatable": "False",
+          "RequiredTags": "season_fall",
+          "OrderType": "",
+          "SpecialRule": "",
+          "Text": "[Sophia_Text]",
+          "ItemToRemoveOnEnd": null,
+          "MailToRemoveOnEnd": null,
+          "RandomizedElements": null,
+		  "Objectives": [
+            {
+              "Type": "Donate",
+              "Text": "[Sophia_Objective_Text]",
+              "RequiredCount": "35",
+              "Data": {
+                "DropBox": "SophiaChest",
+                "DropBoxGameLocation": "Custom_BlueMoonVineyard",
+                "DropBoxIndicatorLocation": "20 30",
+                "AcceptedContextTags": "item_grape, quality_gold"
+              }
+            },
+            ],
+			
+			"Rewards": [
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "5300"
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "SophiaRoseLetter"
+              }
+            },
+            {
+              "Type": "Friendship",
+              "Data": {}
+            }
+          ],
+		  
+		},
+	  },
+	},
+	
+	{
+      "Action": "EditData",
+      "Target": "Strings/SpecialOrderStrings",
+      "Entries": 
+	  {
+        "Sophia_Name": "{{i18n:Sophia.Rose.1}}",
+        "Sophia_Text": "{{i18n:Sophia.Rose.2}}",
+        "Sophia_Objective_Text": "{{i18n:Sophia.Rose.3}}",
+      },
+    },
+	  
+	  
+	 {
+        "Action": "Load", "Priority": "Low",
+        "Target": "Mods/degradingwindow.SophiaRewritten/BMW",
+        "FromFile": "Data/assets/BMW.png",
+     },
+	 {
+        "Action": "Load", "Priority": "Low",
+        "Target": "Mods/degradingwindow.SophiaRewritten/Rose",
+        "FromFile": "Data/assets/Rose.png",
+     },
+	 
+   
+    ]
+}

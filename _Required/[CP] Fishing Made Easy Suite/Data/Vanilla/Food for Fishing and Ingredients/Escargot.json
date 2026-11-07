@@ -1,0 +1,65 @@
+{
+  "Changes": [
+    {
+      "LogName": "Escargot Duration",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "729",
+        "Buffs"
+      ],
+      "Fields": {
+        "Food": {
+          "Duration": -2
+        }
+      },
+      "When": {
+        "Escargot Duration": true
+      }
+    },
+    {
+      "LogName": "Escargot Level Boost",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "729",
+        "Buffs",
+        "Food"
+      ],
+      "Fields": {
+        "CustomAttributes": {
+          "FishingLevel": "{{Escargot Level Boost}}"
+        }
+      },
+      "When": {
+        "Escargot Level Boost": "3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50"
+      }
+    },
+    {
+      "LogName": "Escargot Lessened Ingredients",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Escargot": {
+          "0": "721 1"
+        }
+      },
+      "When": {
+        "Escargot Ingredients": "Lessened Ingredients"
+      }
+    },
+    {
+      "LogName": "Escargot 1 of Any Fish",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Escargot": {
+          "0": "-4 1"
+        }
+      },
+      "When": {
+        "Escargot Ingredients": "1 of Any Fish"
+      }
+    }
+  ]
+}

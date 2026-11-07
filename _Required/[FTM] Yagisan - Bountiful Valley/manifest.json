@@ -1,0 +1,34 @@
+{
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "Name": "[FTM] Yagisan - Bountiful Valley",
+  "Author": "Yagisan",
+  "Version": "1.0.8",
+  "Description": "Overhauls Stardew Valley's Forage.",
+  "UniqueID": "Yagisan.BountifulValley",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [
+    "Nexus:9259"
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Esca.FarmTypeManager",
+    "MinimumVersion": "1.19.0"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "Esca.FarmTypeManager",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "CPBoardingHouse",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "LemurKat.EastScarpe.CP",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Rafseazz.RSVCP",
+      "IsRequired": false
+    }
+  ]
+}

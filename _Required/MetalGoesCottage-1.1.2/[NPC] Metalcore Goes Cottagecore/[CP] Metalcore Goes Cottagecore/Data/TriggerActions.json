@@ -1,0 +1,91 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Squeaks.MGC.CP_CambriaGreenhouse": {
+                    "Id": "Squeaks.MGC.CP_CambriaGreenhouse",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Otter.Cambria 1000, PLAYER_HAS_SEEN_EVENT Current MGC.Cambria.05",
+                    "Action": "AddMail Current CambriaGreenhouse now"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Squeaks.MGC.CP_GabeLetter": {
+                    "Id": "Squeaks.MGC.CP_GabeLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Otter.Cambria 1500, PLAYER_HAS_SEEN_EVENT Current MGC.Cambria.05",
+                    "Action": "AddMail Current GabeLetter now"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Squeaks.MGC.CP_BouquetMail": {
+                    "Id": "Squeaks.MGC.CP_BouquetMail",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current MGC.Cambria.07",
+                    "Action": "AddMail Current HeirloomBouquetMail now"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Squeaks.MGC.CP_ElderLilySOQ": {
+                    "Id": "Squeaks.MGC.CP_ElderLilySOQ",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_CAUGHT_FISH Current (O)795, PLAYER_HAS_MAIL Current CambriaGreenhouse Received",
+                    "Action": "AddMail Current ElderLilySOQ now"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Squeaks.MGC.CP_VoidMelonSoda": {
+                    "Id": "Squeaks.MGC.CP_VoidMelonSoda",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Otter.Cambria 750",
+                    "Action": "AddMail Current CambriaSoda now"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Squeaks.MGC.CP_StarMiasmaCookies": {
+                    "Id": "Squeaks.MGC.CP_StarMiasmaCookies",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Otter.Cambria 1250",
+                    "Action": "AddMail Current CambriaCookies now"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Squeaks.MGC.CP_HeirloomGifted": {
+                    "Id": "Squeaks.MGC.CP_HeirloomGifted",
+                    "Trigger": "Spiderbuttons.BETAS_GiftGiven",
+                    "Condition": "ITEM_ID Target Otter.Cambria, ITEM_ID Input Squeaks.MGC.CP_HeirloomBouquet",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_ChangeRelationship Otter.Cambria Dating",
+                        "addMail Current Dating_Cambria now"
+                    ]
+                }
+            }
+        }
+    ]
+}

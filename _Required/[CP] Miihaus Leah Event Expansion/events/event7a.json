@@ -1,0 +1,143 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Forest",
+        "Entries":
+    {
+    "Miihau.LeahEE.007.a/F/f Leah 1750/t 1000 1600/w sunny/e Miihau.LeahEE.006/k Miihau.LeahEE.007.b Miihau.LeahEE.006.Fork1":"
+    breezy/
+    100 36/
+    Leah -100 -100 2 farmer 94 38 1/
+    skippable/
+    makeInvisible 13 72 3 2/
+    advancedMove farmer false 4 0 0 -4 1 100/
+    pause 2300/
+    playSound doorClose/
+    warp Leah 104 33/
+    pause 500/
+    move Leah 0 1 3/
+    pause 300/
+    emote Leah 16/
+    pause 200/
+    emote farmer 8 true/
+    textAboveHead Leah \"{{i18n:Miihau.LeahEE.event7a.001}}\" true/
+    speed Leah 4/
+    move Leah -5 0 3/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.002}}\"/
+    pause 200/
+    emote farmer 32/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.003}}\"/
+    globalFade/
+    viewport -1200 -1200/
+    warp farmer 45 11/
+    warp Leah 45 12/
+    faceDirection farmer 3/
+    globalFadeToClear 0.007 true/
+    viewport 40 13/
+    move farmer -6 0 2 Leah -6 0 0/
+    pause 200/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.004}}\"/
+    pause 200/
+    move farmer -6 0 2 Leah -6 0 0 true/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    message \"{{i18n:Miihau.LeahEE.event7a.005}}\"/
+    warp farmer 18 68/
+    warp Leah 17 68/
+    faceDirection farmer 2/
+    faceDirection Leah 2/
+    addTemporaryActor Miihau_LeahEE_Fox 32 32 10 72 1 false/
+    globalFadeToClear 0.007 true/
+    viewport 17 74/
+    move farmer 0 3 3 Leah 0 3 1/
+    pause 500/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.006}}\"/
+    pause 900/
+    playSound leafrustle/
+    pause 800/
+    playSound leafrustle/
+    pause 1000/
+    playSound leafrustle/
+    pause 1200/
+    emote Leah 8 true/
+    move Leah 0 1 3/
+    faceDirection farmer 2/
+    pause 900/
+    faceDirection Leah 1/
+    pause 600/
+    playSound leafrustle/
+    pause 900/
+    move Leah 0 1 3/
+    pause 1000/
+    faceDirection Leah 1/
+    pause 1100/
+    faceDirection Leah 2/
+    pause 1000/
+    move Leah 0 -1 3/
+    pause 200/
+    faceDirection farmer 3/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.007}}\"/
+    quickQuestion {{i18n:Miihau.LeahEE.event7a.007X}}(break)speak Leah \"{{i18n:Miihau.LeahEE.event7a.008}}\"(break)speak Leah \"{{i18n:Miihau.LeahEE.event7a.009}}\"\\pause 1000\\speak Leah \"{{i18n:Miihau.LeahEE.event7a.010}}\"(break)speak Leah \"{{i18n:Miihau.LeahEE.event7a.011}}\"/
+    move Miihau_LeahEE_Fox 2 0 1/
+    pause 1000/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.012}}\"/
+    pause 200/
+    emote Miihau_LeahEE_Fox 8/
+    pause 200/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.013}}\"/
+    pause 500/
+    speed Miihau_LeahEE_Fox 1/
+    move Miihau_LeahEE_Fox 3 0 1/
+    pause 500/
+    animate Miihau_LeahEE_Fox false false 200 4 4 24 25 26 27 27 27 27 27 27/
+    pause 1400/
+    stopAnimation Miihau_LeahEE_Fox 27/
+    emote Leah 20/
+    pause 200/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.014}}\"/
+    pause 1000/
+    animate Miihau_LeahEE_Fox false false 200 27 27 26 25 24 4 4 4 4 4 4/
+    pause 1400/
+    stopAnimation Miihau_LeahEE_Fox 4/
+    faceDirection Miihau_LeahEE_Fox 1/
+    emote Miihau_LeahEE_Fox 40/
+    move Miihau_LeahEE_Fox -1 0 1/
+    pause 500/
+    emote Miihau_LeahEE_Fox 32/
+    pause 500/
+    speed Miihau_LeahEE_Fox 3/
+    move Miihau_LeahEE_Fox -3 0 3/
+    playSound leafrustle/
+    pause 200/
+    playSound leafrustle/
+    pause 300/
+    playSound leafrustle/
+    warp Miihau_LeahEE_Fox -100 -100/
+    pause 500/
+    move farmer 0 1 3/
+    faceDirection Leah 1/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.015}}\"/
+    pause 300/
+    message \"{{i18n:Miihau.LeahEE.event7a.016}}\"/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.017}}\"/
+    pause 700/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.018}}\"/
+    pause 600/
+    emote Leah 32/
+    speak Leah \"{{i18n:Miihau.LeahEE.event7a.019}}\"/
+    emote farmer 32/
+    globalFade/
+    viewport -1200 -1200/
+    pause 100/
+    message \"{{i18n:Miihau.LeahEE.event7a.020}}\"/
+    message \"{{i18n:Miihau.LeahEE.event7a.021}}\"/
+    end dialogue Leah \"{{i18n:Miihau.LeahEE.event7a.022}}\"/
+    ",
+
+    }
+    },
+    
+    ]
+}

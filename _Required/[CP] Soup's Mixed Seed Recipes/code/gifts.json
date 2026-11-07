@@ -1,0 +1,151 @@
+{
+	"Changes": [
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+
+	// Abigail
+				{
+					"Operation": "Append",
+					"Target": [
+					  "Fields",
+					  "Abigail",
+					  9 // neutral
+					],
+					"Value": "Soup.MixedSeeds_Mixed_Seed_Tea Soup.MixedSeeds_Flower_Seed_Soup",
+					"Delimiter": " "
+				},
+			
+	// Caroline
+				{
+					"Operation": "Append",
+					"Target": [
+					  "Fields",
+					  "Caroline",
+					  1
+					],
+					"Value": "Soup.MixedSeeds_Mixed_Seed_Tea Soup.MixedSeeds_Flower_Seed_Soup",
+					"Delimiter": " "
+				},
+
+	// Dwarf
+				{
+					"Operation": "Append",
+					"Target": [
+					  "Fields",
+					  "Dwarf",
+					  1
+					],
+					"Value": "Soup.MixedSeeds_Flower_Seed_Soup",
+					"Delimiter": " "
+				},
+
+	// Evelyn
+				{
+					"Operation": "Append",
+					"Target": [
+					  "Fields",
+					  "Evelyn",
+					  9
+					],
+					"Value": "Soup.MixedSeeds_Flower_Seed_Soup",
+					"Delimiter": " "
+				},
+
+	// Gus
+				{
+					"Operation": "Append",
+					"Target": [
+					  "Fields",
+					  "Gus",
+					  1
+					],
+					"Value": "Soup.MixedSeeds_Mixed_Seed_Tea Soup.MixedSeeds_Flower_Seed_Soup",
+					"Delimiter": " "
+				},
+
+	// Haley
+				{
+					"Operation": "Append",
+					"Target": [
+					  "Fields",
+					  "Haley",
+					  1
+					],
+					"Value": "Soup.MixedSeeds_Mixed_Seed_Tea",
+					"Delimiter": " "
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+					  "Fields",
+					  "Haley",
+					  9 // neutral
+					],
+					"Value": "Soup.MixedSeeds_Flower_Seed_Soup",
+					"Delimiter": " "
+				},
+
+
+	// Jodi
+				{
+					"Operation": "Append",
+					"Target": [
+					  "Fields",
+					  "Jodi",
+					  1
+					],
+					"Value": "Soup.MixedSeeds_Flower_Seed_Soup",
+					"Delimiter": " "
+				},
+	// Leah
+				{
+					"Operation": "Append",
+					"Target": [
+					  "Fields",
+					  "Leah",
+					  1
+					],
+					"Value": "Soup.MixedSeeds_Flower_Seed_Soup",
+					"Delimiter": " "
+				},
+
+	// Marnie
+				{
+					"Operation": "Append",
+					"Target": [
+					  "Fields",
+					  "Marnie",
+					  5 // dislike
+					],
+					"Value": "Soup.MixedSeeds_Flower_Seed_Soup",
+					"Delimiter": " "
+				},
+
+			]
+		},
+
+	// Witch if Rasmodia is installed
+
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+					  "Fields",
+					  "Wizard",
+					  1
+					],
+					"Value": "Soup.MixedSeeds_Mixed_Seed_Tea Soup.MixedSeeds_Flower_Seed_Soup",
+					"Delimiter": " "
+				}
+			],
+			"When": { "HasMod": "Nom0ri.RomRas" }
+		}
+
+    ]
+}

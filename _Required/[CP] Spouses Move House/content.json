@@ -1,0 +1,1032 @@
+{
+    "Format": "2.9.0",
+    "DynamicTokens": [
+        {
+            "Name": "NonbinaryAbigailToken",
+            "Value": "false"
+        },
+        {
+            "Name": "NonbinaryAbigailToken",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:NonbinaryAbigail": "true"
+            },
+            "Value": "true"
+        },
+        {
+            "Name": "NonbinarySebastianToken",
+            "Value": "false"
+        },
+        {
+            "Name": "NonbinarySebastianToken",
+            "When": {
+                "HasMod": "DSV.Core",
+                "DSV.Core/ConfigValue:NonbinarySebastian": "true"
+            },
+            "Value": "true"
+        },
+        {
+            "Name": "SpouseAbigail",
+            "Value": "{{Spouse:anyPlayer |contains=Abigail}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseAbigail",
+            "Value": "{{Spouse:anyPlayer |contains=Abigail}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Abigail}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseAbigail",
+            "Value": "{{Spouse:anyPlayer |contains=Abigail}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Abigail}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseAbigail",
+            "Value": "{{Spouse:anyPlayer |contains=Abigail}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Abigail}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseAlex",
+            "Value": "{{Spouse:anyPlayer |contains=Alex}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseAlex",
+            "Value": "{{Spouse:anyPlayer |contains=Alex}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Alex}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseAlex",
+            "Value": "{{Spouse:anyPlayer |contains=Alex}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Alex}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseAlex",
+            "Value": "{{Spouse:anyPlayer |contains=Alex}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Alex}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseElliott",
+            "Value": "{{Spouse:anyPlayer |contains=Elliott}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseElliott",
+            "Value": "{{Spouse:anyPlayer |contains=Elliott}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Elliott}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseElliott",
+            "Value": "{{Spouse:anyPlayer |contains=Elliott}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Elliott}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseElliott",
+            "Value": "{{Spouse:anyPlayer |contains=Elliott}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Elliott}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseEmily",
+            "Value": "{{Spouse:anyPlayer |contains=Emily}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseEmily",
+            "Value": "{{Spouse:anyPlayer |contains=Emily}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Emily}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseEmily",
+            "Value": "{{Spouse:anyPlayer |contains=Emily}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Emily}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseEmily",
+            "Value": "{{Spouse:anyPlayer |contains=Emily}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Emily}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseHaley",
+            "Value": "{{Spouse:anyPlayer |contains=Haley}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseHaley",
+            "Value": "{{Spouse:anyPlayer |contains=Haley}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Haley}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseHaley",
+            "Value": "{{Spouse:anyPlayer |contains=Haley}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Haley}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseHaley",
+            "Value": "{{Spouse:anyPlayer |contains=Haley}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Haley}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseHarvey",
+            "Value": "{{Spouse:anyPlayer |contains=Harvey}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseHarvey",
+            "Value": "{{Spouse:anyPlayer |contains=Harvey}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Harvey}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseHarvey",
+            "Value": "{{Spouse:anyPlayer |contains=Harvey}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Harvey}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseHarvey",
+            "Value": "{{Spouse:anyPlayer |contains=Harvey}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Harvey}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseLeah",
+            "Value": "{{Spouse:anyPlayer |contains=Leah}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseLeah",
+            "Value": "{{Spouse:anyPlayer |contains=Leah}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Leah}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseLeah",
+            "Value": "{{Spouse:anyPlayer |contains=Leah}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Leah}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseLeah",
+            "Value": "{{Spouse:anyPlayer |contains=Leah}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Leah}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseMaru",
+            "Value": "{{Spouse:anyPlayer |contains=Maru}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseMaru",
+            "Value": "{{Spouse:anyPlayer |contains=Maru}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Maru}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseMaru",
+            "Value": "{{Spouse:anyPlayer |contains=Maru}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Maru}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseMaru",
+            "Value": "{{Spouse:anyPlayer |contains=Maru}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Maru}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpousePenny",
+            "Value": "{{Spouse:anyPlayer |contains=Penny}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpousePenny",
+            "Value": "{{Spouse:anyPlayer |contains=Penny}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Penny}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpousePenny",
+            "Value": "{{Spouse:anyPlayer |contains=Penny}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Penny}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpousePenny",
+            "Value": "{{Spouse:anyPlayer |contains=Penny}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Penny}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseSam",
+            "Value": "{{Spouse:anyPlayer |contains=Sam}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseSam",
+            "Value": "{{Spouse:anyPlayer |contains=Sam}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Sam}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseSam",
+            "Value": "{{Spouse:anyPlayer |contains=Sam}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Sam}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseSam",
+            "Value": "{{Spouse:anyPlayer |contains=Sam}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Sam}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseSebastian",
+            "Value": "{{Spouse:anyPlayer |contains=Sebastian}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseSebastian",
+            "Value": "{{Spouse:anyPlayer |contains=Sebastian}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Sebastian}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseSebastian",
+            "Value": "{{Spouse:anyPlayer |contains=Sebastian}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Sebastian}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseSebastian",
+            "Value": "{{Spouse:anyPlayer |contains=Sebastian}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Sebastian}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseShane",
+            "Value": "{{Spouse:anyPlayer |contains=Shane}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseShane",
+            "Value": "{{Spouse:anyPlayer |contains=Shane}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Shane}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseShane",
+            "Value": "{{Spouse:anyPlayer |contains=Shane}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Shane}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseShane",
+            "Value": "{{Spouse:anyPlayer |contains=Shane}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Shane}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        //SVE
+        {
+            "Name": "SpouseOlivia",
+            "Value": "{{Spouse:anyPlayer |contains=Olivia}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseOlivia",
+            "Value": "{{Spouse:anyPlayer |contains=Olivia}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Olivia}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseOlivia",
+            "Value": "{{Spouse:anyPlayer |contains=Olivia}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Olivia}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseOlivia",
+            "Value": "{{Spouse:anyPlayer |contains=Olivia}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Olivia}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseScarlett",
+            "Value": "{{Spouse:anyPlayer |contains=Scarlett}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseScarlett",
+            "Value": "{{Spouse:anyPlayer |contains=Scarlett}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Scarlett}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseScarlett",
+            "Value": "{{Spouse:anyPlayer |contains=Scarlett}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Scarlett}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseScarlett",
+            "Value": "{{Spouse:anyPlayer |contains=Scarlett}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Scarlett}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseSophia",
+            "Value": "{{Spouse:anyPlayer |contains=Sophia}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseSophia",
+            "Value": "{{Spouse:anyPlayer |contains=Sophia}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Sophia}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseSophia",
+            "Value": "{{Spouse:anyPlayer |contains=Sophia}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Sophia}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseSophia",
+            "Value": "{{Spouse:anyPlayer |contains=Sophia}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Sophia}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseVictor",
+            "Value": "{{Spouse:anyPlayer |contains=Victor}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseVictor",
+            "Value": "{{Spouse:anyPlayer |contains=Victor}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Victor}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseVictor",
+            "Value": "{{Spouse:anyPlayer |contains=Victor}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Victor}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseVictor",
+            "Value": "{{Spouse:anyPlayer |contains=Victor}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Victor}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        //RSV
+        {
+            "Name": "SpouseAlissa",
+            "Value": "{{Spouse:anyPlayer |contains=Alissa}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseAlissa",
+            "Value": "{{Spouse:anyPlayer |contains=Alissa}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Alissa}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseAlissa",
+            "Value": "{{Spouse:anyPlayer |contains=Alissa}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Alissa}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseAlissa",
+            "Value": "{{Spouse:anyPlayer |contains=Alissa}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Alissa}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseAnton",
+            "Value": "{{Spouse:anyPlayer |contains=Anton}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseAnton",
+            "Value": "{{Spouse:anyPlayer |contains=Anton}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Anton}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseAnton",
+            "Value": "{{Spouse:anyPlayer |contains=Anton}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Anton}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseAnton",
+            "Value": "{{Spouse:anyPlayer |contains=Anton}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Anton}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseKiarra",
+            "Value": "{{Spouse:anyPlayer |contains=Kiarra}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseKiarra",
+            "Value": "{{Spouse:anyPlayer |contains=Kiarra}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Kiarra}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseKiarra",
+            "Value": "{{Spouse:anyPlayer |contains=Kiarra}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Kiarra}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseKiarra",
+            "Value": "{{Spouse:anyPlayer |contains=Kiarra}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Kiarra}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseKiarra",
+            "Value": "{{Spouse:anyPlayer |contains=Kiarra}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseKiarra",
+            "Value": "{{Spouse:anyPlayer |contains=Kiarra}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Kiarra}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseKiarra",
+            "Value": "{{Spouse:anyPlayer |contains=Kiarra}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Kiarra}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseKiarra",
+            "Value": "{{Spouse:anyPlayer |contains=Kiarra}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Kiarra}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseBlair",
+            "Value": "{{Spouse:anyPlayer |contains=Blair}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseBlair",
+            "Value": "{{Spouse:anyPlayer |contains=Blair}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Blair}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseBlair",
+            "Value": "{{Spouse:anyPlayer |contains=Blair}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Blair}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseBlair",
+            "Value": "{{Spouse:anyPlayer |contains=Blair}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Blair}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseCorine",
+            "Value": "{{Spouse:anyPlayer |contains=Corine}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseCorine",
+            "Value": "{{Spouse:anyPlayer |contains=Corine}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Corine}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseCorine",
+            "Value": "{{Spouse:anyPlayer |contains=Corine}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Corine}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseCorine",
+            "Value": "{{Spouse:anyPlayer |contains=Corine}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Corine}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseFaye",
+            "Value": "{{Spouse:anyPlayer |contains=Faye}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseFaye",
+            "Value": "{{Spouse:anyPlayer |contains=Faye}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Faye}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseFaye",
+            "Value": "{{Spouse:anyPlayer |contains=Faye}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Faye}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseFaye",
+            "Value": "{{Spouse:anyPlayer |contains=Faye}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Faye}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseFlor",
+            "Value": "{{Spouse:anyPlayer |contains=Flor}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseFlor",
+            "Value": "{{Spouse:anyPlayer |contains=Flor}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Flor}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseFlor",
+            "Value": "{{Spouse:anyPlayer |contains=Flor}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Flor}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseFlor",
+            "Value": "{{Spouse:anyPlayer |contains=Flor}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Flor}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseIan",
+            "Value": "{{Spouse:anyPlayer |contains=Ian}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseIan",
+            "Value": "{{Spouse:anyPlayer |contains=Ian}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Ian}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseIan",
+            "Value": "{{Spouse:anyPlayer |contains=Ian}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Ian}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseIan",
+            "Value": "{{Spouse:anyPlayer |contains=Ian}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Ian}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseSean",
+            "Value": "{{Spouse:anyPlayer |contains=Sean}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseSean",
+            "Value": "{{Spouse:anyPlayer |contains=Sean}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Sean}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseSean",
+            "Value": "{{Spouse:anyPlayer |contains=Sean}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Sean}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseSean",
+            "Value": "{{Spouse:anyPlayer |contains=Sean}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Sean}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseJeric",
+            "Value": "{{Spouse:anyPlayer |contains=Jeric}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseJeric",
+            "Value": "{{Spouse:anyPlayer |contains=Jeric}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Jeric}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseJeric",
+            "Value": "{{Spouse:anyPlayer |contains=Jeric}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Jeric}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseJeric",
+            "Value": "{{Spouse:anyPlayer |contains=Jeric}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Jeric}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseJune",
+            "Value": "{{Spouse:anyPlayer |contains=June}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseJune",
+            "Value": "{{Spouse:anyPlayer |contains=June}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=June}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseJune",
+            "Value": "{{Spouse:anyPlayer |contains=June}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=June}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseJune",
+            "Value": "{{Spouse:anyPlayer |contains=June}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=June}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseKenneth",
+            "Value": "{{Spouse:anyPlayer |contains=Kenneth}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseKenneth",
+            "Value": "{{Spouse:anyPlayer |contains=Kenneth}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Kenneth}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseKenneth",
+            "Value": "{{Spouse:anyPlayer |contains=Kenneth}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Kenneth}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseKenneth",
+            "Value": "{{Spouse:anyPlayer |contains=Kenneth}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Kenneth}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseMaddie",
+            "Value": "{{Spouse:anyPlayer |contains=Maddie}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseMaddie",
+            "Value": "{{Spouse:anyPlayer |contains=Maddie}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Maddie}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseMaddie",
+            "Value": "{{Spouse:anyPlayer |contains=Maddie}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Maddie}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseMaddie",
+            "Value": "{{Spouse:anyPlayer |contains=Maddie}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Maddie}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpousePaula",
+            "Value": "{{Spouse:anyPlayer |contains=Paula}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpousePaula",
+            "Value": "{{Spouse:anyPlayer |contains=Paula}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Paula}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpousePaula",
+            "Value": "{{Spouse:anyPlayer |contains=Paula}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Paula}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpousePaula",
+            "Value": "{{Spouse:anyPlayer |contains=Paula}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Paula}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpousePhilip",
+            "Value": "{{Spouse:anyPlayer |contains=Philip}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpousePhilip",
+            "Value": "{{Spouse:anyPlayer |contains=Philip}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Philip}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpousePhilip",
+            "Value": "{{Spouse:anyPlayer |contains=Philip}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Philip}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpousePhilip",
+            "Value": "{{Spouse:anyPlayer |contains=Philip}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Philip}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseShiro",
+            "Value": "{{Spouse:anyPlayer |contains=Shiro}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseShiro",
+            "Value": "{{Spouse:anyPlayer |contains=Shiro}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Shiro}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseShiro",
+            "Value": "{{Spouse:anyPlayer |contains=Shiro}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Shiro}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseShiro",
+            "Value": "{{Spouse:anyPlayer |contains=Shiro}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Shiro}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        },
+        {
+            "Name": "SpouseYsabelle",
+            "Value": "{{Spouse:anyPlayer |contains=Ysabelle}}",
+            "When": {
+                "HasMod |contains = EnderTedi.Polyamory, aedenthorn.FreeLove/PlayerSpouses, ApryllForever.PolyamorySweetLove": false
+            }
+        },
+        {
+            "Name": "SpouseYsabelle",
+            "Value": "{{Spouse:anyPlayer |contains=Ysabelle}}, {{EnderTedi.Polyamory/PlayerSpouses:anyPlayer|contains=Ysabelle}}",
+            "When": {
+                "HasMod": "EnderTedi.Polyamory"
+            }
+        },
+        {
+            "Name": "SpouseYsabelle",
+            "Value": "{{Spouse:anyPlayer |contains=Ysabelle}}, {{aedenthorn.FreeLove/PlayerSpouses|contains=Ysabelle}}",
+            "When": {
+                "HasMod": "aedenthorn.FreeLove"
+            }
+        },
+        {
+            "Name": "SpouseYsabelle",
+            "Value": "{{Spouse:anyPlayer |contains=Ysabelle}}, {{ApryllForever.PolyamorySweetLove/PlayerSpouses|contains=Ysabelle}}",
+            "When": {
+                "HasMod": "ApryllForever.PolyamorySweetLove"
+            }
+        }
+    ],
+    "Changes": [
+        {
+            "LogName": "Spouses Move House - Strings",
+            "Action": "Include",
+            "FromFile": "Data/Strings.json"
+        },
+        {
+            "LogName": "Spouses Move House - Vanilla Includes",
+            "Action": "Include",
+            "FromFile": "Data/MapPatches.json",
+            "When": {
+                "HasMod |contains=uglynt.town.interiors": false
+            }
+        },
+        {
+            "LogName": "Spouses Move House - Less Ugly Town Interiors Includes",
+            "Action": "Include",
+            "FromFile": "Data/MapPatches-LUTI.json",
+            "When": {
+                "HasMod |contains=uglynt.town.interiors": true
+            }
+        },
+        {
+            "LogName": "Spouses Move House - SVE Spouses Include",
+            "Action": "Include",
+            "FromFile": "Data/MapPatches-SVE.json",
+            "When": {
+                "HasMod |contains = FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "LogName": "Spouses Move House - RSV Spouses Include",
+            "Action": "Include",
+            "FromFile": "Data/MapPatches-RSV.json",
+            "When": {
+                "HasMod |contains = Rafseazz.RSVCP": true,
+                "HasMod |contains = Vlgor.RSV.ReimaginedInterior": false
+            }
+        },
+        {
+            "LogName": "Spouses Move House - RSV Spouses Include + RIRSV",
+            "Action": "Include",
+            "FromFile": "Data/MapPatches-RIRSV.json",
+            "When": {
+                "HasMod |contains = Rafseazz.RSVCP": true,
+                "HasMod |contains = Vlgor.RSV.ReimaginedInterior": true
+            }
+        }
+    ]
+}

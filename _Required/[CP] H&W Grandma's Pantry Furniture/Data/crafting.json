@@ -1,0 +1,82 @@
+{
+  "Changes": [
+
+    {
+        "LogName": "Add Furniture Crafting Station",
+        "Action": "EditData",
+        "Target": "Data/BigCraftables",
+        "Entries": {
+            "HXW.GrandmasPantryFurni_CraftingStation": {
+                "Name": "HXW.GrandmasPantryFurni_CraftingStation",
+                "DisplayName": "{{i18n: GrandmasPantryFurni_CraftingStation.Name}}",
+                "Description": "{{i18n: GrandmasPantryFurni_CraftingStation.Description}}",
+                "Price": 100,
+                "Texture": "Mods/HXW.GrandmasPantryFurni/Assets/BigCraftables",
+                "SpriteIndex": 0,
+                "CustomFields": {
+                    "leclair.bettercrafting_PerformAction": "leclair.bettercrafting_OpenMenu false false HXW.GrandmasPantryFurni_CraftingStation"
+                }
+            }
+        }
+    },
+
+    {
+        "LogName": "Add Furniture Crafting Station Recipe",
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Entries": {
+            "HXW.GrandmasPantryFurni_CraftingStation": "388 50 336 2/Home/HXW.GrandmasPantryFurni_CraftingStation/true/default/{{i18n: GrandmasPantryFurni_CraftingStation.Name}}"
+        }
+    },
+
+    {
+        "LogName": "Add Furniture Crafting Recipes",
+        "Action": "EditData",
+        "Target": "Mods/leclair.bettercrafting/Recipes",
+        "When": {"CraftableFurniture": true},
+        "Entries": {
+            "HXW.GrandmasPantryFurni_BaseStarStool": {
+                "DisplayName":"{{i18n: GrandmasPantryFurni_Base.Stool}}",
+                "Default": false,
+                "AllowRecycling": false,
+                "Ingredients": [
+                    {
+                        "Id": "Wood",
+                        "ItemID": "(O)388",
+                        "Quantity": 30
+                    }
+                    ],
+                "Output": [
+                    {
+                        "Id": "FurniItemName",
+                        "ItemId": "(F)HXW.GrandmasPantryFurni_FurniItemName"
+                    }
+                    ]
+        }
+        }
+    },
+    {
+        "LogName": "Add Basic Furniture Better Crafting Data",
+        "Action": "EditData",
+        "Target": "Mods/leclair.bettercrafting/CraftingStations",
+        "When": {"CraftableFurniture": true},
+        "Entries": {
+            "HXW.GrandmasPantryFurni_CraftingStation": {
+                "Id": "HXW.GrandmasPantryFurni_CraftingStation",
+                "DisplayName": "{{i18n: GrandmasPantryFurni_CraftingStation.Name}}",
+                "Icon": {
+                    "Type": "Item",
+                    "ItemId": "HXW.GrandmasPantryFurni_FurniItemName"
+                },
+                "IsCooking": false,
+                "AreRecipesExclusive": true,
+                "DisplayUnknownRecipes": true,
+                "Recipes": [
+                    "HXW.GrandmasPantryFurni_FurniItemName"
+                ]
+        }
+      }
+    }
+    
+  ]
+}

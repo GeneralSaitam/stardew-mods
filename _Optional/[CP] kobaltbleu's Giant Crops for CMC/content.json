@@ -1,0 +1,1118 @@
+{
+  "Format": "2.0.0",
+  "DynamicTokens": [
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.005,
+      "When": {
+        "Giant Crop Chance |contains=very high, high, medium, low, off": "false"
+      }
+    },
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.0,
+      "When": {
+        "Giant Crop Chance": "off"
+      }
+    },
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.001,
+      "When": {
+        "Giant Crop Chance": "low"
+      }
+    },
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.005,
+      "When": {
+        "Giant Crop Chance": "medium"
+      }
+    },
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.01,
+      "When": {
+        "Giant Crop Chance": "high"
+      }
+    },
+    {
+      "Name": "GiantCropChance",
+      "Value": 0.05,
+      "When": {
+        "Giant Crop Chance": "very high"
+      }
+    }
+  ],
+  "ConfigSchema": {
+    "Giant Crop Chance": {
+      "AllowValues": "very high, high, medium, low, off",
+      "Default": "medium",
+      "Description": "Chance of getting a giant crop from any single-harvest plant. Values: 'very high' - 5%, 'high' - 1% (game default), 'medium' - 0.5%, 'low' - 0.1%, 'off' - 0%.",
+      "Section": "-Settings-"
+    },
+    "Saturation": {
+      "AllowValues": "saturated, desaturated",
+      "Default": "saturated",
+      "Section": "-Settings-"
+    },
+    "Adzuki Bean": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Agave": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Aloe": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Asparagus": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Basil": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Blue Agave": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Cabbage": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Cassava": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Celery": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Chives": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Fennel": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Ginseng": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Lettuce": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Licorice Root": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Mint": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Onion": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Oregano": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Parsley": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Peanut": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Perilla Leaves": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Red Onion": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Rosemary": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Sage": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Shallot": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Spinach": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Sugar Beet": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Sugarcane": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Sweet Potato": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Thyme": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    },
+    "Wasabi Root": {
+      "AllowValues": "true, false",
+      "Default": "true",
+      "Section": "Cornucopia"
+    }
+  },
+  "Changes": [
+    //Cornucopia More Crops
+	 {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/GiantCrops",
+      "FromFile": "assets/{{Saturation}}-GiantCrops.png"
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_AdzukiBean",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Adzuki Bean": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_AdzukiBean": {
+          "FromItemId": "(O)Cornucopia_AdzukiBean",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_AdzukiBean",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 0,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Aloe",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Aloe": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Aloe": {
+          "FromItemId": "(O)Cornucopia_Aloe",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Aloe",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 48,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Asparagus",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Asparagus": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Asparagus": {
+          "FromItemId": "(O)Cornucopia_Asparagus",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Asparagus",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 96,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Basil",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Basil": true
+      },
+      "Entries": {
+        "{{ModId}}_Basil": {
+          "FromItemId": "(O)Cornucopia_Basil",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Basil",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 144,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_BlueAgave",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Blue Agave": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_BlueAgave": {
+          "FromItemId": "(O)Cornucopia_BlueAgave",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_BlueAgave",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 192,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Cabbage",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Cabbage": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Cabbage": {
+          "FromItemId": "(O)Cornucopia_Cabbage",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Cabbage",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 240,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Cassava",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Cassava": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Cassava": {
+          "FromItemId": "(O)Cornucopia_Cassava",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Cassava",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 288,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Celery",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Celery": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Celery": {
+          "FromItemId": "(O)Cornucopia_Celery",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Celery",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 336,
+            "Y": 0
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Chives",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Chives": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Chives": {
+          "FromItemId": "(O)Cornucopia_Chives",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Chives",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 0,
+            "Y": 64
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Fennel",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Fennel": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Fennel": {
+          "FromItemId": "(O)Cornucopia_Fennel",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Fennel",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 48,
+            "Y": 64
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Ginseng",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Ginseng": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Ginseng": {
+          "FromItemId": "(O)Cornucopia_Ginseng",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Ginseng",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 96,
+            "Y": 64
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Lettuce",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Lettuce": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Lettuce": {
+          "FromItemId": "(O)Cornucopia_Lettuce",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Lettuce",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 144,
+            "Y": 64
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_LicoriceRoot",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Licorice Root": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_LicoriceRoot": {
+          "FromItemId": "(O)Cornucopia_LicoriceRoot",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_LicoriceRoot",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 192,
+            "Y": 64
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Agave",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Agave": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Agave": {
+          "FromItemId": "(O)Cornucopia_Agave",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Agave",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 240,
+            "Y": 64
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Mint",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Mint": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Mint": {
+          "FromItemId": "(O)Cornucopia_Mint",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Mint",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 288,
+            "Y": 64
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Onion",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Onion": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Onion": {
+          "FromItemId": "(O)Cornucopia_Onion",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Onion",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 336,
+            "Y": 64
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Oregano",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Oregano": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Oregano": {
+          "FromItemId": "(O)Cornucopia_Oregano",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Oregano",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 0,
+            "Y": 128
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Parsley",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Parsley": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Parsley": {
+          "FromItemId": "(O)Cornucopia_Parsley",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Parsley",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 48,
+            "Y": 128
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Peanut",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Peanut": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Peanut": {
+          "FromItemId": "(O)Cornucopia_Peanut",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Peanut",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 96,
+            "Y": 128
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_PerillaLeaves",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Perilla Leaves": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_PerillaLeaves": {
+          "FromItemId": "(O)Cornucopia_PerillaLeaves",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_PerillaLeaves",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 144,
+            "Y": 128
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_RedOnion",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Red Onion": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_RedOnion": {
+          "FromItemId": "(O)Cornucopia_RedOnion",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_RedOnion",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 192,
+            "Y": 128
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Rosemary",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Rosemary": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Rosemary": {
+          "FromItemId": "(O)Cornucopia_Rosemary",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Rosemary",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 240,
+            "Y": 128
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Sage",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Sage": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Sage": {
+          "FromItemId": "(O)Cornucopia_Sage",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Sage",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 288,
+            "Y": 128
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Shallot",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Shallot": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Shallot": {
+          "FromItemId": "(O)Cornucopia_Shallot",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Shallot",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 336,
+            "Y": 128
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Spinach",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Spinach": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Spinach": {
+          "FromItemId": "(O)Cornucopia_Spinach",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Spinach",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 0,
+            "Y": 192
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_SugarBeet",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Sugar Beet": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_SugarBeet": {
+          "FromItemId": "(O)Cornucopia_SugarBeet",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_SugarBeet",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 48,
+            "Y": 192
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Sugarcane",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Sugarcane": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Sugarcane": {
+          "FromItemId": "(O)Cornucopia_Sugarcane",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Sugarcane",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 96,
+            "Y": 192
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_SweetPotato",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Sweet Potato": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_SweetPotato": {
+          "FromItemId": "(O)Cornucopia_SweetPotato",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_SweetPotato",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 144,
+            "Y": 192
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_Thyme",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Thyme": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_Thyme": {
+          "FromItemId": "(O)Cornucopia_Thyme",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_Thyme",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 192,
+            "Y": 192
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    },
+    {
+      "LogName": "Giant Crops - Cornucopia_WasabiRoot",
+      "Action": "EditData",
+      "Target": "Data/GiantCrops",
+      "When": {
+        "Wasabi Root": true
+      },
+      "Entries": {
+        "Mike.Cornucopia_WasabiRoot": {
+          "FromItemId": "(O)Cornucopia_WasabiRoot",
+          "Chance": "{{GiantCropChance}}",
+          "HarvestItems": [
+            {
+              "ItemId": "(O)Cornucopia_WasabiRoot",
+              "MinStack": 20,
+              "MaxStack": 30
+            }
+          ],
+          "Texture": "Mods/{{ModId}}/GiantCrops",
+          "TexturePosition": {
+            "X": 240,
+            "Y": 192
+          },
+          "TileSize": {
+            "X": 3,
+            "Y": 3
+          }
+        }
+      }
+    }
+  ]
+}

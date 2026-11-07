@@ -1,0 +1,139 @@
+{
+	"Changes": [
+
+        { 
+        "Action": "Load",
+        "Target": "Data/Events/Desert",
+        "When": {"HasMod |contains=ricehit.SevenDeadlySinsCP": false},
+        "Priority": "Low",
+        "FromFile": "assets/Desert.json"
+        },
+
+
+        { 
+        "Action": "Load",
+        "Target": "Data/Events/Club",
+        "When": {"HasMod |contains=ricehit.SevenDeadlySinsCP": false},
+        "Priority": "Low",
+        "FromFile": "assets/Desert.json"
+        },
+
+
+        { 
+        "Action": "EditData",
+        "Target": "data/events/desert",
+        "When": {
+          "DayEvent |contains=desertfestival": false,
+          "HasSeenEvent: anyPlayer| contains=8050109": true
+        },
+        "Entries": {
+          "1000038/f Sandy 1250/t 2400 2600": "spaceMusic/-500 -500/end"
+        }
+        },
+        { 
+        "Action": "EditData",
+        "Target": "data/events/town",
+	    "When": {
+          "HasSeenEvent: anyPlayer| contains=8050109": true
+        },
+        "Entries": {
+            "1000030/f Sandy 1250/t 1100 1700/w sunny": "springtown/-500 -500/farmer 26 55 2 Emily 25 70 1 Sandy 27 70 3 Pam -3000 -3000 2 Harvey 9 64 0 Caroline 32 65 1 Jodi 34 65 3/pause 500/skippable/viewport 26 69 true/pause 500/textAboveHead Emily \"{{i18n:Sandy.event1.01}}\"/shake Emily 600/pause 500/emote farmer 16/pause 200/move farmer 0 3 2/textAboveHead Sandy \"{{i18n:Sandy.event1.02}}\"/move farmer 0 9 2/pause 750/move Emily 0 0 0/pause 300/move Sandy 0 0 0/pause 150/emote Sandy 16/pause 50/speak Sandy \"{{i18n:Sandy.event1.03}}\"/pause 500/speak Emily \"{{i18n:Sandy.event1.04}}\"/pause 500/pause 650/speak Sandy \"{{i18n:Sandy.event1.05}}\"/pause 500/move Emily 0 0 1/pause 800/move Sandy 0 0 0/pause 400/move Emily 0 0 0/pause 500/speak Sandy \"{{i18n:Sandy.event1.07}}\"/pause 500/speak Emily \"{{i18n:Sandy.event1.08}}\"/pause 500/question fork0 \"{{i18n:Sandy.event1.08A}}\"/fork TourWithSandy/pause 1000/stopMusic/pause 650/speak Sandy \"{{i18n:Sandy.event1.09}}\"/pause 1000/speak Emily \"{{i18n:Sandy.event1.10}}\"/pause 700/speak Sandy \"{{i18n:Sandy.event1.11}}\"/pause 200/globalFade/viewport -1000 -1000/pause 700/friendship Sandy -250/end dialogue Emily \"{{i18n:Sandy.event1.12}}\"",
+            "TourWithSandy": "pause 600/jump Sandy/pause 800/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.01}}\"/pause 750/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.02}}\"/pause 500/emote farmer 32/pause 100/globalFade/viewport -1000 -1000/pause 1000/changeLocation farm/pause 500/warp Jodi -200 -200/warp Harvey -205 -205/warp Caroline -150 -150/warp Emily 62 15/warp Sandy 63 15/warp farmer 64 15/move Emily 0 0 2/move Sandy 0 0 2/playMusic spring_day_ambient/pause 500/viewport 63 15 clamp true/pause 1250/textAboveHead Sandy \"{{i18n:Sandy.event1.TourWithSandy.03}}\"/move Emily 0 0 2/pause 750/move Sandy 0 0 1/pause 500/faceDirection farmer 3/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.04}}\"/pause 1250/move Sandy 0 0 3/pause 250/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.05}}\"/pause 400/move Sandy 0 0 1/pause 500/emote Sandy 16/pause 550/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.06}}\"/pause 1300/move Sandy 0 0 2/pause 400/move Emily 0 0 2/move farmer 0 0 2/move Sandy 0 0 3/pause 500/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.07}}\"/pause 500/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.08}}\"/pause 750/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.09}}\"/pause 200/faceDirection farmer 3/pause 750/jump farmer/pause 1100/faceDirection Sandy 1/pause 500/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.10}}\"/pause 600/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.11}}\"/pause 200/globalFade/viewport -1000 -1000/changeLocation beach/stopMusic/pause 1100/playMusic ocean/viewport 50 25 true/warp Emily 49 24/warp Sandy 50 24/warp farmer 51 24/move Emily 0 0 2/move Sandy 0 0 2/move farmer 0 0 2/pause 750/textAboveHead Sandy \"{{i18n:Sandy.event1.TourWithSandy.12}}\"/pause 2500/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.13}}\"/pause 1450/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.14}}\"/pause 800/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.15}}\"/pause 2200/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.16}}\"/pause 500/faceDirection Emily 1/pause 300/faceDirection farmer 3/pause 400/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.17}}\"/pause 200/faceDirection Sandy 3/pause 800/jump Sandy/pause 1000/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.18}}\"/pause 300/globalFade/viewport -1000 -1000/changeLocation BusStop/pause 1000/warp Pam 23 10/warp Sandy 22 12/warp Emily 22 14/warp farmer 23 14/faceDirection Sandy 2/faceDirection Emily 0/faceDirection farmer 0/faceDirection Pam 2/pause 300/viewport 28 14 true/pause 800/playSound SpringBirds/pause 300/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.37}}\"/pause 600/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.40}}\"/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.38}}\"/pause 700/move Pam -1 0 0/pause 200/playSound doorClose/warp Pam -300 -300/pause 250/move Sandy 0 -2 0/pause 1000/faceDirection Sandy 2/pause 700/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.42}}\"/pause 600/faceDirection Sandy 0/pause 400/playSound doorClose/warp Sandy -200 -200/pause 800/globalFade/viewport -1000 -1000/playSound busDriveOff/pause 2000/friendship Sandy 150/pause 300/end dialogue Sandy \"{{i18n:Sandy.event1.TourWithSandy.42}}\""
+            }
+        },
+
+
+
+
+
+        {
+        "Action": "EditData",
+        "Target": "Data/Events/SandyHouse",
+        "Entries":{
+            "NAT_Sandy2/f Sandy 500/t 600 2400": "distantBanjo/-1000 -1000/farmer 4 9 0 Sandy 2 5 2 Bouncer 17 3 2/skippable/viewport 5 5 true/move farmer 0 0 0/pause 100/speak Sandy \"{{i18n:1HeartEvent.RITS.0}}\"/pause 100/move Sandy 2 0 3/faceDirection Sandy 2/pause 300/move farmer 0 0 0/pause 150/speak Sandy \"$q 1 null #{{i18n:1HeartEvent.RITS.1}}#$r 1 -20 heart1_response1#{{i18n:1HeartEvent.RITS.1.1}}#$r 2 0 heart1_response2#{{i18n:1HeartEvent.RITS.1.2}}#$r 3 40 heart1_response3#{{i18n:1HeartEvent.RITS.1.3}}\"/pause 500/move Sandy 0 2 2/pause 500/speak Sandy \"{{i18n:1HeartEvent.RITS.2}}\"/pause 500/move farmer 0 -1 0/pause 500/faceDirection Sandy 1/speak Sandy \"{{i18n:1HeartEvent.RITS.3}}\"/pause 200/faceDirection farmer 1/speak Sandy \"{{i18n:1HeartEvent.RITS.4}}\"/pause 500/speak Sandy \"{{i18n:1HeartEvent.RITS.5}}\"/pause 300/faceDirection Sandy 2/pause 50/faceDirection farmer 0/speak Sandy \"{{i18n:1HeartEvent.RITS.9}}\"/pause 400/end dialogue Sandy \"{{i18n:1HeartEvent.RITS.9}}\""
+            }
+        },
+        {
+        "Action": "EditData",
+        "Target": "Data/Events/Desert",
+        "Entries": {
+            "NAT_Sandy4/f Sandy 1000/t 1600 2400": "nightTime/-1000 -1000/farmer 27 14 0 Sandy 30 10 0/skippable/viewport 27 8 true/pause 1500/move farmer 0 -3 0/speak Sandy \"{{i18n:3HeartEvent.RITS.0}}\"/pause 1000/speak Sandy \"{{i18n:3HeartEvent.RITS.1}}\"/pause 750/speak Sandy \"{{i18n:3HeartEvent.RITS.2}}\"/pause 1000/speak Sandy \"{{i18n:3HeartEvent.RITS.3}}\"/pause 1000/faceDirection Sandy 2/speak Sandy \"{{i18n:3HeartEvent.RITS.4}}\"/move Sandy 0 7 0 true/pause 1000/end dialogue Sandy \"{{i18n:3HeartEvent.RITS.5}}\""
+            }
+        },
+        {
+          "Action": "EditData",
+          "Target": "Data/Events/Desert",
+          "When": {
+            "UseAlternativeEvent": "false"},
+          "Entries": {
+              "NAT_Sandy8/f Sandy 2000/t 1600 2600": "spaceMusic/-1000 -1000/farmer 22 46 1 Sandy 35 45 0/skippable/viewport 33 43 true/pause 1000/move farmer 7 0 1 /pause 200/faceDirection Sandy 3/pause 1000/faceDirection Sandy 0/pause 500/speak Sandy \"{{i18n:6HeartEvent.RITS.0}}\"/pause 500/speak Sandy \"{{i18n:6HeartEvent.RITS.1}}\"/pause 400/speak Sandy \"{{i18n:6HeartEvent.RITS.2}}\"/pause 300/faceDirection Sandy 3/pause 200/speak Sandy \"{{i18n:6HeartEvent.RITS.3}}\"/pause 300/speak Sandy \"{{i18n:6HeartEvent.RITS.4}}\"/pause 1500/speak Sandy \"{{i18n:6HeartEvent.RITS.5}}\"/pause 500/speak Sandy \"{{i18n:6HeartEvent.RITS.6| RealName = {{RealName}} }}\"/speak Sandy \"{{i18n:6HeartEvent.RITS.6.2}}\"/speak Sandy \"{{i18n:6HeartEvent.RITS.6.3}}\"/pause 300/emote Sandy 28/pause 300/faceDirection Sandy 0/pause 200/quickQuestion \"{{i18n:6HeartEvent.RITS.7}}\"#\"{{i18n:6HeartEvent.RITS.A.1}}\"#\"{{i18n:6HeartEvent.RITS.A.2}}\"#\"{{i18n:6HeartEvent.RITS.A.3}}\"#\"{{i18n:6HeartEvent.RITS.A.4}}\"(break)friendship Sandy -500\\faceDirection Sandy 3\\speak Sandy \"{{i18n:6HeartEvent.RITS.8.1}}\"\\pause 300\\speak Sandy \"{{i18n:6HeartEvent.RITS.8.1.2}}\"(break)friendship Sandy 150\\faceDirection Sandy 3\\speak Sandy \"{{i18n:6HeartEvent.RITS.8.2}}\"\\pause 300\\faceDirection Sandy 0\\pause 200\\speak Sandy \"{{i18n:6HeartEvent.RITS.9}}\"\\pause 200\\speak Sandy \"{{i18n:6HeartEvent.RITS.10}}\"\\pause 500\\speak Sandy \"{{i18n:6HeartEvent.RITS.11}}\"\\pause 200\\speak Sandy \"{{i18n:6HeartEvent.RITS.12}}\"\\pause 400\\speak Sandy \"{{i18n:6HeartEvent.RITS.13}}\"(break)friendship Sandy -250\\faceDirection Sandy 3\\speak Sandy \"{{i18n:6HeartEvent.RITS.8.3}}\"\\pause 300\\speak Sandy \"{{i18n:6HeartEvent.RITS.8.3.2}}\"\\speak Sandy \"{{i18n:6HeartEvent.RITS.8.3.3}}\"(break)faceDirection Sandy 3\\speak Sandy \"{{i18n:6HeartEvent.RITS.8.4}}\"\\pause 300\\faceDirection Sandy 0\\pause 200\\speak Sandy \"{{i18n:6HeartEvent.RITS.9}}\"\\pause 200\\speak Sandy \"{{i18n:6HeartEvent.RITS.10}}\"\\pause 500\\speak Sandy \"{{i18n:6HeartEvent.RITS.11}}\"\\pause 200\\speak Sandy \"{{i18n:6HeartEvent.RITS.12}}\"\\pause 400\\speak Sandy \"{{i18n:6HeartEvent.RITS.13}}\"/end"
+              }
+          },
+          {
+            "Action": "EditData",
+            "Target": "Data/Events/Desert",
+            "When": {
+              "UseAlternativeEvent": "true"},
+            "Entries": {
+                "NAT_Sandy8/f Sandy 2000/t 1600 2600": "spaceMusic/-1000 -1000/farmer 22 46 1 Sandy 35 45 0/skippable/viewport 33 43 true/pause 1000/move farmer 7 0 1 /pause 200/faceDirection Sandy 3/pause 1000/faceDirection Sandy 0/pause 500/speak Sandy \"{{i18n:6HeartEventA.RITS.0}}\"/pause 500/speak Sandy \"{{i18n:6HeartEventA.RITS.1}}\"/pause 400/speak Sandy \"{{i18n:6HeartEventA.RITS.2}}\"/pause 300/faceDirection Sandy 3/pause 200/speak Sandy \"{{i18n:6HeartEventA.RITS.3}}\"/pause 300/speak Sandy \"{{i18n:6HeartEventA.RITS.4}}\"/pause 1500/speak Sandy \"{{i18n:6HeartEventA.RITS.5}}\"/pause 500/speak Sandy \"{{i18n:6HeartEventA.RITS.6| RealName = {{RealName}} }}\"/speak Sandy \"{{i18n:6HeartEventA.RITS.6.2}}\"/speak Sandy \"{{i18n:6HeartEventA.RITS.6.3}}\"/pause 300/emote Sandy 28/pause 300/faceDirection Sandy 0/pause 200/quickQuestion \"{{i18n:6HeartEventA.RITS.7}}\"#\"{{i18n:6HeartEventA.RITS.A.1}}\"#\"{{i18n:6HeartEventA.RITS.A.2}}\"#\"{{i18n:6HeartEventA.RITS.A.3}}\"#\"{{i18n:6HeartEventA.RITS.A.4}}\"(break)friendship Sandy -500\\faceDirection Sandy 3\\speak Sandy \"{{i18n:6HeartEventA.RITS.8.1}}\"\\pause 300\\speak Sandy \"{{i18n:6HeartEventA.RITS.8.1.2}}\"(break)friendship Sandy 150\\faceDirection Sandy 3\\speak Sandy \"{{i18n:6HeartEventA.RITS.8.2}}\"\\pause 300\\faceDirection Sandy 0\\pause 200\\speak Sandy \"{{i18n:6HeartEventA.RITS.9}}\"\\pause 200\\speak Sandy \"{{i18n:6HeartEventA.RITS.10}}\"\\pause 500\\speak Sandy \"{{i18n:6HeartEventA.RITS.11}}\"\\pause 200\\speak Sandy \"{{i18n:6HeartEventA.RITS.12}}\"\\pause 400\\speak Sandy \"{{i18n:6HeartEventA.RITS.13}}\"(break)friendship Sandy -250\\faceDirection Sandy 3\\speak Sandy \"{{i18n:6HeartEventA.RITS.8.3}}\"\\pause 300\\speak Sandy \"{{i18n:6HeartEventA.RITS.8.3.2}}\"\\speak Sandy \"{{i18n:6HeartEventA.RITS.8.3.3}}\"(break)faceDirection Sandy 3\\speak Sandy \"{{i18n:6HeartEventA.RITS.8.4}}\"\\pause 300\\faceDirection Sandy 0\\pause 200\\speak Sandy \"{{i18n:6HeartEventA.RITS.9}}\"\\pause 200\\speak Sandy \"{{i18n:6HeartEventA.RITS.10}}\"\\pause 500\\speak Sandy \"{{i18n:6HeartEventA.RITS.11}}\"\\pause 200\\speak Sandy \"{{i18n:6HeartEventA.RITS.12}}\"\\pause 400\\speak Sandy \"{{i18n:6HeartEventA.RITS.13}}\"/end"
+                }
+            },
+        {
+        "Action": "EditData",
+        "Target": "data/events/town",
+        "Entries": {
+            "1000030/f Sandy 1250/t 1100 1700/w sunny": "springtown/-500 -500/farmer 26 55 2 Emily 25 70 1 Sandy 27 70 3 Pam -3000 -3000 2 Harvey 9 64 0 Caroline 32 65 1 Jodi 34 65 3/pause 500/skippable/viewport 26 69 true/pause 500/textAboveHead Emily \"{{i18n:Sandy.event1.01}}\"/shake Emily 600/pause 500/emote farmer 16/pause 200/move farmer 0 3 2/textAboveHead Sandy \"{{i18n:Sandy.event1.02}}\"/move farmer 0 9 2/pause 750/move Emily 0 0 0/pause 300/move Sandy 0 0 0/pause 150/emote Sandy 16/pause 50/speak Sandy \"{{i18n:Sandy.event1.03}}\"/pause 500/speak Emily \"{{i18n:Sandy.event1.04}}\"/pause 500/pause 650/speak Sandy \"{{i18n:Sandy.event1.05}}\"/pause 500/move Emily 0 0 1/pause 800/move Sandy 0 0 0/pause 400/move Emily 0 0 0/pause 500/speak Sandy \"{{i18n:Sandy.event1.07}}\"/pause 500/speak Emily \"{{i18n:Sandy.event1.08}}\"/pause 500/question fork0 \"{{i18n:Sandy.event1.08A}}\"/fork TourWithSandy/pause 1000/stopMusic/pause 650/speak Sandy \"{{i18n:Sandy.event1.09}}\"/pause 1000/speak Emily \"{{i18n:Sandy.event1.10}}\"/pause 700/speak Sandy \"{{i18n:Sandy.event1.11}}\"/pause 200/globalFade/viewport -1000 -1000/pause 700/friendship Sandy -250/end dialogue Emily \"{{i18n:Sandy.event1.12}}\"",
+            "TourWithSandy": "pause 600/jump Sandy/pause 800/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.01}}\"/pause 750/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.02}}\"/pause 500/emote farmer 32/pause 100/globalFade/viewport -1000 -1000/pause 1000/changeLocation farm/pause 500/warp Jodi -200 -200/warp Harvey -205 -205/warp Caroline -150 -150/warp Emily 62 15/warp Sandy 63 15/warp farmer 64 15/move Emily 0 0 2/move Sandy 0 0 2/playMusic spring_day_ambient/pause 500/viewport 63 15 clamp true/pause 1250/textAboveHead Sandy \"{{i18n:Sandy.event1.TourWithSandy.03}}\"/move Emily 0 0 2/pause 750/move Sandy 0 0 1/pause 500/faceDirection farmer 3/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.04}}\"/pause 1250/move Sandy 0 0 3/pause 250/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.05}}\"/pause 400/move Sandy 0 0 1/pause 500/emote Sandy 16/pause 550/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.06}}\"/pause 1300/move Sandy 0 0 2/pause 400/move Emily 0 0 2/move farmer 0 0 2/move Sandy 0 0 3/pause 500/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.07}}\"/pause 500/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.08}}\"/pause 750/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.09}}\"/pause 200/faceDirection farmer 3/pause 750/jump farmer/pause 1100/faceDirection Sandy 1/pause 500/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.10}}\"/pause 600/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.11}}\"/pause 200/globalFade/viewport -1000 -1000/changeLocation beach/stopMusic/pause 1100/playMusic ocean/viewport 50 25 true/warp Emily 49 24/warp Sandy 50 24/warp farmer 51 24/move Emily 0 0 2/move Sandy 0 0 2/move farmer 0 0 2/pause 750/textAboveHead Sandy \"{{i18n:Sandy.event1.TourWithSandy.12}}\"/pause 2500/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.13}}\"/pause 1450/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.14}}\"/pause 800/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.15}}\"/pause 2200/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.16}}\"/pause 500/faceDirection Emily 1/pause 300/faceDirection farmer 3/pause 400/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.17}}\"/pause 200/faceDirection Sandy 3/pause 800/jump Sandy/pause 1000/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.18}}\"/pause 300/globalFade/viewport -1000 -1000/changeLocation BusStop/pause 1000/warp Pam 23 10/warp Sandy 22 12/warp Emily 22 14/warp farmer 23 14/faceDirection Sandy 2/faceDirection Emily 0/faceDirection farmer 0/faceDirection Pam 2/pause 300/viewport 28 14 true/pause 800/playSound SpringBirds/pause 300/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.37}}\"/pause 600/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.40}}\"/speak Emily \"{{i18n:Sandy.event1.TourWithSandy.38}}\"/pause 700/move Pam -1 0 0/pause 200/playSound doorClose/warp Pam -300 -300/pause 250/move Sandy 0 -2 0/pause 1000/faceDirection Sandy 2/pause 700/speak Sandy \"{{i18n:Sandy.event1.TourWithSandy.42}}\"/pause 600/faceDirection Sandy 0/pause 400/playSound doorClose/warp Sandy -200 -200/pause 800/globalFade/viewport -1000 -1000/playSound busDriveOff/pause 2000/friendship Sandy 150/pause 300/end dialogue Sandy \"{{i18n:Sandy.event1.TourWithSandy.43}}\""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+              "{{ModId}}_Sandy9": {
+                "Id": "{{ModId}}_Sandy9",
+                "Trigger": "DayStarted",
+                "Condition": "PLAYER_FRIENDSHIP_POINTS current Sandy 2250",
+                "Actions": [
+                  "AddMail Current SandyLove now"
+                ]
+              }
+            }
+        },
+        { 
+        "Action": "EditData",
+        "Target": "data/events/Beach",
+        "Entries": {
+            "NAT_Sandy9/t 2200 2600/n SandyLove": "moonlightJellies/-1000 -1000/farmer 13 30 2 Sandy 12 39 1/skippable/addLantern 866 11 39 3/viewport 15 30 true/hideShadow Sandy true/positionOffset Sandy 0 45/animate Sandy false true 400 29 30 30 29 29 29 30 30 29 29/pause 500/move farmer 0 9 2 true/viewport move 0 2 5000/pause 200/pause 5000/playsound SpringBirds/speak Sandy \"{{i18n:10HeartEvent.0}}\"/pause 700/speak Sandy \"{{i18n:10HeartEvent.1}}\"/pause 700/speak Sandy \"{{i18n:10HeartEvent.2}}\"/pause 700/speak Sandy \"{{i18n:10HeartEvent.3}}\"/pause 700/speak Sandy \"{{i18n:10HeartEvent.4}}\"/pause 700/speak Sandy \"{{i18n:10HeartEvent.5}}\"/pause 700/quickQuestion \"{{i18n:10HeartEvent.6}}\"#\"{{i18n:10HeartEvent.A.1}}\"#\"{{i18n:10HeartEvent.A.2}}\"(break)friendship Sandy 100\\playMusic RosesInTheSand\\pause 1000\\glow 250 32 130 true\\stopAnimation Sandy\\hideShadow Sandy false\\positionOffset Sandy 0 -45\\pause 500\\stopglowing\\faceDirection Sandy 1\\speak Sandy \"{{i18n:10HeartEvent.8}}\"\\pause 500\\positionOffset Sandy 25 0\\showFrame Sandy 28\\pause 500\\glow 250 32 130 true\\pause 2000\\stopGlowing\\glow 250 32 130\\pause 2000\\stopGlowing\\glow 250 32 130 true\\pause 1000\\speak Sandy \"{{i18n:10HeartEvent.8.2}}\"\\pause 3000\\globalFade 0.003\\viewport -1000 -1000\\speak Sandy \"{{i18n:10HeartEvent.8.3}}\"\\pause 500(break)friendship Sandy -750\\faceDirection Sandy 3\\speak Sandy \"{{i18n:10HeartEvent.9}}\"\\globalFade 0.01\\viewport -1000 -1000/end"
+            }
+        },
+        {
+        "Action": "EditData",
+        "Target": "Data/Events/Club",
+        "Entries": {
+            "NAT_Sandy12/f Sandy 3000/O Sandy/t 600 2300": "clubloop/-1000 -1000/farmer 5 8 3 Bouncer 5 5 2 MrQi 8 4 0 Sandy -100 -100 0 Morris 4 11 0/changeLocation club/skippable/viewport 8 7/pause 500/speak Morris \"{{i18n:12HeartEvent.1}}\"/pause 500/speak Morris \"{{i18n:12HeartEvent.2}}\"/speak Bouncer \"{{i18n:12HeartEvent.3}}\"/pause 200/speak Morris \"{{i18n:12HeartEvent.4}}\"/pause 200/speak Bouncer \"{{i18n:12HeartEvent.5}}\"/move Bouncer 0 1 2/faceDirection farmer 0/jump farmer/faceDirection MrQi 3/pause 800/move Bouncer 0 1 2/playSound doorOpen/warp Sandy 8 12/faceDirection farmer 2/faceDirection MrQi 2/faceDirection Morris 1/speak Sandy \"{{i18n:12HeartEvent.6}}\"/speak MrQi \"{{i18n:12HeartEvent.Q1}}\"/move Sandy 0 -1 0/speak Morris \"{{i18n:12HeartEvent.7}}\"/speak Sandy \"{{i18n:12HeartEvent.8}}\"/pause 400/move MrQi 0 3 2/pause 300/speak MrQi \"{{i18n:12HeartEvent.Q2}}\"/speak Sandy \"{{i18n:12HeartEvent.9}}\"/pause 1000/speak MrQi \"{{i18n:12HeartEvent.Q3}}\"/jump Morris/speak Sandy \"{{i18n:12HeartEvent.10}}\"/pause 500/speak MrQi \"{{i18n:12HeartEvent.Q4}}\"/pause 200/faceDirection Sandy 2/textAboveHead Sandy \"{{i18n:12HeartEvent.T1}}\"/move Sandy 0 2 2/playSound doorClose/warp Sandy -100 -100/pause 100/globalFade/viewport -1000 -1000/pause 1000/changeLocation SandyHouse/warp MrQi -100 -100/warp Bouncer -100 -100/warp Morris -100 -100/pause 400/warp Sandy 8 5/faceDirection Sandy 3/warp farmer 13 5/viewport 6 5/playMusic RosesInTheSand/move farmer -2 0 3/speak Sandy \"{{i18n:12HeartEvent.11}}\"/pause 300/speak Sandy \"{{i18n:12HeartEvent.12}}\"/pause 300/speak Sandy \"{{i18n:12HeartEvent.13}}\"/pause 300/speak Sandy \"{{i18n:12HeartEvent.14}}\"/pause 300/speak Sandy \"{{i18n:12HeartEvent.15}}\"/pause 300/speak Sandy \"{{i18n:12HeartEvent.16}}\"/pause 300/speak Sandy \"{{i18n:12HeartEvent.17}}\"/pause 300/speak Sandy \"{{i18n:12HeartEvent.18}}\"/pause 300/speak Sandy \"{{i18n:12HeartEvent.19}}\"/pause 300/speak Sandy \"{{i18n:12HeartEvent.20}}\"/pause 300/speak Sandy \"{{i18n:12HeartEvent.21}}\"/pause 300/quickQuestion \"{{i18n:12HeartEvent.22}}\"#\"{{i18n:12HeartEvent.A.1}}\"#\"{{i18n:12HeartEvent.A.2}}\"#\"{{i18n:12HeartEvent.A.3}}\"(break)friendship Sandy 150\\pause 300\\faceDirection Sandy 1\\speak Sandy \"{{i18n:12HeartEvent.23.1}}\"(break)friendship Sandy -500\\pause 300\\faceDirection Sandy 1\\speak Sandy \"{{i18n:12HeartEvent.24.1}}\"(break)pause 300\\faceDirection Sandy 1\\speak Sandy \"{{i18n:12HeartEvent.25.1}}\"/pause 300/mail SandyMail/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+              "{{ModId}}_Sandy14": {
+                "Id": "{{ModId}}_Sandy14",
+                "Trigger": "DayStarted",
+                "Condition": "PLAYER_FRIENDSHIP_POINTS current Sandy 3500",
+                "Actions": [
+                  "AddMail Current SandyPrep now"
+                ]
+              }
+            }
+        },
+        { 
+        "Action": "EditData",
+        "Target": "Data/Events/Custom_AdventurerSummit",
+        "Entries": {
+            "NAT_Sandy14/O Sandy/t 2300 2330/w sunny/n SandyPrep": "RosesInTheSand/-100 -100/farmer 33 27 1 Sandy 42 26 1/skippable/viewport 44 25 true/addLantern 735 41 25 3/addLantern 735 37 22 3/addLantern 735 37 30 3/addLantern 735 40 23 3/addLantern 735 41 29 3/faceDirection Sandy 1/faceDirection farmer 1/pause 500/move farmer 3 0 1/emote Sandy 32/pause 500/speak Sandy \"{{i18n:14HeartEvent.0}}\"/pause 500/speak Sandy \"{{i18n:14HeartEvent.1}}\"/emote farmer 32/move farmer 6 0 1//pause 1000/speak Sandy \"{{i18n:14HeartEvent.2}}\"/pause 500/speak Sandy \"{{i18n:14HeartEvent.3}}\"/pause 500/speak Sandy \"{{i18n:14HeartEvent.4}}\"/pause 500/speak Sandy \"{{i18n:14HeartEvent.5}}\"/faceDirection Sandy 2/pause 500/speak Sandy \"{{i18n:14HeartEvent.6}}\"/pause 500/faceDirection Sandy 1/pause 500/speak Sandy \"{{i18n:14HeartEvent.7}}\"/pause 500/emote Sandy 20/emote farmer 20/pause 1000/speak Sandy \"{{i18n:14HeartEvent.8}}\"/pause 500/glow 250 32 130 true/pause 3500/end"
+            }
+        }
+	]
+}

@@ -1,0 +1,81 @@
+{
+  "Changes": [
+    {
+      "LogName": "RSV - Fish Sell Value",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Fields": {
+        "Rafseazz.RSVCP_Ridge_Bluegill": {
+          "Price": "{{Round: {{Query: (40 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Cutthroat_Trout": {
+          "Price": "{{Round: {{Query: (35 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Ridgeside_Bass": {
+          "Price": "{{Round: {{Query: (30 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Skulpin_Fish": {
+          "Price": "{{Round: {{Query: (40 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Mountain_Redbelly_Dace": {
+          "Price": "{{Round: {{Query: (45 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Mountain_Whitefish": {
+          "Price": "{{Round: {{Query: (75 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Caped_Tree_Frog": {
+          "Price": "{{Round: {{Query: (65 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Harvester_Trout": {
+          "Price": "{{Round: {{Query: (80 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Pebble_Back_Crab": {
+          "Price": "{{Round: {{Query: (90 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Bladetail_Sturgeon": {
+          "Price": "{{Round: {{Query: (125 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Cardia_Septal_Jellyfish": {
+          "Price": "{{Round: {{Query: (165 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Crimson_Spiked_Clam": {
+          "Price": "{{Round: {{Query: (180 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Fairytale_Lionfish": {
+          "Price": "{{Round: {{Query: (145 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Fixer_Eel": {
+          "Price": "{{Round: {{Query: (120 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Golden_Rose_Fin": {
+          "Price": "{{Round: {{Query: (110 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Lullaby_Carp": {
+          "Price": "{{Round: {{Query: (105 * (1 {{FishSellValue}})) }} }}"
+        }
+      },
+      "When": {
+        "Fish Sell Value": "Increase by 10%, Increase by 20%, Increase by 30%, Increase by 40%, Increase by 50%, Increase by 60%, Increase by 70%, Increase by 80%, Increase by 90%, Increase by 100%, Increase by 125%, Increase by 150%, Increase by 175%, Increase by 200%, Increase by 225%, Increase by 250%, Increase by 275%, Increase by 300%, Increase by 325%, Increase by 350%, Increase by 375%, Increase by 400%, Increase by 425%, Increase by 450%, Increase by 475%, Increase by 500%, Increase by 525%, Increase by 550%, Increase by 575%, Increase by 600%, Increase by 625%, Increase by 650%, Increase by 675%, Increase by 700%, Increase by 725%, Increase by 750%, Increase by 775%, Increase by 800%, Increase by 825%, Increase by 850%, Increase by 875%, Increase by 900%, Increase by 925%, Increase by 950%, Increase by 975%, Increase by 1000%, Decrease by 10%, Decrease by 20%, Decrease by 30%, Decrease by 40%, Decrease by 50%, Decrease by 60%, Decrease by 70%, Decrease by 80%, Decrease by 90%, Decrease by 99%"
+      }
+    },
+    {
+      "LogName": "RSV - Legendary Fish Sell Value",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Fields": {
+        "Rafseazz.RSVCP_Deep_Ridge_Angler": {
+          "Price": "{{Round: {{Query: (2500 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Sockeye_Salmon": {
+          "Price": "{{Round: {{Query: (1800 * (1 {{FishSellValue}})) }} }}"
+        },
+        "Rafseazz.RSVCP_Waterfall_Snakehead": {
+          "Price": "{{Round: {{Query: (2100 * (1 {{FishSellValue}})) }} }}"
+        }
+      },
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 10%, Increase by 20%, Increase by 30%, Increase by 40%, Increase by 50%, Increase by 60%, Increase by 70%, Increase by 80%, Increase by 90%, Increase by 100%, Increase by 125%, Increase by 150%, Increase by 175%, Increase by 200%, Increase by 225%, Increase by 250%, Increase by 275%, Increase by 300%, Increase by 325%, Increase by 350%, Increase by 375%, Increase by 400%, Increase by 425%, Increase by 450%, Increase by 475%, Increase by 500%, Increase by 525%, Increase by 550%, Increase by 575%, Increase by 600%, Increase by 625%, Increase by 650%, Increase by 675%, Increase by 700%, Increase by 725%, Increase by 750%, Increase by 775%, Increase by 800%, Increase by 825%, Increase by 850%, Increase by 875%, Increase by 900%, Increase by 925%, Increase by 950%, Increase by 975%, Increase by 1000%, Decrease by 10%, Decrease by 20%, Decrease by 30%, Decrease by 40%, Decrease by 50%, Decrease by 60%, Decrease by 70%, Decrease by 80%, Decrease by 90%, Decrease by 99%"
+      }
+    }
+  ]
+}

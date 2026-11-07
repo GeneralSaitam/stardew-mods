@@ -1,0 +1,257 @@
+{ 
+  "Changes": [
+    
+  {   "LogName": "Movie Theatre Default",
+      "Action": "EditData", 
+      "Target": "Data/MoviesReactions",	 
+          "Entries": {
+  //Taro Movie Tastes          
+              "CC_RangerTaro":   {
+                    "NPCName": "Ranger Taro",
+                    "Reactions": [
+					 {
+        "Tag": "seen_love",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": null,
+            "Text": "I think I've seen that one.#$b#Oh, I still want to go!$4#$b#See you there, @."
+          },
+          "DuringMovie": {
+			  "Text": "emote Taro 24"
+		  },
+          "AfterMovie": {
+			  "Script": "Going to the movie theater is a big luxury."
+        },
+        "Id": "reaction_10"
+      },
+					 },
+      {
+        "Tag": "seen_like",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": null,
+            "Text": "Okay, I remember liking this one."
+          },
+		"DuringMovie": {
+			"Script": "emote Taro 24"
+		},
+         "AfterMovie": {
+			  "Script": "It was so dark and quiet in there.$2"
+        },
+        "Id": "reaction_11"
+      },
+	  },
+      {
+        "Tag": "seen_dislike",
+        "Response": "dislike",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": null,
+            "Text": "I'm not sure why you invited me to see this again.$2"
+          },
+    "DuringMovie": {
+			"Script": "emote Taro 24"
+		},
+        "AfterMovie": {
+			  "Script": "The theater is a place of culture, hmm?"
+        },
+        
+        "Id": "reaction_12"
+      },
+			  },
+                      {   "Tag": "spring_movie_0",
+                          "Response": "love",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {  
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "How exciting, I've never seen the Ferngill version."
+                                          },
+                                "DuringMovie": {
+                                      "ResponsePoint": "sprout_leave",
+                                      "Script": "/message \"(Ranger Taro has her eyes glued to the screen.)\"",
+                                      "Text": "Ahh... the voice actors did really well with this scene."
+                                          },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I was like that little sapling once...#$b#Ah, that's the power of a good kid's movie.$1"
+                                          }
+                               },
+                       "ID": "reaction_1"
+                         },
+		  
+						             {   "Tag": "spring_movie_1",
+                          "Response": "love",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {  
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "This looks really good!"
+                                          },
+                                "DuringMovie": {
+                                      "ResponsePoint": "spring1_6",
+                                      "Script": "/emote Taro 20",
+                                      "Text": "Yes...! Beautiful...!"
+                                          },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "It makes me a little nervous that Stardew Valley was featured.$2#$b#Oh well, my old bosses don't watch foreign films."
+                                          }
+                               },
+                       "ID": "reaction_2"
+                         },
+  
+                      {   "Tag": "summer_movie_1",
+                          "Response": "dislike",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I've seen this 'Wumpus' character around before."
+                                      },
+                                "DuringMovie": {
+                                      "ResponsePoint": "summer1_5",
+                                      "Script": "/message \"(Ranger Taro is shaking her head.)\"",
+                                      "Text": "Ugh... how depressing."
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I feel like I missed something there.$2#$b#Oh, it was a... comedy?$2"
+                                          }
+                                    },
+                       "ID": "reaction_3"
+                         },
+
+									
+							{   "Tag": "summer_movie_0",
+                          "Response": "like",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "Westerns are popular back home."
+                                      },
+                                "DuringMovie": {
+                                      "ResponsePoint": "PK_villain",
+                                      "Script": "",
+                                      "Text": "Those cliffs! I wonder where they filmed this."
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "Oh, it's based on a video game?#$b#How does that work?"
+                                          }
+                                     },
+                       "ID": "reaction_4"
+                         },
+                     
+                      {   "Tag": "fall_movie_0",
+                          "Response": "dislike",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I didn't really understand the description, so I'm not sure what to do expect.$s"
+                                          },
+                                "DuringMovie": {
+                                      "ResponsePoint": "fall0_5",
+                                      "Script": "/emote Taro 8",
+                                      "Text": "Who was that character?"
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "It was clearly an art project.#$b#I hope their next film has deeper substance."
+                                    }
+                                },
+                          "ID": "reaction_5"
+                                    },
+						{   "Tag": "fall_movie_1",
+                          "Response": "love",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I heard this was 'found footage.'#$b#But who found it?$2"
+                                          },
+                                "DuringMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "/textAboveHead \"Ha ha!\"",
+                                      "Text": ""
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "What a fun recording.#$b#Just a couple kids wandering through the woods, playing around.."
+                                    }
+                                },
+                          "ID": "reaction_6"
+                                    },
+                      {   "Tag": "winter_movie_1",
+                          "Response": "love",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "Old movies like this were all we could watch growing up."
+                                      },
+                                "DuringMovie": {
+                                      "ResponsePoint": "zuzucityexpress_mind_heart",
+                                      "Script": "emote Taro 60",
+                                      "Text": "I feel for you..."
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I got pulled into it.#$b#I wish I could tell her 'follow your heart!'$3#$b#But also, 'don't trust that man, he'll be different once you reach Zuzu!'$3#$b#'He'll say he doesn't have money for dinner...!'$3"
+                                      }
+                                },
+                            "ID": "reaction_7"
+                                  },
+							{   "Tag": "winter_movie_0",
+                          "Response": "like",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "I'm curious about this movie from a cultural standpoint."
+                                      },
+                                "DuringMovie": {
+                                      "ResponsePoint": "winter0_8",
+                                      "Script": "",
+                                      "Text": "mysterious..."
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "Holiday movies are more interesting when they're foreign to your culture.#$b#I've never heard of a Stardrop fruit before."
+                                      }
+                                },
+                            "ID": "reaction_8"
+                                  }
+                      
+                      ],
+               },
+		  }
+  }
+			    ]
+}

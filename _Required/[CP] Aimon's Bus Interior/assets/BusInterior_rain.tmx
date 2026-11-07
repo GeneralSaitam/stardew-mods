@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="20" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="22" nextobjectid="34">
+ <properties>
+  <property name="AmbientLight" value="120 120 90"/>
+  <property name="LocationContext" value="Default"/>
+  <property name="WindowLight" value="2 3 4 5 3 4 6 3 4 8 3 4 9 3 4 11 3 4 12 3 4 13 3 4 14 3 4 15 3 4 5 8 4 6 8 4 9 8 4 10 8 4 11 8 4 14 8 4"/>
+ </properties>
+ <tileset firstgid="1" name="z_aimon_businterior" tilewidth="16" tileheight="16" tilecount="570" columns="19">
+  <image source="z_aimon_businterior.png" width="304" height="480"/>
+  <tile id="418">
+   <animation>
+    <frame tileid="418" duration="150"/>
+    <frame tileid="420" duration="150"/>
+    <frame tileid="422" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="419">
+   <animation>
+    <frame tileid="419" duration="150"/>
+    <frame tileid="421" duration="150"/>
+    <frame tileid="423" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="424">
+   <animation>
+    <frame tileid="424" duration="150"/>
+    <frame tileid="426" duration="150"/>
+    <frame tileid="428" duration="150"/>
+    <frame tileid="430" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="425">
+   <animation>
+    <frame tileid="425" duration="150"/>
+    <frame tileid="427" duration="150"/>
+    <frame tileid="429" duration="150"/>
+    <frame tileid="430" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="426">
+   <animation>
+    <frame tileid="426" duration="170"/>
+    <frame tileid="428" duration="170"/>
+    <frame tileid="430" duration="170"/>
+    <frame tileid="424" duration="170"/>
+   </animation>
+  </tile>
+  <tile id="427">
+   <animation>
+    <frame tileid="427" duration="170"/>
+    <frame tileid="429" duration="170"/>
+    <frame tileid="431" duration="170"/>
+    <frame tileid="431" duration="170"/>
+   </animation>
+  </tile>
+  <tile id="437">
+   <animation>
+    <frame tileid="437" duration="150"/>
+    <frame tileid="439" duration="150"/>
+    <frame tileid="441" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="438">
+   <animation>
+    <frame tileid="438" duration="150"/>
+    <frame tileid="440" duration="150"/>
+    <frame tileid="442" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="443">
+   <animation>
+    <frame tileid="443" duration="150"/>
+    <frame tileid="445" duration="150"/>
+    <frame tileid="447" duration="150"/>
+    <frame tileid="449" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="444">
+   <animation>
+    <frame tileid="444" duration="150"/>
+    <frame tileid="446" duration="150"/>
+    <frame tileid="448" duration="150"/>
+    <frame tileid="430" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="445">
+   <animation>
+    <frame tileid="445" duration="170"/>
+    <frame tileid="447" duration="170"/>
+    <frame tileid="449" duration="170"/>
+    <frame tileid="443" duration="170"/>
+   </animation>
+  </tile>
+  <tile id="446">
+   <animation>
+    <frame tileid="446" duration="170"/>
+    <frame tileid="448" duration="170"/>
+    <frame tileid="450" duration="170"/>
+    <frame tileid="444" duration="170"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="18" name="Back2" width="20" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,425,426,0,0,0,
+0,0,419,420,425,426,419,419,426,425,426,425,426,420,419,444,445,0,0,0,
+0,0,438,439,444,445,425,426,445,444,445,444,445,425,426,439,0,0,0,0,
+0,0,0,0,0,0,444,445,0,0,0,0,0,444,445,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="19" name="Back3" width="20" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,427,428,0,419,420,0,419,420,0,0,0,0,
+0,419,420,0,419,420,427,428,427,428,427,428,439,427,428,439,0,0,0,0,
+0,438,439,0,438,439,446,447,446,447,446,447,419,446,447,0,0,0,0,0,
+0,0,0,0,0,0,0,438,446,447,438,439,438,439,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back" visible="0">
+  <object id="1" name="TileData" x="16" y="96" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="16" y="64" width="16" height="32">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="32" y="64" width="224" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="16" y="112" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="48" y="96" width="208" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="48" y="112" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="24" name="TileData" x="272" y="64" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="25" name="TileData" x="272" y="48" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="26" name="TileData" x="256" y="48" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="27" name="TileData" x="240" y="48" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="28" name="TileData" x="272" y="80" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="30" name="TileData" x="272" y="96" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="31" name="TileData" x="272" y="112" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="32" name="TileData" x="256" y="112" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+  <object id="33" name="TileData" x="240" y="112" width="16" height="16">
+   <properties>
+    <property name="Passable" value="t"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Buildings"/>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="9" name="Paths"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

@@ -1,0 +1,49 @@
+{
+  "Changes": [
+    {
+      "LogName": "Shannon Schedule Strings",
+      "Action": "EditData",
+      "Target": "Strings/schedules/{{Shannon}}",
+      "Entries": {
+        "shower": "{{i18n: Shannon_shower}}",
+        "coffee": "{{i18n: Shannon_coffee}}",
+        "notes": "{{i18n: Shannon_notes}}",
+        "beachtowel": "{{i18n: Shannon_beachtowel}}",
+        "arcade": "{{i18n: Shannon_arcade}}",
+        "workout": "{{i18n: Shannon_workout}}",
+        "sit_tree": "{{i18n: Shannon_sit_tree}}",
+        "sit_outside_married": "{{i18n: Shannon_sit_outside_married}}",
+        "sit_inside_married": "{{i18n: Shannon_sit_inside_married}}",
+        "videogames": "{{i18n: Shannon_videogames}}",
+        "barleft": "{{i18n: Shannon_barleft}}",
+        "visiting_hours": "{{i18n: Shannon_visiting_hours}}",
+        "nightmarket": "{{i18n: Shannon_nightmarket}}",
+        "pool":"{{i18n: Shannon_pool}}",
+        "communitydayboard": "{{i18n: Shannon_communitydayboard}}",
+        "communitydaycraft": "{{i18n: Shannon_communitydaycraft}}",
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Strings/schedules/{{Shannon}}",
+      "Entries": {
+        "beachtowel": "{{i18n: Shannon_beachtowel_4}}",
+      },
+      "When": {
+        "Hearts:{{Shannon}}": "{{Range: 4, 14}}",
+      },
+    },
+    {
+      "LogName": "Shannon Alternate Schedule Strings",
+      "Action": "EditData",
+      "Target": "Strings/schedules/{{Shannon}}",
+      "Entries": {
+        "shower": "{{i18n: Shannon_shower_rel}}",
+        "beachtowel": "{{i18n: Shannon_beachtowel_rel}}",
+      },
+      "When": {
+        "Relationship:{{Shannon}}": "Dating, Engaged, Married"
+      },
+    },
+  ]
+}

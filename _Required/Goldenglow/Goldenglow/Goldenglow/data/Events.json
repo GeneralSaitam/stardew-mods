@@ -1,0 +1,143 @@
+{
+    "Changes": [
+            //(0(向上)、1(向右)、2(向下)和 3(向左)
+{
+      "LogName": "4心事件酒吧",
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "Entries": {
+	    "230201073/A cc_Bus/f Goldenglow 1000/p Goldenglow": "continue/9 18/farmer -100 -100 0 Gus 12 18 2 Goldenglow 14 17 0 Pam 7 18 1/skippable/pause 1000/speak Pam \"{{i18n:2302010731}}\"/pause 500/faceDirection Goldenglow 3/emote Goldenglow 28/move Goldenglow -5 0 2/move Goldenglow 0 1 3/speak Goldenglow \"{{i18n:2302010732}}\"/pause 500/speak Goldenglow \"{{i18n:2302010733}}\"/pause 500/faceDirection Gus 3/speak Gus \"{{i18n:2302010734}}\"/pause 500/emote Pam 28/pause 500/speak Pam \"{{i18n:2302010735}}\"/pause 500/speak Pam \"{{i18n:2302010736}}\"/pause 500/emote Goldenglow 40/pause 500/speak Goldenglow \"{{i18n:2302010737}}\"/pause 250/speak Goldenglow \"{{i18n:2302010738}}\"/pause 500/emote Gus 40/emote Pam 28/pause 500/speak Gus \"{{i18n:2302010739}}\"/pause 500/warp farmer 14 24/move farmer 0 -3 3/move farmer -3 0 0/move farmer 0 -1 0/faceDirection Gus 2/pause 500/speak Gus \"{{i18n:23020107310}}\"/pause 250/question fork0 \"#{{i18n:23020107311}}\"/speak Gus \"{{i18n:23020107312}}\"/emote Gus 40/pause 1000/emote farmer 28/pause 500/question fork0 \"#{{i18n:23020107313}}#{{i18n:23020107314}}#{{i18n:23020107315}}\"/fork answerPam/pause 500/emote Pam 28/pause 500/speak Pam \"{{i18n:23020107316}}\"/pause 500/faceDirection Goldenglow 2/pause 200/emote Goldenglow 32/pause 500/end",
+      "answerPam":"pause 100/speak Pam \"{{i18n:23020107317}}\"/pause 500/faceDirection Goldenglow 2/pause 200/emote Goldenglow 12/pause 500/end"
+    }///p Goldenglow
+  },
+    {
+      "LogName": "二心事件博物馆",
+      "Action": "EditData",
+      "Target": "Data/Events/ArchaeologyHouse",
+      "Entries": {
+	    "230201074/f Goldenglow 500": "none/11 13/farmer 8 14 1 Goldenglow 11 9 2/skippable/animate Goldenglow false true 50 21/pause 1000/move farmer 3 0 1/animate Goldenglow false true 50 0/pause 500/speak Goldenglow \"{{i18n:2302010741}}\"/pause 500/faceDirection farmer 0/emote farmer 16/move farmer 0 -3 0/pause 1000/emote farmer 8/speak Goldenglow \"{{i18n:2302010742}}\"/pause 500/speak Goldenglow \"{{i18n:2302010743}}\"/pause 500/speak Goldenglow \"{{i18n:2302010744}}\"/pause 500/speak Goldenglow \"$q 1 null#{{i18n:2302010745}}#$r 1 0 event_archaeology_1#{{i18n:2302010746}}#$r 1 0 event_archaeology_2#{{i18n:2302010747}}#$r 2 0 event_archaeology_2#{{i18n:2302010748}}\"/pause 500/speak Goldenglow \"{{i18n:2302010749}}\"/pause 500/emote farmer 28/pause 1000/speak Goldenglow \"{{i18n:23020107410}}\"/pause 500/emote farmer 40/pause 1000/speak Goldenglow \"{{i18n:23020107411}}\"/pause 1000/speak Goldenglow \"{{i18n:23020107412}}\"/question fork1 \"#{{i18n:23020107413}}#{{i18n:23020107414}}\"/fork asnwersixdian/pause 500/speak Goldenglow \"{{i18n:23020107415}}\"/speak Goldenglow \"{{i18n:23020107416}}\"/pause 500/emote Goldenglow 32/pause 1000/end",
+      "asnwersixdian":"pause 100/speak Goldenglow \"{{i18n:23020107417}}\"/pause 500/emote Goldenglow 12/pause 1000/speak Goldenglow \"{{i18n:23020107418}}\"/pause 1000/end"
+    }
+  },
+  {
+    "LogName": "14心前置",
+    "Action": "EditData",
+    "Target": "Data/Events/FarmHouse",
+    "Entries": {
+    "230201084/f Goldenglow 3500/t 610 1700":"none/51 24/farmer 50 24 1 Goldenglow 53 24 3/skippable/pause 300/move farmer 2 0 1/pause 400/jump Goldenglow/pause 250/emote Goldenglow 16/pause 450/speak Goldenglow \"{{i18n:2302010841}}\"/pause 200/speak Goldenglow \"{{i18n:2302010842}}\"/pause 200/emote Goldenglow 60/speak Goldenglow \"{{i18n:2302010843}}\"/pause 400/emote farmer 40/pause 500/end/"
+    }
+  },
+  {
+    "LogName": "事件海边",
+    "Action": "EditData",
+    "Target": "Data/Events/Beach",
+    "Entries": {
+    "230201075/f Goldenglow 2000/D Goldenglow/t 2000 2400/w sunny/d Mon Fri Sat/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest/F": "continue/87 40/farmer 87 36 2 Goldenglow 88 40 2/skippable/pause 1000/move farmer 0 4 2/pause 1000/emote farmer 8/pause 500/speak Goldenglow \"$q 1 null#......#$r 1 0 event_beach_1#{{i18n:2302010751}}#$r 1 0 event_beach_1#{{i18n:2302010752}}\"/pause 500/emote Goldenglow 28/pause 500/speak Goldenglow \"{{i18n:2302010753}}\"/pause 500/speak Goldenglow \"{{i18n:2302010754}}\"/pause 500/emote farmer 40/pause 500/speak Goldenglow \"{{i18n:2302010755}}\"/pause 500/speak Goldenglow \"{{i18n:2302010756}}\"/pause 500/speak Goldenglow \"{{i18n:2302010757}}\"/pause 500/emote Goldenglow 40/pause 500/speak Goldenglow \"{{i18n:2302010758}}\"/pause 500/speak Goldenglow \"{{i18n:2302010759}}\"/pause 500/emote farmer 40/pause 500/speak Goldenglow \"{{i18n:23020107510}}\"/pause 500/emote Goldenglow 28/pause 500/speak Goldenglow \"{{i18n:23020107511}}\"/pause 500/speak Goldenglow \"{{i18n:23020107512}}\"/question fork1 \"#{{i18n:23020107513}}#{{i18n:23020107514}}\"/fork asnwersixdian1/pause 500/speak Goldenglow \"{{i18n:23020107515}}\"/pause 500/emote Goldenglow 20/pause 500/emote farmer 32/pause 500/speak Goldenglow \"{{i18n:23020107516}}\"/pause 500/speak Goldenglow \"{{i18n:23020107517}}\"/pause 500/emote Goldenglow 32/pause 1000/end",
+    "asnwersixdian1":"pause 100/speak Goldenglow \"{{i18n:23020107518}}\"/pause 500/emote Goldenglow 24/pause 1000/speak Goldenglow \"{{i18n:23020107519}}\"/pause 1000/end",
+    "230201083/f Goldenglow 3500/e 230201084/t 2000 2400/w sunny/G !IS_PASSIVE_FESTIVAL_TODAY SquidFest/F": "continue/87 40/farmer 87 40 2 Goldenglow 88 40 2/skippable/positionOffset Goldenglow -16 0/pause 1000/emote farmer 40/pause 400/emote Goldenglow 32/pause 400/speak Goldenglow \"{{i18n:2302010831}}\"/pause 400/speak Goldenglow \"{{i18n:2302010832}}\"/pause 300/emote farmer 8/pause 400/speak Goldenglow \"{{i18n:2302010833}}\"/pause 400/speak Goldenglow \"{{i18n:2302010834}}\"/pause 200/emote Goldenglow 40/pause 300/speak Goldenglow \"......$34\"/globalFade/viewport -1000 -1000/speak Goldenglow \"{{i18n:2302010835}}\"/pause 700/end"
+
+  }
+},
+/*
+{
+  "LogName": "6心事件矿洞湖",
+  "Action": "EditData",
+  "Target": "Data/Events/Mountain",
+  "Entries": {
+  //"230201076/f Goldenglow 1500/t 1000 1800/w sunny/d Mon Fri Sat/F": "none/57 33/farmer 50 34 1 Goldenglow 57 33 1/skippable/pause 1000/move farmer 4 0 1/pause 250/faceDirection Goldenglow 3/pause 250/speak Goldenglow \"{{i18n:2302010761}}\"/pause 200/speak Goldenglow \"$q 1 null#......#$r 1 0 event_mountain_1#{{i18n:2302010762}}#$r 1 0 event_mountain_2#{{i18n:2302010763}}#$r 1 0 event_mountain_3#{{i18n:2302010764}}\"/pause 150/move farmer 3 0 1/pause 250/faceDirection Goldenglow 1/pause 300/emote farmer 56/pause 500/emote Goldenglow 40/pause 500/speak Goldenglow \"{{i18n:2302010765}}\"/pause 500/speak Goldenglow \"{{i18n:2302010766}}\"/pause 500/emote farmer 40/pause 500/speak Goldenglow \"$q 1 null#{{i18n:2302010767}}#$r 1 0 event_mountain_4#{{i18n:2302010768}}#$r 1 0 event_mountain_5#{{i18n:2302010769}}\"/pause 500/speak Goldenglow \"{{i18n:23020107610}}\"/pause 500/speak Goldenglow \"{{i18n:23020107611}}\"/pause 500/emote farmer 40/pause 500/speak Goldenglow \"{{i18n:23020107612}}\"/pause 500/question fork1 \"#{{i18n:23020107613}}#{{i18n:23020107614}}\"/fork asnwerbucuo/pause 500/speak Goldenglow \"{{i18n:23020107615}}\"/pause 500/speak Goldenglow \"{{i18n:23020107616}}\"/pause 500/emote Goldenglow 56/pause 500/speak Goldenglow \"{{i18n:23020107617}}\"/pause 500/emote farmer 32/pause 500/speak Goldenglow \"{{i18n:23020107618}}\"/pause 500/emote Goldenglow 32/pause 1000/end",
+  //"asnwerbucuo":"pause 100/speak Goldenglow \"{{i18n:23020107619}}\"/pause 500/emote Goldenglow 56/pause 500/speak Goldenglow \"{{i18n:23020107620}}\"/pause 500/emote farmer 32/pause 500/speak Goldenglow \"{{i18n:23020107621}}\"/pause 500/emote Goldenglow 32/pause 1000/end"
+}
+},
+*/
+{
+  "LogName": "7,9心事件澄闪房间",
+  "Action": "EditData",
+  "Target": "Data/Events/HaleyHouse",
+  "Entries": {
+  "230201077/f Goldenglow 1500/t 800 1800/F": "none/27 10/farmer 27 12 0 Goldenglow 29 7 3/skippable/animate Goldenglow false true 50 21/pause 1000/move farmer 0 -2 3/pause 500/emote farmer 8/pause 250/animate Goldenglow false true 50 0/pause 250/emote Goldenglow 8/move Goldenglow 0 1 3/move Goldenglow -3 0 2/move Goldenglow 0 1 2/pause 250/speak Goldenglow \"{{i18n:2302010771}}\"/pause 250/emote farmer 40/pause 250/message \"{{i18n:scissors}}\"/pause 250/emote Goldenglow 8/pause 250/speak Goldenglow \"{{i18n:2302010772}}\"/pause 250/emote Goldenglow 40/pause 250/speak Goldenglow \"{{i18n:2302010773}}\"/pause 250/emote farmer 40/pause 250/emote farmer 32/pause 250/question fork0 \"#{{i18n:2302010774}}\"/pause 250/pause 250/speak Goldenglow \"{{i18n:2302010775}}\"/pause 250/emote Goldenglow 40/pause 250/emote farmer 8/pause 250/speak Goldenglow \"{{i18n:2302010776}}\"/pause 100/speak Goldenglow \"{{i18n:2302010777}}\"/pause 500/emote farmer 40/pause 200/emote Goldenglow 40/speak Goldenglow \"{{i18n:2302010778}}\"/pause 200/speak Goldenglow \"{{i18n:2302010779}}\"/pause 200/speak Goldenglow \"{{i18n:23020107710}}\"/pause 200/speak Goldenglow \"{{i18n:23020107711}}\"/pause 200/emote Goldenglow 56/emote farmer 32/pause 250/end",
+  
+  //"230201079/f Goldenglow 2250/F": "none/-1000 -1000/farmer 29 7 1 Goldenglow 30 7 3/skippable/pause 500/message \"......\"/pause 500/message \"{{i18n:memory}}\"/pause 350/viewport 29 7 true/pause 1000/speak Goldenglow \"{{i18n:2302010791}}\"/pause 200/speak Goldenglow \"{{i18n:2302010792}}\"/pause 200/speak Goldenglow \"{{i18n:2302010793}}\"/pause 200/speak Goldenglow \"$q 1 null#......#$r 1 0 event_goldenglowroom_791#{{i18n:2302010794}}#$r 1 0 event_goldenglowroom_792#{{i18n:2302010795}}#$r 1 0 event_goldenglowroom_793#{{i18n:2302010796}}#$r 1 0 event_goldenglowroom_794#{{i18n:2302010797}}#$r 1 0 event_goldenglowroom_795#{{i18n:2302010798}}\"/pause 200/speak Goldenglow \"{{i18n:2302010799}}\"/pause 200/speak Goldenglow \"@...$17\"/speak Goldenglow \"{{i18n:23020107910}}\"/pause 200/question fork0 \"#{{i18n:23020107914}}#{{i18n:23020107912}}#{{i18n:23020107913}}#{{i18n:23020107911}}\"/fork kiss/pause 100/speak Goldenglow \"......$18\"/pause 200/globalFade/viewport -1000 -1000/end",
+  //"kiss":"pause 100/speak Goldenglow \"{{i18n:23020107915}}\"/pause 200/emote Goldenglow 40/pause 500/speak Goldenglow \"......$22\"/pause 300/showFrame Goldenglow 35/showFrame 101/specificTemporarySprite heart 30 6/pause 2500/globalFade/viewport -1000 -1000/end"
+
+}
+},
+
+{
+  "LogName": "5心事件森林",
+  "Action": "EditData",
+  "Target": "Data/Events/Forest",
+  "Entries": {
+  "230201078/f Goldenglow 1250/t 800 1800/d Mon Fri Sat/F": "continue/4 7/farmer 7 9 3 Goldenglow 4 6 3/skippable/pause 1000/move farmer -3 0 0/pause 250/faceDirection Goldenglow 2/pause 250/emote Goldenglow 16/pause 100/speak Goldenglow \"{{i18n:2302010781}}\"/pause 250/emote farmer 32/pause 250/move farmer 0 -2 3/pause 250/emote farmer 8/pause 250/faceDirection Goldenglow 3/pause 100/speak Goldenglow \"{{i18n:b2302010781}}\"/pause 250/question fork0 \"#{{i18n:2302010782}}#{{i18n:2302010783}}\"/fork asnwerNo/pause 200/speak Goldenglow \"{{i18n:2302010784}}\"/pause 250/speak Goldenglow \"{{i18n:2302010785}}\"/pause 250/speak Goldenglow \"{{i18n:2302010786}}\"/pause 250/question fork0 \"#{{i18n:2302010788}}#{{i18n:2302010787}}\"/fork asnwerNo2/pause 200/speak Goldenglow \"{{i18n:2302010789}}\"/pause 200/emote Goldenglow 32/pause 1000/globalFade/viewport -1000 -1000/message \"......\"/pause 300/message \"{{i18n:really}}\"/pause 1000/end",
+    "asnwerNo":"pause 100/speak Goldenglow \"{{i18n:23020107810}}\"/pause 250/question fork0 \"#{{i18n:2302010787}}#{{i18n:2302010788}}\"/fork asnwerNo2/pause 100/speak Goldenglow \"{{i18n:2302010789}}\"/pause 200/emote Goldenglow 32/pause 1000/globalFade/viewport -1000 -1000/message \"......\"/pause 300/message \"{{i18n:really}}\"/pause 1000/end",
+    "asnwerNo2":"pause 100/speak Goldenglow \"{{i18n:Wu}}\"/pause 200/question fork0 \"#{{i18n:23020107811}}#{{i18n:23020107812}}\"/fork asnwerNo3/speak Goldenglow \"{{i18n:2302010789}}\"/pause 200/emote Goldenglow 32/pause 1000/globalFade/viewport -1000 -1000/message \"......\"/pause 300/message \"{{i18n:really}}\"/pause 1000/end",
+    "asnwerNo3":"pause 100/speak Goldenglow \"{{i18n:23020107813}}\"/pause 200/emote Goldenglow 28/pause 1000/end"
+}
+},
+{
+  "LogName": "10心事件秘密森林",
+  "Action": "EditData",
+  "Target": "Data/Events/Woods",
+  "Entries": {
+  "230201081/n Goldenglow10heart/w sunny/f Goldenglow 2500/t 600 1800/F": "playful/27 15/farmer 34 15 3 Goldenglow 34 14 3/skippable/pause 250/move Goldenglow -3 0 3 farmer -3 0 3/pause 1000/jump Goldenglow/pause 450/emote Goldenglow 16/speed Goldenglow 3/move Goldenglow -2 0 3/pause 250/faceDirection Goldenglow 2/pause 250/faceDirection Goldenglow 3/pause 250/faceDirection Goldenglow 0/pause 250/faceDirection Goldenglow 1/pause 250/emote Goldenglow 20/pause 400/emote farmer 32/speak Goldenglow \"{{i18n:2302010811}}\"/pause 200/speak Goldenglow \"$q 1 null#...#$r 1 0 event_Woods_1#{{i18n:2302010812}}#$r 1 0 event_Woods_2#{{i18n:2302010813}}\"/pause 200/emote farmer 40/pause 400/speak Goldenglow \"{{i18n:2302010814}}\"/faceDirection Goldenglow 0/move Goldenglow 0 -3 3/move Goldenglow -1 0 3/pause 150/emote Goldenglow 16/globalFade/viewport -1000 -1000/message \"{{i18n:AfterTime}}\"/playMusic Cloth/warp farmer 11 18/warp Goldenglow 12 18/faceDirection Goldenglow 2/faceDirection farmer 2/positionOffset Goldenglow -12 -16/viewport 12 18 true/pause 1000/emote Goldenglow 40/pause 500/speak Goldenglow \"{{i18n:2302010815}}\"/pause 200/speak Goldenglow \"{{i18n:2302010816}}\"/pause 200/emote Goldenglow 60/pause 400/speak Goldenglow \"{{i18n:2302010817}}\"/pause 200/emote farmer 40/pause 400/speak Goldenglow \"@……$43\"/pause 200/faceDirection Goldenglow 3/pause 200/emote Goldenglow 40/pause 200/faceDirection farmer 1/pause 200/speak Goldenglow \"{{i18n:2302010817T}}\"/pause 200/speak Goldenglow \"{{i18n:2302010818}}\"/pause 200/emote Goldenglow 40/pause 200/speak Goldenglow \"{{i18n:2302010819}}\"/pause 200/question fork0 \"#{{i18n:23020108110}}#{{i18n:23020108112}}\"/fork answerNo/pause 100/pause 200/showFrame Goldenglow 35/showFrame 101/specificTemporarySprite heart 12 17/speak Goldenglow \"@......$35\"/pause 1500/globalFade/viewport -1000 -1000/end",
+  "answerNo":"pause 100/speak Goldenglow \"{{i18n:23020108113}}\"/pause 250/faceDirection Goldenglow 1/speak Goldenglow \"......$18\"/pause 200/emote Goldenglow 28/pause 500/speed Goldenglow 2/move Goldenglow 3 0 1/pause 1000/faceDirection Goldenglow 3/pause 200/speak Goldenglow \"......$17\"/faceDirection farmer 2/pause 400/faceDirection Goldenglow 1/pause 400/speak Goldenglow \"......$32\"/pause 200/speed Goldenglow 4/move Goldenglow 15 0 1 true/pause 800/emote farmer 40/pause 700/end"
+        }
+},
+{
+  "LogName": "8心送信标",
+  "Action": "EditData",
+  "Target": "Data/Events/Farm",
+  "Entries": {
+  "230201091/w sunny/f Goldenglow 2000/t 600 1800/F": "continue/64 15/farmer 64 16 2 Goldenglow 64 18 0/pause 1500/speak Goldenglow \"{{i18n:23020108121}}\"/pause 500/pause 400/itemAboveHead GoldenglowTrinket/pause 3300/pause 800/awardFestivalPrize GoldenglowTrinket/pause 700/speak Goldenglow \"{{i18n:23020108122}}\"/pause 1000/globalFade/viewport -1000 -1000/message \"{{i18n:23020108123}}\"/pause 500/playSound Goldenglow_BeaconFade/pause 450/playSound Goldenglow_NormalAttack/pause 1200/playSound Goldenglow_BeaconFade/pause 450/playSound Goldenglow_NormalAttack/pause 1200/playSound Goldenglow_BeaconFade/pause 450/playSound Goldenglow_NormalAttack/pause 250/playSound Goldenglow_Boom/pause 800/viewport 64 15 true/pause 1000/speak Goldenglow \"{{i18n:23020108124}}\"/pause 250/emote farmer 16/pause 400/emote Goldenglow 32/pause 300/speak Goldenglow \"{{i18n:23020108125}}\"/pause 500/pause 400/itemAboveHead GoldenglowReadme/pause 3300/pause 800/awardFestivalPrize GoldenglowReadme/pause 700/speak Goldenglow \"{{i18n:230201081251}}\"/pause 300/speak Goldenglow \"{{i18n:23020108126}}\"/pause 250/emote Goldenglow 40/pause 1000/speak Goldenglow \"{{i18n:230201081261}}\"/pause 250/playSound getNewSpecialItem/addCraftingRecipe GoldenglowBeaconEnhancementUnit11/addCraftingRecipe GoldenglowBeaconEnhancementUnit22/addCraftingRecipe GoldenglowBeaconEnhancementUnit33/pause 300/message \"{{i18n:230201081271}}\"/pause 800/emote farmer 32/pause 800/speak Goldenglow \"{{i18n:23020108127}}\"/pause 500/end"
+        }
+},
+
+  {
+    "LogName": "发信件",
+    "Action": "EditData",
+    "Target": "Data/Events/FarmHouse",
+    "Entries": {
+    "230201071/f Goldenglow 1000/x Goldenglow4heart": false
+    }
+  },
+  {
+    "LogName": "发信件2",
+    "Action": "EditData",
+    "Target": "Data/Events/FarmHouse",
+    "Entries": {
+    "230201072/f Goldenglow 2250/x Goldenglow9heart": false
+    }
+  },
+  {
+    "LogName": "发信件3",
+    "Action": "EditData",
+    "Target": "Data/Events/FarmHouse",
+    "Entries": {
+    "230201080/f Goldenglow 2500/x Goldenglow10heart": false
+    }
+  },
+  {
+    "LogName": "信件",
+    "Action": "EditData",
+    "Target": "Data/Mail",
+    "Entries": {
+      "Goldenglow4heart": "{{i18n:Goldenglow4heart}}"
+    }
+  },
+  {
+    "LogName": "信件2",
+    "Action": "EditData",
+    "Target": "Data/Mail",
+    "Entries": {
+      "Goldenglow9heart": "{{i18n:Goldenglow9heart}}"
+    }
+  },
+  {
+    "LogName": "信件3",
+    "Action": "EditData",
+    "Target": "Data/Mail",
+    "Entries": {
+      "Goldenglow10heart": "{{i18n:Goldenglow10heart}}"
+    }
+  }
+]
+}

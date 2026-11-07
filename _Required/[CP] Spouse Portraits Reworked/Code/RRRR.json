@@ -1,0 +1,44 @@
+{
+    "Changes": [
+    {
+        "Action": "EditImage",
+        "Target": "RRRR/Wizard_Painting",
+        "FromFile": "Assets/{{PortraitRecolor}}/RRRR/Wizard{{RRRRVariation}}.png",
+        "PatchMode": "Replace",
+        "Priority": "Default+10",
+        "When": 
+            {
+                "RRRRPortrait": "Yes",
+            }
+    },
+
+    //Frame
+    {
+        "Action": "EditImage",
+        "Target": "RRRR/Wizard_Painting",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "0", "Y": "0", "Width": 32, "Height": 32},
+        "Priority": "Late",
+        "When": {
+            "IsFrameSeasonal": "No",
+            "Query:'{{Frame}}' = 'Unique'": false,
+            "RRRRPortrait": "Yes",
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "RRRR/Wizard_Painting",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "0", "Y": "0", "Width": 32, "Height": 32},
+        "Priority": "Late",
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+            "RRRRPortrait": "Yes",
+        },
+        "PatchMode": "Overlay",
+    },
+]
+}

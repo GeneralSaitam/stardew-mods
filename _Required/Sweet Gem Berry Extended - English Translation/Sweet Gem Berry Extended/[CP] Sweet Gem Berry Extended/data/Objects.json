@@ -1,0 +1,147 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Sprite for Sweet Gem Tea",
+      "Action": "Load",
+      "Target": "Mods\\skeleton.MoreExtendCP\\sweet_gem_tea",
+      "FromFile": "assets/Sweet_Gem_Tea.png"
+    },
+    {
+      "LogName": "Load Sprite for Gem Coffee",
+      "Action": "Load",
+      "Target": "Mods\\skeleton.MoreExtendCP\\sweet_gem_coffee",
+      "FromFile": "assets/Gem_Coffee.png"
+    },
+    {
+      "LogName": "Load Sprite for Sweet Gem Jelly",
+      "Action": "Load",
+      "Target": "Mods\\skeleton.MoreExtendCP\\sweet_gem_jelly",
+      "FromFile": "assets/Sweet_Gem_Jelly.png"
+    },
+    {
+      "LogName": "Load Sprite for Sweet Gem Parfait",
+      "Action": "Load",
+      "Target": "Mods\\skeleton.MoreExtendCP\\sweet_gem_parfait",
+      "FromFile": "assets/Sweet_Gem_Parfait.png"
+    },
+    {
+      "LogName": "Objects Data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+
+        "{{ModId}}_Sweet_Gem_Tea": {
+          "Name": "Sweet Gem Tea",
+          "DisplayName": "{{i18n:Sweet_Gem_Tea_name}}",
+          "Description": "{{i18n:Sweet_Gem_Tea_description}}",
+          "IsDrink": true,
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 6000,
+          "Texture": "Mods\\skeleton.MoreExtendCP\\sweet_gem_tea",
+          "SpriteIndex": "0",
+          "Edibility": 20,
+          "ContextTags": [],
+          "Buffs": [
+            {
+              "Duration": 360,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 2,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Gem_Coffee": {
+          "Name": "Gem Coffee",
+          "DisplayName": "{{i18n:Gem_Coffee_name}}",
+          "Description": "{{i18n:Gem_Coffee_description}}",
+          "IsDrink": true,
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 6000,
+          "Texture": "Mods\\skeleton.MoreExtendCP\\sweet_gem_coffee",
+          "SpriteIndex": "0",
+          "Edibility": 20,
+          "ContextTags": [],
+          "Buffs": [
+            {
+              "Duration": 360,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 1,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 3,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Sweet_Gem_Jelly": {
+          "Name": "Sweet Gem Jelly",
+          "DisplayName": "{{i18n:Sweet_Gem_Jelly_name}}",
+          "Description": "{{i18n:Sweet_Gem_Jelly_description}}",
+          "IsDrink": false,
+          "Type": "Basic",
+          "Category": -26,
+          "Price": 7000,
+          "Texture": "Mods\\skeleton.MoreExtendCP\\sweet_gem_jelly",
+          "SpriteIndex": "0",
+          "Edibility": -300,
+          "ContextTags": [],
+          "CustomFields": {}
+        },
+        "{{ModId}}_Sweet_Gem_Parfait": {
+          "Name": "Sweet Gem Parfait",
+          "DisplayName": "{{i18n:Sweet_Gem_Parfait_name}}",
+          "Description": "{{i18n:Sweet_Gem_Parfait_description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 3000,
+          "Texture": "Mods\\skeleton.MoreExtendCP\\sweet_gem_parfait",
+          "SpriteIndex": 0,
+          "Edibility": 80,
+          "IsDrink": false,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": [
+            "color_orange"
+          ],
+          "Buffs": [
+            {
+              "Duration": 1200,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 5,
+                "ForagingLevel": 0,
+                "MaxStamina": 50,
+                "MagneticRadius": 5,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

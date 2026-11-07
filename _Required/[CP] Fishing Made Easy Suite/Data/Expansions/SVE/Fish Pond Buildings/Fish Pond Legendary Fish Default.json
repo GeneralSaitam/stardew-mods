@@ -1,0 +1,197 @@
+{
+  "Changes": [
+    {
+      "LogName": "SVE - Fish Pond Legendary Fish Remove Vanilla Entry",
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Entries": {
+        "LegendaryFish": null
+      },
+      "When": {
+        "Fish Pond Legendary Fish (REQ)": true
+      }
+    },
+    {
+      "LogName": "SVE - Fish Pond Legendary Fish",
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper": {
+          "MaxPopulation": -1,
+          "SpawnTime": 7,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.05,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.05,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.02,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.1,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Fungus_Seed",
+              "MinQuantity": 1,
+              "MaxQuantity": 5
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.15,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.18,
+              "ItemId": "(O)749",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 1.0,
+              "ItemId": "(O)812",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            }
+          ],
+          "PopulationGates": {
+            "2": [
+              "(O)535 15"
+            ],
+            "4": [
+              "FlashShifter.StardewValleyExpandedCP_Monster_Mushroom 25"
+            ],
+            "6": [
+              "(O)Raisins 10"
+            ],
+            "8": [
+              "(O)74 3"
+            ],
+            "10": [
+              "(O)279 3"
+            ]
+          }
+        },
+        "FlashShifter.StardewValleyExpandedCP_Turretfish": {
+          "MaxPopulation": -1,
+          "SpawnTime": 7,
+          "ProducedItems": [
+            {
+              "RequiredPopulation": 10,
+              "Chance": 0.01,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Barbarian_Elixir",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 9,
+              "Chance": 0.05,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 7,
+              "Chance": 0.02,
+              "ItemId": "(O)74",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            },
+            {
+              "RequiredPopulation": 6,
+              "Chance": 0.05,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Gold_Carrot_Seed",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 5,
+              "Chance": 0.05,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Hero_Elixir",
+              "MinQuantity": 1,
+              "MaxQuantity": 2
+            },
+            {
+              "RequiredPopulation": 4,
+              "Chance": 0.1,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Void_Soul",
+              "MinQuantity": 1,
+              "MaxQuantity": 3
+            },
+            {
+              "RequiredPopulation": 1,
+              "Chance": 0.5,
+              "ItemId": "FlashShifter.StardewValleyExpandedCP_Void_Pebble",
+              "MinQuantity": 1,
+              "MaxQuantity": 1
+            }
+          ],
+          "PopulationGates": {
+            "2": [
+              "FlashShifter.StardewValleyExpandedCP_Void_Root 15"
+            ],
+            "4": [
+              "FlashShifter.StardewValleyExpandedCP_Void_Soul 25"
+            ],
+            "6": [
+              "FlashShifter.StardewValleyExpandedCP_Void_Salmon_Sushi 10"
+            ],
+            "8": [
+              "(O)74 7"
+            ],
+            "10": [
+              "FlashShifter.StardewValleyExpandedCP_Void_Eel 10"
+            ]
+          }
+        }
+      },
+      "When": {
+        "Fish Pond Legendary Fish (REQ)": true
+      }
+    },
+    {
+      "LogName": "SVE - Fish Pond Legendary Fish ContextTag",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Fields": {
+        "FlashShifter.StardewValleyExpandedCP_Wolf_Snapper": {
+          "ContextTags": [
+            "color_brown",
+            "fish_wolf_snapper",
+            "season_spring",
+            "season_summer",
+            "season_fall",
+            "fish_legendary"
+          ]
+        },
+        "FlashShifter.StardewValleyExpandedCP_Turretfish": {
+          "ContextTags": [
+            "color_grey",
+            "fish_ocean",
+            "fish_turretfish",
+            "fish_legendary"
+          ]
+        }
+      },
+      "When": {
+        "Fish Pond Legendary Fish (REQ)": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="8" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="178">
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+  <tile id="0">
+   <properties>
+    <property name="PathType" value="NE"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="PathType" value="SE"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="PathType" value="WS"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="PathType" value="WN"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="PathType" value="Crossroad"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="PathType" value="End"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="65" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <layer id="1" name="Back" width="8" height="9">
+  <data encoding="csv">
+331,331,331,331,331,331,125,331,
+331,331,331,331,331,331,671,331,
+125,125,125,125,125,125,703,125,
+672,672,671,672,671,672,671,672,
+704,704,703,704,574,575,576,704,
+672,672,671,672,606,607,608,672,
+704,704,703,704,573,704,703,573,
+672,672,671,672,671,672,671,672,
+704,704,703,704,703,704,703,704
+</data>
+ </layer>
+ <layer id="11" name="Back2" width="8" height="9">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <layer id="2" name="Buildings" width="8" height="9">
+  <properties>
+   <property name="AmbientLight" value="255 255 255"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,220,0,219,
+145,145,145,145,145,252,185,251,
+177,177,177,177,177,284,0,283,
+712,713,485,486,589,591,0,428,
+0,0,0,0,0,0,0,0,
+0,0,387,388,0,0,0,0,
+588,0,0,0,0,0,0,0,
+952,953,588,0,0,0,0,0,
+588,0,0,0,0,465,0,0
+</data>
+ </layer>
+ <layer id="12" name="Schedule" width="8" height="9" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="7" name="Buildings">
+  <object id="157" name="TileData" x="96" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Paths" width="8" height="9" visible="0">
+  <data encoding="csv">
+9,0,0,0,0,0,0,9,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="4" name="Front" width="8" height="9">
+  <data encoding="csv">
+891,0,0,0,0,0,153,891,
+0,0,0,0,0,0,0,0,
+680,681,453,454,557,559,0,396,
+0,0,487,488,0,0,0,0,
+0,0,519,520,0,0,0,0,
+0,0,0,0,0,0,0,0,
+920,921,0,0,0,0,0,0,
+0,0,0,0,0,433,0,0,
+261,261,261,261,261,261,261,261
+</data>
+ </layer>
+ <objectgroup id="9" name="Front"/>
+ <layer id="5" name="AlwaysFront" width="8" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,400,401,402,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

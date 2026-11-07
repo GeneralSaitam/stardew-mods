@@ -1,0 +1,127 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+		"Disable Grape Bushes": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Disables grape bushes and turns them into normal trellis crops instead. By default false"
+		},
+        "White Grape Artisan Goods":
+        {
+            "AllowValues": "Both, Only Cornucopia, Only Mt.Vapius",
+            "Default": "Both",
+            "Description": "Wether or not all white grape artisan goods are active, Only Cornucopia enables only Cornucopia's White Grape Goods, Only Mt.Vapius enables only Vapius White Grape Goods, Both enables both. You can ignore this config if you're only playing with CMC or Vapius.",
+            "Section": "Compatibility Configs",
+            "When": {
+                "HasMod|contains=Cornucopia.MoreCrops": true,
+                "HasMod|contains=Lumisteria.MtVapius": true
+            }
+        }
+
+
+	},
+    "Changes": [
+ 		{
+			"Action": "Include",
+			"FromFile": "data/GiftTastes.json, data/GrapesAndWines.json, data/Shops.json, data/Strings.json, data/MailData/Mail.json, data/MachineData/OilMaker.json, data/MachineData/PreservesJar.json, data/MachineData/Keg.json, data/MachineData/Dehydrator.json, data/MachineData/HardwoodKeg.json, data/MachineData/YeastStarter.json, data/MachineData/Cask.json, data/MachineData/SeedMaker.json"
+		},
+        { 
+            "Action": "Include",
+            "When": {
+                "Disable Grape Bushes": false
+            },
+			"FromFile": "data/CropData/Teabushes.json"
+        },
+        { 
+            "Action": "Include",
+            "When": {
+                "Disable Grape Bushes": true
+            },
+			"FromFile": "data/CropData/Crops.json"
+        },
+		{ 
+            "Action": "Load",
+			"Target": "StunkyMcDoo.GrapesofFerngill.cp/common_grapes, StunkyMcDoo.GrapesofFerngill.cp/common_grapes_starter, StunkyMcDoo.GrapesofFerngill.cp/ancient_titania_tree, StunkyMcDoo.GrapesofFerngill.cp/titania_tree, StunkyMcDoo.GrapesofFerngill.cp/hardwood_keg, StunkyMcDoo.GrapesofFerngill.cp/yeast_starter, StunkyMcDoo.GrapesofFerngill.cp/common, StunkyMcDoo.GrapesofFerngill.cp/deep_envy, StunkyMcDoo.GrapesofFerngill.cp/gallant_grove, StunkyMcDoo.GrapesofFerngill.cp/golden_aura, StunkyMcDoo.GrapesofFerngill.cp/passion_rouge, StunkyMcDoo.GrapesofFerngill.cp/sunset_blush, StunkyMcDoo.GrapesofFerngill.cp/rosy_riot, StunkyMcDoo.GrapesofFerngill.cp/lunatone, StunkyMcDoo.GrapesofFerngill.cp/joja, StunkyMcDoo.GrapesofFerngill.cp/ocean_mist, StunkyMcDoo.GrapesofFerngill.cp/ancient, StunkyMcDoo.GrapesofFerngill.cp/joja_brand, StunkyMcDoo.GrapesofFerngill.cp/blue_moon, StunkyMcDoo.GrapesofFerngill.cp/white_grape, StunkyMcDoo.GrapesofFerngill.cp/vapius_white_grape, StunkyMcDoo.GrapesofFerngill.cp/vapius_sun_grape, StunkyMcDoo.GrapesofFerngill.cp/teabushes_indoors, StunkyMcDoo.GrapesofFerngill.cp/crops",
+            "FromFile": "assets/{{TargetWithoutPath}}.png"
+        },
+        { 
+            "Action": "Load",
+			"Target": "StunkyMcDoo.GrapesofFerngill.cp/teabushes",
+			"FromFile": "assets/teabushes_{{season}}.png"
+        },
+        { 
+            "Action": "EditImage",
+			"Target": "StunkyMcDoo.GrapesofFerngill.cp/crops",
+			"FromFile": "assets/{{TargetWithoutPath}}_{{season}}.png",
+            "When": {
+                "Season":"spring, summer, fall, winter",
+                "IsOutdoors": true     
+            },
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/CompatData/Cornucopia.ArtisanMachines.json",
+            "When": {
+				"HasMod|contains=Cornucopia.ArtisanMachines": true
+			}
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/CompatData/Cornucopia.MoreCrops.json",
+            "When": {
+				"HasMod|contains=Cornucopia.MoreCrops": true
+			}
+        },
+		{
+            "Action": "Include",
+            "FromFile": "data/CompatData/Lumisteria.MtVapius.json",
+            "When": {
+				"HasMod|contains=Lumisteria.MtVapius": true
+			}
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/CompatData/NCarigon.CopperStillCP.json",
+            "When": {
+				"HasMod|contains=NCarigon.CopperStillCP": true
+			}
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/CompatData/wildflour.ateliercandy.json",
+            "When": {
+				"HasMod|contains=wildflour.ateliercandy": true
+			}
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/CompatData/wildflour.atelierfrozen.json",
+            "When": {
+				"HasMod|contains=wildflour.atelierfrozen": true
+			}
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/CompatData/wildflour.atelierjuicebar.json",
+            "When": {
+				"HasMod|contains=wildflour.atelierjuicebar": true
+			}
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/CompatData/Wildflour.AtelierGoods.json",
+            "When": {
+				"HasMod|contains=Wildflour.AtelierGoods": true,
+                "HasMod|contains= Atelier.Cauldron": true 
+			}
+        },
+        {
+            "Action": "Include",
+            "FromFile": "data/CompatData/FlashShifter.StardewValleyExpandedCP.json",
+            "When": {
+				"HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+        }
+    ]
+}

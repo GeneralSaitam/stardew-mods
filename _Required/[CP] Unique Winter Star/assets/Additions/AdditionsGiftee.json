@@ -1,0 +1,49 @@
+{
+	"Changes":[
+		//This is for "getting gifted" dialogues. 
+		{
+			"LogName": "Wizard - Winter Star, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Wizard",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Wizard.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Wizard": "enabled",
+			},
+		},
+		{
+			"LogName": "Sandy - Winter Star, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sandy",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Sandy.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Sandy": "enabled, all",
+			},
+		},
+		{
+			"LogName": "Krobus - Winter Star, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Krobus",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Krobus.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Krobus": "enabled, all",
+			},
+		},
+		{
+			"LogName": "Dwarf - Winter Star, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Dwarf",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Dwarf.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Dwarf": "enabled, all",
+			},
+		},
+	],
+}

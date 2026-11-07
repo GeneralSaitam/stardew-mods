@@ -1,0 +1,53 @@
+{
+	"Changes":[
+		//This is for regular dialogues. Festival Dialogue changes are in another file, as are early dialogues.
+		{
+			"LogName": "Winter Star, Gift From Wizard",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Wizard",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Wizard.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Wizard.WinterStar.After}}",
+			},
+			"When": {
+				"Wizard": "enabled",
+			},
+		},
+		{
+			"LogName": "Winter Star, Gift From Sandy",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sandy",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sandy.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sandy.WinterStar.After}}",
+			},
+			"When": {
+				"Sandy": "enabled, all",
+			},
+		},
+		{
+			"LogName": "Winter Star, Gift From Krobus",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Krobus",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Krobus.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Krobus.WinterStar.After}}",
+			},
+			"When": {
+				"Krobus": "enabled, all",
+			},
+		},
+		{
+			"LogName": "Winter Star, Gift From Dwarf",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Dwarf",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Dwarf.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Dwarf.WinterStar.After |Villager={{Villager}} }}",
+			},
+			"When": {
+				"Dwarf": "enabled, all",
+			},
+		},
+	],
+}

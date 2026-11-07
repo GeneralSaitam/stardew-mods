@@ -1,0 +1,98 @@
+{
+	"Changes":[
+		//Gifting Dialogue
+		{
+			"LogName": "Lance - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lance",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Lance.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Lance.Dating.After}}",
+			},
+			"When": {
+				"Lance": "dialogueearly, dialoguespice",
+			},
+		},
+		{
+			"LogName": "Lance - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lance",
+			"Entries": {
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Lance.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Lance.Dating.After}}",
+			},
+			"When": {
+				"relationship:Lance": "dating",
+				"Lance": "dialogueearly, dialoguespice",
+			},
+		},
+		{
+			"LogName": "Lance - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lance",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Lance.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Lance.Married.After}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Lance.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Lance.Married.After}}",
+			},
+			"When": {
+				"relationship:Lance": "married",
+				"Lance": "dialogueearly, marriageonly",
+			},
+		},
+		{
+			"LogName": "Lance - Winter Star, Married, Spice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lance",
+			"Entries": {
+				"WinterStar_GiveGift_Before_Spouse": "{{i18n:UWS.Lance.Married.Before}}",
+				"WinterStar_GiveGift_After_Spouse": "{{i18n:UWS.Lance.Married.After.Spice}}",
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Lance.Married.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Lance.Married.After.Spice}}",
+			},
+			"When": {
+				"relationship:Lance": "married",
+				"Enable Spicy Dialogue": "enabled",
+				"Lance": "dialoguespice, marriagespice",
+			},
+		},
+		
+		//Gifted Dialogues
+		{
+			"LogName": "Lance - Winter Star",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lance",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Lance.Gifting}}",
+			},
+			"When": {
+				"Lance": "dialogueearly, dialoguespice",
+			},
+		},
+		{
+			"LogName": "Lance - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lance",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Lance.Dating.Gifting}}",
+			},
+			"When": {
+				"relationship:Lance": "dating",
+				"Lance": "dialogueearly, dialoguespice",
+			},
+		},
+		{
+			"LogName": "Lance - Winter Star, Married",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lance",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Lance.Married.Gifting}}",
+			},
+			"When": {
+				"relationship:Lance": "married",
+				"Lance": "marriageonly, marriagespice, dialogueearly, dialoguespice",
+			},
+		},
+	],
+}

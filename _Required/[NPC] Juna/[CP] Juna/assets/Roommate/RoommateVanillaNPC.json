@@ -1,0 +1,264 @@
+{
+  "Changes": [
+    //WIZARD
+
+    {
+      "LogName": "Wizard Schedule - Wizard fork",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Wizard",
+      "Entries": {
+        "Sun": "610 WizardHouse 4 17 2/a1300 WizardHouse 2 19 2 \"Strings\\schedules\\Wizard:Juna_SunW.{{Random:000,001,002 |key=Sunday}}\"/1600 WizardHouse 2 14 0 \"Strings\\schedules\\Wizard:Juna_SunW.{{Random:003,004,005 |key=Sunday1}}\"/1800 WizardHouse 4 17 2",
+        "winter_17": "a1100 WizardHouse 4 16 2/a1600 WizardHouse 8 17 1/a1900 WizardHouse 2 18 1/2300 WizardHouse 4 17 2"
+      },
+      "When": {
+        "Weather": "sun, snow, wind",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+        "HasFlag": "PlayerChoseWizard"
+      }
+    },
+
+    {
+      "LogName": "Wizard Schedule - Parents fork",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Wizard",
+      "Entries": {
+        "Sun": "610 WizardHouse 4 17 2/a1300 WizardHouse 2 19 2 \"Strings\\schedules\\Wizard:Juna_SunP.{{Random:006,007,008 |key=Sunday}}\"/1600 WizardHouse 2 14 0 \"Strings\\schedules\\Wizard:Juna_SunP.{{Random:009,010,011 |key=Sunday1}}\"/1800 WizardHouse 4 17 2",
+        "winter_17": "a1100 WizardHouse 4 16 2/a1600 WizardHouse 8 17 1/a1900 WizardHouse 2 18 1/2300 WizardHouse 4 17 2"
+      },
+      "When": {
+        "Weather": "sun, snow, wind",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+        "HasFlag": "PlayerChoseParents"
+      }
+    },
+
+    {
+      "LogName": "Wizard Schedule Robin's Birthday",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Wizard",
+      "Entries": {
+        "fall_21": "610 WizardHouse 4 17 2"
+      },
+      "When": {
+        "Weather": "sun, snow, wind",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+      }
+    },
+
+    {
+      "LogName": "Wizard Schedule SVE - Wizard Fork",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Wizard",
+      "Entries": {
+        "Sun": "610 WizardHouse 5 17 2/630 Forest 14 28 2 Wizard_Meditate/830 WizardHouse 5 15 2/1050 Forest 10 24 0/1140 Forest 4 23 3/1220 Forest 1 24 1/1240 Forest 2 26 0/a1300 WizardHouse 2 19 2 \"Strings\\schedules\\Wizard:Juna_SunW.{{Random:000,001,002 |key=Sunday}}\"/1600 WizardHouse 2 14 0 \"Strings\\schedules\\Wizard:Juna_SunW.{{Random:003,004,005 |key=Sunday1}}\"/1800 WizardHouse 4 17 2",
+        "winter_17": "a1100 WizardHouse 4 16 2/a1600 WizardHouse 8 17 1/a1900 WizardHouse 2 18 1/2300 WizardHouse 4 17 2"
+      },
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP",
+        "Weather": "sun, snow, wind",
+        "HasFlag": "PlayerChoseWizard"
+      }
+    },
+
+    {
+      "LogName": "Wizard Schedule SVE - Parent Fork",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Wizard",
+      "Entries": {
+        "Sun": "610 WizardHouse 5 17 2/630 Forest 14 28 2 Wizard_Meditate/830 WizardHouse 5 15 2/1050 Forest 10 24 0/1140 Forest 4 23 3/1220 Forest 1 24 1/1240 Forest 2 26 0/a1300 WizardHouse 2 19 2 \"Strings\\schedules\\Wizard:Juna_SunP.{{Random:006,007,008 |key=Sunday}}\"/1600 WizardHouse 2 14 0 \"Strings\\schedules\\Wizard:Juna_SunP.{{Random:009,010,011 |key=Sunday1}}\"/1800 WizardHouse 4 17 2",
+        "winter_17": "a1100 WizardHouse 4 16 2/a1600 WizardHouse 8 17 1/a1900 WizardHouse 2 18 1/2300 WizardHouse 4 17 2"
+      },
+      "When": {
+        "HasMod": "FlashShifter.StardewValleyExpandedCP",
+        "Weather": "sun, snow, wind",
+        "HasFlag": "PlayerChoseParents"
+      }
+    },
+
+    {
+      "LogName": "Wizard Schedule Robin's Birthday SVE",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Wizard",
+      "Entries": {
+        "fall_21": "610 WizardHouse 5 17 2/630 Forest 14 28 2 Wizard_Meditate/830 WizardHouse 5 15 2/1050 Forest 10 24 0/1140 Forest 4 23 3/1220 Forest 1 24 1/1240 Forest 2 26 0/1300 WizardHouse 8 13 0/1400 WizardHouse 2 17 3/1430 WizardHouse 10 17 2 Wizard_Concentrate2/1600 WizardHouse 4 17 2/2300 WizardHouse 3 4 2 Wizard_Sleep"
+      },
+      "When": {
+        "Weather": "sun, snow, wind",
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+      }
+    },
+
+    {
+      "LogName": "Wizard Sunday Dialogue Edit",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "Sun": "{{i18n: wizard.sunday.general}}"
+      }
+    },
+
+    {
+      "LogName": "Wizard Schedule Dialogue",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Wizard",
+      "Entries": {
+        "Juna_SunW.000": "{{i18n: string.Juna_SunW.000}}", //random 1 W
+        "Juna_SunW.001": "{{i18n: string.Juna_SunW.001}}", //random 2 W
+        "Juna_SunW.002": "{{i18n: string.Juna_SunW.002}}", //random 3 W
+        "Juna_SunW.003": "{{i18n: string.Juna_SunW.003}}", //random 1 W
+        "Juna_SunW.004": "{{i18n: string.Juna_SunW.004}}", //random 2 W
+        "Juna_SunW.005": "{{i18n: string.Juna_SunW.005}}", //random 3 W
+        "Juna_SunP.006": "{{i18n: string.Juna_SunP.006}}", //random 1 P
+        "Juna_SunP.007": "{{i18n: string.Juna_SunP.007}}", //random 2 P
+        "Juna_SunP.008": "{{i18n: string.Juna_SunP.008}}", //random 3 P
+        "Juna_SunP.009": "{{i18n: string.Juna_SunP.009}}", //random 1 P
+        "Juna_SunP.010": "{{i18n: string.Juna_SunP.010}}", //random 2 P
+        "Juna_SunP.011": "{{i18n: string.Juna_SunP.011}}" //random 3 P
+      }
+    },
+
+    {
+      "LogName": "Wizard Birthday Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",
+      "Entries": {
+        "WizardHouse_4_16": "{{i18n: wizard.birthday.1}}",
+        "WizardHouse_8_17": "{{i18n: wizard.birthday.2}}",
+        "WizardHouse_2_18": "{{i18n: wizard.birthday.3}}"
+      }
+    },
+
+    //ROBIN (& DEMETRIUS)
+
+    {
+      "LogName": "Robin Schedule Edits",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Robin",
+      "Entries": {
+        "Mon": "800 ScienceHouse 8 18 2/a1710 ScienceHouse 29 9 2 \"Strings\\schedules\\Robin:Juna_Mon.{{Random:003,004,005,006 |key=Monday}}\"/1930 ScienceHouse 16 5 0/2200 ScienceHouse 21 4 1 robin_sleep",
+        "summer_5": "800 ScienceHouse 8 18 2/a1700 Saloon 22 22 1 \"Strings\\schedules\\Robin:summer_5.001\"/2100 ScienceHouse 21 4 1 robin_sleep"
+      }
+    },
+
+    {
+      "LogName": "Robin Fall 21 Vanilla Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Robin",
+      "Entries": {
+        "fall_21": "800 ScienceHouse 8 18 2/a1720 ScienceHouse 27 11 2 \"Strings\\schedules\\Robin:fall_21.000\"/2040 ScienceHouse 16 5 0/2130 ScienceHouse 21 4 1 robin_sleep"
+      },
+      "When": {
+        "HasMod |contains=nraittanna.RememberMyBirthday": "false"
+      }
+    },
+
+    {
+      "LogName": "Robin String Edits",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Robin",
+      "Entries": {
+        "summer_5.001": "{{i18n: string.Robin.summer_5.001}}",
+        "fall_21.000": "{{i18n: robin.string.fall_21}}",
+        "Juna_Mon.003": "{{i18n: string.Robin.Juna_Mon.003}}", //random 1
+        "Juna_Mon.004": "{{i18n: string.Robin.Juna_Mon.004}}", //random 2
+        "Juna_Mon.005": "{{i18n: string.Robin.Juna_Mon.005}}", //random 3
+        "Juna_Mon.006": "{{i18n: string.Robin.Juna_Mon.006}}" //random 4
+      }
+    },
+
+    {
+      "LogName": "Demetrius Summer 5",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Demetrius",
+      "Entries": {
+        "summer_5": "750 ScienceHouse 22 20 1 demetrius_notes/a1700 Saloon 24 22 3 \"Strings\\schedules\\Demetrius:summer_5.001\"/2100 ScienceHouse 20 4 1 demetrius_sleep"
+      }
+    },
+
+    {
+      "LogName": "Demetrius String Edits",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Demetrius",
+      "Entries": {
+        "summer_5.001": "{{i18n: string.Demetrius.summer_5.001}}"
+      }
+    },
+
+    //GEORGE
+
+    {
+      "LogName": "George Schedule Edit",
+      "Action": "EditData",
+      "Target": "Characters/schedules/George",
+      "Entries": {
+        "summer_Fri": "630 JoshHouse 16 22 0/a1220 Town 52 61 3 \"Strings\\schedules\\George:summer_Fri.001\"/1500 JoshHouse 16 22 0/2000 JoshHouse 3 5 0 george_sleep",
+        "summer_5": "630 JoshHouse 16 22 0/a1220 Town 52 61 3 \"Strings\\schedules\\George:summer_Fri.002\"/1500 JoshHouse 16 22 0/2000 JoshHouse 3 5 0 george_sleep"
+      },
+      "When": {
+        "HasSeenEvent": "86060018"
+      }
+    },
+
+    {
+      "LogName": "George Schedule String",
+      "Action": "EditData",
+      "Target": "Strings/schedules/George",
+      "Entries": {
+        "summer_Fri.001": "{{i18n: george.summer_Fri.001}}",
+        "summer_Fri.002": "{{i18n: george.summer_Fri.002}}"
+      }
+    },
+
+    //ALEX
+
+    {
+      "LogName": "Alex Wednesday Schedule Edits - Wizard Fork",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Alex",
+      "Entries": {
+        "Wed": "800 JoshHouse 13 5 0/a1200 Town 64 64 2 alex_football \"Strings\\schedules\\Alex:Wed.{{Random:000,001,002 |key=Wednesday}}\"/1600 Saloon 22 23 0 \"Strings\\schedules\\Alex:Wed.003\"/2000 JoshHouse 21 4 1 alex_sleep",
+        "marriage_Wed": "a1200 Town 64 64 2 alex_football \"Strings\\schedules\\Alex:marriage_Wed.{{Random:000,001,002 |key=Wednesday}}\"/1600 Saloon 22 23 0 \"Strings\\schedules\\Alex:marriage_Wed.003\"/2000 BusStop -1 23 3"
+      },
+      "When": {
+        "HasSeenEvent": "86060019",
+        "Season |contains=summer": "false",
+        "DayOfWeek |contains=3": "false",
+        "HasFlag": "PlayerChoseWizard"
+      }
+    },
+
+    {
+      "LogName": "Alex Wednesday Schedule Edits - Parents Fork",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Alex",
+      "Entries": {
+        "Wed": "800 JoshHouse 13 5 0/a1200 Town 64 64 2 alex_football \"Strings\\schedules\\Alex:Wed.{{Random:000,001,002 |key=Wednesday}}\"/1600 Saloon 22 23 0 \"Strings\\schedules\\Alex:Wed.004\"/2000 JoshHouse 21 4 1 alex_sleep",
+        "marriage_Wed": "a1200 Town 64 64 2 alex_football \"Strings\\schedules\\Alex:marriage_Wed.{{Random:000,001,002 |key=Wednesday}}\"/1600 Saloon 22 23 0 \"Strings\\schedules\\Alex:marriage_Wed.004\"/2000 BusStop -1 23 3"
+      },
+      "When": {
+        "HasSeenEvent": "86060019",
+        "Season |contains=summer": "false",
+        "DayOfWeek |contains=3": "false",
+        "HasFlag": "PlayerChoseParents"
+      }
+    },
+
+    {
+        "LogName": "Alex Schedule Strings",
+        "Action": "EditData",
+        "Target": "Strings/schedules/Alex",
+        "Entries": {
+          "Wed.000": "{{i18n: string.Alex.Wed.000}}", //random 1
+          "Wed.001": "{{i18n: string.Alex.Wed.001}}", //random 2
+          "Wed.002": "{{i18n: string.Alex.Wed.002}}", //random 3
+          "Wed.003": "{{i18n: string.Alex.Wed.003}}", //if no Theo
+          "Wed.004": "{{i18n: string.Alex.Wed.004}}", //if Theo
+          "marriage_Wed.000": "{{i18n: string.Alex.Wed.000}}", //random 1
+          "marriage_Wed.001": "{{i18n: string.Alex.Wed.001}}", //random 2
+          "marriage_Wed.002": "{{i18n: string.Alex.Wed.002}}", //random 3
+          "marriage_Wed.003": "{{i18n: string.Alex.Wed.003}}", //if no Theo
+          "marriage_Wed.004": "{{i18n: string.Alex.Wed.004}}" //if Theo
+        }
+      }
+  ]
+}

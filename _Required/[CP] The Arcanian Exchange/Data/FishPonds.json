@@ -1,0 +1,660 @@
+{
+"Changes": [
+{
+"Action": "EditData",
+"Target": "Data/FishPondData",
+"Entries": {
+		"{{ModID}}_WoodpeckerBarnacle": {
+"ID": "{{ModID}}_WoodpeckerBarnacle",
+"RequiredTags": [  "fish_WoodpeckerBarnacle",
+],
+"Precedence": 10,
+"SpawnTime": 3,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)330",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)334",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)335",
+"MinQuantity": 1,
+"MaxQuantity": 3
+},
+],
+"PopulationGates": {
+"3": [ "(O)336 1","(O)331 5" ],
+"6": [  "(O)338 1","(O)401 5" ],
+"9": [  "(O)337 1","(O)333 5" ],
+}
+},
+	"{{ModID}}_WoodwindFish": {
+"ID": "{{ModID}}_WoodwindFish",
+"RequiredTags": [  "fish_WoodwindFish",
+],
+"Precedence": 10,
+"SpawnTime": 3,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O){{ModID}}_ArcanianFeatherStar",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O){{ModID}}_MuuaiFlower",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)566",
+"MinQuantity": 1,
+"MaxQuantity": 3
+},
+],
+"PopulationGates": {
+"3": [ "(O){{ModID}}_GiantGraveCrabEgg 1","(O){{ModID}}_DragaTail 1" ],
+"6": [  "(O)569 1","(O)570 1" ],
+"9": [  "(O)574 1","(O)575 1" ],
+}
+},
+"{{ModID}}_BoneyHeadedGraveFish": {
+"ID": "{{ModID}}_BoneyHeadedGraveFish",
+"RequiredTags": [  "fish_BoneyHeadedGraveFish",
+],
+"Precedence": 10,
+"SpawnTime": 3,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)84",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)560",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)575",
+"MinQuantity": 1,
+"MaxQuantity": 3
+},
+],
+"PopulationGates": {
+"3": [ "(O)581 1","(O)582 1" ],
+"6": [  "(O)583 1","(O)584 1" ],
+"9": [  "(O)585 1","(O)580 1" ],
+}
+},
+"{{ModID}}_IficusFish": {
+"ID": "{{ModID}}_IficusFish",
+"RequiredTags": [    "fish_IficusFish",],
+"Precedence": 10,
+"SpawnTime": 2,
+"ProducedItems": [
+{
+"RequiredPopulation": 2,
+"Chance": 0.3,
+"ItemID": "(O)571",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 4,
+"Chance": 0.2,
+"ItemID": "(O)60",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.1,
+"ItemID": "(O)567",
+"MinQuantity": 1,
+"MaxQuantity": 3
+},
+],
+"PopulationGates": {
+"2": ["(O)330 10", ],
+"4": ["(O)330 20", ],
+"6": ["(O)100 1",],
+}
+},
+"{{ModID}}_DancerFish": {
+"ID": "{{ModID}}_DancerFish",
+"RequiredTags": ["fish_DancerFish",],
+"Precedence": 10,
+"SpawnTime": 1,
+"ProducedItems": [
+{
+"RequiredPopulation": 1,
+"Chance": 0.3,
+"ItemID": "(O)260",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 2,
+"Chance": 0.2,
+"ItemID": "(O)60",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 3,
+"Chance": 0.1,
+"ItemID": "(O)567",
+"MinQuantity": 1,
+"MaxQuantity": 3
+},
+],
+"PopulationGates": {
+"1": ["(O)260 5", ],
+"2": ["(O)253 10", ],
+"3": ["(O)832 2",],
+}
+},
+"{{ModID}}_RiverBedJelly": {
+"ID": "{{ModID}}_RiverBedJelly",
+"RequiredTags": ["fish_RiverBedJelly",],
+"Precedence": 10,
+"SpawnTime": 3,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)129",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)554",
+"MinQuantity": 1,
+"MaxQuantity": 2 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)787",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O)414 3", ],
+"6": ["(O)536 6", ],
+"9": ["(O)769 9",],
+}
+},
+"{{ModID}}_GraveCrab": {
+"ID": "{{ModID}}_GraveCrab",
+"RequiredTags": ["fish_GraveCrab",],
+"Precedence": 10,
+"SpawnTime": 1,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O){{ModID}}_GaggleShroom",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O){{ModID}}_StoneFlower",
+"MinQuantity": 1,
+"MaxQuantity": 2 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)852",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O)172 5", ],
+"6": ["(O)203 3", ],
+"9": ["(O)827 1",],
+}
+},
+"{{ModID}}_GulpFish": {
+"ID": "{{ModID}}_GulpFish",
+"RequiredTags": ["fish_GulpFish"],
+"Precedence": 10,
+"SpawnTime": 4,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)118",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)535",
+"MinQuantity": 1,
+"MaxQuantity": 5 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)537",
+"MinQuantity": 1,
+"MaxQuantity": 3
+},
+],
+"PopulationGates": {
+"3": ["(O)167 3", ],
+"6": ["(O)150 1", ],
+"9": ["(O)146 1",],
+}
+},
+"{{ModID}}_LeechFish": {
+"ID": "{{ModID}}_LeechFish",
+"RequiredTags": ["fish_LeechFish"],
+"Precedence": 10,
+"SpawnTime": 5,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)118",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)535",
+"MinQuantity": 1,
+"MaxQuantity": 5 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)537",
+"MinQuantity": 1,
+"MaxQuantity": 3
+},
+],
+"PopulationGates": {
+"3": ["(O)156 1", ],
+"6": ["(O)149 1", ],
+"9": ["(O)795 1",],
+}
+},
+"{{ModID}}_PufferCousin": {
+"ID": "{{ModID}}_PufferCousin",
+"RequiredTags": [ "fish_PufferCousin",],
+
+"SpawnTime": 3,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)555",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)552",
+"MinQuantity": 1,
+"MaxQuantity": 1 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)553",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O)549 1", ],
+"6": ["(O)551 1", ],
+"9": ["(O)550 1",],
+}
+},
+"{{ModID}}_SwampFish": {
+"ID": "{{ModID}}_SwampFish",
+"RequiredTags": [  "fish_SwampFish",
+],
+"Precedence": 10,
+"SpawnTime": 2,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)157",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)392",
+"MinQuantity": 1,
+"MaxQuantity": 1 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)394",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O)397 1", ],
+"6": ["(O)152 1", ],
+"9": ["(O)393 1",],
+}
+},
+"{{ModID}}_SharkFish": {
+"ID": "{{ModID}}_SharkFish",
+"RequiredTags": [ "fish_SharkFish",],
+"Precedence": 10,
+"SpawnTime": 3,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)418",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)416",
+"MinQuantity": 1,
+"MaxQuantity": 1 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)413",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O){{ModID}}_SwampFish 1", ],
+"6": ["(O){{ModID}}_PufferCousin 2", ],
+"9": ["(O){{ModID}}_DancerFish 3",],
+}
+},
+"{{ModID}}_ArcaAxolPink": {
+"ID": "{{ModID}}_ArcaAxolPink",
+"RequiredTags": ["fish_ArcaAxol",],
+"Precedence": 10,
+"SpawnTime": 2,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)684",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)633",
+"MinQuantity": 1,
+"MaxQuantity": 1 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)681",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O)421 1", ],
+"6": ["(O)613 1", ],
+"9": ["(O)614 1",],
+}
+},
+"{{ModID}}_ArcaAxolBlue": {
+"ID": "{{ModID}}_ArcaAxolBlue",
+"RequiredTags": ["fish_ArcaAxol",],
+"Precedence": 10,
+"SpawnTime": 2,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)684",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)633",
+"MinQuantity": 1,
+"MaxQuantity": 1 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)681",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O)421 1", ],
+"6": ["(O)613 1", ],
+"9": ["(O)614 1",],
+}
+},
+"{{ModID}}_SpikedSeaHorse": {
+"ID": "{{ModID}}_SpikedSeaHorse",
+"RequiredTags": ["fish_SpikedSeaHorse",],
+"Precedence": 10,
+"SpawnTime": 2,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)66",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)62",
+"MinQuantity": 1,
+"MaxQuantity": 1 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)60",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O)88 1", ],
+"6": ["(O)604 1", ],
+"9": ["(O)595 1",],
+}
+},
+"{{ModID}}_ShelledSquid": {
+"ID": "{{ModID}}_ShelledSquid",
+"RequiredTags": ["fish_ShelledSquid",],
+"Precedence": 10,
+"SpawnTime": 2,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)908",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)DriedMushrooms",
+"MinQuantity": 2,
+"MaxQuantity": 4 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)StardropTea",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O)881 5", ],
+"6": ["(O)422 3", ],
+"9": ["(O)336 2",],
+}
+},
+"{{ModID}}_GummigusFish": {
+"ID": "{{ModID}}_GummigusFish",
+"RequiredTags": ["fish_GummigusFish",],
+"Precedence": 10,
+"SpawnTime": 2,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)62",
+"MinQuantity": 1,
+"MaxQuantity": 1 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)60",
+"MinQuantity": 1,
+"MaxQuantity": 1 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O)70",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O)90 3", ],
+"6": ["(O)88 3", ],
+"9": ["(O){{ModID}}_LunonareFlower 2",],
+}
+},
+"{{ModID}}_SeaSnake": {
+"ID": "{{ModID}}_SeaSnake",
+"RequiredTags": ["fish_SeaSnake",],
+"Precedence": 10,
+"SpawnTime": 2,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "(O)153",
+"MinQuantity": 1,
+"MaxQuantity": 3 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "(O)749",
+"MinQuantity": 2,
+"MaxQuantity": 4 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "(O){{ModID}}_DragaTail",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O)685 5", ],
+"6": ["(O)684 3", ],
+"9": ["(O)66 2",],
+}
+},
+"{{ModID}}_UncleCrimson": {
+"ID": "{{ModID}}_UncleCrimson",
+"RequiredTags": ["fish_UncleCrimson",],
+"Precedence": 10,
+"SpawnTime": 2,
+"ProducedItems": [
+{
+"RequiredPopulation": 3,
+"Chance": 0.3,
+"ItemID": "{{Random:(O){{ModID}}_GiantGraveCrabEgg,(O)771}}",
+"MinQuantity": 1,
+"MaxQuantity": 1 
+},
+{
+"RequiredPopulation": 6,
+"Chance": 0.2,
+"ItemID": "{{Random:(O){{ModID}}_RaphusEgg,(O){{ModID}}_Mandkin}}",
+"MinQuantity": 1,
+"MaxQuantity": 1 
+},
+{
+"RequiredPopulation": 9,
+"Chance": 0.1,
+"ItemID": "{{Random:(O){{ModID}}_MovoraptorEgg,{{ModID}}_WhoruuFlower}}",
+"MinQuantity": 1,
+"MaxQuantity": 1
+},
+],
+"PopulationGates": {
+"3": ["(O)799 1", ],
+"6": ["(O)798 1", ],
+"9": ["(O)789 1",],
+}
+}
+}
+},
+]
+}

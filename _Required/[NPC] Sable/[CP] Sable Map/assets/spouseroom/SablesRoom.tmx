@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="32" nextobjectid="19">
+ <tileset firstgid="1" name="EastWoodHouse" tilewidth="16" tileheight="16" tilecount="450" columns="30">
+  <image source="SablesRoom.png" width="480" height="255"/>
+  <tile id="25">
+   <animation>
+    <frame tileid="25" duration="200"/>
+    <frame tileid="26" duration="200"/>
+    <frame tileid="27" duration="200"/>
+    <frame tileid="28" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="55">
+   <animation>
+    <frame tileid="55" duration="200"/>
+    <frame tileid="56" duration="200"/>
+    <frame tileid="57" duration="200"/>
+    <frame tileid="58" duration="200"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="451" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="walls_and_floors.png" width="256" height="560"/>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="csv">
+455,455,455,455,455,455,
+471,471,471,471,471,471,
+321,321,321,321,321,321,
+248,249,248,249,248,249,
+218,219,218,219,218,219,
+248,249,248,249,248,249,
+218,219,218,219,218,219,
+248,249,97,249,248,249,
+218,219,218,219,218,219
+</data>
+ </layer>
+ <objectgroup id="29" name="Back"/>
+ <layer id="2" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+291,291,291,122,291,291,
+0,0,0,152,0,0,
+51,98,99,182,104,101,
+0,60,0,0,0,0,
+0,0,0,0,0,0,
+0,0,38,285,0,0,
+0,0,0,0,0,0,
+0,0,0,0,105,106
+</data>
+ </layer>
+ <objectgroup id="24" name="Buildings">
+  <object id="16" name="TileData" x="80" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;SableRoom.9&quot;"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="48" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;SableRoom.5&quot;"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="48" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;SableRoom.6&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="30" name="Paths" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="31" name="Paths"/>
+ <layer id="3" name="Front" width="6" height="9">
+  <data encoding="csv">
+0,394,395,0,0,0,
+0,424,425,26,0,0,
+21,68,69,56,0,71,
+0,30,0,0,0,0,
+0,0,0,0,0,0,
+0,0,8,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,75,76,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="23" name="Front"/>
+</map>

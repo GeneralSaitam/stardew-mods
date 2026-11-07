@@ -1,0 +1,50 @@
+{
+    "Format": "2.0.6",
+    "ConfigSchema": {
+        "Version": {
+            "AllowValues": "Classic, Donut",
+            "Default": "Classic",
+            "Description": "Choose between Sticky's original appearance or how she looks after being fed some donut",
+        }
+    },
+    "Changes": [
+        {
+            "Action": "EditData",
+            "LogName": "Add Staffy Pet",
+            "Target": "Data/Pets",
+            "TargetField": ["Dog", "Breeds"],
+            "Entries": {
+                "James.CP.Staffy.Staffy": {
+                    "Id": "James.CP.Staffy",
+                    "DisplayName": "dog",
+                    "Texture": "Mods\\James.CP.Staffy\\Staffy",
+                    "IconTexture": "Mods\\James.CP.Staffy\\Icon",
+                    "IconSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "CanBeChosenAtStart": true,
+                    "CanBeAdoptedFromMarnie": true,
+                    "BarkOverride": null,
+                    "VoicePitch": 1.0,
+                    "AdoptionPrice": 1
+                }
+            }
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/James.CP.Staffy/Staffy",
+		"FromFile": "assets/Sticky_c.png",
+		"When": {
+		    "Version": "Classic"
+		}
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/James.CP.Staffy/Icon",
+		"FromFile": "assets/Icon.png"
+        }
+    ]
+}

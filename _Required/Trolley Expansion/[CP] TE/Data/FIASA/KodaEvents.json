@@ -1,0 +1,214 @@
+
+{
+  "Changes": [  
+
+{
+
+      "LogName": "sub for Event",
+      "Action": "Load",
+      "Target": "Data/Events/Koda_Sub",
+      "FromFile": "assets/Maps/Koda_Sub.json"
+    },
+	{
+
+      "LogName": "sub3 for Event",
+      "Action": "Load",
+      "Target": "Data/Events/Sub_horizon",
+      "FromFile": "assets/Maps/Sub_horizon.json"
+    },
+	{
+
+      "LogName": "sub2 for Event",
+      "Action": "Load",
+      "Target": "Data/Events/Koda_Sub_rain",
+      "FromFile": "assets/Maps/Koda_Sub_rain.json"
+    },
+   
+	  
+		    {
+      "LogName": "cove for Event",
+      "Action": "Load",
+      "Target": "Data/Events/Koda_Cove",
+      "FromFile": "assets/Maps/Koda_Cove.json"
+    }, 
+			    {
+      "LogName": "turtles for Event",
+      "Action": "Load",
+      "Target": "Data/Events/Turtle_Cove",
+      "FromFile": "assets/Maps/Turtle_Cove.json"
+    }, 
+	 {
+      "LogName": "turtles for Event2",
+      "Action": "Load",
+      "Target": "Data/Events/Turtle_Cove_party",
+      "FromFile": "assets/Maps/Turtle_Cove_party.json"
+    }, 
+		 {
+      "LogName": "kaho cove",
+      "Action": "Load",
+      "Target": "Data/Events/Cove_Kaho",
+      "FromFile": "assets/Maps/Cove_Kaho.json"
+    }, 
+ 		   
+  {
+            "LogName": "Introduction",
+            "Action": "EditData",
+            "Target": "Data/Events/Koda_Sub",
+            "Entries":
+            {
+"CC_KodaH2/f CC_KodaK 500": "ocean/13 15/CC_KodaK 9 19 0 CC_Kaho 15 14 2 farmer 1000 1000 0 CC_Inke 28 14 1/skippable/showFrame CC_Kaho 17/pause 400/textAboveHead CC_KodaK \"{{i18n:CC_KodaH2.0}}\"/pause 600/move CC_KodaK 1 0 2/move CC_KodaK 0 -3 1/pause 800/showFrame CC_KodaK 36/pause 200/showFrame CC_KodaK 37/pause 200/showFrame CC_KodaK 38/pause 200/showFrame CC_KodaK 39/pause 200/showFrame CC_KodaK 36/pause 600/faceDirection CC_KodaK 2/pause 400/showFrame CC_Kaho 18/pause 800/faceDirection CC_KodaK 3/pause 400/speak CC_KodaK \"{{i18n:CC_KodaH2.1}}\"/pause 800/showFrame CC_Kaho 17/pause 200/showFrame CC_Kaho 0/pause 800/speak CC_Kaho \"{{i18n:CC_KodaH2.2}}\"/pause 1200/move CC_KodaK 4 0 1/pause 600/speak CC_KodaK \"{{i18n:CC_KodaH2.3}}\"/pause 1200/speak CC_Kaho \"{{i18n:CC_KodaH2.4}}\"/pause 800/jump CC_KodaK 3/pause 400/speak CC_KodaK \"{{i18n:CC_KodaH2.5}}\"/pause 600/move CC_Kaho -2 0 2/faceDirection CC_KodaK 0/pause 600/speak CC_Kaho \"{{i18n:CC_KodaH2.6}}\"/move CC_Inke -10 0 2/playSound doorClose/warp farmer 13 22/pause 400/move farmer 0 -2 0/pause 200/faceDirection CC_Kaho 2/faceDirection CC_KodaK 2/playMusic submarine_song/pause 1200/speak CC_Inke \"{{i18n:CC_KodaH2.7}}\"/pause 200/showFrame CC_Inke 28/pause 200/showFrame CC_Inke 29/pause 600/textAboveHead CC_Inke \"{{i18n:CC_KodaH2.8}}\"/pause 1200/speak CC_Kaho \"{{i18n:CC_KodaH2.9}}\"/pause 200/emote CC_KodaK 16/faceDirection CC_KodaK 2/pause 600/faceDirection CC_KodaK 1/speak CC_KodaK \"{{i18n:CC_KodaH2.10}}\"/pause 200/faceDirection CC_Kaho 1/pause 600/playMusic crane_game/showFrame CC_Inke 0/pause 1200/shake CC_Inke 1000/faceDirection CC_KodaK 1/move farmer 0 -2 0/pause 800/speak CC_Inke \"{{i18n:CC_KodaH2.11}}\"/pause 800/faceDirection CC_KodaK 2/pause 200/showFrame CC_KodaK 16/pause 400/textAboveHead CC_Kaho \"{{i18n:CC_KodaH2.12}}\"/pause 800/showFrame CC_KodaK 17/pause 1600/end"
+
+            }
+        },	
+  {
+            "LogName": "Introduction",
+            "Action": "EditData",
+            "Target": "Data/Events/Koda_Sub_rain",
+            "Entries":
+            {
+"CC_KodaH2/f CC_KodaK 500/weather rainy": "ocean/13 15/CC_KodaK 9 19 0 CC_Kaho 15 14 2 farmer 1000 1000 0 CC_Inke 28 14 1/skippable/showFrame CC_Kaho 17/pause 400/textAboveHead CC_KodaK \"{{i18n:CC_KodaH2.0}}\"/pause 600/move CC_KodaK 1 0 2/move CC_KodaK 0 -3 1/pause 800/showFrame CC_KodaK 36/pause 200/showFrame CC_KodaK 37/pause 200/showFrame CC_KodaK 38/pause 200/showFrame CC_KodaK 39/pause 200/showFrame CC_KodaK 36/pause 600/faceDirection CC_KodaK 2/pause 400/showFrame CC_Kaho 18/pause 800/faceDirection CC_KodaK 3/pause 400/speak CC_KodaK \"{{i18n:CC_KodaH2.1}}\"/pause 800/showFrame CC_Kaho 17/pause 200/showFrame CC_Kaho 0/pause 800/speak CC_Kaho \"{{i18n:CC_KodaH2.2}}\"/pause 1200/move CC_KodaK 4 0 1/pause 600/speak CC_KodaK \"{{i18n:CC_KodaH2.3}}\"/pause 1200/speak CC_Kaho \"{{i18n:CC_KodaH2.4}}\"/pause 800/jump CC_KodaK 3/pause 400/speak CC_KodaK \"{{i18n:CC_KodaH2.5}}\"/pause 600/move CC_Kaho -2 0 2/faceDirection CC_KodaK 0/pause 600/speak CC_Kaho \"{{i18n:CC_KodaH2.6}}\"/move CC_Inke -10 0 2/playSound doorClose/warp farmer 13 22/pause 400/move farmer 0 -2 0/pause 200/faceDirection CC_Kaho 2/faceDirection CC_KodaK 2/playMusic submarine_song/pause 1200/speak CC_Inke \"{{i18n:CC_KodaH2.7}}\"/pause 200/showFrame CC_Inke 28/pause 200/showFrame CC_Inke 29/pause 600/textAboveHead CC_Inke \"{{i18n:CC_KodaH2.8}}\"/pause 1200/speak CC_Kaho \"{{i18n:CC_KodaH2.9}}\"/pause 200/emote CC_KodaK 16/faceDirection CC_KodaK 2/pause 600/faceDirection CC_KodaK 1/speak CC_KodaK \"{{i18n:CC_KodaH2.10}}\"/pause 200/faceDirection CC_Kaho 1/pause 600/playMusic crane_game/showFrame CC_Inke 0/pause 1200/shake CC_Inke 1000/faceDirection CC_KodaK 1/move farmer 0 -2 0/pause 800/speak CC_Inke \"{{i18n:CC_KodaH2.11}}\"/pause 800/faceDirection CC_KodaK 2/pause 200/showFrame CC_KodaK 16/pause 400/textAboveHead CC_Kaho \"{{i18n:CC_KodaH2.12}}\"/pause 800/showFrame CC_KodaK 17/pause 1600/end"
+
+            }
+        },		
+
+		 {
+            "LogName": "Introduction",
+            "Action": "EditData",
+            "Target": "Data/Events/Trolley_Pond",
+            "Entries":
+            {
+"CC_KodaH4/f CC_KodaK 1000/DayofWeek Mon Tue Wed Thu Fri Sat": "continue/14 22/CC_KodaK 8 18 2 farmer 11 30 0/skippable/showFrame CC_KodaK 21/move farmer 0 -4 0/showFrame CC_KodaK 22/pause 200/showFrame CC_KodaK 23/pause 200/showFrame CC_KodaK 21/pause 200/showFrame CC_KodaK 22/pause 200/showFrame CC_KodaK 23/pause 200/showFrame CC_KodaK 21/pause 800/move farmer 0 -5 3/pause 200/showFrame CC_KodaK 0/pause 200/faceDirection CC_KodaK 1/pause 1200/speak CC_KodaK \"{{i18n:CC_KodaH4.0}}\"/pause 800/speak CC_KodaK \"{{i18n:CC_KodaH4.1}}\"/pause 800/faceDirection CC_KodaK 2/move farmer 0 -3 2/pause 600/speak CC_KodaK \"{{i18n:CC_KodaH4.2}}\"/pause 1200/playMusic moonlightJellies/pause 800/speak CC_KodaK \"{{i18n:CC_KodaH4.3}}\"/pause 800/move CC_KodaK 0 -1 1/move CC_KodaK 2 0 2/move CC_KodaK 0 1 2/pause 1200/speak CC_KodaK \"{{i18n:CC_KodaH4.4}}\"/pause 1600/end"
+
+            }
+        },			
+				 
+	{
+            "LogName": "Introduction",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+						"When": {
+   "HasFlag": "beachBridgeFixed"
+},
+            "Entries":
+            {
+"CC_KodaKaho6H/f CC_KodaK 1500/f CC_Kaho 1500/DayofWeek Mon Tue Wed Thu Fri Sat": "continue/73 17/CC_KodaK 73 18 2 CC_Kaho 81 17 2 farmer 63 13 1/skippable/move farmer 6 0 2/pause 200/showFrame CC_KodaK 28/pause 200/showFrame CC_KodaK 29/pause 200/showFrame CC_Kaho 12/pause 400/showFrame CC_Kaho 15/pause 100/showFrame CC_Kaho 12/pause 100/showFrame CC_Kaho 15/pause 100/faceDirection CC_Kaho 2/pause 200/faceDirection CC_Kaho 0/pause 400/showFrame CC_Kaho 1/pause 200/showFrame CC_Kaho 3/pause 100/showFrame CC_Kaho 1/pause 200/showFrame CC_Kaho 3/pause 400/jump CC_Kaho 6 true/move CC_Kaho 0 -4 3/pause 200/showFrame CC_KodaK 28/pause 400/showFrame CC_KodaK 0/pause 400/faceDirection CC_KodaK 0/pause 800/speak CC_Kaho \"{{i18n:CC_KodaKaho6H.0}}\"/pause 400/speak CC_KodaK \"{{i18n:CC_KodaKaho6H.1}}\"/pause 200/faceDirection farmer 2/pause 600/speak CC_Kaho \"{{i18n:CC_KodaKaho6H.2}}\"/pause 400/playSound wind/pause 1800/stopMusic wind/pause 400/speak CC_KodaK \"{{i18n:CC_KodaKaho6H.3}}\"/pause 600/showFrame CC_Kaho 18/pause 600/quickQuestion It's kind of awkward...#{{i18n:CC_KodaKaho6H.4}}#{{i18n:CC_KodaKaho6H.5}}#{{i18n:CC_KodaKaho6H.6}}(break) switchEvent KK6Hexit (break) switchEvent KK6HKoda (break) switchEvent KK6HKaho",
+
+	"KK6Hexit": "pause 400/move farmer -6 0 3 true/emote CC_KodaK 12/emote CC_Kaho 12/pause 1600/end",
+"KK6HKoda": "pause 400/emote CC_KodaK 16/pause 600/showFrame CC_Kaho 17/pause 200/showFrame CC_Kaho 0/pause 800/playMusic moonlightJellies/speak CC_KodaK \"{{i18n:KK6HKoda.0}}\"/pause 800/move CC_KodaK 0 -4 1/pause 200/faceDirection CC_Kaho 3/textAboveHead CC_Kaho \"{{i18n:KK6HKoda.1}}\"/pause 800/speak CC_Kaho \"{{i18n:KK6HKoda.2}}\"/pause 600/stopMusic moonlightJellies/emote CC_KodaK 16/pause 800/speak CC_Kaho \"{{i18n:KK6HKoda.3}}\"/pause 1200/faceDirection CC_KodaK 2/textAboveHead CC_KodaK \"{{i18n:KK6HKoda.4}}\"/pause 800/playMusic movieTheater/speak CC_KodaK \"{{i18n:KK6HKoda.5}}\"/pause 800/speak CC_Kaho \"{{i18n:KK6HKoda.6}}\"/pause 1200/emote CC_KodaK 56/emote CC_Kaho 56/pause 800/speak CC_KodaK \"{{i18n:KK6HKoda.7}}\"/pause 1200/speak CC_Kaho \"{{i18n:KK6HKoda.8}}\"/pause 400/jump CC_KodaK 4/pause 1600/end",
+
+"KK6HKaho": "pause 400/emote CC_Kaho 16/pause 600/showFrame CC_Kaho 17/pause 200/showFrame CC_Kaho 0/pause 400/speak CC_KodaK \"{{i18n:KK6HKaho.0}}\"/pause 800/move CC_KodaK 0 -4 1/pause 200/faceDirection CC_Kaho 3/textAboveHead CC_Kaho \"{{i18n:KK6HKaho.1}}\"/pause 800/speak CC_Kaho \"{{i18n:KK6HKaho.2}}\"/pause 600/stopMusic moonlightJellies/emote CC_KodaK 16/pause 800/speak CC_Kaho \"{{i18n:KK6HKaho.3}}\"/pause 1200/faceDirection CC_KodaK 2/textAboveHead CC_KodaK \"{{i18n:KK6HKaho.4}}\"/pause 800/playMusic movieTheater/speak CC_KodaK \"{{i18n:KK6HKaho.5}}\"/pause 800/speak CC_Kaho \"{{i18n:KK6HKaho.6}}\"/pause 1200/emote CC_KodaK 56/emote CC_Kaho 56/pause 800/speak CC_KodaK \"{{i18n:KK6HKaho.7}}\"/pause 1200/speak CC_Kaho \"{{i18n:KK6HKaho.8}}\"/pause 400/jump CC_KodaK 4/pause 1600/end",
+
+            }
+        },
+				 
+		 {
+            "LogName": "Introduction",
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries":
+            {
+"CC_KodaH8/f CC_KodaK 2000/DayofWeek Mon Tue Wed Thu Fri Sat": "continue/24 12/CC_KodaK 28 12 2 farmer 38 3 2 Elliott 47 11 2 Haley 23 6 2 Penny 38 12 2 Jas 38 11 2 Vincent 38 10 2 Willy 22 24 2/skippable/viewport move 1 1 3000/move Penny 0 12 2 Jas 0 12 2 Vincent 0 12 2/move Penny 2 0 2/move Vincent -1 0 2 farmer 0 7 2/move farmer -6 0 2/pause 1200/speak CC_KodaK \"{{i18n:CC_KodaH8.0}}\"/pause 400/move Haley 2 0 2/faceDirection CC_KodaK 0/pause 200/showFrame CC_KodaK 28/move Haley 0 4 2/pause 600/showFrame CC_KodaK 0/pause 600/move Elliott -12 0 3 true/emote CC_KodaK 40/pause 800/speak CC_KodaK \"{{i18n:CC_KodaH8.1}}\"/pause 1200/textAboveHead Haley \"{{i18n:CC_KodaH8.2}}\"/pause 200/jump CC_KodaK 4/faceDirection CC_KodaK 3/pause 800/speak Haley \"{{i18n:CC_KodaH8.3}}\"/pause 800/textAboveHead Elliott \"{{i18n:CC_KodaH8.4}}\"/jump CC_KodaK 4/faceDirection CC_KodaK 1/faceDirection farmer 1/pause 200/faceDirection farmer 3/pause 400/faceDirection farmer 2/pause 600/speak Elliott \"{{i18n:CC_KodaH8.5}}\"/pause 800/faceDirection CC_KodaK 2/pause 400/emote CC_KodaK 60/pause 1200/quickQuestion She seems anxious...#{{i18n:CC_KodaH8.6}}#{{i18n:CC_KodaH8.7}}#{{i18n:CC_KodaH8.8}}(break) switchEvent KODAINTER (break) switchEvent KODAINTRO (break) switchEvent KODAWALK",
+
+"KODAINTER": "pause 800/friendship CC_KodaK -50/emote farmer 16/pause 800/speak CC_KodaK \"{{i18n:KODAINTER.0}}\"/pause 600/textAboveHead CC_KodaK \"{{i18n:KODAINTER.1}}\"/pause 1200/fade/viewport 1000 1000/warp CC_KodaK -100 -100/warp Elliott -100 -100/warp Penny -100 -100/warp Vincent -100 -100/warp Jas -100 -100/move CC_KodaK 0 -2 2/showFrame CC_KodaK 31/viewport 24 12 clamp/pause 1600/textAboveHead CC_KodaK \"{{i18n:KODAINTER.2}}\"/pause 600/speak CC_KodaK \"{{i18n:KODAINTER.3}}\"/pause 600/playMusic moonlightJellies/pause 600/showFrame CC_KodaK 28/pause 800/showFrame CC_KodaK 0/hideShadow CC_KodaK false/pause 800/speak CC_KodaK \"{{i18n:KODAINTER.4}}\"/pause 800/speak CC_KodaK \"{{i18n:KODAINTER.5}}\"/pause 800/speak CC_KodaK \"{{i18n:KODAINTER.6}}\"/pause 800/emote farmer 56/pause 1600/end",
+
+"KODAINTRO": "pause 800/friendship CC_KodaK 50/emote CC_KodaK 32/pause 1200/speak CC_KodaK \"{{i18n:KODAINTRO.0}}\"/pause 400/emote Elliott 56/pause 200/textAboveHead Haley \"{{i18n:KODAINTRO.1}}\"/pause 1200/fade/viewport 1000 1000/warp CC_KodaK -100 -100/warp Elliott -100 -100/warp Penny -100 -100/warp Vincent -100 -100/warp Jas -100 -100/move CC_KodaK 0 -2 2/showFrame CC_KodaK 35/hideShadow CC_KodaK true/move farmer -2 0 2/viewport 24 12 clamp/pause 1600/textAboveHead CC_KodaK \"{{i18n:KODAINTRO.2}}\"/pause 600/speak CC_KodaK \"{{i18n:KODAINTRO.3}}\"/pause 600/playMusic moonlightJellies/pause 600/showFrame CC_KodaK 28/pause 800/showFrame CC_KodaK 0/hideShadow CC_KodaK false/pause 800/speak CC_KodaK \"{{i18n:KODAINTRO.4}}\"/pause 800/speak CC_KodaK \"{{i18n:KODAINTRO.5}}\"/pause 800/speak CC_KodaK \"{{i18n:KODAINTRO.6}}\"/pause 800/emote farmer 56/pause 1600/end",
+
+"KODAWALK": "pause 1200/friendship CC_KodaK -250/move farmer 0 -14 0/textAboveHead CC_KodaK \"{{i18n:KODAWALK.0}}\"/pause 1600/end",
+
+            }
+        },	
+				 {
+            "LogName": "10 Heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+          {
+"CC_KodaH10/f CC_KodaK 2500/DayofWeek Mon Tue Wed Thu Fri Sat": "continue/64 15/farmer 64 16 2 CC_KodaK 64 18 2/skippable/pause 600/jump CC_KodaK 5/pause 400/faceDirection CC_KodaK 0/pause 600/speak CC_KodaK \"{{i18n:CC_KodaH10.0}}\"/pause 600/jump CC_KodaK 4/pause 200/emote CC_KodaK 32/pause 800/speak CC_KodaK \"{{i18n:CC_KodaH10.1}}\"/pause 1200/speak CC_KodaK \"{{i18n:CC_KodaH10.2}}\"/pause 600/speak CC_KodaK \"{{i18n:CC_KodaH10.3}}\"/pause 800/faceDirection CC_KodaK 2/pause 600/textAboveHead CC_KodaK \"{{i18n:CC_KodaH10.4}}\"/pause 1200/end"
+          
+            }
+
+        },	
+  {
+      
+            "Action": "EditData",
+            "Target": "Data/Events/Koda_Sub",
+            "Entries":
+            {
+"CC_KodaH102/SawEvent CC_KodaH10": "continue/41 15/CC_KodaK 40 12 2 farmer 28 15 0/skippable/playSound doorClose/pause 600/move farmer 3 0 1/faceDirection CC_KodaK 3/pause 800/speak CC_KodaK \"{{i18n:CC_KodaH102.0}}\"/pause 1200/move farmer 4 0 2/pause 1200/faceDirection CC_KodaK 0/pause 600/textAboveHead CC_KodaK \"{{i18n:CC_KodaH102.1}}\"/pause 1200/playSound keyboardTyping/pause 600/playSound keyboardTyping/pause 600/playSound clank/pause 600/playSound button_press/pause 400/playSound clank/pause 200/playSound clank/glow 0 173 56/pause 600/glow 0 173 56 true/pause 1200/playSound furnace/shake CC_KodaK 10000/startJittering/playSound furnace/pause 1600/faceDirection farmer 1/screenFlash 1/playSound furnace/playSound busDriveOff/textAboveHead CC_KodaK \"{{i18n:CC_KodaH102.2}}\"/jump farmer 5/startJittering/pause 800/faceDirection CC_KodaK 2/playSound furnace/pause 1300/playSound furnace/pause 1200/fade/stopJittering/viewport -1000 -1000/stopSound busDriveOff/pause 800/playSound busDriveOff/changeLocation Sub_horizon/switchEvent CC_KodaHtravel"
+
+            }
+        },	
+  {
+      
+            "Action": "EditData",
+            "Target": "Data/Events/Koda_Sub_rain",
+            "Entries":
+            {
+"CC_KodaH102/SawEvent CC_KodaH10/weather rainy": "continue/41 15/CC_KodaK 40 12 2 farmer 28 15 0/skippable/playSound doorClose/pause 600/move farmer 3 0 1/faceDirection CC_KodaK 3/pause 800/speak CC_KodaK \"{{i18n:CC_KodaH102.0}}\"/pause 1200/move farmer 4 0 2/pause 1200/faceDirection CC_KodaK 0/pause 600/textAboveHead CC_KodaK \"{{i18n:CC_KodaH102.1}}\"/pause 1200/playSound keyboardTyping/pause 600/playSound keyboardTyping/pause 600/playSound clank/pause 600/playSound button_press/pause 400/playSound clank/pause 200/playSound clank/glow 0 173 56/pause 600/glow 0 173 56 true/pause 1200/playSound furnace/shake CC_KodaK 10000/startJittering/playSound furnace/pause 1600/faceDirection farmer 1/screenFlash 1/playSound furnace/playSound busDriveOff/textAboveHead CC_KodaK \"{{i18n:CC_KodaH102.2}}\"/jump farmer 5/startJittering/pause 800/faceDirection CC_KodaK 2/playSound furnace/pause 1300/playSound furnace/pause 1200/fade/stopJittering/viewport -1000 -1000/stopSound busDriveOff/pause 800/playSound busDriveOff/changeLocation Sub_horizon/switchEvent CC_KodaHtravel"
+
+            }
+        },	
+  {
+      
+            "Action": "EditData",
+            "Target": "Data/Events/Sub_horizon",
+            "Entries":
+            {
+"CC_KodaHtravel": "pause 400/warp CC_KodaK 1000 1000/warp farmer 1000 1000/faceDirection CC_KodaK 1/changeSprite CC_KodaK Boat/hideShadow CC_KodaK true/faceDirection farmer 2/warp CC_KodaK 4 22/fade/viewport 12 21 clamp/playMusic IslandMusic/pause 1200/playSound trainWhistle/viewport move 4 0 16000/move CC_KodaK 15 0 1/playSound trainWhistle/move CC_KodaK 15 0 1/pause 400/fade/viewport -1000 -1000/pause 600/pause 600/changePortrait CC_KodaK Beach/faceDirection farmer 2/changeSprite CC_KodaK Beach/speak CC_KodaK \"{{i18n:CC_KodaHtravel.0}}\"/pause 800/hideShadow CC_KodaK false/ignoreMovementAnimation CC_KodaK false/changeLocation Turtle_Cove/switchEvent CC_KodaH103"
+
+            }
+        },			
+				 
+				{
+ 
+            "Action": "EditData",
+            "Target": "Data/Events/Turtle_Cove",
+            "Entries":
+            {
+"CC_KodaH103": "pause 400/warp farmer 30 6/warp CC_KodaK 24 6/pause 200/fade/viewport 28 11/playMusic tropical_island_day_ambient/pause 1200/viewport move 1 1 2000/move CC_KodaK 0 1 2/move CC_KodaK 6 0 3/pause 400/showFrame CC_KodaK 19/pause 100/showFrame CC_KodaK 18/pause 200/showFrame CC_KodaK 17/pause 800/move farmer 3 0 2/move farmer 0 2 2/pause 200/showFrame CC_KodaK 19/pause 100/showFrame CC_KodaK 18/pause 200/showFrame CC_KodaK 17/pause 1200/speak CC_KodaK \"{{i18n:CC_KodaH103.0}}\"/pause 800/showFrame CC_KodaK 0/pause 600/move CC_KodaK 0 1 2/speak CC_KodaK \"{{i18n:CC_KodaH103.1}}\"/pause 300/jump CC_KodaK 4/pause 200/textAboveHead CC_KodaK \"{{i18n:CC_KodaH103.2}}\"/pause 1200/speed CC_KodaK 3/move CC_KodaK 0 4 1/pause 200/jump CC_KodaK 6/pause 200/faceDirection CC_KodaK 0/pause 400/textAboveHead CC_KodaK \"{{i18n:CC_KodaH103.3}}\"/pause 800/move farmer 0 5 3/pause 1200/speak CC_KodaK \"{{i18n:CC_KodaH103.4}}\"/pause 1200/faceDirection CC_KodaK 2/pause 600/showFrame CC_KodaK 16/pause 600/playMusic moonlightJellies/speak CC_KodaK \"{{i18n:CC_KodaH103.5}}\"/pause 400/showFrame CC_KodaK 0/move CC_KodaK 1 0 1/move CC_KodaK 0 1 1/pause 600/speak CC_KodaK \"{{i18n:CC_KodaH103.6}}\"/pause 800/faceDirection CC_KodaK 0/pause 800/faceDirection CC_KodaK 1/pause 400/speak CC_KodaK \"{{i18n:CC_KodaH103.7}}\"/pause 600/quickQuestion What's a good name?#{{i18n:CC_KodaH103.8}}#{{i18n:CC_KodaH103.9}}(break) switchEvent KODADISCOVER (break) switchEvent KODAKISS",
+
+"KODADISCOVER": "pause 600/friendship CC_KodaK -100/emote CC_KodaK 16/pause 800/speak CC_KodaK \"{{i18n:KODADISCOVER.0}}\"/pause 400/faceDirection CC_KodaK 2/jump CC_KodaK 4/pause 600/speak CC_KodaK \"{{i18n:KODADISCOVER.1}}\"/pause 1200/speak CC_KodaK \"{{i18n:KODADISCOVER.2}}\"/textAboveHead CC_KodaK \"{{i18n:KODADISCOVER.3}}\"/pause 1200/fade/viewport -1000 -1000/pause 800/message \"{{i18n:KODADISCOVER.4}}\"/pause 800/end",
+
+"KODAKISS": "pause 600/speak CC_KodaK \"{{i18n:KODAKISS.0}}\"/pause 800/move farmer -1 0 3/pause 400/positionOffset farmer 16 0 true/animate farmer true true 100 101/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/positionOffset farmer -2 0/pause 50/showFrame CC_KodaK 6/pause 500/positionOffset CC_KodaK 2 0/pause 50/positionOffset farmer -2 0/positionOffset CC_KodaK 2 0/pause 50/positionOffset farmer -2 0/positionOffset CC_KodaK 2 0/pause 50/positionOffset farmer -2 0/positionOffset CC_KodaK 2 0/pause 50/positionOffset farmer -2 0/positionOffset CC_KodaK 2 0/pause 50/positionOffset farmer -2 0/positionOffset CC_KodaK 2 0/pause 50/positionOffset farmer -2 0/positionOffset CC_KodaK 2 0/pause 50/positionOffset farmer -2 0/positionOffset CC_KodaK 2 0/pause 50/pause 700/playSound dwop/emote CC_KodaK 20/pause 2000/speak CC_KodaK \"{{i18n:KODAKISS.1}}\"/pause 600/showFrame CC_KodaK 4/pause 1200/fade/viewport -1000 -1000/pause 600/speak CC_KodaK \"{{i18n:KODAKISS.2}}\"/pause 400/addItem 903 1/pause 600/message \"{{i18n:KODAKISS.3}}\"/pause 800/end"
+
+            }
+        },
+
+				   {
+            "LogName": "(14 hearts)",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries":
+            {
+"cc_kodafourteen/f CC_KodaK 3500": "continue/64 15/farmer 64 16 2 CC_Kodak 64 18 2/addConversationTopic cc_kodaatdoor 1/pause 1600/speak CC_KodaK \"{{i18n:cc_kodafourteen.0}}\"/pause 400/playSound SpringBirds/pause 600/speak CC_KodaK \"{{i18n:cc_kodafourteen.1}}\"/pause 400/speak CC_KodaK \"{{i18n:cc_kodafourteen.2}}\"/pause 200/end"
+
+			}
+	  },
+	    {
+            "LogName": "(14 hearts)",
+            "Action": "EditData",
+            "Target": "Data/Events/Islandwest",
+            "Entries":
+            {
+"cc_kodafourteen2/SawEvent cc_kodafourteen/G RANDOM 0.5 @addDailyLuck": "tropical_island_day_ambient/77 39/farmer 77 40 2 CC_KodaK 77 42 0/skippable/changeSprite CC_KodaK Beach/changePortrait CC_KodaK Beach/pause 200/emote farmer 16/pause 600/speak CC_KodaK \"{{i18n:cc_kodafourteen2.0}}\"/pause 800/speak CC_KodaK \"{{i18n:cc_kodafourteen2.1}}\"/pause 800/emote CC_KodaK 56/pause 900/fade/viewport -1000 -1000/playMusic IslandMusic/warp farmer 69 7/faceDirection farmer 3/warp CC_KodaK 65 6/faceDirection CC_KodaK 2/move farmer 0 3 0/fade/viewport 66 2 clamp/move CC_KodaK 0 -3 0/pause 600/faceDirection farmer 3/emote farmer 8/pause 200/showFrame CC_KodaK 19/pause 100/showFrame CC_KodaK 18/pause 200/showFrame CC_KodaK 17/pause 1600/fade/viewport -1000 -1000/warp farmer 34 74/faceDirection farmer 2/warp CC_KodaK 37 75/faceDirection CC_KodaK 2/fade/viewport 36 78 clamp/pause 1600/move CC_KodaK 0 1 2/pause 200/showFrame CC_KodaK 16/pause 2600/fade/viewport -1000 -1000/warp farmer 68 82/faceDirection farmer 2/warp CC_KodaK 71 82/faceDirection CC_KodaK 2/fade/viewport 71 90 clamp/pause 400/move farmer 0 5 2 CC_KodaK 0 3 2/pause 400/speak CC_KodaK \"{{i18n:cc_kodafourteen2.2}}\"/pause 400/textAboveHead CC_KodaK \"{{i18n:cc_kodafourteen2.3}}\"/pause 400/move CC_KodaK 0 4 2/jump CC_KodaK 6/playSound dropItemInWater/swimming CC_KodaK/move farmer 0 2 2 CC_KodaK 0 1 2/jump farmer 6/playSound dropItemInWater/swimming farmer/pause 800/move farmer 3 0 2 CC_KodaK 4 0 2/move farmer 0 2 2/fade/viewport -1000 -1000/jump farmer 3/jump CC_KodaK 4/playSound dropItemInWater/pause 2600/stopSwimming farmer/stopSwimming CC_KodaK/switchEvent cc_kodafourteen3",
+
+"cc_kodafourteen3": "changeToTemporaryMap Island_CaptainRoom/pause 1200/warp CC_KodaK 4 4/warp farmer 1 4/faceDirection CC_KodaK 0/faceDirection farmer 1/fade/viewport 2 8 clamp/pause 1200/pause 200/stopMusic IslandMusic/pause 1200/playMusic moonlightJellies/pause 600/speak CC_KodaK \"{{i18n:cc_kodafourteen3.0}}\"/pause 300/faceDirection CC_KodaK 3/pause 1200/speak CC_KodaK \"{{i18n:cc_kodafourteen3.1}}\"/pause 800/speak CC_KodaK \"{{i18n:cc_kodafourteen3.2}}\"/pause 800/speak CC_KodaK \"{{i18n:cc_kodafourteen3.3}}\"/pause 800/speak CC_KodaK \"{{i18n:cc_kodafourteen3.4}}\"/pause 1200/switchEvent cc_kodafourteen4",
+
+"cc_kodafourteen4": "changeLocation Islandwest/pause 600/message \"{{i18n:cc_kodafourteen4.0}}\"/pause 600/speak CC_KodaK \"{{i18n:cc_kodafourteen4.1}}\"/pause 1200/end",
+
+			}
+	  },
+	  	  				   {
+            "LogName": "(14 hearts)",
+            "Action": "EditData",
+            "Target": "Data/Events/Temp",
+            "Entries":
+            {
+"cc_kodafourteen3": "changeToTemporaryMap Island_CaptainRoom/pause 1200/warp CC_KodaK 4 4/warp farmer 1 4/faceDirection CC_KodaK 0/faceDirection farmer 1/fade/viewport 2 8 clamp/pause 1200/pause 200/stopMusic IslandMusic/pause 1200/playMusic moonlightJellies/pause 600/speak CC_KodaK \"{{i18n:cc_kodafourteen3.0}}\"/pause 300/faceDirection CC_KodaK 3/pause 1200/speak CC_KodaK \"{{i18n:cc_kodafourteen3.1}}\"/pause 800/speak CC_KodaK \"{{i18n:cc_kodafourteen3.2}}\"/pause 800/speak CC_KodaK \"{{i18n:cc_kodafourteen3.3}}\"/pause 800/speak CC_KodaK \"{{i18n:cc_kodafourteen3.4}}\"/pause 1200/switchEvent cc_kodafourteen4",
+
+"cc_kodafourteen4": "changeLocation Islandwest/pause 600/message \"{{i18n:cc_kodafourteen4.0}}\"/pause 600/speak CC_KodaK \"{{i18n:cc_kodafourteen4.1}}\"/pause 1200/end",
+			}
+	  },
+		
+												 ]
+}

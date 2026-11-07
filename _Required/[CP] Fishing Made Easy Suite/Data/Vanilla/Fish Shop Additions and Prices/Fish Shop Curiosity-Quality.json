@@ -1,0 +1,42 @@
+{
+	"Changes": [
+		{
+			"LogName": "Fish Shop Curiosity/Quality",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "FishShop", "Items" ],
+			"Entries": {
+			    "(O)856": {"TradeItemAmount": 1,
+                           "Price": 3000,
+                           "AvailableStockLimit": "Global",
+                           "Condition": "PLAYER_BASE_FISHING_LEVEL Current 9",
+                           "Id": "(O)856",
+                           "ItemId": "(O)856",},
+				"(O)877": {"TradeItemAmount": 1,
+                           "Price": 2000,
+                           "AvailableStockLimit": "Global",
+                           "Condition": "PLAYER_BASE_FISHING_LEVEL Current 9",
+                           "Id": "(O)877",
+                           "ItemId": "(O)877",},
+					   },
+			"When": {"Fish Shop Curiosity/Quality": true},
+            "MoveEntries": [
+                { "Id": "(O)877", "BeforeId": "(T)BambooPole" }
+            ],
+			"MoveEntries": [
+                { "Id": "(O)856", "BeforeId": "(T)BambooPole" }
+            ],
+		},
+		{
+			"LogName": "Fishing Shop Curiosity/Quality Level 1",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "FishShop", "Items" ],
+			"Fields": {
+			    "(O)856": {"Condition": null}, //Curiosity Lure
+				"(O)877": {"Condition": null}, //Quality Bobber
+					   },
+			"When": {"Fish Shop Curiosity/Quality": true, "All Tackle Immediately": true},
+		},
+	]
+}

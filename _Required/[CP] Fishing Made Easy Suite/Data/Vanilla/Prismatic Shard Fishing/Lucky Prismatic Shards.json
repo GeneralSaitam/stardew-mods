@@ -1,0 +1,23 @@
+{
+  "Changes": [
+    {
+      "LogName": "Lucky Prismatic Shards",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Default",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)74": {
+          "Chance": 0
+        }
+      },
+      "When": {
+        "Fishable Prismatic Shards (REQ)": true,
+        "Lucky Prismatic Shards": true,
+        "Query: {{DailyLuck}} <= 0.07": true
+      }
+    }
+  ]
+}

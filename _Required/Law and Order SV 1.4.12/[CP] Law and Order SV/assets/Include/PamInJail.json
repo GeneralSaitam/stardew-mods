@@ -1,0 +1,202 @@
+{
+    "Changes": [
+        {
+            //no longer can visit the island
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Pam": {
+                    "CanVisitIsland": "False"
+                }
+            }
+        },
+        {
+            //remove festival shop while locked up (she still attends on day 2)
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "DesertFestival_Pam": null
+            }
+        },
+        {
+            //edit the warp room to send her to jail instead of the trailer
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_WarpRoom_Pam",
+            "MapProperties": {
+                "Warp": "4 5 sdvhead.LawAndOrderSV_Jail 18 9",
+            },
+        },
+        {
+            //except on Spring 16 (desert festival 2)
+           "Action": "EditMap",
+           "Target": "Maps/{{ModId}}_WarpRoom_Pam",
+           "MapProperties": {
+               "Warp": "4 5 Trailer 14 6",
+           },
+           "When":{
+               "Season": "spring",
+               "Day": "16"
+           }
+       },
+        {
+            //update the character schedule
+            "Action": "EditData",
+            "Target": "Characters/schedules/Pam",
+            "Entries": {
+                "spring": "610 sdvhead.LawAndOrderSV_Jail 17 9 1 {{ModId}}_pam_snooze \"Strings\\schedules\\Pam:{{ModId}}_pam_snooze\"/830 sdvhead.LawAndOrderSV_Jail 13 9 2 square_3_3/2200 sdvhead.LawAndOrderSV_Jail 18 9 1 pam_sleep",
+                "summer": "GOTO spring",
+                "fall": "GOTO spring",
+                "winter": "GOTO spring",
+                "rain": "GOTO spring",
+                "GreenRain": "GOTO spring",
+                "SquidFest": "GOTO spring",
+                "DesertFestival": "GOTO spring",
+                "spring_25": "GOTO spring",
+                "bus": "GOTO spring",
+                "JojaMart_Replacement": "GOTO spring",
+            },
+        },
+        {
+            //entries for SVE
+            "Action": "EditData",
+            "Target": "Characters/schedules/Pam",
+            "Entries": {
+                "22": "GOTO spring",
+                "FlashShifter.StardewValleyExpandedCP_CommunityDay": "GOTO spring",
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+            }
+        },
+        {
+            //Dialogue, conversation topic changes
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+            "Entries": {
+                "married_Penny": "{{i18n:PamJail_married_Penny}}",
+                "GreenRain": "{{i18n:PamJail_GreenRain}}",
+                "GreenRainFinished": "{{i18n:PamJail_GreenRainFinished}}",
+                "divorced_Penny": "{{i18n:PamJail_divorced_Penny}}",
+                "wonIceFishing": "{{i18n:PamJail_wonIceFishing}}",
+                "pamHouseUpgrade": "{{i18n:PamJail_pamHouseUpgrade}}",
+                "pamHouseUpgrade_memory_oneweek": "{{i18n:PamJail_pamHouseUpgrade_memory_oneweek}}",
+                "pamHouseUpgradeAnonymous": "{{i18n:PamJail_pamHouseUpgradeAnonymous}}",
+                "MovieInvitation": "{{i18n:PamJail_MovieInvitation}}",
+                "cc_Bus": "{{i18n:PamJail_cc_Bus}}",
+                "Mon": "{{i18n:PamJail_Mon}}",
+                "Tue": "{{i18n:PamJail_Tue}}",
+                "Tue2": "{{i18n:PamJail_Tue2}}",
+                "Wed": "{{i18n:PamJail_Wed}}",
+                "Thu": "{{i18n:PamJail_Thu}}",
+                "Thu4": "{{i18n:PamJail_Thu4}}",
+                "Thu4_inlaw_Penny": "{{i18n:PamJail_Thu4_inlaw_Penny}}",
+                "Fri2": "{{i18n:PamJail_Fri2}}",
+                "Fri": "{{i18n:PamJail_Fri}}",
+                "Sat": "{{i18n:PamJail_Sat}}",
+                "Sat4": "{{i18n:PamJail_Sat4}}",
+                "Sun": "{{i18n:PamJail_Sun}}",
+                "summer_Tue": "{{i18n:PamJail_summer_Tue}}",
+                "summer_Tue2": "{{i18n:PamJail_summer_Tue2}}",
+                "summer_Wed": "{{i18n:PamJail_summer_Wed}}",
+                "summer_Wed4": "{{i18n:PamJail_summer_Wed4}}",
+                "summer_Thu": "{{i18n:PamJail_summer_Thu}}",
+                "summer_Thu4": "{{i18n:PamJail_summer_Thu4}}",
+                "summer_Fri": "{{i18n:PamJail_summer_Fri}}",
+                "summer_Sat2": "{{i18n:PamJail_summer_Sat2}}",
+                "summer_Sat": "{{i18n:PamJail_summer_Sat}}",
+                "fall_Tue": "{{i18n:PamJail_fall_Tue}}",
+                "fall_Tue4": "{{i18n:PamJail_fall_Tue4}}",
+                "fall_Wed": "{{i18n:PamJail_fall_Wed}}",
+                "fall_Thu": "{{i18n:PamJail_fall_Thu}}",
+                "fall_Fri": "{{i18n:PamJail_fall_Fri}}",
+                "fall_Sat": "{{i18n:PamJail_fall_Sat}}",
+                "fall_Sun": "{{i18n:PamJail_fall_Sun}}",
+                "fall_Sun4": "{{i18n:PamJail_fall_Sun4}}",
+                "winter_Mon": "{{i18n:PamJail_winter_Mon}}",
+                "winter_Tue4": "{{i18n:PamJail_winter_Tue4}}",
+                "winter_Tue4_inlaw_Penny": "{{i18n:PamJail_winter_Tue4_inlaw_Penny}}",
+                "winter_Wed": "{{i18n:PamJail_winter_Wed}}",
+                "winter_Thu": "{{i18n:PamJail_winter_Thu}}",
+                "winter_Fri": "{{i18n:PamJail_winter_Fri}}",
+                "winter_Sat": "{{i18n:PamJail_winter_Sat}}",
+                "winter_Sun": "{{i18n:PamJail_winter_Sun}}",
+                "museumCompleted": "{{i18n:PamJail_museumCompleted}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "Pam": "{{i18n:PamJail_rain}}",
+            },
+        },
+
+        //festivals
+        { //egg hunt
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_spring13}}",
+                "Leah": "{{i18n:festivals_pam_leah_spring13}}",
+            },
+        },
+        { //flower dance
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_spring24}}",
+                "Pam_y2": "{{i18n:festivals_pam_spring24_y2}}",
+                "{{Russell}}_y2": "{{i18n:festivals_pam_russell_spring24_y2}}",
+            },
+        },
+        { //luau
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_summer11}}",
+                "Pam_y2": "{{i18n:festivals_pam_summer11_y2}}",
+            },
+        },
+        { //jellies
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_summer28}}",
+                "Pam_y2": "{{i18n:festivals_pam_summer28_y2}}",
+            },
+        },
+        { //fair
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_fall16}}",
+                "Pam_y2": "{{i18n:festivals_pam_fall16_y2}}",
+            },
+        },
+        { //spirits eve
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_fall27}}",
+                "Pam_y2": "{{i18n:festivals_pam_fall27_y2}}",
+            },
+        },
+        { //festival of ice
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_winter8}}",
+                "Pam_y2": "{{i18n:festivals_pam_winter8_y2}}",
+            },
+        },
+        { //winter star
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "Pam": "{{i18n:festivals_pam_winter25}}",
+                "Pam_y2": "{{i18n:festivals_pam_winter25_y2}}",
+            },
+        },
+        
+    ]
+}

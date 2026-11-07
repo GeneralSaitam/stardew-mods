@@ -1,0 +1,87 @@
+{
+  "Changes": [
+
+    {
+        "LogName": "Add Deco Plant Catalogue Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "Entries": {
+            "HXW.DecoPlantSet": {
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Items": [
+                {
+                "Price": 0,
+                "AvailableStockLimit": "Global",
+                "AvoidRepeat": false,
+                "UseObjectDataPrice": false,
+                "IgnoreShopPriceModifiers": false,
+                "PriceModifiers": null,
+                "PriceModifierMode": "Stack",
+                "AvailableStockModifiers": null,
+                "AvailableStockModifierMode": "Stack",
+                "Condition": null,
+                "Id": "Default",
+                "ItemId": "ALL_ITEMS (F)",
+                "MinStack": -1,
+                "MaxStack": -1,
+                "Quality": -1,
+                "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_hwdecoplantfurni"
+                }
+            ],
+            "CustomFields":{
+                "HappyHomeDesigner/Catalogue":"true"
+            }
+            }
+        }
+    },
+
+    {
+        "LogName": "Add Plant Catalogue Item",
+        "Action": "EditData",
+        "Target": "Data/Furniture",
+        "Entries": {    
+            "HXW.DecoPlants_Catalogue": "HXW.DecoPlants_Catalogue/other/1 2/1 1/1/35000/2/{{i18n:DecoPlants_Catalogue}}/75/Mods\\HXW.DecoPlants\\Furniture/true"
+        }
+    },
+  
+    {
+        "LogName": "Add Plant Catalogue Tile Actions",
+        "Action": "EditData",
+        "Target": "sophie.Calcifer/FurnitureActions",
+        "Entries": {
+            "(F)HXW.DecoPlants_Catalogue": {
+                "TileActions": [
+                    {
+                        "TileAction": "OpenShop HXW.DecoPlantSet"
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "LogName": "Add Plant Catalogue to Robin's Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": [ "Carpenter", "Items" ],
+        "Entries": {
+            "HXW.DecoPlants_Catalogue": {
+                "Id": "HXW.DecoPlants_Catalogue",
+                "ItemId": "(F)HXW.DecoPlants_Catalogue",
+                "Price": 10000
+            }
+        }
+    }
+   
+  ]
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,140 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "Animal Catalogue Edit": {
+            "AllowValues": "true, false",
+            "Default": true
+        },
+        "Horse The Book Edit": {
+            "AllowValues": "true, false",
+            "Default": false
+        },
+        "Mapping Cave Systems Edit": {
+            "AllowValues": "true, false",
+            "Default": true
+        },
+        "Ol Slitherlegs Edit": {
+            "AllowValues": "true, false",
+            "Default": true
+        },
+        "Price Catalogue Edit": {
+            "AllowValues": "true, false",
+            "Default": true
+        },
+        "Queen Of Sauce Cookbook Edit": {
+            "AllowValues": "true, false",
+            "Default": true
+        },
+        "Treasure Appraisal Guide Edit": {
+            "AllowValues": "true, false",
+            "Default": true
+        }
+    },
+    "Changes": [
+        {
+            "LogName": "Edit Animal Catalogue Sprite",
+            "Action": "EditImage",
+            "Target": "TileSheets/Objects_2",
+            "FromFile": "assets/Animal Catalogue.png",
+            "ToArea": {
+                "X": 96,
+                "Y": 224,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Animal Catalogue Edit": true
+            }
+        },
+        {
+            "LogName": "Edit Horse: The Book Sprite",
+            "Action": "EditImage",
+            "Target": "TileSheets/Objects_2",
+            "FromFile": "assets/Horse The Book.png",
+            "ToArea": {
+                "X": 80,
+                "Y": 272,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Horse The Book Edit": true
+            }
+        },
+        {
+            "LogName": "Edit Mapping Cave Systems Sprite",
+            "Action": "EditImage",
+            "Target": "TileSheets/Objects_2",
+            "FromFile": "assets/Mapping Cave Systems.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 224,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Mapping Cave Systems Edit": true
+            }
+        },
+        {
+            "LogName": "Edit Ol' Slitherlegs Sprite",
+            "Action": "EditImage",
+            "Target": "TileSheets/Objects_2",
+            "FromFile": "assets/Ol Slitherlegs.png",
+            "ToArea": {
+                "X": 16,
+                "Y": 288,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Ol Slitherlegs Edit": true
+            }
+        },
+        {
+            "LogName": "Edit Price Catalogue Sprite",
+            "Action": "EditImage",
+            "Target": "TileSheets/Objects_2",
+            "FromFile": "assets/Price Catalogue.png",
+            "ToArea": {
+                "X": 32,
+                "Y": 224,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Price Catalogue Edit": true
+            }
+        },
+        {
+            "LogName": "Edit Queen Of Sauce Cookbook Sprite",
+            "Action": "EditImage",
+            "Target": "TileSheets/Objects_2",
+            "FromFile": "assets/Queen Of Sauce Cookbook.png",
+            "ToArea": {
+                "X": 48,
+                "Y": 224,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Queen Of Sauce Cookbook Edit": true
+            }
+        },
+        {
+            "LogName": "Edit Treasure Appraisal Guide Sprite",
+            "Action": "EditImage",
+            "Target": "TileSheets/Objects_2",
+            "FromFile": "assets/Treasure Appraisal Guide.png",
+            "ToArea": {
+                "X": 64,
+                "Y": 272,
+                "Width": 16,
+                "Height": 16
+            },
+            "When": {
+                "Treasure Appraisal Guide Edit": true
+            }
+        }
+    ]
+}

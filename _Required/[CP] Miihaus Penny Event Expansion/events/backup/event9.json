@@ -1,0 +1,398 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/Farm",
+            "Entries":{
+                "162790080/F/f Penny 2250/t 600 800/w sunny/A pennyGone": "continue/
+                64 15/
+farmer 64 16 2 Penny 64 18 0/
+pause 1500/
+speak Penny \"Hi there, @.$0#$b#I was wondering if maybe you would like to go out with me?$l#$b#Like on a proper date to the movie theater in Zuzu City.$l#$b#There's a really good romance comedy playing that I've been wanting to see.$l#$b#It's a movie adaptation of one of my favorite novels!'$h#$b#I bought bus tickets to the city for 9 PM.$l#$b#I'll be waiting at the bus stop a bit earlier.$l#$b#Please don't come too late.$l\"/
+pause 100/
+globalFade 0.011/
+viewport -9999 -9999/
+message \"Penny rushes off nervously without letting you answer.\"/
+pause 50/
+end dialogue Penny \"The bus leaves at 9 PM.$l#$b#I'm so excited.$l#$e#I believe one movie ticket costs 1000g per person.$0\""
+            }
+        },
+        
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/BusStop",
+            "Entries":{
+                "16279008/M 2000/k 162790081 162790082/F/e 162790080/t 2000 2100/A pennyGone":"50s/
+                -1000 -1000/
+Penny 21 11 0 farmer 23 20 0/
+skippable/
+viewport 26 11/
+move farmer 0 -7 3/
+move farmer -2 0 0/
+move farmer 0 -1 0/
+showFrame Penny 26/
+jump Penny 7/
+pause 400/
+showFrame Penny 0/
+faceDirection Penny 2/
+speak Penny \"@!$h#$b#So you decided to go on a date with me?$l\"/
+question fork1 \"What do you say?#'Of course Penny. I feel flattered.'#'No Penny. I just came to let you know I don't want to go out with you.'\"/
+fork noDateForPenny/
+emote Penny 20/
+pause 100/
+speak Penny \"I'm very excited... and nervous!$l#$b#This is my first proper date.$l\"/
+speak Penny \"I think the bus driver is waiting on us. Are you ready to go?$h\"/
+emote farmer 32/
+AdvancedMove Penny false 1 0/
+move farmer 1 0 0/
+move Penny 0 -2 0/
+warp Penny -300 -300/
+playSound slime/
+move farmer 0 -3 0/
+warp farmer -200 -200/
+playSound slime/
+pause 400/
+globalFade/
+viewport -1000 -1000/
+stopMusic/
+playSound busDriveOff/
+pause 900/
+message \"You and Penny have a pleasant bus ride.#Penny seems a bit tense and shy, but she looks at you with wide, attentive eyes.#After a while, you make it to the movie theater in Zuzu City.\"/
+changeToTemporaryMap MovieTheater/
+globalFadeToClear 0.007 true/
+playMusic movieTheater/
+viewport 12 8/
+pause 2000/
+warp farmer 13 15/
+playSound doorClose/
+move farmer 0 -3 2/
+warp Penny 14 15/
+playSound doorClose/
+move Penny 0 -3 3/
+faceDirection farmer 1/
+speak Penny \"It's pretty empty. I believe most people are already sitting in the theater room.\"/
+pause 300/
+speak Penny \"Let's go and get our tickets.\"/
+pause 300/
+advancedMove farmer false 0 -3 -7 0 0 -2/
+move Penny 0 -3 3/
+move Penny -7 0 0/
+move Penny 0 -2 0/
+pause 100/
+faceDirection farmer 0/
+message \"Cashier Lady: What can I do for you two lovely people?\"/
+pause 200/
+speak Penny \"We would like two tickets for the movie please.\"/
+quickQuestion What do you do?#Let Penny pay for the tickets.#Pay only for your ticket. (-1000$)#Pay for the tickets. (-2000$)(break)friendship Penny -50\\speak Penny \"Oh, I guess I have just enough to invite you @.$3\"\\emote farmer 60(break)money -1000\\friendship Penny -10\\faceDirection Penny 3\\speak Penny \"Thank you for paying for your own ticket even though I invited you out.\"(break)money -2000\\friendship Penny 50\\faceDirection Penny 3\\speak Penny \"...$l\"\\faceDirection farner 1\\speak Penny \"Thanks for paying @. I... I appreciate it.$l\" /
+faceDirection Penny 3/
+faceDirection farmer 1/
+pause 200/
+speak Penny \"Well, I think we're all set!$0#$b#Let's get ourselves into the theater.%fork\"/
+fork toTheMovie/
+end",
+                "162790081/M 1000/k 16279008 162790082/F/e 162790080/t 2000 2100/A pennyGone":"50s/
+                -1000 -1000/
+Penny 21 11 0 farmer 23 20 0/
+skippable/
+viewport 26 11/
+move farmer 0 -7 3/
+move farmer -2 0 0/
+move farmer 0 -1 0/
+showFrame Penny 26/
+jump Penny 7/
+pause 400/
+showFrame Penny 0/
+faceDirection Penny 2/
+speak Penny \"@!$h#$b#So you decided to go on a date with me?$l\"/
+question fork1 \"What do you say?#'Of course Penny. I feel flattered.'#'No Penny. I just came to let you know I don't want to go out with you.'\"/
+fork noDateForPenny/
+emote Penny 20/
+pause 100/
+speak Penny \"I'm very excited... and nervous!$l#$b#This is my first proper date.$l\"/
+speak Penny \"I think the bus driver is waiting on us. Are you ready to go?$h\"/
+emote farmer 32/
+AdvancedMove Penny false 1 0/
+move farmer 1 0 0/
+move Penny 0 -2 0/
+warp Penny -300 -300/
+playSound slime/
+move farmer 0 -3 0/
+warp farmer -200 -200/
+playSound slime/
+pause 400/
+globalFade/
+viewport -1000 -1000/
+stopMusic/
+playSound busDriveOff/
+pause 900/
+message \"You and Penny have a pleasant bus ride.#Penny seems a bit tense and shy, but she looks at you with wide, attentive eyes.#After a while, you make it to the movie theater in Zuzu City.\"/
+changeToTemporaryMap MovieTheater/
+globalFadeToClear 0.007 true/
+playMusic movieTheater/
+viewport 12 8/
+pause 2000/
+warp farmer 13 15/
+playSound doorClose/
+move farmer 0 -3 2/
+warp Penny 14 15/
+playSound doorClose/
+move Penny 0 -3 3/
+faceDirection farmer 1/
+speak Penny \"It's quite empty. I believe most people are already sitting in the theater room.\"/
+pause 300/
+speak Penny \"Let's go and get our tickets.\"/
+pause 300/
+advancedMove farmer false 0 -3 -7 0 0 -2/
+move Penny 0 -3 3/
+move Penny -7 0 0/
+move Penny 0 -2 0/
+pause 100/
+faceDirection farmer 0/
+message \"Cashier Lady: What can I do for you two lovely people?\"/
+pause 200/
+speak Penny \"We would like two tickets for the movie please.\"/
+quickQuestion What do you do? (You have less than 2000$, paying for both is not an option)#Let Penny pay for the tickets.#Pay only for your ticket. (-1000$)(break)friendship Penny -50\\speak Penny \"Oh, I guess I have just enough to invite you @.$3\"\\emote farmer 60(break)money -1000\\friendship Penny -10\\faceDirection Penny 3\\speak Penny \"Thank you for paying for your own ticket even though I invited you out.\" /
+faceDirection Penny 3/
+faceDirection farmer 1/
+pause 200/
+speak Penny \"Well, I think we're all set!$0#$b#Let's get ourselves into the theater.%fork\"/
+fork toTheMovie/
+end",
+                       "162790082/k 16279008 162790081/F/e 162790080/t 2000 2100/A pennyGone":"50s/
+                       -1000 -1000/
+Penny 21 11 0 farmer 23 20 0/
+skippable/
+viewport 26 11/
+move farmer 0 -7 3/
+move farmer -2 0 0/
+move farmer 0 -1 0/
+showFrame Penny 26/
+jump Penny 7/
+pause 400/
+showFrame Penny 0/
+faceDirection Penny 2/
+speak Penny \"@!$h#$b#So you decided to go on a date with me?$l\"/
+question fork1 \"What do you say?#'Of course Penny. I feel flattered.'#'No Penny. I just came to let you know I don't want to go out with you.'\"/
+fork noDateForPenny/
+emote Penny 20/
+pause 100/
+speak Penny \"I'm very excited... and nervous!$l#$b#This is my first proper date.$l\"/
+speak Penny \"I think the bus driver is waiting on us. Are you ready to go?$h\"/
+emote farmer 32/
+AdvancedMove Penny false 1 0/
+move farmer 1 0 0/
+move Penny 0 -2 0/
+warp Penny -300 -300/
+playSound slime/
+move farmer 0 -3 0/
+warp farmer -200 -200/
+playSound slime/
+pause 400/
+globalFade/
+viewport -1000 -1000/
+stopMusic/
+playSound busDriveOff/
+pause 900/
+message \"You and Penny have a pleasant bus ride.#Penny seems a bit tense and shy, but she looks at you with wide, attentive eyes.#After a while, you make it to the movie theater in Zuzu City.\"/
+changeToTemporaryMap MovieTheater/
+globalFadeToClear 0.007 true/
+playMusic movieTheater/
+viewport 12 8/
+pause 2000/
+warp farmer 13 15/
+playSound doorClose/
+move farmer 0 -3 2/
+warp Penny 14 15/
+playSound doorClose/
+move Penny 0 -3 3/
+faceDirection farmer 1/
+speak Penny \"It's rather empty. I believe most people are already sitting in the theater room.\"/
+pause 300/
+speak Penny \"Let's go and get our tickets.\"/
+pause 300/
+advancedMove farmer false 0 -3 -7 0 0 -2/
+move Penny 0 -3 3/
+move Penny -7 0 0/
+move Penny 0 -2 0/
+pause 100/
+faceDirection farmer 0/
+message \"Cashier Lady: What can I do for you two lovely people?\"/
+pause 200/
+speak Penny \"We would like two tickets for the movie please.\"/
+message \"You don't have enough money to pay for your ticket.#You have to let Penny pay 2000$ for both of you.\"/
+friendship Penny -50/
+speak Penny \"Oh, I guess I have just enough to invite you @.$3\"/
+emote farmer 60/
+faceDirection Penny 3/
+faceDirection farmer 1/
+pause 200/
+speak Penny \"Well, I think we're all set!$0#$b#Let's get ourselves into the theater.%fork\"/
+fork toTheMovie/
+end",
+                "noDateForPenny":"stopMusic/
+                friendship Penny -1000/
+speak Penny \"...$3\"/
+shake Penny 3000/
+pause 200/
+showFrame Penny 23/
+pause 1500/
+speak Penny \"...$s\"/
+emote Penny 28/
+showFrame Penny 0/
+speed Penny 5/
+advancedMove Penny false 2 0 0 11 6 0/
+pause 100/
+faceDirection farmer 1/
+pause 250/
+faceDirection farmer 2/
+emote farmer 60/
+globalFade/
+viewport -1000 -1000/
+end dialogue Penny \"...$s\"",
+                }
+        
+           
+        },
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/Temp",
+            "Entries":{
+                "toTheMovie":"advancedMove farmer false 7 0 0 -3/
+                move Penny 7 0 0/
+move Penny 0 -3 0/
+warp Penny 300 300/
+warp farmer 301 300/
+playSound doorClose/
+globalFade/
+viewport -1000 -1000/
+faceDirection farmer 0/
+faceDirection Penny 0/
+addTemporaryActor Marcello 16 16 3 8 0 true/
+addTemporaryActor Morris 16 16 5 6 0 true/
+showFrame Morris 16/
+showFrame Marcello 16/
+addTemporaryActor LeahExFemale 16 32 9 10 0 true/
+showFrame LeahExFemale 7/
+positionOffset LeahExFemale 0 16/
+addTemporaryActor MrQi 16 16 9 8 0 true/
+showFrame MrQi 16/
+addTemporaryActor ClothesTherapyCharacters 16 16 10 10 0 true/
+showFrame ClothesTherapyCharacters 43/
+viewport -1000 -1000/
+pause 500/
+globalFadeToClear 0.005 true/
+changeToTemporaryMap MovieTheaterScreen/
+viewport 7 8/
+ambientLight 79 79 63/
+pause 2000/
+warp farmer 1 15/
+playSound doorClose/
+move farmer 0 -1 2/
+pause 800/
+warp Penny 1 15/
+playSound doorClose/
+pause 500/
+emote Penny 32/
+pause 200/
+move Penny 0 -5 0 true/
+move farmer 0 -5 2 false/
+pause 300/
+speak Penny \"Our seats are in this row.$0\"/
+emote farmer 32/
+pause 200/
+speak Penny \"After me?$0#$b#Thank you.$l#$b#What a gentleman.$l^What a nice gesture.$l\"/
+advancedMove farmer false 0 1 3 0/
+move Penny 4 0 0/
+stopAdvancedMoves/
+faceDirection farmer 0/
+pause 250/
+showFrame Penny 9/
+positionOffset Penny 0 16/
+playSound snowyStep/
+pause 300/
+showFrame farmer 62/
+positionOffset farmer 0 16/
+playSound thudStep/
+pause 500/
+stopMusic/
+pause 500/
+speak Penny \"I think the movie is about to start.$l\"/
+pause 600/
+playSound slime/
+positionOffset Penny -4 -4/
+pause 50/
+positionOffset Penny 0 4/
+pause 350/
+playSound slime/
+positionOffset Penny -4 -4/
+pause 50/
+positionOffset Penny 0 4/
+pause 350/
+playSound slime/
+positionOffset Penny -4 -4/
+pause 50/
+positionOffset Penny 0 4/
+globalFade 0.005/
+viewport -1000 -1000/
+message \"You and Penny thoroughly enjoy your date. You hold hands and snuggle in the dark theater. The movie was pretty awesome, too.#You take the bus back to Pelican Town together, chatting animatedly about the film.#Then you walk Penny home.\"/
+warp farmer 66 70/
+warp Penny 66 69/
+showFrame Penny 0/
+faceDirection Penny 1/
+showFrame farmer 0/
+faceDirection farmer 1/
+globalFadeToClear 0.009 true/
+playMusic echos/
+changeLocation Town/
+viewport 71 70/
+advancedMove farmer false 4 0 1 1000/
+move Penny 5 0 2/
+move Penny 0 1 3/
+pause 500/
+speak Penny \"@, this date was... wonderful. I'm so glad my first date was with you.$4#$b#I was so nervous, but you made me feel safe. You're a special person.$4#$b# Tonight was special because I was with you.$l\"/
+emote Penny 20/
+speak Penny \"Thanks for everything, @.$l#$b#And thank you for walking me home.$l\"/
+emote farmer 32/
+move Penny 1 0 1/
+pause 1500/
+faceDirection Penny 3/
+pause 100/
+speed Penny 5/
+move Penny -1 0 3/
+showFrame Penny 20/
+positionOffset Penny -3 0/
+pause 50/
+positionOffset Penny -3 0/
+pause 50/
+positionOffset Penny -3 0/
+pause 50/
+positionOffset Penny -3 0/
+pause 50/
+positionOffset Penny -3 0/
+pause 50/
+positionOffset Penny -3 0/
+pause 50/
+positionOffset Penny -3 0/
+pause 50/
+positionOffset Penny -3 0/
+pause 50/
+positionOffset Penny -3 0/
+pause 50/
+positionOffset Penny -3 0/
+pause 50/
+positionOffset Penny -3 0/
+pause 50/
+positionOffset Penny -2 0/
+friendship Penny 20/
+message \"Penny hugs you tightly.\"/
+pause 250/
+animate farmer false true 500 34/
+pause 1000/
+globalFade 0.005/
+viewport -1000 -1000/
+message \"You walk back home, slowly and thoughtfully. What a lovely evening.\"/
+end dialogue Penny \"Thanks so much for going out with me! It made me feel really special.$l\"",
+            }
+        },
+    ]
+}

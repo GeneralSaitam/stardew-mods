@@ -1,0 +1,43 @@
+{
+	"Changes":[
+		//This is for "getting gifted" dialogues. 
+		
+		{
+			"LogName": "Martin - Winter Star, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Martin",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Martin.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Martin": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Morgan - Winter Star, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Morgan",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Morgan.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Morgan": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Gunther - Winter Star, Gifting",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/GuntherSilvian",
+			"Entries":{
+				"WinterStar_ReceiveGift": "{{i18n:UWS.Gunther.WinterStar.Gifting}}",
+			},
+			"When": {
+				"Gunther": "enabled",
+			},
+		},
+		
+		//Lance stuff here if I decide to do it (regular/dating - marriage in relevant normal documents
+	],
+}

@@ -1,0 +1,298 @@
+{
+//	"Format": "2.0.0",
+
+	"Changes": [
+
+//PIBER20'S EXPLORABLE WEST FOREST
+	{
+		"LogName": "Add beetles in the flower dance area",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 20, 26, 6 |key=fdforest critters coordinate}}",
+					"Y": "{{Random: 21, 40, 36 |key=fdforest critters coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Beetle_A_WA, Beetle_B_WA, Beetle_C_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Beetles": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add bobcats in the flower dance area",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {
+               "Position": { "X": 26, "Y": 37 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1}} SmolHooman.WildAnimalsCC.Bobcat_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Bobcats": true,
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Snow, Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add frogs in the flower dance area",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 5, 42 |key=fdforest frogs coordinate}}",
+					"Y": "{{Random: 40, 41 |key=fdforest frogs coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Frog_WA, Toad_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Frogs + Toads": true,		
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add ducks in the flower dance area river",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 34, 23, 9 |key=fdforest duck coordinates}}",
+					"Y": "{{Random: 46, 45, 46 |key=fdforest duck coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: DuckDrake_WA, DuckDrake_WA, DuckDrake_Friendly_WA}}"
+               },
+            },
+            {
+               "Position": {
+					"X": "{{Random: 23, 9, 34 |key=fdforest duck coordinates}}",
+					"Y": "{{Random: 45, 46, 46 |key=fdforest duck coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Duck_WA, Duck_WA, Duck_Friendly_WA}}"
+               },
+            },
+            {
+               "Position": {
+					"X": "{{Random: 9, 34, 23 |key=fdforest duck coordinates}}",
+					"Y": "{{Random: 46, 46, 45 |key=fdforest duck coordinates}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 3, 3}} SmolHooman.WildAnimalsCC.{{Random: Duckling_WA, Duckling_WA, Duckling_Friendly_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Ducks": true,
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Rain, Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add grasshoppers in the flower dance area",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 6, 20, 26 |key=fdforest critters coordinate}}",
+					"Y": "{{Random: 36, 21, 40 |key=fdforest critters coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Grasshopper_A_WA, Grasshopper_B_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Grasshoppers": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add lizards in the flower dance area",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 26, 6, 20 |key=fdforest critters coordinate}}",
+					"Y": "{{Random: 40, 36, 21 |key=fdforest critters coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Lizard_B_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Lizards": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Sun, Wind, Rain",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add opossums in the flower dance area",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 45, 24 |key=fdforest coordinate}}",
+					"Y": "{{Random: 12, 24 |key=fdforest coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Opossum_WA, Opossum_WA, OpossumJoeys_WA, Opossum_Timid_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Opossums": true,
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add owls in the flower dance area",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 10, 11 |key=fdforest owls coordinate}}",
+					"Y": "{{Random: 33, 7 |key=fdforest owls coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Owl_Timid_WA, Owl_WA, Owl_Friendly_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Owls": true,
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Snow, Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add raccoons in the flower dance area",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 24, 45 |key=fdforest coordinate}}",
+					"Y": "{{Random: 24, 12 |key=fdforest coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1}} SmolHooman.WildAnimalsCC.Raccoon_WA"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Raccoons": true,
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add skunks in the flower dance area",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {		
+               "Position": {
+					"X": "{{Random: 18, 12 |key=fdforest skunks coordinate}}",
+					"Y": "{{Random: 30, 22 |key=fdforest skunks coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Skunk_Timid_WA, Skunk_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Animals |contains= Skunks": true,
+			"HasWalletItem |contains=SpecialCharm": "false",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add snails in the flower dance area",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {
+               "Position": { "X": 12, "Y": 40 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: {{AnimalAbundanceToken}}, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Snail_A_WA, Snail_B_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Snails": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Rain",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add squirrels and chipmunks in the flower dance area",
+		"Action": "EditMap",
+		"Target": "Maps/p20_forestleft",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 32, 27, 4 |key=fdforest squirrel coordinate}}",
+					"Y": "{{Random: 12, 39, 20 |key=fdforest squirrel coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Squirrel_A_WA, Squirrel_B_WA, Squirrel_A_Friendly_WA, Squirrel_B_Friendly_WA, Chipmunk_WA, Chipmunk_Friendly_WA, Squirrel_A_Timid_WA, Squirrel_B_Timid_WA, Chipmunk_Timid_WA}}"
+               },
+            },
+         ],
+		"When": {
+			"Load Wild Critters |contains= Squirrels + Chipmunks": true,
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	]
+}

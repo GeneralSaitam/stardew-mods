@@ -1,0 +1,59 @@
+{
+  "Changes": [
+    {
+      "LogName": "SBV - Recatch Legendary Fish Aberrant",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_SBV_MinesFinal",
+        "Fish"
+      ],
+      "Fields": {
+        "skellady.SBVCP_Aberrant": {
+          "CatchLimit": -1
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "SBV - Recatch Legendary Fish Angler Jr",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Custom_SBV_SecretForest2",
+        "Fish"
+      ],
+      "Fields": {
+        "skellady.SBVCP_S2AnglerJr": {
+          "CatchLimit": -1
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "SBV - Recatch Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "skellady.SBVCP_Aberrant": {
+          "CatchLimit": -1
+        },
+        "skellady.SBVCP_AnglerJr": {
+          "CatchLimit": -1
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true,
+        "Legendary Fish On Farm": true
+      }
+    }
+  ]
+}

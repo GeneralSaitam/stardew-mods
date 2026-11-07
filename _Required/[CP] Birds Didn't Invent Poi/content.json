@@ -1,0 +1,14 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    // previously said "food from my home" -> "food we make at home"
+    {
+      "LogName": "Fix Leo's Mail",
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "LeoCooking": "@,^Here's a food we make at home, that me and my family enjoy. Hope you like it. ^^  -Leo^^P.S. Willy helped me write this.%item cookingRecipe %%[#]Leo's Recipe"
+      }
+    }
+  ]
+}

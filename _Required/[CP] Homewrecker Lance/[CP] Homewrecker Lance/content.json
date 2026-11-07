@@ -1,0 +1,143 @@
+{
+  "Format": "2.6.0",
+  "Changes": [
+	{
+		"LogName": "Base Sprites & Portraits", //Base
+		"Action": "Load",
+		"Target": "Portraits/Lance, Characters/Lance",
+		"FromFile": "assets/{{Target}}_Spring.png"
+	},
+	{
+		"LogName": "Sprites & Portraits", //Seasonals
+		"Action": "Load",
+		"Target": "Portraits/Lance_Spring, Characters/Lance_Spring, Portraits/Lance_Summer, Characters/Lance_Summer, Portraits/Lance_Fall, Characters/Lance_Fall, Portraits/Lance_Winter, Characters/Lance_Winter, Portraits/Lance_FlowerDance, Characters/Lance_FlowerDance, Portraits/Lance_Beach, Characters/Lance_Beach",
+		"FromFile": "assets/{{Target}}.png",
+		
+	},
+
+    {
+		"LogName": "Lance Appearance Data", 
+		"Action": "EditData", 
+		"Target": "Data/Characters",
+		"TargetField": ["Lance"],
+		"Entries": {
+			"Appearance": [
+				{
+					"Id": "{{ModID}}_Lance_Spring",
+					"Condition": "ANY \"LOCATION_NAME Target Custom_FirstSlashGuestRoom Custom_FirstSlashGuild Custom_FirstSlashHallway\" \"LOCATION_CONTEXT Target Island\" \"LOCATION_SEASON Target Spring\"",
+					"Portrait": "Portraits/Lance_Spring",
+					"Sprite": "Characters/Lance_Spring",
+					"Precedence": -200,
+					"Weight": 1,
+				},
+				{
+					"Id": "{{ModID}}_Lance_Summer",
+					"Season": "Summer",
+					"Portrait": "Portraits/Lance_Summer",
+					"Sprite": "Characters/Lance_Summer",
+					"Precedence": -200,
+					"Weight": 1,
+				},
+				{
+					"Id": "{{ModID}}_Lance_Fall",
+					"Season": "Fall",
+					"Portrait": "Portraits/Lance_Fall",
+					"Sprite": "Characters/Lance_Fall",
+					"Precedence": -200,
+					"Weight": 1,
+				},
+				{
+					"Id": "{{ModID}}_Lance_Winter",
+					"Condition": "ANY \"LOCATION_NAME Target Custom_CrimsonBadlands Custom_IridiumQuarry Custom_DesertRailway\" \"LOCATION_SEASON Target Winter\"",
+					"Portrait": "Portraits/Lance_Winter",
+					"Sprite": "Characters/Lance_Winter",
+					"Precedence": -200,
+					"Weight": 1,
+				},
+				{
+					"Id": "{{ModID}}_Lance_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24",
+					"Portrait": "Portraits/Lance_FlowerDance",
+					"Sprite": "Characters/Lance_FlowerDance",
+					"Precedence": -2000,
+					"Weight": 1,
+				},
+				{
+					"Id": "{{ModID}}_Lance_Beach",
+					"Portrait": "Portraits/Lance_Beach",
+					"Sprite": "Characters/Lance_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -200,
+					"Weight": 1,
+				},
+			]
+
+		}
+    },
+
+    // SVE TILESHEET OVERRIDES
+    {
+      "LogName": "Override SVE Seasonal Tilesheets (Lance heart events)",  
+      "Action": "EditImage",
+      "Target": "Maps/spring_SVE_Tilesheet2, Maps/summer_SVE_Tilesheet2, Maps/fall_SVE_Tilesheet2, Maps/winter_SVE_Tilesheet2",
+      "FromFile": "assets/Tilesheets/SVE_Tilesheet2.png",
+	  "ToArea": {
+		  "X": 946,
+		  "Y": 0,
+		  "Width": 16,
+		  "Height": 32
+	  },
+	  
+    },
+    {
+      "LogName": "Override FirstSlashGuildBuilding (Lance heart events)", 
+      "Action": "EditImage",
+      "Target": "Maps/FirstSlashGuildBuilding",
+      "FromFile": "assets/Tilesheets/FirstSlashGuildBuilding.png",
+	  "ToArea":{
+			"X": 0,
+			"Y": 316,
+			"Width": 44,
+			"Height": 34
+		}
+    },
+	{
+      "LogName": "Override SVE Seasonal Extras (Lance heart events) (Seasonal Bit)", 
+      "Action": "EditImage",
+      "Target": "Maps/spring_z_extras, Maps/summer_z_extras, Maps/fall_z_extras, Maps/winter_z_extras",
+      "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",
+	  "ToArea":{
+			"X": 192,
+			"Y": 799,
+			"Width": 31,
+			"Height": 34,
+		}
+    }, 
+	{
+      "LogName": "Override SVE Seasonal Extras (Lance heart events) (NonSeasonal bit)", 
+      "Action": "EditImage",
+      "Target": "Maps/{{Season}}_z_extras",
+      "FromFile": "assets/Tilesheets/z_extras.png",
+	  "ToArea":{
+			"X": 191,
+			"Y": 640,
+			"Width": 16,
+			"Height": 132,
+		}
+    }, 
+
+    // SVE SPOUSE PORTRAIT FURNITURE
+    {
+      "LogName": "Override SVE Spouse Portrait Furniture (Lance)", 
+      "Action": "EditImage",
+      "Target": "Mods/FlashShifter.StardewValleyExpandedCP/SVE_Portraits",
+      "FromFile": "assets/Items/Furniture/SVE_Portraits.png",
+	  	  "ToArea":{
+			"X": 160,
+			"Y": 0,
+			"Width": 32,
+			"Height": 32,
+		}
+    }
+  ]
+}

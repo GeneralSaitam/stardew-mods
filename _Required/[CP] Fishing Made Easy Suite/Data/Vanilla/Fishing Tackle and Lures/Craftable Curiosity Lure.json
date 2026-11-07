@@ -1,0 +1,62 @@
+{
+	"Changes": [
+		{
+			"LogName": "Craftable Curiosity Lure Fishing Level 9",
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"Curiosity Lure": "336 3 335 2 64 1/Home/856/false/Fishing 9",
+				},
+			"When": {"Craftable Curiosity Lure": "Enabled (Fish Level 9)"}
+		},
+		{
+			"LogName": "Craftable Curiosity Lure Fishing Level 1",
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"Curiosity Lure": "336 3 335 2 64 1/Home/856/false/Fishing 1",
+				},
+			"When": {"Craftable Curiosity Lure": "Enabled (Fish Level 1)"}
+		},
+		{
+			"LogName": "Craftable Curiosity Lure Materials Lessened Fishing Level 9",
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Fields": {
+				"Curiosity Lure": {0: "336 1 335 1 64 1"},
+				},
+			"When": {"Curiosity Lure Materials": "Lessened Materials",
+			         "Craftable Curiosity Lure": "Enabled (Fish Level 9)"}
+		},
+		{
+			"LogName": "Craftable Curiosity Lure Materials Lessened Fishing Level 1",
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Fields": {
+				"Curiosity Lure": {0: "336 1 335 1 64 1"},
+				},
+			"When": {"Curiosity Lure Materials": "Lessened Materials",
+			         "Craftable Curiosity Lure": "Enabled (Fish Level 1)"}
+		},
+		{
+			"LogName": "Craftable Curiosity Lure 1 Copper Bar Fishing Level 9",
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Fields": {
+				"Curiosity Lure": {0: "334 1"},
+				},
+			"When": {"Curiosity Lure Materials": "1 Copper Bar",
+			         "Craftable Curiosity Lure": "Enabled (Fish Level 9)"}
+		},
+		{
+			"LogName": "Craftable Curiosity Lure 1 Copper Bar Fishing Level 1",
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Fields": {
+				"Curiosity Lure": {0: "334 1"},
+				},
+			"When": {"Curiosity Lure Materials": "1 Copper Bar",
+			         "Craftable Curiosity Lure": "Enabled (Fish Level 1)"}
+		},
+	]
+}

@@ -1,0 +1,174 @@
+{
+  "Format": "2.8.0",
+
+"ConfigSchema": {
+    "EnableBasement": {
+      "AllowValues": "true, false",
+      "Default": "true"
+    }
+  },
+  "Changes": [
+    {
+      "LogName": "Load Saloon Attic Map",
+      "Action": "Load",
+      "Target": "Maps/EKCustom_SaloonAttic",
+      "FromFile": "assets/Maps/EKCustom_SaloonAttic.tmx"
+    },
+
+{
+  "LogName": "Load Saloon Basement Map",
+  "Action": "Load",
+  "Target": "Maps/Custom_SaloonBasement",
+  "FromFile": "assets/Maps/Custom_SaloonBasement.tmx"
+},
+
+{
+  "LogName": "Register Saloon Attic Location",
+  "Action": "EditData",
+  "Target": "Data/Locations",
+  "Entries": {
+    "EKCustom_SaloonAttic": {
+      "DisplayName": "{{i18n: location.attic.name}}",
+      "DefaultArrivalTile": {
+        "X": 19,
+        "Y": 22
+      },
+      "CreateOnLoad": {
+        "MapPath": "Maps/EKCustom_SaloonAttic"
+      }
+    }
+  }
+},
+
+{
+  "LogName": "Register Saloon Basement Location",
+  "Action": "EditData",
+  "Target": "Data/Locations",
+  "Entries": {
+    "Custom_SaloonBasement": {
+      "DisplayName": "{{i18n: location.basement.name}}",
+      "DefaultArrivalTile": {
+        "X": 19,
+        "Y": 3
+      },
+      "CreateOnLoad": {
+        "MapPath": "Maps/Custom_SaloonBasement"
+      }
+    }
+  },
+  "When": {
+    "EnableBasement": true
+  }
+},
+
+    {
+      "LogName": "Add Joja Cola Vending Machine Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "EmpressKimi.SaloonExpansion.JojaVendingMachine": {
+          "OpenSound": "dwop",
+          "PurchaseSound": "purchaseClick",
+          "Items": [
+            {
+              "Id": "JojaCola",
+              "ItemId": "(O)167",
+              "Price": 75
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "LogName": "Add Saloon Attic Entrance Patch",
+      "Action": "EditMap",
+      "Target": "Maps/Saloon",
+      "FromFile": "assets/Maps/Saloon_AtticEntrance.tmx",
+      "ToArea": {
+        "X": 14,
+        "Y": 8,
+        "Width": 4,
+        "Height": 3
+      }
+    },
+
+{
+  "LogName": "Add Saloon Basement Entrance Patch",
+  "Action": "EditMap",
+  "Target": "Maps/Saloon",
+  "FromFile": "assets/Maps/Saloon_BasementEntrance.tmx",
+  "ToArea": {
+    "X": 5,
+    "Y": 23,
+    "Width": 4,
+    "Height": 2
+  },
+  "When": {
+    "EnableBasement": true
+  }
+},
+
+    {
+      "LogName": "Add Saloon To Attic Warp",
+      "Action": "EditMap",
+      "Target": "Maps/Saloon",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [ "MapProperties", "Warp" ],
+          "Value": "15 9 EKCustom_SaloonAttic 19 21 16 9 EKCustom_SaloonAttic 20 21",
+          "Delimiter": " "
+        }
+      ]
+    },
+
+    {
+      "LogName": "Add Attic To Saloon Return Warp",
+      "Action": "EditMap",
+      "Target": "Maps/EKCustom_SaloonAttic",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [ "MapProperties", "Warp" ],
+          "Value": "19 22 Saloon 15 11 20 22 Saloon 16 11",
+          "Delimiter": " "
+        }
+      ]
+    },
+
+{
+  "LogName": "Add Saloon To Basement Warp",
+  "Action": "EditMap",
+  "Target": "Maps/Saloon",
+  "TextOperations": [
+    {
+      "Operation": "Append",
+      "Target": [ "MapProperties", "Warp" ],
+      "Value": "6 24 Custom_SaloonBasement 19 3 7 24 Custom_SaloonBasement 20 3",
+      "Delimiter": " "
+    }
+  ],
+  "When": {
+    "EnableBasement": true
+  }
+},
+
+    {
+  "LogName": "Add Basement To Saloon Return Warp",
+  "Action": "EditMap",
+  "Target": "Maps/Custom_SaloonBasement",
+  "TextOperations": [
+    {
+      "Operation": "Append",
+      "Target": [ "MapProperties", "Warp" ],
+      "Value": "19 2 Saloon 6 23 20 2 Saloon 7 23",
+      "Delimiter": " "
+    }
+  ],
+  "When": {
+    "EnableBasement": true
+  }
+}
+  ]
+}

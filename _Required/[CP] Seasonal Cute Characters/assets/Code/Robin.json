@@ -1,0 +1,149 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_Robin_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Robin_Spring, Portraits/Robin_Summer, Portraits/Robin_Fall, Portraits/Robin_Winter_Outdoor, Portraits/Robin_Winter_Indoor, Portraits/Robin_FlowerDance, Portraits/Robin_SpiritsEve, Portraits/Robin_Aerobics, Characters/Robin_Spring, Characters/Robin_Summer, Characters/Robin_Fall, Characters/Robin_Winter_Outdoor, Characters/Robin_Winter_Indoor, Characters/Robin_FlowerDance, Characters/Robin_SpiritsEve, Characters/Robin_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Robin/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Edit_Robin_Beach_Assets",
+			"Action": "EditImage",
+			"Target": "Portraits/Robin_Beach, Characters/Robin_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Robin/{{TargetWithoutPath}}.png",
+			"When": {
+				"BeachOutfitsEnabled": true
+			}
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_Robin_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Robin_Spring, Characters/Robin_Summer, Characters/Robin_Fall, Characters/Robin_Winter_Outdoor, Characters/Robin_Winter_Indoor, Characters/Robin_FlowerDance, Characters/Robin_SpiritsEve, Characters/Robin_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Robin/Robin_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Add_Robin_Beach_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Robin_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Robin/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false,
+				"BeachOutfitsEnabled": true
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_Robin_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Robin",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.RobinSpring": {
+					"Id": "{{ModId}}.RobinSpring",
+					"Portrait": "Portraits/Robin_Spring",
+					"Sprite": "Characters/Robin_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.RobinSummer": {
+					"Id": "{{ModId}}.RobinSummer",
+					"Portrait": "Portraits/Robin_Summer",
+					"Sprite": "Characters/Robin_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.RobinFall": {
+					"Id": "{{ModId}}.RobinFall",
+					"Portrait": "Portraits/Robin_Fall",
+					"Sprite": "Characters/Robin_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.RobinWinterIndoor": {
+					"Id": "{{ModId}}.RobinWinterIndoor",
+					"Portrait": "Portraits/Robin_Winter_Indoor",
+					"Sprite": "Characters/Robin_Winter_Indoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",
+					"Precedence": -101
+				},
+				"{{ModId}}.RobinWinterOutdoor": {
+					"Id": "{{ModId}}.RobinWinterOutdoor",
+					"Portrait": "Portraits/Robin_Winter_Outdoor",
+					"Sprite": "Characters/Robin_Winter_Outdoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101
+				},
+				// Extra Outfits
+				"{{ModId}}.RobinAerobics": {
+					"Id": "{{ModId}}.RobinAerobics",
+					"Portrait": "Portraits/Robin_Aerobics",
+					"Sprite": "Characters/Robin_Aerobics",
+					"Condition": "{{UseAerobicsOutfit}}",
+					"Precedence": -200
+				},
+				// Festival Outfits
+				"{{ModId}}.RobinFlowerDance": {
+					"Id": "{{ModId}}.RobinFlowerDance",
+					"Portrait": "Portraits/Robin_FlowerDance",
+					"Sprite": "Characters/Robin_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.RobinSpirit": {
+					"Id": "{{ModId}}.RobinSpirit",
+					"Portrait": "Portraits/Robin_SpiritsEve",
+					"Sprite": "Characters/Robin_SpiritsEve",
+					"Condition": "{{UseSpiritsEveOutfit}}",
+					"Precedence": -300
+				}
+			}
+		},
+		// CALENDAR
+		{
+			"LogName": "Edit_Robin_Calendar_Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Robin",
+			"FromFile": "assets/{{Target}}/Robin_{{CurrentSeasonAttire}}.png"
+		},
+		{
+			"LogName": "Add_Robin_Calendar_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Robin",
+			"FromFile": "assets/{{Target}}/Robin_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		// MISCELLANEOUS
+		{
+			"LogName": "Robin_Clothes_Therapy",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/{{Target}}.png",
+			"FromArea": { "X": 0, "Y": 128, "Width": 64, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 128, "Width": 64, "Height": 32 }
+		},
+		{
+			"LogName": "Robin_Clothes_Therapy_2",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/{{Target}}.png",
+			"FromArea": { "X": 16, "Y": 160, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 16, "Y": 160, "Width": 16, "Height": 32 }
+		}
+	]
+}

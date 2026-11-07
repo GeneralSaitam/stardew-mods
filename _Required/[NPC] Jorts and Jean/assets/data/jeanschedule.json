@@ -1,0 +1,107 @@
+{
+	"Changes": 
+    [
+		
+		{
+            "LogName": "Jean Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JeanCat",
+			"Entries": {
+				"rain": "610 AdventureGuild 10 12 3/2500 AdventureGuild 10 12 3 JeanCat_catnap",
+				"Mon": "610 Town 103 55 2 JeanCat_pawwash/1600 ManorHouse 2 8 0/2100 Town 52 71 3/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+				"Tue": "610 ArchaeologyHouse 20 15 0 JeanCat_cleaning/1430 Town 103 55 2/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+				"Wed": "610 JoshHouse 18 21 3/a1800 Town 48 71 3 \"Strings\\schedules\\JeanCat:Trash2.000\"/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+				"Thu": "610 Forest 44 10 3 JeanCat_pawwash/1510 Town 45 78 3/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+				"Fri": "610 ArchaeologyHouse 20 15 0/1400 Town 91 100 2/1600 Saloon 26 18 0 JeanCat_cleaning/2400 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+				"Sat": "610 Mountain 65 14 0 JeanCat_fishing/a1200 Town 23 9 2 JeanCat_catnap/1600 Town 61 100 2 JeanCat_fishing/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+				"Sun": "610 Town 91 100 2 JeanCat_pawwash/1200 Town 28 29 2 JeanCat_cleaning/a1900 Town 8 89 2/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+				"spring": "610 Town 103 55 2/1600 ManorHouse 2 8 0/2130 AdventureGuild 10 12 3 JeanCat_catnap",
+			},
+		},
+		
+		{
+            "LogName": "Jean Schedule CC",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JeanCat",
+			"When": {  "HasSeenEvent": "191393" },
+			"Entries": {
+				"Mon": "610 Town 103 55 2 JeanCat_pawwash/1600 CommunityCenter 33 9 JeanCat_catnap/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+			},
+		},
+		
+		{
+            "LogName": "Jean Schedule Gossip with Mr. G",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JeanCat",
+			"When": {  "HasMod: |contains=LemurKat.Mr.Ginger.NPC": true },
+			"Entries": {
+				"Thu": "610 Forest 44 10 3 JeanCat_pawwash \"Strings\\schedules\\JeanCat:Ginger.000\"/1510 Town 45 78 3/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+			},
+		},
+		
+		{
+            "LogName": "Jean Schedule Gossip with Tatiana",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JeanCat",
+			"When": {  "HasMod: |contains=ZoeDoll.NPCAlecto": true },
+			"Entries": {
+				"Thu": "610 Forest 44 10 3 JeanCat_pawwash \"Strings\\schedules\\JeanCat:Tatiana.000\"/1510 Town 45 78 3/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+			},
+		},
+		
+		{
+            "LogName": "Jean Schedule Gossip with Mr. G AND Tatiana",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JeanCat",
+			"When": {  "HasMod: |contains=LemurKat.Mr.Ginger.NPC": true,
+			"HasMod: |contains=ZoeDoll.NPCAlecto": true},
+			"Entries": {
+				"Thu": "610 Forest 44 10 3 JeanCat_pawwash \"Strings\\schedules\\JeanCat:HotGoss.000\"/1510 Town 45 78 3/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+			},
+		},		
+		{
+            "LogName": "Jean Schedule Cola Shop",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JeanCat",
+			"When": {  "HasMod |contains= CopperSun.SamVincentShopCP": true, "HasSeenEvent |contains= 26431000": true, },
+			"Entries": {
+				"Sun": "610 Town 91 100 2 JeanCat_pawwash \"Strings\\schedules\\JeanCat:ColaShop2.000\"/1200 Town 28 29 2 JeanCat_cleaning/a1900 Town 8 89 2/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+			},
+		},
+		{
+            "LogName": "Jean Schedule RSV compat",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JeanCat",
+			"When": {  "HasMod |contains= Rafseazz.RSVCP": true, },
+			"Entries": {
+				"9": "610 Custom_Ridgeside_RidgesideVillage 80 51 2 JeanCat_cleaning/1430 Custom_Ridgeside_RidgesideVillage 54 53 1/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+				"23": "610 Custom_Ridgeside_LennyHouse 26 11 0/a1530 Custom_Ridgeside_RidgesideVillage 126 35 2/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+			},
+		},
+		{
+            "LogName": "Jean Schedule Sunberry compat",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JeanCat",
+			"When": {  "HasMod |contains= skellady.SBVCP": true, },
+			"Entries": {
+				"6": "610 Custom_SBV_DialaCafe 35 17 3\"Strings\\schedules\\JeanCat:CatCafe2.000\"/a1800 Custom_SBV_SunberryVillage 64 93 0 JeanCat_cleaning/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+				"20": "610 Custom_SBV_AriMarket 7 21 2/a1800 Custom_SBV_SunberryVillage 64 93 0 JeanCat_cleaning/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+				"winter_20": "610 Custom_SBV_AriMarket 7 21 2/1600 Custom_SBV_SunberryVillage 78 13 0 JeanCat_pawwash/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap",
+			},
+		},
+		
+		{
+            "LogName": "Jean Schedule PITV Pride Festival",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JeanCat",
+			"When": {  "HasMod |contains= sapphicsaph_pitv": true, },
+            "Entries": {
+                "sapphicsaph_pitv.PrideFestival_3": "610 CommunityCenter 41 10 JeanCat_cleaning\"Strings\\schedules\\JeanCat:Pride2.000\"/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JeanCat_catnap"
+            },
+            "When": {
+                "IsCommunityCenterComplete": true
+            }
+        },
+		
+	],
+}

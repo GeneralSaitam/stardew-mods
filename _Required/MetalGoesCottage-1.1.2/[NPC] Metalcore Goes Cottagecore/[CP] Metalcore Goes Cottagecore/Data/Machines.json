@@ -1,0 +1,206 @@
+{
+    "Changes": [
+        {
+            "LogName": "Make Roasted Coffee Beans",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)13",
+                "OutputRules"
+            ],
+            "Entries": {
+                "Squeaks.MGC.CP_RoastedCoffeeBeans": {
+                    "Id": "Squeaks.MGC.CP_RoastedCoffeeBeans",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "(O)433",
+                            "RequiredCount": 3
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "ItemId": "Squeaks.MGC.CP_RoastedCoffeeBeans"
+                        }
+                    ],
+                    "MinutesUntilReady": 30
+                }
+            }
+        },
+        {
+            "LogName": "Make Roasted Coffee Beans - Heavy",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)HeavyFurnace",
+                "OutputRules"
+            ],
+            "Entries": {
+                "Squeaks.MGC.CP_RoastedCoffeeBeans": {
+                    "Id": "Squeaks.MGC.CP_RoastedCoffeeBeans",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "(O)433",
+                            "RequiredCount": 15
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "ItemId": "Squeaks.MGC.CP_RoastedCoffeeBeans",
+                            "MinStack": 5,
+                            "MaxStack": 6
+                        }
+                    ],
+                    "MinutesUntilReady": 30
+                }
+            }
+        },
+        {
+            "LogName": "Roasted Beans into Espresso",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)12",
+                "OutputRules"
+            ],
+            "Entries": {
+                "Squeaks.MGC.CP_TripleShotEspresso": {
+                    "Id": "Squeaks.MGC.CP_TripleShotEspresso",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "(O)Squeaks.MGC.CP_RoastedCoffeeBeans",
+                            "RequiredCount": 3
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)253"
+                        }
+                    ],
+                    "MinutesUntilReady": 120
+                }
+            }
+        },
+        {
+            "LogName": "Elder Leaves into Elder Drink",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)12",
+                "OutputRules"
+            ],
+            "Entries": {
+                "Squeaks.MGC.CP_ElderLilyDrink": {
+                    "Id": "Squeaks.MGC.CP_ElderLilyDrink",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "(O)Squeaks.MGC.CP_ElderLilyLeaves",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)Squeaks.MGC.CP_ElderLilyDrink"
+                        }
+                    ],
+                    "MinutesUntilReady": 180
+                }
+            },
+            "MoveEntries": [
+                {
+                    "Id": "Squeaks.MGC.CP_ElderLilyDrink",
+                    "ToPosition": "Top"
+                }
+            ]
+        },
+        {
+            "LogName": "Produce Elder Honey",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)15",
+                "OutputRules"
+            ],
+            "Entries": {
+                "Squeaks.MGC.CP_ElderLilyHoney": {
+                    "Id": "Squeaks.MGC.CP_ElderLilyHoney",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "(O)Squeaks.MGC.CP_ElderTigerLily",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)Squeaks.MGC.CP_ElderLilyHoney"
+                        }
+                    ],
+                    "DaysUntilReady": 4
+                }
+            },
+            "MoveEntries": [
+                {
+                    "Id": "Squeaks.MGC.CP_ElderLilyHoney",
+                    "ToPosition": "Top"
+                }
+            ]
+        },
+        {
+            "LogName": "Elder Honey into Elder Mead",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)12",
+                "OutputRules"
+            ],
+            "Entries": {
+                "Squeaks.MGC.CP_ElderLilyMead": {
+                    "Id": "Squeaks.MGC.CP_ElderLilyMead",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "(O)Squeaks.MGC.CP_ElderLilyHoney",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)Squeaks.MGC.CP_ElderLilyMead"
+                        }
+                    ],
+                    "MinutesUntilReady": 600
+                }
+            }
+        },
+        {
+            "LogName": "Elder Flower to Dried Leaves",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)Dehydrator",
+                "OutputRules"
+            ],
+            "Entries": {
+                "Squeaks.MGC.CP_DriedElderLilyPetals": {
+                    "Id": "Squeaks.MGC.CP_DriedElderLilyPetals",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "(O)Squeaks.MGC.CP_ElderTigerLily",
+                            "RequiredCount": 5
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)Squeaks.MGC.CP_DriedElderLilyPetals"
+                        }
+                    ],
+                    "DaysUntilReady": 1
+                }
+            },
+            "MoveEntries": [
+                {
+                    "Id": "Squeaks.MGC.CP_DriedElderLilyPetals",
+                    "ToPosition": "Top"
+                }
+            ]
+        }
+    ]
+}

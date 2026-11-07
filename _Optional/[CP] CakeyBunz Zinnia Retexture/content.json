@@ -1,0 +1,238 @@
+{
+	"Format": "2.0.0",
+    "ConfigSchema": {
+        "DSVcompat": {
+        "AllowValues": "Mongolian, Vanilla",
+        "Default": "Vanilla",
+        "Description": "Switches to mongolian ethicity for compatibility with DSV"
+        }
+    },
+	"DynamicTokens": [
+        {
+            "Name": "EventVariant",
+            "Value": "SpiritsEve",
+            "When": 
+            {
+                "DayEvent": "spirit's eve"
+            }        
+        },
+        {
+            "Name": "EventVariant",
+            "Value": "FlowerDance",
+            "When": 
+            {
+                "DayEvent": "flower dance"
+            }        
+        },
+        {
+            "Name": "EventVariant",
+            "Value": "Wedding",
+            "When": 
+            {
+                "DayEvent": "wedding"
+            }        
+        },
+        {
+            "Name": "IndoorVariant", 
+            "Value": "Indoor",
+            "When":
+            {
+                "IsOutdoors": "false"
+            }
+
+        },
+        {
+            "Name": "IndoorVariant", 
+            "Value": "Outdoor",
+            "When":
+            {
+                "IsOutdoors": "true"
+            }
+        }
+    ],
+
+    "Changes": [
+
+        //Vanilla Ethnicity
+
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Zinnia",
+            "FromFile": "assets/Characters/Zinnia_{{Season}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }	
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Zinnia",
+            "FromFile": "assets/Characters/Zinnia_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }	
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Characters/Zinnia_Beach",
+            "FromFile": "assets/Characters/Zinnia_Beach.png",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Characters/Zinnia",
+            "FromFile": "assets/Characters/Zinnia_{{EventVariant}}.png",
+            "Update": "OnLocationChange",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }
+        },
+    
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Zinnia",
+            "FromFile": "assets/Portraits/Zinnia_{{Season}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }	
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Zinnia",
+            "FromFile": "assets/Portraits/Zinnia_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }
+        },	
+        {
+            "Action": "EditImage",
+                "Target": "Portraits/Zinnia_Beach",
+            "FromFile": "assets/Portraits/Zinnia_Beach.png",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Portraits/Zinnia",
+            "FromFile": "assets/Portraits/Zinnia_{{EventVariant}}.png",
+            "Update": "OnLocationChange",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Vanilla"
+                }
+        },
+        
+        //Mongolian Ethnicity
+
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Zinnia",
+            "FromFile": "assets/Characters/mongolian/Zinnia_{{Season}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }	
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Zinnia",
+            "FromFile": "assets/Characters/mongolian/Zinnia_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }	
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Characters/Zinnia_Beach",
+            "FromFile": "assets/Characters/mongolian/Zinnia_Beach.png",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Characters/Zinnia",
+            "FromFile": "assets/Characters/mongolian/Zinnia_{{EventVariant}}.png",
+            "Update": "OnLocationChange",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }
+        },
+    
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Zinnia",
+            "FromFile": "assets/Portraits/mongolian/Zinnia_{{Season}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }	
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Zinnia",
+            "FromFile": "assets/Portraits/mongolian/Zinnia_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",     
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }
+        },	
+        {
+            "Action": "EditImage",
+                "Target": "Portraits/Zinnia_Beach",
+            "FromFile": "assets/Portraits/mongolian/Zinnia_Beach.png",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }
+        },
+        {
+            "Action": "EditImage",
+                "Target": "Portraits/Zinnia",
+            "FromFile": "assets/Portraits/mongolian/Zinnia_{{EventVariant}}.png",
+            "Update": "OnLocationChange",   
+                "When":
+                {
+                    "HasFile:{{FromFile}}": true,
+                    "DSVcompat": "Mongolian"
+                }
+        },
+
+
+    ]
+}

@@ -1,0 +1,83 @@
+[
+	{
+		"Id": "SableCooking",
+		"GroupID": "Sable.Mail",
+		"Title": "A sweet surprise from Sable",
+		"Text": "Hey!^How are you doing there?^Anyway, my delicious surprise should cheer you up.^Will helped me with the cooking... I think it turned out pretty good.^What do you think?^^     - Sable",
+		"LetterBG": "SableFairyLetter.png",
+		"Season": ["spring, fall"],
+		"Days": [4],
+		"Attachments": [{
+			"Type": "Object",
+			"Index": "222",
+			"Stack": 1
+		}],
+		"FriendshipConditions": [
+		{
+			"NpcName": "Sable",
+			"FriendshipLevel": 4
+		}
+	  ]
+	},
+	{
+		"Id": "SableBerries",
+		"GroupID": "Sable.Mail",
+		"Title": "Memories of summer",
+		"Text": "Hii.^I sneaked a couple of sweet summer berries from Wilford's supply.^Sending part of it to you, making you the middleman. Now you won't turn me in for sure :D ^^Enjoy warm memories during this cold season!^          - Sable %item object 258 5 400 2%%",
+		"LetterBG": "SableFairyLetter.png",
+		"Season": ["winter"],
+		"Days": [13],
+		"FriendshipConditions": [
+		{
+			"NpcName": "Sable",
+			"FriendshipLevel": 2
+		}
+	  ]
+	},
+	{
+		"Id": "WizardReqSable",
+		"GroupId": "Wizard.Mail",
+		"Title": "Mysterious letter", 
+		"Text": "@,^^It has come to my attention that you know well a certain ruby-haired girl from the East Woods.^Come with her to my tower by 6:00 p.m. today.^I would be very grateful.",
+		"WhichBG": 2,
+		"TextColor": 7,
+        "Repeatable": false, 
+		"EventsSeen": [3876793],
+		"Season": ["spring, summer, fall"],
+		"FriendshipConditions": [
+		{
+			"NpcName": "Wizard",
+			"FriendshipLevel": 2
+		}]
+	},
+	{
+		"Id": "ThanksSable",
+		"GroupId": "Sable.Mail",
+		"Title": "Letter from Sable", 
+		"Text": "@,^I wanted to thank you for everything you are doing. I dread to think what would have happened to me if it weren't for you.^Yesterday's meeting really did me good.^I realized my mistakes.^^Also, now I have a strong desire to help others. Do you know what to do with that?^While you're thinking about it, try this delicious cake! I baked it as a sign of a new phase in my life.^^     - Sable",
+		"LetterBG": "SableFairyLetter.png",
+		"Attachments": [{
+			"Type": "Object",
+			"Index": "221",
+			"Stack": 1
+		}],
+        "Repeatable": false, 
+		"EventsSeen": [3876893],
+
+	},
+	{
+		"Id": "SableDate",
+		"GroupId": "Sable.Mail",
+		"Title": "Invitation", 
+		"Text": "@!^^We haven't spent time together in a looong time. So I thought I'd surprise you!^Come to the East Woods as soon as you can, I'll be waiting for you.^^   - Sable",
+		"LetterBG": "SableFairyLetter.png",
+        "Repeatable": false, 
+		"EventsSeen": [3876893],
+		"FriendshipConditions": [
+		{
+			"NpcName": "Sable",
+			"FriendshipLevel": 10
+		}]
+
+	}
+]

@@ -1,0 +1,32 @@
+{
+    "Format": "2.0.3",
+    "Changes": [
+        {
+            "LogName": "Load texture",
+            "Action": "Load",
+            "Target": "Mods/NOAV.KittyFurniture/texture",
+            "FromFile": "kittyfurniture.png"
+        },
+        {
+            "LogName": "Kitty tail animation",
+            "Action": "EditImage",
+            "Target": "Mods/NOAV.KittyFurniture/texture",
+            "FromFile": "kittyfurniture.png",
+            "FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 48 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 32, "Height": 48 },
+            "AnimationFrameTime": 25,
+            "AnimationFrameCount": 4,
+            "When": { "HasMod": "spacechase0.ContentPatcherAnimations" }
+        },
+        {
+            "LogName": "Furniture Data",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "NOAV.KittyFurniture_ScratchingPost": "Scratching Post/decor/2 4/2 1/1/8000/-1/{{i18n:ScratchingPost}}/0/Mods\\NOAV.KittyFurniture\\texture",
+                "NOAV.KittyFurniture_FoodBowl": "Food Bowl/decor/2 2/2 1/1/1000/-1/{{i18n:FoodBowl}}/32/Mods\\NOAV.KittyFurniture\\texture",
+                "NOAV.KittyFurniture_KittyPortrait": "Kitty Portrait/painting/1 2/1 2/1/600/-1/{{i18n:KittyPortrait}}/34/Mods\\NOAV.KittyFurniture\\texture"
+            }
+        }
+    ]
+}

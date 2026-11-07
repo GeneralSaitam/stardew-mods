@@ -1,0 +1,16 @@
+{
+	//If you're here, just know that this is how you add a mail flag so that the house is recognized as a public thing. Nothing to see otherwise.
+	"Changes":[
+		{
+		   "Action": "EditData",
+		   "Target": "Data/Events/Town",
+		   "TextOperations": [
+			  {
+				 "Operation": "Prepend",
+				 "Target": ["Entries", "choseToBeKnown"],
+				 "Value": "addMailReceived AgentLyoko_UWS_PublicHouse/"
+			  }
+		   ]
+		}
+	],
+}

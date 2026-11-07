@@ -1,0 +1,286 @@
+{
+    //Guide for keys:
+	//1501 and 1504: Rude keys. Use for Abigail, Sebastian, Alex, Haley, and Shane.
+	//1499 and 1500: Keys that don't apply to the above cases.	
+	"Changes":[
+		{
+			"LogName": "Abigail - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Abigail.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Abigail.Solstice.After}}",
+			},
+			"When": {
+				"Abigail": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Sebastian - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sebastian.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sebastian.Solstice.After}}",
+			},
+			"When": {
+				"Sebastian": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Alex - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Alex.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Alex.Solstice.After}}",
+			},
+			"When": {
+				"Alex": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice (Default)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Haley.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.Solstice.After}}",
+			},
+			"When": {
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice, High Hearts", //Note the 9 and 10 heart condition assumes Platonic Relationships is installed and not PPAF. PPAF's inclusion will trigger the Dating version at 9 or 10 hearts OR bouquet given - see bestfriend json in PPAF folder.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Haley.Solstice.High.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.Solstice.High.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "6,7,8",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Haley - Solstice v2 (alt condition)", // Condition which allows leeway on hearts if 6-heart is seen. If heart level drops to 3, assume she's angry.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Haley.Solstice.High.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Haley.Solstice.High.After}}",
+			},
+			"When": {
+				"Hearts:Haley": "4, 5",
+				"HasSeenEvent |contains=13": "true",
+				"Haley": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Shane - Solstice (Default)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.Solstice.After}}",
+			},
+			"When": {
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Shane - Solstice, Medium Hearts",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.Solstice.Medium.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.Solstice.Medium.After}}",
+			},
+			"When": {
+				"Hearts:Shane": "4, 5, 6, 7, 8",
+				"HasSeenEvent |contains=3910975": "false",
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Shane - Solstice, High Hearts", //Note the 9 and 10 heart condition assumes Platonic Relationships is installed and not PPAF. PPAF's inclusion will trigger the Dating version at 9 or 10 hearts OR if bouquet is given, unless Immersive Shane is installed.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Shane.Solstice.High.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Shane.Solstice.High.After}}",
+			},
+			"When": {
+				"Hearts:Shane": "4, 5, 6, 7, 8",
+				"HasSeenEvent |contains=3910975": "true", //Note for those going through the code: I've given a little leeway here if the heart level drops post-6 heart, but if it drops to 3 hearts, it will revert to the default above. Assume Shane's pissed.
+				"Shane": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.Solstice.NoSandy.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Emily.Solstice.After}}",
+			},
+			"When": {
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Emily - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Emily.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Emily.Solstice.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=67": "true", //Since Sandy is met with this event, can not spoil with this.
+				"Emily": "normal",
+			},
+		},
+		{
+			"LogName": "Leah - Solstice (Default)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.Solstice.After}}",
+			},
+			"When": {
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Leah - Solstice, Art Show Complete",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.Solstice.Show.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=53": "true",
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Leah - Solstice, Internet Art Complete",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Leah.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Leah.Solstice.Internet.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=584059": "true",
+				"Leah": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.Solstice.After}}",
+			},
+			"When": {
+				"Elliott": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Elliott - Solstice, Book Written",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Elliott.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Elliott.Solstice.Book.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=1848481": "true", //Elliott's 8 heart, the first mention of the book's title.
+				"Elliott": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Penny - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Penny.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Penny.Solstice.After}}",
+			},
+			"When": {
+				"Penny": "normal",
+			},
+		},
+		{
+			"LogName": "Penny - Solstice, House Built (and not anonymous)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Penny.Solstice.House.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Penny.Solstice.House.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=611173": "true", //House upgrade from Robin cutscene. Special override dialogue - if you somehow have a bad relationship with Penny headcanoned here, assume everything she says is through gritted teeth/sarcastic.
+				"Bonus Penny": "enabled", //Backup to make the below not be looked at if disabled
+				"HasFlag": "AgentLyoko_UWS_PublicHouse",
+				"Penny": "normal",
+			},
+		},
+		{
+			"LogName": "Sam - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sam.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sam.Solstice.After}}",
+			},
+			"When": {
+				"Sam": "normal",
+			},
+		},
+		{
+			"LogName": "Sam - Solstice, Band",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sam.Solstice.Band.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sam.Solstice.Band.After}}",
+			},
+			"When": {
+				"HasSeenEvent |contains=4081148": "true", //Sam 8-heart, first mention of band name
+				"Sam": "normal",
+			},
+		},
+		{
+			"LogName": "Harvey - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Harvey",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Harvey.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Harvey.Solstice.After}}",
+			},
+			"When": {
+				"Harvey": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Maru - Solstice",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Maru.Solstice.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Maru.Solstice.After}}",
+			},
+			"When": {
+				"Maru": "normal, spicy",
+			},
+		},
+	],
+}

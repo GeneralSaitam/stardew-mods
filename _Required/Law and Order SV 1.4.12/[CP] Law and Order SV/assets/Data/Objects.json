@@ -1,0 +1,558 @@
+{
+    "Changes": [
+        {
+            "LogName": "lao_objects textures",
+            "Action": "Load",
+            "Target": "Mods/sdvhead.LawAndOrderSV/lao_objects",
+            "FromFile": "assets/Textures/lao_objects.png"
+        },
+        {
+            "LogName": "aquarium textures",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/AquariumFish",
+            "FromFile": "assets/Textures/AquariumFish.png"
+        },
+        {
+            "LogName": "lao_VelvetRopeFence texture",
+            "Action": "Load",
+            "Target": "Mods/sdvhead.LawAndOrderSV/lao_VelvetRopeFence",
+            "FromFile": "assets/Textures/lao_VelvetRopeFence.png"
+        },
+        {
+            "LogName": "lao_SecurityFence texture",
+            "Action": "Load",
+            "Target": "Mods/sdvhead.LawAndOrderSV/lao_SecurityFence",
+            "FromFile": "assets/Textures/lao_SecurityFence.png"
+        },
+        {
+            "LogName": "Object Entries",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "LAOSV_DareToHair_Ruby": {
+                    "Name": "LAOSV_DareToHair_Ruby",
+                    "DisplayName": "{{i18n:DareToHair_Ruby_Name}}",
+                    "Description": "{{i18n:DareToHair_Ruby_Description}}",
+                    "Type": "Basic",
+                    "Category": -17,
+                    "Price": 100,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 16,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_red"
+                    ],
+                },
+                "LAOSV_DareToHair_BubbleGum": {
+                    "Name": "LAOSV_DareToHair_BubbleGum",
+                    "DisplayName": "{{i18n:DareToHair_BubbleGum_Name}}",
+                    "Description": "{{i18n:DareToHair_BubbleGum_Description}}",
+                    "Type": "Basic",
+                    "Category": -17,
+                    "Price": 100,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 17,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_pink"
+                    ],
+                },
+                "LAOSV_DareToHair_Espresso": {
+                    "Name": "LAOSV_DareToHair_Espresso",
+                    "DisplayName": "{{i18n:DareToHair_Espresso_Name}}",
+                    "Description": "{{i18n:DareToHair_Espresso_Description}}",
+                    "Type": "Basic",
+                    "Category": -17,
+                    "Price": 100,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 19,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_brown"
+                    ],
+                },
+                "LAOSV_DareToHair_Ocean": {
+                    "Name": "LAOSV_DareToHair_Ocean",
+                    "DisplayName": "{{i18n:DareToHair_Ocean_Name}}",
+                    "Description": "{{i18n:DareToHair_Ocean_Description}}",
+                    "Type": "Basic",
+                    "Category": -17,
+                    "Price": 100,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 18,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_blue"
+                    ],
+                },
+                "sdvhead.LawAndOrder_LinusBlanket": {
+                    "Name": "sdvhead.LawAndOrder_LinusBlanket",
+                    "Displayname": "Cozy Blanket",
+                    "Description": "A cozy blanket made with natural dyes",
+                    "Type": "Basic",
+                    "Category": -17,
+                    "Price": 2000,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 11,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_prismatic"
+                    ],
+                },
+                "sdvhead.LawAndOrder_SecretSpiceLatte": {
+                    "Name": "sdvhead.LawAndOrder_SecretSpiceLatte",
+                    "Displayname": "{{i18n:SecretSpiceLatte_Name}}",
+                    "Description": "{{i18n:SecretSpiceLatte_Description}}",
+                    "Type": "Basic",
+                    "Category": -17,
+                    "Price": 600,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 7,
+                    "Edibility": 3,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 540,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 2.0,
+                                "LuckLevel": 2.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 2.0,
+                                "Defense": 2.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_dark_brown",
+                        "dye_strong",
+                        "coffee_item"
+                    ],
+                },
+                "{{ModId}}_ColeslawOrder": {
+                    "Name": "{{ModId}}_ColeslawOrder",
+                    "DisplayName": "{{i18n:ColeslawOrder_Name}}",
+                    "Description": "{{i18n:ColeslawOrder_Description}}",
+                    "Type": "Basic",
+                    "Category": -17,
+                    "Price": 55,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 8,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 50,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 5.0,
+                                "MaxStamina": 50.0,
+                                "Speed": 5.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_green"
+                    ],
+                    "CustomFields": null
+                },
+                "LawAndOrderSV_VelvetRopeFence": {
+                    "Name": "LawAndOrderSV_VelvetRopeFence",
+                    "DisplayName": "{{i18n:Object_LawAndOrderSV_VelvetRopeFence_Name}}",
+                    "Description": "{{i18n:Object_LawAndOrderSV_VelvetRopeFence_Description}}",
+                    "Type": "Crafting",
+                    "Category": -8,
+                    "Price": 40,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 22,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": null,
+                    "CustomFields": null
+                },
+                "LawAndOrderSV_SecurityFence": {
+                    "Name": "LawAndOrderSV_SecurityFence",
+                    "DisplayName": "{{i18n:Object_LawAndOrderSV_SecurityFence_Name}}",
+                    "Description": "{{i18n:Object_LawAndOrderSV_SecurityFence_Description}}",
+                    "Type": "Crafting",
+                    "Category": -8,
+                    "Price": 40,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 23,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": null,
+                    "CustomFields": null
+                },
+                "LawAndOrderSV_StoneSoup": {
+                    "Name": "LawAndOrderSV_StoneSoup",
+                    "DisplayName": "{{i18n:Recipe_LawAndOrderSV_StoneSoup_Name}}",
+                    "Description": "{{i18n:Recipe_LawAndOrderSV_StoneSoup_Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 370,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 0,
+                    "Edibility": 89,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 1715,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 2.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 120.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": -2.0,
+                                "Defense": 22.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_brown"
+                    ],
+                    "CustomFields": null
+                },
+                "LawAndOrderSV_VeggieStew": {
+                    "Name": "LawAndOrderSV_VeggieStew",
+                    "DisplayName": "{{i18n:Recipe_LawAndOrderSV_VeggieStew_Name}}",
+                    "Description": "{{i18n:Recipe_LawAndOrderSV_VeggieStew_Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 260,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 3,
+                    "Edibility": 90,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 1440,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense":4.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_orange"
+                    ],
+                    "CustomFields": null
+                },
+                "LawAndOrderSV_GarlicMushrooms": {
+                    "Name": "LawAndOrderSV_GarlicMushrooms",
+                    "DisplayName": "{{i18n:Recipe_LawAndOrderSV_GarlicMushrooms_Name}}",
+                    "Description": "{{i18n:Recipe_LawAndOrderSV_GarlicMushrooms_Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 210,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 4,
+                    "Edibility": 80,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 1440,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 1.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense":0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_brown"
+                    ],
+                    "CustomFields": null
+                },
+                "LawAndOrderSV_SweetPotatoFries": {
+                    "Name": "LawAndOrderSV_SweetPotatoFries",
+                    "DisplayName": "{{i18n:Recipe_LawAndOrderSV_SweetPotatoFries_Name}}",
+                    "Description": "{{i18n:Recipe_LawAndOrderSV_SweetPotatoFries_Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 220,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 5,
+                    "Edibility": 70,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 1440,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 1.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense":0.0,
+                                "Attack": 4.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_orange"
+                    ],
+                    "CustomFields": null
+                },
+                "LawAndOrderSV_BlueberryPancakes": {
+                    "Name": "LawAndOrderSV_BlueberryPancakes",
+                    "DisplayName": "{{i18n:Recipe_LawAndOrderSV_BlueberryPancakes_Name}}",
+                    "Description": "{{i18n:Recipe_LawAndOrderSV_BlueberryPancakes_Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 280,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 6,
+                    "Edibility": 80,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 1440,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 2.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 2.0,
+                                "ForagingLevel": 2.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense":0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_brown"
+                    ],
+                    "CustomFields": null
+                },
+                "LawAndOrderSV_HotLavaJava": {
+                    "Name": "LawAndOrderSV_HotLavaJava",
+                    "DisplayName": "{{i18n:Recipe_LawAndOrderSV_HotLavaJava_Name}}",
+                    "Description": "{{i18n:Recipe_LawAndOrderSV_HotLavaJava_Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1200,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_objects",
+                    "SpriteIndex": 1,
+                    "Edibility": 12,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 1,
+                            "Duration": 305,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 3.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": -133.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 3.0,
+                                "Defense": -13.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_brown",
+                        "coffee_item"
+                    ],
+                    "CustomFields": null
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                //ingredients: gold bar 336, cloth 428. Unlocks through Shannon's special order.
+                "LawAndOrderSV_VelvetRopeFence": "336 2 428 1/Field/LawAndOrderSV_VelvetRopeFence 10/false/none/{{i18n:Object_LawAndOrderSV_VelvetRopeFence_Name}}",
+                //ingredients: iron bar 335. Purchasable at jail shop (change from 'default' to 'none' probably)
+                "LawAndOrderSV_SecurityFence": "335 2/Field/LawAndOrderSV_SecurityFence 10/false/none/{{i18n:Object_LawAndOrderSV_SecurityFence_Name}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Fences",
+            "Entries": {
+                "LawAndOrderSV_VelvetRopeFence": {
+                    "Health": 400,
+                    "RepairHealthAdjustmentMinimum": 0.0,
+                    "RepairHealthAdjustmentMaximum": 0.0,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_VelvetRopeFence",
+                    "PlacementSound": "parry",
+                    "RemovalSound": "clank",
+                    "RemovalToolIds": [],
+                    "RemovalToolTypes": [
+                        "StardewValley.Tools.Pickaxe"
+                    ],
+                    "RemovalDebrisType": 6,
+                    "HeldObjectDrawOffset": "0, -20",
+                    "LeftEndHeldObjectDrawX": -1.0,
+                    "RightEndHeldObjectDrawX": 0.0
+                },
+                "LawAndOrderSV_SecurityFence": {
+                    "Health": 300,
+                    "RepairHealthAdjustmentMinimum": 0.0,
+                    "RepairHealthAdjustmentMaximum": 0.0,
+                    "Texture": "Mods\\sdvhead.LawAndOrderSV\\lao_SecurityFence",
+                    "PlacementSound": "parry",
+                    "RemovalSound": "clank",
+                    "RemovalToolIds": [],
+                    "RemovalToolTypes": [
+                        "StardewValley.Tools.Pickaxe"
+                    ],
+                    "RemovalDebrisType": 6,
+                    "HeldObjectDrawOffset": "0, -20",
+                    "LeftEndHeldObjectDrawX": -1.0,
+                    "RightEndHeldObjectDrawX": 0.0
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                //Unlocks through Russell's special order.
+                "LawAndOrderSV_StoneSoup": "390 1 Carrot 1 Broccoli 1 SummerSquash 1/Field/LawAndOrderSV_StoneSoup/none/{{i18n:Recipe_LawAndOrderSV_StoneSoup_Name}}",
+                //Unlocks through Shannon's island special order - ingredients magma cap (851) espresso (253) hot pepper (260) sugar (245)
+                "LawAndOrderSV_HotLavaJava": "253 1 260 1 851 1 245 1/Field/LawAndOrderSV_HotLavaJava/none/{{i18n:Recipe_LawAndOrderSV_HotLavaJava_Name}}",
+                //Recipe sold at jail: tomato (256) green bean (188) carrot 
+                "LawAndOrderSV_VeggieStew": "256 1 Carrot 1 188 1/Field/LawAndOrderSV_VeggieStew/none/{{i18n:Recipe_LawAndOrderSV_VeggieStew_Name}}",
+                //Recipe sold at jail: garlic (248) common mushroom (404) 
+                "LawAndOrderSV_GarlicMushrooms": "248 1 404 2/Field/LawAndOrderSV_GarlicMushrooms/none/{{i18n:Recipe_LawAndOrderSV_GarlicMushrooms_Name}}",
+                //Recipe sold at jail: pancakes (211) blueberry (258)
+                "LawAndOrderSV_BlueberryPancakes": "211 1 258 3/Field/LawAndOrderSV_BlueberryPancakes/none/{{i18n:Recipe_LawAndOrderSV_BlueberryPancakes_Name}}",
+                //Recipe sold at jail: oil (247) yam (280)
+                "LawAndOrderSV_SweetPotatoFries": "247 1 280 1/Field/LawAndOrderSV_SweetPotatoFries/none/{{i18n:Recipe_LawAndOrderSV_SweetPotatoFries_Name}}",
+            }
+        },
+    ]
+}

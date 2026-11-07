@@ -1,0 +1,258 @@
+{
+  "Changes": [
+    {
+      "LogName": "Seasonal Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Entries": {
+        "(O)128": {
+          "ItemId": "(O)128",
+          "Season": "Summer"
+        },
+        "(O)129": {
+          "ItemId": "(O)129",
+          "Condition": "LOCATION_SEASON Here spring fall"
+        },
+        "(O)130": {
+          "ItemId": "(O)130",
+          "Condition": "LOCATION_SEASON Here summer winter"
+        },
+        "(O)131": {
+          "ItemId": "(O)131",
+          "Condition": "LOCATION_SEASON Here spring fall winter"
+        },
+        "(O)132": {
+          "ItemId": "(O)132"
+        },
+        "(O)136": {
+          "ItemId": "(O)136"
+        },
+        "(O)137": {
+          "ItemId": "(O)137",
+          "Condition": "LOCATION_SEASON Here spring fall"
+        },
+        "(O)138": {
+          "ItemId": "(O)138",
+          "Season": "Summer"
+        },
+        "(O)139": {
+          "ItemId": "(O)139",
+          "Season": "Fall"
+        },
+        "(O)140": {
+          "ItemId": "(O)140",
+          "Condition": "LOCATION_SEASON Here fall winter"
+        },
+        "(O)141": {
+          "ItemId": "(O)141",
+          "Season": "Winter"
+        },
+        "(O)142": {
+          "ItemId": "(O)142"
+        },
+        "(O)143": {
+          "ItemId": "(O)143",
+          "Condition": "LOCATION_SEASON Here spring fall"
+        },
+        "(O)144": {
+          "ItemId": "(O)144",
+          "Condition": "LOCATION_SEASON Here summer winter"
+        },
+        "(O)145": {
+          "ItemId": "(O)145",
+          "Condition": "LOCATION_SEASON Here spring summer"
+        },
+        "(O)146": {
+          "ItemId": "(O)146",
+          "Condition": "LOCATION_SEASON Here summer winter"
+        },
+        "(O)147": {
+          "ItemId": "(O)147",
+          "Condition": "LOCATION_SEASON Here spring winter"
+        },
+        "(O)148": {
+          "ItemId": "(O)148",
+          "Condition": "LOCATION_SEASON Here spring fall"
+        },
+        "(O)149": {
+          "ItemId": "(O)149",
+          "Season": "Summer"
+        },
+        "(O)150": {
+          "ItemId": "(O)150",
+          "Condition": "LOCATION_SEASON Here summer fall winter"
+        },
+        "(O)151": {
+          "ItemId": "(O)151",
+          "Season": "Winter"
+        },
+        "(O)154": {
+          "ItemId": "(O)154",
+          "Condition": "LOCATION_SEASON Here fall winter"
+        },
+        "(O)155": {
+          "ItemId": "(O)155",
+          "Condition": "LOCATION_SEASON Here summer fall"
+        },
+        "(O)267": {
+          "ItemId": "(O)267",
+          "Condition": "LOCATION_SEASON Here spring summer"
+        },
+        "(O)269": {
+          "ItemId": "(O)269",
+          "Condition": "LOCATION_SEASON Here fall winter"
+        },
+        "(O)698": {
+          "ItemId": "(O)698",
+          "Condition": "LOCATION_SEASON Here summer winter"
+        },
+        "(O)699": {
+          "ItemId": "(O)699",
+          "Condition": "LOCATION_SEASON Here fall winter"
+        },
+        "(O)700": {
+          "ItemId": "(O)700"
+        },
+        "(O)701": {
+          "ItemId": "(O)701",
+          "Condition": "LOCATION_SEASON Here summer fall"
+        },
+        "(O)702": {
+          "ItemId": "(O)702"
+        },
+        "(O)704": {
+          "ItemId": "(O)704",
+          "Season": "Summer"
+        },
+        "(O)705": {
+          "ItemId": "(O)705",
+          "Condition": "LOCATION_SEASON Here fall winter"
+        },
+        "(O)706": {
+          "ItemId": "(O)706",
+          "Condition": "LOCATION_SEASON Here spring summer fall"
+        },
+        "(O)707": {
+          "ItemId": "(O)707",
+          "Season": "Winter"
+        },
+        "(O)708": {
+          "ItemId": "(O)708",
+          "Condition": "LOCATION_SEASON Here spring summer winter"
+        }
+      },
+      "When": {
+        "Seasonal Fish On Farm": true,
+      }
+    },
+    {
+      "LogName": "Seasonal Fish On Farm All Seasons",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)128": {
+          "Season": null
+        },
+        "(O)129": {
+          "Condition": null
+        },
+        "(O)130": {
+          "Condition": null
+        },
+        "(O)131": {
+          "Condition": null
+        },
+        "(O)137": {
+          "Condition": null
+        },
+        "(O)138": {
+          "Season": null
+        },
+        "(O)139": {
+          "Season": null
+        },
+        "(O)140": {
+          "Condition": null
+        },
+        "(O)141": {
+          "Season": null
+        },
+        "(O)143": {
+          "Condition": null
+        },
+        "(O)144": {
+          "Condition": null
+        },
+        "(O)145": {
+          "Condition": null
+        },
+        "(O)146": {
+          "Condition": null
+        },
+        "(O)147": {
+          "Condition": null
+        },
+        "(O)148": {
+          "Condition": null
+        },
+        "(O)149": {
+          "Season": null
+        },
+        "(O)150": {
+          "Condition": null
+        },
+        "(O)151": {
+          "Season": null
+        },
+        "(O)154": {
+          "Condition": null
+        },
+        "(O)155": {
+          "Condition": null
+        },
+        "(O)267": {
+          "Condition": null
+        },
+        "(O)269": {
+          "Condition": null
+        },
+        "(O)698": {
+          "Condition": null
+        },
+        "(O)699": {
+          "Condition": null
+        },
+        "(O)701": {
+          "Condition": null
+        },
+        "(O)704": {
+          "Season": null
+        },
+        "(O)705": {
+          "Condition": null
+        },
+        "(O)706": {
+          "Condition": null
+        },
+        "(O)707": {
+          "Season": null
+        },
+        "(O)708": {
+          "Condition": null
+        }
+      },
+      "When": {
+        "Seasonal Fish On Farm": true,
+        "All Seasons": true
+      }
+    }
+  ]
+}

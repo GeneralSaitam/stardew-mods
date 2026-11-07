@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="32" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="18">
+ <properties>
+  <property name="AmbientLight" value="95 95 95"/>
+  <property name="Doors" value="4 12 indoor 120 15 12 indoor 120"/>
+ </properties>
+ <tileset firstgid="1" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="zrsvwallsfloorcopy.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="2737" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="2801" name="RafNPCSheet" tilewidth="16" tileheight="16" tilecount="144" columns="8">
+  <image source="RafNPCSheet.png" width="128" height="288"/>
+ </tileset>
+ <tileset firstgid="2945" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <tileset firstgid="4257" name="z_luan.Extras_furniture" tilewidth="16" tileheight="16" tilecount="55020" columns="84">
+  <image source="z_luan.Extras_furniture.png" width="1344" height="10480"/>
+ </tileset>
+ <tileset firstgid="59277" name="z_luan.Extras_Kitchen" tilewidth="16" tileheight="16" tilecount="10584" columns="84">
+  <image source="z_luan.Extras_Kitchen.png" width="1344" height="2016"/>
+ </tileset>
+ <tileset firstgid="69861" name="z_luan.Extras_furniture_Rugs" tilewidth="16" tileheight="16" tilecount="3876" columns="76">
+  <image source="z_luan.Extras_furniture_PicturesAndRugs.png" width="1216" height="816"/>
+ </tileset>
+ <tileset firstgid="73737" name="z_luan.Extras_Interior" tilewidth="16" tileheight="16" tilecount="3172" columns="52">
+  <image source="z_luan.Extras_Interior.png" width="832" height="976"/>
+ </tileset>
+ <tileset firstgid="76909" name="zridgesidefurniture" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
+  <image source="zridgesidefurniture.png" width="512" height="1024"/>
+ </tileset>
+ <tileset firstgid="78957" name="springobjects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects.png" width="384" height="624"/>
+  <tile id="714">
+   <animation>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="713" duration="300"/>
+    <frame tileid="713" duration="300"/>
+    <frame tileid="713" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="711" duration="300"/>
+    <frame tileid="712" duration="300"/>
+    <frame tileid="711" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="713" duration="300"/>
+    <frame tileid="713" duration="300"/>
+    <frame tileid="713" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="714" duration="300"/>
+    <frame tileid="713" duration="300"/>
+    <frame tileid="713" duration="300"/>
+    <frame tileid="713" duration="300"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="79893" name="z_MOD_LQ2_midnight_beach_furniture" tilewidth="16" tileheight="16" tilecount="816" columns="16">
+  <image source="z_MOD_LQ2_midnight_beach_furniture.png" width="256" height="816"/>
+ </tileset>
+ <tileset firstgid="80709" name="z_luan.Extras_Interior2" tilewidth="16" tileheight="16" tilecount="16464" columns="84">
+  <image source="z_luan.Extras_Interior2.png" width="1344" height="3136"/>
+ </tileset>
+ <layer id="1" name="Back" width="32" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3755,3755,0,0,0,0,0,
+0,304,304,304,304,304,304,304,304,0,0,35,35,35,35,35,35,35,36,0,0,3754,3755,3755,3755,3787,3787,3755,3755,3755,3756,0,
+0,304,304,304,304,304,304,304,304,0,0,67,67,67,67,67,67,67,68,0,0,3786,3787,3787,3787,3819,3819,3787,3787,3787,3788,0,
+0,304,0,0,0,113,113,0,2307,0,0,103,104,104,104,113,113,113,100,0,0,3818,0,0,0,113,113,113,113,113,3820,0,
+0,199,27,29,29,29,29,28,1216,201,0,575,576,575,75166,575,576,575,606,0,0,574,443,576,75166,576,575,576,575,576,75065,0,
+232,1247,27,61,61,61,61,28,1216,233,0,607,608,607,2113,607,608,607,608,0,0,639,575,2146,75007,576,575,576,575,576,75167,0,
+264,1279,27,61,61,61,61,28,1248,265,0,639,640,639,75007,575,576,575,640,0,0,639,75058,288,256,288,288,256,288,75059,2145,0,
+232,1311,329,329,329,329,329,329,1312,233,0,607,608,607,640,607,608,607,608,0,0,607,74956,2581,2582,2581,2582,2581,2582,74957,608,0,
+264,265,264,265,264,265,264,265,264,265,0,639,640,639,640,639,640,639,640,0,0,639,75008,2597,2598,2597,2598,2597,2598,75009,640,0,
+0,2188,2188,2188,232,2188,2188,2188,2188,2188,2188,2188,2188,2188,2188,607,3545,3545,3545,3545,3545,607,74956,2581,2582,2581,2582,2581,2582,74957,608,0,
+0,2204,2204,2204,264,2204,2204,2204,2204,2204,2204,2204,2204,2204,2204,639,3577,3577,3577,3577,3577,639,75008,2597,2598,2597,2598,2597,2598,75009,75110,0,
+0,2220,2220,2220,363,2220,2220,2220,2220,2220,2220,2220,2220,2220,2220,288,3609,3609,3609,3609,3609,640,75060,703,703,703,703,703,703,75061,75162,0,
+607,575,576,575,703,575,576,575,576,575,576,575,576,575,576,703,443,575,576,575,443,608,640,607,608,607,608,639,607,608,607,0,
+639,640,575,607,639,640,639,639,639,640,639,639,640,639,640,639,575,640,607,640,576,640,2146,639,640,639,640,607,639,2146,75006,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,607,0,0,0,608,639,640,0,0,0,0,639,607,75163,640,0
+</data>
+ </layer>
+ <layer id="14" name="Back2" width="32" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,75,75,0,0,0,0,0,0,81,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,107,107,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,75182,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,146,0,
+0,0,0,0,0,0,0,0,80247,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,72617,72618,72618,72619,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,3521,3522,3523,3523,3524,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,3585,3586,3586,3587,3588,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <objectgroup id="13" name="Back2"/>
+ <layer id="3" name="Buildings" width="32" height="16">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,10,11,11,12,1,1,1,1,
+1,2,3,3,3,3,3,3,3,12,10,0,3,3,3,3,3,3,4,1,1,2,3,3,195,0,0,194,3,3,4,1,
+33,42,55,0,56,0,0,55,56,69,65,155,0,0,0,155,0,156,0,37,33,42,155,0,0,0,0,0,0,156,44,37,
+65,74,87,75,88,0,0,87,88,69,65,187,81,0,81,187,81,188,82,69,65,80,187,81,81,81,81,81,81,188,82,69,
+65,106,119,107,120,7041,7042,119,120,69,65,113,113,113,113,8373,8374,8375,114,69,65,112,113,113,113,59361,59362,0,468,469,114,69,
+65,138,515,516,0,0,0,584,2157,69,65,2157,12623,12624,0,0,0,0,146,69,65,144,582,644,645,59877,60213,65642,59448,59449,0,69,
+65,2147512702,0,0,0,7209,7210,0,545,69,65,496,0,0,0,8541,8542,8543,0,69,65,402,0,0,0,0,0,0,0,0,402,69,
+65,2147512786,492,0,0,0,0,0,0,69,65,0,0,0,0,34426,34427,34428,0,69,65,0,0,0,0,0,0,0,0,0,0,69,
+161,1315,0,0,0,0,11623,12626,12627,168,161,888,889,554,0,0,0,0,0,168,65,2148,0,0,0,0,522,0,0,0,11853,69,
+65,3,3,195,0,194,3,3,3,3,3,3,3,3,195,0,194,3,3,3,195,2148,0,393,426,427,427,428,0,0,11853,69,
+65,155,0,49,0,155,0,0,0,0,0,0,0,0,49,0,73746,0,0,0,73746,13303,0,0,458,459,459,460,457,0,11853,69,
+65,187,81,188,0,187,81,81,81,81,81,81,81,81,188,0,73798,81,81,81,73798,13303,0,0,0,0,0,0,0,0,11937,69,
+65,219,113,220,121,219,113,113,113,113,113,113,113,113,220,121,219,113,113,113,220,0,0,0,0,0,0,0,0,0,0,69,
+65,2148,2148,0,0,1180,888,889,1180,77453,77454,77454,77455,0,0,0,820,817,818,819,820,0,0,0,0,0,0,0,0,0,0,69,
+97,2148,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13471,13472,13303,11937,11939,2148,0,0,131,
+1,1,1,1,1,1,1,1,1,1,1,1,81969,81970,81970,81971,1,1,1,1,1,1,1,1,1,1,1,1,97,0,131,1
+</data>
+ </layer>
+ <layer id="9" name="Buildings2" width="32" height="16">
+  <properties>
+   <property name="Draw" value="Buildings"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,1427,0,1427,1427,79907,79908,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,79923,79924,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,483,484,215,0,0,552,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,34258,34259,34260,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1427,1427,1427,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="64" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door Blair"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="240" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door Carmen"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="32" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse1&quot;"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="112" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse1&quot;"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="48" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse2&quot;"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="128" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse3&quot;"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="32" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse4&quot;"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="16" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse4&quot;"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="192" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse5&quot;"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="208" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse5&quot;"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="288" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse6&quot;"/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="272" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse6&quot;"/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="304" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse6&quot;"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="368" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse7&quot;"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="384" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;rsv.blairhouse8&quot;"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="416" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;RSVRI.BlairHouse&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="12" name="Schedule" width="32" height="16" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,2847,0,0,0,0,0,0,0,0,0,0,2846,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2846,0,2847,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2846,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="11" name="Paths" width="32" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,2745,2745,0,0,0,0,0,0,2745,0,0,0,0,0,0,0,0,0,0,0,2745,2745,0,0,0,0,0,
+0,0,0,0,0,0,0,2745,0,0,0,0,0,0,2745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,2745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+2745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2745,0,0,2745,0,0,0,0,
+0,0,0,0,0,0,2745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2745,0,2745,0,0,0,0,0,2745,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2745,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,2745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,2745,2745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2745,0,0
+</data>
+ </layer>
+ <layer id="7" name="Front" width="32" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,2127,0,0,2127,0,0,0,0,0,0,0,0,0,0,0,0,0,406,407,0,0,0,0,0,
+0,70985,70986,257,1427,257,257,1427,2159,0,0,2159,0,257,0,0,80303,0,0,0,0,1430,0,580,581,257,257,0,59786,59787,0,0,
+0,71061,71062,289,0,289,289,0,2126,0,0,2126,0,289,0,0,80319,0,0,0,0,1462,0,0,0,289,289,60378,59280,59281,0,0,
+0,0,514,482,0,7043,7044,481,2158,0,0,2158,0,0,0,8049,8050,8051,0,0,0,0,550,0,0,0,0,65557,59364,59365,0,0,
+0,2147512618,0,0,0,7125,7126,0,0,0,0,464,0,0,0,8469,8470,8471,0,0,0,370,0,0,0,0,0,0,0,0,370,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,481,513,4686,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,11539,12542,12543,0,0,856,857,0,0,0,0,0,0,0,0,2116,0,0,0,0,490,0,0,0,11769,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2116,0,361,394,395,395,396,0,0,4542,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13219,0,0,5063,0,609,5067,425,0,400,0,
+0,1426,1427,1428,57,1426,1427,1427,1427,1427,1427,1427,1427,1427,1428,57,756,827,0,827,756,13219,0,0,0,0,0,0,0,0,66159,0,
+0,2116,0,0,89,0,0,0,0,0,0,0,0,0,0,89,788,753,754,755,788,0,0,0,0,0,0,0,0,0,0,0,
+0,2148,2116,0,0,0,856,857,0,77421,77422,77422,77423,0,0,0,788,785,786,787,788,0,0,0,0,0,0,0,0,0,0,0,
+0,2116,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13387,13388,13219,11673,11677,2116,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,74777,74778,74778,74779,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="Front2" width="32" height="16">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1430,1427,71193,0,71661,71663,0,0,0,0,0,1256,71193,70891,72343,72344,72345,0,0,0,0,0,4542,581,71193,71193,0,0,0,0,0,
+0,0,0,71269,0,71737,71739,0,0,0,0,0,1257,71269,0,8289,8290,8291,0,0,0,0,0,612,613,71269,71269,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,12539,12540,0,0,0,0,0,0,0,0,0,612,613,1031,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,1259,0,0,0,78276,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,162,197,163,0,164,197,197,167,0,0,162,197,197,163,0,164,197,167,0,0,79667,0,0,0,0,0,0,0,0,0,0,
+10,3,3,195,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,482,0,0,0,0,0,0,0,
+0,0,0,0,0,0,178,71349,0,0,71660,71735,1256,1256,0,0,73746,0,184,0,0,0,0,0,0,0,0,0,0,0,66063,0,
+0,0,216,0,0,0,247,71425,0,0,71736,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,4425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1259,79671,79669,0,0,0,0,
+0,197,197,197,197,197,197,197,197,197,197,197,81885,81886,81886,81887,197,197,197,197,197,197,197,197,197,197,197,197,163,0,164,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,197,131,0
+</data>
+ </layer>
+ <layer id="16" name="Front3" width="32" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,80144,0,80144,80144,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79660,0,0,0,0,0,0,0,0,
+0,0,0,0,0,6957,6958,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,79650,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79176,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,1257,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="15" name="Front3"/>
+ <layer id="10" name="AlwaysFront" width="32" height="16">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+33,0,0,0,0,0,0,0,0,69,65,0,0,0,0,0,0,0,0,37,0,0,0,0,0,0,0,0,0,0,0,0,
+65,0,0,0,0,0,0,0,0,69,65,0,0,0,0,0,0,0,0,69,65,0,0,0,0,0,0,0,0,0,0,69,
+65,0,0,0,0,0,0,0,0,69,65,0,0,0,0,0,0,0,0,69,65,0,0,0,0,0,0,0,0,0,0,69,
+65,0,0,0,0,0,0,0,0,69,65,0,0,0,0,0,0,0,0,69,65,0,0,0,0,0,0,0,0,0,0,69,
+65,0,0,0,0,0,11455,0,0,69,65,0,0,0,0,0,0,0,0,69,65,0,0,0,0,0,0,0,0,0,0,69,
+65,0,0,0,0,0,0,0,0,69,65,0,0,0,0,0,0,0,0,69,65,0,0,0,0,0,0,0,0,0,0,69,
+161,0,0,0,0,0,0,0,0,168,161,0,0,0,0,0,0,0,0,168,65,0,0,0,0,0,0,0,0,0,0,69,
+10,0,0,195,0,194,0,0,0,0,0,0,0,0,195,0,194,0,0,0,195,0,0,0,0,0,0,0,0,0,0,69,
+65,0,0,156,0,155,0,0,0,0,0,0,0,0,156,0,756,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,
+65,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,
+65,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,
+65,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,69,
+97,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,131,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,97,0,131,0
+</data>
+ </layer>
+</map>

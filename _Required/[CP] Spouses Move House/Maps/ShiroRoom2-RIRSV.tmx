@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="3" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="145">
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="z_luan.Extras_Interior" tilewidth="16" tileheight="16" tilecount="3172" columns="52">
+  <image source="z_luan.Extras_Interior.png" width="832" height="976"/>
+ </tileset>
+ <tileset firstgid="5349" name="z_luan.Extras_Interior2" tilewidth="16" tileheight="16" tilecount="16464" columns="84">
+  <image source="z_luan.Extras_Interior2.png" width="1344" height="3136"/>
+ </tileset>
+ <layer id="1" name="Back" width="3" height="2">
+  <data encoding="csv">
+201,200,3568,
+233,232,2085
+</data>
+ </layer>
+ <layer id="13" name="Back2" width="3" height="2">
+  <data encoding="csv">
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="11" name="Schedule" width="3" height="2" visible="0">
+  <data encoding="csv">
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <objectgroup id="12" name="Back2"/>
+ <layer id="2" name="Buildings" width="3" height="2">
+  <properties>
+   <property name="AmbientLight" value="255 255 255"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="7" name="Buildings"/>
+ <layer id="3" name="Paths" width="3" height="2">
+  <data encoding="csv">
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="4" name="Front" width="3" height="2">
+  <data encoding="csv">
+0,0,0,
+3115,197,197
+</data>
+ </layer>
+ <layer id="15" name="Front2" width="3" height="2">
+  <data encoding="csv">
+0,0,0,
+6198,0,0
+</data>
+ </layer>
+ <objectgroup id="9" name="Front"/>
+ <objectgroup id="14" name="Front2"/>
+ <layer id="5" name="AlwaysFront" width="3" height="2">
+  <data encoding="csv">
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

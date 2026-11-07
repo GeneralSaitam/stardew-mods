@@ -1,0 +1,41 @@
+{
+	"Changes":[
+		//This is for Festival Dialogues. Other relevant dialogues are in other patches. Only Martin needs this - Gunther, Morgan, and Lance all show up with dialogue. Scarlett also shows up as of 1.15, so the previous dialogue patches are no longer used, but kept in case people want the old dialogues.
+		/*{
+			"LogName": "Scarlett - Winter Star, Festival Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries":{
+				"Scarlett": "{{i18n:UWS.FestivalDialogue.Scarlett}}",
+			},
+			"When": {
+				"Scarlett": "enabled",
+			},
+		},
+		{
+			"LogName": "Scarlett - Winter Star, Festival Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries":{
+				"Scarlett": "{{i18n:UWS.FestivalDialogue.Scarlett.SophiaMarried}}",
+			},
+			"When": {
+				"Scarlett": "enabled",
+				"relationship:Sophia": "married",
+			},
+		},*/
+		
+		{
+			"LogName": "Martin - Winter Star, Festival Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries":{
+				"Martin": "{{i18n:UWS.FestivalDialogue.Martin}}",
+				//No need for Martin Y2, he's already present in Y2
+			},
+			"When": {
+				"Martin": "enabled",
+			},
+		},
+	],
+}

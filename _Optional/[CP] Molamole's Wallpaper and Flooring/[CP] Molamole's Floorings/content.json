@@ -1,0 +1,41 @@
+{
+  "Format": "2.8.1",
+  "ConfigSchema": {
+    "Use the Desaturated version?": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    }
+  },
+    "DynamicTokens": [
+      {
+        "Name": "DesaturatedOn",
+        "Value": "{{Use the Desaturated version?}}"
+      }
+    ],
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/AdditionalWallpaperFlooring",
+      "Entries": {
+        "Molamole.Flooring.CP": {
+          "ID": "Molamole.Flooring.CP",
+          "Texture": "Mods/Molamole.Flooring.CP/MoleWallpapers",
+          "IsFlooring": true,
+          "Count": 1000
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/Molamole.Flooring.CP/MoleWallpapers",
+      "FromFile": "Assets/MoleFlooring.png"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Mods/Molamole.Flooring.CP/MoleWallpapers",
+      "FromFile": "Assets/MoleFlooring - Desaturated.png",
+      "PatchMode": "Replace",
+      "When": { "DesaturatedOn": "true" }
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="28" height="13" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="31">
+ <properties>
+  <property name="AmbientLight" value="95 95 95"/>
+  <property name="DayTiles" value="Front 16 2 2463 Front 17 2 2464 Front 16 1 2438 Front 17 1 2439 Front 20 6 770"/>
+  <property name="NightTiles" value="Front 16 2 2465 Front 17 2 2466 Front 16 1 2440 Front 17 1 2441 Front 20 6 771"/>
+ </properties>
+ <tileset firstgid="1" name="p" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2213" name="zlumi_towninterior" tilewidth="16" tileheight="16" tilecount="3050" columns="25">
+  <image source="lumi_towninterior.png" width="400" height="1952"/>
+ </tileset>
+ <tileset firstgid="5263" name="zspring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="7567" name="zUnique" tilewidth="16" tileheight="16" tilecount="5208" columns="56">
+  <image source="Unique.png" width="900" height="1500"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="224" duration="250"/>
+    <frame tileid="226" duration="250"/>
+    <frame tileid="228" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="112">
+   <animation>
+    <frame tileid="112" duration="250"/>
+    <frame tileid="114" duration="250"/>
+    <frame tileid="116" duration="250"/>
+    <frame tileid="112" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="113">
+   <animation>
+    <frame tileid="113" duration="250"/>
+    <frame tileid="115" duration="250"/>
+    <frame tileid="117" duration="250"/>
+    <frame tileid="115" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="168">
+   <animation>
+    <frame tileid="168" duration="250"/>
+    <frame tileid="170" duration="250"/>
+    <frame tileid="172" duration="250"/>
+    <frame tileid="170" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="169">
+   <animation>
+    <frame tileid="169" duration="250"/>
+    <frame tileid="171" duration="250"/>
+    <frame tileid="173" duration="250"/>
+    <frame tileid="171" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="224">
+   <animation>
+    <frame tileid="224" duration="250"/>
+    <frame tileid="226" duration="250"/>
+    <frame tileid="228" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="28" height="13">
+  <data encoding="base64" compression="zlib">
+   eJxjYMAPdIA4ng+CqQVg5qniYBODE0hwTwUfBKviYBODK0mwbzYQzwHiIAkGhol8EAxig8Q/8SFwDwMmhqmfBMSXibSzkYk6mFjQwEQdTAioUtm+XXy48W4+6tt3mQ83vgJKA1S2T5UBP6a2faA0o4AjLSUyUT88QdiBiPREjrlyWMR4GYnPE8gAlNdhWBdohg4jxDwQDeMjs5FpQgAAIreB6g==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="28" height="13">
+  <data encoding="base64" compression="zlib">
+   eJy9lLsvw1EUx0+11Ydqy8KiUz2jMbIbGPgLWA0mdoYyqyYSEiomiY2kmhiVRCytRSRGImHxjNi8Pr/en/zaK7gecZJP7j333nO+uefc30+k0prtsfWbJOzYr3izYXscsudbXjVfc4t0hdTedo18aiZ6I1rMBExC1qvmll7Ao/aO0ZuGJEzBkaZvqleoEilWqZgMLNvx++RLi8MdfgYWYQmutX0TTUuvkzsk3O/rc0K+UziHCwhS1xxjFjbBh3/GmK8XGWR+GTbTy3s+bImRPfpFnvxmZ/X+/cSeueMLrAbVOys3yy9fs/S6YyI9scpzEfyotmbZPHkXyt7JXJNIA7VsDDn5Q9S1FnwQhbqw2hu19cbIO67l7sPv19bu0VmHDXjQ3uZhUPWv1ENogTZohw64Cjt6O7/sn4lVRxy9/7IC7EEqIDILaRigD7suasCdZyAFOZcTs+Ivkezl7A31voViXOQgrvKZfPOm/72/yPMKsJVVag==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="64" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.birds&quot;"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="80" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.birds&quot;"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="95.5" y="31.75" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.roommate&quot;"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="112" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.moon&quot;"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="144" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.device&quot;"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.computer&quot;"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="112" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.moon&quot;"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="144" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.device&quot;"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="208" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.shelf&quot;"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="224" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.shelf&quot;"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="256" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.picture&quot;"/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="96" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.puzzle&quot;"/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="112" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.puzzle&quot;"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="256" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.yarn&quot;"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="32" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.3dprinter&quot;"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="96" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.puzzle&quot;"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="112" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.puzzle&quot;"/>
+   </properties>
+  </object>
+  <object id="19" name="TileData" x="384" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.sink&quot;"/>
+   </properties>
+  </object>
+  <object id="20" name="TileData" x="400" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.fridge&quot;"/>
+   </properties>
+  </object>
+  <object id="21" name="TileData" x="96" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.hammer&quot;"/>
+   </properties>
+  </object>
+  <object id="22" name="TileData" x="112" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.electronics&quot;"/>
+   </properties>
+  </object>
+  <object id="23" name="TileData" x="128" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.electronics&quot;"/>
+   </properties>
+  </object>
+  <object id="24" name="TileData" x="208" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.cola&quot;"/>
+   </properties>
+  </object>
+  <object id="25" name="TileData" x="240" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.tv&quot;"/>
+   </properties>
+  </object>
+  <object id="26" name="TileData" x="256" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.tv&quot;"/>
+   </properties>
+  </object>
+  <object id="27" name="TileData" x="272" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.console&quot;"/>
+   </properties>
+  </object>
+  <object id="28" name="TileData" x="288" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.console&quot;"/>
+   </properties>
+  </object>
+  <object id="29" name="TileData" x="32" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.3dprinter&quot;"/>
+   </properties>
+  </object>
+  <object id="30" name="TileData" x="192" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;wren.h1.cola&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Buildings2" width="28" height="13">
+  <properties>
+   <property name="Draw" value="Buildings"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYEC4EoQuAdCGUfVCANnblA3ENlN0JtKsLat8tAYgcDBMyg1jwGckfs4F4DpL4CW4GhuPcEBobOAUUXy5EgmVUAI85GBiecNDXzlEwCgYriFMZaBfgBgADFBCk
+  </data>
+ </layer>
+ <objectgroup id="6" name="Buildings2"/>
+ <layer id="7" name="Front" width="28" height="13">
+  <data encoding="base64" compression="zlib">
+   eJxTZWBgUANifRKxOhIG8TUYiAOuQOyHRXwSK3H6tYUYGHSAOADI9iTSzgoW3HLLmRkYPHhwy7sA7XIVgrAzibRvBtC+icyY4hNkgWYA/XkGKJ+GRR4EjqtAaBMe4u2jFqC3fc8YUNMRMkZOT/+B4cYgh6r3OlDshiymmTXcDAy13Jjif4F4OzDsl3ND6O1o6Y2U9AQDt6D2fATG1R0sdu7lItHAYQpKOBkYSoG4DIiNkfJaDjAf5OLJm9uBcb4DKd5PAPEpHPg0kr5jeNSB8HEizTsDxKpUwKlQ+zKpYBYADk06Jg==
+  </data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="11" name="AlwaysFront" width="28" height="13">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AYARHCSj7zMjB8AeJvQPwdiH/w0t5Zo2AUUAMAAOaOBSI=
+  </data>
+ </layer>
+ <objectgroup id="12" name="AlwaysFront"/>
+ <layer id="9" name="Paths" width="28" height="13" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgZgJMAnxS9owAVYAsfTjxy9ASE4h2X+yhJL0Md4ItPYuRJNXskAGr5GwCbTwCa
+  </data>
+ </layer>
+ <objectgroup id="10" name="Paths"/>
+</map>

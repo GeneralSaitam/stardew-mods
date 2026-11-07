@@ -1,0 +1,44 @@
+{
+	"Changes": [
+				//replace sheep letter
+
+				{
+					"Action": "EditData",
+					"Target": "Data/Mail",
+					"Entries": {
+						"Sheep": "{{i18n:AlpacaLetter}}"
+					}
+				},
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "EvelynAlpacaLetter": "{{i18n:EvelynAlpacaLetter}}",
+                "EvelynAlpacaRewardLetter": "{{i18n:EvelynAlpacaRewardLetter}}",
+                "EmilyAlpacaLetter": "{{i18n:EmilyAlpacaLetter}}",
+                "EmilyAlpacaRewardLetter": "{{i18n:EmilyAlpacaRewardLetter}}"
+        }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+
+                "EvelynAlpacaLetter":{
+					"Id": "EvelynAlpacaLetter",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current birdb.CP.Alpaca_AlpacaYarn 1",
+					"Action": "AddMail Current EvelynAlpacaLetter now"
+			
+				},
+                    "EmilyAlpacaLetter":{
+					"Id": "EmilyAlpacaLetter",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current birdb.CP.Alpaca_AlpacaWool 1",
+					"Action": "AddMail Current EmilyAlpacaLetter now"
+			
+				}
+		}
+        }
+    ]
+}

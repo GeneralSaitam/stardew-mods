@@ -1,0 +1,86 @@
+{
+	"Changes":[
+		
+		{ //This is the replacer if PPAF is installed and the player still has a romantic relationship. If this errors, please report ASAP.
+			"LogName": "Emily 8 Heart Replacers",
+			"Action": "EditData",
+			"Target": "Data/Events/ManorHouse",
+			"Fields": {
+				"2123243/e 2111194": {
+					73: "textAboveHead Clint \"{{i18n:CR.2123243.1}}\"",
+					154: "textAboveHead Clint \"{{i18n:CR.2123243.2}}\"",
+					156: "speak Clint \"{{i18n:CR.2123243.3}}\"",
+					174: "pause 100",
+					176: "speak Clint \"{{i18n:CR.2123243.4}}\"",
+					199: "speak Clint \"{{i18n:CR.2123243.5}}\"",
+					206: "speak Clint \"{{i18n:CR.2123243.6}}\"",
+					210: "pause 100",
+					212: "speak Clint \"{{i18n:CR.2123243.7}}\"",
+				}
+			},
+			"When": {
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:EmilyRelationshipType": "RomanceAndSex, RomanceWithoutSex",
+			},
+        },
+		
+		{
+			"LogName":"Clint 6 Heart Null",
+			"Action":"EditData",
+			"Target":"Data/Events/Town",
+			"Entries":{
+				  "101/f Clint 1500/e 97/k 2123243/k 2123343/o Emily/t 900 1830/a 0 90": null,
+
+			},
+			"When":{
+				"Six Heart": "unmarried, always",
+				"HasMod |contains=SoftPandaBoi.ClintReforged": false,
+			},
+		},	
+		
+		{
+			"LogName":"Clint 6 Heart Fix PPAF Dating",
+			"Action":"EditData",
+			"Target":"Data/Events/Town",
+			"Entries":{
+				  "101/f Clint 1500/e 97/t 900 1830/a 0 90": "jaunty/11 90/farmer 5 90 1 Clint 6 92 1 Emily 15 90 1 Caroline 16 90 3/move farmer 1 0 2/skippable/emote farmer 16/faceDirection Clint 0 true/emote Clint 16/speak Clint \"{{i18n:CR.101.1}}\"/pause 500/move farmer 0 1 2/faceDirection Clint 1/emote Clint 28/pause 500/faceDirection farmer 1/pause 200/faceDirection farmer 2/pause 800/speak Clint \"{{i18n:CR.101.2}}\"/pause 800/speak Clint \"{{i18n:CR.101.3}}\"/pause 800/emote farmer 12/pause 800/pause 500/faceDirection Clint 0/speak Clint \"{{i18n:CR.101.4}}\"/faceDirection Clint 1/pause 1500/speak Clint \"{{i18n:CR.101.5f}}\"/pause 800/emote farmer 12/jump farmer/pause 200/faceDirection Clint 0/pause 1000/speak Clint \"{{i18n:CR.101.6}}\"/pause 800/emote farmer 12/pause 800/pause 500/speak Clint \"{{i18n:CR.101.7}}\"/pause 600/move farmer 1 0 1/move Clint 0 -2 1/speak Clint \"{{i18n:CR.101.8}}\"/move Clint 8 0 1/stopMusic/pause 500/speak Clint \"{{i18n:CR.101.9}}\"/pause 800/faceDirection Emily 3/pause 800/speak Emily \"{{i18n:CR.101.10}}\"/pause 400/faceDirection Emily 1/speak Emily \"{{i18n:CR.101.11}}\"/pause 500/move Caroline 7 0 0/faceDirection Emily 3/pause 400/speak Emily \"{{i18n:CR.101.12}}\"/pause 500/faceDirection Clint 2/pause 400/faceDirection Clint 1/speak Clint \"{{i18n:CR.101.13}}\"/pause 300/emote Emily 8/pause 800/speak Clint \"{{i18n:CR.101.14}}\"/playSound give_gift/pause 250/jump Emily/pause 800/emote Emily 16/pause 400/playMusic musicboxsong/speak Emily \"{{i18n:CR.101.15}}\"/pause 800/speak Clint \"{{i18n:CR.101.16}}\"/emote Emily 20/pause 400/speak Emily \"{{i18n:CR.101.17}}\"/emote Clint 32/emote Emily 32/pause 500/move Emily 7 0 1/faceDirection Caroline 3/move Clint -7 0 2/faceDirection farmer 0/speak Clint \"{{i18n:CR.101.18}}\"/pause 500/faceDirection Clint 1/pause 400/faceDirection Clint 2/speak Clint \"{{i18n:CR.101.19}}\"/emote farmer 32/pause 800/end dialogue Clint \"{{i18n:CR.101.end}}\"",
+
+			},
+			"When":{
+				"relationship:Emily": "dating, engaged",
+				"Six Heart": "unmarried, always",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:EmilyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+			},
+		},
+		{
+			"LogName":"Clint 6 Heart Fix PPAF Housemate",
+			"Action":"EditData",
+			"Target":"Data/Events/Town",
+			"Entries":{
+				  "101/f Clint 1500/e 97/t 900 1830/a 0 90": "jaunty/11 90/farmer 5 90 1 Clint 6 92 1 Emily 15 90 1 Caroline 16 90 3/move farmer 1 0 2/skippable/emote farmer 16/faceDirection Clint 0 true/emote Clint 16/speak Clint \"{{i18n:CR.101.1}}\"/pause 500/move farmer 0 1 2/faceDirection Clint 1/emote Clint 28/pause 500/faceDirection farmer 1/pause 200/faceDirection farmer 2/pause 800/speak Clint \"{{i18n:CR.101.2}}\"/pause 800/speak Clint \"{{i18n:CR.101.3}}\"/pause 800/emote farmer 12/pause 800/pause 500/faceDirection Clint 0/speak Clint \"{{i18n:CR.101.4}}\"/faceDirection Clint 1/pause 1500/speak Clint \"{{i18n:CR.101.5h |termOfEndearment={{PPAF.Core/ConfigValue:TermOfEndearment}} }}\"/pause 800/emote farmer 12/jump farmer/pause 200/faceDirection Clint 0/pause 1000/speak Clint \"{{i18n:CR.101.6}}\"/pause 800/emote farmer 12/pause 800/pause 500/speak Clint \"{{i18n:CR.101.7}}\"/pause 600/move farmer 1 0 1/move Clint 0 -2 1/speak Clint \"{{i18n:CR.101.8}}\"/move Clint 8 0 1/stopMusic/pause 500/speak Clint \"{{i18n:CR.101.9}}\"/pause 800/faceDirection Emily 3/pause 800/speak Emily \"{{i18n:CR.101.10}}\"/pause 400/faceDirection Emily 1/speak Emily \"{{i18n:CR.101.11}}\"/pause 500/move Caroline 7 0 0/faceDirection Emily 3/pause 400/speak Emily \"{{i18n:CR.101.12}}\"/pause 500/faceDirection Clint 2/pause 400/faceDirection Clint 1/speak Clint \"{{i18n:CR.101.13}}\"/pause 300/emote Emily 8/pause 800/speak Clint \"{{i18n:CR.101.14}}\"/playSound give_gift/pause 250/jump Emily/pause 800/emote Emily 16/pause 400/playMusic musicboxsong/speak Emily \"{{i18n:CR.101.15}}\"/pause 800/speak Clint \"{{i18n:CR.101.16}}\"/emote Emily 20/pause 400/speak Emily \"{{i18n:CR.101.17}}\"/emote Clint 32/emote Emily 32/pause 500/move Emily 7 0 1/faceDirection Caroline 3/move Clint -7 0 2/faceDirection farmer 0/speak Clint \"{{i18n:CR.101.18}}\"/pause 500/faceDirection Clint 1/pause 400/faceDirection Clint 2/speak Clint \"{{i18n:CR.101.19}}\"/emote farmer 32/pause 800/end dialogue Clint \"{{i18n:CR.101.end}}\"",
+
+			},
+			"When":{
+				"relationship:Emily": "married",
+				"Six Heart": "always",
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:EmilyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+			},
+		},
+		{
+			"LogName":"1.6 Dating Keys - PPAF Variants",
+			"Action":"EditData",
+			"Target":"Characters/Dialogue/Clint",
+			"Entries":{
+				  "dating_Emily": "{{i18n:CR.Clint.Emily.Friends.PPAF}}",
+				  "married_Emily": "{{i18n:CR.Clint.Emily.Housemate.PPAF}}",
+				  "divorced_Emily": "{{i18n:CR.Clint.Emily.Removed.PPAF}}",
+			},
+			"When": {
+				"HasMod": "PPAF.Core",
+				"PPAF.Core/ConfigValue:EmilyRelationshipType": "FullyPlatonic, SexWithoutRomance",
+			},
+		},
+	]
+}

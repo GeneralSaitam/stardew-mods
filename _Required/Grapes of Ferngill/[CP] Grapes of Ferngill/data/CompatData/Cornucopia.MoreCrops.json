@@ -1,0 +1,273 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)19",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_Grape_Seed_Oil": {
+					"Id": "GOF_Grape_Seed_Oil",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)Cornucopia_WhiteGrape",
+                            "RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Grape_Seed_Oil",
+							"CopyPrice": true,
+                            "CopyQuality": true,
+                            "PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2
+								}
+							]
+						}
+					],
+					"MinutesUntilReady": 1600
+				}
+                
+			}
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"White Grape Artisan Goods": "Both, Only Cornucopia"
+			},
+			"TargetField": [
+				"(BC)12",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_White_Grape_Wine": {
+					"Id": "GOF_White_Grape_Wine",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)Cornucopia_WhiteGrape",
+                            "RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_White_Grape_Wine",
+                            "CopyQuality": true
+						}
+					],
+					"MinutesUntilReady": 1000
+				}
+                
+			},
+			"MoveEntries": [
+				{
+					"Id": "GOF_White_Grape_Wine",
+					"BeforeId": "Cornucopia_SparklingWine"
+				}
+			]	
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"White Grape Artisan Goods": "Both, Only Cornucopia"
+			},
+			"TargetField": [
+				"(BC)Dehydrator",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_White_Grape_Raisins": {
+					"Id": "GOF_White_Grape_Raisins",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)Cornucopia_WhiteGrape",
+                            "RequiredCount": 5
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_White_Grape_Raisins",
+                            "CopyQuality": true
+						}
+					],
+					"MinutesUntilReady": 3200
+				}
+                
+			},
+			"MoveEntries": [
+				{
+					"Id": "GOF_White_Grape_Raisins",
+					"ToPosition": "Top"
+				}
+			]
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)15",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_Wine_Vinegar": {
+					"Id": "GOF_Wine_Vinegar",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_White_Grape_Wine",
+                            "RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Wine_Vinegar",
+                            "CopyQuality": true,
+                            "CopyPrice": true,
+                            "Minstack": 2,
+                            "PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 0.75
+								}
+							]
+						}
+					],
+					"MinutesUntilReady": 6000
+				}
+                
+			}
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"White Grape Artisan Goods": "Both, Only Cornucopia"
+			},
+			"TargetField": [
+				"(BC)GOF_Hardwood_Keg",
+				"OutputRules"
+			],
+			"Entries": {
+				"Cornucopia_SparklingWine": {
+					"Id": "Cornucopia_SparklingWine",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)Cornucopia_WhiteGrape",
+                            "RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)GOF_Yeast",
+                                "selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:RequirementInvalid}}"
+                            },
+                            "ItemId": "(O)Cornucopia_SparklingWine",
+                            "CopyQuality": true,
+                            "PriceModifiers":[ 
+							{
+								"Modification": "Multiply",
+								"Amount": 4
+							}
+						]
+						}
+					],
+					"MinutesUntilReady": 1000
+				}
+                
+			},
+			"MoveEntries": [
+				{
+					"Id": "Cornucopia_SparklingWine",
+					"BeforeId": "GOF_Sparkling_Wine"
+				}
+			]
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"White Grape Artisan Goods": "Both, Only Cornucopia"
+			},
+			"TargetField": [
+				"(BC)GOF_Hardwood_Keg",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_White_Grape_Fortified_Wine": {
+					"Id": "GOF_White_Grape_Fortified_Wine",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_White_Grape_Wine",
+                            "RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_White_Grape_Fortified_Wine",
+                            "CopyQuality": true,
+                            "CopyPrice": true,
+                            "PriceModifiers": [
+							{
+								"Modification": "Multiply",
+								"Amount": 3
+							}
+						]
+						}
+					],
+					"MinutesUntilReady": 10000
+				}
+                
+			},
+			"MoveEntries": [
+				{
+					"Id": "GOF_White_Grape_Fortified_Wine",
+					"BeforeId": "GOF_Fortified_Wine"
+				}
+			]
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"White Grape Artisan Goods": "Both, Only Cornucopia"
+			},
+			"TargetField": [
+				"(BC)GOF_Hardwood_Keg",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_White_Grape_Sweet_Wine": {
+					"Id": "GOF_White_Grape_Raisins",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_White_Grape_Raisins",
+                            "RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_White_Grape_Sweet_Wine",
+                            "CopyQuality": true
+						}
+					],
+					"MinutesUntilReady": 10000
+				}
+                
+			},
+			"MoveEntries": [
+				{
+					"Id": "GOF_White_Grape_Sweet_Wine",
+					"BeforeId": "GOF_Sweet_Wine"
+				}
+			]
+			
+		}
+                
+	]
+}

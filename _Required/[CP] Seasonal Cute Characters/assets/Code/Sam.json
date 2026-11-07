@@ -1,0 +1,203 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_Sam_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Sam_Spring, Portraits/Sam_Summer, Portraits/Sam_Fall, Portraits/Sam_Winter_Outdoor, Portraits/Sam_Winter_Indoor, Portraits/Sam_FlowerDance, Portraits/Sam_SpiritsEve, Portraits/Sam_EggF, Portraits/Sam_Fair, Portraits/Sam_Jellies, Portraits/Sam_Luau, Portraits/Sam_Winter_IceF, Portraits/Sam_Winter_WinterStar, Portraits/Sam_Work, Characters/Sam_Spring, Characters/Sam_Summer, Characters/Sam_Fall, Characters/Sam_Winter_Outdoor, Characters/Sam_Winter_Indoor, Characters/Sam_FlowerDance, Characters/Sam_SpiritsEve, Characters/Sam_EggF, Characters/Sam_Fair, Characters/Sam_Jellies, Characters/Sam_Luau, Characters/Sam_Winter_IceF, Characters/Sam_Winter_WinterStar, Characters/Sam_Work",
+			"FromFile": "assets/{{TargetPathOnly}}/Sam/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Edit_Sam_Beach_Assets",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam_Beach, Characters/Sam_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Sam/{{TargetWithoutPath}}.png",
+			"When": {
+				"BeachOutfitsEnabled": true
+			}
+		},
+		{
+			"LogName": "Edit Sam's JojaMart Outfit",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam_JojaMart, Characters/Sam_JojaMart",
+			"FromFile": "assets/{{TargetPathOnly}}/Sam/Sam_Work.png",
+			"When": {
+				"ExtraOutfitsEnabled": true
+			}
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_Sam_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sam_Spring, Characters/Sam_Summer, Characters/Sam_Fall, Characters/Sam_Winter_Outdoor, Characters/Sam_Winter_Indoor, Characters/Sam_FlowerDance, Characters/Sam_SpiritsEve, Characters/Sam_EggF, Characters/Sam_Fair, Characters/Sam_Jellies, Characters/Sam_Luau, Characters/Sam_Winter_IceF, Characters/Sam_Winter_WinterStar",
+			"FromFile": "assets/{{TargetPathOnly}}/Sam/Sam_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Add_Sam_Beach_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sam_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Sam/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false,
+				"BeachOutfitsEnabled": true
+			}
+		},
+		{
+			"LogName": "Add_Sam_JojaMart_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sam_JojaMart",
+			"FromFile": "assets/{{TargetPathOnly}}/Sam/Sam_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false,
+				"ExtraOutfitsEnabled": true
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_Sam_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Sam",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.SamSpring": {
+					"Id": "{{ModId}}.SamSpring",
+					"Portrait": "Portraits/Sam_Spring",
+					"Sprite": "Characters/Sam_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.SamSummer": {
+					"Id": "{{ModId}}.SamSummer",
+					"Portrait": "Portraits/Sam_Summer",
+					"Sprite": "Characters/Sam_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.SamFall": {
+					"Id": "{{ModId}}.SamFall",
+					"Portrait": "Portraits/Sam_Fall",
+					"Sprite": "Characters/Sam_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.SamWinterIndoor": {
+					"Id": "{{ModId}}.SamWinterIndoor",
+					"Portrait": "Portraits/Sam_Winter_Indoor",
+					"Sprite": "Characters/Sam_Winter_Indoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",
+					"Precedence": -101
+				},
+				"{{ModId}}.SamWinterOutdoor": {
+					"Id": "{{ModId}}.SamWinterOutdoor",
+					"Portrait": "Portraits/Sam_Winter_Outdoor",
+					"Sprite": "Characters/Sam_Winter_Outdoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101
+				},
+				// Festival Outfits
+				"{{ModId}}.SamEggFest": {
+					"Id": "{{ModId}}.SamEggFest",
+					"Portrait": "Portraits/Sam_EggF",
+					"Sprite": "Characters/Sam_EggF",
+					"Condition": "IS_EVENT festival_spring13, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.SamFlowerDance": {
+					"Id": "{{ModId}}.SamFlowerDance",
+					"Portrait": "Portraits/Sam_FlowerDance",
+					"Sprite": "Characters/Sam_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.SamLuau": {
+					"Id": "{{ModId}}.SamLuau",
+					"Portrait": "Portraits/Sam_Luau",
+					"Sprite": "Characters/Sam_Luau",
+					"Condition": "IS_EVENT festival_summer11, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.SamJellies": {
+					"Id": "{{ModId}}.SamJellies",
+					"Portrait": "Portraits/Sam_Jellies",
+					"Sprite": "Characters/Sam_Jellies",
+					"Condition": "IS_EVENT festival_summer28, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.SamFair": {
+					"Id": "{{ModId}}.SamFair",
+					"Portrait": "Portraits/Sam_Fair",
+					"Sprite": "Characters/Sam_Fair",
+					"Condition": "IS_EVENT festival_fall16, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.SamSpirit": {
+					"Id": "{{ModId}}.SamSpirit",
+					"Portrait": "Portraits/Sam_SpiritsEve",
+					"Sprite": "Characters/Sam_SpiritsEve",
+					"Condition": "{{UseSpiritsEveOutfit}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.SamIceFestival": {
+					"Id": "{{ModId}}.SamIceFestival",
+					"Portrait": "Portraits/Sam_Winter_IceF",
+					"Sprite": "Characters/Sam_Winter_IceF",
+					"Condition": "IS_EVENT festival_winter8, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.SamWinterStar": {
+					"Id": "{{ModId}}.SamWinterStar",
+					"Portrait": "Portraits/Sam_Winter_WinterStar",
+					"Sprite": "Characters/Sam_Winter_WinterStar",
+					"Condition": "IS_EVENT festival_winter25, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				}
+			}
+		},
+		// Required to fix Sam using his work outfit during Elliott's 8 heart event
+		{
+			"LogName": "Sam_JojaMart_Outfit_Patch",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Sam",
+				"Appearance",
+				"WorkOutfit"
+			],
+			"Entries": {
+				"Condition": "ANY \"LOCATION_NAME Target JojaMart\" \"LOCATION_NAME Target ArchaeologyHouse, !IS_EVENT 1848481\""
+			},
+			"When": {
+				"ExtraOutfitsEnabled": true
+			}
+		},
+		// CALENDAR
+		{
+			"LogName": "Edit_Sam_Calendar_Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Sam",
+			"FromFile": "assets/{{Target}}/Sam_{{CurrentSeasonAttire}}.png"
+		},
+		{
+			"LogName": "Add_Sam_Calendar_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sam",
+			"FromFile": "assets/{{Target}}/Sam_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		}
+	]
+}

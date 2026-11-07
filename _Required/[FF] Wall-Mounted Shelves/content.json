@@ -1,0 +1,424 @@
+{
+    "Format": 3,
+
+    "Furniture": {
+        "[[ModID]].wall_shelf": {
+            "Display Name": "[[ImageVariant]] Wall-Mounted Shelf",
+            "Description": "A wall-mounted shelf - Perfect for putting those artisan goods on display. Holds up to 2 objects.",
+
+            "Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 2
+            },
+
+            "Placement Restriction": 0,
+			"Placement Type": "Mural",
+
+			"Source Image": {
+				"Oak": "assets/WallShelf_Oak.png",
+				"Walnut": "assets/WallShelf_Walnut.png",
+				"Birch": "assets/WallShelf_Birch.png",
+				"Mahogany": "assets/WallShelf_Mahogany.png",
+				"Gray": "assets/WallShelf_Gray.png",
+				"Retro": "assets/WallShelf_Retro.png",
+				"Junimo": "assets/WallShelf_Junimo.png",
+				"Wizard": "assets/WallShelf_Wizard.png",
+				"Joja": "assets/WallShelf_Joja"
+			},
+			"Shows in Shops": [ "Furniture Catalogue" ],
+			"Layers": [
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    }
+                },
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 11,
+                        "Width": 32,
+                        "Height": 10
+                    },
+                    "Draw Pos": {
+                        "X": 0,
+                        "Y": -11
+                    },
+                    "Depth": 3
+                },
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 32,
+                        "Width": 32,
+                        "Height": 2
+                    },
+                    "Draw Pos": {
+                        "X": 0,
+                        "Y": -9
+                    },
+                    "Depth": 3
+                }
+			],
+			"Slots": [
+                {
+                    "Area": {
+                        "X": 0,
+                        "Y": -20,
+                        "Width": 16,
+                        "Height": 8
+                    },
+                    "Depth": 3,
+                    "Debug Color": "Blue"
+                },
+                {
+                    "Area": {
+                        "X": 16,
+                        "Y": -20,
+                        "Width": 16,
+                        "Height": 8
+                    },
+                    "Depth": 3,
+                    "Debug Color": "Green"
+                }
+			]
+        },
+        "[[ModID]].wall_shelf_large": {
+            "Display Name": "[[ImageVariant]] Large Wall-Mounted Shelf",
+			"Description": "A wall-mounted shelf - Perfect for putting those artisan goods on display. Holds up to 3 objects.",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 3,
+				"Height": 2
+			},
+
+			"Placement Restriction": 0,
+			"Placement Type": "Mural",
+
+			"Source Image": {
+				"Oak": "assets/LargeWallShelf_Oak.png",
+				"Walnut": "assets/LargeWallShelf_Walnut.png",
+				"Birch": "assets/LargeWallShelf_Birch.png",
+				"Mahogany": "assets/LargeWallShelf_Mahogany.png",
+				"Gray": "assets/LargeWallShelf_Gray.png",
+				"Retro": "assets/LargeWallShelf_Retro.png",
+				"Junimo": "assets/LargeWallShelf_Junimo.png",
+				"Wizard": "assets/LargeWallShelf_Wizard.png",
+				"Joja": "assets/LargeWallShelf_Joja"
+			},
+			"Shows in Shops": [ "Furniture Catalogue" ],
+			"Layers": [
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 48,
+                        "Height": 32
+                    }
+                },
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 11,
+                        "Width": 48,
+                        "Height": 10
+                    },
+                    "Draw Pos": {
+                        "X": 0,
+                        "Y": -11
+                    },
+                    "Depth": 3
+                },
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 32,
+                        "Width": 48,
+                        "Height": 2
+                    },
+                    "Draw Pos": {
+                        "X": 0,
+                        "Y": -9
+                    },
+                    "Depth": 3
+                }
+			],
+			"Slots": [
+                {
+                    "Area": {
+                        "X": 0,
+                        "Y": -20,
+                        "Width": 16,
+                        "Height": 8
+                    },
+                    "Depth": 3,
+                    "Debug Color": "Pink"
+                },
+                {
+                    "Area": {
+                        "X": 16,
+                        "Y": -20,
+                        "Width": 16,
+                        "Height": 8
+                    },
+                    "Depth": 3,
+                    "Debug Color": "Red"
+                },
+                {
+                    "Area": {
+                        "X": 32,
+                        "Y": -20,
+                        "Width": 16,
+                        "Height": 8
+                    },
+                    "Depth": 3,
+                    "Debug Color": "Orange"
+                }
+			]
+        },
+        "[[ModID]].wall_shelf_small": {
+            "Display Name": "[[ImageVariant]] Small Wall-Mounted Shelf",
+			"Description": "A wall-mounted shelf - Perfect for putting those artisan goods on display. Holds 1 object.",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 2
+			},
+
+			"Placement Restriction": 0,
+			"Placement Type": "Mural",
+
+			"Source Image": {
+				"Oak": "assets/SmallWallShelf_Oak.png",
+				"Walnut": "assets/SmallWallShelf_Walnut.png",
+				"Birch": "assets/SmallWallShelf_Birch.png",
+				"Mahogany": "assets/SmallWallShelf_Mahogany.png",
+				"Gray": "assets/SmallWallShelf_Gray.png",
+				"Retro": "assets/SmallWallShelf_Retro.png",
+				"Junimo": "assets/SmallWallShelf_Junimo.png",
+				"Wizard": "assets/SmallWallShelf_Wizard.png",
+				"Joja": "assets/SmallWallShelf_Joja.png",
+			},
+			"Shows in Shops": [ "Furniture Catalogue" ],
+			"Layers": [
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 32
+                    }
+                },
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 11,
+                        "Width": 16,
+                        "Height": 10
+                    },
+                    "Draw Pos": {
+                        "X": 0,
+                        "Y": -11
+                    },
+                    "Depth": 3
+                },
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 2
+                    },
+                    "Draw Pos": {
+                        "X": 0,
+                        "Y": -9
+                    },
+                    "Depth": 3
+                }
+			],
+			"Slots": [
+                {
+                    "Area": {
+                        "X": 0,
+                        "Y": -20,
+                        "Width": 16,
+                        "Height": 8
+                    },
+                    "Depth": 3,
+                    "Debug Color": "Coral"
+                }
+			]
+        },
+        "[[ModID]].wall_shelf_display": {
+            "Display Name": "[[ImageVariant]] Wall-Mounted Display Shelf",
+			"Description": "A wall-mounted shelf - A perfect place of honor for that one special something.",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 2,
+				"Height": 2
+			},
+
+			"Placement Restriction": 0,
+			"Placement Type": "Mural",
+
+			"Source Image": {
+				"Oak": "assets/DisplayWallShelf_Oak.png",
+				"Walnut": "assets/DisplayWallShelf_Walnut.png",
+				"Birch": "assets/DisplayWallShelf_Birch.png",
+				"Mahogany": "assets/DisplayWallShelf_Mahogany.png",
+				"Gray": "assets/DisplayWallShelf_Gray.png",
+				"Retro": "assets/DisplayWallShelf_Retro.png",
+				"Junimo": "assets/DisplayWallShelf_Junimo.png",
+				"Wizard": "assets/DisplayWallShelf_Wizard.png",
+				"Joja": "assets/DisplayWallShelf_Joja"
+			},
+			"Shows in Shops": [ "Furniture Catalogue" ],
+			"Layers": [
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 32,
+                        "Height": 32
+                    }
+                },
+                {
+                    "Source Rect": {
+                        "X": 4,
+                        "Y": 11,
+                        "Width": 24,
+                        "Height": 10
+                    },
+                    "Draw Pos": {
+                        "X": 4,
+                        "Y": -11
+                    },
+                    "Depth": 3
+                },
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 32,
+                        "Width": 32,
+                        "Height": 2
+                    },
+                    "Draw Pos": {
+                        "X": 0,
+                        "Y": -9
+                    },
+                    "Depth": 3
+                }
+			],
+			"Slots": [
+                {
+                    "Area": {
+                        "X": 4,
+                        "Y": -20,
+                        "Width": 24,
+                        "Height": 8
+                    },
+                    "Depth": 3,
+                    "Debug Color": "Cyan"
+                }
+			]
+        },
+        "[[ModID]].wall_shelf_section": {
+            "Display Name": "[[ImageVariant]] Wall-Mounted Shelf Section",
+			"Description": "A singular wall-mounted shelf section - Perfect for creating shelves in custom sizes. Each section holds 1 object each.",
+
+			"Rotations": 1,
+			"Collisions": {
+				"Width": 1,
+				"Height": 2
+			},
+
+			"Placement Restriction": 0,
+			"Placement Type": "Mural",
+
+			"Source Image": {
+				"Left Oak": "assets/ShelfSections/Left_Oak.png",
+				"Center Oak": "assets/ShelfSections/Center_Oak.png",
+				"Right Oak": "assets/ShelfSections/Right_Oak.png",
+				"Left Walnut": "assets/ShelfSections/Left_Walnut.png",
+				"Center Walnut": "assets/ShelfSections/Center_Walnut.png",
+				"Right Walnut": "assets/ShelfSections/Right_Walnut.png",
+				"Left Birch": "assets/ShelfSections/Left_Birch.png",
+				"Center Birch": "assets/ShelfSections/Center_Birch.png",
+				"Right Birch": "assets/ShelfSections/Right_Birch.png",
+				"Left Mahogany": "assets/ShelfSections/Left_Mahogany.png",
+				"Center Mahogany": "assets/ShelfSections/Center_Mahogany.png",
+				"Right Mahogany": "assets/ShelfSections/Right_Mahogany.png",
+				"Left Gray": "assets/ShelfSections/Left_Gray.png",
+				"Center Gray": "assets/ShelfSections/Center_Gray.png",
+				"Right Gray": "assets/ShelfSections/Right_Gray.png",
+				"Left Retro": "assets/ShelfSections/Left_Retro.png",
+				"Center Retro": "assets/ShelfSections/Center_Retro.png",
+				"Right Retro": "assets/ShelfSections/Right_Retro.png",
+				"Left Junimo": "assets/ShelfSections/Left_Junimo.png",
+				"Center Junimo": "assets/ShelfSections/Center_Junimo.png",
+				"Right Junimo": "assets/ShelfSections/Right_Junimo.png",
+				"Left Wizard": "assets/ShelfSections/Left_Wizard.png",
+				"Center Wizard": "assets/ShelfSections/Center_Wizard.png",
+				"Right Wizard": "assets/ShelfSections/Right_Wizard.png",
+				"Left Joja": "assets/ShelfSections/Left_Joja.png",
+				"Center Joja": "assets/ShelfSections/Center_Joja.png",
+				"Right Joja": "assets/ShelfSections/Right_Joja.png",
+			},
+			"Shows in Shops": [ "Furniture Catalogue" ],
+			"Layers": [
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 32
+                    }
+                },
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 11,
+                        "Width": 16,
+                        "Height": 10
+                    },
+                    "Draw Pos": {
+                        "X": 0,
+                        "Y": -11
+                    },
+                    "Depth": 3
+                },
+                {
+                    "Source Rect": {
+                        "X": 0,
+                        "Y": 32,
+                        "Width": 16,
+                        "Height": 2
+                    },
+                    "Draw Pos": {
+                        "X": 0,
+                        "Y": -9
+                    },
+                    "Depth": 3
+                }
+			],
+			"Slots": [
+                {
+                    "Area": {
+                        "X": 0,
+                        "Y": -20,
+                        "Width": 16,
+                        "Height": 8
+                    },
+                    "Depth": 3,
+                    "Debug Color": "Teal"
+                }
+			]
+        }
+    }
+}

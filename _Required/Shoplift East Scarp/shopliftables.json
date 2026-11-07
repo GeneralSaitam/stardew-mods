@@ -1,0 +1,117 @@
+{
+    "MakeShopliftable":[              
+        {
+            "UniqueShopId":"TheMightyAmondee.Lemurkat.EastScarp_LexiShop",
+            "ShopName":"Lemurkat.EastScarp_LexiShop",
+            "CounterLocation":[
+                {
+                "LocationName":"EastScarp_SeaCave",
+                "NeedsShopProperty": true,
+                "TileX": 35,
+                "TileY": 7
+                }
+            ],
+            "MaxStockQuantity": 3,
+            "MaxStackPerItem": 5,
+            "ShopKeepers": ["Leximonster"],
+            "CaughtDialogue":{
+                "Leximonster":"{{i18n:LexiShop.Leximonster}}",
+                "Leximonster_NoMoney":"{{i18n:LexiShop.Leximonster_NoMoney}}"
+            },
+            "OpenConditions":{
+                "GameStateQueries": ["ANY \"!PLAYER_HAS_SEEN_EVENT Current 57872007\" \"TIME 1000 2000, PLAYER_HAS_SEEN_EVENT Current 57872007, DAY_OF_WEEK Sat\""]
+            }
+        },
+
+        {
+            "UniqueShopId":"TheMightyAmondee.Lemurkat.EastScarp_InnShop",
+            "ShopName":"Lemurkat.EastScarp_InnShop",
+            "Bannable": true,
+            "CounterLocation":[
+                {
+                "LocationName":"EastScarp_VillageInn",
+                "NeedsShopProperty": true,
+                "TileX": 45,
+                "TileY": 32
+                }
+            ],
+            "MaxStockQuantity": 2,
+            "MaxStackPerItem": 4,
+            "ShopKeepers": ["Rosa"],
+            "CaughtDialogue":{
+                "Rosa":"{{i18n:InnShop.Rosa}}",
+                "Rosa_NoMoney":"{{i18n:InnShop.Rosa_NoMoney}}"
+            },
+            "OpenConditions":{
+                "GameStateQueries": ["TIME 1000 1800"],
+                "ShopKeeperRange": [
+                    {
+                    "Name": "Rosa",
+                    "TileX": 45,
+                    "TileY": 31
+                    }
+                ]
+            }
+        },
+
+        {
+            "UniqueShopId":"TheMightyAmondee.Lemurkat.EastScarp_CoffeeShop",
+            "ShopName":"Lemurkat.EastScarp_CoffeeShop",
+            "CounterLocation":[
+                {
+                "LocationName":"EastScarp_Village",
+                "NeedsShopProperty": true,
+                "TileX": 21,
+                "TileY": 101
+                }
+            ],
+            "MaxStockQuantity": 2,
+            "MaxStackPerItem": 4,
+            "ShopKeepers": ["Rosa"],
+            "CaughtDialogue":{
+                "Rosa":"{{i18n:CoffeeShop.Rosa}}",
+                "Rosa_NoMoney":"{{i18n:CoffeeShop.Rosa_NoMoney}}"
+            },
+            "OpenConditions":{
+                "GameStateQueries": ["TIME 1000 1800"],
+                "ShopKeeperRange": [
+                    {
+                    "Name": "Rosa",
+                    "TileX": 21,
+                    "TileY": 100
+                    }
+                ]
+            }
+        },
+
+        {
+            "UniqueShopId":"TheMightyAmondee.Lemurkat.EastScarp_JessieSeedShop",
+            "ShopName":"Lemurkat.EastScarp_JessieSeedShop",
+            "CounterLocation":[
+                {
+                "LocationName":"EastScarp_ClearingHouse",
+                "NeedsShopProperty": true,
+                "TileX": 20,
+                "TileY": 13
+                }
+            ],
+            "MaxStockQuantity": 2,
+            "MaxStackPerItem": 3,
+            "ShopKeepers": ["Jessie"],
+            "CaughtDialogue":{
+                "Jessie":"{{i18n:JessieSeedShop.Jessie}}",
+                "Jessie_NoMoney":"{{i18n:JessieSeedShop.Jessie_NoMoney}}"
+            },
+            "OpenConditions":{
+                "GameStateQueries": ["TIME 1100 1800"],
+                "ShopKeeperRange": [
+                    {
+                    "Name": "Jessie",
+                    "TileX": 20,
+                    "TileY": 12
+                    }
+                ]
+            }
+        }
+    ]
+}

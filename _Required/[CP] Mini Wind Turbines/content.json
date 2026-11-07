@@ -1,0 +1,154 @@
+{
+	"Format": "2.0.0",
+	
+	"Changes": 
+	[
+		//Texture
+		{
+			"LogName":"Mini Wind Turbine Textures",
+			"Action": "Load",
+			"Target": "Mods/{{ModId}}/Turbine",
+			"FromFile": "Assets/Turbine.png"
+		},
+		
+		//Crafting Recipe
+		{
+			"LogName": "Mini Wind Turbine Crafting Recipe",
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": 
+			{
+				"{{ModId}}_MiniWindTurbine": "336 5 787 1 767 6/Home/{{ModId}}_MiniWindTurbine/true/null/{{i18n: MiniWindTurbineName}}"
+			}
+		},
+		
+		//Mail and Trigger Action
+		{
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries":
+			{
+				"{{ModId}}_Letter": "{{i18n:LetterBody}}%item craftingRecipe {{ModId}}_MiniWindTurbine %%[#]{{i18n:LetterTitle}}"
+			}
+        },
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": 
+			{
+				"{{ModId}}_Letter":
+					{
+						"Id": "{{ModId}}_Letter",
+						"Trigger": "DayStarted",
+						"Condition": "PLAYER_FRIENDSHIP_POINTS Current Maru 1250, PLAYER_FRIENDSHIP_POINTS Current Demetrius 1250, PLAYER_MINING_LEVEL Current 5",
+						"Actions":
+						[
+							"AddMail Current {{ModId}}_Letter now"
+						]
+					}
+			}
+		},
+		
+		//Patch into BigCraftables
+		{
+			"LogName": "Mini Wind Turbine Big Craftable Patch",
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": 
+			{
+				"{{ModId}}_MiniWindTurbine":
+					{
+						"Name": "{{ModId}}_MiniWindTurbine",
+						"DisplayName": "{{i18n: MiniWindTurbineName}}",
+						"Description": "{{i18n: MiniWindTurbineDescription}}",
+						"Price": 1500,
+						"Fragility": 0,
+						"CanBePlacedOutdoors": true,
+						"CanBePlacedIndoors": false,
+						"IsLamp": false,
+						"Texture": "Mods/{{ModId}}/Turbine",
+						"SpriteIndex": 0
+					}
+			}
+		},
+		
+		//Producer Rule
+		{
+			"LogName": "Mini Wind Turbine Producer Rule",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"Entries": 
+			{
+				"(BC){{ModId}}_MiniWindTurbine":
+					{
+						"OutputRules":
+							[
+								{
+									"Id": "{{ModId}}_BatteryProduction",
+									"Triggers":
+										[
+											{
+												"Id": "{{ModId}}_ContinuousProduction",
+												"Trigger": "OutputCollected, MachinePutDown",
+											}
+										],
+									"OutputItem":
+										[
+											{
+												"Id": "{{ModId}}_Battery",
+												"ItemId": "787",
+											}
+										],
+									"DaysUntilReady": 10
+								},
+							],
+						"WorkingEffects":
+							[
+								{
+									"Frames": [0,1,2,3,4,5],
+									"Interval": 100
+								}
+							],
+						"WorkingEffectChance": 1,
+						"WobbleWhileWorking": false,
+						"PreventTimePass":
+						[
+							"Inside"
+						],
+						"ReadyTimeModifiers":
+							[
+								{
+									"Id": "{{ModId}}_WindyDay",
+									"Modification": "Subtract",
+									"Amount": 1600,
+									"Condition": "WEATHER Target Wind"
+								}
+							]
+					}
+			}
+		},
+		
+		//Robin's shop edit
+		{
+			"LogName": "Mini Wind Turbine sold by Robin",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": 
+			[
+				"Carpenter",
+				"Items"
+			],
+			"Entries":
+			{
+				"({{ModId}}_MiniWindTurbine":
+				{
+					"Id": "{{ModId}}_MiniWindTurbineSold",
+					"ItemId": "{{ModId}}_MiniWindTurbine",
+					"Price": 4000,
+					"Condition": "PLAYER_HAS_MAIL Current {{ModId}}_Letter",
+				}
+			}
+		}
+	]
+}

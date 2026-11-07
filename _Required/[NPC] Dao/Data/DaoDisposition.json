@@ -1,0 +1,103 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries": {
+				"AirynDao": {
+					"DisplayName": "{{i18n:Dao.CharacterName}}",
+					"Gender": "Female",
+					"Age": "Adult",
+					"Manner": "Neutral",
+					"SocialAnxiety": "Outgoing",
+					"Optimism": "Positive",
+					"BirthSeason": "Summer",
+					"BirthDay": 16,
+					"HomeRegion": "Town",
+					"CanBeRomanced": false,
+					"CanVisitIsland": true,
+					"CanCommentOnPurchasedShopItems": false,
+					"PerfectionScore": false,
+					"Home": [
+						{
+							"Id": "Default",
+							"Location": "Custom_SBV_DaoHouse",
+							"Tile": {
+								"X": 12,
+								"Y": 5
+							},
+							"Direction": "right"
+						}
+					],
+                    "WinterStarGifts": [
+                        {
+                            "Id": "Airyn.Dao_StirFry",
+                            "ItemId": "(O)606",
+                            "MinStack": 1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "Condition": null
+                        },
+                        {
+                            "Id": "Airyn.Dao_TropicalCurry",
+                            "ItemId": "(O)907",
+                            "MinStack": 1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "Condition": null
+                        },
+                        {
+                            "Id": "Airyn.Dao_BakedFish",
+                            "ItemId": "(O)198",
+                            "MinStack": 1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "Condition": null
+                        },
+                        {
+                            "Id": "Airyn.Dao_TomKhaSoup",
+                            "ItemId": "(O)218",
+                            "MinStack": 1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "Condition": null
+                        }
+                    ],
+					"Appearance": [
+						{
+							"Id": "AirynDao.NonSeasonalWinter",
+							"Season": "Winter",
+							"Condition": "{{SeasonalOutfits |contains= false}}",
+							"Portrait": "Portraits/AirynDao_Winter",
+							"Sprite": "Characters/AirynDao_Winter",
+							"Precedence": -150
+						},
+						{
+							"Id": "AirynDao.Beach",
+							"Portrait": "Portraits/AirynDao_Beach",
+							"Sprite": "Characters/AirynDao_Beach",
+							"IsIslandAttire": true,
+							"Precedence": -200
+						}
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Seasonal Outfits Include",
+			"Action": "Include",
+			"FromFile": "Data/DaoAppearances.json",
+			"When": {
+				"SeasonalOutfits |contains= false": false
+			}
+		},
+		{
+			"LogName": "Gift tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"AirynDao": "{{i18n:Dao.GiftTastes.Love}}/218 88 232 606 610 732 205 834 832 91 851 skellady.SBVCP_GoldenSunberry skellady.SBVCP_WildMustard skellady.SBVCP_Carob Book_Marlon Book_Mystery/{{i18n:Dao.GiftTastes.Like}}/404 281 257 717 720 716 207 198 278 208 829 399 831 Book_QueenOfSauce/{{i18n:Dao.GiftTastes.Dislike}}/206 224 197 201 210 220 221 60 62 64 66 68 70 72 74 904 category_gem allergen_dairy/{{i18n:Dao.GiftTastes.Hate}}/215 260 16 226 184 186 436 438 424 426 233 231 907 milk_item food_spicy skellady.SBVCP_DialaHotChoco skellady.SBVCP_IceCreamBowl/{{i18n:Dao.GiftTastes.Neutral}}/223/"
+			}
+		}
+	]
+}

@@ -1,0 +1,159 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries":{
+                "16279006/F/f Penny 1500/t 830 1700/w sunny/A pennyGone":"50s/
+                70 31/
+farmer 59 29 1 Penny 74 36 0/
+skippable/
+advancedMove farmer false 8 0 1 6000/
+move Penny 0 -7 3/
+emote farmer 8 true/
+move Penny -4 0 3/
+speak Penny \"Hi, @!$0#$b#You look surprised to see me here.$h\"/
+move Penny -1 0 3/
+speak Penny \"I do love going on walks, you know. Especially by the river.$0#$b#It always helps to get a clear mind.$0#$b#I bet you do a lot of walking yourself.$h\"/
+pause 400/
+speak Penny \"I'm actually headed down to the beach.$0#$b#Do you want to come with me?$0\"/
+question fork1 \"Join Penny?#Yes.#No.\"/
+fork dontJoinToBeach/
+emote Penny 32/
+speak Penny \"That's nice, let's head this way!\"/
+emote farmer 32 true/
+move Penny 0 1 3/
+move Penny -2 0 3/
+advancedMove farmer false -4 0 3 1000/
+advancedMove Penny false -4 0 3 1000/
+pause 200/
+globalFade .009/
+viewport -1000 -1000/
+changeLocation Beach/
+message \"You and Penny take a stroll down to the beach.\"/
+warp farmer 42 15/
+positionOffset farmer 0 20/
+warp Penny 44 15/
+faceDirection farmer 2/
+faceDirection Penny 2/
+globalFadeToClear .005 true/
+viewport 43 21/
+advancedMove Penny false 0 5 2 1000/
+advancedMove farmer false 0 5 2 1000/
+pause 2000/
+speak Penny \"The weather is beautiful today, isn't it?\"/
+pause 50/
+faceDirection Penny 3/
+speak Penny \"I have a silly idea!$h\"/
+emote farmer 8 true/
+faceDirection farmer 1/
+speak Penny \"Let's build a sandcastle together!$h\"/
+emote farmer 40/
+question fork1 \"How do you react?#'Sure, sounds fun!'#'No, that's a bit too silly for me.'\"/
+fork noSandCastle/
+speak Penny \"I was hoping you'd say that.$h#$b#This seems like a good spot for it. Let's just build it right here.\"/
+pause 100/
+animate Penny true true 200 21 21 21 22 22 22 21 21 21/
+animate farmer false true 200 6 6 6 6 89 89 89 89 58 58 58 58 89 89 89 89/
+playSound sandyStep/
+addTemporaryActor SandCastel 16 32 43 20 2 false/
+playSound sandyStep/
+pause 50/
+playSound sandyStep/
+speak Penny \"I like building sandcastles. It reminds me of simpler times.$0#$b#...better times.$s#$b#When I was younger, I used to play on the beach with my mother all the time. We ate ice cream, looked for pretty shells...$0#$b#But most importantly we tried to build a bigger sandcastle each time.$h\"pause 300/
+speak Penny \"Those are nice memories.$0#$b#Occasionally I come here to build one on my own.\"/
+pause 300/
+speak Penny \"It's nice to have a building partner for once.$h\"/
+emote farmer 8 false/
+pause 400/
+quickQuestion What do you say?#'Why don't you build them with your mother anymore?'#'Are we talking about the same Pam?'(break)pause 50(break)friendship Penny -10\\speak Penny \"That's a rude way to put it.$s\"/
+speak Penny \"Things are just different now.$s#$b#My mom has been struggling with a drinking problem for a while, and our relationship is... complicated, to say the least.$s\"/
+pause 100/
+quickQuestion What do you say?#'I'm sorry to hear that. That must be tough for you.'#'Pam sounds like a bad mother...'(break)friendship Penny 40\\speak Penny \"Yeah, it is.$s#$b#But I try not to dwell on it too much.$s#$b#I want to focus on the here and now, you know?$3#$b# And right now... there's lovely weather, the water is sparkling like diamonds... $0#$b#The waves are lapping soothingly against the shore...$0#$b#The sea breeze is warm against my skin... I can almost taste its salt on my tongue...$0#$b#And the sand feels nice running through my fingers.$0#$b# And of course I'm happy that you're here!$1\"(break)friendship Penny -30\\speak Penny \"It's complicated.$s#$bMy mom has her problems, but she's still my mom, you know?$s#$b#And she's done a lot for me over the years. I don't want to judge her too harshly.$s\"\\speak Penny \"There are a lot of other things going on too.$s#$b#It's hard to explain.$s#$b#But I appreciate you trying to understand.\"/
+globalFade 0.011/
+viewport -1000 -1000/
+playSound sandyStep/
+pause 1050/
+playSound sandyStep/
+pause 1050/
+playSound sandyStep/
+showFrame SandCastel 1/
+globalFadeToClear 0.011 true/
+viewport 43 21/
+pause 500/
+stopAnimation farmer/
+faceDirection farmer 1/
+stopAnimation Penny/
+faceDirection Penny 3/
+speak Penny \"Our sandcastle came out really well! Nice and firm, not too crumbly.$h#$b#I know it's a bit childish of me.$0#$b#This was a really special moment for me.$l#$b#I don't get to do things like this with other people very often, and it was nice to forget about everything for a while.$0\"/
+pause 600/
+speak Penny \"I'm really glad we could do this together, @.\"/
+question fork1 \"'What do you say?#'It was fun and relaxing! It's nice to take a break from the stresses of life.'#'I only did it because I felt sorry for you. It's not like I wanted to spend my day building sandcastles.'\"/
+fork badSandCastleEnding/
+emote Penny 32/
+speak Penny \"Exactly, I'm happy you feel that way. And I'm grateful to have a friend like you to share these moments with.$0#$b#Thanks for being there for me.$l\"/
+viewport move 1 1 6000/
+globalFade 0.005/
+viewport -1000 -1000/
+message \"You and Penny spend a few more minutes admiring the sandcastle you built before heading back and parting ways.\"/
+end dialogue Penny \"If you ever need help building a sandcastle or something similar, you know where to find me.$h#$b#Let's try to build an even bigger sandcastle next time!$h\"",
+                "dontJoinToBeach":"pause 50/
+                speak Penny \"That's okay. I bet you have a lot of errands to do, @.$0#$b#See you around!$0\"/
+pause 100/
+move Penny 0 1 3/
+advancedMove Penny false -8 0 3 5000/
+move farmer 3 0 0/
+move farmer 0 -4 0 true/
+globalFade/
+viewport -1000 -1000/
+pause 1000/
+end dialogue Penny \"Finished all your errands?$0#$b#Lucky you! My shoes got all filled up with sand.$h\"",
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/Beach",
+            "Entries":{
+                "noSandCastle":"pause 50/
+                friendship Penny -40/
+speak Penny \"Okay.$s\"/
+pause 50/
+faceDirection Penny 2/
+speak Penny \"Would you mind leaving me alone for a bit.$s#$b#I'd like to build a sandcastle for old times' sake.$s\"/
+emote farmer 28/
+advancedMove farmer false 0 -7 -3 0 0 -1/
+faceDirection Penny 1/
+pause 100/
+animate Penny false true 150 4 4 4 21 21 21 22 22 22 21 21 21/
+playSound sandyStep/
+addTemporaryActor SandCastel 16 32 45 20 2 false/
+playSound sandyStep/
+pause 50/
+playSound sandyStep/
+pause 1000/
+viewport move -1 -1 6000/
+globalFade 0.005/
+viewport -1000 -1000/
+pause 1000/
+end dialogue Penny \"My sandcastle came out very well. Thanks for asking.$0\"",
+                "badSandCastleEnding":"pause 50/
+                friendship Penny -500/
+speak Penny \"Wow, that's really rude.$s#$b#I thought we were having fun together, but I guess I was wrong.$s#$b#Thanks for making me feel like a loser.$s\"/
+emote farmer 40/
+pause 250/
+speak Penny \"Don't try to explain yourself please.$s\"/
+faceDirection Penny 2/
+pause 400/
+showFrame Penny 23/
+pause 300/
+speak Penny \"It's fine. I just don't appreciate being talked down to.$s#$b#Maybe we should just call it a day.$s\"/
+emote farmer 28/
+move farmer 0 -5 0 true/
+globalFade/
+viewport -1000 -1000/
+pause 1000/
+end dialogue Penny \"Sorry for making you build that sandcastle.$s#$b#I didn't realize that you just did it because you felt sorry for me.$s\""
+            }
+        },
+    ]
+}

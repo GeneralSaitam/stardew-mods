@@ -1,0 +1,93 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "18657002/F/f Abigail 500/t 2100 2300/e 18657001": "echos/
+                47 90/
+                farmer 43 91 1 Abigail 47 87 0/
+                skippable/
+                addLantern 735 46 86 1/
+                move farmer 1 0 0/
+                move farmer 0 -4 1/
+                emote farmer 8/
+                move farmer 2 0 1/
+                pause 200/
+                showFrame Abigail 32/
+                jump Abigail 8/
+                showFrame Abigail 0/
+                faceDirection Abigail 3/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.001}}\"/
+                pause 400/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.002}}\"/
+                faceDirection Abigail 0/
+                pause 400/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.003}}\"/
+                pause 200/
+                faceDirection Abigail 3/
+                pause 300/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.004}}\"/
+                pause 500/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.005}}\"/
+                emote farmer 32/
+                pause 300/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.006}}\"/
+                quickQuestion {{i18n:Miihau.AbigailEE.event2.006X}}(break)speak Abigail \"{{i18n:Miihau.AbigailEE.event2.007}}\"\\friendship Abigail 20(break)speak Abigail \"{{i18n:Miihau.AbigailEE.event2.008}}\"\\friendship Abigail -20 /
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.009}}\"/
+                move Abigail 0 2 2/
+                faceDirection Abigail 3/
+                pause 600/
+                faceDirection Abigail 1/
+                pause 600/
+                move Abigail 0 -2 3/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.010}}\"/
+                pause 600/
+                emote Abigail 40/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.011}}\"/
+                quickQuestion {{i18n:Miihau.AbigailEE.event2.011X}}(break)friendship Abigail 30\\speak Abigail \"{{i18n:Miihau.AbigailEE.event2.012}}\"(break)friendship Abigail -20\\speak Abigail \"{{i18n:Miihau.AbigailEE.event2.013}}\" /
+                pause 500/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.014}}\"/
+                move Abigail 0 4 2/
+                faceDirection farmer 2/
+                move Abigail -3 0 3/
+                pause 700/
+                emote Abigail 40/
+                pause 200/
+                speed Abigail 4/
+                move Abigail 2 0 0/
+                speed Abigail 4/
+                move Abigail 0 -3 0/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.015}}\"/
+                pause 200/
+                emote farmer 32/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event2.016}}\"/
+                addConversationTopic abigailNotHome 1/
+                advancedMove Abigail false 0 3 -7 0 3 1000/
+                pause 800/
+                end",
+            },
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Pierre",
+            "Entries":{
+                "abigailNotHome":"{{i18n:Miihau.AbigailEE.event2.017}}",
+                }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Caroline",
+            "Entries":{
+                "abigailNotHome":"{{i18n:Miihau.AbigailEE.event2.018}}",
+                }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Abigail",
+            "Entries":{
+                "abigailNotHome":"{{i18n:Miihau.AbigailEE.event2.019}}",
+                }
+        },
+    ]
+}

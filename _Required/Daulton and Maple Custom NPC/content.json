@@ -1,0 +1,775 @@
+{
+  "Format": "2.6.1",
+  "ConfigSchema": {
+    "MapleSprites": {
+      "AllowValues": "Maple1, Maple2",
+      "Default": "Maple1"
+    },
+    "Recolors": {
+      "AllowValues": "RCTI, Vanilla, Earthy",
+      "Default": "Vanilla"
+    }
+  },
+  "DynamicTokens": [
+    { "Name": "InteriorSheet",  "Value": "townInterior_DustBeauty.png" },
+    { "Name": "InteriorSheet",  "Value": "townInterior.png",        "When": { "Recolors": "Vanilla" } },
+    { "Name": "InteriorSheet",  "Value": "townInterior_Earthy.png", "When": { "Recolors": "Earthy" } },
+    { "Name": "InteriorSheet2", "Value": "townInterior_2 2.png" },
+    { "Name": "InteriorSheet2", "Value": "townInterior_2.png",        "When": { "Recolors": "Vanilla" } },
+    { "Name": "InteriorSheet2", "Value": "townInterior_2_Earthy.png", "When": { "Recolors": "Earthy" } }
+  ],
+  "Changes": [
+
+    /* ---------- BLANK LOADS ---------- */
+    {
+      "LogName": "Daulton room map",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Maps/Custom_DaultonsRoom",
+      "FromFile": "assets/Maps/Custom_DaultonsRoom.tmx"
+    },
+    {
+      "LogName": "Daulton spouse room map",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Maps/Custom_DaultonsSpouseRoom",
+      "FromFile": "assets/Maps/SpouseRoom/DaultonsSpouseRoom.tmx"
+    },
+    {
+      "LogName": "Daulton spouse patio map",
+      "Action": "Load",
+      "Priority": "High",
+      "Target": "Maps/Custom_DaultonsSpousePatio",
+      "FromFile": "assets/Maps/SpouseRoom/DaultonsSpousePatio.tmx"
+    },
+    {
+      "Action": "Load",
+      "LogName": "Load Picnic sprite",
+      "Target": "PicnicSprite",
+      "FromFile": "assets/Sprites/Picnic.png"
+    },
+    {
+      "LogName": "BlankLoads",
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Dialogue/Daulton, Characters/Dialogue/Maple, Characters/Dialogue/MarriageDialogueDaulton,",
+      "FromFile": "data/Blank.json"
+    },
+    {
+      "LogName": "Blank loads — schedules & strings",
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/schedules/Daulton, Characters/schedules/Maple, Strings/schedules/Daulton",
+      "FromFile": "data/Blank.json"
+    },
+    {
+      "LogName": "Blank-load custom room events",
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Data/Events/Custom_DaultonsRoom",
+      "FromFile": "data/Blank.json"
+    },
+    {
+      "LogName": "Blank-load spouse maps",
+      "Action": "Load",
+      "Priority": "Low", 
+      "Target": "Maps/Custom_DaultonsSpouseRoom, Maps/Custom_DaultonsSpousePatio",
+      "FromFile": "data/Blank.json"
+    },
+
+    /* ---------- CUSTOM LOCATIONS ---------- */
+    {
+      "LogName": "Create custom locations",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "Custom_DaultonsRoom": {
+          "DisplayName": "Daulton's Room",
+          "DefaultArrivalTile": { "X": 7, "Y": 8 },
+          "CreateOnLoad": { "MapPath": "Maps/Custom_DaultonsRoom" }
+        },
+        "Custom_DaultonsSpouseRoom": {
+          "DisplayName": "Daulton's Spouse Room",
+          "DefaultArrivalTile": { "X": 5, "Y": 5 },
+          "CreateOnLoad": { "MapPath": "Maps/Custom_DaultonsSpouseRoom" }
+        },
+        "Custom_DaultonsSpousePatio": {
+          "DisplayName": "Daulton's Spouse Patio",
+          "DefaultArrivalTile": { "X": 5, "Y": 5 },
+          "CreateOnLoad": { "MapPath": "Maps/Custom_DaultonsSpousePatio" }
+        }
+      }
+    },
+
+    /* ---------- MAIL ---------- */
+    {
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "DaultonWoodGift": "{{i18n:Mail.Daulton.WoodGift}}%item object 388 25 %%[#]Wood Gift From Daulton",
+        "DaultonSpicyEel": "{{i18n:Mail.Daulton.SpicyEel}}%item object 226 1 %%[#]Spicy Eel From Daulton",
+        "DaultonMaplesWool": "{{i18n:Mail.Daulton.MaplesWool}}%item object 440 1 %%[#]Wool From Daulton",
+        "DaultonSuperCucumber": "{{i18n:Mail.Daulton.SuperCucumber}}%item object 155 1 %%[#]Super Cucumber From Daulton",
+        "DaultonSalmonMail": "{{i18n:Mail.Daulton.SalmonMail}}%item object 139 2 %%[#]Salmon From Daulton",
+        "DaultonBookCrabbing": "{{i18n:Mail.Daulton.BookCrabbing}}%item object Book_Crabbing 1 %%[#]Crabbing Book From Daulton",
+        "DaultonEnergyTonic": "{{i18n:Mail.Daulton.EnergyTonic}}%item object 349 1 %%[#]Energy Tonic From Daulton",
+        "DaultonHeartEvent6": "{{i18n:Mail.Daulton.HeartEvent6}}[#]Letter from Daulton",
+        "DaultonHeartEvent10": "{{i18n:Mail.Daulton.HeartEvent10}}[#]Letter from Daulton",
+        "DaultonMaplesTreatRecipe": "{{i18n:Mail.Daulton.MaplesTreatRecipe}}%item cookingRecipe Maple's Special Treat %%[#]Maple's Special Treat Recipe From Daulton"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/TriggerActions",
+      "Entries": {
+        
+        /* — Spring 5 — needs ≥1 heart */
+        "{{ModId}}_DaultonMail_Spring5": {
+          "Id": "{{ModId}}_DaultonMail_Spring5",
+          "Trigger": "DayStarted",
+          "Condition": "SEASON Spring, DAY_OF_MONTH 5, PLAYER_FRIENDSHIP_POINTS Current Daulton 250, PLAYER_HAS_CONVERSATION_TOPIC Current met_Daulton, !PLAYER_HAS_MAIL Current DaultonWoodGift",
+          "Actions": [ "AddMail Current DaultonWoodGift" ]
+        },
+
+        "{{ModId}}_DaultonMail_MaplesTreat": {
+        "Id": "{{ModId}}_DaultonMail_MaplesTreat",
+        "Trigger": "DayStarted",
+          "Condition": "PLAYER_FRIENDSHIP_POINTS Current Daulton 2000, !PLAYER_HAS_MAIL Current DaultonMaplesTreatRecipe, !PLAYER_HAS_COOKING_RECIPE Current \"Maple's Special Treat\"",
+          "Actions": [ "AddMail Current DaultonMaplesTreatRecipe" ]
+        },
+
+        /* — Summer 6 — needs ≥2 hearts */
+        "{{ModId}}_DaultonMail_Summer6": {
+          "Id": "{{ModId}}_DaultonMail_Summer6",
+          "Trigger": "DayStarted",
+          "Condition": "SEASON Summer, DAY_OF_MONTH 6, PLAYER_FRIENDSHIP_POINTS Current Daulton 500, PLAYER_HAS_CONVERSATION_TOPIC Current met_Daulton, !PLAYER_HAS_MAIL Current DaultonSpicyEel",
+          "Actions": [ "AddMail Current DaultonSpicyEel" ]
+        },
+
+        /* — Spring 27 — needs ≥3 hearts */
+        "{{ModId}}_DaultonMail_Spring27": {
+          "Id": "{{ModId}}_DaultonMail_Spring27",
+          "Trigger": "DayStarted",
+          "Condition": "SEASON Spring, DAY_OF_MONTH 27, PLAYER_FRIENDSHIP_POINTS Current Daulton 750, PLAYER_HAS_CONVERSATION_TOPIC Current met_Daulton, !PLAYER_HAS_MAIL Current DaultonMaplesWool",
+          "Actions": [ "AddMail Current DaultonMaplesWool" ]
+        },
+
+        /* — Winter 12 — needs ≥4 hearts */
+        "{{ModId}}_DaultonMail_Winter12": {
+          "Id": "{{ModId}}_DaultonMail_Winter12",
+          "Trigger": "DayStarted",
+          "Condition": "SEASON Winter, DAY_OF_MONTH 12, PLAYER_FRIENDSHIP_POINTS Current Daulton 1000, PLAYER_HAS_CONVERSATION_TOPIC Current met_Daulton, !PLAYER_HAS_MAIL Current DaultonSuperCucumber",
+          "Actions": [ "AddMail Current DaultonSuperCucumber" ]
+        },
+
+        /* — Fall 3 — needs ≥5 hearts */
+        "{{ModId}}_DaultonMail_Fall3": {
+          "Id": "{{ModId}}_DaultonMail_Fall3",
+          "Trigger": "DayStarted",
+          "Condition": "SEASON Fall, DAY_OF_MONTH 3, PLAYER_FRIENDSHIP_POINTS Current Daulton 1250, PLAYER_HAS_CONVERSATION_TOPIC Current met_Daulton, !PLAYER_HAS_MAIL Current DaultonSalmonMail",
+          "Actions": [ "AddMail Current DaultonSalmonMail" ]
+        },
+        
+        /* — Fall 18 — needs ≥6 hearts */
+        "{{ModId}}_DaultonMail_Fall18": {
+          "Id": "{{ModId}}_DaultonMail_Fall18",
+          "Trigger": "DayStarted",
+          "Condition": "SEASON Fall, DAY_OF_MONTH 18, PLAYER_FRIENDSHIP_POINTS Current Daulton 1500, PLAYER_HAS_CONVERSATION_TOPIC Current met_Daulton, !PLAYER_HAS_MAIL Current DaultonBookCrabbing",
+          "Actions": [ "AddMail Current DaultonBookCrabbing" ]
+        },
+
+        /* — Summer 23 — needs ≥7 hearts */
+        "{{ModId}}_DaultonMail_Summer23": {
+          "Id": "{{ModId}}_DaultonMail_Summer23",
+          "Trigger": "DayStarted",
+          "Condition": "SEASON Summer, DAY_OF_MONTH 23, PLAYER_FRIENDSHIP_POINTS Current Daulton 1750, PLAYER_HAS_CONVERSATION_TOPIC Current met_Daulton, !PLAYER_HAS_MAIL Current DaultonEnergyTonic",
+          "Actions": [ "AddMail Current DaultonEnergyTonic" ]
+        },
+
+        "{{ModId}}_DaultonMail_Heart6": {
+          "Id": "{{ModId}}_DaultonMail_Heart6",
+          "Trigger": "DayStarted",
+          "Condition": "!PLAYER_HAS_MAIL Current DaultonHeartEvent6, PLAYER_FRIENDSHIP_POINTS Current Daulton 1500, PLAYER_HAS_CONVERSATION_TOPIC Current met_Daulton",
+          "Actions": [ "AddMail Current DaultonHeartEvent6" ]
+
+},
+        "{{ModId}}_DaultonReverseProposalFlag": {
+        "Id": "{{ModId}}_DaultonReverseProposalFlag",
+        "Trigger": "DayStarted",
+        "Condition": "PLAYER_HAS_SEEN_EVENT Current 992254",
+        "Actions": [
+        "AddMail Current Kantrip.MarryMe_StartDaulton Received"
+  ]
+}
+      }
+    },
+
+        
+    /* ---------- DAULTON FILES ---------- */
+    { "Action": "Include", "FromFile": "assets/Daulton.json" },
+    { "Action": "Include", "FromFile": "assets/Dialogue/DaultonDialogue.json" },
+    { "Action": "Include", "FromFile": "assets/Schedules/ScheduleEdits.json"},
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/Daulton",
+      "FromFile": "assets/Schedules/Schedule.json",
+      "Priority": "High"
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Daulton",
+      "FromFile": "assets/Sprites/Daulton.png"
+    },
+    { "Action": "Load", "Target": "Portraits/Daulton", "FromFile": "assets/Portraits/Daulton.png" },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Daulton_Summer",
+      "FromFile": "assets/Sprites/Daulton_Summer.png"
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Portraits/Daulton_Summer",
+      "FromFile": "assets/Portraits/Daulton_Summer.png"
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Daulton_Winter",
+      "FromFile": "assets/Sprites/Daulton_Winter.png"
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Portraits/Daulton_Winter",
+      "FromFile": "assets/Portraits/Daulton_Winter.png"
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Daulton_Beach",
+      "FromFile": "assets/Sprites/Daulton_Beach.png"
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Portraits/Daulton_Beach",
+      "FromFile": "assets/Portraits/Daulton_Beach.png"
+    },
+    { "Action": "Include", "FromFile": "assets/Schedules/ScheduleDialogue.json" },
+    { "Action": "Include", "FromFile": "assets/Festivals/daulton_festivals.json" },
+    { "Action": "Include", "FromFile": "assets/Festivals/spring13.json" },
+    { "Action": "Include", "FromFile": "assets/Festivals/spring24.json" },
+    { "Action": "Include", "FromFile": "assets/Festivals/summer11.json" },
+    { "Action": "Include", "FromFile": "assets/Festivals/summer28.json" },
+    { "Action": "Include", "FromFile": "assets/Festivals/fall16.json" },
+    { "Action": "Include", "FromFile": "assets/Festivals/fall27.json" },
+    { "Action": "Include", "FromFile": "assets/Festivals/winter8.json" },
+    { "Action": "Include", "FromFile": "assets/Festivals/winter25.json" },
+    { "Action": "Include", "FromFile": "assets/Festivals/nightmarket.json" },
+    { "Action": "Include", "FromFile": "assets/Festivals/desertfestival.json" },
+    { "Action": "Include", "FromFile": "assets/Locations/Edits.json" },
+    { "Action": "Include", "FromFile": "assets/Locations/NPCMapLocationTracking.json" },
+    { "Action": "Include", "FromFile": "assets/Dialogue/NPCDialogue.json" },
+
+    {
+      "Action": "Include",
+      "LogName": "Daulton marriage lines",
+      "FromFile": "assets/Dialogue/daulton_marriage_dialogue.json",
+      "Priority": "Late"
+    },
+
+    /* ---------- MAPLE FILES ---------- */
+
+    { "Action": "Include", "FromFile": "assets/Maple.json"},
+    { "Action": "Include", "FromFile": "assets/Festivals/Maple_Festival.json" },
+
+    /* ---------- MAPLE SPRITES - MAPLE1 VARIANT ---------- */
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Maple",
+      "FromFile": "assets/Sprites/Maple.png",
+      "When": { "MapleSprites": "Maple1" }
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Maple_Summer",
+      "FromFile": "assets/Sprites/Maple_Summer.png",
+      "When": { "MapleSprites": "Maple1" }
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Maple_Winter",
+      "FromFile": "assets/Sprites/Maple_Winter.png",
+      "When": { "MapleSprites": "Maple1" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Maple_Winter",
+      "FromFile": "assets/Portraits/Maple_Winter.png",
+      "When": { "MapleSprites": "Maple1" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Maple",
+      "FromFile": "assets/Portraits/Maple.png",
+      "When": { "MapleSprites": "Maple1" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Maple_Summer",
+      "FromFile": "assets/Portraits/Maple_Summer.png",
+      "When": { "MapleSprites": "Maple1" }
+    },
+    
+    /* ---------- MAPLE SPRITES - MAPLE2 VARIANT ---------- */
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Maple",
+      "FromFile": "assets/Sprites/Maple2.png",
+      "When": { "MapleSprites": "Maple2" }
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Maple_Summer",
+      "FromFile": "assets/Sprites/Maple_Summer2.png",
+      "When": { "MapleSprites": "Maple2" }
+    },
+    {
+      "Action": "Load",
+      "Priority": "Low",
+      "Target": "Characters/Maple_Winter",
+      "FromFile": "assets/Sprites/Maple_Winter2.png",
+      "When": { "MapleSprites": "Maple2" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Maple_Winter",
+      "FromFile": "assets/Portraits/Maple_Winter.png",
+      "When": { "MapleSprites": "Maple2" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Maple",
+      "FromFile": "assets/Portraits/Maple.png",
+      "When": { "MapleSprites": "Maple2" }
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/Maple_Summer",
+      "FromFile": "assets/Portraits/Maple_Summer.png",
+      "When": { "MapleSprites": "Maple2" }
+    },
+
+    //* ---------- MAPLE COMPATIBILITY CHANGES AND SCHEDULES ---------- */ 
+    {
+      "Action": "Load",
+      "LogName": "Maple's default schedule",
+      "Target": "Characters/schedules/Maple",
+      "FromFile": "assets/Schedules/Maple/Schedule.json",
+      "Priority": "Low"
+      },
+      {
+      "Action": "Load",
+      "LogName": "Maple's marriage schedule - Basic Farmhouse",
+      "Target": "Characters/schedules/Maple",
+      "When": {
+      "Relationship:Daulton": "Married",
+      "FarmhouseUpgrade |contains=0,1": true,
+      "HasMod |contains=crystalinerose.RusticFarmhouse, Lnh.CoastalFarmhouse, Lnh.FarmHouse, DustBeauty.SeasonalGardernFarmhouse.v2, Aimon111.RedesignedFarmHouseLayoutAlt, Aimon111.AimonsTidyCozyFarmhouse, Sharogg.CozyNooksFarmhouse": false
+      },
+      "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_Basic.json",
+      "Priority": "Medium"
+      },
+      {
+      "Action": "Load",
+      "LogName": "Maple's marriage schedule - Upgraded Farmhouse",
+      "Target": "Characters/schedules/Maple",
+      "When": {
+      "Relationship:Daulton": "Married",
+      "FarmhouseUpgrade |contains=2,3": true,
+      "HasMod |contains=crystalinerose.RusticFarmhouse, Lnh.CoastalFarmhouse, Lnh.FarmHouse, DustBeauty.SeasonalGardernFarmhouse.v2, Aimon111.RedesignedFarmHouseLayoutAlt, Aimon111.AimonsTidyCozyFarmhouse, Sharogg.CozyNooksFarmhouse, jenf1.firstfarmhouse, Ria.sec.F.House": false
+      },
+      "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_Upgraded.json",
+      "Priority": "Medium"
+      },
+      /* ---------- MAPLE COMPATIBILITY — KISSA'S COZY (2nd upgrade only) ---------- */
+  {
+    "Action": "Load",
+    "LogName": "Maple's marriage schedule – Kisaa's Cozy (Lvl 2)",
+    "Target": "Characters/schedules/Maple",
+    "When": {
+      "Relationship:Daulton": "Married",
+      "HasMod": "crystalinerose.RusticFarmhouse",
+      "FarmhouseUpgrade": "2"          
+    },
+    "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_Kisaa_Lvl2.json",
+    "Priority": "High"
+  },
+  {
+    "Action": "Load",
+    "LogName": "Maple's marriage schedule – Kisaa's Cozy (Lvl 1)",
+    "Target": "Characters/schedules/Maple",
+    "When": {
+      "Relationship:Daulton": "Married",
+      "HasMod": "crystalinerose.RusticFarmhouse",
+      "FarmhouseUpgrade": "1"
+    },
+    "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_Kisaa_Lvl1.json",
+    "Priority": "High"
+  },
+      /* ---------- MAPLE COMPATIBILITY — KISSA'S COZY (3rd upgrade only) ---------- */
+      {
+      "Action": "Load",
+      "LogName": "Maple's marriage schedule - Kisaa's Cozy",
+      "Target": "Characters/schedules/Maple",
+      "When": { 
+      "Relationship:Daulton": "Married",
+      "HasMod": "crystalinerose.RusticFarmhouse",
+      "FarmhouseUpgrade": "3"
+      },
+      "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_Kisaa.json",
+      "Priority": "High"
+      },
+      /* ---------- MAPLE COMPATIBILITY — SEASONAL GARDEN FARMHOUSE V2 ---------- */
+      {
+        "Action": "Load",
+        "LogName": "Maple's marriage schedule – Seasonal Garden V2 (Basic Farmhouse)",
+        "Target": "Characters/schedules/Maple",
+        "When": {
+          "Relationship:Daulton": "Married",
+          "FarmhouseUpgrade": 1,                   
+          "HasMod": "DustBeauty.SeasonalGardernFarmhouse.v2"
+        },
+        "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_SGV2_Basic.json",
+        "Priority": "High"
+      },
+      {
+        "Action": "Load",
+        "LogName": "Maple's marriage schedule – Seasonal Garden V2 (Upgraded Farmhouse)",
+        "Target": "Characters/schedules/Maple",
+        "When": {
+          "Relationship:Daulton": "Married",
+          "FarmhouseUpgrade |contains=2,3": true,  
+          "HasMod": "DustBeauty.SeasonalGardernFarmhouse.v2"
+        },
+        "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_SGV2_Upgraded.json",
+        "Priority": "High"
+      },
+      /* ---------- MAPLE COMPATIBILITY — AIMON'S FANCY FARMHOUSE ---------- */
+      {
+      "Action": "Load",
+      "LogName": "Maple's marriage schedule – Aimon Fancy (Basic Farmhouse)",
+      "Target": "Characters/schedules/Maple",
+      "When": {
+        "Relationship:Daulton": "Married",
+        "FarmhouseUpgrade": 1,                              
+        "HasMod": "Aimon111.RedesignedFarmHouseLayoutAlt"
+      },
+      "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_Aimon_Basic.json",
+      "Priority": "High"
+      },
+      {
+      "Action": "Load",
+      "LogName": "Maple's marriage schedule – Aimon Fancy (Upgraded Farmhouse)",
+      "Target": "Characters/schedules/Maple",
+      "When": {
+        "Relationship:Daulton": "Married",
+        "FarmhouseUpgrade|contains=2,3": true,               
+        "HasMod": "Aimon111.RedesignedFarmHouseLayoutAlt"
+      },
+      "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_Aimon_Upgraded.json",
+      "Priority": "High"
+  },
+    /* ---------- MAPLE COMPATIBILITY — AIMON'S TIDY COZY FARMHOUSE ---------- */
+    {
+      "Action": "Load",
+      "LogName": "Maple's marriage schedule – Aimon Tidy Cozy (Basic Farmhouse)",
+      "Target": "Characters/schedules/Maple",
+      "When": {
+        "Relationship:Daulton": "Married",
+        "FarmhouseUpgrade": 1,                                
+        "HasMod": "Aimon111.AimonsTidyCozyFarmhouse"
+    },
+      "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_AimonTidy_Basic.json",
+      "Priority": "High"
+    },
+    {
+      "Action": "Load",
+      "LogName": "Maple's marriage schedule – Aimon Tidy Cozy (Upgraded Farmhouse)",
+      "Target": "Characters/schedules/Maple",
+      "When": {
+        "Relationship:Daulton": "Married",
+        "FarmhouseUpgrade|contains=2,3": true,                
+        "HasMod": "Aimon111.AimonsTidyCozyFarmhouse"
+    },
+      "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_AimonTidy_Upgraded.json",
+      "Priority": "High"
+    },
+    /* ---------- MAPLE COMPATIBILITY — COZY NOOKS FARMHOUSE ---------- */
+    {
+    "Action": "Load",
+    "LogName": "Maple's marriage schedule – Cozy Nooks (Basic Farmhouse)",
+    "Target": "Characters/schedules/Maple",
+    "When": {
+      "Relationship:Daulton": "Married",
+      "FarmhouseUpgrade": 1,
+      "HasMod": "Sharogg.CozyNooksFarmhouse"
+    },
+    "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_CozyNooks_Basic.json",
+    "Priority": "High"
+    },
+    {
+    "Action": "Load",
+    "LogName": "Maple's marriage schedule – Cozy Nooks (Upgraded Farmhouse)",
+    "Target": "Characters/schedules/Maple",
+    "When": {
+      "Relationship:Daulton": "Married",
+      "FarmhouseUpgrade|contains=2,3": true,
+      "HasMod": "Sharogg.CozyNooksFarmhouse"
+    },
+    "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_CozyNooks_Upgraded.json",
+    "Priority": "High"
+    },
+    /* ---------- MAPLE COMPATIBILITY — LNH'S FIRST FARMHOUSE ---------- */
+    {
+    "Action": "Load",
+    "LogName": "Maple's marriage schedule – Lnh First (Basic Farmhouse)",
+    "Target": "Characters/schedules/Maple",
+    "When": {
+      "Relationship:Daulton": "Married",
+      "FarmhouseUpgrade": 1,
+      "HasMod": "Lnh.FarmHouse"
+    },
+    "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_Lnh_Basic.json",
+    "Priority": "High"
+    },
+    {
+    "Action": "Load",
+    "LogName": "Maple's marriage schedule – Lnh First (Upgraded Farmhouse)",
+    "Target": "Characters/schedules/Maple",
+    "When": {
+      "Relationship:Daulton": "Married",
+      "FarmhouseUpgrade|contains=2,3": true,
+      "HasMod": "Lnh.FarmHouse"
+    },
+    "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_Lnh_Upgraded.json",
+    "Priority": "High"
+    },
+    /* ---------- MAPLE COMPATIBILITY — LNH'S COASTAL FARMHOUSE ---------- */
+    /* Coastal uses one interior map for every upgrade level, so a single
+       schedule covers FarmhouseUpgrade 1-3. */
+    {
+    "Action": "Load",
+    "LogName": "Maple's marriage schedule – Lnh Coastal (all levels)",
+    "Target": "Characters/schedules/Maple",
+    "When": {
+      "Relationship:Daulton": "Married",
+      "HasMod": "Lnh.CoastalFarmhouse"
+    },
+    "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_LnhCoastal.json",
+    "Priority": "High"
+    },
+    /* ---------- MAPLE COMPATIBILITY — JEN'S FIRST FARMHOUSE ---------- */
+  {
+    "Action": "Load",
+    "LogName": "Maple's marriage schedule – Jen's First Farmhouse (Farmhouse 2)",
+    "Target": "Characters/schedules/Maple",
+    "When": {
+      "Relationship:Daulton": "Married",
+      "FarmhouseUpgrade|contains=2,3": true,
+      "HasMod": "jenf1.firstfarmhouse"
+    },
+    "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_JenFarmhouse.json",
+    "Priority": "High"
+  },
+
+  /* ---------- MAPLE COMPATIBILITY — RIA'S SECOND FARMHOUSE ---------- */
+  {
+    "Action": "Load",
+    "LogName": "Maple's marriage schedule – Ria's Second Farmhouse",
+    "Target": "Characters/schedules/Maple",
+    "When": {
+      "Relationship:Daulton": "Married",
+      "FarmhouseUpgrade|contains=2,3": true,
+      "HasMod": "Ria.sec.F.House"
+    },
+    "FromFile": "assets/Schedules/Maple/MapleMarriageSchedule_RiaSecondFarmhouse.json",
+    "Priority": "High"
+  },
+
+
+    /* ---------- MISC FILES ---------- */
+    { "Action": "Include", "Priority": "Low", "FromFile": "assets/EventEdits/EventEdits.json" },
+    {
+      "Action": "Load",
+      "Target": "Maps/DaultonInterior",
+      "FromFile": "assets/Tilesheets/{{InteriorSheet}}"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/DaultonInterior2",
+      "FromFile": "assets/Tilesheets/{{InteriorSheet2}}"
+    },
+    {
+      "Action": "Load",
+      "Target": "Tilesheets/townInterior_DustBeauty",
+      "FromFile": "assets/Tilesheets/townInterior_DustBeauty.png"
+    },
+
+    {
+      "Action": "EditMap",
+      "LogName": "Daulton door overlay",
+      "Target": "Maps/Saloon",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "Priority": "Late + 50",
+      "FromFile": "assets/Maps/SaloonOverlay.tmx"
+    },
+    {
+      "Action": "Load",
+      "LogName": "Marlon walking sprite (non-SVE)",
+      "Priority": "Medium",
+      "Target": "Characters/Marlon",
+      "FromFile": "assets/Sprites/Marlon.png",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    {
+      "Action": "Load",
+      "LogName": "Marlon walk (event-only, non-SVE)",
+      "Priority": "Medium",
+      "Target": "Characters/Marlon_Walk",
+      "FromFile": "assets/Sprites/Marlon.png",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    
+    /* ---------- SPRITES FOR NEW OBJECTS ---------- */
+    {
+      "LogName": "LoadOldCompass",
+      "Action": "Load",
+      "Target": "Mods/DaultonNPC/OldCompass",
+      "FromFile": "assets/Sprites/OldCompass.png"
+    },
+    {
+      "LogName": "Load Maple's Special Treat",
+      "Action": "Load",
+      "Target": "Mods/DaultonNPC/MapleSpecialTreat",
+      "FromFile": "assets/Sprites/MapleSpecialTreat.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/FloatingLantern",
+      "FromFile": "assets/Sprites/floatinglantern.png"
+    },
+
+    /* ---------- DATA/OBJECTS PATCHES ---------- */
+    {
+      "LogName": "DaultonOldCompass",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "bigsquishyMods_OldCompass": {
+          "Name": "Old Compass",
+          "DisplayName": "{{i18n:object.old-compass.name}}",
+          "Description": "{{i18n:object.old-compass.description}}",
+          "Type": "Ring",
+          "Category": -81,
+          "Price": 400,
+          "Texture": "Mods/DaultonNPC/OldCompass",
+          "SpriteIndex": 0,
+          "Edibility": -300,
+          "IsDrink": false,
+          "ExcludeFromFishingCollection": true,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "Buffs": [
+            {
+              "Duration": 75,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 1,
+                "MiningLevel": 0,
+                "LuckLevel": 3,
+                "ForagingLevel": 0,
+                "MaxStamina": 0,
+                "MagneticRadius": 0,
+                "Speed": 0,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ]
+        },
+        
+        "{{ModId}}_MapleSpecialTreat": {
+          "Name": "Maple's Special Treat",
+          "DisplayName": "{{i18n:object.maple-treat.name}}",
+          "Description": "{{i18n:object.maple-treat.description}}",
+          "Type": "Cooking",
+          "Category": -7,
+          "Price": 250,
+          "Texture": "Mods/DaultonNPC/MapleSpecialTreat",
+          "SpriteIndex": 0,
+          "Edibility": 60,
+          "IsDrink": false,
+          "Buffs": [
+            {
+              "Duration": 400,
+              "CustomAttributes": {
+                "FarmingLevel": 0,
+                "FishingLevel": 0,
+                "MiningLevel": 0,
+                "LuckLevel": 2,
+                "ForagingLevel": 1,
+                "MaxStamina": 30,
+                "MagneticRadius": 0,
+                "Speed": 1,
+                "Defense": 0,
+                "Attack": 0
+              }
+            }
+          ],
+          "ContextTags": [ "color_brown", "sweet_item", "no_shipping_bin" ]
+        }
+      }
+    },
+
+    /* ---------- CRAFTING ---------- */
+    {
+      "LogName": "Maple's Special Treat Recipe",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": {
+        "Maple's Special Treat": "24 1 178 1 91 1/1 10/{{ModId}}_MapleSpecialTreat/none/{{i18n:recipe.maple-treat.name}}"
+      }
+    },
+
+    /* ---------- MAP PATCHES ---------- */
+    {
+      "Action": "EditMap",
+      "LogName": "Saloon → Custom_DaultonsRoom warp",
+      "Target": "Maps/Saloon",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "Priority": "Late + 50",
+      "MapTiles": [
+        {
+          "Position": { "X": 30, "Y": 18 },
+          "Layer": "Buildings",
+          "SetProperties": { "Action": "Warp 7 8 Custom_DaultonsRoom" }
+        }
+      ]
+    }
+  ]
+}

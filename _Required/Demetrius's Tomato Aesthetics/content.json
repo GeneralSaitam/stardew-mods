@@ -1,0 +1,47 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema":
+	{
+		"BedEnabled":
+		{
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"TomatoEnabled":
+		{
+			"AllowValues": "true, false",
+			"Default": true
+		},
+	},
+	
+	"Changes": [
+	{
+		"LogName": "Tomato Aesthetics bed event edit",
+		"Action": "EditData",
+		"Target": "Data/Events/ScienceHouse",
+		"Entries": {
+			"1053978/n robinDeluxeBed": "{{i18n:BedPreQuestionVanilla}}{{i18n:BedQuestionAndAnswers}}{{i18n:BedVanillaReactions}}{{i18n:BedCustomReaction}}{{i18n:BedVanillaEnding}}"
+		},
+		"When": { "BedEnabled": true }
+	},
+	{
+		"LogName": "Tomato Aesthetics tomato event edit",
+		"Action": "EditData",
+		"Target": "Data/Events/ScienceHouse",
+		"Entries": {
+			"25/f Demetrius 1500/p Demetrius/p Robin": "{{i18n:TomatoPreQuestionVanilla}}{{i18n:TomatoQuestionAndAnswers}}{{i18n:TomatoVanillaEnding}}",
+			"Liliet.DemetriusTomatoAesthetics_TomatoReconciliation": "{{i18n:TomatoReconciliation}}{{i18n:TomatoVanillaEnding}}"
+		},
+		"When": { "TomatoEnabled": true }
+	},
+	{
+		"LogName": "Tomato Aesthetics additional dialogue for tomato",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Demetrius",
+		"Entries": {
+			"Liliet.DemetriusTomatoAesthetics_Event_tomato3": "{{i18n:Event_tomato3}}"
+		},
+		"When": { "TomatoEnabled": true }
+	}
+]
+}

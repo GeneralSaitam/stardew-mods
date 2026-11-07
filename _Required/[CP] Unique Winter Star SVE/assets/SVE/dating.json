@@ -1,0 +1,152 @@
+{
+	"Changes":[
+		{
+			"LogName": "Sophia - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia",
+			"Entries": {
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Sophia.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Sophia.Dating.After}}",
+			},
+			"When": {
+				"relationship:Sophia": "dating",
+				"Sophia": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Claire - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Claire",
+			"Entries": {
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Claire.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Claire.Dating.After}}",
+			},
+			"When": {
+				"relationship:Claire": "dating",
+				"Claire": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Claire - Winter Star, Dating, No Joja or Theater",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Claire",
+			"Entries": {
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Claire.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Claire.Dating.NoJob.After}}",
+			},
+			"When": {
+				"relationship:Claire": "dating",
+				"HasSeenEvent |contains=3219890": "true",
+				"HasFlag |contains=ccMovieTheater": "false",
+				"Claire": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Claire - Winter Star, Dating, Theater Built",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Claire",
+			"Entries": {
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Claire.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Claire.Dating.Theater.After}}",
+			},
+			"When": {
+				"relationship:Claire": "dating",
+				"HasFlag": "ccMovieTheater", //As Morris is still Claire's boss in Joja route, the dialogue won't make much sense (and workplace health won't be better) if CC Movie Theater. The default dialogue will make more sense there.
+				"Claire": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star, Dating (Eight Heart Unseen)",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Dating.After}}",
+			},
+			"When": {
+				"relationship:Victor": "dating",
+				"Victor": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star, Dating, Eight Heart Seen",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Dating.EightHeart.After}}",
+			},
+			"When": {
+				"relationship:Victor": "dating",
+				"HasSeenEvent |contains=2000003": "true",
+				"Victor": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Victor - Winter Star, Dating, 10 Heart Event",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Victor",
+			"Entries": {
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Victor.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Victor.Dating.TenHeart.After}}",
+			},
+			"When": {
+				"relationship:Victor": "dating",
+				"HasSeenEvent |contains=2000004": "true",
+				"Victor": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Olivia - Winter Star, Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Olivia",
+			"Entries": {
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Olivia.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Olivia.Dating.After}}",
+			},
+			"When": {
+				"relationship:Olivia": "dating",
+				"Olivia": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Olivia - Winter Star, Dating, Eight Heart (Dating) Event",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Olivia",
+			"Entries": {
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Olivia.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Olivia.Dating.Edward.After}}",
+			},
+			"When": {
+				"relationship:Olivia": "dating",
+				"HasSeenEvent |contains=8982805": "true",
+				"Olivia": "normal, spicy",
+			},
+		},
+		{
+			"LogName": "Wizard - Winter Star, Dating", //Not active unless the Wizard is active at the Winter Star, only possible with Unique Winter Star at present.
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Wizard",
+			"Entries": {
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Wizard.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Wizard.Dating.After}}",
+			},
+			"When": {
+				"relationship:Wizard": "dating",
+				"MoreWizard": "enabled",
+			},
+		},
+		{
+			"LogName": "Winter Star, Gift From Scarlett",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Scarlett",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Scarlett.Dating.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Scarlett.Dating.After}}",
+			},
+			"When": {
+				"Scarlett": "enabled, spicy",
+			},
+		},
+	],
+}

@@ -1,0 +1,31 @@
+{
+	"Changes": [
+		{
+        "Action": "EditData",
+		"Target": "Data/Mail",
+        "Entries": {
+            "SandyLove": "{{i18n:SandyLove.text}}%item object 402 1 418 1 18 1%%[letterbg 3][#]{{i18n:SandyLove.title}}",
+            "SandyMail": "{{i18n:SandyMail.text}}%item money 20000 30000 %%[letterbg 3][#]{{i18n:SandyMail.title}}",
+	    	"SandyPrep": "{{i18n:SandyPrep.text}}[letterbg 3][#]{{i18n:SandyPrep.title}}"
+		}
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"When": {"HasMod": "FlashShifter.SVECode"},
+			"Entries": {
+				"SandyPrep": "{{i18n:SandyPrep2.text}}[letterbg 3][#]{{i18n:SandyPrep.title}}"
+		}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Mail",
+			"When": {"Relationship:Sandy": "Married"},
+			"Entries": {
+				"Sandy": "{{i18n:SandyBaseMail}}%item id (O)88 1 (O)90 1 (O)218 1 %%[#]{{i18n:SandyBaseMailT}}"
+		}
+		}
+
+					
+	]
+}

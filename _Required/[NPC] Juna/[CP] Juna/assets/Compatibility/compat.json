@@ -1,0 +1,428 @@
+{
+  "Changes": [
+    //NPC EXCLUSIONS
+
+    {
+      "LogName": "Abigail Island Exclusion",
+      "Action": "EditData",
+      "Target": "Data/CustomNPCExclusions",
+      "Entries": {
+        "Abigail": "IslandVisit"
+      },
+      "When": {
+        "HasSeenEvent": "86060001",
+        "Season": "Fall",
+        "DayOfWeek": "Sunday",
+        "HasMod": "Esca.CustomNPCExclusions",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Emily Island Exclusion",
+      "Action": "EditData",
+      "Target": "Data/CustomNPCExclusions",
+      "Entries": {
+        "Emily": "IslandVisit"
+      },
+      "When": {
+        "HasSeenEvent": "86060001",
+        "Season": "Spring",
+        "DayOfWeek": "Monday, Friday",
+        "HasMod": "Esca.CustomNPCExclusions",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Robin Island Exclusion",
+      "Action": "EditData",
+      "Target": "Data/CustomNPCExclusions",
+      "Entries": {
+        "Robin": "IslandVisit"
+      },
+      "When": {
+        "HasSeenEvent": "86060001",
+        "DayOfWeek": "Monday, Saturday",
+        "HasMod": "Esca.CustomNPCExclusions",
+        "Roommate |contains=Juna": "false"
+      }
+    },
+
+    {
+      "LogName": "Robin Island Exclusion",
+      "Action": "EditData",
+      "Target": "Data/CustomNPCExclusions",
+      "Entries": {
+        "Robin": "IslandVisit"
+      },
+      "When": {
+        "DayOfWeek": "Monday",
+        "HasMod": "Esca.CustomNPCExclusions",
+        "Roommate": "Juna"
+      }
+    },
+
+    //NPC MAP LOCATIONS
+
+    {
+      "LogName": "Exclude From Map When Gone",
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+      "Entries": {
+        "elhrvy.NPCJuna_JunaCave": {
+          "Exclude": "true"
+        }
+      },
+      "When": {
+        "HasMod": "Bouhm.NPCMapLocations",
+        "HasFlag": "PlayerChoseParents",
+        "HasSeenEvent |contains=86060043": "false"
+      }
+    },
+
+    {
+      "LogName": "Include On Map After Return",
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+      "Entries": {
+        "elhrvy.NPCJuna_JunaCave": {
+          "Exclude": "false"
+        }
+      },
+      "When": {
+        "HasMod": "Bouhm.NPCMapLocations",
+        "HasSeenEvent": "86060043",
+        "HasFlag": "PlayerChoseParents"
+      }
+    },
+
+    //EVENT LOOKUP
+
+    {
+      "LogName": "Blocks events from Event Lookup",
+      "Action": "EditData",
+      "Target": "Mods/shekurika.EventLookup/blocklist",
+      "Entries": {
+        "86060200": "T",
+        "86060201": "T",
+        "86060202": "T",
+        "86060301": "T",
+        "86060400": "T",
+        "86060401": "T",
+        "86060402": "T",
+        "86060403": "T",
+        "86060404": "T",
+        "86060405": "T",
+        "86060406": "T",
+        "86060407": "T"
+      }
+    },
+
+    //GIFT TASTES
+
+    {
+      "LogName": "An autographed photo",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "WWWA.AutographedPhoto",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "TheFrenchDodo.RodneyOBrien"
+      }
+    },
+
+    {
+      "LogName": "Forget-me-not",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "Lumisteria.SereneMeadow_ForgetMeNot",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "Lumisteria.SereneMeadow"
+      }
+    },
+
+    {
+      "LogName": "Gourmet Pantry",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "wildflour.gourmetpantry_coconut_milk wildflour.gourmetpantry_lemon_curd wildflour.gourmetpantry_apple_butter",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "wildflour.gourmetpantry"
+      }
+    },
+
+    /*{
+      "LogName": "Magic Tree Roots",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "{{spacechase0.jsonAssets/ObjectId:Moon Passenger}} {{spacechase0.jsonAssets/ObjectId:Air Essence}} {{spacechase0.jsonAssets/ObjectId:Untold Story}}",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "nottomention.MagicTreeRoots"
+      }
+    },*/
+
+    {
+      "LogName": "Specialty Pickles and Salsas",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "wildflour.pickles_pineapple_salsa",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "5"],
+          "Value": "wildflour.pickles_olive_tapenade wildflour.pickles_pickled_olives wildflour.pickles_sauerkraut",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "7"],
+          "Value": "wildflour.pickles_pickled_fish",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "wildflour.pickles"
+      }
+    },
+
+    {
+      "LogName": "Gourmet Bakery",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "wildflour.bakery_apple_muffin wildflour.bakery_cherry_cheesecake wildflour.bakery_cherry_cookie wildflour.bakery_cherry_pie wildflour.bakery_colada_tart",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "5"],
+          "Value": "wildflour.bakery_olive_bread wildflour.bakery_sweet_potato_pie",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "wildflour.bakery"
+      }
+    },
+
+    {
+      "LogName": "Wildflour Teas",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "wildflour.ateliertea_cinnamon_tea",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "5"],
+          "Value": "wildflour.ateliertea_matcha_kombucha wildflour.ateliertea_rose_kombucha",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "wildflour.atelierteas"
+      }
+    },
+
+    {
+      "LogName": "Cornucopia Trees",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "Cornucopia_Durian",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "5"],
+          "Value": "Cornucopia_Olive",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "Cornucopia.MoreCrops"
+      }
+    },
+
+    {
+      "LogName": "Wildflour Forage Expansion",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "wildflour.ateliercrops_basil",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "5"],
+          "Value": "wildflour.ateliercrops_olive",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "wildflour.ateliercrops"
+      }
+    },
+
+    /*{
+      "LogName": "Evelyn & George Expanded",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "{{spacechase0.jsonAssets/ObjectId:Snowdrop Kisses}} {{spacechase0.jsonAssets/ObjectId:Starsweets}}",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "CakeGuru.georgeevelynrecipes"
+      }
+    },
+
+    {
+      "LogName": "Raffadax crops",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "{{spacechase0.jsonAssets/ObjectId:Black Shamrock}} {{spacechase0.jsonAssets/ObjectId:The Devil's Lettuce}} {{spacechase0.jsonAssets/ObjectId:Mary Jane}} {{spacechase0.jsonAssets/ObjectId:Indica Bud}} {{spacechase0.jsonAssets/ObjectId:Sativa Bud}} {{spacechase0.jsonAssets/ObjectId:Gentian Flower}} {{spacechase0.jsonAssets/ObjectId:Psilocybin Mushroom}} {{spacechase0.jsonAssets/ObjectId:Saffron}} {{spacechase0.jsonAssets/ObjectId:Unlucky Clover}} {{spacechase0.jsonAssets/ObjectId:Cactus Blossom}}",
+          "Delimiter": " "
+        },
+
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "5"],
+          "Value": "{{spacechase0.jsonAssets/ObjectId:Brussels Sprouts}} {{spacechase0.jsonAssets/ObjectId:Purple Asparagus}} {{spacechase0.jsonAssets/ObjectId:Purple Bell Pepper}} {{spacechase0.jsonAssets/ObjectId:Purple Carrot}} {{spacechase0.jsonAssets/ObjectId:Purple Cauliflower}}",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "Raffadax.Crops"
+      }
+    },
+
+    {
+      "LogName": "Raffadax trees",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "{{spacechase0.jsonAssets/ObjectId:Black Cherry}} {{spacechase0.jsonAssets/ObjectId:Coco de Mer}} {{spacechase0.jsonAssets/ObjectId:Durian}} {{spacechase0.jsonAssets/ObjectId:Fruit of the Netherworld}} {{spacechase0.jsonAssets/ObjectId:Monstera Deliciosa}}",
+          "Delimiter": " "
+        },
+
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "5"],
+          "Value": "{{spacechase0.jsonAssets/ObjectId:Black Olive}} {{spacechase0.jsonAssets/ObjectId:Kiwi}} {{spacechase0.jsonAssets/ObjectId:Olive}} {{spacechase0.jsonAssets/ObjectId:Rooibos}}",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "Raffadax.Trees"
+      }
+    },
+
+    {
+      "LogName": "Raffadax artisan goods",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "1"],
+          "Value": "{{spacechase0.jsonAssets/ObjectId:Black Shamrock}} {{spacechase0.jsonAssets/ObjectId:Absinthe}} {{spacechase0.jsonAssets/ObjectId:Amaretto}} {{spacechase0.jsonAssets/ObjectId:Apple Butter}} {{spacechase0.jsonAssets/ObjectId:Bad Luck Powder}} {{spacechase0.jsonAssets/ObjectId:Black Cherry Brandy}} {{spacechase0.jsonAssets/ObjectId:Black Cherry Compote}} {{spacechase0.jsonAssets/ObjectId:Black Cherry Jam}} {{spacechase0.jsonAssets/ObjectId:Black Cherry Jelly}} {{spacechase0.jsonAssets/ObjectId:Black Cherry Liqueur}} {{spacechase0.jsonAssets/ObjectId:Black Cherry Juice}} {{spacechase0.jsonAssets/ObjectId:Black Cherry Port}} {{spacechase0.jsonAssets/ObjectId:Black Cherry Puree}} {{spacechase0.jsonAssets/ObjectId:Black Cherry Wine}} {{spacechase0.jsonAssets/ObjectId:Black Pearl}} {{spacechase0.jsonAssets/ObjectId:Bourbon}} {{spacechase0.jsonAssets/ObjectId:Cannabis Jelly}} {{spacechase0.jsonAssets/ObjectId:Champagne of Chaos}} {{spacechase0.jsonAssets/ObjectId:Cherry Cola}} {{spacechase0.jsonAssets/ObjectId:Cocktail Cherries}} {{spacechase0.jsonAssets/ObjectId:Cola}} {{spacechase0.jsonAssets/ObjectId:Fabric of Chaos}} {{spacechase0.jsonAssets/ObjectId:Infernal Brandy}} {{spacechase0.jsonAssets/ObjectId:Marijuana Cigarettes}} {{spacechase0.jsonAssets/ObjectId:Molasses}} {{spacechase0.jsonAssets/ObjectId:Nightshade Liqueur}} {{spacechase0.jsonAssets/ObjectId:Noetic Nightshade}} {{spacechase0.jsonAssets/ObjectId:Pink Champagne}} {{spacechase0.jsonAssets/ObjectId:Poppy Flower Nectar}} {{spacechase0.jsonAssets/ObjectId:Primal Moon}} {{spacechase0.jsonAssets/ObjectId:Sparkling Black Cherry Wine}} {{spacechase0.jsonAssets/ObjectId:Sympathy for the Devil}} {{spacechase0.jsonAssets/ObjectId:Tequila}} {{spacechase0.jsonAssets/ObjectId:Venom of Jörmungandr}} {{spacechase0.jsonAssets/ObjectId:Voodoo Dust}} {{spacechase0.jsonAssets/ObjectId:Wine of Chaos}} {{spacechase0.jsonAssets/ObjectId:Wine of Thunderstorm}}",
+          "Delimiter": " "
+        },
+
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Juna", "5"],
+          "Value": "{{spacechase0.jsonAssets/ObjectId:Ambergris}} {{spacechase0.jsonAssets/ObjectId:Black Olive Juice}} {{spacechase0.jsonAssets/ObjectId:Brussels Sprout Juice}} {{spacechase0.jsonAssets/ObjectId:Cauliflower Juice}} {{spacechase0.jsonAssets/ObjectId:Cocktail Olives}} {{spacechase0.jsonAssets/ObjectId:Earl Grey Tea}} {{spacechase0.jsonAssets/ObjectId:Hummus}} {{spacechase0.jsonAssets/ObjectId:IPA}} {{spacechase0.jsonAssets/ObjectId:Kale Chips}} {{spacechase0.jsonAssets/ObjectId:Kale Juice}} {{spacechase0.jsonAssets/ObjectId:Lucky Kombucha}} {{spacechase0.jsonAssets/ObjectId:Matcha Kombucha}} {{spacechase0.jsonAssets/ObjectId:Matcha Tea}} {{spacechase0.jsonAssets/ObjectId:Nettle Tea}} {{spacechase0.jsonAssets/ObjectId:Olive Juice}} {{spacechase0.jsonAssets/ObjectId:Pine Cone Jam}} {{spacechase0.jsonAssets/ObjectId:Rooibos Tea}} {{spacechase0.jsonAssets/ObjectId:Sauerkraut}}",
+          "Delimiter": " "
+        }
+      ],
+      "When": {
+        "HasMod": "JA.Raffadax.Complete.Production"
+      }
+    },*/
+
+    {
+      "LogName": "Rejection of PPaF bracelet",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "RejectItem_(O)Amaranthacyan.PlatonicPartnersandFriendships_FriendshipBracelet": "Did you mean to give this to Olive? It seems more his style."
+      },
+      "When": {
+        "HasSeenEvent |contains=86060300": "false",
+        "HasMod": "Amaranthacyan.PlatonicPartnersandFriendships"
+      }
+    },
+
+    {
+      "LogName": "Rejection of PPaF bracelet pre-roommate",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "RejectItem_(O)Amaranthacyan.PlatonicPartnersandFriendships_FriendshipBracelet": "Good on you for being all arts and crafty! But bracelets aren't really my thing. Try Olive, he loves bright colours!"
+      },
+      "When": {
+        "HasSeenEvent": "86060300",
+        "HasMod": "Amaranthacyan.PlatonicPartnersandFriendships"
+      }
+    }
+  ]
+}

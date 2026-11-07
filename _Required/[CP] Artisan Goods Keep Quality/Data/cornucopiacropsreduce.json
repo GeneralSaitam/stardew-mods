@@ -1,0 +1,244 @@
+{
+	"Changes": [
+		{// Dark Ale Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Cornucopia_DarkAle", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Keg": "true", },
+		},
+		{// Porter Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Cornucopia_Porter", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Keg": "true", },
+		},
+		{// Sparkling Wine Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Cornucopia_SparklingWine", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Keg": "true", },
+		},
+		{// Stout Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Cornucopia_Stout", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Keg": "true", },
+		},
+		{// Tofu Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "Cornucopia_Tofu", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Cheese Press": "true", },
+		},
+		{// Cotton Cloth Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)17", "OutputRules", "Cornucopia_CottonCloth", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Loom": "true", },
+		},
+		{// Canola Flower Oil Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "Cornucopia_CanolaFlowerOil", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Oil Maker": "true", },
+		},
+		{// Peanut Oil Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "Cornucopia_PeanutOil", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Oil Maker": "true", },
+		},
+		{// Seeds Oil Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "Cornucopia_SeedsOil", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Oil Maker": "true", },
+		},
+		{// Olive Oil Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "Cornucopia_OliveOil", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Oil Maker": "true", },
+		},
+		{// Dried Fruit Fix
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Dehydrator", "OutputRules", "Cornucopia_DriedFruitFix", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Dehydrator": "true", },
+		},
+		{// Dried Mushroom Fix
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Dehydrator", "OutputRules", "Cornucopia_DriedMushroomFix", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Dehydrator": "true", },
+		},
+	],
+}

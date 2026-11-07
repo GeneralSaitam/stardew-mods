@@ -1,0 +1,726 @@
+{
+    "Changes": [
+	
+//	DATA
+
+//	//	ALL
+
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/paths/ALL_Path_North.tmx"
+		},
+//
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"{{ModId}}_Custom_waterfall_path_north": {
+					"DisplayName": "Northern Path",
+					"DefaultArrivalTile": {
+						"X": 7,
+						"Y": 18
+					},
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_Custom_waterfall_path_north",
+						"Type": null,
+						"AlwaysActive": true
+					},
+					"FormerLocationNames": [ "Custom_waterfall_path_north" ],
+					"CanPlantHere":true,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [],
+					"FishAreas": {},
+					"Fish": [
+						{
+							"Chance": 0.45,
+							"Season": null,
+							"FishAreaId": null,
+							"BobberPosition": null,
+							"PlayerPosition": null,
+							"MinFishingLevel": 0,
+							"MinDistanceFromShore": 0,
+							"MaxDistanceFromShore": -1,
+							"ApplyDailyLuck": false,
+							"CuriosityLureBuff": -1.0,
+							"CatchLimit": -1,
+							"IsBossFish": false,
+							"SetFlagOnCatch": null,
+							"RequireMagicBait": false,
+							"Precedence": 0,
+							"IgnoreFishDataRequirements": true,
+							"CanBeInherited": true,
+							"ChanceModifiers": null,
+							"ChanceModifierMode": "Stack",
+							"ChanceBoostPerLuckLevel": 0.0,
+							"UseFishCaughtSeededRandom": false,
+							"Condition": null,
+							"Id": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+							"ItemId": "LOCATION_FISH Forest BOBBER_X BOBBER_Y WATER_DEPTH",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 1.0,
+							"Season": null,
+							"FishAreaId": null,
+							"BobberPosition": null,
+							"PlayerPosition": null,
+							"MinFishingLevel": 0,
+							"MinDistanceFromShore": 0,
+							"MaxDistanceFromShore": -1,
+							"ApplyDailyLuck": false,
+							"CuriosityLureBuff": -1.0,
+							"CatchLimit": -1,
+							"IsBossFish": false,
+							"SetFlagOnCatch": null,
+							"RequireMagicBait": false,
+							"Precedence": 0,
+							"IgnoreFishDataRequirements": true,
+							"CanBeInherited": true,
+							"ChanceModifiers": null,
+							"ChanceModifierMode": "Stack",
+							"ChanceBoostPerLuckLevel": 0.0,
+							"UseFishCaughtSeededRandom": false,
+							"Condition": null,
+							"Id": "LOCATION_FISH Town BOBBER_X BOBBER_Y WATER_DEPTH",
+							"ItemId": "LOCATION_FISH Town BOBBER_X BOBBER_Y WATER_DEPTH",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						}
+					],
+					"Forage": [
+						{
+							"Chance": 0.8,
+							"Season": "Spring",
+							"Condition": null,
+							"Id": "(O)20|(O)22",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)20",
+								"(O)22"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.5,
+							"Season": "Spring",
+							"Condition": null,
+							"Id": "(O)16|(O)257",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)16",
+								"(O)257"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.8,
+							"Season": "Summer",
+							"Condition": null,
+							"Id": "(O)396|(O)404",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)396",
+								"(O)404"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.8,
+							"Season": "Summer",
+							"Condition": null,
+							"Id": "(O)398|(O)402",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)398",
+								"(O)402"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.6,
+							"Season": "Fall",
+							"Condition": null,
+							"Id": "(O)404|(O)408",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)404",
+								"(O)408"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.5,
+							"Season": "Fall",
+							"Condition": null,
+							"Id": "(O)406|(O)420",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)406",
+								"(O)420"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.15,
+							"Season": "Fall",
+							"Condition": null,
+							"Id": "(O)281|(O)422",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)281",
+								"(O)422"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.25,
+							"Season": "Winter",
+							"Condition": null,
+							"Id": "(O)414",
+							"ItemId": "(O)414",
+							"RandomItemId": null,
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						},
+						{
+							"Chance": 0.8,
+							"Season": "Winter",
+							"Condition": null,
+							"Id": "(O)283|(O)418",
+							"ItemId": null,
+							"RandomItemId": [
+								"(O)283",
+								"(O)418"
+							],
+							"MaxItems": null,
+							"MinStack": -1,
+							"MaxStack": -1,
+							"Quality": -1,
+							"ObjectInternalName": null,
+							"ObjectDisplayName": null,
+							"ToolUpgradeLevel": -1,
+							"IsRecipe": false,
+							"StackModifiers": null,
+							"StackModifierMode": "Stack",
+							"QualityModifiers": null,
+							"QualityModifierMode": "Stack",
+							"ModData": null,
+							"PerItemCondition": null
+						}
+					],
+					"MinDailyWeeds": 2,
+					"MaxDailyWeeds": 5,
+					"FirstDayWeedMultiplier": 15,
+					"MinDailyForageSpawn": 1,
+					"MaxDailyForageSpawn": 4,
+					"MaxSpawnedForageAtOnce": 6,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+				}
+			}
+		},
+
+//	//	WAFF
+
+        {
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+			"TargetField": ["Valley", "MapAreas"],
+			"Entries": {
+				"Custom_waterfall_path_north_WM": {
+					"Id": "Custom_waterfall_path_north",
+					"Condition": null,
+					"PixelArea": {
+						"X": 52,
+						"Y": 49,
+						"Width": 38,
+						"Height": 9
+					},
+					"ScrollText": "",
+					"Textures": [],
+					"Tooltips": [
+						{
+							"Id": "Custom_waterfall_path_north_TT",
+							"Text": "Northern Path",
+							"Condition": null,
+							"KnownCondition": null,
+							"PixelArea": {
+								"X": 52,
+								"Y": 49,
+								"Width": 38,
+								"Height": 9
+							},
+							"LeftNeighbor": "",
+							"RightNeighbor": "",
+							"UpNeighbor": "Mountain/Carpenter",
+							"DownNeighbor": "Farm/Default"
+						}
+					],
+					"WorldPositions": [
+						{
+							"ScrollTextZones": [],
+							"Id": "Custom_waterfall_path_north_WP",
+							"Condition": null,
+							"LocationContext": null,
+							"LocationName": "{{ModId}}_Custom_waterfall_path_north",
+							"LocationNames": [],
+							"TileArea": {
+								"X": 0,
+								"Y": 0,
+								"Width": 110,
+								"Height": 35
+							},
+							"ExtendedTileArea": null,
+							"MapPixelArea": {
+								"X": 52,
+								"Y": 49,
+								"Width": 38,
+								"Height": 9
+							},
+							"ScrollText": null
+						}
+					],
+					"CustomFields": null
+
+				}
+			},
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Northern_Path_WaFF": "True"
+			}
+		},
+		
+//	//	WAFFLE
+
+        {
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+			"TargetField": ["Valley", "MapAreas"],
+			"Entries": {
+				"Custom_waterfall_path_north_WM": {
+					"Id": "Custom_waterfall_path_north",
+					"Condition": null,
+					"PixelArea": {
+						"X": 52,
+						"Y": 49,
+						"Width": 38,
+						"Height": 9
+					},
+					"ScrollText": "",
+					"Textures": [],
+					"Tooltips": [
+						{
+							"Id": "Custom_waterfall_path_north_TT",
+							"Text": "Northern Path",
+							"Condition": null,
+							"KnownCondition": null,
+							"PixelArea": {
+								"X": 52,
+								"Y": 49,
+								"Width": 38,
+								"Height": 9
+							},
+							"LeftNeighbor": "",
+							"RightNeighbor": "",
+							"UpNeighbor": "Mountain/Carpenter",
+							"DownNeighbor": "Farm/Default"
+						}
+					],
+					"WorldPositions": [
+						{
+							"ScrollTextZones": [],
+							"Id": "Custom_waterfall_path_north_WP",
+							"Condition": null,
+							"LocationContext": null,
+							"LocationName": "{{ModId}}_Custom_waterfall_path_north",
+							"LocationNames": [],
+							"TileArea": {
+								"X": 0,
+								"Y": 0,
+								"Width": 110,
+								"Height": 35
+							},
+							"ExtendedTileArea": null,
+							"MapPixelArea": {
+								"X": 52,
+								"Y": 49,
+								"Width": 38,
+								"Height": 9
+							},
+							"ScrollText": null
+						}
+					],
+					"CustomFields": null
+
+				}
+			},
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Use_Northern_Path_WaFFLE": "True"
+			}
+		},
+
+//	PROPERTIES
+
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "AllowGrassSurviveInWinter": "T" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "EnableGrassSpread": "T" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "SpawnGrassFromPathsOnNewYear": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "ClearEmptyDirtOnNewMonth": "T" }
+        },
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "ForceSpawnForageables": "T" }
+		},
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "Fall_Objects": "T" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "Spring_Objects": "T" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "Summer_Objects": "T" }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "Winter_Objects": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "ForceAllowTreePlanting": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "IsFarm": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "Outdoors": "T" }
+        },
+//
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "SpawnDebrisOnNewYear": "T" }
+        },
+		
+//	//	WAFF
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"FromFile": "options/ALL_EX_Options.tmx",
+			"FromArea": { "X": 45, "Y": 17, "Width": 35, "Height": 13 },
+			"ToArea": { "X": 75, "Y": 22, "Width": 35, "Height": 13 },
+			"PatchMode": "Replace",
+			"When": { "FarmType": "A_TK.FarmProjectForaging/WaFF" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "CanBuildHere": "T" },
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Northern_Path_WaFF": "True"
+			}
+		},
+		
+//	//	WAFFLE
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"MapProperties": { "CanBuildHere": "T" },
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Use_Northern_Path_WaFFLE": "True"
+			}
+		},
+
+//	WARPS
+
+//	//	ALL
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"AddWarps": [
+				"99 9 Backwoods 14 39",
+				"100 9 Backwoods 14 39",
+				"101 9 Backwoods 14 39",
+				"6 35 Farm 40 0",
+				"7 35 Farm 40 0"
+			]
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_path_north",
+			"AddWarps": [
+				"1 9 {{ModId}}_Custom_waterfall_path_north 92 19",
+				"2 9 {{ModId}}_Custom_waterfall_path_north 93 19",
+				"92 17 {{ModId}}_Custom_waterfall_path_north 1 11",
+				"93 17 {{ModId}}_Custom_waterfall_path_north 2 11"
+			]
+		},
+
+//	//	WAFF
+
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFF_Farm",
+			"MapProperties": { "BackwoodsEntry": "40 0" },
+			"When": { "Use_Northern_Path_WaFF": "False" }
+        },
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"AddWarps": [
+				"40 -1 Backwoods 14 39",
+				"41 -1 Backwoods 14 39"
+			],
+			"When": { "Use_Northern_Path_WaFF": "False" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFF_Farm",
+			"AddWarps": [
+				"40 -1 {{ModId}}_Custom_waterfall_path_north 6 34",
+				"41 -1 {{ModId}}_Custom_waterfall_path_north 6 34"
+			],
+			"When": { "Use_Northern_Path_WaFF": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Backwoods",
+			"AddWarps": [
+				"13 40 {{ModId}}_Custom_waterfall_path_north 100 10",
+				"14 40 {{ModId}}_Custom_waterfall_path_north 100 10",
+				"15 40 {{ModId}}_Custom_waterfall_path_north 100 10"
+			],
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Use_Northern_Path_WaFF": "True"
+			}
+		},
+
+//	//	WAFFLE	
+
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WaFFLE_Farm",
+			"MapProperties": { "BackwoodsEntry": "40 0" },
+			"When": { "Use_Northern_Path_WaFFLE": "False" }
+        },
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"AddWarps": [
+				"40 -1 Backwoods 14 39",
+				"41 -1 Backwoods 14 39"
+			],
+			"When": { "Use_Northern_Path_WaFFLE": "False" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/WaFFLE_Farm",
+			"AddWarps": [
+				"40 -1 {{ModId}}_Custom_waterfall_path_north 6 34",
+				"41 -1 {{ModId}}_Custom_waterfall_path_north 6 34"
+			],
+			"When": { "Use_Northern_Path_WaFFLE": "True" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Backwoods",
+			"AddWarps": [
+				"13 40 {{ModId}}_Custom_waterfall_path_north 100 10",
+				"14 40 {{ModId}}_Custom_waterfall_path_north 100 10",
+				"15 40 {{ModId}}_Custom_waterfall_path_north 100 10"
+			],
+			"When": { 
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Use_Northern_Path_WaFFLE": "True"
+				}
+		}
+	]
+}	  

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="2">
+ <properties>
+  <property name="AmbientLight" value="80 80 40"/>
+  <property name="Arch" value="101 .005 110 .01 107 .003 105 .007"/>
+  <property name="Debris" value="8 .015 3 10 .0001 1"/>
+  <property name="Light_asdf" value="8 9 6 3 0 6 9 0 6 12 0 6 19 3 6"/>
+  <property name="ViewportFollowPlayer" type="bool" value="true"/>
+  <property name="Warp" value="18 14 Mountain 54 5 67 18 Mountain 103 17"/>
+ </properties>
+ <tileset firstgid="1" name="z_flowerParadiseTiles" tilewidth="16" tileheight="16" tilecount="304" columns="8">
+  <image source="flowerParadise.png" width="128" height="608"/>
+ </tileset>
+ <layer id="1" name="Back" width="1" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAAAAAMAAE=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="1" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBg+M4AAQAHxAD4
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaisyGrave&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="1" height="3">
+  <data encoding="base64" compression="zlib">
+   eJx7z4AAAAtAAPA=
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="1" height="3">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAAAAAMAAE=
+  </data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+</map>

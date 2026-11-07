@@ -1,0 +1,116 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Rosa's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Rosa_Spring, Portraits/Rosa_Summer, Portraits/Rosa_Fall, Portraits/Rosa_Winter, Portraits/Rosa_FlowerDance, Portraits/Rosa_SpiritsEve, Portraits/Rosa_Beach, Characters/Rosa_Spring, Characters/Rosa_Summer, Characters/Rosa_Fall, Characters/Rosa_Winter, Characters/Rosa_FlowerDance, Characters/Rosa_SpiritsEve, Characters/Rosa_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Rosa/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Rosa - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Rosa_Spring, Characters/Rosa_Summer, Characters/Rosa_Fall, Characters/Rosa_Winter, Characters/Rosa_FlowerDance, Characters/Rosa_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Rosa/Rosa_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		{
+			"LogName": "Rosa - Spirit's Eve Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Rosa_SpiritsEve",
+			"FromFile": "assets/{{TargetPathOnly}}/Rosa/Rosa_SpiritsEve_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Rosa Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": ["Rosa", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.RosaSpring": {
+					"Id": "{{ModId}}.RosaSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Rosa_Spring",
+					"Portrait": "Portraits/Rosa_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.RosaSummer": {
+					"Id": "{{ModId}}.RosaSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Rosa_Summer",
+					"Portrait": "Portraits/Rosa_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.RosaFall": {
+					"Id": "{{ModId}}.RosaFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Rosa_Fall",
+					"Portrait": "Portraits/Rosa_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.RosaWinter": {
+					"Id": "{{ModId}}.RosaWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Rosa_Winter",
+					"Portrait": "Portraits/Rosa_Winter",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.RosaFlowerDance": {
+					"Id": "{{ModId}}.RosaFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Rosa_FlowerDance",
+					"Portrait": "Portraits/Rosa_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.RosaSpirit": {
+					"Id": "{{ModId}}.RosaSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Rosa_SpiritsEve",
+					"Portrait": "Portraits/Rosa_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.RosaBeach": {
+					"Id": "{{ModId}}.RosaBeach",
+					"Sprite": "Characters/Rosa_Beach",
+					"Portrait": "Portraits/Rosa_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},{
+            "LogName": "Rosa Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/Rosa",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+        },	
+	]
+}

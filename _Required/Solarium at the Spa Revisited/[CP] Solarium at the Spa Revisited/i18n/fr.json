@@ -1,0 +1,102 @@
+{
+  // ===== CONFIG =====
+  // section headers (default strings for GMCM/CP config UI)
+  "config.section.Solarium.name": "Solarium",
+  "config.section.Solarium.description": "Options de carte et de mise en page pour le Solarium.",
+  "config.section.Schedules.name": "Emplois du temps",
+  "config.section.Schedules.description": "Ajustements des emplois du temps des PNJ.",
+
+  // field names, descriptions, and dropdown values
+  "config.MapStyle.name": "Décoration du Solarium",
+  "config.MapStyle.description": "Normal comprend des meubles et des bâtiments décoratifs / des carreaux d'avant-plan. Clair est minimal (sans carreaux supplémentaires).",
+  "config.MapStyle.values.Normal": "Normal (avec des meubles)",
+  "config.MapStyle.values.Clean": "Épuré (minimal)",
+  "config.HatchStyle.name": "Trappe d'accès",
+  "config.HatchStyle.description": "Style visuel de la trappe du solarium.",
+  "config.HatchStyle.values.Ladder": "Échelle",
+  "config.HatchStyle.values.Lift": "Ascenseur",
+  "config.SolariumKeyStyle.name": "Clé du Solarium",
+  "config.SolariumKeyStyle.description": "Sélectionner la variante de la couleur de la Clé du Solarium.",
+  "config.SolariumKeyStyle.values.Auto": "Automatique",
+  "config.SolariumKeyStyle.values.Vanilla": "Vanilla",
+  "config.SolariumKeyStyle.values.VibrantPastoralRecolor": "Vibrant Pastoral Recolor",
+  "config.SolariumKeyStyle.values.DNEarthyRecolour": "DaisyNiko's Earthy Recolour",
+  "config.SolariumKeyStyle.values.StarBlue": "Starblue Valley",
+  "config.UnlockPath.name": "Débloquer la voie",
+  "config.UnlockPath.description": "Comment obtenir la clé du Solarium. Quête spéciale d' Evelyn (8 cœurs) : Termine la quête spéciale « Fleurs de saison » d'Evelyn et ouvre la lettre de récompense. Evelyn (8 cœurs) + CC/Joja : Termine le centre communautaire ou la voie Joja et atteins 8 cœurs d'amitié avec Evelyn. Evelyn (8 cœurs) uniquement : tu reçois la clé et Evelyn te rend visite par une journée ensoleillée (entre 6h et 19h) alors que tu es à la ferme.",
+  "config.UnlockPath.values.SpecialOrder": "Quête spéciale d' Evelyn (8 cœurs)",
+  "config.UnlockPath.values.CCOrJoja": "Evelyn (8 cœurs) + CC/Joja",
+  "config.UnlockPath.values.FriendshipOnly": "Evelyn (8 cœurs) uniquement",
+  "config.AdjustLinussSchedule.name": "Emploi du temps de Linus",
+  "config.AdjustLinussSchedule.description": "Une fois activé, Linus se rend dans le Solarium pendant l'automne et l'hiver.",
+  "config.AdjustCarolineSchedule.name": "Emploi du temps de Caroline",
+  "config.AdjustCarolineSchedule.description": "Une fois activé, Caroline se rend dans le Solarium tous les mercredis après la fontaine.",
+
+  // ===== SPECIAL STRINGS =====
+  "Location.Solarium": "Solarium",
+  "Power.SolariumKey": "Clé du Solarium",
+  "Power.SolariumKey_Description": "La clé du solarium sur le toit du spa.",
+  "Strings.BookShelf": "Une étagère remplie de vieux livres de jardinage.",
+  "Strings.SolariumHatchLocked": "La trappe est verrouillée.",
+  "Strings.SolariumLiftLocked": "La porte de l'ascenseur est verrouillée.",
+  "Shop.PierresCatalogue": "Magazine de Pierre",
+  "Shop.PierresCatalogue.Piper": "Magazine de Piper",
+  
+  // ===== EVENTS =====
+  // Evelyn gives farmer key to solarium
+  "Events.EvelynKey.1": "Bonjour, ${mon cher^ma chère}$.#$b#Je suis vraiment impressionnée par toi et de tout ce que tu as accompli depuis ton arrivée ici. Les fleurs que tu as fait pousser sont vraiment magnifiques.$1",
+  "Events.EvelynKey.2": "Du coup, je voulais te donner ça. C'est la clé du solarium au-dessus du spa. Je l'ai retrouvée dans un tiroir de ma cuisine. Elle prenait la poussière depuis des années.$0",
+  "Events.EvelynKey.GotKey": "Tu as obtenu la clé du solarium !",
+  "Events.EvelynKey.3": "Je n'arrive plus à faire le chemin jusqu'au vieux Solarium pour m'en occuper comme avant... pas avec mes vieux genoux.$2#$b#Je m'occupais d'un petit jardin là-haut, où je faisais pousser des plants pour les parterres de fleurs en ville. Ça fait des années que c'est fermé à clé et laissé à l'abandon.$2",
+  "Events.EvelynKey.4": "Je suis soulagée de savoir que le solarium est enfin de nouveau entre de bonnes mains.#$b#Prends-en bien soin pour moi, @. J'espère qu'il t'apportera beaucoup de joie.$1",
+  "Events.EvelynKey.SolariumAccess": "Tu peux désormais accéder au solarium au-dessus du spa.",
+
+  // Robin first visit to solarium (after player enters first time)
+  "Events.RobinSolarium.1Ladder": "Oh, hé là, @ ! Je ne savais pas qu'il y aurait quelqu'un ici !#$b#J'ai entendu dire qu'Evelyn t'avait donné la clé, alors je voulais passer par ici et m'assurer que l'échelle était toujours solide.",
+  "Events.RobinSolarium.1Lift": "Oh, hé là, @ ! Je ne savais pas qu'il y aurait quelqu'un ici !#$b#J'ai entendu dire qu'Evelyn t'avait donné la clé, alors je voulais passer par ici et m'assurer que l'ascenseur était toujours solide.",
+  "Events.RobinSolarium.2Ladder": "Ah oui, l'échelle est quand même solide, mais la charnière de la trappe est grippée.#$b#Un peu d'huile de coude et ça devrait aller.$1",
+  "Events.RobinSolarium.2Lift": "Ah oui, l'ascenseur est quand même solide, mais la charnière de la porte est grippée.#$b#Un peu d'huile de coude et ça devrait aller.$1",
+  "Events.RobinSolarium.3": "Cet endroit est encore plus grand à l'intérieur !",
+  "Events.RobinSolarium.4": "Avec un sol aussi bien renforcé et un plafond aussi haut, cet endroit a beaucoup de potentiel.#$b#Je sais qu'Evelyn est ravie des fleurs, mais qu'est-ce que tu penserais de faire pousser aussi des arbres fruitiers dans le Solarium ?#$b#Tu as assez d'espace pour qu'ils s'épanouissent toute l'année.",
+  "Events.RobinSolarium.5": "Eh bien, si jamais tu plantes des arbres, n'hésite pas à m'apporter des pêches en rab !$1#$b#Oh, je vais te huiler cette vieille charnière avant de rentrer.",
+
+  // Caroline and Pierre visit player (4 and 6 are Pierre lines)
+  "Events.CarolineMagazine.1": "Salut, @ ! Evelyn m'a dit qu'elle t'avait confié le Solarium. C'est très gentil de sa part... Pour elle, tu fais partie de sa famille.",
+  "Events.CarolineMagazine.2": "Puisque tu l'as rouvert, Pierre et moi sommes passés jeter un coup d'œil.#$b#La lumière dans le Solarium est vraiment agréable... C'est le genre d'endroit où n'importe quelle plante pourrait s'épanouir.#$b#Hmm... Peut-être que je pourrais apporter quelques plantes de ma véranda pour qu'elles puissent profiter de la vue.$1",
+  "Events.CarolineMagazine.3": "Oh ! Pierre m'a proposé qu'on... enfin...$2",
+  "Events.CarolineMagazine.4": "On t'a laissé un exemplaire du nouveau magazine. Tu vas avoir besoin de graines et de plantes pour aménager l'endroit !$1",
+  "Events.CarolineMagazine.5": "Il est posé sur la table, tu ne pourras pas le rater.$2#$b#On voulait juste passer en retournant en ville, mais on ferait mieux d'y aller. Prends soin de toi, @.",
+  "Events.CarolineMagazine.6": "J'espère te revoir bientôt !",
+  "Events.CarolineMagazine.2.Piper": "Puisque tu l'as rouvert, Piper et moi sommes passées jeter un coup d'œil.#$b#La lumière dans le Solarium est vraiment agréable... C'est le genre d'endroit où n'importe quelle plante pourrait s'épanouir.#$b#Hmm... Peut-être que je pourrais apporter quelques plantes de ma véranda pour qu'elles puissent profiter de la vue.$1",
+  "Events.CarolineMagazine.3.Piper": "Oh ! Piper m'a proposé qu'on... enfin...$2",
+
+  // Linus's new shelter
+  "Events.LinusNewShelter.1": "Salut, @.#$b#J'ai vu que toi et quelques autres personnes étiez montés par ici. J'étais curieux, alors je suis venu voir par moi-même.#$b#C'est un endroit idéal pour échapper au froid, n'est-ce pas ?#$b#Un peu de chaleur fait du bien au moral.$1",
+
+  // ===== DIALOGUE (TOPIC) =====
+  "Dialogue.SolariumUnlocked.Caroline": "Ah, Evelyn n'arrête pas de dire à tout le monde que tu t'occupes maintenant du Solarium. Elle a l'air si fière de toi.",
+  "Dialogue.SolariumUnlocked.Evelyn": "J'ai hâte de voir ce que tu vas faire pousser dans le Solarium, ${mon cher^ma chère}$. C'est un endroit tellement spécial.",
+  "Dialogue.SolariumUnlocked.Lewis": "J'ai entendu dire qu'Evelyn t'avait donné la clé du Solarium. Je pense qu'elle a fait un choix judicieux.",
+
+  // ===== SPECIAL ORDER =====
+  // Evelyn seasonal flowers ({Flower:TextPlural} = chosen flower name plural, filled by game, do not translate)
+  "SpecialOrder.EvelynSeasonalFlowers.Name": "Fleurs de saison",
+  "SpecialOrder.EvelynSeasonalFlowers.Text": "Je voudrais décorer la ville avec de superbes {Flower:TextPlural}. Expédie-m'en 100 par ton bac d'expédition et j'en ferai bon usage. —Evelyn",
+  "SpecialOrder.EvelynSeasonalFlowers.Objective.Collect": "Récolte 100 {Flower:TextPlural} (il faut les récolter pendant que la quête est active)",
+  "SpecialOrder.EvelynSeasonalFlowers.Objective.Ship": "Expédie 100 {Flower:TextPlural} par le bac d'expédition. Les fleurs seront livrées à Evelyn.",
+
+  // ===== MAIL =====
+  // Evelyn flowers reward (letter with 100 Mixed Seeds)
+  "Mail.EvelynFlowersReward": "${Cher^Chère}$ @,^Merci beaucoup pour les belles fleurs, ${mon cher^ma chère}$ ! Pélican Ville a déjà l'air plus belle grâce à ton aide.^Pour te remercier, j'ai joint quelques graines de fleurs variées. J'espère qu'elles donneront vie au Solarium.^^   -Evelyn",
+  "Mail.EvelynFlowersReward.Title": "La gratitude d'Evelyn",
+
+  // ===== SCHEDULES =====
+  // Linus at solarium (fall/winter schedule) — random between two lines (also used in LinusNewShelter event)
+  "Schedules.Linus.Solarium.Cold": "C'est un endroit idéal pour échapper au froid.",
+  "Schedules.Linus.Solarium.Warmth": "Un peu de chaleur fait du bien au moral.$1",
+  // Caroline at solarium (Wednesday schedule) — default (random 1/2), summer, and rain variants
+  "Schedules.Caroline.Solarium": "Evelyn adorait cet endroit. Ça fait plaisir de te voir continuer son travail.",
+  "Schedules.Caroline.Solarium.Putter": "J'adore avoir un petit coin tranquille comme ça. J'aime venir ici passer un peu de temps quand je peux.",
+  "Schedules.Caroline.Solarium.Summer": "Evelyn faisait toujours pousser des fleurs tropicales d'été ici. Ce sont mes préférées. Et les tiennes ?",
+  "Schedules.Caroline.Solarium.Rain": "Le bruit de la pluie contre les vitres ici a quelque chose de si apaisant."
+}

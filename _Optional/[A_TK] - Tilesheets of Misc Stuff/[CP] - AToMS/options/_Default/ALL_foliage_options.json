@@ -1,0 +1,218 @@
+{
+    "Changes": [
+
+//	RECOLORS (Manual Selection)
+
+//	//	Blue Grass
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/spring_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage, Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Blue_Grass/ALL_foliage/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Blue_Grass": "True",				
+			}
+        },	
+		
+//	//	Cotton Candy
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/spring_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage",
+            "FromFile": "options/Cotton_Candy/ALL_foliage/ATK_AToMS_foliage_{{CC_Grass_Color}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Cotton_Candy": "True"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Cotton_Candy/ALL_foliage/snow_ATK_AToMS_foliage_blue.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Cotton_Candy": "True",
+				"CC_Snow_Color": "blue"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Cotton_Candy/ALL_foliage/snow_ATK_AToMS_foliage_purple.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Cotton_Candy": "True",
+				"CC_Snow_Color": "purple"
+			}
+        },
+	
+//	//	Earthy Recolour
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/spring_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage, Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Earthy_Recolour/ALL_foliage/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Earthy_Recolour": "True"				
+			}
+        },		
+
+//	//	Starblue Valley
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/spring_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage, Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Starblue_Valley/ALL_foliage/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Starblue_Valley": "True"				
+			}
+        },
+
+//	//	Universal Recolor
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/spring_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage, Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Universal_Recolors/ALL_foliage/D40_H1/spring_ATK_AToMS_foliage.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Universal_Recolors": "True"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage, Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Universal_Recolors/ALL_foliage/D40_H1/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Universal_Recolors": "True"
+			}
+        },
+
+//	//	Vibrant Pastoral
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/spring_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage, Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Vibrant_Pastoral/ALL_foliage/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Vibrant_Pastoral": "True"			
+			}
+        },	
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage",
+            "FromFile": "options/Vibrant_Pastoral/ALL_foliage/fall_ATK_AToMS_foliage_red.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Vibrant_Pastoral": "True",
+				"Vibrant_Pastoral_Fall": "Red"				
+			}
+        },
+		
+//	//	Wittily Named
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/spring_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage, Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Wittily_Named/ALL_foliage/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Wittily_Named": "True"				
+			}
+        },
+		
+//	//	Yri Retro Recolor
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/spring_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage, Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Yri_Retro/ALL_foliage/Yri/ATK_AToMS_foliage_{{YR_Foliage_Color}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Yri_Retro": "True"
+			}
+        },
+
+//	ADDITIONAL OPTIONS
+
+//	//	Mild Winter
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "assets/ALL_foliage/fall_ATK_AToMS_foliage.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Mild_Winter": "True"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Mild_Winter/ALL_foliage/winter_ATK_AToMS_foliage.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Mild_Winter": "True"			
+			}
+        },
+		
+//	//	Cave Foliage Color
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/spring_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage, Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/_Default/ALL_foliage/cave_ATK_AToMS_foliage_green.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Cave_Fol_Color": "Green"			
+			}
+        },
+//
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage, Maps/spring_ATK_AToMS_foliage, Maps/summer_ATK_AToMS_foliage, Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Universal_Recolors/ALL_foliage/D40_H1/cave_ATK_AToMS_foliage_green.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Allow_Recolors": "True",
+				"Cave_Fol_Color": "Green",
+				"Manual_Override": "True",
+				"Universal_Recolors": "True"				
+			}
+        }
+	]
+}

@@ -1,0 +1,231 @@
+{
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "NoNose": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "FestivalOutfits": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteAideen": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteEloise": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteJacob": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteJosephine": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteKataryna": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteOliver": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteRosa": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteVivienne": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        /* "CuteJade": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },*/
+        "CuteEyvinder": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteVictoria": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteExtraNPCs": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteJuliet": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteJessie": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        "CuteJasper": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+        /* "CuteKeanu": {
+               "AllowValues": "true, false",
+            "Default": "true"
+        },*/
+        "CuteCameron": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+    },
+    "DynamicTokens": [
+        //Likely not necessary.
+    ],
+    "Changes": [
+        {
+            "LogName": "Aideen Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Aideen.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteAideen": "True",
+            }
+        },
+        {
+            "LogName": "Eloise Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Eloise.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteEloise": "True",
+            }
+        },
+        {
+            "LogName": "Jacob Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Jacob.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJacob": "True",
+            }
+        },
+        {
+            "LogName": "Josephine Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Josephine.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJosephine": "True",
+            }
+        },
+        {
+            "LogName": "Kataryna Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Kataryna.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteKataryna": "True",
+            }
+        },
+        {
+            "LogName": "Oliver Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Oliver.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteOliver": "True",
+            }
+        },
+        {
+            "LogName": "Rosa Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Rosa.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteRosa": "True",
+            }
+        },
+        {
+            "LogName": "Vivienne Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Vivienne.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteVivienne": "True",
+            }
+        },
+        /* {
+            "LogName": "Jade Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Jade.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJade": "True",
+            }
+        },*/
+        {
+            "LogName": "Eyvinder Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Eyvinder.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteEyvinder": "True",
+            }
+        },
+        {
+            "LogName": "Eyvinder Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Victoria.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteVictoria": "True",
+            }
+        },
+        {
+            "LogName": "Juliet Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Juliet.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJuliet": "True",
+            }
+        },
+        {
+            "LogName": "Jessie Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Jessie.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJessie": "True",
+            }
+        },
+        {
+            "LogName": "Jasper Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/Jasper.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteJasper": "True",
+            }
+        },
+        /*{
+            "LogName": "Keanu Seasonal Include",
+            "Action": "Include",
+            "FromFile": "assets/Code/KeanuAvis.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteKeanu": "True",
+            }
+        },*/
+        // Extras
+        {
+            "LogName": "Cuter Extra NPCs",
+            "Action": "Include",
+            "FromFile": "assets/Code/ExtraNPCs.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "CuteExtraNPCs": "True",
+            }
+        },
+    ]
+}

@@ -1,0 +1,101 @@
+{
+	"Changes": [
+		//to add: clinic, night market
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/{{Russell}}",
+			"Entries": {
+				//default schedule: jail counter (Tue Thu) (also has modified Friday jail counter schedule)
+				"spring": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 13 15 0/700 {{ModId}}_AboveJail 7 15 0/720 {{ModId}}_AboveJail 1 15 0/730 {{ModId}}_AboveJail 2 17 2/840 {{ModId}}_Jail 12 20 1/1700 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 19 15 0/1910 {{ModId}}_AboveJail 2 17 2/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				//Mon Wed Sat | AM: mountain lake, PM: home
+				"spring_Mon": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 13 15 0/700 {{ModId}}_AboveJail 7 15 0/720 {{ModId}}_AboveJail 1 15 0/730 Mountain 58 32 1 {{Russell}}_sit/1600 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 15 18 0 russell_desk/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				"spring_Wed": "GOTO spring_Mon",
+				"summer_Mon": "GOTO spring_Mon",
+				"summer_Wed": "GOTO spring_Mon",
+				//Sat | AM: Pierre's, PM: Kent yard
+				"spring_Sat": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 13 15 0/700 {{ModId}}_AboveJail 7 15 0/720 {{ModId}}_AboveJail 1 15 0/900 SeedShop 2 22 1/1200 SeedShop 15 20 0/1340 Town 7 71 1/1540 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				"summer_Sat": "GOTO spring_Sat",
+				"fall_Mon": "GOTO spring_Sat",
+				//Fall Wed | AM: fountain, PM: Kent yard
+				"fall_Wed": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 13 15 0/700 {{ModId}}_AboveJail 7 15 0/720 {{ModId}}_AboveJail 1 15 0/900 Town 22 26 1/1310 Town 7 71 1/1540 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				//Fall Sat | AM/PM: Town river
+				"fall_Sat": "610 {{ModId}}_AboveJail 19 18 3 {{Russell}}_snooze \"Strings\\schedules\\{{Russell}}:snooze\"/900 {{ModId}}_AboveJail 16 5 0/930 {{ModId}}_AboveJail 19 15 0/940 {{ModId}}_AboveJail 1 15 0/1010 Town 72 77 2 {{Russell}}_shades_on/1220 Town 72 77 2 {{Russell}}_shades_left/1230 Town 72 77 2 {{Russell}}_shades_static/1310 Town 72 77 2 {{Russell}}_shades_left/1320 Town 72 77 2 {{Russell}}_shades_off/1400 Town 61 100 2 {{Russell}}_shades/1550 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				//Summer 20 (bday) | AM: Trout festival, PM: Kent yard
+				"summer_20": "610 Forest 79 43 2 {{Russell}}_shades/1320 Town 7 71 1/1520 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 19 15 0/1910 Saloon 2 22 1 {{Russell}}_beer/2330 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				//Sun | AM: church, PM: town bridge
+				"Sun": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 16 15 0/700 {{ModId}}_AboveJail 7 15 0/720 {{ModId}}_AboveJail 1 15 0/740 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/920 SeedShop 35 19 0/1410 Town 72 54 2 {{Russell}}_shades/1610 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				//Winter Mon Wed Sat | AM: spa workout, PM: Home
+				"winter_Mon": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/720 {{ModId}}_AboveJail 1 15 0/730 {{ModId}}_AboveJail 2 17 2/800 BathHouse_MensLocker 1 6 0 {{Russell}}_pushups \"Strings\\schedules\\{{Russell}}:pushups\"/1400 {{ModId}}_AboveJail 1 15 0/1620 {{ModId}}_AboveJail 2 17 2/1720 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 19 15 0/1910 Saloon 2 22 1 {{Russell}}_beer/2330 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				"winter_Wed": "GOTO winter_Mon",
+				"winter_Sat": "GOTO winter_Mon",
+				//Desert festival
+				"DesertFestival_1": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/720 {{ModId}}_AboveJail 1 15 0/810 Desert 6 24 0 \"Strings\\schedules\\{{Russell}}:DesertFestival001\"/1330 Desert 3 38 2 \"Strings\\schedules\\{{Russell}}:DesertFestival002\"/2030 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				//Night market
+				"NightMarket_3": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/720 {{ModId}}_AboveJail 1 15 0/730 {{ModId}}_AboveJail 2 17 2/800 BathHouse_MensLocker 1 6 0 {{Russell}}_pushups \"Strings\\schedules\\{{Russell}}:pushups\"/1400 Beach 14 24 2 \"Strings\\schedules\\{{Russell}}:nightmarket\"/2320 Town 9 89 1/2500 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				//Green Rain
+				"GreenRain": "0 Saloon 18 22 3/1530 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 15 18 0 russell_desk/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				//Friday | Day: Jail counter, Evening: Saloon
+				"Fri": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 13 15 0/700 {{ModId}}_AboveJail 7 15 0/720 {{ModId}}_AboveJail 1 15 0/730 {{ModId}}_AboveJail 2 17 2/840 {{ModId}}_Jail 12 20 1/1700 Saloon 2 22 1 {{Russell}}_beer/2330 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				//duty is shared on rainy days, shannon takes it in the morning, russell in the afternoon
+				"rain": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 13 15 0/700 {{ModId}}_AboveJail 7 15 0/720 {{ModId}}_AboveJail 1 15 0/730 {{ModId}}_AboveJail 15 18 0 russell_desk/1100 {{ModId}}_Jail 12 20 1/1650 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 15 18 0 russell_desk/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				//Russell avoids the rain schedule on rainy Sundays by specifying the dates of the month. Shannon still uses the rain schedule on rainy sundays.
+				"7":"GOTO Sun","14":"GOTO Sun","21":"GOTO Sun","28":"GOTO Sun",
+
+				//married Tue/Thu: jail counter > fireplace
+				"marriage_Tue": "800 {{ModId}}_Jail 12 20 1/1700 {{ModId}}_Jail 2 21 0 {{Russell}}_desk \"Strings\\schedules\\{{Russell}}:sit_inside_married\"/2100 bed {{russell_sleep}}/",
+				"marriage_Thu": "GOTO marriage_Tue",
+				//married Fri: AM jail counter > PM lake > evening saloon
+				"marriage_Fri": "800 {{ModId}}_Jail 12 20 1/1230 Mountain 58 32 1 {{Russell}}_sit \"Strings\\schedules\\{{Russell}}:lake_married\"/1700 Saloon 2 22 1 {{Russell}}_beer/2100 bed {{russell_sleep}}/",
+				//married bday summer 20: trout festival > Kent > saloon
+				"marriage_summer_20": "700 Forest 79 43 2 {{Russell}}_shades \"Strings\\schedules\\{{Russell}}:troutderby\"/1320 Town 7 71 1/1700 Saloon 2 22 1 {{Russell}}_beer/",
+				//married Winter Saturdays: workout > lake
+				"marriage_winter_6": "800 BathHouse_Pool 9 10 0 {{Russell}}_pushups \"Strings\\schedules\\{{Russell}}:pushups_married\"/1400 Mountain 58 32 1 {{Russell}}_sit \"Strings\\schedules\\{{Russell}}:lake_married\"/2100 bed {{russell_sleep}}/",
+				"marriage_winter_20": "GOTO marriage_winter_20",
+				"marriage_winter_27": "GOTO marriage_winter_27",
+				//married winter 13 (squid fest): squid fest > saloon
+				"marriage_winter_13": "800 Beach 13 20 1/1700 Saloon 2 22 1 {{Russell}}_beer/2100 bed {{russell_sleep}}/",
+				//marriage desert festival
+				"marriage_DesertFestival_1": "700 Desert 6 24 0 \"Strings\\schedules\\{{Russell}}:DesertFestival001_married\"/1330 Desert 3 38 2 \"Strings\\schedules\\{{Russell}}:DesertFestival002_married\"/2030 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}/",
+				"marriage_NightMarket_3": "800 BathHouse_Pool 9 10 0 {{Russell}}_pushups \"Strings\\schedules\\{{Russell}}:pushups_married\"/1400 Beach 14 24 2 \"Strings\\schedules\\{{Russell}}:nightmarket\"/2320 Town 9 89 1/2500 bed {{russell_sleep}}",
+			}
+		},
+        {
+			//schedule before player meets Kent
+			"Action": "EditData",
+			"Target": "Characters/schedules/{{Russell}}",
+			"Entries": {
+				//Sat Pierre's
+				"spring_Sat": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 13 15 0/700 {{ModId}}_AboveJail 7 15 0/720 {{ModId}}_AboveJail 1 15 0/900 SeedShop 2 22 1/1200 SeedShop 15 20 0/1540 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				"fall_Wed": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 13 15 0/700 {{ModId}}_AboveJail 7 15 0/720 {{ModId}}_AboveJail 1 15 0/900 Town 22 26 1/1230 Town 72 54 2 {{Russell}}_shades/1610 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				"summer_20": "610 Forest 79 43 2 {{Russell}}_shades/1400 {{ModId}}_AboveJail 16 15 0/1740 {{ModId}}_AboveJail 16 5 0/1800 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 19 15 0/1910 Saloon 2 22 1 {{Russell}}_beer/2330 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				"NightMarket_3": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/720 {{ModId}}_AboveJail 1 15 0/730 {{ModId}}_AboveJail 2 17 2/800 BathHouse_MensLocker 1 6 0 {{Russell}}_pushups \"Strings\\schedules\\{{Russell}}:pushups\"/1400 Beach 14 24 2 \"Strings\\schedules\\{{Russell}}:nightmarket_prekent\"/2320 Town 9 89 1/2500 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+				"marriage_NightMarket_3": "800 BathHouse_Pool 9 10 0 {{Russell}}_pushups \"Strings\\schedules\\{{Russell}}:pushups_married\"/1400 Beach 14 24 2 \"Strings\\schedules\\{{Russell}}:nightmarket_prekent\"/2320 Town 9 89 1/2500 bed {{russell_sleep}}",
+			},
+            "When": {
+				"HasSeenEvent|contains=63": "false",
+            }
+        }, 
+		{ //R Joja Day Schedule
+			"Action": "EditData",
+			"Target": "characters/schedules/{{Russell}}",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasSeenEvent": "502261"
+			},
+			"Entries": {
+				"22": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 13 15 0/700 {{ModId}}_AboveJail 7 15 0/720 {{ModId}}_AboveJail 1 15 0/900 JojaMart 16 28 3 \"Strings\\schedules\\{{Russell}}:jojaday\"/1600 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",
+			},
+		},
+		{ //R Community Day Schedule
+			"Action": "EditData",
+			"Target": "characters/schedules/{{Russell}}",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+				"HasSeenEvent": "191393"
+			},
+			"Entries": {
+				"22": "610 {{ModId}}_AboveJail 16 5 0/640 {{ModId}}_AboveJail 13 15 0/700 {{ModId}}_AboveJail 7 15 0/720 {{ModId}}_AboveJail 1 15 0/900 CommunityCenter 37 9 1 \"Strings\\schedules\\{{Russell}}:communitydayfish\"/1230 CommunityCenter 7 7 2 \"Strings\\schedules\\{{Russell}}:communitydaykitchen\"/1600 {{ModId}}_AboveJail 17 5 0/1810 {{ModId}}_AboveJail 19 4 0/1820 {{ModId}}_AboveJail 19 5 2 \"Strings\\schedules\\{{Russell}}:shower\"/1850 {{ModId}}_AboveJail 17 5 0/1900 {{ModId}}_AboveJail 15 18 0 {{Russell}}_desk/2200 {{ModId}}_AboveJail 19 18 3 {{russell_sleep}}",			},
+		},
+		
+	]
+}

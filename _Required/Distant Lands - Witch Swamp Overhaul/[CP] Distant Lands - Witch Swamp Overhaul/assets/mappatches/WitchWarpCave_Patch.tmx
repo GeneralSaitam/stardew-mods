@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="1" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="3">
+ <properties>
+  <property name="AmbientLight" value="120 160 80"/>
+  <property name="Music" value="Upper_Ambient"/>
+  <property name="Warp" value="4 10 Railroad 54 34"/>
+ </properties>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine_dark.png" width="256" height="288"/>
+ </tileset>
+ <layer id="1" name="Back" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJzTZ2RgAAAAwwAx
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="2" name="TileData" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="MagicWarp WitchSwamp 20 42"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Buildings" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgAAAABAAB
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Paths" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJzjZGBgAAAAKAAK
+  </data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgAAAABAAB
+  </data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+</map>

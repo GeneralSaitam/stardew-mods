@@ -1,0 +1,64 @@
+ {
+"Changes": 
+    [
+		//Dialogue for Solstice compat
+		{
+            "Action": "EditData",
+		  	"Target": "Characters/Dialogue/JortsCat",
+			"When": { "HasMod: |contains=Airyn.CPSolsticeWinterStar": true},
+            "Entries": { "winter_24": "{{i18n:JortsCat.Solstice.winter_24}}", },
+		},
+		{
+            "Action": "EditData",
+		  	"Target": "Characters/Dialogue/JeanCat",
+			"When": { "HasMod: |contains=Airyn.CPSolsticeWinterStar": true},
+            "Entries": { "winter_24": "{{i18n:JeanCat.Solstice.winter_24}}", },
+		},
+		{	
+		"LogName": "Feast of the Winter Star Solstice Compat",
+		"Action": "EditData",
+		"Target": "Data/Festivals/winter25",
+		"When": { "HasMod: |contains=Airyn.CPSolsticeWinterStar": true},
+		"Entries": 
+			{ "JortsCat": "{{i18n:JortsCat.Solstice.JortsCat}}", },
+		},
+
+		//Dialogue for Ridgeside festivals
+		{
+            "Action": "EditData",
+		  	"Target": "Characters/Dialogue/JortsCat",
+			"When": { "HasMod: |contains=Rafseazz.RSVCP": true},
+            "Entries": 
+            {
+                "fall_19": "{{i18n:JortsCat.fall_19}}", //Day before Ridgeside Gathering
+"winter_27": "{{i18n:JortsCat.winter_27}}", // Day before Ember of Resolutions
+            },
+		},
+		{
+            "Action": "EditData",
+		  	"Target": "Characters/Dialogue/JeanCat",
+			"When": { "HasMod: |contains=Rafseazz.RSVCP": true},
+            "Entries": 
+            {
+                "fall_19": "{{i18n:JeanCat.fall_19}}", //Day before Ridgeside Gathering
+"winter_27": "{{i18n:JeanCat.winter_27}}",
+ // Day before Ember of Resolutions
+            },
+		},
+
+		//NPC Locations offset because cats are small - thanks Lenne!
+		{
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"Entries": {
+				"JortsCat": {
+					"MarkerCropOffset": 16
+				},
+				"JeanCat": {
+					"MarkerCropOffset": 16
+				},
+        
+			},
+		},
+	]
+ }

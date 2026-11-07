@@ -1,0 +1,167 @@
+{
+    "Changes": [
+
+//	RECOLORS
+
+//	//	EX_ground (Grass colors are currently locked to default values)
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/spring_ATK_AToMS_EXground",
+            "FromFile": "options/Yri_Retro/EX_ground/grass_ATK_AToMS_EXground_NaturalGreen.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"	
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/summer_ATK_AToMS_EXground",
+            "FromFile": "options/Yri_Retro/EX_ground/grass_ATK_AToMS_EXground_MixedGreen.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"	
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_EXground",
+            "FromFile": "options/Yri_Retro/EX_ground/grass_ATK_AToMS_EXground_Orange.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"	
+			}
+        },
+//
+        {
+            "Action": "EditImage",
+            "Target": "Maps/spring_ATK_AToMS_EXground",
+            "FromFile": "options/Yri_Retro/EX_ground/dirt_ATK_AToMS_EXground_{{Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, DirtSpring}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"	
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/summer_ATK_AToMS_EXground",
+            "FromFile": "options/Yri_Retro/EX_ground/dirt_ATK_AToMS_EXground_{{Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, DirtSummer}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"	
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_EXground",
+            "FromFile": "options/Yri_Retro/EX_ground/dirt_ATK_AToMS_EXground_{{Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, DirtFall}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"	
+			}
+        },
+
+//	//	EX_aqua
+
+      {
+            "Action": "EditImage",
+            "Target": "Maps/spring_ATK_AToMS_EXaqua",
+            "FromFile": "options/Yri_Retro/EX_aqua/grass_ATK_AToMS_EXaqua_NaturalGreen.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"	
+			}
+        },
+      {
+            "Action": "EditImage",
+            "Target": "Maps/summer_ATK_AToMS_EXaqua",
+            "FromFile": "options/Yri_Retro/EX_aqua/grass_ATK_AToMS_EXaqua_MixedGreen.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"	
+			}
+        },		
+      {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_EXaqua",
+            "FromFile": "options/Yri_Retro/EX_aqua/grass_ATK_AToMS_EXaqua_Orange.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"	
+			}
+        },
+		
+//	//	ALL_Foliage
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/spring_ATK_AToMS_foliage",
+            "FromFile": "options/Yri_Retro/ALL_foliage/Yri/ATK_AToMS_foliage_{{Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTopSpring}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTops": "True",
+				"Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTopVariant": "Yri",			
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"				
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/summer_ATK_AToMS_foliage",
+            "FromFile": "options/Yri_Retro/ALL_foliage/Yri/ATK_AToMS_foliage_{{Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTopSummer}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTops": "True",
+				"Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTopVariant": "Yri",			
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"				
+			}
+        },		
+        {
+            "Action": "EditImage",
+            "Target": "Maps/fall_ATK_AToMS_foliage",
+            "FromFile": "options/Yri_Retro/ALL_foliage/Yri/ATK_AToMS_foliage_{{Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTopFall}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTops": "True",
+				"Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTopVariant": "Yri",			
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"				
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Yri_Retro/ALL_foliage/Yri/ATK_AToMS_foliage_{{Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTopWinter}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "Yris.RetroRecolor-1.6-Community-Patch",
+				"Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTops": "True",
+				"Spiderbuttons.CMCT/Config: Yris.RetroRecolor-1.6-Community-Patch, TreeTopVariant": "Yri",			
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"				
+			}
+        },		
+	]
+}

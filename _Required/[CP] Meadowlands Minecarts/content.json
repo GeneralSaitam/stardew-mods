@@ -1,0 +1,76 @@
+{
+    "Format": "2.0.0",
+	"configSchema": {
+		"Enable SouthEast Minecart": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Enable a minecart at the southeast corner of the farm (in front of farm cave)"
+		},
+		"Enable NorthWest Minecart": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Enable a minecart at the northwest corner of the farm (near grandpa's shire)"
+		}
+	},
+    "Changes": [
+        // South East minecart
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [ "Default", "Destinations" ],
+            "Entries": {
+                "Farm": {
+                    "Id": "MeadowlandsMinecartFarm_SE",
+                    "DisplayName": "[FarmName] Farm (SE)",
+                    "TargetLocation": "Farm",
+                    "TargetTile": { "X": 91, "Y": 56 },
+                    "TargetDirection": "left",
+                }
+            },
+			"When": {
+				"Enable SouthEast Minecart": true,
+				"FarmType": "MeadowlandsFarm"
+		}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Farm_Ranching",
+            "FromFile": "assets/Meadowlands_SE_Minecart.tmx",
+            "ToArea": { "X": 90, "Y": 55, "Width": 3, "Height": 2 },
+			"When": {
+				"Enable SouthEast Minecart": true,
+				"FarmType": "MeadowlandsFarm"
+		}
+        },
+
+// North West minecart
+        {
+            "Action": "EditData",
+            "Target": "Data/Minecarts",
+            "TargetField": [ "Default", "Destinations" ],
+            "Entries": {
+                "Farm": {
+                    "Id": "MeadowlandsMinecartFarm_NW",
+                    "DisplayName": "[FarmName] Farm (NW)",
+                    "TargetLocation": "Farm",
+                    "TargetTile": { "X": 35, "Y": 11 },
+                    "TargetDirection": "left",
+                }
+            },
+			"When": {
+				"Enable NorthWest Minecart": true,
+				"FarmType": "MeadowlandsFarm"
+			}
+		},
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Farm_Ranching",
+            "FromFile": "assets/Meadowlands_NW_Minecart.tmx",
+            "ToArea": { "X": 34, "Y": 10, "Width": 3, "Height": 2 },
+			"When": {
+				"Enable NorthWest Minecart": true,
+				"FarmType": "MeadowlandsFarm"
+			}
+        }
+    ]
+}

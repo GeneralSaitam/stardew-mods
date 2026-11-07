@@ -1,0 +1,573 @@
+{
+	"Format": "2.4.0",
+	//CONFIGS
+    "ConfigSchema": 
+	{
+		//SETTINGS
+		"Reconfiguration.house.opendoors": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIConfg"
+    },
+		"Reconfiguration.house.closeddoors": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIConfg"
+    },
+		//ENABLE MOD
+		"Reimagined_3Bros": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_3Bros2ndFloor": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_AguarBasement": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_AguarLab": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_AlissaHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_AlissaShed": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_BertHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_BertHouse2ndFloor": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_BlairHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_EzekielHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_FayeHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_FreddieHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_IanHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_JericHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_KennethHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_LennyHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+		"Reimagined_LolaShed": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_LogCabinHotelLobby": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_LogCabinHotel2rdFloor": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_LogCabinHotel3rdFloor": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_MaddieHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_PaulaClinic": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_PikaHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_PurpleMansion": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_PurpleMansion2ndFloor": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_NinjaHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    },
+        "Reimagined_ShiroHouse": {
+            "AllowValues": "true, false",
+            "Default": true,
+			"Section": "RSVRIEnable"
+    }
+},
+
+"Changes": [
+	{
+		"LogName": "Load RSV reimagined locations",
+		"Action": "Include",
+		"FromFile": "data/locations.json"
+	},
+	{
+		"LogName": "Load RSV reimagined events",
+		"Action": "Include",
+		"FromFile": "data/events.json"
+	},
+	{
+		"LogName": "Load RSV reimagined mail",
+		"Action": "Include",
+		"FromFile": "data/mail.json"
+	},
+	{
+		"LogName": "Load RSV reimagined mapChanges",
+		"Action": "Include",
+		"FromFile": "data/mapChanges.json"
+	},
+
+	//Maps message
+	{
+		"Action": "EditData",
+		"Target": "Strings/StringsFromMaps",
+		"Entries": {
+
+		"RSVRI.3Bros": "{{i18n: RSVRI.3Bros}}",
+		"RSVRI.3Bros1": "{{i18n: RSVRI.3Bros1}}",
+		"RSVRI.3Bros2": "{{i18n: RSVRI.3Bros2}}",
+		"RSVRI.3Bros3": "{{i18n: RSVRI.3Bros3}}",
+		"RSVRI.3Bros4": "{{i18n: RSVRI.3Bros4}}",
+		"RSVRI.3Bros5": "{{i18n: RSVRI.3Bros5}}",
+		"RSVRI.3Bros6": "{{i18n: RSVRI.3Bros6}}",
+
+		"RSVRI.AguarBasement": "{{i18n: RSVRI.AguarBasement}}",
+		"RSVRI.AguarBasement1": "{{i18n: RSVRI.AguarBasement1}}",
+
+		"RSVRI.AguarLab": "{{i18n: RSVRI.AguarLab}}",
+		"RSVRI.AguarLab1": "{{i18n: RSVRI.AguarLab1}}",
+		"RSVRI.AguarLab2": "{{i18n: RSVRI.AguarLab2}}",
+		"RSVRI.AguarLab3": "{{i18n: RSVRI.AguarLab3}}",
+		"RSVRI.AguarLab4": "{{i18n: RSVRI.AguarLab4}}",
+		"RSVRI.AguarLab5": "{{i18n: RSVRI.AguarLab5}}",
+		"RSVRI.AguarLab6": "{{i18n: RSVRI.AguarLab6}}",
+		"RSVRI.AguarLab7": "{{i18n: RSVRI.AguarLab7}}",
+		"RSVRI.AguarLab8": "{{i18n: RSVRI.AguarLab8}}",
+		"RSVRI.AguarLab9": "{{i18n: RSVRI.AguarLab9}}",
+
+		"RSVRI.AlissaHouse": "{{i18n: RSVRI.AlissaHouse}}",
+		"RSVRI.AlissaHouse1": "{{i18n: RSVRI.AlissaHouse1}}",
+		"RSVRI.AlissaHouse2": "{{i18n: RSVRI.AlissaHouse2}}",
+		"RSVRI.AlissaHouse3": "{{i18n: RSVRI.AlissaHouse3}}",
+
+		"RSVRI.BertHouse": "{{i18n: RSVRI.BertHouse}}",
+		"RSVRI.BertHouse1": "{{i18n: RSVRI.BertHouse1}}",
+		"RSVRI.BertHouse2": "{{i18n: RSVRI.BertHouse2}}",
+		"RSVRI.BertHouse3": "{{i18n: RSVRI.BertHouse3}}",
+		"RSVRI.BertHouse4": "{{i18n: RSVRI.BertHouse4}}",
+		"RSVRI.BertHouse5": "{{i18n: RSVRI.BertHouse5}}",
+		"RSVRI.BertHouse6": "{{i18n: RSVRI.BertHouse6}}",
+		"RSVRI.BertHouse7": "{{i18n: RSVRI.BertHouse7}}",
+		"RSVRI.BertHouse8": "{{i18n: RSVRI.BertHouse8}}",
+		"RSVRI.BertHouse9": "{{i18n: RSVRI.BertHouse9}}",
+		"RSVRI.BertHouse10": "{{i18n: RSVRI.BertHouse10}}",
+		"RSVRI.BertHouse11": "{{i18n: RSVRI.BertHouse11}}",
+		"RSVRI.BertHouse12": "{{i18n: RSVRI.BertHouse12}}",
+		"RSVRI.BertHouse13": "{{i18n: RSVRI.BertHouse13}}",
+		"RSVRI.BertHouse14": "{{i18n: RSVRI.BertHouse14}}",
+
+		"RSVRI.BlairHouse": "{{i18n: RSVRI.BlairHouse}}",
+
+		"RSVRI.EzekielHouse": "{{i18n: RSVRI.EzekielHouse}}",
+		"RSVRI.EzekielHouse1": "{{i18n: RSVRI.EzekielHouse1}}",
+		"RSVRI.EzekielHouse2": "{{i18n: RSVRI.EzekielHouse2}}",
+		"RSVRI.EzekielHouse3": "{{i18n: RSVRI.EzekielHouse3}}",
+		"RSVRI.EzekielHouse4": "{{i18n: RSVRI.EzekielHouse4}}",
+		"RSVRI.EzekielHouse5": "{{i18n: RSVRI.EzekielHouse5}}",
+		"RSVRI.EzekielHouse6": "{{i18n: RSVRI.EzekielHouse6}}",
+		"RSVRI.EzekielHouse7": "{{i18n: RSVRI.EzekielHouse7}}",
+
+		"RSVRI.FreddieHouse": "{{i18n: RSVRI.FreddieHouse}}",
+		"RSVRI.FreddieHouse1": "{{i18n: RSVRI.FreddieHouse1}}",
+		"RSVRI.FreddieHouse2": "{{i18n: RSVRI.FreddieHouse2}}",
+
+		"RSVRI.IanHouse": "{{i18n: RSVRI.IanHouse}}",
+		"RSVRI.IanHouse1": "{{i18n: RSVRI.IanHouse1}}",
+		"RSVRI.IanHouse2": "{{i18n: RSVRI.IanHouse2}}",
+		"RSVRI.IanHouse3": "{{i18n: RSVRI.IanHouse3}}",
+		"RSVRI.IanHouse4": "{{i18n: RSVRI.IanHouse4}}",
+		"RSVRI.IanHouse5": "{{i18n: RSVRI.IanHouse5}}",
+
+		"RSVRI.JericHouse": "{{i18n: RSVRI.JericHouse}}",
+		"RSVRI.JericHouse1": "{{i18n: RSVRI.JericHouse1}}",
+		"RSVRI.JericHouse2": "{{i18n: RSVRI.JericHouse2}}",
+		"RSVRI.JericHouse3": "{{i18n: RSVRI.JericHouse3}}",
+		"RSVRI.JericHouse4": "{{i18n: RSVRI.JericHouse4}}",
+
+		"RSVRI.KennethHouse": "{{i18n: RSVRI.KennethHouse}}",
+		"RSVRI.KennethHouse2": "{{i18n: RSVRI.KennethHouse2}}",
+
+		"RSVRI.LennyHouse": "{{i18n: RSVRI.LennyHouse}}",
+		"RSVRI.LennyHouse1": "{{i18n: RSVRI.LennyHouse1}}",
+		"RSVRI.LennyHouse2": "{{i18n: RSVRI.LennyHouse2}}",
+		"RSVRI.LennyHouse3": "{{i18n: RSVRI.LennyHouse3}}",
+		"RSVRI.LennyHouse4": "{{i18n: RSVRI.LennyHouse4}}",
+		"RSVRI.LennyHouse5": "{{i18n: RSVRI.LennyHouse5}}",
+
+		"RSVRI.LogCabinHotel": "{{i18n: RSVRI.LogCabinHotel}}",
+		"RSVRI.LogCabinHotel1": "{{i18n: RSVRI.LogCabinHotel1}}",
+		"RSVRI.LogCabinHotel2": "{{i18n: RSVRI.LogCabinHotel2}}",
+		"RSVRI.LogCabinHotel3": "{{i18n: RSVRI.LogCabinHotel3}}",
+		"RSVRI.LogCabinHotel4": "{{i18n: RSVRI.LogCabinHotel4}}",
+		"RSVRI.LogCabinHotel5": "{{i18n: RSVRI.LogCabinHotel5}}",
+		"RSVRI.LogCabinHotel6": "{{i18n: RSVRI.LogCabinHotel6}}",
+		"RSVRI.LogCabinHotel7": "{{i18n: RSVRI.LogCabinHotel7}}",
+		"RSVRI.LogCabinHotel8": "{{i18n: RSVRI.LogCabinHotel8}}",
+		
+		"RSVRI.MaddieHouse": "{{i18n: RSVRI.MaddieHouse}}",
+		"RSVRI.MaddieHouse1": "{{i18n: RSVRI.MaddieHouse1}}",
+		"RSVRI.MaddieHouse2": "{{i18n: RSVRI.MaddieHouse2}}",
+		"RSVRI.MaddieHouse3": "{{i18n: RSVRI.MaddieHouse3}}",
+		"RSVRI.MaddieHouse4": "{{i18n: RSVRI.MaddieHouse4}}",
+		"RSVRI.MaddieHouse5": "{{i18n: RSVRI.MaddieHouse5}}",
+		"RSVRI.MaddieHouse6": "{{i18n: RSVRI.MaddieHouse6}}",
+		"RSVRI.MaddieHouse7": "{{i18n: RSVRI.MaddieHouse7}}",
+		"RSVRI.MaddieHouse8": "{{i18n: RSVRI.MaddieHouse8}}",
+
+		"RSVRI.PaulaClinic": "{{i18n: RSVRI.PaulaClinic}}",
+		"RSVRI.PaulaClinic1": "{{i18n: RSVRI.PaulaClinic1}}",
+		"RSVRI.PaulaClinic2": "{{i18n: RSVRI.PaulaClinic2}}",
+		"RSVRI.PaulaClinic3": "{{i18n: RSVRI.PaulaClinic3}}",
+		"RSVRI.PaulaClinic4": "{{i18n: RSVRI.PaulaClinic4}}",
+		"RSVRI.PaulaClinic5": "{{i18n: RSVRI.PaulaClinic5}}",
+		"RSVRI.PaulaClinic6": "{{i18n: RSVRI.PaulaClinic6}}",
+
+		"RSVRI.PikaHouse": "{{i18n: RSVRI.PikaHouse}}",
+		"RSVRI.PikaHouse1": "{{i18n: RSVRI.PikaHouse1}}",
+		"RSVRI.PikaHouse2": "{{i18n: RSVRI.PikaHouse2}}",
+		"RSVRI.PikaHouse3": "{{i18n: RSVRI.PikaHouse3}}",
+		"RSVRI.PikaHouse4": "{{i18n: RSVRI.PikaHouse4}}",
+		"RSVRI.PikaHouse5": "{{i18n: RSVRI.PikaHouse5}}",
+		"RSVRI.PikaHouse6": "{{i18n: RSVRI.PikaHouse6}}",
+		"RSVRI.PikaHouse7": "{{i18n: RSVRI.PikaHouse7}}",
+		"RSVRI.PikaHouse8": "{{i18n: RSVRI.PikaHouse8}}",
+		"RSVRI.PikaHouse9": "{{i18n: RSVRI.PikaHouse9}}",
+		"RSVRI.PikaHouse10": "{{i18n: RSVRI.PikaHouse10}}",
+		"RSVRI.PikaHouse11": "{{i18n: RSVRI.PikaHouse11}}",
+
+		"RSVRI.PurpleMansion": "{{i18n: RSVRI.PurpleMansion}}",
+		"RSVRI.PurpleMansion1": "{{i18n: RSVRI.PurpleMansion1}}",
+		"RSVRI.PurpleMansion2": "{{i18n: RSVRI.PurpleMansion2}}",
+		"RSVRI.PurpleMansion3": "{{i18n: RSVRI.PurpleMansion3}}",
+		"RSVRI.PurpleMansion4": "{{i18n: RSVRI.PurpleMansion4}}",
+		"RSVRI.PurpleMansion5": "{{i18n: RSVRI.PurpleMansion5}}",
+		"RSVRI.PurpleMansion6": "{{i18n: RSVRI.PurpleMansion6}}",
+		"RSVRI.PurpleMansion7": "{{i18n: RSVRI.PurpleMansion7}}",
+		"RSVRI.PurpleMansion8": "{{i18n: RSVRI.PurpleMansion8}}",
+		"RSVRI.PurpleMansion9": "{{i18n: RSVRI.PurpleMansion9}}",
+		"RSVRI.PurpleMansion10": "{{i18n: RSVRI.PurpleMansion10}}",
+		"RSVRI.PurpleMansion11": "{{i18n: RSVRI.PurpleMansion11}}",
+		"RSVRI.PurpleMansion12": "{{i18n: RSVRI.PurpleMansion12}}",
+		"RSVRI.PurpleMansion13": "{{i18n: RSVRI.PurpleMansion13}}",
+		"RSVRI.PurpleMansion14": "{{i18n: RSVRI.PurpleMansion14}}",
+		"RSVRI.PurpleMansion15": "{{i18n: RSVRI.PurpleMansion15}}",
+		"RSVRI.PurpleMansion16": "{{i18n: RSVRI.PurpleMansion16}}",
+		"RSVRI.PurpleMansion17": "{{i18n: RSVRI.PurpleMansion17}}",
+		"RSVRI.PurpleMansion18": "{{i18n: RSVRI.PurpleMansion18}}",
+		"RSVRI.PurpleMansion19": "{{i18n: RSVRI.PurpleMansion19}}",
+		"RSVRI.PurpleMansion20": "{{i18n: RSVRI.PurpleMansion20}}",
+		"RSVRI.PurpleMansion21": "{{i18n: RSVRI.PurpleMansion21}}",
+		"RSVRI.PurpleMansion22": "{{i18n: RSVRI.PurpleMansion22}}",
+		"RSVRI.PurpleMansion23": "{{i18n: RSVRI.PurpleMansion23}}",
+		"RSVRI.PurpleMansion24": "{{i18n: RSVRI.PurpleMansion24}}",
+		"RSVRI.PurpleMansion25": "{{i18n: RSVRI.PurpleMansion25}}",
+		"RSVRI.PurpleMansion26": "{{i18n: RSVRI.PurpleMansion26}}",
+		"RSVRI.PurpleMansion27": "{{i18n: RSVRI.PurpleMansion27}}",
+		"RSVRI.PurpleMansion28": "{{i18n: RSVRI.PurpleMansion28}}",
+		"RSVRI.PurpleMansion29": "{{i18n: RSVRI.PurpleMansion29}}",
+		"RSVRI.PurpleMansion30": "{{i18n: RSVRI.PurpleMansion30}}",
+		"RSVRI.PurpleMansion31": "{{i18n: RSVRI.PurpleMansion31}}",
+		"RSVRI.PurpleMansion32": "{{i18n: RSVRI.PurpleMansion32}}",
+		"RSVRI.PurpleMansion33": "{{i18n: RSVRI.PurpleMansion33}}",
+		"RSVRI.PurpleMansion34": "{{i18n: RSVRI.PurpleMansion34}}",
+
+		"RSVRI.ShiroHouse": "{{i18n: RSVRI.ShiroHouse}}",
+		"RSVRI.ShiroHouse1": "{{i18n: RSVRI.ShiroHouse1}}",
+		"RSVRI.ShiroHouse2": "{{i18n: RSVRI.ShiroHouse2}}",
+		"RSVRI.ShiroHouse3": "{{i18n: RSVRI.ShiroHouse3}}",
+
+		//Mail
+		"RSVRI.Mail.PikaInvitation": "{{i18n: RSVRI.Mail.PikaInvitation}}",
+		"RSVRI.Mail.SonnyProposal": "{{i18n: RSVRI.Mail.PikaInvitation}}",
+
+		//Edited events dialogues
+
+		"RSVRI.75160363.01": "{{i18n: RSVRI.75160363.01}}",
+		"RSVRI.75160363.02": "{{i18n: RSVRI.75160363.02}}",
+		"RSVRI.75160363.03": "{{i18n: RSVRI.75160363.03}}",
+		"RSVRI.75160363.04": "{{i18n: RSVRI.75160363.04}}",
+		"RSVRI.75160363.05": "{{i18n: RSVRI.75160363.05}}",
+		"RSVRI.75160363.06": "{{i18n: RSVRI.75160363.06}}",
+		"RSVRI.75160363.07": "{{i18n: RSVRI.75160363.07}}",
+		"RSVRI.75160363.08": "{{i18n: RSVRI.75160363.08}}",
+		"RSVRI.75160363.09": "{{i18n: RSVRI.75160363.09}}",
+		"RSVRI.75160363.10": "{{i18n: RSVRI.75160363.10}}",
+
+
+		//Vanilla events dialogues
+
+		"RSVRI.75160158.01": "{{i18n: RSVRI.75160158.01}}",
+		"RSVRI.75160158.02": "{{i18n: RSVRI.75160158.02}}",
+		"RSVRI.75160158.03": "{{i18n: RSVRI.75160158.03}}",
+		"RSVRI.75160158.04": "{{i18n: RSVRI.75160158.04}}",
+		"RSVRI.75160158.05": "{{i18n: RSVRI.75160158.05}}",
+		"RSVRI.75160158.06": "{{i18n: RSVRI.75160158.06}}",
+		"RSVRI.75160158.07": "{{i18n: RSVRI.75160158.07}}",
+		"RSVRI.75160158.08": "{{i18n: RSVRI.75160158.08}}",
+		"RSVRI.75160158.09": "{{i18n: RSVRI.75160158.09}}",
+		"RSVRI.75160158.10": "{{i18n: RSVRI.75160158.10}}",
+		"RSVRI.75160158.11": "{{i18n: RSVRI.75160158.11}}",
+		"RSVRI.75160158.12": "{{i18n: RSVRI.75160158.12}}",
+		"RSVRI.75160158.13": "{{i18n: RSVRI.75160158.13}}",
+		"RSVRI.75160158.14": "{{i18n: RSVRI.75160158.14}}",
+		"RSVRI.75160158.15": "{{i18n: RSVRI.75160158.15}}",
+		"RSVRI.75160158.16": "{{i18n: RSVRI.75160158.16}}",
+
+		"RSVRI.75160159.01": "{{i18n: RSVRI.75160159.01}}",
+		"RSVRI.75160159.02": "{{i18n: RSVRI.75160159.02}}",
+		"RSVRI.75160159.03": "{{i18n: RSVRI.75160159.03}}",
+		"RSVRI.75160159.04": "{{i18n: RSVRI.75160159.04}}",
+		"RSVRI.75160159.05": "{{i18n: RSVRI.75160159.05}}",
+		"RSVRI.75160159.06": "{{i18n: RSVRI.75160159.06}}",
+		"RSVRI.75160159.07": "{{i18n: RSVRI.75160159.07}}",
+		"RSVRI.75160159.08": "{{i18n: RSVRI.75160159.08}}",
+		"RSVRI.75160159.09": "{{i18n: RSVRI.75160159.09}}",
+		"RSVRI.75160159.10": "{{i18n: RSVRI.75160159.10}}",
+		"RSVRI.75160159.11": "{{i18n: RSVRI.75160159.11}}",
+		"RSVRI.75160159.12": "{{i18n: RSVRI.75160159.12}}",
+		"RSVRI.75160159.13": "{{i18n: RSVRI.75160159.13}}",
+		"RSVRI.75160159.14": "{{i18n: RSVRI.75160159.14}}",
+		"RSVRI.75160159.15": "{{i18n: RSVRI.75160159.15}}",
+		"RSVRI.75160159.16": "{{i18n: RSVRI.75160159.16}}",
+		"RSVRI.75160159.17": "{{i18n: RSVRI.75160159.17}}",
+		"RSVRI.75160159.18": "{{i18n: RSVRI.75160159.18}}",
+		"RSVRI.75160159.19": "{{i18n: RSVRI.75160159.19}}",
+		"RSVRI.75160159.20": "{{i18n: RSVRI.75160159.20}}",
+		"RSVRI.75160159.21": "{{i18n: RSVRI.75160159.21}}",
+		"RSVRI.75160159.22": "{{i18n: RSVRI.75160159.22}}",
+		"RSVRI.75160159.23": "{{i18n: RSVRI.75160159.23}}",
+		"RSVRI.75160159.24": "{{i18n: RSVRI.75160159.24}}",
+		"RSVRI.75160159.25": "{{i18n: RSVRI.75160159.25}}",
+		"RSVRI.75160159.26": "{{i18n: RSVRI.75160159.26}}",
+
+		"RSVRI.75160074.01": "{{i18n: RSVRI.75160074.01}}",
+		"RSVRI.75160074.02": "{{i18n: RSVRI.75160074.02}}",
+		"RSVRI.75160074.03": "{{i18n: RSVRI.75160074.03}}",
+		"RSVRI.75160074.04": "{{i18n: RSVRI.75160074.04}}",
+		"RSVRI.75160074.05": "{{i18n: RSVRI.75160074.05}}",
+		"RSVRI.75160074.06": "{{i18n: RSVRI.75160074.06}}",
+		"RSVRI.75160074.07": "{{i18n: RSVRI.75160074.07}}",
+		"RSVRI.75160074.08": "{{i18n: RSVRI.75160074.08}}",
+		"RSVRI.75160074.09": "{{i18n: RSVRI.75160074.09}}",
+		"RSVRI.75160074.10": "{{i18n: RSVRI.75160074.10}}",
+		"RSVRI.75160074.11": "{{i18n: RSVRI.75160074.11}}",
+		"RSVRI.75160074.12": "{{i18n: RSVRI.75160074.12}}",
+		"RSVRI.75160074.13": "{{i18n: RSVRI.75160074.13}}",
+		"RSVRI.75160074.14": "{{i18n: RSVRI.75160074.14}}",
+		"RSVRI.75160074.15": "{{i18n: RSVRI.75160074.15}}",
+		"RSVRI.75160074.16": "{{i18n: RSVRI.75160074.16}}",
+		"RSVRI.75160074.17": "{{i18n: RSVRI.75160074.17}}",
+		"RSVRI.75160074.18": "{{i18n: RSVRI.75160074.18}}",
+		"RSVRI.75160074.19": "{{i18n: RSVRI.75160074.19}}",
+		"RSVRI.75160074.20": "{{i18n: RSVRI.75160074.20}}",
+		"RSVRI.75160074.Fork1": "{{i18n: RSVRI.75160074.Fork1}}",
+		"RSVRI.75160074.FreddieStay.01": "{{i18n: RSVRI.75160074.FreddieStay.01}}",
+		"RSVRI.75160074.FreddieStay.02": "{{i18n: RSVRI.75160074.FreddieStay.02}}",
+		"RSVRI.75160074.FreddieStay.03": "{{i18n: RSVRI.75160074.FreddieStay.03}}",
+
+		"RSVRI.75160342.01": "{{i18n: RSVRI.75160342.01}}",
+		"RSVRI.75160342.02": "{{i18n: RSVRI.75160342.02}}",
+		"RSVRI.75160342.03": "{{i18n: RSVRI.75160342.03}}",
+		"RSVRI.75160342.04": "{{i18n: RSVRI.75160342.04}}",
+		"RSVRI.75160342.05": "{{i18n: RSVRI.75160342.05}}",
+		"RSVRI.75160342.06": "{{i18n: RSVRI.75160342.06}}",
+		"RSVRI.75160342.07": "{{i18n: RSVRI.75160342.07}}",
+		"RSVRI.75160342.08": "{{i18n: RSVRI.75160342.08}}",
+		"RSVRI.75160342.09": "{{i18n: RSVRI.75160342.09}}",
+		"RSVRI.75160342.10": "{{i18n: RSVRI.75160342.10}}",
+		"RSVRI.75160342.11": "{{i18n: RSVRI.75160342.11}}",
+		"RSVRI.75160342.12": "{{i18n: RSVRI.75160342.12}}",
+		"RSVRI.75160342.13": "{{i18n: RSVRI.75160342.13}}",
+		"RSVRI.75160342.14": "{{i18n: RSVRI.75160342.14}}",
+		"RSVRI.75160342.15": "{{i18n: RSVRI.75160342.15}}",
+		"RSVRI.75160342.16": "{{i18n: RSVRI.75160342.16}}",
+		"RSVRI.75160342.17": "{{i18n: RSVRI.75160342.17}}",
+		"RSVRI.75160342.18": "{{i18n: RSVRI.75160342.18}}",
+		"RSVRI.75160342.19": "{{i18n: RSVRI.75160342.19}}",
+
+		"RSVRI.75160440.01": "{{i18n: RSVRI.75160440.01}}",
+		"RSVRI.75160440.02": "{{i18n: RSVRI.75160440.02}}",
+		"RSVRI.75160440.03": "{{i18n: RSVRI.75160440.03}}",
+		"RSVRI.75160440.04": "{{i18n: RSVRI.75160440.04}}",
+		"RSVRI.75160440.05": "{{i18n: RSVRI.75160440.05}}",
+		"RSVRI.75160440.06": "{{i18n: RSVRI.75160440.06}}",
+		"RSVRI.75160440.07": "{{i18n: RSVRI.75160440.07}}",
+		"RSVRI.75160440.08": "{{i18n: RSVRI.75160440.08}}",
+		"RSVRI.75160440.09": "{{i18n: RSVRI.75160440.09}}",
+		"RSVRI.75160440.10": "{{i18n: RSVRI.75160440.10}}",
+		"RSVRI.75160440.11": "{{i18n: RSVRI.75160440.11}}",
+		"RSVRI.75160440.12": "{{i18n: RSVRI.75160440.12}}",
+		"RSVRI.75160440.13": "{{i18n: RSVRI.75160440.13}}",
+		"RSVRI.75160440.14": "{{i18n: RSVRI.75160440.14}}",
+		"RSVRI.75160440.15": "{{i18n: RSVRI.75160440.15}}",
+		"RSVRI.75160440.16": "{{i18n: RSVRI.75160440.16}}",
+		"RSVRI.75160440.17": "{{i18n: RSVRI.75160440.17}}",
+		"RSVRI.75160440.18": "{{i18n: RSVRI.75160440.18}}",
+		"RSVRI.75160440.19": "{{i18n: RSVRI.75160440.19}}",
+		"RSVRI.75160440.20": "{{i18n: RSVRI.75160440.20}}",
+		"RSVRI.75160440.21": "{{i18n: RSVRI.75160440.21}}",
+		"RSVRI.75160440.22": "{{i18n: RSVRI.75160440.22}}",
+		"RSVRI.75160440.23": "{{i18n: RSVRI.75160440.23}}",
+		"RSVRI.75160440.24": "{{i18n: RSVRI.75160440.24}}",
+		"RSVRI.75160440.25": "{{i18n: RSVRI.75160440.25}}",
+		"RSVRI.75160440.26": "{{i18n: RSVRI.75160440.26}}",
+		"RSVRI.75160440.27": "{{i18n: RSVRI.75160440.27}}",
+		"RSVRI.75160440.28": "{{i18n: RSVRI.75160440.28}}",
+		"RSVRI.75160440.29": "{{i18n: RSVRI.75160440.29}}",
+		"RSVRI.75160440.30": "{{i18n: RSVRI.75160440.30}}",
+		"RSVRI.75160440.31": "{{i18n: RSVRI.75160440.31}}",
+		"RSVRI.75160440.32": "{{i18n: RSVRI.75160440.32}}",
+		"RSVRI.75160440.33": "{{i18n: RSVRI.75160440.33}}",
+		"RSVRI.75160440.34": "{{i18n: RSVRI.75160440.34}}",
+		"RSVRI.75160440.35": "{{i18n: RSVRI.75160440.35}}",
+		"RSVRI.75160440.36": "{{i18n: RSVRI.75160440.36}}",
+
+		"RSVRI.75160440.alt.01": "{{i18n: RSVRI.75160440.alt.01}}",
+		"RSVRI.75160440.alt.02": "{{i18n: RSVRI.75160440.alt.02}}",
+		"RSVRI.75160440.alt.03": "{{i18n: RSVRI.75160440.alt.03}}",
+		"RSVRI.75160440.alt.04": "{{i18n: RSVRI.75160440.alt.04}}",
+		"RSVRI.75160440.alt.05": "{{i18n: RSVRI.75160440.alt.05}}",
+		"RSVRI.75160440.alt.06": "{{i18n: RSVRI.75160440.alt.06}}",
+		"RSVRI.75160440.alt.07": "{{i18n: RSVRI.75160440.alt.07}}",
+		"RSVRI.75160440.alt.08": "{{i18n: RSVRI.75160440.alt.08}}",
+		"RSVRI.75160440.alt.09": "{{i18n: RSVRI.75160440.alt.09}}",
+		"RSVRI.75160440.alt.10": "{{i18n: RSVRI.75160440.alt.10}}",
+		"RSVRI.75160440.alt.11": "{{i18n: RSVRI.75160440.alt.11}}",
+		"RSVRI.75160440.alt.12": "{{i18n: RSVRI.75160440.alt.12}}",
+		"RSVRI.75160440.alt.13": "{{i18n: RSVRI.75160440.alt.13}}",
+		"RSVRI.75160440.alt.14": "{{i18n: RSVRI.75160440.alt.14}}",
+		"RSVRI.75160440.alt.15": "{{i18n: RSVRI.75160440.alt.15}}",
+		"RSVRI.75160440.alt.16": "{{i18n: RSVRI.75160440.alt.16}}",
+		"RSVRI.75160440.alt.17": "{{i18n: RSVRI.75160440.alt.17}}",
+		"RSVRI.75160440.alt.18": "{{i18n: RSVRI.75160440.alt.18}}",
+		"RSVRI.75160440.alt.19": "{{i18n: RSVRI.75160440.alt.19}}",
+		"RSVRI.75160440.alt.20": "{{i18n: RSVRI.75160440.alt.20}}",
+		"RSVRI.75160440.alt.21": "{{i18n: RSVRI.75160440.alt.21}}",
+		"RSVRI.75160440.alt.22": "{{i18n: RSVRI.75160440.alt.22}}",
+		"RSVRI.75160440.alt.23": "{{i18n: RSVRI.75160440.alt.23}}",
+		"RSVRI.75160440.alt.24": "{{i18n: RSVRI.75160440.alt.24}}",
+		"RSVRI.75160440.alt.25": "{{i18n: RSVRI.75160440.alt.25}}",
+		"RSVRI.75160440.alt.26": "{{i18n: RSVRI.75160440.alt.26}}",
+		"RSVRI.75160440.alt.27": "{{i18n: RSVRI.75160440.alt.27}}",
+		"RSVRI.75160440.alt.28": "{{i18n: RSVRI.75160440.alt.28}}",
+		"RSVRI.75160440.alt.29": "{{i18n: RSVRI.75160440.alt.29}}",
+		"RSVRI.75160440.alt.30": "{{i18n: RSVRI.75160440.alt.30}}",
+		"RSVRI.75160440.alt.31": "{{i18n: RSVRI.75160440.alt.31}}",
+		"RSVRI.75160440.alt.32": "{{i18n: RSVRI.75160440.alt.32}}",
+		"RSVRI.75160440.alt.33": "{{i18n: RSVRI.75160440.alt.33}}",
+		"RSVRI.75160440.alt.34": "{{i18n: RSVRI.75160440.alt.34}}",
+		"RSVRI.75160440.alt.35": "{{i18n: RSVRI.75160440.alt.35}}",
+		"RSVRI.75160440.alt.36": "{{i18n: RSVRI.75160440.alt.36}}",
+		"RSVRI.75160440.alt.37": "{{i18n: RSVRI.75160440.alt.37}}",
+		"RSVRI.75160440.alt.38": "{{i18n: RSVRI.75160440.alt.38}}",
+		"RSVRI.75160440.alt.39": "{{i18n: RSVRI.75160440.alt.39}}",
+		"RSVRI.75160440.alt.40": "{{i18n: RSVRI.75160440.alt.40}}",
+		"RSVRI.75160440.alt.41": "{{i18n: RSVRI.75160440.alt.41}}",
+		"RSVRI.75160440.alt.42": "{{i18n: RSVRI.75160440.alt.42}}",
+		
+		"RSVRI.75160451.01": "{{i18n: RSVRI.75160451.01}}",
+		"RSVRI.75160451.02": "{{i18n: RSVRI.75160451.02}}",
+		"RSVRI.75160451.03": "{{i18n: RSVRI.75160451.03}}",
+		"RSVRI.75160451.04": "{{i18n: RSVRI.75160451.04}}",
+		"RSVRI.75160451.05": "{{i18n: RSVRI.75160451.05}}",
+		"RSVRI.75160451.06": "{{i18n: RSVRI.75160451.06}}",
+		"RSVRI.75160451.07": "{{i18n: RSVRI.75160451.07}}",
+		"RSVRI.75160451.08": "{{i18n: RSVRI.75160451.08}}",
+		"RSVRI.75160451.09": "{{i18n: RSVRI.75160451.09}}",
+		"RSVRI.75160451.10": "{{i18n: RSVRI.75160451.10}}",
+		"RSVRI.75160451.11": "{{i18n: RSVRI.75160451.11}}",
+		"RSVRI.75160451.12": "{{i18n: RSVRI.75160451.12}}",
+		"RSVRI.75160451.13": "{{i18n: RSVRI.75160451.13}}",
+		"RSVRI.75160451.14": "{{i18n: RSVRI.75160451.14}}",
+		"RSVRI.75160451.15": "{{i18n: RSVRI.75160451.15}}",
+		"RSVRI.75160451.16": "{{i18n: RSVRI.75160451.16}}",
+		"RSVRI.75160451.17": "{{i18n: RSVRI.75160451.17}}",
+		"RSVRI.75160451.18": "{{i18n: RSVRI.75160451.18}}",
+		"RSVRI.75160451.19": "{{i18n: RSVRI.75160451.19}}",
+		"RSVRI.75160451.20": "{{i18n: RSVRI.75160451.20}}",
+		"RSVRI.75160451.Bryle4AnswerYes.01": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.01}}",
+		"RSVRI.75160451.Bryle4AnswerYes.02": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.02}}",
+		"RSVRI.75160451.Bryle4AnswerYes.03": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.03}}",
+		"RSVRI.75160451.Bryle4AnswerYes.04": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.04}}",
+		"RSVRI.75160451.Bryle4AnswerYes.05": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.05}}",
+		"RSVRI.75160451.Bryle4AnswerYes.06": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.06}}",
+		"RSVRI.75160451.Bryle4AnswerYes.07": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.07}}",
+		"RSVRI.75160451.Bryle4AnswerYes.08": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.08}}",
+		"RSVRI.75160451.Bryle4AnswerYes.09": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.09}}",
+		"RSVRI.75160451.Bryle4AnswerYes.10": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.10}}",
+		"RSVRI.75160451.Bryle4AnswerYes.11": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.11}}",
+		"RSVRI.75160451.Bryle4AnswerYes.12": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.12}}",
+		"RSVRI.75160451.Bryle4AnswerYes.13": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.13}}",
+		"RSVRI.75160451.Bryle4AnswerYes.14": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.14}}",
+		"RSVRI.75160451.Bryle4AnswerYes.15": "{{i18n: RSVRI.75160451.Bryle4AnswerYes.15}}"
+
+		}
+	}]
+}

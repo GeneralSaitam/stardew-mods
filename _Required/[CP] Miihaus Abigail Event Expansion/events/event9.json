@@ -1,0 +1,124 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "18657009/F/f Abigail 2250/n AbigailCampingInvite/t 2200 2600/e 18657008":"spaceMusic/
+                22 24/
+                Abigail 19 23 2 farmer 23 19 2 Wizard 6 18 1/
+                skippable/
+                addTemporaryActor abigailFire 16 32 19 24 2 true/
+                addTemporaryActor abigailTent 48 80 20 21 2 false/
+                move farmer 0 4 3/
+                move farmer -3 0 3/
+                faceDirection Abigail 1/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.001}}\"/
+                pause 200/
+                faceDirection Abigail 2/
+                playSound clank/
+                showFrame abigailFire 1/
+                addLantern 23 19 24 2/
+                playSound fireball/
+                pause 500/
+                playSound cracklingFire/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.002}}\"/
+                pause 700/
+                faceDirection Abigail 1/
+                pause 300/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.003}}\"/
+                faceDirection Abigail 2/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.004}}\"/
+                faceDirection Abigail 1/
+                pause 300/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.005}}\"/
+                emote Abigail 32/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.006}}\"/
+                pause 700/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.007}}\"/
+                emote farmer 8/
+                pause 300/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.008}}\"/
+                pause 400/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.009}}\"/
+                pause 200/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.010}}\"/
+                pause 200/
+                emote Abigail 20/
+                pause 200/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.011}}\"/
+                pause 200/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.012}}\"/
+                globalFade 0.011/
+                viewport -1000 -1000/
+                pause 600/
+                message \"{{i18n:Miihau.AbigailEE.event9.013}}\"/
+                warp Abigail 20 23/
+                warp farmer 21 23/
+                positionOffset farmer 0 20/
+                pause 200/
+                globalFadeToClear 0.009 true/
+                viewport 22 24/
+                pause 1200/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.014}}\"/
+                pause 1000/
+                emote Abigail 40/
+                pause 400/
+                message \"{{i18n:Miihau.AbigailEE.event9.015}}\"/
+                pause 500/
+                question fork1 \"{{i18n:Miihau.AbigailEE.event9.016}}\" /
+                fork 9H_Abi_Ending/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.017}}\"/
+                fork 9H_Abi_Ending/
+                end",
+                "9H_Abi_Ending":"pause 400/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.018}}\"/
+                pause 200/
+                emote farmer 32/
+                pause 300/
+                advancedMove Abigail false 1 0 0 -1 4 1000/
+                move farmer 0 -1 0/
+                playSound slime/
+                warp farmer -300 -300/
+                pause 600/
+                playSound slime/
+                warp Abigail -250 -300/
+                pause 400/
+                shake abigailTent 3450/
+                pause 300/
+                playSound toolSwap/
+                pause 800/
+                playSound breathin/
+                pause 1000/
+                playSound slime/
+                pause 1400/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.019}}\"/
+                pause 900/
+                playSound slime/
+                pause 500/
+                playSound slime/
+                pause 500/
+                playSound slime/
+                pause 700/
+                message \"{{i18n:Miihau.AbigailEE.event9.020}}\"/
+                pause 800/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event9.021}}\"/
+                globalFade 0.007/
+                viewport -1000 -1000/
+                pause 600/
+                message \"{{i18n:Miihau.AbigailEE.event9.022}}\"/
+                addConversationTopic abigailTentLove 2/
+                pause 1500/
+                end newDay"
+            }
+        },    
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Abigail",
+            "Entries":{
+                "abigailTentLove":"{{i18n:Miihau.AbigailEE.event9.023}}",
+            }
+        },    
+    
+    ]
+}

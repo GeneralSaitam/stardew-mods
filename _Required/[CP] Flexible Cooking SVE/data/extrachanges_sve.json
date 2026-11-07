@@ -1,0 +1,72 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+			"When": {
+				"Extra Changes": true,
+				"HasMod|contains=blueberry.LoveOfCooking.CP": true
+			},
+			"Entries": {
+				"Chocolate Truffle Bar": {
+					"ProductQualifiedId": "(O)FlashShifter.StardewValleyExpandedCP_Chocolate_Truffle_Bar",
+					"ProductAmount": 1,
+					"Ingredients": [
+						{
+							"Type": "ContextTag",
+							"Value": "hazelnut_item",
+							"Amount": 1,
+							"OverrideText": "[LocalizedText 6480.flexiblecooking/i18n:Indicator [EscapedText [LocalizedText Strings/Objects:Hazelnut_Name]]]",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 0,
+								"Y": 272,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "truffle_item",
+							"Amount": 1,
+							"OverrideText": "[LocalizedText 6480.flexiblecooking/i18n:Indicator [EscapedText [LocalizedText Strings/Objects:Truffle_Name]]]",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 352,
+								"Y": 272,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "category_milk",
+							"Amount": 1,
+							"OverrideText": "[LocalizedText 6480.flexiblecooking/i18n:Ingredient_MilkAny]",
+							"OverrideTexturePath": "Maps/springobjects",
+							"OverrideTextureRect": {
+								"X": 256,
+								"Y": 112,
+								"Width": 16,
+								"Height": 16
+							}
+						},
+						{
+							"Type": "ContextTag",
+							"Value": "chocolate_item",
+							"Amount": 1,
+							"OverrideText": "[LocalizedText 6480.flexiblecooking/i18n:Indicator [EscapedText [LocalizedText Mods\\blueberry.LoveOfCooking.Assets\\Strings:item.chocolate.name]]]",
+							"OverrideTexturePath": "Mods\\blueberry.LoveOfCooking.Assets//ObjectSprites",
+							"OverrideTextureRect": {
+								"X": 48,
+								"Y": 16,
+								"Width": 16,
+								"Height": 16
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

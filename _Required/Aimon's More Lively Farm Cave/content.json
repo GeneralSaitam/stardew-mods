@@ -1,0 +1,485 @@
+{
+    "Format": "2.8.0",
+	
+    "ConfigSchema": { 
+	
+		"Farmcave Recolor": { 
+	"AllowValues": "Undeground, Lush, Frost, Sea, Desert, Quarry, Volcano, Mushroom, Slime",
+		"Default": "Lush",
+		"Description": "Changes the look of farmcave walls and ground.",
+			},
+	"Swim in Farmcave pond": { 
+	"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Toggles pool entrance tiles in FarmCave bridge. Set this to false if you have Swim mod installed.",
+			},
+		"Bridge": { 
+	"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Adds wooden bridge across the farmcave pond.",
+			},
+			"Dynamic Lightrays": { 
+	"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Toggles animated lightrays in farmcave if MMAP is installed.",
+			},
+	"Fireflies": { 
+	"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Toggles fireflies spawn in farmcave if MMAP is installed.",
+			},
+			"Minecart": { 
+	"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Adds minecart into farmcave which is connected to vanilla minecarts system.",
+			},
+	},
+			
+ "DynamicTokens": [
+
+
+ {
+         "Name": "Recolor",
+         "Value": "lush",
+	    "When": { "FarmCave Recolor": "Lush", },
+	 },	
+	 {
+         "Name": "Recolor",
+         "Value": "frost",
+	    "When": { "FarmCave Recolor": "Frost", },
+	 },	 
+	 	 {
+         "Name": "Recolor",
+         "Value": "undeground",
+	    "When": { "FarmCave Recolor": "Undeground", },
+	 },	
+	 {
+         "Name": "Recolor",
+         "Value": "sea",
+	    "When": { "FarmCave Recolor": "Sea", },
+	 },	
+	  {
+         "Name": "Recolor",
+         "Value": "desert",
+	    "When": { "FarmCave Recolor": "Desert", },
+	 },
+	   {
+         "Name": "Recolor",
+         "Value": "quarry",
+	    "When": { "FarmCave Recolor": "Quarry", },
+	 },
+	    {
+         "Name": "Recolor",
+         "Value": "mushroom",
+	    "When": { "FarmCave Recolor": "Mushroom", },
+	 },
+	   {
+         "Name": "Recolor",
+         "Value": "slime",
+	    "When": { "FarmCave Recolor": "Slime", },
+	 },
+	   {
+         "Name": "Recolor",
+         "Value": "lava",
+	    "When": { "FarmCave Recolor": "Volcano", },
+	 },
+	 
+],  
+
+    "Changes": [
+	
+	
+
+	
+//TILESHEETS
+
+	{
+            "Action": "Load",
+            "Target": "Maps/z_aimon_minefix1, Maps/z_aimon_minefix2, Maps/z_aimon_minefix3",
+            "FromFile": "assets/Tilesheets/{{TargetWithoutPath}}.png",
+        },
+
+		
+	//farmcave
+		{
+            "Action": "Load",
+            "Target": "Maps/FarmCave",
+            "FromFile": "assets/Aimon_FarmCave_lush.tmx",
+	
+        },
+	{
+            "Action": "EditMap",
+            "Target": "Maps/FarmCave",
+            "FromFile": "assets/Aimon_FarmCave_{{Recolor}}.tmx",
+	
+        },
+
+
+		
+		
+{             "Action": "EditMap",
+            "Target": "Maps/FarmCave",
+		"FromFile": "assets/Aimon_FarmCave_Bridge.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 2},
+		 "ToArea":{ "X": 15, "Y":6, "Width": 5, "Height": 2 },
+		 "PatchMode": "Overlay",
+			"When": { "Bridge": false,   },
+					
+        },
+		{             "Action": "EditMap",
+            "Target": "Maps/FarmCave",
+		"FromFile": "assets/Aimon_FarmCave_Bridge.tmx",
+		 "FromArea": { "X": 0, "Y": 3, "Width": 3, "Height": 2},
+		 "ToArea":{ "X": 15, "Y":8, "Width": 3, "Height": 2 },
+		 "PatchMode": "Overlay",
+			"When": { "Bridge": true,  "Farmcave Recolor |contains=Volcano": false,  },
+					
+        },
+		{             "Action": "EditMap",
+            "Target": "Maps/FarmCave",
+		"FromFile": "assets/Aimon_FarmCave_Bridge_lava.tmx",
+		 "FromArea": { "X": 0, "Y": 3, "Width": 3, "Height": 2},
+		 "ToArea":{ "X": 15, "Y":8, "Width": 3, "Height": 2 },
+		 "PatchMode": "Overlay",
+			"When": { "Bridge": true,  "Farmcave Recolor |contains=Volcano": true,  },
+					
+        },
+		
+		
+		{             "Action": "EditMap",
+            "Target": "Maps/FarmCave",
+		"FromFile": "assets/Aimon_FarmCave_Swimtiles.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 3},
+		 "ToArea":{ "X": 14, "Y":8, "Width": 1, "Height": 3 },
+		 "PatchMode": "Overlay",
+			"When": { "Swim in FarmCave Pond": true,   },
+					
+        },	
+//mmap 
+//lightrays
+
+	{
+       "Action": "EditMap",
+          "Target": "Maps/FarmCave",
+"When": { "Dynamic Lightrays": true, "HasMod |contains=mushymato.MMAP":  true,  },		
+	"MapProperties": {
+         "mushymato.MMAP_LightRays": "T"
+		}
+},
+//fireflies
+	{
+      "Action": "EditMap",
+      "Target": "Maps/FarmCave",
+	   "When": { "HasMod |contains=mushymato.MMAP":  true, "Fireflies": true,   },
+      "MapTiles": [
+        {
+          "Position": {     "X": 3,    "Y": 7 },	
+	  "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly White 2"
+          }	
+		},
+		 {
+          "Position": {     "X":9,    "Y": 10 },	
+	  "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly White 2"
+          }	
+		},
+		 {
+          "Position": {     "X":15,    "Y": 5 },	
+	  "Layer": "Back",
+          "SetProperties": {
+            "mushymato.MMAP_Critter": "Firefly White 3"
+         }
+        },
+      ]
+    },
+	//polycarts fix
+{             "Action": "EditMap",
+           "Target": "Maps/FarmCave",
+		"FromFile": "assets/Aimon_FarmCave_{{Recolor}}.tmx",
+		 "FromArea": { "X": 1, "Y": 1, "Width": 4, "Height": 8},
+		 "ToArea":{ "X": 1, "Y": 1, "Width":4, "Height": 8 },
+		 "PatchMode": "Replace",
+			"When": { "HasMod": "Polydot.PolyCarts",   },
+					
+       },
+//minecart
+{             "Action": "EditMap",
+            "Target": "Maps/FarmCave",
+		"FromFile": "assets/Aimon_FarmCave_minecart.tmx",
+		 "FromArea": { "X": 0, "Y": 0, "Width": 4, "Height": 5},
+		 "ToArea":{ "X": 2, "Y": 2, "Width":4, "Height": 5 },
+		 "PatchMode": "Overlay",
+			"When": { "Minecart": true,   },
+					
+        },
+
+		
+	
+//farmcave location
+
+{
+    "Action": "EditData",
+    "Target": "Data/Locations",
+    "TargetField": [ "FarmCave", "Fish" ],
+
+	"Entries": {
+
+		 "FarmCavePond": {
+
+        "Chance": 0.4,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": false,
+        "CuriosityLureBuff": -1.0,
+        "CatchLimit": -1,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": 0,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": 0,
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)153",
+        "ItemId": "(O)153",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": 0,
+        "QualityModifiers": null,
+        "QualityModifierMode": 0,
+        "ModData": null,
+        "PerItemCondition": null
+      },
+       "FarmCavePond1": {
+        "Chance": 0.7,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": false,
+        "CuriosityLureBuff": -1.0,
+        "CatchLimit": -1,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": 0,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": 0,
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)156",
+        "ItemId": "(O)156",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": 0,
+        "QualityModifiers": null,
+        "QualityModifierMode": 0,
+        "ModData": null,
+        "PerItemCondition": null
+      },
+	     "FarmCavePondCarps": {
+        "Chance": 0.8,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": false,
+        "CuriosityLureBuff": -1.0,
+        "CatchLimit": -1,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": 0,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": 0,
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)142",
+        "ItemId": "(O)142",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": 0,
+        "QualityModifiers": null,
+        "QualityModifierMode": 0,
+        "ModData": null,
+        "PerItemCondition": null
+      },
+       "FarmCavePond2": {
+        "Chance": 0.5,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": false,
+        "CuriosityLureBuff": -1.0,
+        "CatchLimit": -1,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": 0,
+        "IgnoreFishDataRequirements": false,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": 0,
+        "ChanceBoostPerLuckLevel": 0.0,
+        "UseFishCaughtSeededRandom": false,
+        "Condition": null,
+        "Id": "(O)157",
+        "ItemId": "(O)157",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": 0,
+        "QualityModifiers": null,
+        "QualityModifierMode": 0,
+        "ModData": null,
+        "PerItemCondition": null
+      },
+       "FarmCavePond3": {
+        "Chance": 0.1,
+        "Season": null,
+        "FishAreaId": null,
+        "BobberPosition": null,
+        "PlayerPosition": null,
+        "MinFishingLevel": 0,
+        "MinDistanceFromShore": 0,
+        "MaxDistanceFromShore": -1,
+        "ApplyDailyLuck": false,
+        "CuriosityLureBuff": -1.0,
+        "CatchLimit": -1,
+        "IsBossFish": false,
+        "SetFlagOnCatch": null,
+        "RequireMagicBait": false,
+        "Precedence": 0,
+        "IgnoreFishDataRequirements": true,
+        "CanBeInherited": true,
+        "ChanceModifiers": null,
+        "ChanceModifierMode": 0,
+        "ChanceBoostPerLuckLevel": 0.05,
+        "UseFishCaughtSeededRandom": true,
+        "Condition": null,
+        "Id": "(O)CaveJelly",
+        "ItemId": "(O)CaveJelly",
+        "RandomItemId": null,
+        "MaxItems": null,
+        "MinStack": -1,
+        "MaxStack": -1,
+        "Quality": -1,
+        "ObjectInternalName": null,
+        "ObjectDisplayName": null,
+        "ToolUpgradeLevel": -1,
+        "IsRecipe": false,
+        "StackModifiers": null,
+        "StackModifierMode": 0,
+        "QualityModifiers": null,
+        "QualityModifierMode": 0,
+        "ModData": null,
+        "PerItemCondition": null
+   
+      
+    
+		},
+	},
+},
+
+
+
+//box relocation
+
+ {
+      "LogName": "Modify mushroom boxes",
+      "Action": "EditData",
+      "Target": "Mods/Pillow.MushroomBoxLocationFramework/Boxes",
+	 "When": { "HasMod": "Pillow.MushroomBoxLocationFramework",   },
+      "Entries": {
+        "5,4": false,
+	 "5,6": false,	
+		 "5,8": false,
+		 
+		 "4,5": false,
+	 "6,5": false,	
+		 "8,5": false,
+		 //
+       "9,4": true,
+	 "9,6": true,	
+		 "9,8": true,
+      }
+    },
+	
+	{
+			"Action": "EditData",
+			"Target": "Data/Minecarts",
+			"When": {
+				"Minecart": true,	
+			},
+			"TargetField": ["Default", "Destinations"],
+			"Entries": {
+				"Farm Cave": {
+					"Id": "Aimon.FarmCave",
+					"DisplayName": "Farmcave",
+					"TargetLocation": "Farmcave",
+					"TargetTile": { "X": 3, "Y": 6 },
+					"TargetDirection": "down"
+				}
+			}
+		},
+
+    ]
+}

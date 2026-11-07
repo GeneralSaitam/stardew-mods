@@ -1,0 +1,102 @@
+{
+
+   "Changes": [
+
+	{
+	 "Action": "EditData",
+	 "Target": "Data/SpecialOrders",
+		"Entries": {
+		   "Juna": {
+    		   "Name": "[Juna_Name]",
+    		   "Requester": "Juna",
+    		   "Duration": "Week",
+    		   "Repeatable": "False",
+    		   "RequiredTags": "mail_WizardReward2, event_86060004, mail_openedSewer",
+    		   "OrderType": "",
+    		   "SpecialRule": "",
+    		   "Text": "[Juna_Text]",
+    		   "ItemToRemoveOnEnd": null,
+    		   "MailToRemoveOnEnd": null,
+    		   "RandomizedElements": null,
+    		   "Objectives": [
+      			{
+        		"Type": "Deliver",
+        		"Text": "[Juna_Objective_0_Text]",
+        		"RequiredCount": "1",
+        			"Data": {
+          			"AcceptedContextTags": "item_monster_musk",
+          			"TargetName": "Juna"
+        			}
+      			},
+			{
+        		"Type": "Deliver",
+        		"Text": "[Juna_Objective_1_Text]",
+        		"RequiredCount": "1",
+        			"Data": {
+          			"AcceptedContextTags": "item_energy_tonic",
+          			"TargetName": "Juna"
+        			}
+      			},
+			{
+        		"Type": "Deliver",
+        		"Text": "[Juna_Objective_2_Text]",
+        		"RequiredCount": "20",
+        			"Data": {
+          			"AcceptedContextTags": "item_sap",
+          			"TargetName": "Juna"
+        			}
+      			},
+			{
+        		"Type": "Deliver",
+        		"Text": "[Juna_Objective_3_Text]",
+        		"RequiredCount": "5",
+        			"Data": {
+          			"AcceptedContextTags": "item_bug_meat",
+          			"TargetName": "Juna"
+        			}
+      			},
+			{
+        		"Type": "Deliver",
+        		"Text": "[Juna_Objective_4_Text]",
+        		"RequiredCount": "1",
+        			"Data": {
+          			"AcceptedContextTags": "item_oil_of_garlic",
+          			"TargetName": "Juna"
+        			}
+      			},
+			{
+        		"Type": "Deliver",
+        		"Text": "[Juna_Objective_5_Text]",
+        		"RequiredCount": "1",
+        			"Data": {
+          			"AcceptedContextTags": "item_strange_bun",
+          			"TargetName": "Juna"
+        			}
+      			}
+       		   ],
+    		   "Rewards": [
+      			{
+        		"Type": "Money",
+        			"Data": {
+          			"Amount": "3000"
+        			}
+      			},
+      			{
+        		"Type": "Friendship",
+        			"Data": {}
+      			},
+      			{
+        		"Type": "Mail",
+        			"Data": {
+          			"MailReceived": "JunaPotion",
+					"NoLetter": "false"  
+        			}
+      			}
+    		   ]
+		   }
+		}
+	}
+
+   ]
+
+}

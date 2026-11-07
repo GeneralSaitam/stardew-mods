@@ -1,0 +1,52 @@
+{
+    "Format": "2.9.0",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "aedenthorn.PetBed/dict",
+            "Entries": {
+                "CatTree": {
+					"X": 12,
+					"Y": -76,
+					"WakeX": 0,
+					"WakeY": 1,
+					"PetTypes": "Cat"
+				},
+                "DarkCatTree": {
+					"X": 12,
+					"Y": -76,
+					"WakeX": 0,
+					"WakeY": 1,
+					"PetTypes": "Cat"
+				},
+                "Doghouse": {
+					"X": 12,
+					"Y": 20,
+					"WakeX": 1,
+					"WakeY": 1,
+					"PetTypes": "Dog",
+					"CanFlip": false,
+					"FrontTexture": "{{ModId}}/DogHouseFront"
+				},
+                "DarkDoghouse": {
+					"X": 12,
+					"Y": 20,
+					"WakeX": 1,
+					"WakeY": 1,
+					"PetTypes": "Dog",
+					"FrontTexture": "{{ModId}}/DarkDogHouseFront"
+				}
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/DogHouseFront",
+            "FromFile": "assets/DogHouseFront.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "{{ModId}}/DarkDogHouseFront",
+            "FromFile": "assets/DarkDogHouseFront.png"
+        }
+	]
+}

@@ -1,0 +1,205 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+			"Target": "Data/Shops",
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "709": {
+                    "Id": 709,
+                    "ItemId": 709,
+                    "Price": 1000,
+                },
+                "330": {
+                    "Id": 330,
+                    "ItemId": 330,
+                    "Price": 200,
+                }
+            },
+            "MoveEntries": [
+                { "Id": "709", "BeforeId": "(O)390" },
+                { "Id": "330", "BeforeId": "(O)390" }
+            ],
+            "When": {
+                "jeWel.MoreBooksCode/ConfigCarpenterCatalogueRead": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditData",
+			"Target": "Data/Shops",
+            "Fields": {
+                "Carpenter": {
+                    "PriceModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "Amount": 0.9
+                        }
+                    ],
+                }
+            },
+            "When": {
+                "jeWel.MoreBooksCode/ConfigCarpenterCatalogueRead": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditData",
+			"Target": "Data/Shops",
+            "TargetField": [
+                "Blacksmith",
+                "Items"
+            ],
+            "Entries": {
+                "386": {
+                    "Id": 386,
+                    "ItemId": 386,
+                    "Price": 1000,
+                }
+            },
+            "When": {
+                "jeWel.MoreBooksCode/ConfigOreCatalogueRead": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditData",
+			"Target": "Data/Shops",
+            "Fields": {
+                "Blacksmith": {
+                    "PriceModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "Amount": 0.9
+                        }
+                    ],
+                }
+            },
+            "When": {
+                "jeWel.MoreBooksCode/ConfigOreCatalogueRead": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Fields": {
+                "789": {
+                    "Type": "Basic",
+                    "Price": 1000
+                }
+            },
+            "When": {
+                "jeWel.MoreBooksCode/ConfigLewisBookRead": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Fields": {
+                "271": {
+                    "Price": 100
+                },
+                "423": {
+                    "Price": 200
+                }
+            },
+            "When": {
+                "jeWel.MoreBooksCode/ConfigRiceBookRead": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Fields": {
+                "16": {"MinDamage": 2, "MaxDamage": 5},
+                "17": {"MinDamage": 3, "MaxDamage": 6},
+                "18": {"MinDamage": 11, "MaxDamage": 18},
+                "19": {"MinDamage": 15, "MaxDamage": 30},
+                "20": {"MinDamage": 5, "MaxDamage": 8},
+                "21": {"MinDamage": 6, "MaxDamage": 15},
+                "22": {"MinDamage": 2, "MaxDamage": 8},
+                "23": {"MinDamage": 45, "MaxDamage": 60},
+                "35": {"MinDamage": 36, "MaxDamage": 45},
+                "40": {"MinDamage": 36, "MaxDamage": 45},
+                "45": {"MinDamage": 36, "MaxDamage": 45},
+                "51": {"MinDamage": 23, "MaxDamage": 39},
+                "56": {"MinDamage": 48, "MaxDamage": 57},
+                "59": {"MinDamage": 60, "MaxDamage": 75},
+                "61": {"MinDamage": 30, "MaxDamage": 54},
+                "64": {"MinDamage": 75, "MaxDamage": 105},
+            },
+            "When": {
+                "jeWel.MoreBooksCode/ConfigDaggerBookRead": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Fields": {
+                "614": {
+                    "Price": 200
+                },
+                "815": {
+                    "Price": 100
+                }
+            },
+            "When": {
+                "jeWel.MoreBooksCode/ConfigGreenTeaBookRead": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Fields": {
+                "184": { "Price": 175 },
+                "186": { "Price": 250 },
+                "424": { "Price": 290 },
+                "426": { "Price": 490 },
+                "436": { "Price": 290 },
+                "438": { "Price": 420 },
+            },
+            "When": {
+                "jeWel.MoreBooksCode/ConfigMilkBookRead": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditData",
+			"Target": "Data/Shops",
+            "TargetField": [
+                "Dwarf",
+                "Items"
+            ],
+            "Fields": {
+                "(O)286": { "Price": 300 },
+                "(O)287": { "Price": 600 },
+                "(O)288": { "Price": 1000 }
+            },
+            "When": {
+                "jeWel.MoreBooksCode/ConfigBombBookRead": true
+            },
+            "Update": "OnTimeChange"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Fields": {
+                "Cherry Bomb": { 0: "378 2 382 1" },
+                "Bomb": { 0: "380 2 382 1" },
+                "Mega Bomb": { 0: "384 2 768 1" },
+            },
+            "When": {
+                "jeWel.MoreBooksCode/ConfigBombBookRead": true
+            },
+            "Update": "OnTimeChange"
+        }
+    ]
+}

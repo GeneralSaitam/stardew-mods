@@ -1,0 +1,137 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_Wizard_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Wizard_Spring, Portraits/Wizard_Summer, Portraits/Wizard_Fall, Portraits/Wizard_Winter, Portraits/Wizard_FlowerDance, Characters/Wizard_Spring, Characters/Wizard_Summer, Characters/Wizard_Fall, Characters/Wizard_Winter, Characters/Wizard_FlowerDance",
+			"FromFile": "assets/{{TargetPathOnly}}/Wizard/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_Wizard_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Wizard_Spring, Characters/Wizard_Summer, Characters/Wizard_Fall, Characters/Wizard_Winter, Characters/Wizard_FlowerDance",
+			"FromFile": "assets/{{TargetPathOnly}}/Wizard/Wizard_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		// NON-SEASONAL HAIR
+		{
+			"LogName": "Apply_WizardSeasonalHair",
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard_Spring, Portraits/Wizard_Summer, Portraits/Wizard_Fall, Portraits/Wizard_Winter, Portraits/Wizard_FlowerDance, Characters/Wizard_Spring, Characters/Wizard_Summer, Characters/Wizard_Fall, Characters/Wizard_Winter, Characters/Wizard_FlowerDance",
+			"FromFile": "assets/{{TargetPathOnly}}/Wizard/Wizard_Hair.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"WizardSeasonalHair": false
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_Wizard_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Wizard",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.WizardSpring": {
+					"Id": "{{ModId}}.WizardSpring",
+					"Portrait": "Portraits/Wizard_Spring",
+					"Sprite": "Characters/Wizard_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.WizardSummer": {
+					"Id": "{{ModId}}.WizardSummer",
+					"Portrait": "Portraits/Wizard_Summer",
+					"Sprite": "Characters/Wizard_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.WizardFall": {
+					"Id": "{{ModId}}.WizardFall",
+					"Portrait": "Portraits/Wizard_Fall",
+					"Sprite": "Characters/Wizard_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.WizardWinter": {
+					"Id": "{{ModId}}.WizardWinter",
+					"Portrait": "Portraits/Wizard_Winter",
+					"Sprite": "Characters/Wizard_Winter",
+					"Season": "winter"
+				},
+				// Festival Outfits
+				"{{ModId}}.WizardFlowerDance": {
+					"Id": "{{ModId}}.WizardFlowerDance",
+					"Portrait": "Portraits/Wizard_FlowerDance",
+					"Sprite": "Characters/Wizard_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				}
+			}
+		},
+		// CALENDAR
+		{
+			"LogName": "Edit_Wizard_Calendar_Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Wizard",
+			"FromFile": "assets/{{Target}}/Wizard_{{Season}}.png"
+		},
+		{
+			"LogName": "Add_Wizard_Calendar_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Wizard",
+			"FromFile": "assets/{{Target}}/Wizard_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Apply_WizardSeasonalHair_Calendar",
+			"Action": "EditImage",
+			"Target": "Characters/Wizard",
+			"FromFile": "assets/{{Target}}/Wizard_Hair.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"WizardSeasonalHair": false
+			}
+		},
+		// MISCELLANEOUS
+		{
+			"LogName": "Wizard_Credits_Cutscene",
+			"Action": "EditImage",
+			"Target": "Characters/KrobusRaven",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+			"FromArea": { "X": 0, "Y": 64, "Width": 128, "Height": 39 },
+			"ToArea": { "X": 0, "Y": 64, "Width": 128, "Height": 39 }
+		},
+		{
+			"LogName": "Wizard_Credits_Cutscene_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/KrobusRaven",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X": 0, "Y": 64, "Width": 128, "Height": 39 },
+			"ToArea": { "X": 0, "Y": 64, "Width": 128, "Height": 39 },
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Wizard_Credits_NonSeasonal_Hair",
+			"Action": "EditImage",
+			"Target": "Characters/KrobusRaven",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Hair.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"WizardSeasonalHair": false
+			}
+		}
+	]
+}

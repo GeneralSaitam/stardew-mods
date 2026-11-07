@@ -1,0 +1,628 @@
+{
+	"Changes":[
+	//ATTENDEES (and their gift data)
+		{
+			"LogName": "Wizard Winter Star Activation",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Wizard": {
+					"WinterStarParticipant": true,
+				},
+			},
+			"When": {
+				"Wizard": "enabled",
+			},
+		},
+		
+		
+		{
+			"LogName": "Wizard Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Wizard", "WinterStarGifts" ],
+			"Entries": {
+				
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet", // It's still in character for the Wizard to give a Tea Set! 
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.SolarEssence": {
+					"Id": "AgentLyoko.UWS.SolarEssence",
+					"ItemId": "(O)768",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.VoidEssence": {
+					"Id": "AgentLyoko.UWS.VoidEssence",
+					"ItemId": "(O)769",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.IridiumBar": {
+					"Id": "AgentLyoko.UWS.IridiumBar",
+					"ItemId": "(O)337",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.WarpTotemMountain": {
+					"Id": "AgentLyoko.UWS.WarpTotemMountain",
+					"ItemId": "(O)689",
+					"MinStack": 25,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.WarpTotemBeach": {
+					"Id": "AgentLyoko.UWS.WarpTotemBeach",
+					"ItemId": "(O)690",
+					"MinStack": 25,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.WarpTotemFarm": {
+					"Id": "AgentLyoko.UWS.WarpTotemFarm",
+					"ItemId": "(O)688",
+					"MinStack": 25,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.WarpTotemDesert": {
+					"Id": "AgentLyoko.UWS.WarpTotemDesert",
+					"ItemId": "(O)261",
+					"MinStack": 25,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HAS_MAIL Any skullCave",
+				},
+				
+				"AgentLyoko.UWS.WarpTotemIsland": {
+					"Id": "AgentLyoko.UWS.WarpTotemIsland",
+					"ItemId": "(O)886",
+					"MinStack": 25,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HAS_MAIL Any Visited_Island",
+				},
+				
+				"AgentLyoko.UWS.FairyDust": {
+					"Id": "AgentLyoko.UWS.FairyDust",
+					"ItemId": "(O)872",
+					"MinStack": 50,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Wizard 9 14"
+				},
+				
+				"AgentLyoko.UWS.GalaxySoul": {
+					"Id": "AgentLyoko.UWS.GalaxySoul",
+					"ItemId": "(O)896",
+					"MinStack": 3,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Wizard 9 14, PLAYER_HAS_MAIL Any Visited_Island, RANDOM 0.49"
+				},
+			},
+			"When": {
+				"Wizard": "enabled",
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+				"CustomGifts": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Sandy Winter Star Activation",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Sandy": {
+					"WinterStarParticipant": "PLAYER_HAS_SEEN_EVENT Any 67", //Sandy activation event
+				},
+			},
+			"When": {
+				"Sandy": "enabled, all",
+			},
+		},
+		
+		{
+			"LogName": "Sandy Winter Star Gift Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Sandy", "WinterStarGifts" ],
+			"Entries": {
+				
+				"AgentLyoko.UWS.TeaSet": {
+					"Id": "AgentLyoko.UWS.TeaSet",
+					"ItemId": "(O)341",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.CactusFruit": {
+					"Id": "AgentLyoko.UWS.CactusFruit",
+					"ItemId": "(O)90",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.Coconut": {
+					"Id": "AgentLyoko.UWS.Coconut",
+					"ItemId": "(O)791",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.MangoStickyRice": {
+					"Id": "AgentLyoko.UWS.MangoStickyRice",
+					"ItemId": "(O)905",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.LuckyRing": {
+					"Id": "AgentLyoko.UWS.LuckyRing",
+					"ItemId": "(O)859",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Sandy 9 14"
+				},
+			},
+			"When": {
+				"Sandy": "enabled, all",
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+				"CustomGifts": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Krobus Winter Star Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Krobus": {
+					"WinterStarParticipant": "ANY \"PLAYER_HAS_MAIL Any ccMovieTheater\" \"PLAYER_HAS_MAIL Any ccMovieTheaterJoja\"", //Movie Theater is necessary, otherwise Krobus makes no sense
+				},
+			},
+			"When": {
+				"Krobus": "enabled, all",
+			},
+		},
+		
+		{
+			"LogName": "Krobus Winter Star Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Krobus", "WinterStarGifts" ],
+			"Entries": {
+				
+				"AgentLyoko.UWS.VoidEgg": {
+					"Id": "AgentLyoko.UWS.VoidEgg",
+					"ItemId": "(O)305",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": 4,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.VoidEssence": {
+					"Id": "AgentLyoko.UWS.VoidEssence",
+					"ItemId": "(O)769",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.SolarEssence": {
+					"Id": "AgentLyoko.UWS.SolarEssence",
+					"ItemId": "(O)768",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.SignoftheVessel": {
+					"Id": "AgentLyoko.UWS.SignoftheVessel",
+					"ItemId": "(BC)34",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": 2,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.MonsterFireplace": {
+					"Id": "AgentLyoko.UWS.MonsterFireplace",
+					"ItemId": "(F)1800",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.IridiumSprinkler": {
+					"Id": "AgentLyoko.UWS.IridiumSprinkler",
+					"ItemId": "(O)645",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.VoidMayonnaise": {
+					"Id": "AgentLyoko.UWS.VoidMayonnaise",
+					"ItemId": "(O)308",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.ReturnScepter": {
+					"Id": "AgentLyoko.UWS.ReturnScepter", //Ultimate Gift, but 5% chance GSQ too.
+					"ItemId": "(O)308",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Krobus 9 14, RANDOM 0.05",
+				},
+			},
+			"When": {
+				"Krobus": "enabled, all",
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+				"CustomGifts": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Krobus Disguise at Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": ["Krobus", "Appearance"],
+			"Entries": {
+				"KrobusWinterStar": {
+					"Condition": "IS_EVENT festival_winter25",
+					"Sprite": "Characters/Krobus_Trenchcoat",
+					"Precedence": -1000,
+				},
+			},
+		},
+		
+		{
+			"LogName": "Dwarf Winter Star Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Fields": {
+				"Dwarf": {
+					"WinterStarParticipant": "PLAYER_HAS_MAIL Current HasDwarvishTranslationGuide",
+				},
+			},
+			"When": {
+				"Dwarf": "enabled, all",
+			},
+		},
+		
+		//Due to Dwarf having undefined gender, if Dwarf is enabled and is part of the Winter Star, gender-neutral the two Give X their gift lines
+		
+		{
+			"LogName": "Neutralizing Gendered Lines for Dwarf",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"Event.cs.1740": "{{i18n:UWS.Dwarf.Override}}", //For consistency, neutralizing this, too.
+				"Event.cs.1741": "{{i18n:UWS.Dwarf.Override}}",
+			},
+			"When": {
+				"Dwarf": "enabled, all",
+				"HasFlag": "HasDwarvishTranslationGuide",
+			},
+		},
+		
+		{
+			"LogName": "Dwarf Winter Star Data",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [ "Dwarf", "WinterStarGifts" ],
+			"Entries": {
+				
+				"AgentLyoko.UWS.MegaBomb": {
+					"Id": "AgentLyoko.UWS.MegaBomb",
+					"ItemId": "(O)288",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.Bomb": {
+					"Id": "AgentLyoko.UWS.Bomb",
+					"ItemId": "(O)287",
+					"MinStack": 25,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.LifeElixir": {
+					"Id": "AgentLyoko.UWS.LifeElixir",
+					"ItemId": "(O)773",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.OilofGarlic": {
+					"Id": "AgentLyoko.UWS.OilofGarlic",
+					"ItemId": "(O)772",
+					"MinStack": 5,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.ArtifactTrove": {
+					"Id": "AgentLyoko.UWS.ArtifactTrove",
+					"ItemId": "(O)275",
+					"MinStack": 10,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": null
+				},
+				
+				"AgentLyoko.UWS.LavaKatana": {
+					"Id": "AgentLyoko.UWS.LavaKatana",
+					"ItemId": "(W)9",
+					"MinStack": 1,
+					"MaxStack": -1,
+					"Quality": -1,
+					"Condition": "PLAYER_HEARTS Current Dwarf 9 14"
+				},
+			},
+			"When": {
+				"Dwarf": "enabled, all",
+				"HasMod |contains=Airyn.CPSolsticeWinterStar": false,
+				"CustomGifts": "enabled",
+			},
+		},
+		
+		//LOCATIONS
+		
+		//Wizard gazes out on the river from the tree, away from the villagers
+		{
+			"LogName": "Wizard Giftable at the Winter Star",			
+		  	"Action": "EditData",
+		  	"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+								],
+					"Value": "Wizard 26 98 2",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+								],
+                    "Value": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+								],
+					"Value": "Wizard 26 98 2",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+								],
+                    "Value": "Wizard 26 98 2",
+                    "Delimiter": "/"
+                },
+			],
+			"When": {
+				"Wizard": "enabled",
+				"WizardToken": "true",
+			},
+		},
+		
+		//Sandy (Immersive Sandy spot - used with permission)
+		{
+			"LogName": "Sandy Giftable at the Winter Star",			
+		  	"Action": "EditData",
+		  	"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+								],
+					"Value": "Sandy 28 72 0",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+								],
+                    "Value": "Sandy 25 75 0",
+                    "Delimiter": "/"
+                },
+			],
+			"When": {
+				"Sandy": "enabled, all",
+				"SandyToken": "true",
+			},
+		},
+		
+		{
+			"LogName": "Sandy Giftable at the Winter Star - Even Years",			
+		  	"Action": "EditData",
+		  	"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+								],
+					"Value": "Sandy 27 49 2",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+								],
+                    "Value": "Sandy 27 49 2",
+                    "Delimiter": "/"
+                }
+			],
+			"When": {
+				"Sandy": "enabled, all",
+				"SandyToken": "true",
+			},
+		},
+		
+		//Krobus near the river and sewers, to keep away from other humans if possible
+		
+		{
+			"LogName": "Krobus Giftable at the Winter Star",			
+		  	"Action": "EditData",
+		  	"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+								],
+					"Value": "Krobus 28 100 2",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+								],
+                    "Value": "Krobus 28 100 2",
+                    "Delimiter": "/"
+                },
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+								],
+					"Value": "Krobus 28 100 2",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+								],
+                    "Value": "Krobus 28 100 2",
+                    "Delimiter": "/"
+                },
+			],
+			"When": {
+				"Krobus": "enabled, all",
+				"HasFlag": "ccMovieTheater, ccMovieTheaterJoja",
+			},
+		},
+		
+		//Dwarf (right side of festival, near Olivia's in SVE)
+		{
+			"LogName": "Dwarf Giftable at the Winter Star",			
+		  	"Action": "EditData",
+		  	"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+								],
+					"Value": "Dwarf 68 52 2",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+								],
+                    "Value": "Dwarf 68 52 2",
+                    "Delimiter": "/"
+                },
+				{    
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters_y2"
+								],
+					"Value": "Dwarf 68 52 2",
+					"Delimiter": "/"
+				},
+				{
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+								],
+                    "Value": "Dwarf 68 52 2",
+                    "Delimiter": "/"
+                },
+			],
+			"When": {
+				"Dwarf": "enabled, all",
+				"HasFlag": "HasDwarvishTranslationGuide",
+			},
+		},
+	],
+}

@@ -1,0 +1,185 @@
+{
+    "Changes": [
+        {   
+            "Action": "EditData",
+            "Target": "Data/Events/SeedShop",
+            "Entries": {
+                "18657004/F/f Abigail 1000/e 18657003": "breezy/
+                6 22/
+                Pierre 4 17 2 farmer 300 300 0 Abigail 7 21 3 Caroline 19 15 1/
+                skippable/
+                move Abigail -2 0 3/
+                pause 600/
+                speak Pierre \"{{i18n:Miihau.AbigailEE.event4.001}}\"/
+                faceDirection Abigail 0/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event4.002}}\"/
+                move Abigail 4 0 1/
+                pause 300/
+                animate Abigail false true 160 4 4 4 4 4 4 4 30 30 30 39 39 39 30 30 30/
+                pause 500/
+                warp farmer 6 28/
+                playSound doorClose/
+                move farmer 0 -5 0/
+                textAboveHead Abigail \"{{i18n:Miihau.AbigailEE.event4.003}}\"/
+                speak Pierre \"{{i18n:Miihau.AbigailEE.event4.004}}\"/
+                emote farmer 32/
+                move farmer 0 -4 0/
+                move farmer -2 0 0/
+                pause 200/
+                stopAnimation Abigail/
+                animate Abigail false true 400 32/
+                stopMusic/
+                jump Abigail 8/
+                addTemporaryActor abigailFallItem 16 16 9 21 2 false/
+                jump abigailFallItem 16/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                positionOffset abigailFallItem -5 0/
+                pause 25/
+                pause 500/
+                playSound throwDownITem/
+                showframe abigailFallItem 1/
+                pause 1000/
+                stopAnimation Abigail/
+                faceDirection Abigail 3/
+                faceDirection farmer 1/
+                textAboveHead Pierre \"{{i18n:Miihau.AbigailEE.event4.005}}\"/
+                speed Pierre 5/
+                move Pierre -2 0 2/
+                speed Pierre 5/
+                move Pierre 0 3 1/
+                speed Pierre 5/
+                move Pierre 4 0 2/
+                speed Pierre 5/
+                move Pierre 0 1 1/
+                speed Pierre 5/
+                move Pierre 1 0 1/
+                speak Pierre \"{{i18n:Miihau.AbigailEE.event4.006}}\"/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event4.007}}\"/
+                speak Pierre \"{{i18n:Miihau.AbigailEE.event4.008}}\"/
+                quickQuestion {{i18n:Miihau.AbigailEE.event4.008X}}(break)switchEvent 4H_Abi_Comfort(break)switchEvent 4H_Abi_Talk(break)friendship Abigail -50 /
+                move farmer 2 0 2/
+                emote Pierre 12 true/
+                move farmer 0 2 1/
+                message \"{{i18n:Miihau.AbigailEE.event4.009}}\"/
+                emote Abigail 28 true/
+                move farmer 0 5 0 true/
+                pause 700/
+                end dialogueWarpOut Abigail \"{{i18n:Miihau.AbigailEE.event4.010}}\"",
+                "4H_Abi_Comfort":"pause 100/
+                friendship Abigail 30/
+                emote Pierre 12 true/
+                move farmer 4 0 2/
+                move farmer 0 1 2/
+                emote farmer 40/
+                move farmer 1 0 2/
+                question null \"{{i18n:Miihau.AbigailEE.event4.011}}\"/
+                faceDirection Abigail 0/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event4.012}}\"/
+                faceDirection Pierre 2/
+                emote Pierre 28/
+                pause 100/
+                faceDirection Pierre 1/
+                faceDirection Abigail 3/
+                speak Pierre \"{{i18n:Miihau.AbigailEE.event4.013}}\"/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event4.014}}\"/
+                addConversationTopic abigailComfort 1/
+                end",
+                "4H_Abi_Talk":"pause 100/
+                friendship Abigail -10/
+                emote Pierre 12 true/
+                move farmer 2 0 2/
+                move farmer 0 2 1/
+                emote farmer 40/
+                pause 100/
+                faceDirection Pierre 3/
+                speak Pierre \"{{i18n:Miihau.AbigailEE.event4.015}}\"/
+                quickQuestion {{i18n:Miihau.AbigailEE.event4.015X}}(break)speak Pierre \"{{i18n:Miihau.AbigailEE.event4.016}}\"(break)speak Pierre \"{{i18n:Miihau.AbigailEE.event4.017}}\" /
+                emote Pierre 12/
+                speak Pierre \"{{i18n:Miihau.AbigailEE.event4.018}}\"/
+                emote Abigail 28/
+                message \"{{i18n:Miihau.AbigailEE.event4.019}}\"/
+                speed Abigail 4/
+                move Abigail 0 -1 3/
+                speed Abigail 4/
+                move Abigail -2 0 2/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event4.020}}\"/
+                faceDirection Pierre 0/
+                speak Pierre \"{{i18n:Miihau.AbigailEE.event4.021}}\"/
+                emote Abigail 28/
+                message \"{{i18n:Miihau.AbigailEE.event4.022}}\"/
+                question fork0 \"{{i18n:Miihau.AbigailEE.event4.023}}\" /
+                fork 4H_Abi_Defend/
+                speed farmer 4/
+                move farmer 0 7 2/
+                warp farmer 400 400/
+                playSound doorClose/
+                globalFade/
+                viewport -1000 -1000/
+                pause 600/
+                speak Caroline \"{{i18n:Miihau.AbigailEE.event4.024}}\"/
+                end dialogueWarpOut Abigail \"{{i18n:Miihau.AbigailEE.event4.025}}\"",
+                "4H_Abi_Defend":"friendship Abigail 20/
+                question null \"{{i18n:Miihau.AbigailEE.event4.026}}\"/
+                faceDirection Pierre 3/
+                emote Pierre 12/
+                pause 400/
+                move Pierre 0 1 2/
+                pause 200/
+                emote Pierre 28/
+                speak Pierre \"{{i18n:Miihau.AbigailEE.event4.027}}\"/
+                faceDirection Pierre 0/
+                speak Pierre \"{{i18n:Miihau.AbigailEE.event4.028}}\"/
+                message \"{{i18n:Miihau.AbigailEE.event4.029}}\"/
+                speak Pierre \"{{i18n:Miihau.AbigailEE.event4.030}}\"/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event4.031}}\"/
+                advancedMove Abigail false 0 -1 2 0 0 -2 5 0 4 1000/
+                faceDirection Pierre 2/
+                emote Pierre 28/
+                addConversationTopic abigailDefend 1/
+                end warpOut",
+            },
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Pierre",
+            "Entries":{
+                "abigailComfort":"{{i18n:Miihau.AbigailEE.event4.032}}",
+                "abigailDefend":"{{i18n:Miihau.AbigailEE.event4.033}}",
+                
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Abigail",
+            "Entries":{
+                "abigailComfort":"{{i18n:Miihau.AbigailEE.event4.034}}",
+                "abigailDefend":"{{i18n:Miihau.AbigailEE.event4.035}}",
+            }
+        },
+    ]
+}

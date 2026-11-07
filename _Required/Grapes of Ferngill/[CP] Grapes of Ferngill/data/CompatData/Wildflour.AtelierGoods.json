@@ -1,0 +1,154 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)Wildflour.AtelierGoods_Deluxe_Dessert_Stand",
+				"OutputRules",
+				"Wildflour.AtelierGoods_Gem_Pudding",
+				"OutputItem",
+				"Wildflour.AtelierGoods_Gem_Pudding"
+			],
+			"When": {
+                "Atelier.Cauldron/ConfigValue:Puddings": true,
+                "Atelier.Cauldron/ConfigValue:DifficultyToggle": "Advanced",
+                "HasMod|contains= Wildflour.AtelierGoods": true,
+                "HasMod|contains= Atelier.Cauldron": true            
+            },
+			"Entries": 
+				{
+					"CustomData": {
+                                    "selph.ExtraMachineConfig.RequirementTags.1": "grape_item",
+                                    "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:Grape_Needed_Message}}",
+                                    "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1":"1.0"
+                                    },
+                                "CopyQuality":true,
+                                "CopyPrice": true,
+                                "PriceModifiers": 
+                                [
+                                    {
+                                    "Modification": "Multiply",
+                                    "Amount": 2.5
+                                    },
+                                    {
+                                    "Modification": "Add",
+                                    "Amount": 200
+                                    }
+                                ]
+				}
+			
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)Wildflour.AtelierGoods_BlastChiller",
+				"OutputRules"
+			],
+			"When": {
+				"Atelier.Cauldron/ConfigValue:Popsicles": true,
+                "Atelier.Cauldron/ConfigValue:DifficultyToggle": "Advanced",
+                "HasMod|contains= Wildflour.AtelierGoods": true,
+                "HasMod|contains= Atelier.Cauldron": true 
+			},
+			"Entries": {
+				"GOF_Cotton_Candy_Popsicle": {
+					"Id": "GOF_Cotton_Candy_Popsicle",
+					"Triggers": [
+						{
+							"RequiredTags": ["grape_item"],
+                            "RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+                        {
+                        "Id": "Wildflour.AtelierGoods_Cotton_Candy_Popsicle",
+                        "ItemId": "Wildflour.AtelierGoods_Cotton_Candy_Popsicle",
+                        "CustomData": {
+                            "selph.ExtraMachineConfig.RequirementId.1": "(O)245",
+                            "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:Sugar_Needed_Message}}",
+                            "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1":"1.0"
+                            },
+                        "CopyQuality":true,
+                        "CopyPrice": true,
+                        "PriceModifiers": 
+                            [
+                                {
+                                "Modification": "Multiply",
+                                "Amount": 2.0
+                                },
+                                {
+                                "Modification": "Add",
+                                "Amount": 60
+                                }
+                            ]
+                        }
+                    ],
+					"MinutesUntilReady": 200
+				}
+                
+			},
+			"MoveEntries": [
+				{
+					"Id": "GOF_Cotton_Candy_Popsicle",
+					"BeforeId": "Wildflour.AtelierGoods_Flavored_Popsicle"
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)Wildflour.AtelierGoods_CandyJar",
+				"OutputRules"
+			],
+			"When": {
+				"Atelier.Cauldron/ConfigValue:Gumballs": true,
+                "Atelier.Cauldron/ConfigValue:DifficultyToggle": "Advanced",
+                "HasMod|contains= Wildflour.AtelierGoods": true,
+                "HasMod|contains= Atelier.Cauldron": true 
+			},
+			"Entries": {
+				"GOF_Cotton_Candy_Gumballs": {
+					"Id": "GOF_Cotton_Candy_Gumballs",
+					"Triggers": [
+						{
+							"RequiredTags": ["grape_item"],
+                            "RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+                        {
+                        "Id": "Wildflour.AtelierGoods_Cotton_Candy_Gumballs",
+                        "ItemId": "Wildflour.AtelierGoods_Cotton_Candy_Gumballs",
+                        "CopyQuality": true,
+                        "CopyPrice": true,
+                        "CustomData": {
+                            "selph.ExtraMachineConfig.RequirementId.1": "(O)245",
+                            "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:Sugar_Needed_Message}}",
+                            "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1":"1.0"
+                            },
+                        "PriceModifiers": 
+                            [
+                                {
+                                "Modification": "Multiply",
+                                "Amount": 4.25
+                                }
+                            ]
+                        }
+                    ],
+					"MinutesUntilReady": 480
+				}
+                
+			},
+			"MoveEntries": [
+				{
+					"Id": "GOF_Cotton_Candy_Gumballs",
+					"BeforeId": "Wildflour.AtelierGoods_Flavored_Gumballs"
+				}
+			]
+		}
+                
+	]
+}

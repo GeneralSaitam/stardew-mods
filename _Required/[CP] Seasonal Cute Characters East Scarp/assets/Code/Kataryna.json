@@ -1,0 +1,104 @@
+{
+	"Changes": [
+	
+		// OUTFIT LOADS
+	
+		{
+			"LogName": "Load Kataryna's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Kataryna_Spring, Portraits/Kataryna_Summer, Portraits/Kataryna_Fall, Portraits/Kataryna_Winter, Portraits/Kataryna_FlowerDance, Portraits/Kataryna_SpiritsEve, Portraits/Kataryna_Beach, Characters/Kataryna_Spring, Characters/Kataryna_Summer, Characters/Kataryna_Fall, Characters/Kataryna_Winter, Characters/Kataryna_FlowerDance, Characters/Kataryna_SpiritsEve, Characters/Kataryna_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/KatarynaLK/{{TargetWithoutPath}}.png"
+		},
+		
+		// NOSE OVERLAY
+		{
+			"LogName": "Kataryna - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Kataryna_Spring, Characters/Kataryna_Summer, Characters/Kataryna_Fall, Characters/Kataryna_Winter, Characters/Kataryna_FlowerDance, Characters/Kataryna_SpiritsEve, Characters/Kataryna_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/KatarynaLK/Kataryna_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"NoNose": "false",
+			},
+		},
+		
+		//APPEARANCE DATA 
+		{
+			"LogName": "Kataryna Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": ["KatarynaLK", "Appearance"],
+			"Entries": {
+				
+				//Regular Outfits
+				"{{ModId}}.KatarynaSpring": {
+					"Id": "{{ModId}}.KatarynaSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/Kataryna_Spring",
+					"Portrait": "Portraits/Kataryna_Spring",
+					"Precedence": -120,
+				},
+
+				"{{ModId}}.KatarynaSummer": {
+					"Id": "{{ModId}}.KatarynaSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/Kataryna_Summer",
+					"Portrait": "Portraits/Kataryna_Summer",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.KatarynaFall": {
+					"Id": "{{ModId}}.KatarynaFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/Kataryna_Fall",
+					"Portrait": "Portraits/Kataryna_Fall",
+					"Precedence": -120,
+				},
+				
+				"{{ModId}}.KatarynaWinter": {
+					"Id": "{{ModId}}.KatarynaWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/Kataryna_Winter",
+					"Portrait": "Portraits/Kataryna_Winter",
+					"Precedence": -120,
+				},
+				
+				//Festival Outfits
+				
+				"{{ModId}}.KatarynaFlowerDance": {
+					"Id": "{{ModId}}.KatarynaFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/Kataryna_FlowerDance",
+					"Portrait": "Portraits/Kataryna_FlowerDance",
+					"Precedence": -1000,
+				},
+				
+				"{{ModId}}.KatarynaSpirit": {
+					"Id": "{{ModId}}.KatarynaSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+					"Sprite": "Characters/Kataryna_SpiritsEve",
+					"Portrait": "Portraits/Kataryna_SpiritsEve",
+					"Precedence": -1000,
+				},
+				
+				//Beach
+				
+				"{{ModId}}.KatarynaBeach": {
+					"Id": "{{ModId}}.KatarynaBeach",
+					"Sprite": "Characters/Kataryna_Beach",
+					"Portrait": "Portraits/Kataryna_Beach",
+					"IsIslandAttire": true,
+					"Precedence": -10000,
+				},		
+			},
+		},{
+            "LogName": "KatarynaLK Calendar Sprite Edits",
+            "Action": "EditImage",
+            "Target": "Characters/KatarynaLK",
+            "FromFile": "assets/{{Target}}/Kataryna_{{Season}}.png",
+        },	
+	]
+}

@@ -1,0 +1,78 @@
+{
+  "Changes": [
+    {
+      "LogName": "Dish O' The Sea Duration",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "242",
+        "Buffs"
+      ],
+      "Fields": {
+        "Food": {
+          "Duration": -2
+        }
+      },
+      "When": {
+        "Dish O' The Sea Duration": true
+      }
+    },
+    {
+      "LogName": "Dish O' The Sea Level Boost",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "TargetField": [
+        "242",
+        "Buffs",
+        "Food"
+      ],
+      "Fields": {
+        "CustomAttributes": {
+          "FishingLevel": "{{Dish O' The Sea Level Boost}}"
+        }
+      },
+      "When": {
+        "Dish O' The Sea Level Boost": "4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50"
+      }
+    },
+    {
+      "LogName": "Dish O' The Sea Fishing Level 1",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Dish o' The Sea": {
+          "3": "s Fishing 1"
+        }
+      },
+      "When": {
+        "Dish O' The Sea Fishing Level 1": true
+      }
+    },
+    {
+      "LogName": "Dish O' The Sea Lessened Ingredients",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Dish o' The Sea": {
+          "0": "267 1"
+        }
+      },
+      "When": {
+        "Dish O' The Sea Ingredients": "Lessened Ingredients"
+      }
+    },
+    {
+      "LogName": "Dish O' The Sea 1 of Any Fish",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Fields": {
+        "Dish o' The Sea": {
+          "0": "-4 1"
+        }
+      },
+      "When": {
+        "Dish O' The Sea Ingredients": "1 of Any Fish"
+      }
+    }
+  ]
+}

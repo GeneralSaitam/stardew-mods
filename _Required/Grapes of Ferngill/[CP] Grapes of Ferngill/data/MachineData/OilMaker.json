@@ -1,0 +1,95 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [
+				"(BC)19",
+				"OutputRules"
+			],
+			"Entries": {
+				"GOF_Grape_Seed_Oil": {
+					"Id": "GOF_Grape_Seed_Oil",
+					"Triggers": [
+						{
+							"RequiredTags": ["grape_item"]
+						},
+						{
+							"RequiredItemId": "(O)398"
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Grape_Seed_Oil",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+							"CopyPrice": true,
+                            "CopyQuality": true,
+                            "PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2
+								}
+							]
+						}
+					],
+					"MinutesUntilReady": 1600,
+				},
+                "GOF_Titania_Oil": {
+					"Id": "GOF_Titania_Oil",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Titania_Grape"
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Grape_Seed_Oil",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+							"CopyPrice": true,
+                            "CopyQuality": true,
+                            "MinStack": 3,
+                            "MaxStack": 3,
+                            "PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2
+								}
+							]
+						}
+					],
+					"MinutesUntilReady": 1600,
+				},
+                "GOF_Ancient_Titania_Oil": {
+					"Id": "GOF_Ancient_Titania_Oil",
+					"Triggers": [
+						{
+							"RequiredItemId": "(O)GOF_Ancient_Titania_Grape"
+						}
+					],
+					"OutputItem": [
+						{
+                            "ItemId": "(O)GOF_Grape_Seed_Oil",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+							"CopyPrice": true,
+                            "CopyQuality": true,
+                            "MinStack": 3,
+                            "MaxStack": 3,
+                            "PriceModifiers": [
+								{
+									"Modification": "Multiply",
+									"Amount": 2
+								}
+							]
+						}
+					],
+					"MinutesUntilReady": 1600
+				}
+                
+			}
+		}
+                
+	]
+}

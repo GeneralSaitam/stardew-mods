@@ -1,0 +1,267 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Format": "2.0.0",
+    "ConfigSchema": {
+        "AvailableFromStart": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "AllowBlank": false,
+            "Description": "{{i18n:config.AvailableFromStart.description}}"
+        }
+    },
+    "Changes": [
+        //Adds the tile sheet art of the new portraits
+        {
+            "LogName": "Load texture",
+            "Action": "Load",
+            "Target": "Mods/indecisiv.PetPortraitsCP/texture",
+            "FromFile": "pet_frames.png"
+        },
+        //Adds the new portraits as items
+        {
+            "LogName": "Furniture Data",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "indecisiv.PetPortraitsCP.DogPortrait1": "Dog Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.dog}}/0/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.DogPortrait2": "Dog Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.dog}}/2/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.DogPortrait3": "Dog Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.dog}}/4/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.DogPortrait4": "Dog Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.dog}}/6/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.DogPortrait5": "Dog Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.dog}}/8/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.CatPortrait1": "Cat Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.cat}}/10/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.CatPortrait2": "Cat Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.cat}}/26/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.CatPortrait3": "Cat Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.cat}}/28/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.CatPortrait4": "Cat Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.cat}}/30/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.CatPortrait5": "Cat Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.cat}}/32/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.HorsePortrait": "Horse Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.horse}}/34/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.TurtlePortrait1": "Turtle Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.turtle}}/52/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.TurtlePortrait2": "Turtle Portrait/painting/2 2/-1/1/15000/-1/{{i18n:portrait.turtle}}/54/Mods\\indecisiv.PetPortraitsCP\\texture/true",
+                "indecisiv.PetPortraitsCP.RaccoonPortrait": "Raccoon Portrait/painting/4 2/4 2/1/30000/-1/{{i18n:portrait.raccoon}}/56/Mods\\indecisiv.PetPortraitsCP\\texture/true"
+                
+            }
+        },
+        //Adds the new portraits to the traveling merchant shop
+         {
+             "Action": "EditData",
+             "Target": "Data/Shops",
+             "TargetField": [
+                 "Traveler",
+                 "Items"
+             ],
+             "When": {
+                "AvailableFromStart": false
+              },
+             "Entries": {
+                "indecisiv.PetPortraitsCP.DogPortrait1": {
+                     "TradeItemAmount": 1,
+                     "Price": 15000,
+                     "AvailableStock": 1,
+                     "AvailableStockLimit": "Player",
+                     "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                     "Id": "(F)indecisiv.PetPortraitsCP.DogPortrait1",
+                     "ItemId": "(F)indecisiv.PetPortraitsCP.DogPortrait1"
+                 },
+                 "indecisiv.PetPortraitsCP.DogPortrait2": {
+                    "TradeItemAmount": 1,
+                    "Price": 15000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                    "Id": "(F)indecisiv.PetPortraitsCP.DogPortrait2",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.DogPortrait2"
+                },
+                "indecisiv.PetPortraitsCP.DogPortrait3": {
+                    "TradeItemAmount": 1,
+                    "Price": 15000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                    "Id": "(F)indecisiv.PetPortraitsCP.DogPortrait3",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.DogPortrait3"
+                },
+                "indecisiv.PetPortraitsCP.DogPortrait4": {
+                    "TradeItemAmount": 1,
+                    "Price": 15000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                    "Id": "(F)indecisiv.PetPortraitsCP.DogPortrait4",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.DogPortrait4"
+                },
+                "indecisiv.PetPortraitsCP.DogPortrait5": {
+                    "TradeItemAmount": 1,
+                    "Price": 15000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                    "Id": "(F)indecisiv.PetPortraitsCP.DogPortrait5",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.DogPortrait5"
+                },
+                "indecisiv.PetPortraitsCP.CatPortrait1": {
+                    "TradeItemAmount": 1,
+                    "Price": 15000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                    "Id": "(F)indecisiv.PetPortraitsCP.CatPortrait1",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.CatPortrait1"
+                },
+                "indecisiv.PetPortraitsCP.CatPortrait2": {
+                    "TradeItemAmount": 1,
+                    "Price": 15000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                    "Id": "(F)indecisiv.PetPortraitsCP.CatPortrait2",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.CatPortrait2"
+                },
+                "indecisiv.PetPortraitsCP.CatPortrait3": {
+                    "TradeItemAmount": 1,
+                    "Price": 15000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                    "Id": "(F)indecisiv.PetPortraitsCP.CatPortrait3",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.CatPortrait3"
+                },
+                "indecisiv.PetPortraitsCP.CatPortrait4": {
+                    "TradeItemAmount": 1,
+                    "Price": 15000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                    "Id": "(F)indecisiv.PetPortraitsCP.CatPortrait4",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.CatPortrait4"
+                },
+                "indecisiv.PetPortraitsCP.CatPortrait5": {
+                    "TradeItemAmount": 1,
+                    "Price": 15000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                    "Id": "(F)indecisiv.PetPortraitsCP.CatPortrait5",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.CatPortrait5"
+                },
+                "indecisiv.PetPortraitsCP.TurtlePortrait1": {
+                    "TradeItemAmount": 1,
+                    "Price": 15000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                    "Id": "(F)indecisiv.PetPortraitsCP.TurtlePortrait1",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.TurtlePortrait1"
+                },
+                "indecisiv.PetPortraitsCP.TurtlePortrait2": {
+                    "TradeItemAmount": 1,
+                    "Price": 15000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_MAIL Current MarniePetAdoption",
+                    "Id": "(F)indecisiv.PetPortraitsCP.TurtlePortrait2",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.TurtlePortrait2"
+                },
+                "indecisiv.PetPortraitsCP.HorsePortrait": {
+                    "TradeItemAmount": 1,
+                    "Price": 20000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "BUILDINGS_CONSTRUCTED All Stable",
+                    "Id": "(F)indecisiv.PetPortraitsCP.HorsePortrait",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.HorsePortrait"
+                },
+                "indecisiv.PetPortraitsCP.RaccoonPortrait": {
+                    "TradeItemAmount": 1,
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "Condition": "PLAYER_HAS_ACHIEVEMENT Current 39",
+                    "Id": "(F)indecisiv.PetPortraitsCP.RaccoonPortrait",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.RaccoonPortrait"
+                },
+             }
+         },
+         {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AnimalShop",
+                "Items"
+            ],
+            "When": {
+               "AvailableFromStart": true
+             },
+            "Entries": {
+                "indecisiv.PetPortraitsCP.DogPortrait1": {
+                    "Price": 15000,
+                    "Id": "(F)indecisiv.PetPortraitsCP.DogPortrait1",
+                    "ItemId": "(F)indecisiv.PetPortraitsCP.DogPortrait1"
+                },
+                "indecisiv.PetPortraitsCP.DogPortrait2": {
+                   "Price": 15000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.DogPortrait2",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.DogPortrait2"
+               },
+               "indecisiv.PetPortraitsCP.DogPortrait3": {
+                   "Price": 15000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.DogPortrait3",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.DogPortrait3"
+               },
+               "indecisiv.PetPortraitsCP.DogPortrait4": {
+                   "Price": 15000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.DogPortrait4",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.DogPortrait4"
+               },
+               "indecisiv.PetPortraitsCP.DogPortrait5": {
+                   "Price": 15000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.DogPortrait5",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.DogPortrait5"
+               },
+               "indecisiv.PetPortraitsCP.CatPortrait1": {
+                   "Price": 15000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.CatPortrait1",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.CatPortrait1"
+               },
+               "indecisiv.PetPortraitsCP.CatPortrait2": {
+                   "Price": 15000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.CatPortrait2",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.CatPortrait2"
+               },
+               "indecisiv.PetPortraitsCP.CatPortrait3": {
+                   "Price": 15000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.CatPortrait3",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.CatPortrait3"
+               },
+               "indecisiv.PetPortraitsCP.CatPortrait4": {
+                   "Price": 15000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.CatPortrait4",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.CatPortrait4"
+               },
+               "indecisiv.PetPortraitsCP.CatPortrait5": {
+                   "Price": 15000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.CatPortrait5",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.CatPortrait5"
+               },
+               "indecisiv.PetPortraitsCP.TurtlePortrait1": {
+                   "Price": 15000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.TurtlePortrait1",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.TurtlePortrait1"
+               },
+               "indecisiv.PetPortraitsCP.TurtlePortrait2": {
+                   "Price": 15000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.TurtlePortrait2",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.TurtlePortrait2"
+               },
+               "indecisiv.PetPortraitsCP.HorsePortrait": {
+                   "Price":20000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.HorsePortrait",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.HorsePortrait"
+               },
+               "indecisiv.PetPortraitsCP.RaccoonPortrait": {
+                   "Price": 30000,
+                   "Id": "(F)indecisiv.PetPortraitsCP.RaccoonPortrait",
+                   "ItemId": "(F)indecisiv.PetPortraitsCP.RaccoonPortrait"
+               }
+            }
+        }
+    ]
+}

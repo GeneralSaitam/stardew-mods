@@ -1,0 +1,636 @@
+{
+    "Changes": [
+///SVE Copatability --  Increases wine based product price by 100% when married to Sophia
+///DEEP ENVY GRAPE PRODUCTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Deep_Envy_Grape"],
+			"Entries": {"Price": 240},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Deep_Envy_Grape_Wine"],
+			"Entries": {"Price": 720},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Deep_Envy_Sparkling_Wine"],
+			"Entries": {"Price": 960},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Deep_Envy_Fortified_Wine"],
+			"Entries": {"Price": 1440},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Deep_Envy_Sweet_Wine"],
+			"Entries": {"Price": 2700},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Deep_Envy_Raisins"],
+			"Entries": {"Price": 1800},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///GALLANT GROVE GRAPE PRODUCTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Gallant_Grove_Grape"],
+			"Entries": {"Price": 200},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Gallant_Grove_Grape_Wine"],
+			"Entries": {"Price": 600},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Gallant_Grove_Sparkling_Wine"],
+			"Entries": {"Price": 800},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Gallant_Grove_Fortified_Wine"],
+			"Entries": {"Price": 1200},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Gallant_Grove_Sweet_Wine"],
+			"Entries": {"Price": 2250},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Gallant_Grove_Raisins"],
+			"Entries": {"Price": 1500},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///GOLDEN AURA GRAPE PRODUCTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Golden_Aura_Grape"],
+			"Entries": {"Price": 240},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Golden_Aura_Grape_Wine"],
+			"Entries": {"Price": 720},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Golden_Aura_Sparkling_Wine"],
+			"Entries": {"Price": 960},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Golden_Aura_Fortified_Wine"],
+			"Entries": {"Price": 1440},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Golden_Aura_Sweet_Wine"],
+			"Entries": {"Price": 2700},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Golden_Aura_Raisins"],
+			"Entries": {"Price": 1800},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///PASSION ROUGE GRAPE PRODUCTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Passion_Rouge_Grape"],
+			"Entries": {"Price": 240},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Passion_Rouge_Grape_Wine"],
+			"Entries": {"Price": 720},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Passion_Rouge_Sparkling_Wine"],
+			"Entries": {"Price": 960},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Passion_Rouge_Fortified_Wine"],
+			"Entries": {"Price": 1440},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Passion_Rouge_Sweet_Wine"],
+			"Entries": {"Price": 2700},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Passion_Rouge_Raisins"],
+			"Entries": {"Price": 1800},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///SUNSET BLUSH GRAPE PRODUCTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Sunset_Blush_Grape"],
+			"Entries": {"Price": 200},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Sunset_Blush_Grape_Wine"],
+			"Entries": {"Price": 600},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Sunset_Blush_Sparkling_Wine"],
+			"Entries": {"Price": 800},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Sunset_Blush_Fortified_Wine"],
+			"Entries": {"Price": 1200},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Sunset_Blush_Sweet_Wine"],
+			"Entries": {"Price": 2250},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Sunset_Blush_Raisins"],
+			"Entries": {"Price": 1500},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///ROSY RIOT GRAPE PRODUCTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Rosy_Riot_Grape"],
+			"Entries": {"Price": 240},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Rosy_Riot_Grape_Wine"],
+			"Entries": {"Price": 720},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Rosy_Riot_Sparkling_Wine"],
+			"Entries": {"Price": 960},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Rosy_Riot_Fortified_Wine"],
+			"Entries": {"Price": 1440},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Rosy_Riot_Sweet_Wine"],
+			"Entries": {"Price": 2700},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Rosy_Riot_Raisins"],
+			"Entries": {"Price": 1800},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///LUNATONE GRAPE PRODUCTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Lunatone_Grape"],
+			"Entries": {"Price": 300},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Lunatone_Grape_Wine"],
+			"Entries": {"Price": 900},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Lunatone_Sparkling_Wine"],
+			"Entries": {"Price": 1200},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Lunatone_Fortified_Wine"],
+			"Entries": {"Price": 1600},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Lunatone_Sweet_Wine"],
+			"Entries": {"Price": 3380},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Lunatone_Raisins"],
+			"Entries": {"Price": 2250},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///JOJA GRAPE PRODUCTS
+{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Joja_Grape"],
+			"Entries": {"Price": 120},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Joja_Grape_Wine"],
+			"Entries": {"Price": 360},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Joja_Sparkling_Wine"],
+			"Entries": {"Price": 480},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Joja_Fortified_Wine"],
+			"Entries": {"Price": 720},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Joja_Sweet_Wine"],
+			"Entries": {"Price": 1350},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Joja_Raisins"],
+			"Entries": {"Price": 900},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///OCEAN MIST GRAPE PRODUCTS
+{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ocean_Mist_Grape"],
+			"Entries": {"Price": 300},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ocean_Mist_Grape_Wine"],
+			"Entries": {"Price": 900},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ocean_Mist_Sparkling_Wine"],
+			"Entries": {"Price": 1200},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ocean_Mist_Fortified_Wine"],
+			"Entries": {"Price": 1600},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ocean_Mist_Sweet_Wine"],
+			"Entries": {"Price": 3380},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ocean_Mist_Raisins"],
+			"Entries": {"Price": 2250},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///ANCIENT GRAPE PRODUCTS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ancient_Grape"],
+			"Entries": {"Price": 400},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ancient_Grape_Wine"],
+			"Entries": {"Price": 1200},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ancient_Sparkling_Wine"],
+			"Entries": {"Price": 1600},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ancient_Fortified_Wine"],
+			"Entries": {"Price": 24600},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ancient_Sweet_Wine"],
+			"Entries": {"Price": 4500},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ancient_Raisins"],
+			"Entries": {"Price": 3000},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///TITANIA GRAPES
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Titania_Grape"],
+			"Entries": {"Price": 400},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Ancient_Titania_Grape"],
+			"Entries": {"Price": 1200},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///GENERIC GRAPE GOODS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Grape_Wine"],
+			"Entries": {"Price": 480},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Sparkling_Wine"],
+			"Entries": {"Price": 640},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Fortified_Wine"],
+			"Entries": {"Price": 960},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Sweet_Wine"],
+			"Entries": {"Price": 1600},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Grape_Seed_Oil"],
+			"Entries": {"Price": 320},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Wine_Vinegar"],
+			"Entries": {"Price": 480},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///CORNUCOPIA WHITE GRAPE GOODS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["Cornucopia_WhiteGrape"],
+			"Entries": {"Price": 160},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_White_Grape_Wine"],
+			"Entries": {"Price": 720},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_White_Grape_Sparkling_Wine"],
+			"Entries": {"Price": 960},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_White_Grape_Fortified_Wine"],
+			"Entries": {"Price": 1440},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_White_Grape_Sweet_Wine"],
+			"Entries": {"Price": 2700},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_White_Grape_Raisins"],
+			"Entries": {"Price": 1800},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///VAPIUS WHITE GRAPE GOODS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["Lumisteria.MtVapius_WhiteGrape"],
+			"Entries": {"Price": 80},
+			"When": {"HasMod": "Lumisteria.MtVapius"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["Lumisteria.MtVapius_WhiteGrape"],
+			"Entries": {"Price": 160},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Vapius_White_Grape_Wine"],
+			"Entries": {"Price": 720},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Vapius_White_Grape_Sparkling_Wine"],
+			"Entries": {"Price": 960},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Vapius_White_Grape_Fortified_Wine"],
+			"Entries": {"Price": 1440},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Vapius_White_Grape_Sweet_Wine"],
+			"Entries": {"Price": 2700},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Vapius_White_Grape_Raisins"],
+			"Entries": {"Price": 1800},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+///VAPIUS SUN GRAPE GOODS
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["Lumisteria.MtVapius_SunGrape"],
+			"Entries": {"Price": 160},
+			"When": {"HasMod": "Lumisteria.MtVapius"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["Lumisteria.MtVapius_SunGrape"],
+			"Entries": {"Price": 320},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Vapius_Sun_Grape_Wine"],
+			"Entries": {"Price": 1440},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Vapius_Sun_Grape_Sparkling_Wine"],
+			"Entries": {"Price": 1920},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Vapius_Sun_Grape_Fortified_Wine"],
+			"Entries": {"Price": 2880},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Vapius_Sun_Grape_Sweet_Wine"],
+			"Entries": {"Price": 5400},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"TargetField": ["GOF_Vapius_Sun_Grape_Raisins"],
+			"Entries": {"Price": 3600},
+			"When": {"HasSeenEvent": "8185300", "Spouse": "Sophia", "HasMod": "FlashShifter.StardewValleyExpandedCP"} 
+		},
+	]
+}

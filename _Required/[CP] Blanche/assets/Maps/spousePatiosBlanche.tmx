@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="3">
+ <tileset firstgid="1" name="z_PatioOutside" tilewidth="16" tileheight="16" tilecount="12" columns="3">
+  <image source="z_PatioOutside.png" width="48" height="64"/>
+ </tileset>
+ <tileset firstgid="13" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="1988" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <layer id="1" name="Back" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,1977,1978,1977
+</data>
+ </layer>
+ <layer id="7" name="Back2" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,10,11,12
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,4,5,6,
+0,7,8,9,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Front" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+1995,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="AlwaysFront" width="4" height="4">
+  <data encoding="csv">
+0,1,2,3,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Buildings">
+  <object id="1" name="TileData" x="32.2032" y="34.0486" width="16" height="16">
+   <properties>
+    <property name="Action" value="LockedDoorWarp 5 12 Custom_Blanche_Sunroom 600 2600"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,235 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",
+      "Entries": {
+        "Juna": {
+          "NPCName": "Juna",
+          "Reactions": [
+            //Brave Little Sapling
+            {
+              "Tag": "spring_movie_0",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.spring0.before}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "sprout_leave",
+                  "Script": "",
+                  "Text": "{{i18n: movie.spring0.during}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.spring0.after}}"
+                }
+              },
+              "ID": "reaction_0"
+            },
+            //Journey of the Praire King
+            {
+              "Tag": "summer_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.summer0.before}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "PK_villain",
+                  "Script": "",
+                  "Text": "{{i18n: movie.summer0.during}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.summer0.after}}"
+                }
+              },
+              "ID": "reaction_1"
+            },
+            //Mysterium
+            {
+              "Tag": "fall_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.fall0.before}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.fall0.during}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.fall0.after}}"
+                }
+              },
+              "ID": "reaction_2"
+            },
+            //Miracle at Coldstar Ranch
+            {
+              "Tag": "winter_movie_0",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.winter0.before}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.winter0.during}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.winter0.after}}"
+                }
+              },
+              "ID": "reaction_3"
+            },
+            //Natural Wonders: Exploring Our Vibrant World
+            {
+              "Tag": "spring_movie_1",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.spring1.before}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.spring1.during}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.spring1.after}}"
+                }
+              },
+              "ID": "reaction_4"
+            },
+            //Wumbus
+            {
+              "Tag": "summer_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.summer1.before}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.summer1.during}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.summer1.after}}"
+                }
+              },
+              "ID": "reaction_5"
+            },
+            //Howls in the Rain
+            {
+              "Tag": "fall_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.fall1.before}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.fall1.during}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.fall1.after}}"
+                }
+              },
+              "ID": "reaction_6"
+            },
+            //Zuzu City Express
+            {
+              "Tag": "winter_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.winter1.before}}"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": "zuzucityexpress_mind_heart",
+                  "Script": "",
+                  "Text": "{{i18n: movie.winter1.during}}"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "{{i18n: movie.winter1.after}}"
+                }
+              },
+              "ID": "reaction_7"
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "LogName": "Concession Tastes",
+      "Action": "EditData",
+      "Target": "Data/ConcessionTastes",
+      "Entries": {
+        "Juna": {
+          "Name": "Juna",
+          "LovedTags": ["Black Licorice", "Joja Cola", "Jawbreaker"],
+          "LikedTags": ["Fries", "Nachos", "Sour Slimes"],
+          "DislikedTags": [
+            "Apple Slices",
+            "Hummus Snack Pack",
+            "Jasmine Tea",
+            "Kale Smoothie"
+          ]
+        }
+      }
+    },
+
+    {
+			"LogName": "Roommate movie invite",
+      "Action": "EditData",
+			"Target": "Strings/Characters",
+			"Entries": {
+				"MovieInvite_Spouse_Juna": "{{i18n: movie.invite.roommate}}"
+			}
+		}
+  ]
+}

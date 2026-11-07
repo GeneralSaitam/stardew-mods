@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.0" orientation="orthogonal" renderorder="right-down" width="8" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="19" nextobjectid="36">
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="2241" name="VanillaFurniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="VanillaFurniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="5217" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <layer id="1" name="Back" width="8" height="9">
+  <data encoding="csv">
+5356,5357,5357,35,35,35,5357,5358,
+5388,5389,5389,67,67,67,5389,5390,
+5388,0,0,113,113,113,113,5390,
+574,575,576,575,672,575,576,5383,
+639,640,639,640,704,640,639,640,
+607,608,607,2115,640,608,607,2114,
+639,640,639,639,640,640,639,2113,
+2146,608,607,608,639,608,607,2145,
+640,640,639,640,639,640,639,2145
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Back2" width="8" height="9">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+5757,0,0,0,0,0,0,5758,
+5789,0,0,0,0,0,0,5790,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,3859,3860,3861,0,
+0,0,0,0,3891,3892,3893,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Back2"/>
+ <layer id="5" name="Back3" width="8" height="9">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back3"/>
+ <layer id="7" name="Buildings" width="8" height="9">
+  <data encoding="csv">
+0,0,0,155,0,0,155,0,
+80,81,81,187,81,81,187,82,
+112,113,113,489,215,357,358,114,
+144,1368,2148,521,0,0,0,146,
+1360,1361,0,0,0,321,322,0,
+726,5384,0,0,0,0,0,554,
+0,0,0,0,0,0,453,69,
+0,0,0,0,0,587,588,69,
+0,0,0,0,0,619,620,1
+</data>
+ </layer>
+ <objectgroup id="8" name="Buildings">
+  <object id="31" name="TileData" x="48" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;SpousesMoveHouse.Shane.2&quot;"/>
+   </properties>
+  </object>
+  <object id="34" name="TileData" x="80" y="112" width="32" height="32">
+   <properties>
+    <property name="Action" value="Message &quot;SpousesMoveHouse.Shane.2&quot;"/>
+   </properties>
+  </object>
+  <object id="33" name="TileData" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;SpousesMoveHouse.Shane.1&quot;"/>
+   </properties>
+  </object>
+  <object id="35" name="TileData" x="0" y="48" width="32" height="48">
+   <properties>
+    <property name="Action" value="Message &quot;SpousesMoveHouse.Shane.1&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="9" name="Buildings2" width="8" height="9">
+  <properties>
+   <property name="Draw" value="Buildings"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="Buildings2"/>
+ <layer id="11" name="Front" width="8" height="9">
+  <data encoding="csv">
+42,827,0,0,257,0,0,44,
+0,1844,1845,0,289,325,326,0,
+0,1336,2116,513,0,359,360,0,
+1328,1329,0,0,0,391,392,0,
+694,5352,0,0,0,0,0,0,
+0,0,0,0,0,0,1347,164,
+0,0,0,0,0,555,556,0,
+0,0,0,0,0,0,0,0,
+0,164,166,166,2121,166,167,168
+</data>
+ </layer>
+ <objectgroup id="12" name="Front"/>
+ <layer id="13" name="Front2" width="8" height="9">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="14" name="Front2"/>
+ <layer id="15" name="AlwaysFront" width="8" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,827,0,
+0,0,5240,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="16" name="AlwaysFront"/>
+ <layer id="17" name="Paths" width="8" height="9" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,2185,0,0,0,
+0,0,0,0,0,0,0,0,
+2185,0,0,0,0,0,0,0,
+0,0,0,0,0,0,2185,0,
+0,0,0,2185,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,2185,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="18" name="Paths"/>
+</map>

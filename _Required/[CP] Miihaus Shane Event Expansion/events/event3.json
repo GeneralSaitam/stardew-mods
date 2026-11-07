@@ -1,0 +1,131 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/Town",
+        "Entries":
+    {
+    //Miihau.MiihausMoreShaneHeartEvents
+    "Miihau.ShaneEE.003/F/f Shane 750/t 2000 2200/e Miihau.ShaneEE.002":"
+    shaneTheme/
+    94 54/
+    farmer 84 53 1 Shane -1000 -1000 2/
+    skippable/
+    positionOffset farmer 0 -16/
+    move farmer 6 0 1/
+    playSound doorClose/
+    warp Shane 95 51/
+    emote farmer 16 true/
+    jump farmer 4/
+    pause 200/
+    speak Shane \"{{i18n:Miihau.SEE.E3.001}}\"/
+    move Shane 0 1 2/
+    pause 400/
+    speak Shane \"{{i18n:Miihau.SEE.E3.002}}\"/
+    move Shane 0 1 0/
+    speak Shane \"{{i18n:Miihau.SEE.E3.003}}\"/
+    emote Shane 8/
+    faceDirection Shane 3/
+    startJittering/
+    emote Shane 40/
+    speak Shane \"{{i18n:Miihau.SEE.E3.004}}\"/
+    stopJittering/
+    move farmer 3 0 1/
+    emote farmer 40/
+    pause 200/
+    question null \"{{i18n:Miihau.SEE.E3.004X}}\"/
+    pause 500/
+    speak Shane \"{{i18n:Miihau.SEE.E3.005}}\"/
+    pause 400/
+    faceDirection Shane 0/
+    speak Shane \"{{i18n:Miihau.SEE.E3.006}}\"/
+    pause 500/
+    speak Shane \"{{i18n:Miihau.SEE.E3.007}}\"/
+    pause 500/
+    question null \"{{i18n:Miihau.SEE.E3.007X}}\"/
+    speed Shane 5/
+    move Shane -1 0 3/
+    stopMusic/
+    speak Shane \"{{i18n:Miihau.SEE.E3.008}}\"/
+    message \"{{i18n:Miihau.SEE.E3.009}}\"/
+    speak Shane \"{{i18n:Miihau.SEE.E3.010}}\"/
+    speak Shane \"{{i18n:Miihau.SEE.E3.011}}\"/
+    pause 3000/
+    emote farmer 28/
+    pause 2000/
+    speak Shane \"{{i18n:Miihau.SEE.E3.012}}\"/
+    move Shane 1 0 2/
+    showFrame Shane 19/
+    emote Shane 28/
+    playMusic echos/
+    speak Shane \"{{i18n:Miihau.SEE.E3.013}}\"/
+    question fork1 \"{{i18n:Miihau.SEE.E3.013X}}\" /
+    fork Miihau.ShaneEE.003.Fork1/
+    friendship Shane 20/
+    speak Shane \"{{i18n:Miihau.SEE.E3.014}}\"/
+    move farmer 1 0 1/
+    speak Shane \"{{i18n:Miihau.SEE.E3.015}}\"/
+    pause 1000/
+    speak Shane \"{{i18n:Miihau.SEE.E3.016}}\"/
+    question null \"{{i18n:Miihau.SEE.E3.016X}}\"/
+    pause 1000/
+    splitSpeak Shane \"{{i18n:Miihau.SEE.E3.017}}\"/
+    showFrame Shane 0/
+    faceDirection Shane 1/
+    move Shane 1 0 1/
+    speak Shane \"{{i18n:Miihau.SEE.E3.018}}\"/
+    pause 1000/
+    speak Shane \"{{i18n:Miihau.SEE.E3.019}}\"/
+    question fork1 \"{{i18n:Miihau.SEE.E3.019X}}\"/
+    fork Miihau.ShaneEE.003.Fork1/
+    friendship Shane 40/
+    move farmer 1 0 1/
+    pause 1600/
+    faceDirection Shane 3/
+    pause 400/
+    emote farmer 32/
+    pause 300/
+    emote Shane 8/
+    speak Shane \"{{i18n:Miihau.SEE.E3.020}}\"/
+    pause 200/
+    speak Shane \"{{i18n:Miihau.SEE.E3.021}}\"/
+    pause 400/
+    emote Shane 40/
+    pause 200/
+    speak Shane \"{{i18n:Miihau.SEE.E3.022}}\"/
+    pause 700/
+    speak Shane \"{{i18n:Miihau.SEE.E3.023}}\"/
+    emote farmer 32/
+    move Shane 0 1 3/
+    move Shane -1 0 3/
+    faceDirection farmer 2/
+    speak Shane \"{{i18n:Miihau.SEE.E3.024}}\"/
+    pause 500/
+    speak Shane \"{{i18n:Miihau.SEE.E3.025}}\"/
+    emote farmer 32/
+    speak Shane \"{{i18n:Miihau.SEE.E3.026}}\"/
+    advancedMove Shane false -8 0 3 5000/
+    pause 500/
+    faceDirection farmer 3/
+    globalFade/
+    viewport -1200 -1200/
+    pause 600/
+    stopAdvancedMoves/
+    end dialogue Shane \"{{i18n:Miihau.SEE.E3.027}}\"/
+    ",
+    
+    "Miihau.ShaneEE.003.Fork1":"
+    pause 200/
+    friendship Shane -50/
+    emote farmer 28/
+    advancedMove farmer false -6 0 4 100/
+    globalFade/
+    viewport -1200 -1200/
+    pause 1300/
+    stopAdvancedMoves/
+    end dialogue Shane \"{{i18n:Miihau.SEE.E3.028}}\"/
+    ",
+    }
+    }
+    ]
+}

@@ -1,0 +1,905 @@
+{
+	
+    "Format": "2.0.0",
+	
+	"ConfigSchema":
+	{
+		"FourHeartsAtNight":
+		{
+			"AllowValues": "true, false",
+			"Default": "true",
+			"AllowBlank": false,
+			"Description": "{{i18n:config.FourHeartsAtNight.Description}}",
+		},
+	},
+	
+	//Non-schedule dynamic tokens
+	"DynamicTokens": [
+		
+		{
+			"Name": "OceanAtNight",
+			"Value": "", 
+		},
+		
+		{
+			"Name": "OceanAtNight",
+			"Value": "/t 2000 2500", 
+			"When":
+			{
+				"FourHeartsAtNight": true,
+			}
+		},
+		
+		{
+			"Name": "RidgesideBookNerds",
+			"Value": "", 
+		},
+		
+		{
+			"Name": "RidgesideBookNerds",
+			"Value": "{{i18n:tiakall.wren.RidgesideBookNerds}}", 
+			"When": { 
+				"HasMod: |contains=Rafseazz.RSVCP": true, 
+			},
+		},
+		
+		{
+			"Name": "FestivalYear",
+			"Value": "", 
+		},
+		
+		{
+			"Name": "FestivalYear",
+			"Value": "_y2", 
+			"When":
+			{
+				"Query: {{Year}} % 2 = 0": true,
+			}
+		},
+		
+		{
+			"Name": "RSVGatheringPos",
+			"Value": "114 42 down", 
+		},
+		
+		{
+			"Name": "RSVGatheringPos",
+			"Value": "135 53 down", 
+			"When":
+			{
+				"HasSeenEvent": "tiakall.wren.H4",
+			}
+		},
+		
+		{
+			"Name": "FreeCandy",
+			"Value": "612, 243, 223, skellady.SBVCP_ChocoChipCookies", 
+		},
+		
+		{
+			"Name": "FreeCandy",
+			"Value": "612, 243, 223, skellady.SBVCP_ChocoChipCookies, wildflour.ateliercandy_confetti_marshmallow, wildflour.ateliercandy_candy_mallow_pop, wildflour.ateliercandy_fairy_lollipop, wildflour.ateliercandy_ginger_candy, wildflour.ateliercandy_amethyst_rock_candy, wildflour.ateliercandy_shortcake_gourmet_pop", 
+			"When": { 
+				"HasMod: |contains=wildflour.ateliercandy": true, 
+			},
+		},
+		
+		{
+			"Name": "FreeCandy",
+			"Value": "612, 243, 223, skellady.SBVCP_ChocoChipCookies, Lumisteria.MtVapius_Candy_CottonCandy, Lumisteria.MtVapius_Candy_CandiedFruit, Lumisteria.MtVapius_Candy_CandiedFlower, Lumisteria.MtVapius_Candy_BirchSapBerlingot, Lumisteria.MtVapius_Candy_Praline, Lumisteria.MtVapius_Candy_Calisson, Lumisteria.MtVapius_Candy_CoffeeCandy", 
+			"When": { 
+				"HasMod: |contains=Lumisteria.MtVapius": true, 
+			},
+		},
+		
+		{
+			"Name": "FreeCandy",
+			"Value": "612, 243, 223, 279, skellady.SBVCP_ChocoChipCookies, wildflour.ateliercandy_confetti_marshmallow, wildflour.ateliercandy_candy_mallow_pop, wildflour.ateliercandy_fairy_lollipop, wildflour.ateliercandy_ginger_candy, wildflour.ateliercandy_amethyst_rock_candy, wildflour.ateliercandy_shortcake_gourmet_pop, Lumisteria.MtVapius_Candy_CottonCandy, Lumisteria.MtVapius_Candy_CandiedFruit, Lumisteria.MtVapius_Candy_CandiedFlower, Lumisteria.MtVapius_Candy_BirchSapBerlingot, Lumisteria.MtVapius_Candy_Praline, Lumisteria.MtVapius_Candy_Calisson, Lumisteria.MtVapius_Candy_CoffeeCandy", 
+			"When": { 
+				"HasMod: |contains=wildflour.ateliercandy": true, 
+				"HasMod: |contains=Lumisteria.MtVapius": true, 
+			},
+		},
+		
+		//Elliott compatibility
+		{
+			"Name": "DSVBlackElliott",
+			"Value": "pause 1", 
+		},
+		
+		{
+			"Name": "DSVBlackElliott",
+			"When": { "HasMod: |contains=DSV.Core": true,
+			"DSV.Core/ConfigValue:ElliottVariant": "Modded" },
+			"Value": "speak WrenSong \"{{i18n:tiakall.wren.elliott.dsv.1}}\"/speak Elliott \"{{i18n:tiakall.wren.elliott.dsv.2}}\"", 
+		},
+		
+		{
+			"Name": "GNCE",
+			"Value": "", 
+		},
+		
+		{
+			"Name": "GNCE",
+			"When": { "HasMod: |contains=inkstainedprairie.ElliottGNC, sapphicsaph_pitv": true },
+			"Value": ".GNCE", 
+		},
+		
+		
+		//Special order options/compat
+		{
+			"Name": "BlueJazzOrLavender",
+			"Value": "597", 
+		},
+		
+		{
+			"Name": "BlueJazzOrLavender",
+			"When": { "HasMod: |contains=Wildflour.AtelierGoods": true,
+				"HasMod: |contains=Atelier.Cauldron": true,
+			"Atelier.Cauldron/ConfigValue:WildFood": true },
+			"Value": "Wildflour.AtelierGoods_Lavender", 
+		},
+		
+		{
+			"Name": "TulipOrForgetMeNot",
+			"Value": "591", 
+		},
+		
+		{
+			"Name": "TulipOrForgetMeNot",
+			"When": { "HasMod: |contains=Lumisteria.SereneMeadow": true },
+			"Value": "Lumisteria.SereneMeadow_ForgetMeNot", 
+		},
+		
+		{
+			"Name": "ARVMap",
+			"Value": "", 
+		},
+		
+		{
+			"Name": "ARVMap",
+			"When": { "HasMod: |contains=Himetarts.ARV.CP": true },
+			"Value": "ARV", 
+		},
+		
+				{
+			"Name": "andRipley",
+			"Value": "", 
+		},
+		
+		{
+			"Name": "andRipley",
+			"When": { "HasMod: |contains=Clara.Ripley": true },
+			"Value": "{{i18n:Wren.backyard.andRipley}}",
+		},
+		
+		{
+			"Name": "andMia",
+			"Value": "", 
+		},
+		
+		{
+			"Name": "andMia",
+			"When": { "HasMod: |contains=Himetarts.ARV.CP": true },
+			"Value": "{{i18n:Wren.backyard.andMia}}", 
+		},
+		
+		//Schedule - Pelican Town stops
+		{
+			"Name": "SaloonSch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/700 Saloon 18 18 1 WrenSong_tinker/1700 Saloon 43 19 WrenSong_read/1900 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //included by default
+		},
+		{
+			"Name": "SaloonSch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/700 Saloon 18 18 1 WrenSong_tinker/1700 Saloon 44 18 WrenSong_read/1900 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //LUTI compat
+			"When":
+			{
+				"HasMod |contains= uglynt.town.interiors": true,
+			}
+		},
+		{
+			"Name": "SaloonSch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/700 Saloon 18 18 1 WrenSong_tinker/1700 Saloon 44 18 WrenSong_read/1900 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //SVE compat
+			"When":
+			{
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": true,
+			}
+		},
+		
+		{
+			"Name": "SaloonSch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/700 Saloon 18 18 1 WrenSong_tinker/1700 Saloon 44 18 WrenSong_read/1900 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //LUTI compat
+			"When":
+			{
+				"HasMod |contains= colling.towninterior": true,
+			}
+		},
+		
+		{
+			"Name": "PTSch", //Jodi/Emily
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/700 SamHouse 4 5 0 WrenSong_sink/1200 HaleyHouse 20 16 0 WrenSong_sink/1400 Custom_SBV_WrenHouse 17 5 3 WrenSong_read/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //included by default
+		},
+		
+		{
+			"Name": "JojaCCSch", //JojaMart/Community Center
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/700 JojaMart 21 5 1 WrenSong_tinker/1300 Custom_SBV_DialaCafe 30 16 3 WrenSong_read/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //defaults to Jojamart
+		},
+		
+		{
+			"Name": "JojaCCSch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/700 CommunityCenter 7 4 0 WrenSong_sink/1200 CommunityCenter 37 9 1 WrenSong_tinker/1600 Custom_SBV_WrenHouse 6 11 1/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&",  //after CC is complete 
+			"When":
+			{
+				"HasSeenEvent |contains= 191393": true,
+			}
+		},
+		
+		{
+			"Name": "LewisSch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/700 ManorHouse 6 5 0 WrenSong_sink/1500 Custom_SBV_SunberryLibrary 5 9 0 square_3_1/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked", //included by default
+		},
+		
+		{
+			"Name": "RobinSch", //included by default
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/700 ScienceHouse 6 20 1/1500 ScienceHouse 22 21 1 WrenSong_tinker/1800 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //included by default
+		},
+		{
+			"Name": "MarnieSch", //included by default
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/700 AnimalShop 26 15 0 WrenSong_tinker/1600 Custom_SBV_WrenHouse 3 8 3/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //included by default
+		},
+		//Sunberry stops
+		{
+			"Name": "CatCafeSch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/800 Custom_SBV_DialaCafe 21 8 0 WrenSong_tinker/1200 Custom_SBV_DDHouse 22 16 0 WrenSong_sink/1600 Custom_SBV_DialaCafe 30 16 3 WrenSong_read/2200 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //included by default
+		},
+		{
+			"Name": "MarketSch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/800 Custom_SBV_AriMarket 10 19 1 WrenSong_tinker/1300 Custom_SBV_MiyoungHouse 4 5 0 WrenSong_sink/1700 Custom_SBV_WrenHouse2 11 5 1 square_3_1/2250 Custom_SBV_WrenHouse2 11 5 3/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //included by default
+		},
+		{
+			"Name": "MarketSch",
+			"When": { "HasMod |contains= sophie.Calcifer": true, },
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/800 Custom_SBV_AriMarket 10 19 1 WrenSong_tinker/1300 Custom_SBV_MiyoungHouse 4 5 0 WrenSong_sink/1700 Custom_SBV_WrenHouse2 11 5 1 square_3_1 WrenSong_startSwimming/2250 Custom_SBV_WrenHouse2 11 5 3 WrenSong_stopSwimming/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //Calcifer swimming
+		},
+		{
+			"Name": "SmithySch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/800 Custom_SBV_SunberryMountain 18 21 1 WrenSong_tinker/1700 Custom_SBV_WrenHouse2 11 5 1 square_3_1/2250 Custom_SBV_WrenHouse2 11 5 3/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //included by default
+		},
+		
+		{
+			"Name": "SmithySch",
+						"When": { "HasMod |contains= sophie.Calcifer": true, },
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/800 Custom_SBV_SunberryMountain 18 21 1 WrenSong_tinker/1700 Custom_SBV_WrenHouse2 11 5 1 square_3_1 WrenSong_startSwimming/2250 Custom_SBV_WrenHouse2 11 5 3 WrenSong_stopSwimming/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //Calcifer swimming
+		},
+		
+		//Other SBV residents
+		{
+			"Name": "ARVSch",
+			"Value": "", //only when ARV is installed
+		},
+		
+		{
+			"Name": "ARVSch",
+			"Value": "", 
+			"When":
+			{
+				"HasMod |contains= Himetarts.ARV.CP": true,
+			}
+		},
+		
+		{
+			"Name": "DaoSch",
+			"Value": "", //only when Dao is installed
+		},
+		
+		{
+			"Name": "DaoSch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/800 Custom_SBV_DaoHouse 2 13 0 WrenSong_sink/1200 Custom_SBV_ImanHouse 4 13 0 WrenSong_sink/1700 Custom_SBV_WrenHouse2 11 5 1 square_3_1/2250 Custom_SBV_WrenHouse2 11 5 3/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //no swimming
+			"When":
+			{
+				"HasMod |contains= Airyn.Dao.CP": true,
+			}
+		},
+		{
+			"Name": "DaoSch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/800 Custom_SBV_DaoHouse 2 13 0 WrenSong_sink/1200 Custom_SBV_ImanHouse 4 13 0 WrenSong_sink/1700 Custom_SBV_WrenHouse2 11 5 1 square_3_1 WrenSong_startSwimming/2250 Custom_SBV_WrenHouse2 11 5 3 WrenSong_stopSwimming/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", //Calcifer swimming
+			"When":
+			{
+				"HasMod |contains= Airyn.Dao.CP": true,
+				"HasMod |contains= sophie.Calcifer": true, 
+			}
+		},
+		
+		{
+			"Name": "YriSch",
+			"Value": "", //only when Yri is installed
+		},
+		
+		{
+			"Name": "YriSch",
+			"Value": "", 
+			"When":
+			{
+				"HasMod |contains= yri.yri": true,
+			}
+		},
+		
+		{
+			"Name": "JonghyukSch",
+			"Value": "", //only when Jonghyuk is installed
+		},
+		
+		{
+			"Name": "JonghyukSch",
+			"Value": "0 Custom_SBV_WrenHouse2 6 11 0/610 Custom_SBV_WrenHouse 22 9 0/830 Custom_SBV_MaiaHouse 26 14 0 WrenSong_sink/1200 Custom_SBV_DialaCafe 30 16 3 WrenSong_read/a1700 Custom_SBV_JonghyukHouse 5 5 1 WrenSong_tinker/2000 Custom_SBV_WrenHouse 17 5 3 WrenSong_read/2300 Custom_SBV_WrenHouse2 6 11 0 WrenSong_zonked &&", 
+			"When":
+			{
+				"HasMod |contains= Arknir.Jonghyuk": true,
+			}
+		},
+		
+		//VMV
+		{
+			"Name": "VMVSch",
+			"Value": "", //only when VMV is installed
+		},
+		
+		{
+			"Name": "VMVSch",
+			"Value": "0 Lumisteria.MtVapius_Hamlet 45 96 0/610 Lumisteria.MtVapius_AsterHouse 9 16 0 WrenSong_sink \"Strings\\schedules\\WrenSong:Vapius.000\"/1100 Lumisteria.MtVapius_Hamlet 34 66 2 WrenSong_knit \"Strings\\schedules\\WrenSong:Vapius.000\"/1300 Lumisteria.MtVapius_Inn 42 30 1 WrenSong_work \"Strings\\schedules\\WrenSong:Vapius.000\"/1800 Lumisteria.MtVapius_Inn 8 29 2 WrenSong_knit \"Strings\\schedules\\WrenSong:Vapius.000\" &&", //no swimming
+			"When":
+			{
+				"HasMod |contains= Lumisteria.MtVapius": true,
+			}
+		},
+		
+		{
+			"Name": "VMVSch",
+			"Value": "0 Lumisteria.MtVapius_Hamlet 45 96 0/610 Lumisteria.MtVapius_AsterHouse 9 16 0 WrenSong_sink \"Strings\\schedules\\WrenSong:Vapius.000\"/1100 Lumisteria.MtVapius_Hamlet 34 66 2 WrenSong_knit \"Strings\\schedules\\WrenSong:Vapius.000\"/1300 Lumisteria.MtVapius_Inn 42 30 1 WrenSong_work \"Strings\\schedules\\WrenSong:Vapius.000\"/1800 Lumisteria.MtVapius_Hamlet 25 56 1 WrenSong_startSwimming \"Strings\\schedules\\WrenSong:Vapius.000\"/1850 Lumisteria.MtVapius_Hamlet 31 56 1 WrenSong_stopSwimming \"Strings\\schedules\\WrenSong:Vapius.000\"/1900 Lumisteria.MtVapius_Inn 8 29 2 WrenSong_knit \"Strings\\schedules\\WrenSong:Vapius.000\" &&", //includes swimming
+			"When":
+			{
+				"HasMod |contains= Lumisteria.MtVapius": true,
+				"HasMod |contains= sophie.Calcifer": true,
+			}
+		},
+		
+		//Ridgeside stops
+		{
+			"Name": "RSVPikaSch",
+			"Value": "", //only when RSV is installed
+		},
+		
+		{
+			"Name": "RSVPikaSch",
+			"Value": "0 Custom_Ridgeside_RSVCliff 39 19 2/610 Custom_Ridgeside_RidgesideVillage 94 37 0 WrenSong_work/1100 Custom_Ridgeside_PikaHouse 2 5 0 WrenSong_sink/1400 Custom_Ridgeside_FayeHouse 5 15 0 WrenSong_sink/1700 Custom_Ridgeside_RidgesideVillage 63 42 0 WrenSong_knit/2230 Custom_Ridgeside_LogCabinHotelLobby 27 15 3 WrenSong_read &&", 
+			"When":
+			{
+				"HasMod |contains= Rafseazz.RSVCP": true,
+			}
+		},
+		
+		{
+			"Name": "RSVHeapsSch",
+			"Value": "", //only when RSV is installed
+		},
+		
+		{
+			"Name": "RSVHeapsSch",
+			"Value": "0 Custom_Ridgeside_RSVCliff 39 19 2/610 Custom_Ridgeside_3Bros2ndFloor 7 12 0 WrenSong_sink/1100 EzekielHouse 17 6 0 WrenSong_sink/1400 Custom_Ridgeside_JericHouse 4 5 0 WrenSong_sink/1700 Custom_Ridgeside_RidgesideVillage 63 42 0 WrenSong_knit/2000 Custom_Ridgeside_LogCabinHotelLobby 27 15 3 WrenSong_read &&", 
+			"When":
+			{
+				"HasMod |contains= Rafseazz.RSVCP": true,
+			}
+		},
+		
+		{
+			"Name": "RSVHotelSch",
+			"Value": "", //only when RSV is installed
+		},
+		
+		{
+			"Name": "RSVHotelSch",
+			"Value": "0 Custom_Ridgeside_RSVCliff 39 19 2/610 Custom_Ridgeside_LogCabinHotelLobby 15 16 1 WrenSong_tinker/1100 Custom_Ridgeside_LogCabinHotel2ndFloor 32 6 1 WrenSong_tinker/1400 Custom_Ridgeside_LogCabinHotel3rdFloor 14 8 1 WrenSong_tinker/1700 Custom_Ridgeside_RidgesideVillage 63 42 0 WrenSong_knit/2230 Custom_Ridgeside_LogCabinHotelLobby 27 15 3 WrenSong_read &&", 
+			"When":
+			{
+				"HasMod |contains= Rafseazz.RSVCP": true,
+			}
+		},
+		
+		{
+			"Name": "RSVWaterSch",
+			"Value": "", //only when RSV is installed
+		},
+		
+		{
+			"Name": "RSVWaterSch",
+			"Value": "0 Custom_Ridgeside_RSVCliff 39 19 2/610 Custom_Ridgeside_AguarLab 22 15 0 WrenSong_work/1100 Custom_Ridgeside_AguarLab 23 9 1 WrenSong_tinker/1400 Custom_Ridgeside_MaddieHouse 10 5 1 WrenSong_tinker/1700 Custom_Ridgeside_RidgesideVillage 63 42 0 WrenSong_knit/2300 Custom_Ridgeside_LogCabinHotelLobby 27 15 3 WrenSong_read &&", 
+			"When":
+			{
+				"HasMod |contains= Rafseazz.RSVCP": true,
+			}
+		},
+		
+		//All together now! 
+		{
+			"Name": "Pool", 
+			"Value": "{{SaloonSch}}{{PTSch}}{{JojaCCSch}}{{RobinSch}}{{MarnieSch}} {{CatCafeSch}}{{MarketSch}}{{SmithySch}}{{DaoSch}}{{ARVSch}}{{YriSch}}{{JonghyukSch}}{{RSVPikaSch}}{{RSVHeapsSch}}{{RSVHotelSch}}{{RSVWaterSch}}{{VMVSch}}{{LewisSch}}", //all possible schedules
+		},
+		{
+			"Name": "Pool", 
+			"Value": "{{SaloonSch}}{{PTSch}}{{JojaCCSch}}{{RobinSch}}{{MarnieSch}}{{CatCafeSch}}{{MarketSch}}{{SmithySch}}", //base schedules only for Spanner shadowing
+			"When": { "DayOfWeek |contains= Monday, Wednesday": true }
+		},
+	],
+	
+    "Changes":
+    [
+		{
+			"LogName": "Load Wren House",
+			"Action": "Load",
+			"Target": "Maps/Custom_SBV_WrenHouse",
+			"FromFile": "assets/maps/WrenHouse.tmx"
+		},
+		{
+			"LogName": "Load Wren House 2",
+			"Action": "Load",
+			"Target": "Maps/Custom_SBV_WrenHouse2",
+			"FromFile": "assets/maps/WrenHouse2.tmx"
+		},
+		{
+			"LogName": "Load Wren Road Trip",
+			"Action": "Load",
+			"Target": "Maps/Custom_SBV_WrenRoadtrip",
+			"FromFile": "assets/maps/WrenRoadTrip.tmx"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"Custom_SBV_WrenHouse": {
+					"CreateOnLoad": { "MapPath": "Maps/Custom_SBV_WrenHouse" },
+                    "DisplayName": "{{i18n:tiakall.wren.WrenHouse.DisplayName}}",
+                    "ExcludeFromNpcPathfinding": false,
+                    "ArtifactSpots": [],
+                    "FishAreas": {},
+                    "Fish": [],
+                    "Forage": []
+				},
+				"Custom_SBV_WrenHouse2": {
+                    "CreateOnLoad": { "MapPath": "Maps/Custom_SBV_WrenHouse2" },
+                    "DisplayName": "{{i18n:tiakall.wren.WrenHouse.DisplayName}}",
+                    "ExcludeFromNpcPathfinding": false,
+                    "ArtifactSpots": [],
+                    "FishAreas": {},
+                    "Fish": [],
+                    "Forage": []
+				},
+				"Custom_SBV_WrenRoadtrip": {
+                    "CreateOnLoad": { "MapPath": "Maps/Custom_SBV_WrenRoadtrip" },
+                    "DisplayName": "{{i18n:tiakall.wren.WrenRoadTrip.DisplayName}}",
+                    "ExcludeFromNpcPathfinding": false,
+                    "ArtifactSpots": [],
+                    "FishAreas": {},
+                    "Fish": [],
+                    "Forage": []
+				},
+			}
+		},
+		{						
+			//Adds Wren's car
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_SunberryVillage, Maps/Custom_SBV_TwilightFestival", 
+			"PatchMode": "Replace", 
+			"FromFile": "Assets/maps/wrencar.tmx", 
+			"FromArea": { 
+				"X": 0,
+				"Y": 0,
+				"Width": 4,
+				"Height": 7
+			},
+			"ToArea": { 
+				"X": 14,
+				"Y": 14,
+				"Width": 4,
+				"Height": 7
+			},
+		},
+		
+		{						
+			//Wren's Backyard special order
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_SunberryVillage, Maps/Custom_SBV_TwilightFestival", 
+			"PatchMode": "Overlay", 
+			"FromFile": "Assets/maps/WrenBackyard{{ARVMap}}.tmx", 
+			"When": { "HasFlag:anyPlayer": "WrenBackyard", },
+			"FromArea": { 
+				"X": 0,
+				"Y": 0,
+				"Width": 18,
+				"Height": 18
+			},
+			"ToArea": { 
+				"X": 2,
+				"Y": 46,
+				"Width": 18,
+				"Height": 18
+			},
+		},
+		{
+			//Randomizes Wren's 3D printer
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_WrenHouse", 
+			"PatchMode": "Replace", 
+			"FromFile": "Assets/Maps/Wren3d{{Random: {{Range: 1, 14}} }}.tmx", 
+			"FromArea": { 
+				"X": 0,
+				"Y": 0,
+				"Width": 2,
+				"Height": 3
+			},
+			"ToArea": { 
+				"X": 1,
+				"Y": 6,
+				"Width": 2,
+				"Height": 3
+			},
+		},
+		
+		//Wren's candy "stall"
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_TwilightFestival", 
+			"PatchMode": "Overlay", 
+			"FromFile": "Assets/Maps/Wrentwilight.tmx", 
+			"FromArea": { 
+				"X": 0,
+				"Y": 0,
+				"Width": 1,
+				"Height": 2
+			},
+			"ToArea": { 
+				"X": 38,
+				"Y": 55,
+				"Width": 1,
+				"Height": 2
+			},
+		},
+		
+		//Wren's front door warp
+	    {
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_SunberryVillage",
+			"MapTiles": [
+				{
+					"Position": { 
+						"X": 12,
+						"Y": 61
+					},
+					"Layer": "Buildings", 
+					"SetProperties": {
+						"Action": "LockedDoorWarp 10 11 Custom_SBV_WrenHouse 630 2400" 
+					},
+				},
+			]
+		},
+        {
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_TwilightFestival", 
+			"MapTiles": [
+				{
+					"Position": { 
+						"X": 12,
+						"Y": 61
+					},
+					"Layer": "Buildings", 
+					"SetProperties": {
+						"Action": "LockedDoorWarp 10 11 Custom_SBV_WrenHouse 630 2400" 
+					},
+				},
+			]
+		},
+		{
+			//When it's time to leave
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_WrenHouse", 
+			"AddWarps": [
+				"10 13 Custom_SBV_SunberryVillage 12 62", 
+				"3 3 Custom_SBV_WrenHouse2 2 13",
+			]
+		},
+		{
+			//Upper Floor
+			"Action": "EditMap",
+			"Target": "Maps/Custom_SBV_WrenHouse2", 
+			"AddWarps": [
+				"2 14 Custom_SBV_WrenHouse 3 4",
+			]
+		},
+		
+		{
+            //Warp Room
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SBV_SunberryVillage",
+            "MapProperties": {
+                "NPCWarp": "17 17 Custom_SBV_WrenRoadtrip 4 10"
+			}
+		},
+        {
+            //Warp Room
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SBV_TwilightFestival",
+            "MapProperties": {
+				"NPCWarp": "17 17 Custom_SBV_WrenRoadtrip 4 10"
+			}
+		},
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SBV_WrenRoadtrip",
+            "MapProperties": {
+                "NPCWarp": "4 11 Custom_SBV_SunberryVillage 17 18"
+			}
+		},
+		
+		//because tiled fucking sucks
+		{
+            "Action": "EditMap",
+            "Target": "Maps/Custom_SBV_SunberryVillage",
+			
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 17,
+						"Y": 17
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"NPCPassable": "T"
+					}
+				},
+			]
+		},
+		
+		//Temp map for 8 heart event
+		{
+			"Action": "Load",
+			"Target": "Maps/Wren8Roadtrip",
+			"FromFile": "assets/Maps/Roadtrip.tmx"
+		},
+		
+		// NPC Disposition      
+		{
+            "LogName": "Wren is alive! MWAHAHAHA!",
+            "Action": "Include",
+            "FromFile": "assets/data/dispo.json",
+		},
+		
+		
+        //Animations
+        {
+            "LogName": "Wren Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries":
+            {
+                "WrenSong_zonked": "39/39/39",
+				"WrenSong_sink": "16/16 16 17 17 17 18 18 18 19 19 19 19 19 19 16/16",
+				"WrenSong_work": "20/20 20 21 21 21 22 22 22 23 23 23 23 23 23 20/20//laying_down/offset 0 -12",
+				"WrenSong_tinker": "24/24 24 25 25 25 26 26 26 25 25 25 27 27 27 25 25 25 26 26 26 25 25 25 27 27 27 25 25 25 26 26 26 25 25 25 27 27 27 24 24 24 24 24 24 24 24 24 24 24/24",
+				"WrenSong_knit": "29/30 30 31 31 30 30 31 31 30 30 31 31 30 30 31 31 30 30/29",
+				"WrenSong_read": "32/32 32 32 32 32 32 32 32 32 33 34/32",
+				"WrenSong_workout": "48/48 48 48 48 48 48 48 48 48 49 49 49 49 50 50 50 50 51 51 51 51 51 51 51 51 50 50 50 50 49 49 49 49/48",
+				"WrenSong_beach_chair": "39/39/39", //Wren naps at the resort 
+				"WrenSong_startSwimming": "0/0/0",
+				"WrenSong_stopSwimming": "9/9/9",
+			}
+		},
+		
+		
+        //Portraits
+        {
+            "LogName": "Wren Base Portraits",
+            "Action": "Load",
+            "Target": "Portraits/WrenSong",
+            "FromFile": "assets/images/Portraits/Wren_Spring.png",
+		},
+		
+		{
+			"LogName": "Wren Portraits - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/WrenSong",
+			"Priority": "Early",
+			"FromFile": "assets/images/Portraits/Wren_{{season}}.png",
+			"Update": "OnLocationChange"
+		},
+		
+		{
+			"LogName": "Wren Portraits - Beach",
+			"Action": "Load",
+			"Priority": "Low",
+			"Target": "Portraits/Wren_Beach",
+			"FromFile": "assets/images/Portraits/Wren_Beach.png",
+		},
+		
+		{
+            "LogName": "Wren Portraits - Spirit's Eve",
+			"Action": "EditImage",
+			"Target": "Portraits/WrenSong",
+			"Priority": "Early",
+			"FromFile": "assets/images/Portraits/Wren_SpiritsEve.png",
+			"Update": "OnLocationChange",
+            "When":
+            {
+                "DayEvent": "spirit's eve",
+                "LocationName": "town, temp"
+			}
+		},
+		
+		{
+            "LogName": "Wren Portraits - Aerobics",
+			"Action": "EditImage",
+			"Target": "Portraits/WrenSong",
+			"Priority": "Early",
+			"FromFile": "assets/images/Portraits/Wren_Aerobics.png",
+			"Update": "OnLocationChange",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+                "LocationName": "SeedShop",
+				"Weather |contains= rain, storm": false,
+			}
+		},
+		
+        //Sprites
+		{
+            "LogName": "Wren Base Sprites",
+            "Action": "Load",
+            "Target": "Characters/WrenSong",
+            "FromFile": "assets/images/Sprites/Wren_Spring.png",
+		},
+		
+		{
+			"LogName": "Wren Sprites - Seasonal",
+			"Action": "EditImage",
+			"Target": "Characters/WrenSong",
+			"FromFile": "assets/images/Sprites/Wren_{{season}}.png",
+			"Update": "OnLocationChange",
+		},
+		
+		{
+			"LogName": "Wren Sprites - Beach",
+			"Action": "Load",
+			"Target": "Characters/Wren_Beach",
+			"FromFile": "assets/images/Sprites/Wren_Beach.png",
+		},
+		
+		{
+            "LogName": "Wren Sprites - Spirit's Eve",
+			"Action": "EditImage",
+			"Target": "Characters/WrenSong",
+			"FromFile": "assets/images/Sprites/Wren_SpiritsEve.png",
+			"Update": "OnLocationChange",
+            "When":
+            {
+                "DayEvent": "spirit's eve",
+                "LocationName": "town, temp"
+			}
+		},
+		
+		{
+            "LogName": "Wren Sprites - Aerobics",
+			"Action": "EditImage",
+			"Target": "Characters/WrenSong",
+			"FromFile": "assets/images/Sprites/Wren_Aerobics.png",
+			"Update": "OnLocationChange",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+                "LocationName": "SeedShop",
+				"Weather |contains= rain, storm": false,
+			}
+		},
+		
+		//Blank JSON load for dialogue/schedules
+		{
+			"LogName": "Blank JSON load",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/WrenSong, Characters/schedules/WrenSong, Strings/Schedules/WrenSong, Data/Events/Custom_SBV_WrenHouse",
+            "FromFile": "assets/data/blank.json",
+		},
+		
+        //Events include
+		{
+			"LogName": "Events Include",
+			"Action": "Include",
+			"FromFile": "assets/data/Events.json"
+		},
+		
+		//Festival include 
+		{
+			"LogName": "Festival Include",
+			"Action": "Include",
+			"FromFile": "assets/data/Festivals.json"
+		},
+		
+		//Gift Taste Data
+		{
+			"LogName": "Gift Tastes Include",
+			"Action": "Include",
+			"FromFile": "assets/data/GiftTastes.json"
+		},
+		
+		
+		//Movie Data
+		{
+			"LogName": "Movie Reactions Include",
+			"Action": "Include",
+			"FromFile": "assets/data/Movies.json"
+		},
+		
+		//Map strings for Wren's house
+		{
+			"LogName": "Map Strings Include",
+			"Action": "Include",
+			"FromFile": "assets/data/MapStrings.json"
+		},
+		
+		//CTs for vanilla characters include
+		{
+			"LogName": "Vanilla CT Include",
+			"Action": "Include",
+			"FromFile": "assets/data/ConvoTopics.json"
+		},
+		
+		// Lasting CT compat
+		{
+			"LogName": "Lasting CT Include",
+			"Action": "Include",
+			"When": { "HasMod |contains= sophie.LastingCTs": true, },
+			"FromFile": "assets/data/LastingCT.json"
+		},
+		
+		// Schedules and Dialogue includes
+        {
+			"LogName": "Schedule/Dialogue Includes",
+			"Action": "Include",
+			"FromFile": "assets/data/schedule.json, assets/data/dialogue.json, assets/data/specialorders.json"
+		},
+		
+		//Adds gem flamingo to 6 heart event
+		{
+			"Action": "Load",
+			"Target": "Characters/gemflamingo",
+			"FromFile": "assets/images/Sprites/gemflamingo.png"
+		},
+		
+		//Wren carrying Sterling temp actor
+		{
+			"Action": "Load",
+			"Target": "Characters/WrenCarry",
+			"FromFile": "assets/images/Sprites/WrenCarry.png"
+		},
+		
+		//Mobile Phone - default to 2 hearts
+		{
+            "Action": "EditData",
+            "Target": "aedenthorn.MobilePhone/npcs",
+            "Entries": {
+                "WrenSong": {
+                    "minPointsToCall": 500,
+                    "canCall": true
+				},
+			},
+		},
+		
+		//Wren will explore the island when GIMA is installed 
+		{
+			"LogName": "Wren GI exploration",
+			"Action": "EditData",
+			"Target": "Mods/atravita_Ginger_Island_Adjustments_explorers", 
+			"Entries": {
+				"Birdwatcher": "WrenSong",
+			}
+		},
+		
+	]
+}

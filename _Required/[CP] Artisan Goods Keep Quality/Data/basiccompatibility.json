@@ -1,0 +1,541 @@
+{
+	"Changes": [
+		{// Blue Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "6480.blueegg_BlueEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Blue Eggs and Golden Mayo": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+			
+			"Priority": "Late",
+		},
+		{// Blue Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "6480.blueegg_BlueEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Blue Eggs and Golden Mayo": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			
+			"Priority": "Late",
+		},
+		{// Gold Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "6480.blueegg_GoldenEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Blue Eggs and Golden Mayo": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Gold Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "6480.blueegg_BlueEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Blue Eggs and Golden Mayo": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Donkey Cream
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "birdb.CP.Donkey_donkeycream", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Donkeys": "true", "Oil Maker": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Donkey Cream Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)19", "OutputRules", "birdb.CP.Donkey_donkeycream", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Donkeys": "true", "Oil Maker": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Quail Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "QuailMayonnaise", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Quail Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "QuailMayonnaise", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Large Quail Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "QuailMayonnaiseQuailty", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+				"MinStack": 2,
+			},
+			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Large Quail Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "QuailMayonnaiseQuailty", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+				"MinStack": 2,
+			},
+			"When": { "Mizu's Quail": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Turkey Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "TurkeyMayonnaise", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Mizu's Turkey": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Turkey Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "TurkeyMayonnaise", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Mizu's Turkey": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Void Mayo
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Strobe.largevoidegg_LargeVoidEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+				"MinStack": 2,
+			},
+			"When": { "Large Void Egg": "true", "Mayo Machine": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Void Mayo Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)24", "OutputRules", "Strobe.largevoidegg_LargeVoidEgg", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+				"MinStack": 2,
+			},
+			"When": { "Large Void Egg": "true", "Mayo Machine": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		// Honey Extend
+		{// More Honey
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "More_Honey", "OutputItem", "Honey" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// More Honey Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "More_Honey", "OutputItem", "Honey" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Blue Honey
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "Blue_Honey", "OutputItem", "Get_Blue_Honey" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Blue Honey Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "Blue_Honey", "OutputItem", "Get_Blue_Honey" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Royal Jelly
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "Royal_Jelly", "OutputItem", "Royal_Jelly" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Royal Jelly Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "Royal_Jelly", "OutputItem", "Royal_Jelly" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Blue Royal Jelly
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "Blue_Royal_Jelly", "OutputItem", "Blue_Royal_Jelly" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Blue Royal Jelly Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "Blue_Royal_Jelly", "OutputItem", "Blue_Royal_Jelly" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Sugar and Honey
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "Sugar_and_Honey", "OutputItem", "Get_Honey" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Sugar and Honey Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "Sugar_and_Honey", "OutputItem", "Get_Honey" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Coal and Meat
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "Coal_and_Meat", "OutputItem", "Meat" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Coal and Meat Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House", "OutputRules", "Coal_and_Meat", "OutputItem", "Meat" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Royal Mead
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Royal_Mead", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Royal Mead Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Royal_Mead", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Mystic Mead
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Mystic_Royal_Mead", "OutputItem", "#0" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Mystic Mead Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)12", "OutputRules", "Mystic_Royal_Mead", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Honey Extend": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		// Milkable Sheep
+		{// Sheep Milk
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "radm.milkdasheep_SheepMilk", "OutputItem", "(O)radm.milkdasheep_SheepCheese" ],
+			"Entries": {
+				"CopyQuality": true,
+			},
+			"When": { "Milkable Sheep": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Sheep Milk Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "radm.milkdasheep_SheepMilk", "OutputItem", "(O)radm.milkdasheep_SheepCheese" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Milkable Sheep": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+		{// Large Sheep Milk
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "radm.milkdasheep_LargeSheepMilk", "OutputItem", "(O)radm.milkdasheep_SheepCheese" ],
+			"Entries": {
+				"CopyQuality": true,
+				"MinStack": 2,
+			},
+			"When": { "Milkable Sheep": "true", "Reduce Quality": "false", },
+			"Priority": "Late",
+		},
+		{// Large Sheep Milk Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)16", "OutputRules", "radm.milkdasheep_LargeSheepMilk", "OutputItem", "(O)radm.milkdasheep_SheepCheese" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+				"MinStack": 2,
+			},
+			"When": { "Milkable Sheep": "true", "Reduce Quality": "true", },
+			"Priority": "Late",
+		},
+	],
+}

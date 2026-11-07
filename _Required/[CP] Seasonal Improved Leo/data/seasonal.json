@@ -1,0 +1,120 @@
+{
+	"Changes": [
+		
+	
+	/***************
+		PORTRAIT
+	***************/
+		{
+			"LogName": "Default Leo",
+			"Action": "EditImage",
+			"Target": "Portraits/ParrotBoy",
+			"FromFile": "assets/Portraits/ParrotBoy.png"
+		},
+		{
+			"LogName": "Default Leo_winter",
+			"Action": "EditImage",
+			"Target": "Portraits/ParrotBoy_Winter",
+			"FromFile": "assets/Portraits/ParrotBoy_Winter_Vanilla.png"
+		},
+		
+	//After 6 hearts event
+		{
+			"LogName": "New Leo",
+			"Action": "EditImage",
+			"Target": "Portraits/ParrotBoy",
+			"FromFile": "assets/Portraits/NewParrotBoy_{{Season}}.png",
+			"When": {
+				"HasSeenEvent |contains=6497428": true,
+				"HasFile:{{FromFile}}": true,
+		  }
+		},
+	{
+            "LogName": "Indoor Variant",
+            "Action": "EditImage",
+            "Target": "Portraits/ParrotBoy_Winter",
+            "FromFile": "assets/Portraits/NewParrotBoy_Winter{{IndoorVariant}}.png",
+            "Update": "OnLocationChange", 
+			"When":
+            {
+				"HasSeenEvent |contains=6497428": true,
+				"Season": "winter"
+            }
+        },
+		
+	//when Leo goes to Ginger Island
+		{
+			"LogName": "New Leo Island",
+			"Action": "EditImage",
+			"Target": "Portraits/ParrotBoy",
+			"FromFile": "assets/Portraits/NewParrotBoy.png",
+			"Update": "OnLocationChange", 
+			"When": {
+				"HasSeenEvent |contains=6497428": true,
+				"LocationContext": "Island",
+		  }
+		},
+		
+	//Festivals
+		{
+			"LogName": "Festivals",
+            "Action": "EditImage",
+            "Target": "Portraits/ParrotBoy",
+            "FromFile": "assets/Portraits/NewParrotBoy_{{Festival}}.png",
+            "Update": "OnLocationChange",
+			"When": {
+				"HasFile:{{FromFile}}": true
+            },
+        },
+	/****************
+		Characters
+	****************/
+		
+	//After 6 hearts event
+		{
+			"LogName": "New Leo",
+			"Action": "EditImage",
+			"Target": "Characters/ParrotBoy",
+			"FromFile": "assets/Characters/NewParrotBoy_{{Season}}.png",
+			"When": {
+				"HasSeenEvent |contains=6497428": true,
+				"HasFile:{{FromFile}}": true
+		  }
+		},
+	{
+            "LogName": "Indoor Variant",
+            "Action": "EditImage",
+            "Target": "Characters/ParrotBoy_Winter",
+            "FromFile": "assets/Characters/NewParrotBoy_Winter{{IndoorVariant}}.png",
+            "Update": "OnLocationChange", 
+			"When":
+            {
+				"HasSeenEvent |contains=6497428": true,
+				"Season": "winter"
+            }
+        },
+		{
+			"LogName": "Sprite Festivals",
+            "Action": "EditImage",
+            "Target": "Characters/ParrotBoy",
+            "FromFile": "assets/Characters/NewParrotBoy_{{Festival}}.png",
+            "Update": "OnLocationChange",
+			"When": {
+				"HasFile:{{FromFile}}": true
+            },
+        },
+		
+	//when Leo goes to Ginger Island
+		{
+			"LogName": "New Leo Island",
+			"Action": "EditImage",
+			"Target": "Characters/ParrotBoy",
+			"FromFile": "assets/Characters/NewParrotBoy.png",
+			"Update": "OnLocationChange", 
+			"When": {
+				"HasSeenEvent |contains=6497428": true,
+				"LocationName": "IslandSouth, IslandNorth, IslandWest, IslandSouthEast, IslandEast, IslandHut"
+		  }
+		},
+	]
+}

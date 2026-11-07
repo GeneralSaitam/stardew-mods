@@ -1,0 +1,122 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+    "Target": "Data/Events/Town",
+    "Entries": {
+            "17674001/F/f Haley 250/t 1130 1500/w sunny": "
+            ragtime/
+            26 31/
+            farmer 19 36 0 Haley 26 29 0/
+            skippable/
+            move farmer 0 -4 1/
+            move farmer 2 0 1/
+            pause 200/
+            emote farmer 8/
+            pause 100/
+            showFrame 58/
+            pause 50/
+            positionOffset farmer 4 0/
+            pause 50/
+            positionOffset farmer 4 0/
+            pause 50/
+            positionOffset farmer 0 4/
+            pause 50/
+            positionOffset farmer 0 4/
+            pause 50/
+            positionOffset farmer 4 0/
+            pause 50/
+            positionOffset farmer 4 0/
+            pause 50/
+            positionOffset farmer 0 4/
+            pause 50/
+            positionOffset farmer 0 4/
+            pause 100/
+            positionOffset farmer -16 -16/
+            showFrame 6/
+            playSound pickUpItem/
+            pause 50/
+            faceDirection farmer 1/
+            message \"{{i18n:Miihau.HaleyEE.E1.001}}\"/
+            move farmer 0 -1 0/
+            pause 50/
+            faceDirection farmer 3/
+            pause 350/
+            faceDirection farmer 1/
+            pause 350/
+            faceDirection farmer 3/
+            pause 350/
+            faceDirection farmer 1/
+            emote farmer 16/
+            move farmer 5 0 1/
+            move farmer 0 -1 0/
+            pause 200/
+            emote farmer 40/
+            pause 100/
+            faceDirection Haley 2/
+            message \"{{i18n:Miihau.HaleyEE.E1.002}}\"/
+            speak Haley \"{{i18n:Miihau.HaleyEE.E1.003}}\"/
+            emote farmer 60/
+            question fork1 \"{{i18n:Miihau.HaleyEE.E1.004}}\" /
+            fork leaveHairTie/
+            pause 200/
+            emote Haley 8/
+            friendship Haley 20/
+            speak Haley \"{{i18n:Miihau.HaleyEE.E1.005}}\"/
+            emote Haley 32 true/
+            message \"{{i18n:Miihau.HaleyEE.E1.006}}\"/
+            pause 300/
+            speak Haley \"{{i18n:Miihau.HaleyEE.E1.007}}\"/
+            pause 100/
+            emote farmer 32/
+            emote Haley 32 true/
+            move farmer 0 2 3/
+            faceDirection Haley 0/
+            move farmer -6 0 3 true/
+            globalFade/
+            viewport -1000 -1000/
+            pause 500/
+            end dialogue Haley \"{{i18n:Miihau.HaleyEE.E1.008}}\"",
+
+            "leaveHairTie": "
+            pause 700/
+            emote farmer 40/
+            speak Haley \"{{i18n:Miihau.HaleyEE.E1.009}}\"/
+            friendship Haley -10/
+            move farmer 0 2 3/
+            faceDirection Haley 0/
+            move farmer -4 0 3/
+            pause 300/
+            showFrame farmer 58 true/
+            pause 50/
+            positionOffset farmer -4 0/
+            pause 50/
+            positionOffset farmer -4 0/
+            pause 50/
+            positionOffset farmer 0 4/
+            pause 50/
+            positionOffset farmer 0 4/
+            pause 50/
+            positionOffset farmer -4 0/
+            pause 50/
+            positionOffset farmer -4 0/
+            pause 50/
+            positionOffset farmer 0 4/
+            pause 50/
+            positionOffset farmer 0 -4/
+            pause 100/
+            positionOffset farmer 16 -16/
+            showFrame farmer 6 true/
+            playSound pickUpItem/
+            faceDirection farmer 3/
+            pause 50/
+            message \"{{i18n:Miihau.HaleyEE.E1.010}}\"/
+            move farmer -3 0 2/
+            move farmer 0 6 2 true/
+            globalFade/
+            viewport -1000 -1000/
+            end dialogue Haley \"{{i18n:Miihau.HaleyEE.E1.011}}\""
+        },
+        },
+    ]
+}

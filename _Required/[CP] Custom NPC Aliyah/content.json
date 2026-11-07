@@ -1,0 +1,307 @@
+{
+  "Format": "2.6.0",
+  "ConfigSchema": {
+    "RemovePhoenixItems": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    }
+  },
+  "Changes": [
+    //loading assets
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}RailroadWoods",
+      "FromFile": "assets/RailroadWoods.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}RailroadWoods_10HeartEvent",
+      "FromFile": "assets/RailroadWoods_10HeartEvent.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}AliyahHouse",
+      "FromFile": "assets/AliyahHouse.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}Aliyah",
+      "FromFile": "assets/sprites_spring.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}Aliyah",
+      "FromFile": "assets/portraits_spring.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}Aliyah_Spring",
+      "FromFile": "assets/sprites_spring.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}Aliyah_Spring",
+      "FromFile": "assets/portraits_spring.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}Aliyah_Summer",
+      "FromFile": "assets/sprites_summer.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}Aliyah_Summer",
+      "FromFile": "assets/portraits_summer.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}Aliyah_Fall",
+      "FromFile": "assets/sprites_fall.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}Aliyah_Fall_Outdoors",
+      "FromFile": "assets/sprites_fall_outdoors.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}Aliyah_Fall",
+      "FromFile": "assets/portraits_fall.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}Aliyah_Fall_Outdoors",
+      "FromFile": "assets/portraits_fall_outdoors.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}Aliyah_Winter",
+      "FromFile": "assets/sprites_winter.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}Aliyah_Winter_Outdoors",
+      "FromFile": "assets/sprites_winter_outdoors.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}Aliyah_Winter",
+      "FromFile": "assets/portraits_winter.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}Aliyah_Winter_Outdoors",
+      "FromFile": "assets/portraits_winter_outdoors.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}Aliyah_Island",
+      "FromFile": "assets/portraits_island.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}Aliyah_Island",
+      "FromFile": "assets/sprites_island.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/{{ModId}}Aliyah",
+      "FromFile": "assets/AliyahDialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Strings/schedules/{{ModId}}Aliyah",
+      "FromFile": "assets/AliyahDialogue.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "dialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/{{ModId}}Aliyah",
+      "FromFile": "assets/schedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}AliyahPatio",
+      "FromFile": "assets/AliyahPatio.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}AliyahSpouseRoom",
+      "FromFile": "assets/AliyahSpouseRoom.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}AliyahSpouseRoomPostEvent",
+      "FromFile": "assets/AliyahSpouseRoomPostEvent.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/{{ModId}}Wolpertinger",
+      "FromFile": "assets/WolpertingerSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/schedules/{{ModId}}will-o'-the-wisp",
+      "FromFile": "assets/will-o'-the-wispSchedule.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}Aliyah",
+      "FromFile": "assets/AliyahDialogueMarriage.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "marriagedialogue.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}Wolpertinger_Spring",
+      "FromFile": "assets/wolpertinger_sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}Wolpertinger",
+      "FromFile": "assets/wolpertinger_sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}Wolpertinger",
+      "FromFile": "assets/wolpertinger_portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/{{ModId}}will-o'-the-wisp",
+      "FromFile": "assets/will-o'-the-wisp_sprites.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/{{ModId}}will-o'-the-wisp",
+      "FromFile": "assets/will-o'-the-wisp_portraits.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}Phoenix",
+      "FromFile": "assets/PhoenixTexture.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Animals/{{ModId}}PhoenixBaby",
+      "FromFile": "assets/PhoenixBaby.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "TileSheets/{{ModId}}PhoenixEgg",
+      "FromFile": "assets/PhoenixEgg.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "TileSheets/{{ModId}}PhoenixFeather",
+      "FromFile": "assets/PhoenixFeather.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "TileSheets/{{ModId}}PhoenixMayo",
+      "FromFile": "assets/PhoenixMayo.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Data/Events/{{ModId}}RailroadWoods",
+      "FromFile": "assets/EventsRailroadWoods.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Data/Events/{{ModId}}AliyahHouse",
+      "FromFile": "assets/EventsRailroadWoods.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}AliyahFourHearts",
+      "FromFile": "assets/AliyahJournalEvent.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}AliyahFourteenHearts01",
+      "FromFile": "assets/AliyahEventExhibitExterior.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}AliyahFourteenHearts02",
+      "FromFile": "assets/AliyahEventExhibitHallway.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}AliyahFourteenHearts03",
+      "FromFile": "assets/AliyahEventExhibit.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/{{ModId}}AliyahFourteenHearts04",
+      "FromFile": "assets/AliyahEventExhibitPeople.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/Farmer/{{ModId}}MonsterBeanie",
+      "FromFile": "assets/AliyahEventHat.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/{{ModId}}RailroadWoods",
+      "FromFile": "assets/WorldMapSpring.png",
+      "When": {
+        "Season": "spring"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/{{ModId}}RailroadWoods",
+      "FromFile": "assets/WorldMapSummer.png",
+      "When": {
+        "Season": "summer"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/{{ModId}}RailroadWoods",
+      "FromFile": "assets/WorldMapFall.png",
+      "When": {
+        "Season": "fall"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "LooseSprites/{{ModId}}RailroadWoods",
+      "FromFile": "assets/WorldMapWinter.png",
+      "When": {
+        "Season": "winter"
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "TileSheets/{{ModId}}AliyahSpousePortrait",
+      "FromFile": "assets/SpousePortrait.png"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "maps.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "eventrewards.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "aliyah.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "wolpertinger.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "will-o'-the-wisp.json"
+    }
+  ]
+}

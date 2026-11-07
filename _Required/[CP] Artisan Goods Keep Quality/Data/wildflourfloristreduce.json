@@ -1,0 +1,25 @@
+{
+	"Changes": [
+		// All flower goods keep quality, just need honeycomb
+		{// Dark Ale Reduce
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)Dehydrator", "OutputRules", "wildflour.honeybees_dehydrator_honeycomb", "OutputItem", "#0" ],
+			"Entries": {
+				"QualityModifiers": [
+					{
+						"Condition": "ITEM_QUALITY Input 4 4",
+						"Modification": "Set",
+						"Amount": 2,
+					},
+					{
+						"Condition": "ITEM_QUALITY Input 2 2",
+						"Modification": "Set",
+						"Amount": 1,
+					},
+				],
+			},
+			"When": { "Dehydrator": "true", },
+		},
+	],
+}

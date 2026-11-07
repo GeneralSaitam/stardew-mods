@@ -1,0 +1,46 @@
+{
+	"Changes":[
+		//This is for regular dialogues. Festival Dialogue changes are in another file, as are early dialogues.
+		
+		{
+			"LogName": "Winter Star, Gift From Martin",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Martin",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Martin.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Martin.WinterStar.After}}",
+			},
+			"When": {
+				"Martin": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Morgan",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Morgan",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Morgan.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Morgan.WinterStar.After}}",
+			},
+			"When": {
+				"Morgan": "enabled",
+			},
+		},
+		
+		{
+			"LogName": "Winter Star, Gift From Gunther",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/GuntherSilvian",
+			"Entries":{
+				"WinterStar_GiveGift_Before": "{{i18n:UWS.Gunther.WinterStar.Before}}",
+				"WinterStar_GiveGift_After": "{{i18n:UWS.Gunther.WinterStar.After}}",
+			},
+			"When": {
+				"Gunther": "enabled",
+			},
+		},
+		
+		//Lance stuff here if I decide to do it (regular/dating - marriage in relevant normal documents
+	],
+}

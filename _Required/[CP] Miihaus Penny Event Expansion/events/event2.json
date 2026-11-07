@@ -1,0 +1,117 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "16279002/F/f Penny 500/t 1300 1700/w sunny/A pennyGone/e 16279001": "50s/
+                20 14/
+                farmer 18 25 0 Penny 16 15 1 Jas 18 17 3 Vincent 18 15 3/
+                skippable/
+                speed Vincent 5 /
+                speed Jas 5/
+                advancedMove Vincent false 0 -1 -4 0 0 3 4 0 0 -3 -4 0 0 3 4 0 0 -2/
+                advancedMove Jas false 0 -3 -4 0 0 3 4 0 0 -3 -4 0 0 3 4 0 0 -1/
+                pause 1000/
+                emote Penny 28/
+                pause 3200/
+                speak Penny \"{{i18n:Miihau.PennyEE.event2.001}}\"/
+                jump Vincent 5/
+                jump Jas 4/
+                faceDirection Jas 3 true/
+                faceDirection Vincent 3 true/
+                emote Vincent 12 true/
+                move farmer 0 -5 0/
+                emote Jas 36 true/
+                move farmer -1 0 3/
+                move farmer 0 -3 0/
+                faceDirection Penny 2/
+                speak Penny \"{{i18n:Miihau.PennyEE.event2.002}}\"/
+                faceDirection Jas 0 true /
+                faceDirection Vincent 2 true/
+                emote Jas 12/
+                speak Jas \"{{i18n:Miihau.PennyEE.event2.003}}\"/
+                jump Vincent 6/
+                speak Vincent \"{{i18n:Miihau.PennyEE.event2.004}}\"/
+                emote Penny 28/
+                speak Penny \"{{i18n:Miihau.PennyEE.event2.005}}\"/
+                move farmer -1 0 0/
+                move farmer 0 -1 0/
+                emote farmer 8/
+                speak Penny \"{{i18n:Miihau.PennyEE.event2.006}}\"/
+                fork askToLeave/
+                faceDirection farmer 1 /
+                faceDirection Penny 1/
+                speak Penny \"{{i18n:Miihau.PennyEE.event2.007}}\"/
+                fork shoutAtThem/
+                jump Vincent 5/
+                jump Jas 4/
+                faceDirection Jas 3 true/
+                faceDirection Vincent 3 true/
+                emote Jas 32 true/
+                jump Vincent 6/
+                speak Vincent \"{{i18n:Miihau.PennyEE.event2.008}}\"/
+                pause 800/
+                speak Penny \"{{i18n:Miihau.PennyEE.event2.009}}\"/
+                textAboveHead Vincent \"{{i18n:Miihau.PennyEE.event2.010}}\"/
+                advancedMove Jas false 0 3 5 0 0 -1/
+                advancedMove Vincent false 0 4 4 0 0 -1/
+                faceDirection Penny 2/
+                faceDirection farmer 0/
+                speak Penny \"{{i18n:Miihau.PennyEE.event2.011}}\"/
+                emote farmer 32/
+                speak Penny \"{{i18n:Miihau.PennyEE.event2.012}}\"/
+                emote Penny 32/
+                speak Penny \"{{i18n:Miihau.PennyEE.event2.013}}\"/
+                textAboveHead Jas \"{{i18n:Miihau.PennyEE.event2.014}}\"/
+                advancedMove Penny false -4 0 0 -1 1 6000 1 0/
+                pause 200/
+                advancedMove farmer false 0 -5 2 0/
+                pause 1700/
+                globalFade/
+                viewport -1000 -1000/
+                pause 800/
+                friendship Jas 100/
+                friendship Vincent 150/
+                message \"{{i18n:Miihau.PennyEE.event2.015}}\"/
+                end dialogue Penny \"{{i18n:Miihau.PennyEE.event2.016}}\"",
+                "askToLeave": "faceDirection Penny 1/
+                emote farmer 28/
+                move farmer 0 7 2 true/
+                globalFade/
+                viewport -1000 -1000/
+                end dialogue Penny \"{{i18n:Miihau.PennyEE.event2.017}}\"",
+                "shoutAtThem": "friendship Jas -150/
+                friendship Vincent -100/
+                jump Jas 6/
+                advancedMove Jas false 5 0/
+                shake Jas 30000/
+                emote Jas 28 true/
+                speed Vincent 4/
+                emote Vincent 8 true/
+                pause 800/
+                advancedMove Vincent false 4 0/
+                faceDirection Penny 2/
+                faceDirection farmer 0/
+                speak Penny \"{{i18n:Miihau.PennyEE.event2.018}}\"/
+                advancedMove Penny false 4 0 0 -1 3 0 1 0/
+                emote farmer 28/
+                move farmer 0 7 2 true/
+                globalFade/
+                viewport -1000 -1000/
+                end dialogue Penny \"{{i18n:Miihau.PennyEE.event2.019}}\""
+            },
+        },  
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":{
+                "event_playground1":"{{i18n:Miihau.PennyEE.event2.020}}",
+                "event_playground2":"{{i18n:Miihau.PennyEE.event2.021}}",
+                "event_playground3":"{{i18n:Miihau.PennyEE.event2.022}}",
+                "event_playground4":"{{i18n:Miihau.PennyEE.event2.023}}"
+            }
+        
+        },
+    ]
+}

@@ -1,0 +1,510 @@
+{
+	"Changes": 
+    [
+		
+		//Festival Data 
+		{	
+			"LogName": "Egg Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 29 62 right",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 30 62 left",
+   				    "Delimiter": "/"
+				},
+				
+				//SetUp Y2
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+   				    "Value": "JortsCat 31 62 right",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+   				    "Value": "JeanCat 32 62 left",
+   				    "Delimiter": "/"
+				},
+				
+   				//MainEvent
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 23 76 left",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 24 76 right",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": 
+			{ "JortsCat{{FestivalYear}}": "{{i18n:Eggfest.JortsCat{{FestivalYear}}}}",
+				"JeanCat{{FestivalYear}}": "{{i18n:Eggfest.JeanCat{{FestivalYear}}}}",
+			},
+			
+		},
+		{	
+			"LogName": "Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"When": { "HasMod: |contains=skellady.SBVCP": false},
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 22 41 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 23 41 down",
+   				    "Delimiter": "/"
+				},
+				//Jean animation 
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "set-up{{FestivalYear}}", 5],
+					"Value": "/animate JeanCat false true 100 28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34",
+				},
+				//MainEvent for Jorts so he can dance
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 22 41 up",
+   				    "Delimiter": "/"
+				},
+				
+			],
+		},
+		{	
+			"LogName": "Flower Dance - Sunberry compat",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"When": { "HasMod: |contains=skellady.SBVCP": true},
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 33 42 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 34 42 down",
+   				    "Delimiter": "/"
+				},
+				//Jean animation 
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "set-up{{FestivalYear}}", 5],
+					"Value": "/animate JeanCat false true 100 28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34",
+				},
+				//MainEvent for Jorts so he can dance
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 33 42 up",
+   				    "Delimiter": "/"
+				},
+				
+			],
+		},
+		
+		{	
+			"LogName": "Flower Dance - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": 
+			{ "JortsCat{{FestivalYear}}": "{{i18n:Flowerdance.JortsCat{{FestivalYear}}}}",
+			"JeanCat{{FestivalYear}}": "{{i18n:Flowerdance.JeanCat{{FestivalYear}}}}", },
+			
+		},
+		{	
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 42 25 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 41 25 down",
+   				    "Delimiter": "/"
+				},
+				//Jean animation 
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "set-up{{FestivalYear}}", 5],
+					"Value": "/animate JeanCat false true 100 28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34",
+				},
+			],
+		},
+		{	
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": 
+			{ "JortsCat{{FestivalYear}}": "{{i18n:Luau.JortsCat{{FestivalYear}}}}",
+				"JeanCat{{FestivalYear}}": "{{i18n:Luau.JeanCat{{FestivalYear}}}}",
+			},
+		},
+		{	
+			"LogName": "Dance of the Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 28 13 left",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 29 13 left",
+   				    "Delimiter": "/"
+				},
+				//MainEvent
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 28 13 left",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 29 13 left",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Dance of the Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": 
+			{ "JortsCat{{FestivalYear}}": "{{i18n:Jellies.JortsCat{{FestivalYear}}}}",
+			"JeanCat{{FestivalYear}}": "{{i18n:Jellies.JeanCat{{FestivalYear}}}}", },
+		},
+		{	
+			"LogName": "Stardew Valley Fair",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JortsCat 25 36 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "JeanCat 25 37 up",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		
+		{	
+			"LogName": "Stardew Valley Fair",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+   				    "Value": "JortsCat 67 65 left",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+   				    "Value": "JeanCat 67 66 down",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		//SetUp (SVE)
+		{	
+			"LogName": "Stardew Valley Fair - SVE compat",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+   			[
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 30 22 down",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 29 22 down",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Stardew Valley Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": 
+			{ "JortsCat{{FestivalYear}}": "{{i18n:StardewFair.JortsCat{{FestivalYear}}}}",
+				"JeanCat{{FestivalYear}}": "{{i18n:StardewFair.JeanCat{{FestivalYear}}}}",
+			},
+		},
+		{	
+			"LogName": "Spirit's Eve",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"Target": "Data/Festivals/fall27",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 67 36 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 66 36 down",
+   				    "Delimiter": "/"
+				},
+			],
+		},			
+		{	
+			"LogName": "Spirit's Eve - SVE compat",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"Target": "Data/Festivals/fall27",
+			"TextOperations":
+   			[
+				//SetUp (SVE)
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 68 55 left",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 68 56 right",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Spirit's Eve",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": 
+			{ "JortsCat{{FestivalYear}}": "{{i18n:SpiritEve.JortsCat{{FestivalYear}}}}",
+				"JeanCat{{FestivalYear}}": "{{i18n:SpiritEve.JeanCat{{FestivalYear}}}}",
+			},
+		},
+		{	
+			"LogName": "Festival of Ice",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 75 36 down",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 76 36 down",
+   				    "Delimiter": "/"
+				},
+				//Jean animation 
+				{
+					"Operation": "Append",
+					"Target": ["Fields", "set-up{{FestivalYear}}", 5],
+					"Value": "/animate JeanCat false true 100 28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34",
+				},
+			],
+		},
+		{	
+			"LogName": "Festival of Ice",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": 
+			{ "JortsCat{{FestivalYear}}": "{{i18n:IceFest.JortsCat{{FestivalYear}}}}",
+				"JeanCat{{FestivalYear}}": "{{i18n:IceFest.JeanCat{{FestivalYear}}}}",
+			},
+		},
+		{	
+			"LogName": "Feast of the Winter Star",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 24 56 right",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 24 57 up",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Feast of the Winter Star - SVE compat",
+			"Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+   			[
+				//SetUp (SVE)
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 23 57 left",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 24 58 left",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Feast of the Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": 
+			{ "JortsCat{{FestivalYear}}": "{{i18n:WinterStar.JortsCat{{FestivalYear}}}}",
+				"JeanCat{{FestivalYear}}": "{{i18n:WinterStar.JeanCat{{FestivalYear}}}}",
+			},
+		},
+		
+		{	
+			"LogName": "Ridgeside Gathering",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/Fall20",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 78 51 up",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 79 51 up",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Ridgeside Gathering",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/fall20",
+			"Entries": 
+			{ "JortsCat{{FestivalYear}}": "{{i18n:RSVGather.JortsCat{{FestivalYear}}}}",
+				"JeanCat{{FestivalYear}}": "{{i18n:RSVGather.JeanCat{{FestivalYear}}}}",
+			},
+		},
+		{	
+			"LogName": "Ember of Resolutions",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/winter28",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JortsCat 38 34 down",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters{{FestivalYear}}"],
+   				    "Value": "JeanCat 39 34 down",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Ember of Resolutions",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/winter28",
+			"Entries": 
+			{ "JortsCat{{FestivalYear}}": "{{i18n:RSVResolutions.JortsCat{{FestivalYear}}}}",
+			"JeanCat{{FestivalYear}}": "{{i18n:RSVResolutions.JeanCat{{FestivalYear}}}}", },
+			
+		},
+		
+		
+	]
+}

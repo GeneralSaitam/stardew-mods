@@ -1,0 +1,367 @@
+{
+    "Changes": [
+        {
+            "LogName": "Spouses Move House Map Patch - Alissa's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_AlissaHouse",
+            "FromFile": "Maps/AlissaRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 10,
+                "Y": 1,
+                "Width": 5,
+                "Height": 10
+            },
+            "When": {
+                "SpouseAlissa": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Anton's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_3Bros2ndFloor",
+            "FromFile": "Maps/AntonRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 16,
+                "Y": 8,
+                "Width": 4,
+                "Height": 6
+            },
+            "When": {
+                "SpouseAnton": true,
+                "SpouseKiarra": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Kiarra's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_3Bros2ndFloor",
+            "FromFile": "Maps/KiarraRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 19,
+                "Y": 1,
+                "Width": 4,
+                "Height": 6
+            },
+            "When": {
+                "SpouseKiarra": true,
+                "SpouseAnton": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Anton or Kiarra's Room - Cleanup",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_3Bros2ndFloor",
+            "FromFile": "Maps/AntonOrKiarraCleanup.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 3,
+                "Y": 16,
+                "Width": 3,
+                "Height": 4
+            },
+            "When": {
+                "SpouseAnton": true,
+                "SpouseKiarra": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Anton or Kiarra's Room - Cleanup",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_3Bros2ndFloor",
+            "FromFile": "Maps/AntonOrKiarraCleanup.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 3,
+                "Y": 16,
+                "Width": 3,
+                "Height": 4
+            },
+            "When": {
+                "SpouseKiarra": true,
+                "SpouseAnton":  false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Anton and Kiarra's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_3Bros2ndFloor",
+            "FromFile": "Maps/AntonKiarraRoom.tmx",
+            "PatchMode": "Replace",
+            "When": {
+                "SpouseAnton": true,
+                "SpouseKiarra": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Blair's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_BlairHouse",
+            "FromFile": "Maps/BlairRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 1,
+                "Y": 2,
+                "Width": 8,
+                "Height": 7
+            },
+            "When": {
+                "SpouseBlair": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Corine's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_EzekielHouse",
+            "FromFile": "Maps/CorineRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 14,
+                "Y": 1,
+                "Width": 17,
+                "Height": 20
+            },
+            "When": {
+                "SpouseCorine": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Faye's House",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_FayeHouse",
+            "FromFile": "Maps/FayeHouse.tmx",
+            "PatchMode": "Replace",
+            "When": {
+                "SpouseFaye": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Flor's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_LogCabinHotel2ndFloor",
+            "FromFile": "Maps/FlorRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 1,
+                "Y": 1,
+                "Width": 8,
+                "Height": 13
+            },
+            "When": {
+                "SpouseFlor": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Ian's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_IanHouse",
+            "FromFile": "Maps/IanRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 1,
+                "Y": 1,
+                "Width": 14,
+                "Height": 13
+            },
+            "When": {
+                "SpouseIan": true,
+                "SpouseSean": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Sean's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_IanHouse",
+            "FromFile": "Maps/SeanRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 1,
+                "Y": 1,
+                "Width": 14,
+                "Height": 8
+            },
+            "When": {
+                "SpouseSean": true,
+                "SpouseIan": false
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Ian and Sean's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_IanHouse",
+            "FromFile": "Maps/IanSeanRoom.tmx",
+            "PatchMode": "Replace",
+            "When": {
+                "SpouseIan": true,
+                "SpouseSean": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Jeric's House",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_JericHouse",
+            "FromFile": "Maps/JericHouse.tmx",
+            "PatchMode": "Replace",
+            "When": {
+                "SpouseJeric": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Kenneth's House",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_KennethHouse",
+            "FromFile": "Maps/KennethHouse.tmx",
+            "PatchMode": "Replace",
+            "When": {
+                "SpouseKenneth": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Maddie's House",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_MaddieHouse",
+            "FromFile": "Maps/MaddieHouse.tmx",
+            "PatchMode": "Replace",
+            "When": {
+                "SpouseMaddie": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Maddie's House - Exterior",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_RidgesideVillage",
+            "FromFile": "Maps/MaddieHouse2.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 87,
+                "Y": 27,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "SpouseMaddie": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Paula's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_PaulaClinic",
+            "FromFile": "Maps/PaulaRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 1,
+                "Y": 4,
+                "Width": 13,
+                "Height": 11
+            },
+            "When": {
+                "SpousePaula": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Paula's Room 2",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_PaulaClinic",
+            "FromFile": "Maps/PaulaRoom2.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 0,
+                "Y": 14,
+                "Width": 12,
+                "Height": 3
+            },
+            "When": {
+                "SpousePaula": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Paula's Room 3",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_PaulaClinic",
+            "FromFile": "Maps/PaulaRoom3.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 17,
+                "Y": 13,
+                "Width": 1,
+                "Height": 2
+            },
+            "When": {
+                "SpousePaula": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Philip's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_LogCabinHotel2ndFloor",
+            "FromFile": "Maps/PhilipRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 11,
+                "Y": 18,
+                "Width": 8,
+                "Height": 9
+            },
+            "When": {
+                "SpousePhilip": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Shiro's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_ShiroHouse",
+            "FromFile": "Maps/ShiroRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 8,
+                "Y": 1,
+                "Width": 8,
+                "Height": 11
+            },
+            "When": {
+                "SpouseShiro": true
+            },
+            "Priority": "Late"
+        },
+        {
+            "LogName": "Spouses Move House Map Patch - Ysabelle's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Ridgeside_LogCabinHotel2ndFloor",
+            "FromFile": "Maps/YsabelleRoom.tmx",
+            "PatchMode": "Replace",
+            "ToArea": {
+                "X": 11,
+                "Y": 1,
+                "Width": 8,
+                "Height": 13
+            },
+            "When": {
+                "SpouseYsabelle": true
+            },
+            "Priority": "Late"
+        }
+    ]
+}

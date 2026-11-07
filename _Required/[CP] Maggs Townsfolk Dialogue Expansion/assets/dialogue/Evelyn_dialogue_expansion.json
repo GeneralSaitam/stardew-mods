@@ -1,0 +1,114 @@
+{
+"Changes": [
+//EVELYN DIALOGUE
+{
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Evelyn",
+	"Entries": {
+		"dating_Sam": "{{i18n: evelyn.reaction.dating_Sam}}",
+		"married_Sam": "{{i18n: evelyn.reaction.married_Sam}}",
+		"dating_Sebastian": "{{i18n: evelyn.reaction.dating_Sebastian}}",
+		"married_Sebastian": "{{i18n: evelyn.reaction.married_Sebastian}}",
+		"dating_Alex": "{{i18n: evelyn.reaction.dating_Alex}}",
+		"married_Alex": "{{i18n: evelyn.reaction.married_Alex}}",
+		}
+    },
+//FESTIVAL DIALOGUE
+{
+	"LogName":"Egg Festival spring13",
+	"Action": "EditData",
+	"Target": "Data/Festivals/spring13",
+	"Entries": {
+			"Evelyn": "{{i18n: evelyn.eggfestival.Evelyn}}",
+			"Evelyn_y2": "{{i18n: evelyn.eggfestival.Evelyn_y2}}",
+		},
+	"When": {
+		"HasMod |contains=maggplays.alexfriendship": false,
+		}
+	},
+{
+	"LogName":"Flower Dance spring24",
+	"Action": "EditData",
+	"Target": "Data/Festivals/spring24",
+	"Entries": {
+			"Evelyn": "{{i18n: evelyn.flowerdance.Evelyn}}",
+			"Evelyn_y2": "{{i18n: evelyn.flowerdance.Evelyn_y2}}",
+			},
+	"When": {
+		"HasMod |contains=maggplays.alexfriendship": false,
+		}
+    },
+{
+	"LogName":"Luau summer11",
+	"Action": "EditData",
+	"Target": "Data/Festivals/summer11",
+	"Entries": {
+			"Evelyn": "{{i18n: evelyn.luau.Evelyn}}",
+			"Evelyn_y2": "{{i18n: evelyn.luau.Evelyn_y2}}",
+			},
+	"When": {
+		"HasMod |contains=maggplays.alexfriendship": false,
+		}
+	},
+{
+	"LogName":"Moonlight Jellies summer28",
+	"Action": "EditData",
+	"Target": "Data/Festivals/summer28",
+	"Entries": {
+			"Evelyn": "{{i18n: evelyn.moonlightjellies.Evelyn}}",
+			"Evelyn_y2": "{{i18n: evelyn.moonlightjellies.Evelyn_y2}}",
+			},
+	"When": {
+		"HasMod |contains=maggplays.alexfriendship": false,
+		}
+	},
+{
+	"LogName":"SDV Fair fall16",
+	"Action": "EditData",
+	"Target": "Data/Festivals/fall16",
+	"Entries": {
+			"Evelyn": "{{i18n: evelyn.fair.Evelyn}}",
+			"Evelyn_y2": "{{i18n: evelyn.fair.Evelyn_y2}}",
+			},
+	"When": {
+		"HasMod |contains=maggplays.alexfriendship": false,
+		}
+    },
+{
+	"LogName":"Spirits Eve fall27",
+	"Action": "EditData",
+	"Target": "Data/Festivals/fall27",
+	"Entries": {
+			"Evelyn": "{{i18n: evelyn.spiritseve.Evelyn}}",
+			"Evelyn_y2": "{{i18n: evelyn.spiritseve.Evelyn_y2}}",
+			},
+	"When": {
+		"HasMod |contains=maggplays.alexfriendship": false,
+		}
+	},
+{
+	"LogName":"Ice Festival winter8",
+	"Action": "EditData",
+	"Target": "Data/Festivals/winter8",
+	"Entries": {
+			"Evelyn": "{{i18n: evelyn.icefestival.Evelyn}}",
+			"Evelyn_y2": "{{i18n: evelyn.icefestival.Evelyn_y2}}",
+			},
+	"When": {
+		"HasMod |contains=maggplays.alexfriendship": false,
+		}
+	},
+{
+	"LogName":"Winter Star winter25",
+	"Action": "EditData",
+	"Target": "Data/Festivals/winter25",
+	"Entries": {
+			"Evelyn": "{{i18n: evelyn.winterstar.Evelyn}}",
+			"Evelyn_y2": "{{i18n: evelyn.winterstar.Evelyn_y2}}",
+			},
+	"When": {
+		"HasMod |contains=maggplays.alexfriendship": false,
+		}
+    },
+]
+}

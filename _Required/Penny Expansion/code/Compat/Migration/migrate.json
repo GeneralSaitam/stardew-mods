@@ -1,0 +1,172 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Migrate_PennyMelonQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PennyMelonQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PennyMelonQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PennyMelonQuestLetter",
+                        "AddMail Current {{ModId}}_PennyFreshMelonQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PennyArtifactQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PennyArtifactQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PennyArtifactQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PennyArtifactQuestLetter",
+                        "AddMail Current {{ModId}}_PennyAncientArtifactQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PennyWinterWarmthLetter": {
+                    "Id": "{{ModId}}_Migrate_PennyWinterWarmthLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PennyWinterWarmthLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PennyWinterWarmthLetter",
+                        "AddMail Current {{ModId}}_PennyWinterWarmthQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PennySpringSoupLetter": {
+                    "Id": "{{ModId}}_Migrate_PennySpringSoupLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PennySpringSoupLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PennySpringSoupLetter",
+                        "AddMail Current {{ModId}}_PennyColdSpringSoupQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PennyGeologyQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PennyGeologyQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PennyGeologyQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PennyGeologyQuestLetter",
+                        "AddMail Current {{ModId}}_PennyGeologyEmeraldQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PennyPoppyQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PennyPoppyQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PennyPoppyQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PennyPoppyQuestLetter",
+                        "AddMail Current {{ModId}}_PennyPoppyFlowerQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PamBatteryQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PamBatteryQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PamBatteryQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PamBatteryQuestLetter",
+                        "AddMail Current {{ModId}}_PamBatteryPackQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PamYamQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PamYamQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PamYamQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PamYamQuestLetter",
+                        "AddMail Current {{ModId}}_PamGlazedYamQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PamSunflowerQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PamSunflowerQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PamSunflowerQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PamSunflowerQuestLetter",
+                        "AddMail Current {{ModId}}_PamCuteSunflowerQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PennyAppleQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PennyAppleQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PennyAppleQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PennyAppleQuestLetter",
+                        "AddMail Current {{ModId}}_PennyFreshAppleQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PennyTiredQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PennyTiredQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PennyTiredQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PennyTiredQuestLetter",
+                        "AddMail Current {{ModId}}_PennyTiredCoffeeQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PennyMarineQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PennyMarineQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PennyMarineQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PennyMarineQuestLetter",
+                        "AddMail Current {{ModId}}_PennyMarineUrchinQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PamBeerQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PamBeerQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PamBeerQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PamBeerQuestLetter",
+                        "AddMail Current {{ModId}}_PamColdPaleAleQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PamSnackQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PamSnackQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PamSnackQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PamSnackQuestLetter",
+                        "AddMail Current {{ModId}}_PamHashbrownSnackQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_PamPizzaQuestLetter": {
+                    "Id": "{{ModId}}_Migrate_PamPizzaQuestLetter",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModId}}_PamPizzaQuestLetter",
+                    "Actions": [
+                        "RemoveMail Current {{ModId}}_PamPizzaQuestLetter",
+                        "AddMail Current {{ModId}}_PamGreasyPizzaQuestLetter tomorrow"
+                    ]
+                },
+                "{{ModId}}_Migrate_Active_PamPizzaQuest": {
+                    "Id": "{{ModId}}_Migrate_Active_PamPizzaQuest",
+                    "Trigger": "DayStarted",
+                    "Condition": "\"{{HasActiveQuest |contains={{ModId}}_PamPizzaQuest}}\"",
+                    "Actions": [
+                        "RemoveQuest {{ModId}}_PamPizzaQuest",
+                        "AddQuest {{ModId}}_PamFreshPizzaQuest"
+                    ]
+                },
+                "{{ModId}}_Migrate_Active_PennyWinterWarmth": {
+                    "Id": "{{ModId}}_Migrate_Active_PennyWinterWarmth",
+                    "Trigger": "DayStarted",
+                    "Condition": "\"{{HasActiveQuest |contains={{ModId}}_PennyWinterWarmth}}\"",
+                    "Actions": [
+                        "RemoveQuest {{ModId}}_PennyWinterWarmth",
+                        "AddQuest {{ModId}}_PennyWinterRootsQuest"
+                    ]
+                },
+                "{{ModId}}_Migrate_Active_PennyCozyWinterQuest": {
+                    "Id": "{{ModId}}_Migrate_Active_PennyCozyWinterQuest",
+                    "Trigger": "DayStarted",
+                    "Condition": "\"{{HasActiveQuest |contains={{ModId}}_PennyCozyWinterQuest}}\"",
+                    "Actions": [
+                        "RemoveQuest {{ModId}}_PennyCozyWinterQuest",
+                        "AddQuest {{ModId}}_PennyWinterRootsQuest"
+                    ]
+                }
+            }
+        }
+    ]
+}

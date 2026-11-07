@@ -1,0 +1,124 @@
+{
+  "Changes": [
+    {
+      "LogName": "MNF - Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Entries": {
+        "MNF.MoreNewFish_mushu": {
+          "ItemId": "MNF.MoreNewFish_mushu",
+          "MinFishingLevel": 10,
+          "CatchLimit": 1,
+          "CuriosityLureBuff": 0.1,
+          "IsBossFish": true
+        },
+        "MNF.MoreNewFish_shinidamachu": {
+          "ItemId": "MNF.MoreNewFish_shinidamachu",
+          "MinFishingLevel": 10,
+          "CatchLimit": 1,
+          "CuriosityLureBuff": 0.1,
+          "IsBossFish": true
+        },
+        "MNF.MoreNewFish_vampire_fish": {
+          "ItemId": "MNF.MoreNewFish_vampire_fish",
+          "Condition": "WEATHER Here storm",
+          "MinFishingLevel": 10,
+          "CatchLimit": 1,
+          "CuriosityLureBuff": 0.1,
+          "IsBossFish": true
+        },
+        "MNF.MoreNewFish_iridiumfish": {
+          "ItemId": "MNF.MoreNewFish_iridiumfish",
+          "Condition": "WEATHER Here storm",
+          "MinFishingLevel": 4,
+          "CatchLimit": 1,
+          "CuriosityLureBuff": 0.1,
+          "IsBossFish": true
+        },
+        "MNF.MoreNewFish_vampire_squid": {
+          "ItemId": "MNF.MoreNewFish_vampire_squid",
+          "Condition": "LOCATION_SEASON Here winter",
+          "MinFishingLevel": 10,
+          "CatchLimit": 1,
+          "CuriosityLureBuff": 0.1,
+          "IsBossFish": true
+        },
+        "MNF.MoreNewFish_tui": {
+          "ItemId": "MNF.MoreNewFish_tui",
+          "Condition": "LOCATION_SEASON Here winter",
+          "MinFishingLevel": 10,
+          "CatchLimit": 1,
+          "CuriosityLureBuff": 0.1,
+          "IsBossFish": true
+        },
+        "MNF.MoreNewFish_la": {
+          "ItemId": "MNF.MoreNewFish_la",
+          "Condition": "LOCATION_SEASON Here winter",
+          "MinFishingLevel": 10,
+          "CatchLimit": 1,
+          "CuriosityLureBuff": 0.1,
+          "IsBossFish": true
+        },
+        "MNF.MoreNewFish_great_firefly_squid": {
+          "ItemId": "MNF.MoreNewFish_great_firefly_squid",
+          "MinFishingLevel": 10,
+          "CatchLimit": 1,
+          "CuriosityLureBuff": 0.1,
+          "IsBossFish": true
+        }
+      },
+      "When": {
+        "Legendary Fish On Farm": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish On Farm All Weather Legendary Fish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_vampire_fish": {
+          "Condition": null
+        },
+        "MNF.MoreNewFish_iridiumfish": {
+          "Condition": null
+        }
+      },
+      "When": {
+        "Legendary Fish On Farm": true,
+        "All Weather Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "MNF - Legendary Fish On Farm All Seasons Legendary Fish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "MNF.MoreNewFish_vampire_squid": {
+          "Condition": null
+        },
+        "MNF.MoreNewFish_tui": {
+          "Condition": null
+        },
+        "MNF.MoreNewFish_la": {
+          "Condition": null
+        }
+      },
+      "When": {
+        "Legendary Fish On Farm": true,
+        "All Seasons Legendary Fish": true
+      }
+    }
+  ]
+}

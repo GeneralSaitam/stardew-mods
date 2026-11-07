@@ -1,0 +1,22 @@
+{
+	"Changes": [
+		{
+			"LogName": "Iridium Rod Attach. Slots",
+			"Action": "EditData",
+			"Target": "Data/Tools",
+			"Fields": {
+			    "IridiumRod": {"AttachmentSlots": "{{Iridium Rod Attach. Slots}}"},
+					},
+				"When": {"Iridium Rod Attach. Slots": "3, 4, 5, 6, 7, 8, 9, 10, 11"},
+		},
+		{
+			"LogName": "Advanced Iridium Rod Attach. Slots",
+			"Action": "EditData",
+			"Target": "Data/Tools",
+			"Fields": {
+			    "AdvancedIridiumRod": {"AttachmentSlots": "{{Adv. Iridium Rod Attach. Slots}}"},
+					},
+				"When": {"Adv. Iridium Rod Attach. Slots": "4, 5, 6, 7, 8, 9, 10, 11"},
+		},
+	]
+}

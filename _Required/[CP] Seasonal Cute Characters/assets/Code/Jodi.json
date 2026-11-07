@@ -1,0 +1,132 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load_Jodi_Assets",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/Jodi_Spring, Portraits/Jodi_Summer, Portraits/Jodi_Fall, Portraits/Jodi_Winter_Outdoor, Portraits/Jodi_Winter_Indoor, Portraits/Jodi_FlowerDance, Portraits/Jodi_SpiritsEve, Portraits/Jodi_Aerobics, Characters/Jodi_Spring, Characters/Jodi_Summer, Characters/Jodi_Fall, Characters/Jodi_Winter_Outdoor, Characters/Jodi_Winter_Indoor, Characters/Jodi_FlowerDance, Characters/Jodi_SpiritsEve, Characters/Jodi_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Jodi/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Edit_Jodi_Beach_Assets",
+			"Action": "EditImage",
+			"Target": "Portraits/Jodi_Beach, Characters/Jodi_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Jodi/{{TargetWithoutPath}}.png",
+			"When": {
+				"BeachOutfitsEnabled": true
+			}
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "Add_Jodi_Seasonal_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Jodi_Spring, Characters/Jodi_Summer, Characters/Jodi_Fall, Characters/Jodi_Winter_Outdoor, Characters/Jodi_Winter_Indoor, Characters/Jodi_FlowerDance, Characters/Jodi_SpiritsEve, Characters/Jodi_Aerobics",
+			"FromFile": "assets/{{TargetPathOnly}}/Jodi/Jodi_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		},
+		{
+			"LogName": "Add_Jodi_Beach_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Jodi_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Jodi/{{TargetWithoutPath}}_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false,
+				"BeachOutfitsEnabled": true
+			}
+		},
+		// APPEARANCE DATA
+		{
+			"LogName": "Add_Jodi_Appearances",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"Jodi",
+				"Appearance"
+			],
+			"Entries": {
+				// Seasonal Outfits
+				"{{ModId}}.JodiSpring": {
+					"Id": "{{ModId}}.JodiSpring",
+					"Portrait": "Portraits/Jodi_Spring",
+					"Sprite": "Characters/Jodi_Spring",
+					"Season": "spring"
+				},
+				"{{ModId}}.JodiSummer": {
+					"Id": "{{ModId}}.JodiSummer",
+					"Portrait": "Portraits/Jodi_Summer",
+					"Sprite": "Characters/Jodi_Summer",
+					"Season": "summer"
+				},
+				"{{ModId}}.JodiFall": {
+					"Id": "{{ModId}}.JodiFall",
+					"Portrait": "Portraits/Jodi_Fall",
+					"Sprite": "Characters/Jodi_Fall",
+					"Season": "fall"
+				},
+				"{{ModId}}.JodiWinterIndoor": {
+					"Id": "{{ModId}}.JodiWinterIndoor",
+					"Portrait": "Portraits/Jodi_Winter_Indoor",
+					"Sprite": "Characters/Jodi_Winter_Indoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitEnabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitDisabled}}",
+					"Precedence": -101
+				},
+				"{{ModId}}.JodiWinterOutdoor": {
+					"Id": "{{ModId}}.JodiWinterOutdoor",
+					"Portrait": "Portraits/Jodi_Winter_Outdoor",
+					"Sprite": "Characters/Jodi_Winter_Outdoor",
+					"Season": "winter",
+					"Indoors": "{{IndoorsWinterOutfitDisabled}}",
+					"Outdoors": "{{OutdoorsWinterOutfitEnabled}}",
+					"Precedence": -101
+				},
+				// Extra Outfits
+				"{{ModId}}.JodiAerobics": {
+					"Id": "{{ModId}}.JodiAerobics",
+					"Portrait": "Portraits/Jodi_Aerobics",
+					"Sprite": "Characters/Jodi_Aerobics",
+					"Condition": "{{UseAerobicsOutfit}}",
+					"Precedence": -200
+				},
+				// Festival Outfits
+				"{{ModId}}.JodiFlowerDance": {
+					"Id": "{{ModId}}.JodiFlowerDance",
+					"Portrait": "Portraits/Jodi_FlowerDance",
+					"Sprite": "Characters/Jodi_FlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfitsEnabled}}",
+					"Precedence": -300
+				},
+				"{{ModId}}.JodiSpirit": {
+					"Id": "{{ModId}}.JodiSpirit",
+					"Portrait": "Portraits/Jodi_SpiritsEve",
+					"Sprite": "Characters/Jodi_SpiritsEve",
+					"Condition": "{{UseSpiritsEveOutfit}}",
+					"Precedence": -300
+				}
+			}
+		},
+		// CALENDAR
+		{
+			"LogName": "Edit_Jodi_Calendar_Sprite",
+			"Action": "EditImage",
+			"Target": "Characters/Jodi",
+			"FromFile": "assets/{{Target}}/Jodi_{{CurrentSeasonAttire}}.png"
+		},
+		{
+			"LogName": "Add_Jodi_Calendar_Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Jodi",
+			"FromFile": "assets/{{Target}}/Jodi_Nose.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HideNoses": false
+			}
+		}
+	]
+}

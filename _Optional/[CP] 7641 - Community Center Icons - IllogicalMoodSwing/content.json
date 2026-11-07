@@ -1,0 +1,540 @@
+{
+   "Format": "2.4.0",
+	"ConfigSchema": {
+      "Animal Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Animal Bundle."
+		 },
+      "Artisan Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Artisan Bundle."
+		},
+      "Adventurer's Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Adventurer's Bundle."
+		},
+      "Blacksmith's Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Blacksmith's Bundle."
+		},
+      "Crab Pot Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Crab Pot Bundle."
+		},
+      "Spring Crops Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Spring Crops Bundle."
+		},
+      "Summer Crops Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Summer Crops Bundle."
+		},
+      "Fall Crops Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Fall Crops Bundle."
+		},
+      "Quality Crops Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Quality Crops Bundle."
+		},
+      "Beach Fishing Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Beach Fishing Bundle."
+		},
+      "Lake Fishing Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Lake Fishing Bundle."
+		},
+      "River Fishing Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for River Fishing Bundle."
+		},
+      "Night Fishing Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Night Fishing Bundle."
+		},
+      "Specialty Fishing Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Specialty Fishing Bundle."
+		},
+      "Spring Foraging Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Spring Foraging Bundle."
+		},
+      "Summer Foraging Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Summer Foraging Bundle."
+		},
+      "Fall Foraging Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Fall Foraging Bundle."
+		},
+      "Winter Foraging Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Winter Foraging Bundle."
+		},
+      "Exotic Foraging Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Exotic Foraging Bundle."
+		},
+      "Geologist's Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Geologist's Bundle."
+		},
+      "2500 Vault Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for 2500 Vault Bundle."
+		},
+      "5000 Vault Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for 5000 Vault Bundle."
+		},
+      "10000 Vault Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for 10000 Vault Bundle."
+		},
+      "25000 Vault Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for 25000 Vault Bundle."
+        },
+	  "Sticky Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Sticky Bundle."
+        },
+	  "Forest Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Forest Bundle."
+        },
+	  "Wild Medicine Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Wild Medicine Bundle."
+        },
+	  "Rare Crops Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Rare Crops Bundle."
+        },
+	  "Fish Farmer's Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Fish Farmer's Bundle."
+        },
+	  "Garden Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Garden Bundle."
+        },
+	  "Master Fisher's Bundle": {
+         "AllowValues": "true, false",
+         "Default": "true",
+         "Description": "Replaces icon for Master Fisher's Bundle."
+        },
+	},
+   "Changes": [
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/animal.png",
+		"ToArea": {"X": 128, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Animal Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/artisan.png",
+		"ToArea": {"X": 160, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Artisan Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/combat.png",
+		"ToArea": {"X": 64, "Y": 212, "Width": 32, "Height": 32},
+		"When": {
+            "Adventurer's Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/crab pot.png",
+		"ToArea": {"X": 352, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Crab Pot Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/crops fa.png",
+		"ToArea": {"X": 64, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Fall Crops Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/crops quality.png",
+		"ToArea": {"X": 96, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Quality Crops Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/crops sp.png",
+		"ToArea": {"X": 0, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Spring Crops Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/crops su.png",
+		"ToArea": {"X": 32, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Summer Crops Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/fishing beach.png",
+		"ToArea": {"X": 256, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Beach Fishing Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/fishing night.png",
+		"ToArea": {"X": 288, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Night Fishing Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/fishing specialty.png",
+		"ToArea": {"X": 320, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Specialty Fishing Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/foraging exotic.png",
+		"ToArea": {"X": 608, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Exotic Foraging Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/foraging fa.png",
+		"ToArea": {"X": 480, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Fall Foraging Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/foraging sp.png",
+		"ToArea": {"X": 416, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Spring Foraging Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/foraging su.png",
+		"ToArea": {"X": 448, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Summer Foraging Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/foraging wi.png",
+		"ToArea": {"X": 512, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Winter Foraging Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/geologist.png",
+		"ToArea": {"X": 32, "Y": 212, "Width": 32, "Height": 32},
+		"When": {
+            "Geologist's Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/lake fishing fa.png",
+		"ToArea": {"X": 224, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+			"season": "fall",
+			"Lake Fishing Bundle": "true"
+			}
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/lake fishing sp.png",
+		"ToArea": {"X": 224, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+			"season": "spring",
+			"Lake Fishing Bundle": "true"
+			}
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/lake fishing su.png",
+		"ToArea": {"X": 224, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+			"season": "summer",
+			"Lake Fishing Bundle": "true"
+			}
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/lake fishing wi.png",
+		"ToArea": {"X": 224, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+			"season": "winter",
+			"Lake Fishing Bundle": "true"
+			}
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/mining.png",
+		"ToArea": {"X": 0, "Y": 212, "Width": 32, "Height": 32},
+		"When": {
+            "Blacksmith's Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/river fishing fa.png",
+		"ToArea": {"X": 192, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+			"season": "fall",
+			"Lake Fishing Bundle": "true"
+			}
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/river fishing sp.png",
+		"ToArea": {"X": 192, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+			"season": "spring",
+			"Lake Fishing Bundle": "true"
+			}
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/river fishing su.png",
+		"ToArea": {"X": 192, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+			"season": "summer",
+			"Lake Fishing Bundle": "true"
+			}
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/river fishing wi.png",
+		"ToArea": {"X": 192, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+			"season": "winter",
+			"Lake Fishing Bundle": "true"
+			}
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/vault 2500.png",
+		"ToArea": {"X": 96, "Y": 212, "Width": 32, "Height": 32},
+		"When": {
+            "2500 Vault Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/vault 5000.png",
+		"ToArea": {"X": 128, "Y": 212, "Width": 32, "Height": 32},
+		"When": {
+            "5000 Vault Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/vault 10000.png",
+		"ToArea": {"X": 160, "Y": 212, "Width": 32, "Height": 32},
+		"When": {
+            "10000 Vault Bundle": "true"
+			},
+ 		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/vault 25000.png",
+		"ToArea": {"X": 192, "Y": 212, "Width": 32, "Height": 32},
+		"When": {
+            "25000 Vault Bundle": "true"
+			},
+		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/BundleSprites",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/sticky.png",
+		"ToArea": {"X": 64, "Y": 32, "Width": 32, "Height": 32},
+		"When": {
+            "Sticky Bundle": "true"
+			},
+		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/BundleSprites",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/forest.png",
+		"ToArea": {"X": 128, "Y": 32, "Width": 32, "Height": 32},
+		"When": {
+            "Forest Bundle": "true"
+			},
+		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/BundleSprites",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/wild medicine.png",
+		"ToArea": {"X": 32, "Y": 32, "Width": 32, "Height": 32},
+		"When": {
+            "Wild Medicine Bundle": "true"
+			},
+		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/BundleSprites",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/rare crops.png",
+		"ToArea": {"X": 96, "Y": 0, "Width": 32, "Height": 32},
+		"When": {
+            "Rare Crops Bundle": "true"
+			},
+		},
+		{
+		"Action": "EditImage",
+        "Target": "LooseSprites/BundleSprites",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/fish farmer.png",
+		"ToArea": {"X": 0, "Y": 32, "Width": 32, "Height": 32},
+		"When": {
+            "Fish Farmer's Bundle": "true"
+			},
+		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/BundleSprites",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/garden.png",
+		"ToArea": {"X": 224, "Y": 0, "Width": 32, "Height": 32},
+		"When": {
+            "Garden Bundle": "true"
+			},
+		},
+		{
+        "Action": "EditImage",
+        "Target": "LooseSprites/JunimoNote",
+		"LogName": "Community Center Icons",
+        "FromFile": "assets/master fisher.png",
+		"ToArea": {"X": 384, "Y": 180, "Width": 32, "Height": 32},
+		"When": {
+            "Master Fisher's Bundle": "true"
+			},
+		},
+   ]
+}

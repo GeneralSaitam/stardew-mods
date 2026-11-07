@@ -1,0 +1,145 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SeedShop", "Items" ],
+            "When": {
+                "Barley": true,
+                "KeepCCEDupes": true
+            },
+            "Entries": {
+                "{{ModId}}_Barley_Seeds": {
+                    "Condition": "SEASON spring",
+                    "Id": "{{ModId}}_Barley_Seeds",
+                    "ItemId": "{{ModId}}_Barley_Seeds",
+                    "Price": 5
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Barley_Seeds",
+                    "BeforeId": "GrassStarter",
+                    "Condition": "SEASON spring"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SeedShop", "Items" ],
+            "When": {
+                "Buckwheat": true,
+                "KeepCCEDupes": true
+            },
+            "Entries": {
+                "{{ModId}}_Buckwheat_Seeds": {
+                    "Condition": "SEASON spring summer",
+                    "Id": "{{ModId}}_Buckwheat_Seeds",
+                    "ItemId": "{{ModId}}_Buckwheat_Seeds",
+                    "Price": 100
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Buckwheat_Seeds",
+                    "BeforeId": "GrassStarter",
+                    "Condition": "SEASON spring summer"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SeedShop", "Items" ],
+            "When": {
+                "Millet": true
+            },
+            "Entries": {
+                "{{ModId}}_Millet_Seeds_Summer": {
+                    "Condition": "SEASON summer",
+                    "Id": "{{ModId}}_Millet_Seeds_Summer",
+                    "ItemId": "{{ModId}}_Millet_Seeds",
+                    "Price": 5
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Millet_Seeds_Summer",
+                    "BeforeId": "GrassStarter",
+                    "Condition": "SEASON summer"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SeedShop", "Items" ],
+            "When": {
+                "Oats": true,
+                "KeepCCEDupes": true
+            },
+            "Entries": {
+                "{{ModId}}_Oat_Seeds_Spring": {
+                    "Condition": "SEASON spring",
+                    "Id": "{{ModId}}_Oat_Seeds_Spring",
+                    "ItemId": "{{ModId}}_Oat_Seeds",
+                    "Price": 8
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Oat_Seeds_Spring",
+                    "BeforeId": "GrassStarter",
+                    "Condition": "SEASON spring"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SeedShop", "Items" ],
+            "When": {
+                "Rye": true
+            },
+            "Entries": {
+                "{{ModId}}_Rye_Seeds": {
+                    "Condition": "SEASON summer fall",
+                    "Id": "{{ModId}}_Rye_Seeds",
+                    "ItemId": "{{ModId}}_Rye_Seeds",
+                    "Price": 10
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Rye_Seeds",
+                    "BeforeId": "GrassStarter",
+                    "Condition": "SEASON summer fall"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SeedShop", "Items" ],
+            "When": {
+                "Sorghum": true
+            },
+            "Entries": {
+                "{{ModId}}_Sorghum_Seeds": {
+                    "Condition": "SEASON summer fall",
+                    "Id": "{{ModId}}_Sorghum_Seeds",
+                    "ItemId": "{{ModId}}_Sorghum_Seeds",
+                    "Price": 5
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}_Sorghum_Seeds",
+                    "BeforeId": "GrassStarter",
+                    "Condition": "SEASON summer fall"
+                }
+            ]
+        }
+    ]
+}

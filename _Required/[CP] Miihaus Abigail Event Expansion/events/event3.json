@@ -1,0 +1,136 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                "18657003/F/f Abigail 750/t 1930 2200/e 18657002": "Saloon1/
+                39 19/
+                farmer 27 19 1 Abigail 33 18 0 Sebastian 33 19 0 Sam 34 19 0 Shane 26 18 2 Gus 13 18 2 Emily 16 17 0 Clint 19 23 3/
+                skippable/
+                positionOffset Sebastian -20 0/
+                positionOffset Sam -20 0/
+                animate Shane false true 160 20 20 20 20 20 20 20 20 20 20 20 21 21 22 22 23 23 24 24 23 23 24 24 23 23 23 22 22 21 21 20 20/
+                move farmer 4 0 1/
+                shake Abigail 1000/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.001}}\"/
+                pause 200/
+                playSound cowboy_dead/
+                pause 800/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.002}}\"/
+                pause 200/
+                speak Sebastian \"{{i18n:Miihau.AbigailEE.event3.003}}\"/
+                pause 200/
+                speak Sam \"{{i18n:Miihau.AbigailEE.event3.004}}\"/
+                faceDirection Sebastian 3/
+                pause 200/
+                speak Sebastian \"{{i18n:Miihau.AbigailEE.event3.005}}\"/
+                advancedMove Sam false 0 1 -1 0 3 1000/
+                faceDirection Abigail 3/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.006}}\"/
+                faceDirection Sam 0/
+                speak Sam \"{{i18n:Miihau.AbigailEE.event3.007}}\"/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.008}}\"/
+                question fork1 \"{{i18n:Miihau.AbigailEE.event3.009}}\" /
+                fork dontLikeVideoGames/
+                speak Sam \"{{i18n:Miihau.AbigailEE.event3.010}}\"/
+                advancedMove Sam false 1 0 0 -1 4 1000/
+                faceDirection Sebastian 0/
+                move farmer 0 -1 1/
+                move farmer 1 0 1/
+                emote Abigail 32/
+                faceDirection Abigail 0/
+                pause 400/
+                globalFade/
+                viewport -1000 -1000/
+                warp Abigail 42 18/
+                warp farmer 41 18/
+                warp Sebastian 36 20/
+                warp Sam 42 20/
+                message \"{{i18n:Miihau.AbigailEE.event3.011}}\"/
+                faceDirection Abigail 2/
+                faceDirection farmer 2/
+                faceDirection Sam 1/
+                faceDirection Sebastian 1/
+                positionOffset Abigail 0 -18/
+                animate Sam true true 300 34 34 4 34 34 4 4 4 4 4 4 4 4/
+                globalFadeToClear 0.007 true/
+                viewport 39 19/
+                pause 1300/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.012}}\"/
+                pause 400/
+                faceDirection Abigail 3/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.013}}\"/
+                faceDirection farmer 1/
+                question null \"{{i18n:Miihau.AbigailEE.event3.014}}\" /
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.015}}\"/
+                pause 200/
+                emote Abigail 32/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.016}}\"/
+                pause 500/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.017}}\"/
+                faceDirection farmer 2/
+                animate farmer false true 160 102 103 102 103/
+                playSound dustMeep/
+                pause 400/
+                playSound dustMeep/
+                pause 600/
+                stopAnimation farmer/
+                faceDirection farmer 1/
+                emote Abigail 32/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.018}}\"/
+                pause 800/
+                stopAnimation Sam/
+                faceDirection Sam 0/
+                speak Sam \"{{i18n:Miihau.AbigailEE.event3.019}}\"/
+                faceDirection Abigail 2/
+                faceDirection farmer 2/
+                speak Sam \"{{i18n:Miihau.AbigailEE.event3.020}}\"/
+                pause 200/
+                emote Sebastian 40/
+                move Sebastian 0 -1 1/
+                move Sebastian 4 0 1/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.021}}\"/
+                speak Sebastian \"{{i18n:Miihau.AbigailEE.event3.022}}\"/
+                addConversationTopic abigailGamingTalk 1/
+                end",
+                "dontLikeVideoGames":"friendship Abigail -30/
+                friendship Sam -10/
+                friendship Sebastian -10/
+                speak Sam \"{{i18n:Miihau.AbigailEE.event3.023}}\"/
+                faceDirection Sebastian 0/
+                speak Sebastian \"{{i18n:Miihau.AbigailEE.event3.024}}\"/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event3.025}}\"/
+                faceDirection Abigail 0/
+                advancedMove Sam false 1 0 0 -1 4 1000/
+                pause 200/
+                emote farmer 28/
+                move farmer -5 0 3 true/
+                globalFade/
+                viewport -1000 -1000/
+                end dialogue Abigail \"{{i18n:Miihau.AbigailEE.event3.026}}\"",
+            },
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Sam",
+            "Entries":{
+                "abigailGamingTalk":"{{i18n:Miihau.AbigailEE.event3.027}}",
+                }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Sebastian",
+            "Entries":{
+                "abigailGamingTalk":"{{i18n:Miihau.AbigailEE.event3.028}}",
+                }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Abigail",
+            "Entries":{
+                "abigailGamingTalk":"{{i18n:Miihau.AbigailEE.event3.029}}",
+                }
+        },        
+    ]
+}

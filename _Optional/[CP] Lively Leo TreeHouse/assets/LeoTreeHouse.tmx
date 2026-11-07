@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="7" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="2">
+ <properties>
+  <property name="DayTiles" value="Back 2 0 2 Buildings 2 1 9"/>
+  <property name="NightTiles" value="Back 2 0 48 Buildings 2 1 55"/>
+  <property name="Warp" value="3 9 Mountain 16 8"/>
+ </properties>
+ <tileset firstgid="1" name="z_path" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="z_LeoTreeHouse_Tilesheet" tilewidth="16" tileheight="16" tilecount="56" columns="7">
+  <image source="LeoTreeHouse_Tilesheet" width="112" height="128"/>
+ </tileset>
+ <tileset firstgid="93" name="z_townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" trans="000000" width="512" height="1088"/>
+ </tileset>
+ <layer id="3" name="Back" width="7" height="9">
+  <data encoding="csv">
+37,38,39,40,41,42,43,
+44,45,46,47,48,49,50,
+51,52,53,54,55,56,57,
+58,59,60,61,62,63,64,
+65,66,67,68,69,70,71,
+72,73,74,75,76,77,78,
+37,80,81,82,83,84,37,
+37,87,88,89,90,91,37,
+37,37,37,79,37,37,37
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="7" height="9">
+  <data encoding="csv">
+37,0,0,687,688,0,0,
+44,0,46,719,720,0,0,
+51,2147484141,0,0,449,450,0,
+58,568,1272,0,0,0,64,
+65,1321,701,0,413,414,71,
+72,73,0,0,907,77,0,
+0,0,81,0,83,84,0,
+0,0,88,0,90,0,0,
+0,0,37,0,37,0,0
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="7" height="9" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,9,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,9,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="1" name="Front" width="7" height="9">
+  <data encoding="csv">
+2147484078,2147484077,2147484076,0,0,1086,0,
+0,2147484109,0,0,417,418,0,
+0,536,0,0,511,637,0,
+0,0,0,0,543,544,0,
+0,86,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="7" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,512,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="7" name="Back"/>
+ <objectgroup id="6" name="Buildings" visible="0">
+  <object id="1" name="TileData" x="16" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="LeoParrot"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="Paths"/>
+ <objectgroup id="5" name="Front"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

@@ -1,0 +1,114 @@
+{
+  "Name": "Hood",
+  
+  
+	// FRONT
+  "FrontHat": {
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+    "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Sleeves"
+    },
+    "DrawAfterPlayer": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 6,
+      "Y": -1
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 32
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  },
+
+	// BACK
+  "BackHat": {
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 32
+    },
+    "HeadPosition": {
+      "X": 6,
+      "Y": -3
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 32
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  },
+
+	// RIGHT
+  "RightHat": {
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+    "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Sleeves"
+    },
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": 13,
+      "Y": -4
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 32
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  },
+
+	// LEFT
+  "LeftHat": {
+    "HideWhileSwimming": true,
+    "HideWhileWearingBathingSuit": true,
+    "DrawOrderOverride": {
+      "Preposition": "Before",
+      "AppearanceType": "Sleeves"
+    },
+    "Flipped": true,
+    "StartingPosition": {
+      "X": 0,
+      "Y": 64
+    },
+    "HeadPosition": {
+      "X": -2,
+      "Y": -4
+    },
+    "HatSize": {
+      "Width": 32,
+      "Length": 32
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 0,
+        "Duration": 5000
+      }
+    ]
+  }
+}

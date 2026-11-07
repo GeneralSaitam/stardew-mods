@@ -1,0 +1,88 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_WizardsSpellbook": {
+          "Name": "{{ModId}}_WizardsSpellbook",
+          "DisplayName": "{{i18n:OMEGAlinc.CSE.WizardSpellbookDisplayName}}",
+          "Description": "{{i18n:OMEGAlinc.CSE.WizardSpellbookDescription}}",
+          "Type": "Quest",
+          "Category": 0,
+          "Price": 0,
+          "Texture": "Mods/{{ModId}}/spellbook",
+          "SpriteIndex": 0,
+          "ColorOverlayFromNextIndex": false,
+          "Edibility": -300,
+          "IsDrink": false,
+          "Buffs": null,
+          "GeodeDropsDefaultItems": false,
+          "GeodeDrops": null,
+          "ArtifactSpotChances": null,
+          "CanBeGivenAsGift": false,
+          "CanBeTrashed": false,
+          "ExcludeFromFishingCollection": false,
+          "ExcludeFromShippingCollection": true,
+          "ExcludeFromRandomSale": true,
+          "ContextTags": null,
+          "CustomFields": null
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/spellbook",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_SilverCoins": {
+          "Name": "{{ModId}}_SilverCoins",
+          "DisplayName": "{{i18n:OMEGAlinc.CSE.SilverCoinsDisplayName}}",
+          "Description": "{{i18n:OMEGAlinc.CSE.SilverCoinsDescription}}",
+          "Type": "Basic",
+          "Edibility": -300,
+          "Price": 1,
+          "ExcludeFromShippingCollection": true,
+          "Texture": "Mods/{{ModId}}/silver_coins",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/silver_coins",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "UnlockableBundles/WalletCurrencies",
+      "Entries": {
+        "{{ModId}}_SilverCoinsCurrency": {
+          "Shared": true,
+          "DrawOverheadPickupAnimation": false,
+          "OverheadPickupTexture": "Mods/{{ModId}}/silver_coins",
+          "OverheadPickupTextureSize": 16,
+          "BillboardTexture": "Mods/{{ModId}}/silver_coins",
+          "BillboardTextureSize": 16,
+          "BillboardDigits": 6,
+          "PlayMoneyRollSound": true,
+          "Items": [
+            {
+              "ItemId": "(O)OMEGAlinc.CSExpanded_SilverCoins",
+              "Value": 1
+            }
+          ],
+          "PowersData": {
+            "DisplayName": "{{i18n:OMEGAlinc.CSE.SilverCoinsDisplayName}}",
+            "TexturePath": "Mods/{{ModId}}/silver_coins",
+            "TexturePosition": { "X": 0, "Y": 0 }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+    "Changes": [
+	
+//	EXTERIOR APPEARANCE
+
+		{
+			"Action": "EditImage",
+			"Target": "Maps/ALL_Waterfall_Shed",
+			"FromFile": "options/shed/tilesets/Gwen_Medieval/{{season}}_EX_Waterfall_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 384, "Height": 160 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 384, "Height": 160 },
+			"PatchMode": "Replace",
+			"When": { 
+				"HasMod": "Gweniaczek.Medieval_buildings",
+				"Abandoned_Shed_Appearance": "Auto"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/ALL_Waterfall_Shed",
+			"FromFile": "options/shed/tilesets/Gwen_Medieval/{{season}}_EX_Waterfall_Shed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 384, "Height": 160 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 384, "Height": 160 },
+			"PatchMode": "Replace",
+			"When": { "Abandoned_Shed_Appearance": "Gwen" }
+		},
+
+//	BASEMENT
+
+//	//	DATA
+
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_B1",
+			"FromFile": "options/shed/ALL_Waterfall_Shed_B1.tmx"
+		},
+//
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"{{ModId}}_Custom_waterfall_shed_B1": {
+					"DisplayName": "Shed Basement",
+					"DefaultArrivalTile": {
+						"X": 11,
+						"Y": 5
+					},
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_Custom_waterfall_shed_B1",
+						"Type": null,
+						"AlwaysActive": true
+					},
+					"FormerLocationNames": [ "Custom_waterfall_shed_B1" ],
+					"CanPlantHere": false,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [],
+					"FishAreas": {},
+					"Fish": [],
+					"Forage": [],
+					"MinDailyWeeds": 2,
+					"MaxDailyWeeds": 5,
+					"FirstDayWeedMultiplier": 15,
+					"MinDailyForageSpawn": 1,
+					"MaxDailyForageSpawn": 4,
+					"MaxSpawnedForageAtOnce": 6,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+				}
+			}
+		},
+
+//	//	PROPERTIES
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_B1",
+			"AddWarps": [ "11 -1 {{ModId}}_Custom_waterfall_shed_F0 6 33" ]
+		},
+//		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_B1",
+			"MapProperties": { "AmbientLight": "90 90 35" },
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_B1",
+			"MapProperties": { "AllowBeds": "true" }
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_B1",
+			"MapProperties": { "AllowMiniFridges": "true" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_B1",
+			"MapProperties": { "CanCaskHere": "T" },
+			"When": { "FarmhouseUpgrade": 3 }
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F0",
+			"MapProperties": { "CanCaskHere": "T" },
+			"When": {
+				"Cellar_Allows_Casks_in_Shed_F0": "True",
+				"FarmhouseUpgrade": 3
+			}
+		},
+	
+// ROOF GREENHOUSE
+
+//	//	DATA
+
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F1",
+			"FromFile": "options/shed/ALL_Waterfall_Shed_F1.tmx"
+		},
+//
+		{
+			"Action": "EditData",
+			"Target": "Data/Locations",
+			"Entries": {
+				"{{ModId}}_Custom_waterfall_shed_F1": {
+					"DisplayName": "Roof Greenhouse",
+					"DefaultArrivalTile": {
+						"X": 15,
+						"Y": 4
+					},
+					"ExcludeFromNpcPathfinding": false,
+					"CreateOnLoad": {
+						"MapPath": "Maps/{{ModId}}_Custom_waterfall_shed_F1",
+						"Type": null,
+						"AlwaysActive": true
+					},
+					"FormerLocationNames": [ "Custom_waterfall_shed_F1" ],
+					"CanPlantHere":true,
+					"CanHaveGreenRainSpawns": true,
+					"ArtifactSpots": [],
+					"FishAreas": {},
+					"Fish": [],
+					"Forage": [],
+					"MinDailyWeeds": 2,
+					"MaxDailyWeeds": 5,
+					"FirstDayWeedMultiplier": 15,
+					"MinDailyForageSpawn": 1,
+					"MaxDailyForageSpawn": 4,
+					"MaxSpawnedForageAtOnce": 6,
+					"ChanceForClay": 0.03,
+					"Music": [],
+					"MusicDefault": null,
+					"MusicContext": "Default",
+					"MusicIgnoredInRain": false,
+					"MusicIgnoredInSpring": false,
+					"MusicIgnoredInSummer": false,
+					"MusicIgnoredInFall": false,
+					"MusicIgnoredInFallDebris": false,
+					"MusicIgnoredInWinter": false,
+					"MusicIsTownTheme": false,
+					"CustomFields": null
+				}
+			}
+		},
+
+//	//	ALL
+	
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F1",
+			"AddWarps": [ 
+				"14 8 {{ModId}}_Custom_waterfall_shed_F0 14 8",
+				"15 8 {{ModId}}_Custom_waterfall_shed_F0 15 8"
+			],
+		},
+//		
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F1",
+			"MapProperties": { "AmbientLight": "255 255 255" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F1",
+			"MapProperties": { "IsGreenhouse": "T" }
+		},
+//
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F1",
+			"FromFile": "options/shed/ALL_IN_Options_Shed.tmx",
+			"FromArea": { "X": 20, "Y": 18, "Width": 28, "Height": 3 },
+			"ToArea": { "X": 1, "Y": 1, "Width": 28, "Height": 3 },
+			"PatchMode": "Replace",
+		},
+		
+//	//	WAFF
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F1",
+			"FromFile": "options/shed/ALL_IN_Options_Shed.tmx",
+			"FromArea": { "X": 20, "Y": 0, "Width": 28, "Height": 17 },
+			"ToArea": { "X": 1, "Y": 6, "Width": 28, "Height": 17 },
+			"PatchMode": "Replace",
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Roof_Greenhouse_Type_WaFF": "Fields"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F1",
+			"FromFile": "options/shed/ALL_IN_Options_Shed.tmx",
+			"FromArea": { "X": 20, "Y": 22, "Width": 28, "Height": 17 },
+			"ToArea": { "X": 1, "Y": 6, "Width": 28, "Height": 17 },
+			"PatchMode": "Replace",
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFF",
+				"Roof_Greenhouse_Type_WaFF": "Trees"
+			}
+		},
+		
+//	//	WAFFLE
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F1",
+			"FromFile": "options/shed/ALL_IN_Options_Shed.tmx",
+			"FromArea": { "X": 20, "Y": 0, "Width": 28, "Height": 17 },
+			"ToArea": { "X": 1, "Y": 6, "Width": 28, "Height": 17 },
+			"PatchMode": "Replace",
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Roof_Greenhouse_Type_WaFFLE": "Fields"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/{{ModId}}_Custom_waterfall_shed_F1",
+			"FromFile": "options/shed/ALL_IN_Options_Shed.tmx",
+			"FromArea": { "X": 20, "Y": 22, "Width": 28, "Height": 17 },
+			"ToArea": { "X": 1, "Y": 6, "Width": 28, "Height": 17 },
+			"PatchMode": "Replace",
+			"When": {
+				"FarmType": "A_TK.FarmProjectForaging/WaFFLE",
+				"Roof_Greenhouse_Type_WaFFLE": "Trees"
+			}
+		}
+	]
+}	  
+
+  

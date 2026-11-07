@@ -1,0 +1,23 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Sprite for Statue of Old Master Cannoli",
+      "Action": "Load",
+      "Target": "Mods\\skeleton.MoreExtendCP\\old_master_cannoli",
+      "FromFile": "assets/Old_Master_Cannoli.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/BigCraftables",
+      "Entries": {
+        "{{ModId}}_Statue_of_Old_Master_Cannoli": {
+          "Name": "Statue of Old Master Cannoli",
+          "DisplayName": "{{i18n:Statue_of_Old_Master_Cannoli_name}}",
+          "Description": "{{i18n:Statue_of_Old_Master_Cannoli_description}}",
+          "Texture": "Mods\\skeleton.MoreExtendCP\\old_master_cannoli",
+          "SpriteIndex": 0
+        }
+      }
+    }
+  ]
+}

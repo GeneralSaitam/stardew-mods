@@ -1,0 +1,149 @@
+{
+  "Format": "2.8.0",
+
+
+    "ConfigSchema": {
+
+      "Enable this mod": {
+        "AllowValues": "true, false",
+        "Default": "true"
+      },
+      "Storage Space Pattern": {
+        "AllowValues": "Roofed, No_roof, Scaffolding_only",
+        "Default": "Roofed"
+      },
+      "BoatTexture": {
+        "AllowValues": "Vanilla, Old",
+        "Default": "Vanilla"
+      },
+      "LowChroma": {
+        "AllowValues": "true, false",
+        "Default": "false"
+      },
+      "Scaffolding for swim mod": { 
+        "AllowValues": "true, false",
+        "Default": "false"
+      }
+
+    }, //▼"ConfigSchema"の終了▼
+
+
+    "DynamicTokens": [
+
+    //●以下、「ボートテクスチャ」用トークン
+      {
+        "Name": "DT_LowChroma",
+        "Value": "Normall"
+      },
+      {
+        "Name": "DT_LowChroma",
+        "Value": "LowChroma",
+        "When": {
+          "LowChroma": "true"
+        }
+      },
+      {
+        "Name": "DT_Season",
+        "Value": "Spring"
+      },
+      {
+        "Name": "DT_Season",
+        "Value": "{{Season}}",
+        "When": {
+          "Season": "Spring, Summer, Fall, Winter",
+          "BoatTexture": "Vanilla"
+        }
+      },
+
+    //●以下、「カモメ出現条件のクエリ式」用トークン
+      {
+        "Name": "DT_Seagull_Query",
+        "Value": "('{{Season}}'='Summer') AND ({{Time}} >= 0600) AND ({{Time}} <= 1500) AND ('{{Weather}}' = 'Sun')"                      
+      },
+
+    //●以下、「カモメのログ位置」用トークン
+      {
+        "Name": "DT_Seagull_Log_Left_X",
+        "Value": "16",
+        "When": {
+          "Storage Space Pattern": "Roofed, No_roof"
+        }
+      },
+      {
+        "Name": "DT_Seagull_Log_Left_X",
+        "Value": "15",
+        "When": {
+          "Storage Space Pattern": "Scaffolding_only"
+        }
+      },
+      {
+        "Name": "DT_Seagull_Log_Under_Y",
+        "Value": "13",
+        "When": {
+          "Storage Space Pattern": "Roofed, No_roof"
+        }
+      },
+      {
+        "Name": "DT_Seagull_Log_Under_Y",
+        "Value": "14",
+        "When": {
+          "Storage Space Pattern": "Scaffolding_only"
+        }
+      },
+
+    //●以下、「Swim のパッチでのファイル選択」用トークン
+      {
+        "Name": "DT_SwimFile",
+        "Value": "_SO",
+        "When": {
+          "Storage Space Pattern": "Scaffolding_only"
+        }
+      }
+
+    ], //▼"DynamicTokens"の終了▼
+
+
+    "CustomLocations": [
+
+      {
+        "Name": "Custom_Beach_Storage_Space",
+        "FromMapFile": "assets/tmx/Beach_Storage_Space.tmx"
+      }
+
+    ], //▼"CustomLocations"の終了▼
+
+
+    "Changes": [
+
+
+  //★★★ タイルシート関係 ★★★
+
+    //●基礎タイルシートの読み込み
+      {
+        "Action": "Load",
+        "Target": "Maps/spring_beach_storagespace,
+                   Maps/summer_beach_storagespace,
+                   Maps/fall_beach_storagespace,
+                   Maps/winter_beach_storagespace
+                  ",
+        "FromFile": "assets/png/{{TargetWithoutPath}}.png"
+      },
+      {
+        "Action": "Load",
+        "Target": "Maps/BeachStorageSpace_Boat",
+        "FromFile": "assets/png/Beachbooto_{{BoatTexture}}_{{DT_LowChroma}}_{{DT_Season}}.png",
+      },
+
+
+  //★★★ 各種json読み込み ★★★
+      {
+        "Action": "Include",
+        "FromFile": "assets/json/EditData.json,
+                     assets/json/EditMap.json
+                    ",
+        "When": { "Enable this mod": "true" }
+      }
+
+
+    ] //▼▼"Changes"の終了▼▼
+}

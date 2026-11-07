@@ -1,0 +1,139 @@
+{
+  "Changes": [
+    {
+      "LogName": "VMV - All Seasons Legendary Fish Alpine Char Prince",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_TrainStation",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_AlpineCharPrince": {
+          "Season": null,
+          "Condition": "!PLAYER_HAS_MAIL Current Lumisteria.MtVapius_AlpineCharPrinceCaught",
+        }
+      },
+      "When": {
+        "All Seasons Legendary Fish": true
+      }
+    },
+	{
+      "LogName": "VMV - All Seasons Legendary Fish Sturgiant",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_Hamlet",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_Sturgiant": {
+          "Season": null,
+          "Condition": "!PLAYER_HAS_MAIL Current Lumisteria.MtVapius_SturgiantCaught",
+        }
+      },
+      "When": {
+        "All Seasons Legendary Fish": true
+      }
+    },
+	{
+      "LogName": "VMV - All Seasons Legendary Fish Planet Fish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_ForestCaveMoonPond",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_PlanetFish": {
+          "Season": null,
+          "Condition": "!PLAYER_HAS_MAIL Current Lumisteria.MtVapius_PlanetFishCaught",
+        }
+      },
+      "When": {
+        "All Seasons Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "VMV - All Seasons Legendary Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_AlpineCharPrince": {
+          "Season": null,
+          "Condition": null
+        },
+		"Lumisteria.MtVapius_Sturgiant": {
+          "Season": null,
+          "Condition": null
+        },
+		"Lumisteria.MtVapius_PlanetFish": {
+          "Season": null,
+          "Condition": null
+        }
+      },
+      "When": {
+        "All Seasons Legendary Fish": true,
+        "Legendary Fish On Farm": true
+      }
+    },
+	{
+      "LogName": "VMV - Recatch Legendary Fish All Seasons Sturgiant",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_Hamlet",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_Sturgiant": {
+          "Condition": null,
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true,
+		"All Seasons Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "VMV - Recatch Legendary Fish All Seasons Alpine Char Prince",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_TrainStation",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_AlpineCharPrince": {
+          "Condition": null,
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true,
+		"All Seasons Legendary Fish": true
+      }
+    },
+    {
+      "LogName": "VMV - Recatch Legendary Fish All Seasons Planet Fish",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Lumisteria.MtVapius_ForestCaveMoonPond",
+        "Fish"
+      ],
+      "Fields": {
+        "Lumisteria.MtVapius_PlanetFish": {
+          "Condition": null,
+        }
+      },
+      "When": {
+        "Recatch Legendary Fish": true,
+		"All Seasons Legendary Fish": true
+      }
+    }
+  ]
+}

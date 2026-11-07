@@ -1,0 +1,95 @@
+{
+    "Changes": [
+	{
+		"Action": "EditData", 
+		"Target": "Data/Objects",
+		"Entries": {
+			"{{ModId}}_SummerSquashGoatCheeseTart": {
+				"Name": "{{ModId}}_SummerSquashGoatCheeseTart",
+				"DisplayName": "Summer Squash and Goat Cheese Tart",
+				"Description": "A light, savory tart with sophisticated flavors.",
+				"Type": "Basic",
+				"Category": -7,
+				"Price": 500,
+				"Texture": "Mods/{{ModId}}/objects16px",
+				"SpriteIndex": 4, 
+				"Edibility": 90, 
+				"IsDrink": false,
+			}
+		}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/CookingRecipes", 
+		"Entries": {
+			"SummerSquashGoatCheeseTart": "SummerSquash 1 426 1 246 1/1 1/{{ModId}}_SummerSquashGoatCheeseTart/default"
+			}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"TextOperations": [
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leah", 1], //Leah loves Goat Cheese, so she likes Summer Squash Goat Cheese Tart, too.
+				"Value": "{{ModId}}_SummerSquashGoatCheeseTart",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Robin", 1], //Robin loves Goat Cheese, so she likes Summer Squash Goat Cheese Tart, too.
+				"Value": "{{ModId}}_SummerSquashGoatCheeseTart",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Harvey", 5], //Harvey doesn't like Goat Cheese, so he doesn't like Summer Squash Goat Cheese Tart, either.
+				"Value": "{{ModId}}_SummerSquashGoatCheeseTart",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Haley", 5], //Haley doesn't like vegetables, and this seemed like something that would fall under "weird stuff my weird sister likes to try and serve", so she doesn't like this.
+				"Value": "{{ModId}}_SummerSquashGoatCheeseTart",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Jas", 7], //Jas hates Goat Cheese, so she hates this, too.
+				"Value": "{{ModId}}_SummerSquashGoatCheeseTart",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Sebastian", 7], //Sebastian hates Goat Cheese, so he hates this, too.
+				"Value": "{{ModId}}_SummerSquashGoatCheeseTart",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Vincent", 7], //Vincent hates Goat Cheese, so he hates this, too.
+				"Value": "{{ModId}}_SummerSquashGoatCheeseTart",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Krobus", 5], //Doesn't like cooked dishes.
+				"Value": "{{ModId}}_SummerSquashGoatCheeseTart",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Leo", 5], //Doesn't like cooked dishes.
+				"Value": "{{ModId}}_SummerSquashGoatCheeseTart",
+				"Delimiter": " "
+			},
+			{
+				"Operation": "Append",
+				"Target": ["Fields", "Willy", 5], //Doesn't like cooked dishes.
+				"Value": "{{ModId}}_SummerSquashGoatCheeseTart",
+				"Delimiter": " "
+			}
+		]
+	}
+    ]
+}

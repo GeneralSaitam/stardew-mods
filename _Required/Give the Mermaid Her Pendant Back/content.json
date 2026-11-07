@@ -1,0 +1,121 @@
+{
+	"Format": "2.0.0",
+	"DynamicTokens":[
+		{
+			"Name": "Pendant",
+			"Value": "Default"
+		},
+		{
+			"Name": "Pendant",
+			"Value": "{{season}}",
+			"When": {"HasMod": "Rosenbug.SeasonalMermaidPendants"}	
+		},	
+		{
+			"Name": "Maritime",
+			"Value": "{{Language}}"
+		},
+		{
+			"Name": "Maritime",
+			"Value": "default",
+			"When": {"Language": "en"}	
+		},
+		{
+			"Name": "MermaidName",
+			"Value": "{{i18n:Mermaid}}",
+		},
+		{
+			"Name": "MermaidName",
+			"Value": "{{i18n:Tempysta}}",
+			"When": {"HasMod": "JennaJuffuffles.MarinerToMermaid"}	
+		},
+		{
+			"Name": "MermaidName",
+			"Value": "{{NameCustom}}",
+			"When": {
+				"HasValue:{{NameCustom}}": true
+			}
+		},				
+		{
+			"Name": "PStyle",
+			"Value": "Default",		
+		},	
+		{
+			"Name": "PStyle",
+			"Value": "Nyapu",	
+            "When": {"HasMod": "Nyapu.Portraits, Nyapu.AllPortraits"}			
+		},		
+		{
+			"Name": "PStyle",
+			"Value": "{{PStyleConfig}}",
+			"When": {"PStyleConfig |contains=Auto": false,}		
+		},			
+	],
+	"ConfigSchema": {		
+		"PStyleConfig":
+			{
+				"AllowValues": "Auto, Default, Nyapu",
+				"Default": "Auto",
+			},	
+		"NameCustom": 
+			{
+				"AllowBlank": true,
+			},			
+	},				
+	"Changes":
+	[
+//Additional features		
+		{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "DolphINaF.MermaidMariner_PendantAcquired": {
+					"Id": "DolphINaF.MermaidMariner_PendantAcquired",
+                    "Trigger": "DayStarted LocationChanged",
+                    "Condition": "PLAYER_HAS_ITEM Current (O)460",
+                    "Actions": [
+                        "AddMail Current DolphINaF.MermaidMariner_PendantAcquired now",
+                    ]
+                },
+            },
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"DolphINaF.MermaidMariner_PendantGiven": {
+					"Id": "DolphINaF.MermaidMariner_PendantGiven",
+                    "Trigger": "DayStarted LocationChanged",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Any Any Engaged",
+                    "Actions": [
+                        "RemoveMail Current DolphINaF.MermaidMariner_PendantAcquired",
+                        "MarkActionApplied Current DolphINaF.MermaidMariner_PendantAcquired false"
+                    ]
+                },
+            },
+       	},	
+		{
+			"Action": "EditData",
+			"Target": "Strings/Notes",
+			"Entries":{"13": "{{i18n: MarriageSecretBook}}",}
+		},
+		
+		{
+			"Action": "Include",
+			"FromFile": "patches/Mariner.json",
+			"When": {"HasMod |contains=JennaJuffuffles.MarinerToMermaid": false}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "patches/Mariner.json",
+			"When": {
+				"HasMod": "JennaJuffuffles.MarinerToMermaid",
+				"Weather |contains=Sun, Rain, Snow, Wind, GreenRain": false
+			}
+		},	
+		{
+			"Action": "Include",
+			"FromFile": "patches/Swim.json",
+			"When": {"HasMod": "FlyingTNT.SwimDiveMaps"},
+		},
+	]
+}

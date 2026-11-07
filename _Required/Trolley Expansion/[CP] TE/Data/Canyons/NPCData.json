@@ -1,0 +1,387 @@
+{
+  "Changes": [
+	{
+      "Action": "Load",
+      "Target": "Characters/CC_Yoput",
+      "FromFile": "assets/Canyons/Yoput.png"
+    },
+		{
+      "Action": "Load",
+      "Target": "Characters/CC_Yoput_Vendor",
+      "FromFile": "assets/Canyons/Yoput_Vendor.png"
+    },
+
+	{
+      "Action": "Load",
+      "Target": "Portraits/CC_Yoput",
+      "FromFile": "assets/Canyons/Yoput_{{Portraits}}.png"
+    },
+		{
+      "Action": "Load",
+      "Target": "Portraits/CC_Yoput_Vendor",
+      "FromFile": "assets/Canyons/Yoput_Vendor_{{Portraits}}.png"
+    },
+			{
+      "Action": "Load",
+      "Target": "Portraits/CC_Yoput_Beach",
+      "FromFile": "assets/Canyons/Yoput_Beach_{{Portraits}}.png"
+    },		
+       { 
+            "LogName": "BlankLoads",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Dialogue/CC_Yoput, Characters/Dialogue/MarriageDialogueCC_YoputRoommate",
+            "FromFile": "Data/Canyons/Blank.json"
+        },
+
+  {
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "CC_Yoput": {
+        "DisplayName": "{{i18n:Yoput.DisplayName}}",
+
+          "BirthSeason": "Winter",
+          "BirthDay": 6,
+          "HomeRegion": "Other",
+          "Language": "Dwarvish",
+          "Gender": "Undefined",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Outgoing",
+          "Optimism": "Positive",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "HiddenUntilMet",
+          "CanSocialize": null,
+          "CanReceiveGifts": true,
+          "CanGreetNearbyCharacters": true,
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": false,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "TrailingGroup",
+          "SpouseAdopts": true,
+          "SpouseWantsChildren": false,
+          "SpouseGiftJealousy": false,
+		     "UnlockConditions": null,
+          "SpawnIfMissing": true,
+       "IntroductionsQuest": false,
+	   "ItemDeliveryQuests": false,
+          "DumpsterDiveFriendshipEffect": 25,
+          "DumpsterDiveEmote": 56,
+	"KissSpriteIndex": "31",
+	"KissSpriteFacingRight": false,
+          "FlowerDanceCanDance": false,
+
+          "WinterStarParticipant": false,
+		  "SpousePatio": {
+						"MapAsset": "yoput_patio",
+						"MapSourceRect": {
+							"X": 0,
+							"Y": 0,
+							"Width": 4,
+							"Height": 4
+						},
+						"SpriteAnimationFrames": [
+							[
+								21,
+								400
+							],
+							[
+								22,
+								400
+							],
+							[
+							23, 400]
+						],
+						"SpriteAnimationPixelOffset": {
+							"X": 0,
+							"Y": 0
+						}
+					},
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Cave_dwarf",
+              "Tile": {
+                "X": 12,
+                "Y": 13
+              },
+              "Direction": "down"
+            }
+          ],
+          "TextureName": null,
+          "Appearance": [
+            {
+              "Id": "CC_Yoput",
+              "Condition": "PLAYER_HAS_SEEN_EVENT current YoputSpeaks",
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_Yoput",
+              "Sprite": "Characters/CC_Yoput",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            },
+			            {
+              "Id": "CC_Yoput_Beach",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_Yoput_Beach",
+              "Sprite": "Characters/CC_Yoput_Beach",
+              "IsIslandAttire": true,
+              "Precedence": 0,
+              "Weight": 0
+            },
+			
+            {
+              "Id": "CC_Yoput_Vendor",
+              "Condition": null,
+              "Season": null,
+              "Indoors": true,
+              "Outdoors": true,
+              "Portrait": "Portraits/CC_Yoput_Vendor",
+              "Sprite": "Characters/CC_Yoput_Vendor",
+              "IsIslandAttire": false,
+              "Precedence": 0,
+              "Weight": 0
+            }
+
+          ],
+        
+        }
+      }
+    },
+
+
+				{
+      "LogName": "Vendor Change3",
+      "Action": "EditImage",
+      "Target": "Characters/CC_Yoput",
+      "FromFile": "assets/Canyons/Yoput_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Town"
+      }
+    },
+				{
+      "LogName": "Vendor Change4",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_Yoput",
+      "FromFile": "assets/Canyons/Yoput_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Town"
+      }
+    },
+					{
+      "LogName": "Vendor Change5",
+      "Action": "EditImage",
+      "Target": "Characters/CC_Yoput",
+      "FromFile": "assets/Canyons/Yoput_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "BusStop"
+      }
+    },
+				{
+      "LogName": "Vendor Change6",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_Yoput",
+      "FromFile": "assets/Canyons/Yoput_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "BusStop"
+      }
+    },
+						{
+      "LogName": "Vendor Change7",
+      "Action": "EditImage",
+      "Target": "Characters/CC_Yoput",
+      "FromFile": "assets/Canyons/Yoput_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "forest"
+      }
+    },
+				{
+      "LogName": "Vendor Change8",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_Yoput",
+      "FromFile": "assets/Canyons/Yoput_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "forest"
+      }
+    },
+							{
+      "LogName": "Vendor Change7",
+      "Action": "EditImage",
+      "Target": "Characters/CC_Yoput",
+      "FromFile": "assets/Canyons/Yoput_Vendor.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Canyon_south"
+      }
+    },
+				{
+      "LogName": "Vendor Change8",
+      "Action": "EditImage",
+      "Target": "Portraits/CC_Yoput",
+      "FromFile": "assets/Canyons/Yoput_Vendor_{{Portraits}}.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Canyon_south"
+      }
+    },
+
+{
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+        "hood_down": "1/16 16 16 17 17 17 18 18 18 19 19 19/19",
+		     "hood_up": "1/19 19 19 18 18 18 17 17 17 16 16 16/16",
+			 "yoput_sleep": "22/22/22",
+			 "yoput_sway": "22/22 22 22 22 21 21 21 21 22 22 22 22 23 23 23 23/22",
+
+      }
+    },
+	{
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+		  "CC_Yoput":
+		  "Good taste, thank you!$1/CC_Tortoiseshell CC_ButterscotchTea 279 243 230 226 634 337 578 852 772 78 166 Book_Bombs/Questionable taste, but I'll take it off your hands./121 122/Questionable taste, but I'll take it off your hands.//This is scary...$5#$b#Who was this creature...?$5/881 579 580 581 582 583 584 585 820 821 822 823 824 825 828 827 828/Questionable taste, but I'll take it off your hands.//"
+      }
+    },
+
+	{
+      "LogName": "Rainy Day Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+    "CC_Yoput": "{{i18n:Yoput.CC_Yoput}}",
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Canyons/Dialogue.json"
+    },
+	 {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+      "CC_Yoput_EngagedRoommate": "{{i18n:Yoput.CC_Yoput_EngagedRoommate}}",
+            }
+        },
+        {
+            "LogName": "Engagement Dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+"CC_YoputRoommate0": "{{i18n:Yoput.CC_YoputRoommate0}}",
+"CC_YoputRoommate1": "{{i18n:Yoput.CC_YoputRoommate1}}",
+            }
+        },
+		
+		{
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "CC_Yoput": "CC_Yoput_SpouseRoom/0"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/CC_Yoput_SpouseRoom",
+            "FromFile": "assets/Maps/yoput_room.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/CC_Yoput_SpousePatio",
+            "FromFile": "assets/Maps/yoput_patio.tmx"
+        },
+        {
+            "LogName": "Adds Spouse room",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "CC_Yoput"
+            ],
+            "Entries": {
+                "SpouseRoom": {
+                    "MapAsset": "CC_Yoput_SpouseRoom",
+                    "MapSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 6,
+                        "Height": 9
+                    }
+                },
+                "SpousePatio": {
+                    "MapAsset": "CC_Yoput_SpousePatio",
+                    "MapSourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 4,
+                        "Height": 4
+                    }
+                },
+            }
+        },
+		
+  {
+      "LogName": "Load Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/CC_Yoput",
+      "FromFile": "Data/Canyons/Blank.json"
+    },
+
+    {
+      "LogName": "Schedule includes",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/Schedule.json"
+    },
+    {
+      "LogName": "Event includes",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/YoputEvents.json"
+    },
+	
+
+
+
+	    {
+            "Action": "Include",
+            "FromFile": "Data/Canyons/MarriageDialogueCC_YoputRoommate.json"
+        },
+	
+   		    {
+      "LogName": "Shop includes",
+      "Action": "Include",
+      "FromFile": "Data/Canyons/Shop.json"
+    },
+	 {
+      "Action": "EditMap",
+      "Target": "Maps/Canyon_final",
+      "MapTiles": [
+        {
+          "Position": { "X": 39, "Y": 22 },
+          "Layer": "Buildings",
+          "SetProperties": {
+           "Action": "OpenShop Yoput_Shop none"
+          }
+        }
+        
+      ]
+    },	
+	
+
+	]
+}

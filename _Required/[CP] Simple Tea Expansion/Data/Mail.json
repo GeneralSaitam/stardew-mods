@@ -1,0 +1,46 @@
+{
+	"Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "WizardTeaRecipe": "{{i18n:WizardTeaRecipe}}",
+                "EvelynTeaLetter": "{{i18n:EvelynTeaLetter}}",
+                "CarolineMatchaLetter": "{{i18n:CarolineMatchaLetter}}",
+				"CarolineMatchaPLetter": "{{i18n:CarolineMatchaPLetter}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+				"WizardTeaRecipe":{
+					"Id": "WizardTeaRecipe",
+					"Trigger": "DayEnding",
+					"Condition": "ANY \"IS_COMMUNITY_CENTER_COMPLETE\" \"IS_JOJA_MART_COMPLETE\"",
+					"Action": "AddMail Current WizardTeaRecipe tomorrow"
+				},
+                "EvelynTeaLetter":{
+					"Id": "EvelynTeaLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Evelyn 2000",
+					"Action": "AddMail Current EvelynTeaLetter tomorrow"
+				},
+                "CarolineMatchaLetter":{
+					"Id": "CarolineMatchaLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current Caroline 2000",
+					"Action": "AddMail Current CarolineMatchaLetter tomorrow"
+				
+				},
+                "CarolineMatchaPLetter":{
+					"Id": "CarolineMatchaPLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_SHIPPED_BASIC_ITEM Current bb.moreTea_MatchaPowder 1",
+					"Action": "AddMail Current CarolineMatchaPLetter tomorrow"
+				
+				}
+		}
+        }
+    ]
+}

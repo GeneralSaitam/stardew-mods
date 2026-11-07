@@ -1,0 +1,56 @@
+{
+    "Format": "2.3.0",
+    "ConfigSchema": {
+        "Festivals": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Enable married festival dialogue for Haley from year 2 through to year 15."
+        },
+        "ScheduleDialogue": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Enable seasonal variation in Haley's Monday town schedule and dialogue."
+        },
+        "PregnancyAdoption": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Enable special dialogue for Haley while she's pregnant or awaiting an adopted child."
+        },
+        "HaleyPregnancyFemaleFarmer": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "Description": "Allow Haley to get pregnant when playing as a female farmer."
+        }
+    },
+    "Changes": [
+        {
+            "LogName": "Haley",
+            "Action": "Include",
+            "FromFile": "assets/Haley.json"
+        },
+        {
+            "LogName": "Festivals",
+            "Action": "Include",
+            "FromFile": "assets/Festivals.json",
+            "When": {
+                "Festivals": true
+            }
+        },
+        {
+            "LogName": "Schedules",
+            "Action": "Include",
+            "FromFile": "assets/Schedules.json",
+            "When": {
+                "ScheduleDialogue": true
+            }
+        },
+        {
+            "LogName": "Pregnancy and Adoption",
+            "Action": "Include",
+            "FromFile": "assets/Pregnancy-Adoption.json",
+            "When": {
+                "PregnancyAdoption": true
+            }
+        }
+    ]
+}

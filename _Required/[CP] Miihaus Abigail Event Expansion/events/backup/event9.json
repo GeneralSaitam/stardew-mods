@@ -1,0 +1,124 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "18657009/F/f Abigail 2250/n AbigailCampingInvite/t 2200 2600/w sunny/e 18657008":"spaceMusic/
+                22 24/
+                Abigail 19 23 2 farmer 23 19 2 Wizard 6 18 1/
+                skippable/
+                addTemporaryActor abigailFire 16 32 19 24 2 true/
+                addTemporaryActor abigailTent 48 80 20 21 2 false/
+                move farmer 0 4 3/
+                move farmer -3 0 3/
+                faceDirection Abigail 1/
+                speak Abigail \"Hey, @.$l#$b#I'm so glad you're here.$0#$b#The night is perfect for our little adventure.$0\"/
+                pause 200/
+                faceDirection Abigail 2/
+                playSound clank/
+                showFrame abigailFire 1/
+                addLantern 23 19 24 2/
+                playSound fireball/
+                pause 500/
+                playSound cracklingFire/
+                speak Abigail \"The fire is so nice and cozy.$0\"/
+                pause 700/
+                faceDirection Abigail 1/
+                pause 300/
+                speak Abigail \"You know, there's something truly magical about a campfire.$0\"/
+                faceDirection Abigail 2/
+                speak Abigail \"It has a mesmerizing quality.$0#$b#It's captivating to watch.$0\"/
+                faceDirection Abigail 1/
+                pause 300/
+                speak Abigail \"The warmth and the crackling sound... it's comforting.$l\"/
+                emote Abigail 32/
+                speak Abigail \"Having you here makes it even more special.$l\"/
+                pause 700/
+                speak Abigail \"I also have some news to share.$0\"/
+                emote farmer 8/
+                pause 300/
+                speak Abigail \"My parents are kind of okay with me adventuring!$1#$b#In fact, if they wouldn't be... We most likely would not be spending the night here.$0\"/
+                pause 400/
+                speak Abigail 2\"I've been persistent about my dreams, and they can see how important this is to me, especially with you by my side now.$l\"/
+                pause 200/
+                speak Abigail \"I used to sneak out for adventures, but now they understand and trust me to make the right choices.$0\"/
+                pause 200/
+                emote Abigail 20/
+                pause 200/
+                speak Abigail \"And a big part of that is because of you, @.$l#$b#You've had such a positive impact on my life.$l\"/
+                pause 200/
+                speak Abigail \"You've encouraged me to be true to myself, to not give up on my dreams even when it seemed tough.$l#$b#It means the world to me.$0\"/
+                globalFade 0.011/
+                viewport -1000 -1000/
+                pause 600/
+                message \"You and Abigail settle in, sharing stories and laughter by the campfire.#Time flies and before you know it, it became very late.\"/
+                warp Abigail 20 23/
+                warp farmer 21 23/
+                positionOffset farmer 0 20/
+                pause 200/
+                globalFadeToClear 0.009 true/
+                viewport 22 24/
+                pause 1200/
+                speak Abigail \"This was a lot of fun.$l\"/
+                pause 1000/
+                emote Abigail 40/
+                pause 400/
+                message \"Abigail is just looking at you.\"/
+                pause 500/
+                question fork1 \"What do you do?#Expresses your feelings and love for Abigail.#Try to enjoy the peaceful night and the company.\" /
+                fork 9H_Abi_Ending/
+                speak Abigail \"...$l#$b#I feel the same way, @.$l#$b#You've brought so much joy and excitement into my life.$l#$b#I'm grateful for every day we spend together.%fork$l\"/
+                fork 9H_Abi_Ending/
+                end",
+                "9H_Abi_Ending":"pause 400/
+                speak Abigail \"It's starting to get a bit cold and late, don't you think?$0#$b#How about we cozy up in the tent?$l\"/
+                pause 200/
+                emote farmer 32/
+                pause 300/
+                advancedMove Abigail false 1 0 0 -1 4 1000/
+                move farmer 0 -1 0/
+                playSound slime/
+                warp farmer -300 -300/
+                pause 600/
+                playSound slime/
+                warp Abigail -250 -300/
+                pause 400/
+                shake abigailTent 3450/
+                pause 300/
+                playSound toolSwap/
+                pause 800/
+                playSound breathin/
+                pause 1000/
+                playSound slime/
+                pause 1400/
+                speak Abigail \"This is nice.$l#$b#It's like our own little haven in the woods.$l\"/
+                pause 900/
+                playSound slime/
+                pause 500/
+                playSound slime/
+                pause 500/
+                playSound slime/
+                pause 700/
+                message \"Abigail snuggles closer with a content smile on her face.\"/
+                pause 800/
+                speak Abigail \"Thank you for being a part of my adventure, for being by my side.$l\"/
+                globalFade 0.007/
+                viewport -1000 -1000/
+                pause 600/
+                message \"You share a tender moment with Abigail, feeling the closeness and warmth of each other before falling asleep.\"/
+                addConversationTopic abigailTentLove 2/
+                pause 1500/
+                end newDay"
+            }
+        },    
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Abigail",
+            "Entries":{
+                "abigailTentLove":"I've been thinking about that night we spent together in the tent.$l#$b#It felt like a dream, like time slowed down just for us.$l#$e#You surprised me in big ways that night!$1^You made me experience things I never did before.$l#$b#It was truly special.$l#$b#The kind of memory I'll always cherish.$l#$e#I'm grateful to have you in my life.$l",
+            }
+        },    
+    
+    ]
+}

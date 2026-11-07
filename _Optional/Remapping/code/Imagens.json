@@ -1,0 +1,3434 @@
+{
+	// Application of the images in the game
+	// The images are placed using the ID (Load) of each image
+	
+	"Changes": [
+	{	//40
+		"LogName": "Remapping Desert Shortcut Road",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDesertShortcut": true,
+			"HasMod: |contains=Kana.DesertShortcut": true
+		},
+		"Entries": {
+			"RMP DesertShortcut.Road": {
+				"Id": "RMP.DesertShortcut.Road",
+				"PixelArea": { "X": 68, "Y": 0, "Width": 53, "Height": 75 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Desert.Shortcut.B",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 53, "Height": 75 } }]
+			}
+		}
+	},
+	{	//39
+		"LogName": "Remapping Therapist",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableTherapist": true,
+			"HasMod: |contains=Endwyr.TherapistNPC": true
+		},
+		"Entries": {
+			"RMP Therapist": {
+				"Id": "RMP.Therapist",
+				"PixelArea": { "X": 116, "Y": 102, "Width": 6, "Height": 8 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Therapist",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 6, "Height": 8  } }]
+			}
+		}
+	},
+	{	//38
+		"LogName": "Remapping Sunberry Village",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableSunberryVillage": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=skellady.SBVCP": true
+		},
+		"Entries": {
+			"RMP SunberryVillage": {
+				"Id": "RMP.SunberryVillage",
+				"PixelArea": { "X": 208, "Y": 100, "Width": 92, "Height": 80 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Sunberry",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 92, "Height": 80  } }]
+			}
+		}
+	},
+	{	//38.1
+		"LogName": "Remapping Sunberry Village SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableSunberryVillage": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=skellady.SBVCP": true
+		},
+		"Entries": {
+			"RMP SunberryVillageSVE": {
+				"Id": "RMP.SunberryVillageSVE",
+				"PixelArea": { "X": 208, "Y": 99, "Width": 92, "Height": 81 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Sunberry",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 92, "Height": 81  } }]
+			}
+		}
+	},
+	{	//37
+		"LogName": "Remapping Northwest Coast",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"FarmType |contains=Four Corners": "false",
+			"FarmType |contains=Beach": "false",
+			"FarmType |contains=MeadowlandsFarm": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+			"HasMod: |contains=MK215.Northwestcoast": true
+		},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 56, "Width": 91, "Height": 43 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 91, "Height": 43  } }]
+			}
+		}
+	},
+	{	//37.1
+		"LogName": "Remapping Northwest Coast SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"FarmType |contains=Four Corners": "false",
+			"FarmType |contains=Beach": "false",
+			"FarmType |contains=MeadowlandsFarm": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+			"FarmType |contains=FrontierFarm": "false",
+			"HasMod: |contains=MK215.Northwestcoast": true
+		},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 56, "Width": 91, "Height": 45 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 91, "Height": 45  } }]
+			}
+		}
+	},
+	{	//36
+		"LogName": "Remapping Aspen",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableAspen": true,
+			"HasMod: |contains=invatorzen.AspenCP": true
+		},
+		"Entries": {
+			"RMP Aspen": {
+				"Id": "RMP.Aspen",
+				"PixelArea": { "X": 90, "Y": 0, "Width": 111, "Height": 20 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Aspen",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 111, "Height": 20  } }]
+			}
+		}
+	},
+	{	//35
+		"LogName": "Remapping Downhill Project",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDownhill": true,
+			"HasMod: |contains=DH.Kiyuga.Main": true
+		},
+		"Entries": {
+			"RMP Downhill": {
+				"Id": "RMP.Downhill",
+				"PixelArea": { "X": 100, "Y": 9, "Width": 74, "Height": 47 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Downhill.Project",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 74, "Height": 47  } }]
+			}
+		}
+	},
+	{	//35.1
+		"LogName": "Remapping Downhill Project Fix",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDownhill": true,
+			"HasMod: |contains=DH.Kiyuga.Main": true,
+			"HasSeenEvent: anyPlayer|contains=28645005": true
+		},
+		"Entries": {
+			"RMP Downhill.fix": {
+				"Id": "RMP.Downhill.fix",
+				"PixelArea": { "X": 131, "Y": 25, "Width": 12, "Height": 9 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Downhill.Project.fix",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 12, "Height": 9  } }]
+			}
+		}
+	},
+	{	//34
+		"LogName": "Remapping Ranger Taro",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableRangerTaro": true,
+			"HasMod: |contains=CC.AMeadow": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+		},
+		"Entries": {
+			"RMP RangerTaro": {
+				"Id": "RMP.RangerTaro",
+				"PixelArea": { "X": 26, "Y": 78, "Width": 10, "Height": 14 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ranger.Taro",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 10, "Height": 14  } }]
+			}
+		}
+	},
+	{	//34.1
+		"LogName": "Remapping Ranger Taro SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableRangerTaro": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=CC.AMeadow": true
+		},
+		"Entries": {
+			"RMP RangerTaro": {
+				"Id": "RMP.RangerTaro",
+				"PixelArea": { "X": 26, "Y": 89, "Width": 13, "Height": 20 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ranger.Taro",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 13, "Height": 20  } }]
+			}
+		}
+	},
+	{	//32.1
+		"LogName": "Remapping Mineral Town",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableMineralTown": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=Rexstrife20.MineralTownCP": true
+		},
+		"Entries": {
+			"RMP MineralTown": {
+				"Id": "RMP.MineralTown",
+				"PixelArea": { "X": 136, "Y": 47, "Width": 164, "Height": 14 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Mineral.Town",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 164, "Height": 14  } }]
+			}
+		}
+	},
+	{	//32.1
+		"LogName": "Remapping Mineral Town SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableMineralTown": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=Rexstrife20.MineralTownCP": true
+		},
+		"Entries": {
+			"RMP MineralTown": {
+				"Id": "RMP.MineralTown",
+				"PixelArea": { "X": 141, "Y": 42, "Width": 159, "Height": 22 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Mineral.Town",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 159, "Height": 22  } }]
+			}
+		}
+	},
+	{	//31
+		"LogName": "Remapping Backwood Hill",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableTheBackwoodHill": true,
+			"HasMod: |contains=NeMax.BackWoodHill": true
+		},
+		"Entries": {
+			"RMP BackwoodHill": {
+				"Id": "RMP.BackwoodHill",
+				"PixelArea": { "X": 91, "Y": 12, "Width": 26, "Height": 31 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Backwood.Hill",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 26, "Height": 31  } }]
+			}
+		}
+	},
+	{	//30
+		"LogName": "Remapping Louis's Garage",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLouisGarage": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=R5.CP": true
+		},
+		"Entries": {
+			"RMP LouisGarage": {
+				"Id": "RMP.LouisGarage",
+				"PixelArea": { "X": 219, "Y": 111, "Width": 14, "Height": 8 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Louis.Garage",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 14, "Height": 8  } }]
+			}
+		}
+	},
+	{	//30.1
+		"LogName": "Remapping Louis's Garage SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLouisGarage": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=R5.CP": true
+		},
+		"Entries": {
+			"RMP LouisGarage": {
+				"Id": "RMP.LouisGarage",
+				"PixelArea": { "X": 230, "Y": 108, "Width": 10, "Height": 9 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Louis.Garage",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 10, "Height": 9  } }]
+			}
+		}
+	},
+	{	//29
+		"LogName": "Remapping Beach Extension",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableBeachExtensionForCrab": true,
+			"HasMod: |contains=Tikamin557.BeachExtensionForCrabPod": true
+		},
+		"Entries": {
+			"RMP BeachExtension": {
+				"Id": "RMP.BeachExtension",
+				"PixelArea": { "X": 193, "Y": 160, "Width": 30, "Height": 15 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Beach.Extension",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 30, "Height": 15  } }]
+			}
+		}
+	},
+	{	//28
+		"LogName": "Remapping Beach Additional",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableBeachAdditionalStorage": true,
+			"HasMod: |contains=Tikamin557.BeachAdditionalStorageSpaceArea": true
+		},
+		"Entries": {
+			"RMP BeachAdditiona": {
+				"Id": "RMP.BeachAdditiona",
+				"PixelArea": { "X": 210, "Y": 172, "Width": 9, "Height": 8 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Beach.Additional",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 9, "Height": 8  } }]
+			}
+		}
+	},
+	{	//27
+		"LogName": "Remapping Fiasa",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableFIASA": true,
+			"HasMod: |contains=CC.Koda.{{RMP.FIASA.Bond}}": true,
+			"Season": "summer, winter",
+			"DayofWeek": "Sunday, Monday, Tuesday, Thursday, Friday",
+			"Weather": "Sun, Snow, Wind",
+			"DayEvent |contains=dance of the moonlight jellies": false
+		},
+		"Entries": {
+			"RMP FIASA": {
+				"Id": "RMP.FIASA",
+				"PixelArea": { "X": 186, "Y": 165, "Width": 12, "Height": 8 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Fiasa",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 12, "Height": 8  } }]
+			}
+		}
+	},
+	{	//26
+		"LogName": "Remapping Haley Bakery",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableHaleyBakery": true,
+			"HasMod: |contains=kabulla.bakery": true
+		},
+		"Entries": {
+			"RMP HaleyBakery": {
+				"Id": "RMP.HaleyBakery",
+				"PixelArea": { "X": 167, "Y": 82, "Width": 4, "Height": 7 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Haley.Bakery",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 4, "Height": 7  } }]
+			}
+		}
+	},
+	{	//25
+		"LogName": "Remapping CMM Joseph Seed",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGMMJosephSeed": true,
+			"Day": "6, 7, 20, 21",
+			"Season": "spring,summer,fall",
+			"HasReadLetter": "makersmarketletter",
+			"HasMod: |contains=Elaho.JosephsSeedShopCP": true
+		},
+		"Entries": {
+			"RMP GMMJosephSeed": {
+				"Id": "RMP.GMMJosephSeed",
+				"PixelArea": { "X": 153, "Y": 86, "Width": 19, "Height": 12 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/CMM.Joseph.Seed",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 19, "Height": 12 } }]
+			}
+		}
+	},
+	{	//24
+		"LogName": "Remapping CMM Louvier Fromagerie",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGMMLouvierFromagerie": true,
+			"Day": "6, 7, 20, 21",
+			"Season": "spring,summer,fall",
+			"HasReadLetter": "makersmarketletter",
+			"HasMod: |contains=Elaho.LouvierFromagerieStorefront": true
+		},
+		"Entries": {
+			"RMP GMMLouvierFromagerie": {
+				"Id": "RMP.GMMLouvierFromagerie",
+				"PixelArea": { "X": 169, "Y": 90, "Width": 5, "Height": 6 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/CMM.Louvier.Fromagerie",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 5, "Height": 6 } }]
+			}
+		}
+	},
+	{	//23
+		"LogName": "Remapping CMM Paisley Bridal",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGMMPaisleyBoutique": true,
+			"Day": "6, 7, 20, 21",
+			"Season": "spring,summer,fall",
+			"HasReadLetter": "makersmarketletter",
+			"HasMod: |contains=Elaho.PaisleysBridalBoutiqueCP": true
+		},
+		"Entries": {
+			"RMP GMMPaisleyBoutique": {
+				"Id": "RMP.GMMPaisleyBoutique",
+				"PixelArea": { "X": 160, "Y": 89, "Width": 7, "Height": 6 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/CMM.Paisley.Bridal",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 7, "Height": 6 } }]
+			}
+		}
+	},
+	{	//22
+		"LogName": "Remapping Jane",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableJane": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+			"HasMod: |contains=woshi.Jane": true
+		},
+		"Entries": {
+			"RMP Jane": {
+				"Id": "RMP.Jane",
+				"PixelArea": { "X": 75, "Y": 100, "Width": 7, "Height": 4 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Jane",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 7, "Height": 4 } }]
+			}
+		}
+	},
+	{	//21
+		"LogName": "Remapping Isla",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableIsla": true,
+			"HasMod: |contains=PaperNautilus.Isla": true
+		},
+		"Entries": {
+			"RMP Isla": {
+				"Id": "RMP.Isla",
+				"PixelArea": { "X": 224, "Y": 161, "Width": 4, "Height": 5 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Isla",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 4, "Height": 5 } }] 
+			}
+		}
+	},
+	{	//21.1
+		"LogName": "Remapping Isla Ilha",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableIsla": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=PaperNautilus.Isla": true,
+			"HasMod: |contains=skellady.SBVCP": false
+			},
+		"Entries": {
+			"RMP Isla.Ilha": {
+				"Id": "RMP.Isla.Ilha",
+				"PixelArea": { "X": 279,"Y": 120,"Width": 21,"Height": 22 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Isla.Ilha",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 21,"Height": 22 } }]
+			}
+		}
+	},
+	{	//21.2
+		"LogName": "Remapping Isla Ilha SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableIsla": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=PaperNautilus.Isla": true,
+			"HasMod: |contains=skellady.SBVCP": false
+			},
+		"Entries": {
+			"RMP Isla.Ilha": {
+				"Id": "RMP.Isla.Ilha",
+				"PixelArea": { "X": 275,"Y": 121,"Width": 25,"Height": 21 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Isla.Ilha",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 25,"Height": 21 } }]
+			}
+		}
+	},
+	{	//21.0
+		"LogName": "Remapping Gem Sea",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGemSea": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=Aimon111.BeachAreas": true
+			},
+		"Entries": {
+			"RMP Gem.Sea": {
+				"Id": "RMP.Gem.Sea",
+				"PixelArea": { "X": 11,"Y": 120,"Width": 235,"Height": 47 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Gem.Sea",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 235,"Height": 47 } }]
+			}
+		}
+	},
+	{	//21.1
+		"LogName": "Remapping Gem Sea SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGemSea": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=Aimon111.BeachAreas": true
+			},
+		"Entries": {
+			"RMP Gem.Sea": {
+				"Id": "RMP.Gem.Sea",
+				"PixelArea": { "X": 76,"Y": 135,"Width": 170,"Height": 33 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Gem.Sea",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 170,"Height": 33 } }]
+			}
+		}
+	},
+	{	//21
+		"LogName": "Remapping Dead Boy Detectives A",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDeadBoyDetectives": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Dead.Boy.Detectives",
+			"HasMod: |contains=handwrittenhello.dbda": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		"Entries": {
+			"RMP Dead Boy Detectives A": {
+				"Id": "RMP.DeadBoyDetectivesA",
+				"PixelArea": { "X": 103, "Y": 129, "Width": 86, "Height": 51 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Dead.Boy.A",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 86, "Height": 51 } }]
+			}
+		}
+	},
+	{	//21.1
+		"LogName": "Remapping Dead Boy Detectives A SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDeadBoyDetectives": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Dead.Boy.Detectives",
+			"HasMod: |contains=handwrittenhello.dbda": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		"Entries": {
+			"RMP Dead Boy Detectives A": {
+				"Id": "RMP.DeadBoyDetectivesA",
+				"PixelArea": { "X": 106, "Y": 141, "Width": 86, "Height": 39 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Dead.Boy.A",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 86, "Height": 39 } }]
+			}
+		}
+	},
+	{	//21.2
+		"LogName": "Remapping Dead Boy Detectives B",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDeadBoyDetectives": true,
+			"RMP.PRIORITIES.BoyDetectives.Isla.SBV": "Dead.Boy.Detectives",
+			"HasMod: |contains=handwrittenhello.dbda": true
+		},
+		"Entries": {
+			"RMP Dead Boy Detectives B": {
+				"Id": "RMP.DeadBoyDetectivesB",
+				"PixelArea": { "X": 237, "Y": 134, "Width": 33, "Height": 27 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Dead.Boy.B",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 33, "Height": 27 } }]
+			}
+		}
+	},
+	{	//21.3
+		"LogName": "Remapping Dead Boy Detectives C",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDeadBoyDetectives": true,
+			"HasMod: |contains=handwrittenhello.dbda": true
+		},
+		"Entries": {
+			"RMP Dead Boy Detectives C": {
+				"Id": "RMP.DeadBoyDetectivesC",
+				"PixelArea": { "X": 150, "Y": 91, "Width": 14, "Height": 11 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Dead.Boy.C",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 14, "Height": 11 } }]
+			}
+		}
+	},
+	{	//21.3
+		"LogName": "Remapping Dead Boy Detectives D",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDeadBoyDetectives": true,
+			"HasMod: |contains=handwrittenhello.dbda": true
+		},
+		"Entries": {
+			"RMP Dead Boy Detectives D": {
+				"Id": "RMP.DeadBoyDetectivesD",
+				"PixelArea": { "X": 222, "Y": 38, "Width": 14, "Height": 9 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Dead.Boy.D",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 14, "Height": 9 } }]
+			}
+		}
+	},
+	{	//20
+		"LogName": "Remapping MySubmarine",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableSubmarine": true,
+			"HasMod: |contains=Tikamin557.CP.MySubmarine": true
+		},
+		"Entries": {
+			"RMP MySubmarine": {
+				"Id": "RMP.MySubmarine",
+				"PixelArea": { "X": 234, "Y": 154, "Width": 8, "Height": 5 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/MySubmarine",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 8, "Height": 5 } }]
+			}
+		}
+	},
+	{	//20.1
+		"LogName": "Remapping MySubmarine.Bridge",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableSubmarine": true,
+			"HasReadLetter": "MySubmarine.AvailableMailId",
+			"HasMod: |contains=Tikamin557.CP.MySubmarine": true
+		},
+		"Entries": {
+			"RMP MySubmarine.Bridge": {
+				"Id": "RMP.MySubmarine.Bridge",
+				"PixelArea": { "X": 235, "Y": 156, "Width": 10, "Height": 6 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/MySubmarine.Bridge",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 10, "Height": 6 } }]
+			}
+		}
+	},
+	{	//19
+		"LogName": "Remapping Juna",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableJuna": true,
+			"HasMod: |contains=elhrvy.NPCJuna": true
+		},
+		"Entries": {
+			"RMP Juna": {
+				"Id": "RMP.Juna",
+				"PixelArea": { "X": 49, "Y": 110, "Width": 5, "Height": 7 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Juna",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 5, "Height": 7 } }]
+			}
+		}
+	},
+	{	//18
+		"LogName": "Remapping Dam",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDam": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=Tikamin557.dam": true
+		},
+		"Entries": {
+			"RMP Dam": {
+				"Id": "RMP.Dam",
+				"PixelArea": { "X": 177, "Y": 4, "Width": 55, "Height": 27 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Dam",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 55, "Height": 27  } }]
+			}
+		}
+	},
+	{	//18.1
+		"LogName": "Remapping Dam SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDam": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=Tikamin557.dam": true
+		},
+		"Entries": {
+			"RMP Dam SVE": {
+				"Id": "RMP.Dam.SVE",
+				"PixelArea": { "X": 173, "Y": 0, "Width": 27, "Height": 28 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Dam",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 27, "Height": 28  } }]
+			}
+		}
+	},
+	{	//17
+		"LogName": "Remapping Fishing Pond",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableFishingPond": true,
+			"HasMod: |contains=Tikamin557.CP.FishingPondFacilities": true
+		},
+		"Entries": {
+			"RMP FishingPond": {
+				"Id": "RMP.FishingPond",
+				"PixelArea": { "X": 236, "Y": 62, "Width": 17, "Height": 16 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Fishing.Pond",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 17, "Height": 16  } }]
+			}
+		}
+	},
+	{	//16
+		"LogName": "Remapping Wilford",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableWilford": true,
+			"HasMod: |contains=Fernandtea.NewNPCWilford": true
+		},
+		"Entries": {
+			"RMP Wilford": {
+				"Id": "RMP.Wilford",
+				"PixelArea": { "X": 229, "Y": 69, "Width": 27, "Height": 23 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Wilford",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 27, "Height": 23  } }]
+			}
+		}
+	},
+	{	//15
+		"LogName": "Remapping Demon Slayer",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDemonSlayer": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=hana.shinazugawa": true
+		},
+		"Entries": {
+			"RMP DemonSlayer": {
+				"Id": "RMP.DemonSlayer",
+				"PixelArea": { "X": 178, "Y": 40, "Width": 65, "Height": 30 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Demon.Slayer",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 65, "Height": 30  } }]
+			}
+		}
+	},
+	{	//14
+		"LogName": "Remapping Law and Order",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLawOrder": true,
+			"HasMod: |contains=sdvhead.LawAndOrderSV": true
+		},
+		"Entries": {
+			"RMP LawOrder": {
+				"Id": "RMP.LawOrder",
+				"PixelArea": { "X": 196, "Y": 46, "Width": 9, "Height": 10 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Law.Order",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 9, "Height": 10  } }]
+			}
+		}
+	},
+	{	//13
+		"LogName": "Remapping Stray Catfe",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableATheStrayCatfe": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=ch20youk.TSCCP": true
+		},
+		"Entries": {
+			"RMP StrayCatfe": {
+				"Id": "RMP.StrayCatfe",
+				"PixelArea": { "X": 120, "Y": 76, "Width": 13, "Height": 15 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Stray.Catfe",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 13, "Height": 15  } }]
+			}
+		}
+	},
+	{	//13.1
+		"LogName": "Remapping Stray Catfe SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableATheStrayCatfe": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=ch20youk.TSCCP": true
+		},
+		"Entries": {
+			"RMP StrayCatfe": {
+				"Id": "RMP.StrayCatfe",
+				"PixelArea": { "X": 129, "Y": 74, "Width": 14, "Height": 26 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Stray.Catfe",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 14, "Height": 26  } }]
+			}
+		}
+	},
+	{	//12
+		"LogName": "Remapping Juliet and Jessie",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableJuliet.Jessie": true,
+			"HasMod: |contains=LemurKat.EastScarpe.CP": false,
+			"HasMod: |contains=LemurKat.JulietHouse.NPC": true
+		},
+		"Entries": {
+			"RMP Juliet.Jessie": {
+				"Id": "RMP.Juliet.Jessie",
+				"PixelArea": { "X": 156, "Y": 36, "Width": 19, "Height": 17 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Juliet.Jessie",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 19, "Height": 17  } }]
+			}
+		}
+	},
+	{	//11
+		"LogName": "Remapping Lunna",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		},
+		"Entries": {
+			"RMP Lunna": {
+				"Id": "RMP.Lunna",
+				"PixelArea": { "X": 19, "Y": 88, "Width": 37, "Height": 41 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Lunna",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 37, "Height": 41  } }]
+			}
+		}
+	},
+	{	//11
+		"LogName": "Remapping Lunna SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		},
+		"Entries": {
+			"RMP Lunna": {
+				"Id": "RMP.Lunna",
+				"PixelArea": { "X": 19, "Y": 88, "Width": 36, "Height": 50 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Lunna",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 36, "Height": 50  } }]
+			}
+		}
+	},
+	{	//10
+		"LogName": "Remapping Sydney",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableSydney": true,
+			"RMPSydneyVersion": "Default",
+			"HasMod: |contains=Lex.Sydney": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		"Entries": {
+			"RMP Sydney": {
+				"Id": "RMP.Sydney",
+				"PixelArea": { "X": 167, "Y": 138, "Width": 24, "Height": 19 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Sydney.A",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 24, "Height": 19  } }]
+			}
+		}
+	},
+	{	//10.1
+		"LogName": "Remapping Sydney SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableSydney": true,
+			"RMPSydneyVersion": "Default",
+			"HasMod: |contains=Lex.Sydney": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		"Entries": {
+			"RMP Sydney": {
+				"Id": "RMP.Sydney",
+				"PixelArea": { "X": 167, "Y": 135, "Width": 24, "Height": 25 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Sydney.A",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 24, "Height": 25  } }]
+			}
+		}
+	},
+	{	//10.2
+		"LogName": "Remapping Sydney Legacy Version",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableSydney": true,
+			"RMPSydneyVersion": "LegacyVersion",
+			"HasMod: |contains=Lex.Sydney": true
+		},
+		"Entries": {
+			"RMP Sydney": {
+				"Id": "RMP.Sydney",
+				"PixelArea": { "X": 189, "Y": 139, "Width": 6, "Height": 9 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Sydney",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 6, "Height": 9  } }]
+			}
+		}
+	},
+	{	//10
+		"LogName": "Remapping Ecosystem", 
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		"Entries": {
+			"RMP Ecosystem": {
+				"Id": "RMP.Ecosystem",
+				"PixelArea": { "X": 142, "Y": 137, "Width": 49, "Height": 25 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ecosystem.Superpack.A",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 49, "Height": 25 } }]
+			}
+		}
+	},
+	{	//10.1
+		"LogName": "Remapping Ecosystem SVE", 
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		"Entries": {
+			"RMP Ecosystem": {
+				"Id": "RMP.Ecosystem",
+				"PixelArea": { "X": 136, "Y": 146, "Width": 55, "Height": 25 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ecosystem.Superpack.A",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 55, "Height": 25 } }]
+			}
+		}
+	},
+	{	//10.2
+		"LogName": "Remapping Ecosystem (Gem Sea Compatibility)", 
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=Aimon111.BeachAreas": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		"Entries": {
+			"RMP Ecosystem.GemSea": {
+				"Id": "RMP.Ecosystem.GemSea",
+				"PixelArea": { "X": 141, "Y": 148, "Width": 12, "Height": 13 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ecosystem.Superpack.C",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 12, "Height": 13 } }]
+			}
+		}
+	},
+	{	//10.3
+		"LogName": "Remapping Ecosystem SVE (Gem Sea Compatibility)", 
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=Aimon111.BeachAreas": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		"Entries": {
+			"RMP Ecosystem.GemSea": {
+				"Id": "RMP.Ecosystem.GemSea",
+				"PixelArea": { "X": 132, "Y": 158, "Width": 12, "Height": 10 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ecosystem.Superpack.C",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 12, "Height": 10 } }]
+			}
+		}
+	},
+	{	//10.4
+		"LogName": "Remapping Ecosystem FIASA Boat", 
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"DayofWeek": "Monday, Tuesday, Wednesday, Thursday, Friday"
+		},
+		"Entries": {
+			"RMP Ecosystem.Boat": {
+				"Id": "RMP.Ecosystem.Boat",
+				"PixelArea": { "X": 154, "Y": 158, "Width": 12, "Height": 8 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Fiasa",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 12, "Height": 8 } }]
+			}
+		}
+	},
+	{	//10.5
+		"LogName": "Remapping Ecosystem FIASA Boat SVE", 
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"DayofWeek": "Monday, Tuesday, Wednesday, Thursday, Friday"
+		},
+		"Entries": {
+			"RMP Ecosystem.Boat": {
+				"Id": "RMP.Ecosystem.Boat",
+				"PixelArea": { "X": 149, "Y": 167, "Width": 12, "Height": 8 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Fiasa",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 12, "Height": 8 } }]
+			}
+		}
+	},
+	{	//10.6
+		"LogName": "Remapping Ecosystem Ranger Taro",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		"Entries": {
+			"RMP Ecosystem.Ranger.Taro": {
+				"Id": "Ecosystem.Ranger.Taro",
+				"PixelArea": { "X": 26, "Y": 78, "Width": 10, "Height": 14 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ranger.Taro",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 10, "Height": 14  } }]
+			}
+		}
+	},
+	{	//10.7
+		"LogName": "Remapping Ecosystem Ranger Taro SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		"Entries": {
+			"RMP Ecosystem.Ranger.Taro": {
+				"Id": "RMP.Ecosystem.Ranger.Taro",
+				"PixelArea": { "X": 26, "Y": 89, "Width": 13, "Height": 20 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ranger.Taro",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 13, "Height": 20  } }]
+			}
+		}
+	},
+	{	//10.8
+		"LogName": "Remapping Ecosystem Tunnel",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"HasMod: |contains=cajcbell.ESE": true
+		},
+		"Entries": {
+			"RMP Ecosystem.Tunnel": {
+				"Id": "RMP.Ecosystem.Tunnel",
+				"PixelArea": { "X": 55, "Y": 127, "Width": 6, "Height": 7 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ecosystem.Superpack.B",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 6, "Height": 7  } }]
+			}
+		}
+	},
+	{	//9
+		"LogName": "Remapping Fishing Trawle Default",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableFishingTrawler": true,
+			"RMP Fishing Trawle Old Trawler Sprite": "Default",
+			"DayOfWeek |contains={{PeacefulEnd.FishingTrawler.NewHorizons/MurphyAppearanceDay}}": "true",
+			"HasMod: |contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true
+		},
+		"Entries": {
+			"RMP FishingTrawler": {
+				"Id": "RMP.FishingTrawler",
+				"PixelArea": { "X": 222, "Y": 165, "Width": 24, "Height": 12 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Fishing.Trawle.Default",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 24, "Height": 12  } }]
+			}
+		}
+	},
+	{	//9
+		"LogName": "Remapping Fishing Trawle Old",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableFishingTrawler": true,
+			"RMP Fishing Trawle Old Trawler Sprite": "Old",
+			"DayOfWeek |contains={{PeacefulEnd.FishingTrawler.NewHorizons/MurphyAppearanceDay}}": "true",
+			"HasMod: |contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true
+		},
+		"Entries": {
+			"RMP FishingTrawler": {
+				"Id": "RMP.FishingTrawler",
+				"PixelArea": { "X": 222, "Y": 165, "Width": 24, "Height": 12 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Fishing.Trawle.Old",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 24, "Height": 12  } }]
+			}
+		}
+	},
+	{	//08
+		"LogName": "Remapping Cape Stardew",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableCapeStardew": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=dreamy.kickitspot": true
+		},
+		"Entries": {
+			"RMP CapeStardew": {
+				"Id": "RMP.CapeStardew",
+				"PixelArea": { "X": 0, "Y": 138, "Width": 80, "Height": 42 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Cape.Stardew",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 80, "Height": 42 } }]
+			}
+		}
+	},
+	{	//08.1
+		"LogName": "Remapping Cape Stardew SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableCapeStardew": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=dreamy.kickitspot": true
+		},
+		"Entries": {
+			"RMP CapeStardew SVE": {
+				"Id": "RMP.CapeStardew.SVE",
+				"PixelArea": { "X": 30, "Y": 157, "Width": 45, "Height": 23 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Cape.Stardew",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 45, "Height": 23 } }]
+			}
+		}
+	},
+	{	//07
+		"LogName": "Remapping Ornithologist Guild",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableOrnithologistGuild": true,
+			"HasMod: |contains=Ivy.OrnithologistsGuild.CP": true
+		},
+		"Entries": {
+			"RMP Ornithologist": {
+				"Id": "RMP.Ornithologist",
+				"PixelArea": { "X": 49, "Y": 123, "Width": 6, "Height": 10 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ornithologist.Guild",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 6, "Height": 10  } }]
+			}
+		}
+	},
+	{	//06
+		"LogName": "Remapping Garden Village",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGardenVillage": true,
+			"FarmType |contains=Riverland": "false",
+			"FarmType |contains=Forest": "false",
+			"FarmType |contains=Beach": "false",
+			"FarmType |contains=MeadowlandsFarm": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+			"FarmType |contains=heathinwillows.BrokeBackMountainFarm": "false",
+			"HasMod: |contains=N3cro92.CP.GardenVillage": true
+		},
+		"Entries": {
+			"RMP Garden Village": {
+				"Id": "RMP.Garden.Village",
+				"PixelArea": { "X": 0, "Y": 37, "Width": 70, "Height": 23 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Garden.Village",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 70, "Height": 23 } }]
+			}
+		}
+	},
+	{	//05
+		"LogName": "Remapping Walk Desert",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableAWalktotheDesert": true,
+			"FarmType |contains=Riverland": "false",
+			"FarmType |contains=Forest": "false",
+			"FarmType |contains=Beach": "false",
+			"FarmType |contains=MeadowlandsFarm": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+			"FarmType |contains=heathinwillows.BrokeBackMountainFarm": "false",
+			"HasMod: |contains=Tarniyar.CP.WalkToDesert": true
+		},
+		"Entries": {
+			"RMP WalktotheDesert": {
+				"Id": "RMP.WalktotheDesert",
+				"PixelArea": { "X": 0, "Y": 0, "Width": 91, "Height": 62 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Walk.Desert",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 91, "Height": 62 } }]
+			}
+		}
+	},
+	{	//04
+		"LogName": "Remapping Ridgeside Village",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableRidgesideVillage": true,
+			"FarmType |contains=Riverland": "false",
+			"FarmType |contains=Forest": "false",
+			"FarmType |contains=Four Corners": "false",
+			"FarmType |contains=Beach": "false",
+			"FarmType |contains=MeadowlandsFarm": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+			"FarmType |contains=heathinwillows.BrokeBackMountainFarm": "false",
+			"HasMod: |contains=Rafseazz.RSVFTM": true
+		},
+		"Entries": {
+			"RMP RidgesideVillage": {
+				"Id": "RMP.RidgesideVillage",
+				"PixelArea": { "X": 0, "Y": 25, "Width": 144, "Height": 49 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ridgeside.Village",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 144, "Height": 49 } }]
+			}
+		}
+	},
+	{	//03
+		"LogName": "Remapping Ayeisha",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableAyeisha": true, 
+			"HasMod: |contains=TheLimeyDragon.Ayeisha": true
+		},
+		"Entries": {
+			"RMP Ayeisha": {
+				"Id": "RMP.Ayeisha",
+				"PixelArea": { "X": 139, "Y": 55, "Width": 5, "Height": 4 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ayeisha",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 5, "Height": 4 } }]
+			}
+		}
+	},
+	{	//02
+		"LogName": "Remapping Red School Velho",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLittleRedSchool": true,
+			"RMPRedSchoolLazyVersion": "Default",
+			"HasMod: |contains=Xiddav.LittleRedSchoolHouse": true,
+			"HasSeenEvent: anyPlayer|contains=9695002": false
+		},
+		"Entries": {
+			"RMP Red School": {
+				"Id": "RMP.Red.School",
+				"PixelArea": { "X": 147, "Y": 51, "Width": 19, "Height": 13 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Red.School.Velho",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 19, "Height": 13 } }]
+			}
+		}
+	},
+	{	//01
+		"LogName": "Remapping Red School Novo",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLittleRedSchool": true,
+			"RMPRedSchoolLazyVersion": "Default",
+			"HasMod: |contains=Xiddav.LittleRedSchoolHouse": true,
+			"HasSeenEvent: anyPlayer|contains=9695002": true
+		},
+		"Entries": {
+			"RMP Red School": {
+				"Id": "RMP.Red.School",
+				"PixelArea": { "X": 147, "Y": 50, "Width": 19, "Height": 14 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Red.School.Novo",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 19, "Height": 14 } }]
+			}
+		}
+	},
+	{	//01.0.1
+		"LogName": "Remapping Red School Lazy Version",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLittleRedSchool": true,
+			"RMPRedSchoolLazyVersion": "LazyVersion",
+			"HasMod: |contains=Xiddav.LittleRedSchoolHouse": true
+		},
+		"Entries": {
+			"RMP Red School": {
+				"Id": "RMP.Red.School",
+				"PixelArea": { "X": 147, "Y": 50, "Width": 19, "Height": 14 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Red.School.Novo",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 19, "Height": 14 } }]
+			}
+		}
+	},
+	//SVE
+	{	//01
+		"LogName": "Remapping Bridge to Blue Moon SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableBridgetoBlueMoon": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=AndrewJC.SVEBeachBridge": true},
+		"Entries": {
+			"RMP BridgetoBlueMoon": {
+				"Id": "RMP.BridgetoBlueMoon",
+				"PixelArea": { "X": 180, "Y": 137, "Width": 10, "Height": 9 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Bridge.Blue.Moon",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 10, "Height": 9 } }]
+			}
+		}
+	},
+
+	//ILHA GENGIBRE
+	{	//03
+		"LogName": "RMP Fishmonger GENGIBRE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "GingerIsland", "MapAreas" ],
+		"When": {
+			"RMPEnableTheFishmonger": true,
+			"HasMod: |contains=VoidWitchCult.CP.TheFishmongerNPC": true
+		},
+		"Entries": {
+			"RMP Fishmonger": {
+				"Id": "RMP.Fishmonger",
+				"PixelArea": { "X": 159, "Y": 129, "Width": 11, "Height": 11 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Fishmonger",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 11, "Height": 11 } }]
+			}
+		}
+	},
+	{	//02
+		"LogName": "RMP Fishing Trawle Bridge GENGIBRE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "GingerIsland", "MapAreas" ],
+		"When": {
+			"RMPEnableFishingTrawler": true,
+			"HasMod: |contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true
+		},
+		"Entries": {
+			"RMP FishingTrawler.Ginger.Bridge": {
+				"Id": "RMP.FishingTrawler.Ginger.Bridge",
+				"PixelArea": { "X": 175, "Y": 126, "Width": 9, "Height": 13 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Fishing.Trawle.Ginger.Bridge",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 9, "Height": 13 } }]
+			}
+		}
+	},
+	{	//02.1
+		"LogName": "RMP Fishing Trawle Default GENGIBRE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "GingerIsland", "MapAreas" ],
+		"When": {
+			"RMPEnableFishingTrawler": true,
+			"RMP Fishing Trawle Old Trawler Sprite": "Default",
+			"DayOfWeek |contains={{PeacefulEnd.FishingTrawler.NewHorizons/MurphyAppearanceDayIsland}}": "true",
+			"HasMod: |contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true
+		},
+		"Entries": {
+			"RMP FishingTrawler.Ginger": {
+				"Id": "RMP.FishingTrawler.Ginger",
+				"PixelArea": { "X": 176, "Y": 137, "Width": 11, "Height": 10 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Fishing.Trawle.Default.Ginger",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 11, "Height": 10 } }]
+			}
+		}
+	},
+	{	//02.2
+		"LogName": "RMP Fishing Trawle Old GENGIBRE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "GingerIsland", "MapAreas" ],
+		"When": {
+			"RMPEnableFishingTrawler": true,
+			"RMP Fishing Trawle Old Trawler Sprite": "Old",
+			"DayOfWeek |contains={{PeacefulEnd.FishingTrawler.NewHorizons/MurphyAppearanceDayIsland}}": "true",
+			"HasMod: |contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true
+		},
+		"Entries": {
+			"RMP FishingTrawler.Ginger": {
+				"Id": "RMP.FishingTrawler.Ginger",
+				"PixelArea": { "X": 176, "Y": 137, "Width": 11, "Height": 10 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Fishing.Trawle.Old.Ginger",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 11, "Height": 10 } }]
+			}
+		}
+	},
+	{	//01
+		"LogName": "RMP MySubmarine Bridge GENGIBRE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "GingerIsland", "MapAreas" ],
+		"When": {
+			"RMPEnableSubmarine": true,
+			"HasMod: |contains=VoidWitchCult.CP.TheFishmongerNPC": false,
+			"HasMod: |contains=Tikamin557.CP.MySubmarine": true
+		},
+		"Entries": {
+			"RMP MySubmarine.Ginger.Bridge": {
+				"Id": "RMP.MySubmarine.Ginger.Bridge",
+				"PixelArea": { "X": 159, "Y": 127, "Width": 11, "Height": 20 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/MySubmarine.Ginger.Bridge",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 11, "Height": 20 } }]
+			}
+		}
+	},
+	{	//01.1
+		"LogName": "RMP MySubmarine A GENGIBRE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "GingerIsland", "MapAreas" ],
+		"When": {
+			"RMPEnableSubmarine": true,
+			"HasMod: |contains=VoidWitchCult.CP.TheFishmongerNPC": false,
+			"HasReadLetter": "MySubmarine.AvailableMailId",
+			"HasMod: |contains=Tikamin557.CP.MySubmarine": true
+		},
+		"Entries": {
+			"RMP MySubmarine.Ginger.A": {
+				"Id": "RMP.MySubmarine.Ginger.A",
+				"PixelArea": { "X": 164, "Y": 146, "Width": 9, "Height": 6 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/MySubmarine.Ginger.A",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 9, "Height": 6 } }]
+			}
+		}
+	},
+	{	//01.2
+		"LogName": "RMP MySubmarine B GENGIBRE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "GingerIsland", "MapAreas" ],
+		"When": {
+			"RMPEnableSubmarine": true,
+			"HasMod: |contains=VoidWitchCult.CP.TheFishmongerNPC": true,
+			"HasReadLetter": "MySubmarine.AvailableMailId",
+			"HasMod: |contains=Tikamin557.CP.MySubmarine": true
+		},
+		"Entries": {
+			"RMP MySubmarine.Ginger.B": {
+				"Id": "RMP.MySubmarine.Ginger.B",
+				"PixelArea": { "X": 156, "Y": 139, "Width": 8, "Height": 9 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/MySubmarine.Ginger.B",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 8, "Height": 9 } }]
+			}
+		}
+	},
+
+	//Boat Journey Map
+	{	//17
+		"LogName": "Remapping Gem Sea Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Gem.Sea_{{RMP.Season}}_{{RMP.Source}}.png", 
+		"ToArea": {"X": 77, "Y": 13, "Width": 235, "Height": 47},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableGemSea": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=Aimon111.BeachAreas": true
+		}
+	},
+	{	//17.1
+		"LogName": "Remapping Gem Sea Boat Journey SVE",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Gem.Sea_{{RMP.Season}}_{{RMP.Source}}.png", 
+		"ToArea": {"X": 142, "Y": 28, "Width": 170, "Height": 33},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableGemSea": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=Aimon111.BeachAreas": true
+		}
+	},
+	{	//16
+		"LogName": "Remapping Sunberry Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Island/Sunberry_{{season}}_{{RMP.Source}}.png",
+		"ToArea": {"X": 274, "Y": 0, "Width": 183, "Height": 92},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableSunberryVillage": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=skellady.SBVCP": true
+		}
+	},
+	{	//16.1
+		"LogName": "Remapping Sunberry Boat Journey SVE",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Island/Sunberry_{{season}}_{{RMP.Source}}.png",
+		"ToArea": {"X": 274, "Y": 0, "Width": 130, "Height": 92},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableSunberryVillage": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=skellady.SBVCP": true
+		}
+	},
+	{	//15
+		"LogName": "Remapping Fiasa Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Fiasa_{{season}}.png", 
+		"ToArea": {"X": 252, "Y": 58, "Width": 12, "Height": 8},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableFIASA": true,
+			"HasMod: |contains=CC.Koda.{{RMP.FIASA.Bond}}": true,
+			"Season": "summer, winter",
+			"DayofWeek": "Sunday, Monday, Tuesday, Thursday, Friday",
+			"Weather": "Sun, Snow, Wind",
+			"DayEvent |contains=dance of the moonlight jellies": false
+		}
+	},
+	{	//14
+		"LogName": "Remapping Ecosystem Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Ecosystem.A_{{season}}_Vanilla.png", 
+		"ToArea": {"X": 208, "Y": 30, "Width": 49, "Height": 25},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+		}
+	},
+	{	//14.1
+		"LogName": "Remapping Ecosystem Boat Journey SVE",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Ecosystem.A_{{season}}_SVE.png", 
+		"ToArea": {"X": 202, "Y": 36, "Width": 55, "Height": 25},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		}
+	},
+	{	//14.2
+		"LogName": "Remapping Fiasa Ecosystem Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Fiasa_{{season}}.png", 
+		"ToArea": {"X": 220, "Y": 51, "Width": 12, "Height": 8},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"DayofWeek": "Monday, Tuesday, Wednesday, Thursday, Friday"
+		}
+	},
+	{	//14.3
+		"LogName": "Remapping Fiasa Ecosystem Boat Journey SVE",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Fiasa_{{season}}.png", 
+		"ToArea": {"X": 215, "Y": 60, "Width": 12, "Height": 8},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"DayofWeek": "Monday, Tuesday, Wednesday, Thursday, Friday"
+		}
+	},
+	{	//14.4
+		"LogName": "Remapping Ecosystem (Gem Sea Compatibility) Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Ecosystem.C_{{RMP.Season}}_{{RMP.Source}}.png", 
+		"ToArea": {"X": 207, "Y": 21, "Width": 12, "Height": 13},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=Aimon111.BeachAreas": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		}
+	},
+	{	//14.4
+		"LogName": "Remapping Ecosystem (Gem Sea Compatibility) Boat Journey SVE",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Ecosystem.C_{{RMP.Season}}_{{RMP.Source}}.png", 
+		"ToArea": {"X": 198, "Y": 51, "Width": 12, "Height": 10},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableEcosystemSuperpack": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Ecosystem.Superpack",
+			"HasMod: |contains=cajcbell.ESE": true,
+			"HasMod: |contains=Aimon111.BeachAreas": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		}
+	},
+	{	//13
+		"LogName": "Remapping Isla Ilha Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Island/Isla.Ilha_{{season}}_Vanilla.png", 
+		"ToArea": {"X": 345, "Y": 13, "Width": 28, "Height": 22},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableIsla": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=PaperNautilus.Isla": true,
+			"HasMod: |contains=skellady.SBVCP": false
+		}
+	},
+	{	//13.1
+		"LogName": "Remapping Isla Ilha Boat Journey SVE",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Island/Isla.Ilha_{{season}}_SVE.png", 
+		"ToArea": {"X": 341, "Y": 14, "Width": 27, "Height": 21},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableIsla": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=PaperNautilus.Isla": true,
+			"HasMod: |contains=skellady.SBVCP": false
+		}
+	},
+	{	//13.1
+		"LogName": "Remapping Isla Ilha SBV Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Island/Isla.Ilha.SBV_{{season}}.png", 
+		"ToArea": {"X": 311, "Y": 26, "Width": 24, "Height": 21},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableIsla": true,
+			"RMP.PRIORITIES.BoyDetectives.Isla.SBV": "Isla",
+			"HasMod: |contains=PaperNautilus.Isla": true,
+			"HasMod: |contains=skellady.SBVCP": true
+		}
+	},
+	{	//12
+		"LogName": "Remapping Dead Boy Detectives A Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Island/Dead.Boy.Island_{{season}}_{{RMP.Source}}.png",
+		"ToArea": {"X": 165, "Y": 22, "Width": 90, "Height": 71},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableDeadBoyDetectives": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Dead.Boy.Detectives",
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=handwrittenhello.dbda": true
+		}
+	},
+	{	//12.1
+		"LogName": "Remapping Dead Boy Detectives A Boat Journey SVE",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Island/Dead.Boy.Island_{{season}}_{{RMP.Source}}.png",
+		"ToArea": {"X": 167, "Y": 34, "Width": 91, "Height": 61},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableDeadBoyDetectives": true,
+			"RMP.PRIORITIES.BoyDetectives.Ecosystem": "Dead.Boy.Detectives",
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=handwrittenhello.dbda": true
+		}
+	},
+	{	//12.2
+		"LogName": "Remapping Dead Boy Detectives B Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Dead.Boy.B_{{season}}.png",
+		"ToArea": {"X": 303, "Y": 27, "Width": 33, "Height": 27},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableDeadBoyDetectives": true,
+			"HasMod: |contains=handwrittenhello.dbda": true
+		}
+	},
+	{	//11
+		"LogName": "Remapping Louis's Garage Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Louis.Garage_{{season}}_Vanilla.png", 
+		"ToArea": {"X": 285, "Y": 4, "Width": 14, "Height": 8},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableLouisGarage": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=R5.CP": true
+		}
+	},
+	{	//11.1
+		"LogName": "Remapping Louis's Garage Boat Journey SVE",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Louis.Garage_{{season}}_SVE.png", 
+		"ToArea": {"X": 296, "Y": 1, "Width": 10, "Height": 9},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableLouisGarage": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=R5.CP": true
+		}
+	},
+	{	//08
+		"LogName": "Remapping Isla Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Island/Isla_{{season}}.png", 
+		"ToArea": {"X": 290, "Y": 54, "Width": 4, "Height": 5},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableIsla": true,
+			"HasMod: |contains=PaperNautilus.Isla": true
+		}
+	},
+	{	//07.1
+		"LogName": "Remapping MySubmarine Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Island/MySubmarine_{{season}}.png", 
+		"ToArea": {"X": 300, "Y": 47, "Width": 8, "Height": 5},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableSubmarine": true,
+			"HasMod: |contains=Tikamin557.CP.MySubmarine": true
+		}
+	},
+		{	//07
+			"LogName": "Remapping MySubmarine2 Boat Journey",
+			"Action": "EditImage",
+			"Target": "Minigames/{{season}}_boatJourneyMap",
+			"FromFile": "assets/Island/MySubmarine2_{{season}}.png", 
+			"ToArea": {"X": 301, "Y": 48, "Width": 10, "Height": 6},	
+			"PatchMode": "Overlay",
+			"When": {
+				"RMPEnableSubmarine": true,
+				"HasReadLetter": "MySubmarine.AvailableMailId",
+				"HasMod: |contains=Tikamin557.CP.MySubmarine": true
+			}
+		},
+	{	//06
+		"LogName": "Remapping Juna Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Juna_{{season}}.png",	 
+		"ToArea": {"X": 115, "Y": 3, "Width": 5, "Height": 7},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableJuna": true,
+			"HasMod: |contains=elhrvy.NPCJuna": true
+		}
+	},
+	{	//05
+		"LogName": "Remapping Lunna Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Lunna_{{season}}_Vanilla.png",
+		"FromArea": {"X": 0, "Y": 26, "Width": 31, "Height": 16},
+		"ToArea": {"X": 85, "Y": 6, "Width": 31, "Height": 16},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		}
+	},
+	{	//05.1
+		"LogName": "Remapping Lunna Boat Journey SVE",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Lunna_{{season}}_SVE.png",
+		"FromArea": {"X": 0, "Y": 23, "Width": 31, "Height": 17},
+		"ToArea": {"X": 85, "Y": 4, "Width": 31, "Height": 17},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		}
+	},
+	{	//04
+		"LogName": "Remapping Sydney Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Sydney.A_{{season}}_Vanilla.png",
+		"ToArea": {"X": 233, "Y": 31, "Width": 24, "Height": 19},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableSydney": true,
+			"RMPSydneyVersion": "Default",
+			"HasMod: |contains=Lex.Sydney": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		}
+	},
+	{	//04.1
+		"LogName": "Remapping Sydney SVE Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Sydney.A_{{season}}_SVE.png",
+		"ToArea": {"X": 233, "Y": 28, "Width": 24, "Height": 25},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableSydney": true,
+			"RMPSydneyVersion": "Default",
+			"HasMod: |contains=Lex.Sydney": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		}
+	},
+	{	//04.2
+		"LogName": "Remapping Sydney Legacy Version Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Sydney_{{season}}.png",
+		"ToArea": {"X": 255, "Y": 32, "Width": 6, "Height": 9},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableSydney": true,
+			"RMPSydneyVersion": "LegacyVersion",
+			"HasMod: |contains=Lex.Sydney": true
+		}
+	},
+	{	//03
+		"LogName": "Remapping Fishing Trawle Default Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Island/Fishing.Trawle.Novo_{{season}}.png",
+		"ToArea": {"X": 290, "Y": 58, "Width": 24, "Height": 12},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableFishingTrawler": true,
+			"RMP Fishing Trawle Old Trawler Sprite": "Default",
+			"DayOfWeek |contains={{PeacefulEnd.FishingTrawler.NewHorizons/MurphyAppearanceDay}}": "true",
+			"HasMod: |contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true
+		}
+	},
+	{	//03.1
+		"LogName": "Remapping Fishing Trawle Old Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Island/Fishing.Trawle.Velho_{{season}}.png",
+		"ToArea": {"X": 290, "Y": 58, "Width": 24, "Height": 12},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableFishingTrawler": true,
+			"RMP Fishing Trawle Old Trawler Sprite": "Old",
+			"DayOfWeek |contains={{PeacefulEnd.FishingTrawler.NewHorizons/MurphyAppearanceDay}}": "true",
+			"HasMod: |contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true
+		}
+	},
+	{	//02
+		"LogName": "Remapping Cape Stardew Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Island/Cape.Stardew_{{season}}_Vanilla.png", 
+		"ToArea": {"X": 20, "Y": 0, "Width": 132, "Height": 101},	
+		"PatchMode": "Overlay",
+		"When": { 
+			"RMPEnableCapeStardew": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=dreamy.kickitspot": true
+		}
+	},
+	{	//02.1
+		"LogName": "Remapping Cape Stardew Boat Journey SVE",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Island/Cape.Stardew_{{season}}_SVE.png", 
+		"ToArea": {"X": 0, "Y": 50, "Width": 157, "Height": 152},
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableCapeStardew": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=dreamy.kickitspot": true
+		}
+	},
+	{	//01
+		"LogName": "Remapping Ornithologist Guild Boat Journey",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap",
+		"FromFile": "assets/Ornithologist.Guild_{{season}}.png",	 
+		"ToArea": {"X": 115, "Y": 16, "Width": 6, "Height": 10},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableOrnithologistGuild": true,
+			"HasMod: |contains=Ivy.OrnithologistsGuild.CP": true
+		}
+	},
+	//SVE
+	{	//01
+		"LogName": "Remapping Bridge Blue Moon Boat Journey SVE",
+		"Action": "EditImage",
+		"Target": "Minigames/{{season}}_boatJourneyMap", 
+		"FromFile": "assets/Island/Bridge.Blue.Moon_{{season}}_SVE.png", 
+		"ToArea": {"X": 246, "Y": 30, "Width": 10, "Height": 9},	
+		"PatchMode": "Overlay",
+		"When": {
+			"RMPEnableBridgetoBlueMoon": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=AndrewJC.SVEBeachBridge": true
+		}
+	},
+
+	//FARMS
+	
+	//RIVERLAND FARM
+	{	//03
+		"LogName": "Remapping Garden Village RIVERLAND FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGardenVillage": true,
+			"FarmType |contains=Riverland": "true",
+			"HasMod: |contains=N3cro92.CP.GardenVillage": true},
+		"Entries": {
+			"RMP Garden Village": {
+				"Id": "RMP.Garden.Village",
+				"PixelArea": { "X": 0, "Y": 37, "Width": 70, "Height": 23 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Garden.Village",
+					"SourceRect": { "X": 0,	"Y": 32,	"Width": 70, "Height": 23 } }]
+			}
+		}
+	},
+	{	//02
+		"LogName": "Remapping Walk Desert RIVERLAND FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableAWalktotheDesert": true,
+			"FarmType |contains=Riverland": "true",
+			"HasMod: |contains=Tarniyar.CP.WalkToDesert": true},
+		"Entries": {
+			"RMP WalktotheDesert": {
+				"Id": "RMP.WalktotheDesert",
+				"PixelArea": { "X": 0, "Y": 0, "Width": 91, "Height": 60 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Walk.Desert",
+					"SourceRect": { "X": 0,	"Y": 64,	"Width": 91, "Height": 60 } }]
+			}
+		}
+	},
+	{	//01
+		"LogName": "Remapping Ridgeside Village RIVERLAND FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableRidgesideVillage": true,
+			"FarmType |contains=Riverland": "true",
+			"HasMod: |contains=Rafseazz.RSVFTM": true
+		},
+		"Entries": {
+			"RMP RidgesideVillage": {
+				"Id": "RMP.RidgesideVillage",
+				"PixelArea": { "X": 0, "Y": 25, "Width": 144, "Height": 49 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ridgeside.Village",
+					"SourceRect": { "X": 0,	"Y": 64,	"Width": 144, "Height": 49 } }]
+			}
+		}
+	},
+	//FOREST FARM
+	{	//03
+		"LogName": "Remapping Garden Village FOREST FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGardenVillage": true,
+			"FarmType |contains=Forest": "true",
+			"HasMod: |contains=N3cro92.CP.GardenVillage": true},
+		"Entries": {
+			"RMP Garden Village": {
+				"Id": "RMP.Garden.Village",
+				"PixelArea": { "X": 0, "Y": 37, "Width": 70, "Height": 23 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Garden.Village",
+					"SourceRect": { "X": 0,	"Y": 64,	"Width": 70, "Height": 23 } }]
+			}
+		}
+	},
+	{	//02
+		"LogName": "Remapping Walk Desert FOREST FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableAWalktotheDesert": true,
+			"FarmType |contains=Forest": "true",
+			"HasMod: |contains=Tarniyar.CP.WalkToDesert": true},
+		"Entries": {
+			"RMP WalktotheDesert": {
+				"Id": "RMP.WalktotheDesert",
+				"PixelArea": { "X": 0, "Y": 0, "Width": 91, "Height": 61 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Walk.Desert",
+					"SourceRect": { "X": 0,	"Y": 128,	"Width": 91, "Height": 61 } }]
+			}
+		}
+	},
+	{	//01
+		"LogName": "Remapping Ridgeside Village FOREST FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableRidgesideVillage": true,
+			"FarmType |contains=Forest": "true",
+			"HasMod: |contains=Rafseazz.RSVFTM": true
+		},
+		"Entries": {
+			"RMP RidgesideVillage": {
+				"Id": "RMP.RidgesideVillage",
+				"PixelArea": { "X": 0, "Y": 25, "Width": 144, "Height": 49 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ridgeside.Village",
+					"SourceRect": { "X": 0,	"Y": 128,	"Width": 144, "Height": 49 } }]
+			}
+		}
+	},
+	//HILL-TOP FARM
+	//WILDERNESS FARM
+	//FOUR CORNERS FARM
+	{	//02
+		"LogName": "Remapping Northwest Coast FOUR CORNERS FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"FarmType |contains=Four Corners": "true",
+			"HasMod: |contains=MK215.Northwestcoast": true},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 56, "Width": 91, "Height": 43 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 48, "Width": 91, "Height": 43  } }]
+			}
+		}
+	},
+	{	//02.1
+		"LogName": "Remapping Northwest Coast SVE FOUR CORNERS FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"FarmType |contains=Four Corners": "true",
+			"HasMod: |contains=MK215.Northwestcoast": true},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 56, "Width": 91, "Height": 45 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 48, "Width": 91, "Height": 45  } }]
+			}
+		}
+	},
+
+	//BEACH FARM
+	{	//04
+		"LogName": "Remapping Northwest Coast BEACH FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"FarmType |contains=Beach": "true",
+			"HasMod: |contains=MK215.Northwestcoast": true},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 56, "Width": 91, "Height": 43 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 96, "Width": 91, "Height": 43  } }]
+			}
+		}
+	},
+	{	//04.1
+		"LogName": "Remapping Northwest Coast SVE BEACH FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"FarmType |contains=Beach": "true",
+			"HasMod: |contains=MK215.Northwestcoast": true},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 56, "Width": 91, "Height": 45 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 96, "Width": 91, "Height": 45  } }]
+			}
+		}
+	},
+	{	//03
+		"LogName": "Remapping Garden Village BEACH FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGardenVillage": true,
+			"FarmType |contains=Beach": "true",
+			"HasMod: |contains=N3cro92.CP.GardenVillage": true},
+		"Entries": {
+			"RMP Garden Village": {
+				"Id": "RMP.Garden.Village",
+				"PixelArea": { "X": 0, "Y": 37, "Width": 70, "Height": 24 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Garden.Village",
+					"SourceRect": { "X": 0,	"Y": 96,	"Width": 70, "Height": 24 } }]
+			}
+		}
+	},
+	{	//02
+		"LogName": "Remapping Walk Desert BEACH FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableAWalktotheDesert": true,
+			"FarmType |contains=Beach": "true",
+			"HasMod: |contains=Tarniyar.CP.WalkToDesert": true},
+		"Entries": {
+			"RMP WalktotheDesert": {
+				"Id": "RMP.WalktotheDesert",
+				"PixelArea": { "X": 0, "Y": 0, "Width": 91, "Height": 62 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Walk.Desert",
+					"SourceRect": { "X": 0,	"Y": 192,	"Width": 91, "Height": 62 } }]
+			}
+		}
+	},
+	{	//01
+		"LogName": "Remapping Ridgeside Village BEACH FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableRidgesideVillage": true,
+			"FarmType |contains=Beach": "true",
+			"HasMod: |contains=Rafseazz.RSVFTM": true
+		},
+		"Entries": {
+			"RMP RidgesideVillage.Beach": {
+				"Id": "RMP.RidgesideVillage.Beach",
+				"PixelArea": { "X": 0, "Y": 25, "Width": 144, "Height": 49 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ridgeside.Village",
+					"SourceRect": { "X": 0,	"Y": 192,	"Width": 144, "Height": 49 } }]
+			}
+		}
+	},
+
+	//MEADOWLANDS FARM
+	{	//04
+		"LogName": "Remapping Northwest Coast MEADOWLANDS",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"FarmType |contains=MeadowlandsFarm": "true",
+			"HasMod: |contains=MK215.Northwestcoast": true},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 57, "Width": 92, "Height": 42 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 144, "Width": 92, "Height": 42  } }]
+			}
+		}
+	},
+	{	//04.1
+		"LogName": "Remapping Northwest Coast SVE MEADOWLANDS",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"FarmType |contains=MeadowlandsFarm": "true",
+			"HasMod: |contains=MK215.Northwestcoast": true},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 57, "Width": 92, "Height": 44 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 144, "Width": 92, "Height": 44  } }]
+			}
+		}
+	},
+	{	//03
+		"LogName": "Remapping Garden Village MEADOWLANDS",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGardenVillage": true,
+			"FarmType |contains=MeadowlandsFarm": "true",
+			"HasMod: |contains=N3cro92.CP.GardenVillage": true},
+		"Entries": {
+			"RMP Garden Village": {
+				"Id": "RMP.Garden.Village",
+				"PixelArea": { "X": 0, "Y": 37, "Width": 70, "Height": 23 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Garden.Village",
+					"SourceRect": { "X": 0,	"Y": 128,	"Width": 70, "Height": 23 } }]
+			}
+		}
+	},
+	{	//02
+		"LogName": "Remapping Walk Desert MEADOWLANDS",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableAWalktotheDesert": true,
+			"FarmType |contains=MeadowlandsFarm": "true",
+			"HasMod: |contains=Tarniyar.CP.WalkToDesert": true},
+		"Entries": {
+			"RMP WalktotheDesert": {
+				"Id": "RMP.WalktotheDesert",
+				"PixelArea": { "X": 0, "Y": 0, "Width": 91, "Height": 59 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Walk.Desert",
+					"SourceRect": { "X": 0,	"Y": 256,	"Width": 91, "Height": 59 } }]
+			}
+		}
+	},
+	{	//01
+		"LogName": "Remapping Ridgeside Village MEADOWLANDS",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableRidgesideVillage": true,
+			"FarmType |contains=MeadowlandsFarm": "true",
+			"HasMod: |contains=Rafseazz.RSVFTM": true
+		},
+		"Entries": {
+			"RMP RidgesideVillage": {
+				"Id": "RMP.RidgesideVillage",
+				"PixelArea": { "X": 0, "Y": 25, "Width": 144, "Height": 49 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ridgeside.Village",
+					"SourceRect": { "X": 0,	"Y": 256,	"Width": 144, "Height": 49 } }]
+			}
+		}
+	},
+	
+	//WATERFALL FOREST BY ARCHIBALDTK
+	{	//06
+		"LogName": "Remapping Northwest Coast WATERFALL",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+			"HasMod: |contains=MK215.Northwestcoast": true},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 48, "Width": 93, "Height": 51 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 192, "Width": 93, "Height": 51  } }]
+			}
+		}
+	},
+	{	//06.1
+		"LogName": "Remapping Northwest Coast SVE WATERFALL",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+			"HasMod: |contains=MK215.Northwestcoast": true},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 48, "Width": 94, "Height": 52 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 192, "Width": 94, "Height": 52  } }]
+			}
+		}
+	},
+	{	//05
+		"LogName": "Remapping Jane WATERFALL",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableJane": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+			"HasMod: |contains=woshi.Jane": true},
+		"Entries": {
+			"RMP Jane": {
+				"Id": "RMP.Jane",
+				"PixelArea": { "X": 78,	"Y": 101, "Width": 7, "Height": 4 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Jane",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 7, "Height": 4 } }]
+			}
+		}
+	},
+	{	//4
+		"LogName": "Remapping Lunna WATERFALL",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		},
+		"Entries": {
+			"RMP Lunna": {
+				"Id": "RMP.Lunna",
+				"PixelArea": { "X": 19, "Y": 113, "Width": 37, "Height": 16 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Lunna",
+					"SourceRect": { "X": 0,	"Y": 25,	"Width": 37, "Height": 16  } }]
+			}
+		}
+	},
+	{	//4.1
+		"LogName": "Remapping Lunna WATERFALL 2",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		},
+		"Entries": {
+			"RMP Lunna2": {
+				"Id": "RMP.Lunna2",
+				"PixelArea": { "X": 35, "Y": 94, "Width": 6, "Height": 3 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Lunna",
+					"SourceRect": { "X": 30,	"Y": 2,	"Width": 6, "Height": 3  } }]
+			}
+		}
+	},
+	{	//4.3
+		"LogName": "Remapping Lunna WATERFALL SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		},
+		"Entries": {
+			"RMP Lunna": {
+				"Id": "RMP.Lunna",
+				"PixelArea": { "X": 19, "Y": 111, "Width": 31, "Height": 27 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Lunna",
+					"SourceRect": { "X": 0,	"Y": 23,	"Width": 31, "Height": 27  } }]
+			}
+		}
+	},
+	{	//4.4
+		"LogName": "Remapping Lunna WATERFALL SVE 2",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		},
+		"Entries": {
+			"RMP Lunna2": {
+				"Id": "RMP.Lunna2",
+				"PixelArea": { "X": 34, "Y": 93, "Width": 5, "Height": 6 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Lunna",
+					"SourceRect": { "X": 30,	"Y": 0,	"Width": 5, "Height": 6  } }]
+			}
+		}
+	},
+	{	//03
+		"LogName": "Remapping Garden Village WATERFALL",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGardenVillage": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+			"HasMod: |contains=N3cro92.CP.GardenVillage": true},
+		"Entries": {
+			"RMP Garden Village": {
+				"Id": "RMP.Garden.Village",
+				"PixelArea": { "X": 0, "Y": 37, "Width": 70, "Height": 21 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Garden.Village_{{season}}_Vanilla",
+					"SourceRect": { "X": 0,	"Y": 160,	"Width": 70, "Height": 21 } }]
+			}
+		}
+	},
+	{	//02
+		"LogName": "Remapping Walk Desert WATERFALL",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableAWalktotheDesert": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+			"HasMod: |contains=Tarniyar.CP.WalkToDesert": true},
+		"Entries": {
+			"RMP WalktotheDesert": {
+				"Id": "RMP.WalktotheDesert",
+				"PixelArea": { "X": 0, "Y": 0, "Width": 91, "Height": 53 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Walk.Desert",
+					"SourceRect": { "X": 0,	"Y": 320,	"Width": 91, "Height": 53 } }]
+			}
+		}
+	},
+	{	//01
+		"LogName": "Remapping Ridgeside Village WATERFALL",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableRidgesideVillage": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+			"HasMod: |contains=Rafseazz.RSVFTM": true
+		},
+		"Entries": {
+			"RMP RidgesideVillage": {
+				"Id": "RMP.RidgesideVillage",
+				"PixelArea": { "X": 0, "Y": 25, "Width": 144, "Height": 49 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ridgeside.Village",
+					"SourceRect": { "X": 0,	"Y": 320,	"Width": 144, "Height": 49 } }]
+			}
+		}
+	},
+
+	//WATERFALL LE FOREST BY ARCHIBALDTK
+	{	//06
+		"LogName": "Remapping Northwest Coast WATERFALL LE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+			"HasMod: |contains=MK215.Northwestcoast": true},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 48, "Width": 93, "Height": 51 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 192, "Width": 93, "Height": 51  } }]
+			}
+		}
+	},
+	{	//06.1
+		"LogName": "Remapping Northwest Coast SVE WATERFALL LE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+			"HasMod: |contains=MK215.Northwestcoast": true},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 48, "Width": 94, "Height": 52 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 192, "Width": 94, "Height": 52  } }]
+			}
+		}
+	},
+	{	//05
+		"LogName": "Remapping Jane WATERFALL LE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableJane": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+			"HasMod: |contains=woshi.Jane": true},
+		"Entries": {
+			"RMP Jane": {
+				"Id": "RMP.Jane",
+				"PixelArea": { "X": 78,	"Y": 101, "Width": 7, "Height": 4 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Jane",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 7, "Height": 4 } }]
+			}
+		}
+	},
+	{	//4
+		"LogName": "Remapping Lunna WATERFALL LE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		},
+		"Entries": {
+			"RMP Lunna": {
+				"Id": "RMP.Lunna",
+				"PixelArea": { "X": 19, "Y": 113, "Width": 37, "Height": 16 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Lunna",
+					"SourceRect": { "X": 0,	"Y": 25,	"Width": 37, "Height": 16  } }]
+			}
+		}
+	},
+	{	//4.1
+		"LogName": "Remapping Lunna WATERFALL LE 2",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		},
+		"Entries": {
+			"RMP Lunna2": {
+				"Id": "RMP.Lunna2",
+				"PixelArea": { "X": 35, "Y": 94, "Width": 6, "Height": 3 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Lunna",
+					"SourceRect": { "X": 30,	"Y": 2,	"Width": 6, "Height": 3  } }]
+			}
+		}
+	},
+	{	//4.3
+		"LogName": "Remapping Lunna WATERFALL LE SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		},
+		"Entries": {
+			"RMP Lunna": {
+				"Id": "RMP.Lunna",
+				"PixelArea": { "X": 19, "Y": 111, "Width": 31, "Height": 27 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Lunna",
+					"SourceRect": { "X": 0,	"Y": 23,	"Width": 31, "Height": 27  } }]
+			}
+		}
+	},
+	{	//4.4
+		"LogName": "Remapping Lunna WATERFALL LE SVE 2",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableLunna": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+			"HasMod: |contains=Rafseazz.LunnaCP": true
+		},
+		"Entries": {
+			"RMP Lunna2": {
+				"Id": "RMP.Lunna2",
+				"PixelArea": { "X": 34, "Y": 93, "Width": 5, "Height": 6 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Lunna",
+					"SourceRect": { "X": 30,	"Y": 0,	"Width": 5, "Height": 6  } }]
+			}
+		}
+	},
+	{	//03
+		"LogName": "Remapping Garden Village WATERFALL LE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGardenVillage": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+			"HasMod: |contains=N3cro92.CP.GardenVillage": true},
+		"Entries": {
+			"RMP Garden Village": {
+				"Id": "RMP.Garden.Village",
+				"PixelArea": { "X": 0, "Y": 37, "Width": 70, "Height": 21 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Garden.Village_{{season}}_Vanilla",
+					"SourceRect": { "X": 0,	"Y": 160,	"Width": 70, "Height": 21 } }]
+			}
+		}
+	},
+	{	//02
+		"LogName": "Remapping Walk Desert WATERFALL LE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableAWalktotheDesert": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+			"HasMod: |contains=Tarniyar.CP.WalkToDesert": true},
+		"Entries": {
+			"RMP WalktotheDesert": {
+				"Id": "RMP.WalktotheDesert",
+				"PixelArea": { "X": 0, "Y": 0, "Width": 91, "Height": 53 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Walk.Desert",
+					"SourceRect": { "X": 0,	"Y": 320,	"Width": 91, "Height": 53 } }]
+			}
+		}
+	},
+	{	//01
+		"LogName": "Remapping Ridgeside Village WATERFALL LE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableRidgesideVillage": true,
+			"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+			"HasMod: |contains=Rafseazz.RSVFTM": true
+		},
+		"Entries": {
+			"RMP RidgesideVillage": {
+				"Id": "RMP.RidgesideVillage",
+				"PixelArea": { "X": 0, "Y": 25, "Width": 144, "Height": 49 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ridgeside.Village",
+					"SourceRect": { "X": 0,	"Y": 320,	"Width": 144, "Height": 49 } }]
+			}
+		}
+	},
+
+	//FRONTIER FARM
+	{	//1
+		"LogName": "Remapping Northwest Coast SVE Frontier Farm",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableNorthwestCoast": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=flashshifter.FrontierFarm": true,
+			"FarmType |contains=FrontierFarm": "true",
+			"HasMod: |contains=MK215.Northwestcoast": true},
+		"Entries": {
+			"RMP Northwest.Coast": {
+				"Id": "RMP.Northwest.Coast",
+				"PixelArea": { "X": 0, "Y": 56, "Width": 91, "Height": 48 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Northwest.Coast",
+					"SourceRect": { "X": 0,	"Y": 256,	"Width": 91, "Height": 48  } }]
+			}
+		}
+	},
+
+	//BROKEBACK MOUNTAIN FARM
+	{	//03
+		"LogName": "Remapping Garden Village BROKEBACK MOUNTAIN FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableGardenVillage": true,
+			"FarmType |contains=heathinwillows.BrokeBackMountainFarm": "true",
+			"HasMod: |contains=heathinwillows.BrokeBackMountainFarm": true,
+			"HasMod: |contains=N3cro92.CP.GardenVillage": true
+		},
+		"Entries": {
+			"RMP Garden Village": {
+				"Id": "RMP.Garden.Village",
+				"PixelArea": { "X": 0, "Y": 37, "Width": 70, "Height": 23 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Garden.Village",
+					"SourceRect": { "X": 0,	"Y": 64,	"Width": 70, "Height": 23 } }]
+			}
+		}
+	},
+	{	//02
+		"LogName": "Remapping Walk Desert BROKEBACK MOUNTAIN FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableAWalktotheDesert": true,
+			"FarmType |contains=heathinwillows.BrokeBackMountainFarm": "true",
+			"HasMod: |contains=heathinwillows.BrokeBackMountainFarm": true,
+			"HasMod: |contains=Tarniyar.CP.WalkToDesert": true
+		},
+		"Entries": {
+			"RMP WalktotheDesert": {
+				"Id": "RMP.WalktotheDesert",
+				"PixelArea": { "X": 0, "Y": 0, "Width": 91, "Height": 61 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Walk.Desert",
+					"SourceRect": { "X": 0,	"Y": 128,	"Width": 91, "Height": 61 } }]
+			}
+		}
+	},
+	{	//01
+		"LogName": "Remapping Ridgeside Village BROKEBACK MOUNTAIN FARM",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableRidgesideVillage": true,
+			"FarmType |contains=heathinwillows.BrokeBackMountainFarm": "true",
+			"HasMod: |contains=heathinwillows.BrokeBackMountainFarm": true,
+			"HasMod: |contains=Rafseazz.RSVFTM": true
+		},
+		"Entries": {
+			"RMP RidgesideVillage": {
+				"Id": "RMP.RidgesideVillage",
+				"PixelArea": { "X": 0, "Y": 25, "Width": 144, "Height": 49 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ridgeside.Village",
+					"SourceRect": { "X": 0,	"Y": 128,	"Width": 144, "Height": 49 } }]
+			}
+		}
+	},
+
+	//EXTRA
+
+	//GRAMPLETON FIELDS
+	{	//5
+		"LogName": "RMP Sunberry Grampleton Fields",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Custom_GrampletonFields", "MapAreas" ],
+		"When": {
+			"RMPEnableSunberryVillage": true,
+			"HasMod: |contains=flashshifter.GrampletonFields": true,
+			"HasMod: |contains=skellady.SBVCP": true
+		},
+		"Entries": {
+			"RMP Sunberry Grampleton Fields": {
+				"Id": "Sunberry_Grampleton_Fields",
+				"PixelArea": { "X": 0, "Y": 98, "Width": 88, "Height": 82},
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Sunberry.GF",
+					"SourceRect": {"X": 0, "Y": 0, "Width": 88, "Height": 82} }]
+			}
+		}
+	},
+	{	//4
+		"LogName": "RMP Mineral Town Grampleton Fields",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Custom_GrampletonFields", "MapAreas" ],
+		"When": {
+			"RMPEnableMineralTown": true,
+			"HasMod: |contains=flashshifter.GrampletonFields": true,
+			"HasMod: |contains=Rexstrife20.MineralTownCP": true
+		},
+		"Entries": {
+			"RMP Mineral Town Grampleton Fields": {
+				"Id": "Mineral_Town_Grampleton_Fields",
+				"PixelArea": { "X": 31, "Y": 19, "Width": 40, "Height": 45},
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Mineral.Town.GF",
+					"SourceRect": { "X": 0, "Y": 0, "Width": 40, "Height": 45  } }]
+			}
+		}
+	},
+	{	//3
+		"LogName": "RMP Fishing Pond Grampleton Fields",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Custom_GrampletonFields", "MapAreas" ],
+		"When": {
+			"RMPEnableFishingPond": true,
+			"HasMod: |contains=flashshifter.GrampletonFields": true,
+			"HasMod: |contains=Tikamin557.CP.FishingPondFacilities": true
+		},
+		"Entries": {
+			"RMP Fishing Pond Grampleton Fields": {
+				"Id": "Fishing_Pond_Grampleton_Fields",
+				"PixelArea": { "X": 0, "Y": 62, "Width": 8, "Height": 16},
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Fishing.Pond",
+					"SourceRect": { "X": 9, "Y": 0, "Width": 8, "Height": 16  } }]
+			}
+		}
+	},
+	{	//2
+		"LogName": "RMP Wilford Grampleton Fields",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Custom_GrampletonFields", "MapAreas" ],
+		"When": {
+			"RMPEnableWilford": true,
+			"HasMod: |contains=flashshifter.GrampletonFields": true,
+			"HasMod: |contains=Fernandtea.NewNPCWilford": true
+		},
+		"Entries": {
+			"RMP Wilford Grampleton Fields": {
+				"Id": "Wilford_Grampleton_Fields",
+				"PixelArea": { "X": 0, "Y": 69, "Width": 11, "Height": 23},
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Wilford",
+					"SourceRect": { "X": 16, "Y": 0, "Width": 11, "Height": 23  } }]
+			}
+		}
+	},
+	{	//1
+		"LogName": "RMP Isla Grampleton Fields",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Custom_GrampletonFields", "MapAreas" ],
+		"When": {
+			"RMPEnableIsla": true,
+			"HasMod: |contains=flashshifter.GrampletonFields": true,
+			"HasMod: |contains=PaperNautilus.Isla": true,
+			"HasMod: |contains=skellady.SBVCP": false
+		},
+		"Entries": {
+			"RMP Isla Grampleton Fields": {
+				"Id": "Isla_Grampleton_Fields",
+				"PixelArea": { "X": 30, "Y": 121, "Width": 27, "Height": 21},
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Isla.Ilha",
+					"SourceRect": { "X": 0, "Y": 0, "Width": 27, "Height": 21  } }]
+			}
+		}
+	},
+	{	//1.0.1
+		"LogName": "RMP Isla Grampleton Fields",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Custom_GrampletonFields", "MapAreas" ],
+		"When": {
+			"RMPEnableIsla": true,
+			"RMPEnableSunberryVillage": false,
+			"HasMod: |contains=flashshifter.GrampletonFields": true,
+			"HasMod: |contains=PaperNautilus.Isla": true,
+			"HasMod: |contains=skellady.SBVCP": true
+		},
+		"Entries": {
+			"RMP Isla Grampleton Fields": {
+				"Id": "Isla_Grampleton_Fields",
+				"PixelArea": { "X": 30, "Y": 121, "Width": 27, "Height": 21},
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Isla.Ilha",
+					"SourceRect": { "X": 0, "Y": 0, "Width": 27, "Height": 21  } }]
+			}
+		}
+	},
+	{	//1.0.2
+		"LogName": "RMP Isla Ilha SVE Sunberry Grampleton Fields",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Custom_GrampletonFields", "MapAreas" ],
+		"When": {
+			"RMPEnableIsla": true,
+			"RMP.PRIORITIES.BoyDetectives.Isla.SBV": "Isla",
+			"RMPEnableSunberryVillage": true,
+			"HasMod: |contains=flashshifter.GrampletonFields": true,
+			"HasMod: |contains=PaperNautilus.Isla": true,
+			"HasMod: |contains=skellady.SBVCP": true
+		},
+		"Entries": {
+			"RMP Isla Grampleton Fields": {
+				"Id": "Isla_Grampleton_Fields",
+				"PixelArea": { "X": 0, "Y": 133, "Width": 24,"Height": 21},
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Isla.Ilha.SBV",
+					"SourceRect": { "X": 0, "Y": 0, "Width": 24,"Height": 21  } }]
+			}
+		}
+	},
+	
+
+	//SUNBERRY VILLAGE
+
+	{	//1
+		"LogName": "Remapping Isla Ilha Sunberry",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableSunberryVillage": true,
+			"RMP.PRIORITIES.BoyDetectives.Isla.SBV": "Isla",
+			"HasMod: |contains=PaperNautilus.Isla": true,
+			"HasMod: |contains=skellady.SBVCP": true
+			},
+		"Entries": {
+			"RMP Isla.Ilha": {
+				"Id": "RMP.Isla.Ilha",
+				"PixelArea": { "X": 245,"Y": 133,"Width": 24,"Height": 21 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Isla.Ilha.SBV",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 24,"Height": 21 } }]
+			}
+		}
+	},
+
+	//DEFENSE DIVISION
+
+	{	//01
+		"LogName": "Remapping Defense Division",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"HasMod: |contains=DD.DefenseDivision": true
+		},
+		"Entries": {
+			"RMP Defense.Division": {
+				"Id": "RMP.Defense.Division",
+				"PixelArea": { "X": 147, "Y": 76, "Width": 10, "Height": 10 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Defense.Division",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 10, "Height": 10 } }]
+			}
+		}
+	},
+	
+	//WALK DESERT
+	{	//05.0.1
+		"LogName": "Remapping Walk Desert Road",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPWalkDesertExtraRoad": true,
+			"RMPEnableAWalktotheDesert": true,
+			"HasMod: |contains=Rafseazz.RSVFTM": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"HasMod: |contains=Tarniyar.CP.WalkToDesert": true
+		},
+		"Entries": {
+			"RMP WalktotheDesert": {
+				"Id": "RMP.WalktotheDesert",
+				"PixelArea": { "X": 0, "Y": 22, "Width": 63, "Height": 26 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Walk.Desert.Road",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 63, "Height": 26 } }]
+			}
+		}
+	},
+	{	//05.1.1
+		"LogName": "Remapping Walk Desert Road SVE",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPWalkDesertExtraRoad": true,
+			"RMPEnableAWalktotheDesert": true,
+			"HasMod: |contains=Rafseazz.RSVFTM": true,
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasMod: |contains=Tarniyar.CP.WalkToDesert": true
+		},
+		"Entries": {
+			"RMP WalktotheDesert": {
+				"Id": "RMP.WalktotheDesert",
+				"PixelArea": { "X": 50, "Y": 22, "Width": 13, "Height": 10 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Walk.Desert.Road",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 13, "Height": 10 } }]
+			}
+		}
+	},
+	
+	//
+	{	//02
+		"LogName": "Remapping Shopkeeper Leela",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableShopkeeperLeela": true,
+			"HasMod: |contains=yuninocorn.ShopkeeperLeela": true
+		},
+		"Entries": {
+			"RMP ShopkeeperLeela": {
+				"Id": "RMP.ShopkeeperLeela",
+				"PixelArea": { "X": 126, "Y": 48, "Width": 9, "Height": 8 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Shopkeeper.Leela",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 9, "Height": 8 } }]
+			}
+		}
+	},
+	{	//01
+		"LogName": "Remapping Desert Shortcut",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPEnableDesertShortcut": true,
+			"HasMod: |contains=Kana.DesertShortcut": true
+		},
+		"Entries": {
+			"RMP DesertShortcut": {
+				"Id": "RMP.DesertShortcut",
+				"PixelArea": { "X": 75, "Y": 1, "Width": 27, "Height": 24 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Desert.Shortcut.A",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 27, "Height": 24 } }]
+			}
+		}
+	},
+
+	//ICON
+	{	//01
+		"LogName": "Remapping Ridgeside Village OnIcone",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"When": {
+			"RMPRidgesideVillageMapIcone": true,
+			"RMPEnableRidgesideVillage": true,
+			"HasMod: |contains=Rafseazz.RSVFTM": true
+		},
+		"Entries": {
+			"RMP RidgesideVillageIcone": {
+				"Id": "RMP.RidgesideVillageIcone",
+				"PixelArea": { "X": 0, "Y": 22, "Width": 43, "Height": 53 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "Mods/ReMapping.Vlgor/Ridgeside.Village.Icone",
+					"SourceRect": { "X": 0,	"Y": 0,	"Width": 43, "Height": 53 } }]
+			}
+		}
+	},
+	{	//01
+		"LogName": "Remapping Ginger Island Icone",
+		"Action": "EditData",
+		"Target": "Data/WorldMap",
+		"TargetField": [ "Valley", "MapAreas" ],
+		"Condition": "!PLAYER_LOCATION_CONTEXT Current Island, ANY \"PLAYER_HAS_MAIL Current Visited_Island\" \"PLAYER_HAS_MAIL Host Island_Resort\" \"PLAYER_LOCATION_CONTEXT Any Island\"",
+		"Entries": {
+			"RMP GingerIcone": {
+				"Id": "RMP.GingerIcone",
+				"PixelArea": { "X": 260, "Y": 150, "Width": 40, "Height": 30 },
+				"Textures": [{
+					"Id": "Default",
+					"Texture": "LooseSprites\\map",
+					"SourceRect": { "X": 208, "Y": 363, "Width": 40, "Height": 30 } }]
+			}
+		}
+	}]
+}

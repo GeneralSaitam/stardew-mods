@@ -1,0 +1,300 @@
+{
+	"Format": "2.0",
+	"ConfigSchema": {
+		"Blue Mayo": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows processing blue eggs into blue mayo. When false, blue eggs make normal mayo."
+		},
+		"Golden Mayo": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows processing golden eggs into golden mayo."
+		},
+		"Ostrich Mayo": {
+			"AllowValues": "true, false",
+			"Default": "true",
+			"Description": "Allows processing ostrich eggs into ostrich mayo."
+		}
+	},
+	"Changes": [
+		{
+			"LogName": "Load textures",
+			"Action": "Load",
+			"Target": "6480.blueegg/Objects",
+			"FromFile": "assets/objects.png"
+		},
+		{
+			"LogName": "Modify blue chicken produce entry",
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Fields": {
+				"Blue Chicken": {
+					"EggItemIds": [
+						"6480.blueegg_BlueEgg",
+						"176",
+						"174"
+					],
+					"ProduceItemIds": [
+						{
+							"ItemId": "6480.blueegg_BlueEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "6480.blueegg_BlueEgg"
+						}
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Add new items",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"6480.blueegg_BlueEgg": {
+					"Name": "6480.blueegg_BlueEgg",
+					"Type": "Basic",
+					"Category": -5,
+					"SpriteIndex": 0,
+					"DisplayName": "{{i18n:BlueEgg_Name}}",
+					"Description": "{{i18n:BlueEgg_description}}",
+					"Texture": "6480.blueegg/Objects",
+					"Price": 100,
+					"Edibility": 10,
+					"ContextTags": [
+						"egg_item",
+						"color_blue"
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Add new items",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"Blue Mayo": true
+			},
+			"Entries": {
+				"6480.blueegg_BlueMayo": {
+					"Name": "6480.blueegg_BlueMayo",
+					"Type": "Basic",
+					"Category": -26,
+					"SpriteIndex": 1,
+					"DisplayName": "{{i18n:BlueMayo_Name}}",
+					"Description": "{{i18n:BlueMayo_description}}",
+					"Texture": "6480.blueegg/Objects",
+					"Price": 285,
+					"Edibility": 20,
+					"IsDrink": true,
+					"ContextTags": [
+						"color_blue",
+						"mayo_item"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shane",
+						1
+					],
+					"Value": "6480.blueegg_BlueEgg",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"When": {
+				"Blue Mayo": true
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Fields",
+						"Shane",
+						1
+					],
+					"Value": "6480.blueegg_BlueMayo",
+					"Delimiter": " "
+				}
+			]
+		},
+		{
+			"LogName": "Add new items",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"Golden Mayo": true
+			},
+			"Entries": {
+				"6480.blueegg_GoldenMayo": {
+					"Name": "6480.blueegg_GoldenMayo",
+					"Type": "Basic",
+					"Category": -26,
+					"SpriteIndex": 2,
+					"DisplayName": "{{i18n:GoldenMayo_Name}}",
+					"Description": "{{i18n:GoldenMayo_description}}",
+					"Texture": "6480.blueegg/Objects",
+					"Price": 855,
+					"Edibility": 40,
+					"IsDrink": true,
+					"ExcludeFromShippingCollection": true,
+					"ContextTags": [
+						"color_yellow",
+						"mayo_item"
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Add new items",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"When": {
+				"Ostrich Mayo": true
+			},
+			"Entries": {
+				"6480.blueegg_OstrichMayo": {
+					"Name": "6480.blueegg_OstrichMayo",
+					"Type": "Basic",
+					"Category": -26,
+					"SpriteIndex": 3,
+					"DisplayName": "{{i18n:OstrichMayo_Name}}",
+					"Description": "{{i18n:OstrichMayo_description}}",
+					"Texture": "6480.blueegg/Objects",
+					"Price": 1900,
+					"Edibility": 100,
+					"IsDrink": true,
+					"ContextTags": [
+						"color_pink",
+						"mayo_item"
+					]
+				}
+			}
+		},
+		{
+			"LogName": "Modify mayonnaise machine rules (Blue Mayo)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Blue Mayo": true
+			},
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
+				"6480.blueegg_BlueEgg": {
+					"Id": "6480.blueegg_BlueEgg",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)6480.blueegg_BlueEgg",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)6480.blueegg_BlueMayo",
+							"ItemId": "(O)6480.blueegg_BlueMayo"
+						}
+					],
+					"MinutesUntilReady": 180
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "6480.blueegg_BlueEgg",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify mayonnaise machine rules (Golden Mayo)",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Golden Mayo": true
+			},
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
+				"6480.blueegg_GoldenEgg": {
+					"Id": "6480.blueegg_GoldenEgg",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)928",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)6480.blueegg_GoldenMayo",
+							"ItemId": "(O)6480.blueegg_GoldenMayo"
+						}
+					],
+					"MinutesUntilReady": 180
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "6480.blueegg_GoldenEgg",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		{
+			"LogName": "Modify mayonnaise machine rules",
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"When": {
+				"Ostrich Mayo": true
+			},
+			"TargetField": [
+				"(BC)24",
+				"OutputRules"
+			],
+			"Entries": {
+				"6480.blueegg_OstrichEgg": {
+					"Id": "6480.blueegg_OstrichEgg",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)289",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "(O)6480.blueegg_OstrichMayo",
+							"ItemId": "(O)6480.blueegg_OstrichMayo",
+							"CopyQuality": true
+						}
+					],
+					"MinutesUntilReady": 180
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "6480.blueegg_OstrichEgg",
+					"ToPosition": "Top"
+				}
+			]
+		}
+	]
+}

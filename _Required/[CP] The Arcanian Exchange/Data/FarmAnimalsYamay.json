@@ -1,0 +1,6262 @@
+{
+"Changes": [
+////PETS
+{
+"LogName": "Shevit Pet",
+"Action": "EditData",
+"Target": "Data/Pets",
+"Entries": {
+"{{ModID}}_Shevit": {
+"DisplayName": "{{i18n:FC.Shevit}}",
+"BarkSound": "{{ModID}}_ShevitSqueak",
+"ContentSound": "{{ModID}}_ShevitSqueak",
+"RepeatContentSoundAfter": 30000,
+"EmoteOffset": {
+"X": 0,
+"Y": -16
+},
+"EventOffset": {
+"X": -43,
+"Y": 0
+},
+"SummitPerfectionEvent": {
+"SourceRect": {
+"X": 0,
+"Y": 96,
+"Width": 32,
+"Height": 32
+},
+"AnimationLength": 3,
+"Flipped": true,
+"Motion": "-5, 0",
+"PingPong": false
+},
+"MoveSpeed": 2,
+"SleepOnBedChance": 0.05,
+"SleepNearBedChance": 0.3,
+"SleepOnRugChance": 0.5,
+"Behaviors": [
+{
+"Id": "Walk",
+"IsSideBehavior": false,
+"RandomizeDirection": true,
+"Direction": null,
+"WalkInDirection": true,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": null,
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 3.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": null
+},
+{
+"Weight": 2.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": "BeginSitDown",
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "BeginSitSide"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": true,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Sprint"
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "Sprint",
+"IsSideBehavior": true,
+"RandomizeDirection": true,
+"Direction": null,
+"WalkInDirection": true,
+"MoveSpeed": 6,
+"SoundOnStart": "{{ModID}}_ShevitSqueak",
+"SoundRangeFromBorder": 1,
+"SoundRange": -1,
+"SoundIsVoice": true,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 32,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 33,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 34,
+"Duration": 100,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 33,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 1000,
+"MaximumDuration": 3500,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "BeginSitDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 16,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 17,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 18,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 19,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 19,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 2.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "StandUpDown"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownPant"
+},
+{
+"Weight": 0.3,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownCloseEyesShort"
+},
+{
+"Weight": 0.7,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownCloseEyes"
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownPant",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 18,
+"Duration": -1,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 19,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 7,
+"AnimationMaximumLoops": 19,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownCloseEyes",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 27,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 2000,
+"MaximumDuration": 15000,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownCloseEyesShort",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 27,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": 500,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "StandUpDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 17,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 16,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 0,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "BeginSitSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 20,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 21,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 22,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideIdle",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 2000,
+"MaximumDuration": 6000,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"PlayerNearbyBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWagFast"
+}
+],
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWagFast"
+}
+],
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideIdle"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "StandUpSide"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideBark"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWag"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSidePant"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": null
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideBark",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": "{{ModID}}_ShevitSqueak",
+"SoundRangeFromBorder": 10,
+"SoundRange": -1,
+"SoundIsVoice": true,
+"Shake": 500,
+"Animation": [
+{
+"Frame": 26,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 1,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideWag",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 30000,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 30000,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 2,
+"AnimationMaximumLoops": 5,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideWagFast",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 30000,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 3000,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 2,
+"AnimationMaximumLoops": 5,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSidePant",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": "{{ModID}}_ShevitSqueak",
+"SoundRangeFromBorder": -1,
+"SoundRange": 5,
+"SoundIsVoice": true
+},
+{
+"Frame": 25,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 5,
+"AnimationMaximumLoops": 14,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "StandUpSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 22,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 21,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 20,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+}
+],
+"GiftChance": 0.2,
+"Gifts": [
+{
+"Id": "FishDropsShevit",
+"MinimumFriendshipThreshold": 250,
+"Weight": 1.0,
+"QualifiedItemID": "{{Random:{{ModID}}_LeechFish,{{ModID}}_GulpFish,{{ModID}}_DancerFish}},{{ModID}}_IficusFish,{{ModID}}_RiverBedJelly,{{ModID}}_GraveCrab,{{ModID}}_SharkFish,{{ModID}}_SwampFish,{{ModID}}_PufferCousin",
+"Stack": 1
+},
+],
+"Breeds": [
+{
+"Id": "FC.Shevit_Pet_Gray",
+"Texture": "Animals\\FC.Shevit_Pet_Gray",
+"IconTexture": "LooseSprites\\FC.Shevit_Icon",
+"IconSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 2000,
+"BarkOverride": "{{ModID}}_ShevitSqueak",
+"VoicePitch": 1.0
+},
+{
+"Id": "FC.Shevit_Pet_Red",
+"Texture": "Animals\\FC.Shevit_Pet_Red",
+"IconTexture": "LooseSprites\\FC.Shevit_Icon",
+"IconSourceRect": {
+"X": 16,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 2000,
+"BarkOverride": "{{ModID}}_ShevitSqueak",
+"VoicePitch": 1.0
+},
+{
+"Id": "FC.Shevit_Pet_Cream",
+"Texture": "Animals\\FC.Shevit_Pet_Cream",
+"IconTexture": "LooseSprites\\FC.Shevit_Icon",
+"IconSourceRect": {
+"X": 32,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 2000,
+"BarkOverride": "{{ModID}}_ShevitSqueak",
+"VoicePitch": 1.0
+},
+{
+"Id": "FC.Shevit_Pet_Brown",
+"Texture": "Animals\\FC.Shevit_Pet_Brown",
+"IconTexture": "LooseSprites\\FC.Shevit_Icon",
+"IconSourceRect": {
+"X": 48,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 2000,
+"BarkOverride": "{{ModID}}_ShevitSqueak",
+"VoicePitch": 1.0
+},
+],
+"CustomFields": null
+},
+},
+},
+{
+ "LogName": "ArcanianDog Pet",
+"Action": "EditData",
+"Target": "Data/Pets",
+"Entries": {
+"{{ModID}}_ArcanianDog": {
+"DisplayName": "{{i18n:FC.ArcanianDog}}",
+"BarkSound": "{{ModID}}_ArcaDog",
+"ContentSound": null,
+"RepeatContentSoundAfter": 30000,
+"EmoteOffset": {
+"X": 0,
+"Y": -16
+},
+"EventOffset": {
+"X": -43,
+"Y": 0
+},
+"SummitPerfectionEvent": {
+"SourceRect": {
+"X": 0,
+"Y": 96,
+"Width": 32,
+"Height": 32
+},
+"AnimationLength": 3,
+"Flipped": true,
+"Motion": "-5, 0",
+"PingPong": false
+},
+"MoveSpeed": 2,
+"SleepOnBedChance": 0.05,
+"SleepNearBedChance": 0.3,
+"SleepOnRugChance": 0.5,
+"Behaviors": [
+{
+"Id": "Walk",
+"IsSideBehavior": false,
+"RandomizeDirection": true,
+"Direction": null,
+"WalkInDirection": true,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": null,
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 3.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": null
+},
+{
+"Weight": 2.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": "BeginSitDown",
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "BeginSitSide"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": true,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Sprint"
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "Sprint",
+"IsSideBehavior": true,
+"RandomizeDirection": true,
+"Direction": null,
+"WalkInDirection": true,
+"MoveSpeed": 6,
+"SoundOnStart": "{{ModID}}_ArcaDog",
+"SoundRangeFromBorder": 1,
+"SoundRange": -1,
+"SoundIsVoice": true,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 32,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 33,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 34,
+"Duration": 100,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 33,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 1000,
+"MaximumDuration": 3500,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "BeginSitDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 16,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 17,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 18,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 19,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 19,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 2.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "StandUpDown"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownPant"
+},
+{
+"Weight": 0.3,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownCloseEyesShort"
+},
+{
+"Weight": 0.7,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownCloseEyes"
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownPant",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 19,
+"Duration": -1,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 19,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 7,
+"AnimationMaximumLoops": 19,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownCloseEyes",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 27,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 2000,
+"MaximumDuration": 15000,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownCloseEyesShort",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 27,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": 500,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "StandUpDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 17,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 16,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 0,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "BeginSitSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 20,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 21,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 22,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideIdle",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 2000,
+"MaximumDuration": 6000,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"PlayerNearbyBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWagFast"
+}
+],
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWagFast"
+}
+],
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideIdle"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "StandUpSide"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideBark"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWag"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSidePant"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": null
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideBark",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": "{{ModID}}_ArcaDog",
+"SoundRangeFromBorder": 10,
+"SoundRange": -1,
+"SoundIsVoice": true,
+"Shake": 500,
+"Animation": [
+{
+"Frame": 26,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 1,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideWag",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 30000,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 30000,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 2,
+"AnimationMaximumLoops": 5,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideWagFast",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 30000,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 3000,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 2,
+"AnimationMaximumLoops": 5,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSidePant",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": "{{ModID}}_GuineaDog",
+"SoundRangeFromBorder": -1,
+"SoundRange": 5,
+"SoundIsVoice": true
+},
+{
+"Frame": 25,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 5,
+"AnimationMaximumLoops": 14,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "StandUpSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 22,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 21,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 20,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+}
+],
+"GiftChance": 1.0,
+"Gifts": [
+{
+"Id": "{{ModID}}_WarpRoot",
+"MinimumFriendshipThreshold": 250,
+"Weight": 1.0,
+"QualifiedItemID": "{{ModID}}_WarpRoot",
+"Stack": 2
+},
+{
+"Id": "801",
+"MinimumFriendshipThreshold": 500,
+"Weight": 0.001,
+"QualifiedItemID": "801",
+"Stack": 2
+},
+],
+"Breeds": [
+{
+"Id": "0",
+"Texture": "Animals\\FC.ArcanianDog_Gray",
+"IconTexture": "LooseSprites\\FC.ArcanianDog_Icon",
+"IconSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 3000,
+"BarkOverride": "{{ModID}}_FC.ArcaDog",
+"VoicePitch": 1.0
+},
+{
+"Id": "1",
+"Texture": "Animals\\FC.ArcanianDog_Red",
+"IconTexture": "LooseSprites\\FC.ArcanianDog_Icon",
+"IconSourceRect": {
+"X": 16,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 3000,
+"BarkOverride": "{{ModID}}_FC.ArcaDog",
+"VoicePitch": 1.0
+},
+{
+"Id": "2",
+"Texture": "Animals\\FC.ArcanianDog_Cream",
+"IconTexture": "LooseSprites\\FC.ArcanianDog_Icon",
+"IconSourceRect": {
+"X": 32,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 3000,
+"BarkOverride": "{{ModID}}_FC.ArcaDog",
+"VoicePitch": 1.0
+},
+{
+"Id": "3",
+"Texture": "Animals\\FC.ArcanianDog_Black",
+"IconTexture": "LooseSprites\\FC.ArcanianDog_Icon",
+"IconSourceRect": {
+"X": 48,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 3000,
+"BarkOverride": "{{ModID}}_FC.ArcaDog",
+"VoicePitch": 1.0
+},
+],
+"CustomFields": null
+},
+},
+},
+{
+ "LogName": "GuineaDog Pet",
+"Action": "EditData",
+"Target": "Data/Pets",
+
+"Entries": {
+"{{ModID}}_GuineaDog": {
+"DisplayName": "{{i18n:FC.GuineaDog}}",
+"BarkSound": "{{ModID}}_GuineaDog",
+"ContentSound": null,
+"RepeatContentSoundAfter": 30000,
+"EmoteOffset": {
+"X": 0,
+"Y": -16
+},
+"EventOffset": {
+"X": -43,
+"Y": 0
+},
+"SummitPerfectionEvent": {
+"SourceRect": {
+"X": 0,
+"Y": 96,
+"Width": 32,
+"Height": 32
+},
+"AnimationLength": 3,
+"Flipped": true,
+"Motion": "-5, 0",
+"PingPong": false
+},
+"MoveSpeed": 2,
+"SleepOnBedChance": 0.05,
+"SleepNearBedChance": 0.3,
+"SleepOnRugChance": 0.5,
+"Behaviors": [
+{
+"Id": "Walk",
+"IsSideBehavior": false,
+"RandomizeDirection": true,
+"Direction": null,
+"WalkInDirection": true,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": null,
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 3.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": null
+},
+{
+"Weight": 2.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": "BeginSitDown",
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "BeginSitSide"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": true,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Sprint"
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "Sprint",
+"IsSideBehavior": true,
+"RandomizeDirection": true,
+"Direction": null,
+"WalkInDirection": true,
+"MoveSpeed": 6,
+"SoundOnStart": "{{ModID}}_GuineaDog",
+"SoundRangeFromBorder": 1,
+"SoundRange": -1,
+"SoundIsVoice": true,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 32,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 33,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 34,
+"Duration": 100,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 33,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 1000,
+"MaximumDuration": 3500,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "BeginSitDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 16,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 17,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 18,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 19,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 19,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 2.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "StandUpDown"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownPant"
+},
+{
+"Weight": 0.3,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownCloseEyesShort"
+},
+{
+"Weight": 0.7,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownCloseEyes"
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownPant",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 19,
+"Duration": -1,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 19,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 7,
+"AnimationMaximumLoops": 19,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownCloseEyes",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 27,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 2000,
+"MaximumDuration": 15000,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownCloseEyesShort",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 27,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": 500,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "StandUpDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 17,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 16,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 0,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "BeginSitSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 20,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 21,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 22,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideIdle",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 2000,
+"MaximumDuration": 6000,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"PlayerNearbyBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWagFast"
+}
+],
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWagFast"
+}
+],
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideIdle"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "StandUpSide"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideBark"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWag"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSidePant"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": null
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideBark",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": "{{ModID}}_GuineaDog",
+"SoundRangeFromBorder": 10,
+"SoundRange": -1,
+"SoundIsVoice": true,
+"Shake": 500,
+"Animation": [
+{
+"Frame": 26,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 1,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideWag",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 30000,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 30000,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 2,
+"AnimationMaximumLoops": 5,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideWagFast",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 30000,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 3000,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 2,
+"AnimationMaximumLoops": 5,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSidePant",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": "{{ModID}}_GuineaDog",
+"SoundRangeFromBorder": -1,
+"SoundRange": 5,
+"SoundIsVoice": true
+},
+{
+"Frame": 25,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 5,
+"AnimationMaximumLoops": 14,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "StandUpSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 22,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 21,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 20,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+}
+],
+"GiftChance": 0.2,
+"Gifts": [
+{
+"Id": "FlowerdropsGuineaDog",
+"MinimumFriendshipThreshold": 250,
+"Weight": 0.01,
+"QualifiedItemID": "{{Random:{{ModID}}_LunonareFlower,{{ModID}}_MuuaiFlower,{{ModID}}_WhoruuFlower}}",
+"Stack": 2
+},
+],
+"Breeds": [
+{
+"Id": "0",
+"Texture": "Animals\\FC.GuineaDog_Brown",
+"IconTexture": "LooseSprites\\FC.GuineaDog_Icon",
+"IconSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 2000,
+"BarkOverride": "{{ModID}}_GuineaDog",
+"VoicePitch": 2.0
+},
+{
+"Id": "1",
+"Texture": "Animals\\FC.GuineaDog_Red",
+"IconTexture": "LooseSprites\\FC.GuineaDog_Icon",
+"IconSourceRect": {
+"X": 16,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 2000,
+"BarkOverride": "{{ModID}}_GuineaDog",
+"VoicePitch": 2.0
+},
+{
+"Id": "2",
+"Texture": "Animals\\FC.GuineaDog_Cream",
+"IconTexture": "LooseSprites\\FC.GuineaDog_Icon",
+"IconSourceRect": {
+"X": 32,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 2000,
+"BarkOverride": "{{ModID}}_GuineaDog",
+"VoicePitch": 2.0
+},
+{
+"Id": "3",
+"Texture": "Animals\\FC.GuineaDog_Gray",
+"IconTexture": "LooseSprites\\FC.GuineaDog_Icon",
+"IconSourceRect": {
+"X": 48,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 2000,
+"BarkOverride": "{{ModID}}_GuineaDog",
+"VoicePitch": 2.0
+},
+],
+"CustomFields": null
+},
+}
+},
+{
+ "LogName": "Miniphant Pet",
+"Action": "EditData",
+"Target": "Data/Pets",
+
+"Entries": {
+"{{ModID}}_Miniphant": {
+"DisplayName": "{{i18n:FC.Miniphant}}",
+"BarkSound": "{{ModID}}_Miniphant",
+"ContentSound": null,
+"RepeatContentSoundAfter": 30000,
+"EmoteOffset": {
+"X": 0,
+"Y": 0
+},
+"EventOffset": {
+"X": 0,
+"Y": 0
+},
+"SummitPerfectionEvent": {
+"SourceRect": {
+"X": 0,
+"Y": 96,
+"Width": 32,
+"Height": 32
+},
+"AnimationLength": 3,
+"Flipped": true,
+"Motion": "-5, 0",
+"PingPong": false
+},
+"MoveSpeed": 2,
+"SleepOnBedChance": 0.05,
+"SleepNearBedChance": 0.3,
+"SleepOnRugChance": 0.5,
+"Behaviors": [
+{
+"Id": "Walk",
+"IsSideBehavior": false,
+"RandomizeDirection": true,
+"Direction": null,
+"WalkInDirection": true,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": null,
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 3.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": null
+},
+{
+"Weight": 2.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": "BeginSitDown",
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "BeginSitSide"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": true,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Sprint"
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "Sprint",
+"IsSideBehavior": true,
+"RandomizeDirection": true,
+"Direction": null,
+"WalkInDirection": true,
+"MoveSpeed": 6,
+"SoundOnStart": "{{ModID}}_Miniphant",
+"SoundRangeFromBorder": 1,
+"SoundRange": -1,
+"SoundIsVoice": true,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 32,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 33,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 34,
+"Duration": 100,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 33,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 1000,
+"MaximumDuration": 3500,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "BeginSitDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 16,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 17,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 18,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 19,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 19,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 2.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "StandUpDown"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownPant"
+},
+{
+"Weight": 0.3,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownCloseEyesShort"
+},
+{
+"Weight": 0.7,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDownCloseEyes"
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownPant",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 19,
+"Duration": -1,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 19,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 7,
+"AnimationMaximumLoops": 19,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownCloseEyes",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 27,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 2000,
+"MaximumDuration": 15000,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitDownCloseEyesShort",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 27,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": 500,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitDown"
+}
+],
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "StandUpDown",
+"IsSideBehavior": false,
+"RandomizeDirection": false,
+"Direction": "down",
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 17,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 16,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 0,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "BeginSitSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 20,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 21,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 22,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideIdle",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": 2000,
+"MaximumDuration": 6000,
+"TimeoutBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"PlayerNearbyBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWagFast"
+}
+],
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Hold",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": null,
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWagFast"
+}
+],
+"RandomBehaviorChangeChance": 0.01,
+"RandomBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideIdle"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "StandUpSide"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideBark"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSideWag"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSidePant"
+},
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": null
+}
+],
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideBark",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": "{{ModID}}_Miniphant",
+"SoundRangeFromBorder": 10,
+"SoundRange": -1,
+"SoundIsVoice": true,
+"Shake": 500,
+"Animation": [
+{
+"Frame": 26,
+"Duration": 500,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 1,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideWag",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 30000,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 30000,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 2,
+"AnimationMaximumLoops": 5,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSideWagFast",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 30000,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 23,
+"Duration": 3000,
+"HitGround": true,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 2,
+"AnimationMaximumLoops": 5,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "SitSidePant",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 24,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": "grunt",
+"SoundRangeFromBorder": -1,
+"SoundRange": 5,
+"SoundIsVoice": true
+},
+{
+"Frame": 25,
+"Duration": 200,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "Loop",
+"AnimationMinimumLoops": 5,
+"AnimationMaximumLoops": 14,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "SitSide"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+},
+{
+"Id": "StandUpSide",
+"IsSideBehavior": true,
+"RandomizeDirection": false,
+"Direction": null,
+"WalkInDirection": false,
+"MoveSpeed": -1,
+"SoundOnStart": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false,
+"Shake": 0,
+"Animation": [
+{
+"Frame": 23,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 22,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 21,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+},
+{
+"Frame": 20,
+"Duration": 100,
+"HitGround": false,
+"Jump": false,
+"Sound": null,
+"SoundRangeFromBorder": -1,
+"SoundRange": -1,
+"SoundIsVoice": false
+}
+],
+"LoopMode": "None",
+"AnimationMinimumLoops": -1,
+"AnimationMaximumLoops": -1,
+"AnimationEndBehaviorChanges": [
+{
+"Weight": 1.0,
+"OutsideOnly": false,
+"UpBehavior": null,
+"DownBehavior": null,
+"LeftBehavior": null,
+"RightBehavior": null,
+"Behavior": "Walk"
+}
+],
+"Duration": -1,
+"MinimumDuration": -1,
+"MaximumDuration": -1,
+"TimeoutBehaviorChanges": null,
+"PlayerNearbyBehaviorChanges": null,
+"RandomBehaviorChangeChance": 0.0,
+"RandomBehaviorChanges": null,
+"JumpLandBehaviorChanges": null
+}
+],
+"GiftChance": 0.2,
+"Gifts": [
+{
+"Id": "{{ModID}}_MiniphantDrop",
+"MinimumFriendshipThreshold": 250,
+"Weight": 1.0,
+"QualifiedItemID": "{{Random:{{ModID}}_GaggleShroom,{{ModID}}_WarpRoot,{{ModID}}_VoidTreeFruit}}",
+"Stack": 2
+},
+],
+"Breeds": [
+{
+"Id": "0",
+"Texture": "Animals\\FC.Miniphant_Baby_Gray",
+"IconTexture": "LooseSprites\\FC.Miniphant_Icon",
+"IconSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 4000,
+"BarkOverride": "grunt",
+"VoicePitch": 1.0
+},
+{
+"Id": "1",
+"Texture": "Animals\\FC.Miniphant_Baby_Pale",
+"IconTexture": "LooseSprites\\FC.Miniphant_Icon",
+"IconSourceRect": {
+"X": 16,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 4000,
+"BarkOverride": "grunt",
+"VoicePitch": 1.0
+},
+{
+"Id": "2",
+"Texture": "Animals\\FC.Miniphant_Baby_Pink",
+"IconTexture": "LooseSprites\\FC.Miniphant_Icon",
+"IconSourceRect": {
+"X": 32,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 4000,
+"BarkOverride": "grunt",
+"VoicePitch": 1.0
+},
+{
+"Id": "3",
+"Texture": "Animals\\FC.Miniphant_Baby_Blue",
+"IconTexture": "LooseSprites\\FC.Miniphant_Icon",
+"IconSourceRect": {
+"X": 48,
+"Y": 0,
+"Width": 16,
+"Height": 16
+},
+"CanBeChosenAtStart": false,
+"CanBeAdoptedFromMarnie": false,
+"AdoptionPrice": 4000,
+"BarkOverride": "grunt",
+"VoicePitch": 1.0
+},
+],
+"CustomFields": null
+},
+},
+},
+///Farm Animals
+{
+ "LogName": "animals",
+"Action": "EditData",
+"Target": "Data/FarmAnimals",
+"Entries": {
+"{{ModID}}_MaleMovoraptor": {
+"DisplayName": "{{i18n:FC.MaleMovoraptor}}",
+"House": "Barn",
+"Gender": "Male",
+"PurchasePrice": -1,
+"SellPrice": 2000,
+"ShopTexture": null,
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 32,
+"Height": 16
+},
+"ShopDisplayName": null,
+"ShopDescription": null,
+"ShopMissingBuildingDescription":null,
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"AlternatePurchaseTypes": null,
+"EggItemIds": [ "{{ModID}}_MovoraptorEgg" ],
+"IncubationTime": 18000,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.MovoraptorHatch}}",
+"DaysToMature": 5,
+"CanGetPregnant": false,
+"DaysToProduce": 3,
+"HarvestType": "DropOvernight",
+"HarvestTool": null,
+"ProduceItemIds": [
+	{
+"Id": "{{ModID}}_FairyFingersDrop",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "{{ModID}}_FairyFingers"
+},
+],
+"DeluxeProduceItemIds": [
+{
+"Id": "{{ModID}}_MovoFeatherDrop",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "{{ModID}}_MovoraptorFeather"
+},
+
+],
+"ProduceOnMature": false,
+"FriendshipForFasterProduce": -1,
+"DeluxeProduceMinimumFriendship": 750,
+"DeluxeProduceCareDivisor": 1200.0,
+"DeluxeProduceLuckMultiplier": 0.0,
+"ProfessionForHappinessBoost": 3,
+"ProfessionForQualityBoost": 3,
+"ProfessionForFasterProduce": -1,
+"Sound": "{{ModID}}_Movoraptor",
+"BabySound": null,
+"Texture": "Animals\\FC.Movoraptor_Male_Adult_Green",
+"HarvestedTexture": null,
+"BabyTexture": "Animals\\FC.Movoraptor_Male_Baby_Green",
+"UseDoubleUniqueAnimationFrames": false,
+"UseFlippedRightForLeft": true,
+"SpriteWidth": 32,
+"SpriteHeight": 32,
+"SleepFrame": 17,
+"EmoteOffset": {
+"X": 0,
+"Y": 0
+},
+"Skins":[
+ {
+"ID": "{{ModID}}_Movoraptor_Male_Green",
+ "Weight": 4.0,
+"Texture": "Animals\\FC.Movoraptor_Male_Adult_Green",
+"BabyTexture": "Animals\\FC.Movoraptor_Male_Baby_Green"
+},
+ {
+"ID": "{{ModID}}_Movoraptor_Male_Blue",
+"Weight": 3.00,
+"Texture": "Animals\\FC.Movoraptor_Male_Adult_Blue",
+"BabyTexture": "Animals\\FC.Movoraptor_Male_Baby_Blue"
+},
+ {
+"ID": "{{ModID}}_Movoraptor_Male_Yellow",
+"Texture": "Animals\\FC.Movoraptor_Male_Adult_Yellow",
+"Weight": 2.0,
+"BabyTexture": "Animals\\FC.Movoraptor_Male_Baby_Yellow"
+},
+ {
+"ID": "{{ModID}}_Movoraptor_Male_Pale",
+"Weight": 1.0,
+"Texture": "Animals\\FC.Movoraptor_Male_Adult_Pale",
+"BabyTexture": "Animals\\FC.Movoraptor_Male_Baby_Pale"
+},
+],
+"ShadowWhenBaby" :
+ {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdult" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenBabySwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdultSwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount": 0,
+"HappinessDrain": 3,
+"UpDownPetHitboxTileSize": "1, 1.75",
+"LeftRightPetHitboxTileSize": "1.75, 1.25",
+"BabyUpDownPetHitboxTileSize": "1, 1.75",
+"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+"StatToIncrementOnProduce": null,
+"ShowInSummitCredits": false,
+},
+"{{ModID}}_Movoraptor": {
+"DisplayName": "{{i18n:FC.FemaleMovoraptor}}",
+"House": "Barn",
+"Gender": "Female",
+"PurchasePrice": 2500,
+"SellPrice": 1500,
+"ShopTexture": "LooseSprites\\FC.Movoraptor_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.FemaleMovoraptor}}",
+"ShopDescription": "{{i18n:FC.Movoraptor.Desc}}",
+"ShopMissingBuildingDescription":null,
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"AlternatePurchaseTypes": [
+],
+"EggItemIds": [ "{{ModID}}_MovoraptorEgg" ],
+ "IncubationTime": 18000,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.MovoraptorHatch}}",
+"DaysToMature":4,
+"CanGetPregnant": false,
+"DaysToProduce": 3,
+"HarvestType": "DropOvernight",
+"HarvestTool": null,
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_MovoEggDrop",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "{{ModID}}_MovoraptorEgg"
+},
+{
+"Id": "{{ModID}}_FireSnapperDrop",
+"Condition": null,
+"MinimumFriendship": 250,
+"ItemId": "{{ModID}}_FireSnapper"
+},
+],
+"DeluxeProduceItemIds": [
+],
+"ProduceOnMature": true,
+"FriendshipForFasterProduce": 1000,
+"DeluxeProduceMinimumFriendship": 250,
+"DeluxeProduceCareDivisor": 1000.0,
+"DeluxeProduceLuckMultiplier": 0.0,
+"ProfessionForHappinessBoost": 2,
+"ProfessionForQualityBoost": 2,
+"ProfessionForFasterProduce":2,
+"Sound": "{{ModID}}_Movoraptor",
+"BabySound": "{{ModID}}_Movoraptor",
+"Texture": "Animals\\FC.Movoraptor_Purple_Adult",
+"HarvestedTexture": null,
+"BabyTexture": "Animals\\FC.Movoraptor_Purple_Baby",
+"UseFlippedRightForLeft": false,
+"UseDoubleUniqueAnimationFrames": true,
+"SpriteWidth": 32,
+"SpriteHeight": 32,
+"SleepFrame": 17,
+"EmoteOffset": {
+"X": 0,
+"Y": 0
+},
+ "SwimOffset": {
+"X": 0,
+"Y": 224
+},
+"Skins":[
+ {
+"ID": "{{ModID}}_BlackMovoraptor",
+ "Weight": 2.00,
+"Texture": "Animals\\FC.Movoraptor_Black_Adult",
+"BabyTexture": "Animals\\FC.Movoraptor_Black_Baby"
+},
+ {
+"ID": "{{ModID}}_BlueMovoraptor",
+ "Weight": 2.00,
+"Texture": "Animals\\FC.Movoraptor_Blue_Adult",
+"BabyTexture": "Animals\\FC.Movoraptor_Blue_Baby"
+},
+{
+"ID": "{{ModID}}_PinkMovoraptor",
+"Weight": 1.0,
+"Texture": "Animals\\FC.Movoraptor_Pink_Adult",
+"BabyTexture": "Animals\\FC.Movoraptor_Pink_Baby"
+},
+{
+"ID": "{{ModID}}_PurpleMovoraptor",
+"Weight": 3.0,
+"Texture": "Animals\\FC.Movoraptor_Purple_Adult",
+"BabyTexture": "Animals\\FC.Movoraptor_Purple_Baby"
+},
+{
+"ID": "{{ModID}}_PaleMovoraptor",
+"Weight": 0.001,
+"Texture": "Animals\\FC.Movoraptor_Pale_Adult",
+"BabyTexture": "Animals\\FC.Movoraptor_Pale_Baby"
+},
+],
+"ShadowWhenBaby" :
+ {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdult" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenBabySwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdultSwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"CanSwim": true,
+"BabiesFollowAdults": true,
+"GrassEatAmount":0,
+"HappinessDrain":3,
+"UpDownPetHitboxTileSize": "1.5, 2",
+"LeftRightPetHitboxTileSize": "2, 2",
+"BabyUpDownPetHitboxTileSize": "1, 1",
+"BabyLeftRightPetHitboxTileSize": "1, 1",
+"StatToIncrementOnProduce": [
+{
+"RequiredItemId": null,
+"RequiredTags": [
+"egg_item"
+],
+"StatName": "ChickenEggsLayed"
+}
+],
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 450,
+}
+},
+"{{ModID}}_Raphus": {
+"DisplayName": "{{i18n:FC.Raphus}}",
+"House": "Barn",
+"Gender": "MaleOrFemale",
+"PurchasePrice": 2500,
+"SellPrice": 1200,
+"ShopTexture": "LooseSprites\\FC.Raphus_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width":32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.Raphus}}",
+"ShopDescription": "{{i18n:FC.Raphus.Desc}}",
+"ShopMissingBuildingDescription": "{{i18n:FC.MissingBuilding}}",
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"EggItemIds": [ "{{ModID}}_RaphusEgg" ],
+"IncubationTime": 4500,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.RaphusHatch}}",
+"DaysToMature": 7,
+"CanGetPregnant": false,
+"DaysToProduce": 3,
+"HarvestType": "DropOvernight",
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_RaphusEggDrop",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "{{ModID}}_RaphusEgg"
+},
+{
+"Id": "{{ModID}}_SpiritBudDrop",
+"Condition": null,
+"MinimumFriendship": 250,
+"ItemId": "{{ModID}}_SpiritBud"
+},
+],
+"ProduceOnMature": true,
+"ProfessionForHappinessBoost": 11,
+"ProfessionForQualityBoost": 11,
+"ProfessionForFasterProduce": 11,
+"Sound": "{{ModID}}_Dodo",
+"BabySound": "{{ModID}}_Dodo",
+"Texture": "Animals\\FC.Raphus_Adult_Gray",
+"BabyTexture": "Animals\\FC.Raphus_Baby_Gray",
+"Skins":[
+{
+"ID": "FC.Raphus_Gray",
+"Weight": 3.0,
+"Texture": "Animals\\FC.Raphus_Adult_Gray",
+"BabyTexture": "Animals\\FC.Raphus_Baby_Gray"
+},
+ {
+"ID": "FC.Raphus_Black",
+"Weight": 2.0,
+"Texture": "Animals\\FC.Raphus_Adult_Black",
+"BabyTexture": "Animals\\FC.Raphus_Baby_Black"
+},
+{
+"ID": "FC.Raphus_Blue",
+"Weight": 1.0,
+"Texture": "Animals\\FC.Raphus_Adult_Blue",
+"BabyTexture": "Animals\\FC.Raphus_Baby_Blue"
+},
+{
+"ID": "FC.Raphus_Pale",
+"Weight": 1.0,
+"Texture": "Animals\\FC.Raphus_Adult_Pale",
+"BabyTexture": "Animals\\FC.Raphus_Baby_Pale"
+},
+],
+"UseFlippedRightForLeft": true,
+"UseDoubleUniqueAnimationFrames": false,
+"SleepFrame": 12,
+"SpriteWidth": 32,
+"SpriteHeight": 32,
+"ShadowWhenBaby": { "Visible": true },
+"ShadowWhenBabySwims": { "Visible": false },
+"ShadowWhenAdult": { "Visible": false },
+"ShadowWhenAdultSwims": { "Visible": false },
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount": 4,
+"HappinessDrain": 5,
+"UpDownPetHitboxTileSize": "1, 1",
+"LeftRightPetHitboxTileSize": "1, 1",
+"BabyUpDownPetHitboxTileSize": "1, 1",
+"BabyLeftRightPetHitboxTileSize": "1, 1",
+ "StatToIncrementOnProduce": [
+],
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 350,
+}
+},
+"{{ModID}}_DeathBird": {
+"DisplayName": "{{i18n:FC.DeathBird}}",
+"House": "Coop",
+"Gender": "Female",
+"PurchasePrice":1200,
+"SellPrice": 750,
+"ShopTexture": "LooseSprites\\FC.DeathBird_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width":32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.DeathBird}}",
+"ShopDescription": "{{i18n:FC.DeathBird.Desc}}",
+"ShopMissingBuildingDescription": "{{i18n:FC.MissingBuildingCoop}}",
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"EggItemIds": [ "{{ModID}}_DeathBirdEgg" ],
+"IncubationTime": 1500,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.DeathBirdHatch}}",
+"DaysToMature": 3,
+"CanGetPregnant": false,
+"DaysToProduce": 3,
+"HarvestType": "DropOvernight",
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_DeaBirdEggDrop",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "{{ModID}}_DeathBirdEgg"
+},
+],
+"DeluxeProduceItemIds": [
+{
+"Id": "{{ModID}}_DeaBirdBoneFragmentDrop",
+"Condition": "RANDOM 0.25",
+"MinimumFriendship": 250,
+"ItemId": "881"
+},
+],
+"ProduceOnMature": true,
+"ProfessionForHappinessBoost": 11,
+"ProfessionForQualityBoost": 11,
+"ProfessionForFasterProduce": 11,
+"Sound": "{{ModID}}_DeathBird",
+"BabySound": "{{ModID}}_DeathBird",
+"Texture": "Animals\\FC.DeathBird_Adult_Blue",
+"BabyTexture": "Animals\\FC.DeathBird_Baby_Blue",
+"Skins":[
+{
+"ID": "FC.DeathBird_Gold",
+"Weight": 1.0,
+"Texture": "Animals\\FC.DeathBird_Adult_Gold",
+"BabyTexture": "Animals\\FC.DeathBird_Baby_Gold"
+},
+ {
+"ID": "FC.DeathBird_Green",
+"Weight": 1.0,
+"Texture": "Animals\\FC.DeathBird_Adult_Green",
+"BabyTexture": "Animals\\FC.DeathBird_Baby_Green"
+},
+{
+"ID": "FC.DeathBird_Purple",
+"Weight": 2.0,
+"Texture": "Animals\\FC.DeathBird_Adult_Purple",
+"BabyTexture": "Animals\\FC.DeathBird_Baby_Purple"
+},
+{
+"ID": "FC.DeathBird_Blue",
+"Weight": 3.0,
+"Texture": "Animals\\FC.DeathBird_Adult_Blue",
+"BabyTexture": "Animals\\FC.DeathBird_Baby_Blue"
+},
+],
+"UseFlippedRightForLeft": true,
+"UseDoubleUniqueAnimationFrames": false,
+"SleepFrame": 17,
+"SpriteWidth": 16,
+"SpriteHeight": 16,
+"ShadowWhenBaby": { "Visible": true },
+"ShadowWhenBabySwims": { "Visible": false },
+"ShadowWhenAdult": { "Visible": true },
+"ShadowWhenAdultSwims": { "Visible": false },
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount": 2,
+"HappinessDrain": 1,
+"UpDownPetHitboxTileSize": "1, 1",
+"LeftRightPetHitboxTileSize": "1, 1",
+"BabyUpDownPetHitboxTileSize": "1, 1",
+"BabyLeftRightPetHitboxTileSize": "1, 1",
+"StatToIncrementOnProduce": [
+],
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 150,
+}
+},
+"{{ModID}}_QuillbackSkunk": {
+"DisplayName": "{{i18n:FC.QuillbackSkunk}}",
+"House": "Coop",
+"Gender": "Female",
+"PurchasePrice":2200,
+"SellPrice": 850,
+"ShopTexture": "LooseSprites\\FC.QuillbackSkunk_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width":32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.QuillbackSkunk}}",
+"ShopDescription": "{{i18n:FC.QuillbackSkunk.Desc}}",
+"ShopMissingBuildingDescription": "{{i18n:FC.MissingBuildingCoop}}",
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"EggItemIds": [],
+"IncubationTime": -1,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.QuillbackSkunkBirth}}",
+"DaysToMature": 4,
+"CanGetPregnant": true,
+"DaysToProduce": 1,
+"HarvestType": "DropOvernight",
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_FiberChunkDrop",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "{{ModID}}_FiberClumps"
+},
+],
+"DeluxeProduceItemIds": [
+{
+"Id": "{{ModID}}_BerryDrop",
+"MinimumFriendship": 250,
+"ItemId": "{{Random:258,296,396,400,410,{{ModID}}_DragaEye}}"
+},
+],
+"ProduceOnMature": true,
+"ProfessionForHappinessBoost": 11,
+"ProfessionForQualityBoost": 11,
+"ProfessionForFasterProduce": 11,
+"Sound": "{{ModID}}_QuillbackSkunk",
+"BabySound": "{{ModID}}_QuillbackSkunk",
+"Texture": "Animals\\FC.QuillbackSkunk_Adult_Brown",
+"BabyTexture": "Animals\\FC.QuillbackSkunk_Baby",
+"Skins":[
+	{
+"ID": "FC.QuillbackSkunk_Brown",
+"Weight": 4.0,
+"Texture": "Animals\\FC.QuillbackSkunk_Adult_Brown",
+"BabyTexture": "Animals\\FC.QuillbackSkunk_Baby"
+},
+{
+"ID": "FC.QuillbackSkunk_Purple",
+"Weight": 1.0,
+"Texture": "Animals\\FC.QuillbackSkunk_Adult_Purple",
+"BabyTexture": "Animals\\FC.QuillbackSkunk_Baby"
+},
+ {
+"ID": "FC.QuillbackSkunk_Red",
+"Weight": 2.0,
+"Texture": "Animals\\FC.QuillbackSkunk_Adult_Red",
+"BabyTexture": "Animals\\FC.QuillbackSkunk_Baby"
+},
+{
+"ID": "FC.QuillbackSkunk_White",
+"Weight": 3.0,
+"Texture": "Animals\\FC.QuillbackSkunk_Adult_White",
+"BabyTexture": "Animals\\FC.QuillbackSkunk_Baby"
+},
+],
+"UseFlippedRightForLeft": false,
+"UseDoubleUniqueAnimationFrames": false,
+"SleepFrame": 17,
+"SpriteWidth": 32,
+"SpriteHeight": 32,
+"ShadowWhenBaby": { "Visible": false },
+"ShadowWhenBabySwims": { "Visible": false },
+"ShadowWhenAdult": { "Visible": false},
+"ShadowWhenAdultSwims": { "Visible": false },
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount": 2,
+"HappinessDrain": 1,
+"UpDownPetHitboxTileSize": "1, 1",
+"LeftRightPetHitboxTileSize": "1, 1",
+"BabyUpDownPetHitboxTileSize": "1, 1",
+"BabyLeftRightPetHitboxTileSize": "1, 1",
+"StatToIncrementOnProduce": [
+],
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 250,
+}
+},
+"{{ModID}}_ArcaGoat": {
+"DisplayName": "{{i18n:ArcaGoat}}",
+"House": "Coop",
+"Gender": "Female",
+"PurchasePrice":1200,
+"SellPrice": 750,
+"ShopTexture": "LooseSprites\\FC.ArcaGoat_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width":32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.ArcaGoat}}",
+"ShopDescription": "{{i18n:FC.ArcaGoat.Desc}}",
+"ShopMissingBuildingDescription": "{{i18n:FC.MissingBuildingCoop}}",
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"EggItemIds": [ ],
+"IncubationTime": 1000,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.ArcaGoatBirth}}",
+"DaysToMature": 3,
+"CanGetPregnant": true,
+"DaysToProduce": 3,
+"HarvestType": "DropOvernight",
+"ProduceItemIds": [
+	{
+"Id": "{{ModID}}_StoneShroom",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "{{ModID}}_StoneShroom"
+},
+],
+"DeluxeProduceItemIds": [
+{
+"Id": "{{ModID}}_FairyFingers",
+"Condition": null,
+"MinimumFriendship": 250,
+"ItemId": "{{ModID}}_FairyFingers"
+},
+],
+"ProduceOnMature": true,
+"ProfessionForHappinessBoost": 11,
+"ProfessionForQualityBoost": 11,
+"ProfessionForFasterProduce": 11,
+"Sound": "{{ModID}}_ArcaGoat",
+"BabySound": "{{ModID}}_ArcaGoat",
+"Texture": "Animals\\FC.ArcaGoat_Adult_Black",
+"BabyTexture": "Animals\\FC.ArcaGoat_Baby_Black",
+"Skins":[
+{
+"ID": "ArcaGoat_Brown",
+"Weight": 3.0,
+"Texture": "Animals\\FC.ArcaGoat_Adult_Brown",
+"BabyTexture": "Animals\\FC.ArcaGoat_Baby_Brown"
+},
+ {
+"ID": "ArcaGoat_Red",
+"Weight": 1.0,
+"Texture": "Animals\\FC.ArcaGoat_Adult_Red",
+"BabyTexture": "Animals\\FC.ArcaGoat_Baby_Red"
+},
+{
+"ID": "ArcaGoat_Pale",
+"Weight": 2.0,
+"Texture": "Animals\\FC.ArcaGoat_Adult_Pale",
+"BabyTexture": "Animals\\FC.ArcaGoat_Baby_Pale"
+},
+],
+"UseFlippedRightForLeft": true,
+"UseDoubleUniqueAnimationFrames": false,
+"SleepFrame": 17,
+"SpriteWidth": 16,
+"SpriteHeight": 16,
+"ShadowWhenBaby": { "Visible": true },
+"ShadowWhenBabySwims": { "Visible": false },
+"ShadowWhenAdult": { "Visible": true },
+"ShadowWhenAdultSwims": { "Visible": false },
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount": 2,
+"HappinessDrain": 1,
+"UpDownPetHitboxTileSize": "1, 1",
+"LeftRightPetHitboxTileSize": "1, 1",
+"BabyUpDownPetHitboxTileSize": "1, 1",
+"BabyLeftRightPetHitboxTileSize": "1, 1",
+"StatToIncrementOnProduce": [
+],
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 150,
+}
+},
+"{{ModID}}_Narubits": {
+"DisplayName": "{{i18n:FC.Narubits}}",
+"House": "Barn",
+"Gender": "MaleOrFemale",
+"PurchasePrice": 1600,
+"SellPrice": 1400,
+"ShopTexture": "LooseSprites\\FC.Narubits_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.Narubits}}",
+"ShopDescription": "{{i18n:FC.Narubits.Desc}}",
+"ShopMissingBuildingDescription": "{{i18n:FC.MissingBuilding}}",
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"AlternatePurchaseTypes": null,
+"EggItemIds": null,
+"IncubationTime": -1,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.NarubitsBirth}}",
+"DaysToMature": 10,
+"CanGetPregnant": true,
+"DaysToProduce": 6,
+"HarvestType": "DropOvernight",
+"HarvestTool": null,
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_NarubitWoolDrop",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "{{ModID}}_NarubitWool"
+},
+],
+"DeluxeProduceItemIds": [
+{
+"Id": "{{ModID}}{{ModID}}_GruutehRootDrop",
+"Condition": null,
+"MinimumFriendship": 250,
+"ItemId": "{{ModID}}_GruutehRoot"
+}	
+],
+"ProduceOnMature": true,
+"FriendshipForFasterProduce": -1,
+"DeluxeProduceMinimumFriendship": 200,
+"DeluxeProduceCareDivisor": 1200.0,
+"DeluxeProduceLuckMultiplier": 0.0,
+"ProfessionForHappinessBoost": 3,
+"ProfessionForQualityBoost": 3,
+"ProfessionForFasterProduce": -1,
+"Sound": "{{ModID}}_Narubit",
+"BabySound": "{{ModID}}_Narubit",
+"Texture": "Animals\\FC.Narubits_Adult_Black",
+"HarvestedTexture": null,
+"BabyTexture": "Animals\\FC.Narubits_Baby_Black",
+"UseFlippedRightForLeft": true,
+"UseDoubleUniqueAnimationFrames": false,
+"SleepFrame": 12,
+"SpriteWidth": 32,
+"SpriteHeight": 32,
+"EmoteOffset": {
+"X": 0,
+"Y": 0
+},
+"Skins": [
+{
+"ID": "{{ModID}}_BlackNarubits",
+"Weight": 2.0,
+"Texture": "Animals\\FC.Narubits_Adult_Black",
+"BabyTexture": "Animals\\FC.Narubits_Baby_Black"
+},
+ {
+"ID": "{{ModID}}_BrownNarubits",
+"Weight": 4.00,
+"Texture": "Animals\\FC.Narubits_Adult_Brown",
+"BabyTexture": "Animals\\FC.Narubits_Baby_Brown"
+},
+ {
+"ID": "{{ModID}}_PaleNarubits",
+"Texture": "Animals\\FC.Narubits_Adult_Pale",
+"Weight": 1.0,
+"BabyTexture": "Animals\\FC.Narubits_Baby_Pale"
+},
+ {
+"ID": "{{ModID}}_BlueNarubits",
+"Weight": 3.0,
+"Texture": "Animals\\FC.Narubits_Adult_Blue",
+"BabyTexture": "Animals\\FC.Narubits_Baby_Blue"
+},
+],
+"ShadowWhenBaby" :
+ {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdult" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenBabySwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdultSwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount": 4,
+"HappinessDrain": 3,
+"UpDownPetHitboxTileSize": "1.5, 1.75",
+"LeftRightPetHitboxTileSize": "1.75, 1.25",
+"BabyUpDownPetHitboxTileSize": "1, 1.75",
+"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+"StatToIncrementOnProduce": null,
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 500,
+}
+},
+"{{ModID}}_Warthog": {
+"DisplayName": "{{i18n:FC.Warthog}}",
+"House": "Barn",
+"Gender": "MaleOrFemale",
+"PurchasePrice": 1600,
+"SellPrice": 1400,
+"ShopTexture": "LooseSprites\\FC.Warthog_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.Warthog}}",
+"ShopDescription": "{{i18n:FC.Warthog.Desc}}",
+"ShopMissingBuildingDescription": "{{i18n:FC.MissingBuilding}}",
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"AlternatePurchaseTypes": null,
+"EggItemIds": null,
+"IncubationTime": -1,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.WarthogBirth}}",
+"DaysToMature": 10,
+"CanGetPregnant": true,
+"DaysToProduce": 6,
+"HarvestType": "DropOvernight",
+"HarvestTool": null,
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_MushroomDrop",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "{{Random:422,257,281,404,420,851,{{ModID}}_StoneShroom}}"
+}
+],
+"DeluxeProduceItemIds": [],
+"ProduceOnMature": true,
+"FriendshipForFasterProduce": -1,
+"DeluxeProduceMinimumFriendship": 200,
+"DeluxeProduceCareDivisor": 1200.0,
+"DeluxeProduceLuckMultiplier": 0.0,
+"ProfessionForHappinessBoost": 3,
+"ProfessionForQualityBoost": 3,
+"ProfessionForFasterProduce": -1,
+"Sound": "{{ModID}}_Warthog",
+"BabySound": "{{ModID}}_Warthog",
+"Texture": "Animals\\FC.Warthog_Adult_Black",
+"HarvestedTexture": null,
+"BabyTexture": "Animals\\FC.Warthog_Baby_Black",
+"UseFlippedRightForLeft": true,
+"UseDoubleUniqueAnimationFrames": false,
+"SleepFrame": 12,
+"SpriteWidth": 32,
+"SpriteHeight": 32,
+"EmoteOffset": {
+"X": 0,
+"Y": 0
+},
+"Skins": [
+{
+"ID": "{{ModID}}_BlackWarthog",
+"Weight": 2.0,
+"Texture": "Animals\\FC.Warthog_Adult_Black",
+"BabyTexture": "Animals\\FC.Warthog_Baby_Black"
+},
+ {
+"ID": "{{ModID}}_BrownWarthog",
+"Weight": 4.00,
+"Texture": "Animals\\FC.Warthog_Adult_Brown",
+"BabyTexture": "Animals\\FC.Warthog_Baby_Brown"
+},
+ {
+"ID": "{{ModID}}_PaleWarthog",
+"Texture": "Animals\\FC.Warthog_Adult_Pale",
+"Weight": 1.0,
+"BabyTexture": "Animals\\FC.Warthog_Baby_Pale"
+},
+ {
+"ID": "{{ModID}}_RedWarthog",
+"Weight": 3.0,
+"Texture": "Animals\\FC.Warthog_Adult_Red",
+"BabyTexture": "Animals\\FC.Warthog_Baby_Red"
+},
+],
+"ShadowWhenBaby" :
+ {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdult" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenBabySwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdultSwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount": 4,
+"HappinessDrain": 3,
+"UpDownPetHitboxTileSize": "1.5, 1.75",
+"LeftRightPetHitboxTileSize": "1.75, 1.25",
+"BabyUpDownPetHitboxTileSize": "1, 1.75",
+"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+"StatToIncrementOnProduce": null,
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 650,
+}
+},
+"{{ModID}}_ArcaCow": {
+"DisplayName": "{{i18n:FC.ArcaCow}}",
+"House": "Barn",
+"Gender": "MaleOrFemale",
+"PurchasePrice": 3500,
+"SellPrice": 4000,
+"ShopTexture": "LooseSprites\\FC.ArcaCow_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 32,
+"Height": 22
+},
+"ShopDisplayName": "{{i18n:FC.ArcaCow}}",
+"ShopDescription": "{{i18n:FC.ArcaCow.desc}}",
+"ShopMissingBuildingDescription":"{{i18n:FC.MissingBuilding}}",
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"AlternatePurchaseTypes": null,
+"EggItemIds": null,
+"IncubationTime": -1,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.ArcaCowBirth}}",
+"DaysToMature": 4,
+"CanGetPregnant": true,
+"DaysToProduce": 2,
+"HarvestType": "HarvestWithTool",
+"HarvestTool": "Milk Pail",
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_SmallGaleabisonMilkDrop",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "{{ModID}}_SmallGaleabisonMilk"
+}
+],
+"DeluxeProduceItemIds": [
+{
+"Id": "{{ModID}}_LargeGaleabisonMilkDrop",
+"Condition": null,
+"Condition": "RANDOM 0.25",
+"MinimumFriendship": 350,
+"ItemId": "{{ModID}}_LargeGaleabisonMilk"
+}
+],
+"ProduceOnMature": false,
+"FriendshipForFasterProduce": -1,
+"DeluxeProduceMinimumFriendship": 200,
+"DeluxeProduceCareDivisor": 1200.0,
+"DeluxeProduceLuckMultiplier": 0.0,
+"ProfessionForHappinessBoost": 3,
+"ProfessionForQualityBoost": 3,
+"ProfessionForFasterProduce": -1,
+"Sound": "{{ModID}}_ArcaCow",
+"BabySound": "{{ModID}}_ArcaCow",
+"Texture": "Animals\\FC.ArcaCow_Adult_Black",
+"HarvestedTexture": null,
+"BabyTexture": "Animals\\FC.ArcaCow_Baby_Black",
+"UseFlippedRightForLeft": true,
+"SpriteWidth": 48,
+"SpriteHeight": 48,
+"EmoteOffset": {
+"X": 0,
+"Y": 0
+},
+"Skins":[
+ {
+"ID": "{{ModID}}_BlackArcaCow",
+ "Weight": 2.0,
+"Texture": "Animals\\FC.ArcaCow_Adult_Black",
+"BabyTexture": "Animals\\FC.ArcaCow_Baby_Black"
+},
+ {
+"ID": "{{ModID}}_BrownArcaCow",
+"Weight": 3.00,
+"Texture": "Animals\\FC.ArcaCow_Adult_Brown",
+"BabyTexture": "Animals\\FC.ArcaCow_Baby_Brown"
+},
+ {
+"ID": "{{ModID}}_PaleArcaCow",
+"Texture": "Animals\\FC.ArcaCow_Adult_Pale",
+"Weight": 1.0,
+"BabyTexture": "Animals\\FC.ArcaCow_Baby_Pale"
+},
+ {
+"ID": "{{ModID}}_RedArcaCow",
+"Weight": 4.0,
+"Texture": "Animals\\FC.ArcaCow_Adult_Red",
+"BabyTexture": "Animals\\FC.ArcaCow_Baby_Red"
+},
+],
+"ShadowWhenBaby" :
+ {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdult" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenBabySwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdultSwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount": 4,
+"HappinessDrain": 5,
+"UpDownPetHitboxTileSize": "2, 1.75",
+"LeftRightPetHitboxTileSize": "2.75, 1.25",
+"BabyUpDownPetHitboxTileSize": "2, 1.75",
+"BabyLeftRightPetHitboxTileSize": "2.75, 1",
+"StatToIncrementOnProduce": null,
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 750,
+}
+},
+"{{ModID}}_ArcaTapi": {
+"DisplayName": "{{i18n:FC.ArcaTapi}}",
+"House": "Barn",
+"Gender": "MaleOrFemale",
+"PurchasePrice": 3500,
+"SellPrice": 2000,
+"ShopTexture": "LooseSprites\\FC.Tapi_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.ArcaTapi}}",
+"ShopDescription": "{{i18n:FC.ArcaTapi.desc}}",
+"ShopMissingBuildingDescription":"{{i18n:FC.MissingBuilding}}",
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"AlternatePurchaseTypes": null,
+"EggItemIds": null,
+"IncubationTime": -1,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.ArcaTapiBirth}}",
+"DaysToMature": 8,
+"CanGetPregnant": true,
+"DaysToProduce": 1,
+"HarvestType": "DropOvernight",
+"HarvestTool": null,
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_StoneDrop",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "390"
+}
+],
+"DeluxeProduceItemIds": [
+{
+"Id": "{{ModID}}_RootDrop",
+"Condition": "RANDOM 0.25",
+"MinimumFriendship": 300,
+"ItemId": "{{Random:{{ModID}}_HeaviousRoot,412}}"
+}
+],
+"ProduceOnMature": true,
+"FriendshipForFasterProduce": 500,
+"DeluxeProduceMinimumFriendship": 200,
+"DeluxeProduceCareDivisor": 1200.0,
+"DeluxeProduceLuckMultiplier": 1.0,
+"ProfessionForHappinessBoost": 3,
+"ProfessionForQualityBoost": 3,
+"ProfessionForFasterProduce": -1,
+"Sound": "{{ModID}}_Tapi",
+"BabySound": "{{ModID}}_Tapi",
+"Texture": "Animals\\FC.ArcaTapi_Adult_Black",
+"HarvestedTexture": null,
+"BabyTexture": "Animals\\FC.ArcaTapi_Baby_Black",
+"UseFlippedRightForLeft": true,
+"SpriteWidth": 32,
+"SpriteHeight": 32,
+"EmoteOffset": {
+"X": 0,
+"Y": 0
+},
+"Skins":[
+ {
+"ID": "{{ModID}}_BlackArcaTapi",
+ "Weight": 2.0,
+"Texture": "Animals\\FC.ArcaTapi_Adult_Black",
+"BabyTexture": "Animals\\FC.ArcaTapi_Baby_Black"
+},
+ {
+"ID": "{{ModID}}_BrownArcaTapi",
+"Weight": 3.0,
+"Texture": "Animals\\FC.ArcaTapi_Adult_Brown",
+"BabyTexture": "Animals\\FC.ArcaTapi_Baby_Brown"
+},
+ {
+"ID": "{{ModID}}_PaleArcaTapi",
+"Texture": "Animals\\FC.ArcaTapi_Adult_Pale",
+"Weight": 1.0,
+"BabyTexture": "Animals\\FC.ArcaTapi_Baby_Pale"
+},
+ {
+"ID": "{{ModID}}_RedArcaTapi",
+"Weight": 4.0,
+"Texture": "Animals\\FC.ArcaTapi_Adult_Red",
+"BabyTexture": "Animals\\FC.ArcaTapi_Baby_Red"
+},
+],
+"ShadowWhenBaby" :
+ {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdult" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenBabySwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdultSwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount": 4,
+"HappinessDrain": 5,
+"UpDownPetHitboxTileSize": "1, 1.75",
+"LeftRightPetHitboxTileSize": "1.75, 1.25",
+"BabyUpDownPetHitboxTileSize": "1, 1.75",
+"BabyLeftRightPetHitboxTileSize": "1.75, 1",
+"StatToIncrementOnProduce": null,
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 550,
+}
+},
+"{{ModID}}_GiantGraveCrab": {
+"DisplayName": "{{i18n:FC.GiantGraveCrab}}",
+"House": "Coop",
+"Gender": "Female",
+"PurchasePrice":2200,
+"SellPrice": 850,
+"ShopTexture": "LooseSprites\\FC.GiantGraveCrab_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width":32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.GiantGraveCrab}}",
+"ShopDescription": "{{i18n:FC.GiantGraveCrab.Desc}}",
+"ShopMissingBuildingDescription": "{{i18n:FC.MissingBuilding}}",
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"EggItemIds": [ "{{ModID}}_GiantGraveCrabEgg" ],
+"IncubationTime": 1600,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.GiantGraveCrabHatch}}",
+"DaysToMature": 3,
+"CanGetPregnant": false,
+"DaysToProduce": 3,
+"HarvestType": "DropOvernight",
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_GiantGraveCrabEgg",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "{{ModID}}_GiantGraveCrabEgg"
+},
+],
+"DeluxeProduceItemIds": [
+{
+"Id": "{{ModID}}_GiantGraveCrabShellDrop",
+"Condition": "RANDOM 0.25",
+"MinimumFriendship": 250,
+"ItemId": "{{ModID}}_GraveCrabShell"
+},
+],
+"ProduceOnMature": true,
+"ProfessionForHappinessBoost": 11,
+"ProfessionForQualityBoost": 11,
+"ProfessionForFasterProduce": 11,
+"Sound": "rabbit",
+"BabySound": "rabbit",
+"Texture": "Animals\\FC.GiantGraveCrab_Adult_Blue",
+"BabyTexture": "Animals\\FC.GiantGraveCrab_Baby_Default",
+"Skins":[
+{
+"ID": "FC.GiantGraveCrab_Blue",
+"Weight": 4.0,
+"Texture": "Animals\\FC.GiantGraveCrab_Adult_Blue",
+"BabyTexture": "Animals\\FC.GiantGraveCrab_Baby_Default"
+},
+ {
+"ID": "FC.GiantGraveCrab_Pink",
+"Weight": 3.0,
+"Texture": "Animals\\FC.GiantGraveCrab_Adult_Pink",
+"BabyTexture": "Animals\\FC.GiantGraveCrab_Baby_Default"
+},
+{
+"ID": "FC.GiantGraveCrab_Purple",
+"Weight": 2.0,
+"Texture": "Animals\\FC.GiantGraveCrab_Adult_Purple",
+"BabyTexture": "Animals\\FC.GiantGraveCrab_Baby_Default"
+},
+{
+"ID": "FC.GiantGraveCrab_Void",
+"Weight": 1.0,
+"Texture": "Animals\\FC.GiantGraveCrab_Adult_Black",
+"BabyTexture": "Animals\\FC.GiantGraveCrab_Baby_Black"
+},
+],
+"UseFlippedRightForLeft": false,
+"UseDoubleUniqueAnimationFrames": true,
+"SleepFrame": 17,
+"SpriteWidth": 32,
+"SpriteHeight": 32,
+"ShadowWhenBaby": { "Visible": true },
+"ShadowWhenBabySwims": { "Visible": true },
+"ShadowWhenAdult": { "Visible": false },
+"ShadowWhenAdultSwims": { "Visible": false },
+"CanSwim": true,
+"BabiesFollowAdults": true,
+"GrassEatAmount": 2,
+"HappinessDrain": 2,
+"UpDownPetHitboxTileSize": "1, 1",
+"LeftRightPetHitboxTileSize": "1, 1",
+"BabyUpDownPetHitboxTileSize": "1, 1",
+"BabyLeftRightPetHitboxTileSize": "1, 1",
+"StatToIncrementOnProduce": [
+],
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 850,
+}
+},
+"{{ModID}}_ArcaSteed": {
+"DisplayName": "{{i18n:FC.ArcaSteed}}",
+"House": "Barn",
+"Gender": "Female",
+"PurchasePrice": 4500,
+"SellPrice": 2500,
+"ShopTexture": "LooseSprites\\FC.ArcaSteed_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.ArcaSteed}}",
+"ShopDescription": "{{i18n:FC.ArcaSteed.Desc}}",
+"ShopMissingBuildingDescription": "{{i18n:FC.MissingBuilding}}",
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"AlternatePurchaseTypes": null,
+"EggItemIds": null,
+"IncubationTime": -1,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.ArcaSteedBirth}}",
+"DaysToMature":4,
+"CanGetPregnant": true,
+"DaysToProduce": 3,
+"HarvestType": "DropOvernight",
+"HarvestTool": null,
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_PoopDrop",
+"ItemId": "{{ModID}}_SteedPoop"
+},
+{
+"Id": "{{ModID}}_WoolDrop",
+"ItemId": "440"
+},
+],
+"DeluxeProduceItemIds": [
+	{
+"Id": "{{ModID}}_DragaClawtusDrop",
+"Condition": "RANDOM 0.25",
+"MinimumFriendship": 250,
+"ItemId": "{{ModID}}_DragaClawtus"
+},
+],
+"ProduceOnMature": true,
+"FriendshipForFasterProduce": 1000,
+"DeluxeProduceMinimumFriendship": 250,
+"DeluxeProduceCareDivisor": 1000.0,
+"DeluxeProduceLuckMultiplier": 0.0,
+"ProfessionForHappinessBoost": 2,
+"ProfessionForQualityBoost": 2,
+"ProfessionForFasterProduce":2,
+"Sound": "{{ModID}}_ArcaSteed",
+"BabySound": "{{ModID}}_ArcaSteedBaby",
+"Texture": "Animals\\FC.ArcaSteed_Adult_Brown",
+"HarvestedTexture": null,
+"BabyTexture": "Animals\\FC.ArcaSteed_Baby_Brown",
+"UseFlippedRightForLeft": true,
+"UseDoubleUniqueAnimationFrames": false,
+"SpriteWidth": 32,
+"SpriteHeight": 32,
+"SleepFrame": 17,
+"EmoteOffset": {
+"X": 0,
+"Y": 0
+},
+"SwimOffset": {},
+"Skins":[
+ {
+"ID": "{{ModID}}_BrownArcaSteed",
+ "Weight": 4.0,
+"Texture": "Animals\\FC.ArcaSteed_Adult_Brown",
+"BabyTexture": "Animals\\FC.ArcaSteed_Baby_Brown"
+},
+ {
+"ID": "{{ModID}}_RedArcaSteed",
+ "Weight": 3.0,
+"Texture": "Animals\\FC.ArcaSteed_Adult_Red",
+"BabyTexture": "Animals\\FC.ArcaSteed_Baby_Red"
+},
+ {
+"ID": "{{ModID}}_PaleArcaSteed",
+ "Weight": 2.0,
+"Texture": "Animals\\FC.ArcaSteed_Adult_Pale",
+"BabyTexture": "Animals\\FC.ArcaSteed_Baby_Pale"
+},
+ {
+"ID": "{{ModID}}_BlackArcaSteed",
+ "Weight": 1.0,
+"Texture": "Animals\\FC.ArcaSteed_Adult_Black",
+"BabyTexture": "Animals\\FC.ArcaSteed_Baby_Black"
+},
+],
+"ShadowWhenBaby" :
+ {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdult" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenBabySwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdultSwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount":3,
+"HappinessDrain":2,
+"UpDownPetHitboxTileSize": "1.5, 2",
+"LeftRightPetHitboxTileSize": "2, 2",
+"BabyUpDownPetHitboxTileSize": "1, 1",
+"BabyLeftRightPetHitboxTileSize": "1, 1",
+"StatToIncrementOnProduce": [
+],
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 550,
+}
+},
+"{{ModID}}_Patholian": {
+"DisplayName": "{{i18n:FC.Patholian}}",
+"House": "Coop",
+"Gender": "Female",
+"PurchasePrice": 3500,
+"SellPrice": 1500,
+"ShopTexture": "LooseSprites\\FC.Patholian_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width": 32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.Patholian}}",
+"ShopDescription": "{{i18n:FC.Patholian.Desc}}",
+"ShopMissingBuildingDescription": "{{i18n:FC.MissingBuilding}}",
+"RequiredBuilding": null,
+"UnlockCondition": null,
+"AlternatePurchaseTypes": null,
+"EggItemIds": null,
+"IncubationTime": -1,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.PatholianBirth}}",
+"DaysToMature":3,
+"CanGetPregnant": true,
+"DaysToProduce": 2,
+"HarvestType": "DropOvernight",
+"HarvestTool": null,
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_DragaTonguulaDrop",
+"ItemId": "{{RANDOM:{{ModID}}_DragaTonguula,{{ModID}}_Seage,{{ModID}}_PyrrhusBerry,{{ModID}}_JoluuSpearouus}}"
+},
+],
+"DeluxeProduceItemIds": [
+{
+"Id": "{{ModID}}_PatholianScaleDrop",
+"Condition": "RANDOM 0.25",
+"MinimumFriendship": 250,
+"ItemId": "{{ModID}}_PatholianScale"
+},
+],
+"ProduceOnMature": true,
+"FriendshipForFasterProduce": 1000,
+"DeluxeProduceMinimumFriendship": 250,
+"DeluxeProduceCareDivisor": 1000.0,
+"DeluxeProduceLuckMultiplier": 0.0,
+"ProfessionForHappinessBoost": 2,
+"ProfessionForQualityBoost": 2,
+"ProfessionForFasterProduce":2,
+"Sound": "{{ModID}}_Patholian",
+"BabySound": "{{ModID}}_Patholian",
+"Texture": "Animals\\FC.Patholian_Adult_Brown",
+"HarvestedTexture": null,
+"BabyTexture": "Animals\\FC.Patholian_Baby_Brown",
+"UseFlippedRightForLeft": true,
+"UseDoubleUniqueAnimationFrames": false,
+"SpriteWidth": 32,
+"SpriteHeight": 32,
+"SleepFrame": 17,
+"EmoteOffset": {
+"X": 0,
+"Y": 0
+},
+"SwimOffset": {},
+"Skins":[
+ {
+"ID": "{{ModID}}_BrownPatholian",
+ "Weight": 4.0,
+"Texture": "Animals\\FC.Patholian_Adult_Brown",
+"BabyTexture": "Animals\\FC.Patholian_Baby_Brown"
+},
+ {
+"ID": "{{ModID}}_BlondePatholian",
+ "Weight": 3.0,
+"Texture": "Animals\\FC.Patholian_Adult_Blonde",
+"BabyTexture": "Animals\\FC.Patholian_Baby_Blonde"
+},
+ {
+"ID": "{{ModID}}_PalePatholian",
+ "Weight": 2.0,
+"Texture": "Animals\\FC.Patholian_Adult_Pale",
+"BabyTexture": "Animals\\FC.Patholian_Baby_Pale"
+},
+ {
+"ID": "{{ModID}}_RedPatholian",
+ "Weight": 1.0,
+"Texture": "Animals\\FC.Patholian_Adult_Red",
+"BabyTexture": "Animals\\FC.Patholian_Baby_Red"
+},
+],
+"ShadowWhenBaby" :
+ {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdult" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenBabySwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"ShadowWhenAdultSwims" : {
+"Visible" : false, // not actually needed, is true if omitted
+},
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount":3,
+"HappinessDrain":2,
+"UpDownPetHitboxTileSize": "1.5, 2",
+"LeftRightPetHitboxTileSize": "2, 2",
+"BabyUpDownPetHitboxTileSize": "1, 1",
+"BabyLeftRightPetHitboxTileSize": "1, 1",
+"StatToIncrementOnProduce": [
+],
+"ShowInSummitCredits": false,
+"CustomFields": {
+
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 550,
+}
+},
+"{{ModID}}_Lychila": {
+"DisplayName": "{{i18n:FC.Lychila}}",
+"House": "Coop",
+"Gender": "Female",
+"PurchasePrice":3000,
+"SellPrice": 1050,
+"ShopTexture": "LooseSprites\\FC.Lychila_Icon",
+"ShopSourceRect": {
+"X": 0,
+"Y": 0,
+"Width":32,
+"Height": 16
+},
+"ShopDisplayName": "{{i18n:FC.Lychila}}",
+"ShopDescription": "{{i18n:FC.Lychila.Desc}}",
+"ShopMissingBuildingDescription": "{{i18n:FC.MissingBuildingCoop}}",
+"RequiredBuilding": null,
+"UnlockCondition": "PLAYER_HAS_MAIL Current {{ModID}}_AdvancedExchangeProgram.Mail Received",
+"EggItemIds": [],
+"IncubationTime": -1,
+"IncubatorParentSheetOffset": 1,
+"BirthText": "{{i18n:FC.LychilaBirth}}",
+"DaysToMature": 4,
+"CanGetPregnant": true,
+"DaysToProduce": 2,
+"HarvestType": "DropOvernight",
+"ProduceItemIds": [
+{
+"Id": "{{ModID}}_BugMeatDrop",
+"Condition": null,
+"MinimumFriendship": 0,
+"ItemId": "684"
+},
+],
+"DeluxeProduceItemIds": [
+{
+"Id": "{{ModID}}_TaroRoot",
+"MinimumFriendship": 250,
+"ItemId": "830",
+"Condition": "RANDOM 0.02",
+},
+],
+"ProduceOnMature": true,
+"ProfessionForHappinessBoost": 11,
+"ProfessionForQualityBoost": 11,
+"ProfessionForFasterProduce": 11,
+"Sound": "{{ModID}}_Lychila",
+"BabySound": "{{ModID}}_Lychila",
+"Texture": "Animals\\FC.Lychila_Adult_Gray",
+"BabyTexture": "Animals\\FC.Lychila_Baby_Gray",
+"Skins":[
+	{
+"ID": "FC.Lychila_Gray",
+"Weight": 4.0,
+"Texture": "Animals\\FC.Lychila_Adult_Gray",
+"BabyTexture": "Animals\\FC.Lychila_Baby_Gray"
+},
+{
+"ID": "FC.Lychila_Yellow",
+"Weight": 3.0,
+"Texture": "Animals\\FC.Lychila_Adult_Yellow",
+"BabyTexture": "Animals\\FC.Lychila_Baby_Yellow"
+},
+ {
+"ID": "FC.Lychila_Orange",
+"Weight": 2.0,
+"Texture": "Animals\\FC.Lychila_Adult_Orange",
+"BabyTexture": "Animals\\FC.Lychila_Baby_Orange"
+},
+{
+"ID": "FC.Lychila_Green",
+"Weight": 1.0,
+"Texture": "Animals\\FC.Lychila_Adult_Green",
+"BabyTexture": "Animals\\FC.Lychila_Baby_Green"
+},
+{
+"ID": "FC.Lychila_Blue",
+"Weight": 0.1,
+"Texture": "Animals\\FC.Lychila_Adult_Blue",
+"BabyTexture": "Animals\\FC.Lychila_Baby_Blue"
+},
+],
+"UseFlippedRightForLeft": true,
+"UseDoubleUniqueAnimationFrames": false,
+"SleepFrame": 17,
+"SpriteWidth": 32,
+"SpriteHeight": 32,
+"ShadowWhenBaby": { "Visible": false },
+"ShadowWhenBabySwims": { "Visible": false },
+"ShadowWhenAdult": { "Visible": false},
+"ShadowWhenAdultSwims": { "Visible": false },
+"CanSwim": false,
+"BabiesFollowAdults": true,
+"GrassEatAmount": 3,
+"HappinessDrain": 2,
+"UpDownPetHitboxTileSize": "1, 1",
+"LeftRightPetHitboxTileSize": "1, 1",
+"BabyUpDownPetHitboxTileSize": "1, 1",
+"BabyLeftRightPetHitboxTileSize": "1, 1",
+"StatToIncrementOnProduce": [
+],
+"ShowInSummitCredits": false,
+"CustomFields": {
+"mushymato.LivestockBazaar/BuyFrom.Marnie": false,
+"mushymato.LivestockBazaar/BuyFrom.Fellowclown.YV_FrancineAnimalPhone": true,
+"mushymato.LivestockBazaar/TradeItemId.Fellowclown.YV_FrancineAnimalPhone": "Fellowclown.YV_ArcanianCoin",
+"mushymato.LivestockBazaar/TradeItemAmount.Fellowclown.YV_FrancineAnimalPhone": 550,
+}
+},
+}
+},
+]
+}

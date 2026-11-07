@@ -1,0 +1,92 @@
+{
+    "Changes": [
+		
+//	RECOLORS (Manual Selection)
+
+//	//	Universal Recolor
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ATK_AToMS_INcave",
+            "FromFile": "options/Universal_Recolors/IN_misc/D40_H1/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Universal_Recolors": "True"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ATK_AToMS_INcave",
+            "FromFile": "options/Universal_Recolors/IN_misc/D40_H1/ATK_AToMS_INcave_{{INgrass_Season}}.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 384, "Height": 320 },
+			"ToArea": { "X": 0, "Y": 16, "Width": 384, "Height": 320 },
+			"PatchMode": "Replace",
+			"When": { 
+				"season": "{{INgrass_Season}}",
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Universal_Recolors": "True"
+			}
+        },
+//
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ATK_AToMS_INextra",
+            "FromFile": "options/Universal_Recolors/IN_misc/D40_H1/{{TargetWithoutPath}}.png",
+			"PatchMode": "Replace",
+			"When": {
+				"Allow_Recolors": "True",
+				"Manual_Override": "True",
+				"Universal_Recolors": "True"
+			}
+        },
+		
+//	INDOOR GRASS COMPATIBILITY
+
+//	//	Waterfall Forest
+
+		{
+			"Action": "EditImage",
+			"Target": "TerrainFeatures/grass",
+			"FromFile": "assets/IN_misc/ATK_AToMS_INgrass.png",
+			"PatchMode": "Overlay",
+			"When": { 
+				"LocationName": "A_TK.FarmProjectForaging_Custom_waterfall_cave_WaFF, A_TK.FarmProjectForaging.LE_Custom_waterfall_cave_WaFFLE",
+				"Alt_In_Grass": "True"
+				},
+			"Update": "OnLocationChange"
+		},
+//
+		{
+			"Action": "EditImage",
+			"Target": "TerrainFeatures/grass",
+			"FromFile": "assets/IN_misc/ATK_AToMS_INgrass.png",
+			"PatchMode": "Overlay",
+			"When": { 
+				"LocationName": "A_TK.FarmProjectForaging_Custom_waterfall_cave_WaFF, A_TK.FarmProjectForaging.LE_Custom_waterfall_cave_WaFFLE",
+				"HasMod": "herbivoor.UniversalRecolors",
+				"Alt_In_Grass": "True",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "TerrainFeatures/grass",
+			"FromFile": "assets/IN_misc/ATK_AToMS_INgrass.png",
+			"PatchMode": "Overlay",
+			"When": { 
+				"LocationName": "A_TK.FarmProjectForaging_Custom_waterfall_cave_WaFF, A_TK.FarmProjectForaging.LE_Custom_waterfall_cave_WaFFLE",
+				"Allow_Recolors": "True",
+				"Alt_In_Grass": "True",
+				"Manual_Override": "True",
+				"Universal_Recolors": "True"
+			},
+			"Update": "OnLocationChange"
+		}
+	]
+}

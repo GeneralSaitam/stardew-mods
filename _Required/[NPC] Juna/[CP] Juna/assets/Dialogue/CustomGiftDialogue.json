@@ -1,0 +1,73 @@
+{
+  "Changes": [
+    {
+      "LogName": "Gift Dialogue Main",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        //Loved
+        "AcceptGift_(O)123": "{{i18n: gift.reaction.ancientdoll}}",
+        "AcceptGift_(O)104": "{{i18n: gift.reaction.elvishjewelry}}",
+        "AcceptGift_(O)107": "{{i18n: gift.reaction.dinosauregg}}",
+        "AcceptGift_(O)126": "{{i18n: gift.reaction.strangedoll}}",
+        "AcceptGift_(O)127": "{{i18n: gift.reaction.strangedoll}}",
+        "AcceptGift_(O)210": "{{i18n: gift.reaction.hashbrowns}}",
+        "AcceptGift_(O)211": "{{i18n: gift.reaction.pancakes}}",
+        "AcceptGift_(O)221": "{{i18n: gift.reaction.pinkcake}}",
+        "AcceptGift_(O)561": "{{i18n: gift.reaction.ghost.crystal}}",
+        "AcceptGift_(O)579": "{{i18n: gift.reaction.prehistoric}}",
+        "AcceptGift_(O)638": "{{i18n: gift.reaction.cherry}}",
+        "AcceptGift_(O)376": "{{i18n: gift.reaction.poppy}}",
+        "AcceptGift_jelly_item": "{{i18n: gift.reaction.tag.jelly}}",
+        "AcceptGift_(O)WWWA.AutographedPhoto": "{{i18n: gift.reaction.RodneyAutograph}}",
+        "AcceptGift_(O)WWWA.GenuineAutograph": "{{i18n: gift.reaction.RodneyAutograph}}",
+        //Liked
+        "AcceptGift_(O)171": "{{i18n: gift.reaction.brokencd}}",
+        "AcceptGift_(O)873": "{{i18n: gift.reaction.pinacolada}}",
+        //Hated
+        "AcceptGift_(O)155": "{{i18n: gift.reaction.scucumber}}",
+        "AcceptGift_(O)422": "{{i18n: gift.reaction.purplemushroom}}",
+        "AcceptGift_(O)768": "{{i18n: gift.reaction.solaressence}}",
+        "AcceptGift_(O)769": "{{i18n: gift.reaction.voidessence}}",
+        //Disliked
+        "AcceptGift_category_fish": "{{i18n: gift.reaction.category.fish}}"
+      }
+    },
+
+    {
+        "LogName": "GD Joja Cola BA",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Juna",
+        "Entries": {
+            "AcceptGift_(O)167": "{{Random: {{i18n: gift.reaction.cola.0}} ++ {{i18n: gift.reaction.cola.1}} ++ {{i18n: gift.reaction.cola.2}} ++ {{i18n: gift.reaction.cola.3}} |inputSeparator=++}}"
+        },
+        "When": {
+            "HasSeenEvent |contains=86060100": false
+        }
+    },
+
+    {
+      "LogName": "GD Joja Cola AA",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+          "AcceptGift_(O)167": "{{Random: {{i18n: gift.reaction.cola.0}} ++ {{i18n: gift.reaction.cola.1}} ++ {{i18n: gift.reaction.cola.2}} |inputSeparator=++}}"
+      },
+      "When": {
+          "HasSeenEvent |contains=86060100": true
+      }
+  },
+
+    {
+        "LogName": "GD Potato",
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Juna",
+        "Entries": {
+            "AcceptGift_(O)192": "{{i18n: gift.reaction.potato}}"
+        },
+        "When": {
+            "HasSeenEvent": "86060002"
+        }
+    }
+  ]
+}

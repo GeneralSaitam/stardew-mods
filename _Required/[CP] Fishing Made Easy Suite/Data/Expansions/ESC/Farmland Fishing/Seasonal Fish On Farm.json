@@ -1,0 +1,86 @@
+{
+  "Changes": [
+    {
+      "LogName": "ESC - Seasonal Fish On Farm",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Entries": {
+        "(O)EastScarp_Golden_Trout": {
+          "ItemId": "(O)EastScarp_Golden_Trout"
+        },
+        "(O)EastScarp_Kokanee_Salmon": {
+          "ItemId": "(O)EastScarp_Kokanee_Salmon"
+        },
+        "(O)EastScarp_King_Carp": {
+          "ItemId": "(O)EastScarp_King_Carp"
+        },
+        "(O)EastScarp_Cerulean_Nudibranch": {
+          "ItemId": "(O)EastScarp_Cerulean_Nudibranch",
+          "Condition": "LOCATION_SEASON Here winter"
+        },
+        "(O)EastScarp_Ornate_Nudibranch": {
+          "ItemId": "(O)EastScarp_Ornate_Nudibranch",
+          "Condition": "LOCATION_SEASON Here spring"
+        },
+        "(O)EastScarp_Sea_Bunny_Nudibranch": {
+          "ItemId": "(O)EastScarp_Sea_Bunny_Nudibranch",
+          "Condition": "LOCATION_SEASON Here summer"
+        },
+        "(O)EastScarp_Sunset_Nudibranch": {
+          "ItemId": "(O)EastScarp_Sunset_Nudibranch",
+          "Condition": "LOCATION_SEASON Here fall"
+        },
+        "(O)EastScarp_Red_Herring": {
+          "ItemId": "(O)EastScarp_Red_Herring"
+        },
+        "(O)EastScarp_Fairy_Betta": {
+          "ItemId": "(O)EastScarp_Fairy_Betta",
+          "Condition": "LOCATION_SEASON Here spring summer fall"
+        },
+        "(O)EastScarp_Obsidian_Maw": {
+          "ItemId": "(O)EastScarp_Obsidian_Maw"
+        },
+        "(O)EastScarp_Slime_Barbel": {
+          "ItemId": "(O)EastScarp_Slime_Barbel"
+        }
+      },
+      "When": {
+        "Seasonal Fish On Farm": true
+      }
+    },
+    {
+      "LogName": "ESC - Seasonal Fish On Farm All Seasons",
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "TargetField": [
+        "Farm_{{FarmType}}",
+        "Fish"
+      ],
+      "Fields": {
+        "(O)EastScarp_Cerulean_Nudibranch": {
+          "Condition": null
+        },
+        "(O)EastScarp_Ornate_Nudibranch": {
+          "Condition": null
+        },
+        "(O)EastScarp_Sea_Bunny_Nudibranch": {
+          "Condition": null
+        },
+        "(O)EastScarp_Sunset_Nudibranch": {
+          "Condition": null
+        },
+        "(O)EastScarp_Fairy_Betta": {
+          "Condition": null
+        }
+      },
+      "When": {
+        "Seasonal Fish On Farm": true,
+        "All Seasons": true
+      }
+    }
+  ]
+}

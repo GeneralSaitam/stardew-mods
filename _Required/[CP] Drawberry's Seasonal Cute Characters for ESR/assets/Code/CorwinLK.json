@@ -1,0 +1,101 @@
+{
+	"Changes": [
+		// OUTFIT LOADS
+		{
+			"LogName": "Load CorwinLK's Outfits",
+			"Action": "Load",
+			"Priority": "High",
+			"Target": "Portraits/CorwinLK_{{PortraitStyle}}_Fall, Portraits/CorwinLK_{{PortraitStyle}}_FlowerDance, Portraits/CorwinLK_{{PortraitStyle}}_SpiritsEve, Portraits/CorwinLK_{{PortraitStyle}}_Spring, Portraits/CorwinLK_{{PortraitStyle}}_Summer, Portraits/CorwinLK_{{PortraitStyle}}_Winter, Characters/CorwinLK_Fall, Characters/CorwinLK_FlowerDance, Characters/CorwinLK_SpiritsEve, Characters/CorwinLK_Spring, Characters/CorwinLK_Summer, Characters/CorwinLK_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/CorwinLK/{{TargetWithoutPath}}.png"
+		},
+		// NOSE OVERLAY
+		{
+			"LogName": "CorwinLK - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/CorwinLK_Fall, Characters/CorwinLK_FlowerDance, Characters/CorwinLK_SpiritsEve, Characters/CorwinLK_Spring, Characters/CorwinLK_Summer, Characters/CorwinLK_Winter",
+			"FromFile": "assets/{{TargetPathOnly}}/CorwinLK/CorwinLK_nose.png",
+			"PatchMode": "Overlay",
+			"Priority": "Late",
+			"When": 
+			{
+				"NoNose": "false",
+			},
+		},
+		//APPEARANCE DATA
+		{
+			"LogName": "CorwinLK Appearance Data",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Characters",
+			"TargetField": [
+				"CorwinLK",
+				"Appearance"
+			],
+			"Entries": {
+				//Regular Outfits
+				"{{ModId}}.CorwinLKSpring": {
+					"Id": "{{ModId}}.CorwinLKSpring",
+					"Condition": "SEASON spring",
+					"Sprite": "Characters/CorwinLK_Spring",
+					"Portrait": "Portraits/CorwinLK_{{PortraitStyle}}_Spring",
+					"Precedence": -200,
+				},
+				"{{ModId}}.CorwinLKSummer": {
+					"Id": "{{ModId}}.CorwinLKSummer",
+					"Condition": "SEASON Summer",
+					"Sprite": "Characters/CorwinLK_Summer",
+					"Portrait": "Portraits/CorwinLK_{{PortraitStyle}}_Summer",
+					"Precedence": -200,
+				},
+				"{{ModId}}.CorwinLKFall": {
+					"Id": "{{ModId}}.CorwinLKFall",
+					"Condition": "SEASON Fall",
+					"Sprite": "Characters/CorwinLK_Fall",
+					"Portrait": "Portraits/CorwinLK_{{PortraitStyle}}_Fall",
+					"Precedence": -200,
+				},
+				"{{ModId}}.CorwinLKWinter": {
+					"Id": "{{ModId}}.CorwinLKWinter",
+					"Condition": "SEASON Winter",
+					"Sprite": "Characters/CorwinLK_Winter",
+					"Portrait": "Portraits/CorwinLK_{{PortraitStyle}}_Winter",
+					"Precedence": -200,
+				},
+				//Festival Outfits
+				"{{ModId}}.CorwinLKFlowerDance": {
+					"Id": "{{ModId}}.CorwinLKFlowerDance",
+					"Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+					"Sprite": "Characters/CorwinLK_FlowerDance",
+					"Portrait": "Portraits/CorwinLK_{{PortraitStyle}}_FlowerDance",
+					"Precedence": -2000,
+				},
+				"{{ModId}}.CorwinLKSpirit": {
+					"Id": "{{ModId}}.CorwinLKSpirit",
+					"Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn EastScarp_VillageInn_SpiritEve EastScarp_Crossing {{FestivalOutfits}}\"",
+					"Sprite": "Characters/CorwinLK_SpiritsEve",
+					"Portrait": "Portraits/CorwinLK_{{PortraitStyle}}_SpiritsEve",
+					"Precedence": -2000,
+				},
+			},
+		},
+		//MISCELLANEOUS
+		{
+			"LogName": "CorwinLK - Spouse Picture",
+			"Action": "EditImage",
+			"Target": "Mods/Lemurkat.EastScarp/esfurniture", /// Mods/UniqueID/Image name
+			"FromFile": "assets/Characters/esfurniture.png",
+			"FromArea": {"X": 71, "Y": 71, "Width": 18, "Height": 18},
+			"ToArea": {"X": 71, "Y": 71, "Width": 18, "Height": 18},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "CorwinLK Calendar Sprite Edits",
+			"Action": "EditImage",
+			"Target": "Characters/CorwinLK",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+		},			
+	]
+	}

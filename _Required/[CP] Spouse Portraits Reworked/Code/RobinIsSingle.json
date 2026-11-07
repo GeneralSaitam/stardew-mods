@@ -1,0 +1,36 @@
+{
+    "Changes": [
+    //Robin
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/Hitme.RobinIsSingleRevised_RobinPortrait",
+        "FromFile": "Assets/{{PortraitRecolor}}/RobinIsSingle/Robin1.png",
+        "PatchMode": "Replace",
+    },
+
+    //Frame
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/Hitme.RobinIsSingleRevised_RobinPortrait",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{Frame}}.png",
+        "ToArea": { "X": "0", "Y": "0", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "No",
+            "Query:'{{Frame}}' = 'Unique'": false,
+        },
+        "PatchMode": "Overlay", 
+    },
+
+    {
+        "Action": "EditImage",
+        "Target": "Tilesheets/Hitme.RobinIsSingleRevised_RobinPortrait",
+        "FromFile": "Assets/Frame/{{PortraitRecolor}}/{{IsFrameSeasonal}}/{{Season}}.png",
+        "ToArea": { "X": "0", "Y": "0", "Width": 32, "Height": 32},
+        "When": {
+            "IsFrameSeasonal": "{{Frame}}",
+            "Season": "{{Season}}",
+        },
+        "PatchMode": "Overlay",
+    },
+]
+}

@@ -1,0 +1,5248 @@
+{
+  "Format": "2.8.0",
+  "ConfigSchema": {
+    "Highlight Texts For More Info!": {
+      "Section": "= WELCOME! =",
+      "Description": "= Have A Fantastic Day & Happy Fishing! =",
+      "AllowValues": "Version 7.2.1",
+      "Default": "Version 7.2.1"
+    },
+    "Disable Yearly Developer Gifts": {
+      "Description": "This setting will disable the mod developer gifts you will receive yearly. By default, you will receive a yearly randomized gift from myself :-)",
+      "Section": "= WELCOME! =",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Fishing Difficulty": {
+      "Description": "Select a difficulty setting for the fishing minigame. Easy Settings: Decrease difficulty by 5% to 100%, and include a Super Easy Fishing option. Please note; The Super Easy; Max Fish Bar & Buff option will also increase the fishing level with a buff, this will also increase the chances certain fish can spawn. This enhancement will be particularly beneficial for players aiming to collect fishing treasure chests and grant full fishing xp. Easy Sunday Fishing: Decrease difficulty by 10% to 50% on Sundays only. Hard Settings: Increase difficulty by 5% to 100% with a NIGHTMARE option for those seeking the ultimate challenge! Scroll down for additional options.",
+      "Section": "Fishing Minigame",
+      "AllowValues": "Default, 5% Easier, 10% Easier, 15% Easier, 20% Easier, 25% Easier, 30% Easier, 35% Easier, 40% Easier, 45% Easier, 50% Easier, 55% Easier, 60% Easier, 65% Easier, 70% Easier, 75% Easier, 80% Easier, 85% Easier, 90% Easier, 95% Easier, 100% Easier, Super Easy; Max Fish Bar & Buff, 10% Easy Sunday, 20% Easy Sunday, 30% Easy Sunday, 40% Easy Sunday, 50% Easy Sunday, 5% Harder, 10% Harder, 15% Harder, 20% Harder, 25% Harder, 30% Harder, 35% Harder, 40% Harder, 45% Harder, 50% Harder, 55% Harder, 60% Harder, 65% Harder, 70% Harder, 75% Harder, 80% Harder, 85% Harder, 90% Harder, 95% Harder, 100% Harder, NIGHTMARE",
+      "Default": "Default"
+    },
+    "Randomized Difficulty": {
+      "Description": "When the Fishing Difficulty setting is active, the difficulty of catching fish will vary within the chosen range. For example, setting the difficulty to 25% Easier means each day, fish will be between 0% and 25% easier to catch. One day, they might be 17% easier, and the next day, 23% easier. This setting is compatible with the Easy, Easy Sunday, and Hard Fishing Difficulty options. However, it does NOT work with the Super Easy and NIGHTMARE options!",
+      "Section": "Fishing Minigame",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "All Times Of Day": {
+      "Description": "All fish are now catchable at any time of day.",
+      "Section": "Fishing Minigame",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "All Types Of Weather": {
+      "Description": "All fish, except legendary fish, can now be caught in all types of weather.",
+      "Section": "Fishing Minigame",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "All Seasons": {
+      "Description": "All fish, except legendary fish, can now be caught in every season.",
+      "Section": "Fishing Minigame",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Same Spawn Rates": {
+      "Description": "All fish, except legendary fish, now share the same spawn rates.",
+      "Section": "Fishing Minigame",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Cave/Mine Fish Availability": {
+      "Description": "The rare cave and mine fish; Stonefish, Ice Pip, and Lava Eel are now available in specific locations. Must be Fishing Level 5. Stonefish; Mountain, Ice Pip; Forest Lake, Lava Eel; Desert. Choose a spawn rate for the fish. Ranges from 1% to 50% chance. Scroll down to see more options.",
+      "Section": "Fish Availability",
+      "AllowValues": "Default, 1% Chance, 5% Chance, 10% Chance, 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance",
+      "Default": "Default"
+    },
+    "Night Market Fish Availability": {
+      "Description": "The Night Market Fish (Midnight Squid, Spook Fish, and Blobfish) will now be fishable anywhere on the Beach during Winter after 5pm. Must be Fishing level 5. The All Times Of Day and All Seasons settings will also have an effect on these fish.",
+      "Section": "Fish Availability",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Fishable Prize Tickets": {
+      "Description": "Prize Tickets are now a fishable item. Similar to Seaweed and Algae (No minigame). Select a spawn rate ranging from a 1% to 50% chance. Scroll down for additional options.",
+      "Section": "Fish Availability",
+      "AllowValues": "Default, 1% Chance, 2% Chance, 3% Chance, 4% Chance, 5% Chance, 6% Chance, 7% Chance, 8% Chance, 9% Chance, 10% Chance, 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance",
+      "Default": "Default"
+    },
+    "Clean Waters/No Trash": {
+      "Description": "Select a setting to remove or replace all trash items while fishing. No Trash: Disables trash while fishing entirely. Crab Pot Fish: Replaces trash items with crab pot fish during fishing. Note that occasional trash items may still be fished up. Trash serves as a fallback if no fish spawn, but these settings significantly reduce trash chances.",
+      "Section": "Clean Waters",
+      "AllowValues": "Default, No Trash, Crab Pot Fish",
+      "Default": "Default"
+    },
+    "Clean Waters/No Weeds": {
+      "Description": "Select a setting to remove or replace Seaweed, Green Algae, and White Algae while fishing. No Weeds and Algae: Disables all weeds and algae while fishing entirely. Crab Pot Fish: Replaces seaweed and algae with any crab pot fish during fishing.",
+      "Section": "Clean Waters",
+      "AllowValues": "Default, No Weeds and Algae, Crab Pot Fish",
+      "Default": "Default"
+    },
+    "Iridium Rod Attach. Slots": {
+      "Description": "Select how many attachment slots are available on the Iridium Rod. Default is 1. This will allow you to stack bobber and lure effects. Please note, this will only apply to newly acquired Iridium Rods after the setting is enabled, you may have to repurchase a rod! Ranges from 2 to 10 extra slots, each selection also accounts for there being 1 bait slot. Please note, this will only apply to newly acquired Iridium Rods after the setting is enabled! Also note, adding extra slots may cause the slot graphics to go outside the info box. This will not have any effect on the game. Scroll down to see additional options.",
+      "Section": "Fishing Rods",
+      "AllowValues": "Default (2), 3, 4, 5, 6, 7, 8, 9, 10, 11",
+      "Default": "Default (2)"
+    },
+    "Adv. Iridium Rod Attach. Slots": {
+      "Description": "Select how many attachment slots are available on the Advanced Iridium Rod. Default is 3. This will allow you to stack bobber and lure effects. Ranges from 3 to 10 extra attachment slots, each selection also accounts for there being 1 bait slot. Please note, this will only apply to newly acquired Advanced Iridium Rods after the setting is enabled! Also note, adding extra slots may cause the slot graphics to go outside the info box. This will not have any effect on the game. Scroll down to see additional options.",
+      "Section": "Fishing Rods",
+      "AllowValues": "Default (3), 4, 5, 6, 7, 8, 9, 10, 11",
+      "Default": "Default (3)"
+    },
+    "Crab Pots Same Spawn Rates": {
+      "Description": "Crab Pot fish will now all share the same spawn rates. Does not apply to the Jellies and Bug Meat settings below!",
+      "Section": "Crab Pot Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Crab Pots No Trash": {
+      "Description": "Crab Pots will no longer yield trash items.",
+      "Section": "Crab Pot Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Crab Pots Jellies": {
+      "Description": "Crab Pots now spawn Jellies. This includes River, Sea, and Cave Jellies. If using the Lookup Anything and/or Stardew Progress mods, this will also remove the jellies from the fish collections tab. This is due to a bug in game but this will not have any negative impacts on existing playthroughs if completing the fish collection! It will simply remove the jelly entries and the collection will still be completable!",
+      "Section": "Crab Pot Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Crab Pots Bug Meat": {
+      "Description": "Crab Pots now spawn Bug Meat. Choose whether they can spawn in freshwater (rivers and lakes) or the ocean (beach).",
+      "Section": "Crab Pot Fishing",
+      "AllowValues": "Default, Freshwater, Ocean",
+      "Default": "Default"
+    },
+    "Jelly Spawn Rates": {
+      "Description": "Select a setting to determine the spawn rates of all jellies while fishing. Ranges from a 1% to 50% chance or remove jellies altogether. The Default 10% chance has them in the same pool as normal fish so they're more rare than stated. Selecting 10% in the options will be a 'true' 10% chance to spawn jellies instead of using the default method. All other spawn settings will also put the jellies in their own spawn pool. Using this setting also removes the luck chance boost. Scroll down for additional options.",
+      "Section": "Jelly Fishing",
+      "AllowValues": "Default (10%), No Jellies, 1% Chance, 2% Chance, 3% Chance, 4% Chance, 5% Chance, 6% Chance, 7% Chance, 8% Chance, 9% Chance, True 10% Chance, 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance",
+      "Default": "Default (10%)"
+    },
+    "Cave Jelly Desert": {
+      "Description": "Cave Jelly will now spawn in the Desert fishing area. Replaces the River Jelly that would normally spawn in that location.",
+      "Section": "Jelly Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Jellies Are Crab Pot Fish": {
+      "Description": "All jellies will now be any crab pot fish when fished up. This has no effect on the Cave Jelly Desert setting.",
+      "Section": "Jelly Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Fish Sell Value": {
+      "Description": "Select the sell value of all fish (except legendary fish). The range is from 10% to 1000% increase or a 10% to 99% decrease. Refer to the Legendary Fish Sell Values setting below to do the same for legendary fish. Note that enabling or disabling these settings affects newly acquired fish after your chosen setting is enabled. Scroll down for additional options.",
+      "Section": "Value of Fishing",
+      "AllowValues": "Default, Increase by 10%, Increase by 20%, Increase by 30%, Increase by 40%, Increase by 50%, Increase by 60%, Increase by 70%, Increase by 80%, Increase by 90%, Increase by 100%, Increase by 125%, Increase by 150%, Increase by 175%, Increase by 200%, Increase by 225%, Increase by 250%, Increase by 275%, Increase by 300%, Increase by 325%, Increase by 350%, Increase by 375%, Increase by 400%, Increase by 425%, Increase by 450%, Increase by 475%, Increase by 500%, Increase by 525%, Increase by 550%, Increase by 575%, Increase by 600%, Increase by 625%, Increase by 650%, Increase by 675%, Increase by 700%, Increase by 725%, Increase by 750%, Increase by 775%, Increase by 800%, Increase by 825%, Increase by 850%, Increase by 875%, Increase by 900%, Increase by 925%, Increase by 950%, Increase by 975%, Increase by 1000%, Decrease by 10%, Decrease by 20%, Decrease by 30%, Decrease by 40%, Decrease by 50%, Decrease by 60%, Decrease by 70%, Decrease by 80%, Decrease by 90%, Decrease by 99%",
+      "Default": "Default"
+    },
+    "Legendary Fish Sell Value": {
+      "Description": "Select the sell value of legendary fish. The range is from 10% to 1000% increase and a 10% to 99% decrease. Note that enabling or disabling these settings affects newly acquired legendary fish after your chosen setting is enabled. Scroll down for additional options.",
+      "Section": "Value of Fishing",
+      "AllowValues": "Default, Increase by 10%, Increase by 20%, Increase by 30%, Increase by 40%, Increase by 50%, Increase by 60%, Increase by 70%, Increase by 80%, Increase by 90%, Increase by 100%, Increase by 125%, Increase by 150%, Increase by 175%, Increase by 200%, Increase by 225%, Increase by 250%, Increase by 275%, Increase by 300%, Increase by 325%, Increase by 350%, Increase by 375%, Increase by 400%, Increase by 425%, Increase by 450%, Increase by 475%, Increase by 500%, Increase by 525%, Increase by 550%, Increase by 575%, Increase by 600%, Increase by 625%, Increase by 650%, Increase by 675%, Increase by 700%, Increase by 725%, Increase by 750%, Increase by 775%, Increase by 800%, Increase by 825%, Increase by 850%, Increase by 875%, Increase by 900%, Increase by 925%, Increase by 950%, Increase by 975%, Increase by 1000%, Decrease by 10%, Decrease by 20%, Decrease by 30%, Decrease by 40%, Decrease by 50%, Decrease by 60%, Decrease by 70%, Decrease by 80%, Decrease by 90%, Decrease by 99%",
+      "Default": "Default"
+    },
+    "Seasonal Fish On Farm": {
+      "Description": "Seasonal Fish are now catchable on the farm, across all farm maps.",
+      "Section": "Farmland Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Specialty Fish On Farm": {
+      "Description": "Specialty Fish are now catchable on the farm, across all farm maps.",
+      "Section": "Farmland Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Legendary Fish On Farm": {
+      "Description": "Legendary Fish are now catchable on the farm, across all farm maps. Only one legendary fish can be caught on a farm map unless you enable the 'Recatch Legendary Fish' option which will allow you to catch more than one.",
+      "Section": "Farmland Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Recatch Legendary Fish": {
+      "Description": "Legendary fish can now be caught multiple times.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Legendary Quests (Recatch REQ)": {
+      "Description": "Unlock new quests related to legendary fish! Keep in mind that the ‘Recatch Legendary Fish’ setting must be enabled for this feature to function. Once you’ve successfully caught a legendary fish and are in the appropriate season, these new quests will become available.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Entire Area Legendary Fish": {
+      "Description": "Legendary fish are no longer restricted to specific points on the map; they can now be caught anywhere within their residing area. For instance, the Crimsonfish can be found all around the beach, not solely at the eastern docks.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Legendary Fish Spawn Rates": {
+      "Description": "Select the chance of legendary fish spawning while fishing. Ranges from 1% to 50% chance. Scroll down for additional options.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "Default, 1% Chance, 2% Chance, 3% Chance, 4% Chance, 5% Chance, 6% Chance, 7% Chance, 8% Chance, 9% Chance, 10% Chance, 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance",
+      "Default": "Default"
+    },
+    "Legendary Fish No Level": {
+      "Description": "Removes the fishing requirements in order for legendary fish to spawn.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Legendary Fish No Crown": {
+      "Description": "Legendary fish will no longer have the crown (Boss Fish) icon during the minigame. This will also lower the xp to a standard fish rate.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Qi's Legendary Fish Crown": {
+      "Description": "The legendary fish that appear during Qi’s Special Order Request will now be distinguished by the crown (Boss Fish) icon in the fishing minigame. This will also increase the xp to a legendary fish rate.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "All Weather Legendary Fish": {
+      "Description": "Legendary fish can now be caught in all types of weather.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "All Seasons Legendary Fish": {
+      "Description": "Legendary fish can now be caught in every season.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Remove Shinidamachu Day Req.": {
+      "Description": "MORE NEW FISH (MNF) ONLY! Remove the Legendary Fish, Shinidamachu's day requirement to spawn. This option will only work if you have the More New Fish (MNF) mod installed!",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Lucky Legendary Fish": {
+      "Description": "Legendary fish now only spawn when daily luck from the TV is at its highest.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Curious Legendary Fish": {
+      "Description": "Select the effectiveness of the Curiosity Lure buff for Legendary Fish. This range spans from 10% to 100%. Scroll down for additional options.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "Default, Increase by 10%, Increase by 15%, Increase by 20%, Increase by 25%, Increase by 30%, Increase by 35%, Increase by 40%, Increase by 45%, Increase by 50%, Increase by 55%, Increase by 60%, Increase by 65%, Increase by 70%, Increase by 75%, Increase by 80%, Increase by 85%, Increase by 90%, Increase by 95%, Increase by 100%",
+      "Default": "Default"
+    },
+    "Legendary Fish Gifts": {
+      "Description": "Legendary fish are now a universally loved gift for all the villagers.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Legendary Fish 7am To 9am": {
+      "Description": "Legendary fish are now exclusively accessible from 7AM to 9AM, and this time frame can be combined with the other time settings.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Legendary Fish 12pm To 2pm": {
+      "Description": "Legendary fish are now exclusively accessible from 12PM to 2PM, and this time frame can be combined with the other time settings.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Legendary Fish 11pm To 1am": {
+      "Description": "Legendary fish are now exclusively accessible from 11PM to 1AM, and this time frame can be combined with the other time settings.",
+      "Section": "Legendary Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Fishable Prismatic Shards (REQ)": {
+      "Description": "Prismatic Shards are now available for fishing and can be caught in most locations upon reaching Fishing Level 5. Prismatic Shards can also be placed inside fish tanks with this setting enabled! This setting is essential for configuring most of the Prismatic Shard settings below!",
+      "Section": "Prismatic Shard Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Prismatic Shard Spawn Rate": {
+      "Description": "Select the spawn rate of fishable Prismatic Shards. Ranges from a 1% to 50% chance. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect! Scroll down for additional options.",
+      "Section": "Prismatic Shard Fishing",
+      "AllowValues": "Default (5%), 1% Chance, 2% Chance, 3% Chance, 4% Chance, 5% Chance, 6% Chance, 7% Chance, 8% Chance, 9% Chance, 10% Chance, 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance",
+      "Default": "Default (5%)"
+    },
+    "Prismatic Shards No Level": {
+      "Description": "Removes the fishing level 5 requirement in order for Prismatic Shards to spawn. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+      "Section": "Prismatic Shard Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Prismatic Shards No Crown": {
+      "Description": "Prismatic Shards will no longer have the legendary fish (crown) icon during the fishing minigame. This will also lower the amount of fishing xp earned when catching a shard. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+      "Section": "Prismatic Shard Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Lucky Prismatic Shards": {
+      "Description": "Prismatic Shards will now only spawn when daily luck is at its highest (purple star on the TV). Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+      "Section": "Prismatic Shard Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Prismatic Shards Weather": {
+      "Description": "Prismatic Shards are now exclusive to rainy and snowy weather for catching. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+      "Section": "Prismatic Shard Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Prismatic Shards 7am To 9am": {
+      "Description": "Prismatic Shards are now exclusive to the hours between 7AM and 9AM for catching, and this time frame can be combined with the other time settings. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+      "Section": "Prismatic Shard Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Prismatic Shards 12pm To 2pm": {
+      "Description": "Prismatic Shards are now exclusive to the hours between 12PM and 2PM for catching, and this time frame can be combined with the other time settings. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+      "Section": "Prismatic Shard Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Prismatic Shards 11pm To 1am": {
+      "Description": "Prismatic Shards are now exclusive to the hours between 11PM and 1AM for catching, and this time frame can be combined with the other time settings. Please note that the Fishable Prismatic Shards (REQ) setting must be enabled for this to take effect!",
+      "Section": "Prismatic Shard Fishing",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Prismatic Shard Sell Value": {
+      "Description": "Select the sell value of Prismatic Shards. The default value is 2000g, but you can adjust it within a range from 2000g to 1g. This will only apply to newly acquired Prismatic Shards after the setting is enabled! Importantly, this setting operates independently and does not rely on any other Prismatic Shard configurations! Scroll down for additional options.",
+      "Section": "Prismatic Shard Fishing",
+      "AllowValues": "2000, 1750, 1500, 1250, 1000, 750, 500, 250, 1",
+      "Default": "2000"
+    },
+    "Fish Pond Rare Loot": {
+      "Description": "Select the likelihood of rare loot spawning from fish pond buildings. Options range from 1.5X to 5X increase. Alternatively, the All Rare Loot 1 to 50% Chance option ensures an equal chance for all rare loot from fish ponds to appear. Scroll down for additional options.",
+      "Section": "Fish Pond Buildings",
+      "AllowValues": "Default, Rare Loot Chance 1.5X, Rare Loot Chance 2X, Rare Loot Chance 2.5X, Rare Loot Chance 3X, Rare Loot Chance 3.5X, Rare Loot Chance 4X, Rare Loot Chance 4.5X, Rare Loot Chance 5X, All Rare Loot 1% Chance, All Rare Loot 2% Chance, All Rare Loot 3% Chance, All Rare Loot 4% Chance, All Rare Loot 5% Chance, All Rare Loot 6% Chance, All Rare Loot 7% Chance, All Rare Loot 8% Chance, All Rare Loot 9% Chance, All Rare Loot 10% Chance, All Rare Loot 15% Chance, All Rare Loot 20% Chance, All Rare Loot 25% Chance, All Rare Loot 30% Chance, All Rare Loot 35% Chance, All Rare Loot 40% Chance, All Rare Loot 45% Chance, All Rare Loot 50% Chance",
+      "Default": "Default"
+    },
+    "FP Fish/Quest Spawn Time": {
+      "Description": "Select the speed for fish reproduction and when new fish pond quests appear from fish pond buildings. These options will take effect only when the fish pond is empty, and you’ve enabled the desired setting before adding fish.",
+      "Section": "Fish Pond Buildings",
+      "AllowValues": "Default, Half The Time, Every Day",
+      "Default": "Default"
+    },
+    "Fish Pond Legendary Fish (REQ)": {
+      "Description": "Legendary fish will now have a variety of loot from fish pond buildings rather than just being roe. This setting is required for the legendary fish pond settings below!",
+      "Section": "Fish Pond Buildings",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Legendary Fish Pond Loot": {
+      "Description": "Select the likelihood of legendary fish rare loot spawning from fish pond buildings. The available settings range from 2X to 5X increase. The Rare Loot Chance All 50% option ensures that all rare loot from fish ponds has an equal chance to spawn. Note: This feature requires the Fish Pond Legendary Fish (REQ) setting to be enabled!",
+      "Section": "Fish Pond Buildings",
+      "AllowValues": "Default, Rare Loot Chance 1.5X, Rare Loot Chance 2X, Rare Loot Chance 2.5X, Rare Loot Chance 3X, Rare Loot Chance 3.5X, Rare Loot Chance 4X, Rare Loot Chance 4.5X, Rare Loot Chance 5X, All Rare Loot 1% Chance, All Rare Loot 2% Chance, All Rare Loot 3% Chance, All Rare Loot 4% Chance, All Rare Loot 5% Chance, All Rare Loot 6% Chance, All Rare Loot 7% Chance, All Rare Loot 8% Chance, All Rare Loot 9% Chance, All Rare Loot 10% Chance, All Rare Loot 15% Chance, All Rare Loot 20% Chance, All Rare Loot 25% Chance, All Rare Loot 30% Chance, All Rare Loot 35% Chance, All Rare Loot 40% Chance, All Rare Loot 45% Chance, All Rare Loot 50% Chance",
+      "Default": "Default"
+    },
+    "LG Fish/Quest Spawn Time": {
+      "Description": "Select the speed for legendary fish reproduction and when new legendary fish pond quests appear from fish pond buildings. This feature requires the Fish Pond Legendary Fish (REQ) setting to be enabled! These options will take effect only when the fish pond is empty, and you’ve enabled the desired setting before adding fish.",
+      "Section": "Fish Pond Buildings",
+      "AllowValues": "Default, Half The Time, Every Day",
+      "Default": "Default"
+    },
+    "Fish Pond Prismatic Shards": {
+      "Description": "Every fish pond building now has the opportunity to yield Prismatic Shards when the fish ponds are at full capacity.",
+      "Section": "Fish Pond Buildings",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Tackle Materials": {
+      "Description": "Reduce the material requirements for crafting tackle and lures.",
+      "Section": "Fishing Tackle and Lures",
+      "AllowValues": "Default, Lessened Materials, 1 Copper Bar",
+      "Default": "Default"
+    },
+    "Tackle Fishing Level 1": {
+      "Description": "All tackle can now be learned at Fishing Level 1.",
+      "Section": "Fishing Tackle and Lures",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Craftable Curiosity Lure": {
+      "Description": "The Curiosity Lure can now be crafted, and the recipe will be learned either at Fishing Level 9 or Level 1. This lure enhances the likelihood of rare fish spawning.",
+      "Section": "Fishing Tackle and Lures",
+      "AllowValues": "Default (Disabled), Enabled (Fish Level 9), Enabled (Fish Level 1)",
+      "Default": "Default (Disabled)"
+    },
+    "Curiosity Lure Materials": {
+      "Description": "Reduce the material requirements for crafting the Curiosity Lure. Note that this feature requires the Craftable Curiosity Lure setting to be enabled!",
+      "Section": "Fishing Tackle and Lures",
+      "AllowValues": "Default, Lessened Materials, 1 Copper Bar",
+      "Default": "Default"
+    },
+    "Craftable Lead Bobber": {
+      "Description": "The Lead Bobber can now be crafted, and the recipe will be learned either at Fishing Level 4 or Level 1. This bobber slows down the bounce of the green fish bar when hitting the bottom.",
+      "Section": "Fishing Tackle and Lures",
+      "AllowValues": "Default (Disabled), Enabled (Fish Level 4), Enabled (Fish Level 1)",
+      "Default": "Default (Disabled)"
+    },
+    "Lead Bobber Materials": {
+      "Description": "Reduce the material requirements for crafting the Lead Bobber. Note that this feature requires the Craftable Lead Bobber setting to be enabled!",
+      "Section": "Fishing Tackle and Lures",
+      "AllowValues": "Default, 1 Iron Ore",
+      "Default": "Default"
+    },
+    "Wild Bait Crafting Materials": {
+      "Description": "Reduce the material requirements for crafting Wild Bait.",
+      "Section": "Fishing Tackle and Lures",
+      "AllowValues": "Default, Lessened Materials, 2 Bug Meat",
+      "Default": "Default"
+    },
+    "Trout Soup Duration": {
+      "Description": "The Trout Soup food item buffs will now persist for a full day.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Trout Soup Level Boost": {
+      "Description": "Select the fishing level boost provided by the Trout Soup food item. By default, it grants a +1 level boost to fishing, but you can adjust it within a range of +2 to +50. Scroll down for additional options.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+      "Default": "Default (1)"
+    },
+    "Trout Soup Ingredients": {
+      "Description": "Select an option to reduce the ingredient requirements for the Trout Soup recipe.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default, Lessened Ingredients, 1 of Any Fish",
+      "Default": "Default"
+    },
+    "Chowder Duration": {
+      "Description": "The Chowder food item buffs will now persist for a full day.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Chowder Level Boost": {
+      "Description": "Select the fishing level boost provided by the Chowder food item. By default, it grants a +1 level boost to fishing, but you can adjust it within a range of +2 to +50. Scroll down for additional options.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+      "Default": "Default (1)"
+    },
+    "Chowder Ingredients": {
+      "Description": "Select an option to reduce the ingredient requirements for the Chowder recipe.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default, Lessened Ingredients, 1 of Any Fish",
+      "Default": "Default"
+    },
+    "Shrimp Cocktail Duration": {
+      "Description": "The Shrimp Cocktail food item buffs will now persist for a full day.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Shrimp Cocktail Level Boost": {
+      "Description": "Select the fishing level boost provided by the Shrimp Cocktail food item. By default, it grants a +1 level boost to fishing, but you can adjust it within a range of +2 to +50. Scroll down for additional options.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+      "Default": "Default (1)"
+    },
+    "Shrimp Cocktail Ingredients": {
+      "Description": "Select an option to reduce the ingredient requirements for the Shrimp Cocktail recipe.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default, Lessened Ingredients, 1 of Any Fish",
+      "Default": "Default"
+    },
+    "Fish Taco Duration": {
+      "Description": "The Fish Taco food item buffs will now persist for a full day.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Fish Taco Level Boost": {
+      "Description": "Select the fishing level boost provided by the Fish Taco food item. By default, it grants a +2 level boost to fishing, but you can adjust it within a range of +3 to +50. Scroll down for additional options.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default (2), 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+      "Default": "Default (2)"
+    },
+    "Fish Taco Ingredients": {
+      "Description": "Select an option to reduce the ingredient requirements for the Fish Taco recipe.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default, Lessened Ingredients, 1 of Any Fish",
+      "Default": "Default"
+    },
+    "Escargot Duration": {
+      "Description": "The Escargot food item buffs will now persist for a full day.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Escargot Level Boost": {
+      "Description": "Select the fishing level boost provided by the Escargot food item. By default, it grants a +2 level boost to fishing, but you can adjust it within a range of +3 to +50. Scroll down for additional options.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default (2), 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+      "Default": "Default (2)"
+    },
+    "Escargot Ingredients": {
+      "Description": "Select an option to reduce the ingredient requirements for the Escargot recipe.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default, Lessened Ingredients, 1 of Any Fish",
+      "Default": "Default"
+    },
+    "Dish O' The Sea Duration": {
+      "Description": "The Dish O' The Sea food item buffs will now persist for a full day.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Dish O' The Sea Level Boost": {
+      "Description": "Select the fishing level boost provided by the Dish O' The Sea food item. By default, it grants a +3 level boost to fishing, but you can adjust it within a range of +4 to +50. Scroll down for additional options.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default (3), 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+      "Default": "Default (3)"
+    },
+    "Dish O' The Sea Fishing Level 1": {
+      "Description": "The Dish O' The Sea recipe is now accessible at Fishing Level 1, rather than Level 3.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Dish O' The Sea Ingredients": {
+      "Description": "Select an option to reduce the ingredient requirements for the Dish O' The Sea recipe.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default, Lessened Ingredients, 1 of Any Fish",
+      "Default": "Default"
+    },
+    "Fish Stew Duration": {
+      "Description": "The Fish Stew food item buffs will now persist for a full day.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Fish Stew Level Boost": {
+      "Description": "Select the fishing level boost provided by the Fish Stew food item. By default, it grants a +3 level boost to fishing, but you can adjust it within a range of +4 to +50. Scroll down for additional options.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default (3), 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+      "Default": "Default (3)"
+    },
+    "Fish Stew Ingredients": {
+      "Description": "Select an option to reduce the ingredient requirements for the Fish Stew recipe.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default, Lessened Ingredients, 1 of Any Fish",
+      "Default": "Default"
+    },
+    "Lobster Bisque Duration": {
+      "Description": "The Lobster Bisque food item buffs will now persist for a full day.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Lobster Bisque Level Boost": {
+      "Description": "Select the fishing level boost provided by the Lobster Bisque food item. By default, it grants a +3 level boost to fishing, but you can adjust it within a range of +4 to +50. Scroll down for additional options.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default (3), 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+      "Default": "Default (3)"
+    },
+    "Lobster Bisque Ingredients": {
+      "Description": "Select an option to reduce the ingredient requirements for the Lobster Bisque recipe.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default, Lessened Ingredients, 1 of Any Fish",
+      "Default": "Default"
+    },
+    "Seafoam Pudding Duration": {
+      "Description": "The Seafoam Pudding food item buffs will now persist for a full day.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Seafoam Pudding Level Boost": {
+      "Description": "Select the fishing level boost provided by the Seafoam Pudding food item. By default, it grants a +4 level boost to fishing, but you can adjust it within a range of +5 to +50. Scroll down for additional options.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default (4), 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50",
+      "Default": "Default (4)"
+    },
+    "Seafoam Pudding Fishing Level 1": {
+      "Description": "The Seafoam Pudding recipe is now accessible at Fishing Level 1, rather than Level 9.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Seafoam Pudding Ingredients": {
+      "Description": "Reduce the ingredient requirements for the Seafoam Pudding recipe, allowing for a range of 1 to 25 of any fish.",
+      "Section": "Food for Fishing and Ingredients",
+      "AllowValues": "Default, Lessened Ingredients, 1 of Any Fish",
+      "Default": "Default"
+    },
+    "Worm Bin Materials": {
+      "Description": "Reduce the material requirements for crafting Worm Bins.",
+      "Section": "Worm Bin Machinery",
+      "AllowValues": "Default, Lessened Materials, 1 Iron Bar",
+      "Default": "Default"
+    },
+    "Worm Bin Level Availability": {
+      "Description": "Select the fishing level at which you can learn the Worm Bin crafting recipe.",
+      "Section": "Worm Bin Machinery",
+      "AllowValues": "Default (Level 4), Fishing Level 3, Fishing Level 2, Fishing Level 1",
+      "Default": "Default (Level 4)"
+    },
+    "Worm Bin Bait Min Amount": {
+      "Description": "Select the minimum daily bait production from Worm Bins, with options ranging from 2 to 100. Scroll down for additional options.",
+      "Section": "Worm Bin Machinery",
+      "AllowValues": "Default (4), 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (4)"
+    },
+    "Worm Bin Bait Max Amount": {
+      "Description": "Select the maximum daily bait production from Worm Bins, with options ranging from 6 to 100. Scroll down for additional options.",
+      "Section": "Worm Bin Machinery",
+      "AllowValues": "Default (5), 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (5)"
+    },
+    "Worm Bin Wild Bait (REQ)": {
+      "Description": "Worm Bins now possess a slight chance of producing Wild Bait. This feature is essential for configuring the Wild Bait settings below!",
+      "Section": "Worm Bin Machinery",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Worm Bin Wild Bait Chance": {
+      "Description": "Select the probability of daily Wild Bait production from Worm Bins. The available range spans from 15% to 100% chance. Note that this feature requires the Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+      "Section": "Worm Bin Machinery",
+      "AllowValues": "Default (10%), 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance, 55% Chance, 60% Chance, 65% Chance, 70% Chance, 75% Chance, 80% Chance, 85% Chance, 90% Chance, 95% Chance, 100% Chance",
+      "Default": "Default (10%)"
+    },
+    "Worm Bin Wild Bait Min Amount": {
+      "Description": "Select the minimum daily production of Wild Bait from Worm Bins, with a range spanning from 2 to 100. Note that this feature requires the Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+      "Section": "Worm Bin Machinery",
+      "AllowValues": "Default (2), 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (2)"
+    },
+    "Worm Bin Wild Bait Max Amount": {
+      "Description": "Select the maximum daily production of Wild Bait from Worm Bins, with a range spanning from 6 to 100. Note that this feature requires the Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+      "Section": "Worm Bin Machinery",
+      "AllowValues": "Default (5), 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (5)"
+    },
+    "Deluxe Worm Bin Materials": {
+      "Description": "Reduce the material requirements for crafting Deluxe Worm Bins.",
+      "Section": "Deluxe Worm Bin Machinery",
+      "AllowValues": "Default, Lessened Materials, 10 Moss",
+      "Default": "Default"
+    },
+    "Deluxe Worm Bin Lvl Availability": {
+      "Description": "Select the fishing level at which you can learn the Deluxe Worm Bin crafting recipe.",
+      "Section": "Deluxe Worm Bin Machinery",
+      "AllowValues": "Default (Level 8), Fishing Level 6, Fishing Level 4, Fishing Level 2",
+      "Default": "Default (Level 8)"
+    },
+    "Deluxe Worm Bin Bait Min": {
+      "Description": "Select the minimum daily bait production from Deluxe Worm Bins, with options ranging from 2 to 100. Scroll down for additional options.",
+      "Section": "Deluxe Worm Bin Machinery",
+      "AllowValues": "Default (4), 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (4)"
+    },
+    "Deluxe Worm Bin Bait Max": {
+      "Description": "Select the maximum daily bait production from Deluxe Worm Bins, with options ranging from 6 to 100. Scroll down for additional options.",
+      "Section": "Deluxe Worm Bin Machinery",
+      "AllowValues": "Default (5), 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (5)"
+    },
+    "Deluxe Worm Bin Wild Bait (REQ)": {
+      "Description": "Deluxe Worm Bins now possess a slight chance of producing Wild Bait. This feature is essential for configuring the Wild Bait settings below!",
+      "Section": "Deluxe Worm Bin Machinery",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Deluxe Worm Bin Wild B. Chance": {
+      "Description": "Select the probability of daily Wild Bait production from Deluxe Worm Bins. The available range spans from 15% to 100% chance. Note that this feature requires the Deluxe Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+      "Section": "Deluxe Worm Bin Machinery",
+      "AllowValues": "Default (10%), 15% Chance, 20% Chance, 25% Chance, 30% Chance, 35% Chance, 40% Chance, 45% Chance, 50% Chance, 55% Chance, 60% Chance, 65% Chance, 70% Chance, 75% Chance, 80% Chance, 85% Chance, 90% Chance, 95% Chance, 100% Chance",
+      "Default": "Default (10%)"
+    },
+    "Deluxe Worm Bin Wild Bait Min": {
+      "Description": "Select the minimum daily production of Wild Bait from Deluxe Worm Bins, with a range spanning from 2 to 100. Note that this feature requires the Deluxe Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+      "Section": "Deluxe Worm Bin Machinery",
+      "AllowValues": "Default (2), 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (2)"
+    },
+    "Deluxe Worm Bin Wild Bait Max": {
+      "Description": "Select the maximum daily production of Wild Bait from Deluxe Worm Bins, with a range spanning from 6 to 100. Note that this feature requires the Deluxe Worm Bin Chance For Wild Bait (REQ) setting to be enabled! Scroll down for additional options.",
+      "Section": "Deluxe Worm Bin Machinery",
+      "AllowValues": "Default (5), 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (5)"
+    },
+    "Recycling Machine Faster": {
+      "Description": "Reduce the production time for Recycling Machines, with options ranging from 50 minutes to 10 minutes. Scroll down for additional options.",
+      "Section": "Recycling Machine",
+      "AllowValues": "Default (60min), 50min, 40min, 30min, 20min, 10min",
+      "Default": "Default (60min)"
+    },
+    "Recycling Machine Materials": {
+      "Description": "Reduce the material requirements for crafting Recycling Machines.",
+      "Section": "Recycling Machine",
+      "AllowValues": "Default, Lessened Materials, 10 Wood",
+      "Default": "Default"
+    },
+    "Recycling Machine Level Avail.": {
+      "Description": "Select the fishing level at which you can acquire the Recycling Machine crafting recipe.",
+      "Section": "Recycling Machine",
+      "AllowValues": "Default (Level 4), Fishing Level 3, Fishing Level 2, Fishing Level 1",
+      "Default": "Default (Level 4)"
+    },
+    "Recycling Machine Produce Min": {
+      "Description": "Select the minimum daily production of materials from Recycling Machines, all items produced by default have different ranges. Picking an option, will make all trash items produce the same number of materials. Scroll down for additional options.",
+      "Section": "Recycling Machine",
+      "AllowValues": "Default, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default"
+    },
+    "Recycling Machine Produce Max": {
+      "Description": "Select the maximum daily production of materials from Recycling Machines, all items produced by default have different ranges. Picking an option, will make all trash items produce the same number of materials. Scroll down for additional options.",
+      "Section": "Recycling Machine",
+      "AllowValues": "Default, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default"
+    },
+    "Recycling Machine Required Mats.": {
+      "Description": "Select the amount of items required to be placed inside Recycling Machines. Default is 1. Scroll down for additional options.",
+      "Section": "Recycling Machine",
+      "AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (1)"
+    },
+    "Recycling Machine Tackle": {
+      "Description": "Recycling Machines will now occasionally yield fishing tackle from all trash items.",
+      "Section": "Recycling Machine",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Recycling Prismatic Shards": {
+      "Description": "Recycling Machines now have a slight chance of yielding a Prismatic Shard from trash items.",
+      "Section": "Recycling Machine",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Fish Smoker Faster": {
+      "Description": "Reduce the production time for Fish Smokers, with options ranging from 40 minutes to 10 minutes.",
+      "Section": "Fish Smoker Machinery",
+      "AllowValues": "Default (50min), 40min, 30min, 20min, 10min",
+      "Default": "Default (50min)"
+    },
+    "Fish Smoker Materials": {
+      "Description": "Reduce the material requirements for crafting Fish Smokers.",
+      "Section": "Fish Smoker Machinery",
+      "AllowValues": "Default, Lessened Materials, 10 Hardwood",
+      "Default": "Default"
+    },
+    "Fish Smoker No Coal": {
+      "Description": "Fish Smokers will no longer require coal to produce smoked fish.",
+      "Section": "Fish Smoker Machinery",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Fish Smoker Quality": {
+      "Description": "Select the quality of smoked fish produced by Fish Smokers.",
+      "Section": "Fish Smoker Machinery",
+      "AllowValues": "Default (No Quality), Gold Quality, Iridium Quality",
+      "Default": "Default (No Quality)"
+    },
+    "Fish Smoker Produce Min": {
+      "Description": "Select the minimum daily production of smoked fish from Fish Smokers, with a range spanning from 2 to 100. Scroll down for additional options.",
+      "Section": "Fish Smoker Machinery",
+      "AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (1)"
+    },
+    "Fish Smoker Produce Max": {
+      "Description": "Select the maximum daily production of smoked fish from Fish Smokers, with a range spanning from 2 to 100. Scroll down for additional options.",
+      "Section": "Fish Smoker Machinery",
+      "AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (1)"
+    },
+    "Fish Smoker Required Mats.": {
+      "Description": "Select the amount of fish required to be placed inside Fish Smokers. Default is 1. Scroll down for additional options.",
+      "Section": "Fish Smoker Machinery",
+      "AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (1)"
+    },
+    "Bait Maker Materials": {
+      "Description": "Reduce the material requirements for crafting Bait Makers.",
+      "Section": "Bait Maker Machinery",
+      "AllowValues": "Default, Lessened Materials, 1 Iron Bar",
+      "Default": "Default"
+    },
+    "Bait Maker Produce Min": {
+      "Description": "Select the minimum daily production of bait from Bait Makers, with a range spanning from 6 to 100. Scroll down for additional options.",
+      "Section": "Bait Maker Machinery",
+      "AllowValues": "Default (5), 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (5)"
+    },
+    "Bait Maker Produce Max": {
+      "Description": "Select the maximum daily production of bait from Bait Makers, with a range spanning from 11 to 100. Scroll down for additional options.",
+      "Section": "Bait Maker Machinery",
+      "AllowValues": "Default (10), 11, 12, 13, 14, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (10)"
+    },
+    "Bait Maker Required Mats.": {
+      "Description": "Select the amount of fish required to be placed inside Bait Makers. Default is 1. Scroll down for additional options.",
+      "Section": "Bait Maker Machinery",
+      "AllowValues": "Default (1), 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100",
+      "Default": "Default (1)"
+    },
+    "Fish Shop Open All Days": {
+      "Description": "Willy’s Fishing Shop will now remain open every day, except during special event days.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Crab Pot Price": {
+      "Description": "Select the price of Crab Pots at Willy’s Fish Shop. The available range spans from 1g to 3000g. Default is 1500. Scroll down for additional options.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "1500, 1250, 1000, 750, 500, 250, 1, 1750, 2000, 2250, 2500, 2750, 3000",
+      "Default": "1500"
+    },
+    "All Fishing Rods Immediately": {
+      "Description": "All Fishing Rods will now be offered for sale immediately at Willy's Fish Shop.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Adv. Iridium Fish Rod Avail.": {
+      "Description": "The Advanced Iridium Fishing Rod will now be offered for sale at Willy's Fish Shop. You can decide whether to make it available Immediately or at Fishing Level 10 rather than having achieved fishing mastery.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "Default, Immediately, Fishing Level 10",
+      "Default": "Default"
+    },
+    "All Fishing Rod Prices": {
+      "Description": "Select the price of the Iridium Fishing Rod at Willy’s Fish Shop. The available range spans from 25% to 100% cheaper, or from 25% to 100% more expensive. Scroll down for additional options.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "Default, 25% Cheaper, 50% Cheaper, 75% Cheaper, 99% Cheaper, 25% More Expensive, 50% More Expensive, 75% More Expensive, 100% More Expensive",
+      "Default": "Default"
+    },
+    "Fish Shop Curiosity/Quality": {
+      "Description": "Willy’s Fish Shop now sells the Curiosity and Quality lures for sale. These lures become available once you reach Fishing Level 9. This setting is affected by the All Tackle Immediately setting.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "All Tackle Immediately": {
+      "Description": "All tackle is now available for sale at Willy’s Fish Shop immediately and no longer dependent on fishing level.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Fish Shop Tackle Prices": {
+      "Description": "Select the sale price of all lures at Willy’s Fish Shop. This range spans from 25% to 99% cheaper, or from 25% to 100% more expensive. Scroll down for additional options.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "Default, 25% Cheaper, 50% Cheaper, 75% Cheaper, 99% Cheaper, 25% More Expensive, 50% More Expensive, 75% More Expensive, 100% More Expensive",
+      "Default": "Default"
+    },
+    "Fish Shop Seafoam Pudding": {
+      "Description": "Willy’s Fish Shop now sells the Seafoam Pudding food item. You can decide whether to make it available Immediately or at Fishing Level 9.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "Default, Immediately, Fishing Level 9",
+      "Default": "Default"
+    },
+    "Fish Shop Seafoam P Price": {
+      "Description": "Select the sale price of the Seafoam Pudding food item at Willy’s Fish Shop. This range spans from 1g to 5000g. Default is 5000g. Please note that the Fish Shop Seafoam Pudding setting must be enabled for this to take effect! Scroll down for additional options.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "5000, 4000, 3000, 2000, 1000, 750, 500, 250, 1",
+      "Default": "5000"
+    },
+    "Fish Shop Worm Bin": {
+      "Description": "Willy’s Fish Shop now sells Worm Bins. This setting is essential for configuring the Worm Bin Price setting below!",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "Default, Immediately, Fishing Level 4, Fishing Level 3, Fishing Level 2, Fishing Level 1",
+      "Default": "Default"
+    },
+    "Fish Shop Worm Bin Price": {
+      "Description": "Select the sale price of the Worm Bin at Willy’s Fish Shop. This range spans from 1g to 5000g. Default is 5000g. Please note that the Fish Shop Worm Bin setting must be enabled for this to take effect! Scroll down for additional options.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "5000, 4000, 3000, 2000, 1500, 1000, 750, 500, 250, 1",
+      "Default": "5000"
+    },
+    "Fish Shop Deluxe Worm Bin": {
+      "Description": "Willy’s Fish Shop now sells Deluxe Worm Bins. This setting is essential for configuring the Deluxe Worm Bin Price setting below!",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "Default, Immediately, Fishing Level 8, Fishing Level 6, Fishing Level 4, Fishing Level 2, Fishing Level 1",
+      "Default": "Default"
+    },
+    "Fish Shop Deluxe Worm Bin Price": {
+      "Description": "Select the sale price of the Deluxe Worm Bin at Willy’s Fish Shop. This range spans from 1g to 10000g. Default is 10000g. Please note that the Fish Shop Deluxe Worm Bin setting must be enabled for this to take effect! Scroll down for additional options.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "10000, 7500, 5000, 4000, 3000, 2000, 1000, 750, 500, 250, 1",
+      "Default": "10000"
+    },
+    "Fish Shop Bait Maker": {
+      "Description": "Willy’s Fish Shop now sells Bait Makers. This setting is essential for configuring the Bait Maker Price setting below!",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Fish Shop Bait Maker Price": {
+      "Description": "Select the sale price of the Bait Maker at Willy’s Fish Shop. This range spans from 1g to 10000g. Default is 10000g. Please note that the Fish Shop Bait Maker setting must be enabled for this to take effect! Scroll down for additional options.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "10000, 7500, 5000, 4000, 3000, 2000, 1000, 750, 500, 250, 1",
+      "Default": "10000"
+    },
+    "Fish Shop Recycle Machine": {
+      "Description": "Willy’s Fish Shop now sells Recycling Machines. This setting is essential for configuring the Recycling Machine Price setting below!",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "Default, Immediately, Fishing Level 4, Fishing Level 3, Fishing Level 2, Fishing Level 1",
+      "Default": "Default"
+    },
+    "Fish Shop Recycle Machine Price": {
+      "Description": "Select the sale price of the Recycling Machine at Willy’s Fish Shop. This range spans from 1g to 3000g. Default is 3000g. Please note that the Fish Shop Recycle Machine setting must be enabled for this to take effect! Scroll down for additional options.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "3000, 2500, 2000, 1500, 1000, 750, 500, 250, 1",
+      "Default": "3000"
+    },
+    "Fish Shop Fish Smoker": {
+      "Description": "Willy’s Fish Shop now sells Fish Smokers. This setting is essential for configuring the Fish Smoker Price setting below!",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "Fish Shop Fish Smoker Price": {
+      "Description": "Select the sale price of the Fish Smoker at Willy’s Fish Shop. This range spans from 1g to 20000g. Default is 20000g. Please note that the Fish Shop Fish Smoker setting must be enabled for this to take effect! Scroll down for additional options.",
+      "Section": "Fish Shop Additions and Prices",
+      "AllowValues": "20000, 15000, 10000, 7500, 5000, 2500, 2000, 1500, 1000, 750, 500, 250, 1",
+      "Default": "20000"
+    }
+  },
+  "DynamicTokens": [
+    /*Fishing Difficulty Easy Multiplier*/
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.05",
+      "When": {
+        "Fishing Difficulty": "5% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.10",
+      "When": {
+        "Fishing Difficulty": "10% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.15",
+      "When": {
+        "Fishing Difficulty": "15% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.20",
+      "When": {
+        "Fishing Difficulty": "20% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.25",
+      "When": {
+        "Fishing Difficulty": "25% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.30",
+      "When": {
+        "Fishing Difficulty": "30% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.35",
+      "When": {
+        "Fishing Difficulty": "35% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.40",
+      "When": {
+        "Fishing Difficulty": "40% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.45",
+      "When": {
+        "Fishing Difficulty": "45% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.50",
+      "When": {
+        "Fishing Difficulty": "50% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.55",
+      "When": {
+        "Fishing Difficulty": "55% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.60",
+      "When": {
+        "Fishing Difficulty": "60% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.65",
+      "When": {
+        "Fishing Difficulty": "65% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.70",
+      "When": {
+        "Fishing Difficulty": "70% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.75",
+      "When": {
+        "Fishing Difficulty": "75% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.80",
+      "When": {
+        "Fishing Difficulty": "80% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.85",
+      "When": {
+        "Fishing Difficulty": "85% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.90",
+      "When": {
+        "Fishing Difficulty": "90% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.95",
+      "When": {
+        "Fishing Difficulty": "95% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 1",
+      "When": {
+        "Fishing Difficulty": "100% Easier"
+      }
+    },
+	/*Fishing Difficulty Easy Sunday Multiplier*/
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.10",
+      "When": {
+        "Fishing Difficulty": "10% Easy Sunday",
+		"DayOfWeek": "Sunday",
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.20",
+      "When": {
+        "Fishing Difficulty": "20% Easy Sunday",
+		"DayOfWeek": "Sunday",
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.30",
+      "When": {
+        "Fishing Difficulty": "30% Easy Sunday",
+		"DayOfWeek": "Sunday",
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.40",
+      "When": {
+        "Fishing Difficulty": "40% Easy Sunday",
+		"DayOfWeek": "Sunday",
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.50",
+      "When": {
+        "Fishing Difficulty": "50% Easy Sunday",
+		"DayOfWeek": "Sunday",
+      }
+    },
+	/*Fishing Difficulty Hard Multiplier*/
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.05",
+      "When": {
+        "Fishing Difficulty": "5% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.10",
+      "When": {
+        "Fishing Difficulty": "10% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.15",
+      "When": {
+        "Fishing Difficulty": "15% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.20",
+      "When": {
+        "Fishing Difficulty": "20% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.25",
+      "When": {
+        "Fishing Difficulty": "25% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.30",
+      "When": {
+        "Fishing Difficulty": "30% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.35",
+      "When": {
+        "Fishing Difficulty": "35% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.40",
+      "When": {
+        "Fishing Difficulty": "40% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.45",
+      "When": {
+        "Fishing Difficulty": "45% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.50",
+      "When": {
+        "Fishing Difficulty": "50% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.55",
+      "When": {
+        "Fishing Difficulty": "55% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.60",
+      "When": {
+        "Fishing Difficulty": "60% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.65",
+      "When": {
+        "Fishing Difficulty": "65% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.70",
+      "When": {
+        "Fishing Difficulty": "70% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.75",
+      "When": {
+        "Fishing Difficulty": "75% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.80",
+      "When": {
+        "Fishing Difficulty": "80% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.85",
+      "When": {
+        "Fishing Difficulty": "85% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.90",
+      "When": {
+        "Fishing Difficulty": "90% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.95",
+      "When": {
+        "Fishing Difficulty": "95% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 1",
+      "When": {
+        "Fishing Difficulty": "100% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 8",
+      "When": {
+        "Fishing Difficulty": "NIGHTMARE"
+      }
+    }
+    /*Fishing Randomized Easy Difficulty*/,
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 05}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "5% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 10}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "10% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 15}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "15% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 20}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "20% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 25}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "25% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 30}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "30% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 35}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "35% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 40}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "40% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 45}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "45% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 50}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "50% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 55}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "55% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 60}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "60% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 65}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "65% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 70}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "70% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 75}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "75% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 80}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "80% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 85}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "85% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 90}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "90% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 95}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "95% Easier"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 99}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "100% Easier"
+      }
+    },
+	/*Fishing Randomized Easy Difficulty*/,
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 10}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "10% Easy Sunday",
+		"DayOfWeek": "Sunday",
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 20}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "20% Easy Sunday",
+		"DayOfWeek": "Sunday",
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 30}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "30% Easy Sunday",
+		"DayOfWeek": "Sunday",
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 40}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "40% Easy Sunday",
+		"DayOfWeek": "Sunday",
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "- 0.{{Random: {{Range:00, 50}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "50% Easy Sunday",
+		"DayOfWeek": "Sunday",
+      }
+    },
+	/*Fishing Randomized Hard Difficulty*/,
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 05}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "5% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 10}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "10% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 15}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "15% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 20}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "20% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 25}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "25% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 30}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "30% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 35}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "35% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 40}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "40% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 45}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "45% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 50}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "50% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 55}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "55% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 60}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "60% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 65}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "65% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 70}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "70% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 75}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "75% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 80}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "80% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 85}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "85% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 90}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "90% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 95}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "95% Harder"
+      }
+    },
+    {
+      "Name": "DifficultyMultiplier",
+      "Value": "+ 0.{{Random: {{Range:00, 99}}}}",
+      "When": {
+        "Randomized Difficulty": true,
+        "Fishing Difficulty": "100% Harder"
+      }
+    },
+    /*CAVE MINE MOUNTAIN CHANCE*/,
+    {
+      "Name": "CaveMineChance",
+      "Value": "0.01",
+      "When": {
+        "Cave/Mine Fish Availability": "1% Chance"
+      }
+    },
+    {
+      "Name": "CaveMineChance",
+      "Value": "0.05",
+      "When": {
+        "Cave/Mine Fish Availability": "5% Chance"
+      }
+    },
+    {
+      "Name": "CaveMineChance",
+      "Value": "0.10",
+      "When": {
+        "Cave/Mine Fish Availability": "10% Chance"
+      }
+    },
+    {
+      "Name": "CaveMineChance",
+      "Value": "0.15",
+      "When": {
+        "Cave/Mine Fish Availability": "15% Chance"
+      }
+    },
+    {
+      "Name": "CaveMineChance",
+      "Value": "0.20",
+      "When": {
+        "Cave/Mine Fish Availability": "20% Chance"
+      }
+    },
+    {
+      "Name": "CaveMineChance",
+      "Value": "0.25",
+      "When": {
+        "Cave/Mine Fish Availability": "25% Chance"
+      }
+    },
+    {
+      "Name": "CaveMineChance",
+      "Value": "0.30",
+      "When": {
+        "Cave/Mine Fish Availability": "30% Chance"
+      }
+    },
+    {
+      "Name": "CaveMineChance",
+      "Value": "0.35",
+      "When": {
+        "Cave/Mine Fish Availability": "35% Chance"
+      }
+    },
+    {
+      "Name": "CaveMineChance",
+      "Value": "0.40",
+      "When": {
+        "Cave/Mine Fish Availability": "40% Chance"
+      }
+    },
+    {
+      "Name": "CaveMineChance",
+      "Value": "0.45",
+      "When": {
+        "Cave/Mine Fish Availability": "45% Chance"
+      }
+    },
+    {
+      "Name": "CaveMineChance",
+      "Value": "0.50",
+      "When": {
+        "Cave/Mine Fish Availability": "50% Chance"
+      }
+    }
+    /*PRIZE TICKET CHANCE*/,
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.01",
+      "When": {
+        "Fishable Prize Tickets": "1% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.02",
+      "When": {
+        "Fishable Prize Tickets": "2% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.03",
+      "When": {
+        "Fishable Prize Tickets": "3% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.04",
+      "When": {
+        "Fishable Prize Tickets": "4% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.05",
+      "When": {
+        "Fishable Prize Tickets": "5% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.06",
+      "When": {
+        "Fishable Prize Tickets": "6% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.07",
+      "When": {
+        "Fishable Prize Tickets": "7% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.08",
+      "When": {
+        "Fishable Prize Tickets": "8% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.09",
+      "When": {
+        "Fishable Prize Tickets": "9% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.10",
+      "When": {
+        "Fishable Prize Tickets": "10% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.15",
+      "When": {
+        "Fishable Prize Tickets": "15% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.20",
+      "When": {
+        "Fishable Prize Tickets": "20% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.25",
+      "When": {
+        "Fishable Prize Tickets": "25% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.30",
+      "When": {
+        "Fishable Prize Tickets": "30% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.35",
+      "When": {
+        "Fishable Prize Tickets": "35% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.40",
+      "When": {
+        "Fishable Prize Tickets": "40% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.45",
+      "When": {
+        "Fishable Prize Tickets": "45% Chance"
+      }
+    },
+    {
+      "Name": "PrizeTicketChance",
+      "Value": "0.50",
+      "When": {
+        "Fishable Prize Tickets": "50% Chance"
+      }
+    }
+    /*JELLY SPAWN RATES*/,
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0",
+      "When": {
+        "Jelly Spawn Rates": "No Jellies"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.01",
+      "When": {
+        "Jelly Spawn Rates": "1% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.02",
+      "When": {
+        "Jelly Spawn Rates": "2% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.03",
+      "When": {
+        "Jelly Spawn Rates": "3% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.04",
+      "When": {
+        "Jelly Spawn Rates": "4% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.05",
+      "When": {
+        "Jelly Spawn Rates": "5% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.06",
+      "When": {
+        "Jelly Spawn Rates": "6% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.07",
+      "When": {
+        "Jelly Spawn Rates": "7% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.08",
+      "When": {
+        "Jelly Spawn Rates": "8% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.09",
+      "When": {
+        "Jelly Spawn Rates": "9% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.10",
+      "When": {
+        "Jelly Spawn Rates": "True 10% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.15",
+      "When": {
+        "Jelly Spawn Rates": "15% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.20",
+      "When": {
+        "Jelly Spawn Rates": "20% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.25",
+      "When": {
+        "Jelly Spawn Rates": "25% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.30",
+      "When": {
+        "Jelly Spawn Rates": "30% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.35",
+      "When": {
+        "Jelly Spawn Rates": "35% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.40",
+      "When": {
+        "Jelly Spawn Rates": "40% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.45",
+      "When": {
+        "Jelly Spawn Rates": "45% Chance"
+      }
+    },
+    {
+      "Name": "JellySpawnRate",
+      "Value": "0.50",
+      "When": {
+        "Jelly Spawn Rates": "50% Chance"
+      }
+    }
+	 /*FISH SELL VALUE*/,
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 0.10",
+      "When": {
+        "Fish Sell Value": "Increase by 10%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 0.20",
+      "When": {
+        "Fish Sell Value": "Increase by 20%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 0.30",
+      "When": {
+        "Fish Sell Value": "Increase by 30%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 0.40",
+      "When": {
+        "Fish Sell Value": "Increase by 40%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 0.50",
+      "When": {
+        "Fish Sell Value": "Increase by 50%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 0.60",
+      "When": {
+        "Fish Sell Value": "Increase by 60%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 0.70",
+      "When": {
+        "Fish Sell Value": "Increase by 70%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 0.80",
+      "When": {
+        "Fish Sell Value": "Increase by 80%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 0.90",
+      "When": {
+        "Fish Sell Value": "Increase by 90%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 1.00",
+      "When": {
+        "Fish Sell Value": "Increase by 100%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 1.25",
+      "When": {
+        "Fish Sell Value": "Increase by 125%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 1.50",
+      "When": {
+        "Fish Sell Value": "Increase by 150%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 1.75",
+      "When": {
+        "Fish Sell Value": "Increase by 175%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 2.00",
+      "When": {
+        "Fish Sell Value": "Increase by 200%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 2.25",
+      "When": {
+        "Fish Sell Value": "Increase by 225%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 2.50",
+      "When": {
+        "Fish Sell Value": "Increase by 250%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 2.75",
+      "When": {
+        "Fish Sell Value": "Increase by 275%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 3.00",
+      "When": {
+        "Fish Sell Value": "Increase by 300%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 3.25",
+      "When": {
+        "Fish Sell Value": "Increase by 325%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 3.50",
+      "When": {
+        "Fish Sell Value": "Increase by 350%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 3.75",
+      "When": {
+        "Fish Sell Value": "Increase by 375%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 4.00",
+      "When": {
+        "Fish Sell Value": "Increase by 400%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 4.25",
+      "When": {
+        "Fish Sell Value": "Increase by 425%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 4.50",
+      "When": {
+        "Fish Sell Value": "Increase by 450%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 4.75",
+      "When": {
+        "Fish Sell Value": "Increase by 475%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 5.00",
+      "When": {
+        "Fish Sell Value": "Increase by 500%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 5.25",
+      "When": {
+        "Fish Sell Value": "Increase by 525%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 5.50",
+      "When": {
+        "Fish Sell Value": "Increase by 550%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 5.75",
+      "When": {
+        "Fish Sell Value": "Increase by 575%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 6.00",
+      "When": {
+        "Fish Sell Value": "Increase by 600%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 6.25",
+      "When": {
+        "Fish Sell Value": "Increase by 625%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 6.50",
+      "When": {
+        "Fish Sell Value": "Increase by 650%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 6.75",
+      "When": {
+        "Fish Sell Value": "Increase by 675%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 7.00",
+      "When": {
+        "Fish Sell Value": "Increase by 700%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 7.25",
+      "When": {
+        "Fish Sell Value": "Increase by 725%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 7.50",
+      "When": {
+        "Fish Sell Value": "Increase by 750%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 7.75",
+      "When": {
+        "Fish Sell Value": "Increase by 775%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 8.00",
+      "When": {
+        "Fish Sell Value": "Increase by 800%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 8.25",
+      "When": {
+        "Fish Sell Value": "Increase by 825%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 8.50",
+      "When": {
+        "Fish Sell Value": "Increase by 850%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 8.75",
+      "When": {
+        "Fish Sell Value": "Increase by 875%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 9.00",
+      "When": {
+        "Fish Sell Value": "Increase by 900%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 9.25",
+      "When": {
+        "Fish Sell Value": "Increase by 925%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 9.50",
+      "When": {
+        "Fish Sell Value": "Increase by 950%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 9.75",
+      "When": {
+        "Fish Sell Value": "Increase by 975%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "+ 10.00",
+      "When": {
+        "Fish Sell Value": "Increase by 1000%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "- 0.10",
+      "When": {
+        "Fish Sell Value": "Decrease by 10%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "- 0.20",
+      "When": {
+        "Fish Sell Value": "Decrease by 20%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "- 0.30",
+      "When": {
+        "Fish Sell Value": "Decrease by 30%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "- 0.40",
+      "When": {
+        "Fish Sell Value": "Decrease by 40%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "- 0.50",
+      "When": {
+        "Fish Sell Value": "Decrease by 50%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "- 0.60",
+      "When": {
+        "Fish Sell Value": "Decrease by 60%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "- 0.70",
+      "When": {
+        "Fish Sell Value": "Decrease by 70%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "- 0.80",
+      "When": {
+        "Fish Sell Value": "Decrease by 80%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "- 0.90",
+      "When": {
+        "Fish Sell Value": "Decrease by 90%"
+      }
+    },
+    {
+      "Name": "FishSellValue",
+      "Value": "- 0.99",
+      "When": {
+        "Fish Sell Value": "Decrease by 99%"
+      }
+    },
+	/*LEGENDARY FISH SELL VALUE*/
+	{
+      "Name": "LegendarySellValue",
+      "Value": "+ 0.10",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 10%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 0.20",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 20%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 0.30",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 30%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 0.40",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 40%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 0.50",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 50%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 0.60",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 60%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 0.70",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 70%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 0.80",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 80%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 0.90",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 90%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 1.00",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 100%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 1.25",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 125%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 1.50",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 150%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 1.75",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 175%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 2.00",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 200%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 2.25",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 225%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 2.50",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 250%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 2.75",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 275%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 3.00",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 300%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 3.25",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 325%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 3.50",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 350%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 3.75",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 375%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 4.00",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 400%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 4.25",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 425%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 4.50",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 450%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 4.75",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 475%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 5.00",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 500%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 5.25",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 525%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 5.50",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 550%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 5.75",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 575%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 6.00",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 600%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 6.25",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 625%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 6.50",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 650%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 6.75",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 675%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 7.00",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 700%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 7.25",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 725%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 7.50",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 750%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 7.75",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 775%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 8.00",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 800%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 8.25",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 825%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 8.50",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 850%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 8.75",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 875%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 9.00",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 900%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 9.25",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 925%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 9.50",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 950%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 9.75",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 975%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "+ 10.00",
+      "When": {
+        "Legendary Fish Sell Value": "Increase by 1000%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "- 0.10",
+      "When": {
+        "Legendary Fish Sell Value": "Decrease by 10%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "- 0.20",
+      "When": {
+        "Legendary Fish Sell Value": "Decrease by 20%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "- 0.30",
+      "When": {
+        "Legendary Fish Sell Value": "Decrease by 30%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "- 0.40",
+      "When": {
+        "Legendary Fish Sell Value": "Decrease by 40%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "- 0.50",
+      "When": {
+        "Legendary Fish Sell Value": "Decrease by 50%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "- 0.60",
+      "When": {
+        "Legendary Fish Sell Value": "Decrease by 60%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "- 0.70",
+      "When": {
+        "Legendary Fish Sell Value": "Decrease by 70%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "- 0.80",
+      "When": {
+        "Legendary Fish Sell Value": "Decrease by 80%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "- 0.90",
+      "When": {
+        "Legendary Fish Sell Value": "Decrease by 90%"
+      }
+    },
+    {
+      "Name": "LegendarySellValue",
+      "Value": "- 0.99",
+      "When": {
+        "Legendary Fish Sell Value": "Decrease by 99%"
+      }
+    },
+    /*LEGENDARY FISH SPAWN RATES*/,
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.01",
+      "When": {
+        "Legendary Fish Spawn Rates": "1% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.02",
+      "When": {
+        "Legendary Fish Spawn Rates": "2% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.03",
+      "When": {
+        "Legendary Fish Spawn Rates": "3% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.04",
+      "When": {
+        "Legendary Fish Spawn Rates": "4% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.05",
+      "When": {
+        "Legendary Fish Spawn Rates": "5% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.06",
+      "When": {
+        "Legendary Fish Spawn Rates": "6% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.07",
+      "When": {
+        "Legendary Fish Spawn Rates": "7% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.08",
+      "When": {
+        "Legendary Fish Spawn Rates": "8% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.09",
+      "When": {
+        "Legendary Fish Spawn Rates": "9% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.10",
+      "When": {
+        "Legendary Fish Spawn Rates": "10% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.15",
+      "When": {
+        "Legendary Fish Spawn Rates": "15% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.20",
+      "When": {
+        "Legendary Fish Spawn Rates": "20% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.25",
+      "When": {
+        "Legendary Fish Spawn Rates": "25% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.30",
+      "When": {
+        "Legendary Fish Spawn Rates": "30% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.35",
+      "When": {
+        "Legendary Fish Spawn Rates": "35% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.40",
+      "When": {
+        "Legendary Fish Spawn Rates": "40% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.45",
+      "When": {
+        "Legendary Fish Spawn Rates": "45% Chance"
+      }
+    },
+    {
+      "Name": "LegendarySpawnRate",
+      "Value": "0.50",
+      "When": {
+        "Legendary Fish Spawn Rates": "50% Chance"
+      }
+    },
+	/*CURIOUS LEGENDARY FISH*/,
+    {
+      "Name": "CuriousChance",
+      "Value": "0.10",
+      "When": {
+        "Curious Legendary Fish": "Increase by 10%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.15",
+      "When": {
+        "Curious Legendary Fish": "Increase by 15%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.20",
+      "When": {
+        "Curious Legendary Fish": "Increase by 20%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.25",
+      "When": {
+        "Curious Legendary Fish": "Increase by 25%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.30",
+      "When": {
+        "Curious Legendary Fish": "Increase by 30%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.35",
+      "When": {
+        "Curious Legendary Fish": "Increase by 35%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.40",
+      "When": {
+        "Curious Legendary Fish": "Increase by 40%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.45",
+      "When": {
+        "Curious Legendary Fish": "Increase by 45%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.50",
+      "When": {
+        "Curious Legendary Fish": "Increase by 50%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.55",
+      "When": {
+        "Curious Legendary Fish": "Increase by 55%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.60",
+      "When": {
+        "Curious Legendary Fish": "Increase by 60%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.65",
+      "When": {
+        "Curious Legendary Fish": "Increase by 65%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.70",
+      "When": {
+        "Curious Legendary Fish": "Increase by 70%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.75",
+      "When": {
+        "Curious Legendary Fish": "Increase by 75%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.80",
+      "When": {
+        "Curious Legendary Fish": "Increase by 80%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.85",
+      "When": {
+        "Curious Legendary Fish": "Increase by 85%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.90",
+      "When": {
+        "Curious Legendary Fish": "Increase by 90%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "0.95",
+      "When": {
+        "Curious Legendary Fish": "Increase by 95%"
+      }
+    },
+    {
+      "Name": "CuriousChance",
+      "Value": "1.0",
+      "When": {
+        "Curious Legendary Fish": "Increase by 100%"
+      }
+    }
+	/*FISHABLE PRISMATIC SHARD SPAWN RATE*/,
+	{
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.01",
+      "When": {
+        "Prismatic Shard Spawn Rate": "1% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.02",
+      "When": {
+        "Prismatic Shard Spawn Rate": "2% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.03",
+      "When": {
+        "Prismatic Shard Spawn Rate": "3% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.04",
+      "When": {
+        "Prismatic Shard Spawn Rate": "4% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.05",
+      "When": {
+        "Prismatic Shard Spawn Rate": "5% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.06",
+      "When": {
+        "Prismatic Shard Spawn Rate": "6% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.07",
+      "When": {
+        "Prismatic Shard Spawn Rate": "7% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.08",
+      "When": {
+        "Prismatic Shard Spawn Rate": "8% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.09",
+      "When": {
+        "Prismatic Shard Spawn Rate": "9% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.10",
+      "When": {
+        "Prismatic Shard Spawn Rate": "10% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.15",
+      "When": {
+        "Prismatic Shard Spawn Rate": "15% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.20",
+      "When": {
+        "Prismatic Shard Spawn Rate": "20% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.25",
+      "When": {
+        "Prismatic Shard Spawn Rate": "25% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.30",
+      "When": {
+        "Prismatic Shard Spawn Rate": "30% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.35",
+      "When": {
+        "Prismatic Shard Spawn Rate": "35% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.40",
+      "When": {
+        "Prismatic Shard Spawn Rate": "40% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.45",
+      "When": {
+        "Prismatic Shard Spawn Rate": "45% Chance"
+      }
+    },
+    {
+      "Name": "PrismaticSpawnRate",
+      "Value": "0.50",
+      "When": {
+        "Prismatic Shard Spawn Rate": "50% Chance"
+      }
+    },
+    /*WORM BIN WILD BAIT CHANCE*/,
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.15",
+      "When": {
+        "Worm Bin Wild Bait Chance": "15% Chance, 85% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.20",
+      "When": {
+        "Worm Bin Wild Bait Chance": "20% Chance, 80% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.25",
+      "When": {
+        "Worm Bin Wild Bait Chance": "25% Chance, 75% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.30",
+      "When": {
+        "Worm Bin Wild Bait Chance": "30% Chance, 70% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.35",
+      "When": {
+        "Worm Bin Wild Bait Chance": "35% Chance, 65% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.40",
+      "When": {
+        "Worm Bin Wild Bait Chance": "40% Chance, 60% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.45",
+      "When": {
+        "Worm Bin Wild Bait Chance": "45% Chance, 55% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.10",
+      "When": {
+        "Worm Bin Wild Bait Chance": "90% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.05",
+      "When": {
+        "Worm Bin Wild Bait Chance": "95% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0",
+      "When": {
+        "Worm Bin Wild Bait Chance": "100% Chance"
+      }
+    },
+    /*DELUXE WORM BIN WILD BAIT CHANCE*/,
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.15",
+      "When": {
+        "Deluxe Worm Bin Wild B. Chance": "15% Chance, 85% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.20",
+      "When": {
+        "Deluxe Worm Bin Wild B. Chance": "20% Chance, 80% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.25",
+      "When": {
+        "Deluxe Worm Bin Wild B. Chance": "25% Chance, 75% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.30",
+      "When": {
+        "Deluxe Worm Bin Wild B. Chance": "30% Chance, 70% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.35",
+      "When": {
+        "Deluxe Worm Bin Wild B. Chance": "35% Chance, 65% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.40",
+      "When": {
+        "Deluxe Worm Bin Wild B. Chance": "40% Chance, 60% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.45",
+      "When": {
+        "Deluxe Worm Bin Wild B. Chance": "45% Chance, 55% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.10",
+      "When": {
+        "Deluxe Worm Bin Wild B. Chance": "90% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0.05",
+      "When": {
+        "Deluxe Worm Bin Wild B. Chance": "95% Chance"
+      }
+    },
+    {
+      "Name": "WildBaitChance",
+      "Value": "0",
+      "When": {
+        "Deluxe Worm Bin Wild B. Chance": "100% Chance"
+      }
+    },
+	/*FISH POND RARE LOOT CHANCE*/
+	{
+      "Name": "RareLootChance",
+      "Value": "1",
+      "When": {
+        "Fish Pond Rare Loot": "Default"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "1.5",
+      "When": {
+        "Fish Pond Rare Loot": "Rare Loot Chance 1.5X"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "2",
+      "When": {
+        "Fish Pond Rare Loot": "Rare Loot Chance 2X"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "2.5",
+      "When": {
+        "Fish Pond Rare Loot": "Rare Loot Chance 2.5X"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "3",
+      "When": {
+        "Fish Pond Rare Loot": "Rare Loot Chance 3X"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "3.5",
+      "When": {
+        "Fish Pond Rare Loot": "Rare Loot Chance 3.5X"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "4",
+      "When": {
+        "Fish Pond Rare Loot": "Rare Loot Chance 4X"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "4.5",
+      "When": {
+        "Fish Pond Rare Loot": "Rare Loot Chance 4.5X"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "5",
+      "When": {
+        "Fish Pond Rare Loot": "Rare Loot Chance 5X"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.02",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 2% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.03",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 3% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.04",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 4% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.05",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 5% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.06",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 6% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.07",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 7% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.08",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 8% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.09",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 9% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.1",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 10% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.15",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 15% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.2",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 20% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.25",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 25% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.3",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 30% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.35",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 35% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.4",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 40% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.45",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 45% Chance"
+      }
+    },
+	{
+      "Name": "RareLootChance",
+      "Value": "0.5",
+      "When": {
+        "Fish Pond Rare Loot": "All Rare Loot 50% Chance"
+      }
+    },
+	/*FISH POND RARE LOOT CHANCE LEGENDARY FISH*/
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "1.5",
+      "When": {
+        "Legendary Fish Pond Loot": "Rare Loot Chance 1.5X"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "2",
+      "When": {
+        "Legendary Fish Pond Loot": "Rare Loot Chance 2X"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "2.5",
+      "When": {
+        "Legendary Fish Pond Loot": "Rare Loot Chance 2.5X"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "3",
+      "When": {
+        "Legendary Fish Pond Loot": "Rare Loot Chance 3X"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "3.5",
+      "When": {
+        "Legendary Fish Pond Loot": "Rare Loot Chance 3.5X"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "4",
+      "When": {
+        "Legendary Fish Pond Loot": "Rare Loot Chance 4X"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "4.5",
+      "When": {
+        "Legendary Fish Pond Loot": "Rare Loot Chance 4.5X"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "5",
+      "When": {
+        "Legendary Fish Pond Loot": "Rare Loot Chance 5X"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.01",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 1% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.02",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 2% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.03",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 3% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.04",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 4% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.05",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 5% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.06",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 6% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.07",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 7% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.08",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 8% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.09",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 9% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.1",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 10% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.15",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 15% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.2",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 20% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.25",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 25% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.3",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 30% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.35",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 35% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.4",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 40% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.45",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 45% Chance"
+      }
+    },
+	{
+      "Name": "LegendaryRareLootChance",
+      "Value": "0.5",
+      "When": {
+        "Legendary Fish Pond Loot": "All Rare Loot 50% Chance"
+      }
+    },
+	/*All Fishing Rod Prices*/
+	{
+      "Name": "FishingRodPrices",
+      "Value": "0.75",
+      "When": {
+        "All Fishing Rod Prices": "25% Cheaper"
+      }
+    },
+	{
+      "Name": "FishingRodPrices",
+      "Value": "0.50",
+      "When": {
+        "All Fishing Rod Prices": "50% Cheaper"
+      }
+    },
+	{
+      "Name": "FishingRodPrices",
+      "Value": "0.25",
+      "When": {
+        "All Fishing Rod Prices": "75% Cheaper"
+      }
+    },
+	{
+      "Name": "FishingRodPrices",
+      "Value": "0.01",
+      "When": {
+        "All Fishing Rod Prices": "99% Cheaper"
+      }
+    },
+	{
+      "Name": "FishingRodPrices",
+      "Value": "1.25",
+      "When": {
+        "All Fishing Rod Prices": "25% More Expensive"
+      }
+    },
+	{
+      "Name": "FishingRodPrices",
+      "Value": "1.50",
+      "When": {
+        "All Fishing Rod Prices": "50% More Expensive"
+      }
+    },
+	{
+      "Name": "FishingRodPrices",
+      "Value": "1.75",
+      "When": {
+        "All Fishing Rod Prices": "75% More Expensive"
+      }
+    },
+	{
+      "Name": "FishingRodPrices",
+      "Value": "2.00",
+      "When": {
+        "All Fishing Rod Prices": "100% More Expensive"
+      }
+    },
+	/*Fish Shop Tackle Prices*/
+	{
+      "Name": "TacklePrices",
+      "Value": "0.75",
+      "When": {
+        "Fish Shop Tackle Prices": "25% Cheaper"
+      }
+    },
+	{
+      "Name": "TacklePrices",
+      "Value": "0.50",
+      "When": {
+        "Fish Shop Tackle Prices": "50% Cheaper"
+      }
+    },
+	{
+      "Name": "TacklePrices",
+      "Value": "0.25",
+      "When": {
+        "Fish Shop Tackle Prices": "75% Cheaper"
+      }
+    },
+	{
+      "Name": "TacklePrices",
+      "Value": "0.01",
+      "When": {
+        "Fish Shop Tackle Prices": "99% Cheaper"
+      }
+    },
+	{
+      "Name": "TacklePrices",
+      "Value": "1.25",
+      "When": {
+        "Fish Shop Tackle Prices": "25% More Expensive"
+      }
+    },
+	{
+      "Name": "TacklePrices",
+      "Value": "1.50",
+      "When": {
+        "Fish Shop Tackle Prices": "50% More Expensive"
+      }
+    },
+	{
+      "Name": "TacklePrices",
+      "Value": "1.75",
+      "When": {
+        "Fish Shop Tackle Prices": "75% More Expensive"
+      }
+    },
+	{
+      "Name": "TacklePrices",
+      "Value": "2.00",
+      "When": {
+        "Fish Shop Tackle Prices": "100% More Expensive"
+      }
+    },
+  ],
+  "Changes": [
+	/*CUSTOM FARM MAP FIXES*/
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Custom Farm Map Fixes/Custom Farm Map Fixes.json",
+    },
+    /*DISABLE YEARLY DEVELOPER GIFTS*/
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Developer Gifts/Disable Yearly Developer Gifts.json"
+    },
+    /*FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Minigame/Fishing Difficulty.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Minigame/Fishing Difficulty Super Easy.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Minigame/All Times Of Day.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Minigame/All Types Of Weather.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Minigame/All Seasons.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Minigame/Same Spawn Rates.json"
+    }
+    /*FISH AVAILABILITY*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Availability/Cave-Mine Fish Availability.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Availability/Night Market Fish Availability.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Availability/Fishable Prize Tickets.json"
+    }
+    /*CLEAN WATERS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Clean Waters/Clean Waters-No Trash.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Clean Waters/Clean Waters-No Weeds.json"
+    }
+    /*FISHING RODS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Rods/Iridium Rods Attach Slots.json"
+    }
+    /*CRAB POT FISHING*/,
+	{
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Crab Pot Fishing/Crab Pots Jellies.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Crab Pot Fishing/Crab Pots Same Spawn Rates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Crab Pot Fishing/Crab Pots No Trash.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Crab Pot Fishing/Crab Pots Bug Meat.json"
+    }
+    /*JELLY FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Jelly Fishing/Jelly Spawn Rates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Jelly Fishing/Cave Jelly Desert.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Jelly Fishing/Jellies Are Crab Pot Fish.json"
+    }
+    /*VALUE OF FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Value of Fishing/Fish Sell Value.json"
+    }
+    /*FARMLAND FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Farmland Fishing/Seasonal Fish On Farm.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Farmland Fishing/Specialty Fish On Farm.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Farmland Fishing/Legendary Fish On Farm.json"
+    }
+    /*LEGENDARY FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/Recatch Legendary Fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/Legendary Quests.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/Entire Area Legendary Fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/Legendary Fish Spawn Rates.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/Legendary Fish No Level.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/Legendary Fish No Crown.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/Qi's Legendary Fish Crown.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/All Weather-Seasons Legendary Fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/Lucky Legendary Fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/Curious Legendary Fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/Legendary Fish Gifts.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Legendary Fishing/Legendary Fish Spawn Times.json"
+    }
+    /*PRISMATIC SHARD FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Prismatic Shard Fishing/Fishable Prismatic Shards.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Prismatic Shard Fishing/Prismatic Shard Spawn Rate.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Prismatic Shard Fishing/Prismatic Shards No Level.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Prismatic Shard Fishing/Prismatic Shards No Crown.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Prismatic Shard Fishing/Lucky Prismatic Shards.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Prismatic Shard Fishing/Prismatic Shards Weather.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Prismatic Shard Fishing/Prismatic Shards Spawn Times.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Prismatic Shard Fishing/Prismatic Shard Sell Value.json"
+    }
+    /*FISH POND BUILDINGS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Pond Buildings/Fish Pond Rare Loot Chance.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Pond Buildings/Fish Pond Rare Loot Chance Prismatic Shards.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Pond Buildings/FP Fish-Quest Spawn Time.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Pond Buildings/Fish Pond Legendary Fish Default.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Pond Buildings/Fish Pond Rare Loot Chance Legendary Fish.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Pond Buildings/LG Fish-Quest Spawn Time.json"
+    }
+    /*FISHING TACKLE AND LURES*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Tackle and Lures/Tackle And Lure Materials.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Tackle and Lures/Tackle Fishing Level 1.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Tackle and Lures/Craftable Curiosity Lure.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Tackle and Lures/Craftable Lead Bobber.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fishing Tackle and Lures/Wild Bait Crafting Materials.json"
+    }
+    /*FOOD FOR FISHING AND INGREDIENTS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Food for Fishing and Ingredients/Trout Soup.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Food for Fishing and Ingredients/Chowder.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Food for Fishing and Ingredients/Shrimp Cocktail.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Food for Fishing and Ingredients/Fish Taco.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Food for Fishing and Ingredients/Escargot.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Food for Fishing and Ingredients/Dish O' The Sea.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Food for Fishing and Ingredients/Fish Stew.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Food for Fishing and Ingredients/Lobster Bisque.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Food for Fishing and Ingredients/Seafoam Pudding.json"
+    }
+    /*WORM BIN MACHINERY*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Worm Bin Machinery/Worm Bin Materials.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Worm Bin Machinery/Worm Bin Level Availability.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Worm Bin Machinery/Worm Bin Bait.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Worm Bin Machinery/Worm Bin Wild Bait (REQ).json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Worm Bin Machinery/Worm Bin Wild Bait Chance.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Worm Bin Machinery/Worm Bin Wild Bait.json"
+    }
+    /*DELUXE WORM BIN MACHINERY*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Deluxe Worm Bin Machinery/Deluxe Worm Bin Materials.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Deluxe Worm Bin Machinery/Deluxe Worm Bin Level Availability.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Deluxe Worm Bin Machinery/Deluxe Worm Bin Bait.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Deluxe Worm Bin Machinery/Deluxe Worm Bin Wild Bait (REQ).json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Deluxe Worm Bin Machinery/Deluxe Worm Bin Wild Bait Chance.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Deluxe Worm Bin Machinery/Deluxe Worm Bin Wild Bait.json"
+    }
+    /*RECYCLING MACHINE*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Recycling Machine/Recycling Machine Faster.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Recycling Machine/Recycling Machine Materials.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Recycling Machine/Recycling Machine Level Availability.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Recycling Machine/Recycling Machine Produce and Mats.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Recycling Machine/Recycling Machine Tackle.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Recycling Machine/Recycling Prismatic Shards.json"
+    }
+    /*FISH SMOKER MACHINERY*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Fish Smoker Machinery/Fish Smoker Faster.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Fish Smoker Machinery/Fish Smoker Materials.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Fish Smoker Machinery/Fish Smoker No Coal.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Fish Smoker Machinery/Fish Smoker Quality.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Fish Smoker Machinery/Fish Smoker Produce and Mats.json"
+    }
+    /*BAIT MAKER MACHINERY*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Bait Maker Machinery/Bait Maker Materials.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Machinery/Bait Maker Machinery/Bait Maker Produce and Mats.json"
+    }
+    /*FISH SHOP ADDITIONS AND PRICES*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/Fish Shop Open All Days.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/All Fishing Rods Immediately.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/Advanced Iridium Fish Rod Availability.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/All Fishing Rod Prices.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/All Tackle Immediately.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/Fish Shop Curiosity-Quality.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/Fish Shop Tackle Prices.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/Fish Shop Seafoam Pudding.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/Crab Pot Price.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/Fish Shop Worm Bin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/Fish Shop Deluxe Worm Bin.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/Fish Shop Bait Maker.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/Fish Shop Recycle Machine.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Vanilla/Fish Shop Additions and Prices/Fish Shop Fish Smoker.json"
+    }
+    /*SVE - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Fishing Minigame/All Times Of Day.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Fishing Minigame/All Types Of Weather.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Fishing Minigame/All Seasons.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    }
+    /*SVE - CLEAN WATERS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Clean Waters/Clean Waters-No Weeds.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    }
+    /*SVE - CRAB POT FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Crab Pot Fishing/Crab Pots No Trash.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    }
+    /*SVE - JELLY FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Jelly Fishing/Jelly Spawn Rates.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Jelly Fishing/Jellies Are Crab Pot Fish.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    }
+    /*SVE - VALUE OF FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Value of Fishing/Fish Sell Value.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    /*SVE - FARMLAND FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Farmland Fishing/Seasonal Fish On Farm.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Farmland Fishing/Specialty Fish On Farm.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Farmland Fishing/Legendary Fish On Farm.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    }
+    /*SVE - LEGENDARY FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Legendary Fishing/Recatch Legendary Fish.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Legendary Fishing/Legendary Fish Spawn Rates.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Legendary Fishing/Legendary Fish No Crown.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Legendary Fishing/All Seasons Legendary Fish.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Legendary Fishing/Lucky Legendary Fish.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Legendary Fishing/Curious Legendary Fish.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Legendary Fishing/Legendary Fish Gifts.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Legendary Fishing/Legendary Fish Spawn Times.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    }
+    /*SVE - FISH POND BUILDINGS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Fish Pond Buildings/Fish Pond Rare Loot Chance.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Fish Pond Buildings/FP Fish-Quest Spawn Time.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Fish Pond Buildings/Fish Pond Legendary Fish Default.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Fish Pond Buildings/Fish Pond Rare Loot Chance Legendary Fish.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Fish Pond Buildings/LG Fish-Quest Spawn Time.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SVE/Fish Pond Buildings/Fish Pond Rare Loot Chance Prismatic Shards.json",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    /*RSV - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Fishing Minigame/All Times Of Day.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Fishing Minigame/All Seasons.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    }
+    /*RSV - VALUE OF FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Value of Fishing/Fish Sell Value.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    /*RSV - FARMLAND FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Farmland Fishing/Seasonal Fish On Farm.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Farmland Fishing/Legendary Fish On Farm.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    }
+    /*RSV - LEGENDARY FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Legendary Fishing/Recatch Legendary Fish.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Legendary Fishing/Entire Area Legendary Fish.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Legendary Fishing/Legendary Fish Spawn Rates.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Legendary Fishing/Legendary Fish No Level.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Legendary Fishing/Legendary Fish No Crown.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Legendary Fishing/All Weather-Seasons Legendary Fish.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Legendary Fishing/Lucky Legendary Fish.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Legendary Fishing/Curious Legendary Fish.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Legendary Fishing/Legendary Fish Gifts.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    }
+    /*RSV - FISH POND BUILDINGS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Fish Pond Buildings/Fish Pond Rare Loot Chance.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Fish Pond Buildings/FP Fish-Quest Spawn Time.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RSV/Fish Pond Buildings/Fish Pond Rare Loot Chance Prismatic Shards.json",
+      "When": {
+        "HasMod |contains=Rafseazz.RSVCP": true
+      }
+    },
+    /*ESC - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=Lemurkat.EastScarp": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Fishing Minigame/All Times Of Day.json",
+      "When": {
+        "HasMod |contains=Lemurkat.EastScarp": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Fishing Minigame/All Types Of Weather.json",
+      "When": {
+        "HasMod |contains=Lemurkat.EastScarp": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Fishing Minigame/All Seasons.json",
+      "When": {
+        "HasMod |contains=Lemurkat.EastScarp": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=Lemurkat.EastScarp": true
+      }
+    }
+    /*ESC - CLEAN WATERS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Clean Waters/Clean Waters-No Weeds.json",
+      "When": {
+        "HasMod |contains=LemurKat.EastScarpe.CP": true
+      }
+    }
+    /*ESC - CRAB POT FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Crab Pot Fishing/Crab Pots No Trash.json",
+      "When": {
+        "HasMod |contains=LemurKat.EastScarpe.CP": true
+      }
+    },
+	{
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Crab Pot Fishing/Crab Pots Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=LemurKat.EastScarpe.CP": true
+      }
+    }
+    /*ESC - VALUE OF FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Value of Fishing/Fish Sell Value.json",
+      "When": {
+        "HasMod |contains=LemurKat.EastScarpe.CP": true
+      }
+    },
+    /*ESC - FARMLAND FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Farmland Fishing/Seasonal Fish On Farm.json",
+      "When": {
+        "HasMod |contains=LemurKat.EastScarpe.CP": true
+      }
+    }
+    /*ESC - FISH POND BUILDINGS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Fish Pond Buildings/Fish Pond Rare Loot Chance.json",
+      "When": {
+        "HasMod |contains=LemurKat.EastScarpe.CP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Fish Pond Buildings/FP Fish-Quest Spawn Time.json",
+      "When": {
+        "HasMod |contains=LemurKat.EastScarpe.CP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ESC/Fish Pond Buildings/Fish Pond Rare Loot Chance Prismatic Shards.json",
+      "When": {
+        "HasMod |contains=LemurKat.EastScarpe.CP": true
+      }
+    },
+    /*MNF - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Fishing Minigame/All Times Of Day.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Fishing Minigame/All Types Of Weather.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Fishing Minigame/All Seasons.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    }
+    /*MNF - CRAB POT FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Crab Pot Fishing/Crab Pots Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    }
+    /*MNF - VALUE OF FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Value of Fishing/Fish Sell Value.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    /*MNF - FARMLAND FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Farmland Fishing/Seasonal Fish On Farm.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Farmland Fishing/Specialty Fish On Farm.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Farmland Fishing/Legendary Fish On Farm.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    }
+    /*MNF - LEGENDARY FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Legendary Fishing/Recatch Legendary Fish.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Legendary Fishing/Legendary Fish Spawn Rates.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Legendary Fishing/Legendary Fish No Level.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Legendary Fishing/Legendary Fish No Crown.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Legendary Fishing/All Weather Legendary Fish.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Legendary Fishing/Remove Shinidamachu Day Req.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Legendary Fishing/Lucky Legendary Fish.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Legendary Fishing/Curious Legendary Fish.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Legendary Fishing/Legendary Fish Gifts.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Legendary Fishing/Legendary Fish Spawn Times.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    }
+    /*MNF - FISH POND BUILDINGS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Fish Pond Buildings/Fish Pond Rare Loot Chance.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Fish Pond Buildings/FP Fish-Quest Spawn Time.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/MNF/Fish Pond Buildings/Fish Pond Rare Loot Chance Prismatic Shards.json",
+      "When": {
+        "HasMod |contains=MoreFish": true
+      }
+    },
+    /*ALC - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ALC/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=Morghoula.AlchemistryCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ALC/Fishing Minigame/All Times Of Day.json",
+      "When": {
+        "HasMod |contains=Morghoula.AlchemistryCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ALC/Fishing Minigame/All Types Of Weather.json",
+      "When": {
+        "HasMod |contains=Morghoula.AlchemistryCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ALC/Fishing Minigame/All Seasons.json",
+      "When": {
+        "HasMod |contains=Morghoula.AlchemistryCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ALC/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=Morghoula.AlchemistryCP": true
+      }
+    }
+    /*ALC - VALUE OF FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ALC/Value of Fishing/Fish Sell Value.json",
+      "When": {
+        "HasMod |contains=Morghoula.AlchemistryCP": true
+      }
+    },
+    /*ALC - FARMLAND FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ALC/Farmland Fishing/Seasonal Fish On Farm.json",
+      "When": {
+        "HasMod |contains=Morghoula.AlchemistryCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ALC/Farmland Fishing/Specialty Fish On Farm.json",
+      "When": {
+        "HasMod |contains=Morghoula.AlchemistryCP": true
+      }
+    }
+    /*VMV - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Fishing Minigame/All Times Of Day.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Fishing Minigame/All Types Of Weather.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Fishing Minigame/All Seasons.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Fishing Minigame/All Times Seasons Weather Locations.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    }
+    /*VMV - CLEAN WATERS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Clean Waters/Clean Waters-No Weeds.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    }
+    /*VMV - CRAB POT FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Crab Pot Fishing/Crab Pots No Trash.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Crab Pot Fishing/Crab Pots Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    }
+    /*VMV - VALUE OF FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Value of Fishing/Fish Sell Value.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    /*VMV - FARMLAND FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Farmland Fishing/Specialty Fish On Farm.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Farmland Fishing/Legendary Fish On Farm.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    }
+    /*VMV - LEGENDARY FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Legendary Fishing/Recatch Legendary Fish.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Legendary Fishing/Legendary Fish Spawn Rates.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Legendary Fishing/Legendary Fish No Crown.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+	{
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Legendary Fishing/All Seasons Legendary Fish.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Legendary Fishing/Lucky Legendary Fish.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Legendary Fishing/Curious Legendary Fish.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Legendary Fishing/Legendary Fish Gifts.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/VMV/Legendary Fishing/Legendary Fish Spawn Times.json",
+      "When": {
+        "HasMod |contains=Lumisteria.MtVapius": true
+      }
+    }
+    /*SBV - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Fishing Minigame/All Times Of Day.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Fishing Minigame/All Types Of Weather.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Fishing Minigame/All Seasons.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    }
+    /*SBV - CLEAN WATERS*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Clean Waters/Clean Waters-No Weeds.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    }
+    /*SBV - CRAB POT FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Crab Pot Fishing/Crab Pots No Trash.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Crab Pot Fishing/Crab Pots Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    }
+    /*SBV - VALUE OF FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Value of Fishing/Fish Sell Value.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    /*SBV - FARMLAND FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Farmland Fishing/Seasonal Fish On Farm.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Farmland Fishing/Specialty Fish On Farm.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Farmland Fishing/Legendary Fish On Farm.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    }
+    /*SBV - LEGENDARY FISHING*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Legendary Fishing/Recatch Legendary Fish.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Legendary Fishing/Entire Area Legendary Fish.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Legendary Fishing/Legendary Fish Spawn Rates.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Legendary Fishing/Legendary Fish No Crown.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Legendary Fishing/All Seasons Legendary Fish.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Legendary Fishing/Lucky Legendary Fish.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Legendary Fishing/Curious Legendary Fish.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Legendary Fishing/Legendary Fish Gifts.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SBV/Legendary Fishing/Legendary Fish Spawn Times.json",
+      "When": {
+        "HasMod |contains=skellady.SBVCP": true
+      }
+    }
+    /*DTL - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/DTL/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=Aimon111.WitchSwampOverhaulCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/DTL/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=Aimon111.WitchSwampOverhaulCP": true
+      }
+    }
+    /*FOS - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/FOS/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=aztecviper.fishofstardew": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/FOS/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=aztecviper.fishofstardew": true
+      }
+    }
+    /*EAD - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/EAD/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/EAD/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=TenebrousNova.EliDylan.CP": true
+      }
+    }
+    /*LNA - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/LNA/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=Rafseazz.LunnaCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/LNA/Fishing Minigame/All Times Of Day.json",
+      "When": {
+        "HasMod |contains=Rafseazz.LunnaCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/LNA/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=Rafseazz.LunnaCP": true
+      }
+    }
+	/*SAS - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SAS/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=DN.SnS": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/SAS/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=DN.SnS": true
+      }
+    }
+	/*ASF - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ASF/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=ASF": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/ASF/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=ASF": true
+      }
+    }
+	/*RMT - FISHING MINIGAME*/,
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RMT/Fishing Minigame/Fishing Difficulty.json",
+      "When": {
+        "HasMod |contains=Rexstrife20.MineralTownCP": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "Data/Expansions/RMT/Fishing Minigame/Same Spawn Rates.json",
+      "When": {
+        "HasMod |contains=Rexstrife20.MineralTownCP": true
+      }
+    }
+  ]
+}

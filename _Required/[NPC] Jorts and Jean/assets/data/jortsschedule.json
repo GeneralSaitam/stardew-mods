@@ -1,0 +1,90 @@
+ {
+"Changes": 
+    [
+ 
+		{
+            "LogName": "Jorts Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JortsCat",
+			"Entries": {
+				
+				"rain": "610 AdventureGuild 9 12 1/2500 AdventureGuild 9 12 1 JortsCat_catnap",
+				"Mon": "610 Town 102 55 2/1600 ManorHouse 4 8 0/2100 Town 51 71 1/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap",
+				"Tue": "610 ArchaeologyHouse 19 15 0 JortsCat_cleaning/1430 Town 102 55 2/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap",
+				"Wed": "610 JoshHouse 18 20 3/a1800 Town 47 71 3 JortsCat_trashcan \"Strings\\schedules\\JortsCat:Trash.000\"/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap",
+				"Thu": "610 Forest 43 9 2/1510 Town 42 78 1/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap",
+				"Fri": "610 ArchaeologyHouse 19 15 0 JortsCat_catnap/1400 Town 90 101 2/1600 Saloon 25 18 0 JortsCat_cleaning/2400 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap",
+				"Sat": "610 Mountain 64 14 0/a1200 Town 22 9 2 JortsCat_catnap/1600 Town 60 100 2/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap",
+				"Sun": "610 Town 90 101 2/1200 Town 27 29 2 JortsCat_cleaning/a1900 Town 7 89 2/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 3 JortsCat_catnap",
+				"spring": "610 Town 102 55 2/1600 ManorHouse 2 8 0/2130 AdventureGuild 9 12 1 JortsCat_catnap/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap",
+				
+			},
+        },
+		{
+            "LogName": "Jorts Schedule CC",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JortsCat",
+			"When": {  "HasSeenEvent": "191393" },
+			"Entries": {
+				
+				"Mon": "610 Town 102 55 2/1600 CommunityCenter 32 9 2 JortsCat_catnap/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap",
+				
+			},
+        },
+		
+		{
+            "LogName": "Jorts Schedule Gossip with Kevin",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JortsCat",
+			"When": {  "HasMod: |contains=ZoeDoll.NPCAlecto": true },
+			"Entries": {
+				"Thu": "610 Forest 43 9 2\"Strings\\schedules\\JortsCat:Kevin.000\"/1510 Town 42 78 1/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap",
+			},
+        },
+		
+		
+		{
+            "LogName": "Jorts Schedule Cola Shop",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JortsCat",
+			"When": { "HasMod |contains= CopperSun.SamVincentShopCP": true, "HasSeenEvent |contains= 26431000": true, },
+			"Entries": {"Sun": "610 Town 90 101 2 JortsCat_cuphead \"Strings\\schedules\\JortsCat:ColaShop.000\"/1200 Town 27 29 2 JortsCat_cleaning/a1900 Town 7 89 2/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 3 JortsCat_catnap",},
+        },
+		
+		{
+            "LogName": "Jorts Schedule RSV compat",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JortsCat",
+			"When": {  "HasMod |contains= Rafseazz.RSVCP": true, },
+			"Entries": {
+				"9": "610 Custom_Ridgeside_RidgesideVillage 79 51 2 JortsCat_cleaning/1430 Custom_Ridgeside_RidgesideVillage 54 54 1/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap",
+				"23": "610 Custom_Ridgeside_LennyHouse 25 11 0/a1530 Custom_Ridgeside_RidgesideVillage 125 35 2/a2400 Town 44 73 0/2410 Town 72 70 0/2440 AdventureGuild 9 12 1 JortsCat_catnap",
+			},
+		},
+		
+				{
+            "LogName": "Jorts Schedule Sunberry compat",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JortsCat",
+			"When": {  "HasMod |contains= skellady.SBVCP": true, },
+			"Entries": {
+				"6": "610 Custom_SBV_DialaCafe 33 17 0 JortsCat_catnap \"Strings\\schedules\\JortsCat:CatCafe.000\"/a1800 Custom_SBV_SunberryVillage 63 93 0 JortsCat_cleaning/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JortsCat_catnap",
+				"20": "610 Custom_SBV_AriMarket 6 21 2/a1800 Custom_SBV_SunberryVillage 63 93 0 JortsCat_cleaning/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JortsCat_catnap",
+				"winter_20": "610 Custom_SBV_AriMarket 6 21 2/1600 Custom_SBV_SunberryVillage 76 14 2/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JortsCat_catnap",
+			},
+		},
+		
+				{
+            "LogName": "Jorts Schedule PITV Pride Festival",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JortsCat",
+			"When": {  "HasMod |contains= sapphicsaph_pitv": true, },
+            "Entries": {
+                "sapphicsaph_pitv.PrideFestival_3": "610 CommunityCenter 42 10 JortsCat_cleaning\"Strings\\schedules\\JortsCat:Pride.000\"/a2400 Town 43 73 0/2410 Town 71 70 0/2440 AdventureGuild 10 12 3 JortsCat_catnap"
+            },
+            "When": {
+                "IsCommunityCenterComplete": true
+            }
+        },
+    ],
+}

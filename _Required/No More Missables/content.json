@@ -1,0 +1,352 @@
+{
+   "Format": "2.0.0",
+   "Changes": [
+ 
+			//Hero Trophy
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {	
+			"bennoloth.PHOU_StardewHeroTrophy": {
+            "Id": "bennoloth.PHOU_StardewHeroTrophy",
+            "ItemId": "(BC)116",
+            "Price": 100000,
+			"AvailableStock": 1,
+			"AvailableStockLimit": 1
+             }, 
+        },
+		"When": {
+				"IsJojaMartComplete": "true"
+				}
+	},
+	
+			//Soda Machine
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {			
+			"bennoloth.NMM_SodaMachine": {
+            "Id": "bennoloth.NMM_SodaMachine",
+            "ItemId": "(BC)117",
+            "Price": 100000,
+			"AvailableStock": 1,
+			"AvailableStockLimit": 1
+             }, 
+        },
+		"When": {
+				"IsCommunityCenterComplete": "true"
+				}
+	},	
+	
+			//Penny 14-Heart
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {			
+			//Fruit Salad Rug
+			"bennoloth.NMM_FruitSaladRug": {
+            "Id": "bennoloth.NMM_FruitSaladRug",
+            "ItemId": "(F)1909",
+            "Price": 2500
+             },
+			//Pirate Rug
+			"bennoloth.NMM_FruitSaladRug": {
+            "Id": "bennoloth.NMM_FruitSaladRug",
+            "ItemId": "(F)1902",
+            "Price": 2500
+             }, 	
+			//Strawberry Double Bed
+			"bennoloth.NMM_StrawberryDoubleBed": {
+            "Id": "bennoloth.NMM_StrawberryDoubleBed",
+            "ItemId": "(F)2064",
+            "Price": 2500
+             }, 
+			 //Pirate Double Bed
+			"bennoloth.NMM_PirateDoubleBed": {
+            "Id": "bennoloth.NMM_PirateDoubleBed",
+            "ItemId": "(F)2070",
+            "Price": 2500
+             }, 
+			 //Starry Double Bed
+			"bennoloth.NMM_StarryDoubleBed": {
+            "Id": "bennoloth.NMM_StarryDoubleBed",
+            "ItemId": "(F)2058",
+            "Price": 2500
+             }, 
+        },		
+		"When": {
+				"HasSeenEvent": "4324303"
+				}
+	},
+	
+	//Legendary Fish
+	
+	//Angler
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {	
+			"bennoloth.NMM_Angler": {
+            "Id": "bennoloth.NMM_Angler",
+            "ItemId": "(O)160",
+			"Quality": 3,
+            "Price": 9000
+             }, 
+        },
+		"When": {
+				"HasCaughtFish": "(O)160"
+				}
+	},
+		//Crimsonfish
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {	
+			"bennoloth.NMM_Crimsonfish": {
+            "Id": "bennoloth.NMM_Crimsonfish",
+            "ItemId": "(O)159",
+			"Quality": 3,
+            "Price": 15000
+             }, 
+        },
+		"When": {
+				"HasCaughtFish": "(O)159"
+				}
+	},
+		//Glacierfish
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {	
+			"bennoloth.NMM_Glacierfish": {
+            "Id": "bennoloth.NMM_Glacierfish",
+            "ItemId": "(O)775",
+			"Quality": 3,
+            "Price": 10000
+             }, 
+        },
+		"When": {
+				"HasCaughtFish": "(O)775"
+				}
+	},
+		//Legend
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {	
+			"bennoloth.NMM_Legend": {
+            "Id": "bennoloth.NMM_Legend",
+            "ItemId": "(O)163",
+			"Quality": 3,
+            "Price": 50000
+             }, 
+        },
+		"When": {
+				"HasCaughtFish": "(O)163"
+				}
+	},
+		//Mutant Carp
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {	
+			"bennoloth.NMM_MutantCarp": {
+            "Id": "bennoloth.NMM_MutantCarp",
+            "ItemId": "(O)682",
+			"Quality": 3,
+            "Price": 10000
+             }, 
+        },
+		"When": {
+				"HasCaughtFish": "(O)682"
+				}
+	},
+	
+	//Beach Painting
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {	
+			"bennoloth.NMM_Boat": {
+            "Id": "bennoloth.NMM_Boat",
+            "ItemId": "(F)2421",
+            "Price": 2500
+             }, 
+        },
+	},
+	
+	//Museum Rewards
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {			
+			 //A Night On Eco-Hill
+			"bennoloth.NMM_NightEcoHil": {
+            "Id": "bennoloth.NMM_NightEcoHill",
+            "ItemId": "(F)1541",
+            "Price": 2500
+             }, 
+			 //Jade Hills
+			"bennoloth.NMM_JadeHills": {
+            "Id": "bennoloth.NMM_JadeHills",
+            "ItemId": "(F)1554",
+            "Price": 2500
+             }, 
+			 //Standing Geode
+			"bennoloth.NMM_StandingGeode": {
+            "Id": "bennoloth.NMM_StandingGeode",
+            "ItemId": "(F)1298",
+            "Price": 2500
+             }, 
+			 //Singing Stone
+			"bennoloth.NMM_SingingStone": {
+            "Id": "bennoloth.NMM_SingingStone",
+            "ItemId": "(F)1300",
+            "Price": 2500
+             }, 
+			 //Obsidian Vase
+			"bennoloth.NMM_ObsidianVase": {
+            "Id": "bennoloth.NMM_ObsidianVase",
+            "ItemId": "(F)1299",
+            "Price": 2500
+             }, 
+			 //Skeleton Statue
+			"bennoloth.NMM_SkeletonStatue": {
+            "Id": "bennoloth.NMM_SkeletonStatue",
+            "ItemId": "(F)1304",
+            "Price": 2500
+             }, 
+			 //Chicken Statue
+			"bennoloth.NMM_ChickenStatue": {
+            "Id": "bennoloth.NMM_ChickenStatue",
+            "ItemId": "(F)1305",
+            "Price": 2500
+             },
+			//Bear Statue
+			"bennoloth.NMM_BearStatue": {
+            "Id": "bennoloth.NMM_BearStatue",
+            "ItemId": "(F)1671",
+            "Price": 2500
+             }, 			 
+        },
+		"When": {
+				"HasFlag": "museumComplete"
+				}
+	},
+
+	//Birdie Items
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {			
+			//War Memento
+			"bennoloth.NMM_WarMemento": {
+            "Id": "bennoloth.NMM_WarMemento",
+            "ItemId": "(O)864",
+            "Price": 2500
+             }, 
+			 //Gourmet Tomato Salt
+			"bennoloth.NMM_GourmetTomatoSalt": {
+            "Id": "bennoloth.NMM_GourmetTomatoSalt",
+            "ItemId": "(O)865",
+            "Price": 2500
+             },
+			 //Stardew Valley Rose
+			"bennoloth.NMM_StardewValleyRose": {
+            "Id": "bennoloth.NMM_StardewValleyRose",
+            "ItemId": "(O)866",
+            "Price": 2500
+             },
+			 //Advanced TV Remote
+			"bennoloth.NMM_AdvancedTVRemote": {
+            "Id": "bennoloth.NMM_AdvancedTVRemote",
+            "ItemId": "(O)867",
+            "Price": 2500
+             },
+			 //Arctic Shard
+			"bennoloth.NMM_ArcticShard": {
+            "Id": "bennoloth.NMM_ArcticShard",
+            "ItemId": "(O)868",
+            "Price": 2500
+             },
+			 //Wriggling Worm
+			"bennoloth.NMM_WrigglingWorm": {
+            "Id": "bennoloth.NMM_WrigglingWorm",
+            "ItemId": "(O)869",
+            "Price": 2500
+             },
+			 //Pirate's Locket
+			"bennoloth.NMM_PiratesLocket": {
+            "Id": "bennoloth.NMM_PiratesLocket",
+            "ItemId": "(O)870",
+            "Price": 2500
+             }, 
+        },
+		"When": {
+				"HasFlag": "birdieQuestFinished"
+				}
+	},
+	
+	//Wizard Items
+	
+	//Prismatic Jelly
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {			
+			"bennoloth.NMM_PrismaticJelly": {
+            "Id": "bennoloth.NMM_PrismaticJelly",
+            "ItemId": "(O)876",
+            "Price": 2500
+             }, 
+        },
+		"When": {
+				"HasReadLetter": "WizardReward"
+				}
+	},
+	//Ectoplasm
+{
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "Casino", "Items" ],
+            "Entries": {			
+			"bennoloth.NMM_Ectoplasm": {
+            "Id": "bennoloth.NMM_Ectoplasm",
+            "ItemId": "(O)875",
+            "Price": 2500
+             }, 
+        },
+		"When": {
+				"HasReadLetter": "WizardReward2"
+				}
+	},
+	
+	{
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+				"999666/f Sam 750/w sunny/t 700 1500/z winter/y 2/k 733330": "ocean/-1000 -1000/farmer 40 9 2 Sam 41 18 2 Vincent 43 22 2/skippable/animate Vincent false true 500 18 19/specificTemporarySprite beachStuff/viewport 42 19 true/move farmer 0 9 1/faceDirection Sam 3/speak Sam \"Hello @. Nice day, isn't it?\"/faceDirection farmer 2/faceDirection Sam 2/pause 800/speak Sam \"I'm just keeping an eye on my little brother. It's good for him to get some fresh air on a day like this.\"/pause 1700/speak Sam \"Our Dad used to take us to the beach on sunny days like this.$h\"/jump Vincent/stopAnimation Vincent/showFrame Vincent 0/pause 1000/move Vincent 0 -4 3/move Vincent -1 0 3/faceDirection Sam 1/faceDirection farmer 1/playMusic desolate/speak Vincent \"Sam...?$u\"/pause 900/speak Vincent \"Is Dad going to stay home?$s\"/emote Sam 28/showFrame Sam 34/pause 800/speak Sam \"Of course, Vince. Dad's going to stay as long as he possibly can.$7\"/pause 600/speak Vincent \"But I heard some grown-ups saying that... that all of our troops are getting shot to pieces.$s\"/showFrame Sam 35/pause 1500/speak Sam \"Don't believe everything you hear!$8\"/showFrame Sam 4/speak Sam \"Don't you remember how strong Dad is? He'd never let a pathetic Gotoro grunt get him like that! Don't you worry!$a#$b#And always remember that Dad, Mom, and I are here to play with you if you ever feel lonely.\"/playMusic ocean/speak Vincent \"Okay!\"/jump Vincent/pause 1000/move Vincent 1 0 2/showFrame Sam 4 true/faceDirection Sam 2 true/move Vincent 0 4 2/animate Vincent false true 500 18 19/playSound sandyStep/pause 800/faceDirection Sam 3/pause 800/faceDirection Sam 2/faceDirection farmer 2/pause 1000/speak Sam \"To be honest, I have no idea if my old man is able to stay... We've all read the reports. Our soldiers are falling by the thousands.$s#$b#But what am I going to say to Vincent?$7\"/pause 1000/question null \"#It's best to be honest with kids.#You did the right thing. Kids should have hope.\"/emote Sam 40/pause 1000/splitSpeak Sam \"You think so?$7#$b#Maybe you're right... The world is a cruel place, but kids have to learn that one way or another.$s~Yeah... kids should play and have fun while they still have the chance.\"/pause 700/faceDirection Sam 3/faceDirection farmer 1/speak Sam \"Hey did I tell you the band's starting to come together?#$b#Yeah! It turns out Abigail's a pretty good drummer. And Sebastian seemed to really want her in the band...$h\"/pause 500/globalFade/viewport -1000 -1000/end",
+            },
+        },	
+	{
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+				"97/f Clint 750/t 1900 2300/d Tue Wed Thu Fri Sat Sun": "null",
+				"97/f Clint 750/t 1900 2300": "none/4 18/farmer 14 24 0 Clint 4 19 2 Emily 10 11 0 Gus 15 18 1 Shane 7 18 1/skippable/move farmer 0 -3 3/emote Clint 28/pause 500/move Clint 0 -1 3/move Clint -3 0 0/pause 500/playSound openBox/pause 150/playSound shiny4/pause 400/playMusic desolate/move Clint 3 0 2/move Clint 0 1 2/move farmer -3 0 0/move farmer 0 -1 3/faceDirection Shane 2 true/move farmer -3 0 3/faceDirection Shane 1 true/move farmer -3 0 3/faceDirection Clint 1/speak Clint \"Hello, @... care to join me?\"/pause 400/faceDirection farmer 0/pause 800/faceDirection farmer 3/faceDirection Clint 2/speak Clint \"Let me just go ahead and tell you what's on my mind.$u#$b#I have terrible luck with women, @...*sigh*$s#$b#I'm a nice guy if you get to know me, I swear!$u\"/pause 500/faceDirection farmer 0/emote farmer 28/pause 500/faceDirection farmer 3/speak Clint \"The girls all seem to like you, @...^You're a girl, @...\"/speak Clint \"$q 211 null#Got any tips?^What advice can you give me?#$r 211 25 event_advice1#Impress women with your strength and charm#$r 211 25 event_advice1#Act crazy, to keep people guessing#$r 211 0 event_advice2#Just act natural... be yourself#$r 211 25 event_advice1#Treat women the same as men\"/speed Emily 4/move Emily -6 0 2/speed Emily 2/move Emily 0 4 2/doAction 4 16/playSound openBox/stopMusic/move Emily 0 3 1/move Emily 1 0 2/move Emily 0 1 3/pause 400/pause 700/speak Emily \"Hi Clint, what can I get for you tonight?$h\"/pause 600/faceDirection Clint 1/pause 200/speak Clint \"Yes!\"/pause 300/speak Clint \"Er.. I mean, I'll have the Big n' Cheesy. With extra sauce, please.$s#$b#...$u\"/faceDirection Clint 3/faceDirection Emily 2/pause 300/faceDirection Clint 2/speak Emily \"Hi @.\"/pause 300/faceDirection farmer 0/faceDirection Clint 1/speak Clint \"Er... *ahem* Th...Thanks, Emily. For... taking my order.#$b#Um, Emily? I was...*gulp*... I was wondering...$h\"/pause 300/faceDirection Emily 3/emote Emily 8/pause 400/speak Emily \"Yes, Clint?$u\"/pause 500/emote Clint 28/pause 1200/speak Clint \"... never mind.$s\"/faceDirection Clint 0/playMusic sadpiano/pause 300/faceDirection Emily 2/pause 300/faceDirection Emily 3/pause 500/move Emily 0 -1 1/move Emily 1 0 1/faceDirection Shane 3/speak Emily \"Hi, Shane! Here's your beverage.$h\"/pause 300/faceDirection Shane 1/pause 400/addObject 8 17 346 1/playSound woodyStep/pause 400/faceDirection Shane 3/pause 300/faceDirection Clint 1/speak Shane \"Thanks, Emily!$h#$b#So... How's your shift coming along?\"/speak Emily \"It's fine! Thanks for asking, Shane!$h#$b#Do you have any new chicken stories for me?\"/pause 600/emote Clint 28/pause 500/faceDirection Clint 2/pause 800/speak Clint \"*sigh*$s#$b#I'm doomed...$s\"/end warpOut",
+			}
+		}
+	]
+}

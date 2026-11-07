@@ -1,0 +1,115 @@
+{
+
+	"Changes": [
+		
+
+		{
+			"LogName": "Blair and the cats strings",
+			"Action": "EditData",
+			"Target": "Strings/SpecialOrderStrings",
+			"Entries": {
+		"Blair.cats.Name": "{{i18n:Blair.cats.Name}}",
+"Blair.cats.Ordertext": "{{i18n:Blair.cats.Ordertext}}",
+"Blair.cats.Objective1": "{{i18n:Blair.cats.Objective1}}",
+"Blair.cats.Objective2": "{{i18n:Blair.cats.Objective2}}",
+
+			},
+		},
+		{
+			"LogName": "Special Order: Ridgeside Blair and Jean",
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"Blair.cats": { 
+					"Name": "[Blair.cats.Name]", 
+					"Requester": "Blair", 
+					"Duration": "TwoWeeks", 
+					"Repeatable": "True", 
+					"RequiredTags": "dropbox_BlairBox", 
+					"OrderType": "RSVTownSO", 
+					"SpecialRule": "",
+					"Text": "[Blair.cats.Ordertext]", 
+					"ItemToRemoveOnEnd": null, 
+					"MailToRemoveOnEnd": null, 
+					"RandomizedElements": null, 
+					"Objectives": [
+						{
+							"Type": "Donate", 
+							"Text": "[Blair.cats.Objective1]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "RSVOutsideRiveras", 
+								"DropBoxGameLocation": "Custom_Ridgeside_RidgesideVillage",
+								"DropBoxIndicatorLocation": "69 69",
+								"AcceptedContextTags": "item_deluxe_bait", 
+							}
+						},
+												{
+							"Type": "Donate", 
+							"Text": "[Blair.cats.Objective2]",
+							"RequiredCount": "30",
+							"Data": {
+								"DropBox": "RSVOutsideRiveras", 
+								"DropBoxGameLocation": "Custom_Ridgeside_RidgesideVillage",
+								"DropBoxIndicatorLocation": "69 69",
+								"AcceptedContextTags": "item_wild_bait", 
+							}
+						},
+					],
+					"Rewards": [ 
+						{
+							"Type": "Money",
+							"Data": {
+								"Amount": "5000",
+							}
+						},
+						{
+							"Type": "Friendship",
+							"Data": {
+								"Amount": "100", 
+								"TargetName": "Blair", 
+							},
+						},
+						{
+							"Type": "Friendship",
+							"Data": {
+								"Amount": "50", 
+								"TargetName": "JeanCat", 
+							},
+						},
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "BlairCats", 
+								"NoLetter": "false" 
+							}
+						},
+						
+					]
+				}
+			}
+		},
+		
+		{
+			"Action": "EditData",
+			"Target": "data/mail",	
+			"Entries": {
+			
+			"BlairCats": "{{i18n:Blair.cats.rewardletter}}%item object 908 5[#]{{i18n:Blair.cats.rewardletter.title}}",
+			}
+		},
+		
+		
+		/*
+		//to be added if I make the event non-repeatable
+		{
+			"Action": "EditData",  
+			"Target": "Data/Events/Custom_Ridgeside_RidgesideVillage",
+			"Entries": {
+				// Reward event    
+				"jortsandjean.blair.SO/n BlairCats": "jaunty/20 20/farmer -999 -999 1 JortsCat -998 -999 1 JeanCat -997 -999 1 Blair -996 -999 1 Eloise 4 4 0/skippable//end",
+
+			}
+		} */
+	]
+}	

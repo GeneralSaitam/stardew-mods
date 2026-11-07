@@ -1,0 +1,70 @@
+{
+  "Changes": [
+    {
+      "LogName": "Crab Pots Jellies Null Vanilla Fish",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "715": null,
+        "717": null,
+        "723": null,
+        "372": null,
+        "720": null,
+        "718": null,
+        "719": null,
+        "721": null,
+        "716": null,
+        "722": null
+      },
+      "When": {
+        "Crab Pots Jellies": true
+      }
+    },
+    {
+      "LogName": "Crab Pots Jellies Objects Type Mod Compatibility",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Fields": {
+        "SeaJelly": {
+          "Type": "Basic",
+          "Category": -4
+        },
+        "CaveJelly": {
+          "Type": "Basic",
+          "Category": -4
+        },
+        "RiverJelly": {
+          "Type": "Basic",
+          "Category": -4
+        }
+      },
+      "When": {
+        "Crab Pots Jellies": true,
+        "HasMod |contains=Pathoschild.LookupAnything, seeinggreen.StardewProgress": true
+      }
+    },
+    {
+      "LogName": "Crab Pots Jellies",
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "719": "Mussel/trap/.35/683 .15/ocean/1/5/false",
+        "718": "Cockle/trap/.3/680 .2/ocean/1/5/false",
+        "720": "Shrimp/trap/.2/681 .35/ocean/1/3/false",
+        "372": "Clam/trap/.15/681 .35/ocean/1/5/false",
+        "723": "Oyster/trap/.15/682 .35/ocean/1/5/false",
+        "717": "Crab/trap/.1/684 .45/ocean/1/20/false",
+        "715": "Lobster/trap/.05/688 .45 689 .35 690 .35/ocean/2/20/false",
+        "CaveJelly": "Cave Jelly/trap/.03/680 .05/freshwater/1/5/false",
+        "SeaJelly": "Sea Jelly/trap/.03/680 .05/ocean/1/5/false",
+        "RiverJelly": "River Jelly/trap/.03/680 .02/freshwater/1/5/false",
+        "721": "Snail/trap/.25/680 .35/freshwater/1/5/false",
+        "716": "Crayfish/trap/.35/682 .4/freshwater/1/8/false",
+        "722": "Periwinkle/trap/.55/681 .35/freshwater/1/3/false"
+      },
+      "When": {
+        "Crab Pots Jellies": true
+      }
+    }
+  ]
+}

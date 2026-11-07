@@ -1,0 +1,71 @@
+{
+    "Changes": [
+        {   
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                    "16279001/F/f Penny 250/t 800 1230/A pennyGone": "musicboxsong/
+                    35 89/
+farmer 29 75 2 Penny 35 89 0 Sam 25 93 1/
+skippable/
+animate Penny false false 150 0 0 0 0 16 16 16 17 17 17 18 18 18/
+pause 1500/
+animate Penny false true 200 18 18 18 18 18 18 18 18 18 18 18 19 19 19 18 18/
+pause 300/
+speak Penny \"Now, where did I stop reading?\"/
+pause 300/
+speak Penny \"Oh goodness, this is so corny. But so cute!$h\"/
+pause 50/
+speed farmer 2/
+move farmer 0 15 2 false/
+move farmer 5 0 1 false/
+stopAnimation Penny 18/
+pause 200/
+showFrame Penny 17/
+pause 300/
+showFrame Penny 16/
+pause 200/
+speak Penny \"Oh hi, @! I was so absorbed in this book that I didn't notice you there.#$b#You seem to walk past my favorite reading spot quite a bit.$h#$b#What do you say?$h#$b#$q 1627901 null##$r 1627901 20 event_tree1#I certainly do! What are you reading today?#$r 1627902 -20 event_tree2#Yeah... But I'm in a hurry.\"/
+fork inAHurry/
+advancedMove Sam false 0 -3 4 0 0 -12/
+emote farmer 32/
+pause 1000/
+advancedMove farmer false 3 0 0 2 3 0/
+showFrame Penny 17/
+pause 300/
+showFrame Penny 18/
+pause 200/
+emote Penny 32 true/
+pause 1000/
+globalFade/
+viewport -1000 -1000/
+pause 500/
+end dialogue Penny \"Thanks for the nice conversation earlier.$0\"",
+                    "inAHurry": "showFrame Penny 17/
+                    pause 300/
+showFrame Penny 18/
+emote farmer 28 true/
+move Sam 0 -2 1/
+advancedMove farmer false 2 0 0 2 4 0 0 4 7 0/
+move Sam 4 0 1/
+pause 600/
+move Sam 6 0 1/
+emote Sam 8 true/
+move Sam 0 -1 0/
+pause 1100/
+globalFade/
+viewport -1000 -1000/
+end dialogue Penny \"I thought that you were too busy to chat.$3\""
+                },
+        },  
+        
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":{
+                "event_tree1":"Oh! I'm surprised you're interested. Thanks for asking!$h#$b#I normally read books about teaching and I like to read about artifacts. In general I like to expand my knowledge.$0#$b#But this book right here is a just silly novel I've been reading lately.$h#$b#I'm a little embarrassed to tell you... But it's just a silly romance novel.$4#$b# But silly can be fun sometimes.$1#$b#Well, I don't want to keep you busy. I'm sure you have a lot of work to do today.$0#$b#Thanks for stopping by! I hope you have a great rest of your day!$h",
+                "event_tree2":"Oh... I guess you should get going then.%fork$3"
+            }
+        
+        },    ]
+}

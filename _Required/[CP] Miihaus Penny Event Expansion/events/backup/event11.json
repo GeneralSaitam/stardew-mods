@@ -1,0 +1,229 @@
+{
+    "Changes": [
+        {
+            "Action":"EditData",
+            "Target":"Data/Quests",
+            "Entries":{
+                "162791":"Basic/Make Penny a better Teacher/Penny needs something to take pictures, something to type with, and something to calculate with./Maybe you can befriend people around town that can help you out./null/-1/0/-1/false",
+                "162792":"Basic/Make Penny a better Teacher/You have collected all the necessary items to help Penny achieve her dream of becoming a better teacher./It's time to surprise her at home!/null/-1/0/-1/false",
+        
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Data/Events/FarmHouse",
+            "Entries":{
+                "1627901101/k 1627901102/F/U 4/M 3000/O Penny/p Penny/f Penny 2750/p Penny/t 800 1900/L":"sweet/
+                -1000 -1000/
+farmer 26 24 3 Penny 23 24 0/
+animate Penny false true 250 24 25/
+makeInvisible 5 5 5 1/
+makeInvisible 8 14 5 1/
+viewport -100 -100 true unfreeze/
+move farmer -2 0 3/
+pause 1000/
+stopAnimation Penny/
+pause 20/
+playSound thudStep/
+pause 250/
+faceDirection Penny 1/
+pause 50/
+animate Penny true true 100 20/
+pause 1000/
+stopAnimation Penny/
+faceDirection Penny 1/
+pause 200/
+speak Penny \"Oh hi honey...$0#$b#I was just baking some cookies, do you want some?$h\"/
+quickQuestion #Yes, thank you, honey!#No thank you.(break)speak Penny \"Here you go, sweetie pie.$h\"\\pause 500\\faceDirection farmer 2\\farmerEat 223\\pause 2500\\stopAnimation farmer\\pause 50\\faceDirection farmer 3\\speak Penny \"I hope you liked it!$l#$b#I asked Mrs. Mullner for some advice the other day.\"\\emote farmer 20(break)speak Penny \"Oh...$3#$b#Maybe later then.\"/
+pause 500/
+speak Penny \"@...$2\"/
+emote farmer 8/
+pause 100/
+speak Penny \"There is actually something I'd like to talk to you about...$s#$b#Don't look so worried, honey, it's nothing bad! I'm a bit anxious to talk about it.$s\"/
+pause 100/
+emote farmer 32/
+speak Penny \"I've been thinking a lot lately about my career as a teacher and how I could improve.$0#$b#I've read about a course for primary and secondary school teachers that's being offered in a neighboring city.$0#$b#It's a three-day program that covers a lot of different teaching techniques and methods, and I really think it could help me become a better teacher.\"/
+pause 100/
+faceDirection Penny 2/
+pause 350/
+speak Penny \"But, there's a catch.$s\"/
+faceDirection Penny 1/
+pause 200/
+speak Penny \"The course costs 3000g and I'd have to be away for three days.$s#$b#I know it's a lot of money and it would mean leaving you and our home for a while.$s#$b#I wouldn't want to do that if it's going to put a strain on our relationship or our finances.$s#$b#But at the same time, I really want to become a better teacher and I think this course could be a big step in the right direction.$s\"/
+question fork1 \"#That sounds great, Penny. You should definitely go for it! (3000g)#I don't think it's worth it, Penny. Your teaching is fine as is.\"/
+fork dontGoPenny/
+pause 100/
+money -3000/
+jump Penny 5/
+speak Penny \"Really? You mean it?$0#$b#Thank you so much! This means the world to me.$h#$b#I promise to make the most of this opportunity and to come back with new and exciting teaching ideas.$0#$b#@, you always support me in everything I do. I appreciate it more than you know.$l#$b#I can't wait to make you proud!$l\"/
+pause 200/
+pause 500/
+animate Penny false true 100 35/
+animate farmer true true 100 101/
+positionOffset farmer -8 0/
+positionOffset Penny 8 0/
+pause 1500/
+positionOffset Penny -8 0/
+stopAnimation Penny/
+showFrame Penny 4/
+stopAnimation farmer/
+pause 200/
+emote Penny 20/
+end dialogue Penny \"I can't believe I'm actually going to do this. Thank you so much for supporting me, it means the world to me.$l#$e#I'm going to learn so much on this trip, and then I can come back and be an even better teacher for my students.$0#$e#I'm a little nervous about putting myself out there and meeting so many new people.$0#$e#But with your support, I feel like I can do anything. I'm so lucky to have you as my partner.$l\"",
+                "1627901102/k 1627901101/F/U 4/M 3000/O Penny/p Penny/f Penny 2750/p Penny/t 800 1900":"sweet/
+                -1000 -1000/
+				farmer 8 5 3 Penny 5 5 0/
+				animate Penny false true 250 24 25/
+				makeInvisible 5 5 5 1/
+				makeInvisible 8 14 5 1/
+				viewport -100 -100 true unfreeze/
+				move farmer -2 0 3/
+				pause 1000/
+				stopAnimation Penny/
+				pause 20/
+				playSound thudStep/
+				pause 250/
+				faceDirection Penny 1/
+				pause 50/
+				animate Penny true true 100 20/
+				pause 1000/
+				stopAnimation Penny/
+				faceDirection Penny 1/
+				pause 200/
+				speak Penny \"Oh hi honey...$0#$b#I was just baking some cookies, do you want some?$h\"/
+				quickQuestion #Yes, thank you, honey!#No thank you.(break)speak Penny \"Here you go, sweetie pie.$h\"\\pause 500\\faceDirection farmer 2\\farmerEat 223\\pause 2500\\stopAnimation farmer\\pause 50\\faceDirection farmer 3\\speak Penny \"I hope you liked it!$l#$b#I asked Mrs. Mullner for some advice the other day.\"\\emote farmer 20(break)speak Penny \"Oh...$3#$b#Maybe later then.\"/
+				pause 500/
+				speak Penny \"@...$2\"/
+				emote farmer 8/
+				pause 100/
+				speak Penny \"There is actually something I'd like to talk to you about...$s#$b#Don't look so worried, honey, it's nothing bad! I'm a bit anxious to talk about it.$s\"/
+				pause 100/
+				emote farmer 32/
+				speak Penny \"I've been thinking a lot lately about my career as a teacher and how I could improve.$0#$b#I've read about a course for primary and secondary school teachers that's being offered in a neighboring city.$0#$b#It's a three-day program that covers a lot of different teaching techniques and methods, and I really think it could help me become a better teacher.\"/
+				pause 100/
+				faceDirection Penny 2/
+				pause 350/
+				speak Penny \"But, there's a catch.$s\"/
+				faceDirection Penny 1/
+				pause 200/
+				speak Penny \"The course costs 3000g and I'd have to be away for three days.$s#$b#I know it's a lot of money and it would mean leaving you and our home for a while.$s#$b#I wouldn't want to do that if it's going to put a strain on our relationship or our finances.$s#$b#But at the same time, I really want to become a better teacher and I think this course could be a big step in the right direction.$s\"/
+				question fork1 \"#That sounds great, Penny. You should definitely go for it! (3000g)#I don't think it's worth it, Penny. Your teaching is fine as is.\"/
+				fork dontGoPenny/
+				pause 100/
+				money -3000/
+				jump Penny 5/
+				speak Penny \"Really? You mean it?$0#$b#Thank you so much! This means the world to me.$h#$b#I promise to make the most of this opportunity and to come back with new and exciting teaching ideas.$0#$b#@, you always support me in everything I do. I appreciate it more than you know.$l#$b#I can't wait to make you proud!$l\"/
+				pause 200/
+				pause 500/
+				animate Penny false true 100 35/
+				animate farmer true true 100 101/
+				positionOffset farmer -8 0/
+				positionOffset Penny 8 0/
+				pause 1500/
+				positionOffset Penny -8 0/
+				stopAnimation Penny/
+				showFrame Penny 4/
+				stopAnimation farmer/
+				pause 200/
+				emote Penny 20/
+				end dialogue Penny \"I can't believe I'm actually going to do this. Thank you so much for supporting me, it means the world to me.$l#$e#I'm going to learn so much on this trip, and then I can come back and be an even better teacher for my students.$0#$e#I'm a little nervous about putting myself out there and meeting so many new people.$0#$e#But with your support, I feel like I can do anything. I'm so lucky to have you as my partner.$l\"",
+                "dontGoPenny":"friendship Penny -150/
+                speak Penny \"Maybe you're right.$s\"/
+				emote Penny 28/
+				pause 200/
+				speak Penny \"I understand, it's a lot of money and time away from home.$s#$b#I guess I just wanted to show my students that I'm always striving to be the best teacher I can be.$s#$b#But if you don't think it's worth it, then I trust your judgment.$0#$b#It's just...$s#$b#I want to be more than just fine.$s#$b#But I guess it's fine... and fine is all my teaching has to be.$s#$b#Thank you for listening to me, @.$s\"/
+				emote farmer 60/
+				pause 200/
+				end dialogue Penny \"Don't worry about it @. The course was a silly idea of mine.\"",
+                
+                "1627901103/e 1627901101 1627901102/O Penny/k dontGoPenny/t 600 610":"sweet/
+                -1000 -1000/
+				farmer 25 11 3 Penny 24 11 1/
+				changeLocation BusStop/
+				viewport 25 12/
+				addConversationTopic pennyGone 2/
+				addConversationTopic pennyIsGone1 0/
+				pause 1200/
+				speak Penny \"Thanks for walking me to the bus stop, sweetheart. And thank you so much for supporting me.$0#$b#I'll miss you so much. But I promise it'll be worth it. $0#$b#I'll come back with so many new ideas to improve my teaching. And we can cuddle and talk and I'll tell you all about it.$h\"/
+				pause 500/
+				animate Penny false true 100 35/
+				animate farmer true true 100 101/
+				positionOffset farmer -8 0/
+				positionOffset Penny 8 0/
+				pause 1500/
+				positionOffset Penny -8 0/
+				stopAnimation Penny/
+				showFrame Penny 4/
+				stopAnimation farmer/
+				pause 200/
+				speak Penny \"I love you, @! Take care of yourself while I'm gone.$l\"/
+				emote farmer 20/
+				end invisible Penny",
+                "1627901104/e 1627901103/O Penny/t 600 610/A pennyIsGone1":"continue/
+                -1000 -1000/
+				Penny -2000 -2000 0/
+				mail PennysAtCourse/
+				addConversationTopic pennyIsGone2 0/
+				pause 1500/
+				message \"You had a sweet and intimate dream about Penny. Waking up, you reach for her instinctively, but then remember that she's away from home for now.\"/
+				end invisible Penny",
+                "1627901105/e 1627901104/O Penny/t 600 610/A pennyIsGone2":"continue/
+                -1000 -1000/
+				Penny -2000 -2000 0/
+				addConversationTopic pennyIsGone3 0/
+				pause 1500/
+				message \"You wake up thinking about Penny and feel excited that she'll be coming home tomorrow.\"/
+				end invisible Penny",
+                "1627901106/e 1627901105/O Penny/t 600 610/A pennyIsGone3":"musicboxsong/
+                -1000 -1000/
+				farmer 25 11 3 Penny 24 11 1/
+				changeLocation BusStop/
+				viewport 25 12/
+				pause 1200/
+				speak Penny \"Hi, @! It's sweet of you to pick me up from the bus stop.\"/
+				emote Penny 20/
+				speak Penny \"The course was amazing! I learned so much, and I can't wait to start applying it to my teaching.\"/
+				pause 300/
+				speak Penny \"We covered a lot of ground, from new teaching strategies to using technology to enhance student learning.$0#$b#But as wonderful as the course was, it's left me feeling a little overwhelmed.$s#$b#To implement everything that I want to, I would need a whole new set of teaching tools.$s#$b#Like a camera to take pictures while we're exploring the valley, so that my students can learn from what we find.$0#$b#I would also need something to type out worksheets, and a scientific calculator for more complex equations.$0#$b#I don't think I can find everything I need here in town.$s\"/
+				emote farmer 8/
+				speak Penny \"Oh, please don't worry about it, sweetie pie.$0#$b#It's okay. I'm happy I got to experience the course, and I can work with what I have for now.$0#$b#I'm just grateful for your support and encouragement.\"/
+				pause 150/
+				addQuest 162791/
+				speak Penny \"Let's head home.$0#$b#The farm is waiting for us.$h\"/
+				end dialogue Penny \"It was interesting seeing more of the world outside the valley. Maybe I'll have other opportunities like this one. Which I hope I can pursue with your blessing, honey.$1#$e#But I'm glad to be back to our normal routine. I know it was only three days, but I really missed you!$4\""
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Pam",
+            "Entries":{
+                "pennyGone":"Hey there, @.$0#$b#So Penny is off to her course, I see.$0#$b#Yeah, she told me about it. Thanks for encouraging her to go for that opportunity, kid.$0#$e#She's always been a bright girl, but she never had the chance to develop her potential until you came along.$0#$e#It's not easy being a single mom, but it's a little easier knowing that Penny has you in her life.",
+                "pennysDream":"You did good kid. I haven't seen Penny this happy in a long time.$0#$e#Thank you so much for making my daughter's dreams come true.$0"
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Vincent",
+            "Entries":{
+                "pennyGone":"Mrs. Penny is gone to learn how to teach, or something.$3#$b#I hope she comes back soon.$2#$e#We were learning about bugs last week and I want to show her the one I caught yesterday.$1",
+                "pennysDream":"Mrs. Penny's new worksheets she made us are so cool!$1#$e#She even gave us some stickers as rewards for doing well on them.$0"
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Jas",
+            "Entries":{
+                "pennyGone":"Learing without Mrs. Penny is hard.$2#$e#But Aunt Marnie told me learning will be way more fun when Mrs. Penny takes the course.$0",
+                "pennysDream":"Wow, Mrs. Penny is really smart!$1#$b#I can't wait to see all the new things she's going to teach us.$0#$e#She's always coming up with fun and exciting ways to help us learn.$4"
+            }
+        },
+        {
+            "Action":"EditData",
+            "Target":"Characters/Dialogue/Jodi",
+            "Entries":{
+                "pennyGone":"I know it can be tricky when your spouse is away.$0#$b#But the time apart will strengthen your relationship, I promise.$0#$e#You seem to miss her a lot already, don't you?$1",
+                "pennysDream":"Vincent won't stop talking about how much fun he is having with his new worksheets!$0#$e#I heard you made all of this possible.$0#$b#Good job, Romeo!$1^Good job, @!$1"
+            }
+        },
+    ]
+}

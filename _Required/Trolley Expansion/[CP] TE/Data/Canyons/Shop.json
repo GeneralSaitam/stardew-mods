@@ -1,0 +1,68 @@
+{
+  "Changes": [
+
+{
+        "LogName": "Load Shop Portrait",
+        "Action": "Load",
+        "Target": "Portraits/Sentry_Vendor",
+        "FromFile": "assets/Canyons/Sentry_Vendor_{{Portraits}}.png"
+    },
+		 {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+			
+            "Entries": {
+                "Yoput_Shop": {
+					   "ID": "Yoput_Shop",
+					   "OpenSound": "DwarvishSentry",
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+							"Id": "Yoput_Shop",
+							"Portrait": "Portraits/Sentry_Vendor",
+                            "Dialogues": [
+                          
+                           
+                                {
+                                    "Id": "Yoputshop",
+                
+                                    "Dialogue": "{{i18n:Sentry.Dialogue}}",
+                                },
+                          
+                            ]
+                        }
+                    ],
+
+    "Items": [
+    
+ {
+                            "Id": "Canyon_scroll1",
+                            "ItemId": "(O)96",
+							"TradeItemId": "CC_Rainflower",
+							"TradeItemAmount": "1"
+                        },
+						 {
+                            "Id": "Canyon_scroll2",
+                            "ItemId": "(O)97",
+							"TradeItemId": "CC_Rainflower",
+							"TradeItemAmount": "2"
+                        },
+							 {
+                            "Id": "Canyon_scroll3",
+                            "ItemId": "(O)98",
+							"TradeItemId": "CC_Rainflower",
+							"TradeItemAmount": "3"
+                        },
+								 {
+                            "Id": "Canyon_scroll4",
+                            "ItemId": "(O)99",
+							"TradeItemId": "CC_Rainflower",
+							"TradeItemAmount": "4"
+                        }
+        ]
+				}
+			}
+		 },
+				]
+				}
+              

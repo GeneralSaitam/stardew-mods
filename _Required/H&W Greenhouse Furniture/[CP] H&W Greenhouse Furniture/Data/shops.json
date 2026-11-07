@@ -1,0 +1,87 @@
+{
+  "Changes": [
+
+    {
+        "LogName": "Add Greenhouse Catalogue Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "Entries": {
+            "HXW.GreenhouseSet": {
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Items": [
+                {
+                "Price": 0,
+                "AvailableStockLimit": "Global",
+                "AvoidRepeat": false,
+                "UseObjectDataPrice": false,
+                "IgnoreShopPriceModifiers": false,
+                "PriceModifiers": null,
+                "PriceModifierMode": "Stack",
+                "AvailableStockModifiers": null,
+                "AvailableStockModifierMode": "Stack",
+                "Condition": null,
+                "Id": "Default",
+                "ItemId": "ALL_ITEMS (F)",
+                "MinStack": -1,
+                "MaxStack": -1,
+                "Quality": -1,
+                "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_hwgreenhousefurni"
+                }
+            ],
+            "CustomFields":{
+                "HappyHomeDesigner/Catalogue":"true"
+            }
+            }
+        }
+    },
+
+    {
+        "LogName": "Add Greenhouse Catalogue Item",
+        "Action": "EditData",
+        "Target": "Data/Furniture",
+        "Entries": {    
+            "HXW.GreenhouseFurniture_Catalogue": "HXW.GreenhouseFurniture_Catalogue/other/1 2/1 1/1/35000/2/{{i18n:GreenhouseFurniture_Catalogue}}/47/Mods\\HXW.GreenhouseFurniture\\Furniture/true"
+        }
+    },
+  
+    {
+        "LogName": "Add Greenhouse Catalogue Tile Actions",
+        "Action": "EditData",
+        "Target": "sophie.Calcifer/FurnitureActions",
+        "Entries": {
+            "(F)HXW.GreenhouseFurniture_Catalogue": {
+                "TileActions": [
+                    {
+                        "TileAction": "OpenShop HXW.GreenhouseSet"
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "LogName": "Add Greenhouse Catalogue to Robin's Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": [ "Carpenter", "Items" ],
+        "Entries": {
+            "HXW.GreenhouseFurniture_Catalogue": {
+                "Id": "HXW.GreenhouseFurniture_Catalogue",
+                "ItemId": "(F)HXW.GreenhouseFurniture_Catalogue",
+                "Price": 35000
+            }
+        }
+    }
+   
+  ]
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  

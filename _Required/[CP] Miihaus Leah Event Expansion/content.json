@@ -1,0 +1,383 @@
+//hope you have a nice day! thanks for checking out my "Code" - Miihau
+//if you plan on learning from this: have fun! 
+//if you have a question, feel free to reach out to me! I am happy to explain!
+//MiihausLeahEventExpansion
+
+{
+    "Format": "2.3.0",
+    "ConfigSchema": {
+        "VanillaEventsWithLeah": {
+            "AllowValues": "Don't do anything,Set them all as 'seen',Set them all as 'not seen'",
+            "Default": "Don't do anything",
+            "Description": "WARNING: You can only set all pre marriage events with Leah as already 'seen' or as still 'not seen'."
+        },
+
+    },
+
+    // add the in-game location
+    "CustomLocations": [
+        {
+            "Name": "Custom_Miihau_LeahEE_Artcon",
+            "FromMapFile": "assets/Miihau_LeahEE_Artcon.tmx"
+        },
+    ],
+
+//DynamicTokes that add compatibility with SVE
+"DynamicTokens": [
+    {
+        "Name": "Miihau.LeahEE.HasExpanded",
+        "Value": false
+    },
+    { 
+        "Name": "Miihau.LeahEE.HasExpanded",
+        "Value": true,
+        "When": { 
+            "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+    },
+    {
+        "Name": "Miihau.LeahEE.HasSeenEvent10",
+        "Value": false,
+        "Update":"OnLocationChange"
+    },
+    {
+        "Name": "Miihau.LeahEE.HasSeenEvent10",
+        "Value": true,
+        "When":{
+            "HasSeenEvent": "Miihau.LeahEE.010"
+        },
+        "Update":"OnLocationChange"
+    },
+    {
+        "Name": "Miihau.LeahEE.Relation",
+        "Value": "Lovers",
+    },
+    {
+        "Name": "Miihau.LeahEE.Relation",
+        "Value": "Friends",
+        "When":{
+            "HasSeenEvent": "Miihau.LeahEE.008.Friends"
+        },
+    },
+    {
+        "Name": "Miihau.LeahEE.MuralType",
+        "Value": "Classic",
+    },
+    {
+        "Name": "Miihau.LeahEE.MuralType",
+        "Value": "Silly",
+        "When":{
+            "HasSeenEvent": "Miihau.LeahEE.009.Silly"
+        },
+    },
+    {
+        "Name": "Miihau.LeahEE.MuralType",
+        "Value": "Cool",
+        "When":{
+            "HasSeenEvent": "Miihau.LeahEE.009.Cool"
+        },
+    },
+    {
+        "Name": "Miihau.LeahEE.MuralType.Dialogue",
+        "Value": "{{i18n:Miihau.LeahEE.Dialogue.Classic}}"
+    },
+    {
+        "Name": "Miihau.LeahEE.MuralType.Dialogue",
+        "Value": "{{i18n:Miihau.LeahEE.Dialogue.Silly}}",
+        "When":{
+            "HasSeenEvent": "Miihau.LeahEE.009.Silly"
+        }
+    },
+    {
+        "Name": "Miihau.LeahEE.MuralType.Dialogue",
+        "Value": "{{i18n:Miihau.LeahEE.Dialogue.Cool}}",
+        "When":{
+            "HasSeenEvent": "Miihau.LeahEE.009.Cool"
+        }
+    },
+    //Expanded Map Stuff
+    {
+        "Name":"Miihau.LeahEE.010.Starting",
+        "Value": "26 51/farmer 21 55 0 Leah 26 50 0/skippable/addTemporaryActor Miihau_LeahEE_Ladder 16 64 23 48 2 false/addTemporaryActor Miihau_LeahEE_PaintBuckets 32 16 28 48 2 false/positionOffset Miihau_LeahEE_Ladder 8 -4/positionOffset Miihau_LeahEE_PaintBuckets -10 16/move farmer 0 -5 1/faceDirection Leah 3/emote Leah 16/speed Leah 5/move Leah -4 0 3/"
+    },
+    {
+        "Name":"Miihau.LeahEE.010.Starting",
+        "Value": "14 52/farmer 21 55 0 Leah 13 52 0/skippable/addTemporaryActor Miihau_LeahEE_Ladder 16 64 11 51 2 false/addTemporaryActor Miihau_LeahEE_PaintBuckets 32 16 16 50 2 false/positionOffset Miihau_LeahEE_Ladder 2 -8/positionOffset Miihau_LeahEE_PaintBuckets 0 16/move farmer 0 -3 3/faceDirection Leah 1/emote Leah 16/speed Leah 5/move Leah 7 0 1/",
+        "When": { 
+            "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+    },
+    {
+        "Name":"Miihau.LeahEE.010.move1",
+        "Value": "move Leah 4 0 0 farmer 4 0 0/"
+    },
+    {
+        "Name":"Miihau.LeahEE.010.move1",
+        "Value": "move Leah -7 0 0 farmer -7 0 0/",
+        "When": { 
+            "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+    },
+    {
+        "Name":"Miihau.LeahEE.010.move2",
+        "Value": "warp Leah 27 50/warp farmer 25 51/move farmer 0 -1 0/globalFadeToClear 0.007 true/viewport 26 51/"
+    },
+    {
+        "Name":"Miihau.LeahEE.010.move2",
+        "Value": "warp Leah 15 52/warp farmer 13 53/move farmer 0 -1 0/globalFadeToClear 0.007 true/viewport 14 53/",
+        "When": { 
+            "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+    },
+    {
+        "Name":"Miihau.LeahEE.010.move3",
+        "Value": "faceDirection Leah 3/faceDirection farmer 1/"
+    },
+    {
+        "Name":"Miihau.LeahEE.010.move3",
+        "Value": "faceDirection Leah 1/faceDirection farmer 3/",
+        "When": { 
+            "HasMod": "FlashShifter.StardewValleyExpandedCP"
+        }
+    },
+],
+
+"Changes": [
+
+
+///ASSETS
+
+    //MapStuff
+    {
+        "Action": "EditMap",
+        "Target": "Maps/Town, Maps/Town-Christmas, Maps/Town-Christmas2, Maps/Town-Fair,  Maps/Town-Fair2, Maps/Town-EggFestival, Maps/Town-EggFestival2, Maps/Town-Halloween, Maps/Town-Halloween2",
+        "When":{
+            "Miihau.LeahEE.HasExpanded": false,
+            "Miihau.LeahEE.HasSeenEvent10": true
+        },
+        "FromFile": "assets/Miihau_LeahEE_Mural{{Miihau.LeahEE.MuralType}}_Expanded.tmx",
+        "FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+        "ToArea": { "X": 24, "Y": 44, "Width": 5, "Height": 4 },
+        "PatchMode":"Overlay",
+        "Update":"OnLocationChange"
+    },
+    {
+        "Action": "EditMap",
+        "Target": "Maps/Town, Maps/Town-Christmas, Maps/Town-Christmas2, Maps/Town-Fair,  Maps/Town-Fair2, Maps/Town-EggFestival, Maps/Town-EggFestival2, Maps/Town-Halloween, Maps/Town-Halloween2",
+        "When":{
+            "Miihau.LeahEE.HasExpanded": true,
+            "Miihau.LeahEE.HasSeenEvent10": true
+        },
+        "FromFile": "assets/Miihau_LeahEE_Mural{{Miihau.LeahEE.MuralType}}_Expanded.tmx",
+        "FromArea": { "X": 0, "Y": 0, "Width": 5, "Height": 4 },
+        "ToArea": { "X": 12, "Y": 46, "Width": 5, "Height": 4 },
+        "PatchMode":"Overlay",
+        "Update":"OnLocationChange"
+    },
+    {
+        "Action":"EditMap",
+        "Target":"Maps/Custom_Miihau_LeahEE_Artcon",
+        "MapProperties":{
+            "AmbientLight":"95 95 95",
+            "AmbientNightLight":"150 150 30"
+        }
+    },
+    {
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Miihau_LeahEE_Artcon",
+        "When":{
+            "PlayerName": "Nino"
+        },
+        "FromFile": "assets/Miihau_LeahEE_Artcon_EEgg.tmx",
+        "FromArea": { "X": 0, "Y": 0, "Width": 11, "Height": 6 },
+        "ToArea": { "X": 0, "Y": 0, "Width": 11, "Height": 6 },
+    },
+
+    //Characters and props
+    {
+        "Action": "Load",
+        "Target": "Mods/miihau.leahee.assets/Miihau_LeahEE_Sketch, Mods/miihau.leahee.assets/Miihau_LeahEE_TheSandCastlePaintingGood, Mods/miihau.leahee.assets/Miihau_LeahEE_TheSandCastlePaintingBad, Characters/Miihau_LeahEE_Easel1, Characters/Miihau_LeahEE_Easel2, Characters/Miihau_LeahEE_SeeShellStatue, Characters/Miihau_LeahEE_TempActor1, Characters/Miihau_LeahEE_TempActor2, Characters/Miihau_LeahEE_TempActor3, Characters/Miihau_LeahEE_TempActor4, Characters/Miihau_LeahEE_Fox, Characters/Miihau_LeahEE_Ladder, Characters/Miihau_LeahEE_PaintBuckets", 
+        "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+    {
+        "Action":"Load",
+        "Target":"Characters/Miihau_LeahEE_ArtTeacher",
+        "FromFile":"assets/Miihau_LeahEE_ArtTeacherSprites.png"
+    },
+    {
+        "Action":"Load",
+        "Target":"Portraits/Miihau_LeahEE_ArtTeacher",
+        "FromFile":"assets/Miihau_LeahEE_ArtTeacherPortraits.png"
+    },
+    {
+		"Action": "EditData",
+		"Target": "Data/Furniture",
+		"Entries": {
+			"Miihau_LeahEE_Sketch": "Leah's Sketch/painting/1 2/1 2/1/420/-1/{{i18n:Miihau.LeahEE.Sketch}}/0/Mods\\miihau.leahee.assets\\Miihau_LeahEE_Sketch",
+            "Miihau_LeahEE_TheSandCastlePaintingGood":"Leah's Painting 'The Castle'/painting/1 2/1 2/1/420/-1/{{i18n: Miihau.LeahEE.CastlePaintingGood}}/0/Mods\\miihau.leahee.assets\\Miihau_LeahEE_TheSandCastlePaintingGood",
+            "Miihau_LeahEE_TheSandCastlePaintingBad":"Your Painting 'The Castle'/painting/1 2/1 2/1/420/-1/{{i18n: Miihau.LeahEE.CastlePaintingBad}}/0/Mods\\miihau.leahee.assets\\Miihau_LeahEE_TheSandCastlePaintingBad",
+
+        }
+    },
+
+///Trigger
+    {
+        "Action":"EditData",
+        "Target":"Data/TriggerActions",
+        "Entries": 
+        {
+            "Miihau.LeahEE.TriggerAction.MarkVanillaAsSeen":{
+                "Id": "Miihau.LeahEE.TriggerAction.MarkVanillaAsSeen",
+                "Trigger": "DayStarted",
+                "Condition": "IS_EVENT Miihau.Never",
+                "Action":"MarkEventSeen current Miihau.Never"
+            }
+        }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Data/TriggerActions",
+        "Entries": 
+        {
+            "Miihau.LeahEE.TriggerAction.MarkVanillaAsNotSeen":{
+                "Id": "Miihau.LeahEE.TriggerAction.MarkVanillaAsNotSeen",
+                "Trigger": "DayStarted",
+                "Condition": "IS_EVENT Miihau.Never",
+                "Action":"MarkEventSeen current Miihau.Never"
+            }
+        }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Data/TriggerActions",
+        "Entries": 
+        {
+            "Miihau.LeahEE.TriggerAction.MarkVanillaReset":{
+                "Id": "Miihau.LeahEE.TriggerAction.MarkVanillaReset",
+                "Trigger": "DayStarted",
+                "Actions": [
+                    "MarkActionApplied Current Miihau.LeahEE.TriggerAction.MarkVanillaAsNotSeen false",
+                    "MarkActionApplied Current Miihau.LeahEE.TriggerAction.MarkVanillaAsSeen false"
+                ],
+            }
+        },
+        "When":
+        {
+            "VanillaEventsWithLeah": "Don't do anything"
+        }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Data/TriggerActions",
+        "Entries": 
+        {
+            "Miihau.LeahEE.TriggerAction.MarkVanillaAsSeen":{
+                "Id": "Miihau.LeahEE.TriggerAction.MarkVanillaAsSeen",
+                "Trigger": "DayStarted",
+                "HostOnly": false,
+                "Actions": [
+                    "MarkEventSeen Current 50",
+                    "MarkEventSeen Current 51",
+                    "MarkEventSeen Current 584059",
+                    "MarkEventSeen Current 53",
+                    "MarkEventSeen Current 55",
+                    "MarkEventSeen Current 52",
+                    "MarkEventSeen Current 54",
+                    "MarkActionApplied Current Miihau.LeahEE.TriggerAction.MarkVanillaAsNotSeen false"
+                ],
+                "MarkActionApplied": true
+            },
+        },
+        "When":
+        {
+            "VanillaEventsWithLeah": "Set them all as 'seen'"
+        }
+    },
+    {
+        "Action":"EditData",
+        "Target":"Data/TriggerActions",
+        "Entries": 
+        {
+            "Miihau.LeahEE.TriggerAction.MarkVanillaAsNotSeen":{
+                "Id": "Miihau.LeahEE.TriggerAction.MarkVanillaAsNotSeen",
+                "Trigger": "DayStarted",
+                "HostOnly": false,
+                "Actions": [
+                    "MarkEventSeen Current 50 false",
+                    "MarkEventSeen Current 51 false",
+                    "MarkEventSeen Current 584059 false",
+                    "MarkEventSeen Current 53 false",
+                    "MarkEventSeen Current 55 false",
+                    "MarkEventSeen Current 52 false",
+                    "MarkEventSeen Current 54 false",
+                    "MarkActionApplied Current Miihau.LeahEE.TriggerAction.MarkVanillaAsSeen false"
+                ],
+                "MarkActionApplied": true
+            },
+        },
+        "When":
+        {
+            "VanillaEventsWithLeah": "Set them all as 'not seen'"
+        }
+    },
+
+
+///EVENTS
+
+    //Loading in Event 1
+    {
+        "Action": "Include",
+        "FromFile": "events/Event1.json"
+    },
+
+    //Loading in Event 2
+    {
+        "Action": "Include",
+        "FromFile": "events/Event2.json"
+    },
+    //Loading in Event 3
+    {
+        "Action": "Include",
+        "FromFile": "events/Event3.json"
+    },
+    //Loading in Event 4
+    {
+        "Action": "Include",
+        "FromFile": "events/Event4.json"
+    },
+    //Loading in Event 5
+    {
+        "Action": "Include",
+        "FromFile": "events/Event5.json"
+    },
+    //Loading in Event 6
+    {
+        "Action": "Include",
+        "FromFile": "events/Event6.json"
+    },
+    //Loading in Event 7
+    {
+        "Action": "Include",
+        "FromFile": "events/event7a.json, events/event7b.json"
+    },
+
+    //Loading in Event 8
+    {
+        "Action": "Include",
+        "FromFile": "events/Event8.json"
+    },
+
+    //Loading in Event 9
+    {
+        "Action": "Include",
+        "FromFile": "events/Event9.json"
+    },
+
+    //Loading in Event 10
+    {
+        "Action": "Include",
+        "FromFile": "events/Event10.json"
+    },
+    ]
+}
+

@@ -1,0 +1,173 @@
+{
+	"Changes": [
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries": {
+				"WrenFliesIn": "{{i18n:tiakall.wren.Abigail.WrenFliesIn}}",
+				"OnTheSheShore": "{{i18n:tiakall.wren.Abigail.OnTheSheShore}}",
+				"WrenH10P1": "{{i18n:tiakall.wren.Abigail.NoticeAbbySenpai}}",
+				
+			},
+		},
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Caroline",
+			"Entries": {
+				"WrenH10P1": "{{i18n:tiakall.wren.Caroline.NoticeAbbySenpai}}",
+				
+				
+			},
+		},
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Demetrius",
+			"Entries": {
+				"WrenFliesIn": "{{i18n:tiakall.wren.Demetrius.WrenFliesIn}}",
+			},
+		},
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries": {
+				"OnTheSheShore": "{{i18n:tiakall.wren.Emily.OnTheSheShore}}"
+			},
+		},
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Lewis",
+			"Entries": {
+				"WrenFliesIn": "{{i18n:tiakall.wren.Lewis.WrenFliesIn}}",
+			},
+		},	
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries": {
+				"WrenFliesIn": "{{i18n:tiakall.wren.Maru.WrenFliesIn}}",
+			},
+		},	
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pierre",
+			"Entries": {
+				"NoticeAbbySenpai": "{{i18n:tiakall.wren.Pierre.NoticeAbbySenpai}}",
+			},
+		},	
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Robin",
+			"Entries": {
+				"WrenFliesIn": "{{i18n:tiakall.wren.Robin.WrenFliesIn}}",
+			},
+		},	
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Robin",
+			"Priority": "Late",
+			"When": { "HasMod: |contains=gizzymo.canonfriendlyexpansion": true},
+			"Entries": {
+				"Wed8": "{{i18n:tiakall.wren.CFE_Robin_Wed8}}",
+			},
+		},	
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Robin",
+			"Priority": "Late",
+			"When": { "HasMod: |contains=gizzymo.canonfriendlyexpansion": true,
+				"HasSeenEvent: anyPlayer |contains=tiakall.wren.H48main": true},
+			"Entries": {
+				"Wed8": "{{i18n:tiakall.wren.CFE_Robin_Wed8.reveal}}",
+			},
+		},	
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries": {
+				"NoticeAbbySenpai": "{{i18n:tiakall.wren.Sam.NoticeAbbySenpai}}",	
+			},
+		},	
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries": {
+				"WrenFliesIn": "{{i18n:tiakall.wren.Sebastian.WrenFliesIn}}",
+				"WrenH10P1": "{{i18n:tiakall.wren.Sebastian.NoticeAbbySenpai}}",
+			},
+		},	
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"When": { "HasMod: |contains=gizzymo.canonfriendlyexpansion": true},
+			"Priority": "Late",
+			"Entries": {
+				"Thu6": "{{i18n:tiakall.wren.CFE_Sebastian_Thu6}}",
+			},
+		},
+		
+		//Modified vanilla with certain mods installed
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"When": { "HasMod: |contains=DSVTeam.DiverseStardewValley": true},
+			"Entries": {
+				"WrenFliesIn": "{{i18n:tiakall.wren.Sam.DSV.WrenFliesIn}}",
+				"OnTheSheShore": "{{i18n:tiakall.wren.Sam.DSV.OnTheSheShore}}"
+			},
+		},
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Penny",
+			"When": { "HasMod: |contains=DSVTeam.DiverseStardewValley": true},
+			"Entries": {
+				"WrenFliesIn": "{{i18n:tiakall.wren.Penny.DSV.WrenFliesIn}}",
+				"OnTheSheShore": "{{i18n:tiakall.wren.Penny.DSV.OnTheSheShore}}"
+			},
+		},
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"When": { "HasMod: |contains=DSV.Core": true,
+			"DSV.Core/ConfigValue:NonbinaryAbigail": true },
+			"Entries": {
+				"OnTheSheShore": "{{i18n:tiakall.wren.Abigail.DSV.OnTheSheShore}}"
+			},
+		},
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"When": { "HasMod: |contains=DSV.Core": true,
+			"DSV.Core/ConfigValue:NonbinarySebastian": true, },
+			"Entries": {
+				"OnTheSheShore": "{{i18n:tiakall.wren.Sebastian.DSV.OnTheSheShore}}"
+			},
+		},
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"When": { "HasMod: |contains=inkstainedprairie.ElliottGNC, sapphicsaph_pitv": true},
+			"Entries": {
+				"OnTheSheShore": "{{i18n:tiakall.wren.Elliott.GNC.OnTheSheShore}}"
+			},
+		},
+	]		
+}
+
+

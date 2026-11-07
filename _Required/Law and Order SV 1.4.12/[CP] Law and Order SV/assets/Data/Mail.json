@@ -1,0 +1,95 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load letter bg images",
+            "Action": "Load",
+            "Target": "Mods/{{ModId}}/lao_letterbg",
+            "FromFile": "assets/Textures/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "{{ModId}}_IntroMail":"{{i18n:IntroMail_Text}}[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:IntroMail_Title}}",
+                "{{ModId}}_Clint_ThreatMail": "{{i18n:Clint_ThreatMail_text}}[#]{{i18n:Clint_ThreatMail_title}}",
+                "{{ModId}}_DeputizeMail":"{{i18n:DeputizeMail_Text}}[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:DeputizeMail_Title}}",
+            },
+        },
+        {
+            //update the honorary deputy letter with custom text if the law and order content pack for the stardew squad mod is installed
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "{{ModId}}_DeputizeMail":"{{i18n:DeputizeMail_Text_StardewSquad}}[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:DeputizeMail_Title}}",
+            },
+            "When": {
+                "HasMod |contains=sdvhead.LawAndOrderSV.StardewSquadCP": "true",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "{{ModId}}_Clint_ThreatMail": "{{i18n:Clint_ThreatMail_Relationship_text}}[#]{{i18n:Clint_ThreatMail_title}}",
+            },
+            "When": {
+                "Relationship:Emily": "Dating, Engaged, Married"
+            },
+        },
+        //mod mail
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "{{ModId}}_ModMail_2025-01-22": "{{i18n:modmail_text}} %item object {{ModId}}_ColeslawOrder 1 %%[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:modmail_title}}",
+                "{{ModId}}_ModMail_2025-02-06": "{{i18n:modmail_text2}} %item object {{ModId}}_ColeslawOrder 1 %%[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:modmail_title2}}",
+                "{{ModId}}_ModMail_2025-03-12": "{{i18n:modmail_text3}} %item object {{ModId}}_ColeslawOrder 1 %%[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:modmail_title3}}",
+                "{{ModId}}_ModMail_2025-06-19": "{{i18n:modmail_text4}} %item object {{ModId}}_ColeslawOrder 1 %%[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:modmail_title4}}",
+                "{{ModId}}_ModMail_145": "{{i18n:modmail_text145}} %item object {{ModId}}_ColeslawOrder 1 %%[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:modmail_title145}}",
+                "{{ModId}}_ModMail_149": "{{i18n:modmail_text149}} %item object {{ModId}}_ColeslawOrder 1 %%[letterbg Mods\\{{ModId}}\\lao_letterbg 0][#]{{i18n:modmail_title149}}",
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                //Trigger ID needs to be updated with each major patch along with the mail ID
+                "{{ModId}}_Modmail_trigger_149": {
+                    "Id": "{{ModId}}_Modmail_trigger_149",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current {{Russell}} 500, PLAYER_FRIENDSHIP_POINTS Current {{Shannon}} 500",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_ModMail_149 now",
+                    ]
+                },
+            },
+            "When": {
+                "cfgModAuthorMail": true,
+            },
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_IntroMailTrigger":{
+                    //triggered after meeting the required number of days, and when the host player has NOT seen the station fixup event (to account for previous event style)
+                    "Id": "{{ModId}}_IntroMailTrigger",
+                    "Trigger": "DayStarted",
+                    "Condition": "DAYS_PLAYED {{cfgJailOpenDelay}}, !PLAYER_HAS_SEEN_EVENT Host 239792002",
+                    "Actions": [
+                        "AddMail All {{ModId}}_IntroMail now",
+                    ]
+                },
+                "{{ModId}}_DeputizeMailTrigger":{
+                    //mail delivered the morning after viewing the Vincent Search event
+                    "Id": "{{ModId}}_DeputizeMailTrigger",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 239790008",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_DeputizeMail now",
+                    ]
+                }
+            },
+        },
+    ]
+}

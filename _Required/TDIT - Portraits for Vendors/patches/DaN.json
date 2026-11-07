@@ -1,0 +1,142 @@
+{
+	"Changes":[
+
+        {
+			"LogName": "Sign number 1",
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/LooseSprites/JojaCashier_Sign.png",
+			"ToArea": { "X": 352, "Y": 928, "Width": 16, "Height": 16 },
+			"Priority": "Late",
+			"When": {
+				"Clerk": "Daena, Naufal",
+			}	
+        },
+
+		{
+			"LogName": "Joja Cashier Extra Clerks",
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": [ "Joja", "Owners" ],
+			"Entries": {
+				"AnyOrNone": {
+					"Name": "DolphINaF.Daena",
+					"Dialogues":  [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"Dialogue": null,
+							"RandomDialogue": [
+								"{{i18n:JojaCashier1.Daena}}",
+								"{{i18n:JojaCashier2.Daena}}",
+								"{{i18n:JojaCashier3.Daena}}",	
+							],
+						},
+						{
+							"Id": "JojaDay",
+							"Dialogue": "{{i18n:JojaCashier_JojaDay.Daena}}",
+							"Condition": "IS_PASSIVE_FESTIVAL_TODAY FlashShifter.StardewValleyExpandedCP_JojaDay"
+						},							
+					],
+				},
+				"DolphINaF.Naufal": {
+					"Dialogues":  [
+						{
+							"Id": "Default",
+							"Condition": null,
+							"Dialogue": null,
+							"RandomDialogue": [
+								"{{i18n:JojaCashier1.Naufal}}",
+								"{{i18n:JojaCashier2.Naufal}}",
+								"{{i18n:JojaCashier3.Naufal}}",	
+							],
+						}
+					],
+				},
+			},
+		},
+        {
+            "LogName": "JojaMart Shop Tile Property Extra Clerks",
+			"Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "MapTiles": [
+                {
+                    "Position": { "X": 2, "Y": 24},
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Joja none 0600 2600 1 25 1 1"
+                    }
+                },
+				{
+                    "Position": { "X": 2, "Y": 25},
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Joja none 0600 2600 1 25 1 1"
+                    }
+                }
+            ],
+			"When": {
+				"Clerk |contains=Default": false,
+			}	
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/animationdescriptions",
+			"Entries": {
+				"DolphINaF.Clerk_Idle": "4/4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 16 16 16 16 16 16 16 16 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16/4",
+			}
+		},	
+		{
+			"Action": "Load",
+			"Target": "Characters/schedules/DolphINaF.Daena, Characters/schedules/DolphINaF.Naufal",
+			"FromFile": "patches/blank.json"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/DolphINaF.Daena",
+			"Entries": {
+				"spring": "610 DolphINaF_WaitRoom 1 2 0",
+				"Mon": "610 JojaMart 1 25 0 DolphINaF.Clerk_Idle",
+				"Tue": "610 JojaMart 1 25 0 DolphINaF.Clerk_Idle"
+			},
+			"When": {
+				"JojaShift": true,
+				"IsCommunityCenterComplete": false
+			}	
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/DolphINaF.Naufal",
+			"Entries": {
+				"spring": "610 DolphINaF_WaitRoom 1 2 0",
+				"Sat": "610 JojaMart 1 25 0 DolphINaF.Clerk_Idle",
+				"Sun": "610 JojaMart 1 25 0 DolphINaF.Clerk_Idle"
+			},
+			"When": {
+				"JojaShift": true,
+				"IsCommunityCenterComplete": false
+			}			
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/DolphINaF.Naufal",
+			"Entries": {
+				"Mon": "610 JojaMart 1 25 0 DolphINaF.Clerk_Idle",
+				"Tue": "610 JojaMart 1 25 0 DolphINaF.Clerk_Idle"
+			},
+			"When": {
+				"JojaShift": true,
+                "MovieShift": false,
+				"MovieTicket": true,
+				"HasFlag": "ccMovieTheaterJoja",
+			}		
+		},
+        {
+            "Action": "EditMap",
+            "Target": "Maps/DolphINaF_WaitRoom",
+            "AddNPCWarps": [
+                "0 1 JojaMart 1 25"
+            ]
+        },		
+	],
+}

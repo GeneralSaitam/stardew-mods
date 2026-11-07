@@ -1,0 +1,139 @@
+{
+"Format": "2.8.1",
+"ConfigSchema": {
+	"Clint": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Dwarves": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Gus": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Harvey": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Krobus": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Marlon": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Marnie": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Pierre": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Robin": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Sandy": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"Willy": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	},
+	"PierreFestivals": {
+		"AllowValues": "true, false",
+		"Default": "true"
+	}
+},
+"Changes": [
+	{
+		"When": {
+			"Clint": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/clint.json"
+	},
+	{
+		"When": {
+			"Dwarves": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/dwarf.json"
+	},
+	{
+		"When": {
+			"Gus": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/gus.json"
+	},
+	{
+		"When": {
+			"Harvey": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/harvey.json"
+	},
+	{
+		"When": {
+			"Krobus": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/krobus.json"
+	},
+	{
+		"When": {
+			"Marlon": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/marlon.json"
+	},
+	{
+		"When": {
+			"Marnie": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/marnie.json"
+	},
+	{
+		"When": {
+			"Pierre": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/pierre.json"
+	},
+	{
+		"When": {
+			"Robin": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/robin.json"
+	},
+	{
+		"When": {
+			"Sandy": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/sandy.json"
+	},
+	{
+		"When": {
+			"Willy": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/willy.json"
+	},
+	{
+		"When": {
+			"PierreFestivals": "true"
+		},
+		"Action": "Include",
+		"FromFile": "data/pierrefestivals.json"
+	}
+]
+}

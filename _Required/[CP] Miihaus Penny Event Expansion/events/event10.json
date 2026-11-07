@@ -1,0 +1,117 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                    "16279010/F/f Penny 2500/t 1000 1400/e 38/k pennyHeartbroken/e 162790080/A pennyGone":"musicboxsong/
+                    15 10/
+                    farmer -30 -30 0 Penny 17 9 2 Jas 19 10 3 Vincent 16 10 1 Gunther 3 8 2/
+                    skippable/
+                    showFrame Penny 18/
+                    showFrame Jas 22/
+                    showFrame Vincent 24/
+                    pause 1000/
+                    playSound doorClose/
+                    warp farmer 3 14/
+                    pause 500/
+                    textAboveHead Gunther \"{{i18n:Miihau.PennyEE.event10.001}}\"/
+                    pause 800/
+                    emote farmer 32 true/
+                    pause 800/
+                    speed farmer 3/
+                    move farmer 0 -1 0/
+                    move farmer 4 0 1/
+                    move farmer 0 1 2/
+                    move farmer 4 0 1/
+                    move farmer 0 -5 0/
+                    move farmer 5 0 1/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event10.002}}\"/
+                    speak Vincent \"{{i18n:Miihau.PennyEE.event10.003}}\"/
+                    pause 400/
+                    emote farmer 40/
+                    showFrame Jas 12/
+                    speak Jas \"{{i18n:Miihau.PennyEE.event10.004}}\"/
+                    jump farmer 7/
+                    showFrame Vincent 4/
+                    showFrame Penny 0/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event10.005}}\"/
+                    emote farmer 32/
+                    pause 400/
+                    emote Jas 20 true/
+                    textAboveHead Vincent \"{{i18n:Miihau.PennyEE.event10.006}}\"/
+                    pause 800/
+                    fade false/
+                    message \"{{i18n:Miihau.PennyEE.event10.007}}\"/
+                    viewport -1000 -1000/
+                    pause 1000/
+                    warp farmer 15 11/
+                    faceDirection farmer 3/
+                    warp Penny 14 10/
+                    faceDirection Penny 3/
+                    warp Jas 12 10/
+                    faceDirection Jas 1/
+                    warp Vincent 12 11/
+                    pause 200/
+                    fade true/
+                    viewport 15 10/
+                    pause 1000/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event10.008}}\"/
+                    emote farmer 32/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event10.009}}\"/
+                    jump Jas 5/
+                    textAboveHead Vincent \"{{i18n:Miihau.PennyEE.event10.010}}\"/
+                    jump Vincent 5/
+                    speed Vincent 5/
+                    speed Jas 4/
+                    advancedMove Vincent false 0 3 -6 0 0 -3 -3 0 0 -1/
+                    advancedMove Jas false 0 4 -4 0 0 -3 -4 0 0 -1/
+                    pause 1500/
+                    textAboveHead Gunther \"{{i18n:Miihau.PennyEE.event10.011}}\"/
+                    jump Gunther 2/
+                    move Penny 0 1 1/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event10.012}}\"/
+                    fork sayThankYou/
+                    pause 600/
+                    pause 1000/
+                    showFrame Penny 35/
+                    animate farmer true true 500 101/
+                    pause 200/
+                    positionOffset Penny 2 0/
+                    pause 50/
+                    positionOffset Penny 2 0/
+                    pause 50/
+                    positionOffset Penny 2 0/
+                    pause 50/
+                    positionOffset Penny 2 0/
+                    positionOffset farmer -2 0/
+                    pause 50/
+                    positionOffset Penny 2 0/
+                    positionOffset farmer -2 0/
+                    pause 50/
+                    specificTemporarySprite heart 15 10/
+                    pause 500/
+                    globalFade/
+                    viewport -1000 -1000/
+                    friendship Jas 20 friendship Vincent 20/
+                    pause 1200/
+                    end dialogue Penny \"{{i18n:Miihau.PennyEE.event10.013}}\"",
+                    "sayThankYou":"stopMusic/
+                    speak Penny \"{{i18n:Miihau.PennyEE.event10.014}}\"/
+                    friendship Jas 10/
+                    friendship Vincent 10/
+                    pause 1200/
+                    end dialogue Penny \"{{i18n:Miihau.PennyEE.event10.015}}\""
+                }       
+        },
+        
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries":{
+                "event_loveInMuseum1":"{{i18n:Miihau.PennyEE.event10.016}}",
+                "event_loveInMuseum2":"{{i18n:Miihau.PennyEE.event10.017}}"
+            }
+        },
+    ]
+}

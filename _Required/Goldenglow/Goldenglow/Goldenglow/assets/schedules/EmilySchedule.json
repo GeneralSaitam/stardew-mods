@@ -1,0 +1,37 @@
+    //苏茜周1 5 6上班
+    //eml周2 3 4 7上班
+    //如果下雨，苏茜上班
+    /*总结 原本周五去社区中心变成周日（这天要上班），雨天也不再上班。不上班的日子在家里挂机就行了，具体到时候再补充
+    婚后的周一行程变成三，周五行程也变成周日。（这两天都上班）*/
+    //(0(向上)、1(向右)、2(向下)和 3(向左)
+    //22,7电脑 16 25 3 染料 13 5 1 仙人掌 8 16 0 地球仪
+
+{
+    "rain": "GOTO workday",
+    "GreenRain": "0 Saloon 25 18 2",
+    "spring": "900 HaleyHouse 16 5 2/1200 HaleyHouse 3 16 0/1800 HaleyHouse 8 16 0/2200 HaleyHouse 13 5 1/2430 HaleyHouse 21 4 1 emily_sleep",
+    /*上班*/"workday": "900 HaleyHouse 16 5 2/1200 HaleyHouse 3 16 0/1530 Saloon 15 17 0 square_5_1_0/2430 HaleyHouse 21 4 1 emily_sleep",
+    /*周一不上班*/
+    "Mon":"GOTO spring",
+    "Tue": "900 HaleyHouse 16 5 2/1000 SeedShop 27 16 2/1300 SeedShop 26 19 2 emily_exercise/1600 Saloon 15 17 2 square_5_1_0/2430 HaleyHouse 21 4 1 emily_sleep",//这天有健美操，上班
+    "Wed": "GOTO workday",
+	
+	  "Thu": "GOTO workday",
+    /*周五不上班*/"Fri": "900 HaleyHouse 16 5 2/1200 HaleyHouse 3 16 0/1600 HaleyHouse 22 7 0/2000 HaleyHouse 13 5 1/2430 HaleyHouse 21 4 1 emily_sleep",
+	/*周六不上班*/"Sat": "900 HaleyHouse 16 5 2/1200 HaleyHouse 16 25 3/1600 HaleyHouse 3 16 0/2000 HaleyHouse 13 5 1/2430 HaleyHouse 21 4 1 emily_sleep",
+    "Sun": "900 HaleyHouse 16 5 2/1000 CommunityCenter 10 25 2 \"Strings\\schedules\\Emily:Fri.000\"/1530 Saloon 15 17 0 square_5_1_0/2430 HaleyHouse 21 4 1 emily_sleep",//社区中心（如果没有则正常执行spring，反正都上班
+   /* 周一夜市不上班 */   "winter_15": "900 HaleyHouse 16 5 2/1200 HaleyHouse 3 16 0/1430 Beach 25 36 2 \"Strings\\schedules\\Emily:winter_15.000\"/2430 HaleyHouse 21 4 1 emily_sleep",
+  /* 周四医院检查加上班*/   "winter_11": "900 HaleyHouse 16 5 2/1030 Hospital 12 14 0 \"Strings\\schedules\\Emily:winter_11.000\"/1330 Hospital 4 6 1 \"Strings\\schedules\\Emily:winter_11.001\"/1600 Saloon 15 17 0 square_5_1_0/2430 HaleyHouse 21 4 1 emily_sleep",
+   /* 周一去桑迪家不上班（否则执行周一行程）*/ "fall_15": "MAIL ccVault/GOTO Mon/900 HaleyHouse 16 5 2/a1200 SandyHouse 4 5 3 \"Strings\\schedules\\Emily:Sandy_Birthday_Greeting\"/1300 Desert 1 51 2 \"Strings\\schedules\\Emily:Sandy_Birthday_Hangout\"/1500 Desert 10 18 0 \"Strings\\schedules\\Emily:Sandy_Birthday_Lake\"/1700 Desert 5 33 2 \"Strings\\schedules\\Emily:Sandy_Birthday_Bones\"/1800 Desert 25 32 0 \"Strings\\schedules\\Emily:Sandy_Birthday_Hangout\"/1900 35 25 0 \"Strings\\schedules\\Emily:Sandy_Birthday_Camel\"/2000 Desert 6 55 2 \"Strings\\schedules\\Emily:Sandy_Birthday_Hangout\"/a2330 Desert 28 24 1 \"Strings\\schedules\\Emily:Sandy_Birthday_Bye\"/2400 HaleyHouse 21 4 1 emily_sleep",
+    "DesertFestival": "610 HaleyHouse 16 5 2/800 Desert 25 52 2 \"Strings\\1_6_Strings:DesertFestival_Emily\"/2410 bed",
+
+
+    "marriage_fall_15": "MAIL ccVault/GOTO marriage_Wed/a1200 SandyHouse 4 5 3 \"Strings\\schedules\\Emily:Sandy_Birthday_Greeting\"/1300 Desert 1 51 2 \"Strings\\schedules\\Emily:Sandy_Birthday_Hangout\"/1500 Desert 10 18 0 \"Strings\\schedules\\Emily:Sandy_Birthday_Lake\"/1700 Desert 5 33 2 \"Strings\\schedules\\Emily:Sandy_Birthday_Bones\"/1800 Desert 25 32 0 \"Strings\\schedules\\Emily:Sandy_Birthday_Hangout\"/1900 35 25 0 \"Strings\\schedules\\Emily:Sandy_Birthday_Camel\"/2000 Desert 6 55 2 \"Strings\\schedules\\Emily:Sandy_Birthday_Hangout\"/a2330 Desert 28 24 1 \"Strings\\schedules\\Emily:Sandy_Birthday_Bye\"/2400 bed",
+   //中间是改了的
+    "marriage_Wed": "830 HaleyHouse 12 17 1 \"Strings\\schedules\\Emily:marriage_Mon.000\"/1100 Town 82 15 1 \"Strings\\schedules\\Emily:marriage_Mon.001\"/1500 Saloon 15 17 0 \"Strings\\schedules\\Emily:marriage_Mon.002\"/2200 bed",
+    "marriage_Sun": "830 Beach 10 37 3 \"Strings\\schedules\\Emily:marriage_Fri.000\"/1300 SeedShop 2 26 2 \"Strings\\schedules\\Emily:marriage_Fri.001\"/1500 Saloon 15 17 0 \"Strings\\schedules\\Emily:marriage_Fri.002\"/2200 bed",
+   //中间是改了的 
+    "marriage_DesertFestival_1": "800 Desert 25 52 2 \"Strings\\1_6_Strings:DesertFestival_Emily_marriage\"/2410 bed",
+    "marriage_DesertFestival_2": "800 Desert 25 52 2 \"Strings\\1_6_Strings:DesertFestival_Emily2_marriage\"/2410 bed",
+    "marriage_DesertFestival_3": "800 Desert 25 52 2 \"Strings\\1_6_Strings:DesertFestival_Emily3_marriage\"/2410 bed"
+          }

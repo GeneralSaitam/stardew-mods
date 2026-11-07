@@ -1,0 +1,52 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/RaccoonSBV",
+			"Entries": {
+				"Introduction": "{{i18n:Raccoon.Dialogue.Introduction}}",
+				"MovieInvitation": "{{i18n:Raccoon.Dialogue.MovieInvitation}}",
+				//Gift Dialogue
+				//Positive/Negative
+				"AcceptBirthdayGift_Positive": "{{i18n:Gift.Positive.Raccoon}}",
+				"AcceptBirthdayGift_Negative": "{{i18n:Gift.Negative.Raccoon}}",
+				//Love
+				"AcceptGift_(O)StardropTea": "{{i18n:Gift.StardropTea.Raccoon}}",
+				//Trashcan
+				"DumpsterDiveComment": "{{i18n:Raccoon.Dialogue.DumpsterDiveComment}}"
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/RaccoonSBV",
+			"Entries": {
+				"Mon": "{{i18n:RaccoonDialogue.Early.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Tue": "{{i18n:RaccoonDialogue.Early.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Wed": "{{i18n:RaccoonDialogue.Early.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Thu": "{{i18n:RaccoonDialogue.Early.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Fri": "{{i18n:RaccoonDialogue.Early.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Sat": "{{i18n:RaccoonDialogue.Early.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Sun": "{{i18n:RaccoonDialogue.Early.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+			},
+			"When": {
+				"Hearts:RaccoonSBV": "{{Range: 0, 5}}"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/RaccoonSBV",
+			"Entries": {
+				"Mon": "{{i18n:RaccoonDialogue.Mid.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Tue": "{{i18n:RaccoonDialogue.Mid.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Wed": "{{i18n:RaccoonDialogue.Mid.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Thu": "{{i18n:RaccoonDialogue.Mid.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Fri": "{{i18n:RaccoonDialogue.Mid.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Sat": "{{i18n:RaccoonDialogue.Mid.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+				"Sun": "{{i18n:RaccoonDialogue.Mid.{{Season}}.{{DayOfWeek}}.{{Random:1,2,3}}}}",
+			},
+			"When": {
+				"Hearts:RaccoonSBV": "{{Range: 5, 10}}"
+			}
+		}
+	]
+}

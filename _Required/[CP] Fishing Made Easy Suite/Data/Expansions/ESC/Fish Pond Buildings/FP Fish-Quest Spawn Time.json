@@ -1,0 +1,72 @@
+{
+  "Changes": [
+    {
+      "LogName": "ESC - FP Fish/Quest Spawn Half The Time",
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Fields": {
+        "EastScarp_Golden_Trout": {
+          "SpawnTime": 2
+        },
+        "EastScarpe_Kokanee_Salmon": {
+          "SpawnTime": 2
+        },
+        "EastScarp_King_Carp": {
+          "SpawnTime": 3
+        },
+        "fish_nudibranch": {
+          "SpawnTime": 2
+        },
+        "EastScarp_Red_Herring": {
+          "SpawnTime": 1
+        },
+        "EastScarp_Fairy_Betta": {
+          "SpawnTime": 2
+        },
+        "EastScarp_Obsidian_Maw": {
+          "SpawnTime": 2
+        },
+        "EastScarp_Slime_Barbel": {
+          "SpawnTime": 2
+        }
+      },
+      "When": {
+        "FP Fish/Quest Spawn Time": "Half The Time"
+      }
+    },
+    {
+      "LogName": "ESC - FP Fish/Quest Spawn Every Day",
+      "Action": "EditData",
+      "Target": "Data/FishPondData",
+      "Fields": {
+        "EastScarp_Golden_Trout": {
+          "SpawnTime": 1
+        },
+        "EastScarpe_Kokanee_Salmon": {
+          "SpawnTime": 1
+        },
+        "EastScarp_King_Carp": {
+          "SpawnTime": 1
+        },
+        "fish_nudibranch": {
+          "SpawnTime": 1
+        },
+        "EastScarp_Red_Herring": {
+          "SpawnTime": 1
+        },
+        "EastScarp_Fairy_Betta": {
+          "SpawnTime": 1
+        },
+        "EastScarp_Obsidian_Maw": {
+          "SpawnTime": 1
+        },
+        "EastScarp_Slime_Barbel": {
+          "SpawnTime": 1
+        }
+      },
+      "When": {
+        "FP Fish/Quest Spawn Time": "Every Day"
+      }
+    }
+  ]
+}

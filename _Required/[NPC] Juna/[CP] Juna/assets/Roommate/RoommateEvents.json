@@ -1,0 +1,91 @@
+{
+  "Changes": [
+
+    {
+      "LogName": "Roommate Non-Platonic Events",
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "Entries": {
+        "86060400/t 2100 2600/z summer/z fall/z winter/r 0.3": "{{JunaAction400}}/{{JunaDayNonPlatonic}}/end newDay",
+        "NotBed400": "end",
+        "86060401/t 2100 2600/z spring/z fall/z winter/r 0.3": "{{JunaAction401}}/{{JunaDayNonPlatonic}}/end newDay",
+        "NotBed401": "end",
+        "86060402/t 2000 2600/z spring/z summer/z winter/r 0.3": "{{JunaAction402}}/{{JunaDayNonPlatonic}}/end newDay",
+        "NotBed402": "end",
+        "86060403/t 2000 2600/z spring/z summer/z fall/r 0.4": "{{JunaAction403}}/{{JunaDayNonPlatonic}}/end newDay",
+        "NotBed403": "end"
+      },
+      "When": {
+        "Roommate": "Juna",
+        "PlatonicRoommate": "false",
+        "DayOfWeek": "Tuesday, Thursday, Saturday"
+      }
+    },
+
+    {
+      "LogName": "Roommate Platonic Events",
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "Entries": {
+        "86060404/t 2100 2600/z summer/z fall/z winter/r 0.3": "{{JunaAction404}}/{{JunaDayPlatonic}}/end newDay",
+        "NotBed404": "end",
+        "86060405/t 2100 2600/z spring/z fall/z winter/r 0.3": "{{JunaAction405}}/{{JunaDayPlatonic}}/end newDay",
+        "NotBed405": "end",
+        "86060406/t 2000 2600/z spring/z summer/z winter/r 0.3": "{{JunaAction406}}/{{JunaDayPlatonic}}/end newDay",
+        "NotBed406": "end",
+        "86060407/t 2000 2600/z spring/z summer/z fall/r 0.4": "{{JunaAction407}}/{{JunaDayPlatonic}}/end newDay",
+        "NotBed407": "end"
+      },
+      "When": {
+        "Roommate": "Juna",
+        "PlatonicRoommate": "true",
+        "DayOfWeek": "Tuesday, Thursday, Saturday"
+      }
+    },
+
+    {
+      "LogName": "Roommate Non-Platonic Events Rain",
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "Entries": {
+        "86060400/t 2100 2600/z summer/z fall/z winter/r 0.3": "{{JunaAction400}}/{{JunaDayNonPlatonic}}/end newDay",
+        "NotBed400": "end",
+        "86060401/t 2100 2600/z spring/z fall/z winter/r 0.3": "{{JunaAction401}}/{{JunaDayNonPlatonic}}/end newDay",
+        "NotBed401": "end",
+        "86060402/t 2000 2600/z spring/z summer/z winter/r 0.3": "{{JunaAction402}}/{{JunaDayNonPlatonic}}/end newDay",
+        "NotBed402": "end",
+        "86060403/t 2000 2600/z spring/z summer/z fall/r 0.4": "{{JunaAction403}}/{{JunaDayNonPlatonic}}/end newDay",
+        "NotBed403": "end"
+      },
+      "When": {
+        "Roommate": "Juna",
+        "PlatonicRoommate": "false",
+        "DayOfWeek": "Monday, Wednesday, Friday, Sunday",
+        "Weather": "rain"
+      }
+    },
+
+    {
+      "LogName": "Roommate Platonic Events Rain",
+      "Action": "EditData",
+      "Target": "Data/Events/FarmHouse",
+      "Entries": {
+        "86060404/t 2100 2600/z summer/z fall/z winter/r 0.3": "{{JunaAction404}}/{{JunaDayPlatonic}}/end newDay",
+        "NotBed404": "end",
+        "86060405/t 2100 2600/z spring/z fall/z winter/r 0.3": "{{JunaAction405}}/{{JunaDayPlatonic}}/end newDay",
+        "NotBed405": "end",
+        "86060406/t 2000 2600/z spring/z summer/z winter/r 0.3": "{{JunaAction406}}/{{JunaDayPlatonic}}/end newDay",
+        "NotBed406": "end",
+        "86060407/t 2000 2600/z spring/z summer/z fall/r 0.4": "{{JunaAction407}}/{{JunaDayPlatonic}}/end newDay",
+        "NotBed407": "end"
+      },
+      "When": {
+        "Roommate": "Juna",
+        "PlatonicRoommate": "true",
+        "DayOfWeek": "Monday, Wednesday, Friday, Sunday",
+        "Weather": "rain"
+      }
+    }
+    
+  ]
+}

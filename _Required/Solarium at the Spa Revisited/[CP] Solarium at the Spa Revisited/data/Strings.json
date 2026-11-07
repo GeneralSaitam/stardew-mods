@@ -1,0 +1,70 @@
+{
+  // ====== STRINGS MODULE ======
+  "Changes": [
+    // ====== STRINGS FROM MAPS ======
+    {
+      "LogName": "JJ StringsFromMaps",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+        "BookShelf": "{{i18n:Strings.BookShelf}}",
+        "SolariumHatchLocked": "{{i18n:Strings.SolariumHatchLocked}}",
+        "SolariumLiftLocked": "{{i18n:Strings.SolariumLiftLocked}}"
+      }
+    },
+    // ====== CAROLINE SCHEDULE DIALOGUE (WED SOLARIUM) ======
+    {
+      "LogName": "JJ Caroline schedule dialogue (Wed solarium, default)",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Caroline",
+      "Entries": { "Wed.000": "{{Random: {{i18n:Schedules.Caroline.Solarium}}, {{i18n:Schedules.Caroline.Solarium.Putter}}}}" },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_CarolineMagazine",
+        "AdjustCarolineSchedule": true
+      }
+    },
+    {
+      "LogName": "JJ Caroline schedule dialogue (Wed solarium, summer)",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Caroline",
+      "Entries": { "Wed.000": "{{i18n:Schedules.Caroline.Solarium.Summer}}" },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_CarolineMagazine",
+        "AdjustCarolineSchedule": true,
+        "Season": "Summer"
+      }
+    },
+    {
+      "LogName": "JJ Caroline schedule dialogue (Wed solarium, rain)",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Caroline",
+      "Entries": { "Wed.000": "{{i18n:Schedules.Caroline.Solarium.Rain}}" },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_CarolineMagazine",
+        "AdjustCarolineSchedule": true,
+        "Weather": "Rain"
+      }
+    },
+    // ====== LINUS SCHEDULE DIALOGUE (FALL/WINTER SOLARIUM) ======
+    {
+      "LogName": "JJ Linus schedule dialogue (solarium, fall)",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Linus",
+      "Entries": { "fall.000": "{{Random: {{i18n:Schedules.Linus.Solarium.Cold}}, {{i18n:Schedules.Linus.Solarium.Warmth}}}}" },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_RobinSolarium",
+        "AdjustLinussSchedule": true
+      }
+    },
+    {
+      "LogName": "JJ Linus schedule dialogue (solarium, winter)",
+      "Action": "EditData",
+      "Target": "Strings/schedules/Linus",
+      "Entries": { "winter.000": "{{Random: {{i18n:Schedules.Linus.Solarium.Cold}}, {{i18n:Schedules.Linus.Solarium.Warmth}}}}" },
+      "When": {
+        "HasSeenEvent": "{{ModId}}_RobinSolarium",
+        "AdjustLinussSchedule": true
+      }
+    }
+  ]
+}

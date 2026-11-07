@@ -1,0 +1,48 @@
+{
+  "Changes": [
+    {
+      "LogName": "Birthday Gift Dialogue 0-3",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "AcceptBirthdayGift_Loved": "{{i18n: birthday.love.3}}",
+        "AcceptBirthdayGift_Liked": "{{i18n: birthday.like.3}}/{{i18n: birthday.like.3}}",
+        "AcceptBirthdayGift_Negative": "{{i18n: birthday.hate.3}}/{{i18n: birthday.hate.3}}",
+        "AcceptBirthdayGift_Neutral": "{{i18n: birthday.neutral.3}}"
+      },
+      "When": {
+        "Hearts:Juna": "{{Range: 0, 3}}"
+      }
+    },
+
+    {
+      "LogName": "Birthday Gift Dialogue 4-8",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "AcceptBirthdayGift_Loved": "{{i18n: birthday.love.8}}",
+        "AcceptBirthdayGift_Liked": "{{i18n: birthday.like.8}}/{{i18n: birthday.like.8}}",
+        "AcceptBirthdayGift_Negative": "{{i18n: birthday.hate.8}}/{{i18n: birthday.hate.8}}",
+        "AcceptBirthdayGift_Neutral": "{{i18n: birthday.neutral.8}}"
+      },
+      "When": {
+        "Hearts:Juna": "{{Range: 4, 8}}"
+      }
+    },
+
+    {
+      "LogName": "Birthday Gift Dialogue 9-10",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juna",
+      "Entries": {
+        "AcceptBirthdayGift_Loved": "{{i18n: birthday.love.10}}",
+        "AcceptBirthdayGift_Liked": "{{i18n: birthday.like.10}}/{{i18n: birthday.like.10}}",
+        "AcceptBirthdayGift_Negative": "{{i18n: birthday.hate.10}}/{{i18n: birthday.hate.10}}",
+        "AcceptBirthdayGift_Neutral": "{{i18n: birthday.neutral.10}}"
+      },
+      "When": {
+        "Hearts:Juna": "{{Range: 9, 14}}"
+      }
+    }
+  ]
+}

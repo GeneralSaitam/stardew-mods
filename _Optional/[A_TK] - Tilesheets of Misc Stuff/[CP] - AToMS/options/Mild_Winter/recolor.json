@@ -1,0 +1,95 @@
+{
+    "Changes": [
+
+//	RECOLORS
+
+//	//	EX_ground
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXground",
+            "FromFile": "assets/EX_ground/fall_ATK_AToMS_EXground.png",
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod": "katrie.MWR",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXground",
+            "FromFile": "options/Mild_Winter/EX_ground/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "katrie.MWR",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+		
+//	//	EX_aqua
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXaqua",
+            "FromFile": "assets/EX_aqua/fall_ATK_AToMS_EXaqua.png",
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod": "katrie.MWR",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXaqua",
+            "FromFile": "options/Mild_Winter/EX_aqua/{{TargetWithoutPath}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "katrie.MWR",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+
+//	//	ALL_Foliage
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "assets/ALL_foliage/fall_ATK_AToMS_foliage.png",
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod": "katrie.MWR",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_foliage",
+            "FromFile": "options/Mild_Winter/ALL_foliage/winter_ATK_AToMS_foliage.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod": "katrie.MWR",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        },
+
+//	//	EX_Misc
+
+        {
+            "Action": "EditImage",
+            "Target": "Maps/winter_ATK_AToMS_EXmisc",
+            "FromFile": "assets/EX_misc/fall_ATK_AToMS_EXmisc.png",
+			"PatchMode": "Replace",
+			"When": {
+				"HasMod": "katrie.MWR",
+				"Allow_Recolors": "True",
+				"Manual_Override": "False"
+			}
+        }
+	]
+}

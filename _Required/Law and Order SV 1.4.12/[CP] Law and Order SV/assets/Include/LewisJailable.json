@@ -1,0 +1,115 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_LewisWarpRoom",
+            "FromFile": "assets/Locations/LewisWarpRoom.tmx"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModId}}_LewisWarpRoom": {
+                    "DisplayName": "{{i18n:location_lewiswarproom}}",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_LewisWarpRoom"
+                    },
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "{{ModId}}_lewis_snooze": "27/27/27//laying_down/offset 16 20",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Lewis",
+            "Entries": {
+                "{{ModId}}_lewis_snooze": "{{i18n: lewis_snooze}}",
+            }
+        },
+        //set Lewis home to the warp room
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Fields": {
+                "Lewis": {
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "sdvhead.LawAndOrderSV_LewisWarpRoom",
+                            "Tile": {
+                                "X": 4,
+                                "Y": 7
+                            },
+                            "Direction": "left"
+                        }
+                    ],
+                }
+            },
+        },
+        //Lewis note mail item
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "{{ModId}}_Mail_LewisNote": "{{i18n:Mail.LewisNote}}",
+            },
+        },
+        //trigger for sending mail re: secret note. requires prison bed 2 unoccupied, and having read secret note #19, 4 hearts with R and S, and have seen Emily's 'clothing therapy' event.
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_Triggers_LewisNote": {
+                    "Id": "{{ModId}}_Triggers_LewisNote",
+                    "Trigger": "DayEnding",
+                    "Condition": "!PLAYER_HAS_CONVERSATION_TOPIC Any {{ModId}}_PrisonBed2, PLAYER_HAS_SECRET_NOTE Current 19, PLAYER_HAS_SEEN_EVENT Current 2123243, PLAYER_FRIENDSHIP_POINTS Current {{Russell}} 1000, PLAYER_FRIENDSHIP_POINTS Current {{Shannon}} 1000",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_Mail_LewisNote",
+                    ]
+                }
+            },
+        },
+        //load the golden statue as a character for use in events
+        {
+            "Action": "Load",
+            "Target": "Characters/LAOSV_SolidGoldLewis",
+            "FromFile": "assets/EventObjects/{{TargetWithoutPath}}.png"
+        },
+        //event when entering sheriff's office with statue, after receiving LewisNote mail
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/sdvhead.LawAndOrderSV_Jail",
+            "Entries": {
+                "{{ModId}}_LewisEvidence/t 1230 1830/LocalMail {{ModId}}_Mail_LewisNote/!ActiveDialogueEvent {{ModId}}_PrisonBed2/HasItem \"(BC)164\"": "MarlonsTheme/10 20/{{Russell}} 12 19 1 {{Shannon}} 10 20 2 farmer -1000 -1000 0/skippable/pause 2000/playSound doorClose/warp farmer 10 24/pause 200/textAboveHead {{Shannon}} \"{{i18n:Events.LewisEvidence.001|PlayerName={{PlayerName}}}}\"/pause 1500/faceDirection {{Russell}} 2/advancedMove farmer false 0 -1 4 100/pause 300/emote {{Russell}} 16 true/pause 400/advancedMove {{Russell}} false 0 -1 2 0 0 4 -1 0 3 100/pause 400/faceDirection farmer 1/proceedPosition {{Russell}}/pause 300/speak {{Russell}} \"{{i18n:Events.LewisEvidence.002}}\"/pause 500/itemAboveHead (BC)164/pause 100/emote {{Russell}} 16 true/pause 100/emote {{Shannon}} 16 true/pause 2400/faceDirection farmer 1/showFrame 35/addTemporaryActor LAOSV_SolidGoldLewis 16 32 11 23 2 false/positionOffset LAOSV_SolidGoldLewis 0 -12/pause 600/stopAnimation farmer/pause 200/speak {{Russell}} \"{{i18n:Events.LewisEvidence.003}}\"/pause 400/shake {{Shannon}} 600/pause 300/speak {{Shannon}} \"{{i18n:Events.LewisEvidence.004}}\"/pause 300/speak {{Russell}} \"{{i18n:Events.LewisEvidence.005}}\"/pause 300/speak {{Shannon}} \"{{i18n:Events.LewisEvidence.006}}\"/pause 200/speak {{Russell}} \"{{i18n:Events.LewisEvidence.007}}\"/pause 500/globalFade/viewport 1000 1000/pause 800/message \"{{i18n:Events.LewisEvidence.008}}\"/pause 400/message \"{{i18n:Events.LewisEvidence.009}}\"/pause 1500/end",
+            }
+        },
+        //Lewis arrest event (lewis house). must have received special mail
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ManorHouse",
+            "Entries": {
+                "{{ModId}}_LewisArrest/t 800 1200/e {{ModId}}_LewisEvidence/!ActiveDialogueEvent {{ModId}}_PrisonBed2": "EmilyTheme/-1000 -1000/farmer -2000 -2000 0 Lewis -2000 -2000 0 Governor -2000 -2000 2 Emily 7 6 2 {{Russell}} 3 6 2 Marnie 10 9 3 {{Shannon}} 8 8 3 Robin 6 10 0 Jodi 2 8 1/broadcastEvent/specificTemporarySprite ClothingTherapy/addTemporaryActor LAOSV_SolidGoldLewis 16 32 5 5 2 false/positionOffset LAOSV_SolidGoldLewis -4 24/viewport 5 7 true/pause 2000/playSound doorClose/warp farmer 4 11/pause 100/faceDirection Robin 3/pause 800/advancedMove farmer false 0 -1 4 1000 -1 0 0 -1 4 100/proceedPosition farmer/pause 3000/faceDirection Jodi 0/faceDirection Robin 0/speak {{Russell}} \"{{i18n:Events.LewisArrest.001}}\"/pause 2500/playSound doorClose/warp Lewis 4 11/pause 1500/advancedMove Lewis false 0 -1 4 500 1 600 4 500/proceedPosition Lewis/pause 1000/speak Lewis \"{{i18n:Events.LewisArrest.002}}\"/pause 600/speak Emily \"{{i18n:Events.LewisArrest.003}}\"/advancedMove Emily false 0 1 3 100/proceedPosition Emily/pause 600/speak {{Russell}} \"{{i18n:Events.LewisArrest.004}}\"/pause 500/jump Lewis/pause 200/jump Marnie/pause 100/jump Robin/pause 200/jump Emily/pause 100/textAboveHead Marnie \"{{i18n:Events.LewisArrest.005}}\"/pause 1000/speak {{Russell}} \"{{i18n:Events.LewisArrest.006}}\"/pause 200/emote Robin 8 true/pause 300/emote Marnie 8 true/pause 300/emote {{Russell}} 40 true/pause 800/speak {{Russell}} \"{{i18n:Events.LewisArrest.007}}\"/faceDirection {{Russell}} 1/pause 300/shake {{Russell}} 500/playSound {{ModId}}_Curtain/pause 300/specificTemporarySprite curtainOpen/pause 500/jump Lewis/pause 200/emote Jodi 8 true/pause 250/emote Robin 16 true/pause 250/emote Emily 8 true/pause 250/emote Marnie 16 true/pause 250/emote Lewis 12 true/pause 1800/speak Lewis \"{{i18n:Events.LewisArrest.008}}\"/pause 2000/shake {{Russell}} 500/pause 500/playSound {{ModId}}_Curtain/pause 300/specificTemporarySprite curtainClose/warp LAOSV_SolidGoldLewis 1000 1000/pause 300/faceDirection {{Russell}} 2/advancedMove {{Shannon}} false -1 0 3 800/proceedPosition {{Shannon}}/faceDirection Lewis 1/pause 200/faceDirection Jodi 1/faceDirection farmer 1/speak {{Shannon}} \"{{i18n:Events.LewisArrest.009}}\"/shake Lewis 1000/pause 400/faceDirection Lewis 0/pause 300/shake Lewis 400/pause 500/faceDirection Robin 3/speak Lewis \"{{i18n:Events.LewisArrest.010}}\"/warp Governor 5 5/positionOffset Governor -6 24/pause 100/playSound {{ModId}}_Curtain/pause 300/specificTemporarySprite curtainOpen/pause 100/faceDirection Robin 0/faceDirection farmer 0/faceDirection Jodi 0/pause 200/jump Lewis/emote Lewis 16 true /pause 150/emote Jodi 16 true/pause 150/emote Robin 16 true/pause 150/emote Emily 16 true/pause 150/emote Marnie 16 true/pause 200/speak Governor \"{{i18n:Events.LewisArrest.011}}\"/pause 200/advancedMove Governor false 0 1 2 500/proceedPosition Governor/speak Governor \"{{i18n:Events.LewisArrest.012}}\"/pause 300/showFrame Governor 13/speak Governor \"{{i18n:Events.LewisArrest.013}}\"/pause 200/shake Governor 800/pause 400/showFrame Governor 0/pause 200/emote Lewis 12 true/pause 800/textAboveHead Robin \"{{i18n:Events.LewisArrest.014}}\"/pause 800/speak Governor \"{{i18n:Events.LewisArrest.015}}\"/quickQuestion {{i18n:Events.LewisArrest.qqq}}#{{i18n:Events.LewisArrest.qq1}}#{{i18n:Events.LewisArrest.qq2}}(break)speak Governor \"{{i18n:Events.LewisArrest.qq1r}}\"\\addConversationTopic {{ModId}}_LewisInJail {{JailTerm_2s}}\\addConversationTopic {{ModId}}_PrisonBed2 {{JailTerm_2s}}(break)speak Governor \"{{i18n:Events.LewisArrest.qq2r}}\"\\addConversationTopic {{ModId}}_LewisInJail {{JailTerm_1y}}\\addConversationTopic {{ModId}}_PrisonBed2 {{JailTerm_1y}}\\friendship Pierre -250/pause 500/speak Marnie \"{{i18n:Events.LewisArrest.016}}\"/pause 400/speak Lewis \"{{i18n:Events.LewisArrest.017}}\"/pause 400/speak {{Shannon}} \"{{i18n:Events.LewisArrest.018}}\"/pause 400/speak Lewis \"{{i18n:Events.LewisArrest.019}}\"/pause 600/advancedMove Lewis false 0 1 2 100/proceedPosition Lewis/playSound doorClose/warp Lewis -2000 -2000/pause 400/speak Robin \"{{i18n:Events.LewisArrest.020}}\"/pause 400/speak Governor \"{{i18n:Events.LewisArrest.021}}\"/pause 200/emote Robin 8 true/pause 100/emote farmer 8 true/pause 100/emote Jodi 8 true/emote Marnie 8 true/pause 800/globalFade/viewport -1000 -1000/end dialogueWarpOut Lewis \"{{i18n:Events.LewisArrest.LewisFinal}}\""
+            }
+        },
+        
+        //lewis arrest repeatable event which replaces the summer luau shorts reaction
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "governorReaction6": "pause 1000/playMusic ocean/speak Governor \"{{i18n:Festivals.luau.shorts001}}\"/pause 600/emote Governor 8/speak Governor \"{{i18n:Festivals.luau.shorts002}}\"/pause 500/showFrame Governor 14/playSound slimeHit/jump Governor/pause 500/showFrame Lewis 24/jump Lewis/textAboveHead Lewis \"{{i18n:Festivals.luau.shorts003}}\"/showFrame Emily 26/pause 1000/showFrame Marnie 16/jump Marnie/textAboveHead Marnie \"{{i18n:Festivals.luau.shorts004}}\"/pause 1000/shake Governor 2000/emote Governor 12/pause 500/showFrame Emily 4/showFrame Marnie 8/speak Governor \"{{i18n:Festivals.luau.shorts005}}\"/speak Lewis  \"{{i18n:Festivals.luau.shorts006}}\"/pause 600/showFrame Governor 13/playSound throw/specificTemporarySprite luauShorts/pause 500/jump Lewis/pause 500/quickQuestion {{i18n:Festivals.luau.shortsqqq}}#{{i18n:Festivals.luau.shortsqq1}}#{{i18n:Festivals.luau.shortsqq2}}(break)speak {{Russell}} \"{{i18n:Festivals.luau.shortsqq1r}}\"(break)speak Lewis \"{{i18n:Festivals.luau.shortsqq2r}}\"\\speak {{Russell}} \"{{i18n:Festivals.luau.shortsqq2rb}}\"\\addConversationTopic {{ModId}}_LewisInJail {{JailTerm_1y}}\\addConversationTopic {{ModId}}_PrisonBed2 {{JailTerm_1y}}/pause 250/faceDirection Harvey 3/pause 250/speak Governor \"{{i18n:Festivals.luau.shorts007}}\"/pause 200/jump Harvey/pause 400/globalFade/viewport -1000 -1000/pause 1000/warp Governor -100 -100/warp Harvey -100 -100/warp Lewis -100 -100/warp {{Shannon}} -100 -100/playSound slimedead/pause 1000/speak {{Russell}}  \"{{i18n:Festivals.luau.shorts008}}\"/pause 800/globalFade/viewport -1000 -1000/message \"{{i18n:Festivals.luau.shorts009}}\"/pause 500/message \"{{i18n:Festivals.luau.shorts010}}\"/waitForOtherPlayers festivalEnd/end",
+            },
+            "When": {
+                "HasSeenEvent |contains={{ModId}}_LewisArrest": true,
+                "HasConversationTopic |contains={{ModId}}_LewisInJail": false,
+                "HasConversationTopic |contains={{ModId}}_PrisonBed2": false,
+            }
+        },
+    ]
+}

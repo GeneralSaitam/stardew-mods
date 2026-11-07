@@ -1,0 +1,83 @@
+{
+    "Changes": [
+        {   
+            "Action": "EditData",
+            "Target": "Data/Events/SeedShop",
+            "Entries": {
+                "18657005/F/f Abigail 1250/e 18657004": "sampractice/
+                7 7/
+                Pierre 4 17 2 farmer 14 14 0 Abigail 7 5 2/
+                skippable/
+                addTemporaryActor abigailDrum 48 32 6 6 2 false/
+                animate Abigail false true 125 49 34 35 48/
+                move farmer 0 -2 3/
+                move farmer -1 0 0/
+                doAction 13 11/
+                pause 500/
+                move farmer 0 -6 3/
+                move farmer -2 0 3/
+                pause 1000/
+                stopMusic/
+                stopAnimation Abigail 0/
+                jump Abigail 7/
+                faceDirection Abigail 1/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.001}}\"/
+                move Abigail 2 0 2/
+                move Abigail 0 1 1/
+                move Abigail 1 0 1/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.002}}\"/
+                pause 300/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.003}}\"/
+                emote farmer 32/
+                advancedMove Abigail false -1 0 0 -1 -2 0 2 1000/
+                move farmer -2 0 2/
+                move farmer 0 1 3/
+                move farmer -2 0 2 /
+                move farmer 0 1 0/
+                stopAdvancedMoves/
+                pause 300/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.004}}\"/
+                pause 400/
+                playMusic sampractice/
+                animate Abigail false true 125 49 34 35 48/
+                pause 15000/
+                stopMusic/
+                stopAnimation Abigail 0/
+                faceDirection Abigail 2/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.005}}\"/
+                question fork1 \"{{i18n:Miihau.AbigailEE.event5.006}}\" /
+                fork 5H_Abi_BadAdvice/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.007}}\"/
+                move Abigail -2 0 2/
+                advancedMove farmer false 0 -1 3 1000/
+                move Abigail 0 2 1/
+                move Abigail 1 0 1/
+                stopAdvancedMoves/
+                pause 200/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.008}}\"/
+                emote farmer 32/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.009}}\"/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.010}}\"/
+                pause 500/
+                end dialogue Abigail \"{{i18n:Miihau.AbigailEE.event5.011}}\"",
+                "5H_Abi_BadAdvice":"friendship Abigail -30/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.012}}\"/
+                emote Abigail 28/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.013}}\"/
+                faceDirection Abigail 3/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.014}}\"/
+                move farmer 0 -1 0/
+                message \"{{i18n:Miihau.AbigailEE.event5.015}}\"/
+                pause 200/
+                move Abigail -2 0 3/
+                faceDirection farmer 3/
+                speak Abigail \"{{i18n:Miihau.AbigailEE.event5.016}}\"/
+                emote farmer 60/
+                move farmer 6 0 2 true/
+                globalFade/
+                viewport -1000 -1000/
+                end dialogueWarpOut Abigail \"{{i18n:Miihau.AbigailEE.event5.017}}\"",
+            },
+        },
+    ]
+}

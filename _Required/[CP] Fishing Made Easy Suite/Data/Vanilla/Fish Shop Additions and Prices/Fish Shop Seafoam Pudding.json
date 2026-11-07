@@ -1,0 +1,50 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fish Shop Seafoam Pudding",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "FishShop",
+        "Items"
+      ],
+      "Entries": {
+        "(O)265": {
+          "TradeItemAmount": 1,
+          "Price": "{{Fish Shop Seafoam P Price}}",
+          "AvailableStockLimit": "Global",
+          "Condition": null,
+          "Id": "(O)265",
+          "ItemId": "(O)265"
+        }
+      },
+      "When": {
+        "Fish Shop Seafoam Pudding": "Immediately, Fishing Level 9",
+		"Fish Shop Seafoam P Price": "5000, 4000, 3000, 2000, 1000, 750, 500, 250, 1"
+      },
+      "MoveEntries": [
+        {
+          "Id": "(O)265",
+          "BeforeId": "(O)685"
+        }
+      ]
+    },
+    {
+      "LogName": "Fishing Shop Seafoam Pudding Fishing Level 9",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "FishShop",
+        "Items"
+      ],
+      "Fields": {
+        "(O)265": {
+          "Condition": "PLAYER_BASE_FISHING_LEVEL Current 9"
+        }
+      },
+      "When": {
+        "Fish Shop Seafoam Pudding": "Fishing Level 9"
+      }
+    }
+  ]
+}

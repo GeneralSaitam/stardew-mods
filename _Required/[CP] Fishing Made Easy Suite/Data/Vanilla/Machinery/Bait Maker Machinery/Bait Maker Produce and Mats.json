@@ -1,0 +1,61 @@
+{
+  "Changes": [
+    {
+      "LogName": "Bait Maker Produce Min",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)BaitMaker",
+        "OutputRules",
+        "Default",
+        "OutputItem"
+      ],
+      "Fields": {
+        "FLAVORED_ITEM Bait DROP_IN_ID": {
+          "MinStack": "{{Bait Maker Produce Min}}"
+        }
+      },
+      "When": {
+        "Bait Maker Produce Min": "6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Bait Maker Produce Max",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)BaitMaker",
+        "OutputRules",
+        "Default",
+        "OutputItem"
+      ],
+      "Fields": {
+        "FLAVORED_ITEM Bait DROP_IN_ID": {
+          "MaxStack": "{{Bait Maker Produce Max}}"
+        }
+      },
+      "When": {
+        "Bait Maker Produce Max": "11, 12, 13, 14, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    },
+    {
+      "LogName": "Bait Maker Required Mats",
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "TargetField": [
+        "(BC)BaitMaker",
+        "OutputRules",
+        "Default",
+        "Triggers"
+      ],
+      "Fields": {
+        "ItemPlacedInMachine": {
+          "RequiredCount": "{{Bait Maker Required Mats.}}"
+        }
+      },
+      "When": {
+        "Bait Maker Required Mats.": "2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100"
+      }
+    }
+  ]
+}

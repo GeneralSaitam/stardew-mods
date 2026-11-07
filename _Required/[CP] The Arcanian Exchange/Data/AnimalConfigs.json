@@ -1,0 +1,120 @@
+{
+"Changes": [
+{
+"LogName": "Attack On",
+"Action": "EditData",
+"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+"Fields": {
+"{{ModID}}_Warthog": {
+ "IsAttackAnimal": true,
+ "AttackDamage": 10,
+ "AttackIntervalMs": 10000,
+ "AttackRange": 5,
+ "AttackMaxChaseTimeMs": 10000,
+ "AttackCondition": "!PLAYER_HAS_BUFF Target {{ModID}}_AnimalWhisperer.Buff",
+},
+},
+},
+{
+"LogName": "Attack On",
+"Action": "EditData",
+"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+"Fields": {
+"{{ModID}}_ArcaGoat": {
+ "IsAttackAnimal": true,
+ "AttackDamage": 1,
+ "AttackIntervalMs": 1000,
+ "AttackRange": 3,
+ "AttackMaxChaseTimeMs": 1000,
+ "AttackCondition": "!PLAYER_HAS_BUFF Target {{ModID}}_AnimalWhisperer.Buff",
+ "IsHarvester": true,
+ "HarvestInterval": 10000,
+ "HarvestRange": 8,
+},
+},
+},
+{
+"LogName": "Attack On",
+"Action": "EditData",
+"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+"Fields": {
+"{{ModID}}_ArcaTapi": {
+ "SpeedOverride": 4,
+ "IsAttackAnimal": true,
+ "AttackDamage": 3,
+ "AttackIntervalMs": 1000,
+ "AttackRange": 3,
+ "AttackMaxChaseTimeMs": 1000,
+ "AttackCondition": "!PLAYER_HAS_BUFF Target {{ModID}}_AnimalWhisperer.Buff",
+},
+},
+},
+{
+"LogName": "Attack On",
+"Action": "EditData",
+"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+"Fields": {
+"{{ModID}}_Movoraptor": {
+ "IsAttackAnimal": true,
+ "AttackDamage": 10,
+ "AttackIntervalMs": 10000,
+ "AttackRange": 5,
+ "AttackMaxChaseTimeMs": 10000,
+ "AttackCondition": "!PLAYER_HAS_BUFF Target {{ModID}}_AnimalWhisperer.Buff",
+ "FeedItemId": "(O){{ModID}}_CarnivoreFeed",
+},
+},
+},
+{
+"LogName": "Attack On",
+"Action": "EditData",
+"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+"Fields": {
+"{{ModID}}_MaleMovoraptor": {
+ "IsAttackAnimal": true,
+ "AttackDamage": 2,
+ "AttackIntervalMs": 15000,
+ "AttackRange": 2,
+ "AttackMaxChaseTimeMs": 10000,
+"AttackCondition": "!PLAYER_HAS_BUFF Target {{ModID}}_AnimalWhisperer.Buff",
+ "FeedItemId": "(O){{ModID}}_CarnivoreFeed",
+},
+},
+},
+{
+"LogName": "Attack On",
+"Action": "EditData",
+"Target": "selph.ExtraAnimalConfig/AnimalExtensionData",
+"Fields": {
+"{{ModID}}_GiantGraveCrab": {
+ "IsAttackAnimal": true,
+ "AttackDamage": 3,
+ "AttackIntervalMs": 600,
+ "AttackRange": 4,
+ "AttackMaxChaseTimeMs": 600,
+ "AttackCondition": "!PLAYER_HAS_BUFF Target {{ModID}}_AnimalWhisperer.Buff",
+},
+},
+},
+ {
+"LogName": "Modify Egg Hatch",
+"Action": "EditData",
+"Target": "selph.ExtraAnimalConfig/EggExtensionData",
+"Entries": {
+ "(O){{ModID}}_MovoraptorEgg": {
+"AnimalSpawnList": [
+{
+"Id": "Male",
+"AnimalId": "{{ModID}}_MaleMovoraptor",
+"Condition": "RANDOM 0.25",
+},
+{
+"Id": "Female",
+"AnimalId": "{{ModID}}_Movoraptor",
+},
+],
+},
+},
+},
+]
+}

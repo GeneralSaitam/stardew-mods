@@ -1,0 +1,167 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                    "16279005/F/n PennysPicnic/t 1400 1920/k 162790051/G !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !SEASON_DAY summer 17 summer 18 summer 19/w sunny/A pennyGone":"50s/
+                    -1000 -1000/
+farmer 75 40 2 Penny 70 45 2/
+skippable/
+specificTemporarySprite pennyFieldTrip/
+viewport 71 45 true/
+move farmer 0 5 3/
+faceDirection Penny 1/
+speak Penny \"You came! I'm glad you got my message.$h\"/
+move farmer -4 0 3/
+speak Penny \"I've spent all morning in the kitchen preparing little treats for us.$0#$b#I hope you're hungry!$h\"/
+emote farmer 8/
+quickQuestion #'Thanks! Who else is coming?'#'Thanks! Do you enjoy cooking that much?'(break)pause 100\\speak Penny \"...$3#$b#No one.$0#$b#I was hoping we could use this time to get to know each other better? Um, well, I would like that.$4\"(break)friendship Penny 10\\pause 100\\speak Penny \"Yes! I actually do.$h#$b#I especially enjoy cooking for others. It's one way I show people I care about them.$0\" /
+pause 250/
+showFrame Penny 28/
+speak Penny \"Here, try this.$h\"/
+pause 500/
+faceDirection farmer 2/
+farmerEat 606/
+showFrame Penny 4/
+pause 2500/
+stopAnimation farmer/
+pause 50/
+faceDirection farmer 3/
+speak Penny \"How did it taste?$0\"/
+quickQuestion #'It's quite good!'#'It was okay.'#'Not quite my taste, sorry.'(break)friendship Penny 20\\emote Penny 32\\speak Penny \"Really!?$h#$b#Don't worry there's more where that came from.$0\"(break)friendship Penny -10\\speak Penny \"That's what my mother is always saying about my food too.$s#$b#Maybe we'll find something that's more your taste.\"(break)friendship Penny -20\\pause 150\\speak Penny \"Oh no...$s#$b#I think I experimented a bit to much with the recipe.$s#$b#Maybe we'll find something more tame, that's more your taste.$0\" /
+emote farmer 32/
+textAboveHead Penny \"Let's try something sweet!\"/
+pause 400/
+globalFade/
+viewport -1000 -1000/
+warp Penny 71 50/
+warp farmer 72 50/
+positionOffset Penny 0 56/
+showFrame Penny 34/
+positionOffset farmer 0 90/
+faceDirection farmer 2/
+showFrame farmer 107/
+pause 200/
+message \"You have a relaxing picnic, chatting with Penny and sampling the snacks she made for you.#After finishing up, you both decide to sit by the river for a bit.\"/
+globalFadeToClear .005 true/
+viewport 71 52/
+pause 150/
+speak Penny \"I hope you've enjoyed the picnic so far.$0\"/
+emote farmer 32/
+speak Penny \"I've hadn't had that much fun in a long time.$s\"/
+stopMusic/
+message \"You notice a tear running down Penny's cheek.\"/
+question fork1 \"How do you react?#'Penny, what's wrong? You're crying.'#'Please don't cry, I'm not good at those kind of things.'\" /
+playMusic desolate/
+fork pleaseDontCry/
+speak Penny \"Well... I've been thinking about my family situation lately.%fork$s\"/
+pause 800/
+fork goodPicnicEnding/
+end",
+                    "pleaseDontCry":"pause 100/
+                    friendship Penny -100/
+speak Penny \"That's okay.$s#$b#I know I can be an emotional nuisance sometimes.$s\"/
+emote farmer 28/
+speak Penny \"Let's tidy up and head home.$s\"/
+pause 100/
+viewport move 1 0 6000/
+globalFade 0.005/
+viewport -1000 -1000/
+message \"You help Penny clean up the picnic.#You feel a rumbling in your stomach.#Maybe it's Penny's food or maybe it's your doubt.\"/
+end dialogue Penny \"Hi @. I feel a bit better now. Thanks for checking in.\"",
+                    "162790051/F/n PennysPicnic/t 1930 2400/k 16279005/G !IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !SEASON_DAY summer 17 summer 18 summer 19/w sunny/A pennyGone":"shaneTheme/
+                    -1000 -1000/
+farmer 74 40 2 Penny 71 50 2/
+skippable/
+addLantern 735 70 49 1/
+specificTemporarySprite pennyFieldTrip 71 45/
+viewport 71 51 true/
+move farmer 0 7 2/
+showFrame farmer 94/
+jump farmer 5/
+faceDirection farmer 2/
+speak Penny \"He didn't come.$s^She didn't come.$s\"/
+showFrame Penny 23/
+emote Penny 28/
+speak Penny \"I guess our friendship is not as special as I thought.$s\"/
+pause 600/
+positionOffset Penny 0 56/
+jump Penny 5/
+showFrame Penny 34/
+speak Penny \"I guess mom was right.$s#$b#Men always find a way to let you down.$s^You can only count on family.$s\"/
+pause 1000/
+question fork0 \"#Leave.#Approach Penny.\"/
+fork leavePennyAtPicnic/
+move farmer 0 3 3/
+move farmer -2 0 2/
+emote farmer 60/
+speak Penny \"Oh...$3#$b#You showed up.$s\"/
+question fork1 \"#'I'm sorry for missing the picnic, Penny. It was thoughtless of me, and I feel terrible.'#'I thought you were used to being disappointed. Don't make a big deal out of it.'\"/
+fork rudeAwnserAtPicnic/
+speak Penny \"Well, I appreciate the apology, but it would have been nice if you could have let me know beforehand.$s\"/
+pause 300/
+emote farmer 28/
+speak Penny \"Do you want to join me for a bit?$s\"/
+pause 600/
+faceDirection farmer 2/
+showFrame farmer 107/
+jump farmer 5/
+positionOffset farmer 0 84/
+speak Penny \"I spent a lot of time and effort preparing for the picnic, and it was disappointing when you didn't show up.$s\"/
+pause 800/
+speak Penny \"I know you didn't do it on purpose, but feeling like a magnet for disappointments just gets to you sometimes.$s%fork\"/
+pause 800/
+fork goodPicnicEnding/
+end",
+                    "leavePennyAtPicnic":"friendship Penny -350/
+                    emote farmer 60/
+advancedMove farmer false 0 -6/
+globalFade 0.005/
+viewport -1000 -1000/
+pause 1000/
+end dialogue Penny \"I'm not in the mood to talk to you right now.$s\"",
+                    "rudeAwnserAtPicnic":"friendship Penny -1000/
+                    showFrame Penny 4/
+positionOffset Penny 0 -56/
+jump Penny 5/
+shake Penny 190000/
+faceDirection farmer 3/
+faceDirection Penny 1/
+speak Penny \"Is this some kind of sick joke to you?$5#$b#I thought you were so busy at your farm you just forgot.$5#$b#I gave you the benefit of the doubt.$5\"/
+move Penny -1 0 3/
+pause 700/
+move Penny 1 0 1/
+speak Penny \"You have the audacity to apparently miss the picnic on purpose, and show up late just to rub it in my face.$5\"/
+emote farmer 28 true/
+move Penny -1 0 3/
+pause 150/
+speak Penny \"I thought you were different.\"/
+pause 300/
+speak Penny \"Leave me alone.$s\"/
+emote farmer 60/
+advancedMove farmer false 0 -2 1 0 0 -7/
+pause 200/
+move Penny 1 0 2/
+showFrame Penny 23/
+emote Penny 28 true/
+globalFade 0.003/
+viewport -1000 -1000/
+pause 1000/
+end dialogue Penny \"...$s\"/",
+                    "goodPicnicEnding":"speak Penny \"I'm sure you've noticed that my dad's not around.$s\"/
+                    pause 800/
+speak Penny \"Don't waste your time looking for him.$s#$b#It's pointless.$s#$b#It was the typical 'he said he was going to the store' one day, then he never came back.$s#$b#It was a huge shock, especially for my mom. He left when I was little, so I barely remember him.$s#$b#But I do remember how painful it was realizing that my dad was never going to come home again.$s\"/
+pause 800/
+speak Penny \"It was tough growing up without a father.$s#$b#Sometimes I felt like I was missing out on something important, you know?$s#$b#Like, everyone else had a dad to look up to and learn from, but I didn't. It was hard to feel like I was on my own all the time.$s#$b# It was lonely. Well... it still is lonely.$s\"/
+pause 300/
+quickQuestion #'I can imagine how that would make you feel. But it seems like you've turned out really well, despite not having a dad around.'#'You should seek therapy.'#'Thank you for being so vulnerable with me. I'll try to be a good friend to you.'(break)friendship Penny 20\\emote Penny 32\\speak Penny \"Thanks, that means a lot.$0#$b#It took me a while to come to terms with it, but I've realized that I don't need a dad to be happy and successful.$0#$b#I have a lot of other great people in my life who support me and love me, and that's what really matters.$0\"\\pause 1500\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250(break)friendship Penny -30\\emote Penny 40\\speak Penny \"Thanks for the advice.$3\"(break)emote Penny 32\\speak Penny \"Thank you for saying that. It means a lot to me that you're willing to be there for me.$0#$b#It's hard for me to talk about things like this. I start to feel overwhelmed by my emotions.$3#$b#But I'm glad that I could open up to you.$4#$b#And you're already a great friend to me. Just being there and listening means a lot.$0\"\\pause 1500\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250\\playSound slime\\positionOffset Penny 4 -4\\pause 50\\positionOffset Penny 0 4\\pause 250 /
+viewport move 1 0 6000/
+globalFade 0.005/
+viewport -1000 -1000/
+message \"You help Penny clean up the picnic.#You feel a rumbling in your stomach.#Maybe it's Penny's food... or maybe it's butterflies.\"/
+end dialogue Penny \"Our conversation at the river today meant a lot to me, @. Thanks for spending time with me.$l\"",
+                }
+        },
+    ]
+}

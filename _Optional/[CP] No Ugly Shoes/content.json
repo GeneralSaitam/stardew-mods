@@ -1,0 +1,142 @@
+{
+   "Format": "2.0.0",
+   
+   "ConfigSchema": {
+	   "Footwear": {
+		   "AllowValues": "Sneakers, RubberBoots, LeprechaunShoes, ThermalBoots, FirewalkerBoots, GenieShoes, SpaceBoots, EmilysMagicBoots, CinderClownShoes, MermaidBoots, DragonscaleBoots, CrystalShoes",
+		   "AllowMultiple": true,
+		   "AllowBlank": true,
+		   "Default": "Sneakers, RubberBoots, LeprechaunShoes, ThermalBoots, FirewalkerBoots, GenieShoes, SpaceBoots, EmilysMagicBoots, CinderClownShoes, MermaidBoots, DragonscaleBoots, CrystalShoes"
+	   }
+   },
+	   
+     
+   "Changes": [
+		{
+			"Action": "Load",
+			"Target": "Characters/Farmer/shoeColors.xnb",
+			"FromFile": "assets/shoeColors.png"
+		},		
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/Sneakers.png",
+			"When": {
+			"Footwear |contains=Sneakers": true },
+			"ToArea":
+			{	"X": 0, "Y": 336, "Width": 16, "Height": 16}
+			
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/RubberBoots.png",
+			"When": {
+			"Footwear |contains=RubberBoots": true },
+			"ToArea":
+			{	"X": 16, "Y": 336, "Width": 16, "Height": 16}
+			
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/LeprechaunShoes.png",
+			"When": {
+			"Footwear |contains=LeprechaunShoes": true },
+			"ToArea":
+			{	"X": 224, "Y": 528, "Width": 16, "Height": 16}
+			
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/ThermalBoots.png",
+			"When": {
+			"Footwear |contains=ThermalBoots": true },
+			"ToArea":
+			{	"X": 96, "Y": 336, "Width": 16, "Height": 16}
+			
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/FirewalkerBoots.png",
+			"When": {
+			"Footwear |contains=FirewalkerBoots": true },
+			"ToArea":
+			{	"X": 128, "Y": 336, "Width": 16, "Height": 16}
+			
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/GenieShoes.png",
+			"When": {
+			"Footwear |contains=GenieShoes": true },
+			"ToArea":
+			{	"X": 144, "Y": 336, "Width": 16, "Height": 16}
+			
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/SpaceBoots.png",
+			"When": {
+			"Footwear |contains=SpaceBoots": true },
+			"ToArea":
+			{	"X": 160, "Y": 336, "Width": 16, "Height": 16}
+			
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/EmilysMagicBoots.png",
+			"When": {
+			"Footwear |contains=EmilysMagicBoots": true },
+			"ToArea":
+			{	"X": 192, "Y": 528, "Width": 16, "Height": 16}
+			
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/CinderClownShoes.png",
+			"When": {
+			"Footwear |contains=CinderClownShoes": true },
+			"ToArea":
+			{	"X": 208, "Y": 560, "Width": 16, "Height": 16}
+			
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/MermaidBoots.png",
+			"When": {
+			"Footwear |contains=MermaidBoots": true },
+			"ToArea":
+			{	"X": 224, "Y": 560, "Width": 16, "Height": 16}
+			
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/DragonscaleBoots.png",
+			"When": {
+			"Footwear |contains=DragonscaleBoots": true },
+			"ToArea":
+			{	"X": 240, "Y": 560, "Width": 16, "Height": 16}
+		
+			
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/CrystalShoes.png",
+			"When": {
+			"Footwear |contains=CrystalShoes": true },
+			"ToArea":
+			{	"X": 224, "Y": 576, "Width": 16, "Height": 16}
+			
+		}
+	]
+}

@@ -1,0 +1,29 @@
+/*Vanilla Marnie has a line for the Stardew Valley Almanac.
+She has no lines for birthday presents.
+Last verified: 1.6.14*/
+
+{"Changes": [
+  {
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Marnie",
+
+    "Entries": {
+
+      "AcceptGift_(O)221": "{{i18n:UGDE.Marnie_(O)221_1}}#$e# %revealtasteJas221 {{i18n:UGDE.Marnie_(O)221_2}}", //Pink Cake
+      "AcceptGift_category_egg": "{{i18n:UGDE.Marnie_category_egg}}", //Eggs. Should only trigger for chicken eggs (and modded eggs, which I can't account for.)
+      "AcceptGift_(O)442": "{{i18n:UGDE.Marnie_(O)442}}", //Duck Egg
+      "AcceptGift_(O)305": "{{i18n:UGDE.Marnie_(O)305}}", //Void Egg
+      "AcceptGift_(O)289": "{{i18n:UGDE.Marnie_(O)289}}", //Ostrich Egg
+      "purchasedAnimal_Dinosaur": "{{i18n:UGDE.Marnie_CT_DinoOnFarm}}", //Hatched a dinosaur... Sorry! Couldn't help myself, had to add a reaction from her at that news.
+      "AcceptGift_(O)107": "$query ANY \"PLAYER_HAS_CONVERSATION_TOPIC Any purchasedAnimal_Dinosaur\" \"PLAYER_SEEN_CONVERSATION_TOPIC Any purchasedAnimal_Dinosaur\"#{{i18n:UGDE.Marnie_(O)107_DinoOnFarm}}|{{i18n:UGDE.Marnie_(O)107_DinoNotHatched}}[107]", //Dinosaur Egg, with thanks to spacechase0 for the advance SpaceCore patch <3
+      "AcceptGift_(O)807": "{{i18n:UGDE.Marnie_(O)807}}",//Dinosaur Mayo
+      "AcceptGift_(O)446": "{{i18n:UGDE.Marnie_(O)446}}" //Rabbit's Foot. Maybe too on the nose... worth revisiting.
+      //TODO Cave Carrot
+      //TODO Carrot
+      //TODO Amaranth
+      //TODO "AcceptBirthdayGift_Positive"
+      //TODO "AcceptBirthdayGift_Negative". Potentially split it five-ways if inspiration strikes.
+
+    }
+  }
+]}

@@ -1,0 +1,35 @@
+{
+  "Format": "2.7.2",
+  "Changes": [
+    {
+      "LogName": "Molamoles_Furniture_Catalogue",
+      "Action": "Include",
+      "FromFile": "Data/Shops.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Tilesheets/Molamoles_Furniture_Catalogue",
+      "FromFile": "Assets/Molamoles_Furniture_Catalogue.png"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Mods/Molamoles_Furniture_Catalogue",
+      "FromFile": "Assets/Molamoles_Furniture_Catalogue - Desaturated.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 32,
+        "Height": 48
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 32,
+        "Height": 48
+      },
+      "When": {
+        "HasMod": "grapeponta.VibrantPastoralRecolor, grapeponta.VibrantPastoralSVE, grapeponta.VanillaInteriors, poohnhi.VPRTempFix, DaisyNiko.EarthyRecolour, DaisyNiko.EarthyInteriors"
+      }
+    }
+  ]
+}

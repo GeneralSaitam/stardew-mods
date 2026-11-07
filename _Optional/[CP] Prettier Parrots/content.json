@@ -1,0 +1,67 @@
+{
+  "Format": "1.19",
+  
+  "ConfigSchema": 
+  {
+    "Parrot 0": {"AllowValues": "Lovebird, Rainbow, Hyacinth, Bourke",
+    "Default": "Lovebird"},
+    "Parrot 1": {"AllowValues": "Lovebird, Rainbow, Hyacinth, Bourke",
+    "Default": "Bourke"},
+    "Parrot 2": {"AllowValues": "Lovebird, Rainbow, Hyacinth, Bourke",
+    "Default": "Hyacinth"},
+    "Parrot 3": {"AllowValues": "Lovebird, Rainbow, Hyacinth, Bourke",
+    "Default": "Rainbow"},
+  },
+	
+  "Changes": 
+  [
+    {
+      "Logname": "Parrot 0",
+      "Action": "EditImage",
+      "Target": "LooseSprites/parrots",
+      "FromFile": "assets/{{Parrot 0}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 264, "Height": 24 }, 
+      "ToArea": { "X": 0, "Y": 0, "Width": 264, "Height": 24 },
+      "When": 
+      {
+        "Parrot 0": "Lovebird, Rainbow, Hyacinth, Bourke",
+      }
+    },
+    {
+      "Logname": "Parrot 1",
+      "Action": "EditImage",
+      "Target": "LooseSprites/parrots",
+      "FromFile": "assets/{{Parrot 1}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 264, "Height": 24 }, 
+      "ToArea": { "X": 0, "Y": 48, "Width": 264, "Height": 24 },
+      "When": 
+      {
+        "Parrot 1": "Lovebird, Rainbow, Hyacinth, Bourke",
+      }
+    },
+    {
+      "Logname": "Parrot 2",
+      "Action": "EditImage",
+      "Target": "LooseSprites/parrots",
+      "FromFile": "assets/{{Parrot 2}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 264, "Height": 24 }, 
+      "ToArea": { "X": 0, "Y": 24, "Width": 264, "Height": 24 },
+      "When": 
+      {
+        "Parrot 2": "Lovebird, Rainbow, Hyacinth, Bourke",
+      }
+    },
+    {
+      "Logname": "Parrot 3",
+      "Action": "EditImage",
+      "Target": "LooseSprites/parrots",
+      "FromFile": "assets/{{Parrot 3}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 264, "Height": 24 }, 
+      "ToArea": { "X": 0, "Y": 72, "Width": 264, "Height": 24 },
+      "When": 
+      {
+        "Parrot 3": "Lovebird, Rainbow, Hyacinth, Bourke",
+      }
+    },
+  ]
+}

@@ -1,0 +1,40 @@
+{
+	"Changes":[
+		//This is for Festival Dialogues. Other relevant dialogues are in other patches.
+		//Wizard has festival dialogue, so he is not patched. The rest are only patched if "all" is chosen.
+		{
+			"LogName": "Sandy - Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries":{
+				"Sandy": "{{i18n:UWS.FestivalDialogue.Sandy}}",
+			},
+			"When": {
+				"Sandy": "all",
+				"SandyToken": "true",
+			},
+		},
+		{
+			"LogName": "Krobus - Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries":{
+				"Krobus": "{{i18n:UWS.FestivalDialogue.Krobus}}",
+			},
+			"When": {
+				"Krobus": "all",
+			},
+		},
+		{
+			"LogName": "Dwarf - Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries":{
+				"Dwarf": "{{i18n:UWS.FestivalDialogue.Dwarf}}",
+			},
+			"When": {
+				"Dwarf": "all",
+			},
+		},
+	],
+}

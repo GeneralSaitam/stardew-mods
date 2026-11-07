@@ -1,0 +1,445 @@
+{
+          "Format": "2.8.1",
+
+//Configuration
+
+"ConfigSchema": {
+
+	"AllowFestivals": {
+            "Section": "General",
+            "AllowValues": "true, false",
+            "Default": true,
+        },
+
+	"UseCustomMusic": {
+            "Section": "General",
+            "AllowValues": "true, false",
+            "Default": true,
+        },
+
+        "UseNyapuPortraits": {
+            "Section": "General",
+            "AllowValues": "true, false",
+            "Default": false,
+        },
+
+// Thank you to both Nyapu and Naira for collaborating + assisting in the process! Now we can all enjoy Nyapu's wonderful art ^^
+
+	"FarmBasementEntrance": {
+            "Section": "MonsterBasementConfig",
+            "AllowValues": "true, false",
+            "Default": true,
+        },
+        "FarmBasementXPosition": {
+            "Section": "MonsterBasementConfig",
+            "Default": 59, 
+        },
+
+        "FarmBasementYPosition": {
+            "Section": "MonsterBasementConfig",
+            "Default": 15, 
+        },
+
+        "BusStopBasementXPosition": {
+            "Section": "MonsterBasementConfig",
+            "Default": 17, 
+        },
+
+        "BusStopBasementYPosition": {
+            "Section": "MonsterBasementConfig",
+            "Default": 4, 
+        },
+
+    },
+
+ "DynamicTokens": [
+
+//Daniel's Random Visits
+
+	{
+	"Name": "DanielVisit",
+	"Value": "{{Random: true, false, false, false, false, false, false, false, false, false}}",
+	},
+
+	//SVE Spirit's Eve Fix
+
+	{
+   	 "Name": "IsOddYear",
+    	 "Value": "{{Query: {{Year}} % 2 = 1}}",
+  	},
+
+	// Gender Neutral Mod Tokens
+
+        {
+	"Name": "GenderNeutralToken",
+	"Value": "",
+  	},
+	{
+	"Name": "GenderNeutralToken",
+	"Value": ".GN",
+	"When": { "HasMod": "Hana.GNMTokens" }
+  	},
+
+		{
+	"Name": "GenderNeutralSingularToken",
+	"Value": "",
+  	},
+	{
+	"Name": "GenderNeutralSingularToken",
+	"Value": ".Singular",
+		"When": { "HasMod": "Hana.GNMTokens" }
+  	},
+	{
+	"Name": "GenderNeutralSingularToken",
+	"Value": ".Plural",
+	"When": { "HasMod": "Hana.GNMTokens", "Hana.GNMTokens/Singular": false }
+  	},
+	{
+	"Name": "GNMTSubjectivePronoun",
+	"Value": "false",
+	},
+	{
+	"Name": "GNMTSubjectivePronoun",
+	"Value": "{{Hana.GNMTokens/SubjectivePronoun}}",
+	"When": { "HasMod": "Hana.GNMTokens" }
+	},
+		{
+	"Name": "GNMTObjectivePronoun",
+	"Value": "false",
+	},
+	{
+	"Name": "GNMTObjectivePronoun",
+	"Value": "{{Hana.GNMTokens/ObjectivePronoun}}",
+	"When": { "HasMod": "Hana.GNMTokens" }
+	},
+	{
+	"Name": "GNMTTitle",
+	"Value": "false",
+	},
+	{
+	"Name": "GNMTTitle",
+	"Value": "{{Hana.GNMTokens/Title}}",
+	"When": { "HasMod": "Hana.GNMTokens" }
+	},
+	{
+	"Name": "GNMTSpouseNoun",
+	"Value": "false",
+	},
+	{
+	"Name": "GNMTSpouseNoun",
+	"Value": "{{Hana.GNMTokens/SpouseNoun}}",
+	"When": { "HasMod": "Hana.GNMTokens" }
+	},
+
+	//Monster House
+	{
+   	 "Name": "sillyMovedIn",
+    	 "Value": "false",
+  	},
+
+	{
+   	 "Name": "sillyMovedIn",
+    	 "Value": "true",
+	 "When": {
+             "HasActiveQuest: anyPlayer |contains=8280021": true,
+         },
+  	},
+
+	{
+   	 "Name": "sillyMovedIn",
+    	 "Value": "true",
+	 "When": {
+             "HasSeenEvent: anyPlayer |contains=8280021, 8280022": true,
+         },
+  	},
+// A HUGE thank you to NoraCharles for helping me out with this config section and how it works!!
+        {
+   	 "Name": "FarmBPosX",
+    	 "Value": "{{FarmBasementXPosition}}",
+  	},
+        {
+   	 "Name": "FarmBPosY",
+    	 "Value": "{{FarmBasementYPosition}}",
+  	},
+        {
+   	 "Name": "BusStopBPosX",
+    	 "Value": "{{BusStopBasementXPosition}}",
+  	},
+        {
+   	 "Name": "BusStopBPosY",
+    	 "Value": "{{BusStopBasementYPosition}}",
+  	},
+
+//Stardew Soundtracks for Music
+	{
+         "Name": "GabrielTheme",
+         "Value": "kindadumbautumn",
+	 "When": {
+		"UseCustomMusic": "false",
+	         }
+	},
+	{
+         "Name": "GabrielTheme",
+         "Value": "GabrielTheme",
+	 "When": {
+		"UseCustomMusic": "true",
+	         }
+	},
+
+
+	{
+         "Name": "ZinniaTheme",
+         "Value": "ragtime",
+	 "When": {
+		"UseCustomMusic": "false",
+	         }
+	},
+	{
+         "Name": "ZinniaTheme",
+         "Value": "ZinniaTheme",
+	 "When": {
+		"UseCustomMusic": "true",
+	         }
+	},
+
+	{
+         "Name": "ZinniaSorrow",
+         "Value": "musicboxsong",
+	 "When": {
+		"UseCustomMusic": "false",
+	         }
+	},
+
+	{
+         "Name": "ZinniaSorrow",
+         "Value": "ZinniaSorrow",
+	 "When": {
+		"UseCustomMusic": "true",
+	         }
+	},
+	{
+         "Name": "SillyTheme",
+         "Value": "archaeo",
+	 "When": {
+		"UseCustomMusic": "false",
+	         }
+	},
+	{
+         "Name": "SillyTheme",
+         "Value": "SillyTheme",
+	 "When": {
+		"UseCustomMusic": "true",
+	         }
+	},
+
+	{
+         "Name": "DaisyFarewell",
+         "Value": "shaneTheme",
+	 "When": {
+		"UseCustomMusic": "false",
+	         }
+	},
+	{
+         "Name": "DaisyFarewell",
+         "Value": "DaisyFarewell",
+	 "When": {
+		"UseCustomMusic": "true",
+	         }
+	},
+
+	//sewer map changes
+	{
+   	 "Name": "sewerChanges",
+    	 "Value": "true",
+  	},
+
+	{
+   	 "Name": "sewerChanges",
+    	 "Value": "false",
+	 "When": {
+             "HasMod": "MouseyPounds.ShadowFestival",
+	     "DayEvent": "spirit's eve",
+         },
+  	},
+
+
+	//c
+	{
+   	 "Name": "ccOrjoja",
+    	 "Value": "false",
+  	},
+
+	{
+   	 "Name": "ccOrjoja",
+    	 "Value": "true",
+	 "When": {
+             "IsCommunityCenterComplete": "true",
+         },
+  	},
+
+	{
+   	 "Name": "ccOrjoja",
+    	 "Value": "true",
+	 "When": {
+             "IsJojaMartComplete": "true",
+         },
+  	},
+],
+
+"CustomLocations": [
+      // Monster House
+      {
+         "Name": "Custom_GE_MonsterHouse",
+         "FromMapFile": "Assets/Maps/MonsterHouse.tmx"
+      },
+
+	//Guild Expansion
+      {
+         "Name": "Custom_GE_MonsterResearchWing",
+         "FromMapFile": "Assets/Maps/MonsterResearchWing.tmx"
+      },
+
+	//Zinnia/Gabriel's Room
+      {
+         "Name": "Custom_GE_ZinniaRoom",
+         "FromMapFile": "Assets/Maps/ZinniaRoom.tmx"
+      },
+
+	//Flower Paradise
+      {
+         "Name": "Custom_GE_FlowerParadise",
+         "FromMapFile": "Assets/Maps/FlowerParadise.tmx"
+      },
+
+	//Zinnia Field
+      {
+         "Name": "Custom_GE_ZinniaField",
+         "FromMapFile": "Assets/Maps/ZinniaField.tmx"
+      },
+   ],
+
+"Changes": [
+
+        {
+            "Action": "Include",
+            "FromFile": "Data/Events/events.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/Events/eventdialogue.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/maps.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/shops.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/music.json",
+	     "When": {
+		"UseCustomMusic": "true",
+	             }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/quests.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Objects/objects.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Objects/crops.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Objects/bigcraftables.json",
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Data/Objects/weapons.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/monsterdata.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/gifttastes.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/festivaldata.json",
+	     "When": {
+		"AllowFestivals": "true",
+	             }
+	},
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/moviedata.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/recipes.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/secretnotes.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/mail.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/NPCs/HumanNPCData.json",
+	
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "Data/NPCs/MonsterNPCData.json",
+        },
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/AdventureGuild",
+	 "FromFile": "Assets/XNBs/Blank.xnb",
+	"When": {
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP, Rafseazz.RSVCP, BlatantDecoy.BugmeatRecipes-CP": false,
+	},
+},
+
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/Custom_GE_MonsterResearchWing",
+	 "FromFile": "Assets/XNBs/Blank.xnb",
+	},
+
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/Custom_GE_FlowerParadise",
+	 "FromFile": "Assets/XNBs/Blank.xnb",
+	},
+
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/Custom_GE_MonsterHouse",
+	 "FromFile": "Assets/XNBs/Blank.xnb",
+	},
+
+]
+}

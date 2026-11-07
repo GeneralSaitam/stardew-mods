@@ -1,0 +1,87 @@
+{
+  "Changes": [
+
+    {
+        "LogName": "Add Bathroom Catalogue Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "Entries": {
+            "HXW.BathroomFurniSet": {
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Items": [
+                {
+                "Price": 0,
+                "AvailableStockLimit": "Global",
+                "AvoidRepeat": false,
+                "UseObjectDataPrice": false,
+                "IgnoreShopPriceModifiers": false,
+                "PriceModifiers": null,
+                "PriceModifierMode": "Stack",
+                "AvailableStockModifiers": null,
+                "AvailableStockModifierMode": "Stack",
+                "Condition": null,
+                "Id": "Default",
+                "ItemId": "ALL_ITEMS (F)",
+                "MinStack": -1,
+                "MaxStack": -1,
+                "Quality": -1,
+                "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_hwbathroomfurni"
+                }
+            ],
+            "CustomFields":{
+                "HappyHomeDesigner/Catalogue":"true"
+            }
+            }
+        }
+    },
+
+    {
+        "LogName": "Add Bathroom Catalogue Item",
+        "Action": "EditData",
+        "Target": "Data/Furniture",
+        "Entries": {    
+            "HXW.BathroomFurni_Catalogue": "HXW.BathroomFurni_Catalogue/other/1 2/1 1/1/20000/2/{{i18n:BathroomFurniture_Catalogue}}/153/Mods\\HXW.BathroomFurniture\\Furniture/true"
+        }
+    },
+  
+    {
+        "LogName": "Add Bathroom Catalogue Tile Actions",
+        "Action": "EditData",
+        "Target": "sophie.Calcifer/FurnitureActions",
+        "Entries": {
+            "(F)HXW.BathroomFurni_Catalogue": {
+                "TileActions": [
+                    {
+                        "TileAction": "OpenShop HXW.BathroomFurniSet"
+                    }
+                ]
+            }
+        }
+    },
+
+    {
+        "LogName": "Add Bathroom Catalogue to Robin's Shop",
+        "Action": "EditData",
+        "Target": "Data/Shops",
+        "TargetField": [ "Carpenter", "Items" ],
+        "Entries": {
+            "HXW.BathroomFurni_Catalogue": {
+                "Id": "HXW.BathroomFurni_Catalogue",
+                "ItemId": "(F)HXW.BathroomFurni_Catalogue",
+                "Price": 20000
+            }
+        }
+    }
+   
+  ]
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  

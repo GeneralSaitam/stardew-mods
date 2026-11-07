@@ -1,0 +1,82 @@
+{
+    "Changes": [
+      {
+        "Action": "EditData",
+        "Target": "Data/Festivals/fall20",
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": ["Entries", "Set-Up_additionalCharacters"],
+            "Value": "Goldenglow 60 44 3",
+            "Delimiter": "/"
+          },
+          {
+            "Operation": "Append",
+            "Target": ["Entries", "MainEvent_additionalCharacters"],
+            "Value": "Goldenglow 74 45 0",
+            "Delimiter": "/"
+          },
+          {
+            "Operation": "Append",
+            "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+            "Value": "Goldenglow 60 44 3",
+            "Delimiter": "/"
+          },
+          {
+            "Operation": "Append",
+            "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+            "Value": "Goldenglow 74 45 0",
+            "Delimiter": "/"
+          }
+        ]
+      },
+      {
+            "Action": "EditData",
+            "Target": "data/festivals/fall20",
+            "Entries": {
+                "Goldenglow": "{{i18n:rsvGoldenglow}}",
+                "Goldenglow_spouse": "{{i18n:rsvGoldenglow_spouse}}"
+            }
+       },
+       {
+          "Action": "EditData",
+          "Target": "Data/Festivals/winter28",
+          "TextOperations": [
+            {
+              "Operation": "Append",
+              "Target": ["Entries", "Set-Up_additionalCharacters"],
+              "Value": "Goldenglow 50 28 2",
+              "Delimiter": "/"
+            },
+            {
+              "Operation": "Append",
+              "Target": ["Entries", "MainEvent_additionalCharacters"],
+              "Value": "Goldenglow 49 43 3",
+              "Delimiter": "/"
+            },
+            {
+              "Operation": "Append",
+              "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+              "Value": "Goldenglow 50 28 2",
+              "Delimiter": "/"
+            },
+            {
+              "Operation": "Append",
+              "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+              "Value": "Goldenglow 49 43 3",
+              "Delimiter": "/"
+            }
+          ]
+        },
+  
+        //彩蛋节对话
+        {
+              "Action": "EditData",
+              "Target": "data/festivals/winter28",
+              "Entries": {
+                  "Goldenglow": "{{i18n:rsv1Goldenglow}}",
+                  "Goldenglow_spouse": "{{i18n:rsv1Goldenglow_spouse}}"
+              }
+         }
+    ]
+}

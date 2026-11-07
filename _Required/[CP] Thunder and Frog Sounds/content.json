@@ -1,0 +1,54 @@
+﻿{
+    "Format": "2.0.0",
+    "Changes": [
+	{
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"Croak": {
+				"Id": "croak",
+				"Category": "Ambient",
+				"FilePaths": [
+					"{{AbsoluteFilePath: assets/frog_croak1.ogg}}"
+				],
+				"StreamedVorbis": true
+			},
+			"ActualCroak": {
+				"Id": "rainsound",
+				"Category": "Ambient",
+				"FilePaths": [
+					"{{AbsoluteFilePath: assets/frog_croak3.ogg}}",
+					"{{AbsoluteFilePath: assets/frog_croak4.ogg}}",
+					"{{AbsoluteFilePath: assets/frog_croak2.ogg}}"
+				],
+				"StreamedVorbis": true
+				}
+			}				
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/AudioChanges",
+		"Entries": {
+			"Thunder": {
+				"Id": "thunder",
+				"Category": "Ambient",
+				"FilePaths": [
+					"{{AbsoluteFilePath: assets/thunder_far2.ogg}}",
+					"{{AbsoluteFilePath: assets/thunder_far3.ogg}}",
+					"{{AbsoluteFilePath: assets/thunder_far1.ogg}}"
+				],
+				"StreamedVorbis": true			
+			},
+			"SmallThunder": {
+				"Id": "thunder_small",
+				"Category": "Ambient",
+				"FilePaths": [
+					"{{AbsoluteFilePath: assets/thunder_close1.ogg}}",
+					"{{AbsoluteFilePath: assets/thunder_close2.ogg}}"
+				],
+				"StreamedVorbis": true
+				}
+			}
+	}
+	]
+}

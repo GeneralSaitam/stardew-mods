@@ -1,0 +1,126 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "Entries": {
+        "(BC){{ModId}}_Statue_of_Old_Master_Cannoli": {
+          "HasInput": false,
+          "HasOutput": false,
+          "InteractMethod": null,
+          "OutputRules": [
+            {
+              "Id": "Sweet_Gem_Berry",
+              "Triggers": [
+                {
+                  "Id": "Sweet_Gem_Berry",
+                  "Trigger": "ItemPlacedInMachine",
+                  "RequiredItemId": "(O)245",
+                  "RequiredCount": 25
+                }
+              ],
+              "OutputItem": [
+                {
+                  "ItemId": "(O)347"
+                }
+              ],
+              "MinutesUntilReady": 240
+            }
+          ],
+          "ShowNextIndexWhileWorking": true,
+          "LightWhileWorking": {
+            "Radius": 1.5,
+            "Color": "DarkCyan"
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "When": {"HasMod |contains=skeleton.HoneyExtendCP": true},
+      "TargetField": [
+        "(BC)skeleton.HoneyExtendCP_Heavy_Bee_House",
+        "OutputRules"
+      ],
+      "Entries": {
+        "Gem_Berry_Honey": {
+            "Id": "Gem_Berry_Honey",
+            "Triggers": [
+              {
+                "RequiredItemId": "(O)417"
+              }
+            ],
+            "OutputItem": [
+              {
+                "Id": "Honey",
+                "ItemId": "FLAVORED_ITEM Honey DROP_IN_ID",
+                "MinStack": 2,
+                "MaxStack": 2,
+                "CopyPrice": true,
+                "PriceModifiers": [
+                  {
+                    "Id": "Honey1",
+                    "Modification": "Multiply",
+                    "Amount": 2.0
+                  },
+                  {
+                    "Id": "Honey2",
+                    "Modification": "Add",
+                    "Amount": 100
+                  }
+                ]
+              }
+            ],
+            "MinutesUntilReady": 900
+          }
+        }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Machines",
+      "When": {"HasMod |contains=skeleton.TofuExtendCP": true},
+      "TargetField": [
+        "(BC)12",
+        "OutputRules"
+      ],
+      "Entries": {
+        "Gem_Berry_Soymilk":  {
+            "Id": "Gem_Berry_Soymilk",
+            "Triggers": [
+              {
+                "RequiredItemId": "(O){{ModId}}_Sweet_Gem_Jelly"
+              }
+            ],
+            "OutputItem": [
+              {
+                "ItemId": "(O)skeleton.TofuExtendCP_Fruit_Soymilk",
+                "ObjectInternalName": "{0} skeleton.TofuExtendCP_Fruit_Soymilk",
+                "ObjectDisplayName": "[LocalizedText Strings\\Objects:skeleton.TofuExtendCP_Fruit_Soymilk %PRESERVED_DISPLAY_NAME]",
+                "PreserveId": "DROP_IN",
+                "MinStack": 1,
+                "CustomData": {
+                  "selph.ExtraMachineConfig.CopyColor": "true",
+                  "selph.ExtraMachineConfig.RequirementTags.1": "item_soymilk"
+                },
+                "CopyPrice": true,
+                "PriceModifiers": [
+                  {
+                    "Id": "Soymilk_1",
+                    "Modification": "Add",
+                    "Amount": 120
+                  },
+                  {
+                    "Id": "Soymilk_2",
+                    "Modification": "Multiply",
+                    "Amount": 3
+                  }
+                ]
+                }
+            ],
+            "MinutesUntilReady": 10000
+          }
+        }
+    }
+  ]
+}

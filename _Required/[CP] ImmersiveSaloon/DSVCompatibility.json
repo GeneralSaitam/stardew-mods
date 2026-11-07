@@ -1,0 +1,75 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Strings/Schedules/Sebastian",
+			"Entries": {
+				"Fri.000": "{{Random: Should I let Sam win for once? ...nah.$h && I did try and teach Sam to be better at pool, but it's a lot of math.$h && Hey @, watch this.$h && I've been watching some videos on trick shots lately. Think Sam would be impressed?$h && Hm... shouldn't be a problem if I go for a bank shot... && I invited Abigail to play, but they say they like watching and don't want to interrupt our 'bonding time'.#$b#I still invite them every time anyway.$h && Huh, this is a tricky angle. Sam almost got me here.#$b$Almost.$h && You'd think doing mental calculations wouldn't be relaxing after a day of programming, but it is.#$b#I guess I'm just wired for math.$h && It's not the most exciting of Friday nights, but who wants to be in a big crowd anyway?$h && Sam's not that good at precise shots, but he's really good at power. He always manages to win the lag. |inputSeparator=&&}}",
+			},
+			"When":{
+				"HasMod |contains= DSV.Core": true,
+				"DSV.Core/ConfigValue:NonbinaryAbigail": "True"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"Entries": {
+				"sam_pool": "{{Random: $c .5#Hmm... If I give the cue ball a bit of a top spin, maybe I could...$7#$e#*Sigh*... I'm not very good.$s && Abby's pretty good when they pick up a stick, did you know?$h#$b#Better than me, anyway.$10 && Seb, what the heck's an 'English'? Are you making that up?$8 && Gus found this pool table in a flea market years ago. Refurbished and all. He's really good at finding stuff like this. && I'm pretty bad at pool, but it's better than just playing video games all the time, you know?$h && It's not whether you win or lose, it's how you play the game!#$b#I... don't play very well!$10 && Dang it, there goes the cue ball again....$2 && Hey Seb, I think you should try playing with a handicap sometime.#$b#Like a blindfold maybe?$1 && Yeah, but if we were shooting for distance, then I'd win.$h && I lost count of the number of times I've lost against Seb. I do have two wins on him though!$h && Giving the pool cue that nice smooth movement is so satisfying. I don't mind if I'm not that good.$h |inputSeparator=&&}}"
+			},
+			"When":{
+				"HasMod |contains= DSV.Core": true,
+				"DSV.Core/ConfigValue:NonbinaryAbigail": "True",
+				"DSV.Core/ConfigValue:NonbinarySebastian": "False"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"Entries": {
+				"sam_pool": "{{Random: $c .5#Hmm... If I give the cue ball a bit of a top spin, maybe I could...$7#$e#*Sigh*... I'm not very good.$s && Abby's pretty good when she picks up a stick, did you know?$h#$b#Better than me, anyway.$10 && Seb, what the heck's an 'English'? Are you making that up?$8 && Gus found this pool table in a flea market years ago. Refurbished and all. He's really good at finding stuff like this. && I'm pretty bad at pool, but it's better than just playing video games all the time, you know?$h && It's not whether you win or lose, it's how you play the game!#$b#I... don't play very well!$10 && Dang it, there goes the cue ball again....$2 && Hey Seb, I think you should try playing with a handicap sometime.#$b#Like a blindfold maybe?$1 && Yeah, but if we were shooting for distance, then I'd win.$h && I lost count of the number of times I've lost against Seb. I do have two wins on them though!$h && Giving the pool cue that nice smooth movement is so satisfying. I don't mind if I'm not that good.$h |inputSeparator=&&}}"
+			},
+			"When":{
+				"HasMod |contains= DSV.Core": true,
+				"DSV.Core/ConfigValue:NonbinaryAbigail": "False",
+				"DSV.Core/ConfigValue:NonbinarySebastian": "True"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"Entries": {
+				"sam_pool": "{{Random: $c .5#Hmm... If I give the cue ball a bit of a top spin, maybe I could...$7#$e#*Sigh*... I'm not very good.$s && Abby's pretty good when they pick up a stick, did you know?$h#$b#Better than me, anyway.$10 && Seb, what the heck's an 'English'? Are you making that up?$8 && Gus found this pool table in a flea market years ago. Refurbished and all. He's really good at finding stuff like this. && I'm pretty bad at pool, but it's better than just playing video games all the time, you know?$h && It's not whether you win or lose, it's how you play the game!#$b#I... don't play very well!$10 && Dang it, there goes the cue ball again....$2 && Hey Seb, I think you should try playing with a handicap sometime.#$b#Like a blindfold maybe?$1 && Yeah, but if we were shooting for distance, then I'd win.$h && I lost count of the number of times I've lost against Seb. I do have two wins on them though!$h && Giving the pool cue that nice smooth movement is so satisfying. I don't mind if I'm not that good.$h |inputSeparator=&&}}"
+			},
+			"When":{
+				"HasMod |contains= DSV.Core": true,
+				"DSV.Core/ConfigValue:NonbinaryAbigail": "True",
+				"DSV.Core/ConfigValue:NonbinarySebastian": "True"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pam",
+			"Entries": {
+				"Saloon_Tue": "{{Random: Hey Emily! Gimme another round! *hic*$h && Sigh... Wasn't this glass just full?$s && You ever play checkers, @? I used to be pretty good, I bet I could teach you a thing or two.$h |inputSeparator=&&}}",
+				"Saloon_Fri": "{{Random: Oi, Emily! Gimme another pint of your strongest! && Oh Penny...we used to play checkers together all the time....$2#$b#Mommy promises she'll get better if you keep playing, don't feel bad....$s && You see the latest thing on TV?#$B#Yeah, me neither.$h && Gush... yer mah best frien'....$h#$b#Not jus' cause yeh keep lettin' me in... yeh don't judge....$h#$b# && %Pam is asleep at the bar, her face relaxed and content. && Kid, yer a good'un...got ambition and talent...$h#$b#Don't you end up like yer Auntie Pam, y'understand? && Mm... No, no, Penny, yeh gotta be aggressive when it's checkers... take th' center 'n push ahead....$h && Hey, kid! Come sit with your Auntie Pam a spell 'n tell me somethin' good.$h && Gus, I ever tell you the one about the time I met the fake carjackers outside of Zuzu?$h && I feel like I've already lived such a long life, @.$s#$b#Still, I wanna see my little girl grow up and succeed at life, y'know?$h && Mmm... you hand me that rod, ol' Pam'll show you how to reel a big'un in... zzz...$h |inputSeparator=&&}}"
+			},
+			"When":{
+				"HasMod |contains= atravita.CP.PamTries": false,
+				"HasMod |contains= DSV.Core": true,
+				"DSV.Core/ConfigValue:GusVariant |contains= Modded": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Kent",
+			"Entries": {
+				"Saloon": "{{Random: %Kent is staring into his beverage, lost in his thoughts. && Hello, @. Coming for some refreshment after a hard week? && I like how noisy this place gets. It helps me drown out my thoughts. && The alcohol is tempting, but I gave that all up when I married Jodi.#$b#It's difficult trying to be less hypervigilant without it, though.$5 && Sometimes I think about sitting at the bar and making conversation, but...$5#$b#I wasn't a very good talker before, how would I do now? && How are things, @? If you need an open ear, I can listen, at least.#$b#I'm sure the problems of a farm aren't easy to deal with, but they'd be a change of pace for me. && Jodi...#$b#You do so much...you're amazing.$5 && %Kent is watching the saloon going-ons, but his thoughts seem elsewhere. && Sorry, @, I'm not good company right now... I barely slept last night. && %Kent is mumbling under his breath. It sounds like a prayer.#$b#May those who are no longer with us find peace....$5 |inputSeparator=&&}}"
+			},
+			"When":{
+				"HasMod |contains= DSV.Core": true,
+				"DSV.Core/ConfigValue:JodiVariant |contains= Modded": true
+			}
+		}
+	]
+}

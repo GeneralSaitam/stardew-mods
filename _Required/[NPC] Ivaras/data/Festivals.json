@@ -1,0 +1,331 @@
+{
+	"Changes": 
+    [
+			{	
+			"LogName": "Egg Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "{{ModId}}_IvarasWolfgang 24 70 right",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+   				    "Value": "{{ModId}}_IvarasWolfgang 43 60 left",
+   				    "Delimiter": "/"
+				},
+   				//MainEvent - the Hunt
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "{{ModId}}_IvarasWolfgang 36 64 right",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+   				    "Value": "{{ModId}}_IvarasWolfgang 24 66 right",
+   				    "Delimiter": "/"
+				},
+
+			],
+			"When": {"Relationship:{{ModID}}_IvarasWolfgang": "Married"}
+		},
+		{
+			"LogName": "Egg Festival - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": 
+			{
+			"{{ModId}}_IvarasWolfgang": "{{i18n:EggFestival.IvarasWolfgang_spouse}}",
+			"{{ModId}}_IvarasWolfgang_y2": "{{i18n:EggFestival.IvarasWolfgang_spouse_y2}}",
+			},
+		},
+		{	
+			"LogName": "Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "{{ModId}}_IvarasWolfgang 11 20 down",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+   				    "Value": "{{ModId}}_IvarasWolfgang 1 37 down",
+   				    "Delimiter": "/"
+				},
+				//The Dance
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "{{ModId}}_IvarasWolfgang 15 21 down",
+   				    "Delimiter": "/"
+				},
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+   				    "Value": "{{ModId}}_IvarasWolfgang 15 21 down",
+   				    "Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Flower Dance - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": 
+			{ 
+			"{{ModId}}_IvarasWolfgang": "{{i18n:FlowerDance.IvarasWolfgang}}",
+			"{{ModId}}_IvarasWolfgang_y2": "{{i18n:FlowerDance.IvarasWolfgang_y2}}",
+			"{{ModId}}_IvarasWolfgang_spouse": "{{i18n:FlowerDance.IvarasWolfgang_spouse}}",
+			"{{ModId}}_IvarasWolfgang_spouse_y2": "{{i18n:FlowerDance.IvarasWolfgang_spouse_y2}}",
+			},
+		},
+		{	
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "{{ModId}}_IvarasWolfgang 12 39 down",
+   				    "Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					"Value": "{{ModId}}_IvarasWolfgang 13 39 down",
+					"Delimiter": "/"
+				},
+				//MainEvent - the Tasting
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{ModId}}_IvarasWolfgang 38 20 up",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+					"Value": "{{ModId}}_IvarasWolfgang 19 17 right",
+					"Delimiter": "/"
+				},
+			],
+			"When": {"Relationship:{{ModID}}_IvarasWolfgang": "Married"}
+		},
+		{	
+			"LogName": "Luau - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": 
+			{ 
+			"{{ModId}}_IvarasWolfgang": "{{i18n:Luau.IvarasWolfgang_spouse}}",
+			"{{ModId}}_IvarasWolfgang_y2": "{{i18n:Luau.IvarasWolfgang_spouse_y2}}",
+			},
+		},
+		{	
+			"LogName": "Dance of the Moonlight Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_IvarasWolfgang 86 32 left",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					"Value": "{{ModId}}_IvarasWolfgang 86 32 left",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{ModId}}_IvarasWolfgang 90 40 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+					"Value": "{{ModId}}_IvarasWolfgang 90 40 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Dance of the Moonlight Jellies - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": 
+			{
+			"{{ModId}}_IvarasWolfgang": "{{i18n:MoonlightJellies.IvarasWolfgang}}",
+			"{{ModId}}_IvarasWolfgang_y2": "{{i18n:MoonlightJellies.IvarasWolfgang_y2}}",
+			"{{ModId}}_IvarasWolfgang_spouse": "{{i18n:MoonlightJellies.IvarasWolfgang_spouse}}",
+			"{{ModId}}_IvarasWolfgang_spouse_y2": "{{i18n:MoonlightJellies.IvarasWolfgang_spouse_y2}}",
+			},
+		},
+		{	
+			"LogName": "Stardew Valley Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_IvarasWolfgang 42 86 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					"Value": "{{ModId}}_IvarasWolfgang 48 88 left",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Stardew Valley Fair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": 
+			{ 
+			"{{ModId}}_IvarasWolfgang": "{{i18n:StardewValleyFair.IvarasWolfgang}}",
+			"{{ModId}}_IvarasWolfgang_y2": "{{i18n:StardewValleyFair.IvarasWolfgang_y2}}",
+			"{{ModId}}_IvarasWolfgang_spouse": "{{i18n:StardewValleyFair.IvarasWolfgang_spouse}}",
+			"{{ModId}}_IvarasWolfgang_spouse_y2": "{{i18n:StardewValleyFair.IvarasWolfgang_spouse_y2}}",
+			},
+		},
+		{	
+			"LogName": "Spirit's Eve",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_IvarasWolfgang 64 20 down",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					"Value": "{{ModId}}_IvarasWolfgang 62 22 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Spirit's Eve - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": 
+			{ 
+			"{{ModId}}_IvarasWolfgang": "{{i18n:SpiritsEve.IvarasWolfgang}}",
+			"{{ModId}}_IvarasWolfgang_y2": "{{i18n:SpiritsEve.IvarasWolfgang_y2}}",
+			"{{ModId}}_IvarasWolfgang_spouse": "{{i18n:SpiritsEve.IvarasWolfgang_spouse}}",
+			},
+		},
+		{	
+			"LogName": "Festival of Ice",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_IvarasWolfgang 59 17 right",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					"Value": "{{ModId}}_IvarasWolfgang 29 12 right",
+					"Delimiter": "/"
+				},
+				//MainEvent
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{ModId}}_IvarasWolfgang 59 34 right",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters_y2"],
+					"Value": "{{ModId}}_IvarasWolfgang 59 34 right",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Festival of Ice - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": 
+			{ 
+			"{{ModId}}_IvarasWolfgang": "{{i18n:IceFestival.IvarasWolfgang |Merchant={{Merchant}}}}",
+			"{{ModId}}_IvarasWolfgang_y2": "{{i18n:IceFestival.IvarasWolfgang_y2}}",
+			"{{ModId}}_IvarasWolfgang_spouse": "{{i18n:IceFestival.IvarasWolfgang_spouse}}",
+			"{{ModId}}_IvarasWolfgang_spouse_y2": "{{i18n:IceFestival.IvarasWolfgang_spouse_y2}}",
+			},
+		},
+		{	
+			"LogName": "Feast of the Winter Star",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_IvarasWolfgang 21 63 right",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+					"Value": "{{ModId}}_IvarasWolfgang 32 68 right",
+					"Delimiter": "/"
+				},
+			],
+			"When": {"Relationship:{{ModID}}_IvarasWolfgang": "Married"}
+		},
+		{	
+			"LogName": "Feast of the Winter Star - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": 
+			{ 
+			"{{ModId}}_IvarasWolfgang": "{{i18n:Christmas.IvarasWolfgang_spouse}}",
+			"{{ModId}}_IvarasWolfgang_y2": "{{i18n:Christmas.IvarasWolfgang_spouse_y2}}",
+			},
+		},
+	]
+}

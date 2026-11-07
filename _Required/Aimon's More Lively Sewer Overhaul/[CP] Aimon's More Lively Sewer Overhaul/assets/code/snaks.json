@@ -1,0 +1,129 @@
+{
+	"Changes": [
+	
+	//1.6 npc
+	
+
+	
+	
+	{
+    "Action": "Load",
+    "Target": "Characters/Aimon111.SewerOverhaul_AimonSnak1",
+    "FromFile": "assets/tilesheets/snakspritesheet.png",
+	},
+	{
+    "Action": "Load",
+    "Target": "Characters/Aimon111.SewerOverhaul_AimonSnak2",
+    "FromFile": "assets/tilesheets/snakspritesheet.png",
+	},
+	{
+    "Action": "Load",
+    "Target": "Characters/Aimon111.SewerOverhaul_AimonSnak3",
+    "FromFile": "assets/tilesheets/snakspritesheet1.png",
+	},
+		{
+            "Action": "Load",
+            "Target": "Portraits/Aimon111.SewerOverhaul_AimonSnak1",
+            "FromFile": "assets/tilesheets/snakspritesheetPortrait.png",
+        },
+		{
+            "Action": "Load",
+            "Target": "Portraits/Aimon111.SewerOverhaul_AimonSnak2",
+            "FromFile": "assets/tilesheets/snakspritesheetPortrait.png",
+        },
+		{
+            "Action": "Load",
+            "Target": "Portraits/Aimon111.SewerOverhaul_AimonSnak3",
+            "FromFile": "assets/tilesheets/snakspritesheetPortrait.png",
+        },
+
+        {
+		"LogName": "aimon_SnaksNPC",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Aimon111.SewerOverhaul_AimonSnak1": {
+                    "DisplayName": "AimonSnak1", 
+					"HomeRegion": "Other", 
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "{{ModId}}_Custom_Aimon_SewerSecret",
+                            "Tile": { "X": 0, "Y": 0 },
+                            "Direction": "Left"
+                        }
+                    ],
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": false,
+					"Calendar": "HiddenAlways",
+					"Appearance": [
+                {
+                    //"Id": "Default",
+                    "Portrait": "Portraits/Aimon111.SewerOverhaul_AimonSnak1",
+                    "Sprite": "Characters/Aimon111.SewerOverhaul_AimonSnak1"
+                }
+            ]
+                },
+				"Aimon111.SewerOverhaul_AimonSnak2": {
+                    "DisplayName": "AimonSnak2", 
+					"HomeRegion": "Other", 
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "{{ModId}}_Custom_Aimon_SewerSecret",
+                            "Tile": { "X": 0, "Y": 0 },
+                            "Direction": "Left"
+                        }
+                    ],
+
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": false,
+					"Calendar": "HiddenAlways",
+					"Appearance": [
+                {
+                   // "Id": "Default",
+                    "Portrait": "Portraits/Aimon111.SewerOverhaul_AimonSnak2",
+                    "Sprite": "Characters/Aimon111.SewerOverhaul_AimonSnak2"
+                }
+									]
+                },
+				"Aimon111.SewerOverhaul_AimonSnak3": {
+                    "DisplayName": "AimonSnak3", 
+					"HomeRegion": "Other", 
+					"HomeRegion": "Other", 
+					"Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "{{ModId}}_Custom_Aimon_SewerSecret",
+                            "Tile": { "X": 0, "Y": 0 },
+                            "Direction": "Left"
+                        }
+                    ],
+
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": false,
+					"Calendar": "HiddenAlways",
+					
+					"Appearance": [
+                {
+                   // "Id": "Default",
+                    "Portrait": "Portraits/Aimon111.SewerOverhaul_AimonSnak3",
+                    "Sprite": "Characters/Aimon111.SewerOverhaul_AimonSnak3"
+                }
+								]
+					},
+	
+				
+            }
+        }
+    ]
+}

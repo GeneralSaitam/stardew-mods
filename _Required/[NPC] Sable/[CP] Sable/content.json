@@ -1,0 +1,918 @@
+﻿{
+  "Format": "1.19.0",
+  
+  "Changes": [
+    {
+      "LogName": "NPC Manifestation",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "FromFile": null,
+      "Entries": {
+        "Sable": "teen/polite/outgoing/positive/female/datable/null/Town/winter 13//Custom_SableRoom 13 6 3/Sable"
+      },
+	  "When": { 
+	     "HasSeenEvent": "3876393"
+		 }
+    },
+	{//gift tastes
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Sable": "Wow, that's for me? So sweet of you </64 921 612 795 459/Ah, that looks interesting. Thanks!/838 564 578 203 527 206 422 772 340 445 303 348 88/Hmm, I'll throw this in the cauldron and see what happens./196 253 84 575 227 305 344 78/Hey. I don't like that. Take a note./903 607 241 424 330 426 256 -20 635/I think I'll find some use for this./-79 -75 -4 -74 -81 -26/"
+      }
+    },
+	{
+      "LogName": "Sable Sprites",
+      "Action": "Load",
+      "Target": "Characters/Sable",
+      "FromFile": "assets/img/Sprites/Sable_Spring.png"
+    },
+	{
+      "LogName": "Season Sprites Sable",
+      "Action": "EditImage",
+      "Target": "Characters/Sable",
+      "FromFile": "assets/img/Sprites/Sable_{{season}}.png",
+	  "When": {"Season":"summer, fall, winter"}
+    },
+    {
+      "LogName": "Sable Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Sable",
+      "FromFile": "assets/img/Portraits/Sable_Spring.png"
+    },
+	{
+      "LogName": "Season Portraits Sable",
+      "Action": "EditImage",
+      "Target": "Portraits/Sable",
+      "FromFile": "assets/img/Portraits/Sable_{{season}}.png",
+	  "When": {"Season":"summer, fall, winter" }
+    },
+	{
+      "Action": "Load",
+      "Target": "Characters/Sable_Beach",
+      "FromFile": "assets/img/Sprites/Sable_Beach.png"
+    },
+	{
+      "Action": "Load",
+      "Target": "Portraits/Sable_Beach",
+      "FromFile": "assets/img/Portraits/Sable_Beach.png"
+    },
+	{
+      //Sable's Saloon Portraits
+	  "Action": "EditImage",
+      "Target": "Portraits/Sable",
+      "FromFile": "assets/img/Portraits/Sable_Saloon.png",
+      "When": { "LocationName": "Saloon" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Sable's Saloon Sprites
+      "Action": "EditImage",
+      "Target": "Characters/Sable",
+      "FromFile": "assets/img/Sprites/Sable_Saloon.png",
+      "When": { "LocationName": "Saloon" },
+	  "Update": "OnLocationChange"
+    },
+    {
+      "LogName": "Sable Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Sable",
+      "FromFile": "assets/schedules/Schedule.json"
+    },
+    {
+      "LogName": "Sable's Schedule Dialogue",
+      "Action": "Load",
+      "Target": "Strings/schedules/Sable",
+      "FromFile": "assets/schedules/ScheduleDialogue.json"
+	},
+	{
+      "LogName": "Sable Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Sable",
+      "FromFile": "assets/dialogue/Dialogue.json"
+    },
+	{
+      "LogName": "Custom Locations Events Sable",
+      "Action": "Load",
+      "Target": "Data/Events/Custom_SableRoom",
+      "FromFile": "assets/events/CustomLocationsEvents.json"
+    },
+    {//Engagement Dialogue
+      "LogName": "Engagement Dialogue",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "Sable0": "It's all so... exciting and just unimaginable!$6#$b#...You really love me, don't you?$3",
+        "Sable1": "Oh my, I'm so excited!!$3#$b#I won't be able to sleep tonight...$7"
+      }
+    },
+	{
+      "Action": "Load",
+      "Target": "Mods/Fernandtea.NewNPCSabl/LetterBackgrounds",
+      "FromFile": "assets/img/bg/SableSecretLetter.png"
+    },
+	{//Strings From Maps
+	  "Action": "EditData",
+	  "Target": "Strings/StringsFromMaps",
+	  "Entries": {
+		"SableRoom.1": "An alluring magic glow emanates from the crystal ball.",
+		"SableRoom.2": "The table is studded with fragrant herbs, glitter and minerals.",
+		"SableRoom.4": "The book 'Witchcraft for Beginners' is open on the page about the time spell.",
+		"SableRoom.5": "The tree's thin branches are sagging slightly under the weight of the ripe magical fruit. You can only guess what they taste like.",
+		"SableRoom.6": "The soft plush bunny looks shabby.",
+		"SableRoom.7": "Girl in the picture reminds you of a young Sable, but the longer you look at her face, the more foreign it seems.",
+		"SableRoom.8": "The old sideboard is covered with a thick layer of dust. It seems that the dishes inside haven't felt the warmth of human hands for a long time.",
+		"SableRoom.9": "The mineral is mesmerizing in its luster. The note next to it reads, in big letters, 'Hands off!'",
+		"MysteriousPhoto": "From the glossy surface of the picture, two red-haired girls are staring at you, resembling each other like two peas in a pod. They look happy. These faces seem painfully familiar to you.",
+		"MysteriousLetter": "...I've always been a coward.^And she was a daredevil.^I've always been naive and weak.^And she was so clever and strong.^Now she's gone. No one will remember her, as if she never even existed.^And I still can't understand... Why me? Maybe fate punished me for my weakness, naivety, and cowardice. If only I could go back to that day and pretend to be her just for a moment!^^^^^^^^^^^But since then, I have to wear her guise for the rest of my life. [letterbg Mods/Fernandtea.NewNPCSabl/LetterBackgrounds 0][textcolor black]"
+		}
+	},
+	{//Wedding strings
+      "Action": "EditData",
+      "Target": "strings/StringsFromCSFiles",
+      "Entries": {
+      "Utility.cs.5367": "When @ first arrived in Pelican Town, no one knew if he'd fit in with our community...#$b#But from this day forward, @ is going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite @ and Sable in the bonds of marriage.",
+      "Utility.cs.5369": "When @ first arrived in Pelican Town, no one knew if she'd fit in with our community...#$b#But from this day forward, @ is going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite @ and Sable in the bonds of marriage.",
+	  "Utility.cs.5373": "@... Sable... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you husband and wife!$h",
+      "Utility.cs.5375": "@... Sable... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you wife and... well, wife!$h"
+      },
+      "When": {
+      "Relationship:Sable": "Engaged"
+      }
+    },
+	{
+      "LogName": "Marriage Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueSable",
+      "FromFile": "assets/dialogue/MarriageDialogue.json"
+    },
+	{//ANIMATIONS
+	  "LogName": "Wilford's Animations",
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+         "Sable_Sitting1": "17/17/17",
+         "Sable_Sitting2": "34/34/34",
+		 "Sable_Sleep": "16/16/16",
+		 "Sable_Magic": "20/20 20 20 20 21 21 21 21 21 22 22 22 22 22 21 21 21 21 21 22 22 22 22 22 21 21 21 21 21 22 22 22 22 22/21",
+		 "Sable_Music": "25/25 25 25 26 26 26 25 25 25 26 26 26 25 25 25 26 26 26/25",
+		 "Sable_Smoking": "33/33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 29 29 29 30 30 30 30 30 30 30 30 31 31 31 32 32 32 32 27 27 27 27/33",
+         "Sable_Worker": "16/16 16 16 16 17 17 17 17 17 18 18 18 18 18 17 17 17 17 17/16",
+         "Sable_Book": "24/24 24 24 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 26 26 26 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25 25/25"
+	   }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+	  "When": { "Spouse": "Sable" },
+      "Entries": {
+      "Sable_Sleep": "16/16/16"
+      }
+    },
+    { 
+	 "Action": "EditData",
+	 "Target": "characters/schedules/Sable",
+	 "When": { "HasSeenEvent": "191393", "Spouse": "Sable", "Day": "22"  },
+	 "Entries": {
+        "marriage_Mon": "1030 CommunityCenter 14 5 0/1300 CommunityCenter 13 6 3/1400 CommunityCenter 14 5 0/1830 BusStop -1 23 3"
+      }
+	},
+	{    //Sable shedule changes after 8 heart event
+	 "Action": "EditData",
+	 "Target": "characters/schedules/Sable",
+	 "Entries": {
+     "Mon": "610 Custom_SableRoom 15 6 Sable_Sleep/800 Custom_SableRoom 7 5 0/900 Town 73 53 Sable_Sitting/1300 Town 24 97 Sable_Sitting2/1600 Saloon 33 7 Sable_Worker \"Strings\\schedules\\Sable:130933\"/1800 Saloon 38 18 0/1900 Saloon 2 18 0/2000 Saloon 5 20 3/2030 Saloon 3 23 3/2100 Saloon 26 18 1/2130 Saloon 26 22 1/2200 Custom_SableRoom 15 6 Sable_Sleep",
+     "Thu": "610 Custom_SableRoom 15 6 Sable_Sleep/730 Custom_EastWoods 21 12 Sable_Smoking/1020 Beach 42 34 Sable_Sitting1/1520 Saloon 33 19 Sable_Worker \"Strings\\schedules\\Sable:130933\"/1800 Saloon 18 17 0/1830 Saloon 17 18 2/1900 Saloon 18 17 0/1930 Saloon 17 18 2/2000 Saloon 26 22 1/2100 Saloon 33 6 3/2200 Custom_SableRoom 15 6 Sable_Sleep",
+	 "spring_Sat_2": "610 Custom_SableRoom 15 6 Sable_Sleep/700 Town 26 98 Sable_Sitting2/1100 Town 14 94 Sable_Music/1230 SamHouse 19 14 2/1500 SamHouse 17 13 2/1800 Town 12 93 Sable_Sitting2/1930 Custom_SableRoom 15 6 Sable_Sleep",
+     "summer_Sat_2": "610 Custom_SableRoom 15 6 Sable_Sleep/700 Town 26 98 Sable_Sitting2/1100 Town 14 94 1/1230 SamHouse 19 14 2/1500 SamHouse 17 13 2/1800 Town 12 93 Sable_Sitting2/1930 Custom_SableRoom 15 6 Sable_Sleep",
+     "Sun": "10 Custom_SableRoom 15 6 Sable_Sleep/800 Custom_SableRoom 13 7 Sable_Magic/1000 Custom_EastWoods 50 24 Sable_Sitting2/1230 Beach 42 9 1/1400 Beach 20 24 2/1700 Custom_WilfordHouse 5 5 0/1900 Custom_WilfordHouse 17 8 0/2100 Custom_SableRoom 15 6 Sable_Sleep",
+     "winter_Sun": "10 Custom_SableRoom 15 6 Sable_Sleep/800 Custom_SableRoom 13 7 Sable_Magic/1000 Custom_EastWoods 50 24 Sable_Sitting2/1230 Town 73 54 2/1630 Custom_WilfordHouse 15 12 Sable_Book/2000 Custom_WilfordHouse 17 8 0/2100 Custom_SableRoom 15 6 Sable_Sleep"
+        },
+	"When" : {"HasSeenEvent": "3876893"}
+    },
+    {//Maru shedule changes
+	 "Action": "EditData",
+	 "Target": "characters/schedules/Maru",
+	 "Entries": {
+     "fall_11": "630 ScienceHouse 9 5 0/700 Custom_EastWoods 19 13 1/1400 Custom_SableRoom 8 6 1/1630 Custom_WilfordHouse 3 5 1/1740 Custom_WilfordHouse 11 10 3/1900 Custom_SableRoom 6 6 2/2220 Custom_SableRoom 16 6 3 maru_sleep",
+     "Wed": "800 ScienceHouse 5 6 1 maru_tinker/900 Town 43 77 2 maru_sit_down/1300 ScienceHouse 5 6 1 maru_tinker/2200 ScienceHouse 2 4 3 maru_sleep"
+      }
+    },
+    {//Sam shedule changes
+	 "Action": "EditData",
+	 "Target": "characters/schedules/Sam",
+	 "Entries": {
+     "Sat": "800 Town 25 98 2/1100 Town 18 94 3 sam_gameboy/1230 SamHouse 17 15 2 sam_guitar/1500 SamHouse 19 13 3/1800 Town 13 94 3/1940 SamHouse 22 13 1 sam_sleep"
+      },
+     "When" : {"HasSeenEvent": "3876493"}
+    },
+	{//Sam shedule changes when Sable's married
+	 "Action": "EditData",
+	 "Target": "characters/schedules/Sam",
+	 "Entries": {
+     "Sat": "800 Town 25 98 2/1100 Town 18 94 3 sam_gameboy/1230 SamHouse 17 15 2 sam_guitar/1500 SamHouse 19 13 3/1800 Town 13 94 3/1940 SamHouse 22 13 1 sam_sleep"
+      },
+     "When": { "Spouse": "Sable" }
+    },
+    {//Sebastian shedule changes
+	 "Action": "EditData",
+	 "Target": "characters/schedules/Sebastian",
+	 "Entries": {
+     "Sat": "800 Town 16 93 2/1230 SamHouse 19 18 0 sebastian_keyboard_up/1500 SamHouse 17 14 0/1800 Town 10 94 1 sebastian_smoking/1930 SebastianRoom 11 9 1 sebastian_sleep"
+      },
+     "When" : {"HasSeenEvent": "3876493"}
+    },
+	{//Sebastian shedule changes when Sable's married
+	 "Action": "EditData",
+	 "Target": "characters/schedules/Sebastian",
+	 "Entries": {
+     "spring_Sat": "700 Town 16 93 2/1230 SamHouse 19 18 0 sebastian_keyboard_up/1500 SamHouse 17 14 0/1800 Town 10 94 1 sebastian_smoking/1930 SebastianRoom 11 9 1 sebastian_sleep"
+      },
+     "When": { "Spouse": "Sable" }
+    },
+	{//Wilford shedule changes
+	 "Action": "EditData",
+	 "Target": "characters/schedules/Maru",
+	 "Entries": {
+     "Mon": "610 Custom_WilfordHouse 29 6 Wilford_Sleep/800 Custom_WilfordHouse 5 5 0/930 Custom_WilfordHouse 2 5 0/1200 Custom_WilfordHouse 10 7 2/1300 Custom_EastWoods 34 27 Wilford_Garden/1500 Forest 112 36 2/1900 Custom_WilfordHouse 29 6 Wilford_Sleep"
+      },
+	  "When": { "Spouse": "Sable" }
+    },
+	//FESTIVAL LOCATIONS
+	{
+    "Action": "EditData",
+    "Target": "Data/Festivals/spring13",
+    "TextOperations": [
+     {    
+      "Operation": "Append",
+      "Target": ["Entries", "Set-Up_additionalCharacters"],
+      "Value": "Sable 46 60 right",
+      "Delimiter": "/"
+     },
+	 {
+      "Operation": "Append",
+      "Target": ["Entries", "MainEvent_additionalCharacters"],
+      "Value": "Sable 21 71 right",
+      "Delimiter": "/"
+     },
+	 ],
+	 "When" : {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+	},
+	{
+    "Action": "EditData",
+    "Target": "Data/Festivals/spring13",
+    "TextOperations": [
+     {    
+      "Operation": "Append",
+      "Target": ["Entries", "Set-Up_additionalCharacters"],
+      "Value": "Sable 24 78 up",
+      "Delimiter": "/"
+     },
+	  {
+      "Operation": "Append",
+      "Target": ["Entries", "MainEvent_additionalCharacters"],
+      "Value": "Sable 20 68 down",
+      "Delimiter": "/"
+     },
+	 ],
+	 "When" : {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+	},
+	{
+   "Action": "EditData",
+    "Target": "Data/Festivals/spring24",
+    "TextOperations": [
+      {    
+      "Operation": "Append",
+      "Target": ["Entries", "Set-Up_additionalCharacters"],
+      "Value": "Sable 18 20 down",
+      "Delimiter": "/"
+     },
+	 {
+      "Operation": "Append",
+      "Target": ["Entries", "MainEvent_additionalCharacters"],
+      "Value": "Sable 10 20 down",
+      "Delimiter": "/"
+     },
+	 ],
+	 "When" : {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+	},
+	{
+   "Action": "EditData",
+    "Target": "Data/Festivals/spring24",
+    "TextOperations": [
+      {    
+      "Operation": "Append",
+      "Target": ["Entries", "Set-Up_additionalCharacters"],
+      "Value": "Sable 26 37 down",
+      "Delimiter": "/"
+     },
+	 {
+      "Operation": "Append",
+      "Target": ["Entries", "MainEvent_additionalCharacters"],
+      "Value": "Sable 10 20 down",
+      "Delimiter": "/"
+     },
+	 ],
+	 "When" : {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+	},
+	{
+    "Action": "EditData",
+    "Target": "Data/Festivals/summer11",
+    "TextOperations": [
+     {    
+    "Operation": "Append",
+    "Target": ["Entries", "Set-Up_additionalCharacters"],
+    "Value": "Sable 25 18 right",
+    "Delimiter": "/"
+     },
+     {
+    "Operation": "Append",
+    "Target": ["Entries", "MainEvent_additionalCharacters"],
+    "Value": "Sable 39 10 down",
+    "Delimiter": "/"
+  }
+  ]
+  },
+  {
+    "Action": "EditData",
+    "Target": "Data/Festivals/summer28",
+    "TextOperations": [
+     {    
+      "Operation": "Append",
+      "Target": ["Entries", "Set-Up_additionalCharacters"],
+      "Value": "Sable 14 39 right",
+      "Delimiter": "/"
+     }
+ ]
+ },
+ {
+   "Action": "EditData",
+    "Target": "Data/Festivals/fall16",
+    "TextOperations": [
+      {    
+      "Operation": "Append",
+      "Target": ["Entries", "Set-Up_additionalCharacters"],
+      "Value": "Sable 10 60 down",
+      "Delimiter": "/"
+     }
+	 ],
+	 "When" : {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+	},
+	{
+   "Action": "EditData",
+    "Target": "Data/Festivals/fall16",
+    "TextOperations": [
+      {    
+       "Operation": "Append",
+      "Target": ["Entries", "Set-Up_additionalCharacters"],
+      "Value": "Sable 51 79 left",
+      "Delimiter": "/"
+     }
+	 ],
+	 "When" : {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+	},
+ {
+    "Action": "EditData",
+    "Target": "Data/Festivals/fall27",
+    "TextOperations": [
+     {    
+      "Operation": "Append",
+      "Target": ["Entries", "Set-Up_additionalCharacters"],
+      "Value": "Sable 16 11 left",
+      "Delimiter": "/"
+     }
+ ]
+ },
+ 	{
+   "Action": "EditData",
+    "Target": "Data/Festivals/winter8",
+    "TextOperations": [
+      {    
+      "Operation": "Append",
+      "Target": ["Entries", "Set-Up_additionalCharacters"],
+      "Value": "Sable 83 27 left",
+      "Delimiter": "/"
+     },
+	  {
+      "Operation": "Append",
+      "Target": ["Entries", "Main-Event_additionalCharacters"],
+      "Value": "Sable 77 41 up",
+      "Delimiter": "/"
+     }
+	 ],
+	 "When" : {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+	},
+	{
+   "Action": "EditData",
+    "Target": "Data/Festivals/winter8",
+    "TextOperations": [
+       {    
+      "Operation": "Append",
+      "Target": ["Entries", "Set-Up_additionalCharacters"],
+      "Value": "Sable 85 31 left",
+      "Delimiter": "/"
+     },
+	  {
+      "Operation": "Append",
+      "Target": ["Entries", "Main-Event_additionalCharacters"],
+      "Value": "Sable 77 41 up",
+      "Delimiter": "/"
+     }
+	 ],
+	 "When" : {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+	},
+{
+    "Action": "EditData",
+    "Target": "Data/Festivals/winter25",
+    "TextOperations": [
+     {    
+      "Operation": "Append",
+      "Target": ["Entries", "Set-Up_additionalCharacters"],
+      "Value": "Sable 24 67 down",
+      "Delimiter": "/"
+     }
+ ]
+ },
+    //EGG FESTIVAL
+    { 
+      "Action": "EditData",
+      "Target": "data/festivals/spring13",
+      "Entries": {
+        "Sable": "Such a lovely spring day is perfect for a festival!$1#$e#Mhm... I won't play.$2#$b#I'll just stay here, okay?$7",
+        "Sable_Spouse": "@!$1#$b#You can do it!$1#$b#Abigail is a serious competitor, but she's not a problem for you.#$e#Mentally I am always with you."
+	  }
+    },
+	//FLOWER DANCE
+	{
+      "Action": "EditData",
+      "Target": "data/festivals/spring24",
+      "Entries": {
+        "Sable": "Yeah... Wilford was soo nervous about this day.#$b#He was in his workshop all day long, and I had to do all the housework all by myself!$7#$b#I advise you to praise him..."
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "data/festivals/spring24",
+      "Entries": {
+        "Sable": "Hello, my love.$6#$b#The sun lights up the whole meadow, that's why it's so warm and cozy.$1#$e#I'm waiting for your invitation.$1"
+      },
+      "When": {
+        "Spouse": "Sable"
+      }
+    },
+	{
+      "Action": "EditData",
+      "Target": "data/festivals/spring24",
+      "Entries": {
+        "Sable": "Did Wilford work overnights again for this day?#$b#I think he takes it too seriously...$2#$e#Sebastian definitely won't ask me to the dance, so I don't see the point in sticking around here.$8"
+      },
+      "When": {
+        "Spouse": "Wilford"
+      }
+    },
+	
+	//LUAU
+	{
+      "Action": "EditData",
+      "Target": "data/festivals/summer11",
+      "Entries": {
+        "Sable": "Wilford was up all night calculating the perfect ingredients for the soup, so he had already added everything up for us.$7"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "data/festivals/summer11",
+      "Entries": {
+        "Sable": "Oh, here you are!$6#$e#I've already had time to fill my belly with all the goodies from the festive table.$2#$b#Don't worry, I specifically left some room for a bowl of soup.$1"
+      },
+      "When": {
+        "Spouse": "Sable"
+      }
+    },
+	{
+      "Action": "EditData",
+      "Target": "data/festivals/summer11",
+      "Entries": {
+        "Sable": "I added a couple of cranberries and banana slices to the soup.$1#$b#It must be really, really good.$6"
+      },
+      "When": {
+        "Spouse": "Wilford"
+      }
+    },
+	//DANCE OF THE MOONLIGHT JELLIES
+    {
+      "Action": "EditData",
+      "Target": "data/festivals/summer28",
+      "Entries": {
+        "Sable": "So. Beautiful.#$b#I can't take my eyes off the dark water.$1",
+        "Sable_Spouse": "Hello, sunshine.$4#$b#I was waiting for you.$6#$b#It's so beautiful here, isn't it? This evening is filled with a kind of magical atmosphere.$1"
+	  }
+    },
+	
+	//STARDEW VALLEY FAIR
+    {
+      "Action": "EditData",
+      "Target": "data/festivals/fall16",
+      "Entries": {
+        "Sable": "I'm full of energy today!$6#$e#The fortune teller shared a couple of magical secrets with me.$6#$e#Now leave. Do not destroy my mysterious image.$7",
+        "Sable_Spouse": "Hi there. *kisses*$1#$b#Do you want to compete in slingshotting?#$e#How's your grange display?#$b#If I had been assigned to judge the exhibition, I would have given you first place without a second thought!$1#$b#Not very fair? No way."
+	  }
+    },
+	
+	
+	//SPIRITS EVE FESTIVAL
+    {
+      "Action": "EditData",
+      "Target": "data/festivals/fall27",
+      "Entries": {
+        "Sable": "S-sam, why don't we go back?$7#$b#It's so creepy in here!$3",
+        "Sable_Spouse": "@!$3#$b#Looking for a way out as well?..$2#$b#And we seem to be lost...$7"
+	  }
+    },
+	
+	
+	//ICE FISHING FESTIVAL
+    {
+      "Action": "EditData",
+      "Target": "data/festivals/winter8",
+      "Entries": {
+        "Sable": "So cold, isn't it?$1#$e#Did you see those igloos? So cool!$6",
+        "Sable_Spouse": "Will you participate in the ice fishing contest?$1#$b#I'd like to, but I'm not much of a fisherman...$7#$b#I'm not that patient."
+	  }
+    },
+	
+	
+	//WINTER STAR FESTIVAL
+    {
+      "Action": "EditData",
+      "Target": "data/festivals/winter25",
+      "Entries": {
+        "Sable": "Such a lovely day...#$e#Watching all these happy people makes me feel sad...$8#$e#I'm glad I moved here.#$b#Wilford replaced my family and gave me the kind of care I needed."
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "data/festivals/winter25",
+      "Entries": {
+        "Sable": "Hello, my winter starlet.$6#$b#We are now a family and can celebrate the end of the year together.#$b#I'm happy to be with you.$1"
+      },
+      "When": {
+        "Spouse": "Sable"
+      }
+    },
+	{
+      "Action": "EditData",
+      "Target": "data/festivals/winter25",
+      "Entries": {
+        "Sable": "Well, here comes another year to an end...$2#$b#I don't wanna be sad, so I better go fill my stomach with something tasty.$1"
+      },
+      "When": {
+        "Spouse": "Wilford"
+      }
+    },
+	{ //Wilford's new dialogue
+	 "Action": "EditData",
+	 "Target": "Characters/Dialogue/Wilford",
+	 "Entries": {
+     "summer_Sun4": "How did I meet Sable?#$b#I found her sitting outside a closed bakery late at night.$9#$b#As it later turned out, she had once again run away from home. Her relationship with her family was strained.$10",
+	 "winter_Tue4": "Sable can be pretty naughty at times, but I only perceive her as a traumatized child.#$b#It's hard for me to scold her for something, and she makes good use of it.$7",
+	 "winter_Sun4": "Thanks to Sable, I can finally develop my cooking skill.#$b#She's a good taster.$8"
+     }
+    },
+	{ //Wilford's dialogue when player married Sable
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wilford",
+	  "When": { "Spouse": "Sable" },
+      "Entries": {
+	  "winter_Sun4": "Hi. How's Sable doing?#$b#I hope your house is still in one piece.$1#$b#Haha, just kidding.$7",
+	  "winter_Sat4": "Say hello to Sable for me.",
+	  "fall_Wed8": "Well, we're a lot closer now than we were before.$1#$b#Can we be called a family? Considering that Sable is like native to me.",
+	  "summer_Wed8": "Stop by sometime for a visit.#$b#After Sable moved out, I realized what 'hollow in the house' meant.",
+	  "summer_Tue6": "How's it going over there?#$b#If you need anything, just let me know.$1",
+	  "Fri6": "Sable looks happy beside you.#$b#Don't hurt her, okay?$6"
+	  }
+    },
+	{ //Sable's dialogue when player married Wilford
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sable",
+	  "When": { "Spouse": "Wilford" },
+      "Entries": {
+	  "Tue4": "Hey, how's Wilford? Did he pass me any goodies?$1#$b#No? What a meanie.",
+	  "summer_Fri6": "Hey.#$b#Give this to Wilford. [376]$1",
+	  "fall_Sun4": "Both floors of the house are now at my disposal.#$b#It's cool, of course, but there are drawbacks.#$b#For example, the lack of good food and Wilford himself.$2"
+	  }
+    },
+	{//Movie Theater
+	  "Action": "EditData",
+	  "Target": "Strings/Characters",
+	  "Entries": { 
+	  "MovieInvite_Spouse_Sable": "A movie?#$b#I'm all for it!$6" }
+    },
+	{
+     "Action": "EditData",
+     "Target": "Data/ConcessionTastes",
+     "Entries": {
+	 "Sable": {
+     "Name": "Sable",
+     "LovedTags": [
+      "Black Licorice", "Cotton Candy", "Ice Cream Sandwich", "Rock Candy", "Personal Pizza", "Stardrop Sorbet" ],
+     "LikedTags": [
+      "Popcorn", "Nachos", "Salted Peanuts", "Sweet" ],
+     "DislikedTags": [
+      "Healthy", "Salty", "	Sour Slimes", "Jawbreaker", "Kale Smoothie", "JojaCorn", "Joja Cola" ] },
+     }
+	},
+	{
+	  "LogName": "Movie Tastes",
+	  "Action": "EditData",
+	  "Target": "Data/MoviesReactions",
+	  "Entries": {
+	  "Sable": {
+        "NPCName": "Sable",
+        "Reactions": [
+		{
+        "Tag": "horror",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_0"
+        },
+		{
+        "Tag": "action",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_1"
+        },
+	    {
+        "Tag": "fall_movie_0", //Mysterium
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+        "BeforeMovie": {
+        "ResponsePoint": null,
+        "Script": "",
+        "Text": "Wow, I love that.$1#$b#The plot promises to be dark and mysterious...$6"
+          },
+        "DuringMovie": {
+        "ResponsePoint": null,
+        "Script": "/shake Sable 2000/pause 500/message \"Sable seems to be fully immersed in the plot of the film.\"",
+        "Text": "What a story! So unpredictable!$1"
+          },
+        "AfterMovie": {
+        "ResponsePoint": null,
+        "Script": "",
+        "Text": "That was cool! Thanks for the invitation.$6"
+          }
+        },
+        "ID": "reaction_2"
+      },
+	  {
+        "Tag": "fall_movie_1", //It Howls In The Rain
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+        "BeforeMovie": {
+        "ResponsePoint": null,
+        "Script": "",
+        "Text": "Ooh, that looks creepy. And mysterious. Let's have a watch!$1"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "Wow... Did you see that?$3"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "I really enjoyed it! It was super scary.$1"
+          }
+        },
+        "ID": "reaction_3"
+      },
+	  {
+        "Tag": "spring_movie_1",  //Natural Wonders: Exploring Our Vibrant World
+        "Response": "dislike",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "I'm afraid the movie may bring back painful memories for me...$2"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/message \"Sable looks sad.\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "Sorry, I need some time alone.$2"
+          }
+        },
+        "ID": "reaction_4"
+      },
+	  {
+        "Tag": "love",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "We have to pick the best seats.$1"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "Thanks, I had a great time.$1#$b#Which of the characters did you like best?"
+          }
+        },
+        "ID": "reaction_5"
+      },
+	  {
+        "Tag": "like",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "Well, are you ready?$1#$b#Then let's hurry up.$6"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "Even though the movie wasn't a mysterious one, I still really enjoyed it.$1"
+          }
+        },
+        "ID": "reaction_6"
+      },
+	  {
+        "Tag": "dislike",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "We need to take more snacks to keep ourselves entertained while we watch."
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "*yawns* The plot is a bit corny and bland."
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "I wasn't very interested in the movie.$2#$b#At least you were there.$1"
+          }
+        },
+        "ID": "reaction_7"
+       }
+      ]
+	  }
+     }
+    },
+	{ //first encounter
+      "Action": "EditData",
+      "Target": "Data/Events/BusStop",
+      "Entries": {
+	  "3876393/f Wilford 1000/t 700 1100": "none/-1000 -1000/farmer -100 -100 2 Wilford -100 -100 2 Sable -100 -100 2/viewport -1000 -1000/skippable/pause 1200/playSound busDriveOff/pause 1000/playSound busDoorOpen/pause 1000/viewport 64 20/pause 2000/warp Sable 62 15/faceDirection Sable 2 true/faceDirection Sable 2 true/pause 1000/faceDirection Sable 1 true/pause 1000/faceDirection Sable 3 true/pause 1000/faceDirection Sable 2 true/speak Sable \"...Interesting.\"/playMusic 50s/pause 2000/move Sable 0 4 2/pause 1000/showFrame Sable 18/emote Sable 12/pause 1500/faceDirection Sable 2 true/warp farmer 64 29/faceDirection farmer 0 true/move farmer 0 -6 0/faceDirection farmer 0 true/jump Sable 8/emote Sable 16/pause 1000/speed Sable 3/move Sable 0 2 2/pause 1000/speak Sable \"...Hey!$3#$b#Hello.\"/pause 500/speak Sable \"...Are you local?\"/pause 1000/emote farmer 60/pause 1000/speak Sable \"Okay.$1#$b#Listen, I'm looking for someone...$7#$b#Do you know where he lives?\"/pause 500/move Sable 0 2 1/faceDirection Sable 1 true/faceDirection farmer 3 true/pause 1000/speak Sable \"...Look. His name is Wilford.#$b#Will you take me to him?\"/pause 1000/question fork0 \"#Accept.#Reject.\"/fork 3876393_Yes/pause 1000/speak Sable \"Oh. Fine.$8\"/pause 500/speed Sable 3/move Sable -1 0 1/move Sable 0 9 0/faceDirection farmer 2 true/emote farmer 8/pause 500/globalFade/viewport -1000 -1000/end dialogue Sable \"I met a nice ginger lady, and she showed me the way!\"",
+	  
+	  "3876393_Yes": "pause 500/speak Sable \"Great!$6#$b#Then let's hurry up.\"/pause 200/globalFade/viewport -1000 -1000/changeLocation Custom_EastWoods/stopMusic/warp Wilford 34 27/animate Wilford false true 500 25 26/warp Sable 35 40/warp farmer 38 40/playSound spring_day_ambient/viewport 34 29/pause 4000/move Sable 0 -7 0/move farmer 0 -6 0/stopAnimation Wilford/faceDirection Wilford 2 true/pause 100/emote Wilford 16/jump Wilford 8/pause 500/speak Wilford \"Sable?!#$b#What are you doing here?$5\"/pause 1000/move Sable 0 -1 0/pause 1000/speak Sable \"I came...$7\"/pause 500/speak Sable \"...to see you.$6\"/pause 1000/emote Wilford 12/pause 1000/speak Sable \"I don't have a home anymore, and I thought only you could understand me...$8\"/pause 1000/speak Wilford \"...$10\"/pause 700/speak Wilford \"Well.$7#$b#Let's talk about this.\"/pause 800/emote Sable 60/pause 1000/move Sable -1 0 3/move Sable 0 -4 0/globalFade/viewport -1000 -1000/friendship Sable 20/end"
+	  }
+	},
+	
+	{ //help with friends --- 1 heart
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+	  "3876493/e 3876393/f Sable 250/t 700 1300/w sunny": "spring_day_ambient/-1000 -1000/farmer 34 92 3 Sable 22 94 3 Sebastian 10 93 3 Sam 14 94 3 Abigail 12 91 2/animate Sam false true 500 16 16 17 17 18 18 19 19/animate Sebastian false true 200 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 18 19 20 21 21 21 21 21 22 23/viewport 16 91 true/skippable/pause 6000/speak Abigail \"So that's what I'm saying...\"/pause 500/emote Sam 8/pause 500/speak Abigail \"...I told her it wasn't 'just a phase' and that I would never change my style to 'more gentle'.\"/pause 1000/speak Sebastian \"...Yeah.$7\"/pause 1000/shake Sable 1000/pause 1500/move farmer -11 0 3/faceDirection farmer 2 true/pause 500/faceDirection Sable 0 true/pause 300/playSound leafrustle/jump Sable 8/emote Sable 16/pause 500/speak Sable \"@!$3#$b#You scared me!$2\"/pause 500/emote farmer 8/pause 1000/speak Sable \"...And I'm not spying, okay?$7#$b#Just... waiting for the right moment...$7\"/pause 500/faceDirection Sable 3 true/pause 500/emote Sable 40/pause 1000/question fork0 \"#Leave.#Offer help.\"/fork 3876493_Go/pause 500/faceDirection Sable 0 true/pause 500/speak Sable \"You think I'm afraid?$5\"/pause 500/speak Sable \"...$7\"/pause 500/speak Sable \"Well, that would be cool if you could help me out.\"/pause 500/move farmer 0 -2 0/move farmer -5 0 3/faceDirection farmer 2 true/pause 200/stopAnimation Sam/faceDirection Sam 1 true/pause 200/stopAnimation Sebastian/faceDirection Sebastian 1 true/pause 200/faceDirection Abigail 1 true/pause 500/speak Sam \"Hey!#$b#What's new?\"/pause 500/question sablehey \"#Did you hear about the newcomer? She seems to be your peer...\"/fork 3876493_newsable/switchEvent 3876493_newsable",
+	  
+	  "3876493_newsable": "pause 500/speak Sam \"Yeah...#$b#Sable, right?\"/pause 500/shake Sable 1000/pause 1500/playSound leafrustle/speed Sable 3/move Sable 0 -3 0/move Sable -5 0 3/faceDirection Sable 2 right/pause 500/speak Sable \"Exactly.$6#$b#Nice to meet you.\"/pause 500/emote Sam 32/pause 1000/speak Sable \"I'm here quite recently, so just exploring the neighborhood...$7\"/pause 600/speak Sebastian \"Give you a tour?\"/pause 500/speak Sable \"Sounds cool.$4\"/pause 500/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/friendship Sable 25/end",
+	  
+	  "3876493_Go": "speed farmer 3/move farmer 0 -2 0/speed farmer 3/move farmer -23 0 3/warp farmer -100 -100/pause 500/emote Sable 28/shake Sable 1000/pause 1500/speed Sable 3/move Sable 7 0 1/speed Sable 3/move Sable 0 -3 0/speed Sable 3/move Sable 4 0 1/pause 500/globalFade/viewport -1000 -1000/friendship Sable -50/end"
+	  
+	}
+   },
+   { //2 heart
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_WilfordHouse",
+      "Entries": {
+	   "3876593/f Sable 500/w rainy": "Cyclops/-1000 -1000/farmer -100 -100 2 Wilford -100 -100 2 Sable 5 5 0/viewport 10 8/skippable/pause 2250/move Sable -3 0 0/pause 1000/faceDirection Sable 2 true/pause 1000/showFrame Sable 18/textAboveHead Sable \"*coughs*\"/shake Sable 1000/pause 1500/faceDirection Sable 2 true/pause 1000/playSound doorClose/warp farmer 3 13/faceDirection farmer 0 true/faceDirection farmer 0 true/pause 500/emote Sable 8/pause 2000/faceDirection Sable 2 true/pause 500/speak Sable \"Oh, hi!\"/pause 500/speak Sable \"Decided to stop by for a visit?\"/pause 1000/emote farmer 60/pause 1000/speak Sable \"Come in.#$b#I just finished cleaning up, so now I was planning to cook something.$6\"/pause 500/move farmer 0 -5 0/pause 500/speak Sable \"You're probably wondering why I'm so obedient today.\"/pause 1000/showFrame Sable 18/emote Sable 40/pause 1000/speak Sable \"The thing is, Wilford and I had a bit of a quarrel this morning...$2#$b#Well, it was my fault.\"/pause 500/faceDirection Sable 2 true/pause 500/speak Sable \"So I decided to do some unscheduled cleaning and bake him a conciliatory pie.\"/pause 500/speak Sable \"And since you're here, you'll be my sous-chef for today!$1\"/pause 500/emote farmer 32/pause 1000/move farmer 0 -3 0/move farmer 2 0 3/faceDirection farmer 3 true/pause 200/faceDirection Sable 1 true/pause 1000/globalFade/viewport -1000 -1000/pause 500/message \"After some time...\"/pause 500/warp Sable 3 5/faceDirection Sable 0 true/warp farmer 6 5/faceDirection farmer 3 true/viewport 10 8/pause 1000/faceDirection Sable 1 true/pause 500/speak Sable \"Well, now all that's left is to let the dough bake.\"/playMusic woodsTheme/pause 2500/emote Sable 40/pause 1500/speak Sable \"In truth, I'm glad to be here.\"/pause 1000/speak Sable \"Will and I are like toast and jam, you know?#$b#Separately, we are nothing, but together we form a whole.\"/pause 500/speak Sable \"I make him eat, and he does my parenting.$1\"/pause 700/speak Sable \"Even though he doesn't admit it, our cohabitation has a positive effect on his well-being.\"/pause 600/stopMusic/playSound doorClose/warp Wilford 3 13/faceDirection Wilford 0 true/faceDirection Wilford 0 true/pause 700/faceDirection Sable 2 true/faceDirection farmer 2 true/playMusic echos/pause 1000/speak Wilford \"Wha-#$b#What's going on here?..$6\"/pause 1500/playSound crystal/emote Sable 16/pause 500/speak Sable \"You're right on time!$6#$b#The pie is ready.\"/pause 500/faceDirection Sable 0 true/pause 2000/faceDirection Sable 2 true/pause 700/speak Sable \"What are you waiting for? Have a seat!\"/pause 500/speak Wilford \"I'm not hungry.$7\"/pause 500/speak Sable \"Hurry!!$5\"/pause 300/speed farmer 3/move farmer 0 2 2/speed farmer 3/move farmer 4 0 2/pause 500/emote Wilford 12/pause 1000/move Wilford 0 -4 0/move Wilford 5 0 1/pause 300/move Sable 0 1 2/move Sable 9 0 2/pause 500/speak Sable \"@ and I baked you a pie!$6#$b#So be kind enough to try at least a bite.#$b#@, and you help yourself. [608]\"/pause 1000/farmerEat 608/pause 1500/emote Sable 32/pause 2000/speak Wilford \"...$9#$b#...#$b#Well...$7\"/pause 500/globalFade/viewport -1000 -1000/stopMusic/friendship Wilford 20/friendship Sable 20/end"
+	  
+	}
+   },
+   { //4 heart
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_SableRoom",
+      "Entries": {
+	  "3876693/e 3876593/f Sable 1000/t 1200 1900": "WizardSong/-1000 -1000/farmer 10 14 0 Sable 13 7 3/animate Sable false true 500 21 22 21 22 21/viewport 10 7/skippable/pause 10000/shake Sable 1000/emote Sable 16/playSound explosion/screenFlash 1/playSound doorClose/warp farmer 10 10/faceDirection farmer 0 true/faceDirection farmer 0 true/stopMusic/stopAnimation Sable/faceDirection Sable 2 true/pause 2000/playMusic desolate/speak Sable \"...$3\"/pause 500/speak Sable \"...Oops.$6\"/pause 1000/showFrame Sable 18/pause 1000/speak Sable \"What am I doing wrong...$2\"/pause 500/faceDirection Sable 2 true/pause 500/speak Sable \"@.\"/pause 200/speak Sable \"Well, now I have to kill you.$6\"/pause 1000/speak Sable \"Joking.\"/pause 500/emote farmer 28/pause 1000/move Sable -2 0 3/move Sable 0 -2 3/move Sable -2 0 3/pause 100/move Sable 2 0 1/pause 100/move Sable -2 0 3/pause 100/move Sable 2 0 1/pause 100/faceDirection Sable 0 true/pause 1000/move farmer 0 -3 0/faceDirection farmer 0 true/pause 1500/faceDirection Sable 2 true/pause 500/speak Sable \"*coughs*$2#$b#I don't get why it doesn't work out for me...$8\"/pause 1000/speak Sable \"I didn't believe in all that stuff before, but after learning more about powerful wizards like Rasmodius, I got really interested in magic.\"/pause 500/speak Sable \"You know there are a lot of strange rumors about this valley, right?#$b#About the mysterious creatures that live in forests and waters...\"/pause 500/speak Sable \"So I decided to become a witch and curb one of the strongest spells of time in order to go back and...$8#$b#...$2#$b#Anyway, now do you see how cool it is?$6\"/pause 1000/emote farmer 32/pause 1500/speak Sable \"*coughs* Lately I've been having more and more doubts about my abilities.$8\"/pause 1000/quickQuestion #You must not give up and keep practicing.#Maybe people aren't capable of doing magic?(break)speak Sable \"It's corny, but it probably makes sense.$7\"(break)speak Sable \"Have you always been such a nerd?$7\"/pause 1500/speak Sable \"I'm not going to give up.\"/pause 1000/speak Sable \"Here we go...\"/stopMusic/pause 1000/showFrame Sable 18/shake Sable 1000/pause 2000/faceDirection Sable 2 true/playSound yoba/glow 255 255 255 false/pause 2000/emote Sable 12/pause 1000/playMusic desolate/pause 1000/speak Sable \"Well, not this time.$7\"/pause 1000/faceDirection Sable 1 true/pause 500/speak Sable \"Okay, I'm hungry.\"/pause 500/faceDirection Sable 2 true/pause 500/speak Sable \"Will made some delicious cheese bites this morning, wanna try some?\"/pause 500/emote farmer 32/pause 1000/move Sable 0 4 0/move Sable -1 0 3/faceDirection farmer 2 true/move Sable 0 3 2/doAction 10 12/playSound doorClose/move Sable 0 6 2/playSound stairsdown/warp Sable 100 100/pause 1250/move farmer 0 2 2/pause 500/playSound crystal/addLantern 360 13 9 1/pause 250/playSound crystal/addLantern 360 5 5 1/jump farmer 8/emote farmer 16/eyes 5 -2500/pause 250/playSound crystal/addLantern 360 7 8 1/pause 250/playSound crystal/addLantern 360 14 4 1/pause 250/playSound crystal/addLantern 360 8 2 1/pause 250/playSound crystal/addLantern 360 16 6 1/pause 250/playSound crystal/addLantern 360 10 5 1/pause 250/playSound crystal/addLantern 360 13 1 1/pause 3000/globalFade/viewport -1000 -1000/friendship Sable 15/end"
+	  
+	}
+   },
+   
+   { //6 heart 
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_SableRoom",
+      "Entries": {
+	   "3876793/e 3876693/f Sable 1500/t 800 1300": "Icicles/-1000 -1000/farmer 10 17 0 Sable 9 5 2 Wilford -100 -100 0/animate Sable false true 250 33 33 33 33 33 33 33 33 33 33 29 30 30 30 31 31 32 32 27 27 33/viewport 10 7/skippable/pause 4000/move farmer 0 -4 0/doAction 10 12/playSound doorClose/move farmer 0 -5 0/pause 1000/speak Sable \"Hey, @.$1#$b#Missed me or came for business?\"/pause 1000/emote farmer 60/pause 1500/move farmer 2 0 0/pause 500/playSound stairsdown/warp Wilford 10 17/faceDirection Wilford 0 true/pause 500/move Wilford 0 -8 0/pause 250/stopAnimation Sable/faceDirection Sable 2 true/jump Sable 8/stopMusic/pause 250/faceDirection farmer 3 true/pause 750/speak Wilford \"I brought you some pumpkin pie for a snack.$7\"/pause 1000/textAboveHead Wilford \"Hm?\"/pause 1000/speak Wilford \"What is that smell?$6\"/pause 500/speak Wilford \"...Are you smoking again?!$5\"/pause 1000/shake Sable 1000/pause 1500/question fork0 \"#Take the blame#Be silent\"/fork 3876793_Guilty/pause 500/emote Wilford 40/pause 1500/speak Wilford \"...You promised me.$10\"/pause 1000/faceDirection farmer 0 true/showFrame Sable 18/shake Sable 1000/emote Sable 12/pause 2000/speak Wilford \"Think about what your mother would say.\"/pause 500/faceDirection Sable 2 true/jump Sable 8/shake Sable 1000/pause 500/speak Sable \"She wouldn't care.$5\"/pause 750/speak Sable \"And you're not my caretaker or something.$5#$b#I'm a big girl now, and I can decide for myself what I want to do.$8\"/pause 250/faceDirection farmer 3 true/pause 1000/emote Wilford 28/pause 1500/faceDirection Wilford 2 true/pause 1000/showFrame Wilford 16/pause 500/faceDirection farmer 2 true/pause 500/move Wilford 0 8 2/playSound stairsdown/warp Wilford 100 100/pause 1000/faceDirection farmer 0 true/pause 1000/speak Sable \"...$8\"/pause 500/speak Sable \"I'm sorry you had to see that.$2\"/pause 500/move farmer -2 0 3/move farmer 0 1 2/pause 150/textAboveHead Sable \"Wait!\"/pause 1000/faceDirection farmer 2 true/pause 1500/showFrame Sable 18/emote Sable 40/pause 1500/faceDirection farmer 0 true/pause 750/faceDirection Sable 2 true/pause 500/speak Sable \"You know, I've tried to quit many times.\"/pause 500/speak Sable \"...But every time I think of the past, my hand reaches for the pack.$8\"/pause 500/move farmer 0 -1 0/pause 500/faceDirection Sable 0 true/pause 500/speak Sable \"Wilford and I have known each other for many years.#$b#But even he doesn't know much about me.$2\"/pause 500/playMusic woodsTheme/pause 500/speak Sable \"When I was a kid, we lived in a beautiful cabin in the Fern Islands.#$b#Our parents have been pretty busy people for as long as I can remember, they were always working.\"/pause 500/emote Sable 12/pause 1500/speak Sable \"...They weren't there when it happened.$8\"/stopMusic/pause 500/faceDirection Sable 2 true/pause 1000/speak Sable \"...$8#$b#...$9#$b#...$11\"/pause 500/playMusic AbigailFlute/pause 500/speak Sable \"Don't ask me who did it.$11#$b#I didn't know his name.$12\"/pause 500/speak Sable \"This scar reminds me of how weak I was.$10\"/pause 500/speak Sable \"That day...$10#$b#...a part of me died.$11\"/pause 500/emote Sable 12/pause 1500/speak Sable \"Since then, I've been looking for a spell that reverses time.$12#$b#The thought of what I could have done then to prevent it still haunts me.$10\"/pause 500/move farmer 0 -1 0/pause 750/quickQuestion #You can't live in the past forever.#You were only a child, it's not your fault.(break)speak Sable \"I'd really like to agree with you if it wasn't so complicated.$12#$b#When you lose something very important, the whole world stops mattering, you know?$11\"(break)speak Sable \"Even so, it's hard to get rid of that feeling...$10\"/pause 1500/stopMusic/speak Sable \"Well.$12#$b#Thanks for listening.$13\"/pause 500/speak Sable \"I guess...$12#$b#I should...$9#$b#...apologize to Wilford.\"/pause 500/move Sable 0 4 2/faceDirection farmer 2 true/move Sable 1 0 1/move Sable 0 9 2/playSound stairsdown/warp Sable -100 -100/pause 1000/emote farmer 28/pause 2000/globalFade/viewport -1000 -1000/friendship Wilford 0/friendship Sable 10/end"
+	  
+	}
+   },
+   
+    { //6 heart --- guilty
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_SableRoom",
+      "Entries": {
+	   "3876793_Guilty": "pause 1000/faceDirection Wilford 1 true/pause 150/faceDirection farmer 3 true/pause 500/speak Wilford \"@?#$b#I didn't know you smoked.$6\"/pause 500/emote farmer 28/pause 1500/speak Wilford \"In any case, don't do it in front of Sable.#$b#It cost her a great deal of effort to kick the habit.\"/pause 500/showFrame Sable 18/pause 1000/speak Wilford \"Well, I'll be going then.$9\"/pause 500/faceDirection Sable 2 true/pause 500/speak Sable \"...Okay.$7\"/pause 500/move Wilford 0 8 2/playSound stairsdown/warp Wilford 100 100/pause 1000/faceDirection farmer 0 true/pause 1000/speak Sable \"...$8\"/pause 500/speak Sable \"Thanks for stepping in.$7\"/pause 500/move farmer -2 0 3/move farmer 0 1 2/pause 150/textAboveHead Sable \"Wait!\"/pause 1000/faceDirection farmer 2 true/pause 1500/showFrame Sable 18/emote Sable 40/pause 1500/faceDirection farmer 0 true/pause 750/faceDirection Sable 2 true/pause 500/speak Sable \"You know, I've tried to quit many times.\"/pause 500/speak Sable \"...But every time I think of the past, my hand reaches for the pack.$8\"/pause 500/move farmer 0 -1 0/pause 500/faceDirection Sable 0 true/pause 500/speak Sable \"Wilford and I have known each other for many years.#$b#But even he doesn't know much about me.$2\"/pause 500/playMusic woodsTheme/pause 500/speak Sable \"When I was a kid, we lived in a beautiful cabin in the Fern Islands.#$b#Our parents have been pretty busy people for as long as I can remember, they were always working.\"/pause 500/emote Sable 12/pause 1500/speak Sable \"...They weren't there when it happened.$8\"/stopMusic/pause 500/faceDirection Sable 2 true/pause 1000/speak Sable \"...$8#$b#...$9#$b#...$11\"/pause 500/playMusic AbigailFlute/pause 500/speak Sable \"Don't ask me who did it.$11#$b#I didn't know his name.$12\"/pause 500/speak Sable \"This scar reminds me of how weak I was.$10\"/pause 500/speak Sable \"That day...$10#$b#...a part of me died.$11\"/pause 500/emote Sable 12/pause 1500/speak Sable \"Since then, I've been looking for a spell that reverses time.$12#$b#The thought of what I could have done then to prevent it still haunts me.$10\"/pause 500/move farmer 0 -1 0/pause 750/quickQuestion #You can't live in the past forever.#You were only a child, it's not your fault.(break)speak Sable \"I'd really like to agree with you if it wasn't so complicated.$12#$b#When you lose something very important, the whole world stops mattering, you know?$11\"(break)speak Sable \"Even so, it's hard to get rid of that feeling...$10\"/pause 1500/stopMusic/speak Sable \"Well.$12#$b#Thanks for listening.$13\"/pause 500/speak Sable \"I guess...$12#$b#I should...$9#$b#...apologize to Wilford.\"/pause 500/move Sable 0 4 2/faceDirection farmer 2 true/move Sable 1 0 1/move Sable 0 9 2/playSound stairsdown/warp Sable -100 -100/pause 1000/emote farmer 28/pause 2000/globalFade/viewport -1000 -1000/friendship Wilford -10/friendship Sable 20/end"
+	  
+	}
+   },
+   
+    { //8 heart vanilla
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+	  "3876893/t 1730 2200/n WizardReqSable/z winter": "spring_day_ambient/-1000 -1000/farmer 13 42 1 Sable 17 42 3 Wizard -100 -100 2/viewport 16 42/skippable/pause 3000/speak Sable \"You know, it's kinda weird date...$7\"/pause 500/emote farmer 28/pause 1000/speak Sable \"Okay, but seriously... Why did you call me here?\"/pause 750/question wizardtalk \"#Someone wants to meet you.\"/fork 3876893_wizardtalk/switchEvent 3876893_wizardtalk",
+	  
+	  "3876893_wizardtalk": "pause 500/speak Sable \"That's how...$7#$b#Okay, I'm intrigued. Let's go!$1\"/pause 750/globalFade/viewport -1000 -1000/warp Sable 6 28/faceDirection Sable 0 true/warp farmer 5 28/faceDirection farmer 0 true/viewport 15 26 true/faceDirection farmer 0 true/faceDirection Sable 0 true/pause 2500/faceDirection farmer 1 true/faceDirection Sable 3 true/pause 1500/faceDirection farmer 0 true/faceDirection Sable 0 true/pause 1500/globalFade/viewport -1000 -1000/changeLocation WizardHouse/warp Sable 8 23/faceDirection Sable 0 true/warp Wizard 10 17/faceDirection Wizard 0 true/showFrame Wizard 20/warp farmer -100 -100/ignoreCollisions Wizard/viewport 7 17 true/playMusic WizardSong/pause 1000/speed Sable 3/move Sable 0 -3 0/pause 250/jump Sable 8/pause 500/faceDirection Sable 1 true/pause 500/faceDirection Sable 0 true/pause 500/faceDirection Sable 3 true/warp farmer 8 24/faceDirection farmer 0 true/playSound stairsdown/move farmer 0 -2 0/speed Sable 3/move Sable -2 0 3/pause 250/jump Sable 8/emote Sable 16/pause 750/speed Sable 3/move Sable 0 -3 0/emote farmer 28/pause 500/speed Sable 3/move Sable -4 0 3/pause 250/jump Sable 8/pause 500/shake Wizard 1000/pause 500/faceDirection Wizard 2 true/pause 500/speak Wizard \"What a noise!\"/pause 1000/faceDirection Sable 1 true/pause 250/jump Sable 8/pause 500/speak Sable \"Y-You are...$3\"/pause 500/faceDirection Wizard 3 true/pause 500/speak Wizard \"So this is the young witch who is trying to interfere with the time continuum?\"/pause 1000/speak Sable \"...W-what?$3\"/pause 500/faceDirection Wizard 2 true/pause 500/showFrame Wizard 18/textAboveHead Wizard \"*sighs*\"/pause 1750/faceDirection Wizard 2 true/pause 500/move Wizard 0 2 2/move Wizard -2 0 3/faceDirection Wizard 3 true/move Wizard 0 2 0/move Wizard -2 0 3/pause 1000/move Wizard 0 -4 0/faceDirection Wizard 3 true/pause 500/emote Sable 16/pause 1500/speak Sable \"...There's so much I wanted to tell you...$3\"/speak Wizard \"Let me start first.\"/pause 500/move Wizard -1 0 3/pause 250/move Wizard 0 1 2/pause 1000/speak Wizard \"Come here, child.\"/pause 500/move Sable 1 0 2/move Sable 0 1 2/pause 500/faceDirection Sable 1 true/pause 500/faceDirection Wizard 3 true/faceDirection farmer 3 true/pause 1000/playMusic Icicles/pause 1750/speak Wizard \"Lately I have begun to notice more and more often the interference of extraneous witch forces in the magical field of this valley.#$b#Clots of dark energy began to accumulate in the thick of the forest, spawning slimes and shadow brutes.\"/pause 750/speak Wizard \"The dark energy started spreading around since your arrival.\"/pause 650/speak Wizard \"Tell me, who is your mentor?\"/pause 1000/speak Sable \"...I'm self-taught.$7\"/pause 500/speak Wizard \"Well, that makes sense then.#$b#I suppose there was no one to explain to you the dangers of the one powerful spell you're trying so hard to master?\"/pause 650/emote Sable 4/pause 1750/speak Wizard \"You see, time is like a treacherous beast that even the strongest wizards cannot curb.\"/pause 650/speak Wizard \"Your attempts only open time vortices and release dark energy, poisoning the environment and, above all, you yourself.\"/pause 500/faceDirection Sable 2 true/pause 500/faceDirection Wizard 2 true/pause 750/showFrame Sable 18/textAboveHead Sable \"*coughs*\"/pause 1500/faceDirection Sable 2 true/pause 1000/speak Wizard \"I understand what you're doing all this for.\"/pause 500/faceDirection Wizard 3 true/pause 750/speak Wizard \"But by wasting energy on such a complicated spell, you are slowly killing yourself.#$b#Moreover, even the slightest influence on the past can lead to the most unpredictable results in the present.\"/pause 500/showFrame Sable 18/emote Sable 12/pause 1500/speak Wizard \"Are you willing to destroy dozens of lives to save one wounded soul?\"/pause 650/emote Sable 12/pause 2000/speak Sable \"...I don't want anyone else to get hurt because of me.$8\"/pause 750/faceDirection Wizard 2 true/stopMusic/pause 750/speak Wizard \"You can use your powers for good.#$b#I can help.\"/pause 500/faceDirection Sable 2 true/jump Sable 8/emote Sable 16/pause 1000/faceDirection Sable 1 true/pause 250/speak Sable \"Are you serious??$3\"/pause 500/faceDirection Wizard 3 true/pause 500/speak Wizard \"Absolutely. I see in you an exceptional talent for the art of magic.#$b#But that's only on the condition that you give up trying to manipulate time and devote yourself to learning under my guidance.\"/pause 750/faceDirection Sable 2 true/pause 750/showFrame Sable 18/emote Sable 40/pause 1750/speak Wizard \"Each of us had to sacrifice something to be able to help others.#$b#You're looking for redemption, aren't you?\"/pause 1000/faceDirection Sable 2 true/pause 1000/faceDirection Sable 1 true/pause 1000/playMusic junimoStarSong/speak Sable \"All right.#$b#I want to be useful.\"/pause 750/speak Wizard \"Glad to hear that.\"/pause 500/speak Wizard \"Well, then, wait for my letter with further instructions.\"/pause 750/emote Sable 32/pause 250/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/stopMusic/friendship Sable 20/mail ThanksSable/end"
+	  },
+	  "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+   },
+   { //8 heart
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "Entries": {
+	  "3876893/t 1730 2200/n WizardReqSable/z winter": "spring_day_ambient/-1000 -1000/farmer 13 42 1 Sable 17 42 3 Wizard -100 -100 2/viewport 16 42/skippable/pause 3000/speak Sable \"You know, it's kinda weird date...$7\"/pause 500/emote farmer 28/pause 1000/speak Sable \"Okay, but seriously... Why did you call me here?\"/pause 750/question wizardtalk \"#Someone wants to meet you.\"/fork 3876893_wizardtalk/switchEvent 3876893_wizardtalk",
+	  
+	  "3876893_wizardtalk": "pause 500/speak Sable \"That's how...$7#$b#Okay, I'm intrigued. Let's go!$1\"/pause 750/globalFade/viewport -1000 -1000/warp Sable 6 20/faceDirection Sable 0 true/warp farmer 5 20/faceDirection farmer 0 true/viewport 16 18 true/faceDirection farmer 0 true/faceDirection Sable 0 true/pause 2500/faceDirection farmer 1 true/faceDirection Sable 3 true/pause 1500/faceDirection farmer 0 true/faceDirection Sable 0 true/pause 1500/globalFade/viewport -1000 -1000/changeLocation WizardHouse/warp Sable 8 28/faceDirection Sable 0 true/warp Wizard 10 17/faceDirection Wizard 0 true/showFrame Wizard 20/warp farmer 9 28/faceDirection farmer 0 true/viewport 6 18 true/playMusic WizardSong/pause 1000/speed Sable 3/move Sable 0 -7 0/pause 250/jump Sable 8/pause 500/faceDirection Sable 1 true/pause 500/faceDirection Sable 0 true/pause 500/faceDirection Sable 3 true/move farmer 0 -7 0/speed Sable 3/move Sable -3 0 3/pause 250/jump Sable 8/emote Sable 16/pause 750/speed Sable 3/move Sable 0 -4 0/emote farmer 28/pause 500/speed Sable 3/move Sable -3 0 3/pause 250/jump Sable 8/pause 500/shake Wizard 1000/pause 500/faceDirection Wizard 2 true/pause 500/speak Wizard \"What a noise!\"/pause 1000/faceDirection Sable 1 true/pause 250/jump Sable 8/pause 500/speak Sable \"Y-You are...$3\"/pause 500/faceDirection Wizard 3 true/pause 500/speak Wizard \"So this is the young witch who is trying to interfere with the time continuum?\"/pause 1000/speak Sable \"...W-what?$3\"/pause 500/faceDirection Wizard 2 true/pause 500/showFrame Wizard 18/textAboveHead Wizard \"*sighs*\"/pause 1750/faceDirection Wizard 2 true/pause 500/move Wizard 0 2 2/move Wizard 1 0 1/faceDirection Wizard 1 true/pause 1000/faceDirection Wizard 2 true/move Wizard 0 1 3/move Wizard -6 0 3/pause 1000/faceDirection Wizard 0 true/move Wizard 0 -3 0/faceDirection Wizard 3 true/pause 500/emote Sable 16/pause 1500/speak Sable \"...There's so much I wanted to tell you...$3\"/speak Wizard \"Let me start first.\"/pause 500/move Wizard -1 0 3/pause 250/move Wizard 0 1 2/pause 1000/speak Wizard \"Come here, child.\"/pause 500/move Sable 0 1 2/pause 500/faceDirection Sable 1 true/pause 500/faceDirection Wizard 3 true/faceDirection farmer 3 true/pause 1000/playMusic Icicles/pause 1750/speak Wizard \"Lately I have begun to notice more and more often the interference of extraneous witch forces in the magical field of this valley.#$b#Clots of dark energy began to accumulate in the thick of the forest, spawning slimes and shadow brutes.\"/pause 750/speak Wizard \"The dark energy started spreading around since your arrival.\"/pause 650/speak Wizard \"Tell me, who is your mentor?\"/pause 1000/speak Sable \"...I'm self-taught.$7\"/pause 500/speak Wizard \"Well, that makes sense then.#$b#I suppose there was no one to explain to you the dangers of the one powerful spell you're trying so hard to master?\"/pause 650/emote Sable 4/pause 1750/speak Wizard \"You see, time is like a treacherous beast that even the strongest wizards cannot curb.\"/pause 650/speak Wizard \"Your attempts only open time vortices and release dark energy, poisoning the environment and, above all, you yourself.\"/pause 500/faceDirection Sable 2 true/pause 500/faceDirection Wizard 2 true/pause 750/showFrame Sable 18/textAboveHead Sable \"*coughs*\"/pause 1500/faceDirection Sable 2 true/pause 1000/speak Wizard \"I understand what you're doing all this for.\"/pause 500/faceDirection Wizard 3 true/pause 750/speak Wizard \"But by wasting energy on such a complicated spell, you are slowly killing yourself.#$b#Moreover, even the slightest influence on the past can lead to the most unpredictable results in the present.\"/pause 500/showFrame Sable 18/emote Sable 12/pause 1500/speak Wizard \"Are you willing to destroy dozens of lives to save one wounded soul?\"/pause 650/emote Sable 12/pause 2000/speak Sable \"...I don't want anyone else to get hurt because of me.$8\"/pause 750/faceDirection Wizard 2 true/stopMusic/pause 750/speak Wizard \"You can use your powers for good.#$b#I can help.\"/pause 500/faceDirection Sable 2 true/jump Sable 8/emote Sable 16/pause 1000/faceDirection Sable 1 true/pause 250/speak Sable \"Are you serious??$3\"/pause 500/faceDirection Wizard 3 true/pause 500/speak Wizard \"Absolutely. I see in you an exceptional talent for the art of magic.#$b#But that's only on the condition that you give up trying to manipulate time and devote yourself to learning under my guidance.\"/pause 750/faceDirection Sable 2 true/pause 750/showFrame Sable 18/emote Sable 40/pause 1750/speak Wizard \"Each of us had to sacrifice something to be able to help others.#$b#You're looking for redemption, aren't you?\"/pause 1000/faceDirection Sable 2 true/pause 1000/faceDirection Sable 1 true/pause 1000/playMusic junimoStarSong/speak Sable \"All right.#$b#I want to be useful.\"/pause 750/speak Wizard \"Glad to hear that.\"/pause 500/speak Wizard \"Well, then, wait for my letter with further instructions.\"/pause 750/emote Sable 32/pause 250/emote farmer 32/pause 1000/globalFade/viewport -1000 -1000/stopMusic/friendship Sable 20/mail ThanksSable/end"
+	  },
+	  "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+   },
+   { //10 heart vanilla
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_EastWoods",
+      "Entries": {
+	  "3876993/t 700 1300/n SableDate/z winter": "spring_day_ambient/-1000 -1000/farmer 48 32 1 Sable 51 32 3/viewport 50 32/skippable/pause 2000/speak Sable \"I'm so glad to see you!$6\"/pause 500/emote farmer 32/pause 1000/speak Sable \"Anyway, I recently passed long-distance teleportation examination. Mr. Rasmodius even praised me.$1#$b#Even though I messed up the coordinates a little bit at the beginning because of the anxiety.$7\"/pause 500/speak Sable \"But it was then that I thought about the fact that now I would be able to visit my native land without spending money on a trip!$1\"/pause 500/speak Sable \"Sooo, are you ready to travel a little?\"/pause 750/question nochoicelol \"#Of course!\"/fork 3876993_nochoicelol/switchEvent 3876993_nochoicelol",
+	  
+	  "3876993_nochoicelol": "pause 500/speak Sable \"That's what I thought.$6\"/pause 500/faceDirection Sable 2 true/pause 500/faceDirection farmer 2 true/pause 1000/showFrame Sable 18/pause 500/textAboveHead Sable \"Okay...\"/shake Sable 3000/startJittering/pause 1000/globalFade/viewport -1000 -1000/stopMusic/changeLocation Mountain/warp farmer 72 12/warp Sable 74 12/faceDirection Sable 2 true/faceDirection farmer 2 true/pause 250/viewport 74 12/playSound healSound/playMusic spring_day_ambient/jump Sable 8/eyes 5 -2000/jump farmer 8/pause 2000/emote Sable 28/pause 1000/speak Sable \"Oops.#$b#That's not really what we need.$7\"/pause 500/speak Sable \"...I need to concentrate.$7\"/pause 1000/showFrame Sable 18/pause 500/textAboveHead Sable \"Once again...\"/shake Sable 3000/startJittering/pause 1000/globalFade/viewport -1000 -1000/stopMusic/changeLocation Beach/warp farmer 40 35/warp Sable 42 35/faceDirection Sable 2 true/faceDirection farmer 2 true/pause 250/viewport 41 35/playSound healSound/playMusic ocean/jump farmer 8/eyes 5 -2000/jump Sable 8/pause 1000/speak Sable \"What is wrong with me...$7\"/pause 500/faceDirection farmer 1 true/pause 500/faceDirection farmer 3 true/pause 500/faceDirection farmer 2 true/pause 500/speak Sable \"We're getting close, I can feel it.#$b#It will definitely work now!\"/pause 1000/showFrame Sable 18/pause 500/shake Sable 3000/startJittering/pause 1000/globalFade/viewport -1000 -1000/stopMusic/changeLocation Custom_SableDateIsland/warp farmer 31 31/warp Sable 33 31/faceDirection Sable 2 true/faceDirection farmer 2 true/pause 250/viewport 32 32/playSound healSound/playMusic ocean/jump Sable 8/jump farmer 8/pause 1000/speak Sable \"I did it!$6\"/pause 500/speak Sable \"So, what do you think?$1\"/pause 500/move farmer 0 3 2/pause 500/faceDirection farmer 1 true/pause 500/faceDirection farmer 2 true/pause 500/faceDirection farmer 3 true/pause 500/faceDirection farmer 2 true/pause 500/emote farmer 20/pause 1000/speak Sable \"I'm happy that you like it here.$4\"/pause 500/faceDirection farmer 0 true/pause 500/stopMusic/playMusic moonlightJellies/speak Sable \"This is merely one of the many islands of the great archipelago.#$b#The murmur of the ocean reminds me of home...$2\"/pause 500/speak Sable \"As you can see, I prepared a bit for your visit.$6#$b#I suppose this impulse can be explained by my strong desire to somehow express my feelings to you.\"/pause 500/emote Sable 60/move farmer 0 -3 0/faceDirection farmer 1 true/pause 500/faceDirection Sable 3 true/pause 500/speak Sable \"Stop looking at me like that.$7\"/pause 500/speak Sable \"...I just wanted to thank you.$4#$b#I know, I've done it many times before...$7\"/pause 500/speak Sable \"But this time I wanted to do it in a very special way.$4\"/pause 1000/speed Sable 3/move Sable -1 0 3/pause 500/showFrame Sable 19/pause 250/emote farmer 20/pause 250/faceDirection Sable 3 true/pause 500/speed Sable 3/move Sable 1 0 3/faceDirection Sable 3 true/pause 1000/faceDirection Sable 2 true/pause 1000/showFrame Sable 34/pause 1250/speak Sable \"Well, we can have a little lunch and then go for a swim!$4\"/pause 500/faceDirection farmer 2 true/pause 500/emote farmer 32/pause 2000/globalFade/viewport -1000 -1000/stopMusic/friendship Sable 25/end"
+	  }
+   },
+
+   //Display names for custom locations
+   {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Fields": {
+         "Custom_SableRoom": {
+            "DisplayName": "Sable's Room"
+         }
+      }
+   },
+   {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Fields": {
+         "Custom_SableDateIsland": {
+            "DisplayName": "Fern Islands"
+         }
+      }
+   },
+   {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Fields": {
+         "Custom_Secrethall": {
+            "DisplayName": "Secret Hall"
+         }
+      }
+   }
+ ]
+}

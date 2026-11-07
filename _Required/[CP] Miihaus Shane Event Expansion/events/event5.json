@@ -1,0 +1,86 @@
+{
+    "Changes": [
+    {
+        "Action": "EditData",
+        "Target": "Data/Events/AnimalShop",
+        "Entries":
+    {
+    //Miihau.MiihausMoreShaneHeartEvents
+    "Miihau.ShaneEE.005/F/f Shane 1250/e Miihau.ShaneEE.004":"
+    shaneTheme/
+    19 11/
+    farmer -1000 -1000 0 Shane 24 7 1 Marnie 13 14 2 Jas 7 5 0/
+    skippable/
+    addTemporaryActor MiihauShaneNote 16 16 23 8 2 false/
+    showFrame MiihauShaneNote 0/ 
+    pause 1300/
+    playSound doorClose/
+    warp farmer 13 19/
+    pause 600/
+    move farmer 0 -2 0/
+    speak Marnie \"{{i18n:Miihau.SEE.E5.001}}\"/
+    emote farmer 8/
+    speak Marnie \"{{i18n:Miihau.SEE.E5.002}}\"/
+    speak Marnie \"{{i18n:Miihau.SEE.E5.003}}\"/
+    emote Marnie 28/
+    speak Marnie \"{{i18n:Miihau.SEE.E5.004}}\"/
+    question fork1 \"{{i18n:Miihau.SEE.E5.005}}\" /
+    fork Miihau.ShaneEE.005.Fork1/
+    speak Marnie \"{{i18n:Miihau.SEE.E5.006}}\"/
+    emote farmer 32/
+    move farmer 3 0 2/
+    move farmer 0 1 1/
+    move farmer 5 0 0/
+    move farmer 0 -4 0/
+    viewport move 1 -1 3000/
+    shake Shane 2000/
+    pause 2000/
+    speak Shane \"{{i18n:Miihau.SEE.E5.007}}\"/
+    faceDirection Shane 0/
+    speak Shane \"{{i18n:Miihau.SEE.E5.008}}\"/
+    quickQuestion {{i18n:Miihau.SEE.E5.008X}}(break)pause 200\\speak Shane \"{{i18n:Miihau.SEE.E5.009}}\"\\emote farmer 40\\speak Shane \"{{i18n:Miihau.SEE.E5.010}}\"\\doAction 21 13\\pause 1000\\move farmer 0 -6 1\\faceDirection Shane 3 true\\move farmer 1 0 0\\move farmer 0 -1 1(break)pause 700\\doAction 21 13\\animate Shane false true 300 18\\jump Shane 7 true\\move farmer 0 -6 1\\stopAnimation Shane\\faceDirection Shane 3 true\\move farmer 1 0 0\\move farmer 0 -1 1\\emote Shane 12\\speak Shane \"{{i18n:Miihau.SEE.E5.011}}\" /
+    pause 700/
+    speak Shane \"{{i18n:Miihau.SEE.E5.012}}\"/
+    emote farmer 8/
+    faceDirection Shane 1/
+    speak Shane \"{{i18n:Miihau.SEE.E5.013}}\"/
+    pause 200/
+    move farmer 0 1 1/
+    pause 500/
+    message \"{{i18n:Miihau.SEE.E5.014}}\"/
+    speak Shane \"{{i18n:Miihau.SEE.E5.015}}\"/
+    emote farmer 28/
+    speak Shane \"{{i18n:Miihau.SEE.E5.016}}\"/
+    move Shane 0 1 3/
+    speak Shane \"{{i18n:Miihau.SEE.E5.017}}\"/
+    pause 200/
+    speak Shane \"{{i18n:Miihau.SEE.E5.018}}\"/
+    emote Shane 40/
+    speak Shane \"{{i18n:Miihau.SEE.E5.019}}\"/
+    speak Shane \"{{i18n:Miihau.SEE.E5.020}}\"/
+    speak Shane \"{{i18n:Miihau.SEE.E5.021}}\"/
+    pause 400/
+    question null \"{{i18n:Miihau.SEE.E5.022}}\"/
+    splitSpeak Shane \"{{i18n:Miihau.SEE.E5.023}}\"/
+    pause 400/
+    emote Shane 28/
+    speak Shane \"{{i18n:Miihau.SEE.E5.024}}\"/
+    speak Shane \"{{i18n:Miihau.SEE.E5.025}}\"/
+    emote farmer 32/
+    speak Shane \"{{i18n:Miihau.SEE.E5.026}}\"/
+    globalFade/
+    viewport -1200 -1200/
+    pause 200/
+    end dialogueWarpOut Shane \"{{i18n:Miihau.SEE.E5.027}}\"/
+    ",
+    
+    "Miihau.ShaneEE.005.Fork1":"
+    pause 200/
+    friendship Marnie -20/
+    speak Marnie \"{{i18n:Miihau.SEE.E5.028}}\"/
+    end dialogue Shane \"{{i18n:Miihau.SEE.E5.029}}\"/
+    ",
+    }
+    }
+    ]
+}
