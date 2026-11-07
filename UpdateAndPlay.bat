@@ -1,9 +1,9 @@
 @echo off
 cd /d "%~dp0"
 echo Actualizando mods...
-git checkout -- .
+git fetch origin
+git reset --hard origin/master
 git clean -fd -e config.json
-git pull
 echo.
 echo Mods actualizados. Iniciando Stardew Valley...
 start ..\StardewModdingAPI.exe
