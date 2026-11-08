@@ -4,7 +4,35 @@ echo Actualizando mods...
 
 git fetch origin || goto :fetchfail
 git reset --hard FETCH_HEAD || goto :resetfail
-git clean -fd -e config.json
+git clean -fd -e config.json -e exclude.txt
+
+:: Aplicar exclusiones personales
+if exist exclude.txt (
+    echo Aplicando exclusiones personales...
+    for /f "usebackq delims=" %%m in ("exclude.txt") do (
+        if exist "%%m" (
+            rmdir /s /q "%%m" 2>nul
+            echo   Excluido: %%m
+        )
+        if exist "_Required\%%m" (
+            rmdir /s /q "_Required\%%m" 2>nul
+            echo   Excluido: _Required\%%m
+        )
+        if exist "_Optional\%%m" (
+            rmdir /s /q "_Optional\%%m" 2>nul
+            echo   Excluido: _Optional\%%m
+        )
+        if exist "_MaybeOptional_Visual\%%m" (
+            rmdir /s /q "_MaybeOptional_Visual\%%m" 2>nul
+            echo   Excluido: _MaybeOptional_Visual\%%m
+        )
+        if exist "_MaybeOptional_Utility\%%m" (
+            rmdir /s /q "_MaybeOptional_Utility\%%m" 2>nul
+            echo   Excluido: _MaybeOptional_Utility\%%m
+        )
+    )
+)
+
 echo.
 echo Mods actualizados. Iniciando Stardew Valley...
 goto :launch
